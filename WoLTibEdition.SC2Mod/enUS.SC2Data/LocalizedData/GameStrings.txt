@@ -1,35 +1,83 @@
-﻿Abil/Name/CCBuild=C&C Build
+﻿Abil/Name/ArmSiloWithNuke2=Arm Magazine (Nuke)
+Abil/Name/Armory2Research=Research (Armory)
+Abil/Name/Barracks2AddOns=AddOns
+Abil/Name/Barracks2Land=Land
+Abil/Name/Barracks2LiftOff=Lift Off
+Abil/Name/Barracks2Train=Train
+Abil/Name/CCBuild=C&C Build
 Abil/Name/CCPlaceBuilding=C&C Place Building
 Abil/Name/CCQueue=C&CQueue
-Abil/Name/CommandCenterTrain2=Train (Command Center) Copy
+Abil/Name/CommandCenter2Land=Land (Command Center)
+Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
+Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
+Abil/Name/Factory2AddOns=AddOns
+Abil/Name/Factory2Land=Land
+Abil/Name/Factory2LiftOff=Lift Off
+Abil/Name/Factory2Train=Train (Factory)
+Abil/Name/FusionCore2Research=Research
+Abil/Name/GhostAcademy2Research=Research
 Abil/Name/GhostSquad=Ghost Squad
-Abil/Name/GrowNewTib=Grow New Tib
 Abil/Name/MarauderSquad=Marauder Squad
 Abil/Name/MarineSquad=Marine Squad
+Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
+Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/ReaperSquad=Reaper Squad
+Abil/Name/Starport2AddOns=AddOns
+Abil/Name/Starport2Land=Land
+Abil/Name/Starport2LiftOff=Lift Off
+Abil/Name/Starport2Train=Train (Starport)
 Abil/Name/SupplyDepot2Lower=Lower
 Abil/Name/SupplyDepot2Raise=Raise
+Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/SquadAttack=Squad Attack
 Behavior/Name/SquadUnit=Squad Unit
 Behavior/Name/Veterancy=Veterancy
-Button/Tooltip/CommandCenter3=Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
+Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
+Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
+Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
+Button/Tooltip/EngineeringBay2=Contains upgrades for Terran infantry units. Enables the construction of Terran defensive structures. 
+Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
+Button/Tooltip/Factory2Flying=Factory must land to start unit production.
+Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
+Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
+Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
+Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
+Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
+Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
+Button/Tooltip/Starport2Flying=Starport must land to start unit production.
 Button/Tooltip/SupplyDepot2=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 DataCollection/Name/Armory=Armory
+DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks
+DataCollection/Name/Barracks2=Barracks Copy
+DataCollection/Name/CommandCenter=Command Center
+DataCollection/Name/CommandCenter2=Command Center Copy
 DataCollection/Name/EngineeringBay=Engineering Bay
+DataCollection/Name/EngineeringBay2=Engineering Bay Copy
 DataCollection/Name/Factory=Factory
+DataCollection/Name/Factory2=Factory Copy
 DataCollection/Name/FusionCore=Fusion Core
+DataCollection/Name/FusionCore2=Fusion Core Copy
+DataCollection/Name/GhostAcademy=Ghost Academy
+DataCollection/Name/GhostAcademy2=Ghost Academy Copy
 DataCollection/Name/GhostSquad=Ghost Squad
 DataCollection/Name/MarauderSquad=Marauder Squad
 DataCollection/Name/MarineSquad=Marine Squad
 DataCollection/Name/MissileTurret=Missile Turret
+DataCollection/Name/MissileTurret2=Missile Turret Copy
 DataCollection/Name/ReaperSquad=Reaper Squad
 DataCollection/Name/SensorTower=Sensor Tower
+DataCollection/Name/SensorTower2=Sensor Tower Copy
 DataCollection/Name/Starport=Starport
+DataCollection/Name/Starport2=Starport Copy
 DataCollection/Name/SupplyDepot=Supply Depot
 DataCollection/Name/SupplyDepot2=Supply Depot Copy
 DocInfo/DescLong=Completely devoid of any description whatsoever.
@@ -57,13 +105,25 @@ Effect/Name/TibStarter=Tib Starter
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=Player 1
 MapInfo/Player02/Name=Hostile
-Unit/Name/CommandCenter3=Command Center
+Unit/Name/Armory2=Armory
+Unit/Name/Barracks2=Barracks
+Unit/Name/CommandCenter2=Command Center
+Unit/Name/EngineeringBay2=Engineering Bay
+Unit/Name/Factory2=Factory
+Unit/Name/FusionCore2=Fusion Core
+Unit/Name/GhostAcademy2=Shadow Ops
 Unit/Name/GhostSquad=Ghost Squad
 Unit/Name/MarauderSquad=Marauder Squad
 Unit/Name/MarineSquad=Marine Squad
+Unit/Name/MissileTurret2=Missile Turret
+Unit/Name/OrbitalCommand2=Orbital Command
+Unit/Name/OrbitalCommandFlying2=Orbital Command
+Unit/Name/PlanetaryFortress2=Planetary Fortress
 Unit/Name/ReaperSquad=Reaper Squad
 Unit/Name/Refinery2=Refinery
 Unit/Name/SCV2=SCV
+Unit/Name/SensorTower2=Sensor Tower
+Unit/Name/Starport2=Starport
 Unit/Name/SupplyDepot2=Supply Depot
 Unit/Name/SupplyDepot2Lowered=Supply Depot
 Unit/Name/Vehicle=Vehicle

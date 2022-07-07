@@ -1,5 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilArmMagazine id="ArmSiloWithNuke2">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <Launch value="ReleaseAtSource"/>
+        <Flags index="BestUnit" value="1"/>
+        <InfoArray index="Ammo1" Time="60" Unit="Nuke">
+            <Button DefaultButtonFace="NukeArm" Requirements="TrainNuke"/>
+        </InfoArray>
+        <CalldownEffect value="Nuke"/>
+    </CAbilArmMagazine>
+    <CAbilResearch id="Armory2Research">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research3" Time="160" Upgrade="TerranVehicleArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingLevel1" State="Restricted" Requirements="LearnTerranVehicleArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="190" Upgrade="TerranVehicleArmorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingLevel2" State="Restricted" Requirements="LearnTerranVehicleArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="220" Upgrade="TerranVehicleArmorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingLevel3" State="Restricted" Requirements="LearnTerranVehicleArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="160" Upgrade="TerranVehicleWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranVehicleWeaponsLevel1" State="Restricted" Requirements="LearnTerranVehicleWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research7" Time="190" Upgrade="TerranVehicleWeaponsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranVehicleWeaponsLevel2" State="Restricted" Requirements="LearnTerranVehicleWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="220" Upgrade="TerranVehicleWeaponsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranVehicleWeaponsLevel3" State="Restricted" Requirements="LearnTerranVehicleWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="160" Upgrade="TerranShipArmorsLevel1">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TerranShipPlatingLevel1" State="Restricted" Requirements="LearnTerranShipArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research10" Time="190" Upgrade="TerranShipArmorsLevel2">
+            <Resource index="Minerals" value="225"/>
+            <Resource index="Vespene" value="225"/>
+            <Button DefaultButtonFace="TerranShipPlatingLevel2" State="Restricted" Requirements="LearnTerranShipArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="220" Upgrade="TerranShipArmorsLevel3">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="300"/>
+            <Button DefaultButtonFace="TerranShipPlatingLevel3" State="Restricted" Requirements="LearnTerranShipArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="160" Upgrade="TerranShipWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranShipWeaponsLevel1" State="Restricted" Requirements="LearnTerranShipWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="190" Upgrade="TerranShipWeaponsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranShipWeaponsLevel2" State="Restricted" Requirements="LearnTerranShipWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research14" Time="220" Upgrade="TerranShipWeaponsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranShipWeaponsLevel3" State="Restricted" Requirements="LearnTerranShipWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research16" Time="170" Upgrade="TerranVehicleWeaponsUltraCapacitorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranVehicleWeaponsUltraCapacitorsLevel1" Requirements="LearnTerranVehicleWeaponUltraCapacitors1"/>
+        </InfoArray>
+        <InfoArray index="Research17" Time="200" Upgrade="TerranVehicleWeaponsUltraCapacitorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranVehicleWeaponsUltraCapacitorsLevel2" Requirements="LearnTerranVehicleWeaponUltraCapacitors2"/>
+        </InfoArray>
+        <InfoArray index="Research18" Time="230" Upgrade="TerranVehicleWeaponsUltraCapacitorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranVehicleWeaponsUltraCapacitorsLevel3" Requirements="LearnTerranVehicleWeaponUltraCapacitors3"/>
+        </InfoArray>
+        <InfoArray index="Research19" Time="170" Upgrade="TerranShipWeaponsUltraCapacitorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranShipWeaponsUltraCapacitorsLevel1" Requirements="LearnTerranShipWeaponUltraCapacitors1"/>
+        </InfoArray>
+        <InfoArray index="Research20" Time="200" Upgrade="TerranShipWeaponsUltraCapacitorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranShipWeaponsUltraCapacitorsLevel2" Requirements="LearnTerranShipWeaponUltraCapacitors2"/>
+        </InfoArray>
+        <InfoArray index="Research21" Time="230" Upgrade="TerranShipWeaponsUltraCapacitorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranShipWeaponsUltraCapacitorsLevel3" Requirements="LearnTerranShipWeaponUltraCapacitors3"/>
+        </InfoArray>
+        <InfoArray index="Research22" Time="170" Upgrade="TerranVehicleArmorsVanadiumPlatingLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingVanadiumPlatingLevel1" Requirements="LearnTerranVehicleArmorVanadiumPlating1"/>
+        </InfoArray>
+        <InfoArray index="Research23" Time="200" Upgrade="TerranVehicleArmorsVanadiumPlatingLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingVanadiumPlatingLevel2" Requirements="LearnTerranVehicleArmorVanadiumPlating2"/>
+        </InfoArray>
+        <InfoArray index="Research24" Time="230" Upgrade="TerranVehicleArmorsVanadiumPlatingLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranVehiclePlatingVanadiumPlatingLevel3" Requirements="LearnTerranVehicleArmorVanadiumPlating3"/>
+        </InfoArray>
+        <InfoArray index="Research25" Time="170" Upgrade="TerranShipArmorsVanadiumPlatingLevel1">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="TerranShipPlatingVanadiumPlatingLevel1" Requirements="LearnTerranShipArmorVanadiumPlating1"/>
+        </InfoArray>
+        <InfoArray index="Research26" Time="200" Upgrade="TerranShipArmorsVanadiumPlatingLevel2">
+            <Resource index="Minerals" value="225"/>
+            <Resource index="Vespene" value="225"/>
+            <Button DefaultButtonFace="TerranShipPlatingVanadiumPlatingLevel2" Requirements="LearnTerranShipArmorVanadiumPlating2"/>
+        </InfoArray>
+        <InfoArray index="Research27" Time="230" Upgrade="TerranShipArmorsVanadiumPlatingLevel3">
+            <Resource index="Minerals" value="300"/>
+            <Resource index="Vespene" value="300"/>
+            <Button DefaultButtonFace="TerranShipPlatingVanadiumPlatingLevel3" Requirements="LearnTerranShipArmorVanadiumPlating3"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilBuild id="Barracks2AddOns" parent="TerranAddOns">
+        <Name value="Abil/Name/Barracks2AddOns"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <BuildMorphAbil value="Barracks2LiftOff"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="Build1" Unit="BarracksTechLab" Time="25">
+            <Button DefaultButtonFace="BuildTechLabBarracks" Requirements="UseTechReactorHide"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="BarracksReactor" Time="50">
+            <Button Requirements="UseTechReactorHide"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="BarracksTechReactor" Time="50" AddOnParentCmdPriority="-1">
+            <Button DefaultButtonFace="TechReactorAI" Requirements="UseTechReactorAI"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="BarracksTechReactor" Time="50" AddOnParentCmdPriority="-1">
+            <Button DefaultButtonFace="TechReactor" Requirements="UseTechReactor"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilMorphPlacement id="Barracks2Land" parent="TerranBuildingLand" unit="Barracks">
+        <Name value="Abil/Name/Barracks2Land"/>
+        <InfoArray index="0" Unit="Barracks2" CollideRange="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="Barracks2LiftOff" parent="TerranBuildingLiftOff" unit="BarracksFlying">
+        <Name value="Abil/Name/Barracks2LiftOff"/>
+        <InfoArray index="0" Unit="Barracks2Flying"/>
+    </CAbilMorph>
+    <CAbilTrain id="Barracks2Train">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <Range value="5"/>
+        <InfoArray index="Train1" Time="25">
+            <Button DefaultButtonFace="Marine" State="Restricted"/>
+            <Unit value="Marine"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="40">
+            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Reaper"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="40">
+            <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
+            <Unit value="Ghost"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="30">
+            <Button DefaultButtonFace="Marauder" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Marauder"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="25">
+            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Medic"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="30">
+            <Button DefaultButtonFace="FlameMech" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Firebat"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="50">
+            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
+            <Unit value="Spectre"/>
+        </InfoArray>
+    </CAbilTrain>
     <CAbilSpecialize id="CCBuild">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Specialize1" Time="7" Effect="SupplyDepotBuilt">
@@ -139,7 +333,7 @@
             </Charge>
             <Button DefaultButtonFace="Refinery" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build3" Unit="Barracks" Time="3">
+        <InfoArray index="Build3" Unit="Barracks2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -148,7 +342,7 @@
             </Charge>
             <Button DefaultButtonFace="Barracks" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build4" Unit="EngineeringBay" Time="3">
+        <InfoArray index="Build4" Unit="EngineeringBay2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -166,7 +360,7 @@
             </Charge>
             <Button DefaultButtonFace="Bunker" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build6" Unit="MissileTurret" Time="3">
+        <InfoArray index="Build6" Unit="MissileTurret2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -175,7 +369,7 @@
             </Charge>
             <Button DefaultButtonFace="MissileTurret" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build7" Unit="SensorTower" Time="3">
+        <InfoArray index="Build7" Unit="SensorTower2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -184,7 +378,7 @@
             </Charge>
             <Button DefaultButtonFace="SensorTower" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build8" Unit="GhostAcademy" Time="3">
+        <InfoArray index="Build8" Unit="GhostAcademy2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -193,7 +387,7 @@
             </Charge>
             <Button DefaultButtonFace="GhostAcademy" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build9" Unit="Factory" Time="3">
+        <InfoArray index="Build9" Unit="Factory2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -202,7 +396,7 @@
             </Charge>
             <Button DefaultButtonFace="Factory" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build10" Unit="Armory" Time="3">
+        <InfoArray index="Build10" Unit="Armory2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -211,7 +405,7 @@
             </Charge>
             <Button DefaultButtonFace="Armory" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build11" Unit="Starport" Time="3">
+        <InfoArray index="Build11" Unit="Starport2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -220,7 +414,7 @@
             </Charge>
             <Button DefaultButtonFace="Starport" State="Restricted"/>
         </InfoArray>
-        <InfoArray index="Build12" Unit="FusionCore" Time="3">
+        <InfoArray index="Build12" Unit="FusionCore2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -234,20 +428,205 @@
     </CAbilBuild>
     <CAbilQueue id="CCQueue">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <QueueSize value="8"/>
-        <Flags index="Passive" value="1"/>
+        <QueueSize value="15"/>
     </CAbilQueue>
-    <CAbilTrain id="CommandCenterTrain2">
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <DataCollection value="CommandCenterTrain"/>
-        <InfoArray index="Train1" Time="17">
-            <Button DefaultButtonFace="SCV" State="Restricted">
-                <Flags index="ToSelection" value="1"/>
-            </Button>
-            <Unit value="SCV2"/>
+    <CAbilMorphPlacement id="CommandCenter2Land" parent="TerranBuildingLand" unit="CommandCenter">
+        <Name value="Abil/Name/CommandCenter2Land"/>
+        <InfoArray index="0" Unit="CommandCenter2" CollideRange="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
         </InfoArray>
-        <Alert value="TrainWorkerComplete"/>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="CommandCenter2LiftOff" parent="TerranBuildingLiftOff" unit="CommandCenterFlying">
+        <Name value="Abil/Name/CommandCenter2LiftOff"/>
+        <InfoArray index="0" Unit="CommandCenter2Flying"/>
+    </CAbilMorph>
+    <CAbilResearch id="EngineeringBay2Research">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="80" Upgrade="HiSecAutoTracking">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchHiSecAutoTracking" State="Restricted" Requirements="LearnTerranDefenseRangeBonus"/>
+        </InfoArray>
+        <InfoArray index="Research2" Time="140" Upgrade="TerranBuildingArmor">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="UpgradeBuildingArmorLevel1" State="Restricted" Requirements="LearnTerranBuildingArmor"/>
+        </InfoArray>
+        <InfoArray index="Research3" Time="160" Upgrade="TerranInfantryWeaponsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranInfantryWeaponsLevel1" State="Restricted" Requirements="LearnTerranInfantryWeapon1"/>
+        </InfoArray>
+        <InfoArray index="Research4" Time="190" Upgrade="TerranInfantryWeaponsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranInfantryWeaponsLevel2" State="Restricted" Requirements="LearnTerranInfantryWeapon2"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="220" Upgrade="TerranInfantryWeaponsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranInfantryWeaponsLevel3" State="Restricted" Requirements="LearnTerranInfantryWeapon3"/>
+        </InfoArray>
+        <InfoArray index="Research6" Time="110" Upgrade="NeosteelFrame">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchNeosteelFrame" State="Restricted" Requirements="LearnNeosteelFrame">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research7" Time="160" Upgrade="TerranInfantryArmorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranInfantryArmorLevel1" State="Restricted" Requirements="LearnTerranInfantryArmor1"/>
+        </InfoArray>
+        <InfoArray index="Research8" Time="190" Upgrade="TerranInfantryArmorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranInfantryArmorLevel2" State="Restricted" Requirements="LearnTerranInfantryArmor2"/>
+        </InfoArray>
+        <InfoArray index="Research9" Time="220" Upgrade="TerranInfantryArmorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranInfantryArmorLevel3" State="Restricted" Requirements="LearnTerranInfantryArmor3"/>
+        </InfoArray>
+        <InfoArray index="Research11" Time="170" Upgrade="TerranInfantryWeaponsUltraCapacitorsLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranInfantryWeaponsUltraCapacitorsLevel1" Requirements="LearnTerranInfantryWeaponUltraCapacitors1"/>
+        </InfoArray>
+        <InfoArray index="Research12" Time="200" Upgrade="TerranInfantryWeaponsUltraCapacitorsLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranInfantryWeaponsUltraCapacitorsLevel2" Requirements="LearnTerranInfantryWeaponUltraCapacitors2"/>
+        </InfoArray>
+        <InfoArray index="Research13" Time="230" Upgrade="TerranInfantryWeaponsUltraCapacitorsLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranInfantryWeaponsUltraCapacitorsLevel3" Requirements="LearnTerranInfantryWeaponUltraCapacitors3"/>
+        </InfoArray>
+        <InfoArray index="Research14" Time="170" Upgrade="TerranInfantryArmorsVanadiumPlatingLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="TerranInfantryArmorVanadiumPlatingLevel1" Requirements="LearnTerranInfantryArmorVanadiumPlating1"/>
+        </InfoArray>
+        <InfoArray index="Research15" Time="200" Upgrade="TerranInfantryArmorsVanadiumPlatingLevel2">
+            <Resource index="Minerals" value="175"/>
+            <Resource index="Vespene" value="175"/>
+            <Button DefaultButtonFace="TerranInfantryArmorVanadiumPlatingLevel2" Requirements="LearnTerranInfantryArmorVanadiumPlating2"/>
+        </InfoArray>
+        <InfoArray index="Research16" Time="230" Upgrade="TerranInfantryArmorsVanadiumPlatingLevel3">
+            <Resource index="Minerals" value="250"/>
+            <Resource index="Vespene" value="250"/>
+            <Button DefaultButtonFace="TerranInfantryArmorVanadiumPlatingLevel3" Requirements="LearnTerranInfantryArmorVanadiumPlating3"/>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilBuild id="Factory2AddOns" parent="TerranAddOns">
+        <Name value="Abil/Name/Factory2AddOns"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <BuildMorphAbil value="Factory2LiftOff"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="Build1" Unit="FactoryTechLab" Time="25">
+            <Button DefaultButtonFace="BuildTechLabFactory" Requirements="UseTechReactorHide"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="FactoryReactor" Time="50">
+            <Button Requirements="UseTechReactorHide"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="FactoryTechReactor" Time="50" AddOnParentCmdPriority="-1">
+            <Button DefaultButtonFace="TechReactorAI" Requirements="UseTechReactorAI"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="FactoryTechReactor" Time="50" AddOnParentCmdPriority="-1">
+            <Button DefaultButtonFace="TechReactor" Requirements="UseTechReactor"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilMorphPlacement id="Factory2Land" parent="TerranBuildingLand" unit="Factory">
+        <Name value="Abil/Name/Factory2Land"/>
+        <InfoArray index="0" Unit="Factory2" CollideRange="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="Factory2LiftOff" parent="TerranBuildingLiftOff" unit="FactoryFlying">
+        <Name value="Abil/Name/Factory2LiftOff"/>
+        <InfoArray index="0" Unit="Factory2Flying"/>
+    </CAbilMorph>
+    <CAbilTrain id="Factory2Train">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Building"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="Train1" Time="16">
+            <Button DefaultButtonFace="SCV"/>
+            <Unit value="SCV"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="45">
+            <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="SiegeTank"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="35">
+            <Button DefaultButtonFace="CommandCenter"/>
+            <Unit value="CommandCenter2Flying"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="60">
+            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmoryAndAttachedTechLabOrAttachedTechReactor"/>
+            <Unit value="Thor"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="30">
+            <Button DefaultButtonFace="Hellion" State="Restricted"/>
+            <Unit value="Hellion"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="40">
+            <Button DefaultButtonFace="Goliath" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Goliath"/>
+        </InfoArray>
+        <InfoArray index="Train8" Time="50">
+            <Button DefaultButtonFace="Diamondback" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Diamondback"/>
+        </InfoArray>
+        <InfoArray index="Train9" Time="25">
+            <Button DefaultButtonFace="Vulture" State="Restricted"/>
+            <Unit value="Vulture"/>
+        </InfoArray>
+        <InfoArray index="Train10" Time="40">
+            <Button DefaultButtonFace="Predator" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Predator"/>
+        </InfoArray>
     </CAbilTrain>
+    <CAbilResearch id="FusionCore2Research">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="60" Upgrade="BattlecruiserEnableSpecializations">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchBattlecruiserSpecializations" State="Restricted" Requirements="LearnBattlecruiserSpecializations">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="80" Upgrade="BattlecruiserBehemothReactor">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchBattlecruiserEnergyUpgrade" State="Restricted" Requirements="LearnBattlecruiserEnergyUpgrade">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilResearch id="GhostAcademy2Research">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <InfoArray index="Research1" Time="120" Upgrade="PersonalCloaking">
+            <Resource index="Minerals" value="150"/>
+            <Resource index="Vespene" value="150"/>
+            <Button DefaultButtonFace="ResearchPersonalCloaking" State="Restricted" Requirements="LearnPersonnelCloaking">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="80" Upgrade="GhostMoebiusReactor">
+            <Resource index="Minerals" value="100"/>
+            <Resource index="Vespene" value="100"/>
+            <Button DefaultButtonFace="ResearchGhostEnergyUpgrade" State="Restricted" Requirements="LearnGhostEnergyUpgrade">
+                <Flags index="ShowInGlossary" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilArmMagazine id="GhostSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
@@ -269,16 +648,6 @@
         <ExternalAngle value="315"/>
         <MaxCount value="4"/>
     </CAbilArmMagazine>
-    <CAbilTrain id="GrowNewTib">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Range value="7"/>
-        <InfoArray index="Train1" Time="60">
-            <Button DefaultButtonFace="Decal_Spray_0070_01"/>
-            <Unit value="MineralField"/>
-            <Flags index="AutoCast" value="1"/>
-            <Flags index="AutoCastOn" value="1"/>
-        </InfoArray>
-    </CAbilTrain>
     <CAbilArmMagazine id="MarauderSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
@@ -325,6 +694,18 @@
         <ExternalAngle value="337.5"/>
         <MaxCount value="8"/>
     </CAbilArmMagazine>
+    <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
+        <Name value="Abil/Name/OrbitalCommandLand2"/>
+        <InfoArray index="0" Unit="OrbitalCommand2" CollideRange="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="OrbitalLiftOff2" parent="TerranBuildingLiftOff" unit="OrbitalCommandFlying">
+        <Name value="Abil/Name/OrbitalLiftOff2"/>
+        <InfoArray index="0" Unit="OrbitalCommandFlying2"/>
+    </CAbilMorph>
     <CAbilArmMagazine id="ReaperSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
@@ -357,6 +738,72 @@
         <ResourceAcquire index="Custom" value="1"/>
         <ResourceDestroy index="Vespene" value="0"/>
     </CAbilHarvest>
+    <CAbilBuild id="Starport2AddOns" parent="TerranAddOns">
+        <Name value="Abil/Name/Starport2AddOns"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <BuildMorphAbil value="Starport2LiftOff"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <InfoArray index="Build1" Unit="StarportTechLab" Time="25">
+            <Button DefaultButtonFace="BuildTechLabStarport" Requirements="UseTechReactorHide"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="StarportReactor" Time="50">
+            <Button Requirements="UseTechReactorHide"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="StarportTechReactor" Time="50" AddOnParentCmdPriority="-1">
+            <Button DefaultButtonFace="TechReactorAI" Requirements="UseTechReactorAI"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="StarportTechReactor" Time="50" AddOnParentCmdPriority="-1">
+            <Button DefaultButtonFace="TechReactor" Requirements="UseTechReactor"/>
+        </InfoArray>
+    </CAbilBuild>
+    <CAbilMorphPlacement id="Starport2Land" parent="TerranBuildingLand" unit="Starport">
+        <Name value="Abil/Name/Starport2Land"/>
+        <InfoArray index="0" Unit="Starport2" CollideRange="0">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="2"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorphPlacement>
+    <CAbilMorph id="Starport2LiftOff" parent="TerranBuildingLiftOff" unit="StarportFlying">
+        <Name value="Abil/Name/Starport2LiftOff"/>
+        <InfoArray index="0" Unit="Starport2Flying"/>
+    </CAbilMorph>
+    <CAbilTrain id="Starport2Train">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <Activity value="UI/Building"/>
+        <InfoArray index="Train1" Time="42">
+            <Button DefaultButtonFace="Medivac" State="Restricted"/>
+            <Unit value="Medivac"/>
+        </InfoArray>
+        <InfoArray index="Train2" Time="60">
+            <Button DefaultButtonFace="Banshee" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Banshee"/>
+        </InfoArray>
+        <InfoArray index="Train3" Time="60">
+            <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Raven"/>
+        </InfoArray>
+        <InfoArray index="Train4" Time="110">
+            <Button DefaultButtonFace="Battlecruiser" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
+            <Unit value="Battlecruiser"/>
+        </InfoArray>
+        <InfoArray index="Train5" Time="42">
+            <Button DefaultButtonFace="VikingFighter" State="Restricted"/>
+            <Unit value="VikingFighter"/>
+        </InfoArray>
+        <InfoArray index="Train6" Time="70">
+            <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
+            <Unit value="Hercules"/>
+        </InfoArray>
+        <InfoArray index="Train7" Time="60">
+            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="BuildScienceVessel"/>
+            <Unit value="ScienceVessel"/>
+        </InfoArray>
+        <InfoArray index="Train8" Time="50">
+            <Button DefaultButtonFace="Wraith" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Unit value="Wraith"/>
+        </InfoArray>
+    </CAbilTrain>
     <CAbilMorph id="SupplyDepot2Lower">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Lower"/>
@@ -397,5 +844,30 @@
                 <DurationArray index="Delay" value="1.3"/>
             </SectionArray>
         </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="UpgradeToPlanetaryFortress2">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PlanetaryFortress" State="Restricted" Requirements="HaveEngineeringBay"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="CancelUpgradeMorph"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Birth" value="1"/>
+        <Flags index="DisableAbils" value="1"/>
+        <Flags index="FastBuild" value="1"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="Produce" value="1"/>
+        <Flags index="ShowProgress" value="1"/>
+        <InfoArray Score="1" Unit="PlanetaryFortress2">
+            <SectionArray index="Abils">
+                <DurationArray index="Delay" value="50"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="50"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="50"/>
+            </SectionArray>
+        </InfoArray>
+        <Alert value="UpgradeComplete"/>
+        <ValidatorArray value="HasNoCargo"/>
     </CAbilMorph>
 </Catalog>

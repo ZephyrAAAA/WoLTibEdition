@@ -1,76 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CActorUnit id="Armory2" parent="TerranBuildingEx" unitName="Armory2">
+        <Aliases value="_UnitHuge"/>
+        <On index="69" Terms="UnitConstruction.Armory2.Start" Send="Create ArmoryBuild"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationArmory"/>
+        <On Terms="Abil.que5.Start" Send="AnimSetTimeScale ::Baseline 5.000000"/>
+        <On Terms="Abil.que5.Stop" Send="AnimSetTimeScale ::Baseline 1.000000"/>
+        <Model value="Armory"/>
+        <CreepHeightClass value="Small"/>
+        <BuildModel value="Armory"/>
+        <DeathArray index="Normal" ModelLink="ArmoryDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="Armory_Explode"/>
+        <PlacementModel value="ArmoryPlacement"/>
+        <PortraitModel value="ArmoryPortrait"/>
+        <BarOffset value="115"/>
+        <BarWidth value="135"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-Armory.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-Armory.dds"/>
+        <NameOffset value="100"/>
+        <SoundArray index="Ready" value="Armory_Ready"/>
+        <SoundArray index="What" value="Armory_What"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-Armory.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-Armory.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="Armory2Splat" parent="GenericUnitSplat" unitName="Armory2">
+        <Model value="ArmorySplat"/>
+    </CActorSplat>
+    <CActorUnit id="Barracks2" parent="TerranBuildingFlyerEx" unitName="Barracks2">
+        <On index="69" Send="Create BarracksBuild"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationBarracks"/>
+        <On Terms="UnitDeathCustomize.Barracks2Flying" Send="DeathCustomize Flying"/>
+        <Model value="Barracks"/>
+        <BuildModel value="Barracks"/>
+        <DeathArray index="Normal" ModelLink="BarracksDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="Barracks_Explode"/>
+        <DeathCustoms index="5" ModelLink="BarracksFlyDeath" SoundLink="Barracks_Explode" Name="Flying"/>
+        <PlacementModel value="BarracksPlacement"/>
+        <PortraitModel value="BarracksPortrait"/>
+        <BarOffset value="155"/>
+        <BarWidth value="160"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-Barracks.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-Barracks.dds"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Barracks_Ready"/>
+        <SoundArray index="What" value="Barracks_What"/>
+        <SoundArray index="Movement" value="Barracks_Movement"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-Barracks.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-Barracks.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <CActorUnit id="CommandCenter2" parent="TerranBuildingFlyerEx" unitName="CommandCenter">
         <Macros value="MacroTownhallDeco_Terran"/>
         <Macros value="TerranCommandCenterPlayerDecalMacro"/>
         <Macros value="SprayHelperMacro"/>
         <AcceptedHostedPropTransfers index="Decal" value="0"/>
-        <On index="0" Terms="UnitBirth.CommandCenter3"/>
-        <On index="1" Terms="UnitBirth.CommandCenter3"/>
-        <On index="2" Terms="UnitRevive.CommandCenter3"/>
-        <On index="3" Terms="UnitRevive.CommandCenter3"/>
-        <On index="4" Terms="UnitConstruction.CommandCenter3.Start"/>
-        <On index="5" Terms="UnitConstruction.CommandCenter3.Finish"/>
-        <On index="69" Terms="UnitConstruction.CommandCenter3.Start"/>
-        <On index="70" Terms="UnitConstruction.CommandCenter3.Start"/>
-        <On index="71" Terms="UnitConstruction.CommandCenter3.Cancel"/>
-        <On index="72" Terms="UnitConstruction.CommandCenter3.Finish"/>
-        <On index="73" Terms="UnitConstruction.CommandCenter3.Start"/>
-        <On index="74" Terms="UnitBirth.CommandCenter3.Normal"/>
-        <On index="75" Terms="UnitBirth.CommandCenter3.Suppressed"/>
-        <On index="76" Terms="UnitBirth.CommandCenter3.EditorPlaced"/>
-        <On index="77" Terms="UnitDeath.CommandCenter3"/>
+        <On index="0" Terms="UnitBirth.CommandCenter2"/>
+        <On index="1" Terms="UnitBirth.CommandCenter2"/>
+        <On index="2" Terms="UnitRevive.CommandCenter2"/>
+        <On index="3" Terms="UnitRevive.CommandCenter2"/>
+        <On index="4" Terms="UnitConstruction.CommandCenter2.Start"/>
+        <On index="5" Terms="UnitConstruction.CommandCenter2.Finish"/>
+        <On index="69" Terms="UnitConstruction.CommandCenter2.Start"/>
+        <On index="70" Terms="UnitConstruction.CommandCenter2.Start"/>
+        <On index="71" Terms="UnitConstruction.CommandCenter2.Cancel"/>
+        <On index="72" Terms="UnitConstruction.CommandCenter2.Finish"/>
+        <On index="73" Terms="UnitConstruction.CommandCenter2.Start"/>
+        <On index="74" Terms="UnitBirth.CommandCenter2.Normal"/>
+        <On index="75" Terms="UnitBirth.CommandCenter2.Suppressed"/>
+        <On index="76" Terms="UnitBirth.CommandCenter2.EditorPlaced"/>
+        <On index="77" Terms="UnitDeath.CommandCenter2"/>
+        <On index="80" Terms="UnitBirth.CommandCenter2Flying" Send="Create"/>
+        <On index="81" Terms="UnitBirth.CommandCenter2Flying" Send="AnimGroupApply Fly Fly,Start Fly,End Instant"/>
+        <On index="82" Terms="UnitBirth.CommandCenter2Flying" Send="AliasRemove _CreepEngulfable"/>
+        <On index="83" Terms="UnitBirth.CommandCenter2Flying" Send="CreepEngulfmentStopTransition"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove A"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimGroupApply B"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimBaselineStop"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimPlay Morph Morph 0 0.000000"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimBaselineStart"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="AnimGroupApply A"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="AnimBaselineStop"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="AnimPlay Morph Morph 0 1.500000"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="AnimGroupRemove A"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="AnimBaselineStart"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimGroupApply B"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimBaselineStop"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimPlay Morph Morph 0 0.000000"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimClear Morph"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimGroupRemove B"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimBaselineStart"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimGroupApply A"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimBaselineStop"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimPlay Morph Morph 0 1.500000"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimClear Morph"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimGroupRemove A"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimBaselineStart"/>
         <On Terms="Abil.*.TransportOccupy" Send="AnimPlay StandC Stand,Work,C PlayForever"/>
         <On Terms="Abil.*.TransportEmpty" Send="AnimClear StandC"/>
-        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter2"/>
         <On Terms="Behavior.Corruption.On" Send="AnimSetPaused Morph"/>
         <On Terms="Behavior.Corruption.Off" Send="AnimSetPaused Morph 0"/>
-        <On Terms="UnitDeathCustomize; AnimPlaying Morph; !ModelIsLowQuality" Send="Create CommandCenterMorphDeath"/>
+        <On Terms="UnitDeathCustomize; AnimPlaying Morph; !ModelIsLowQuality" Send="Create CommandCenter2MorphDeath"/>
         <On Terms="UnitDeathCustomize; AnimPlaying Morph" Send="DeathCustomize Variation2"/>
-        <On Terms="Abil.CommandCenterLiftOff.Start" Send="StatusSet FlyDeathAnim 1"/>
-        <On Terms="Abil.CommandCenterLiftOff.Start" Send="TimerSet 1.100000 FlyDeathAnimChange"/>
+        <On Terms="Abil.CommandCenter2LiftOff.Start" Send="StatusSet FlyDeathAnim 1"/>
+        <On Terms="Abil.CommandCenter2LiftOff.Start" Send="TimerSet 1.100000 FlyDeathAnimChange"/>
         <On Terms="TimerExpired; TimerName FlyDeathAnimChange" Send="StatusSet FlyDeathAnim 2"/>
-        <On Terms="UnitBirth.CommandCenterFlying" Send="StatusSet FlyDeathAnim 2"/>
-        <On Terms="Abil.CommandCenterLand.Start" Send="TimerSet 0.700000 LandDeathAnimChange"/>
-        <On Terms="Abil.CommandCenterLand.Start" Send="TimerSet 1.100000 LandDeathAnimChangeB"/>
+        <On Terms="UnitBirth.CommandCenter2Flying" Send="StatusSet FlyDeathAnim 2"/>
+        <On Terms="Abil.CommandCenter2Land.Start" Send="TimerSet 0.700000 LandDeathAnimChange"/>
+        <On Terms="Abil.CommandCenter2Land.Start" Send="TimerSet 1.100000 LandDeathAnimChangeB"/>
         <On Terms="TimerExpired; TimerName LandDeathAnimChange" Send="StatusSet FlyDeathAnim 1"/>
         <On Terms="TimerExpired; TimerName LandDeathAnimChangeB" Send="StatusSet FlyDeathAnim 0"/>
         <On Terms="UnitDeathCustomize; IsStatus FlyDeathAnim 1" Send="DeathCustomize Variation3"/>
         <On Terms="UnitDeathCustomize; IsStatus FlyDeathAnim 2" Send="DeathCustomize Flying"/>
-        <On Terms="UnitBirth.CommandCenterFlying" Send="HideWorkerCount 1"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenterFlying; MorphTo CommandCenter" Send="HideWorkerCount"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo CommandCenterFlying" Send="HideWorkerCount 1"/>
-        <On Terms="UnitBirth.CommandCenter3" Send="Create PlayerLogoDoodadList"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo CommandCenterFlying" Target="PlayerLogoDoodadList" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenterFlying; MorphTo CommandCenter" Send="Create PlayerLogoDoodadList"/>
+        <On Terms="UnitBirth.CommandCenter2Flying" Send="HideWorkerCount 1"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2Flying; MorphTo CommandCenter2" Send="HideWorkerCount"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo CommandCenter2Flying" Send="HideWorkerCount 1"/>
+        <On Terms="UnitBirth.CommandCenter2" Send="Create PlayerLogoDoodadList"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenter2Flying" Target="PlayerLogoDoodadList" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2Flying; MorphTo CommandCenter2" Send="Create PlayerLogoDoodadList"/>
         <On Terms="Behavior.250mmStrikeCannons.On" Send="AnimSetPaused Morph"/>
         <On Terms="Behavior.250mmStrikeCannons.Off" Send="AnimSetPaused Morph 0"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo CommandCenterFlying" Target="TerranClanFlag" Send="Signal DestroyFlag"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenterFlying; MorphTo CommandCenter; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
-        <On Terms="UnitBirth.CommandCenter3; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo CommandCenterFlying" Target="TerranPlayerTrophy" Send="Signal DestroyFlag"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenterFlying; MorphTo CommandCenter; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
-        <On Terms="UnitBirth.CommandCenter3; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenter2Flying" Target="TerranClanFlag" Send="Signal DestroyFlag"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2Flying; MorphTo CommandCenter2; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="UnitBirth.CommandCenter2; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenter2Flying" Target="TerranPlayerTrophy" Send="Signal DestroyFlag"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2Flying; MorphTo CommandCenter2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <On Terms="UnitBirth.CommandCenter2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <On Terms="UnitBirth.CommandCenter2.Normal; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Normal; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
+        <On Terms="ActorCreation; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
+        <On Terms="UnitConstruction.*.Start; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply Jump"/>
+        <On Terms="UnitBirth.*.Normal; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove Jump"/>
+        <On Terms="Upgrade.OrbitalRelay.Add" Send="AnimGroupApply B"/>
+        <On Terms="UnitPlayerChange; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
+        <On Terms="UnitPlayerChange; !ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
+        <On Terms="Upgrade.CommandCenter2Reactor.Add" Send="Create CommandCenter2Reactor"/>
+        <On Terms="Upgrade.CommandCenter2Reactor.Add" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimClear Morph"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimPlay Morph Morph,C 0 1.500000"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction" Send="DeathCustomize Variation6"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction; IsStatus FlyDeathAnim 2" Send="DeathCustomize Variation9"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit CommandCenter2ReactorPurchasedAndNotUnderConstruction" Send="Create CommandCenter2ReactorDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="CommandCenter_Explode"/>
         <DeathCustoms index="5" ModelLink="CommandCenterDeath" SoundLink="CommandCenter_Explode" Name="Variation2"/>
         <DeathCustoms ModelLink="CommandCenterFlyDeath" SoundLink="CommandCenter_Explode" Name="Flying"/>
         <DeathCustoms ModelLink="CommandCenterDeathLow" Name="Variation3"/>
+        <DeathCustoms ModelLink="OrbitalCommandDeath" Name="Variation6"/>
+        <DeathCustoms ModelLink="OrbitalCommandFlyDeath" Name="Variation9"/>
         <BarOffset value="165"/>
         <BarWidth value="200"/>
         <GroupIcon>
@@ -83,12 +166,125 @@
             <Image value="Assets\Textures\Wireframe-Terran-CommandCenter.dds"/>
         </Wireframe>
     </CActorUnit>
-    <CActorSplat id="CommandCenterSplat2" parent="GenericUnitSplat" unitName="CommandCenter3">
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Start; MorphTo CommandCenter; MorphFrom CommandCenterFlying" Send="Create"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter; MorphTo CommandCenterFlying" Send="Destroy"/>
+    <CActorSplat id="CommandCenter2Splat" parent="GenericUnitSplat" unitName="CommandCenter2">
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Start; MorphTo CommandCenter2; MorphFrom CommandCenterFlying2" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenterFlying2" Send="Destroy"/>
         <Model value="CommandCenterSplat"/>
+    </CActorSplat>
+    <CActorUnit id="EngineeringBay2" parent="TerranBuildingEx" unitName="EngineeringBay2">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="QueueAnim"/>
+        <On index="69" Terms="UnitConstruction.EngineeringBay2.Start" Send="Create EngineeringBayBuild"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationEngineeringBay"/>
+        <Model value="EngineeringBay"/>
+        <CreepHeightClass value="Medium"/>
+        <BuildModel value="EngineeringBay"/>
+        <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
+        <PlacementModel value="EngineeringBayPlacement"/>
+        <PortraitModel value="EngineeringBayPortrait"/>
+        <BarOffset value="110"/>
+        <BarWidth value="135"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-EngineeringBay.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-engineeringbay.dds"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="EngineeringBay_Ready"/>
+        <SoundArray index="What" value="EngineeringBay_What"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-engineeringbay.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-EngineeringBay.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="EngineeringBay2Splat" parent="GenericUnitSplat" unitName="EngineeringBay2">
+        <Model value="EngineeringBaySplat"/>
+    </CActorSplat>
+    <CActorUnit id="Factory2" parent="TerranBuildingFlyerEx" unitName="Factory2">
+        <On index="69" Send="Create FactoryBuild"/>
+        <On Terms="UnitDeathCustomize.Factory2Flying" Send="DeathCustomize Flying"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestedVisual"/>
+        <Model value="Factory"/>
+        <BuildModel value="Factory"/>
+        <DeathArray index="Normal" ModelLink="FactoryDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Factory_Explode"/>
+        <DeathCustoms index="5" ModelLink="FactoryFlyDeath" SoundLink="Factory_Explode" Name="Flying"/>
+        <PlacementModel value="FactoryPlacement"/>
+        <PortraitModel value="FactoryPortrait"/>
+        <BarOffset value="150"/>
+        <BarWidth value="160"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-Factory.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-Factory.dds"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Factory_Ready"/>
+        <SoundArray index="What" value="Factory_What"/>
+        <SoundArray index="Movement" value="Factory_Movement"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-Factory.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-Factory.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="QueueAnim"/>
+        <On index="69" Terms="UnitConstruction.FusionCore2.Start" Send="Create FusionCoreBuild"/>
+        <Model value="FusionCore"/>
+        <CreepHeightClass value="Medium"/>
+        <BuildModel value="FusionCore"/>
+        <DeathArray index="Normal" ModelLink="FusionCoreDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="FusionCore_Explode"/>
+        <PlacementModel value="FusionCorePlacement"/>
+        <PortraitModel value="FusionCorePortrait"/>
+        <BarOffset value="115"/>
+        <BarWidth value="135"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-FusionCore.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-fusioncore.dds"/>
+        <NameOffset value="100"/>
+        <SoundArray index="Ready" value="FusionCore_Ready"/>
+        <SoundArray index="What" value="FusionCore_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-fusioncore.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-FusionCore.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="FusionCore2Splat" parent="GenericUnitSplat" unitName="FusionCore2">
+        <Model value="FusionCoreSplat"/>
+    </CActorSplat>
+    <CActorUnit id="GhostAcademy2" parent="TerranBuildingEx" unitName="GhostAcademy2">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="QueueAnim"/>
+        <On index="69" Terms="UnitConstruction.GhostAcademy2.Start" Send="Create GhostAcademyBuild"/>
+        <Model value="GhostAcademy"/>
+        <BuildModel value="GhostAcademy"/>
+        <DeathArray index="Normal" ModelLink="GhostAcademyDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="GhostAcademy_Explode"/>
+        <PlacementModel value="GhostAcademyPlacement"/>
+        <PortraitModel value="GhostAcademyPortrait"/>
+        <BarOffset value="125"/>
+        <BarWidth value="155"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-GhostAcademy.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-ghostacademy.dds"/>
+        <NameOffset value="100"/>
+        <SoundArray index="Ready" value="GhostAcademy_Ready"/>
+        <SoundArray index="What" value="GhostAcademy_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-ghostacademy.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-GhostAcademy.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="GhostAcademy2Splat" parent="GenericUnitSplat" unitName="GhostAcademy2">
+        <Model value="GhostAcademySplat"/>
     </CActorSplat>
     <CActorUnit id="GhostSquad" parent="Ghost" unitName="GhostSquad">
         <Macros index="1" removed="1"/>
@@ -215,9 +411,13 @@
         <On index="77" removed="1"/>
         <On index="78" removed="1"/>
         <On index="79" removed="1"/>
+        <On index="80" removed="1"/>
+        <On index="81" removed="1"/>
+        <On index="82" removed="1"/>
+        <On index="83" removed="1"/>
         <Model value="VespeneGeyser"/>
         <ModelFlags index="OutlineEmitter" value="0"/>
-        <EventDataFootprint index="0" Actor="UnitFootprint" Model="MarineSquadFootprint"/>
+        <EventDataFootprint index="0" Model="MarineSquadFootprint"/>
         <BuildModel value="VespeneGeyser"/>
         <DeathArray index="Normal" ModelLink="MarineSquad" SoundLink="MarineSquadDeath" VoiceLink="MarineSquadDeathVoice"/>
         <DeathArray index="Blast" ModelLink=""/>
@@ -250,6 +450,136 @@
     <CActorUnit id="MineralField">
         <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
     </CActorUnit>
+    <CActorUnit id="MissileTurret2" parent="TerranBuildingEx" unitName="MissileTurret2">
+        <Aliases value="_UnitHuge"/>
+        <On index="69" Terms="UnitConstruction.MissileTurret2.Start" Send="Create MissileTurretBuild"/>
+        <On Terms="ActorCreation; ValidateUnit MissileTurretUpgraded" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="Upgrade.ReinforcedSuperstructure.Add" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
+        <On Terms="Signal.*.test" Send="Create TurretUnitDeathModel"/>
+        <On Terms="Signal.*.test" Send="SetOpacity"/>
+        <On Terms="ActorCreation; ValidateUnit MissileTurretUpgraded" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="Upgrade.ReinforcedSuperstructure.Add" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
+        <Model value="MissileTurret"/>
+        <CreepHeightClass value="Small"/>
+        <BuildModel value="MissileTurret"/>
+        <DeathArray index="Normal" ModelLink="MissileTurretDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
+        <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
+        <PlacementModel value="MissileTurretPlacement"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <PlacementActorModel value="MissileTurretSkinnablePlacementModel"/>
+        <PortraitModel value="MissileTurretPortrait"/>
+        <BarOffset value="90"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-MissileTurret.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-missileturret.dds"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-missileturret.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-MissileTurret.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit id="OrbitalCommand2" parent="TerranBuildingFlyerEx" unitName="OrbitalCommand2">
+        <Macros value="MacroTownhallDeco_Terran"/>
+        <Macros value="TerranOrbitalCommandPlayerDecalMacro"/>
+        <AcceptedHostedPropTransfers index="Decal" value="0"/>
+        <On index="80" Terms="UnitBirth.OrbitalCommandFlying2" Send="Create"/>
+        <On index="81" Terms="UnitBirth.OrbitalCommandFlying2" Send="AnimGroupApply Fly Fly,Start Fly,End Instant"/>
+        <On index="82" Terms="UnitBirth.OrbitalCommandFlying2" Send="AliasRemove _CreepEngulfable"/>
+        <On index="83" Terms="UnitBirth.OrbitalCommandFlying2" Send="CreepEngulfmentStopTransition"/>
+        <On Terms="UnitBirth.OrbitalCommand2" Send="AnimGroupApply B {} {} Instant"/>
+        <On Terms="UnitBirth.OrbitalCommandFlying2" Send="AnimGroupApply B {} {} Instant"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="Create"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo OrbitalCommand" Send="AnimGroupApply B"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter"/>
+        <On Terms="UnitDeathCustomize.OrbitalCommandFlying2" Send="DeathCustomize Flying"/>
+        <On Terms="UnitBirth.OrbitalCommandFlying2" Send="HideWorkerCount 1"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom OrbitalCommandFlying; MorphTo OrbitalCommand" Send="HideWorkerCount"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom OrbitalCommand; MorphTo OrbitalCommandFlying" Send="HideWorkerCount 1"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom OrbitalCommand; MorphTo OrbitalCommandFlying" Target="PlayerLogoDoodadList" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom OrbitalCommandFlying; MorphTo OrbitalCommand" Send="Create PlayerLogoDoodadList"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom OrbitalCommand; MorphTo OrbitalCommandFlying" Target="TerranClanFlag" Send="Signal DestroyFlag"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom OrbitalCommandFlying; MorphTo OrbitalCommand; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="UnitBirth.OrbitalCommand2; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom OrbitalCommand; MorphTo OrbitalCommandFlying" Target="TerranPlayerTrophy" Send="Signal DestroyFlag"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom OrbitalCommandFlying; MorphTo OrbitalCommand; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <On Terms="UnitBirth.OrbitalCommand2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <Model value="CommandCenter"/>
+        <DeathArray index="Normal" ModelLink="OrbitalCommandDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath"/>
+        <DeathCustoms index="5" ModelLink="OrbitalCommandFlyDeath" SoundLink="OrbitalCommand_Explode" Name="Flying"/>
+        <PlacementModel value="OrbitalCommandPlacement"/>
+        <PortraitModel value="CommandCenterPortrait"/>
+        <BarOffset value="170"/>
+        <BarWidth value="200"/>
+        <GlossaryAnim value="Stand,B"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-OrbitalCommand.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-surveillancestation.dds"/>
+        <NameOffset value="150"/>
+        <SoundArray index="Birth" value="CommandCenterBirth"/>
+        <SoundArray index="Ready" value="CommandCenter_Ready"/>
+        <SoundArray index="Help" value="CommandCenterHelp"/>
+        <SoundArray index="What" value="OrbitalCommand"/>
+        <SoundArray index="Yes" value="CommandCenterYes"/>
+        <SoundArray index="Attack" value="CommandCenterYes"/>
+        <SoundArray index="Pissed" value="CommandCenterPissed"/>
+        <SoundArray index="Movement" value="OrbitalCommand_Movement"/>
+        <StatusHarvesterData Text="UI/HarvesterCountMinerals" SearchFilters="HarvestableResource;Player,Ally,Enemy" SearchRadius="8"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-surveillancestation.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-OrbitalCommand.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="OrbitalCommandSplat2" parent="TerranBuildingMorphSplat" unitName="OrbitalCommand2">
+        <Model value="OrbitalCommandSplat"/>
+    </CActorSplat>
+    <CActorUnit id="PlanetaryFortress2" parent="TerranBuildingEx" unitName="PlanetaryFortress2">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="QueueAnim"/>
+        <Macros value="BuildingFlattenTerrainMacro"/>
+        <Macros value="MacroTownhallDeco_Terran"/>
+        <Macros value="TerranPlanetaryFortressPlayerDecalMacro"/>
+        <AcceptedHostedPropTransfers index="Decal" value="0"/>
+        <On Terms="ActorCreation" Send="AnimGroupApply A"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="Create"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter"/>
+        <On Terms="Abil.*.TransportOccupy" Send="AnimPlay StandC Stand,Work,C PlayForever"/>
+        <On Terms="Abil.*.TransportEmpty" Send="AnimClear StandC"/>
+        <On Terms="UnitBirth.PlanetaryFortress2; PlayerHasClanDecal" Send="Create TerranClanFlag"/>
+        <On Terms="UnitBirth.PlanetaryFortress2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
+        <Model value="CommandCenter"/>
+        <DeathArray index="Normal" ModelLink="PlanetaryFortressDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="PlanetaryFortress_Explode"/>
+        <PortraitModel value="CommandCenterPortrait"/>
+        <BarOffset value="180"/>
+        <BarWidth value="200"/>
+        <GlossaryAnim value="Stand,A"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-PlanetaryFortress.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-PlanetaryFortress.dds"/>
+        <NameOffset value="150"/>
+        <SoundArray index="Ready" value="PlanetaryFortress_Ready"/>
+        <SoundArray index="What" value="PlanetaryFortress_What"/>
+        <StatusHarvesterData Text="UI/HarvesterCountMinerals" SearchFilters="HarvestableResource;Player,Ally,Enemy" SearchRadius="8"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-PlanetaryFortress.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-PlanetaryFortress.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="PlanetaryFortressSplat2" parent="TerranBuildingMorphSplat" unitName="PlanetaryFortress2">
+        <Model value="PlanetaryFortressSplat"/>
+    </CActorSplat>
     <CActorUnit id="ReaperSquad" parent="ReaperPlaceholder" unitName="ReaperSquad">
         <On index="0" Terms="UnitBirth.ReaperSquad" Send="Create SoundEmitter ReaperSquad_Ambience"/>
         <On index="1" Terms="UnitBirth.ReaperSquad"/>
@@ -401,6 +731,56 @@
         <LaunchAssets Model="SCVAttackLaunch"/>
         <ShieldFlashType value="Header"/>
     </CActorAction>
+    <CActorUnit id="SensorTower2" parent="TerranBuildingEx" unitName="SensorTower2">
+        <Aliases value="_UnitMedium"/>
+        <On index="69" Terms="UnitConstruction.SensorTower2.Start" Send="Create SensorTowerBuild"/>
+        <Model value="SensorTower"/>
+        <BuildModel value="SensorTower"/>
+        <DeathArray index="Normal" ModelLink="SensorTowerDeath" SoundLink="SensorTower_Explode"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="SensorTower_Explode"/>
+        <PlacementModel value="SensorTowerPlacement"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <PlacementActorModel value="SensorTowerPlacement"/>
+        <PortraitModel value="SensorTowerPortrait"/>
+        <BarOffset value="130"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-SensorTower.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-sensordome.dds"/>
+        <SoundArray index="Ready" value="SensorTower_Ready"/>
+        <SoundArray index="What" value="SensorTower_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-sensordome.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-SensorTower.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorUnit id="Starport2" parent="TerranBuildingFlyerEx" unitName="Starport2">
+        <On index="69" Send="Create StarportBuild"/>
+        <On Terms="UnitDeathCustomize.Starport2Flying" Send="DeathCustomize Flying"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestedVisual"/>
+        <Model value="Starport"/>
+        <BuildModel value="Starport"/>
+        <DeathArray index="Normal" ModelLink="StarportDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Starport_Explode"/>
+        <DeathCustoms index="5" ModelLink="StarportFlyDeath" SoundLink="Starport_Explode" Name="Flying"/>
+        <PlacementModel value="StarportPlacement"/>
+        <PortraitModel value="StarportPortrait"/>
+        <BarOffset value="155"/>
+        <BarWidth value="160"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-Starport.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-Starport.dds"/>
+        <NameOffset value="110"/>
+        <SoundArray index="Ready" value="Starport_Ready"/>
+        <SoundArray index="What" value="Starport_What"/>
+        <SoundArray index="Movement" value="Starport_Movement"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-Starport.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-Starport.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <CActorUnit id="SupplyDepot2" parent="TerranBuildingEx" unitName="SupplyDepot2">
         <Aliases value="_UnitLarge"/>
         <On index="69" Terms="UnitConstruction.SupplyDepot2.Start" Send="Create SupplyDepotBuild"/>

@@ -36,7 +36,8 @@
     <CBehaviorBuff id="PowerCheck">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="PlayerHasPower"/>
-        <Modification AttackSpeedMultiplier="0.01">
+        <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.01">
+            <RateMultiplierArray index="Morph" value="0.5"/>
             <RateMultiplierArray index="Queueable" value="0.5"/>
         </Modification>
     </CBehaviorBuff>

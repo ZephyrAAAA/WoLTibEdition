@@ -7,6 +7,14 @@
         <DataRecord Entry="Actor,ArmorySplat"/>
         <DataRecord Entry="Unit,Armory"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Armory2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,Armory2Research"/>
+        <DataRecord Entry="Actor,Armory2"/>
+        <DataRecord Entry="Actor,Armory2Splat"/>
+        <DataRecord Entry="Unit,Armory2"/>
+        <Button value="Armory"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Barracks">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,BarracksAddOns"/>
@@ -17,12 +25,70 @@
         <DataRecord Entry="Unit,BarracksFlying"/>
         <DataRecord Entry="Actor,Barracks"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Barracks2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,Barracks2AddOns"/>
+        <DataRecord Entry="Abil,Barracks2Land"/>
+        <DataRecord Entry="Abil,Barracks2LiftOff"/>
+        <DataRecord Entry="Abil,Barracks2Train"/>
+        <DataRecord Entry="Unit,Barracks2"/>
+        <DataRecord Entry="Unit,Barracks2Flying"/>
+        <DataRecord Entry="Actor,Barracks2"/>
+        <Button value="Barracks"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="CommandCenter">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,CommandCenterLand"/>
+        <DataRecord Entry="Abil,CommandCenterLiftOff"/>
+        <DataRecord Entry="Abil,UpgradeToPlanetaryFortress"/>
+        <DataRecord Entry="Abil,OrbitalLiftOff"/>
+        <DataRecord Entry="Abil,OrbitalCommandLand"/>
+        <DataRecord Entry="Actor,CommandCenter"/>
+        <DataRecord Entry="Actor,CommandCenterSplat"/>
+        <DataRecord Entry="Actor,OrbitalCommand"/>
+        <DataRecord Entry="Actor,OrbitalCommandSplat"/>
+        <DataRecord Entry="Actor,PlanetaryFortress"/>
+        <DataRecord Entry="Actor,PlanetaryFortressSplat"/>
+        <DataRecord Entry="Unit,CommandCenter"/>
+        <DataRecord Entry="Unit,CommandCenterFlying"/>
+        <DataRecord Entry="Unit,OrbitalCommand"/>
+        <DataRecord Entry="Unit,OrbitalCommandFlying"/>
+        <DataRecord Entry="Unit,PlanetaryFortress"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="CommandCenter2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,CommandCenter2Land"/>
+        <DataRecord Entry="Abil,CommandCenter2LiftOff"/>
+        <DataRecord Entry="Abil,UpgradeToPlanetaryFortress2"/>
+        <DataRecord Entry="Abil,OrbitalLiftOff2"/>
+        <DataRecord Entry="Abil,OrbitalCommandLand2"/>
+        <DataRecord Entry="Actor,CommandCenter2"/>
+        <DataRecord Entry="Actor,CommandCenter2Splat"/>
+        <DataRecord Entry="Actor,OrbitalCommand2"/>
+        <DataRecord Entry="Actor,OrbitalCommandSplat2"/>
+        <DataRecord Entry="Actor,PlanetaryFortress2"/>
+        <DataRecord Entry="Actor,PlanetaryFortressSplat2"/>
+        <DataRecord Entry="Unit,CommandCenter2"/>
+        <DataRecord Entry="Unit,CommandCenter2Flying"/>
+        <DataRecord Entry="Unit,OrbitalCommand2"/>
+        <DataRecord Entry="Unit,OrbitalCommandFlying2"/>
+        <DataRecord Entry="Unit,PlanetaryFortress2"/>
+        <Button value="CommandCenter"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="EngineeringBay">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,EngineeringBayResearch"/>
         <DataRecord Entry="Actor,EngineeringBay"/>
         <DataRecord Entry="Actor,EngineeringBaySplat"/>
         <DataRecord Entry="Unit,EngineeringBay"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="EngineeringBay2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,EngineeringBay2Research"/>
+        <DataRecord Entry="Actor,EngineeringBay2"/>
+        <DataRecord Entry="Actor,EngineeringBay2Splat"/>
+        <DataRecord Entry="Unit,EngineeringBay2"/>
+        <Button value="EngineeringBay"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Factory">
         <EditorCategories value=""/>
@@ -34,12 +100,48 @@
         <DataRecord Entry="Unit,Factory"/>
         <DataRecord Entry="Unit,FactoryFlying"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Factory2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,Factory2Land"/>
+        <DataRecord Entry="Abil,Factory2LiftOff"/>
+        <DataRecord Entry="Abil,Factory2Train"/>
+        <DataRecord Entry="Abil,Factory2AddOns"/>
+        <DataRecord Entry="Actor,Factory2"/>
+        <DataRecord Entry="Unit,Factory2"/>
+        <DataRecord Entry="Unit,Factory2Flying"/>
+        <Button value="Factory"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,FusionCoreResearch"/>
         <DataRecord Entry="Actor,FusionCore"/>
         <DataRecord Entry="Actor,FusionCoreSplat"/>
         <DataRecord Entry="Unit,FusionCore"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="FusionCore2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,FusionCore2Research"/>
+        <DataRecord Entry="Actor,FusionCore2"/>
+        <DataRecord Entry="Actor,FusionCore2Splat"/>
+        <DataRecord Entry="Unit,FusionCore2"/>
+        <Button value="FusionCore"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GhostAcademy">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,ArmSiloWithNuke"/>
+        <DataRecord Entry="Abil,GhostAcademyResearch"/>
+        <DataRecord Entry="Actor,GhostAcademy"/>
+        <DataRecord Entry="Actor,GhostAcademySplat"/>
+        <DataRecord Entry="Unit,GhostAcademy"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GhostAcademy2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,ArmSiloWithNuke2"/>
+        <DataRecord Entry="Abil,GhostAcademy2Research"/>
+        <DataRecord Entry="Actor,GhostAcademy2"/>
+        <DataRecord Entry="Actor,GhostAcademy2Splat"/>
+        <DataRecord Entry="Unit,GhostAcademy2"/>
+        <Button value="GhostAcademy"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="GhostSquad">
         <EditorCategories value=""/>
@@ -69,6 +171,12 @@
         <DataRecord Entry="Actor,MissileTurret"/>
         <DataRecord Entry="Unit,MissileTurret"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="MissileTurret2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,MissileTurret2"/>
+        <DataRecord Entry="Unit,MissileTurret2"/>
+        <Button value="MissileTurret"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="ReaperSquad">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,ReaperSquad"/>
@@ -81,6 +189,12 @@
         <DataRecord Entry="Actor,SensorTower"/>
         <DataRecord Entry="Unit,SensorTower"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="SensorTower2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,SensorTower2"/>
+        <DataRecord Entry="Unit,SensorTower2"/>
+        <Button value="SensorTower"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Starport">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,StarportAddOns"/>
@@ -90,6 +204,17 @@
         <DataRecord Entry="Actor,Starport"/>
         <DataRecord Entry="Unit,Starport"/>
         <DataRecord Entry="Unit,StarportFlying"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Starport2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,Starport2AddOns"/>
+        <DataRecord Entry="Abil,Starport2Land"/>
+        <DataRecord Entry="Abil,Starport2LiftOff"/>
+        <DataRecord Entry="Abil,Starport2Train"/>
+        <DataRecord Entry="Actor,Starport2"/>
+        <DataRecord Entry="Unit,Starport2"/>
+        <DataRecord Entry="Unit,Starport2Flying"/>
+        <Button value="Starport"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot">
         <EditorCategories value=""/>
