@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CDataCollectionUnit id="Armory">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,ArmoryResearch"/>
+        <DataRecord Entry="Actor,Armory"/>
+        <DataRecord Entry="Actor,ArmorySplat"/>
+        <DataRecord Entry="Unit,Armory"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Barracks">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,BarracksAddOns"/>
+        <DataRecord Entry="Abil,BarracksLand"/>
+        <DataRecord Entry="Abil,BarracksLiftOff"/>
+        <DataRecord Entry="Abil,BarracksTrain"/>
+        <DataRecord Entry="Unit,Barracks"/>
+        <DataRecord Entry="Unit,BarracksFlying"/>
+        <DataRecord Entry="Actor,Barracks"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="EngineeringBay">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,EngineeringBayResearch"/>
+        <DataRecord Entry="Actor,EngineeringBay"/>
+        <DataRecord Entry="Actor,EngineeringBaySplat"/>
+        <DataRecord Entry="Unit,EngineeringBay"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Factory">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,FactoryLand"/>
+        <DataRecord Entry="Abil,FactoryLiftOff"/>
+        <DataRecord Entry="Abil,FactoryTrain"/>
+        <DataRecord Entry="Abil,FactoryAddOns"/>
+        <DataRecord Entry="Actor,Factory"/>
+        <DataRecord Entry="Unit,Factory"/>
+        <DataRecord Entry="Unit,FactoryFlying"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="FusionCore">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,FusionCoreResearch"/>
+        <DataRecord Entry="Actor,FusionCore"/>
+        <DataRecord Entry="Actor,FusionCoreSplat"/>
+        <DataRecord Entry="Unit,FusionCore"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="GhostSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,GhostSquad"/>
+        <DataRecord Entry="Weapon,GhostSquad"/>
+        <DataRecord Entry="Actor,GhostSquad"/>
+        <DataRecord Entry="Unit,GhostSquad"/>
+        <TechInfoUnit value="MarineSquad"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="MarauderSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,MarauderSquad"/>
+        <DataRecord Entry="Weapon,MarauderSquad"/>
+        <DataRecord Entry="Actor,MarauderSquad"/>
+        <DataRecord Entry="Unit,MarauderSquad"/>
+        <TechInfoUnit value="MarineSquad"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="MarineSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,MarineSquad"/>
+        <DataRecord Entry="Weapon,MarineSquad"/>
+        <DataRecord Entry="Actor,MarineSquad"/>
+        <DataRecord Entry="Unit,MarineSquad"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="MissileTurret">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,MissileTurret"/>
+        <DataRecord Entry="Unit,MissileTurret"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="ReaperSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,ReaperSquad"/>
+        <DataRecord Entry="Weapon,ReaperSquad"/>
+        <DataRecord Entry="Actor,ReaperSquad"/>
+        <DataRecord Entry="Unit,ReaperSquad"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="SensorTower">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,SensorTower"/>
+        <DataRecord Entry="Unit,SensorTower"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Starport">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,StarportAddOns"/>
+        <DataRecord Entry="Abil,StarportLand"/>
+        <DataRecord Entry="Abil,StarportLiftOff"/>
+        <DataRecord Entry="Abil,StarportTrain"/>
+        <DataRecord Entry="Actor,Starport"/>
+        <DataRecord Entry="Unit,Starport"/>
+        <DataRecord Entry="Unit,StarportFlying"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="SupplyDepot">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Unit,SupplyDepotLowered"/>
+        <DataRecord Entry="Abil,SupplyDepotRaise"/>
+        <DataRecord Entry="Abil,SupplyDepotLower"/>
+        <DataRecord Entry="Actor,SupplyDepot"/>
+        <DataRecord Entry="Actor,SupplyDepotLowered"/>
+        <DataRecord Entry="Actor,SupplyDepotSplat"/>
+        <DataRecord Entry="Unit,SupplyDepot"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="SupplyDepot2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Unit,SupplyDepot2Lowered"/>
+        <DataRecord Entry="Abil,SupplyDepot2Raise"/>
+        <DataRecord Entry="Abil,SupplyDepot2Lower"/>
+        <DataRecord Entry="Actor,SupplyDepot2"/>
+        <DataRecord Entry="Actor,SupplyDepot2Lowered"/>
+        <DataRecord Entry="Actor,SupplyDepot2Splat"/>
+        <DataRecord Entry="Unit,SupplyDepot2"/>
+        <Button value="SupplyDepot"/>
+    </CDataCollectionUnit>
+</Catalog>

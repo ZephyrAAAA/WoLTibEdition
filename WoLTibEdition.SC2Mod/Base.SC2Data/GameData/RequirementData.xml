@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+	<CRequirement id="CanBuildSupplyDepot">
+		<NodeArray index="Show" Link="LTCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildRefinery">
+		<NodeArray index="Show" Link="LTCountBehaviorRefineryBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildBarracks">
+		<NodeArray index="Show" Link="LTCountBehaviorBarracksBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildEngineeringBay">
+		<NodeArray index="Show" Link="LTCountBehaviorEngineeringBayBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildBunker">
+		<NodeArray index="Show" Link="LTCountBehaviorBunkerBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildMissileTurret">
+		<NodeArray index="Show" Link="LTCountBehaviorMissileTurretBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildSensorTower">
+		<NodeArray index="Show" Link="LTCountBehaviorSensorTowerBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildGhostAcademy">
+		<NodeArray index="Show" Link="LTCountBehaviorGhostAcademyBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildFactory">
+		<NodeArray index="Show" Link="LTCountBehaviorFactoryBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildArmory">
+		<NodeArray index="Show" Link="LTCountBehaviorArmoryBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildStarport">
+		<NodeArray index="Show" Link="LTCountBehaviorStarportBuiltCompleteOnly1"/>
+	</CRequirement>
+	<CRequirement id="CanBuildFusionCore">
+		<NodeArray index="Show" Link="LTCountBehaviorFusionCoreBuiltCompleteOnly1"/>
+	</CRequirement>
+</Catalog>

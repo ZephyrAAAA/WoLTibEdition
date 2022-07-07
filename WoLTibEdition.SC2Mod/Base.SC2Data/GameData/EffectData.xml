@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectCreateUnit id="CreateSCVHarvester">
+        <EditorCategories value=""/>
+        <OwningPlayer Value="Caster"/>
+        <WhichLocation Value="CasterUnit"/>
+        <SpawnEffect value="SCVHarvesterAWAY"/>
+        <SpawnUnit value="SCV2"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="DropOffStun">
+        <ValidatorArray index="0" value="HoldingResources"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="SCVHarvesterAWAY">
+        <EditorCategories value=""/>
+        <Abil value="move"/>
+        <Player Value="Caster"/>
+        <Target Value="CasterUnit"/>
+    </CEffectIssueOrder>
+    <CEffectCreateUnit id="MakeNewTib">
+        <EditorCategories value=""/>
+        <SpawnOwner Value="Source"/>
+        <SpawnUnit value="MineralField"/>
+        <SpawnRange value="7"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="RemoveBuiltBehaviors">
+        <EditorCategories value=""/>
+        <EffectArray value="SupplyDepotPlace"/>
+        <EffectArray value="RefineryPlace"/>
+        <EffectArray value="BarracksPlace"/>
+        <EffectArray value="EngineeringBayPlace"/>
+        <EffectArray value="BunkerPlace"/>
+        <EffectArray value="MissileTurretPlace"/>
+        <EffectArray value="SensorTowerPlace"/>
+        <EffectArray value="RemoveBuiltBehaviors2"/>
+    </CEffectSet>
+    <CEffectSet id="RemoveBuiltBehaviors2">
+        <EditorCategories value=""/>
+        <EffectArray value="GhostAcademyPlace"/>
+        <EffectArray value="FactoryPlace"/>
+        <EffectArray value="ArmoryPlace"/>
+        <EffectArray value="StarportPlace"/>
+        <EffectArray value="FusionCorePlace"/>
+    </CEffectSet>
+    <CEffectModifyPlayer id="ResourceCost">
+        <EditorCategories value=""/>
+        <WhichPlayer Value="Caster"/>
+        <Resources index="Minerals" value="-10"/>
+    </CEffectModifyPlayer>
+    <CEffectCreatePersistent id="SquadAttack">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="SquadAttackIterate"/>
+        <FinalEffect value="SquadStopIterate"/>
+        <PeriodicEffectArray value="SquadAttackIterate"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="SquadAttackAB">
+        <EditorCategories value=""/>
+        <Behavior value="SquadAttack"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumMagazine id="SquadAttackIterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="SquadAttackAB"/>
+        <EffectExternal value="SquadAttackAB"/>
+    </CEffectEnumMagazine>
+    <CEffectIssueOrder id="SquadStop">
+        <EditorCategories value=""/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectEnumMagazine id="SquadStopIterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="SquadStop"/>
+        <EffectExternal value="SquadStop"/>
+    </CEffectEnumMagazine>
+    <CEffectApplyBehavior id="SquadUnit">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="StartingTibSearchLarge">
+        <EditorCategories value=""/>
+        <SearchFilters value="HarvestableResource;-"/>
+        <AreaArray Radius="5" Effect="TibGrow"/>
+    </CEffectEnumArea>
+    <CEffectSet id="StartingTibSearchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="StartingTibSearchLarge"/>
+        <EffectArray value="StartingTibSearchSmall"/>
+    </CEffectSet>
+    <CEffectEnumArea id="StartingTibSearchSmall">
+        <EditorCategories value=""/>
+        <SearchFilters value="HarvestableResource;-"/>
+        <AreaArray Radius="2" Effect="TibGrow"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="SupplyDepotBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RefineryBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="BarracksBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="EngineeringBayBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="BunkerBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MissileTurretBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SensorTowerBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="GhostAcademyBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="FactoryBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ArmoryBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="StarportBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="FusionCoreBuilt">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="SupplyDepotPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SupplyDepotBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="RefineryPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="RefineryBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="BarracksPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="BarracksBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="EngineeringBayPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="EngineeringBayBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="BunkerPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="BunkerBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="MissileTurretPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="MissileTurretBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="SensorTowerPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SensorTowerBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="GhostAcademyPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="GhostAcademyBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="FactoryPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="FactoryBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="ArmoryPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ArmoryBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="StarportPlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="StarportBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="FusionCorePlace">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="FusionCoreBuilt"/>
+    </CEffectRemoveBehavior>
+    <CEffectModifyUnit id="TibGrow">
+        <EditorCategories value=""/>
+        <Resources value="140"/>
+    </CEffectModifyUnit>
+    <CEffectCreatePersistent id="TibStarter">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <OffsetVectorStartLocation Value="OriginUnitOrPoint"/>
+        <OffsetVectorEndLocation Value="OriginUnitOrPoint"/>
+        <InitialEffect value="MakeNewTib"/>
+        <FinalEffect value="StartingTibSearchSet"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="MakeNewTib"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+</Catalog>

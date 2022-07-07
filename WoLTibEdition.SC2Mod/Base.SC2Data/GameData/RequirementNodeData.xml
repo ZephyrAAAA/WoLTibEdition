@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+	<CRequirementConst id="1"/>
+	<CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="SupplyDepotBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorSupplyDepotBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorSupplyDepotBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorRefineryBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="RefineryBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorRefineryBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorRefineryBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorBarracksBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="BarracksBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorBarracksBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorBarracksBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorEngineeringBayBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="EngineeringBayBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorEngineeringBayBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorEngineeringBayBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorBunkerBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="BunkerBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorBunkerBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorBunkerBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorMissileTurretBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="MissileTurretBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorMissileTurretBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorMissileTurretBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorSensorTowerBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="SensorTowerBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorSensorTowerBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorSensorTowerBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorGhostAcademyBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="GhostAcademyBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorGhostAcademyBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorGhostAcademyBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorFactoryBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="FactoryBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorFactoryBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorFactoryBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorArmoryBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="ArmoryBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorArmoryBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorArmoryBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorStarportBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="StarportBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorStarportBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorStarportBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+	<CRequirementCountBehavior id="CountBehaviorFusionCoreBuiltCompleteOnly">
+		<Flags index="TechTreeCheat" value="0"/>
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<Count Link="FusionCoreBuilt" State="CompleteOnlyAtUnit"/>
+	</CRequirementCountBehavior>
+	<CRequirementLT id="LTCountBehaviorFusionCoreBuiltCompleteOnly1">
+		<Tooltip value="RequirementNode/Tooltip/##id##"/>
+		<OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
+		<OperandArray index="1" value="1"/>
+	</CRequirementLT>
+</Catalog>

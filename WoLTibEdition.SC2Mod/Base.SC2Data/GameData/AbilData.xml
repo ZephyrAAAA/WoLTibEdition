@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilSpecialize id="CCBuild">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Specialize1" Time="7" Effect="SupplyDepotBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="SupplyDepot" State="Restricted" Requirements="CanBuildSupplyDepot"/>
+        </InfoArray>
+        <InfoArray index="Specialize2" Time="30" Effect="RefineryBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Refinery" State="Restricted" Requirements="CanBuildRefinery"/>
+        </InfoArray>
+        <InfoArray index="Specialize3" Time="5" Effect="BarracksBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="CanBuildBarracks"/>
+        </InfoArray>
+        <InfoArray index="Specialize4" Time="10" Effect="EngineeringBayBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="CanBuildEngineeringBay"/>
+        </InfoArray>
+        <InfoArray index="Specialize5" Time="10" Effect="BunkerBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="CanBuildBunker"/>
+        </InfoArray>
+        <InfoArray index="Specialize6" Time="10" Effect="MissileTurretBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="CanBuildMissileTurret"/>
+        </InfoArray>
+        <InfoArray index="Specialize7" Time="10" Effect="SensorTowerBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="CanBuildSensorTower"/>
+        </InfoArray>
+        <InfoArray index="Specialize8" Time="10" Effect="GhostAcademyBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="CanBuildGhostAcademy"/>
+        </InfoArray>
+        <InfoArray index="Specialize9" Time="10" Effect="FactoryBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="CanBuildFactory"/>
+        </InfoArray>
+        <InfoArray index="Specialize10" Time="10" Effect="ArmoryBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="CanBuildArmory"/>
+        </InfoArray>
+        <InfoArray index="Specialize11" Time="10" Effect="StarportBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="CanBuildStarport"/>
+        </InfoArray>
+        <InfoArray index="Specialize12" Time="10" Effect="FusionCoreBuilt">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="CanBuildFusionCore"/>
+        </InfoArray>
+        <InfoArray index="Specialize13">
+            <Charge HideCount="1"/>
+        </InfoArray>
+        <Alert value="BuildComplete"/>
+    </CAbilSpecialize>
+    <CAbilBuild id="CCPlaceBuilding">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <FlagArray index="IgnoreFood" value="1"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Unit="SupplyDepot2" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="SupplyDepot" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="Refinery2" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Refinery" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="Barracks" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Barracks" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="EngineeringBay" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="EngineeringBay" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="Bunker" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Bunker" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="MissileTurret" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="MissileTurret" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="SensorTower" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="SensorTower" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="GhostAcademy" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="GhostAcademy" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="Factory" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Factory" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="Armory" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Armory" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="Starport" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="Starport" State="Restricted"/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="FusionCore" Time="3">
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="FusionCore" State="Restricted"/>
+        </InfoArray>
+        <Range value="500"/>
+        <EffectArray index="Start" value="RemoveBuiltBehaviors"/>
+    </CAbilBuild>
+    <CAbilQueue id="CCQueue">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <QueueSize value="8"/>
+        <Flags index="Passive" value="1"/>
+    </CAbilQueue>
+    <CAbilTrain id="CommandCenterTrain2">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <DataCollection value="CommandCenterTrain"/>
+        <InfoArray index="Train1" Time="17">
+            <Button DefaultButtonFace="SCV" State="Restricted">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="SCV2"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+    </CAbilTrain>
+    <CAbilArmMagazine id="GhostSquad">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="Retarget" value="1"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="0.5"/>
+        <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Ghost">
+            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <EffectArray index="Create" value="SquadUnit"/>
+        <EffectArray index="Launch" value="TransferKillsToCaster"/>
+        <ExternalAngle value="45"/>
+        <ExternalAngle value="135"/>
+        <ExternalAngle value="225"/>
+        <ExternalAngle value="315"/>
+        <MaxCount value="4"/>
+    </CAbilArmMagazine>
+    <CAbilTrain id="GrowNewTib">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="7"/>
+        <InfoArray index="Train1" Time="60">
+            <Button DefaultButtonFace="Decal_Spray_0070_01"/>
+            <Unit value="MineralField"/>
+            <Flags index="AutoCast" value="1"/>
+            <Flags index="AutoCastOn" value="1"/>
+        </InfoArray>
+    </CAbilTrain>
+    <CAbilArmMagazine id="MarauderSquad">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="Retarget" value="1"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="0.5"/>
+        <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Marauder">
+            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <EffectArray index="Create" value="SquadUnit"/>
+        <EffectArray index="Launch" value="TransferKillsToCaster"/>
+        <ExternalAngle value="45"/>
+        <ExternalAngle value="135"/>
+        <ExternalAngle value="225"/>
+        <ExternalAngle value="315"/>
+        <MaxCount value="4"/>
+    </CAbilArmMagazine>
+    <CAbilArmMagazine id="MarineSquad">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="Retarget" value="1"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="0.5"/>
+        <InfoArray index="Ammo1" CountStart="8" Distance="0.25" Manage="Recall" Unit="Marine">
+            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Marine" State="Suppressed" Requirements="LearnCloakingField"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <EffectArray index="Create" value="SquadUnit"/>
+        <EffectArray index="Launch" value="TransferKillsToCaster"/>
+        <ExternalAngle value="22.5"/>
+        <ExternalAngle value="67.5"/>
+        <ExternalAngle value="112.5"/>
+        <ExternalAngle value="157.5"/>
+        <ExternalAngle value="202.5"/>
+        <ExternalAngle value="247.5"/>
+        <ExternalAngle value="292.5"/>
+        <ExternalAngle value="337.5"/>
+        <MaxCount value="8"/>
+    </CAbilArmMagazine>
+    <CAbilArmMagazine id="ReaperSquad">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="Retarget" value="1"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="0.5"/>
+        <InfoArray index="Ammo1" CountStart="8" Distance="0.25" Manage="Recall" Unit="Reaper">
+            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <EffectArray index="Create" value="SquadUnit"/>
+        <EffectArray index="Launch" value="TransferKillsToCaster"/>
+        <ExternalAngle value="22.5"/>
+        <ExternalAngle value="67.5"/>
+        <ExternalAngle value="112.5"/>
+        <ExternalAngle value="157.5"/>
+        <ExternalAngle value="202.5"/>
+        <ExternalAngle value="247.5"/>
+        <ExternalAngle value="292.5"/>
+        <ExternalAngle value="337.5"/>
+        <MaxCount value="8"/>
+    </CAbilArmMagazine>
+    <CAbilHarvest id="SCVHarvest">
+        <ResourceAmountCapacity index="Minerals" value="1400"/>
+        <AcquireRadius value="20"/>
+        <ReservedMarker Duration="0.1"/>
+        <ResourceAcquire index="Custom" value="1"/>
+        <ResourceDestroy index="Vespene" value="0"/>
+    </CAbilHarvest>
+    <CAbilMorph id="SupplyDepot2Lower">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Lower"/>
+        <InfoArray Unit="SupplyDepot2Lowered" CollideRange="0">
+            <SectionArray index="Abils">
+                <EffectArray index="Start" value="SupplyDepotMorphingApplyBehavior"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.3"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Delay" value="1.3"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="1.3"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="1.3"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilMorph id="SupplyDepot2Raise">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Raise"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="MoveBlockers" value="1"/>
+        <InfoArray Unit="SupplyDepot2" CollideRange="0">
+            <SectionArray index="Abils">
+                <EffectArray index="Start" value="SupplyDepotMorphingApplyBehavior"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1.3"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="1.3"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="1.3"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+</Catalog>

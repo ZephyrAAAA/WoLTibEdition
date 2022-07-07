@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
+        <Name value="Weapon/Name/GhostSquad"/>
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/GhostSquad"/>
+        <DisplayName value="Weapon/Name/GhostSquad"/>
+        <MinScanRange value="9"/>
+        <Marker Link="Weapon/GhostSquad"/>
+        <Cost>
+            <Cooldown Link="Weapon/GhostSquad"/>
+        </Cost>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
+        <Name value="Weapon/Name/MarauderSquad"/>
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/MarauderSquad"/>
+        <DisplayName value="Weapon/Name/MarauderSquad"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="9"/>
+        <Marker Link="Weapon/MarauderSquad"/>
+        <Cost>
+            <Cooldown Link="Weapon/MarauderSquad"/>
+        </Cost>
+        <Effect value="SquadAttack"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MarineSquad" parent="GuassRifle">
+        <Name value="Weapon/Name/MarineSquad"/>
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/MarineSquad"/>
+        <DisplayName value="Weapon/Name/MarineSquad"/>
+        <MinScanRange value="9"/>
+        <Marker Link="Weapon/MarineSquad"/>
+        <Cost>
+            <Cooldown Link="Weapon/MarineSquad"/>
+        </Cost>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
+        <Name value="Weapon/Name/ReaperSquad"/>
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/ReaperSquad"/>
+        <DisplayAttackCount value="0"/>
+        <DisplayName value="Weapon/Name/ReaperSquad"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="9"/>
+        <Marker Link="Weapon/ReaperSquad"/>
+        <Cost>
+            <Cooldown Link="Weapon/ReaperSquad"/>
+        </Cost>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+    </CWeaponLegacy>
+</Catalog>

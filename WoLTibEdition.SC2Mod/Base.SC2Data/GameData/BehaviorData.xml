@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="BuildHandled">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ConstructStop">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DropOffStun">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MakeNewTib">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="60"/>
+        <InitialEffect value="TibStarter"/>
+        <PeriodicEffect value="MakeNewTib"/>
+    </CBehaviorBuff>
+    <CBehaviorResource id="MineralFieldMinerals">
+        <Capacity value="350"/>
+        <Contents value="112"/>
+        <HarvestTime value="0.1"/>
+        <HarvestAmount value="14"/>
+        <DepletionThreshold value="115"/>
+        <IdealHarvesterCount value="1"/>
+        <ExhaustedAlert value=""/>
+        <ReturnDelay value="0"/>
+    </CBehaviorResource>
+    <CBehaviorBuff id="PowerCheck">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="PlayerHasPower"/>
+        <Modification AttackSpeedMultiplier="0.01">
+            <RateMultiplierArray index="Queueable" value="0.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorResource id="Refinery">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Capacity value="2000000"/>
+        <Contents value="2000000"/>
+        <HarvestTime value="32767"/>
+        <HarvestAmount value="1"/>
+        <EmptyHarvestAmount value="1"/>
+        <DepletionThreshold value="1"/>
+        <IdealHarvesterCount value="1"/>
+        <Requirements value="NotUnderConstruction"/>
+    </CBehaviorResource>
+    <CBehaviorBuff id="SquadAttack">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.3"/>
+        <Modification RangedWeaponRange="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SquadUnit">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RadiusMultiplier value="0.5"/>
+            <MoveSpeedMultiplier value="1.75"/>
+            <RangedWeaponRange value="-1"/>
+            <WeaponScanLimit value="0"/>
+            <StateFlags index="SuppressArmySelect" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StartingTibBoost">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <FinalEffect value="StartingTibSearchSet"/>
+        <Modification>
+            <RateMultiplierArray index="Queueable" value="1000"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SupplyDepotBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RefineryBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BarracksBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EngineeringBayBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BunkerBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MissileTurretBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SensorTowerBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GhostAcademyBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FactoryBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArmoryBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StarportBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FusionCoreBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TibGrow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="32"/>
+        <PeriodicEffect value="TibGrow"/>
+    </CBehaviorBuff>
+    <CBehaviorResource id="TibNodeDummy">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Capacity value="2000000"/>
+        <Contents value="2000000"/>
+        <HarvestTime value="32767"/>
+        <HarvestAmount value="1"/>
+        <EmptyHarvestAmount value="1"/>
+    </CBehaviorResource>
+    <CBehaviorVeterancy id="Veterancy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <ShareFilters index="DamageDealt" value="-;Player,Ally,Neutral,Enemy,Hallucination"/>
+        <XPFraction index="DamageDealt" value="1"/>
+        <XPFraction index="Kills" value="0"/>
+        <SharedXPMaxCount index="DamageDealt" value="0"/>
+        <VeterancyLevelArray MinVeterancyXP="200">
+            <Modification>
+                <DamageDealtFraction index="Ranged" value="0.1"/>
+                <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="200">
+            <Modification>
+                <DamageDealtFraction index="Ranged" value="0.1"/>
+                <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="200">
+            <Modification>
+                <AdditiveAttackSpeedFactor value="1"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+                <VitalMaxAdditiveMultiplierArray index="Life" value="0.3"/>
+                <VitalRegenArray index="Life" value="1"/>
+            </Modification>
+        </VeterancyLevelArray>
+    </CBehaviorVeterancy>
+</Catalog>

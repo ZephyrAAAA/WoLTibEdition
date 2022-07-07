@@ -1,0 +1,178 @@
+trigger gather;
+trigger returning;
+trigger idle;
+trigger building;
+trigger INI;
+int rate;
+int spendrate;
+
+bool Gather_Func (bool testConds, bool runActions) {
+	unit gatherUnit;
+	unit refinery;
+	int resourceAmount;
+	fixed time;
+	int resourceDelta;
+	
+	if (testConds) {
+		if (UnitHasBehavior(EventUnit(), "DropOffStun")) {
+			return false;
+		}
+		if (!UnitHasBehavior(EventUnitTargetUnit(), "Refinery")) {
+			return false;
+		}
+	}
+	
+	if (!runActions) {
+		return true;
+	}
+	time = GameGetMissionTime();
+	gatherUnit = EventUnit();
+	refinery = EventUnitTargetUnit();
+	resourceAmount = UnitGetPropertyInt(gatherUnit, c_unitPropCarriedMinerals, true);
+	while (UnitIsAlive(gatherUnit) && resourceAmount > 0 && UnitIsAlive(refinery) && OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
+		resourceDelta = RoundI((GameGetMissionTime() - time) * rate);
+		time = GameGetMissionTime();
+		PlayerModifyPropertyInt(UnitGetOwner(gatherUnit), c_playerPropMinerals, c_playerPropOperAdd, MinI(resourceAmount, resourceDelta));
+		resourceAmount -= MinI(resourceAmount, resourceDelta);
+		UnitSetPropertyInt(gatherUnit, c_unitPropCarriedMinerals, resourceAmount);
+		Wait(0.0625, c_timeGame);
+	}
+	if (!UnitIsAlive(gatherUnit)) {
+		return true;
+	}
+	if (UnitGetPropertyInt(gatherUnit, c_unitPropCarriedMinerals, true) == 0) {
+		UnitBehaviorRemove(gatherUnit, "CarryMineralFieldMinerals", 1);
+	}
+	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
+		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
+		UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("MineralField", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
+	}
+	return true;
+}
+
+void Gather_Init () {
+	gather = TriggerCreate("Gather_Func");
+	TriggerAddEventUnitAbility(gather, null, AbilityCommand("SCVHarvest", 0), c_abilHarvestStageHarvest, false);
+}
+
+bool Returning_Func (bool testConds, bool runActions) {
+	if (!runActions) {
+		return true;
+	}
+	if (UnitHasBehavior(EventUnitTargetUnit(), "Refinery")) {
+		UnitIssueOrder(EventUnit(), OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), EventUnitTargetUnit()), c_orderQueueReplace);
+	}
+	return true;
+}
+
+void Returning_Init () {
+	returning = TriggerCreate("Returning_Func");
+	TriggerAddEventUnitAbility(returning, null, AbilityCommand("SCVHarvest", 1), c_abilHarvestStageApproachDropOff, false);
+}
+
+bool Idle_Func (bool testConds, bool runActions) {
+	unit idleUnit;
+	unitgroup resourceGroup;
+	bool remainsIdle;
+	if (testConds) {
+		if (!UnitAbilityExists(EventUnit(), "SCVHarvest")) {
+			return false;
+		}
+	}
+	
+	if (!runActions) {
+		return false;
+	}
+	
+	idleUnit = EventUnit();
+	UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
+	do {
+		remainsIdle = (UnitOrderCount(idleUnit) == 0);
+		Wait(1, c_timeGame);
+		resourceGroup = UnitGroup("MineralField", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
+	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle));
+	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
+		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
+	}
+	return true;
+}
+
+void Idle_Init () {
+	idle = TriggerCreate("Idle_Func");
+	TriggerAddEventUnitBecomesIdle(idle, null, true);
+}
+
+bool Building_Func (bool testConds, bool runActions) {
+	unit buildingUnit;
+	fixed progress;
+	int totaledCost;
+	int prevCost;
+	fixed totalTime;
+	
+	if (testConds) {
+		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
+			return false;
+		}
+	}
+	
+	buildingUnit = EventUnit();
+	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
+		Wait(0.0625, c_timeGame);
+	}
+	totalTime = UnitQueueItemTime(buildingUnit, c_unitQueueTimeTotal, 1);
+	UnitBehaviorAdd(buildingUnit, "BuildHandled", buildingUnit, 1);
+	do {
+		if (!UnitIsAlive(buildingUnit)) {
+			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+			return true;
+		}
+		if (progress > UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) && UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused)) {
+			UnitSetProgressStage(buildingUnit, 1, c_unitProgressStageResume);
+			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+			return true;
+		}
+		if (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < FloorI(UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) * spendrate - totaledCost)) {
+			UnitBehaviorAdd(buildingUnit, "ConstructStop", buildingUnit, 1);
+			Wait(0.0625, c_timeGame);
+			continue;
+		}
+		UnitBehaviorRemove(buildingUnit, "ConstructStop", 1);
+		prevCost = totaledCost;
+		totaledCost = FloorI(UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) * spendrate);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, totaledCost - prevCost);
+		progress = UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1);
+		Wait(0.0625, c_timeGame);
+	} while (progress < UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1));
+	UnitBehaviorRemove(buildingUnit, "BuildHandled", 1);
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
+	return true;
+}
+
+void Building_Init () {
+	building = TriggerCreate("Building_Func");
+	TriggerAddEventUnitTrainProgress(building, null, c_unitProgressStageStart);
+	TriggerAddEventUnitSpecializeProgress(building, null, c_unitProgressStageStart);
+}
+
+bool INI_Func (bool testConds, bool runActions) {
+	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
+	PlayerSetState(1, c_playerStateFormationMove, true);
+	rate = 117;
+	spendrate = 100;
+	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 10000);
+	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
+	return true;
+}
+
+void INI_Init () {
+	INI = TriggerCreate("INI_Func");
+	TriggerAddEventMapInit(INI);
+}
+
+void main() {
+	Gather_Init();
+	Returning_Init();
+	Idle_Init();
+	Building_Init();
+	INI_Init();
+}
