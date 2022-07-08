@@ -2,6 +2,9 @@ trigger gather;
 trigger returning;
 trigger idle;
 trigger building;
+trigger pause;
+trigger resume;
+trigger cancel;
 trigger INI;
 int rate;
 int spendrate;
@@ -45,7 +48,7 @@ bool Gather_Func (bool testConds, bool runActions) {
 	}
 	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
 		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
-		UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("MineralField", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
+		UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
 	}
 	return true;
 }
@@ -83,13 +86,12 @@ bool Idle_Func (bool testConds, bool runActions) {
 	if (!runActions) {
 		return false;
 	}
-	
 	idleUnit = EventUnit();
 	UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
 	do {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);
 		Wait(1, c_timeGame);
-		resourceGroup = UnitGroup("MineralField", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
+		resourceGroup = UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
 	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle));
 	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
 		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
@@ -107,6 +109,7 @@ bool Building_Func (bool testConds, bool runActions) {
 	fixed progress;
 	int totaledCost;
 	int prevCost;
+	bool paused;
 	fixed totalTime;
 	
 	if (testConds) {
@@ -126,8 +129,7 @@ bool Building_Func (bool testConds, bool runActions) {
 			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
 			return true;
 		}
-		if (progress > UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) && UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused)) {
-			UnitSetProgressStage(buildingUnit, 1, c_unitProgressStageResume);
+		if ((progress > UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) || UnitQueueItemCount(buildingUnit, 1) == 0) && UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused)) {
 			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
 			return true;
 		}
@@ -141,10 +143,15 @@ bool Building_Func (bool testConds, bool runActions) {
 		totaledCost = FloorI(UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) * spendrate);
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, totaledCost - prevCost);
 		progress = UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1);
+		paused = UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused);
 		Wait(0.0625, c_timeGame);
-	} while (progress < UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1));
+	} while (progress <= UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1));
 	UnitBehaviorRemove(buildingUnit, "BuildHandled", 1);
-	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
+	if (!paused) {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
+	} else {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+	}
 	return true;
 }
 
@@ -154,13 +161,48 @@ void Building_Init () {
 	TriggerAddEventUnitSpecializeProgress(building, null, c_unitProgressStageStart);
 }
 
+bool Pause_Func (bool testConds, bool runActions) {
+	UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
+	return true;
+}
+
+void Pause_Init () {
+	pause = TriggerCreate("Pause_Func");
+	TriggerAddEventUnitAbility(pause, null, AbilityCommand("PauseResumeQueue", 0), c_unitAbilStageAll, false);
+}
+
+bool Resume_Func (bool testConds, bool runActions) {
+	UnitSetProgressStage(EventUnit(), 1, c_unitProgressStageResume);
+	return true;
+}
+
+void Resume_Init () {
+	resume = TriggerCreate("Resume_Func");
+	TriggerAddEventUnitAbility(resume, null, AbilityCommand("PauseResumeQueue", 1), c_unitAbilStageAll, false);
+}
+
+bool Cancel_Func (bool testConds, bool runActions) {
+	if (UnitQueueItemCount(EventUnit(), 1) == 0) {
+		UnitBehaviorRemove(EventUnit(), "QueuePaused", 1);
+	}
+	UnitBehaviorAdd(EventUnit(), "Cancel", EventUnit(), 1);
+	return true;
+}
+
+void Cancel_Init () {
+	cancel = TriggerCreate("Cancel_Func");
+	TriggerAddEventUnitTrainProgress(cancel, null, c_unitProgressStageCancel);
+	TriggerAddEventUnitSpecializeProgress(cancel, null, c_unitProgressStageCancel);
+}
+
 bool INI_Func (bool testConds, bool runActions) {
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
-	PlayerSetState(1, c_playerStateFormationMove, true);
 	rate = 117;
 	spendrate = 100;
+	PlayerSetState(1, c_playerStateFormationMove, true);
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 10000);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
+	PlayerModifyPropertyInt(1, c_playerPropSuppliesMade, c_playerPropOperAdd, 1);
 	return true;
 }
 
@@ -174,5 +216,8 @@ void main() {
 	Returning_Init();
 	Idle_Init();
 	Building_Init();
+	Pause_Init();
+	Resume_Init();
+	Cancel_Init();
 	INI_Init();
 }
