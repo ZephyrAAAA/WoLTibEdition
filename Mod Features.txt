@@ -1,0 +1,102 @@
+Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
+
+There is now only 1 resource. Resource fields regrow over time.
+
+Each mission has been looked over, and has more resource fields placed on the map, to encourage holding and defending more of it.
+
+Primary Structures now construct buildings, then place then on the map instantly. Workers only harvest resources. Workers harvest multiple times before returning.
+
+Gathered resources are now received by Refineries, allowing cheaper expansions, better fitting into the idea of having more, smaller resource fields.
+
+SCVs are now produced by the Factory. Changes have been made to either start you with one, or you have the ability to build them.
+
+Starting Worker counts have been reduced, as each one is more effective at gathering, and they no longer build.
+
+Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
+
+Supply has been hijacked to be Power instead. Buildings now require it.
+
+Terrqan Infantry now use a Squad system, where each Squad unit has multiple members.
+
++ Upgrades have been removed. 
+
+MISSION SPECIFIC CHANGES:
+
+Liberation Day:
+
+The Outlaws:
+
+Zero Hour:
+
+The Evacuation:
+
+Outbreak:
+
+Safe Haven:
+
+Haven's Fall:
+
+Great Train Robbery:
+
+Cutthroat:
+
+Engine of Destruction:
+
+Media Blitz:
+
+Piercing the Shroud:
+
+Devil's Playground:
+
+Welcome to the Jungle:
+
+Breakout:
+
+Ghost of a Chance:
+
+Smash and Grab:
+
+The Dig:
+
+The Moebius Factor:
+
+Maw of the Void:
+
+Gates of Hell:
+
+Belly of the Beast:
+
+Shatter the Sky:
+
+All-in:
+
+Whispers of Doom:
+
+A Sinister Turn:
+
+Echoes of the Future:
+
+In Utter Darkness:
+
+
+
+UNIT CHANGES:
+
+
+ARMORY UPGRADE CHANGES:
+
+Orbital Command-
+
+RESEARCH LAB CHANGES:
+
+Command Center Reactor-
+
+Hive Mind Emulator-
+
+Psi Disruptor-
+
+Micro Filtering-
+
+Autogas-
+
+Tech Reactor-
