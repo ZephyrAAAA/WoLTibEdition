@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="LowPower" parent="Glaze">
+        <Model value="Assets\Effects\Glaze\Glaze_BlackDeath_Coop\Glaze_BlackDeath_Coop.m3"/>
+        <EditorCategories value=""/>
+    </CModel>
+</Catalog>

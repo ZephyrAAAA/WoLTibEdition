@@ -1,39 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-	<CRequirement id="CanBuildSupplyDepot">
-		<NodeArray index="Show" Link="LTCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildRefinery">
-		<NodeArray index="Show" Link="LTCountBehaviorRefineryBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildBarracks">
-		<NodeArray index="Show" Link="LTCountBehaviorBarracksBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildEngineeringBay">
-		<NodeArray index="Show" Link="LTCountBehaviorEngineeringBayBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildBunker">
-		<NodeArray index="Show" Link="LTCountBehaviorBunkerBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildMissileTurret">
-		<NodeArray index="Show" Link="LTCountBehaviorMissileTurretBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildSensorTower">
-		<NodeArray index="Show" Link="LTCountBehaviorSensorTowerBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildGhostAcademy">
-		<NodeArray index="Show" Link="LTCountBehaviorGhostAcademyBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildFactory">
-		<NodeArray index="Show" Link="LTCountBehaviorFactoryBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildArmory">
-		<NodeArray index="Show" Link="LTCountBehaviorArmoryBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildStarport">
-		<NodeArray index="Show" Link="LTCountBehaviorStarportBuiltCompleteOnly1"/>
-	</CRequirement>
-	<CRequirement id="CanBuildFusionCore">
-		<NodeArray index="Show" Link="LTCountBehaviorFusionCoreBuiltCompleteOnly1"/>
-	</CRequirement>
+    <CRequirement id="CanBuildSupplyDepot">
+        <NodeArray index="Show" Link="LTCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildRefinery">
+        <NodeArray index="Show" Link="LTCountBehaviorRefineryBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildBarracks">
+        <NodeArray index="Show" Link="LTCountBehaviorBarracksBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildEngineeringBay">
+        <NodeArray index="Show" Link="LTCountBehaviorEngineeringBayBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildBunker">
+        <NodeArray index="Show" Link="LTCountBehaviorBunkerBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildMissileTurret">
+        <NodeArray index="Show" Link="LTCountBehaviorMissileTurretBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildSensorTower">
+        <NodeArray index="Show" Link="LTCountBehaviorSensorTowerBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildGhostAcademy">
+        <NodeArray index="Show" Link="LTCountBehaviorGhostAcademyBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildFactory">
+        <NodeArray index="Show" Link="LTCountBehaviorFactoryBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildArmory">
+        <NodeArray index="Show" Link="LTCountBehaviorArmoryBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildStarport">
+        <NodeArray index="Show" Link="LTCountBehaviorStarportBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="CanBuildFusionCore">
+        <NodeArray index="Show" Link="LTCountBehaviorFusionCoreBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltSupplyDepot">
+        <NodeArray index="Show" Link="EqCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltRefinery">
+        <NodeArray index="Show" Link="EqCountBehaviorRefineryBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltBarracks">
+        <NodeArray index="Show" Link="EqCountBehaviorBarracksBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltEngineeringBay">
+        <NodeArray index="Show" Link="EqCountBehaviorEngineeringBayBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltBunker">
+        <NodeArray index="Show" Link="EqCountBehaviorBunkerBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltMissileTurret">
+        <NodeArray index="Show" Link="EqCountBehaviorMissileTurretBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltSensorTower">
+        <NodeArray index="Show" Link="EqCountBehaviorSensorTowerBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltGhostAcademy">
+        <NodeArray index="Show" Link="EqCountBehaviorGhostAcademyBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltFactory">
+        <NodeArray index="Show" Link="EqCountBehaviorFactoryBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltArmory">
+        <NodeArray index="Show" Link="EqCountBehaviorArmoryBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltStarport">
+        <NodeArray index="Show" Link="EqCountBehaviorStarportBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HasBuiltFusionCore">
+        <NodeArray index="Show" Link="EqCountBehaviorFusionCoreBuiltCompleteOnly1"/>
+    </CRequirement>
+    <CRequirement id="HaveArmory">
+        <NodeArray index="Use" Link="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmoryAndAttachedTechLab">
+        <NodeArray index="Use" Link="AndCountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveArmoryAndAttachedTechLabOrAttachedTechReactor">
+        <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveBarracks">
+        <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveEngineeringBay">
+        <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveFactory">
+        <NodeArray index="Use" Link="CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveRefandSupplyDepot">
+        <EditorCategories value="TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheatCountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveStarport">
+        <NodeArray index="Use" Link="CountUnitAlias_StarportInProgressOrBetter4195804750TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveSupplyDepot">
+        <EditorCategories value="TechType:Unit"/>
+        <NodeArray index="Use" Link="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912"/>
+    </CRequirement>
+    <CRequirement id="SupplyDepotUpgrade">
+        <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>
+        <NodeArray index="Show" Link="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
+    </CRequirement>
 </Catalog>

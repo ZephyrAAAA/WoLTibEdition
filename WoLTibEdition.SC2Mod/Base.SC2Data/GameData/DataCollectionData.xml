@@ -166,6 +166,14 @@
         <DataRecord Entry="Actor,MarineSquad"/>
         <DataRecord Entry="Unit,MarineSquad"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="MineralField">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,MineralField"/>
+        <DataRecord Entry="Actor,MineralFieldSplat"/>
+        <DataRecord Entry="Actor,MineralFieldSplatSmall"/>
+        <DataRecord Entry="Behavior,MineralFieldMinerals"/>
+        <DataRecord Entry="Unit,MineralField"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="MissileTurret">
         <EditorCategories value=""/>
         <DataRecord Entry="Actor,MissileTurret"/>
@@ -236,5 +244,58 @@
         <DataRecord Entry="Actor,SupplyDepot2Splat"/>
         <DataRecord Entry="Unit,SupplyDepot2"/>
         <Button value="SupplyDepot"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="TibNodeLarge">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,TibNodeLarge"/>
+        <DataRecord Entry="Actor,TibNodeLargeSplat"/>
+        <DataRecord Entry="Unit,TibNodeLarge"/>
+        <DataRecord Entry="Behavior,TibNodeLarge"/>
+        <DataRecord Entry="Effect,TibNodeLargeStarter"/>
+        <DataRecord Entry="Effect,TibNodeLarge"/>
+        <DataRecord Entry="Effect,TibNodeLargeSearchLarge"/>
+        <DataRecord Entry="Effect,TibNodeLargeSearchSet"/>
+        <DataRecord Entry="Effect,TibNodeLargeSearchSmall"/>
+        <DataRecord Entry="Effect,TibNodeLargeGrow"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="TibNodeMedium">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,TibNodeMedium"/>
+        <DataRecord Entry="Actor,TibNodeMediumSplat"/>
+        <DataRecord Entry="Unit,TibNodeMedium"/>
+        <DataRecord Entry="Behavior,TibNodeMedium"/>
+        <DataRecord Entry="Effect,TibNodeMediumStarter"/>
+        <DataRecord Entry="Effect,TibNodeMedium"/>
+        <DataRecord Entry="Effect,TibNodeMediumSearchLarge"/>
+        <DataRecord Entry="Effect,TibNodeMediumSearchSet"/>
+        <DataRecord Entry="Effect,TibNodeMediumSearchSmall"/>
+        <DataRecord Entry="Effect,TibNodeMediumGrow"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="TibNodeSmall">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,TibNodeSmall"/>
+        <DataRecord Entry="Actor,TibNodeSmallSplat"/>
+        <DataRecord Entry="Unit,TibNodeSmall"/>
+        <DataRecord Entry="Behavior,TibNodeSmall"/>
+        <DataRecord Entry="Effect,TibNodeSmallStarter"/>
+        <DataRecord Entry="Effect,TibNodeSmall"/>
+        <DataRecord Entry="Effect,TibNodeSmallSearchLarge"/>
+        <DataRecord Entry="Effect,TibNodeSmallSearchSet"/>
+        <DataRecord Entry="Effect,TibNodeSmallSearchSmall"/>
+        <DataRecord Entry="Effect,TibNodeSmallGrow"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="TibVein">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,TibVein"/>
+        <DataRecord Entry="Actor,TibVeinSplat"/>
+        <DataRecord Entry="Actor,TibVeinSplatSmall"/>
+        <DataRecord Entry="Behavior,TibVeinMinerals"/>
+        <DataRecord Entry="Unit,TibVein"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="VespeneGeyser">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,VespeneGeyser"/>
+        <DataRecord Entry="Actor,VespeneGeyserSplat"/>
+        <DataRecord Entry="Unit,VespeneGeyser"/>
     </CDataCollectionUnit>
 </Catalog>

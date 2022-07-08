@@ -16,23 +16,13 @@
         <Duration value="60"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="MakeNewTib">
+    <CBehaviorBuff id="TibNodeLarge">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="60"/>
-        <InitialEffect value="TibStarter"/>
-        <PeriodicEffect value="MakeNewTib"/>
+        <Period value="10"/>
+        <InitialEffect value="TibNodeLargeStarter"/>
+        <PeriodicEffect value="TibNodeLargeGrow"/>
     </CBehaviorBuff>
-    <CBehaviorResource id="MineralFieldMinerals">
-        <Capacity value="350"/>
-        <Contents value="112"/>
-        <HarvestTime value="0.1"/>
-        <HarvestAmount value="14"/>
-        <DepletionThreshold value="115"/>
-        <IdealHarvesterCount value="1"/>
-        <ExhaustedAlert value=""/>
-        <ReturnDelay value="0"/>
-    </CBehaviorResource>
     <CBehaviorBuff id="PowerCheck">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="PlayerHasPower"/>
@@ -67,15 +57,6 @@
             <WeaponScanLimit value="0"/>
             <StateFlags index="SuppressArmySelect" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
-        </Modification>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="StartingTibBoost">
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="10"/>
-        <FinalEffect value="StartingTibSearchSet"/>
-        <Modification>
-            <RateMultiplierArray index="Queueable" value="1000"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
@@ -126,6 +107,9 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SupplyDrop">
+        <Modification Food="10"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="TibGrow">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -140,6 +124,33 @@
         <HarvestTime value="32767"/>
         <HarvestAmount value="1"/>
         <EmptyHarvestAmount value="1"/>
+    </CBehaviorResource>
+    <CBehaviorBuff id="TibNodeMedium">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="20"/>
+        <InitialEffect value="TibNodeMediumStarter"/>
+        <PeriodicEffect value="TibNodeMediumGrow"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TibNodeSmall">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="30"/>
+        <InitialEffect value="TibNodeSmallStarter"/>
+        <PeriodicEffect value="TibNodeSmallGrow"/>
+    </CBehaviorBuff>
+    <CBehaviorResource id="TibVeinMinerals">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\icon-mineral.dds"/>
+        <Capacity value="350"/>
+        <Contents value="112"/>
+        <HarvestTime value="0.1"/>
+        <HarvestAmount value="14"/>
+        <Flags index="RemoveWhenEmpty" value="1"/>
+        <DepletionThreshold value="115"/>
+        <DepletionVariationCount value="4"/>
+        <CarryResourceBehavior value="CarryMineralFieldMinerals"/>
+        <IdealHarvesterCount value="1"/>
     </CBehaviorResource>
     <CBehaviorVeterancy id="Veterancy">
         <EditorCategories value="AbilityorEffectType:Units"/>

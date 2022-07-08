@@ -137,7 +137,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuildMorphAbil value="Barracks2LiftOff"/>
         <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="BarracksTechLab" Time="25">
+        <InfoArray index="Build1" Unit="BarracksTechLab" Time="5">
             <Button DefaultButtonFace="BuildTechLabBarracks" Requirements="UseTechReactorHide"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="BarracksReactor" Time="50">
@@ -193,6 +193,9 @@
             <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
             <Unit value="Spectre"/>
         </InfoArray>
+        <Flags index="BypassFoodRestriction" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilSpecialize id="CCBuild">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -221,34 +224,34 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="CanBuildBarracks"/>
+            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="HaveSupplyDepot"/>
         </InfoArray>
-        <InfoArray index="Specialize4" Time="10" Effect="EngineeringBayBuilt">
+        <InfoArray index="Specialize4" Time="15" Effect="EngineeringBayBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="CanBuildEngineeringBay"/>
+            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="HaveRefandSupplyDepot"/>
         </InfoArray>
-        <InfoArray index="Specialize5" Time="10" Effect="BunkerBuilt">
+        <InfoArray index="Specialize5" Time="2" Effect="BunkerBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="CanBuildBunker"/>
+            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HaveBarracks"/>
         </InfoArray>
-        <InfoArray index="Specialize6" Time="10" Effect="MissileTurretBuilt">
+        <InfoArray index="Specialize6" Time="8" Effect="MissileTurretBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="CanBuildMissileTurret"/>
+            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HaveEngineeringBay"/>
         </InfoArray>
         <InfoArray index="Specialize7" Time="10" Effect="SensorTowerBuilt">
             <Charge>
@@ -266,25 +269,25 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="CanBuildGhostAcademy"/>
+            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HaveBarracks"/>
         </InfoArray>
-        <InfoArray index="Specialize9" Time="10" Effect="FactoryBuilt">
+        <InfoArray index="Specialize9" Time="20" Effect="FactoryBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="CanBuildFactory"/>
+            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HaveRefandSupplyDepot"/>
         </InfoArray>
-        <InfoArray index="Specialize10" Time="10" Effect="ArmoryBuilt">
+        <InfoArray index="Specialize10" Time="40" Effect="ArmoryBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="CanBuildArmory"/>
+            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HaveEngineeringBay"/>
         </InfoArray>
         <InfoArray index="Specialize11" Time="10" Effect="StarportBuilt">
             <Charge>
@@ -293,16 +296,16 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="CanBuildStarport"/>
+            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HaveEngineeringBay"/>
         </InfoArray>
-        <InfoArray index="Specialize12" Time="10" Effect="FusionCoreBuilt">
+        <InfoArray index="Specialize12" Time="30" Effect="FusionCoreBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="CanBuildFusionCore"/>
+            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HaveArmory"/>
         </InfoArray>
         <InfoArray index="Specialize13">
             <Charge HideCount="1"/>
@@ -322,7 +325,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SupplyDepot" State="Restricted"/>
+            <Button DefaultButtonFace="SupplyDepot" State="Restricted" Requirements="HasBuiltSupplyDepot"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="Refinery2" Time="3">
             <Charge>
@@ -331,7 +334,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Refinery" State="Restricted"/>
+            <Button DefaultButtonFace="Refinery" State="Restricted" Requirements="HasBuiltRefinery"/>
         </InfoArray>
         <InfoArray index="Build3" Unit="Barracks2" Time="3">
             <Charge>
@@ -340,7 +343,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Barracks" State="Restricted"/>
+            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="HasBuiltBarracks"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="EngineeringBay2" Time="3">
             <Charge>
@@ -349,7 +352,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="EngineeringBay" State="Restricted"/>
+            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="HasBuiltEngineeringBay"/>
         </InfoArray>
         <InfoArray index="Build5" Unit="Bunker" Time="3">
             <Charge>
@@ -358,7 +361,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Bunker" State="Restricted"/>
+            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HasBuiltBunker"/>
         </InfoArray>
         <InfoArray index="Build6" Unit="MissileTurret2" Time="3">
             <Charge>
@@ -367,7 +370,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="MissileTurret" State="Restricted"/>
+            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HasBuiltMissileTurret"/>
         </InfoArray>
         <InfoArray index="Build7" Unit="SensorTower2" Time="3">
             <Charge>
@@ -376,7 +379,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SensorTower" State="Restricted"/>
+            <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="HasBuiltSensorTower"/>
         </InfoArray>
         <InfoArray index="Build8" Unit="GhostAcademy2" Time="3">
             <Charge>
@@ -385,7 +388,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="GhostAcademy" State="Restricted"/>
+            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HasBuiltGhostAcademy"/>
         </InfoArray>
         <InfoArray index="Build9" Unit="Factory2" Time="3">
             <Charge>
@@ -394,7 +397,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Factory" State="Restricted"/>
+            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HasBuiltFactory"/>
         </InfoArray>
         <InfoArray index="Build10" Unit="Armory2" Time="3">
             <Charge>
@@ -403,7 +406,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Armory" State="Restricted"/>
+            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HasBuiltArmory"/>
         </InfoArray>
         <InfoArray index="Build11" Unit="Starport2" Time="3">
             <Charge>
@@ -412,7 +415,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Starport" State="Restricted"/>
+            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HasBuiltStarport"/>
         </InfoArray>
         <InfoArray index="Build12" Unit="FusionCore2" Time="3">
             <Charge>
@@ -421,7 +424,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="FusionCore" State="Restricted"/>
+            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HasBuiltFusionCore"/>
         </InfoArray>
         <Range value="500"/>
         <EffectArray index="Start" value="RemoveBuiltBehaviors"/>
@@ -527,7 +530,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuildMorphAbil value="Factory2LiftOff"/>
         <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="FactoryTechLab" Time="25">
+        <InfoArray index="Build1" Unit="FactoryTechLab" Time="5">
             <Button DefaultButtonFace="BuildTechLabFactory" Requirements="UseTechReactorHide"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="FactoryReactor" Time="50">
@@ -555,7 +558,9 @@
     <CAbilTrain id="Factory2Train">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <Activity value="UI/Building"/>
+        <Flags index="BypassFoodRestriction" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
         <InfoArray index="Train1" Time="16">
             <Button DefaultButtonFace="SCV"/>
             <Unit value="SCV"/>
@@ -564,9 +569,9 @@
             <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="SiegeTank"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="35">
-            <Button DefaultButtonFace="CommandCenter"/>
-            <Unit value="CommandCenter2Flying"/>
+        <InfoArray index="Train3">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
         </InfoArray>
         <InfoArray index="Train5" Time="60">
             <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmoryAndAttachedTechLabOrAttachedTechReactor"/>
@@ -743,7 +748,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuildMorphAbil value="Starport2LiftOff"/>
         <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="StarportTechLab" Time="25">
+        <InfoArray index="Build1" Unit="StarportTechLab" Time="5">
             <Button DefaultButtonFace="BuildTechLabStarport" Requirements="UseTechReactorHide"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="StarportReactor" Time="50">
@@ -803,6 +808,13 @@
             <Button DefaultButtonFace="Wraith" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Wraith"/>
         </InfoArray>
+        <InfoArray index="Train9" Time="35">
+            <Button DefaultButtonFace="CommandCenter"/>
+            <Unit value="CommandCenter2Flying"/>
+        </InfoArray>
+        <Flags index="BypassFoodRestriction" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
+        <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilMorph id="SupplyDepot2Lower">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
@@ -845,6 +857,14 @@
             </SectionArray>
         </InfoArray>
     </CAbilMorph>
+    <CAbilSpecialize id="UpgradeDepot">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Specialize1" Time="3" Effect="SupplyDropApplyTempBehavior">
+            <Button DefaultButtonFace="SupplyDrop" Requirements="SupplyDepotUpgrade"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <Flags index="BestUnit" value="0"/>
+    </CAbilSpecialize>
     <CAbilMorph id="UpgradeToPlanetaryFortress2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:MorphsandBurrows"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="PlanetaryFortress" State="Restricted" Requirements="HaveEngineeringBay"/>

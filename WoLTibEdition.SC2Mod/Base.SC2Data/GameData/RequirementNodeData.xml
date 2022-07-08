@@ -1,124 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-	<CRequirementConst id="1"/>
-	<CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="SupplyDepotBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorSupplyDepotBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorSupplyDepotBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorRefineryBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="RefineryBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorRefineryBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorRefineryBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorBarracksBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="BarracksBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorBarracksBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorBarracksBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorEngineeringBayBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="EngineeringBayBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorEngineeringBayBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorEngineeringBayBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorBunkerBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="BunkerBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorBunkerBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorBunkerBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorMissileTurretBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="MissileTurretBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorMissileTurretBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorMissileTurretBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorSensorTowerBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="SensorTowerBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorSensorTowerBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorSensorTowerBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorGhostAcademyBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="GhostAcademyBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorGhostAcademyBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorGhostAcademyBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorFactoryBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="FactoryBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorFactoryBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorFactoryBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorArmoryBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="ArmoryBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorArmoryBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorArmoryBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorStarportBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="StarportBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorStarportBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorStarportBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
-	<CRequirementCountBehavior id="CountBehaviorFusionCoreBuiltCompleteOnly">
-		<Flags index="TechTreeCheat" value="0"/>
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<Count Link="FusionCoreBuilt" State="CompleteOnlyAtUnit"/>
-	</CRequirementCountBehavior>
-	<CRequirementLT id="LTCountBehaviorFusionCoreBuiltCompleteOnly1">
-		<Tooltip value="RequirementNode/Tooltip/##id##"/>
-		<OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
-		<OperandArray index="1" value="1"/>
-	</CRequirementLT>
+    <CRequirementConst id="1"/>
+    <CRequirementAnd id="AndCountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheatCountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SupplyDepotBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSupplyDropCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="SupplyDrop" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="SupplyDropEnRoute" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
+        <Count Link="Alias_Armory" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat">
+        <Count Link="Alias_Barracks" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat">
+        <Count Link="Alias_EngineeringBay" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat">
+        <Count Link="Alias_Factory" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
+        <Count Link="Alias_Refinery" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_StarportInProgressOrBetter4195804750TechTreeCheat">
+        <Count Link="Alias_Starport" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Alias_SupplyDepot" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat">
+        <Count Link="Alias_SupplyDepot" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementLT id="LTCountBehaviorSupplyDepotBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorSupplyDepotBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorRefineryBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="RefineryBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorRefineryBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorRefineryBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorBarracksBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BarracksBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorBarracksBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorBarracksBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorEngineeringBayBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="EngineeringBayBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorEngineeringBayBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorEngineeringBayBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorBunkerBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="BunkerBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorBunkerBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorBunkerBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorMissileTurretBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="MissileTurretBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorMissileTurretBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorMissileTurretBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorSensorTowerBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="SensorTowerBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorSensorTowerBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorSensorTowerBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorGhostAcademyBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="GhostAcademyBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorGhostAcademyBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorGhostAcademyBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorFactoryBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="FactoryBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorFactoryBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorFactoryBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorArmoryBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="ArmoryBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorArmoryBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorArmoryBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorStarportBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="StarportBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorStarportBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorStarportBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementCountBehavior id="CountBehaviorFusionCoreBuiltCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="FusionCoreBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementLT id="LTCountBehaviorFusionCoreBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementLT>
+    <CRequirementEq id="EqCountBehaviorSupplyDepotBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorSupplyDepotBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorRefineryBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorRefineryBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorBarracksBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorBarracksBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorEngineeringBayBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorEngineeringBayBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorBunkerBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorBunkerBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorMissileTurretBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorMissileTurretBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorSensorTowerBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorSensorTowerBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorGhostAcademyBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorGhostAcademyBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorFactoryBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorFactoryBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorArmoryBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorArmoryBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorStarportBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorStarportBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountBehaviorFusionCoreBuiltCompleteOnly1">
+        <OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementEq>
+    <CRequirementNot id="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="OrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountBehaviorSupplyDropCompleteOnlyAtUnit"/>
+        <OperandArray value="CountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
+    </CRequirementOr>
 </Catalog>

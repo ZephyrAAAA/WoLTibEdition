@@ -56,30 +56,14 @@
             <Image value="Assets\Textures\Wireframe-Terran-Barracks.dds"/>
         </Wireframe>
     </CActorUnit>
-    <CActorUnit id="CommandCenter2" parent="TerranBuildingFlyerEx" unitName="CommandCenter">
+    <CActorSound id="BarracksLand">
+        <On Terms="AbilMorph.*.Start; MorphTo Barracks2" Send="Create"/>
+    </CActorSound>
+    <CActorUnit id="CommandCenter2" parent="TerranBuildingFlyerEx" unitName="CommandCenter2">
         <Macros value="MacroTownhallDeco_Terran"/>
         <Macros value="TerranCommandCenterPlayerDecalMacro"/>
         <Macros value="SprayHelperMacro"/>
         <AcceptedHostedPropTransfers index="Decal" value="0"/>
-        <On index="0" Terms="UnitBirth.CommandCenter2"/>
-        <On index="1" Terms="UnitBirth.CommandCenter2"/>
-        <On index="2" Terms="UnitRevive.CommandCenter2"/>
-        <On index="3" Terms="UnitRevive.CommandCenter2"/>
-        <On index="4" Terms="UnitConstruction.CommandCenter2.Start"/>
-        <On index="5" Terms="UnitConstruction.CommandCenter2.Finish"/>
-        <On index="69" Terms="UnitConstruction.CommandCenter2.Start"/>
-        <On index="70" Terms="UnitConstruction.CommandCenter2.Start"/>
-        <On index="71" Terms="UnitConstruction.CommandCenter2.Cancel"/>
-        <On index="72" Terms="UnitConstruction.CommandCenter2.Finish"/>
-        <On index="73" Terms="UnitConstruction.CommandCenter2.Start"/>
-        <On index="74" Terms="UnitBirth.CommandCenter2.Normal"/>
-        <On index="75" Terms="UnitBirth.CommandCenter2.Suppressed"/>
-        <On index="76" Terms="UnitBirth.CommandCenter2.EditorPlaced"/>
-        <On index="77" Terms="UnitDeath.CommandCenter2"/>
-        <On index="80" Terms="UnitBirth.CommandCenter2Flying" Send="Create"/>
-        <On index="81" Terms="UnitBirth.CommandCenter2Flying" Send="AnimGroupApply Fly Fly,Start Fly,End Instant"/>
-        <On index="82" Terms="UnitBirth.CommandCenter2Flying" Send="AliasRemove _CreepEngulfable"/>
-        <On index="83" Terms="UnitBirth.CommandCenter2Flying" Send="CreepEngulfmentStopTransition"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove A"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove B"/>
         <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="Destroy"/>
@@ -139,15 +123,16 @@
         <On Terms="Upgrade.OrbitalRelay.Add" Send="AnimGroupApply B"/>
         <On Terms="UnitPlayerChange; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
         <On Terms="UnitPlayerChange; !ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
-        <On Terms="Upgrade.CommandCenter2Reactor.Add" Send="Create CommandCenter2Reactor"/>
-        <On Terms="Upgrade.CommandCenter2Reactor.Add" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
+        <On Terms="Upgrade.CommandCenterReactor" Send="Create CommandCenterReactor"/>
+        <On Terms="Upgrade.CommandCenterReactor" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimClear Morph"/>
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimPlay Morph Morph,C 0 1.500000"/>
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
         <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
         <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction" Send="DeathCustomize Variation6"/>
         <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction; IsStatus FlyDeathAnim 2" Send="DeathCustomize Variation9"/>
-        <On Terms="UnitDeathCustomize; ValidateUnit CommandCenter2ReactorPurchasedAndNotUnderConstruction" Send="Create CommandCenter2ReactorDeath"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit CommandCenterReactorPurchasedAndNotUnderConstruction" Send="Create CommandCenter2ReactorDeath"/>
+        <DeathArray index="Normal" ModelLink="CommandCenterDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="CommandCenter_Explode"/>
         <DeathCustoms index="5" ModelLink="CommandCenterDeath" SoundLink="CommandCenter_Explode" Name="Variation2"/>
         <DeathCustoms ModelLink="CommandCenterFlyDeath" SoundLink="CommandCenter_Explode" Name="Flying"/>
@@ -159,12 +144,19 @@
         <GroupIcon>
             <Image value="Assets\Textures\Wireframe-Terran-CommandCenter.dds"/>
         </GroupIcon>
-        <HighlightTooltip value="Unit/Name/CommandCenter2"/>
         <NameOffset value="150"/>
+        <SoundArray index="Ready" value="CommandCenter_Ready"/>
+        <SoundArray index="What" value="CommandCenter_What"/>
         <SoundArray index="Movement" value="CommandCenter_Movement2"/>
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Terran-CommandCenter.dds"/>
         </Wireframe>
+        <Model value="CommandCenter"/>
+        <BuildModel value="CommandCenter"/>
+        <PlacementModel value="CommandCenterPlacement"/>
+        <PortraitModel value="CommandCenterPortrait"/>
+        <HeroIcon value="Assets\Textures\btn-building-terran-CommandCenter.dds"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-CommandCenter.dds"/>
     </CActorUnit>
     <CActorSplat id="CommandCenter2Splat" parent="GenericUnitSplat" unitName="CommandCenter2">
         <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="Destroy"/>
@@ -173,6 +165,9 @@
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenterFlying2" Send="Destroy"/>
         <Model value="CommandCenterSplat"/>
     </CActorSplat>
+    <CActorSound id="CommandCenterLand">
+        <On Terms="AbilMorph.*.Start; MorphTo CommandCenter2; MorphFrom CommandCenter2Flying" Send="Create"/>
+    </CActorSound>
     <CActorUnit id="EngineeringBay2" parent="TerranBuildingEx" unitName="EngineeringBay2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -228,6 +223,9 @@
             <Image value="Assets\Textures\Wireframe-Terran-Factory.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorSound id="FactoryLand">
+        <On Terms="AbilMorph.*.Start; MorphTo Factory2" Send="Create"/>
+    </CActorSound>
     <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -346,6 +344,11 @@
         <HighlightTooltip value="Unit/Name/GhostSquad"/>
         <SelectAbilCmd value=""/>
     </CActorUnit>
+    <CActorModelMaterial id="LowPower" parent="BehaviorGlaze" buff="PowerCheck">
+        <EditorCategories value=""/>
+        <On index="5" Terms="Behavior.On" Send="Create"/>
+        <On index="6" Terms="Behavior.Off" Send="AnimBracketStop BSD"/>
+    </CActorModelMaterial>
     <CActorUnit id="MarauderSquad" parent="Marauder" unitName="MarauderSquad">
         <Aliases index="2" value="_UnitSmall"/>
         <Macros index="1" removed="1"/>
@@ -446,9 +449,6 @@
         <BarOffset value="100"/>
         <BarWidth value="60"/>
         <HighlightTooltip value="Unit/Name/MarineSquad"/>
-    </CActorUnit>
-    <CActorUnit id="MineralField">
-        <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
     </CActorUnit>
     <CActorUnit id="MissileTurret2" parent="TerranBuildingEx" unitName="MissileTurret2">
         <Aliases value="_UnitHuge"/>
@@ -781,6 +781,9 @@
             <Image value="Assets\Textures\Wireframe-Terran-Starport.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorSound id="StarportLand">
+        <On Terms="AbilMorph.*.Start; MorphTo Starport2" Send="Create"/>
+    </CActorSound>
     <CActorUnit id="SupplyDepot2" parent="TerranBuildingEx" unitName="SupplyDepot2">
         <Aliases value="_UnitLarge"/>
         <On index="69" Terms="UnitConstruction.SupplyDepot2.Start" Send="Create SupplyDepotBuild"/>
@@ -867,6 +870,23 @@
     <CActorSplat id="SupplyDepot2Splat" parent="GenericUnitSplat" unitName="SupplyDepot2">
         <Model value="SupplyDepotSplat"/>
     </CActorSplat>
+    <CActorModel id="SupplyDropModel">
+        <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2Lowered; !AnimPlaying Birth" Send="AnimGroupApply Burrow Burrow Unburrow ClosingFull"/>
+        <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2Lowered; !AnimPlaying Birth" Send="StatusSet Raised 0"/>
+        <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2" Send="AnimGroupRemove Burrow"/>
+        <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2" Send="StatusSet Raised 1"/>
+    </CActorModel>
+    <CActorSound id="TerranBuildingLand">
+        <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2Lowered" Send="Create"/>
+    </CActorSound>
+    <CActorSound id="TerranBuildingLiftOff">
+        <On Terms="AbilMorph.*.Start; MorphTo Barracks2Flying" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo CommandCenter2Flying" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo Factory2Flying" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo Starport2Flying" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2" Send="Create"/>
+        <On Terms="AbilMorph.*.Start; MorphTo OrbitalCommandFlying2" Send="Create"/>
+    </CActorSound>
     <CActorStateMonitor id="TerranFlamesLargeBuilding2" parent="TerranFlames">
         <On Terms="UnitCreation.CommandCenter3" Send="Create"/>
         <On Terms="UnitCreation.CommandCenterFlying" Send="Create"/>
@@ -876,4 +896,199 @@
         <On Terms="StateChange; StateValid Fire" Send="Create TerranFlameLoopLarge"/>
         <On Terms="StateChange; !StateValid Fire" Target="TerranFlameLoopLarge" Send="Destroy"/>
     </CActorStateMonitor>
+    <CActorUnit id="TibNodeLarge" parent="GenericUnitStandardNoAutoSoundLinks" unitName="TibNodeLarge">
+        <Aliases value="_Geyser"/>
+        <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>
+        <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap VespeneGeyserHigh"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="SetMinimapVisibility"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="SetMinimapVisibility 1"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="AnimPlay CoverStart Cover,Start 0 0.000000 0.300000 30.200001 AsDuration"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostFinish" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="TimerKill GeyserHostFinish"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear CoverStart"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear Cover"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupRemove B"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupApply D"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupRemove D"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupApply B"/>
+        <Model value="VespeneGeyser"/>
+        <Scale value="0.800000"/>
+        <BuildModel value="VespeneGeyser"/>
+        <DeathArray index="Normal" ModelLink="VespeneGeyser"/>
+        <PlacementModel value="VespeneGeyser"/>
+        <CantSelectUncontrollableTooltip value="Unit/Name/TibNodeLarge"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        <MinimapRenderPriority value="Resource"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="TibNodeLargeSplat" parent="GenericUnitSplatBase">
+        <On Terms="UnitBirth.TibNodeLarge; Option Shader Low" Send="Create"/>
+        <On Terms="UnitBirth.TibNodeLarge; Option Shader Medium" Send="Create"/>
+        <On Terms="UnitBirth.TibNodeLarge; Option Shader High" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader Low" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader Medium" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader High" Send="Create"/>
+        <Model value="VespeneGeyserSplat"/>
+    </CActorSplat>
+    <CActorUnit id="TibNodeMedium" parent="GenericUnitStandardNoAutoSoundLinks" unitName="TibNodeMedium">
+        <Aliases value="_Geyser"/>
+        <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>
+        <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap VespeneGeyserHigh"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="SetMinimapVisibility"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="SetMinimapVisibility 1"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="AnimPlay CoverStart Cover,Start 0 0.000000 0.300000 30.200001 AsDuration"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostFinish" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="TimerKill GeyserHostFinish"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear CoverStart"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear Cover"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupRemove B"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupApply D"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupRemove D"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupApply B"/>
+        <Model value="VespeneGeyser"/>
+        <Scale value="0.800000"/>
+        <BuildModel value="VespeneGeyser"/>
+        <DeathArray index="Normal" ModelLink="VespeneGeyser"/>
+        <PlacementModel value="VespeneGeyser"/>
+        <CantSelectUncontrollableTooltip value="Unit/Name/TibNodeMedium"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        <MinimapRenderPriority value="Resource"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="TibNodeMediumSplat" parent="GenericUnitSplatBase">
+        <On Terms="UnitBirth.TibNodeMedium; Option Shader Low" Send="Create"/>
+        <On Terms="UnitBirth.TibNodeMedium; Option Shader Medium" Send="Create"/>
+        <On Terms="UnitBirth.TibNodeMedium; Option Shader High" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader Low" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader Medium" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader High" Send="Create"/>
+        <Model value="VespeneGeyserSplat"/>
+    </CActorSplat>
+    <CActorUnit id="TibNodeSmall" parent="GenericUnitStandardNoAutoSoundLinks" unitName="TibNodeSmall">
+        <Aliases value="_Geyser"/>
+        <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>
+        <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap VespeneGeyserHigh"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="SetMinimapVisibility"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="SetMinimapVisibility 1"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="AnimPlay CoverStart Cover,Start 0 0.000000 0.300000 30.200001 AsDuration"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostFinish" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="TimerKill GeyserHostFinish"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear CoverStart"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear Cover"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupRemove B"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupApply D"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupRemove D"/>
+        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupApply B"/>
+        <Model value="VespeneGeyser"/>
+        <Scale value="0.800000"/>
+        <BuildModel value="VespeneGeyser"/>
+        <DeathArray index="Normal" ModelLink="VespeneGeyser"/>
+        <PlacementModel value="VespeneGeyser"/>
+        <CantSelectUncontrollableTooltip value="Unit/Name/TibNodeSmall"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        <MinimapRenderPriority value="Resource"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-General-VespeneGeyser.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="TibNodeSmallSplat" parent="GenericUnitSplatBase">
+        <On Terms="UnitBirth.TibNodeSmall; Option Shader Low" Send="Create"/>
+        <On Terms="UnitBirth.TibNodeSmall; Option Shader Medium" Send="Create"/>
+        <On Terms="UnitBirth.TibNodeSmall; Option Shader High" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader Low" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader Medium" Send="Create"/>
+        <On Terms="UnitBirth.RichVespeneGeyser; Option Shader High" Send="Create"/>
+        <Model value="VespeneGeyserSplat"/>
+    </CActorSplat>
+    <CActorUnit id="TibVein" parent="MineralBase" unitName="TibVein">
+        <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap MineralFieldHigh"/>
+        <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap MineralFieldHigh"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 0" Send="AnimGroupApply A"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 0" Send="AnimGroupRemove A"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 1" Send="AnimGroupApply B"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 1" Send="AnimGroupRemove B"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 2" Send="AnimGroupApply C"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 2" Send="AnimGroupRemove C"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 3" Send="AnimGroupApply D"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 3" Send="AnimGroupRemove D"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 0" Send="Create TibVeinSplatSmall"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 0" Target="MineralFieldSplatSmall" Send="Destroy"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 1" Send="Create TibVeinSplatSmall"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 1" Target="MineralFieldSplatSmall" Send="Destroy"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 2" Send="Create MineralFieldSplat"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 2" Target="MineralFieldSplat" Send="Destroy"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 3" Send="Create TibVeinSplat"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 3" Target="MineralFieldSplat" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
+        <Model value="MineralField"/>
+        <Scale value="0.750000"/>
+        <BuildModel value="MineralField"/>
+        <DeathArray index="Normal" ModelLink="MineralField"/>
+        <PlacementModel value="MineralField"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-General-MineralField.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\Wireframe-General-MineralField.dds"/>
+        <StatusBarFlags index="Shields" value="0"/>
+        <StatusBarFlags index="Life" value="0"/>
+        <StatusBarFlags index="Energy" value="0"/>
+        <StatusBarFlags index="Cargo" value="0"/>
+        <StatusBarFlags index="Progress" value="0"/>
+        <StatusBarFlags index="Duration" value="0"/>
+        <StatusBarFlags index="Magazine" value="0"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\Wireframe-General-MineralField.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-General-MineralField.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="TibVeinSplat" parent="MineralFieldSplatBase">
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
+        <Scale value="0.750000"/>
+    </CActorSplat>
+    <CActorSplat id="TibVeinSplatSmall" parent="MineralFieldSplatBase">
+        <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
+        <Model value="MineralFieldSplatSmall"/>
+        <Scale value="0.750000"/>
+    </CActorSplat>
 </Catalog>

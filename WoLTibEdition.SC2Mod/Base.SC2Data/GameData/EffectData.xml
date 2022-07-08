@@ -18,10 +18,12 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
-    <CEffectCreateUnit id="MakeNewTib">
+    <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnit"/>
+        <Origin Value="TargetPoint"/>
         <SpawnOwner Value="Source"/>
-        <SpawnUnit value="MineralField"/>
+        <SpawnUnit value="TibVein"/>
         <SpawnRange value="7"/>
     </CEffectCreateUnit>
     <CEffectSet id="RemoveBuiltBehaviors">
@@ -48,6 +50,11 @@
         <WhichPlayer Value="Caster"/>
         <Resources index="Minerals" value="-10"/>
     </CEffectModifyPlayer>
+    <CEffectModifyUnit id="SalvageShared">
+        <SalvageFactor>
+            <Resource index="Minerals" value="-2"/>
+        </SalvageFactor>
+    </CEffectModifyUnit>
     <CEffectCreatePersistent id="SquadAttack">
         <EditorCategories value=""/>
         <WhichLocation Value="CasterUnit"/>
@@ -81,20 +88,85 @@
     <CEffectApplyBehavior id="SquadUnit">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
-    <CEffectEnumArea id="StartingTibSearchLarge">
+    <CEffectCreatePersistent id="TibNodeLargeGrow">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="TibNodeLarge"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TibNodeLargeStarter2">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <InitialEffect value="TibNodeLargeStarter22"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="TibNodeLarge"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TibNodeLargeStarter22">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="TibNodeLarge"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TibNodeMediumGrow">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="TibNodeMedium"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TibNodeLargeSearchLarge">
         <EditorCategories value=""/>
         <SearchFilters value="HarvestableResource;-"/>
-        <AreaArray Radius="5" Effect="TibGrow"/>
+        <AreaArray Radius="4" Effect="TibGrow"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
     </CEffectEnumArea>
-    <CEffectSet id="StartingTibSearchSet">
+    <CEffectSet id="TibNodeLargeSearchSet">
         <EditorCategories value=""/>
-        <EffectArray value="StartingTibSearchLarge"/>
-        <EffectArray value="StartingTibSearchSmall"/>
+        <EffectArray value="TibNodeLargeSearchLarge"/>
+        <EffectArray value="TibNodeLargeSearchSmall"/>
     </CEffectSet>
-    <CEffectEnumArea id="StartingTibSearchSmall">
+    <CEffectEnumArea id="TibNodeLargeSearchSmall">
         <EditorCategories value=""/>
         <SearchFilters value="HarvestableResource;-"/>
         <AreaArray Radius="2" Effect="TibGrow"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
     </CEffectEnumArea>
     <CEffectApplyBehavior id="SupplyDepotBuilt">
         <EditorCategories value=""/>
@@ -208,15 +280,138 @@
         <EditorCategories value=""/>
         <Resources value="140"/>
     </CEffectModifyUnit>
-    <CEffectCreatePersistent id="TibStarter">
+    <CEffectCreatePersistent id="TibNodeLargeStarter">
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnitOrPoint"/>
-        <OffsetVectorStartLocation Value="OriginUnitOrPoint"/>
-        <OffsetVectorEndLocation Value="OriginUnitOrPoint"/>
-        <InitialEffect value="MakeNewTib"/>
-        <FinalEffect value="StartingTibSearchSet"/>
+        <Flags index="RandomOffset" value="1"/>
+        <InitialEffect value="TibNodeLargeStarter2"/>
+        <FinalEffect value="TibNodeLargeSearchSet"/>
         <PeriodCount value="160"/>
-        <PeriodicEffectArray value="MakeNewTib"/>
+        <PeriodicEffectArray value="TibNodeLarge"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="TibNodeMedium">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnit"/>
+        <Origin Value="TargetPoint"/>
+        <SpawnOwner Value="Source"/>
+        <SpawnUnit value="TibVein"/>
+        <SpawnRange value="5"/>
+    </CEffectCreateUnit>
+    <CEffectCreatePersistent id="TibNodeMediumStarter2">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="TibNodeMedium"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="TibNodeSmallGrow">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="TibNodeSmall"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TibNodeMediumSearchLarge">
+        <EditorCategories value=""/>
+        <SearchFilters value="HarvestableResource;-"/>
+        <AreaArray Radius="3.5" Effect="TibGrow"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TibNodeMediumSearchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TibNodeMediumSearchLarge"/>
+        <EffectArray value="TibNodeMediumSearchSmall"/>
+    </CEffectSet>
+    <CEffectEnumArea id="TibNodeMediumSearchSmall">
+        <EditorCategories value=""/>
+        <SearchFilters value="HarvestableResource;-"/>
+        <AreaArray Radius="1.5" Effect="TibGrow"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="TibNodeMediumStarter">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <InitialEffect value="TibNodeMediumStarter2"/>
+        <FinalEffect value="TibNodeMediumSearchSet"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="TibNodeMedium"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="TibNodeSmall">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnit"/>
+        <Origin Value="TargetPoint"/>
+        <SpawnOwner Value="Source"/>
+        <SpawnUnit value="TibVein"/>
+        <SpawnRange value="3"/>
+    </CEffectCreateUnit>
+    <CEffectEnumArea id="TibNodeSmallSearchLarge">
+        <EditorCategories value=""/>
+        <SearchFilters value="HarvestableResource;-"/>
+        <AreaArray Radius="2" Effect="TibGrow"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TibNodeSmallSearchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TibNodeSmallSearchLarge"/>
+        <EffectArray value="TibNodeSmallSearchSmall"/>
+    </CEffectSet>
+    <CEffectEnumArea id="TibNodeSmallSearchSmall">
+        <EditorCategories value=""/>
+        <SearchFilters value="HarvestableResource;-"/>
+        <AreaArray Radius="1" Effect="TibGrow"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="TibNodeSmallStarter">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginUnitOrPoint"/>
+        <Flags index="RandomOffset" value="1"/>
+        <FinalEffect value="TibNodeSmallSearchSet"/>
+        <PeriodCount value="160"/>
+        <PeriodicEffectArray value="TibNodeSmall"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
 </Catalog>

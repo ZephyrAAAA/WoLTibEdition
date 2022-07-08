@@ -54,7 +54,9 @@
         </CardLayouts>
         <SeparationRadius value="0.75"/>
         <CargoSize value="8"/>
-        <EditorCategories value=""/>
+    </CUnit>
+    <CUnit id="Armory">
+        <TechAliasArray value="Alias_Armory"/>
     </CUnit>
     <CUnit id="Armory2">
         <DeathRevealRadius value="3"/>
@@ -141,6 +143,10 @@
         <GlossaryPriority value="23"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechTreeUnlockedUnitArray value="Thor"/>
+        <LeaderAlias value="Armory"/>
+        <HotkeyAlias value="Armory"/>
+        <SelectAlias value="Armory"/>
+        <TechAliasArray value="Alias_Armory"/>
     </CUnit>
     <CUnit id="Barracks2">
         <DeathRevealRadius value="3"/>
@@ -288,6 +294,11 @@
         <TechAliasArray value="Alias_Barracks"/>
         <GlossaryAlias value="Barracks"/>
     </CUnit>
+    <CUnit id="BarracksTechLab">
+        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
+        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
+        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+    </CUnit>
     <CUnit id="CommandCenter2">
         <DeathRevealRadius value="3"/>
         <Facing value="315"/>
@@ -359,30 +370,30 @@
             <LayoutButtons Face="TerranBuildAdvanced" Type="Submenu" SubmenuCardId="0003" Row="2" Column="1"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
-            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCBuild,Specialize1" Row="0" Column="2"/>
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
-            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCBuild,Specialize2" Row="0" Column="1"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCBuild,Specialize1" Row="0" Column="2"/>
             <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="1"/>
-            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCBuild,Specialize3" Row="1" Column="0"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCBuild,Specialize2" Row="0" Column="1"/>
             <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="1" Column="0"/>
-            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCBuild,Specialize4" Row="1" Column="1"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCBuild,Specialize3" Row="1" Column="0"/>
             <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="1" Column="1"/>
-            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCBuild,Specialize4" Row="1" Column="1"/>
             <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
-            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
             <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
             <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
-            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCBuild,Specialize8" Row="1" Column="2"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
             <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="1" Column="2"/>
-            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCBuild,Specialize9" Row="0" Column="3"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCBuild,Specialize8" Row="1" Column="2"/>
             <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="3"/>
-            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCBuild,Specialize10" Row="0" Column="4"/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCBuild,Specialize9" Row="0" Column="3"/>
             <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="4"/>
-            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCBuild,Specialize11" Row="1" Column="3"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCBuild,Specialize10" Row="0" Column="4"/>
             <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="1" Column="3"/>
-            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCBuild,Specialize11" Row="1" Column="3"/>
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
         </CardLayouts>
         <CardLayouts CardId="0003">
@@ -476,6 +487,9 @@
         <TechAliasArray value="Alias_CommandCenter"/>
         <GlossaryAlias value="CommandCenter"/>
     </CUnit>
+    <CUnit id="EngineeringBay">
+        <TechAliasArray value="Alias_EngineeringBay"/>
+    </CUnit>
     <CUnit id="EngineeringBay2">
         <DeathRevealRadius value="3"/>
         <Facing value="315"/>
@@ -551,6 +565,10 @@
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <GlossaryPriority value="20"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <LeaderAlias value="EngineeringBay"/>
+        <HotkeyAlias value="EngineeringBay"/>
+        <SelectAlias value="EngineeringBay"/>
+        <TechAliasArray value="Alias_EngineeringBay"/>
     </CUnit>
     <CUnit id="Factory2">
         <DeathRevealRadius value="3"/>
@@ -615,7 +633,6 @@
             <LayoutButtons Face="Diamondback" Type="AbilCmd" AbilCmd="Factory2Train,Train8" Row="1" Column="1"/>
             <LayoutButtons Face="Vulture" Type="AbilCmd" AbilCmd="Factory2Train,Train9" Row="1" Column="0"/>
             <LayoutButtons Face="Predator" Type="AbilCmd" AbilCmd="Factory2Train,Train10" Row="0" Column="3"/>
-            <LayoutButtons Face="CommandCenter" Type="AbilCmd" AbilCmd="Factory2Train,Train3" Row="0" Column="4"/>
         </CardLayouts>
         <Radius value="1.625"/>
         <SeparationRadius value="1.625"/>
@@ -701,6 +718,11 @@
         <HotkeyAlias value="Factory"/>
         <TechAliasArray value="Alias_Factory"/>
         <GlossaryAlias value="Factory"/>
+    </CUnit>
+    <CUnit id="FactoryTechLab">
+        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
+        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
+        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
     </CUnit>
     <CUnit id="FusionCore2">
         <Facing value="315"/>
@@ -839,17 +861,6 @@
         <TechTreeUnlockedUnitArray value="Ghost"/>
         <TechTreeUnlockedUnitArray value="Spectre"/>
     </CUnit>
-    <CUnit id="MineralField">
-        <Collide index="Burrow" value="0"/>
-        <Collide index="Ground" value="0"/>
-        <Collide index="RoachBurrow" value="0"/>
-        <Collide index="ForceField" value="0"/>
-        <Collide index="Small" value="0"/>
-        <Footprint value=""/>
-        <BehaviorArray Link="TibGrow"/>
-        <Radius value="0.5"/>
-        <SeparationRadius value="0.5"/>
-    </CUnit>
     <CUnit id="MissileTurret2">
         <DeathRevealRadius value="3"/>
         <Race value="Terr"/>
@@ -933,6 +944,7 @@
         <GlossaryStrongArray value="VoidRay"/>
         <GlossaryStrongArray value="Scout"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <Food value="-7"/>
     </CUnit>
     <CUnit id="OrbitalCommand2">
         <Description value="Button/Tooltip/OrbitalCommand2Unit"/>
@@ -1151,6 +1163,9 @@
         <GlossaryPriority value="240"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
     </CUnit>
+    <CUnit id="Refinery">
+        <TechAliasArray value="Alias_Refinery"/>
+    </CUnit>
     <CUnit id="Refinery2">
         <DeathRevealRadius value="3"/>
         <Facing value="315"/>
@@ -1216,6 +1231,7 @@
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <GlossaryPriority value="11"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <TechAliasArray value="Alias_Refinery"/>
     </CUnit>
     <CUnit id="SCV2">
         <DeathRevealRadius value="3"/>
@@ -1425,6 +1441,7 @@
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="Starport2Train,Train5" Row="1" Column="3"/>
             <LayoutButtons Face="Wraith" Type="AbilCmd" AbilCmd="Starport2Train,Train8" Row="1" Column="0"/>
             <LayoutButtons Face="BuildHercules" Type="AbilCmd" AbilCmd="Starport2Train,Train6" Row="1" Column="1"/>
+            <LayoutButtons Face="CommandCenter" Type="AbilCmd" AbilCmd="Starport2Train,Train9" Row="1" Column="2"/>
         </CardLayouts>
         <Radius value="1.625"/>
         <SeparationRadius value="1.625"/>
@@ -1512,6 +1529,11 @@
         <TechAliasArray value="Alias_Starport"/>
         <GlossaryAlias value="Starport"/>
     </CUnit>
+    <CUnit id="StarportTechLab">
+        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
+        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
+        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+    </CUnit>
     <CUnit id="SupplyDepot2">
         <DeathRevealRadius value="3"/>
         <Facing value="315"/>
@@ -1550,12 +1572,15 @@
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="SupplyDepot2Lower"/>
+        <AbilArray Link="UpgradeDepot"/>
+        <AbilArray Link="que1"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <CardLayouts>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
-            <LayoutButtons Face="Lower" Type="AbilCmd" AbilCmd="SupplyDepot2Lower,0" Row="2" Column="0"/>
+            <LayoutButtons Face="Lower" Type="AbilCmd" AbilCmd="SupplyDepot2Lower,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="SupplyDrop" Type="AbilCmd" AbilCmd="UpgradeDepot,Specialize1" Row="2" Column="1"/>
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>
@@ -1571,6 +1596,9 @@
         <TechAliasArray value="Alias_SupplyDepot"/>
         <GlossaryPriority value="10"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <LeaderAlias value="SupplyDepot"/>
+        <HotkeyAlias value="SupplyDepot"/>
+        <SelectAlias value="SupplyDepot"/>
     </CUnit>
     <CUnit id="SupplyDepot2Lowered">
         <DeathRevealRadius value="3"/>
@@ -1610,9 +1638,12 @@
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="SupplyDepot2Raise"/>
+        <AbilArray Link="UpgradeDepot"/>
+        <AbilArray Link="que1"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <CardLayouts>
-            <LayoutButtons Face="Raise" Type="AbilCmd" AbilCmd="SupplyDepot2Raise,0" Row="2" Column="0"/>
+            <LayoutButtons Face="Raise" Type="AbilCmd" AbilCmd="SupplyDepot2Raise,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SupplyDrop" Type="AbilCmd" AbilCmd="UpgradeDepot,Specialize1" Row="2" Column="1"/>
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>
@@ -1626,12 +1657,42 @@
         <SelectAlias value="SupplyDepot"/>
         <TechAliasArray value="Alias_SupplyDepot"/>
     </CUnit>
-    <CUnit id="VespeneGeyser">
+    <CUnit id="TechLab">
+        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
+        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
+        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+    </CUnit>
+    <CUnit id="TibNodeLarge">
+        <DeathRevealRadius value="3"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
         <FlagArray index="ShowResources" value="0"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceState value="Raw"/>
         <ResourceType value="Custom"/>
-        <BehaviorArray index="0" Link="StartingTibBoost"/>
+        <FogVisibility value="Snapshot"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="10000"/>
+        <LifeMax value="10000"/>
+        <LifeArmor value="10"/>
         <BehaviorArray Link="TibNodeDummy"/>
-        <BehaviorArray Link="MakeNewTib"/>
+        <BehaviorArray Link="TibNodeLarge"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint2x2"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
+        <Fidget DelayMax="0"/>
     </CUnit>
     <CUnit id="GhostSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -1682,5 +1743,83 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,0" Row="1" Column="0"/>
         </CardLayouts>
         <SeparationRadius value="1"/>
+    </CUnit>
+    <CUnit id="TibNodeMedium">
+        <DeathRevealRadius value="3"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ShowResources" value="0"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceState value="Raw"/>
+        <ResourceType value="Custom"/>
+        <FogVisibility value="Snapshot"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="10000"/>
+        <LifeMax value="10000"/>
+        <LifeArmor value="10"/>
+        <BehaviorArray Link="TibNodeDummy"/>
+        <BehaviorArray Link="TibNodeMedium"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint2x2"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
+        <Fidget DelayMax="0"/>
+    </CUnit>
+    <CUnit id="TibNodeSmall">
+        <DeathRevealRadius value="3"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ShowResources" value="0"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceState value="Raw"/>
+        <ResourceType value="Custom"/>
+        <FogVisibility value="Snapshot"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <LifeStart value="10000"/>
+        <LifeMax value="10000"/>
+        <LifeArmor value="10"/>
+        <BehaviorArray Link="TibNodeDummy"/>
+        <BehaviorArray Link="TibNodeSmall"/>
+        <Radius value="1.5"/>
+        <SeparationRadius value="1.5"/>
+        <Footprint value="Footprint2x2"/>
+        <SubgroupPriority value="2"/>
+        <MinimapRadius value="1.5"/>
+        <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
+        <Fidget DelayMax="0"/>
+    </CUnit>
+    <CUnit id="TibVein" parent="MineralFieldDefault">
+        <Name value="Unit/Name/TibVein"/>
+        <Description value="Button/Tooltip/TibVein"/>
+        <Collide index="Burrow" value="0"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="RoachBurrow" value="0"/>
+        <Collide index="ForceField" value="0"/>
+        <Collide index="Small" value="0"/>
+        <BehaviorArray index="0" Link="TibVeinMinerals"/>
+        <BehaviorArray Link="TibGrow"/>
+        <Radius value="0.375"/>
+        <SeparationRadius value="0.375"/>
+        <Footprint value=""/>
     </CUnit>
 </Catalog>
