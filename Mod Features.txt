@@ -2,7 +2,7 @@ Importing macro mechanics, resource gathering, tech tree elements, and other mec
 
 There is now only 1 resource. Most resource fields regrow over time.
 
-Each mission has been looked over, most mineral fields and all vespene geysers have been removed. All vespene resource pickups have been replaced with mineral pickups or removed. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
+Each mission has been looked over, most mineral fields and all vespene geysers have been removed. All vespene resource pickups have been replaced with mineral pickups or removed. Mineral Pickups now give 1000. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
 
 Primary Structures now construct buildings, then place then on the map instantly. Workers only harvest resources. Workers harvest multiple times before returning.
 
@@ -32,6 +32,8 @@ Liberation Day:
 The Outlaws:
 
 Zero Hour:
+-A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
+-Pallets to the west of the western bridge replaced with a resource node
 
 The Evacuation:
 
@@ -94,7 +96,11 @@ UNIT CHANGES:
 
 Firebat- 
 
+Medic- Better Healing priority.
+
 Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
+
+Hercules- Tech requirement move from Fusion Core to Armoury. Cheaper.
 
 ARMORY UPGRADE CHANGES:
 
@@ -111,7 +117,7 @@ Tech Reactor- Replace with Shields for all units
 
 Autogas- Autoharvesting
 
-Command Center Reactor- Reduce build time of structures
+Command Center Reactor- Reduce build time of structures (Also affects cost)
 
 Orbital Supply Depot-
 
