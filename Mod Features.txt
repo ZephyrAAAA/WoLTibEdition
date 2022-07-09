@@ -1,8 +1,8 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
-There is now only 1 resource. Resource fields regrow over time.
+There is now only 1 resource. Most resource fields regrow over time.
 
-Each mission has been looked over, and has more resource fields placed on the map, to encourage holding and defending more of it.
+Each mission has been looked over, most mineral fields and all vespene geysers have been removed. All vespene resource pickups have been replaced with mineral pickups or removed. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
 
 Primary Structures now construct buildings, then place then on the map instantly. Workers only harvest resources. Workers harvest multiple times before returning.
 
@@ -16,9 +16,14 @@ Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 an
 
 Supply has been hijacked to be Power instead. Buildings now require it.
 
-Terrqan Infantry now use a Squad system, where each Squad unit has multiple members.
+Terran Infantry now use a Squad system, where each Squad unit has multiple members.
 
 + Upgrades have been removed. 
+
+Flat armour has been removed in favour of damage types, so units do damage based on what they are hitting.
+
+Implemented a topbar of Support Powers.
+
 
 MISSION SPECIFIC CHANGES:
 
@@ -51,6 +56,9 @@ Devil's Playground:
 Welcome to the Jungle:
 
 Breakout:
+-Give Tosh Psionic Lash
+-Give Tosh some sort of energy regen ability
+-Add abilities to influence what/when Jim sends attack waves
 
 Ghost of a Chance:
 
@@ -59,6 +67,8 @@ Smash and Grab:
 The Dig:
 
 The Moebius Factor:
+
+Supernova:
 
 Maw of the Void:
 
@@ -82,21 +92,39 @@ In Utter Darkness:
 
 UNIT CHANGES:
 
+Firebat- 
+
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
 
 ARMORY UPGRADE CHANGES:
 
-Orbital Command-
+Orbital Command- Unlock Scan support power
+
+Advanced Construction-
+
 
 RESEARCH LAB CHANGES:
 
-Command Center Reactor-
+Orbital Strike-
 
-Hive Mind Emulator-
+Tech Reactor- Replace with Shields for all units
 
-Psi Disruptor-
+Autogas- Autoharvesting
 
-Micro Filtering-
+Command Center Reactor- Reduce build time of structures
 
-Autogas-
+Orbital Supply Depot-
 
-Tech Reactor-
+Micro Filtering- Something something eco upgrade
+
+Ultra-Capacitors-
+
+Vanadium Plating-
+
+
+Hive Mind Emulator(Maybe)-
+
+Psi Disruptor(Maybe)-
+
+Regenerative Bio-steel- BEEG buff
+
