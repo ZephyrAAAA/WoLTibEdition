@@ -192,6 +192,11 @@
         <DataRecord Entry="Actor,ReaperSquad"/>
         <DataRecord Entry="Unit,ReaperSquad"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Refinery2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Unit,Refinery2"/>
+        <DataRecord Entry="Actor,Refinery2"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="SensorTower">
         <EditorCategories value=""/>
         <DataRecord Entry="Actor,SensorTower"/>

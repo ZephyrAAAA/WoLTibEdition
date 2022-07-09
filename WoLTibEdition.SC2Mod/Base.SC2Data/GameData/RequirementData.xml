@@ -81,6 +81,15 @@
     <CRequirement id="HaveArmoryAndAttachedTechLabOrAttachedTechReactor">
         <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
     </CRequirement>
+    <CRequirement id="HaveAttachedBarrTechLabAndShadowOps">
+        <NodeArray index="Use" Link="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps">
+        <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveAttachedStarportTechLabAndFusionCore">
+        <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_FusionCoreCompleteOnlyTechTreeCheat"/>
+    </CRequirement>
     <CRequirement id="HaveBarracks">
         <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
     </CRequirement>
@@ -93,6 +102,9 @@
     <CRequirement id="HaveRefandSupplyDepot">
         <EditorCategories value="TechType:Unit"/>
         <NodeArray index="Use" Link="AndCountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheatCountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HaveShadowOps">
+        <NodeArray index="Use" Link="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="HaveStarport">
         <NodeArray index="Use" Link="CountUnitAlias_StarportInProgressOrBetter4195804750TechTreeCheat"/>

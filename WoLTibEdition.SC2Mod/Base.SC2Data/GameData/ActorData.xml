@@ -1055,7 +1055,7 @@
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 0" Target="MineralFieldSplatSmall" Send="Destroy"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 1" Send="Create TibVeinSplatSmall"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 1" Target="MineralFieldSplatSmall" Send="Destroy"/>
-        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 2" Send="Create MineralFieldSplat"/>
+        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 2" Send="Create TibVeinSplat"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 2" Target="MineralFieldSplat" Send="Destroy"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 3" Send="Create TibVeinSplat"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 3" Target="MineralFieldSplat" Send="Destroy"/>

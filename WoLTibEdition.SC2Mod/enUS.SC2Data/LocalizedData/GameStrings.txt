@@ -21,6 +21,7 @@ Abil/Name/MarauderSquad=Marauder Squad
 Abil/Name/MarineSquad=Marine Squad
 Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
+Abil/Name/PauseResumeQueue=PauseResumeQueue
 Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Starport2AddOns=AddOns
 Abil/Name/Starport2Land=Land
@@ -36,6 +37,8 @@ Behavior/Name/SquadUnit=Squad Unit
 Behavior/Name/Veterancy=Veterancy
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
+Button/Name/PauseQueue=Pause Queue
+Button/Name/ResumeQueue=Resume Queue
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
@@ -82,6 +85,7 @@ DataCollection/Name/MineralField=Mineral Field
 DataCollection/Name/MissileTurret=Missile Turret
 DataCollection/Name/MissileTurret2=Missile Turret Copy
 DataCollection/Name/ReaperSquad=Reaper Squad
+DataCollection/Name/Refinery2=Refinery Copy
 DataCollection/Name/SensorTower=Sensor Tower
 DataCollection/Name/SensorTower2=Sensor Tower Copy
 DataCollection/Name/Starport=Starport
@@ -139,10 +143,12 @@ RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTr
 RequirementNode/Tooltip/CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat=Engineering Bay
 RequirementNode/Tooltip/CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat=Factory
 RequirementNode/Tooltip/CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat=Refinery
+RequirementNode/Tooltip/CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat=Shadow Ops
 RequirementNode/Tooltip/CountUnitAlias_StarportInProgressOrBetter4195804750TechTreeCheat=Starport
 RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912=Supply Depot
 RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat=Supply Depot
 RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
+RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks

@@ -185,11 +185,12 @@
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="que5"/>
+        <AbilArray Link="CCQueue"/>
         <AbilArray Link="Barracks2Train"/>
         <AbilArray Link="Rally"/>
         <AbilArray Link="Barracks2AddOns"/>
         <AbilArray Link="Barracks2LiftOff"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
@@ -199,10 +200,12 @@
             <LayoutButtons Face="Reaper" Type="AbilCmd" AbilCmd="Barracks2Train,Train2" Row="0" Column="2"/>
             <LayoutButtons Face="Ghost" Type="AbilCmd" AbilCmd="Barracks2Train,Train3" Row="0" Column="3"/>
             <LayoutButtons Face="Spectre" Type="AbilCmd" AbilCmd="Barracks2Train,Train7" Row="0" Column="3"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="1" Column="4"/>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Barracks2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="TechLabBarracks" Type="AbilCmd" AbilCmd="Barracks2AddOns,Build1" Row="2" Column="0"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Barracks2AddOns,Halt" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -345,6 +348,7 @@
         <AbilArray Link="CalldownMULE"/>
         <AbilArray Link="CCBuild"/>
         <AbilArray Link="CCPlaceBuilding"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
@@ -355,6 +359,7 @@
             <LayoutButtons Face="UpgradeToPlanetaryFortress" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="CommandCenter2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5CancelToSelection,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelUpgradeMorph" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -368,6 +373,7 @@
                 <Column value="0"/>
             </LayoutButtons>
             <LayoutButtons Face="TerranBuildAdvanced" Type="Submenu" SubmenuCardId="0003" Row="2" Column="1"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="1" Column="4"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
@@ -724,6 +730,9 @@
         <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
     </CUnit>
+    <CUnit id="FusionCore">
+        <TechAliasArray value="Alias_FusionCore"/>
+    </CUnit>
     <CUnit id="FusionCore2">
         <Facing value="315"/>
         <Race value="Terr"/>
@@ -786,6 +795,7 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechTreeUnlockedUnitArray value="Battlecruiser"/>
         <TechTreeUnlockedUnitArray value="Hercules"/>
+        <TechAliasArray value="Alias_FusionCore"/>
     </CUnit>
     <CUnit id="GhostAcademy2">
         <DeathRevealRadius value="3"/>
@@ -1377,6 +1387,7 @@
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <GlossaryPriority value="12"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <Food value="-10"/>
     </CUnit>
     <CUnit id="Starport2">
         <DeathRevealRadius value="3"/>
