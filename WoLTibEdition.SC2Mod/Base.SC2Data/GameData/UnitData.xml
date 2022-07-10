@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CUnit default="1" id="AccelerationZoneBase">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit default="1" id="AccelerationZoneFlyingBase">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit default="1" id="CoopGlobalCaster">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit default="1" id="InhibitorZoneBase">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit default="1" id="InhibitorZoneFlyingBase">
+        <ArmorType value="Hero"/>
+    </CUnit>
     <CUnit default="1" id="Vehicle">
         <Name value="Unit/Name/Vehicle"/>
         <Description value="Button/Tooltip/Vehicle"/>
@@ -33,13 +49,14 @@
         </ReviveInfoBase>
     </CUnit>
     <CUnit default="1" id="BaseSquad">
+        <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
         <Collide index="Flying" value="1"/>
         <Attributes index="Biological" value="1"/>
         <Acceleration value="1000"/>
-        <LateralAcceleration value="46.25"/>
+        <LateralAcceleration value="46.0625"/>
         <StationaryTurningRate value="999.8437"/>
         <TurningRate value="999.8437"/>
         <AbilArray Link="move"/>
@@ -53,10 +70,51 @@
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
         </CardLayouts>
         <SeparationRadius value="0.75"/>
-        <CargoSize value="8"/>
+        <CargoSize value="4"/>
+        <CostCategory value="Army"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <Radius value="0.75"/>
+        <InnerRadius value="0.75"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="15"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
+    </CUnit>
+    <CUnit id="AbandonedBuilding">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="AccelerationZoneFlyingLarge">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="AccelerationZoneFlyingMedium">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="AccelerationZoneFlyingSmall">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="AccelerationZoneLarge">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="AccelerationZoneMedium">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="AccelerationZoneSmall">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Archive">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ArchiveSealed">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Armory">
         <TechAliasArray value="Alias_Armory"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Armory2">
         <DeathRevealRadius value="3"/>
@@ -83,7 +141,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="750"/>
         <LifeMax value="750"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -147,6 +204,31 @@
         <HotkeyAlias value="Armory"/>
         <SelectAlias value="Armory"/>
         <TechAliasArray value="Alias_Armory"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Assimilator">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="AssimilatorRich">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="AutoTurret">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="AutomatedRefinery">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="BanelingNest">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Barracks">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Barracks2">
         <DeathRevealRadius value="3"/>
@@ -174,7 +256,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -200,8 +281,8 @@
             <LayoutButtons Face="Reaper" Type="AbilCmd" AbilCmd="Barracks2Train,Train2" Row="0" Column="2"/>
             <LayoutButtons Face="Ghost" Type="AbilCmd" AbilCmd="Barracks2Train,Train3" Row="0" Column="3"/>
             <LayoutButtons Face="Spectre" Type="AbilCmd" AbilCmd="Barracks2Train,Train7" Row="0" Column="3"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="1" Column="4"/>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Barracks2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="TechLabBarracks" Type="AbilCmd" AbilCmd="Barracks2AddOns,Build1" Row="2" Column="0"/>
@@ -237,6 +318,7 @@
         <TechTreeProducedUnitArray value="Spectre"/>
         <TechTreeProducedUnitArray value="Medic"/>
         <TechTreeProducedUnitArray value="Firebat"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Barracks2Flying">
         <Name value="Unit/Name/Barracks"/>
@@ -258,7 +340,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Mover value="Fly"/>
         <Speed value="0.9375"/>
@@ -296,11 +377,71 @@
         <HotkeyAlias value="Barracks"/>
         <TechAliasArray value="Alias_Barracks"/>
         <GlossaryAlias value="Barracks"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="BarracksFlying">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="BarracksReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="BarracksTechLab">
         <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
         <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="BarracksTechReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="BioDomeCommand">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="BioDomeCommandFlying">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Biodome">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="BiodomeHalfBuilt">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Bunker">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+        <AbilArray Link="BunkerTransport2"/>
+    </CUnit>
+    <CUnit id="CellBlockB">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="CivilianShipWrecked">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ColonistBiodome">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ColonistBiodomeHalfBuilt">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ColonistHut">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="CommandCenter">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CommandCenter2">
         <DeathRevealRadius value="3"/>
@@ -329,7 +470,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <EnergyStart value="50"/>
         <StationaryTurningRate value="719.4726"/>
@@ -341,7 +481,7 @@
         <RepairTime value="100"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="que5CancelToSelection"/>
+        <AbilArray Link="que1"/>
         <AbilArray Link="CommandCenter2LiftOff"/>
         <AbilArray Link="UpgradeToPlanetaryFortress2"/>
         <AbilArray Link="ScannerSweep"/>
@@ -357,10 +497,11 @@
         <EffectArray index="Birth" value="CCBirthSet"/>
         <CardLayouts>
             <LayoutButtons Face="UpgradeToPlanetaryFortress" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="CommandCenter2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5CancelToSelection,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que1,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelUpgradeMorph" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="CommandCenterTrain,Train1" Row="1" Column="3"/>
@@ -372,8 +513,6 @@
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
-            <LayoutButtons Face="TerranBuildAdvanced" Type="Submenu" SubmenuCardId="0003" Row="2" Column="1"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="1" Column="4"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
@@ -401,26 +540,13 @@
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-        </CardLayouts>
-        <CardLayouts CardId="0003">
-            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="1"/>
-            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
-            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="3"/>
-            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="4"/>
-            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="1" Column="0"/>
-            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="1" Column="1"/>
-            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="1" Column="2"/>
-            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="1" Column="3"/>
-            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
-            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
-            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
         </CardLayouts>
         <Radius value="2.5"/>
         <SeparationRadius value="2.5"/>
         <Footprint value="Footprint5x5Contour"/>
-        <PlacementFootprint value="Footprint5x5DropOff"/>
+        <PlacementFootprint value="Footprint5x5Contour"/>
         <ScoreMake value="400"/>
         <ScoreKill value="400"/>
         <ScoreResult value="BuildOrder"/>
@@ -434,6 +560,7 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechTreeProducedUnitArray value="PlanetaryFortress"/>
         <TechTreeProducedUnitArray value="OrbitalCommand"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="CommandCenter2Flying">
         <Name value="Unit/Name/CommandCenter"/>
@@ -455,7 +582,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Mover value="Fly"/>
         <Speed value="0.9375"/>
@@ -492,9 +618,119 @@
         <HotkeyAlias value="CommandCenter"/>
         <TechAliasArray value="Alias_CommandCenter"/>
         <GlossaryAlias value="CommandCenter"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="CommandCenterFlying">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Crane">
+        <DeathRevealRadius value="3"/>
+        <Facing value="315"/>
+        <Race value="Terr"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <StationaryTurningRate value="719.4726"/>
+        <TurningRate value="719.4726"/>
+        <Sight value="9"/>
+        <Food value="-10"/>
+        <CostCategory value="Economy"/>
+        <RepairTime value="30"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="que1"/>
+        <AbilArray Link="CCBuild"/>
+        <AbilArray Link="CCPlaceBuilding"/>
+        <AbilArray Link="PauseResumeQueue"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="CommandCenterQueue"/>
+        <BehaviorArray Link="FireSuppressionSystem"/>
+        <BehaviorArray Link="PowerCheck"/>
+        <CardLayouts>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que1,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="CommandCenterTrain,Train1" Row="1" Column="3"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="1" Column="3"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCBuild,Specialize11" Row="1" Column="3"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCBuild,Specialize1" Row="0" Column="2"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="1"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCBuild,Specialize2" Row="0" Column="1"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="1" Column="0"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCBuild,Specialize3" Row="1" Column="0"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="1" Column="1"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCBuild,Specialize4" Row="1" Column="1"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="1" Column="2"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCBuild,Specialize8" Row="1" Column="2"/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="3"/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCBuild,Specialize9" Row="0" Column="3"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="4"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCBuild,Specialize10" Row="0" Column="4"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
+        </CardLayouts>
+        <Radius value="1.75"/>
+        <SeparationRadius value="1.75"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3Contour"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.25"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Campaign"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+    </CUnit>
+    <CUnit id="CreepTumor">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="CreepTumorBurrowed">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="CreepTumorQueen">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="CyberneticsCore">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="DarkShrine">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="DataCore">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ElevatorBlocker">
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="EngineeringBay">
         <TechAliasArray value="Alias_EngineeringBay"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="EngineeringBay2">
         <DeathRevealRadius value="3"/>
@@ -522,7 +758,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="850"/>
         <LifeMax value="850"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -575,6 +810,24 @@
         <HotkeyAlias value="EngineeringBay"/>
         <SelectAlias value="EngineeringBay"/>
         <TechAliasArray value="Alias_EngineeringBay"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="EvolutionChamber">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Extractor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+        <!--EffectArray index="Create" value="ExtractorRichSearch"/-->
+    </CUnit>
+    <CUnit id="ExtractorRich">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Factory">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Factory2">
         <DeathRevealRadius value="3"/>
@@ -602,7 +855,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1250"/>
         <LifeMax value="1250"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -619,6 +871,7 @@
         <AbilArray Link="Factory2AddOns"/>
         <AbilArray Link="Rally"/>
         <AbilArray Link="Factory2LiftOff"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
@@ -627,9 +880,11 @@
             <LayoutButtons Face="SiegeTank" Type="AbilCmd" AbilCmd="Factory2Train,Train2" Row="0" Column="1"/>
             <LayoutButtons Face="Thor" Type="AbilCmd" AbilCmd="Factory2Train,Train5" Row="0" Column="2"/>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Factory2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="TechLabFactory" Type="AbilCmd" AbilCmd="Factory2AddOns,Build1" Row="2" Column="0"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Factory2AddOns,Halt" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -664,6 +919,7 @@
         <TechTreeProducedUnitArray value="Vulture"/>
         <TechTreeProducedUnitArray value="Diamondback"/>
         <TechTreeProducedUnitArray value="Goliath"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Factory2Flying">
         <Name value="Unit/Name/Factory"/>
@@ -685,7 +941,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1250"/>
         <LifeMax value="1250"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Mover value="Fly"/>
         <Speed value="0.9375"/>
@@ -724,14 +979,43 @@
         <HotkeyAlias value="Factory"/>
         <TechAliasArray value="Alias_Factory"/>
         <GlossaryAlias value="Factory"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="FactoryFlying">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="FactoryReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="FactoryTechLab">
         <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
         <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="FactoryTechReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="FleetBeacon">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ForceField">
+        <ArmorType value="Hero"/>
+        <!-- Do not give this unit a footprint because that can allow units to walk into unpathable areas -->
+    </CUnit>
+    <CUnit id="Forge">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="FusionCore">
         <TechAliasArray value="Alias_FusionCore"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="FusionCore2">
         <Facing value="315"/>
@@ -758,7 +1042,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="750"/>
         <LifeMax value="750"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Sight value="9"/>
         <Food value="-15"/>
@@ -796,6 +1079,19 @@
         <TechTreeUnlockedUnitArray value="Battlecruiser"/>
         <TechTreeUnlockedUnitArray value="Hercules"/>
         <TechAliasArray value="Alias_FusionCore"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="FusionReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Gateway">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="GhostAcademy">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="GhostAcademy2">
         <DeathRevealRadius value="3"/>
@@ -823,7 +1119,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1250"/>
         <LifeMax value="1250"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -870,6 +1165,190 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechTreeUnlockedUnitArray value="Ghost"/>
         <TechTreeUnlockedUnitArray value="Spectre"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="GreaterSpire">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Hatchery">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Hellion">
+        <ArmorType value="Medium"/>
+        <Food value="0"/>
+    </CUnit>
+    <CUnit id="Hive">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="HiveMindEmulator">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="HomeLarge">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="HomeSmall">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Hut">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Hydralisk">
+        <ArmorType value="Small"/>
+    </CUnit>
+    <CUnit id="HydraliskBurrowed">
+        <ArmorType value="Small"/>
+    </CUnit>
+    <CUnit id="HydraliskDen">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestableBiodome">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestableColonistBiodome">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestableColonistHut">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestableHut">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestationPit">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedArmory">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedBarracks">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedBunker">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InfestedCC">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedColonistShip">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedEngBay">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedFactory">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedMercHaven">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedMissileTurret">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InfestedRefinery">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InfestedStarport">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InfestedSupply">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="InhibitorZoneFlyingLarge">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InhibitorZoneFlyingMedium">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InhibitorZoneFlyingSmall">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InhibitorZoneLarge">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InhibitorZoneMedium">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="InhibitorZoneSmall">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="JoriumStockpile">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Lair">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="LogisticsHeadquarters">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="LurkerDen">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="LurkerDenMP">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="MainCellBlock">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="MarSaraBridgeBLUR">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="MarSaraBridgeBRUL">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Marine">
+        <Food value="0"/>
+    </CUnit>
+    <CUnit id="Medic">
+        <ArmorType value="Normal"/>
+        <LifeArmor value="0"/>
+        <Food value="0"/>
+    </CUnit>
+    <CUnit id="MedicSquad" parent="BaseSquad">
+        <Race value="Terr"/>
+        <Speed value="2.25"/>
+        <AbilArray Link="MedicSquad"/>
+        <AbilArray Link="MedicSquadAcquire"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="MercCompound">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="MercenaryFortress">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="MissileTurret">
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="MissileTurret2">
         <DeathRevealRadius value="3"/>
@@ -955,6 +1434,44 @@
         <GlossaryStrongArray value="Scout"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <Food value="-7"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="MonlythArtifactForceField">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="MonlythForceFieldStatue">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Mutalisk">
+        <ArmorType value="None"/>
+    </CUnit>
+    <CUnit id="Nexus">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="NukePack">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="NukeSiloNova">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="NydusCanal">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="NydusNetwork">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Obelisk">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="OrbitalCommand">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="OrbitalCommand2">
         <Description value="Button/Tooltip/OrbitalCommand2Unit"/>
@@ -988,7 +1505,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <EnergyStart value="50"/>
         <EnergyMax value="200"/>
@@ -1039,6 +1555,11 @@
         <TechAliasArray value="Alias_CommandCenter"/>
         <GlossaryPriority value="30"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="OrbitalCommandFlying">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="OrbitalCommandFlying2">
         <DeathRevealRadius value="3"/>
@@ -1059,7 +1580,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <EnergyStart value="50"/>
         <EnergyMax value="200"/>
@@ -1104,6 +1624,22 @@
         <HotkeyAlias value="OrbitalCommand"/>
         <TechAliasArray value="Alias_CommandCenter"/>
         <GlossaryAlias value="OrbitalCommand"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="PerditionTurret">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="PerditionTurretUnderground">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="PhotonCannon">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="PlanetaryFortress">
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="PlanetaryFortress2">
         <DeathRevealRadius value="3"/>
@@ -1172,9 +1708,27 @@
         <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="240"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="PsiDisruptor">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="PsiIndoctrinator">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Pylon">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Reactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Refinery">
         <TechAliasArray value="Alias_Refinery"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Refinery2">
         <DeathRevealRadius value="3"/>
@@ -1209,7 +1763,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="500"/>
         <LifeMax value="500"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -1242,6 +1795,32 @@
         <GlossaryPriority value="11"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechAliasArray value="Alias_Refinery"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="RefineryRich">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="RenegadeMissileTurret">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Roach">
+        <ArmorType value="Medium"/>
+    </CUnit>
+    <CUnit id="RoachBurrowed">
+        <ArmorType value="Medium"/>
+    </CUnit>
+    <CUnit id="RoachWarren">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="RoboticsBay">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="RoboticsFacility">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SCV2">
         <DeathRevealRadius value="3"/>
@@ -1291,25 +1870,6 @@
             <LayoutButtons Face="GatherTerr" Type="AbilCmd" AbilCmd="SCVHarvest,Gather" Row="1" Column="0"/>
             <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest,Return" Row="1" Column="1"/>
         </CardLayouts>
-        <CardLayouts CardId="TBl1">
-            <LayoutButtons Face="CommandCenter" Type="AbilCmd" AbilCmd="TerranBuild,Build1" Row="0" Column="0"/>
-            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="TerranBuild,Build3" Row="0" Column="1"/>
-            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="TerranBuild,Build2" Row="0" Column="2"/>
-            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="TerranBuild,Build4" Row="1" Column="0"/>
-            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="TerranBuild,Build5" Row="1" Column="1"/>
-            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="TerranBuild,Build7" Row="2" Column="0"/>
-            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="TerranBuild,Build6" Row="2" Column="1"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="TerranBuild,Build9" Row="2" Column="2"/>
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-        </CardLayouts>
-        <CardLayouts CardId="TBl2">
-            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="TerranBuild,Build10" Row="0" Column="0"/>
-            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="TerranBuild,Build11" Row="1" Column="0"/>
-            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="TerranBuild,Build14" Row="1" Column="1"/>
-            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="TerranBuild,Build12" Row="2" Column="0"/>
-            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="TerranBuild,Build16" Row="2" Column="1"/>
-            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
-        </CardLayouts>
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
         <InnerRadius value="0.375"/>
@@ -1328,6 +1888,9 @@
             <ChanceArray index="Idle" value="33"/>
             <ChanceArray index="Turn" value="33"/>
         </Fidget>
+    </CUnit>
+    <CUnit id="SensorTower">
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="SensorTower2">
         <DeathRevealRadius value="3"/>
@@ -1388,6 +1951,82 @@
         <GlossaryPriority value="12"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <Food value="-10"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SentryGun">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SentryGunUnderground">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ShieldBattery">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="ShortBridgeHorizontal">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="ShortBridgeVertical">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SiegeTank">
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <Food value="0"/>
+    </CUnit>
+    <CUnit id="SiegeTankSieged">
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <Food value="0"/>
+    </CUnit>
+    <CUnit id="SiegeTankSkinPreview"/>
+    <CUnit id="SpacePlatformCliffDoor0">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SpacePlatformCliffDoor1">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SpacePlatformCliffDoorOpen0">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SpacePlatformCliffDoorOpen1">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SpawningPool">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SpineCrawler">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SpineCrawlerUprooted">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Spire">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SporeCannon">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SporeCrawler">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SporeCrawlerUprooted">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Stargate">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Starport">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Starport2">
         <DeathRevealRadius value="3"/>
@@ -1415,7 +2054,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1300"/>
         <LifeMax value="1300"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -1432,6 +2070,7 @@
         <AbilArray Link="Starport2AddOns"/>
         <AbilArray Link="Rally"/>
         <AbilArray Link="Starport2LiftOff"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
@@ -1444,8 +2083,10 @@
             <LayoutButtons Face="Battlecruiser" Type="AbilCmd" AbilCmd="Starport2Train,Train4" Row="0" Column="4"/>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="TechLabStarport" Type="AbilCmd" AbilCmd="Starport2AddOns,Build1" Row="2" Column="0"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Starport2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,255" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Starport2AddOns,Halt" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -1479,6 +2120,7 @@
         <TechTreeProducedUnitArray value="ScienceVessel"/>
         <TechTreeProducedUnitArray value="Wraith"/>
         <TechTreeProducedUnitArray value="Hercules"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Starport2Flying">
         <Name value="Unit/Name/Starport"/>
@@ -1500,7 +2142,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="1300"/>
         <LifeMax value="1300"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Mover value="Fly"/>
         <Speed value="0.9375"/>
@@ -1539,11 +2180,34 @@
         <HotkeyAlias value="Starport"/>
         <TechAliasArray value="Alias_Starport"/>
         <GlossaryAlias value="Starport"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="StarportFlying">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="StarportReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="StarportTechLab">
         <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
         <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="StarportTechReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SuperWarpGate">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SupplyDepot">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SupplyDepot2">
         <DeathRevealRadius value="3"/>
@@ -1571,7 +2235,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="350"/>
         <LifeMax value="350"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -1610,6 +2273,7 @@
         <LeaderAlias value="SupplyDepot"/>
         <HotkeyAlias value="SupplyDepot"/>
         <SelectAlias value="SupplyDepot"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="SupplyDepot2Lowered">
         <DeathRevealRadius value="3"/>
@@ -1637,7 +2301,6 @@
         <Attributes index="Structure" value="1"/>
         <LifeStart value="350"/>
         <LifeMax value="350"/>
-        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -1667,11 +2330,38 @@
         <HotkeyAlias value="SupplyDepot"/>
         <SelectAlias value="SupplyDepot"/>
         <TechAliasArray value="Alias_SupplyDepot"/>
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="SupplyDepotDrop">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SupplyDepotLowered">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="TechLab">
         <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
         <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="TechReactor">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="TemplarArchive">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="TerrazineTank">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="TestShop">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="TibNodeLarge">
         <DeathRevealRadius value="3"/>
@@ -1701,39 +2391,31 @@
         <SeparationRadius value="1.5"/>
         <Footprint value="Footprint2x2"/>
         <SubgroupPriority value="2"/>
-        <MinimapRadius value="1.5"/>
+        <MinimapRadius value="1"/>
         <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
         <Fidget DelayMax="0"/>
     </CUnit>
     <CUnit id="GhostSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <FlagArray index="TreatStructureAsUnitForSelection" value="1"/>
         <Speed value="2.25"/>
-        <LateralAcceleration value="0"/>
         <AbilArray Link="GhostSquad"/>
         <WeaponArray Link="GhostSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="GhostSquad,0" Row="1" Column="0"/>
         </CardLayouts>
-        <SeparationRadius value="1"/>
     </CUnit>
     <CUnit id="MarauderSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <FlagArray index="TreatStructureAsUnitForSelection" value="1"/>
         <Speed value="2.25"/>
-        <LateralAcceleration value="0"/>
         <AbilArray Link="MarauderSquad"/>
         <WeaponArray Link="MarauderSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarauderSquad,Ammo1" Row="1" Column="0"/>
         </CardLayouts>
-        <SeparationRadius value="1"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <FlagArray index="TreatStructureAsUnitForSelection" value="1"/>
         <Speed value="2.25"/>
-        <LateralAcceleration value="0"/>
         <AbilArray Link="MarineSquad"/>
         <AbilArray Link="StimpackRedirect"/>
         <WeaponArray Link="MarineSquad"/>
@@ -1741,19 +2423,16 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarineSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>
         </CardLayouts>
-        <SeparationRadius value="1"/>
+        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <FlagArray index="TreatStructureAsUnitForSelection" value="1"/>
         <Speed value="2.9531"/>
-        <LateralAcceleration value="0"/>
         <AbilArray Link="ReaperSquad"/>
         <WeaponArray Link="ReaperSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,0" Row="1" Column="0"/>
         </CardLayouts>
-        <SeparationRadius value="1"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>
@@ -1783,7 +2462,7 @@
         <SeparationRadius value="1.5"/>
         <Footprint value="Footprint2x2"/>
         <SubgroupPriority value="2"/>
-        <MinimapRadius value="1.5"/>
+        <MinimapRadius value="1"/>
         <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
         <Fidget DelayMax="0"/>
     </CUnit>
@@ -1815,7 +2494,7 @@
         <SeparationRadius value="1.5"/>
         <Footprint value="Footprint2x2"/>
         <SubgroupPriority value="2"/>
-        <MinimapRadius value="1.5"/>
+        <MinimapRadius value="1"/>
         <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
         <Fidget DelayMax="0"/>
     </CUnit>
@@ -1829,8 +2508,56 @@
         <Collide index="Small" value="0"/>
         <BehaviorArray index="0" Link="TibVeinMinerals"/>
         <BehaviorArray Link="TibGrow"/>
-        <Radius value="0.375"/>
-        <SeparationRadius value="0.375"/>
+        <Radius value="0.5"/>
+        <SeparationRadius value="0.5"/>
         <Footprint value=""/>
+    </CUnit>
+    <CUnit id="TwilightCouncil">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="UltraliskCavern">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="WarPig">
+        <ArmorType value="Small"/>
+    </CUnit>
+    <CUnit id="WarpGate">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="XelNagaShrine">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="XelNagaShrineXil">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="XelNagaTemple">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="Zergling">
+        <ArmorType value="Small"/>
+    </CUnit>
+    <CUnit id="ZerglingBurrowed">
+        <ArmorType value="Small"/>
+    </CUnit>
+    <CUnit id="ZhakulDasLibraryUnit">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="ZhakulDasLibraryUnitBurrowed">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="ZhakulDasLightBridge">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="ZhakulDasLightBridgeOff">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="ZhakulDasLightBridgeOffTopRight">
+        <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="ZhakulDasLightBridgeTopRight">
+        <ArmorType value="Hero"/>
     </CUnit>
 </Catalog>

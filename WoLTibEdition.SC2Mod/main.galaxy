@@ -5,6 +5,7 @@ trigger building;
 trigger pause;
 trigger resume;
 trigger cancel;
+trigger techUnlock;
 trigger INI;
 int rate;
 int spendrate;
@@ -116,6 +117,13 @@ bool Building_Func (bool testConds, bool runActions) {
 		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
 			return false;
 		}
+//		if (libNtve_gf_TriggeringProgressUnitType() != null) {
+//			UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("is unit"));
+//			if (AIDefaultGetObjectType(UnitGetOwner(EventUnit()), libNtve_gf_TriggeringProgressUnitType()) == 1 && libNtve_gf_TriggeringProgressUnitType() != "TechLab") {
+//				UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("is techlab"));
+//				return false;
+//			}
+//		}
 	}
 	
 	buildingUnit = EventUnit();
@@ -146,8 +154,16 @@ bool Building_Func (bool testConds, bool runActions) {
 		paused = UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused);
 		Wait(0.0625, c_timeGame);
 	} while (progress <= UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1));
+	if (!UnitIsAlive(buildingUnit)) {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+		return true;
+	}
 	UnitBehaviorRemove(buildingUnit, "BuildHandled", 1);
-	if (!paused) {
+	Wait(0.0625, c_timeGame);
+	if (!(paused || UnitHasBehavior(buildingUnit, "Cancel"))) { // behavior appears to not work but it's here anyways because we can always hope
+		while (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < (RoundI(totalTime * spendrate) - totaledCost)) {
+			Wait(0.0625, c_timeGame);
+		}
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
 	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
@@ -159,6 +175,7 @@ void Building_Init () {
 	building = TriggerCreate("Building_Func");
 	TriggerAddEventUnitTrainProgress(building, null, c_unitProgressStageStart);
 	TriggerAddEventUnitSpecializeProgress(building, null, c_unitProgressStageStart);
+	//TriggerAddEventUnitConstructProgress(building, null, c_unitProgressStageStart);
 }
 
 bool Pause_Func (bool testConds, bool runActions) {
@@ -195,12 +212,58 @@ void Cancel_Init () {
 	TriggerAddEventUnitSpecializeProgress(cancel, null, c_unitProgressStageCancel);
 }
 
+bool TechUnlock_Func (bool textConds, bool runActions) {
+	int lv_i;
+	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 5000);
+	TechTreeAbilityAllow(1, AbilityCommand("BunkerTransport2", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("BunkerTransport2", 1), true);
+	TechTreeAbilityAllow(1, AbilityCommand("BunkerTransport2", 2), true);
+	TechTreeAbilityAllow(1, AbilityCommand("BunkerTransport2", 3), true);
+	TechTreeAbilityAllow(1, AbilityCommand("BunkerTransport2", 4), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 1), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 2), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 3), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 8), true);
+	//7 = shadow ops, 9 = armory, 11 = fusion core
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 1), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 2), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 3), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 8), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksAddOns", 0)));
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryAddOns", 0)));
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportAddOns", 0)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 10), (TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 5))));
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 10), (TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 5))));
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 6)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 6)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 5), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 5), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 8)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 8)));
+	for (lv_i = 0; lv_i < 9; lv_i += 1) {
+		TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", lv_i)));
+	}
+	for (lv_i = 0; lv_i < 10; lv_i += 1) {
+		TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", lv_i)));
+	}
+	for (lv_i = 0; lv_i < 8; lv_i += 1) {
+		TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", lv_i)));
+	}
+	return true;
+}
+
+void TechUnlock_Init () {
+	techUnlock = TriggerCreate("TechUnlock_Func");
+	TriggerAddEventTimeElapsed(techUnlock, 1, c_timeGame);
+}
+
 bool INI_Func (bool testConds, bool runActions) {
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	rate = 117;
 	spendrate = 100;
 	PlayerSetState(1, c_playerStateFormationMove, true);
-	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 10000);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesMade, c_playerPropOperAdd, 1);
 	return true;
@@ -219,5 +282,6 @@ void main() {
 	Pause_Init();
 	Resume_Init();
 	Cancel_Init();
+	TechUnlock_Init();
 	INI_Init();
 }

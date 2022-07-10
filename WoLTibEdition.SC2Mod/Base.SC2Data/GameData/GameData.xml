@@ -3,6 +3,48 @@
     <CGame id="Dflt">
         <CallForHelpRadius value="0"/>
         <FormationSeparationFactor value="5"/>
+        <AttackArmorTable index="Normal" SupportedFilters="-;-">
+            <ArmorFactor index="Medium" value="0.5"/>
+            <ArmorFactor index="Large" value="0.25"/>
+            <ArmorFactor index="Fort" value="1"/>
+            <ArmorFactor index="Hero" value="0.25"/>
+            <ArmorFactor index="Divine" value="1"/>
+        </AttackArmorTable>
+        <AttackArmorTable index="Pierce" SupportedFilters="-;-">
+            <ArmorFactor index="Small" value="0.75"/>
+            <ArmorFactor index="Medium" value="0.5"/>
+            <ArmorFactor index="Large" value="0.25"/>
+            <ArmorFactor index="Fort" value="1"/>
+            <ArmorFactor index="Normal" value="0.75"/>
+            <ArmorFactor index="Hero" value="1"/>
+            <ArmorFactor index="Divine" value="1"/>
+            <ArmorFactor index="None" value="1"/>
+        </AttackArmorTable>
+        <AttackArmorTable index="Siege" SupportedFilters="-;-">
+            <ArmorFactor index="Small" value="0.25"/>
+            <ArmorFactor index="Medium" value="0.75"/>
+            <ArmorFactor index="Large" value="0.75"/>
+            <ArmorFactor index="Fort" value="1"/>
+            <ArmorFactor index="Normal" value="0.25"/>
+            <ArmorFactor index="Divine" value="1"/>
+            <ArmorFactor index="None" value="1"/>
+        </AttackArmorTable>
+        <AttackArmorTable index="Magic" SupportedFilters="-;-">
+            <ArmorFactor index="Small" value="0.25"/>
+            <ArmorFactor index="Medium" value="1"/>
+            <ArmorFactor index="Large" value="1"/>
+            <ArmorFactor index="Fort" value="1"/>
+            <ArmorFactor index="Normal" value="0.25"/>
+            <ArmorFactor index="Hero" value="0.75"/>
+            <ArmorFactor index="Divine" value="1"/>
+        </AttackArmorTable>
+        <AttackArmorTable index="Chaos" SupportedFilters="-;-">
+            <ArmorFactor index="Medium" value="0.01"/>
+            <ArmorFactor index="Large" value="0.01"/>
+            <ArmorFactor index="Hero" value="0.01"/>
+            <ArmorFactor index="None" value="0.01"/>
+        </AttackArmorTable>
+        <AttackArmorTable index="Hero" SupportedFilters="-;-"/>
         <!-- Test Builds -->
         <!-- <AIBuilds index="200">
             <AttributeId value="B200"/>

@@ -7,4 +7,7 @@
     <CValidatorPlayerCompareFoodAvailable id="PlayerHasPower">
         <Compare value="LE"/>
     </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorUnitCompareVital id="TargetLifeNotFull">
+        <ResultFailed value="RequiresHealTarget"/>
+    </CValidatorUnitCompareVital>
 </Catalog>

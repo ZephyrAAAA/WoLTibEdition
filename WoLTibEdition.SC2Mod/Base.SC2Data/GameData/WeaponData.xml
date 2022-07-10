@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CWeaponLegacy id="90mmCannons">
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSaliva">
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Claws">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CrucioShockCannon">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
         <Name value="Weapon/Name/GhostSquad"/>
         <EditorCategories value=""/>
@@ -14,6 +26,21 @@
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
         <Range value="5.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GlaiveWurm">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GuassRifle">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HydraliskMelee">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfernalFlameThrower">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KelmorianMinerGaussRifle">
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
@@ -44,6 +71,9 @@
         <Effect value="SquadAttack"/>
         <Range value="4.5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleSpines">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>
         <EditorCategories value=""/>
@@ -59,5 +89,8 @@
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
         <Range value="4"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RoachMelee">
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
 </Catalog>

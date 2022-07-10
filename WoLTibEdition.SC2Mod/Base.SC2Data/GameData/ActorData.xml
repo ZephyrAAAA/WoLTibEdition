@@ -8,7 +8,7 @@
         <On Terms="Abil.que5.Stop" Send="AnimSetTimeScale ::Baseline 1.000000"/>
         <Model value="Armory"/>
         <CreepHeightClass value="Small"/>
-        <BuildModel value="Armory"/>
+        <BuildModel value="ArmoryBuild"/>
         <DeathArray index="Normal" ModelLink="ArmoryDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="Armory_Explode"/>
         <PlacementModel value="ArmoryPlacement"/>
@@ -35,7 +35,7 @@
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationBarracks"/>
         <On Terms="UnitDeathCustomize.Barracks2Flying" Send="DeathCustomize Flying"/>
         <Model value="Barracks"/>
-        <BuildModel value="Barracks"/>
+        <BuildModel value="BarracksBuild"/>
         <DeathArray index="Normal" ModelLink="BarracksDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="Barracks_Explode"/>
         <DeathCustoms index="5" ModelLink="BarracksFlyDeath" SoundLink="Barracks_Explode" Name="Flying"/>
@@ -168,6 +168,20 @@
     <CActorSound id="CommandCenterLand">
         <On Terms="AbilMorph.*.Start; MorphTo CommandCenter2; MorphFrom CommandCenter2Flying" Send="Create"/>
     </CActorSound>
+    <CActorUnit id="Crane" parent="GenericUnitStandard" unitName="Crane">
+        <On Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death"/>
+        <Model value="ConstructionCrane"/>
+        <Scale value="0.900000"/>
+        <BuildModel value="BarracksBuild"/>
+        <PlacementModel value="ConstructionCrane"/>
+        <PortraitModel value="AdjutantPortrait"/>
+        <HeroIcon value="Assets\Textures\Decal_Terran_0047_01.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <UnitIcon value="Assets\Textures\Decal_Terran_0047_01.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\decal_terran_0047_01.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <CActorUnit id="EngineeringBay2" parent="TerranBuildingEx" unitName="EngineeringBay2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -175,7 +189,7 @@
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationEngineeringBay"/>
         <Model value="EngineeringBay"/>
         <CreepHeightClass value="Medium"/>
-        <BuildModel value="EngineeringBay"/>
+        <BuildModel value="EngineeringBayBuild"/>
         <DeathArray index="Normal" ModelLink="EngineeringBayDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="EngineeringBay_Explode"/>
         <PlacementModel value="EngineeringBayPlacement"/>
@@ -202,7 +216,7 @@
         <On Terms="UnitDeathCustomize.Factory2Flying" Send="DeathCustomize Flying"/>
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestedVisual"/>
         <Model value="Factory"/>
-        <BuildModel value="Factory"/>
+        <BuildModel value="FactoryBuild"/>
         <DeathArray index="Normal" ModelLink="FactoryDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Factory_Explode"/>
         <DeathCustoms index="5" ModelLink="FactoryFlyDeath" SoundLink="Factory_Explode" Name="Flying"/>
@@ -232,7 +246,7 @@
         <On index="69" Terms="UnitConstruction.FusionCore2.Start" Send="Create FusionCoreBuild"/>
         <Model value="FusionCore"/>
         <CreepHeightClass value="Medium"/>
-        <BuildModel value="FusionCore"/>
+        <BuildModel value="FusionCoreBuild"/>
         <DeathArray index="Normal" ModelLink="FusionCoreDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="FusionCore_Explode"/>
         <PlacementModel value="FusionCorePlacement"/>
@@ -260,7 +274,7 @@
         <Macros value="QueueAnim"/>
         <On index="69" Terms="UnitConstruction.GhostAcademy2.Start" Send="Create GhostAcademyBuild"/>
         <Model value="GhostAcademy"/>
-        <BuildModel value="GhostAcademy"/>
+        <BuildModel value="GhostAcademyBuild"/>
         <DeathArray index="Normal" ModelLink="GhostAcademyDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="GhostAcademy_Explode"/>
         <PlacementModel value="GhostAcademyPlacement"/>
@@ -450,6 +464,31 @@
         <BarWidth value="60"/>
         <HighlightTooltip value="Unit/Name/MarineSquad"/>
     </CActorUnit>
+    <CActorUnit id="MedicSquad" parent="Medic" unitName="MedicSquad">
+        <Macros index="1" removed="1"/>
+        <On index="0" Terms="UnitBirth.MedicSquad" Send="Create SoundEmitter MedicSquad_Ambience"/>
+        <On index="1" Terms="UnitBirth.MedicSquad"/>
+        <On index="2" Terms="UnitRevive.MedicSquad"/>
+        <On index="3" Terms="UnitRevive.MedicSquad"/>
+        <On index="4" Terms="UnitConstruction.MedicSquad.Start"/>
+        <On index="5" Terms="UnitConstruction.MedicSquad.Finish"/>
+        <On index="69" Terms="ActorCreation" Send="SetOpacity"/>
+        <On index="70" removed="1"/>
+        <On index="71" removed="1"/>
+        <On index="72" removed="1"/>
+        <Model value="VespeneGeyser"/>
+        <EventDataFootprint index="0" Model="MedicSquadFootprint"/>
+        <BuildModel value="VespeneGeyser"/>
+        <DeathArray index="Normal" ModelLink="MedicSquad" SoundLink="MedicSquadDeath" VoiceLink="MedicSquadDeathVoice"/>
+        <DeathArray index="Blast" ModelLink=""/>
+        <DeathCustoms index="5" removed="1"/>
+        <PlacementModel value="VespeneGeyser"/>
+        <StandAnimTurnTime value="4"/>
+        <BarOffset value="100"/>
+        <BarWidth value="60"/>
+        <GlossaryAnim value="Spell"/>
+        <HighlightTooltip value="Unit/Name/MedicSquad"/>
+    </CActorUnit>
     <CActorUnit id="MissileTurret2" parent="TerranBuildingEx" unitName="MissileTurret2">
         <Aliases value="_UnitHuge"/>
         <On index="69" Terms="UnitConstruction.MissileTurret2.Start" Send="Create MissileTurretBuild"/>
@@ -463,7 +502,7 @@
         <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
         <Model value="MissileTurret"/>
         <CreepHeightClass value="Small"/>
-        <BuildModel value="MissileTurret"/>
+        <BuildModel value="MissileTurretBuild"/>
         <DeathArray index="Normal" ModelLink="MissileTurretDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
         <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
@@ -647,7 +686,7 @@
         <On Terms="UnitBirth.Refinery2" Send="TimerSet 0.100000 HideGeyser"/>
         <Model value="Refinery"/>
         <CreepHeightClass value="Medium"/>
-        <BuildModel value="Refinery"/>
+        <BuildModel value="RefineryBuild"/>
         <DeathArray index="Normal" ModelLink="RefineryDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Refinery_Explode"/>
         <DeathCustoms ModelLink="RefineryEmptyDeath" Name="Empty"/>
@@ -735,7 +774,7 @@
         <Aliases value="_UnitMedium"/>
         <On index="69" Terms="UnitConstruction.SensorTower2.Start" Send="Create SensorTowerBuild"/>
         <Model value="SensorTower"/>
-        <BuildModel value="SensorTower"/>
+        <BuildModel value="SensorTowerBuild"/>
         <DeathArray index="Normal" ModelLink="SensorTowerDeath" SoundLink="SensorTower_Explode"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="SensorTower_Explode"/>
         <PlacementModel value="SensorTowerPlacement"/>
@@ -760,7 +799,7 @@
         <On Terms="UnitDeathCustomize.Starport2Flying" Send="DeathCustomize Flying"/>
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestedVisual"/>
         <Model value="Starport"/>
-        <BuildModel value="Starport"/>
+        <BuildModel value="StarportBuild"/>
         <DeathArray index="Normal" ModelLink="StarportDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Starport_Explode"/>
         <DeathCustoms index="5" ModelLink="StarportFlyDeath" SoundLink="Starport_Explode" Name="Flying"/>
@@ -803,7 +842,7 @@
         <On Terms="ActorCreation; PlayerHasReward SupplyDepotSkin" Send="AnimBracketStop ::GL_BSD Instant"/>
         <Model value="SupplyDepot"/>
         <CreepHeightClass value="Small"/>
-        <BuildModel value="SupplyDepot"/>
+        <BuildModel value="SupplyDepotBuild"/>
         <DeathArray index="Normal" ModelLink="SupplyDepotDeath" SoundLink="SupplyDepot_Explode"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="SupplyDepot_Explode"/>
         <PlacementModel value="SupplyDepotPlacement"/>
@@ -1061,7 +1100,6 @@
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 3" Target="MineralFieldSplat" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
         <Model value="MineralField"/>
-        <Scale value="0.750000"/>
         <BuildModel value="MineralField"/>
         <DeathArray index="Normal" ModelLink="MineralField"/>
         <PlacementModel value="MineralField"/>

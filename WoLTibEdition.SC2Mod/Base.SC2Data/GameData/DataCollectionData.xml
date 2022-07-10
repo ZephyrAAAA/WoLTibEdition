@@ -166,6 +166,13 @@
         <DataRecord Entry="Actor,MarineSquad"/>
         <DataRecord Entry="Unit,MarineSquad"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="MedicSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,MedicSquad"/>
+        <DataRecord Entry="Weapon,MedicSquad"/>
+        <DataRecord Entry="Actor,MedicSquad"/>
+        <DataRecord Entry="Unit,MedicSquad"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="MineralField">
         <EditorCategories value=""/>
         <DataRecord Entry="Actor,MineralField"/>
@@ -260,7 +267,7 @@
         <DataRecord Entry="Effect,TibNodeLarge"/>
         <DataRecord Entry="Effect,TibNodeLargeSearchLarge"/>
         <DataRecord Entry="Effect,TibNodeLargeSearchSet"/>
-        <DataRecord Entry="Effect,TibNodeLargeSearchSmall"/>
+        <DataRecord Entry="Effect,TibNodeLargeSearch"/>
         <DataRecord Entry="Effect,TibNodeLargeGrow"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TibNodeMedium">
@@ -271,7 +278,7 @@
         <DataRecord Entry="Behavior,TibNodeMedium"/>
         <DataRecord Entry="Effect,TibNodeMediumStarter"/>
         <DataRecord Entry="Effect,TibNodeMedium"/>
-        <DataRecord Entry="Effect,TibNodeMediumSearchLarge"/>
+        <DataRecord Entry="Effect,TibNodeMediumSearch"/>
         <DataRecord Entry="Effect,TibNodeMediumSearchSet"/>
         <DataRecord Entry="Effect,TibNodeMediumSearchSmall"/>
         <DataRecord Entry="Effect,TibNodeMediumGrow"/>
@@ -284,7 +291,7 @@
         <DataRecord Entry="Behavior,TibNodeSmall"/>
         <DataRecord Entry="Effect,TibNodeSmallStarter"/>
         <DataRecord Entry="Effect,TibNodeSmall"/>
-        <DataRecord Entry="Effect,TibNodeSmallSearchLarge"/>
+        <DataRecord Entry="Effect,TibNodeSmallSearch"/>
         <DataRecord Entry="Effect,TibNodeSmallSearchSet"/>
         <DataRecord Entry="Effect,TibNodeSmallSearchSmall"/>
         <DataRecord Entry="Effect,TibNodeSmallGrow"/>

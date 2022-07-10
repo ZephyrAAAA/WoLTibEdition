@@ -36,6 +36,9 @@
     <CRequirement id="CanBuildFusionCore">
         <NodeArray index="Show" Link="LTCountBehaviorFusionCoreBuiltCompleteOnly1"/>
     </CRequirement>
+    <CRequirement id="HasBuiltCrane">
+        <NodeArray index="Show" Link="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1"/>
+    </CRequirement>
     <CRequirement id="HasBuiltSupplyDepot">
         <NodeArray index="Show" Link="EqCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
     </CRequirement>
