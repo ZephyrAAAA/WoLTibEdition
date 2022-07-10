@@ -94,19 +94,36 @@ In Utter Darkness:
 
 UNIT CHANGES:
 
-Firebat- 
+Firebat- Rework to fire a stream of flame at range, dealing damage around the target.
 
 Medic- Better Healing priority.
 
 Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
 
-Hercules- Tech requirement move from Fusion Core to Armoury. Cheaper.
+Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper.
+
+Wraith-
+
+Bunker- Has 1 slot, fits 1 squad
+
+Predator- Comparitively Cheaper
+
 
 ARMORY UPGRADE CHANGES:
 
 Orbital Command- Unlock Scan support power
 
 Advanced Construction-
+
+Thermite- Allow Hellion to Fire on the move
+
+Neosteel Bunker- Improves armour
+
+Displacement Field- Dodge chance increased to 40%
+
+Maelstrom-
+
+Incinerator Gauntlets-
 
 
 RESEARCH LAB CHANGES:
@@ -134,3 +151,19 @@ Psi Disruptor(Maybe)-
 
 Regenerative Bio-steel- BEEG buff
 
+
+NEW IN-GAME UPGRADES:
+
+Infantry Health and Armour [Engineering Bay]
+
+Improved Explosives- All Explosive weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee, Marine, Vulture, Marauder,) [Engineering Bay]
+
+Vehicle Health and Armour [Armoury]
+
+Marine Ammo (4 variants, Incendiary(Bonus damage to bio/light), AP(Bonus damage to armoured), Explosive(Bonus damage), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun) you can only pick 1 during a mission) [Barracks Tech Lab]
+
+Blue Flame- all fire weapons deal more damage (Including Marine incendiary ammo) [Armoury]
+
+Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Armoury]
+
+Improved Shields-Requires the Shield Research. Improves shield stats [Fusion Core]
