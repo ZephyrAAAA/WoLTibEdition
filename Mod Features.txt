@@ -156,14 +156,18 @@ NEW IN-GAME UPGRADES:
 
 Infantry Health and Armour [Engineering Bay]
 
-Improved Explosives- All Explosive weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee, Marine, Vulture, Marauder,) [Engineering Bay]
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee, Marine) [Engineering Bay]
+
+Marine Ammo (3 variants, Incendiary(Better against bio/infantry), Explosive(Better against armoured), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun(Better against armoured, worse against infantry)) you can only pick 1 during a mission) [Barracks Tech Lab]
+
+Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Factory Tech Lab]
+
+Improved Engines-Ships move faster [Starport Tech Lab]
 
 Vehicle Health and Armour [Armoury]
 
-Marine Ammo (4 variants, Incendiary(Bonus damage to bio/light), AP(Bonus damage to armoured), Explosive(Bonus damage), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun) you can only pick 1 during a mission) [Barracks Tech Lab]
-
 Blue Flame- all fire weapons deal more damage (Including Marine incendiary ammo) [Armoury]
 
-Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Armoury]
-
 Improved Shields-Requires the Shield Research. Improves shield stats [Fusion Core]
+
+Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Fusion Core]
