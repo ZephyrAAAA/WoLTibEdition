@@ -24,16 +24,25 @@ Flat armour has been removed in favour of damage types, so units do damage based
 
 Implemented a topbar of Support Powers.
 
+Terrans, starting at Zero Hour, now have access to the Devastation Turret. An anti-armour defensive weapon.
+
+Units and structures now cost resources based on how long they take. 100 minerals per second of buildtime.
+
+Workers harvest resources at roughly 2000/min, under optimal conditions.
+
 
 MISSION SPECIFIC CHANGES:
 
 Liberation Day:
 
 The Outlaws:
+-Moved Supply Depots at the Rebel Base so a resource node could be placed
+-Doubled the intensity of attacks
 
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
 -Pallets to the west of the western bridge replaced with a resource node
+-Doubled the intensity of attacks
 
 The Evacuation:
 
