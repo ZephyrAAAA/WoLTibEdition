@@ -197,18 +197,21 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
+    <CAbilArmMagazine id="Bunker">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Leash value="0"/>
+        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="Bunker2">
+            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Bunker"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <MaxCount value="1"/>
+    </CAbilArmMagazine>
     <CAbilTransport id="BunkerTransport">
         <MaxCargoSize value="4"/>
         <LoadCargoEffect value="BunkerLoadIterate"/>
         <UnloadCargoEffect value="BunkerUnloadIterate"/>
-    </CAbilTransport>
-    <CAbilTransport id="BunkerTransport2" parent="BunkerTransport">
-        <Name value="Abil/Name/BunkerTransport2"/>
-        <DataCollection value="BunkerTransport2"/>
-        <Flags index="AllowPassengerSmartCmd" value="0"/>
-        <Flags index="AllowSmartCmd" value="0"/>
-        <Flags index="ShowCargoSize" value="0"/>
-        <Range value="10"/>
         <MaxCargoCount value="6"/>
         <TotalCargoSpace value="6"/>
     </CAbilTransport>
@@ -221,7 +224,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SupplyDepot" State="Restricted" Requirements="CanBuildSupplyDepot"/>
+            <Button DefaultButtonFace="SupplyDepot" State="Restricted" Requirements="CanBuildSupplyDepot">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize2" Time="30" Effect="RefineryBuilt">
             <Charge>
@@ -230,7 +235,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Refinery" State="Restricted" Requirements="CanBuildRefinery"/>
+            <Button DefaultButtonFace="Refinery" State="Restricted" Requirements="CanBuildRefinery">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize3" Time="5" Effect="BarracksBuilt">
             <Charge>
@@ -239,7 +246,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="HaveSupplyDepot"/>
+            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="HaveSupplyDepot">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize4" Time="15" Effect="EngineeringBayBuilt">
             <Charge>
@@ -248,7 +257,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="HaveRefandSupplyDepot"/>
+            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="HaveRefandSupplyDepot">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize5" Time="2" Effect="BunkerBuilt">
             <Charge>
@@ -257,7 +268,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HaveBarracks"/>
+            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HaveBarracks">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize6" Time="8" Effect="MissileTurretBuilt">
             <Charge>
@@ -266,7 +279,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HaveEngineeringBay"/>
+            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HaveEngineeringBay">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize7" Time="10" Effect="SensorTowerBuilt">
             <Charge>
@@ -275,7 +290,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="CanBuildSensorTower"/>
+            <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="CanBuildSensorTower">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize8" Time="10" Effect="GhostAcademyBuilt">
             <Charge>
@@ -284,7 +301,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HaveBarracks"/>
+            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HaveBarracks">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize9" Time="20" Effect="FactoryBuilt">
             <Charge>
@@ -293,7 +312,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HaveRefandSupplyDepot"/>
+            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HaveRefandSupplyDepot">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize10" Time="40" Effect="ArmoryBuilt">
             <Charge>
@@ -302,7 +323,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HaveEngineeringBay"/>
+            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HaveEngineeringBay">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize11" Time="10" Effect="StarportBuilt">
             <Charge>
@@ -311,7 +334,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HaveEngineeringBay"/>
+            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HaveEngineeringBay">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize12" Time="30" Effect="FusionCoreBuilt">
             <Charge>
@@ -320,7 +345,9 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HaveArmory"/>
+            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HaveArmory">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <InfoArray index="Specialize13" Time="15" Effect="CraneBuilt">
             <Charge>
@@ -329,7 +356,44 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Decal_Terran_0047_01"/>
+            <Button DefaultButtonFace="Decal_Terran_0047_01">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize14">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize15">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize16">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize17">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize18">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize19">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize20">
+            <Button>
+                <Flags index="ToSelection" value="1"/>
+            </Button>
         </InfoArray>
         <Alert value="BuildComplete"/>
     </CAbilSpecialize>

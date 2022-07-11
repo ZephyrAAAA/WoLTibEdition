@@ -42,6 +42,9 @@
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="LanzerTorpedoes">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
         <EditorCategories value=""/>
@@ -91,6 +94,12 @@
         <Range value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TwinGatlingCannon">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VolatileBurst">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
 </Catalog>

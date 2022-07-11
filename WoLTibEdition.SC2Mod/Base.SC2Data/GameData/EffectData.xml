@@ -2,27 +2,37 @@
 <Catalog>
     <CEffectEnumMagazine id="BunkerLoadIterate">
         <EditorCategories value=""/>
+        <EffectInternal value="BunkerLoadIterate2"/>
+        <EffectExternal value="BunkerLoadIterate2"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="BunkerLoadIterate2">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
         <EffectInternal value="BunkerLoadSquad"/>
         <EffectExternal value="BunkerLoadSquad"/>
     </CEffectEnumMagazine>
     <CEffectIssueOrder id="BunkerLoadSquad">
         <EditorCategories value=""/>
-        <WhichUnit Value="Caster"/>
-        <Abil value="BunkerTransport2"/>
-        <Target Value="TargetUnit"/>
+        <Abil value="BunkerTransport"/>
+        <CmdFlags index="Queued" value="1"/>
+        <Target Effect="BunkerLoadIterate2" Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectEnumMagazine id="BunkerUnloadIterate">
         <EditorCategories value=""/>
+        <EffectInternal value="BunkerUnloadIterate2"/>
+        <EffectExternal value="BunkerUnloadTest"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="BunkerUnloadIterate2">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
         <EffectInternal value="BunkerUnloadSquad"/>
-        <EffectExternal value="BunkerUnloadSquad"/>
+        <EffectExternal value="BunkerUnloadTest"/>
     </CEffectEnumMagazine>
     <CEffectIssueOrder id="BunkerUnloadSquad">
         <EditorCategories value=""/>
-        <WhichUnit Value="Caster"/>
-        <Abil value="BunkerTransport2"/>
-        <AbilCmdIndex value="3"/>
-        <CmdFlags index="Queued" value="1"/>
-        <Target Value="TargetUnit"/>
+        <Abil value="BunkerTransport"/>
+        <AbilCmdIndex value="2"/>
+        <Target Effect="BunkerLoadIterate2" Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CraneBuilt">
         <EditorCategories value=""/>

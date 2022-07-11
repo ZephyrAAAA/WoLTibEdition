@@ -4,7 +4,7 @@ Abil/Name/Barracks2AddOns=AddOns
 Abil/Name/Barracks2Land=Land
 Abil/Name/Barracks2LiftOff=Lift Off
 Abil/Name/Barracks2Train=Train
-Abil/Name/BunkerTransport2=Load-Unload
+Abil/Name/Bunker=Bunker
 Abil/Name/CCBuild=C&C Build
 Abil/Name/CCPlaceBuilding=C&C Place Building
 Abil/Name/CCQueue=C&CQueue
@@ -45,6 +45,7 @@ Button/Name/ResumeQueue=Resume Queue
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
+Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran infantry units. Enables the construction of Terran defensive structures. 
@@ -105,8 +106,10 @@ DocInfo/DescLong=stuff
 DocInfo/DescShort=Any
 DocInfo/Name=Wings Of Liberty Tib Editions
 Effect/Name/BunkerLoadIterate=Bunker Load Iterate
+Effect/Name/BunkerLoadIterate2=Bunker Load Iterate2
 Effect/Name/BunkerLoadSquad=Bunker Load Squad
 Effect/Name/BunkerUnloadIterate=Bunker Unload Iterate
+Effect/Name/BunkerUnloadIterate2=Bunker Unload Iterate2
 Effect/Name/BunkerUnloadSquad=Bunker Unload Squad
 Effect/Name/CraneBuilt=CraneBuilt
 Effect/Name/CranePlace=Crane Place
@@ -159,6 +162,7 @@ Unit/Category/TerranUnits=Terran
 Unit/LifeArmorName/None=Terran Infantry Armor
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks
+Unit/Name/Bunker2=Bunker
 Unit/Name/CommandCenter2=Command Center
 Unit/Name/Crane=Crane
 Unit/Name/EngineeringBay2=Engineering Bay

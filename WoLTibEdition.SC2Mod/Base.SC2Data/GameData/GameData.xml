@@ -6,7 +6,7 @@
         <AttackArmorTable index="Normal" SupportedFilters="-;-">
             <ArmorFactor index="Medium" value="0.5"/>
             <ArmorFactor index="Large" value="0.25"/>
-            <ArmorFactor index="Fort" value="1"/>
+            <ArmorFactor index="Fort" value="0.5"/>
             <ArmorFactor index="Hero" value="0.25"/>
             <ArmorFactor index="Divine" value="1"/>
         </AttackArmorTable>
@@ -41,6 +41,7 @@
         <AttackArmorTable index="Chaos" SupportedFilters="-;-">
             <ArmorFactor index="Medium" value="0.01"/>
             <ArmorFactor index="Large" value="0.01"/>
+            <ArmorFactor index="Fort" value="0.01"/>
             <ArmorFactor index="Hero" value="0.01"/>
             <ArmorFactor index="None" value="0.01"/>
         </AttackArmorTable>

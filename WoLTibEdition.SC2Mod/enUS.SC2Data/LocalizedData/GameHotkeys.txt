@@ -1,1 +1,2 @@
-﻿Button/Hotkey/ResumeQueue=H
+﻿Button/Hotkey/PauseQueue=Escape
+Button/Hotkey/ResumeQueue=H
