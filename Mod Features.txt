@@ -1,20 +1,29 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
+ECONOMY/MACRO:
+
 There is now only 1 resource. Most resource fields regrow over time.
 
 Each mission has been looked over, most mineral fields and all vespene geysers have been removed. All vespene resource pickups have been replaced with mineral pickups or removed. Mineral Pickups now give 1000. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
 
 Primary Structures now construct buildings, then place then on the map instantly. Workers only harvest resources. Workers harvest multiple times before returning.
 
-Gathered resources are now received by Refineries, allowing cheaper expansions, better fitting into the idea of having more, smaller resource fields.
+Gathered resources are now received by Refineries, allowing cheaper/faster expansions, that pay for themselves earlier, better fitting into the idea of having more, smaller resource fields.
 
 SCVs are now produced by the Factory. Changes have been made to either start you with one, or you have the ability to build them.
 
 Starting Worker counts have been reduced, as each one is more effective at gathering, and they no longer build.
 
-Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
-
 Supply has been hijacked to be Power instead. Buildings now require it.
+
+Units and structures now cost resources based on how long they take. 100 minerals per second of buildtime.
+
+Workers harvest resources at roughly 2000/min, under optimal conditions.
+
+
+
+
+Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
 
 Terran Infantry now use a Squad system, where each Squad unit has multiple members.
 
@@ -26,9 +35,7 @@ Implemented a topbar of Support Powers.
 
 Terrans, starting at Zero Hour, now have access to the Devastation Turret. An anti-armour defensive weapon.
 
-Units and structures now cost resources based on how long they take. 100 minerals per second of buildtime.
 
-Workers harvest resources at roughly 2000/min, under optimal conditions.
 
 
 MISSION SPECIFIC CHANGES:
@@ -37,7 +44,11 @@ Liberation Day:
 
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
--Doubled the intensity of attacks
+-The tank in the main dominion base is now present on Hard.
+-Added a mineral pallet next to the broken bridge on the patch to the rebel base. This pallet is protected by 5 marines, and a tank on Brutal.
+-A general increase in the number of enemies in the enemy base, and on the path towards it.
+-Added a second Bunker of Death on Brutal
+-Bunker of Death has been moved slightly
 
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground

@@ -82,6 +82,9 @@
         <Flags index="PersistUntilDestroyed" value="1"/>
         <PeriodicValidator value="TargetLifeNotFull"/>
     </CEffectCreatePersistent>
+    <CEffectModifyPlayer id="PickupMinerals100">
+        <Resources index="Minerals" value="1000"/>
+    </CEffectModifyPlayer>
     <CEffectIssueOrder id="SCVHarvesterAWAY">
         <EditorCategories value=""/>
         <Abil value="move"/>
