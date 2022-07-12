@@ -857,8 +857,8 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.5"/>
-        <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Ghost">
+        <Leash value="0.2"/>
+        <InfoArray index="Ammo1" CountStart="4" Manage="Recall" Unit="Ghost">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed"/>
@@ -878,8 +878,8 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.5"/>
-        <InfoArray index="Ammo1" CountStart="2" Distance="0.25" Manage="Recall" Unit="Marauder">
+        <Leash value="0.2"/>
+        <InfoArray index="Ammo1" CountStart="2" Manage="Recall" Unit="Marauder">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed"/>
@@ -897,8 +897,8 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.5"/>
-        <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Firebat">
+        <Leash value="0.2"/>
+        <InfoArray index="Ammo1" CountStart="4" Manage="Recall" Unit="Firebat">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed"/>
@@ -918,8 +918,8 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.5"/>
-        <InfoArray index="Ammo1" CountStart="6" Distance="0.25" Manage="Recall" Unit="Marine">
+        <Leash value="0.2"/>
+        <InfoArray index="Ammo1" CountStart="6" Manage="Recall" Unit="Marine">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed" Requirements="LearnCloakingField"/>
@@ -941,8 +941,8 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.5"/>
-        <InfoArray index="Ammo1" CountStart="3" Distance="0.25" Manage="Recall" Unit="Medic">
+        <Leash value="0.2"/>
+        <InfoArray index="Ammo1" CountStart="3" Manage="Recall" Unit="Medic">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed"/>
@@ -987,8 +987,8 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.5"/>
-        <InfoArray index="Ammo1" CountStart="8" Distance="0.25" Manage="Recall" Unit="Reaper">
+        <Leash value="0.2"/>
+        <InfoArray index="Ammo1" CountStart="8" Manage="Recall" Unit="Reaper">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed"/>
@@ -1166,6 +1166,7 @@
             <SortArray index="2" value="TSDistance"/>
         </TargetSorts>
         <AutoCastRange value="3"/>
+        <FollowRange value="0"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MedicSquadAcquire" parent="heal">
         <Name value="Abil/Name/MedicSquadAcquire"/>

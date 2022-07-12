@@ -12,6 +12,10 @@
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="DevilDogFlameThrower">
+        <Range value="4"/>
+        <Period value="0.5"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Range value="4"/>
         <Marker>
@@ -42,6 +46,9 @@
     <CWeaponLegacy id="GuassRifle">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HailstormMissilePods">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -53,6 +60,9 @@
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoes">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">

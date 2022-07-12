@@ -38,6 +38,7 @@ Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/SquadAttack=Squad Attack
 Behavior/Name/SquadUnit=Squad Unit
+Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
 Behavior/Name/Veterancy=Veterancy
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
