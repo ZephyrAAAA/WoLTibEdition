@@ -56,7 +56,7 @@ The Outlaws:
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
 -Pallets to the west of the western bridge replaced with a resource node
--Doubled the intensity of attacks
+-Reworked how, when, and what attack waves do things to apply more constant and stronger pressure
 
 The Evacuation:
 
@@ -128,9 +128,11 @@ Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheap
 
 Wraith-
 
-Bunker- Has 1 slot, fits 1 squad
+Bunker- Has 4 slots, fits 1 squad
 
 Predator- Comparitively Cheaper
+
+Hellion- Now fires constantly
 
 
 ARMORY UPGRADE CHANGES:
