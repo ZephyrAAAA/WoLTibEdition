@@ -26,8 +26,12 @@
     </CRequirementAnd>
     <CRequirementCountBehavior id="CountBehaviorCraneBuiltCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="CraneBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDevastatorTurretBuiltCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="DevastatorTurretBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -75,8 +79,12 @@
     <CRequirementCountUnit id="CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat">
         <Tooltip value="RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
     </CRequirementCountUnit>
-    <CRequirementEq id="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1">
+    <CRequirementCountUnit id="CountUnitCraneCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
         <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Crane" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementEq id="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1">
         <OperandArray index="0" value="CountBehaviorCraneBuiltCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
@@ -220,6 +228,10 @@
         <OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
+    <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
+    </CRequirementNot>
     <CRequirementNot id="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">
         <OperandArray index="0" value="OrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
     </CRequirementNot>

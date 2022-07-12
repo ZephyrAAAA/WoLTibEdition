@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CModel id="DevastationTurret" parent="Unit">
+        <Model value="Assets\Buildings\Terran\GrenadeTurret\GrenadeTurret.m3"/>
+        <EditorCategories value=""/>
+    </CModel>
     <CModel id="LowPower" parent="Glaze">
         <Model value="Assets\Effects\Glaze\Glaze_BlackDeath_Coop\Glaze_BlackDeath_Coop.m3"/>
         <EditorCategories value=""/>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="BuildDevastatorTurret">
+        <Icon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="PauseQueue">
         <Icon value="EditorData\Images\CutSceneEditor\Playhead\Control_Pause.tga"/>
         <HotkeyAlias value="Cancel"/>

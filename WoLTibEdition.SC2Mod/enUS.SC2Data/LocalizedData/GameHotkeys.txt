@@ -1,2 +1,4 @@
-﻿Button/Hotkey/PauseQueue=Escape
+﻿Button/Hotkey/BuildDevastatorTurret=D
+Button/Hotkey/Decal_Terran_0047_01=C
+Button/Hotkey/PauseQueue=Escape
 Button/Hotkey/ResumeQueue=H

@@ -20,6 +20,10 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DevastatorTurretBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DropOffStun">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="60"/>
@@ -40,6 +44,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="PlayerHasPower"/>
         <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.01">
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <RateMultiplierArray index="Morph" value="0.5"/>
             <RateMultiplierArray index="Queueable" value="0.5"/>
         </Modification>

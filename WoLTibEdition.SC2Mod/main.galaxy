@@ -64,7 +64,7 @@ bool Returning_Func (bool testConds, bool runActions) {
 		return true;
 	}
 	if (UnitHasBehavior(EventUnitTargetUnit(), "Refinery")) {
-		UnitIssueOrder(EventUnit(), OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), EventUnitTargetUnit()), c_orderQueueReplace);
+		UnitIssueOrder(EventUnit(), OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), EventUnitTargetUnit()), c_orderQueueAddToFront);
 	}
 	return true;
 }
@@ -93,7 +93,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);
 		Wait(1, c_timeGame);
 		resourceGroup = UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
-	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle));
+	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) || DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) > 20);
 	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
 		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
 	}
@@ -179,7 +179,9 @@ void Building_Init () {
 }
 
 bool Pause_Func (bool testConds, bool runActions) {
-	UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
+	if (UnitQueueItemCount(EventUnit(), 1) != 0) {
+		UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
+	}
 	return true;
 }
 
@@ -201,6 +203,9 @@ void Resume_Init () {
 bool Cancel_Func (bool testConds, bool runActions) {
 	if (UnitQueueItemCount(EventUnit(), 1) == 0) {
 		UnitBehaviorRemove(EventUnit(), "QueuePaused", 1);
+	}
+	if (UnitHasBehavior(EventUnit(), "QueuePaused")) {
+	UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
 	}
 	UnitBehaviorAdd(EventUnit(), "Cancel", EventUnit(), 1);
 	return true;
@@ -237,6 +242,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 5), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 8)));
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 8)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	for (lv_i = 0; lv_i < 9; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", lv_i)));
 	}
