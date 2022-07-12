@@ -878,6 +878,8 @@
     </CUnit>
     <CUnit id="DevilDog">
         <ArmorType value="Normal"/>
+        <LifeStart value="240"/>
+        <LifeMax value="240"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="ElevatorBlocker">
@@ -1158,6 +1160,8 @@
     </CUnit>
     <CUnit id="Firebat">
         <ArmorType value="Normal"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
     </CUnit>

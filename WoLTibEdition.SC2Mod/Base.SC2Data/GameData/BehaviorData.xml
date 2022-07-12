@@ -33,6 +33,13 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SupplyDepotStartingUpgrade">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="4"/>
+            <RateMultiplierArray index="Queueable" value="4"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="TibNodeLarge">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
