@@ -5,6 +5,7 @@ trigger building;
 trigger pause;
 trigger resume;
 trigger cancel;
+trigger unloadSquads;
 trigger techUnlock;
 trigger INI;
 int rate;
@@ -217,6 +218,20 @@ void Cancel_Init () {
 	TriggerAddEventUnitSpecializeProgress(cancel, null, c_unitProgressStageCancel);
 }
 
+bool UnloadSquads_Func (bool testConds, bool runActions) {
+	if (UnitGetMagazine(EventUnitCargo()) != null) {
+		if (libNtve_gf_UnitIsInsideTransport(UnitGetMagazine(EventUnitCargo()))) {
+			UnitPutInTransport(EventUnitCargo(), EventUnit());
+		}
+	}
+	return true;
+}
+
+void UnloadSquads_Init () {
+	unloadSquads = TriggerCreate("UnloadSquads_Func");
+	TriggerAddEventUnitCargo(unloadSquads, null, false);
+}
+
 bool TechUnlock_Func (bool textConds, bool runActions) {
 	int lv_i;
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 5000);
@@ -284,6 +299,7 @@ void main() {
 	Pause_Init();
 	Resume_Init();
 	Cancel_Init();
+	UnloadSquads_Init();
 	TechUnlock_Init();
 	INI_Init();
 }

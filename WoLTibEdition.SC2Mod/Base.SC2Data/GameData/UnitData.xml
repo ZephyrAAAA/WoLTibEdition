@@ -53,7 +53,7 @@
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
-        <Collide index="Flying" value="1"/>
+        <Collide index="Air4" value="1"/>
         <Attributes index="Biological" value="1"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
@@ -75,11 +75,13 @@
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
         <Radius value="0.75"/>
-        <InnerRadius value="0.75"/>
+        <InnerRadius value="0.5"/>
         <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="15"/>
         <MinimapRadius value="0"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
+        <LifeStart value="6"/>
+        <LifeMax value="6"/>
     </CUnit>
     <CUnit id="AbandonedBuilding">
         <ArmorType value="Hero"/>
@@ -427,6 +429,7 @@
         <Description value="Button/Tooltip/Bunker2"/>
         <DeathRevealRadius value="0"/>
         <ReviveType value="Bunker2"/>
+        <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
         <Collide index="Burrow" value="0"/>
@@ -436,7 +439,7 @@
         <Collide index="ForceField" value="0"/>
         <Collide index="Small" value="0"/>
         <Sight value="0"/>
-        <AbilArray index="0" Link="BunkerTransport"/>
+        <AbilArray index="0" Link="BunkerTransportSquad"/>
         <AbilArray index="1" Link="StimpackRedirect"/>
         <AbilArray index="2" Link="StimpackMarauderRedirect"/>
         <AbilArray index="3" Link="StopRedirect"/>
@@ -825,19 +828,21 @@
         <Sight value="11"/>
         <Food value="-8"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Minerals" value="600"/>
         <RepairTime value="25"/>
         <AttackTargetPriority value="19"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="que1"/>
+        <AbilArray Link="SalvageShared"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="UnderConstruction"/>
         <BehaviorArray Link="PowerCheck"/>
         <WeaponArray Link="ConcussiveGrenades" Turret="AutoTurret"/>
         <CardLayouts>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
@@ -881,6 +886,12 @@
         <LifeStart value="240"/>
         <LifeMax value="240"/>
         <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Drone">
+        <ArmorType value="Small"/>
+    </CUnit>
+    <CUnit id="DroneBurrowed">
+        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="ElevatorBlocker">
         <ArmorType value="Hero"/>
@@ -1344,6 +1355,57 @@
         <ArmorType value="Medium"/>
         <Food value="0"/>
     </CUnit>
+    <CUnit id="AirTransport">
+        <DeathRevealRadius value="3"/>
+        <Race value="Terr"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Unstoppable" value="1"/>
+        <FlagArray index="CameraFollow" value="0"/>
+        <PlaneArray index="Air" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="3"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranShipPlating"/>
+        <Mover value="Fly"/>
+        <Speed value="100"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.25"/>
+        <Height value="3.75"/>
+        <VisionHeight value="4"/>
+        <CostCategory value="Army"/>
+        <RepairTime value="41.6667"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="AirTransport"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="HerculesLoad" Type="AbilCmd" AbilCmd="AirTransport,Load" Row="2" Column="0"/>
+            <LayoutButtons Face="HerculesUnloadAll" Type="AbilCmd" AbilCmd="AirTransport,UnloadAt" Row="2" Column="1"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+        </CardLayouts>
+        <Radius value="0"/>
+        <SeparationRadius value="0"/>
+        <ScoreMake value="900"/>
+        <ScoreKill value="1800"/>
+        <SubgroupPriority value="11"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
+        <GlossaryCategory value="Unit/Category/TerranUnits"/>
+        <GlossaryPriority value="200"/>
+        <HotkeyCategory value="Unit/Category/TerranStory"/>
+    </CUnit>
+    <CUnit id="Hercules">
+        <AbilArray Link="AirTransportMag"/>
+    </CUnit>
     <CUnit id="Hive">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
@@ -1488,12 +1550,15 @@
     </CUnit>
     <CUnit id="FirebatSquad" parent="BaseSquad">
         <Race value="Terr"/>
+        <LifeStart value="4"/>
+        <LifeMax value="4"/>
         <Speed value="2.25"/>
         <AbilArray Link="FirebatSquad"/>
         <WeaponArray Link="FirebatSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="FirebatSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <InnerRadius value="0.75"/>
     </CUnit>
     <CUnit id="Marauder">
         <ArmorType value="Normal"/>
@@ -1518,6 +1583,12 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
         </CardLayouts>
+        <LifeStart value="3"/>
+        <LifeMax value="3"/>
+        <InnerRadius value="0.75"/>
+    </CUnit>
+    <CUnit id="Medivac">
+        <AbilArray Link="AirTransportMag"/>
     </CUnit>
     <CUnit id="MercCompound">
         <ArmorType value="Hero"/>
@@ -1891,6 +1962,9 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <ArmorType value="Hero"/>
     </CUnit>
+    <CUnit id="Probe">
+        <ArmorType value="Small"/>
+    </CUnit>
     <CUnit id="PsiDisruptor">
         <ArmorType value="Hero"/>
     </CUnit>
@@ -2005,6 +2079,9 @@
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
     </CUnit>
+    <CUnit id="SCV">
+        <ArmorType value="Small"/>
+    </CUnit>
     <CUnit id="SCV2">
         <DeathRevealRadius value="3"/>
         <Race value="Terr"/>
@@ -2071,6 +2148,7 @@
             <ChanceArray index="Idle" value="33"/>
             <ChanceArray index="Turn" value="33"/>
         </Fidget>
+        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="SensorTower">
         <ArmorType value="Hero"/>
@@ -2180,6 +2258,9 @@
     <CUnit id="SpawningPool">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="SpecialOpsDropship">
+        <AbilArray Link="AirTransportMag"/>
     </CUnit>
     <CUnit id="SpineCrawler">
         <ArmorType value="Hero"/>
@@ -2586,6 +2667,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="GhostSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <InnerRadius value="0.75"/>
     </CUnit>
     <CUnit id="MarauderSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -2595,6 +2677,9 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarauderSquad,Ammo1" Row="1" Column="0"/>
         </CardLayouts>
+        <LifeStart value="2"/>
+        <LifeMax value="2"/>
+        <InnerRadius value="0.75"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -2607,6 +2692,7 @@
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <ArmorType value="Small"/>
+        <InnerRadius value="0.75"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -2616,6 +2702,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <InnerRadius value="0.75"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>

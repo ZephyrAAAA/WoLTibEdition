@@ -4,10 +4,19 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="CarryMineralFieldMinerals"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="IsNotMedic">
+        <Value value="Medic"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
     <CValidatorPlayerCompareFoodAvailable id="PlayerHasPower">
         <Compare value="LE"/>
     </CValidatorPlayerCompareFoodAvailable>
     <CValidatorUnitCompareVital id="TargetLifeNotFull">
         <ResultFailed value="RequiresHealTarget"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="UnknownValidator">
+        <Value value="1"/>
+        <Behavior value="SquadUnit"/>
+        <RequireCasterUnit Effect="BunkerUnloadIterate" Value="Target"/>
+    </CValidatorUnitCompareBehaviorCount>
 </Catalog>

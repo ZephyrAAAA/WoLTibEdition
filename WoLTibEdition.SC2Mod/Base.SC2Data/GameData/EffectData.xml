@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectEnumMagazine id="AirTransportLoadIterate2">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="AirTransportLoadSquad"/>
+        <EffectExternal value="AirTransportLoadSquad"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="AirTransportLoadIterate">
+        <EditorCategories value=""/>
+        <EffectInternal value="AirTransportLoadIterate2"/>
+        <EffectExternal value="AirTransportLoadIterate2"/>
+    </CEffectEnumMagazine>
+    <CEffectIssueOrder id="AirTransportLoadSquad">
+        <EditorCategories value=""/>
+        <Abil value="AirTransport"/>
+        <Target Effect="AirTransportLoadIterate2" Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectEnumMagazine id="AirTransportUnloadIterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="AirTransportUnloadSquad"/>
+        <EffectExternal value="AirTransportUnloadSquad"/>
+    </CEffectEnumMagazine>
+    <CEffectIssueOrder id="BunkerUnloadSquad2">
+        <EditorCategories value=""/>
+        <Abil value="BunkerTransportSquad"/>
+        <AbilCmdIndex value="1"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="SquadDeathDamage">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterUnit"/>
+        <Amount value="1"/>
+    </CEffectDamage>
     <CEffectEnumMagazine id="BunkerLoadIterate">
         <EditorCategories value=""/>
         <EffectInternal value="BunkerLoadIterate2"/>
@@ -13,26 +45,19 @@
     </CEffectEnumMagazine>
     <CEffectIssueOrder id="BunkerLoadSquad">
         <EditorCategories value=""/>
-        <Abil value="BunkerTransport"/>
-        <CmdFlags index="Queued" value="1"/>
+        <Abil value="BunkerTransportSquad"/>
         <Target Effect="BunkerLoadIterate2" Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectEnumMagazine id="BunkerUnloadIterate">
         <EditorCategories value=""/>
-        <EffectInternal value="BunkerUnloadIterate2"/>
-        <EffectExternal value="BunkerUnloadTest"/>
-    </CEffectEnumMagazine>
-    <CEffectEnumMagazine id="BunkerUnloadIterate2">
-        <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
-        <EffectInternal value="BunkerUnloadSquad"/>
-        <EffectExternal value="BunkerUnloadTest"/>
+        <EffectInternal value="AirTransportUnloadSquad"/>
+        <EffectExternal value="AirTransportUnloadSquad"/>
     </CEffectEnumMagazine>
-    <CEffectIssueOrder id="BunkerUnloadSquad">
+    <CEffectIssueOrder id="AirTransportUnloadSquad">
         <EditorCategories value=""/>
-        <Abil value="BunkerTransport"/>
-        <AbilCmdIndex value="2"/>
-        <Target Effect="BunkerLoadIterate2" Value="TargetUnit"/>
+        <Abil value="AirTransport"/>
+        <AbilCmdIndex value="1"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CraneBuilt">
         <EditorCategories value=""/>
@@ -193,11 +218,6 @@
         <WhichPlayer Value="Caster"/>
         <Resources index="Minerals" value="-10"/>
     </CEffectModifyPlayer>
-    <CEffectModifyUnit id="SalvageShared">
-        <SalvageFactor>
-            <Resource index="Minerals" value="-2"/>
-        </SalvageFactor>
-    </CEffectModifyUnit>
     <CEffectCreatePersistent id="SquadAttack">
         <EditorCategories value=""/>
         <WhichLocation Value="CasterUnit"/>
