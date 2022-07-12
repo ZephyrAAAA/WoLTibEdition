@@ -12,6 +12,15 @@
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Firebat">
+        <Range value="4"/>
+        <Marker>
+            <MatchFlags index="Id" value="0"/>
+        </Marker>
+        <Period value="0.5"/>
+        <AttackType value="Pierce"/>
+        <DamagePoint value="0"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
         <Name value="Weapon/Name/GhostSquad"/>
         <EditorCategories value=""/>
@@ -38,6 +47,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="InfernalFlameThrower">
         <AttackType value="Pierce"/>
+        <Period value="0.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
@@ -45,12 +55,15 @@
     <CWeaponLegacy id="LanzerTorpedoes">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PunisherGrenades">
+        <Period value="1"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/MarauderSquad"/>
         <DisplayName value="Weapon/Name/MarauderSquad"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="9"/>
         <Marker Link="Weapon/MarauderSquad"/>
         <Cost>
@@ -58,6 +71,22 @@
         </Cost>
         <Effect value="SquadAttack"/>
         <Range value="5.5"/>
+        <Period value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FirebatSquad" parent="Firebat">
+        <Name value="Weapon/Name/FirebatSquad"/>
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/FirebatSquad"/>
+        <DisplayName value="Weapon/Name/FirebatSquad"/>
+        <MinScanRange value="9"/>
+        <Range value="3.5"/>
+        <Marker Link="Weapon/FirebatSquad"/>
+        <Cost>
+            <Cooldown Link="Weapon/FirebatSquad"/>
+        </Cost>
+        <AttackType value="Unknown"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarineSquad" parent="GuassRifle">
         <Name value="Weapon/Name/MarineSquad"/>
@@ -76,6 +105,18 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ConcussiveGrenades">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="ConcussiveGrenadesU"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="1.5"/>
+        <AttackType value="Magic"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="ConcussiveGrenadesLM"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>

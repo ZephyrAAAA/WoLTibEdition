@@ -39,6 +39,9 @@
     <CRequirement id="HasBuiltCrane">
         <NodeArray index="Show" Link="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1"/>
     </CRequirement>
+    <CRequirement id="HasBuiltDevastatorTurret">
+        <NodeArray index="Show" Link="CountBehaviorDevastatorTurretBuiltCompleteOnlyAtUnit"/>
+    </CRequirement>
     <CRequirement id="HasBuiltSupplyDepot">
         <NodeArray index="Show" Link="EqCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
     </CRequirement>
@@ -115,6 +118,17 @@
     <CRequirement id="HaveSupplyDepot">
         <EditorCategories value="TechType:Unit"/>
         <NodeArray index="Use" Link="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912"/>
+    </CRequirement>
+    <CRequirement id="IsNotCrane">
+        <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="StaticDefBarracks">
+        <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="StaticDefEngineeringBay">
+        <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>
+        <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="SupplyDepotUpgrade">
         <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>

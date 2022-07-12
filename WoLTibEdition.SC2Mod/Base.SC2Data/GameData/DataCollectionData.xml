@@ -75,6 +75,12 @@
         <DataRecord Entry="Unit,PlanetaryFortress2"/>
         <Button value="CommandCenter"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="DevastationTurret">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Actor,DevastationTurret"/>
+        <DataRecord Entry="Unit,DevastationTurret"/>
+        <Button value="MissileTurret"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="EngineeringBay">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,EngineeringBayResearch"/>
@@ -157,6 +163,14 @@
         <DataRecord Entry="Weapon,MarauderSquad"/>
         <DataRecord Entry="Actor,MarauderSquad"/>
         <DataRecord Entry="Unit,MarauderSquad"/>
+        <TechInfoUnit value="MarineSquad"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="FirebatSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,FirebatSquad"/>
+        <DataRecord Entry="Weapon,FirebatSquad"/>
+        <DataRecord Entry="Actor,FirebatSquad"/>
+        <DataRecord Entry="Unit,FirebatSquad"/>
         <TechInfoUnit value="MarineSquad"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MarineSquad">

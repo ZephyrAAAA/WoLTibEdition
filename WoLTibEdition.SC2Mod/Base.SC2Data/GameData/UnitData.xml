@@ -600,6 +600,8 @@
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="2" Column="3"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="2" Column="3"/>
         </CardLayouts>
         <Radius value="2.5"/>
         <SeparationRadius value="2.5"/>
@@ -728,6 +730,8 @@
         <CardLayouts>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="2" Column="3"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="2" Column="3"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que1,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -750,6 +754,14 @@
             <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCBuild,Specialize10" Row="0" Column="4"/>
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
         </CardLayouts>
         <Radius value="1.75"/>
         <SeparationRadius value="1.75"/>
@@ -780,6 +792,92 @@
     </CUnit>
     <CUnit id="DataCore">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="DevastationTurret">
+        <DeathRevealRadius value="3"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Sight value="11"/>
+        <Food value="-8"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="25"/>
+        <AttackTargetPriority value="19"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="que1"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="UnderConstruction"/>
+        <BehaviorArray Link="PowerCheck"/>
+        <WeaponArray Link="ConcussiveGrenades" Turret="AutoTurret"/>
+        <CardLayouts>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons>
+                <Face value="ReinforcedSuperstructure"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseReinforcedSuperstructure"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="HellstormMissileBatteries"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseHailstormMissilePods"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="0.75"/>
+        <SeparationRadius value="0.75"/>
+        <Footprint value="Footprint2x2Contour"/>
+        <PlacementFootprint value="Footprint2x2"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="0.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <GlossaryCategory value="Unit/Category/TerranUnits"/>
+        <GlossaryPriority value="250"/>
+        <GlossaryStrongArray value="Mutalisk"/>
+        <GlossaryStrongArray value="VoidRay"/>
+        <GlossaryStrongArray value="Scout"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+    </CUnit>
+    <CUnit id="DevilDog">
+        <ArmorType value="Normal"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="ElevatorBlocker">
@@ -1057,6 +1155,11 @@
     <CUnit id="FactoryTechReactor">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Firebat">
+        <ArmorType value="Normal"/>
+        <LifeArmor value="0"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="FleetBeacon">
         <ArmorType value="Hero"/>
@@ -1379,11 +1482,26 @@
     <CUnit id="MarSaraBridgeBRUL">
         <ArmorType value="Hero"/>
     </CUnit>
-    <CUnit id="Marine">
+    <CUnit id="FirebatSquad" parent="BaseSquad">
+        <Race value="Terr"/>
+        <Speed value="2.25"/>
+        <AbilArray Link="FirebatSquad"/>
+        <WeaponArray Link="FirebatSquad"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="FirebatSquad,0" Row="1" Column="0"/>
+        </CardLayouts>
+    </CUnit>
+    <CUnit id="Marauder">
+        <ArmorType value="Normal"/>
+        <LifeArmor value="0"/>
         <Food value="0"/>
     </CUnit>
+    <CUnit id="Marine">
+        <Food value="0"/>
+        <ArmorType value="Small"/>
+    </CUnit>
     <CUnit id="Medic">
-        <ArmorType value="Normal"/>
+        <ArmorType value="Small"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
     </CUnit>
@@ -1449,6 +1567,7 @@
         <BehaviorArray Link="UnderConstruction"/>
         <BehaviorArray Link="HellstormMissiles"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
+        <BehaviorArray Link="PowerCheck"/>
         <WeaponArray Link="LongboltMissile" Turret="MissileTurret"/>
         <WeaponArray Link="HailstormMissilePods" Turret="MissileTurret"/>
         <CardLayouts>

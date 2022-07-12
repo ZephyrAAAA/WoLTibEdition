@@ -111,12 +111,12 @@
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenter2Flying" Target="TerranPlayerTrophy" Send="Signal DestroyFlag"/>
         <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2Flying; MorphTo CommandCenter2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
         <On Terms="UnitBirth.CommandCenter2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
-        <On Terms="UnitBirth.CommandCenter2.Normal; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
-        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
-        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
-        <On Terms="UnitBirth.CommandCenter2Flying.Normal; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
-        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Send="Create CommandCenter2Reactor"/>
-        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenter2ReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
+        <On Terms="UnitBirth.CommandCenter2.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenterReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
         <On Terms="ActorCreation; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
         <On Terms="UnitConstruction.*.Start; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply Jump"/>
         <On Terms="UnitBirth.*.Normal; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove Jump"/>
@@ -182,6 +182,51 @@
             <Image value="Assets\Textures\decal_terran_0047_01.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorUnit id="DevastationTurret" parent="TerranBuildingEx" unitName="DevastationTurret">
+        <Aliases value="_UnitHuge"/>
+        <On Terms="ActorCreation; ValidateUnit MissileTurretUpgraded" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="Upgrade.ReinforcedSuperstructure.Add" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
+        <On Terms="Signal.*.test" Send="Create TurretUnitDeathModel"/>
+        <On Terms="Signal.*.test" Send="SetOpacity"/>
+        <On Terms="ActorCreation; ValidateUnit MissileTurretUpgraded" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="Upgrade.ReinforcedSuperstructure.Add" Send="ModelSwap MissileTurretTitaniumHousing"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
+        <CreepHeightClass value="Small"/>
+        <DeathArray index="Normal" ModelLink="MissileTurretDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
+        <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
+        <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
+        <PlacementModel value="DevastationTurret"/>
+        <PlacementSound value="Terran_BuildingPlacementSmall"/>
+        <PlacementActorModel value="MissileTurretSkinnablePlacementModel"/>
+        <PortraitModel value="MissileTurretPortrait"/>
+        <BarOffset value="90"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-terran-autoturret.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
+        <SoundArray index="Ready" value="MissileTurret_Ready"/>
+        <SoundArray index="What" value="MissileTurret_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-MissileTurret.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorAction id="DevastationTurretAttack" parent="MarauderAttack" effectImpact="ConcussiveGrenadesU" effectLaunch="ConcussiveGrenadesLM">
+        <EditorCategories value=""/>
+        <On index="1" Terms="Effect.ConcussiveGrenadesU.Start; FromEffectTreeDescendant"/>
+        <On index="2" Terms="Effect.ConcussiveGrenadesU.Stop; FromEffectTreeDescendant"/>
+        <On index="5" Terms="Effect.ConcussiveGrenadesLM.Start; At Caster" Send="Create"/>
+        <LaunchAttachQuery Methods="$GenericAttackLaunchMethods"/>
+        <LaunchAssets Model="DevastationTurretAttackLaunch"/>
+        <Beam value="DevastationTurretAttackBeam"/>
+        <ImpactMap index="None" ModelReaction="DevastationTurretAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="DevastationTurretAttackImpactShield" ModelReaction="DevastationTurretAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="DevastationTurretAttackDamage" Sound="DevastationTurretAttackDamage" ModelReaction="DevastationTurretAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="DevastationTurretAttackDamageShield" ModelReaction="DevastationTurretAttackDamageReactionShield"/>
+    </CActorAction>
     <CActorUnit id="EngineeringBay2" parent="TerranBuildingEx" unitName="EngineeringBay2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -240,6 +285,9 @@
     <CActorSound id="FactoryLand">
         <On Terms="AbilMorph.*.Start; MorphTo Factory2" Send="Create"/>
     </CActorSound>
+    <CActorModel id="FirebatAttackModel">
+        <Scale value="1.000000,2.500000,1.000000"/>
+    </CActorModel>
     <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -401,6 +449,48 @@
         <GroupSoundArray index="Attack" value="Marine_GroupAttack"/>
         <GroupSoundArray index="Board" value="Marine_GroupBoard"/>
         <HighlightTooltip value="Unit/Name/MarauderSquad"/>
+    </CActorUnit>
+    <CActorUnit id="FirebatSquad" parent="GenericUnitBase" unitName="FirebatSquad">
+        <Aliases value="_UnitMedium"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <Model value="VespeneGeyser"/>
+        <BuildModel value="VespeneGeyser"/>
+        <PlacementModel value="VespeneGeyser"/>
+        <PortraitModel value="FirebatPortrait"/>
+        <StandAnimTurnTime value="4"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <GlossaryAnim value="Spell"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-firebat.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="What" value="Firebat_GroupWhat"/>
+        <GroupSoundArray index="Yes" value="Firebat_GroupYes"/>
+        <GroupSoundArray index="Attack" value="Firebat_GroupAttack"/>
+        <GroupSoundArray index="Board" value="Firebat_GroupBoard"/>
+        <HeroIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <SoundArray index="Birth" value="Firebat_Birth"/>
+        <SoundArray index="Ready" value="Firebat_Ready"/>
+        <SoundArray index="Help" value="Firebat_Help"/>
+        <SoundArray index="What" value="Firebat_What"/>
+        <SoundArray index="Yes" value="Firebat_Yes"/>
+        <SoundArray index="Attack" value="Firebat_Attack"/>
+        <SoundArray index="Pissed" value="Firebat_Pissed"/>
+        <SoundArray index="Movement" value="Firebat_Movement"/>
+        <SoundArray index="Turning" value="Firebat_Turning"/>
+        <SoundArray index="Board" value="Firebat_Board"/>
+        <SoundArray index="Click" value="Firebat_Click"/>
+        <SoundArray index="ClickError" value="Firebat_ClickError"/>
+        <SoundArray index="Highlight" value="Firebat_Highlight"/>
+        <UnitIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-firebat.dds"/>
+        </Wireframe>
     </CActorUnit>
     <CActorUnit id="MarineSquad" parent="Marine" unitName="MarineSquad">
         <Macros index="1" removed="1"/>
