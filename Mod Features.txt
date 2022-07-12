@@ -1,5 +1,8 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
+Also rebalancing units to make them more viable, and missions to make them better.
+
+
 ECONOMY/MACRO:
 
 There is now only 1 resource. Most resource fields regrow over time.
@@ -45,7 +48,7 @@ Liberation Day:
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
 -The tank in the main dominion base is now present on Hard.
--Added a mineral pallet next to the broken bridge on the patch to the rebel base. This pallet is protected by 5 marines, and a tank on Brutal.
+-Added a mineral pallet next to the broken bridge on the patch to the rebel base. This pallet is protected by 5 marines and a medic, and a tank on Brutal.
 -A general increase in the number of enemies in the enemy base, and on the path towards it.
 -Added a second Bunker of Death on Brutal
 -Bunker of Death has been moved slightly
@@ -60,6 +63,7 @@ The Evacuation:
 Outbreak:
 
 Safe Haven:
+-Purifier Mothership no longer has less range than vikings
 
 Haven's Fall:
 
@@ -137,7 +141,7 @@ Advanced Construction-
 
 Thermite- Allow Hellion to Fire on the move
 
-Neosteel Bunker- Improves armour
+Neosteel Bunker-> Shrike Turret, also shrike is buffed
 
 Displacement Field- Dodge chance increased to 40%
 
@@ -156,27 +160,41 @@ Autogas- Autoharvesting
 
 Command Center Reactor- Reduce build time of structures (Also affects cost)
 
-Orbital Supply Depot-
+Orbital Supply Depot- Increase Build Radius
 
-Micro Filtering- Something something eco upgrade
+Micro Filtering- SCVs collect more minerals per gather action, without depleting the field more
 
-Ultra-Capacitors-
+Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 
-Vanadium Plating-
+Vanadium Plating- Gives all Vanadium Plating upgrades permanently
 
 
 Hive Mind Emulator(Maybe)-
 
 Psi Disruptor(Maybe)-
 
-Regenerative Bio-steel- BEEG buff
+Regenerative Bio-steel- BEEG buff 2% health/s
+
+Cellular Reactor-
+
+Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than having to research every mission.
+
+Bunker Health- Now gives the Building Armour upgrade permanently, rather than having to research every mission.
 
 
 NEW IN-GAME UPGRADES:
 
-Infantry Health and Armour [Engineering Bay]
+Building Health and Armour [Engineering Bay]
+
+Defense turret range [Engineering Bay]
 
 Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee) [Engineering Bay]
+
+Infantry Health and Armour [Shadow Ops]
+
+Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
+
+Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Marine Ammo (3 variants, Incendiary(Better against bio/infantry), Explosive(Better against armoured), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun(Better against armoured, worse against infantry)) you can only pick 1 during a mission) [Barracks Tech Lab]
 
