@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilTransport id="HerculesTransport">
+        <MaxCargoCount value="32"/>
+        <TotalCargoSpace value="32"/>
+        <LoadCargoEffect value="AirTransportLoadIterate"/>
+        <UnloadCargoEffect value="AirTransportUnloadIterate"/>
+    </CAbilTransport>
+    <CAbilTransport id="AirTransport" parent="HerculesTransport">
+        <Name value="Abil/Name/AirTransport"/>
+        <AbilSetId value=""/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="AirTransport"/>
+        <Flags index="AllowPassengerSmartCmd" value="0"/>
+        <Flags index="AllowSmartCmd" value="0"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Range value="5"/>
+        <MaxUnloadRange value="5"/>
+        <MaxCargoCount value="200"/>
+        <TotalCargoSpace value="200"/>
+        <LoadCargoBehavior value=""/>
+        <UnloadPeriod value="0"/>
+    </CAbilTransport>
+    <CAbilArmMagazine id="AirTransportMag">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="0"/>
+        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="AirTransport">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <MaxCount value="1"/>
+    </CAbilArmMagazine>
     <CAbilArmMagazine id="ArmSiloWithNuke2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <Launch value="ReleaseAtSource"/>
@@ -199,6 +231,7 @@
     </CAbilTrain>
     <CAbilArmMagazine id="Bunker">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="ShowStatus" value="0"/>
         <Leash value="0"/>
         <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="Bunker2">
             <Charge CountUse="1" Link="Abil/##id##"/>
@@ -212,8 +245,18 @@
         <MaxCargoSize value="4"/>
         <LoadCargoEffect value="BunkerLoadIterate"/>
         <UnloadCargoEffect value="BunkerUnloadIterate"/>
-        <MaxCargoCount value="6"/>
-        <TotalCargoSpace value="6"/>
+    </CAbilTransport>
+    <CAbilTransport id="BunkerTransportSquad" parent="BunkerTransport">
+        <Name value="Abil/Name/BunkerTransportSquad"/>
+        <Alignment value="Neutral"/>
+        <AbilSetId value=""/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="BunkerTransportSquad"/>
+        <MaxCargoCount value="8"/>
+        <MaxCargoSize value="2"/>
+        <TotalCargoSpace value="8"/>
+        <LoadCargoEffect value=""/>
+        <UnloadCargoEffect value=""/>
     </CAbilTransport>
     <CAbilSpecialize id="CCBuild">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -941,7 +984,7 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.2"/>
+        <Leash value="0.5"/>
         <InfoArray index="Ammo1" CountStart="3" Manage="Recall" Unit="Medic">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
@@ -955,6 +998,10 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilTransport id="MedivacTransport">
+        <LoadCargoEffect value="AirTransportLoadSquad"/>
+        <UnloadCargoEffect value="AirTransportLoadSquad"/>
+    </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>
         <InfoArray index="0" Unit="OrbitalCommand2" CollideRange="0">
@@ -1013,6 +1060,10 @@
         <ResourceAcquire index="Custom" value="1"/>
         <ResourceDestroy index="Vespene" value="0"/>
     </CAbilHarvest>
+    <CAbilTransport id="SpecOpsDropshipTransport">
+        <LoadCargoEffect value="AirTransportLoadSquad"/>
+        <UnloadCargoEffect value="AirTransportLoadSquad"/>
+    </CAbilTransport>
     <CAbilBuild id="Starport2AddOns" parent="TerranAddOns">
         <Name value="Abil/Name/Starport2AddOns"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
@@ -1166,7 +1217,8 @@
             <SortArray index="2" value="TSDistance"/>
         </TargetSorts>
         <AutoCastRange value="3"/>
-        <FollowRange value="0"/>
+        <AcquireAttackers value="0"/>
+        <FollowRange value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="MedicSquadAcquire" parent="heal">
         <Name value="Abil/Name/MedicSquadAcquire"/>
@@ -1176,9 +1228,10 @@
         <SmartValidatorArray index="1" removed="1"/>
         <AutoCastRange value="6"/>
         <AutoCastValidatorArray index="0" value="NotWarpingIn"/>
-        <AutoCastValidatorArray index="1" removed="1"/>
+        <AutoCastValidatorArray index="1" value="IsNotMedic"/>
         <Marker Link="Abil/MedicSquadAcquire"/>
         <AINotifyEffect value="MedicSquadAcquire"/>
-        <FollowRange value="2"/>
+        <Range index="0" value="1"/>
+        <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
 </Catalog>
