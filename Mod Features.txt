@@ -1,6 +1,6 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
-Also rebalancing units to make them more viable, and missions to make them better.
+Also rebalancing units and upgrades to make them more viable, and missions to make them better.
 
 
 ECONOMY/MACRO:
@@ -36,7 +36,7 @@ Flat armour has been removed in favour of damage types, so units do damage based
 
 Implemented a topbar of Support Powers.
 
-Terrans, starting at Zero Hour, now have access to the Devastation Turret. An anti-armour defensive weapon.
+Terrans, starting at Zero Hour, now have access to the Devastation Turret, an anti-armour defensive weapon.
 
 
 
@@ -48,7 +48,7 @@ Liberation Day:
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
 -The tank in the main dominion base is now present on Hard.
--Added a mineral pallet next to the broken bridge on the patch to the rebel base. This pallet is protected by 5 marines and a medic, and a tank on Brutal.
+-Added a mineral pallet next to the broken bridge on the path to the rebel base. This pallet is protected by 5 marines and a medic, and a tank on Brutal.
 -A general increase in the number of enemies in the enemy base, and on the path towards it.
 -Added a second Bunker of Death on Brutal
 -Bunker of Death has been moved slightly
@@ -58,6 +58,7 @@ Zero Hour:
 -Pallets to the west of the western bridge replaced with a resource node
 -2 additional resource pallets placed in the town
 -Reworked how, when, and what attack waves do things to apply more constant and stronger pressure
+-Muta attack waves are more often, and randomized a bit.
 -Starts with 2 devastation turrets, one behind each bridge bunker
 -Starting supply depots reduced to 3, but they are upgraded.
 
@@ -142,7 +143,9 @@ ARMORY UPGRADE CHANGES:
 
 Orbital Command- Unlock Scan support power
 
-Advanced Construction-
+Advanced Construction- 
+
+Dual Fusion- General repair speed increase, since SCVs no longer repair
 
 Thermite- Allow Hellion to Fire on the move
 
@@ -151,8 +154,6 @@ Neosteel Bunker-> Shrike Turret, also shrike is buffed
 Displacement Field- Dodge chance increased to 40%
 
 Maelstrom-
-
-Incinerator Gauntlets-
 
 
 RESEARCH LAB CHANGES:
