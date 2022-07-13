@@ -12,6 +12,9 @@
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="D8Charge">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogFlameThrower">
         <Range value="4"/>
         <Period value="0.5"/>
@@ -41,7 +44,7 @@
         <Range value="5.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
-        <AttackType value="Siege"/>
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle">
         <AttackType value="Normal"/>
@@ -82,6 +85,12 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="P38ScytheGuassPistol">
+        <AttackType value="Chaos"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ParasiteSpore">
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
@@ -144,6 +153,9 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="ConcussiveGrenadesLM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RaynorGaussRifle">
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>

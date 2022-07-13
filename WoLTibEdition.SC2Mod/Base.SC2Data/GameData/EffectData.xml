@@ -22,6 +22,18 @@
         <EffectInternal value="AirTransportUnloadSquad"/>
         <EffectExternal value="AirTransportUnloadSquad"/>
     </CEffectEnumMagazine>
+    <CEffectApplyBehavior id="BuildingRepairAB">
+        <ValidatorArray index="0" value="NotWarpingIn"/>
+        <ValidatorArray value="HiddenCompareBA"/>
+        <ValidatorArray value="HiddenCompareAB"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NotThorWreckage"/>
+        <ValidatorArray value="NotOdinWreckage"/>
+        <ValidatorArray value="TargetLifeNotFull"/>
+        <ValidatorArray value="BuildingNotBeingRepaired"/>
+        <ValidatorArray value="IsNotConstructing"/>
+        <Behavior value="BuildingRepair"/>
+    </CEffectApplyBehavior>
     <CEffectIssueOrder id="BunkerUnloadSquad2">
         <EditorCategories value=""/>
         <Abil value="BunkerTransportSquad"/>
@@ -34,6 +46,17 @@
     <CEffectCreatePersistent id="InfernalFlameThrowerCP">
         <PeriodicEffectArray index="0" value="InfernalFlameThrower"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="P38ScytheGuassPistol">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectCreateHealer id="BuildingRepair">
+        <EditorCategories value="Race:Terran"/>
+        <Flags index="Channeled" value="0"/>
+        <DrainResourceCostFactor index="Minerals" value="0.5"/>
+        <RechargeVitalRate value="1"/>
+        <TimeFactor value="1"/>
+    </CEffectCreateHealer>
     <CEffectDamage id="SquadDeathDamage">
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterUnit"/>

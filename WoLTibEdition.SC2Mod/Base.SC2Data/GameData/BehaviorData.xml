@@ -4,6 +4,15 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="BuildingRepair">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <RemoveValidatorArray value="TargetLifeNotFull"/>
+        <Period value="1"/>
+        <InitialEffect value="BuildingRepair"/>
+        <PeriodicEffect value="BuildingRepair"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Cancel">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -42,6 +51,7 @@
             <RateMultiplierArray index="Progress" value="4"/>
             <RateMultiplierArray index="Queueable" value="4"/>
         </Modification>
+        <Duration value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="TibNodeLarge">
         <InfoFlags index="Hidden" value="1"/>

@@ -8,6 +8,24 @@
             <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilEffectTarget id="CCRepair">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="BuildingRepairAB"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="ChannelingMinimum" value="0"/>
+        <TargetFilters value="Ground,Structure;Ally,Neutral,Enemy"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Ground,Structure,Visible;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="500"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <UseMarkerArray index="Cast" value="0"/>
+        <UseMarkerArray index="Channel" value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Repair"/>
+    </CAbilEffectTarget>
     <CAbilTransport id="HerculesTransport">
         <MaxCargoCount value="32"/>
         <TotalCargoSpace value="32"/>
@@ -1238,5 +1256,6 @@
         <AINotifyEffect value="MedicSquadAcquire"/>
         <Range index="0" value="1"/>
         <AcquireAttackers value="1"/>
+        <Flags index="Smart" value="0"/>
     </CAbilEffectTarget>
 </Catalog>

@@ -350,9 +350,34 @@ void TechUnlock_Init () {
 }
 
 bool INI_Func (bool testConds, bool runActions) {
+	unit topbarUnit;
+	int lv_lastFrame;
+	int panel;
+	
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	rate = 117;
 	spendrate = 100;
+	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
+	topbarUnit = UnitLastCreated();
+    DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/FullscreenUpperContainer/CCGlobalCastingPanel");
+	DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
+    DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypePanel, "CCTopbar/CCPanelTemplate");
+	panel = DialogControlLastCreated();
+	DialogControlSetVisible(panel, PlayerGroupAll(), true);
+    DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
+    DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), 1, 1);
+    DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, -100, -100);
+    DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
+    lv_lastFrame = DialogControlLastCreated();
+    DialogControlHookup(panel, c_triggerControlTypePanel, "CCButtonHolder");
+    lv_lastFrame = DialogControlLastCreated();
+    DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
+    lv_lastFrame = DialogControlLastCreated();
+	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
+	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
+	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
+	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
+	DialogControlSetVisible(lv_lastFrame, PlayerGroupAll(), true);
 	PlayerSetState(1, c_playerStateFormationMove, true);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesMade, c_playerPropOperAdd, 1);
