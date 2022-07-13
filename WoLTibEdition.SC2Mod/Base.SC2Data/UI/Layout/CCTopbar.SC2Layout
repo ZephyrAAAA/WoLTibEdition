@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="Frame" name="GameUI/UIContainer/FullscreenUpperContainer" file="GameUI">
+		<Frame type="Frame" name="CCGlobalCastingPanel">
+			<Width val="786"/>
+			<Height val="225"/>
+			<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+			<Anchor side="Left" relative="$parent" pos="Mid" offset="-393"/>
+			<RenderPriority val="500"/>
+			<CollapseLayout val="true"/>
+			<PreserveAnchorOffset val="true"/>
+			<Visible val="false"/>
+		</Frame>
+	</Frame>
+    <Frame type="CommandButton" name="CCCommandButtonTemplate" template="CommandButton/CommandButtonTemplate">
+        <!--Width val="76"/>
+        <Height val="76"/>
+        
+        <Frame type="Image" name="GameButtonBorderImage">
+            <LayerCount val="2"/>
+            <Texture val="Assets\Textures\ui_void_mission_CC_frame_ability_normal.dds" layer="0"/>
+            <Texture val="Assets\Textures\ui_void_mission_CC_frame_ability_pressed.dds" layer="1"/>
+        </Frame-->
+    </Frame>
+
+    <Frame type="CommandPanel" name="CCCommandPanelTemplate" template="CommandPanel/CommandPanelTemplate">
+        <Width val="688"/>
+        <Height val="700"/>
+        
+        <Anchor side="Top" relative="$parent" pos="Min" offset="1"/>
+        <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+        <HideUnusedButtons val="true"/>
+        <DisplayCancelCommandCard val="false"/>
+        <UseGridHotkeys val="false"/>
+        
+        <Animation name="FadeIn">
+            <Event event="OnShown" action="Reset"/>
+            <Event event="OnShown" action="Play"/>                
+            <Controller type="Fade" end="Pause">
+                <Key type="Curve" time="0" value="0" out="Slow"/>
+                <Key type="Curve" time="0.25" value="255" in="Slow"/>
+            </Controller>
+        </Animation>
+
+        <Frame type="CommandTooltip" name="CCCommandTooltip" template="CommandButton/CommandTooltipTemplate">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="88"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="-225"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton00" template="CCTopbar/CCCommandButtonTemplate">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="11"/>
+            <Anchor side="Bottom" relative="$this" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="134"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
+            <HotkeyUse val="CommanderAbility0"/>
+        </Frame>        
+
+        <Frame type="CommandButton" name="CommandButton01" template="CCTopbar/CCCommandButtonTemplate">
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/Commandbutton00" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
+            <HotkeyUse val="CommanderAbility1"/>
+        </Frame>        
+
+        <Frame type="CommandButton" name="CommandButton02" template="CCTopbar/CCCommandButtonTemplate">
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton01" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
+            <HotkeyUse val="CommanderAbility2"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton03" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+		
+        <Frame type="CommandButton" name="CommandButton04" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+        
+        <Frame type="CommandButton" name="CommandButton05" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+        <Frame type="CommandButton" name="CommandButton06" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton07" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton08" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton09" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton10" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton11" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton12" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton13" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="CommandButton" name="CommandButton14" template="CCTopbar/CCCommandButtonTemplate">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="RowText0">
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$parent/CommandButton00" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+            <Style val="@@CommandRow"/>
+        </Frame>
+
+        <Frame type="Label" name="RowText1">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="RowText2">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Image" name="CommandTargetImage">
+            <Anchor side="Left" relative="$parent" pos="Max" offset="200"/>
+            <Anchor side="Right" relative="$parent" pos="Max" offset="200"/>
+            <Anchor side="Top" relative="$parent" pos="Max" offset="200"/>
+            <Anchor side="Bottom" relative="$parent" pos="Max" offset="200"/>
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="CommandTargetName">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Label" name="CommandTargetPrompt">
+            <Visible val="false"/>
+        </Frame>
+
+        <Frame type="Frame" name="UncontrollableUnitFrame">
+            <Visible val="false"/>
+            
+            <Frame type="Label" name="UncontrollableUnitTitleLabel">
+                <Visible val="false"/>
+            </Frame>
+            
+            <Frame type="Label" name="UncontrollableUnitPromptLabel">
+                <Visible val="false"/>
+            </Frame>
+        </Frame>
+    </Frame>
+    
+    
+    <Frame type="Frame" name="CCPanelTemplate">
+        <Width val="786"/>
+        <Height val="225"/>
+        <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="-393"/>
+        <Visible val="true"/>
+        
+        <Frame type="Frame" name="CCButtonHolder">
+            <Width val="688"/>
+            <Height val="700"/>
+            <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="-344"/>
+        </Frame>              
+    </Frame>
+    
+</Desc>

@@ -72,6 +72,11 @@
         <BuildModel value="Invisible"/>
         <PlacementModel value="Invisible"/>
     </CActorUnit>
+    <CActorUnit id="CCTopbar" parent="GenericUnitStandard" unitName="CCTopbar">
+        <Model value="Invisible"/>
+        <BuildModel value="Invisible"/>
+        <PlacementModel value="Invisible"/>
+    </CActorUnit>
     <CActorUnit id="CommandCenter2" parent="TerranBuildingFlyerEx" unitName="CommandCenter2">
         <Macros value="MacroTownhallDeco_Terran"/>
         <Macros value="TerranCommandCenterPlayerDecalMacro"/>

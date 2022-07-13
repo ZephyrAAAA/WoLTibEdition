@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitCompareBehaviorCount id="BuildingNotBeingRepaired">
+        <Behavior value="BuildingRepair"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="HoldingResources">
         <WhichUnit Value="Caster"/>
         <Behavior value="CarryMineralFieldMinerals"/>
@@ -14,9 +17,4 @@
     <CValidatorUnitCompareVital id="TargetLifeNotFull">
         <ResultFailed value="RequiresHealTarget"/>
     </CValidatorUnitCompareVital>
-    <CValidatorUnitCompareBehaviorCount id="UnknownValidator">
-        <Value value="1"/>
-        <Behavior value="SquadUnit"/>
-        <RequireCasterUnit Effect="BunkerUnloadIterate" Value="Target"/>
-    </CValidatorUnitCompareBehaviorCount>
 </Catalog>
