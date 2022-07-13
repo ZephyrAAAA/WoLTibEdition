@@ -52,9 +52,24 @@
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ImpalerTentacle">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="InfernalFlameThrower">
         <AttackType value="Pierce"/>
         <Period value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfestedAbomination">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfestedClaws">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfestedGuassRifle">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfestedTerranCampaign">
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
@@ -64,6 +79,9 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleClaws">
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
@@ -81,7 +99,6 @@
         </Cost>
         <Effect value="SquadAttack"/>
         <Range value="5.5"/>
-        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FirebatSquad" parent="Firebat">
         <Name value="Weapon/Name/FirebatSquad"/>

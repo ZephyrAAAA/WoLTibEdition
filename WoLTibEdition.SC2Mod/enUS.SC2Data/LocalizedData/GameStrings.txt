@@ -47,6 +47,8 @@ Behavior/Name/Veterancy=Veterancy
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
+Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
+Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/PauseQueue=Pause Queue
 Button/Name/ResumeQueue=Resume Queue
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
@@ -63,6 +65,8 @@ Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Ena
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
 Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
+Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
+Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
@@ -84,6 +88,7 @@ DataCollection/Name/Barracks=Barracks
 DataCollection/Name/Barracks2=Barracks Copy
 DataCollection/Name/CommandCenter=Command Center
 DataCollection/Name/CommandCenter2=Command Center Copy
+DataCollection/Name/Crane=Crane
 DataCollection/Name/DevastationTurret=Devastation Turret
 DataCollection/Name/EngineeringBay=Engineering Bay
 DataCollection/Name/EngineeringBay2=Engineering Bay Copy
@@ -109,6 +114,7 @@ DataCollection/Name/Starport=Starport
 DataCollection/Name/Starport2=Starport Copy
 DataCollection/Name/SupplyDepot=Supply Depot
 DataCollection/Name/SupplyDepot2=Supply Depot Copy
+DataCollection/Name/SupplyDepot2Lowered=Supply Depot Lowered Copy
 DataCollection/Name/TibNodeLarge=Tib Node Large
 DataCollection/Name/TibNodeMedium=Tib Node Medium
 DataCollection/Name/TibNodeSmall=Tib Node Small
@@ -180,7 +186,6 @@ RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912Te
 RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
-Unit/LifeArmorName/None=Terran Building Plating
 Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks
@@ -213,6 +218,8 @@ Unit/Name/TibNodeMedium=Vespene Geyser
 Unit/Name/TibNodeSmall=Vespene Geyser
 Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
+Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
+Upgrade/Name/TerranInfantryVanadiumPlating=Terran Infantry Vanadium Plating
 Weapon/Name/ConcussiveGrenades=Concussive Grenades
 Weapon/Name/FirebatSquad=Firebat Squad
 Weapon/Name/GhostSquad=Ghost Squad

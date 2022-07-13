@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilResearch id="BarracksTechLabResearch">
+        <InfoArray index="Research4" Time="60" Upgrade="TerranInfantryUltraCapacitors">
+            <Button DefaultButtonFace="InfantryUltraCapacitors" State="Restricted" Requirements="LearnInfantryUltraCaps"/>
+        </InfoArray>
+        <InfoArray index="Research5" Time="60" Upgrade="TerranInfantryVanadiumPlating">
+            <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilTransport id="HerculesTransport">
         <MaxCargoCount value="32"/>
         <TotalCargoSpace value="32"/>
@@ -20,6 +28,7 @@
         <TotalCargoSpace value="200"/>
         <LoadCargoBehavior value=""/>
         <UnloadPeriod value="0"/>
+        <SearchRadius value="5"/>
     </CAbilTransport>
     <CAbilArmMagazine id="AirTransportMag">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -713,14 +722,10 @@
     </CAbilMorph>
     <CAbilResearch id="EngineeringBay2Research">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Research1" Time="80" Upgrade="HiSecAutoTracking">
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="100"/>
+        <InfoArray index="Research1" Time="30" Upgrade="HiSecAutoTracking">
             <Button DefaultButtonFace="ResearchHiSecAutoTracking" State="Restricted" Requirements="LearnTerranDefenseRangeBonus"/>
         </InfoArray>
-        <InfoArray index="Research2" Time="140" Upgrade="TerranBuildingArmor">
-            <Resource index="Minerals" value="150"/>
-            <Resource index="Vespene" value="150"/>
+        <InfoArray index="Research2" Time="30" Upgrade="TerranBuildingArmor">
             <Button DefaultButtonFace="UpgradeBuildingArmorLevel1" State="Restricted" Requirements="LearnTerranBuildingArmor"/>
         </InfoArray>
         <InfoArray index="Research3" Time="160" Upgrade="TerranInfantryWeaponsLevel1">
@@ -999,8 +1004,8 @@
         <MaxCount value="3"/>
     </CAbilArmMagazine>
     <CAbilTransport id="MedivacTransport">
-        <LoadCargoEffect value="AirTransportLoadSquad"/>
-        <UnloadCargoEffect value="AirTransportLoadSquad"/>
+        <LoadCargoEffect value="AirTransportLoadIterate"/>
+        <UnloadCargoEffect value="AirTransportUnloadIterate"/>
     </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>
@@ -1061,8 +1066,8 @@
         <ResourceDestroy index="Vespene" value="0"/>
     </CAbilHarvest>
     <CAbilTransport id="SpecOpsDropshipTransport">
-        <LoadCargoEffect value="AirTransportLoadSquad"/>
-        <UnloadCargoEffect value="AirTransportLoadSquad"/>
+        <LoadCargoEffect value="AirTransportLoadIterate"/>
+        <UnloadCargoEffect value="AirTransportUnloadIterate"/>
     </CAbilTransport>
     <CAbilBuild id="Starport2AddOns" parent="TerranAddOns">
         <Name value="Abil/Name/Starport2AddOns"/>

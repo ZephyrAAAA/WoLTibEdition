@@ -1,4 +1,6 @@
 ﻿Button/Hotkey/BuildDevastatorTurret=D
 Button/Hotkey/Decal_Terran_0047_01=C
+Button/Hotkey/InfantryUltraCapacitors=C
+Button/Hotkey/InfantryVanadiumPlating=V
 Button/Hotkey/PauseQueue=Escape
 Button/Hotkey/ResumeQueue=H

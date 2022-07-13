@@ -5,6 +5,16 @@
         <AlertIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="InfantryUltraCapacitors">
+        <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <AlertIcon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+    <CButton id="InfantryVanadiumPlating">
+        <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
+        <AlertIcon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="PauseQueue">
         <Icon value="EditorData\Images\CutSceneEditor\Playhead\Control_Pause.tga"/>
         <HotkeyAlias value="Cancel"/>

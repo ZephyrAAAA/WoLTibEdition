@@ -30,7 +30,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorDevastatorTurretBuiltCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="DevastatorTurretBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
@@ -81,9 +80,18 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitCraneCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Crane" State="CompleteOnlyAtUnit"/>
     </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="TerranInfantryUltraCapacitors" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="TerranInfantryVanadiumPlating" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementEq id="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1">
         <OperandArray index="0" value="CountBehaviorCraneBuiltCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="1"/>
@@ -229,8 +237,15 @@
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">
         <OperandArray index="0" value="OrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
