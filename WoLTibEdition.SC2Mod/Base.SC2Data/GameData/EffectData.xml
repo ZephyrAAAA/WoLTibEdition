@@ -57,6 +57,15 @@
         <RechargeVitalRate value="1"/>
         <TimeFactor value="1"/>
     </CEffectCreateHealer>
+    <CEffectLaunchMissile id="RailgunLaunch">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <ImpactEffect value="RaynorGaussRifleDamage"/>
+        <AmmoUnit value="RailgunWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="RaynorGaussRifleDamage">
+        <Amount value="30"/>
+    </CEffectDamage>
     <CEffectDamage id="SquadDeathDamage">
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterUnit"/>

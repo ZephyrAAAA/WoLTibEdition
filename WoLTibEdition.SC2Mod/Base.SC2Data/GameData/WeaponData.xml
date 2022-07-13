@@ -9,6 +9,9 @@
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ColonistTransport">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -155,7 +158,9 @@
         <Effect value="ConcussiveGrenadesLM"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
-        <AttackType value="Normal"/>
+        <AttackType value="Magic"/>
+        <Period value="1"/>
+        <Effect value="RailgunLaunch"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>

@@ -710,6 +710,11 @@
     <CActorSplat id="PlanetaryFortressSplat2" parent="TerranBuildingMorphSplat" unitName="PlanetaryFortress2">
         <Model value="PlanetaryFortressSplat"/>
     </CActorSplat>
+    <CActorAction id="Raynor01Attack" effectAttack="">
+        <On index="0" Terms="Effect.Stop; FromEffectTreeDescendant"/>
+        <On index="5" Terms="Effect.Start; At Caster"/>
+        <ContainerAssets Model="BunkerAttackLaunch" Sound="BunkerAttackLaunch"/>
+    </CActorAction>
     <CActorUnit id="ReaperSquad" parent="ReaperPlaceholder" unitName="ReaperSquad">
         <On index="0" Terms="UnitBirth.ReaperSquad" Send="Create SoundEmitter ReaperSquad_Ambience"/>
         <On index="1" Terms="UnitBirth.ReaperSquad"/>
@@ -1220,4 +1225,28 @@
         <Model value="MineralFieldSplatSmall"/>
         <Scale value="0.750000"/>
     </CActorSplat>
+    <CActorBeamSimple id="RailgunBeam" parent="GenericAttackBeam">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Effect.RailgunLaunch.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.RaynorGaussRifleDamage.Start" Send="Create WarHoundImpactHoldingSite"/>
+        <On Terms="Effect.RaynorGaussRifleDamage.Start" Send="RefSet ::HostImpact WarHoundImpactHoldingSite"/>
+        <Host Subject="_Selectable"/>
+        <Model value="WarHoundBeam"/>
+        <HostLaunch Subject="_Selectable" Actor="Find"/>
+        <HostLaunchSiteOps Ops="SOpAttachWeapon" HoldPosition="1" HoldRotation="1"/>
+        <HostImpact Subject="_Missile" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorAction id="WarHoundAttack" parent="GenericAttack" effectImpact="RaynorGaussRifleDamage" effectLaunch="RailgunLaunch">
+        <LaunchAssets Sound="RailGun_Launch"/>
+        <BeamScope value="Caster"/>
+        <ImpactMap index="None" Sound="RailGun_Impact"/>
+        <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="RailgunAttackDeathForce"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+    </CActorAction>
+    <CActorMissile id="WarHoundAttackMissile" parent="GenericAttackMissile" unitName="RailgunWeapon">
+        <Model value="Invisible"/>
+    </CActorMissile>
+    <CActorSite id="WarHoundImpactHoldingSite"/>
 </Catalog>
