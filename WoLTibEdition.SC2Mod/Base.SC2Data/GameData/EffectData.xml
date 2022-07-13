@@ -27,6 +27,13 @@
         <Abil value="BunkerTransportSquad"/>
         <AbilCmdIndex value="1"/>
     </CEffectIssueOrder>
+    <CEffectDamage id="ImpalerTentacleU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="InfernalFlameThrowerCP">
+        <PeriodicEffectArray index="0" value="InfernalFlameThrower"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="SquadDeathDamage">
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterUnit"/>
@@ -142,6 +149,12 @@
     </CEffectDamage>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
+        <ValidatorArray index="0" removed="1"/>
+        <Amount value="15"/>
+        <AreaArray Radius="0.15" Fraction="1" Validator="noMarkers"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFlags index="SameCliff" value="0"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="MedicSquadAcquire">
         <ValidatorArray value="noMarkers"/>

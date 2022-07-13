@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade id="BearclawNozzles">
+        <EffectArray index="0" Reference="Effect,FirebatUFull,AreaArray[0].Radius" Value="0.4"/>
+        <EffectArray index="1" Reference="Effect,DevilDogDamage,AreaArray[0].Radius" Value="0.4"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="HiSecAutoTracking">
+        <EffectArray Reference="Weapon,ConcussiveGrenades,Range" Value="1"/>
+        <BonusResourcePerLevel index="Minerals" value="1000"/>
+    </CUpgrade>
+    <CUpgrade id="TerranBuildingArmor">
+        <EffectArray index="0" Value="1.000000"/>
+        <EffectArray index="1" Value="1"/>
+        <EffectArray index="2" Value="1.000000"/>
+        <EffectArray index="3" Value="1"/>
+        <EffectArray index="4" Value="1.000000"/>
+        <EffectArray index="5" Value="1"/>
+        <EffectArray index="6" Value="1.000000"/>
+        <EffectArray index="7" Value="1"/>
+        <EffectArray index="8" Value="1.000000"/>
+        <EffectArray index="9" Value="1"/>
+        <EffectArray index="10" Value="1.000000"/>
+        <EffectArray index="11" Value="1"/>
+        <EffectArray index="12" Value="1.000000"/>
+        <EffectArray index="13" Value="1"/>
+        <EffectArray index="14" Value="1.000000"/>
+        <EffectArray index="15" Value="1"/>
+        <EffectArray index="16" Value="1.000000"/>
+        <EffectArray index="17" Value="1"/>
+        <EffectArray index="18" Value="1.000000"/>
+        <EffectArray index="19" Value="1"/>
+        <EffectArray index="20" Value="1.000000"/>
+        <EffectArray index="21" Value="1"/>
+        <EffectArray index="22" Value="1.000000"/>
+        <EffectArray index="23" Value="1"/>
+        <EffectArray index="24" Value="1.000000"/>
+        <EffectArray index="25" Value="1"/>
+        <EffectArray index="26" Value="1.000000"/>
+        <EffectArray index="27" Value="1"/>
+        <EffectArray index="28" Value="1.000000"/>
+        <EffectArray index="29" Value="1"/>
+        <EffectArray index="30" Value="1.000000"/>
+        <EffectArray index="31" Value="1"/>
+        <EffectArray index="32" Value="1.000000"/>
+        <EffectArray index="33" Value="1"/>
+        <EffectArray index="34" Value="1.000000"/>
+        <EffectArray index="35" Value="1"/>
+        <EffectArray index="36" Value="1.000000"/>
+        <EffectArray index="37" Value="1"/>
+        <EffectArray index="38" Value="1.000000"/>
+        <EffectArray index="39" Value="1"/>
+        <EffectArray index="40" Value="1.000000"/>
+        <EffectArray index="41" Value="1"/>
+        <EffectArray index="42" Value="1.000000"/>
+        <EffectArray index="43" Value="1"/>
+        <EffectArray index="44" Value="1.000000"/>
+        <EffectArray index="45" Value="1"/>
+        <EffectArray index="46" Value="1.000000"/>
+        <EffectArray index="47" Value="1"/>
+        <EffectArray index="48" Value="1.000000"/>
+        <EffectArray index="49" Value="1"/>
+        <EffectArray index="50" Value="1"/>
+        <EffectArray index="51" Value="1"/>
+        <EffectArray index="52" Value="1.000000"/>
+        <EffectArray index="53" Value="1"/>
+        <EffectArray index="54" Value="1.000000"/>
+        <EffectArray index="55" Value="1"/>
+        <EffectArray index="56" Value="1.000000"/>
+        <EffectArray index="57" Value="1"/>
+        <EffectArray index="58" Value="1.000000"/>
+        <EffectArray index="59" Value="1"/>
+        <EffectArray index="60" Value="1"/>
+        <EffectArray index="61" Value="1"/>
+        <EffectArray index="62" Value="1.000000"/>
+        <EffectArray index="63" Value="1"/>
+        <EffectArray index="64" Value="1.000000"/>
+        <EffectArray index="65" Value="1"/>
+        <EffectArray index="66" Value="1.000000"/>
+        <EffectArray index="67" Value="1"/>
+        <EffectArray index="68" Value="1.000000"/>
+        <EffectArray index="69" Value="1"/>
+        <EffectArray index="70" Value="1.000000"/>
+        <EffectArray index="71" Value="1"/>
+        <EffectArray index="72" Value="1.000000"/>
+        <EffectArray index="73" Value="1"/>
+        <EffectArray index="74" Value="1.000000"/>
+        <EffectArray index="75" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <BonusResourcePerLevel index="Minerals" value="1000"/>
+    </CUpgrade>
+    <CUpgrade id="TerranInfantryUltraCapacitors">
+        <EffectArray Reference="Weapon,GuassRifle,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,P38ScytheGuassPistol,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,D8Charge,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,PunisherGrenades,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,C10CanisterRifle,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,Firebat,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,Specter,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,KelmorianMinerGaussRifle,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,HammerSecurity,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,DevilDogFlameThrower,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,CommandoRifle,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,RaynorWeapon,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,TychusCommandoChaingun,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,TychusChaingun,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,DutchConcussiveGrenade,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,SwannMelee,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,Nova,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,Tosh,RateMultiplier" Value="0.2"/>
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
+        <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
+    </CUpgrade>
+    <CUpgrade id="TerranInfantryVanadiumPlating">
+        <EffectArray Reference="Unit,SCV,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,SCV,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Marine,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Marine,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Reaper,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Reaper,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Marauder,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Marauder,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Ghost,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Ghost,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MULE,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MULE,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Firebat,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Firebat,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Medic,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Medic,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Spectre,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Spectre,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,WarPig,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,WarPig,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,HammerSecurity,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HammerSecurity,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DevilDog,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DevilDog,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DominionKillTeam,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DominionKillTeam,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,RaynorCommando,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,RaynorCommando,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Raynor,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Raynor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,TychusCommando,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,TychusCommando,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,TychusChaingun,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,TychusChaingun,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Swann,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Swann,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Stetmann,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Stetmann,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Nova,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Nova,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Tosh,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,Tosh,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+    </CUpgrade>
+    <CUpgrade id="TwinLinkedFlameThrowers">
+        <EffectArray index="0" Reference="Effect,InfernalFlameThrower,AreaArray[0].Radius"/>
+    </CUpgrade>
+</Catalog>

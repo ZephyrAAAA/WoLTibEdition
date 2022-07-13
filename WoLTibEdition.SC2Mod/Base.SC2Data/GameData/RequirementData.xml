@@ -122,6 +122,12 @@
     <CRequirement id="IsNotCrane">
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirement>
+    <CRequirement id="LearnInfantryUltraCaps">
+        <NodeArray index="Show" Link="NotCountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnInfantryVanadium">
+        <NodeArray index="Show" Link="NotCountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="StaticDefBarracks">
         <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>

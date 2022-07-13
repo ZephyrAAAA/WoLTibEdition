@@ -2,6 +2,7 @@ trigger gather;
 trigger returning;
 trigger idle;
 trigger building;
+trigger research;
 trigger pause;
 trigger resume;
 trigger cancel;
@@ -179,6 +180,74 @@ void Building_Init () {
 	//TriggerAddEventUnitConstructProgress(building, null, c_unitProgressStageStart);
 }
 
+bool Research_Func (bool testConds, bool runActions) {
+	unit buildingUnit;
+	fixed progress;
+	int targetCost;
+	fixed costRate;
+	int totaledCost;
+	int prevCost;
+	bool paused;
+	fixed totalTime;
+	
+	if (testConds) {
+		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
+			return false;
+		}
+	}
+	
+	buildingUnit = EventUnit();
+	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
+		Wait(0.0625, c_timeGame);
+	}
+	targetCost = CatalogFieldValueGetAsInt(c_gameCatalogUpgrade, libNtve_gf_TriggeringProgressUpgrade(), "BonusResourcePerLevel[0]", c_playerAny);
+	totalTime = UnitQueueItemTime(buildingUnit, c_unitQueueTimeTotal, 1);
+	costRate = Round(IntToFixed(targetCost) / totalTime);
+	UnitBehaviorAdd(buildingUnit, "BuildHandled", buildingUnit, 1);
+	do {
+		if (!UnitIsAlive(buildingUnit)) {
+			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+			return true;
+		}
+		if ((progress > UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) || UnitQueueItemCount(buildingUnit, 1) == 0) && UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused)) {
+			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+			return true;
+		}
+		if (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < FloorI(UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) * costRate - totaledCost)) {
+			UnitBehaviorAdd(buildingUnit, "ConstructStop", buildingUnit, 1);
+			Wait(0.0625, c_timeGame);
+			continue;
+		}
+		UnitBehaviorRemove(buildingUnit, "ConstructStop", 1);
+		prevCost = totaledCost;
+		totaledCost = FloorI(UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1) * costRate);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, totaledCost - prevCost);
+		progress = UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1);
+		paused = UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused);
+		Wait(0.0625, c_timeGame);
+	} while (progress <= UnitQueueItemTime(buildingUnit, c_unitQueueTimeElapsed, 1));
+	if (!UnitIsAlive(buildingUnit)) {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+		return true;
+	}
+	UnitBehaviorRemove(buildingUnit, "BuildHandled", 1);
+	Wait(0.0625, c_timeGame);
+	if (!(paused || UnitHasBehavior(buildingUnit, "Cancel"))) { // behavior appears to not work but it's here anyways because we can always hope
+		while (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < (RoundI(totalTime * costRate) - totaledCost)) {
+			Wait(0.0625, c_timeGame);
+		}
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, targetCost - totaledCost);
+	} else {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+	}
+	return true;
+}
+
+void Research_Init () {
+	research = TriggerCreate("Research_Func");
+	TriggerAddEventUnitResearchProgress(research, null, c_unitProgressStageStart);
+}
+
 bool Pause_Func (bool testConds, bool runActions) {
 	if (UnitQueueItemCount(EventUnit(), 1) != 0) {
 		UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
@@ -259,6 +328,10 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 8)));
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 1), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	for (lv_i = 0; lv_i < 9; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", lv_i)));
 	}
@@ -296,6 +369,7 @@ void main() {
 	Returning_Init();
 	Idle_Init();
 	Building_Init();
+	Research_Init();
 	Pause_Init();
 	Resume_Init();
 	Cancel_Init();
