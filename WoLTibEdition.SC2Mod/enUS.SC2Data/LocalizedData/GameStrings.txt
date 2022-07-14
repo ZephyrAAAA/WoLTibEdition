@@ -93,6 +93,9 @@ Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
+ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
+ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">All units affected by this upgrade attack 20% faster.</s>
+DOCSTR_0000=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 DataCollection/Name/Armory=Armory
 DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks

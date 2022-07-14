@@ -52,7 +52,7 @@ Liberation Day:
 -On the road into town, there is now 3 marines. 2 additional marines are present on Hard, and a Viking is present on Brutal.
 -There are now 3 marines starting at mine entrances on hard and brutal on the road.
 -The square now has 13 marines. On hard, 3 of them are replaced by a viking. On brutal, it is a firebat instead.
--Each holoboard (after the first) now has at least 2 marines at it. This is increased to 3 on hard, and all of them are swapped out for a viking on Brutal.
+-Each holoboard (after the first) now has at least 2 marines at it. There is 1 more on hard, or a viking on Brutal.
 -Moved the marines after the first holoboard back, added a group between them and the holoboard.
 -The third viking at the logistics thing is now also present on hard.
 -The firebat at the logistics thing is now also present on hard.
