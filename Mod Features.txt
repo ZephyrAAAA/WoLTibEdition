@@ -23,6 +23,10 @@ Units and structures now cost resources based on how long they take. 100 mineral
 
 Workers harvest resources at roughly 2000/min, under optimal conditions.
 
+Mineral pickups now give 1000 resources.
+
+Vespene pickups now give 2000 resources.
+
 
 
 
@@ -45,9 +49,10 @@ MISSION SPECIFIC CHANGES:
 
 Liberation Day:
 -Raynor now has a railgun that does Cannon damage.
--More enemy marines.
+-On the road into town, there is now 3 marines. 2 additional marines are present on Hard, and a Viking is present on Brutal.
+-There are now 3 marines starting at mine entrances on hard and brutal on the road.
 -The square now has 13 marines. On hard, 3 of them are replaced by a viking. On brutal, it is a firebat instead.
--Each holoboard (after the first) now has at least 2 marines at it. This is increased to 3 on hard and above.
+-Each holoboard (after the first) now has at least 2 marines at it. This is increased to 3 on hard, and all of them are swapped out for a viking on Brutal.
 -Moved the marines after the first holoboard back, added a group between them and the holoboard.
 -The third viking at the logistics thing is now also present on hard.
 -The firebat at the logistics thing is now also present on hard.
@@ -74,6 +79,7 @@ Zero Hour:
 -Starts with 2 devastation turrets, one behind each bridge bunker
 -Starting supply depots reduced to 3, but they are upgraded.
 -Bridges are wider to accomodate ultras on hard and brutal
+-The bridges no longer count as "low ground" for vision.
 
 The Evacuation:
 
@@ -151,6 +157,8 @@ Predator- Comparitively Cheaper
 
 Hellion- Now fires constantly
 
+Thor- Reduce damage by 33%
+
 
 ARMORY UPGRADE CHANGES:
 
@@ -217,13 +225,15 @@ Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/S
 
 Marine Ammo (3 variants, Incendiary(Better against bio/infantry), Explosive(Better against armoured), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun(Better against armoured, worse against infantry)) you can only pick 1 during a mission) [Barracks Tech Lab]
 
-Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Factory Tech Lab]
+Vehicle Health and Armour [Factory Tech Lab]
 
 Improved Engines-Ships move faster [Starport Tech Lab]
 
-Vehicle Health and Armour [Armoury]
+Ship Health and armour [Starport Tech Lab]
 
 Blue Flame- all fire weapons deal more damage (Including Marine incendiary ammo) [Armoury]
+
+Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Armoury]
 
 Improved Shields-Requires the Shield Research. Improves shield stats [Fusion Core]
 

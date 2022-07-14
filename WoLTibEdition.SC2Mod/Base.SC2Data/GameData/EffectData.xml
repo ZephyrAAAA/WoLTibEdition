@@ -80,6 +80,10 @@
         <RechargeVitalRate value="1"/>
         <TimeFactor value="1"/>
     </CEffectCreateHealer>
+    <CEffectModifyPlayer id="PickupGas100">
+        <Resources index="Minerals" value="2000"/>
+        <Resources index="Vespene" value="0"/>
+    </CEffectModifyPlayer>
     <CEffectLaunchMissile id="RailgunLaunch">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value=""/>
