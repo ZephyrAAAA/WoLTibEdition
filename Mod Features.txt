@@ -1,6 +1,6 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
-Also rebalancing units and upgrades to make them more viable, and missions to make them better.
+Also rebalancing units and upgrades to make them more viable, and missions to make them better, and better handle the new systems.
 
 
 ECONOMY/MACRO:
@@ -44,6 +44,12 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 MISSION SPECIFIC CHANGES:
 
 Liberation Day:
+-Raynor now has a railgun that does Cannon damage.
+-More enemy marines. Each holoboard (after the first) now has at least 2 marines at it.
+-Moved the marines after the first holoboard back, added a group between them and the holoboard.
+-A Viking is now present in the square on Hard. This is replaced with a Firebat on Brutal.
+-Killing 3 holoboards rewards you with an additional marine squad.
+-Killing a holoboard heals all your units, and restores any lost squad members.
 
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
