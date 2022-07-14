@@ -98,7 +98,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);
 		Wait(1, c_timeGame);
 		resourceGroup = UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
-	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) || DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) > 20);
+	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) || DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) > 10);
 	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
 		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
 	}

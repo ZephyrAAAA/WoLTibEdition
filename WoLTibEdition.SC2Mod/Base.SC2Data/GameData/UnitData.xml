@@ -567,6 +567,7 @@
         <TechAliasArray value="Alias_Barracks"/>
         <GlossaryAlias value="Barracks"/>
         <ArmorType value="Hero"/>
+        <SelectAlias value="Barracks2"/>
     </CUnit>
     <CUnit id="BarracksFlying">
         <ArmorType value="Hero"/>
@@ -2368,6 +2369,8 @@
     </CUnit>
     <CUnit id="Hydralisk">
         <ArmorType value="Small"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="HydraliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2375,6 +2378,8 @@
     </CUnit>
     <CUnit id="HydraliskBurrowed">
         <ArmorType value="Small"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="HydraliskDen">
         <ArmorType value="Hero"/>
@@ -3642,6 +3647,8 @@
     <CUnit id="Roach">
         <ArmorType value="Medium"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="RoachACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3650,6 +3657,8 @@
     <CUnit id="RoachBurrowed">
         <ArmorType value="Medium"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="RoachVileACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4850,6 +4859,8 @@
     <CUnit id="Ultralisk">
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="UltraliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4858,6 +4869,8 @@
     <CUnit id="UltraliskBurrowed">
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="UltraliskCavern">
         <ArmorType value="Hero"/>
@@ -5111,9 +5124,13 @@
     </CUnit>
     <CUnit id="Zergling">
         <ArmorType value="Small"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZerglingBurrowed">
         <ArmorType value="Small"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZerglingKerriganACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
