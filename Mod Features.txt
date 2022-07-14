@@ -1,6 +1,6 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
-Also rebalancing units and upgrades to make them more viable, and missions to make them better.
+Also rebalancing units and upgrades to make them more viable, and missions to make them better, and better handle the new systems.
 
 
 ECONOMY/MACRO:
@@ -44,6 +44,18 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 MISSION SPECIFIC CHANGES:
 
 Liberation Day:
+-Raynor now has a railgun that does Cannon damage.
+-More enemy marines.
+-The square now has 13 marines. On hard, 3 of them are replaced by a viking. On brutal, it is a firebat instead.
+-Each holoboard (after the first) now has at least 2 marines at it. This is increased to 3 on hard and above.
+-Moved the marines after the first holoboard back, added a group between them and the holoboard.
+-The third viking at the logistics thing is now also present on hard.
+-The firebat at the logistics thing is now also present on hard.
+-The two statues in the logistics compound now have 2 marines, 3 on hard and above
+-There is now 4 marines on the path to the APC from the square. This is increased to 6 on hard, or a viking and 2 marines on Brutal
+-Killing 3 and 6 holoboards rewards you with an additional marine squad.
+-Killing a holoboard heals all your units, and restores any lost squad members.
+-Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed)
 
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
@@ -57,10 +69,11 @@ Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
 -Pallets to the west of the western bridge replaced with a resource node
 -2 additional resource pallets placed in the town
--Reworked how, when, and what attack waves do things to apply more constant and stronger pressure
+-Reworked how, when, and what attack waves do things to apply more constant and stronger pressure that scales with time
 -Muta attack waves are more often, and randomized a bit.
 -Starts with 2 devastation turrets, one behind each bridge bunker
 -Starting supply depots reduced to 3, but they are upgraded.
+-Bridges are wider to accomodate ultras on hard and brutal
 
 The Evacuation:
 
