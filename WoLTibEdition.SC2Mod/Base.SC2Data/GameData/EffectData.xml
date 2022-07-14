@@ -23,22 +23,46 @@
         <EffectExternal value="AirTransportUnloadSquad"/>
     </CEffectEnumMagazine>
     <CEffectApplyBehavior id="BuildingRepairAB">
-        <ValidatorArray index="0" value="NotWarpingIn"/>
+        <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
+        <Behavior value="BuildingRepair"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="BuildingRepairSwitch">
+        <ValidatorArray value="NotWarpingIn"/>
         <ValidatorArray value="HiddenCompareBA"/>
         <ValidatorArray value="HiddenCompareAB"/>
         <ValidatorArray value="NotVortexd"/>
         <ValidatorArray value="NotThorWreckage"/>
         <ValidatorArray value="NotOdinWreckage"/>
         <ValidatorArray value="TargetLifeNotFull"/>
-        <ValidatorArray value="BuildingNotBeingRepaired"/>
         <ValidatorArray value="IsNotConstructing"/>
-        <Behavior value="BuildingRepair"/>
-    </CEffectApplyBehavior>
+        <CaseArray Validator="BuildingNotBeingRepaired" Effect="BuildingRepairAB"/>
+        <CaseDefault value="BuildingRepairRB"/>
+    </CEffectSwitch>
     <CEffectIssueOrder id="BunkerUnloadSquad2">
         <EditorCategories value=""/>
         <Abil value="BunkerTransportSquad"/>
         <AbilCmdIndex value="1"/>
     </CEffectIssueOrder>
+    <CEffectApplyBehavior id="DepowerAB">
+        <EditorCategories value=""/>
+        <Behavior value="Depowered"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="DepowerRB">
+        <EditorCategories value=""/>
+        <BehaviorLink value="Depowered"/>
+    </CEffectRemoveBehavior>
+    <CEffectSwitch id="DepowerSwitch">
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="HiddenCompareBA"/>
+        <ValidatorArray value="HiddenCompareAB"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NotThorWreckage"/>
+        <ValidatorArray value="NotOdinWreckage"/>
+        <ValidatorArray value="IsNotConstructing"/>
+        <EditorCategories value=""/>
+        <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
+        <CaseDefault value="DepowerRB"/>
+    </CEffectSwitch>
     <CEffectDamage id="ImpalerTentacleU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="30"/>
@@ -51,9 +75,8 @@
         <Amount value="12"/>
     </CEffectDamage>
     <CEffectCreateHealer id="BuildingRepair">
-        <EditorCategories value="Race:Terran"/>
         <Flags index="Channeled" value="0"/>
-        <DrainResourceCostFactor index="Minerals" value="0.5"/>
+        <DrainResourceCostFactor index="Minerals" value="1"/>
         <RechargeVitalRate value="1"/>
         <TimeFactor value="1"/>
     </CEffectCreateHealer>
@@ -66,6 +89,11 @@
     <CEffectDamage id="RaynorGaussRifleDamage">
         <Amount value="30"/>
     </CEffectDamage>
+    <CEffectModifyUnit id="SalvageShared">
+        <SalvageFactor>
+            <Resource index="Minerals" value="-2"/>
+        </SalvageFactor>
+    </CEffectModifyUnit>
     <CEffectDamage id="SquadDeathDamage">
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterUnit"/>
@@ -115,19 +143,19 @@
         <SpawnUnit value="SCV2"/>
     </CEffectCreateUnit>
     <CEffectDamage id="CrucioShockCannonBlast">
-        <Amount value="240"/>
+        <Amount value="100"/>
     </CEffectDamage>
     <CEffectDamage id="CrucioShockCannonDirected">
-        <Amount value="240"/>
+        <Amount value="100"/>
     </CEffectDamage>
     <CEffectDamage id="CrucioShockCannonDummy">
-        <Amount value="240"/>
+        <Amount value="100"/>
     </CEffectDamage>
     <CEffectDamage id="CrucioShockCannonEnemyDamage">
-        <Amount value="240"/>
+        <Amount value="100"/>
     </CEffectDamage>
     <CEffectDamage id="CrucioShockCannonFriendlyDamage">
-        <Amount value="60"/>
+        <Amount value="25"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="DevastatorTurretBuilt">
         <EditorCategories value=""/>
@@ -592,4 +620,7 @@
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
     </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="BuildingRepairRB">
+        <BehaviorLink value="BuildingRepair"/>
+    </CEffectRemoveBehavior>
 </Catalog>

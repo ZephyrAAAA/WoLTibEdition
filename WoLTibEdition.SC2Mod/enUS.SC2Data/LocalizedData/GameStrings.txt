@@ -9,9 +9,11 @@ Abil/Name/Barracks2Train=Train
 Abil/Name/Bunker=Bunker
 Abil/Name/BunkerTransportSquad=Load-Unload
 Abil/Name/CCBuild=C&C Build
+Abil/Name/CCDepower=C&C Depower
 Abil/Name/CCPlaceBuilding=C&C Place Building
 Abil/Name/CCQueue=C&CQueue
 Abil/Name/CCRepair=C&C Repair
+Abil/Name/CCSell=C&C Sell
 Abil/Name/CommandCenter2Land=Land (Command Center)
 Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
 Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
@@ -40,6 +42,7 @@ Abil/Name/SupplyDepot2Raise=Raise
 Abil/Name/UpgradeDepot=Upgrade Depot
 Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
 Behavior/Name/BuildingRepair=Building Repair
+Behavior/Name/Depowered=Depowered
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/SquadAttack=Squad Attack
 Behavior/Name/SquadTransportList=Squad Transport List
@@ -49,10 +52,12 @@ Behavior/Name/Veterancy=Veterancy
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
+Button/Name/Depower=Depower
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/PauseQueue=Pause Queue
 Button/Name/ResumeQueue=Resume Queue
+Button/Name/Sell=Sell
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
@@ -61,6 +66,7 @@ Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
+Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran infantry units. Enables the construction of Terran defensive structures. 
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
@@ -75,6 +81,7 @@ Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive res
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/Sell=Sells selected building for a refund
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
 Button/Tooltip/Starport2Flying=Starport must land to start unit production.
@@ -132,6 +139,8 @@ Effect/Name/AirTransportUnloadIterate=Air Transport Unload Iterate
 Effect/Name/AirTransportUnloadSquad=Air Transport Unload Squad
 Effect/Name/BuildingRepair=Building Repair
 Effect/Name/BuildingRepairAB=Building Repair AB
+Effect/Name/BuildingRepairRB=Building Repair RB
+Effect/Name/BuildingRepairSwitch=Building Repair Switch
 Effect/Name/BunkerLoadIterate=Bunker Load Iterate
 Effect/Name/BunkerLoadIterate2=Bunker Load Iterate2
 Effect/Name/BunkerLoadSquad=Bunker Load Squad
@@ -143,6 +152,9 @@ Effect/Name/ConcussiveGrenadesU=Concussive Grenades
 Effect/Name/CraneBuilt=CraneBuilt
 Effect/Name/CranePlace=Crane Place
 Effect/Name/CreateSCVHarvester=Create SCV Harvester
+Effect/Name/DepowerAB=Depower AB
+Effect/Name/DepowerRB=Depower RB
+Effect/Name/DepowerSwitch=Depower Switch
 Effect/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
 Effect/Name/DevastatorTurretPlace=DevastatorTurretPlace
 Effect/Name/DropOffStun=Drop Off Stun
@@ -225,6 +237,7 @@ Unit/Name/TibNodeMedium=Vespene Geyser
 Unit/Name/TibNodeSmall=Vespene Geyser
 Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
+Upgrade/Name/LowPower=Low Power
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
 Upgrade/Name/TerranInfantryVanadiumPlating=Terran Infantry Vanadium Plating
 Weapon/Name/ConcussiveGrenades=Concussive Grenades

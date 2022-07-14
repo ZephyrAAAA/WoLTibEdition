@@ -430,8 +430,10 @@
     </CActorUnit>
     <CActorModelMaterial id="LowPower" parent="BehaviorGlaze" buff="PowerCheck">
         <EditorCategories value=""/>
-        <On index="5" Terms="Behavior.On" Send="Create"/>
-        <On index="6" Terms="Behavior.Off" Send="AnimBracketStop BSD"/>
+    </CActorModelMaterial>
+    <CActorModelMaterial id="Depowered" parent="BehaviorGlaze" buff="Depowered">
+        <EditorCategories value=""/>
+        <Model value="LowPower"/>
     </CActorModelMaterial>
     <CActorUnit id="MarauderSquad" parent="Marauder" unitName="MarauderSquad">
         <Aliases index="2" value="_UnitSmall"/>

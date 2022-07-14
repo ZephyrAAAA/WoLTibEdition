@@ -29,6 +29,21 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Depowered">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.01">
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressDropOff" value="1"/>
+            <StateFlags index="SuppressFoodUsed" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+            <AbilClassDisableArray index="CAbilBuild" value="1"/>
+            <AbilClassDisableArray index="CAbilSpecialize" value="1"/>
+            <AbilClassDisableArray index="CAbilTrain" value="1"/>
+            <RateMultiplierArray index="Morph" value="0.5"/>
+            <RateMultiplierArray index="Queueable" value="0.5"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DevastatorTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -61,8 +76,11 @@
         <PeriodicEffect value="TibNodeLargeGrow"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PowerCheck">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="PlayerHasPower"/>
+        <DisableValidatorArray value="IsNotConstructing"/>
         <Modification MoveSpeedMultiplier="0.5" AttackSpeedMultiplier="0.01">
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <RateMultiplierArray index="Morph" value="0.5"/>

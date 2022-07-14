@@ -13,7 +13,7 @@
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
-        <AttackType value="Pierce"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="D8Charge">
         <AttackType value="Pierce"/>
@@ -179,6 +179,9 @@
         <Range value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThrowMolotov">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">

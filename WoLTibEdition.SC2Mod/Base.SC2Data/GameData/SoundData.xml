@@ -37,4 +37,13 @@
         <VolumeRolloffPoints Distance="15.472779"/>
         <VolumeRolloffPoints Distance="30.802292" Volume="-96.000000"/>
     </CSound>
+    <CSound id="TRaynor02Raynor00037Mod" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="TRaynor02" Speaker="CharRaynor" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\TrainSCV.ogg"/>
+            <FacialAnim value="TRaynor02Raynor00037"/>
+            <PortraitModel value=""/>
+            <Speaker value="ConversationState/Characters/"/>
+            <Subtitle value="Conversation//Line"/>
+        </AssetArray>
+    </CSound>
 </Catalog>

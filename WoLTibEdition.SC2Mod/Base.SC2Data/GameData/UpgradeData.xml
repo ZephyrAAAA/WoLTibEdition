@@ -16,6 +16,9 @@
         <EffectArray Reference="Weapon,ConcussiveGrenades,Range" Value="1"/>
         <BonusResourcePerLevel index="Minerals" value="1000"/>
     </CUpgrade>
+    <CUpgrade id="LowPower">
+        <EditorCategories value="Race:Neutral"/>
+    </CUpgrade>
     <CUpgrade id="TerranBuildingArmor">
         <EffectArray index="0" Value="1.000000"/>
         <EffectArray index="1" Value="1"/>
@@ -166,6 +169,7 @@
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
     </CUpgrade>
     <CUpgrade id="TwinLinkedFlameThrowers">
         <EffectArray index="0" Reference="Effect,InfernalFlameThrower,AreaArray[0].Radius"/>

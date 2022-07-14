@@ -8,11 +8,19 @@
             <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilEffectTarget id="CCDepower">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="DepowerSwitch"/>
+        <TargetFilters value="Ground,Structure;Ally,Neutral,Enemy"/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Depower"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="CCRepair">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="BuildingRepairAB"/>
+        <Effect index="0" value="BuildingRepairSwitch"/>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Flags index="ChannelingMinimum" value="0"/>
         <TargetFilters value="Ground,Structure;Ally,Neutral,Enemy"/>
         <Range value="500"/>
@@ -25,6 +33,14 @@
         <UseMarkerArray index="Cast" value="0"/>
         <UseMarkerArray index="Channel" value="0"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Repair"/>
+        <AutoCastValidatorArray value="BuildingNotBeingRepaired"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="CCSell">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SalvageShared"/>
+        <TargetFilters value="Ground,Structure;Ally,Neutral,Enemy"/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Sell"/>
     </CAbilEffectTarget>
     <CAbilTransport id="HerculesTransport">
         <MaxCargoCount value="32"/>
@@ -331,7 +347,7 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Specialize5" Time="2" Effect="BunkerBuilt">
+        <InfoArray index="Specialize5" Time="4" Effect="BunkerBuilt">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
@@ -1206,6 +1222,7 @@
         <InfoArray index="Specialize1" Time="3" Effect="SupplyDropApplyTempBehavior">
             <Button DefaultButtonFace="SupplyDrop" Requirements="SupplyDepotUpgrade"/>
             <Flags index="AutoCast" value="1"/>
+            <Flags index="AutoCastOn" value="1"/>
         </InfoArray>
         <Flags index="BestUnit" value="0"/>
     </CAbilSpecialize>

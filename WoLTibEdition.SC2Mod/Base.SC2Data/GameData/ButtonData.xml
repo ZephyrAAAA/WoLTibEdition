@@ -5,6 +5,10 @@
         <AlertIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="Depower">
+        <Icon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
     <CButton id="InfantryUltraCapacitors">
         <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
@@ -23,5 +27,10 @@
     <CButton id="ResumeQueue">
         <Icon value="Assets\Textures\sc2_ui_newplayerxp_playmovie.dds"/>
         <DefaultButtonLayout Row="4" Column="1" CardId="1"/>
+    </CButton>
+    <CButton id="Sell">
+        <Icon value="Assets\Textures\btn-tips-credit.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-credit.dds"/>
+        <EditorCategories value="Race:Neutral"/>
     </CButton>
 </Catalog>
