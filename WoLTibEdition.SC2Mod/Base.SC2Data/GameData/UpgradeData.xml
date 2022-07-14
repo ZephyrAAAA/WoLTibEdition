@@ -174,4 +174,385 @@
     <CUpgrade id="TwinLinkedFlameThrowers">
         <EffectArray index="0" Reference="Effect,InfernalFlameThrower,AreaArray[0].Radius"/>
     </CUpgrade>
+    <CUpgrade id="ZergGroundArmorsLevel1">
+        <EffectArray index="0" Reference="Unit,Zergling,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,Zergling,LifeArmor"/>
+        <EffectArray index="2" Reference="Unit,ZerglingBurrowed,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,ZerglingBurrowed,LifeArmor"/>
+        <EffectArray index="4" Reference="Unit,Baneling,LifeArmorLevel"/>
+        <EffectArray index="5" Reference="Unit,Baneling,LifeArmor"/>
+        <EffectArray index="6" Reference="Unit,BanelingBurrowed,LifeArmorLevel"/>
+        <EffectArray index="7" Reference="Unit,BanelingBurrowed,LifeArmor"/>
+        <EffectArray index="8" Reference="Unit,Roach,LifeArmorLevel"/>
+        <EffectArray index="9" Reference="Unit,Roach,LifeArmor"/>
+        <EffectArray index="10" Reference="Unit,RoachBurrowed,LifeArmorLevel"/>
+        <EffectArray index="11" Reference="Unit,RoachBurrowed,LifeArmor"/>
+        <EffectArray index="12" Reference="Unit,Ultralisk,LifeArmorLevel"/>
+        <EffectArray index="13" Reference="Unit,Ultralisk,LifeArmor"/>
+        <EffectArray index="14" Reference="Unit,UltraliskBurrowed,LifeArmorLevel"/>
+        <EffectArray index="15" Reference="Unit,UltraliskBurrowed,LifeArmor"/>
+        <EffectArray index="16" Reference="Unit,BanelingCocoon,LifeArmorLevel"/>
+        <EffectArray index="17" Reference="Unit,BanelingCocoon,LifeArmor"/>
+        <EffectArray index="18" Reference="Unit,InfestedAbomination,LifeArmor" Value="1.000000"/>
+        <EffectArray index="19" Reference="Unit,InfestedAbomination,LifeArmorLevel"/>
+        <EffectArray index="20" Reference="Unit,InfestedAbominationBurrowed,LifeArmor" Value="1.000000"/>
+        <EffectArray index="21" Reference="Unit,InfestedAbominationBurrowed,LifeArmorLevel"/>
+        <EffectArray index="22" Reference="Unit,Omegalisk,LifeArmorLevel"/>
+        <EffectArray index="23" Reference="Unit,OmegaliskBurrowed,LifeArmor" Value="1.000000"/>
+        <EffectArray index="24" Reference="Unit,OmegaliskBurrowed,LifeArmorLevel"/>
+        <EffectArray index="25" Reference="Unit,KerriganChar,LifeArmorLevel"/>
+        <EffectArray index="26" Reference="Unit,KerriganChar,LifeArmor"/>
+        <EffectArray index="27" Reference="Unit,Omegalisk,LifeArmor"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+        <EffectArray index="41" removed="1"/>
+        <EffectArray index="42" removed="1"/>
+        <EffectArray index="43" removed="1"/>
+        <EffectArray index="44" removed="1"/>
+        <EffectArray index="45" removed="1"/>
+        <EffectArray index="46" removed="1"/>
+        <EffectArray index="47" removed="1"/>
+        <EffectArray index="48" removed="1"/>
+        <EffectArray index="49" removed="1"/>
+        <EffectArray index="50" removed="1"/>
+        <EffectArray index="51" removed="1"/>
+        <EffectArray index="52" removed="1"/>
+        <EffectArray index="53" removed="1"/>
+        <EffectArray index="54" removed="1"/>
+        <EffectArray index="55" removed="1"/>
+        <EffectArray index="56" removed="1"/>
+        <EffectArray index="57" removed="1"/>
+        <EffectArray index="58" removed="1"/>
+        <EffectArray index="59" removed="1"/>
+        <EffectArray index="60" removed="1"/>
+        <EffectArray index="61" removed="1"/>
+        <EffectArray index="62" removed="1"/>
+        <EffectArray index="63" removed="1"/>
+        <EffectArray index="64" removed="1"/>
+        <EffectArray index="65" removed="1"/>
+        <EffectArray index="66" removed="1"/>
+        <EffectArray index="67" removed="1"/>
+        <EffectArray index="68" removed="1"/>
+        <EffectArray index="69" removed="1"/>
+        <EffectArray index="70" removed="1"/>
+        <EffectArray index="71" removed="1"/>
+        <EffectArray index="72" removed="1"/>
+        <EffectArray index="73" removed="1"/>
+        <EffectArray index="74" removed="1"/>
+        <EffectArray index="75" removed="1"/>
+        <EffectArray index="76" removed="1"/>
+        <EffectArray index="77" removed="1"/>
+        <EffectArray index="78" removed="1"/>
+        <EffectArray index="79" removed="1"/>
+        <EffectArray index="80" removed="1"/>
+        <EffectArray index="81" removed="1"/>
+        <EffectArray index="82" removed="1"/>
+        <EffectArray index="83" removed="1"/>
+        <EffectArray index="84" removed="1"/>
+        <EffectArray index="85" removed="1"/>
+        <EffectArray index="86" removed="1"/>
+        <EffectArray index="87" removed="1"/>
+        <EffectArray index="88" removed="1"/>
+        <EffectArray index="89" removed="1"/>
+        <EffectArray index="90" removed="1"/>
+        <EffectArray index="91" removed="1"/>
+        <EffectArray index="92" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergGroundArmorsLevel2">
+        <EffectArray index="0" Reference="Unit,Roach,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,Roach,LifeArmor" Value="2"/>
+        <EffectArray index="2" Reference="Unit,RoachBurrowed,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,RoachBurrowed,LifeArmor" Value="2"/>
+        <EffectArray index="4" Operation="AddBaseMultiply" Reference="Unit,Ultralisk,Speed" Value="0.398400"/>
+        <EffectArray index="5" Operation="AddBaseMultiply" Reference="Unit,Omegalisk,Speed" Value="0.398400"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+        <EffectArray index="41" removed="1"/>
+        <EffectArray index="42" removed="1"/>
+        <EffectArray index="43" removed="1"/>
+        <EffectArray index="44" removed="1"/>
+        <EffectArray index="45" removed="1"/>
+        <EffectArray index="46" removed="1"/>
+        <EffectArray index="47" removed="1"/>
+        <EffectArray index="48" removed="1"/>
+        <EffectArray index="49" removed="1"/>
+        <EffectArray index="50" removed="1"/>
+        <EffectArray index="51" removed="1"/>
+        <EffectArray index="52" removed="1"/>
+        <EffectArray index="53" removed="1"/>
+        <EffectArray index="54" removed="1"/>
+        <EffectArray index="55" removed="1"/>
+        <EffectArray index="56" removed="1"/>
+        <EffectArray index="57" removed="1"/>
+        <EffectArray index="58" removed="1"/>
+        <EffectArray index="59" removed="1"/>
+        <EffectArray index="60" removed="1"/>
+        <EffectArray index="61" removed="1"/>
+        <EffectArray index="62" removed="1"/>
+        <EffectArray index="63" removed="1"/>
+        <EffectArray index="64" removed="1"/>
+        <EffectArray index="65" removed="1"/>
+        <EffectArray index="66" removed="1"/>
+        <EffectArray index="67" removed="1"/>
+        <EffectArray index="68" removed="1"/>
+        <EffectArray index="69" removed="1"/>
+        <EffectArray index="70" removed="1"/>
+        <EffectArray index="71" removed="1"/>
+        <EffectArray index="72" removed="1"/>
+        <EffectArray index="73" removed="1"/>
+        <EffectArray index="74" removed="1"/>
+        <EffectArray index="75" removed="1"/>
+        <EffectArray index="76" removed="1"/>
+        <EffectArray index="77" removed="1"/>
+        <EffectArray index="78" removed="1"/>
+        <EffectArray index="79" removed="1"/>
+        <EffectArray index="80" removed="1"/>
+        <EffectArray index="81" removed="1"/>
+        <EffectArray index="82" removed="1"/>
+        <EffectArray index="83" removed="1"/>
+        <EffectArray index="84" removed="1"/>
+        <EffectArray index="85" removed="1"/>
+        <EffectArray index="86" removed="1"/>
+        <EffectArray index="87" removed="1"/>
+        <EffectArray index="88" removed="1"/>
+        <EffectArray index="89" removed="1"/>
+        <EffectArray index="90" removed="1"/>
+        <EffectArray index="91" removed="1"/>
+        <EffectArray index="92" removed="1"/>
+		<EffectArray Operation="Set" Reference="Unit,Drone,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,DroneBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Zergling,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,ZerglingBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Hydralisk,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,HydraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Baneling,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,BanelingBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Roach,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,RoachBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Ultralisk,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,UltraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Queen,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,QueenBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Infestor,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Broodling,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,BanelingCocoon,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestedAbomination,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,InfestedAbominationBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Lurker,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,LurkerBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Omegalisk,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,OmegaliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,Swarmling,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,HunterKiller,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,HunterKillerBurrowed,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,KerriganChar,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,HybridDestroyer,SpeedMultiplierCreep" Value="2"/>
+		<EffectArray Operation="Set" Reference="Unit,HybridReaver,SpeedMultiplierCreep" Value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ZergGroundArmorsLevel3"/>
+    <CUpgrade id="ZergMeleeWeaponsLevel1">
+        <EffectArray index="0" Reference="Weapon,Ram,Level"/>
+        <EffectArray index="1" Reference="Effect,Ram,Amount" Value="12"/>
+        <EffectArray index="2" Reference="Weapon,NeedleClaws,Level"/>
+        <EffectArray index="3" Reference="Effect,VolatileBurstU,Amount" Value="4"/>
+        <EffectArray index="4" Reference="Effect,VolatileBurstU2,Amount" Value="16"/>
+        <EffectArray index="5" Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="4"/>
+        <EffectArray index="6" Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="16"/>
+        <EffectArray index="7" Reference="Weapon,VolatileBurstDummy,Level"/>
+        <EffectArray index="8" Reference="Effect,InfestedClawsDamage,Amount" Value="1.6"/>
+        <EffectArray index="9" Reference="Weapon,InfestedClaws,Level" Value="1"/>
+        <EffectArray index="10" Reference="Effect,OmegaliskHeadAttackDamage,Amount" Value="24"/>
+        <EffectArray index="11" Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
+        <EffectArray index="12" Reference="Effect,Val03RazorTalonsDamage,Amount" Value="5.000000"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+        <EffectArray index="41" removed="1"/>
+        <EffectArray index="42" removed="1"/>
+        <EffectArray index="43" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMeleeWeaponsLevel2">
+        <EffectArray index="0" Reference="Effect,Claws,Amount" Value="2.5"/>
+        <EffectArray index="1" Reference="Effect,KaiserBladesDamage,Amount" Value="4.8"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+        <EffectArray index="41" removed="1"/>
+        <EffectArray index="42" removed="1"/>
+        <EffectArray index="43" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMissileWeaponsLevel1">
+        <EffectArray index="1" Value="4.8"/>
+        <EffectArray index="2" Reference="Effect,AcidSpines,Amount" Value="1.8"/>
+        <EffectArray index="3" Reference="Weapon,AcidSaliva,Level" Value="1"/>
+        <EffectArray index="4" Reference="Effect,RoachUMelee,Amount" Value="3.2"/>
+        <EffectArray index="5" Reference="Weapon,InfestedGuassRifle,Level"/>
+        <EffectArray index="6" Reference="Effect,InfestedGuassRifle,Amount"/>
+        <EffectArray index="7" Reference="Effect,InfestedTerranCampaign,Amount" Value="2"/>
+        <EffectArray index="8" Reference="Weapon,InfestedTerranCampaign,Level"/>
+        <EffectArray index="9" Reference="Weapon,Lurker,Level" Value="1"/>
+        <EffectArray index="10" Reference="Effect,LurkerU,Amount" Value="9"/>
+        <EffectArray index="11" Reference="Effect,Val03PsiBlastDamage,Amount" Value="5.000000"/>
+        <EffectArray index="12" Operation="Add" Reference="Weapon,Val03QueenOfBladesPsiBlast,Level" Value="1"/>
+        <EffectArray index="13" Operation="Add" Reference="Effect,AcidSalivaU,Amount" Value="3.2"/>
+        <EffectArray index="14" Operation="Add" Reference="Effect,HydraliskMelee,Amount" Value="4.8"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMissileWeaponsLevel2">
+        <EffectArray index="1" Reference="Effect,NeedleSpinesDamage,AttributeFactor[Structure]"/>
+        <EffectArray index="2" Reference="Effect,HydraliskMelee,AttributeFactor[Structure]"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+    </CUpgrade>
 </Catalog>

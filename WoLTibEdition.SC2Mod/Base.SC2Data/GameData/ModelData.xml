@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CModel id="ConstructionCrane">
+        <SelectionLayer value="2"/>
+    </CModel>
     <CModel id="DevastationTurret" parent="Unit">
         <Model value="Assets\Buildings\Terran\GrenadeTurret\GrenadeTurret.m3"/>
         <EditorCategories value=""/>
