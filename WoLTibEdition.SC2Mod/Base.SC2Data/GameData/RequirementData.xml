@@ -128,6 +128,10 @@
     <CRequirement id="LearnInfantryVanadium">
         <NodeArray index="Show" Link="NotCountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="PlayerHasPower">
+        <EditorCategories value="Race:Neutral"/>
+        <NodeArray index="Show" Link="NotCountUpgradeLowPowerCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="StaticDefBarracks">
         <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>

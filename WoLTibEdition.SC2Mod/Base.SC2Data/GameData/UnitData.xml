@@ -265,8 +265,7 @@
         <Sight value="9"/>
         <Food value="-12"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="1000"/>
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -451,7 +450,7 @@
         <Sight value="9"/>
         <Food value="-5"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Minerals" value="125"/>
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -538,7 +537,7 @@
         <VisionHeight value="4"/>
         <Food value="-5"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
+        <CostResource index="Minerals" value="250"/>
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Barracks2Land"/>
@@ -765,8 +764,12 @@
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
         <AbilArray Link="CCRepair"/>
+        <AbilArray Link="CCDepower"/>
+        <AbilArray Link="CCSell"/>
         <CardLayouts>
             <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="CCRepair,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="Depower" Type="AbilCmd" AbilCmd="CCDepower,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="Sell" Type="AbilCmd" AbilCmd="CCSell,Execute" Row="0" Column="2"/>
         </CardLayouts>
         <EditorCategories value="ObjectFamily:Campaign,ObjectType:Other"/>
     </CUnit>
@@ -885,6 +888,8 @@
     <CUnit id="ColonistTransport">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Medium"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="ColonistVehicleUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -948,7 +953,7 @@
         <Sight value="11"/>
         <Food value="10"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Minerals" value="875"/>
         <RepairTime value="100"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -1064,7 +1069,7 @@
         <VisionHeight value="4"/>
         <Food value="10"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="400"/>
+        <CostResource index="Minerals" value="1750"/>
         <RepairTime value="100"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="CommandCenter2Land"/>
@@ -1203,6 +1208,7 @@
         <MinimapRadius value="1.25"/>
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Campaign"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <CostResource index="Minerals" value="375"/>
     </CUnit>
     <CUnit id="CreepTumor">
         <ArmorType value="Hero"/>
@@ -1537,7 +1543,7 @@
         <Sight value="11"/>
         <Food value="-8"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="600"/>
+        <CostResource index="Minerals" value="300"/>
         <RepairTime value="25"/>
         <AttackTargetPriority value="19"/>
         <AbilArray Link="BuildInProgress"/>
@@ -1701,7 +1707,7 @@
         <Sight value="9"/>
         <Food value="-9"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Minerals" value="375"/>
         <RepairTime value="35"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -1802,8 +1808,7 @@
         <Sight value="9"/>
         <Food value="-7"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="500"/>
         <RepairTime value="60"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -1892,8 +1897,7 @@
         <VisionHeight value="4"/>
         <Food value="-7"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="1000"/>
         <RepairTime value="60"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Factory2AddOns"/>
@@ -2025,8 +2029,7 @@
         <Sight value="9"/>
         <Food value="-15"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="150"/>
+        <CostResource index="Minerals" value="750"/>
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -2108,8 +2111,7 @@
         <Sight value="9"/>
         <Food value="-7"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="50"/>
+        <CostResource index="Minerals" value="250"/>
         <RepairTime value="40"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -2801,6 +2803,10 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="MengskHologramBillboard">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+    </CUnit>
     <CUnit id="MengskStatue">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2855,7 +2861,7 @@
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Sight value="11"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Minerals" value="200"/>
         <RepairTime value="25"/>
         <AttackTargetPriority value="19"/>
         <AbilArray Link="BuildInProgress"/>
@@ -3462,6 +3468,11 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="RailgunWeapon" parent="MISSILE">
+        <Race value="Terr"/>
+        <Mover value="PunisherGrenadesWeapon"/>
+        <EditorCategories value=""/>
+    </CUnit>
     <CUnit id="RaptorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3567,13 +3578,12 @@
         <Sight value="9"/>
         <Food value="-15"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="75"/>
+        <CostResource index="Minerals" value="750"/>
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
         <BehaviorArray Link="Refinery"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
-        <BehaviorArray Link="PowerCheck"/>
         <EffectArray index="Birth" value="CreateSCVHarvester"/>
         <CardLayouts>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
@@ -3583,7 +3593,7 @@
         <Radius value="1.5"/>
         <SeparationRadius value="1.5"/>
         <Footprint value="FootprintGeyserRoundedBuilt"/>
-        <PlacementFootprint value="Footprint3x3CappedGeyser"/>
+        <PlacementFootprint value="Footprint3x3Contour"/>
         <ScoreMake value="75"/>
         <ScoreKill value="75"/>
         <ScoreResult value="BuildOrder"/>
@@ -3886,8 +3896,7 @@
         <TurningRate value="719.4726"/>
         <Sight value="12"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="125"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="250"/>
         <RepairTime value="25"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -4126,8 +4135,7 @@
         <Sight value="9"/>
         <Food value="-8"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="250"/>
         <RepairTime value="50"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -4217,8 +4225,7 @@
         <VisionHeight value="4"/>
         <Food value="-8"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="150"/>
-        <CostResource index="Vespene" value="100"/>
+        <CostResource index="Minerals" value="500"/>
         <RepairTime value="50"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Starport2AddOns"/>
@@ -4364,7 +4371,7 @@
         <Sight value="9"/>
         <Food value="20"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Minerals" value="175"/>
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -4430,7 +4437,7 @@
         <Sight value="9"/>
         <Food value="20"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="100"/>
+        <CostResource index="Minerals" value="175"/>
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -4482,6 +4489,10 @@
     <CUnit id="System_Snapshot_Dummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="TRaynor01SignsDestructible1">
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="TalDarimMothership">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

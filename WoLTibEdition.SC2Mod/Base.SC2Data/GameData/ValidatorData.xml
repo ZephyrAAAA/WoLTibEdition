@@ -3,6 +3,9 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotBeingRepaired">
         <Behavior value="BuildingRepair"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
+        <Behavior value="Depowered"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="HoldingResources">
         <WhichUnit Value="Caster"/>
         <Behavior value="CarryMineralFieldMinerals"/>
@@ -11,9 +14,9 @@
         <Value value="Medic"/>
         <Find value="0"/>
     </CValidatorUnitType>
-    <CValidatorPlayerCompareFoodAvailable id="PlayerHasPower">
-        <Compare value="LE"/>
-    </CValidatorPlayerCompareFoodAvailable>
+    <CValidatorPlayerRequirement id="PlayerHasPower">
+        <Value value="PlayerHasPower"/>
+    </CValidatorPlayerRequirement>
     <CValidatorUnitCompareVital id="TargetLifeNotFull">
         <ResultFailed value="RequiresHealTarget"/>
     </CValidatorUnitCompareVital>

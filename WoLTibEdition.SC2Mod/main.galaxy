@@ -7,6 +7,8 @@ trigger pause;
 trigger resume;
 trigger cancel;
 trigger unloadSquads;
+trigger power;
+trigger ownerSwap;
 trigger techUnlock;
 trigger INI;
 int rate;
@@ -301,6 +303,44 @@ void UnloadSquads_Init () {
 	TriggerAddEventUnitCargo(unloadSquads, null, false);
 }
 
+bool Power_Func (bool testConds, bool runActions) {
+	fixed rate;
+	if (PlayerGetPropertyInt(EventPlayer(), c_playerPropSuppliesUsed) == 0) {
+		return false;
+	}
+	rate = MinF(PlayerGetPropertyFixed(EventPlayer(), c_playerPropSuppliesMade) / PlayerGetPropertyFixed(EventPlayer(), c_playerPropSuppliesUsed), 1);
+	if (rate == 0) {
+		rate = 1;
+	}
+	libNtve_gf_CatalogFieldValueSetAsReal(c_gameCatalogBehavior, "PowerCheck", "Modification.RateMultiplierArray[3]", EventPlayer(), rate);
+	libNtve_gf_CatalogFieldValueSetAsReal(c_gameCatalogBehavior, "PowerCheck", "Modification.RateMultiplierArray[5]", EventPlayer(), rate);
+	if (rate < 1) {
+		libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "LowPower", 1);
+	} else {
+		libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "LowPower", 0);
+	}
+	return true;
+}
+
+void Power_Init () {
+	power = TriggerCreate("Power_Func");
+	TriggerAddEventPlayerPropChange(power, c_playerAny, c_playerPropSuppliesUsed);
+	TriggerAddEventPlayerPropChange(power, c_playerAny, c_playerPropSuppliesMade);
+}
+
+bool OwnerSwap_Func (bool testConds, bool runActions) {
+	if (UnitHasBehavior(EventUnit(), "PowerCheck")) {
+		UnitBehaviorRemove(EventUnit(), "PowerCheck", 1);
+		UnitBehaviorAdd(EventUnit(), "PowerCheck", EventUnit(), 1);
+	}
+	return true;
+}
+
+void OwnerSwap_Init () {
+	ownerSwap = TriggerCreate("OwnerSwap_Func");
+	TriggerAddEventUnitChangeOwner(ownerSwap, null);
+}
+
 bool TechUnlock_Func (bool textConds, bool runActions) {
 	int lv_i;
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 5000);
@@ -380,7 +420,7 @@ bool INI_Func (bool testConds, bool runActions) {
 	DialogControlSetVisible(lv_lastFrame, PlayerGroupAll(), true);
 	PlayerSetState(1, c_playerStateFormationMove, true);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
-	PlayerModifyPropertyInt(1, c_playerPropSuppliesMade, c_playerPropOperAdd, 1);
+	//PlayerModifyPropertyInt(1, c_playerPropSuppliesMade, c_playerPropOperAdd, 1);
 	return true;
 }
 
@@ -399,6 +439,8 @@ void main() {
 	Resume_Init();
 	Cancel_Init();
 	UnloadSquads_Init();
+	Power_Init();
+	OwnerSwap_Init();
 	TechUnlock_Init();
 	INI_Init();
 }
