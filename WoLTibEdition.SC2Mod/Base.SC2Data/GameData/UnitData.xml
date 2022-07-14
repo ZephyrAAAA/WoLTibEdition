@@ -182,6 +182,7 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
         <LifeStart value="6"/>
         <LifeMax value="6"/>
+        <BehaviorArray Link="SquadRangeDebuff"/>
     </CUnit>
     <CUnit id="AbandonedBuilding">
         <ArmorType value="Hero"/>
@@ -537,7 +538,7 @@
         <VisionHeight value="4"/>
         <Food value="-5"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="250"/>
+        <CostResource index="Minerals" value="125"/>
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Barracks2Land"/>
@@ -1069,7 +1070,7 @@
         <VisionHeight value="4"/>
         <Food value="10"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="1750"/>
+        <CostResource index="Minerals" value="875"/>
         <RepairTime value="100"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="CommandCenter2Land"/>
@@ -1550,14 +1551,12 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="que1"/>
-        <AbilArray Link="SalvageShared"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="UnderConstruction"/>
         <BehaviorArray Link="PowerCheck"/>
         <WeaponArray Link="ConcussiveGrenades" Turret="AutoTurret"/>
         <CardLayouts>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
@@ -1897,7 +1896,7 @@
         <VisionHeight value="4"/>
         <Food value="-7"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="1000"/>
+        <CostResource index="Minerals" value="500"/>
         <RepairTime value="60"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Factory2AddOns"/>
@@ -4225,7 +4224,7 @@
         <VisionHeight value="4"/>
         <Food value="-8"/>
         <CostCategory value="Technology"/>
-        <CostResource index="Minerals" value="500"/>
+        <CostResource index="Minerals" value="250"/>
         <RepairTime value="50"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Starport2AddOns"/>

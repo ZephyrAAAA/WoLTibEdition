@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CGameUI id="Dflt">
+        <ResourceArray index="Custom" Icon="UI/ResourceIconNoBackground0" IconBackground="UI/ResourceIcon0"/>
+    </CGameUI>
+</Catalog>

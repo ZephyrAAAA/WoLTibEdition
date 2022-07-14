@@ -61,6 +61,17 @@
     </CActorSound>
     <CActorUnit id="Bunker">
         <BuildModel value="BunkerBuild"/>
+        <On index="105" removed="1"/>
+        <On index="106" removed="1"/>
+        <On index="107" removed="1"/>
+        <On index="108" removed="1"/>
+        <On index="109" removed="1"/>
+        <On index="110" removed="1"/>
+        <On index="111" removed="1"/>
+        <On index="112" removed="1"/>
+        <On index="113" removed="1"/>
+        <On index="114" removed="1"/>
+        <On index="115" removed="1"/>
     </CActorUnit>
     <CActorUnit id="Bunker2" parent="GenericUnitStandard" unitName="Bunker2">
         <Model value="Invisible"/>
@@ -406,18 +417,18 @@
         <On index="91" removed="1"/>
         <On index="92" removed="1"/>
         <On index="93" removed="1"/>
-        <Model value="VespeneGeyser"/>
+        <Model value="SiegeTank"/>
         <AnimBlendTime value="-1.000000"/>
         <ModelFlags index="OutlineEmitter" value="0"/>
         <EventDataFootprint index="0" Actor="UnitFootprint" Model="GhostSquadFootprint"/>
-        <BuildModel value="VespeneGeyser"/>
+        <BuildModel value="SiegeTank"/>
         <DeathArray index="Normal" ModelLink="GhostSquad" SoundLink="GhostSquadDeath" VoiceLink="GhostSquadDeathVoice"/>
         <DeathArray index="Blast" ModelLink=""/>
         <DeathArray index="Disintegrate" ModelLink="" SoundLink=""/>
         <DeathArray index="Eviscerate" ModelLink="" SoundLink=""/>
         <DeathArray index="Fire" ModelLink="" SoundLink=""/>
         <DeathCustoms index="5" removed="1"/>
-        <PlacementModel value="VespeneGeyser"/>
+        <PlacementModel value="SiegeTank"/>
         <StandAnimTurnTime value="4"/>
         <AbilSoundArray index="0" removed="1"/>
         <AbilSoundArray index="1" removed="1"/>
@@ -427,6 +438,7 @@
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/GhostSquad"/>
         <SelectAbilCmd value=""/>
+        <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
     <CActorModelMaterial id="LowPower" parent="BehaviorGlaze" buff="PowerCheck">
         <EditorCategories value=""/>
@@ -456,14 +468,14 @@
         <On index="74" removed="1"/>
         <On index="75" removed="1"/>
         <On index="76" removed="1"/>
-        <Model value="VespeneGeyser"/>
+        <Model value="SiegeTank"/>
         <ModelFlags index="OutlineEmitter" value="0"/>
         <EventDataFootprint index="0" Actor="UnitFootprint" Model="MarauderSquadFootprint"/>
-        <BuildModel value="VespeneGeyser"/>
+        <BuildModel value="SiegeTank"/>
         <DeathArray index="Normal" ModelLink="MarauderSquad" SoundLink="MarauderSquadDeath" VoiceLink="MarauderSquadDeathVoice"/>
         <DeathArray index="Eviscerate" ModelLink="" SoundLink=""/>
         <DeathArray index="Silentkill" SoundLink=""/>
-        <PlacementModel value="VespeneGeyser"/>
+        <PlacementModel value="SiegeTank"/>
         <StandAnimTurnTime value="4"/>
         <BarOffset value="100"/>
         <BarWidth value="60"/>
@@ -473,6 +485,7 @@
         <GroupSoundArray index="Attack" value="Marine_GroupAttack"/>
         <GroupSoundArray index="Board" value="Marine_GroupBoard"/>
         <HighlightTooltip value="Unit/Name/MarauderSquad"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
     <CActorUnit id="FirebatSquad" parent="Firebat" unitName="FirebatSquad">
         <Macros index="1" removed="1"/>
@@ -483,17 +496,18 @@
         <On index="4" Terms="UnitConstruction.FirebatSquad.Start"/>
         <On index="5" Terms="UnitConstruction.FirebatSquad.Finish"/>
         <On index="69" Terms="ActorCreation" Target="" Send="SetOpacity"/>
-        <Model value="VespeneGeyser"/>
+        <Model value="SiegeTank"/>
         <EventDataFootprint index="0" Model="FirebatSquadFootprint"/>
-        <BuildModel value="VespeneGeyser"/>
+        <BuildModel value="SiegeTank"/>
         <DeathArray index="Normal" ModelLink="FirebatSquad" SoundLink="FirebatSquadDeath" VoiceLink="FirebatSquadDeathVoice"/>
-        <PlacementModel value="VespeneGeyser"/>
+        <PlacementModel value="SiegeTank"/>
         <StandAnimTurnTime value="4"/>
         <WalkAnimMoveSpeed value="2.25"/>
         <BarOffset value="100"/>
         <BarWidth value="60"/>
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/FirebatSquad"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
     <CActorUnit id="MarineSquad" parent="Marine" unitName="MarineSquad">
         <Macros index="1" removed="1"/>
@@ -525,10 +539,10 @@
         <On index="81" removed="1"/>
         <On index="82" removed="1"/>
         <On index="83" removed="1"/>
-        <Model value="VespeneGeyser"/>
+        <Model value="SiegeTank"/>
         <ModelFlags index="OutlineEmitter" value="0"/>
         <EventDataFootprint index="0" Model="MarineSquadFootprint"/>
-        <BuildModel value="VespeneGeyser"/>
+        <BuildModel value="SiegeTank"/>
         <DeathArray index="Normal" ModelLink="MarineSquad" SoundLink="MarineSquadDeath" VoiceLink="MarineSquadDeathVoice"/>
         <DeathArray index="Blast" ModelLink=""/>
         <DeathArray index="Disintegrate" ModelLink="" SoundLink=""/>
@@ -550,12 +564,13 @@
         <DeathCustoms index="15" removed="1"/>
         <DeathCustoms index="16" removed="1"/>
         <DeathActorModel value="UnitDeathModel"/>
-        <PlacementModel value="VespeneGeyser"/>
+        <PlacementModel value="SiegeTank"/>
         <TerrainSquibs index="0" removed="1"/>
         <AbilSoundArray index="0" removed="1"/>
         <BarOffset value="100"/>
         <BarWidth value="60"/>
         <HighlightTooltip value="Unit/Name/MarineSquad"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
     <CActorUnit id="MedicSquad" parent="Medic" unitName="MedicSquad">
         <Macros index="1" removed="1"/>
@@ -569,18 +584,19 @@
         <On index="70" removed="1"/>
         <On index="71" removed="1"/>
         <On index="72" removed="1"/>
-        <Model value="VespeneGeyser"/>
+        <Model value="SiegeTank"/>
         <EventDataFootprint index="0" Model="MedicSquadFootprint"/>
-        <BuildModel value="VespeneGeyser"/>
+        <BuildModel value="SiegeTank"/>
         <DeathArray index="Normal" ModelLink="MedicSquad" SoundLink="MedicSquadDeath" VoiceLink="MedicSquadDeathVoice"/>
         <DeathArray index="Blast" ModelLink=""/>
         <DeathCustoms index="5" removed="1"/>
-        <PlacementModel value="VespeneGeyser"/>
+        <PlacementModel value="SiegeTank"/>
         <StandAnimTurnTime value="4"/>
         <BarOffset value="100"/>
         <BarWidth value="60"/>
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/MedicSquad"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
     <CActorUnit id="MissileTurret2" parent="TerranBuildingEx" unitName="MissileTurret2">
         <Aliases value="_UnitHuge"/>
@@ -725,11 +741,11 @@
         <On index="4" Terms="UnitConstruction.ReaperSquad.Start"/>
         <On index="5" Terms="UnitConstruction.ReaperSquad.Finish"/>
         <On Terms="ActorCreation" Send="SetOpacity"/>
-        <Model value="VespeneGeyser"/>
+        <Model value="SiegeTank"/>
         <EventDataFootprint index="0" Model="ReaperSquadFootprint"/>
-        <BuildModel value="VespeneGeyser"/>
+        <BuildModel value="SiegeTank"/>
         <DeathArray index="Normal" ModelLink="ReaperSquad" SoundLink="ReaperSquadDeath" VoiceLink="ReaperSquadDeathVoice"/>
-        <PlacementModel value="VespeneGeyser"/>
+        <PlacementModel value="SiegeTank"/>
         <PortraitModel value="ReaperPortrait"/>
         <StandAnimTurnTime value="4"/>
         <WalkAnimMoveSpeed value="2.25"/>
@@ -768,6 +784,7 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Terran-Reaper.dds"/>
         </Wireframe>
+        <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
     <CActorUnit id="Refinery2" parent="TerranBuildingEx" unitName="Refinery2">
         <Aliases value="_UnitHuge"/>

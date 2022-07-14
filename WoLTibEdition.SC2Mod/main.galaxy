@@ -2,6 +2,7 @@ trigger gather;
 trigger returning;
 trigger idle;
 trigger building;
+trigger techlab;
 trigger research;
 trigger pause;
 trigger resume;
@@ -121,16 +122,10 @@ bool Building_Func (bool testConds, bool runActions) {
 		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
 			return false;
 		}
-//		if (libNtve_gf_TriggeringProgressUnitType() != null) {
-//			UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("is unit"));
-//			if (AIDefaultGetObjectType(UnitGetOwner(EventUnit()), libNtve_gf_TriggeringProgressUnitType()) == 1 && libNtve_gf_TriggeringProgressUnitType() != "TechLab") {
-//				UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("is techlab"));
-//				return false;
-//			}
-//		}
 	}
 	
 	buildingUnit = EventUnit();
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
 		Wait(0.0625, c_timeGame);
 	}
@@ -169,8 +164,10 @@ bool Building_Func (bool testConds, bool runActions) {
 			Wait(0.0625, c_timeGame);
 		}
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	}
 	return true;
 }
@@ -179,7 +176,76 @@ void Building_Init () {
 	building = TriggerCreate("Building_Func");
 	TriggerAddEventUnitTrainProgress(building, null, c_unitProgressStageStart);
 	TriggerAddEventUnitSpecializeProgress(building, null, c_unitProgressStageStart);
-	//TriggerAddEventUnitConstructProgress(building, null, c_unitProgressStageStart);
+}
+
+bool Techlab_Func (bool testConds, bool runActions) {
+	unit buildingUnit;
+	fixed progress;
+	int totaledCost;
+	int prevCost;
+	bool paused;
+	fixed totalTime;
+	
+	if (testConds) {
+		if (libNtve_gf_TriggeringProgressUnitType() == null) {
+			return false;
+		}
+		if (!(AIDefaultGetObjectType(UnitGetOwner(EventUnit()), libNtve_gf_TriggeringProgressUnitType()) == 1 && StringContains(libNtve_gf_TriggeringProgressUnitType(), "TechLab", c_stringAnywhere, c_stringNoCase))) {
+			return false;
+		}
+	}
+	
+	buildingUnit = EventUnit();
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
+		Wait(0.0625, c_timeGame);
+	}
+	totalTime = 5;
+	UnitBehaviorAdd(buildingUnit, "BuildHandled", buildingUnit, 1);
+	do {
+		if (!UnitIsAlive(buildingUnit)) {
+			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+			return true;
+		}
+		if (progress > UnitOrderGetProgress(buildingUnit)) {
+			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+			return true;
+		}
+		if (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < FloorI(UnitOrderGetProgress(buildingUnit)/100 * totalTime * spendrate - totaledCost)) {
+			UnitBehaviorAdd(buildingUnit, "ConstructStop", buildingUnit, 1);
+			Wait(0.0625, c_timeGame);
+			continue;
+		}
+		UnitBehaviorRemove(buildingUnit, "ConstructStop", 1);
+		prevCost = totaledCost;
+		totaledCost = FloorI(UnitOrderGetProgress(buildingUnit)/100 * totalTime * spendrate);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, totaledCost - prevCost);
+		progress = UnitOrderGetProgress(buildingUnit);
+		paused = UnitCheckProgressState(buildingUnit, 1, c_unitProgressStatePaused);
+		Wait(0.0625, c_timeGame);
+	} while (progress <= UnitOrderGetProgress(buildingUnit) && progress != 100);
+	if (!UnitIsAlive(buildingUnit)) {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+		return true;
+	}
+	UnitBehaviorRemove(buildingUnit, "BuildHandled", 1);
+	Wait(0.0625, c_timeGame);
+	if (!(paused || UnitHasBehavior(buildingUnit, "Cancel"))) { // behavior appears to not work but it's here anyways because we can always hope
+		while (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < (RoundI(totalTime * spendrate) - totaledCost)) {
+			Wait(0.0625, c_timeGame);
+		}
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
+	} else {
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+	}
+	return true;
+}
+
+void Techlab_Init () {
+	techlab = TriggerCreate("Techlab_Func");
+	TriggerAddEventUnitConstructProgress(techlab, null, c_unitProgressStageStart);
 }
 
 bool Research_Func (bool testConds, bool runActions) {
@@ -202,6 +268,7 @@ bool Research_Func (bool testConds, bool runActions) {
 	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
 		Wait(0.0625, c_timeGame);
 	}
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	targetCost = CatalogFieldValueGetAsInt(c_gameCatalogUpgrade, libNtve_gf_TriggeringProgressUpgrade(), "BonusResourcePerLevel[0]", c_playerAny);
 	totalTime = UnitQueueItemTime(buildingUnit, c_unitQueueTimeTotal, 1);
 	costRate = Round(IntToFixed(targetCost) / totalTime);
@@ -239,8 +306,10 @@ bool Research_Func (bool testConds, bool runActions) {
 			Wait(0.0625, c_timeGame);
 		}
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, targetCost - totaledCost);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	}
 	return true;
 }
@@ -314,6 +383,7 @@ bool Power_Func (bool testConds, bool runActions) {
 	}
 	libNtve_gf_CatalogFieldValueSetAsReal(c_gameCatalogBehavior, "PowerCheck", "Modification.RateMultiplierArray[3]", EventPlayer(), rate);
 	libNtve_gf_CatalogFieldValueSetAsReal(c_gameCatalogBehavior, "PowerCheck", "Modification.RateMultiplierArray[5]", EventPlayer(), rate);
+	libNtve_gf_CatalogFieldValueSetAsReal(c_gameCatalogBehavior, "PowerCheck", "Modification.MoveSpeedMultiplier", EventPlayer(), rate);
 	if (rate < 1) {
 		libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "LowPower", 1);
 	} else {
@@ -395,6 +465,7 @@ bool INI_Func (bool testConds, bool runActions) {
 	int panel;
 	
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
+	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	rate = 117;
 	spendrate = 100;
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
@@ -434,6 +505,7 @@ void main() {
 	Returning_Init();
 	Idle_Init();
 	Building_Init();
+	Techlab_Init();
 	Research_Init();
 	Pause_Init();
 	Resume_Init();

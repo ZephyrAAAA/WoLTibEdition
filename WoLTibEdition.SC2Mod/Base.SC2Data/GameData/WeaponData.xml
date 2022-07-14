@@ -44,7 +44,6 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
-        <Range value="5.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -110,7 +109,6 @@
             <Cooldown Link="Weapon/MarauderSquad"/>
         </Cost>
         <Effect value="SquadAttack"/>
-        <Range value="5.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FirebatSquad" parent="Firebat">
         <Name value="Weapon/Name/FirebatSquad"/>
@@ -118,7 +116,6 @@
         <Tip value="Weapon/Tip/FirebatSquad"/>
         <DisplayName value="Weapon/Name/FirebatSquad"/>
         <MinScanRange value="9"/>
-        <Range value="3.5"/>
         <Marker Link="Weapon/FirebatSquad"/>
         <Cost>
             <Cooldown Link="Weapon/FirebatSquad"/>
@@ -140,7 +137,6 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
-        <Range value="4.5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
@@ -161,6 +157,7 @@
         <AttackType value="Magic"/>
         <Period value="1"/>
         <Effect value="RailgunLaunch"/>
+        <DamagePoint value="0.1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>
@@ -176,7 +173,6 @@
         </Cost>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
-        <Range value="4"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>

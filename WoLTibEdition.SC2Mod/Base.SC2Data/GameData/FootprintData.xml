@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CFootprint id="MarSaraBridgeENLARGED">
+        <Layers index="Check" Area="-5,-5,5,5">
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+            <Rows value=".........."/>
+        </Layers>
+        <Layers index="Place" Area="-5,-5,5,5">
+            <Sets index="0">
+                <Positive index="BoostCliff" value="1"/>
+            </Sets>
+            <Rows value="..xxx....."/>
+            <Rows value=".xxxxx...."/>
+            <Rows value="xxxxxxx..."/>
+            <Rows value="xxxxxxxx.."/>
+            <Rows value="xxxxxxxxx."/>
+            <Rows value=".xxxxxxxxx"/>
+            <Rows value="..xxxxxxxx"/>
+            <Rows value="...xxxxxxx"/>
+            <Rows value="....xxxxx."/>
+            <Rows value=".....xxx.."/>
+        </Layers>
+        <Shape>
+            <Mode value="Persist"/>
+            <Radius value="5.2202"/>
+            <Offsets value="0.5,-5;1.5,-5;-1.5,5;-0.5,5;-5,0.5;-5,1.5;5,-1.5;5,-0.5"/>
+            <Borders value="0,4,0;1,0,0;2,3,0;3,7,0;4,5,0;5,1,0;6,2,0;7,6,0;1,5,1;2,6,1;5,2,1;6,1,1"/>
+        </Shape>
+        <EditorCategories value="FootprintGroup:SpecificDoodads"/>
+    </CFootprint>
+</Catalog>

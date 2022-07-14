@@ -20,4 +20,7 @@
     <CValidatorUnitCompareVital id="TargetLifeNotFull">
         <ResultFailed value="RequiresHealTarget"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
+        <Behavior value="BunkerWeaponRangeBonus"/>
+    </CValidatorUnitCompareBehaviorCount>
 </Catalog>

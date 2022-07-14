@@ -22,6 +22,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
             <RateMultiplierArray index="Queueable" value="0.001"/>
         </Modification>
     </CBehaviorBuff>
@@ -56,6 +57,11 @@
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SquadRangeDebuff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UnitNotInBunker"/>
+        <Modification RangedWeaponRange="-0.5"/>
     </CBehaviorBuff>
     <CBehaviorUnitTracker id="SquadTransportList">
         <EditorCategories value="AbilityorEffectType:Units"/>
