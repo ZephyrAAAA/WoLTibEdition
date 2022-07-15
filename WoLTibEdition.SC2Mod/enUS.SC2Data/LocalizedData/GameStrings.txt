@@ -207,6 +207,8 @@ RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912Te
 RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
+UI/ResourceName1=Vespene
+UI/ResourceName3=Custom
 Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks

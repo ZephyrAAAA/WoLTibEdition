@@ -165,6 +165,7 @@ bool Building_Func (bool testConds, bool runActions) {
 	}
 	
 	buildingUnit = EventUnit();
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
 		Wait(0.0625, c_timeGame);
@@ -208,9 +209,11 @@ bool Building_Func (bool testConds, bool runActions) {
 		}
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	}
 	return true;
 }
@@ -242,6 +245,7 @@ bool Techlab_Func (bool testConds, bool runActions) {
 	
 	buildingUnit = EventUnit();
 	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	while (UnitHasBehavior(buildingUnit, "BuildHandled")) {
 		Wait(0.0625, c_timeGame);
 	}
@@ -279,11 +283,13 @@ bool Techlab_Func (bool testConds, bool runActions) {
 		while (PlayerGetPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals) < (RoundI(totalTime * spendrate) - totaledCost)) {
 			Wait(0.0625, c_timeGame);
 		}
-		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, RoundI(totalTime * spendrate) - totaledCost);
-	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
+	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	}
 	return true;
 }
@@ -314,6 +320,7 @@ bool Research_Func (bool testConds, bool runActions) {
 		Wait(0.0625, c_timeGame);
 	}
 	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+	PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	targetCost = CatalogFieldValueGetAsInt(c_gameCatalogUpgrade, libNtve_gf_TriggeringProgressUpgrade(), "BonusResourcePerLevel[0]", c_playerAny);
 	totalTime = UnitQueueItemTime(buildingUnit, c_unitQueueTimeTotal, 1);
 	costRate = Round(IntToFixed(targetCost) / totalTime);
@@ -352,9 +359,11 @@ bool Research_Func (bool testConds, bool runActions) {
 		}
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperSubtract, targetCost - totaledCost);
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	} else {
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
 		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+		PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	}
 	return true;
 }
@@ -528,6 +537,7 @@ bool INI_Func (bool testConds, bool runActions) {
 	
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+	PlayerModifyPropertyInt(1, c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	rate = 117;
 	spendrate = 100;
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);

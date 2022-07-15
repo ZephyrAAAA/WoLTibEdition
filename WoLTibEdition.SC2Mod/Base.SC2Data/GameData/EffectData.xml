@@ -78,7 +78,7 @@
         <Flags index="Channeled" value="0"/>
         <DrainResourceCostFactor index="Minerals" value="1"/>
         <RechargeVitalRate value="1"/>
-        <TimeFactor value="1"/>
+        <TimeFactor value="2"/>
     </CEffectCreateHealer>
     <CEffectModifyPlayer id="PickupGas100">
         <Resources index="Minerals" value="2000"/>

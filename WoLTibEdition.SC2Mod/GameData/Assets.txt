@@ -1,0 +1,16 @@
+UI/ResourceIcon1=Assets\Textures\icon-mineral-terran.dds
+UI/ResourceIcon1_Prot=Assets\Textures\icon-mineral-protoss.dds
+UI/ResourceIcon1_Terr=Assets\Textures\icon-mineral-terran.dds
+UI/ResourceIcon1_Zerg=Assets\Textures\icon-mineral-zerg.dds
+UI/ResourceIconNoBackground1=Assets\Textures\icon-mineral-nobg.dds
+UI/ResourceIconNoBackground1_Prot=Assets\Textures\icon-mineral-nobg.dds
+UI/ResourceIconNoBackground1_Terr=Assets\Textures\icon-mineral-nobg.dds
+UI/ResourceIconNoBackground1_Zerg=Assets\Textures\icon-mineral-nobg.dds
+UI/ResourceIcon3=Assets\Textures\icon-supply-terran.dds
+UI/ResourceIcon3_Prot=Assets\Textures\icon-supply-protoss.dds
+UI/ResourceIcon3_Terr=Assets\Textures\icon-supply-terran.dds
+UI/ResourceIcon3_Zerg=Assets\Textures\icon-supply-zerg.dds
+UI/ResourceIconNoBackground3=Assets\Textures\icon-supply-nobg.dds
+UI/ResourceIconNoBackground3_Prot=Assets\Textures\icon-supply-protoss_nobg.dds
+UI/ResourceIconNoBackground3_Terr=Assets\Textures\icon-supply-terran_nobg.dds
+UI/ResourceIconNoBackground3_Zerg=Assets\Textures\icon-supply-zerg_nobg.dds
