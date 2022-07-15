@@ -87,6 +87,7 @@ Outbreak:
 
 Safe Haven:
 -Purifier Mothership no longer has less range than vikings
+-Get the "Call in the FLeet - Protoss Edition" support power
 
 Haven's Fall:
 
@@ -99,6 +100,7 @@ Engine of Destruction:
 Media Blitz:
 
 Piercing the Shroud:
+-Collecting the Chrono Rift device now unlocks a topbar power for future use.
 
 Devil's Playground:
 
@@ -114,12 +116,14 @@ Ghost of a Chance:
 Smash and Grab:
 
 The Dig:
+-The Laser Drill now has a really expensive (20K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K.
 
 The Moebius Factor:
 
 Supernova:
 
 Maw of the Void:
+-Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs.
 
 Gates of Hell:
 
@@ -147,13 +151,13 @@ Medic- Better Healing priority.
 
 Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
 
-Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots
+Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
 
 Wraith-
 
 Bunker- Has 4 slots, fits 1 squad
 
-Predator- Comparitively Cheaper
+Predator- Comparitively Cheaper, not locked behind research
 
 Hellion- Now fires constantly
 
@@ -162,7 +166,7 @@ Thor- Reduce damage by 33%
 
 ARMORY UPGRADE CHANGES:
 
-Orbital Command- Unlock Scan support power
+Orbital Command- Unlock support powers on each tech building. Scan on EBay, veteran infantry on shadow ops, veteran vehicles on armoury, yamato strike on fusion core.
 
 Advanced Construction- 
 
@@ -202,7 +206,11 @@ Psi Disruptor(Maybe)-
 
 Regenerative Bio-steel- BEEG buff 2% health/s
 
-Cellular Reactor-
+Cellular Reactor->
+
+Predator->
+
+Hercules-> Cellular Reactor
 
 Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than having to research every mission.
 
