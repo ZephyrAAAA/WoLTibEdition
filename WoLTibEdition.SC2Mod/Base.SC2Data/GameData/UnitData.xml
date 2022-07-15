@@ -737,7 +737,6 @@
             <LayoutButtons index="15" removed="1"/>
             <LayoutButtons index="16" removed="1"/>
         </CardLayouts>
-        <Radius value="5"/>
         <SeparationRadius value="0"/>
         <Footprint value=""/>
         <PlacementFootprint value=""/>
