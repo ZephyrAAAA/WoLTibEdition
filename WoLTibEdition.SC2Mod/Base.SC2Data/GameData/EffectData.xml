@@ -301,7 +301,6 @@
         <Flags index="Channeled" value="1"/>
         <Flags index="PersistUntilDestroyed" value="1"/>
         <InitialEffect value="SquadAttackIterate"/>
-        <FinalEffect value="SquadStopIterate"/>
         <PeriodicEffectArray value="SquadAttackIterate"/>
         <PeriodicPeriodArray value="0.25"/>
     </CEffectCreatePersistent>

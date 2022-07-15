@@ -66,8 +66,8 @@
     <CBehaviorBuff id="SupplyDepotStartingUpgrade">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
-            <RateMultiplierArray index="Progress" value="4"/>
-            <RateMultiplierArray index="Queueable" value="4"/>
+            <RateMultiplierArray index="Progress" value="10"/>
+            <RateMultiplierArray index="Queueable" value="10"/>
         </Modification>
         <Duration value="1"/>
     </CBehaviorBuff>

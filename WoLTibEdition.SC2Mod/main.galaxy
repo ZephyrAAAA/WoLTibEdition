@@ -1,3 +1,5 @@
+include "TriggerLibs/NativeLib"
+
 trigger gather;
 trigger returning;
 trigger idle;
@@ -14,6 +16,15 @@ trigger techUnlock;
 trigger INI;
 int rate;
 int spendrate;
+bool noTopBar;
+int topbarCastingPanel;
+int topbarPanel;
+int topbarCommandPanel;
+
+bool DisableTopBar () {
+	noTopBar = true;
+	return noTopBar;
+}
 
 bool Gather_Func (bool testConds, bool runActions) {
 	unit gatherUnit;
@@ -122,6 +133,9 @@ bool Building_Func (bool testConds, bool runActions) {
 		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
 			return false;
 		}
+		if (UnitHasBehavior(buildingUnit, "SupplyDepotStartingUpgrade")) {
+			return false;
+		}
 	}
 	
 	buildingUnit = EventUnit();
@@ -132,6 +146,9 @@ bool Building_Func (bool testConds, bool runActions) {
 	totalTime = UnitQueueItemTime(buildingUnit, c_unitQueueTimeTotal, 1);
 	UnitBehaviorAdd(buildingUnit, "BuildHandled", buildingUnit, 1);
 	do {
+		if (UnitHasBehavior(buildingUnit, "SupplyDepotStartingUpgrade")) {
+			return true;
+		}
 		if (!UnitIsAlive(buildingUnit)) {
 			PlayerModifyPropertyInt(UnitGetOwner(buildingUnit), c_playerPropMinerals, c_playerPropOperAdd, totaledCost);
 			return true;
@@ -190,7 +207,9 @@ bool Techlab_Func (bool testConds, bool runActions) {
 		if (libNtve_gf_TriggeringProgressUnitType() == null) {
 			return false;
 		}
-		if (!(AIDefaultGetObjectType(UnitGetOwner(EventUnit()), libNtve_gf_TriggeringProgressUnitType()) == 1 && StringContains(libNtve_gf_TriggeringProgressUnitType(), "TechLab", c_stringAnywhere, c_stringNoCase))) {
+		if (!
+		(AIDefaultGetObjectType(UnitGetOwner(EventUnit()), libNtve_gf_TriggeringProgressUnitType()) == 1 && 
+		StringContains(libNtve_gf_TriggeringProgressUnitType(), "TechLab", c_stringAnywhere, c_stringNoCase))) {
 			return false;
 		}
 	}
@@ -413,7 +432,12 @@ void OwnerSwap_Init () {
 
 bool TechUnlock_Func (bool textConds, bool runActions) {
 	int lv_i;
-	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 5000);
+	if (noTopBar) {
+		DialogControlSetVisible(topbarCastingPanel, PlayerGroupAll(), false);
+		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), false);
+		DialogControlSetVisible(topbarCommandPanel, PlayerGroupAll(), false);
+	}
+	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 1), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 2), true);
@@ -456,7 +480,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 
 void TechUnlock_Init () {
 	techUnlock = TriggerCreate("TechUnlock_Func");
-	TriggerAddEventTimeElapsed(techUnlock, 1, c_timeGame);
+	TriggerAddEventTimeElapsed(techUnlock, 0.2, c_timeGame);
 }
 
 bool INI_Func (bool testConds, bool runActions) {
@@ -471,16 +495,17 @@ bool INI_Func (bool testConds, bool runActions) {
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
 	topbarUnit = UnitLastCreated();
     DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/FullscreenUpperContainer/CCGlobalCastingPanel");
+	topbarCastingPanel = DialogControlLastCreated();
 	DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
     DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypePanel, "CCTopbar/CCPanelTemplate");
-	panel = DialogControlLastCreated();
-	DialogControlSetVisible(panel, PlayerGroupAll(), true);
+	topbarPanel = DialogControlLastCreated();
+	DialogControlSetVisible(topbarPanel, PlayerGroupAll(), true);
     DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
     DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), 1, 1);
     DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, -100, -100);
     DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
     lv_lastFrame = DialogControlLastCreated();
-    DialogControlHookup(panel, c_triggerControlTypePanel, "CCButtonHolder");
+    DialogControlHookup(topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
     lv_lastFrame = DialogControlLastCreated();
     DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
     lv_lastFrame = DialogControlLastCreated();
@@ -488,10 +513,10 @@ bool INI_Func (bool testConds, bool runActions) {
 	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
 	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
 	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
+	topbarCommandPanel = DialogControlLastCreated();
 	DialogControlSetVisible(lv_lastFrame, PlayerGroupAll(), true);
 	PlayerSetState(1, c_playerStateFormationMove, true);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
-	//PlayerModifyPropertyInt(1, c_playerPropSuppliesMade, c_playerPropOperAdd, 1);
 	return true;
 }
 
