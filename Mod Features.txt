@@ -21,7 +21,7 @@ Supply has been hijacked to be Power instead. Buildings now require it.
 
 Units and structures now cost resources based on how long they take. 100 minerals per second of buildtime.
 
-Workers harvest resources at roughly 2000/min, under optimal conditions.
+Workers harvest resources at roughly 2000/min, under optimal conditions. This means an expansion will pay for itself in under 2 minutes.
 
 Mineral pickups now give 1000 resources.
 
