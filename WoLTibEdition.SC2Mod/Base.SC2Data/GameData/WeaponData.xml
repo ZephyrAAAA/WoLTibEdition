@@ -22,6 +22,9 @@
         <Range value="4"/>
         <Period value="0.5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="DisruptionBeam">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Range value="4"/>
         <Marker>
@@ -44,6 +47,8 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
+        <RandomDelayMin value="-1.45"/>
+        <RandomDelayMax value="-1.45"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -94,6 +99,21 @@
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ParticleDisruptors">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PrismaticBeam">
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsiBlades">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsionicShockwave">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
         <AttackType value="Magic"/>
@@ -109,6 +129,8 @@
             <Cooldown Link="Weapon/MarauderSquad"/>
         </Cost>
         <Effect value="SquadAttack"/>
+        <RandomDelayMin value="-0.95"/>
+        <RandomDelayMax value="-0.95"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FirebatSquad" parent="Firebat">
         <Name value="Weapon/Name/FirebatSquad"/>
@@ -123,6 +145,8 @@
         <AttackType value="Unknown"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
+        <RandomDelayMin value="-0.45"/>
+        <RandomDelayMax value="-0.45"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarineSquad" parent="GuassRifle">
         <Name value="Weapon/Name/MarineSquad"/>
@@ -137,6 +161,8 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
+        <RandomDelayMin value="-0.85"/>
+        <RandomDelayMax value="-0.85"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
@@ -173,8 +199,16 @@
         </Cost>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
+        <RandomDelayMin value="-1.05"/>
+        <RandomDelayMax value="-1.05"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="StoneZealot">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">

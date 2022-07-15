@@ -226,6 +226,9 @@
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
     </CUnit>
+    <CUnit id="Archon">
+        <ArmorType value="Large"/>
+    </CUnit>
     <CUnit id="ArchonACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -769,9 +772,9 @@
         <AbilArray Link="CCDepower"/>
         <AbilArray Link="CCSell"/>
         <CardLayouts>
-            <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="CCRepair,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="Sell" Type="AbilCmd" AbilCmd="CCSell,Execute" Row="0" Column="0"/>
             <LayoutButtons Face="Depower" Type="AbilCmd" AbilCmd="CCDepower,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="Sell" Type="AbilCmd" AbilCmd="CCSell,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="CCRepair,Execute" Row="0" Column="2"/>
         </CardLayouts>
         <EditorCategories value="ObjectFamily:Campaign,ObjectType:Other"/>
     </CUnit>
@@ -2315,6 +2318,9 @@
     <CUnit id="HeroNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="HighTemplar">
+        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="HighTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3933,6 +3939,9 @@
         <Food value="-10"/>
         <ArmorType value="Hero"/>
     </CUnit>
+    <CUnit id="Sentry">
+        <ArmorType value="Medium"/>
+    </CUnit>
     <CUnit id="SentryACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4094,6 +4103,9 @@
     <CUnit id="SporeCrawlerUprooted">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="Stalker">
+        <ArmorType value="Medium"/>
     </CUnit>
     <CUnit id="StalkerShakurasACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4293,6 +4305,7 @@
     <CUnit id="StoneZealot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
     </CUnit>
     <CUnit id="StrikeGoliathACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4934,6 +4947,9 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="VoidRay">
+        <ArmorType value="Fort"/>
+    </CUnit>
     <CUnit id="VoidRayACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5055,6 +5071,9 @@
     <CUnit id="XelNagaWorldshipVault">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="Zealot">
+        <ArmorType value="Normal"/>
     </CUnit>
     <!-- Dummy Units for the AC Gluescreen Begin -->
     <CUnit id="ZealotACGluescreenDummy">

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CGame id="Dflt">
-        <CallForHelpRadius value="0"/>
         <FormationSeparationFactor value="4.5"/>
         <AttackArmorTable index="Normal" SupportedFilters="-;-">
             <ArmorFactor index="Medium" value="0.5"/>
@@ -46,6 +45,7 @@
             <ArmorFactor index="None" value="0.01"/>
         </AttackArmorTable>
         <AttackArmorTable index="Hero" SupportedFilters="-;-"/>
+        <TriggerLibs Id="3B48F5E9"/>
         <!-- Test Builds -->
         <!-- <AIBuilds index="200">
             <AttributeId value="B200"/>
