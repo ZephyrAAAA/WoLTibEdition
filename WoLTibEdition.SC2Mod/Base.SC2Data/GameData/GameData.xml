@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CGame id="Dflt">
-        <CallForHelpRadius value="0"/>
         <FormationSeparationFactor value="4.5"/>
         <AttackArmorTable index="Normal" SupportedFilters="-;-">
             <ArmorFactor index="Medium" value="0.5"/>

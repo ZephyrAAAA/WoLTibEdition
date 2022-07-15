@@ -63,9 +63,6 @@
         <DisableValidatorArray value="UnitNotInBunker"/>
         <Modification RangedWeaponRange="-0.5"/>
     </CBehaviorBuff>
-    <CBehaviorUnitTracker id="SquadTransportList">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-    </CBehaviorUnitTracker>
     <CBehaviorBuff id="SupplyDepotStartingUpgrade">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
@@ -108,7 +105,9 @@
     <CBehaviorBuff id="SquadAttack">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="0.3"/>
-        <Modification RangedWeaponRange="3"/>
+        <Modification RangedWeaponRange="3">
+            <AbilClassEnableArray index="CAbilAttack" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadUnit">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -119,8 +118,10 @@
             <WeaponScanLimit value="0"/>
             <StateFlags index="SuppressArmySelect" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
         <FinalEffect value="SquadDeathDamage"/>
+        <DisableValidatorArray value="UnitNotInBunker"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
         <InfoFlags index="Hidden" value="1"/>
