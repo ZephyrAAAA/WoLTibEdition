@@ -119,6 +119,7 @@
         <EffectArray Reference="Weapon,SwannMelee,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,Nova,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,Tosh,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,RaynorGaussRifle,RateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>
@@ -276,40 +277,40 @@
         <EffectArray index="3" Reference="Unit,RoachBurrowed,LifeArmor" Value="2"/>
         <EffectArray index="4" Operation="AddBaseMultiply" Reference="Unit,Ultralisk,Speed" Value="0.398400"/>
         <EffectArray index="5" Operation="AddBaseMultiply" Reference="Unit,Omegalisk,Speed" Value="0.398400"/>
-        <EffectArray index="6" removed="1"/>
-        <EffectArray index="7" removed="1"/>
-        <EffectArray index="8" removed="1"/>
-        <EffectArray index="9" removed="1"/>
-        <EffectArray index="10" removed="1"/>
-        <EffectArray index="11" removed="1"/>
-        <EffectArray index="12" removed="1"/>
-        <EffectArray index="13" removed="1"/>
-        <EffectArray index="14" removed="1"/>
-        <EffectArray index="15" removed="1"/>
-        <EffectArray index="16" removed="1"/>
-        <EffectArray index="17" removed="1"/>
-        <EffectArray index="18" removed="1"/>
-        <EffectArray index="19" removed="1"/>
-        <EffectArray index="20" removed="1"/>
-        <EffectArray index="21" removed="1"/>
-        <EffectArray index="22" removed="1"/>
-        <EffectArray index="23" removed="1"/>
-        <EffectArray index="24" removed="1"/>
-        <EffectArray index="25" removed="1"/>
-        <EffectArray index="26" removed="1"/>
-        <EffectArray index="27" removed="1"/>
-        <EffectArray index="28" removed="1"/>
-        <EffectArray index="29" removed="1"/>
-        <EffectArray index="30" removed="1"/>
-        <EffectArray index="31" removed="1"/>
-        <EffectArray index="32" removed="1"/>
-        <EffectArray index="33" removed="1"/>
-        <EffectArray index="34" removed="1"/>
-        <EffectArray index="35" removed="1"/>
-        <EffectArray index="36" removed="1"/>
-        <EffectArray index="37" removed="1"/>
-        <EffectArray index="38" removed="1"/>
-        <EffectArray index="39" removed="1"/>
+        <EffectArray index="6" Operation="Set" Reference="Unit,Drone,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="7" Operation="Set" Reference="Unit,DroneBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="8" Operation="Set" Reference="Unit,Zergling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="9" Operation="Set" Reference="Unit,ZerglingBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="10" Operation="Set" Reference="Unit,Hydralisk,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="11" Operation="Set" Reference="Unit,HydraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="12" Operation="Set" Reference="Unit,Baneling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="13" Operation="Set" Reference="Unit,BanelingBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="14" Operation="Set" Reference="Unit,Roach,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="15" Operation="Set" Reference="Unit,RoachBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="16" Operation="Set" Reference="Unit,Ultralisk,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="17" Operation="Set" Reference="Unit,UltraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="18" Operation="Set" Reference="Unit,Queen,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="19" Operation="Set" Reference="Unit,QueenBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="20" Operation="Set" Reference="Unit,Infestor,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="21" Operation="Set" Reference="Unit,Broodling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="22" Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="23" Operation="Set" Reference="Unit,BanelingCocoon,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="24" Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="25" Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="26" Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="27" Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="28" Operation="Set" Reference="Unit,InfestedAbomination,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="29" Operation="Set" Reference="Unit,InfestedAbominationBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="30" Operation="Set" Reference="Unit,Lurker,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="31" Operation="Set" Reference="Unit,LurkerBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="32" Operation="Set" Reference="Unit,Omegalisk,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="33" Operation="Set" Reference="Unit,OmegaliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="34" Operation="Set" Reference="Unit,Swarmling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="35" Operation="Set" Reference="Unit,HunterKiller,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="36" Operation="Set" Reference="Unit,HunterKillerBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="37" Operation="Set" Reference="Unit,KerriganChar,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="38" Operation="Set" Reference="Unit,HybridDestroyer,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="39" Operation="Set" Reference="Unit,HybridReaver,SpeedMultiplierCreep" Value="2"/>
         <EffectArray index="40" removed="1"/>
         <EffectArray index="41" removed="1"/>
         <EffectArray index="42" removed="1"/>
@@ -363,40 +364,6 @@
         <EffectArray index="90" removed="1"/>
         <EffectArray index="91" removed="1"/>
         <EffectArray index="92" removed="1"/>
-		<EffectArray Operation="Set" Reference="Unit,Drone,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,DroneBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Zergling,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,ZerglingBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Hydralisk,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,HydraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Baneling,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,BanelingBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Roach,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,RoachBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Ultralisk,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,UltraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Queen,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,QueenBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Infestor,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Broodling,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,BanelingCocoon,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestedAbomination,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,InfestedAbominationBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Lurker,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,LurkerBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Omegalisk,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,OmegaliskBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,Swarmling,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,HunterKiller,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,HunterKillerBurrowed,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,KerriganChar,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,HybridDestroyer,SpeedMultiplierCreep" Value="2"/>
-		<EffectArray Operation="Set" Reference="Unit,HybridReaver,SpeedMultiplierCreep" Value="2"/>
     </CUpgrade>
     <CUpgrade id="ZergGroundArmorsLevel3"/>
     <CUpgrade id="ZergMeleeWeaponsLevel1">

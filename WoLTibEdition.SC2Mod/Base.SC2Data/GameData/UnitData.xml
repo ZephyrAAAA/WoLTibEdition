@@ -777,6 +777,7 @@
             <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="CCRepair,Execute" Row="0" Column="2"/>
         </CardLayouts>
         <EditorCategories value="ObjectFamily:Campaign,ObjectType:Other"/>
+        <MinimapRadius value="0"/>
     </CUnit>
     <CUnit id="Caboose">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
