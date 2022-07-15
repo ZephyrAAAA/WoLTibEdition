@@ -21,6 +21,32 @@ int topbarCastingPanel;
 int topbarPanel;
 int topbarCommandPanel;
 
+void buildingSwap (unit building) {
+	if (UnitGetType(building) == "CommandCenter") {
+		libNtve_gf_ReplaceUnit(building, "CommandCenter2", 1);
+	} else if (UnitGetType(building) == "Barracks") {
+		libNtve_gf_ReplaceUnit(building, "Barracks2", 1);
+	} else if (UnitGetType(building) == "EngineeringBay") {
+		libNtve_gf_ReplaceUnit(building, "EngineeringBay2", 1);
+	} else if (UnitGetType(building) == "Factory") {
+		libNtve_gf_ReplaceUnit(building, "Factory2", 1);
+	} else if (UnitGetType(building) == "Starport") {
+		libNtve_gf_ReplaceUnit(building, "Starport2", 1);
+	} else if (UnitGetType(building) == "Armory") {
+		libNtve_gf_ReplaceUnit(building, "Armory2", 1);
+	} else if (UnitGetType(building) == "FusionCore") {
+		libNtve_gf_ReplaceUnit(building, "FusionCore2", 1);
+	} else if (UnitGetType(building) == "MissileTurret") {
+		libNtve_gf_ReplaceUnit(building, "MissileTurret2", 1);
+	} else if (UnitGetType(building) == "GhostAcademy") {
+		libNtve_gf_ReplaceUnit(building, "GhostAcademy2", 1);
+	} else if (UnitGetType(building) == "SensorTower") {
+		libNtve_gf_ReplaceUnit(building, "SensorTower2", 1);
+	} else if (UnitGetType(building) == "SupplyDepot") {
+		libNtve_gf_ReplaceUnit(building, "SupplyDepot2", 1);
+	}
+}
+
 bool DisableTopBar () {
 	noTopBar = true;
 	return noTopBar;
@@ -422,6 +448,9 @@ bool OwnerSwap_Func (bool testConds, bool runActions) {
 		UnitBehaviorRemove(EventUnit(), "PowerCheck", 1);
 		UnitBehaviorAdd(EventUnit(), "PowerCheck", EventUnit(), 1);
 	}
+	if (EventUnitOwnerNew() == 1) {
+		buildingSwap(EventUnit());
+	}
 	return true;
 }
 
@@ -432,6 +461,15 @@ void OwnerSwap_Init () {
 
 bool TechUnlock_Func (bool textConds, bool runActions) {
 	int lv_i;
+	unitgroup swaps;
+	unit currentLoop;
+	swaps = UnitGroup(null, 1, RegionEntireMap(), UnitFilterStr("-;Dead,Missile,Hidden"), 0);
+	
+	for (lv_i = UnitGroupCount(swaps, c_unitCountAlive);; lv_i -= 1) {
+		currentLoop = UnitGroupUnitFromEnd(swaps, lv_i);
+		if (currentLoop == null) { break; }
+		buildingSwap(currentLoop);
+	}
 	if (noTopBar) {
 		DialogControlSetVisible(topbarCastingPanel, PlayerGroupAll(), false);
 		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), false);

@@ -22,6 +22,9 @@
         <Range value="4"/>
         <Period value="0.5"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="DisruptionBeam">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Range value="4"/>
         <Marker>
@@ -95,6 +98,21 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ParticleDisruptors">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PhotonCannon">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PrismaticBeam">
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsiBlades">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsionicShockwave">
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
@@ -185,6 +203,12 @@
         <RandomDelayMax value="-1.05"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="StoneZealot">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">

@@ -84,6 +84,18 @@
         <Resources index="Minerals" value="2000"/>
         <Resources index="Vespene" value="0"/>
     </CEffectModifyPlayer>
+    <CEffectDamage id="PrismaticBeamMUx1">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectDamage id="PrismaticBeamMUx2">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectDamage id="PrismaticBeamMUx3">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="24"/>
+    </CEffectDamage>
     <CEffectLaunchMissile id="RailgunLaunch">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value=""/>

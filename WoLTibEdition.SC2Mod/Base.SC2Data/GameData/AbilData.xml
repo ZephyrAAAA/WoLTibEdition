@@ -256,7 +256,8 @@
             <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
             <Unit value="GhostSquad"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="30">
+        <InfoArray index="Train4" Time="6">
+            <Resource index="Custom" value="600"/>
             <Button DefaultButtonFace="Marauder" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="MarauderSquad"/>
         </InfoArray>
@@ -265,9 +266,10 @@
             <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="MedicSquad"/>
         </InfoArray>
-        <InfoArray index="Train6" Time="30">
+        <InfoArray index="Train6" Time="12">
+            <Resource index="Custom" value="1200"/>
             <Button DefaultButtonFace="FlameMech" State="Restricted" Requirements="HaveAttachedTechLab"/>
-            <Unit value="Firebat"/>
+            <Unit value="FirebatSquad"/>
         </InfoArray>
         <InfoArray index="Train7" Time="50">
             <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
