@@ -6,6 +6,9 @@
     <CWeaponLegacy id="AcidSaliva">
         <AttackType value="Magic"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="AutoTurret">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -21,6 +24,7 @@
     <CWeaponLegacy id="DevilDogFlameThrower">
         <Range value="4"/>
         <Period value="0.5"/>
+        <DamagePoint value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
