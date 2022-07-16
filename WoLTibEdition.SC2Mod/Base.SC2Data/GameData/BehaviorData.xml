@@ -72,6 +72,10 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="UnitNotInBunker"/>
         <Modification RangedWeaponRange="-0.5"/>
+        <DamageResponse ModifyFraction="0">
+            <ExcludeEffectArray value="SquadDeathDamage"/>
+            <Chance value="1"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadVeterancy1">
         <EditorCategories value="AbilityorEffectType:Units"/>
