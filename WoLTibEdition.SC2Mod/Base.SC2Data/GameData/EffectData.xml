@@ -121,6 +121,9 @@
             <Resource index="Minerals" value="-2"/>
         </SalvageFactor>
     </CEffectModifyUnit>
+    <CEffectApplyBehavior id="SquadBunkerUnload">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="SquadDeathDamage">
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterUnit"/>
@@ -283,6 +286,24 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectApplyBehavior id="SquadVeterancy1">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectEnumMagazine id="SquadVeterancy1Iterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="SquadVeterancy1"/>
+        <EffectExternal value="SquadVeterancy1"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="SquadVeterancy2Iterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="SquadVeterancy2"/>
+        <EffectExternal value="SquadVeterancy2"/>
+    </CEffectEnumMagazine>
+    <CEffectApplyBehavior id="SquadVeterancy2">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnit"/>

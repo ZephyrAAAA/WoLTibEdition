@@ -368,16 +368,16 @@
     <CUpgrade id="ZergGroundArmorsLevel3"/>
     <CUpgrade id="ZergMeleeWeaponsLevel1">
         <EffectArray index="0" Reference="Weapon,Ram,Level"/>
-        <EffectArray index="1" Reference="Effect,Ram,Amount" Value="12"/>
+        <EffectArray index="1" Operation="Multiply" Reference="Effect,Ram,Amount" Value="1.3"/>
         <EffectArray index="2" Reference="Weapon,NeedleClaws,Level"/>
-        <EffectArray index="3" Reference="Effect,VolatileBurstU,Amount" Value="4"/>
-        <EffectArray index="4" Reference="Effect,VolatileBurstU2,Amount" Value="16"/>
-        <EffectArray index="5" Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="4"/>
-        <EffectArray index="6" Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="16"/>
+        <EffectArray index="3" Operation="Multiply" Reference="Effect,VolatileBurstU,Amount" Value="1.4"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,VolatileBurstU2,Amount" Value="1.4"/>
+        <EffectArray index="5" Operation="Multiply" Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="1.4"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="1.4"/>
         <EffectArray index="7" Reference="Weapon,VolatileBurstDummy,Level"/>
-        <EffectArray index="8" Reference="Effect,InfestedClawsDamage,Amount" Value="1.6"/>
+        <EffectArray index="8" Operation="Multiply" Reference="Effect,InfestedClawsDamage,Amount" Value="1.2"/>
         <EffectArray index="9" Reference="Weapon,InfestedClaws,Level" Value="1"/>
-        <EffectArray index="10" Reference="Effect,OmegaliskHeadAttackDamage,Amount" Value="24"/>
+        <EffectArray index="10" Operation="Multiply" Reference="Effect,OmegaliskHeadAttackDamage,Amount" Value="1.3"/>
         <EffectArray index="11" Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
         <EffectArray index="12" Reference="Effect,Val03RazorTalonsDamage,Amount" Value="5.000000"/>
         <EffectArray index="13" removed="1"/>
@@ -413,10 +413,10 @@
         <EffectArray index="43" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ZergMeleeWeaponsLevel2">
-        <EffectArray index="0" Reference="Effect,Claws,Amount" Value="2.5"/>
-        <EffectArray index="1" Reference="Effect,KaiserBladesDamage,Amount" Value="4.8"/>
-        <EffectArray index="2" removed="1"/>
-        <EffectArray index="3" removed="1"/>
+        <EffectArray index="0" Operation="Multiply" Reference="Effect,Claws,Amount" Value="1.5"/>
+        <EffectArray index="1" Operation="Multiply" Reference="Effect,KaiserBladesDamage,Amount" Value="1.3"/>
+        <EffectArray index="2" Operation="Multiply" Reference="Effect,OmegaliskU,Amount" Value="1.3"/>
+        <EffectArray index="3" Operation="Multiply" Reference="Effect,OmegaliskCleaveMU,Amount" Value="1.3"/>
         <EffectArray index="4" removed="1"/>
         <EffectArray index="5" removed="1"/>
         <EffectArray index="6" removed="1"/>
@@ -459,20 +459,20 @@
         <EffectArray index="43" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ZergMissileWeaponsLevel1">
-        <EffectArray index="1" Value="4.8"/>
-        <EffectArray index="2" Reference="Effect,AcidSpines,Amount" Value="1.8"/>
+        <EffectArray index="1" Operation="Multiply" Value="1.4"/>
+        <EffectArray index="2" Operation="Multiply" Reference="Effect,AcidSpines,Amount" Value="1.2"/>
         <EffectArray index="3" Reference="Weapon,AcidSaliva,Level" Value="1"/>
-        <EffectArray index="4" Reference="Effect,RoachUMelee,Amount" Value="3.2"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,RoachUMelee,Amount" Value="1.2"/>
         <EffectArray index="5" Reference="Weapon,InfestedGuassRifle,Level"/>
-        <EffectArray index="6" Reference="Effect,InfestedGuassRifle,Amount"/>
-        <EffectArray index="7" Reference="Effect,InfestedTerranCampaign,Amount" Value="2"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,InfestedGuassRifle,Amount" Value="1.4"/>
+        <EffectArray index="7" Operation="Multiply" Reference="Effect,InfestedTerranCampaign,Amount" Value="1.4"/>
         <EffectArray index="8" Reference="Weapon,InfestedTerranCampaign,Level"/>
         <EffectArray index="9" Reference="Weapon,Lurker,Level" Value="1"/>
-        <EffectArray index="10" Reference="Effect,LurkerU,Amount" Value="9"/>
+        <EffectArray index="10" Operation="Multiply" Reference="Effect,LurkerU,Amount" Value="1.3"/>
         <EffectArray index="11" Reference="Effect,Val03PsiBlastDamage,Amount" Value="5.000000"/>
         <EffectArray index="12" Operation="Add" Reference="Weapon,Val03QueenOfBladesPsiBlast,Level" Value="1"/>
-        <EffectArray index="13" Operation="Add" Reference="Effect,AcidSalivaU,Amount" Value="3.2"/>
-        <EffectArray index="14" Operation="Add" Reference="Effect,HydraliskMelee,Amount" Value="4.8"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Effect,AcidSalivaU,Amount" Value="1.2"/>
+        <EffectArray index="14" Operation="Multiply" Reference="Effect,HydraliskMelee,Amount" Value="1.4"/>
         <EffectArray index="15" removed="1"/>
         <EffectArray index="16" removed="1"/>
         <EffectArray index="17" removed="1"/>
