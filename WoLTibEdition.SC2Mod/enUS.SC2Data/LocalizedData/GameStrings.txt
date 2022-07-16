@@ -69,7 +69,7 @@ Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive 
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
-Button/Tooltip/EngineeringBay2=Contains upgrades for Terran infantry units. Enables the construction of Terran defensive structures. 
+Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
@@ -94,7 +94,11 @@ Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">All units affected by this upgrade attack 20% faster.</s>
+ConversationState/StoryTips/Raynor02_SCV/Info/Description=Resource harvesting unit -- <c val="FFFF00">SCVs </c>collect resources. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
+ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades for units. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
+ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
 DOCSTR_0000=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
+DOCSTR_Squads=Light infantry -- <c val="FFFF00">Squads </c>are a grouping of infantry units, that work together as one.
 DataCollection/Name/Armory=Armory
 DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks
