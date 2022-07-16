@@ -98,7 +98,7 @@
         <EffectArray index="75" Value="1"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
-        <BonusResourcePerLevel index="Minerals" value="1000"/>
+        <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryUltraCapacitors">
         <EffectArray Reference="Weapon,GuassRifle,RateMultiplier" Value="0.2"/>

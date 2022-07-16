@@ -649,4 +649,12 @@
     <CEffectRemoveBehavior id="BuildingRepairRB">
         <BehaviorLink value="BuildingRepair"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="VolatileBurstFriendlyUnitDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="VolatileBurstU">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="35"/>
+    </CEffectDamage>
 </Catalog>

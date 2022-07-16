@@ -809,7 +809,7 @@
             <Button DefaultButtonFace="ResearchHiSecAutoTracking" State="Restricted" Requirements="LearnTerranDefenseRangeBonus"/>
         </InfoArray>
         <InfoArray index="Research2" Time="30" Upgrade="TerranBuildingArmor">
-            <Resource index="Vespene" value="1000"/>
+            <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="UpgradeBuildingArmorLevel1" State="Restricted" Requirements="LearnTerranBuildingArmor"/>
         </InfoArray>
         <InfoArray index="Research3" Time="160" Upgrade="TerranInfantryWeaponsLevel1">
