@@ -90,7 +90,7 @@ Zero Hour:
 -The first attack wave only steals your camera on Normal and Casual now
 -Fixed drop pods, now they don't sometimes give nothing when they should give a hydra.
 -Drop pods now drop more enemy units, still scaling with difficulty.
--Changed Engineering Bay Tip.= to reflect what it does in this mod.
+-Changed Engineering Bay Tip to reflect what it does in this mod.
 -Changed Bunker tip to say it fits 1 squad, and to remove the mention of salvaging, since that's covered by the new Sell ability
 -Added a tip for Devastation Turret
 
