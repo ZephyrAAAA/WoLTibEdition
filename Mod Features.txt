@@ -61,6 +61,7 @@ Liberation Day:
 -Killing 3 and 6 holoboards rewards you with an additional marine squad.
 -Killing a holoboard heals all your units, and restores any lost squad members.
 -Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed)
+-Added a tip about squads
 
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
@@ -69,6 +70,11 @@ The Outlaws:
 -A general increase in the number of enemies in the enemy base, and on the path towards it.
 -Added a second Bunker of Death on Brutal
 -Bunker of Death has been moved slightly
+-Added tips about Selling, Power, and Repair
+-Added a tip about refineries and resource gathering
+-Edited the Tech Lab tip to mention upgrades
+-Disabled the Vespene tip
+-Fixed the SCV tip for this mod
 
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
@@ -84,6 +90,9 @@ Zero Hour:
 -The first attack wave only steals your camera on Normal and Casual now
 -Fixed drop pods, now they don't sometimes give nothing when they should give a hydra.
 -Drop pods now drop more enemy units, still scaling with difficulty.
+-Changed Engineering Bay Tip.= to reflect what it does in this mod.
+-Changed Bunker tip to say it fits 1 squad, and to remove the mention of salvaging, since that's covered by the new Sell ability
+-Added a tip for Devastation Turret
 
 The Evacuation:
 
