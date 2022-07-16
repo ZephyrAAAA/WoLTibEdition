@@ -511,7 +511,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 1), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
-	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 0)));
 	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	for (lv_i = 0; lv_i < 9; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", lv_i)));

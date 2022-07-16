@@ -773,7 +773,7 @@
         <CardLayouts>
             <LayoutButtons Face="Sell" Type="AbilCmd" AbilCmd="CCSell,Execute" Row="0" Column="0"/>
             <LayoutButtons Face="Depower" Type="AbilCmd" AbilCmd="CCDepower,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="CCRepair,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="BuildingRepair" Type="AbilCmd" AbilCmd="CCRepair,Execute" Row="0" Column="2"/>
         </CardLayouts>
         <EditorCategories value="ObjectFamily:Campaign,ObjectType:Other"/>
         <MinimapRadius value="0"/>
@@ -3727,7 +3727,6 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
-        <AbilArray Link="Repair"/>
         <AbilArray Link="SCVHarvest"/>
         <WeaponArray Link="FusionCutter"/>
         <CardLayouts>
@@ -3736,7 +3735,6 @@
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="AttackWorker" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-            <LayoutButtons Face="Repair" Type="AbilCmd" AbilCmd="Repair,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="GatherTerr" Type="AbilCmd" AbilCmd="SCVHarvest,Gather" Row="1" Column="0"/>
             <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest,Return" Row="1" Column="1"/>
         </CardLayouts>

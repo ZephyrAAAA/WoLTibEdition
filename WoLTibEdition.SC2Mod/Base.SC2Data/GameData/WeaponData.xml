@@ -43,7 +43,6 @@
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/GhostSquad"/>
         <DisplayName value="Weapon/Name/GhostSquad"/>
-        <MinScanRange value="9"/>
         <Marker Link="Weapon/GhostSquad"/>
         <Cost>
             <Cooldown Link="Weapon/GhostSquad"/>
@@ -127,7 +126,6 @@
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/MarauderSquad"/>
         <DisplayName value="Weapon/Name/MarauderSquad"/>
-        <MinScanRange value="9"/>
         <Marker Link="Weapon/MarauderSquad"/>
         <Cost>
             <Cooldown Link="Weapon/MarauderSquad"/>
@@ -141,7 +139,6 @@
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/FirebatSquad"/>
         <DisplayName value="Weapon/Name/FirebatSquad"/>
-        <MinScanRange value="9"/>
         <Marker Link="Weapon/FirebatSquad"/>
         <Cost>
             <Cooldown Link="Weapon/FirebatSquad"/>
@@ -157,7 +154,6 @@
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/MarineSquad"/>
         <DisplayName value="Weapon/Name/MarineSquad"/>
-        <MinScanRange value="9"/>
         <Marker Link="Weapon/MarineSquad"/>
         <Cost>
             <Cooldown Link="Weapon/MarineSquad"/>
@@ -196,7 +192,6 @@
         <DisplayAttackCount value="0"/>
         <DisplayName value="Weapon/Name/ReaperSquad"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="9"/>
         <Marker Link="Weapon/ReaperSquad"/>
         <Cost>
             <Cooldown Link="Weapon/ReaperSquad"/>
@@ -222,6 +217,14 @@
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurst">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Defaults ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <CWeaponLegacy id="VolatileBurstDummy">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
 </Catalog>

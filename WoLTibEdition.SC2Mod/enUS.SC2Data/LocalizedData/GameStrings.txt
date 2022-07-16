@@ -53,6 +53,7 @@ Behavior/Tooltip/SquadRangeDebuff=Squads have less range when they're not in bun
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
+Button/Name/BuildingRepair=Building Repair
 Button/Name/Depower=Depower
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
@@ -64,6 +65,7 @@ Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starpo
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
+Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.

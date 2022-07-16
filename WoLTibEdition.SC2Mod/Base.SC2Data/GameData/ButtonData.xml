@@ -5,9 +5,19 @@
         <AlertIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="BuildingRepair">
+        <Icon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="Depower">
         <Icon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="Race:Neutral"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
     </CButton>
     <CButton id="InfantryUltraCapacitors">
         <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
@@ -32,5 +42,7 @@
         <Icon value="Assets\Textures\btn-tips-credit.dds"/>
         <AlertIcon value="Assets\Textures\btn-tips-credit.dds"/>
         <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
     </CButton>
 </Catalog>

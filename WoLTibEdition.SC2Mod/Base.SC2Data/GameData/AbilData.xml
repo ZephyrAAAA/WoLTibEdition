@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CAbilResearch id="BarracksTechLabResearch">
-        <InfoArray index="Research4" Time="60" Upgrade="TerranInfantryUltraCapacitors">
+        <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
             <Button DefaultButtonFace="InfantryUltraCapacitors" State="Restricted" Requirements="LearnInfantryUltraCaps"/>
         </InfoArray>
-        <InfoArray index="Research5" Time="60" Upgrade="TerranInfantryVanadiumPlating">
+        <InfoArray index="Research5" Time="90" Upgrade="TerranInfantryVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
             <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
         </InfoArray>
@@ -34,7 +34,7 @@
         <UseMarkerArray index="Prep" value="0"/>
         <UseMarkerArray index="Cast" value="0"/>
         <UseMarkerArray index="Channel" value="0"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="Repair"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuildingRepair"/>
         <AutoCastValidatorArray value="BuildingNotBeingRepaired"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="CCSell">
@@ -214,8 +214,8 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuildMorphAbil value="Barracks2LiftOff"/>
         <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="BarracksTechLab" Time="5">
-            <Resource index="Vespene" value="500"/>
+        <InfoArray index="Build1" Unit="BarracksTechLab" Time="2">
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="BuildTechLabBarracks" Requirements="UseTechReactorHide"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="BarracksReactor" Time="50">
@@ -808,7 +808,7 @@
             <Resource index="Vespene" value="1000"/>
             <Button DefaultButtonFace="ResearchHiSecAutoTracking" State="Restricted" Requirements="LearnTerranDefenseRangeBonus"/>
         </InfoArray>
-        <InfoArray index="Research2" Time="30" Upgrade="TerranBuildingArmor">
+        <InfoArray index="Research2" Time="60" Upgrade="TerranBuildingArmor">
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="UpgradeBuildingArmorLevel1" State="Restricted" Requirements="LearnTerranBuildingArmor"/>
         </InfoArray>
@@ -885,8 +885,8 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuildMorphAbil value="Factory2LiftOff"/>
         <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="FactoryTechLab" Time="5">
-            <Resource index="Custom" value="500"/>
+        <InfoArray index="Build1" Unit="FactoryTechLab" Time="2">
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="BuildTechLabFactory" Requirements="UseTechReactorHide"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="FactoryReactor" Time="50">
@@ -1159,8 +1159,8 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <BuildMorphAbil value="Starport2LiftOff"/>
         <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="StarportTechLab" Time="5">
-            <Resource index="Custom" value="500"/>
+        <InfoArray index="Build1" Unit="StarportTechLab" Time="2">
+            <Resource index="Vespene" value="200"/>
             <Button DefaultButtonFace="BuildTechLabStarport" Requirements="UseTechReactorHide"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="StarportReactor" Time="50">
