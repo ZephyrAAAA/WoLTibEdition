@@ -105,6 +105,7 @@ Behavior/Name/TibNodeLarge=Tib Node Large
 Behavior/Name/TibNodeMedium=Tib Node Medium
 Behavior/Name/TibNodeSmall=Tib Node Small
 Behavior/Name/TibVeinMinerals=Minerals (Mineral Field)
+Button/EditorPrefix/BuildingRepair=C&C -
 Button/EditorPrefix/Depower=C&C -
 Button/EditorPrefix/Sell=C&C -
 DataCollection/EditorPrefix/FirebatSquad=Squads -
