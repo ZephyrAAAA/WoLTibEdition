@@ -30,7 +30,7 @@ Vespene pickups now give 2000 resources.
 
 
 
-Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
+*Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
 
 Terran Infantry now use a Squad system, where each Squad unit has multiple members.
 
