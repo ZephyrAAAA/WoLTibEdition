@@ -26,6 +26,11 @@
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
     </CEffectApplyBehavior>
+    <CEffectDestroyHealer id="BuildingRepairStop">
+        <WhichLocation Value="TargetUnit"/>
+        <Effect value="BuildingRepair"/>
+        <Count value="1"/>
+    </CEffectDestroyHealer>
     <CEffectSwitch id="BuildingRepairSwitch">
         <ValidatorArray value="NotWarpingIn"/>
         <ValidatorArray value="HiddenCompareBA"/>
@@ -78,7 +83,8 @@
         <Flags index="Channeled" value="0"/>
         <DrainResourceCostFactor index="Minerals" value="1"/>
         <RechargeVitalRate value="1"/>
-        <TimeFactor value="2"/>
+        <TimeFactor value="1"/>
+        <ValidatorArray value="noMarkers"/>
     </CEffectCreateHealer>
     <CEffectModifyPlayer id="PickupGas100">
         <Resources index="Minerals" value="2000"/>
@@ -105,6 +111,11 @@
     <CEffectDamage id="RaynorGaussRifleDamage">
         <Amount value="30"/>
     </CEffectDamage>
+    <CEffectSet id="BuildingRepairLoop">
+        <EditorCategories value=""/>
+        <EffectArray value="BuildingRepairStop"/>
+        <EffectArray value="BuildingRepair"/>
+    </CEffectSet>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>
@@ -638,4 +649,12 @@
     <CEffectRemoveBehavior id="BuildingRepairRB">
         <BehaviorLink value="BuildingRepair"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="VolatileBurstFriendlyUnitDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="VolatileBurstU">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="35"/>
+    </CEffectDamage>
 </Catalog>

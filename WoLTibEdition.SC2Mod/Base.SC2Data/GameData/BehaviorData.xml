@@ -11,7 +11,8 @@
         <RemoveValidatorArray value="TargetLifeNotFull"/>
         <Period value="1"/>
         <InitialEffect value="BuildingRepair"/>
-        <PeriodicEffect value="BuildingRepair"/>
+        <PeriodicEffect value="BuildingRepairLoop"/>
+        <FinalEffect value="BuildingRepairStop"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Cancel">
         <InfoFlags index="Hidden" value="1"/>
@@ -37,6 +38,8 @@
             <StateFlags index="Stun" value="1"/>
             <StateFlags index="SuppressDropOff" value="1"/>
             <StateFlags index="SuppressFoodUsed" value="1"/>
+            <StateFlags index="SuppressRequirements" value="1"/>
+            <StateFlags index="SuppressTech" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <AbilClassDisableArray index="CAbilBuild" value="1"/>
             <AbilClassDisableArray index="CAbilSpecialize" value="1"/>
@@ -105,17 +108,13 @@
     <CBehaviorBuff id="SquadAttack">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="0.3"/>
-        <Modification RangedWeaponRange="3">
+        <Modification RangedWeaponRange="2">
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadUnit">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Modification>
-            <RadiusMultiplier value="0.5"/>
-            <MoveSpeedMultiplier value="1.75"/>
-            <RangedWeaponRange value="-1"/>
-            <WeaponScanLimit value="0"/>
+        <Modification RadiusMultiplier="0.5" MoveSpeedMultiplier="1.75" WeaponScanLimit="0">
             <StateFlags index="SuppressArmySelect" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
