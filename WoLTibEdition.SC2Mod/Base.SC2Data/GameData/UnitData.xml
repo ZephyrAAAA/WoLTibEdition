@@ -149,9 +149,9 @@
         </ReviveInfoBase>
     </CUnit>
     <CUnit default="1" id="BaseSquad">
+        <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
         <Collide index="Air4" value="1"/>
         <Attributes index="Biological" value="1"/>
@@ -183,6 +183,7 @@
         <LifeStart value="6"/>
         <LifeMax value="6"/>
         <BehaviorArray Link="SquadRangeDebuff"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="AbandonedBuilding">
         <ArmorType value="Hero"/>
@@ -397,6 +398,7 @@
     </CUnit>
     <CUnit id="Baneling">
         <ArmorType value="Small"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="BanelingACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -750,6 +752,7 @@
             <Charge Link="Bunker2/Revive"/>
             <Cooldown Link="Bunker2/Revive"/>
         </ReviveInfoBase>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="BunkerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1112,6 +1115,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="CorruptorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2239,6 +2243,7 @@
     <CUnit id="Hellion">
         <ArmorType value="Medium"/>
         <Food value="0"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="AirTransport">
         <DeathRevealRadius value="3"/>
@@ -2377,6 +2382,7 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="HydraliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2386,6 +2392,7 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="HydraliskDen">
         <ArmorType value="Hero"/>
@@ -2699,8 +2706,6 @@
         <Race value="Terr"/>
         <LifeStart value="4"/>
         <LifeMax value="4"/>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
         <Speed value="2.25"/>
         <AbilArray Link="FirebatSquad"/>
         <WeaponArray Link="FirebatSquad"/>
@@ -2732,6 +2737,7 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="MarineACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2787,6 +2793,7 @@
         <Food value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="MedicACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2803,8 +2810,6 @@
         </CardLayouts>
         <LifeStart value="3"/>
         <LifeMax value="3"/>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
     </CUnit>
     <CUnit id="Medivac">
         <AbilArray Link="AirTransportMag"/>
@@ -2961,6 +2966,7 @@
     </CUnit>
     <CUnit id="Mutalisk">
         <ArmorType value="None"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
     </CUnit>
     <CUnit id="MutaliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3045,10 +3051,12 @@
     <CUnit id="Omegalisk">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="OmegaliskBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="OracleACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3655,6 +3663,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="RoachACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3665,6 +3674,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="RoachVileACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3994,6 +4004,7 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="SiegeTankACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4007,6 +4018,7 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="SiegeTankSkinPreview"/>
     <CUnit id="SpaceDiablo">
@@ -4652,8 +4664,6 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="GhostSquad,0" Row="1" Column="0"/>
         </CardLayouts>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
     </CUnit>
     <CUnit id="MarauderSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -4665,11 +4675,11 @@
         </CardLayouts>
         <LifeStart value="2"/>
         <LifeMax value="2"/>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
+        <ArmorType value="Small"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <Speed value="2.25"/>
         <AbilArray Link="MarineSquad"/>
         <AbilArray Link="StimpackRedirect"/>
@@ -4678,9 +4688,6 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarineSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>
         </CardLayouts>
-        <ArmorType value="Small"/>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -4690,8 +4697,6 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,0" Row="1" Column="0"/>
         </CardLayouts>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>
@@ -4872,6 +4877,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="UltraliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4882,6 +4888,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="UltraliskCavern">
         <ArmorType value="Hero"/>
@@ -4929,9 +4936,11 @@
     </CUnit>
     <CUnit id="VikingAssault">
         <ArmorType value="Large"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="VikingFighter">
         <ArmorType value="Large"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="VikingMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5143,11 +5152,13 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="ZerglingBurrowed">
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="ZerglingKerriganACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

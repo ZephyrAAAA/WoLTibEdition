@@ -2,21 +2,29 @@
 <Catalog>
     <CWeaponLegacy id="90mmCannons">
         <AttackType value="Magic"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSaliva">
         <AttackType value="Magic"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSpew">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ColonistTransport">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="D8Charge">
         <AttackType value="Pierce"/>
@@ -37,6 +45,7 @@
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
         <DamagePoint value="0"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
         <Name value="Weapon/Name/GhostSquad"/>
@@ -55,9 +64,11 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle">
         <AttackType value="Normal"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HailstormMissilePods">
         <AttackType value="Siege"/>
@@ -71,6 +82,7 @@
     <CWeaponLegacy id="InfernalFlameThrower">
         <AttackType value="Pierce"/>
         <Period value="0.5"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedAbomination">
         <AttackType value="Pierce"/>
@@ -84,23 +96,33 @@
     <CWeaponLegacy id="InfestedTerranCampaign">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="KaiserBlades">
+        <Tip value="Weapon/Tip/Grenade"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoes">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Omegalisk">
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParticleDisruptors">
         <AttackType value="Siege"/>
@@ -124,7 +146,7 @@
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
         <EditorCategories value=""/>
-        <Tip value="Weapon/Tip/MarauderSquad"/>
+        <Tip value="Weapon/Tip/Cannon"/>
         <DisplayName value="Weapon/Name/MarauderSquad"/>
         <Marker Link="Weapon/MarauderSquad"/>
         <Cost>
@@ -137,7 +159,6 @@
     <CWeaponLegacy id="FirebatSquad" parent="Firebat">
         <Name value="Weapon/Name/FirebatSquad"/>
         <EditorCategories value=""/>
-        <Tip value="Weapon/Tip/FirebatSquad"/>
         <DisplayName value="Weapon/Name/FirebatSquad"/>
         <Marker Link="Weapon/FirebatSquad"/>
         <Cost>
@@ -152,7 +173,6 @@
     <CWeaponLegacy id="MarineSquad" parent="GuassRifle">
         <Name value="Weapon/Name/MarineSquad"/>
         <EditorCategories value=""/>
-        <Tip value="Weapon/Tip/MarineSquad"/>
         <DisplayName value="Weapon/Name/MarineSquad"/>
         <Marker Link="Weapon/MarineSquad"/>
         <Cost>
@@ -166,6 +186,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ConcussiveGrenades">
         <EditorCategories value="Race:Terran"/>
@@ -178,12 +199,14 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="ConcussiveGrenadesLM"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
         <AttackType value="Magic"/>
         <Period value="1"/>
         <Effect value="RailgunLaunch"/>
         <DamagePoint value="0.1"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>
@@ -215,9 +238,11 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurst">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <!--                                                                                         -->
     <!--                                                                                         -->

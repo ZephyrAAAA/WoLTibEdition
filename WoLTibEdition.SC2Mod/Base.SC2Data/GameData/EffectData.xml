@@ -86,6 +86,10 @@
         <TimeFactor value="1"/>
         <ValidatorArray value="noMarkers"/>
     </CEffectCreateHealer>
+    <CEffectDamage id="ParasiteSporeDamage">
+        <AttributeBonus index="Massive" value="0"/>
+        <Amount value="22"/>
+    </CEffectDamage>
     <CEffectModifyPlayer id="PickupGas100">
         <Resources index="Minerals" value="2000"/>
         <Resources index="Vespene" value="0"/>

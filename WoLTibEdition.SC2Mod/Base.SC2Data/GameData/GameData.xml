@@ -46,6 +46,7 @@
         </AttackArmorTable>
         <AttackArmorTable index="Hero" SupportedFilters="-;-"/>
         <TriggerLibs Id="3B48F5E9"/>
+        <VeterancySearchRadius value="0"/>
         <!-- Test Builds -->
         <!-- <AIBuilds index="200">
             <AttributeId value="B200"/>
