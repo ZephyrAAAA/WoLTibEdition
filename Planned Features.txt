@@ -36,6 +36,8 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 
 
 
+Missions that aren't at least somewhat defense in nature (And thus get regular attack waves to apply near constant pressure) have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
+
 *Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
 
 Implemented a topbar of Support Powers.
@@ -99,6 +101,7 @@ Zero Hour:
 -Infantry Vanadium Plating is available to research on the Barracks tech lab
 -Hi-Sec Auto Tracking is available to research on the Engineering Bay
 -Building Armour is available to research on the Engineering Bay
+-Removed the trigger to give you a free SCV if you take bunker damage from the first attack wave on Hard or Lower.
 
 The Evacuation:
 
