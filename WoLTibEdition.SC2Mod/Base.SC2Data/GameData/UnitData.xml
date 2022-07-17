@@ -3522,14 +3522,15 @@
     <CUnit id="Raynor">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmor value="1"/>
     </CUnit>
     <CUnit id="Raynor01">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
-        <LifeStart value="300"/>
-        <LifeMax value="300"/>
-        <LifeArmor value="0"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
+        <LifeArmor value="1"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="RaynorCommando">
