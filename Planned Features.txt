@@ -35,6 +35,18 @@ Flat armour has been removed in favour of damage types, so units do damage based
 Terrans, starting at Zero Hour, now have access to the Devastation Turret, an anti-armour defensive weapon.
 
 
+
+*Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
+
+Implemented a topbar of Support Powers.
+
+Mercenaries are now a topbar power, with unlimited uses.
+
+You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
+
+
+
+
 MISSION SPECIFIC CHANGES:
 
 Liberation Day:
@@ -84,6 +96,67 @@ Zero Hour:
 -Changed Bunker tip to say it fits 1 squad, and to remove the mention of salvaging, since that's covered by the new Sell ability
 -Added a tip for Devastation Turret
 
+The Evacuation:
+
+Outbreak:
+
+Safe Haven:
+-Purifier Mothership no longer has less range than vikings
+-Get the "Call in the FLeet - Protoss Edition" support power
+
+Haven's Fall:
+
+Great Train Robbery:
+
+Cutthroat:
+
+Engine of Destruction:
+
+Media Blitz:
+
+Piercing the Shroud:
+-Collecting the Chrono Rift device now unlocks a topbar power for future use.
+
+Devil's Playground:
+
+Welcome to the Jungle:
+
+Breakout:
+-Give Tosh Psionic Lash
+-Give Tosh some sort of energy regen ability
+-Add abilities to influence what/when Jim sends attack waves
+
+Ghost of a Chance:
+
+Smash and Grab:
+
+The Dig:
+-The Laser Drill now has a really expensive (20K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K.
+
+The Moebius Factor:
+
+Supernova:
+
+Maw of the Void:
+-Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs.
+
+Gates of Hell:
+
+Belly of the Beast:
+
+Shatter the Sky:
+
+All-in:
+
+Whispers of Doom:
+
+A Sinister Turn:
+
+Echoes of the Future:
+
+In Utter Darkness:
+
+
 
 UNIT CHANGES:
 
@@ -91,12 +164,74 @@ Firebat- Rework to be an expensive tanky unit, firing a stream of flame at range
 
 Medic- Better Healing priority.
 
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
+
+Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
+
+Wraith-
+
 Bunker- Has 4 slots, fits 1 squad
 
 Predator- Comparitively Cheaper, not locked behind research
 
 Hellion- Now fires constantly
 
+Thor- Reduce damage by 33%
+
+Diamondback- Increase speed to match hellion
+
+
+ARMORY UPGRADE CHANGES:
+
+Orbital Command- Unlock support powers on each tech building. Scan on EBay, veteran infantry on shadow ops, veteran vehicles on armoury, yamato strike on fusion core.
+
+Advanced Construction- Reduce build time of units (Also affects cost)
+
+Dual Fusion- General repair speed increase, since SCVs no longer repair
+
+Thermite-> Hydraulic Stabilizers- Allow Hellion to Fire on the move
+
+Neosteel Bunker-> Shrike Turret, also shrike is buffed
+
+Displacement Field- Dodge chance increased to 40%
+
+Maelstrom-> Smart Servos- Reduce transformation time, and Fire on the Move
+
+
+RESEARCH LAB CHANGES:
+
+Orbital Strike- Now reduces topbar costs and cooldown
+
+Tech Reactor-> Plasma Shielding- Shields for all units
+
+Autogas-> Autoharvesting
+
+Command Center Reactor- Reduce build time of units (Also affects cost)
+
+Orbital Supply Depot- Increase Build Radius
+
+Micro Filtering- SCVs collect more minerals per gather action, without depleting the field more
+
+Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
+
+Vanadium Plating- Gives all Vanadium Plating upgrades permanently
+
+
+Hive Mind Emulator- Now a topbar power
+
+Psi Disruptor- Now a topbar power
+
+Regenerative Bio-steel- BEEG buff 2% health/s
+
+Cellular Reactor->
+
+Predator->
+
+Hercules-> Cellular Reactor
+
+Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than having to research every mission.
+
+Bunker Health-> Building Armour Now gives the Building Armour upgrade permanently, rather than having to research every mission.
 
 
 NEW IN-GAME UPGRADES:
@@ -105,6 +240,26 @@ Building Health and Armour [Engineering Bay]
 
 Defense turret range [Engineering Bay]
 
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee) [Engineering Bay]
+
+Infantry Health and Armour [Shadow Ops]
+
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
+
+Marine Ammo (3 variants, Incendiary(Better against bio/infantry), Explosive(Better against armoured), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun(Better against armoured, worse against infantry)) you can only pick 1 during a mission) [Barracks Tech Lab]
+
+Vehicle Health and Armour [Factory Tech Lab]
+
+Improved Engines-Ships move faster [Starport Tech Lab]
+
+Ship Health and armour [Starport Tech Lab]
+
+Blue Flame- all fire weapons deal more damage (Including Marine incendiary ammo) [Armoury]
+
+Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Armoury]
+
+Improved Shields-Requires the Shield Research. Improves shield stats [Fusion Core]
+
+Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Fusion Core]
