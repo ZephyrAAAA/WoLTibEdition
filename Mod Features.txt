@@ -65,6 +65,7 @@ The Outlaws:
 -Edited the Tech Lab tip to mention upgrades
 -Disabled the Vespene tip
 -Fixed the SCV tip for this mod
+-Infantry Ultra Capacitors are available to research on the Barracks tech lab
 
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
@@ -83,6 +84,9 @@ Zero Hour:
 -Changed Engineering Bay Tip to reflect what it does in this mod.
 -Changed Bunker tip to say it fits 1 squad, and to remove the mention of salvaging, since that's covered by the new Sell ability
 -Added a tip for Devastation Turret
+-Infantry Vanadium Plating is available to research on the Barracks tech lab
+-Hi-Sec Auto Tracking is available to research on the Engineering Bay
+-Building Armour is available to research on the Engineering Bay
 
 
 UNIT CHANGES:
