@@ -270,8 +270,8 @@ Weapon/Name/GhostSquad=Ghost Squad
 Weapon/Name/MarauderSquad=Marauder Squad
 Weapon/Name/MarineSquad=Marine Squad
 Weapon/Name/ReaperSquad=Reaper Squad
-Weapon/Tip/Cannon=Deals Cannon damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
-Weapon/Tip/Grenade=Deals Concussive damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
+Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
+Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
 Weapon/Tip/Ram=Only used against structures.
-Weapon/Tip/Rifle=Deals Rifle damage<n/>Excellent against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles and structures
-Weapon/Tip/Rocket=Deals Rocket damage<n/>Excellent against aircraft<n/>Good against vehicles, structures<n/>Bad against infantry
+Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles and structures
+Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles, structures<n/>Bad against infantry

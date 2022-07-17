@@ -146,6 +146,7 @@
         <Modification RadiusMultiplier="0.5" MoveSpeedMultiplier="1.75" WeaponScanLimit="0">
             <StateFlags index="SuppressFoodUsed" value="1"/>
             <StateFlags index="SuppressArmySelect" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
         <FinalEffect value="SquadDeathDamage"/>
