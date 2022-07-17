@@ -38,7 +38,7 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 MISSION SPECIFIC CHANGES:
 
 Liberation Day:
--Raynor now has a railgun that does Cannon damage.
+-Raynor now has a railgun that does Cannon damage and has 250 hp.
 -On the road into town, there is now 3 marines. 2 additional marines are present on Hard, and a Viking is present on Brutal.
 -There are now 3 marines starting at mine entrances on hard and brutal on the road.
 -The square now has 13 marines. On hard, 3 of them are replaced by a viking. On brutal, it is a firebat instead.
