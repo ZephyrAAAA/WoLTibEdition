@@ -107,6 +107,16 @@ Zero Hour:
 -Removed the trigger to give you a free SCV if you take bunker damage from the first attack wave on Hard or Lower.
 
 The Evacuation:
+-Deleted 3 mineral pallets
+-Moved one of the mineral pallets from the secret area to the starting road area
+-Removed the other 2 pallets in the secret area
+
+Devil's Playground:
+-You now need to collect 80k minerals, or 70k on Casual.
+-Tosh's miners now have a node, refinery, and 1 SCV, instead of a CC and 5 SCVs.
+
+Smash and Grab:
+-Stone Zealots now do 20x2 damage to ground, and have 1500/2500/3750/5000 health on Casual/Normal/Hard/Brutal.
 
 Outbreak:
 
@@ -127,8 +137,6 @@ Media Blitz:
 Piercing the Shroud:
 -Collecting the Chrono Rift device now unlocks a topbar power for future use.
 
-Devil's Playground:
-
 Welcome to the Jungle:
 
 Breakout:
@@ -137,8 +145,6 @@ Breakout:
 -Add abilities to influence what/when Jim sends attack waves
 
 Ghost of a Chance:
-
-Smash and Grab:
 
 The Dig:
 -The Laser Drill now has a really expensive (20K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K.
@@ -169,6 +175,8 @@ In Utter Darkness:
 
 
 UNIT CHANGES:
+
+Command Center- Can no longer load SCVs
 
 Firebat- Rework to be an expensive tanky unit, firing a stream of flame at range, dealing damage around the target.
 
@@ -252,13 +260,13 @@ Building Health and Armour [Engineering Bay]
 
 Defense turret range [Engineering Bay]
 
-Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee) [Engineering Bay]
-
-Infantry Health and Armour [Shadow Ops]
-
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
+
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee) [Engineering Bay]
+
+Infantry Health and Armour [Shadow Ops]
 
 Vehicle Health and Armour [Factory Tech Lab]
 
