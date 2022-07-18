@@ -46,7 +46,9 @@ Mercenaries are now a topbar power, with unlimited uses.
 
 You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
 
+Ghosts/Spectres have been reworked to be a unique Commando unit. Ghosts are better at taking down structures and tough enemies, Spectres are better at Crowd Control. 
 
+Bonus Objectives now generally give something good in-mission.
 
 
 MISSION SPECIFIC CHANGES:
@@ -80,6 +82,7 @@ The Outlaws:
 -Disabled the Vespene tip
 -Fixed the SCV tip for this mod
 -Infantry Ultra Capacitors are available to research on the Barracks tech lab
+-Attack waves now have somewhat randomized timing and composition.
 
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
@@ -171,21 +174,23 @@ Firebat- Rework to be an expensive tanky unit, firing a stream of flame at range
 
 Medic- Better Healing priority.
 
-Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
+Bunker- Has 4 slots, fits 1 squad
 
-Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
+Hellion- Now fires constantly
+
+Reaper- Guns now do Sniper damage, charges are now melee range.
 
 Wraith-
 
-Bunker- Has 4 slots, fits 1 squad
-
 Predator- Comparitively Cheaper, not locked behind research
-
-Hellion- Now fires constantly
 
 Thor- Reduce damage by 33%
 
 Diamondback- Increase speed to match hellion
+
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
+
+Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
 
 
 ARMORY UPGRADE CHANGES:
@@ -254,8 +259,6 @@ Infantry Health and Armour [Shadow Ops]
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
-
-Marine Ammo (3 variants, Incendiary(Better against bio/infantry), Explosive(Better against armoured), Railgun(Replaces the marine weapon with a slower-firing hader-hitting railgun(Better against armoured, worse against infantry)) you can only pick 1 during a mission) [Barracks Tech Lab]
 
 Vehicle Health and Armour [Factory Tech Lab]
 
