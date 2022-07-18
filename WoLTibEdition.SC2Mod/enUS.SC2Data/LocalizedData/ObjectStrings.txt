@@ -203,6 +203,7 @@ Validator/Name/HasRepairMoney=Has Repair Money
 Validator/Name/HoldingResources=Holding Resources
 Validator/Name/IsNotMedic=Is Not Medic
 Validator/Name/PlayerHasPower=Player Has Power
+Validator/Name/SquadTooFar=Squad Too Far
 Validator/Name/UnitNotInBunker=Unit Not In Bunker
 Weapon/EditorPrefix/ConcussiveGrenades=Devastation Turret -
 Weapon/EditorPrefix/FirebatSquad=Marauder -

@@ -64,9 +64,12 @@
     <CBehaviorBuff id="SquadBunkerUnload">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="0.5"/>
-        <Modification RadiusMultiplier="0" SightMaximum="0" MoveSpeedBonus="160">
+        <Modification RadiusMultiplier="0" SightMaximum="0" MoveSpeedBonus="10">
             <StateFlags index="SuppressCollision" value="1"/>
         </Modification>
+        <Period value="0.0625"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffect value="SquadStop"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadRangeDebuff">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -151,6 +154,8 @@
         </Modification>
         <FinalEffect value="SquadDeathDamage"/>
         <DisableValidatorArray value="UnitNotInBunker"/>
+        <Period value="1"/>
+        <PeriodicEffect value="SquadUnitTeleport"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
         <InfoFlags index="Hidden" value="1"/>

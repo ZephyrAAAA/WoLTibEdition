@@ -10,6 +10,11 @@
             <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilTransport id="BunkerTransport">
+        <MaxCargoSize value="4"/>
+        <LoadCargoEffect value="BunkerLoadIterate"/>
+        <UnloadCargoEffect value="BunkerUnloadIterate"/>
+    </CAbilTransport>
     <CAbilEffectTarget id="CCDepower">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="DepowerSwitch"/>
@@ -291,23 +296,15 @@
         </InfoArray>
         <MaxCount value="1"/>
     </CAbilArmMagazine>
-    <CAbilTransport id="BunkerTransport">
-        <MaxCargoSize value="4"/>
-        <LoadCargoEffect value="BunkerLoadIterate"/>
-        <UnloadCargoEffect value="BunkerUnloadIterate"/>
-    </CAbilTransport>
     <CAbilTransport id="BunkerTransportSquad" parent="BunkerTransport">
         <Name value="Abil/Name/BunkerTransportSquad"/>
-        <Alignment value="Neutral"/>
-        <AbilSetId value=""/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="BunkerTransportSquad"/>
+        <Range value="5"/>
         <MaxCargoCount value="8"/>
-        <MaxCargoSize value="2"/>
         <TotalCargoSpace value="8"/>
         <LoadCargoEffect value=""/>
+        <UnloadCargoBehavior value="SquadBunkerUnload"/>
         <UnloadCargoEffect value=""/>
-        <Range value="5"/>
     </CAbilTransport>
     <CAbilSpecialize id="CCBuild">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -918,6 +915,7 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="WaitForFood" value="0"/>
         <InfoArray index="Train1" Time="16">
+            <Resource index="Vespene" value="1600"/>
             <Button DefaultButtonFace="SCV"/>
             <Unit value="SCV2"/>
         </InfoArray>
