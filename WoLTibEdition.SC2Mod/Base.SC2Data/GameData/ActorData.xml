@@ -74,9 +74,13 @@
         <On index="115" removed="1"/>
     </CActorUnit>
     <CActorUnit id="Bunker2" parent="GenericUnitStandard" unitName="Bunker2">
-        <Model value="Invisible"/>
-        <BuildModel value="Invisible"/>
-        <PlacementModel value="Invisible"/>
+        <Model value="Bunker"/>
+        <BuildModel value="Bunker"/>
+        <PlacementModel value="Bunker"/>
+        <Macros value="SnowVisualUnitMacroMP"/>
+        <Macros value="BunkerTransportAnim"/>
+        <GlossaryAnim value="Stand,Work"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
     </CActorUnit>
     <CActorUnit id="AirTransport" parent="GenericUnitStandard" unitName="AirTransport">
         <Model value="Invisible"/>

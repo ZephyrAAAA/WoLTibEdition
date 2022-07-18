@@ -20,6 +20,12 @@
     <CValidatorPlayerRequirement id="PlayerHasPower">
         <Value value="PlayerHasPower"/>
     </CValidatorPlayerRequirement>
+    <CValidatorLocationCompareRange id="SquadTooFar">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Range value="5"/>
+        <Pathing value="1"/>
+    </CValidatorLocationCompareRange>
     <CValidatorUnitCompareVital id="TargetLifeNotFull">
         <ResultFailed value="RequiresHealTarget"/>
     </CValidatorUnitCompareVital>

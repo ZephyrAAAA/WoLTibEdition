@@ -589,9 +589,13 @@
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
         <CardLayouts index="0">
+            <LayoutButtons index="0" Face="PauseQueue" AbilCmd="PauseResumeQueue,On"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Addon,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="InfantryUltraCapacitors" Type="AbilCmd" AbilCmd="BarracksTechLabResearch,Research4" Row="1" Column="0"/>
             <LayoutButtons Face="InfantryVanadiumPlating" Type="AbilCmd" AbilCmd="BarracksTechLabResearch,Research5" Row="1" Column="1"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
         </CardLayouts>
+        <AbilArray Link="PauseResumeQueue"/>
     </CUnit>
     <CUnit id="BarracksTechReactor">
         <ArmorType value="Hero"/>
@@ -721,7 +725,7 @@
         <AbilArray index="5" Link="healRedirect"/>
         <AbilArray index="6" Link="BunkerAttack"/>
         <AbilArray index="7" Link="BunkerStop"/>
-        <AbilArray index="8" removed="1"/>
+        <AbilArray index="8" Link="Rally"/>
         <AbilArray index="9" removed="1"/>
         <AbilArray index="10" removed="1"/>
         <AbilArray index="11" removed="1"/>
@@ -740,8 +744,6 @@
             <LayoutButtons index="16" removed="1"/>
         </CardLayouts>
         <SeparationRadius value="0"/>
-        <Footprint value=""/>
-        <PlacementFootprint value=""/>
         <MinimapRadius value="0"/>
         <TacticalAI value="Bunker2"/>
         <LeaderAlias value="Bunker2"/>
@@ -1948,6 +1950,12 @@
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+        <AbilArray Link="PauseResumeQueue"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="PauseQueue" AbilCmd="PauseResumeQueue,On"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Addon,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="FactoryTechReactor">
         <ArmorType value="Hero"/>
@@ -4301,6 +4309,12 @@
         <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+        <AbilArray Link="PauseResumeQueue"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="PauseQueue" AbilCmd="PauseResumeQueue,On"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Addon,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="StarportTechReactor">
         <ArmorType value="Hero"/>
