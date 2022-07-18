@@ -68,6 +68,9 @@
         <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
         <CaseDefault value="DepowerRB"/>
     </CEffectSwitch>
+    <CEffectDamage id="EyeBeamsGroundLineDamage">
+        <Amount value="20"/>
+    </CEffectDamage>
     <CEffectDamage id="ImpalerTentacleU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="30"/>
@@ -90,12 +93,13 @@
         <AttributeBonus index="Massive" value="0"/>
         <Amount value="22"/>
     </CEffectDamage>
+    <CEffectDamage id="ParticleDisruptorsU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="14"/>
+    </CEffectDamage>
     <CEffectModifyPlayer id="PickupGas100">
         <Resources index="Minerals" value="2000"/>
         <Resources index="Vespene" value="0"/>
-    </CEffectModifyPlayer>
-    <CEffectModifyPlayer id="PickupMinerals100">
-        <Resources index="Minerals" value="1000"/>
     </CEffectModifyPlayer>
     <CEffectDamage id="PrismaticBeamMUx1">
         <AttributeBonus index="Armored" value="0"/>
@@ -364,9 +368,7 @@
         <EditorCategories value=""/>
         <WhichLocation Value="CasterUnit"/>
         <Flags index="Channeled" value="1"/>
-        <Flags index="PersistUntilDestroyed" value="1"/>
         <InitialEffect value="SquadAttackIterate"/>
-        <FinalEffect value="SquadStopIterate"/>
         <PeriodicEffectArray value="SquadAttackIterate"/>
         <PeriodicPeriodArray value="0.25"/>
     </CEffectCreatePersistent>

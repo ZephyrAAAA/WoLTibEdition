@@ -143,6 +143,7 @@
         <Modification RangedWeaponRange="2">
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
+        <FinalEffect value="SquadStop"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadUnit">
         <EditorCategories value="AbilityorEffectType:Units"/>
