@@ -32,11 +32,11 @@
     <CButton id="PauseQueue">
         <Icon value="EditorData\Images\CutSceneEditor\Playhead\Control_Pause.tga"/>
         <HotkeyAlias value="Cancel"/>
-        <DefaultButtonLayout Row="4" Column="2" CardId="1"/>
+        <DefaultButtonLayout Row="4" Column="2"/>
     </CButton>
     <CButton id="ResumeQueue">
         <Icon value="Assets\Textures\sc2_ui_newplayerxp_playmovie.dds"/>
-        <DefaultButtonLayout Row="4" Column="1" CardId="1"/>
+        <DefaultButtonLayout Row="4" Column="1"/>
     </CButton>
     <CButton id="Sell">
         <Icon value="Assets\Textures\btn-tips-credit.dds"/>
