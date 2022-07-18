@@ -28,6 +28,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="D8Charge">
         <AttackType value="Pierce"/>
+        <Options index="Melee" value="1"/>
+        <Range value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogFlameThrower">
         <Range value="4"/>
@@ -210,11 +212,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>
-        <EditorCategories value=""/>
-        <Tip value="Weapon/Tip/ReaperSquad"/>
-        <DisplayAttackCount value="0"/>
+        <Tip value="Weapon/Tip/Sniper"/>
         <DisplayName value="Weapon/Name/ReaperSquad"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Marker Link="Weapon/ReaperSquad"/>
         <Cost>
             <Cooldown Link="Weapon/ReaperSquad"/>
@@ -223,6 +222,21 @@
         <Effect value="SquadAttack"/>
         <RandomDelayMin value="-1.05"/>
         <RandomDelayMax value="-1.05"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ReaperSquadCharge" parent="D8Charge">
+        <Name value="Weapon/Name/ReaperSquadCharge"/>
+        <DisplayName value="Weapon/Name/ReaperSquadCharge"/>
+        <MinScanRange value="2"/>
+        <Range value="1.5"/>
+        <Marker Link="Weapon/ReaperSquadCharge"/>
+        <Cost>
+            <Cooldown Link="Weapon/ReaperSquadCharge"/>
+        </Cost>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <RandomDelayMin value="-1.75"/>
+        <RandomDelayMax value="-1.75"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>

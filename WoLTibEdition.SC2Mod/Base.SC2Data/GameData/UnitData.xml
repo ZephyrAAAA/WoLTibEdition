@@ -4707,12 +4707,16 @@
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <Speed value="2.9531"/>
+        <Speed value="3.8437"/>
         <AbilArray Link="ReaperSquad"/>
         <WeaponArray Link="ReaperSquad"/>
+        <WeaponArray Link="ReaperSquadCharge"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <LifeStart value="4"/>
+        <LifeMax value="4"/>
+        <Mover value="Colossus"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>

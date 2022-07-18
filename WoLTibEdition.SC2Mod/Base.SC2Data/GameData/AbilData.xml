@@ -1123,7 +1123,7 @@
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
         <Leash value="0.2"/>
-        <InfoArray index="Ammo1" CountStart="8" Manage="Recall" Unit="Reaper">
+        <InfoArray index="Ammo1" CountStart="4" Manage="Recall" Unit="Reaper">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Marine" State="Suppressed"/>
@@ -1131,15 +1131,11 @@
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
         <EffectArray index="Launch" value="TransferKillsToCaster"/>
-        <ExternalAngle value="22.5"/>
-        <ExternalAngle value="67.5"/>
-        <ExternalAngle value="112.5"/>
-        <ExternalAngle value="157.5"/>
-        <ExternalAngle value="202.5"/>
-        <ExternalAngle value="247.5"/>
-        <ExternalAngle value="292.5"/>
-        <ExternalAngle value="337.5"/>
-        <MaxCount value="8"/>
+        <ExternalAngle value="45"/>
+        <ExternalAngle value="135"/>
+        <ExternalAngle value="214.9914"/>
+        <ExternalAngle value="304.9914"/>
+        <MaxCount value="4"/>
     </CAbilArmMagazine>
     <CAbilHarvest id="SCVHarvest">
         <ResourceAmountCapacity index="Minerals" value="1400"/>

@@ -141,7 +141,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);
 		Wait(1, c_timeGame);
 		resourceGroup = UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
-	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) || DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) > 5);
+	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) && DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) < 5);
 	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
 		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
 	}
@@ -501,6 +501,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		DialogControlSetVisible(topbarCommandPanel, PlayerGroupAll(), false);
 	}
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
+	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
+	PlayerModifyPropertyInt(1, c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 1), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 2), true);
@@ -552,8 +554,6 @@ bool INI_Func (bool testConds, bool runActions) {
 	int panel;
 	
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
-	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
-	PlayerModifyPropertyInt(1, c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	rate = 117;
 	spendrate = 100;
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);

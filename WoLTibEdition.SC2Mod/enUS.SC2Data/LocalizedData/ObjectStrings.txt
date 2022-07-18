@@ -211,3 +211,5 @@ Weapon/EditorPrefix/GhostSquad=Ghost -
 Weapon/EditorPrefix/MarauderSquad=Marauder -
 Weapon/EditorPrefix/MarineSquad=Marine -
 Weapon/EditorPrefix/ReaperSquad=Reaper -
+Weapon/EditorPrefix/ReaperSquadCharge=Reaper - Squads -
+Weapon/EditorSuffix/ReaperSquadCharge=(Thrown Weapon)
