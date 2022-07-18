@@ -121,6 +121,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
+        <Period value="0.55"/>
+        <Backswing value="0.375"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -226,7 +228,7 @@
     <CWeaponLegacy id="ReaperSquadCharge" parent="D8Charge">
         <Name value="Weapon/Name/ReaperSquadCharge"/>
         <DisplayName value="Weapon/Name/ReaperSquadCharge"/>
-        <MinScanRange value="2"/>
+        <MinScanRange value="5.5"/>
         <Range value="1.5"/>
         <Marker Link="Weapon/ReaperSquadCharge"/>
         <Cost>

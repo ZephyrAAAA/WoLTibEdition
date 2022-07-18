@@ -1053,7 +1053,7 @@
         <InfoArray index="Ammo1" CountStart="6" Manage="Recall" Unit="Marine">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed" Requirements="LearnCloakingField"/>
+            <Button DefaultButtonFace="Marine" State="Suppressed"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -1104,7 +1104,6 @@
     </CAbilMorph>
     <CAbilBehavior id="PauseResumeQueue">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DefaultButtonCardId value="1"/>
         <CmdButtonArray index="On" DefaultButtonFace="PauseQueue">
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
