@@ -1104,14 +1104,8 @@
     </CAbilMorph>
     <CAbilBehavior id="PauseResumeQueue">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <CmdButtonArray index="On" DefaultButtonFace="PauseQueue">
-            <Flags index="UseDefaultButton" value="1"/>
-            <Flags index="CreateDefaultButton" value="1"/>
-        </CmdButtonArray>
-        <CmdButtonArray index="Off" DefaultButtonFace="ResumeQueue">
-            <Flags index="UseDefaultButton" value="1"/>
-            <Flags index="CreateDefaultButton" value="1"/>
-        </CmdButtonArray>
+        <CmdButtonArray index="On" DefaultButtonFace="PauseQueue"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="ResumeQueue"/>
         <Flags index="Toggle" value="1"/>
         <BehaviorArray value="QueuePaused"/>
     </CAbilBehavior>

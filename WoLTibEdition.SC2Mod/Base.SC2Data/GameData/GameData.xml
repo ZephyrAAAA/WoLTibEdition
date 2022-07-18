@@ -20,11 +20,11 @@
             <ArmorFactor index="None" value="1"/>
         </AttackArmorTable>
         <AttackArmorTable index="Siege" SupportedFilters="-;-">
-            <ArmorFactor index="Small" value="0.25"/>
+            <ArmorFactor index="Small" value="0.5"/>
             <ArmorFactor index="Medium" value="0.75"/>
             <ArmorFactor index="Large" value="0.75"/>
             <ArmorFactor index="Fort" value="1"/>
-            <ArmorFactor index="Normal" value="0.25"/>
+            <ArmorFactor index="Normal" value="0.5"/>
             <ArmorFactor index="Divine" value="1"/>
             <ArmorFactor index="None" value="1"/>
         </AttackArmorTable>

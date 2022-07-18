@@ -50,7 +50,7 @@
         <Frame type="CommandButton" name="CommandButton00" template="CCTopbar/CCCommandButtonTemplate">
             <Anchor side="Top" relative="$parent" pos="Min" offset="11"/>
             <Anchor side="Bottom" relative="$this" pos="Min" offset="0"/>
-            <Anchor side="Left" relative="$parent" pos="Min" offset="134"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
             <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
             <TooltipFrame val="CCCommandTooltip"/>
             <HotkeyUse val="CommanderAbility0"/>
@@ -73,50 +73,86 @@
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton03" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton02" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 		
         <Frame type="CommandButton" name="CommandButton04" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton03" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
         
         <Frame type="CommandButton" name="CommandButton05" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton04" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
         <Frame type="CommandButton" name="CommandButton06" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton05" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton07" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton06" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton08" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton07" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton09" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton08" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton10" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton09" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton11" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton10" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton12" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton11" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton13" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton12" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton14" template="CCTopbar/CCCommandButtonTemplate">
-            <Visible val="false"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton13" pos="Max" offset="1"/>
+            <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
+            <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="Label" name="RowText0">
