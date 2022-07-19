@@ -68,8 +68,36 @@
         <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
         <CaseDefault value="DepowerRB"/>
     </CEffectSwitch>
+    <CEffectSet id="DevilDogSet">
+        <EffectArray index="1" value="DevilDogSearchArea"/>
+    </CEffectSet>
     <CEffectDamage id="EyeBeamsGroundLineDamage">
         <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="Firebat">
+        <OffsetVectorStartLocation Value="SourceUnit"/>
+        <PeriodCount value="8"/>
+        <PeriodicOffsetArray value="0,-2.5,0"/>
+        <PeriodicOffsetArray value="0,-3,0"/>
+        <PeriodicOffsetArray value="0,-3.5,0"/>
+        <PeriodicOffsetArray value="0,-4,0"/>
+        <PeriodicPeriodArray index="0" value="0"/>
+        <PeriodicPeriodArray index="1" removed="1"/>
+        <PeriodicPeriodArray index="2" removed="1"/>
+        <PeriodicPeriodArray index="3" removed="1"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="FirebatE">
+        <IncludeArray Effect="Firebat" Value="Target"/>
+        <AreaArray index="0" Effect="FirebatUFull"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FirebatSet">
+        <EffectArray index="1" value="FirebatE"/>
+    </CEffectSet>
+    <CEffectDamage id="FirebatUFull">
+        <AttributeBonus index="Light" value="0"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="6"/>
     </CEffectDamage>
     <CEffectDamage id="ImpalerTentacleU">
         <AttributeBonus index="Armored" value="0"/>
@@ -231,7 +259,6 @@
     </CEffectRemoveBehavior>
     <CEffectCreatePersistent id="DevilDogCreatePersistent">
         <PeriodCount value="8"/>
-        <PeriodicEffectArray index="0" value="DevilDogDamage"/>
         <PeriodicOffsetArray value="0,-2.5,0"/>
         <PeriodicOffsetArray value="0,-3,0"/>
         <PeriodicOffsetArray value="0,-3.5,0"/>
@@ -241,10 +268,8 @@
         <PeriodicPeriodArray index="3" removed="1"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="DevilDogDamage">
-        <ValidatorArray index="0" removed="1"/>
         <AttributeBonus index="Light" value="0"/>
         <Amount value="7.5"/>
-        <AreaArray Radius="0.6" Fraction="1" Validator="noMarkers"/>
         <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
@@ -253,26 +278,6 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
-    <CEffectCreatePersistent id="Firebat">
-        <PeriodCount value="8"/>
-        <PeriodicEffectArray index="0" value="FirebatUFull"/>
-        <PeriodicOffsetArray value="0,-2.5,0"/>
-        <PeriodicOffsetArray value="0,-3,0"/>
-        <PeriodicOffsetArray value="0,-3.5,0"/>
-        <PeriodicOffsetArray value="0,-4,0"/>
-        <PeriodicPeriodArray index="1" removed="1"/>
-        <PeriodicPeriodArray index="2" removed="1"/>
-        <PeriodicPeriodArray index="3" removed="1"/>
-    </CEffectCreatePersistent>
-    <CEffectDamage id="FirebatUFull">
-        <AttributeBonus index="Light" value="0"/>
-        <Amount value="6"/>
-        <AreaArray Radius="0.6" Fraction="1" Validator="noMarkers"/>
-        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <ExcludeArray Value="Target"/>
-        <Kind value="Ranged"/>
-        <KindSplash value="Splash"/>
-    </CEffectDamage>
     <CEffectCreatePersistent id="MedicSquadAcquire">
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="NotWarpingIn"/>
