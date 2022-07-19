@@ -41,9 +41,6 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Range value="4"/>
-        <Marker>
-            <MatchFlags index="Id" value="0"/>
-        </Marker>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
         <DamagePoint value="0"/>
@@ -164,7 +161,9 @@
         <Name value="Weapon/Name/FirebatSquad"/>
         <EditorCategories value=""/>
         <DisplayName value="Weapon/Name/FirebatSquad"/>
-        <Marker Link="Weapon/FirebatSquad"/>
+        <Marker Link="Weapon/FirebatSquad">
+            <MatchFlags index="Id" value="0"/>
+        </Marker>
         <Cost>
             <Cooldown Link="Weapon/FirebatSquad"/>
         </Cost>

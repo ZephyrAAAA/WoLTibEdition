@@ -425,9 +425,9 @@
         <EffectArray index="1" Operation="Multiply" Reference="Effect,Ram,Amount" Value="1.3"/>
         <EffectArray index="2" Reference="Weapon,NeedleClaws,Level"/>
         <EffectArray index="3" Operation="Multiply" Reference="Effect,VolatileBurstU,Amount" Value="1.4"/>
-        <EffectArray index="4" Operation="Multiply" Reference="Effect,VolatileBurstU2,Amount" Value="1.4"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,VolatileBurstU2,Amount" Value="1.2"/>
         <EffectArray index="5" Operation="Multiply" Reference="Effect,VolatileBurstFriendlyUnitDamage,Amount" Value="1.4"/>
-        <EffectArray index="6" Operation="Multiply" Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="1.4"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,VolatileBurstFriendlyBuildingDamage,Amount" Value="1.2"/>
         <EffectArray index="7" Reference="Weapon,VolatileBurstDummy,Level"/>
         <EffectArray index="8" Operation="Multiply" Reference="Effect,InfestedClawsDamage,Amount" Value="1.2"/>
         <EffectArray index="9" Reference="Weapon,InfestedClaws,Level" Value="1"/>

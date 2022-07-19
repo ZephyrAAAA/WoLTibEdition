@@ -1214,6 +1214,7 @@
             <Unit value="Wraith"/>
         </InfoArray>
         <InfoArray index="Train9" Time="35">
+            <Resource index="Vespene" value="3500"/>
             <Button DefaultButtonFace="CommandCenter"/>
             <Unit value="CommandCenter2Flying"/>
         </InfoArray>
