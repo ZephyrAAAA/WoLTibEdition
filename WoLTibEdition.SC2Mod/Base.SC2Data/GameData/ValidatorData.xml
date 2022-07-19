@@ -29,6 +29,9 @@
     <CValidatorUnitCompareVital id="TargetLifeNotFull">
         <ResultFailed value="RequiresHealTarget"/>
     </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="TibNodeNonStarter">
+        <Behavior value="TibNodeNonStarter"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
         <Behavior value="BunkerWeaponRangeBonus"/>
     </CValidatorUnitCompareBehaviorCount>

@@ -224,6 +224,12 @@
         <HarvestAmount value="1"/>
         <EmptyHarvestAmount value="1"/>
     </CBehaviorResource>
+    <CBehaviorBuff id="TibNodeNonStarter">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <Period value="10"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="TibNodeMedium">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

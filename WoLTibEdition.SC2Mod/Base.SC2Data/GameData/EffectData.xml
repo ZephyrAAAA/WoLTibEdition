@@ -437,6 +437,8 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="TibNodeNonStarter"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeLargeStarter22">
         <EditorCategories value=""/>
@@ -453,6 +455,8 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="TibNodeNonStarter"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeMediumGrow">
         <EditorCategories value=""/>
@@ -605,6 +609,8 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="TibNodeNonStarter"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreateUnit id="TibNodeMedium">
         <EditorCategories value=""/>
@@ -629,6 +635,8 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="TibNodeNonStarter"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeSmallGrow">
         <EditorCategories value=""/>
@@ -669,6 +677,8 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="TibNodeNonStarter"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreateUnit id="TibNodeSmall">
         <EditorCategories value=""/>
@@ -701,6 +711,8 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
+        <ValidatorArray value="TibNodeNonStarter"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectRemoveBehavior id="BuildingRepairRB">
         <BehaviorLink value="BuildingRepair"/>
