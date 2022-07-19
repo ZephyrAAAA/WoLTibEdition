@@ -75,9 +75,10 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="30"/>
     </CEffectDamage>
-    <CEffectCreatePersistent id="InfernalFlameThrowerCP">
-        <PeriodicEffectArray index="0" value="InfernalFlameThrower"/>
-    </CEffectCreatePersistent>
+    <CEffectDamage id="InfernalFlameThrower">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="15"/>
+    </CEffectDamage>
     <CEffectIssueOrder id="MarineSquadStim">
         <EditorCategories value=""/>
         <Abil value="Stimpack"/>
@@ -269,14 +270,8 @@
         <AreaArray Radius="0.6" Fraction="1" Validator="noMarkers"/>
         <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <ExcludeArray Value="Target"/>
-    </CEffectDamage>
-    <CEffectDamage id="InfernalFlameThrower">
-        <AttributeBonus index="Light" value="0"/>
-        <Amount value="15"/>
-        <AreaArray Radius="0.15" Fraction="1" Validator="noMarkers"/>
-        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <SearchFlags index="OffsetByUnitRadius" value="0"/>
-        <SearchFlags index="SameCliff" value="0"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="MedicSquadAcquire">
         <ValidatorArray value="noMarkers"/>

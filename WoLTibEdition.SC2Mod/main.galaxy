@@ -503,6 +503,11 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	PlayerModifyPropertyInt(1, c_playerPropVespene, c_playerPropOperSetTo, 2000000);
+	TechTreeAbilityAllow(1, AbilityCommand("FirebatSquad", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("MarauderSquad", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("MarineSquad", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("MedicSquad", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("ReaperSquad", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 1), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 2), true);
