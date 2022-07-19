@@ -1066,6 +1066,12 @@
         <ExternalAngle value="329.9963"/>
         <MaxCount value="6"/>
     </CAbilArmMagazine>
+    <CAbilEffectInstant id="SquadStimpack" parent="Stimpack">
+        <Name value="Abil/Name/SquadStimpack"/>
+        <DataCollection value="MarineSquadStimpack"/>
+        <Effect index="0" value="MarineSquadStimIterate"/>
+        <Cost index="0" removed="1"/>
+    </CAbilEffectInstant>
     <CAbilArmMagazine id="MedicSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>

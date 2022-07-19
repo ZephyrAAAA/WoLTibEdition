@@ -33,6 +33,7 @@ Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
 Abil/Name/ReaperSquad=Reaper Squad
+Abil/Name/SquadStimpack=Squad - Stimpack
 Abil/Name/Starport2AddOns=AddOns
 Abil/Name/Starport2Land=Land
 Abil/Name/Starport2LiftOff=Lift Off
@@ -169,6 +170,8 @@ Effect/Name/DepowerSwitch=Depower Switch
 Effect/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
 Effect/Name/DevastatorTurretPlace=DevastatorTurretPlace
 Effect/Name/DropOffStun=Drop Off Stun
+Effect/Name/MarineSquadStim=Marine Squad Stim
+Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
@@ -278,5 +281,5 @@ Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against v
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
 Weapon/Tip/Ram=Only used against structures.
 Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles and structures
-Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles, structures<n/>Bad against infantry
+Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles, structures<n/>Moderate against infantry
 Weapon/Tip/Sniper=Deals <c val="FFBF00">Sniper</c> Damage<n/>Effective against Infantry<n/>Abysmal against all other targets
