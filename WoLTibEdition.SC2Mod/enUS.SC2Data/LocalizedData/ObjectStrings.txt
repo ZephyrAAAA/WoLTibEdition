@@ -17,6 +17,7 @@ Abil/EditorPrefix/FusionCore2Research=Fusion Core -
 Abil/EditorPrefix/MedicSquadAcquire=Medic -
 Abil/EditorPrefix/MercCompoundResearch2=Merc Compound -
 Abil/EditorPrefix/OrbitalCommandLand2=Surveillance Station -
+Abil/EditorPrefix/SquadStimpack=Marine -
 Abil/EditorPrefix/Starport2AddOns=Starport -
 Abil/EditorPrefix/Starport2Land=Starport -
 Abil/EditorPrefix/Starport2LiftOff=Starport -
