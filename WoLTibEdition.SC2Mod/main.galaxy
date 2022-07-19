@@ -546,6 +546,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	for (lv_i = 0; lv_i < 8; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", lv_i)));
 	}
+	libCamp_gf_SetStoryState(libCamp_ge_StoryStateID_StoryStateAchievementDisabled, 1);
+	AchievementsDisable(1);
 	return true;
 }
 
@@ -587,7 +589,6 @@ bool INI_Func (bool testConds, bool runActions) {
 	DialogControlSetVisible(lv_lastFrame, PlayerGroupAll(), true);
 	PlayerSetState(1, c_playerStateFormationMove, true);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
-	libCamp_gf_SetStoryState(libCamp_ge_StoryStateID_StoryStateAchievementDisabled, 1);
 	return true;
 }
 
