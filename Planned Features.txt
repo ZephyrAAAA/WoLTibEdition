@@ -202,6 +202,8 @@ Battlecruiser- Can fire on the move. Can fire at both air and ground targets sim
 
 Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
 
+Medivac- Heals units inside it
+
 
 ARMORY UPGRADE CHANGES:
 
@@ -221,7 +223,12 @@ Maelstrom-> Smart Servos- Reduce transformation time, and Fire on the Move
 
 Concussive Shells- Affects the Devastation Turret
 
+Titanium Shell- Buffs health of Devastation Turret as well
+
 Hellstorm- Also makes Devastation Turret do area damage
+
+U-238 Shells- Increases damage, instead of damage vs light
+
 
 
 RESEARCH LAB CHANGES:
@@ -260,6 +267,7 @@ Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than hav
 Bunker Health-> Building Armour Now gives the Building Armour upgrade permanently, rather than having to research every mission.
 
 
+
 NEW IN-GAME UPGRADES:
 
 Building Health and Armour [Engineering Bay]
@@ -270,7 +278,7 @@ Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
-Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee) [Engineering Bay]
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee, Seige Tank) [Engineering Bay]
 
 Infantry Health and Armour [Shadow Ops]
 
@@ -280,9 +288,9 @@ Improved Engines-Ships move faster [Starport Tech Lab]
 
 Ship Health and armour [Starport Tech Lab]
 
-Blue Flame- all fire weapons deal more damage (Including Marine incendiary ammo) [Armoury]
+Blue Flame- all fire weapons deal more damage [Armoury]
 
-Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded, Marine Railgun [Armoury]
+Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded [Armoury]
 
 Improved Shields-Requires the Shield Research. Improves shield stats [Fusion Core]
 
