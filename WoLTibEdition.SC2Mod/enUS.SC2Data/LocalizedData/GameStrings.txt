@@ -179,6 +179,7 @@ Effect/Name/RallyIterate=Rally Iterate
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
 Effect/Name/ResourceCost=Resource Cost
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
+Effect/Name/ShrikeTurretCP=Shrike Turret
 Effect/Name/SquadAttack=Squad Attack
 Effect/Name/SquadAttackAB=Squad Attack AB
 Effect/Name/SquadAttackIterate=Squad Attack Iterate

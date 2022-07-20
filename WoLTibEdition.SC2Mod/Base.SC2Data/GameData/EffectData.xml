@@ -182,6 +182,16 @@
             <Resource index="Minerals" value="-2"/>
         </SalvageFactor>
     </CEffectModifyUnit>
+    <CEffectCreatePersistent id="ShrikeTurretCP">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="ShrikeTurretDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="SquadBunkerUnload">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>

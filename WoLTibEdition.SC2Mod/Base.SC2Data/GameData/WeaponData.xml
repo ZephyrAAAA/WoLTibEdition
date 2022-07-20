@@ -242,6 +242,10 @@
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ShrikeTurret">
+        <DisplayAttackCount value="2"/>
+        <Effect value="ShrikeTurretCP"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
