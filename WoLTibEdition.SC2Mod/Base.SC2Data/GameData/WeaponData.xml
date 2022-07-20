@@ -244,6 +244,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ShrikeTurret">
         <DisplayAttackCount value="2"/>
+        <AttackType value="Normal"/>
         <Effect value="ShrikeTurretCP"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">

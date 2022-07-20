@@ -253,7 +253,8 @@
             <Button DefaultButtonFace="Marine" State="Restricted" Requirements="JumboBunkerNotResearched"/>
             <Unit value="MarineSquad"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="40">
+        <InfoArray index="Train2" Time="8">
+            <Resource index="Vespene" value="800"/>
             <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="ReaperSquad"/>
         </InfoArray>

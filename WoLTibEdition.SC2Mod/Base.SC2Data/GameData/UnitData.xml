@@ -940,6 +940,9 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="Colonist">
+        <ArmorType value="Small"/>
+    </CUnit>
     <CUnit id="ColonistBiodome">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
@@ -951,6 +954,9 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="ColonistFemale">
+        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="ColonistHut">
         <ArmorType value="Hero"/>
@@ -5123,6 +5129,7 @@
         <Collide index="Small" value="0"/>
         <BehaviorArray index="0" Link="TibVeinMinerals"/>
         <BehaviorArray Link="TibGrow"/>
+        <Radius value="0.5"/>
         <SeparationRadius value="0.5"/>
         <Footprint value=""/>
     </CUnit>
