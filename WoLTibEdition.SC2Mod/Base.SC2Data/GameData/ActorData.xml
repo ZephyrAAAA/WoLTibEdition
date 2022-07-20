@@ -1238,6 +1238,7 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-General-MineralField.dds"/>
         </Wireframe>
+        <Scale value="1.500000"/>
     </CActorUnit>
     <CActorSplat id="TibVeinSplat" parent="MineralFieldSplatBase">
         <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
