@@ -21,7 +21,6 @@ bool noTopBar;
 int topbarCastingPanel;
 int topbarPanel;
 int topbarCommandPanel;
-bool disableScript;
 
 void buildingSwap (unit building) {
 	if (UnitGetType(building) == "CommandCenter") {
@@ -54,12 +53,6 @@ void buildingSwap (unit building) {
 bool DisableTopBar () {
 	noTopBar = true;
 	return noTopBar;
-}
-
-bool DisableCCScript () {
-	disableScript = true;
-	DisableTopBar();
-	return disableScript;
 }
 
 bool Gather_Func (bool testConds, bool runActions) {

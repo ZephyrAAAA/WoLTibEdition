@@ -4,7 +4,6 @@
         <Root>
             <Item Type="CustomScript" Library="3B48F5E9" Id="8B5EDD23"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="54F2C3F5"/>
-            <Item Type="FunctionDef" Library="3B48F5E9" Id="AFB3B43D"/>
         </Root>
         <Element Type="CustomScript" Id="8B5EDD23">
             <Identifier>Imports</Identifier>
@@ -14,13 +13,6 @@
             <InitFunc>main</InitFunc>
         </Element>
         <Element Type="FunctionDef" Id="54F2C3F5">
-            <FlagCall/>
-            <FlagNative/>
-            <ReturnType>
-                <Type Value="bool"/>
-            </ReturnType>
-        </Element>
-        <Element Type="FunctionDef" Id="AFB3B43D">
             <FlagCall/>
             <FlagNative/>
             <ReturnType>
