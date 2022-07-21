@@ -494,7 +494,10 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		if (currentLoop == null) { break; }
 		buildingSwap(currentLoop);
 	}
-	if (!noTopBar) {
+	if (noTopBar) {
+		DialogControlSetVisible(topbarCastingPanel, PlayerGroupAll(), false);
+		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), false);
+		DialogControlSetVisible(topbarCommandPanel, PlayerGroupAll(), false);
 	}
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
