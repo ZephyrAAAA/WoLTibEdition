@@ -1,5 +1,4 @@
 include "TriggerLibs/NativeLib"
-include "TriggerLibs/CampaignLib_h"
 
 trigger gather;
 trigger returning;
@@ -59,6 +58,7 @@ bool DisableTopBar () {
 
 bool DisableCCScript () {
 	disableScript = true;
+	DisableTopBar();
 	return disableScript;
 }
 
@@ -494,10 +494,6 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	int lv_i;
 	unitgroup swaps;
 	unit currentLoop;
-	
-	if (DisableCCScript) {
-		return true;
-	}
 	swaps = UnitGroup(null, 1, RegionEntireMap(), UnitFilterStr("-;Dead,Missile,Hidden"), 0);
 	
 	for (lv_i = UnitGroupCount(swaps, c_unitCountAlive);; lv_i -= 1) {
@@ -506,28 +502,6 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		buildingSwap(currentLoop);
 	}
 	if (!noTopBar) {
-		UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
-		topbarUnit = UnitLastCreated();
-		DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/FullscreenUpperContainer/CCGlobalCastingPanel");
-		topbarCastingPanel = DialogControlLastCreated();
-		DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
-		DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypePanel, "CCTopbar/CCPanelTemplate");
-		topbarPanel = DialogControlLastCreated();
-		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), true);
-		DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
-		DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), 1, 1);
-		DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, -100, -100);
-		DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
-		lv_lastFrame = DialogControlLastCreated();
-		DialogControlHookup(topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
-		lv_lastFrame = DialogControlLastCreated();
-		DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
-		lv_lastFrame = DialogControlLastCreated();
-		DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
-		DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
-		DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
-		libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
-		topbarCommandPanel = DialogControlLastCreated();
 	}
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
@@ -575,8 +549,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	for (lv_i = 0; lv_i < 8; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", lv_i)));
 	}
-	//libCamp_gt_TS_CheatUsed_Func(false, true);
-	libCamp_gf_SetStoryState(libCamp_ge_StoryStateID_StoryStateAchievementDisabled, 1);
+	ConversationDataStateSetValue("StoryState|AchievementDisabled", 1);
 	AchievementsDisable(1); //one of these should work
 	return true;
 }
@@ -591,6 +564,28 @@ bool INI_Func (bool testConds, bool runActions) {
 	int lv_lastFrame;
 	int panel;
 	
+	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
+	topbarUnit = UnitLastCreated();
+	DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/FullscreenUpperContainer/CCGlobalCastingPanel");
+	topbarCastingPanel = DialogControlLastCreated();
+	DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
+	DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypePanel, "CCTopbar/CCPanelTemplate");
+	topbarPanel = DialogControlLastCreated();
+	DialogControlSetVisible(topbarPanel, PlayerGroupAll(), true);
+	DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
+	DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), 1, 1);
+	DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, -100, -100);
+	DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
+	lv_lastFrame = DialogControlLastCreated();
+	DialogControlHookup(topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
+	lv_lastFrame = DialogControlLastCreated();
+	DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
+	lv_lastFrame = DialogControlLastCreated();
+	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
+	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
+	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
+	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
+	topbarCommandPanel = DialogControlLastCreated();
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	rate = 117;
 	spendrate = 100;
