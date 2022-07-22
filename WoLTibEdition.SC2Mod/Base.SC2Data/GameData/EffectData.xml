@@ -48,6 +48,38 @@
         <Abil value="BunkerTransportSquad"/>
         <AbilCmdIndex value="1"/>
     </CEffectIssueOrder>
+    <CEffectCreatePersistent id="CollapsibleRockTowerCPFinalPurifier02">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/CollapsibleRockTowerCPPurifier02"/>
+        <WhichLocation Value="CasterUnit"/>
+        <FinalOffset value="0,-5,0"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="CollapsibleRockTowerCreateDebrisPurifier02"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="CollapsibleRockTowerCPPurifier02">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <FinalEffect value="CollapsibleRockTowerCPFinalPurifier02"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="CollapsibleRockTowerCreateDebrisPurifier02">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <Origin Effect="CollapsibleRockTowerCreateDebrisPurifier02"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="SetFacing" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnOwner Value="Neutral"/>
+        <SpawnUnit value="DestructibleRock6x6"/>
+        <SpawnRange value="0"/>
+    </CEffectCreateUnit>
     <CEffectApplyBehavior id="DepowerAB">
         <EditorCategories value=""/>
         <Behavior value="Depowered"/>

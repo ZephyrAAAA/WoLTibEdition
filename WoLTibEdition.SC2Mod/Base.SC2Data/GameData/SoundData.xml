@@ -37,13 +37,35 @@
         <VolumeRolloffPoints Distance="15.472779"/>
         <VolumeRolloffPoints Distance="30.802292" Volume="-96.000000"/>
     </CSound>
-    <CSound id="TRaynor02Raynor00037Mod" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="TRaynor02" Speaker="CharRaynor" Line="">
+    <CSound id="Spell_CombatDrugs_Launch" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1b.wav" Pitch="-2.700000,-2.700000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1c.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1d.wav" FacialGroup=""/>
+        <DupeDestroyCount value="6"/>
+        <DupeMuteCount value="3"/>
+        <Pitch value="-2.000000,-1.000000"/>
+        <Volume value="-16.000000,-15.000000"/>
+        <VolumeRolloffPoints Distance="8.000000"/>
+        <VolumeRolloffPoints Distance="24.000000" Volume="-96.000000"/>
+    </CSound>
+    <CSound id="TRaynor02Raynor00037Mod" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="TRaynor02" Speaker="CharRaynor" Line="00037Mod">
         <AssetArray index="0">
             <File value="Assets\sfx\TrainSCV.ogg"/>
             <FacialAnim value="TRaynor02Raynor00037"/>
             <PortraitModel value=""/>
-            <Speaker value="ConversationState/Characters/"/>
-            <Subtitle value="Conversation//Line"/>
+            <Speaker value="ConversationState/Characters/CharRaynor"/>
+            <Subtitle value="Conversation//Line00037Mod"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="TTosh01SwannBruta" parent="Campaign" Portrait="SwannPortrait" Subtitle="TTosh01" Speaker="CharSwann" Line="RoastBruta">
+        <AssetArray index="0">
+            <File value="Assets\sfx\RoastBruta.ogg"/>
+            <FacialAnim value="TTosh01SwannBruta"/>
+            <PortraitModel value="SwannPortrait"/>
+            <Speaker value="ConversationState/Characters/CharSwann"/>
+            <Subtitle value="Conversation//LineRoastBruta"/>
         </AssetArray>
     </CSound>
 </Catalog>

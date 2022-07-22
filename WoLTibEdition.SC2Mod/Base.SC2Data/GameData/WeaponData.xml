@@ -127,8 +127,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
-        <Period value="0.55"/>
-        <Backswing value="0.375"/>
+        <Period value="1"/>
+        <Backswing value="0.6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -238,8 +238,8 @@
         </Cost>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
-        <RandomDelayMin value="-1.05"/>
-        <RandomDelayMax value="-1.05"/>
+        <RandomDelayMin value="-0.95"/>
+        <RandomDelayMax value="-0.95"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>

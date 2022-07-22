@@ -20,6 +20,11 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CollapsibleRockTowerPurifier02">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="CollapsibleRockTowerCPPurifier02"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ConstructStop">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -71,6 +76,16 @@
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ReaperRegen">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ReaperOutOfCombat"/>
+        <DisableValidatorArray value="TargetLifeNotFull"/>
+        <DisableValidatorArray value="D8ClusterBombsResearched"/>
+        <Modification>
+            <VitalRegenArray index="Life" value="2"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadBunkerUnload">
         <EditorCategories value="AbilityorEffectType:Units"/>
