@@ -161,6 +161,10 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="24"/>
     </CEffectDamage>
+    <CEffectDamage id="PsionicShockwaveDamage">
+        <AttributeBonus index="Biological" value="0"/>
+        <Amount value="30"/>
+    </CEffectDamage>
     <CEffectLaunchMissile id="RailgunLaunch">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value=""/>

@@ -259,6 +259,7 @@
         <ArmorType value="Large"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="ArchonACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -751,6 +752,7 @@
     <CUnit id="Brutalisk">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AcquireLeashRadius value="20"/>
     </CUnit>
     <CUnit id="BrutaliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2473,6 +2475,7 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="HighTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3198,6 +3201,8 @@
     <CUnit id="Mutalisk">
         <ArmorType value="None"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MutaliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4311,8 +4316,13 @@
         <LifeArmor value="0"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
-    <CUnit id="SiegeTankSkinPreview"/>
+    <CUnit id="SiegeTankSkinPreview">
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
     <CUnit id="SpaceDiablo">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4429,6 +4439,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="StalkerShakurasACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4650,6 +4661,7 @@
         <LifeStart value="3000"/>
         <LifeMax value="3000"/>
         <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="StrikeGoliathACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5450,6 +5462,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <!-- Dummy Units for the AC Gluescreen Begin -->
     <CUnit id="ZealotACGluescreenDummy">

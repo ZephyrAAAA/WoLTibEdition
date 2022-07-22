@@ -136,6 +136,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ParticleDisruptors">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
@@ -145,9 +146,11 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PsiBlades">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PsionicShockwave">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
@@ -255,9 +258,11 @@
         <DisplayAttackCount value="2"/>
         <AttackType value="Normal"/>
         <Effect value="ShrikeTurretCP"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
