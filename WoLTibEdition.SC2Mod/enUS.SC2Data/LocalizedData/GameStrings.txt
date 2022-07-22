@@ -47,13 +47,11 @@ Behavior/Name/Depowered=Depowered
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/SquadAttack=Squad Attack
 Behavior/Name/SquadBunkerUnload=Squad Bunker Unload
-Behavior/Name/SquadRangeDebuff=Squad Range Debuff
 Behavior/Name/SquadUnit=Squad Unit
 Behavior/Name/SquadVeterancy1=Squad Veterancy1
 Behavior/Name/SquadVeterancy2=Squad Veterancy2
 Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
 Behavior/Name/Veterancy=Veterancy
-Behavior/Tooltip/SquadRangeDebuff=Squads have less range when they're not in bunkers<n/>because they're bigger (this isn't even a joke)
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
@@ -75,7 +73,7 @@ Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive 
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
-Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
+Button/Tooltip/EngineeringBay2=Contains upgrades for Terran infantry units. Enables the construction of Terran defensive structures. 
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
@@ -85,8 +83,6 @@ Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
-Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
-Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -102,9 +98,6 @@ Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">All units affected by this upgrade attack 20% faster.</s>
-ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources and build base structures. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
-ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
-ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
 ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
 ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods
@@ -196,7 +189,6 @@ Effect/Name/AirTransportLoadIterate2=Air Transport Load Iterate2
 Effect/Name/AirTransportLoadSquad=Air Transport Load Squad
 Effect/Name/AirTransportUnloadIterate=Air Transport Unload Iterate
 Effect/Name/AirTransportUnloadSquad=Air Transport Unload Squad
-Effect/Name/BrutalizeSearch=Brutalize (Search)
 Effect/Name/BuildingRepair=Building Repair
 Effect/Name/BuildingRepairAB=Building Repair AB
 Effect/Name/BuildingRepairLoop=Building Repair Loop
@@ -235,6 +227,7 @@ Effect/Name/SquadAttackAB=Squad Attack AB
 Effect/Name/SquadAttackIterate=Squad Attack Iterate
 Effect/Name/SquadBunkerUnload=Squad Bunker Unload
 Effect/Name/SquadDeathDamage=Squad Death Damage
+Effect/Name/SquadMainAttack=Squad Main Attack
 Effect/Name/SquadStop=Squad Stop
 Effect/Name/SquadStopIterate=Squad Stop Iterate
 Effect/Name/SquadUnit=Squad Unit
@@ -278,8 +271,6 @@ RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481Tech
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
-Unit/InfoText/PalletGas=Use any ground unit to collect 2000 minerals.
-Unit/InfoText/PalletMinerals=Use any ground unit to collect 1000 minerals.
 Unit/LifeArmorName/TerranInfantryArmor=Terran Infantry Armor
 Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory

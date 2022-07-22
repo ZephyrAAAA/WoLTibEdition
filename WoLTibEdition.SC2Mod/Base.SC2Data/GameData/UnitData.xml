@@ -163,7 +163,7 @@
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
-        <Collide index="Air4" value="1"/>
+        <Collide index="Burrow3" value="1"/>
         <Attributes index="Biological" value="1"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
@@ -179,12 +179,10 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
         </CardLayouts>
-        <SeparationRadius value="0.75"/>
         <CargoSize value="4"/>
         <CostCategory value="Army"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
-        <Radius value="0.75"/>
         <InnerRadius value="0.375"/>
         <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="15"/>
@@ -192,7 +190,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
         <LifeStart value="6"/>
         <LifeMax value="6"/>
-        <BehaviorArray Link="SquadRangeDebuff"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="AbandonedBuilding">
@@ -752,6 +749,8 @@
     <CUnit id="Brutalisk">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
         <AcquireLeashRadius value="20"/>
     </CUnit>
     <CUnit id="BrutaliskACGluescreenDummy">
@@ -2125,6 +2124,7 @@
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Collide index="Burrow3" value="1"/>
         <!-- Do not give this unit a footprint because that can allow units to walk into unpathable areas -->
     </CUnit>
     <CUnit id="Forge">
@@ -4390,6 +4390,7 @@
     </CUnit>
     <CUnit id="SpineCrawler">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SpineCrawlerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4397,6 +4398,7 @@
     </CUnit>
     <CUnit id="SpineCrawlerUprooted">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SpinningDizzyACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

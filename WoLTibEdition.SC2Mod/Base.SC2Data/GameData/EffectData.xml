@@ -22,13 +22,6 @@
         <EffectInternal value="AirTransportUnloadSquad"/>
         <EffectExternal value="AirTransportUnloadSquad"/>
     </CEffectEnumMagazine>
-    <CEffectCreatePersistent id="BrutalizeCreatePersistent">
-        <PeriodicEffectArray index="0" value="BrutalizeSearch"/>
-    </CEffectCreatePersistent>
-    <CEffectEnumArea id="BrutalizeSearch">
-        <EditorCategories value=""/>
-        <AreaArray Arc="180" Radius="1" Effect="BrutalizeDamage"/>
-    </CEffectEnumArea>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
@@ -339,6 +332,10 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectApplyBehavior id="SquadMainAttack">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
     <CEffectTeleport id="SquadUnitTeleport">
         <ValidatorArray value="SquadTooFar"/>
         <PlacementAround Value="CasterUnit"/>
@@ -400,8 +397,10 @@
         <EditorCategories value=""/>
         <WhichLocation Value="CasterUnit"/>
         <Flags index="Channeled" value="1"/>
-        <InitialEffect value="SquadAttackIterate"/>
+        <InitialEffect value="SquadMainAttack"/>
+        <PeriodCount value="2"/>
         <PeriodicEffectArray value="SquadAttackIterate"/>
+        <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0.25"/>
     </CEffectCreatePersistent>
     <CEffectApplyBehavior id="SquadAttackAB">

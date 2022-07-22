@@ -9,6 +9,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
         <RemoveValidatorArray value="TargetLifeNotFull"/>
+        <RemoveValidatorArray value="IsGroundUnit"/>
         <Period value="1"/>
         <InitialEffect value="BuildingRepair"/>
         <PeriodicEffect value="BuildingRepairLoop"/>
@@ -57,6 +58,16 @@
         <Duration value="60"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorResource id="HighYieldMineralFieldMinerals">
+        <HarvestTime value="0.1"/>
+        <HarvestAmount value="28"/>
+        <ReturnDelay value="0"/>
+    </CBehaviorResource>
+    <CBehaviorResource id="HighYieldMineralFieldMinerals750">
+        <HarvestTime value="0.1"/>
+        <HarvestAmount value="28"/>
+        <ReturnDelay value="0"/>
+    </CBehaviorResource>
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -71,14 +82,11 @@
         <PeriodCount value="1"/>
         <PeriodicEffect value="SquadStop"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="SquadRangeDebuff">
+    <CBehaviorBuff id="SquadMainAttack">
+        <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DisableValidatorArray value="UnitNotInBunker"/>
-        <Modification RangedWeaponRange="-0.5"/>
-        <DamageResponse ModifyFraction="0">
-            <ExcludeEffectArray value="SquadDeathDamage"/>
-            <Chance value="1"/>
-        </DamageResponse>
+        <Duration value="0.3"/>
+        <Modification RadiusMultiplier="0.1" WeaponRange="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadVeterancy1">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -252,7 +260,7 @@
         <HarvestTime value="0.1"/>
         <HarvestAmount value="14"/>
         <Flags index="RemoveWhenEmpty" value="1"/>
-        <DepletionThreshold value="115"/>
+        <DepletionThreshold value="255"/>
         <DepletionVariationCount value="4"/>
         <CarryResourceBehavior value="CarryMineralFieldMinerals"/>
         <IdealHarvesterCount value="1"/>
