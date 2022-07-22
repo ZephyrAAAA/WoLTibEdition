@@ -17,7 +17,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
-        <DamagePoint value="0.5"/>
+        <DamagePoint value="0.2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
