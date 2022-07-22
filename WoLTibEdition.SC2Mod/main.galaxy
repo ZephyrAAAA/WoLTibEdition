@@ -94,8 +94,8 @@ bool Gather_Func (bool testConds, bool runActions) {
 	}
 	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
 		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
-		if (DistanceBetweenPoints(UnitGetPosition(gatherUnit), UnitGetPosition(AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true))) > 5) {
-			UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
+		if (DistanceBetweenPoints(UnitGetPosition(gatherUnit), UnitGetPosition(AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true))) < 5) {
+			//UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
 		}
 	}
 	return true;
@@ -140,7 +140,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);
 		Wait(1, c_timeGame);
 		resourceGroup = UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
-	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) && DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) < 5);
+	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) || DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) > 5);
 	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
 		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
 	}
@@ -460,7 +460,7 @@ void Power_Init () {
 bool OwnerSwap_Func (bool testConds, bool runActions) {
 	if (UnitHasBehavior(EventUnit(), "PowerCheck")) {
 		UnitBehaviorRemove(EventUnit(), "PowerCheck", 1);
-		UnitBehaviorAdd(EventUnit(), "PowerCheck", EventUnit(), 1);
+		UnitBehaviorAddPlayer(EventUnit(), "PowerCheck", EventUnitOwnerNew(), 1);
 	}
 	if (EventUnitOwnerNew() == 1) {
 		buildingSwap(EventUnit());

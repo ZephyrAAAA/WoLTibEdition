@@ -22,13 +22,6 @@
         <EffectInternal value="AirTransportUnloadSquad"/>
         <EffectExternal value="AirTransportUnloadSquad"/>
     </CEffectEnumMagazine>
-    <CEffectCreatePersistent id="BrutalizeCreatePersistent">
-        <PeriodicEffectArray index="0" value="BrutalizeSearch"/>
-    </CEffectCreatePersistent>
-    <CEffectEnumArea id="BrutalizeSearch">
-        <EditorCategories value=""/>
-        <AreaArray Arc="180" Radius="1" Effect="BrutalizeDamage"/>
-    </CEffectEnumArea>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
@@ -55,6 +48,38 @@
         <Abil value="BunkerTransportSquad"/>
         <AbilCmdIndex value="1"/>
     </CEffectIssueOrder>
+    <CEffectCreatePersistent id="CollapsibleRockTowerCPFinalPurifier02">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/CollapsibleRockTowerCPPurifier02"/>
+        <WhichLocation Value="CasterUnit"/>
+        <FinalOffset value="0,-5,0"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="CollapsibleRockTowerCreateDebrisPurifier02"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="CollapsibleRockTowerCPPurifier02">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <FinalEffect value="CollapsibleRockTowerCPFinalPurifier02"/>
+        <PeriodicValidator value="CasterNotDead"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
+    <CEffectCreateUnit id="CollapsibleRockTowerCreateDebrisPurifier02">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <Origin Effect="CollapsibleRockTowerCreateDebrisPurifier02"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="SetFacing" value="1"/>
+        <CreateFlags index="TechComplete" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnOwner Value="Neutral"/>
+        <SpawnUnit value="DestructibleRock6x6"/>
+        <SpawnRange value="0"/>
+    </CEffectCreateUnit>
     <CEffectApplyBehavior id="DepowerAB">
         <EditorCategories value=""/>
         <Behavior value="Depowered"/>
@@ -160,6 +185,10 @@
     <CEffectDamage id="PrismaticBeamMUx3">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="24"/>
+    </CEffectDamage>
+    <CEffectDamage id="PsionicShockwaveDamage">
+        <AttributeBonus index="Biological" value="0"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="RailgunLaunch">
         <ValidatorArray index="0" removed="1"/>
@@ -335,6 +364,10 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectApplyBehavior id="SquadMainAttack">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
     <CEffectTeleport id="SquadUnitTeleport">
         <ValidatorArray value="SquadTooFar"/>
         <PlacementAround Value="CasterUnit"/>
@@ -396,8 +429,10 @@
         <EditorCategories value=""/>
         <WhichLocation Value="CasterUnit"/>
         <Flags index="Channeled" value="1"/>
-        <InitialEffect value="SquadAttackIterate"/>
+        <InitialEffect value="SquadMainAttack"/>
+        <PeriodCount value="2"/>
         <PeriodicEffectArray value="SquadAttackIterate"/>
+        <PeriodicPeriodArray value="0"/>
         <PeriodicPeriodArray value="0.25"/>
     </CEffectCreatePersistent>
     <CEffectApplyBehavior id="SquadAttackAB">

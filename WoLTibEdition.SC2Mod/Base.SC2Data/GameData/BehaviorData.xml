@@ -9,6 +9,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
         <RemoveValidatorArray value="TargetLifeNotFull"/>
+        <RemoveValidatorArray value="IsGroundUnit"/>
         <Period value="1"/>
         <InitialEffect value="BuildingRepair"/>
         <PeriodicEffect value="BuildingRepairLoop"/>
@@ -18,6 +19,11 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CollapsibleRockTowerPurifier02">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="CollapsibleRockTowerCPPurifier02"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="ConstructStop">
         <InfoFlags index="Hidden" value="1"/>
@@ -57,9 +63,29 @@
         <Duration value="60"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorResource id="HighYieldMineralFieldMinerals">
+        <HarvestTime value="0.1"/>
+        <HarvestAmount value="28"/>
+        <ReturnDelay value="0"/>
+    </CBehaviorResource>
+    <CBehaviorResource id="HighYieldMineralFieldMinerals750">
+        <HarvestTime value="0.1"/>
+        <HarvestAmount value="28"/>
+        <ReturnDelay value="0"/>
+    </CBehaviorResource>
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ReaperRegen">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ReaperOutOfCombat"/>
+        <DisableValidatorArray value="TargetLifeNotFull"/>
+        <DisableValidatorArray value="D8ClusterBombsResearched"/>
+        <Modification>
+            <VitalRegenArray index="Life" value="2"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadBunkerUnload">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -71,14 +97,11 @@
         <PeriodCount value="1"/>
         <PeriodicEffect value="SquadStop"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="SquadRangeDebuff">
+    <CBehaviorBuff id="SquadMainAttack">
+        <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DisableValidatorArray value="UnitNotInBunker"/>
-        <Modification RangedWeaponRange="-0.5"/>
-        <DamageResponse ModifyFraction="0">
-            <ExcludeEffectArray value="SquadDeathDamage"/>
-            <Chance value="1"/>
-        </DamageResponse>
+        <Duration value="0.3"/>
+        <Modification RadiusMultiplier="0.1" WeaponRange="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadVeterancy1">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -252,7 +275,7 @@
         <HarvestTime value="0.1"/>
         <HarvestAmount value="14"/>
         <Flags index="RemoveWhenEmpty" value="1"/>
-        <DepletionThreshold value="115"/>
+        <DepletionThreshold value="255"/>
         <DepletionVariationCount value="4"/>
         <CarryResourceBehavior value="CarryMineralFieldMinerals"/>
         <IdealHarvesterCount value="1"/>

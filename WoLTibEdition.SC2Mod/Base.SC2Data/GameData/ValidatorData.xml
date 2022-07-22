@@ -6,6 +6,9 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
         <Behavior value="Depowered"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="D8ClusterBombsResearched">
+        <WhichPlayer Value="Source"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerCompareResource id="HasRepairMoney">
         <Compare value="GT"/>
     </CValidatorPlayerCompareResource>
@@ -20,6 +23,10 @@
     <CValidatorPlayerRequirement id="PlayerHasPower">
         <Value value="PlayerHasPower"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareDamageTakenTime id="ReaperOutOfCombat">
+        <Compare value="GE"/>
+        <Value value="10"/>
+    </CValidatorUnitCompareDamageTakenTime>
     <CValidatorLocationCompareRange id="SquadTooFar">
         <WhichLocation Value="TargetUnit"/>
         <Compare value="GT"/>

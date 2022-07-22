@@ -12,6 +12,11 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
     </CButton>
+    <CButton id="CombatDrugs">
+        <Icon value="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="Depower">
         <Icon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="Race:Neutral"/>

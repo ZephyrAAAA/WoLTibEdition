@@ -163,7 +163,7 @@
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
-        <Collide index="Air4" value="1"/>
+        <Collide index="Burrow3" value="1"/>
         <Attributes index="Biological" value="1"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
@@ -179,12 +179,10 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
         </CardLayouts>
-        <SeparationRadius value="0.75"/>
         <CargoSize value="4"/>
         <CostCategory value="Army"/>
         <DamageDealtXP value="1"/>
         <DamageTakenXP value="1"/>
-        <Radius value="0.75"/>
         <InnerRadius value="0.375"/>
         <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="15"/>
@@ -192,7 +190,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
         <LifeStart value="6"/>
         <LifeMax value="6"/>
-        <BehaviorArray Link="SquadRangeDebuff"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="AbandonedBuilding">
@@ -259,6 +256,7 @@
         <ArmorType value="Large"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="ArchonACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -751,6 +749,10 @@
     <CUnit id="Brutalisk">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <AcquireLeashRadius value="30"/>
+        <AcquireLeashResetRadius value="30"/>
     </CUnit>
     <CUnit id="BrutaliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -939,6 +941,43 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="CollapsibleRockTowerPurifier02">
+        <DeathTime value="-1"/>
+        <DeathRevealRadius value="3"/>
+        <EditorFacingAlignment value="90"/>
+        <FlagArray index="CreateVisible" value="1"/>
+        <FlagArray index="Unhighlightable" value="0"/>
+        <FlagArray index="Untooltipable" value="0"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="Destructible" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <EditorFlags index="NeutralDefault" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
+        <LifeStart value="150"/>
+        <LifeMax value="150"/>
+        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
+        <LifeArmorName value="Unit/LifeArmorName/HardenedMaterial"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
+        <OccludeHeight value="1"/>
+        <BehaviorArray Link="CollapsibleRockTowerPurifier02"/>
+        <Radius value="0"/>
+        <Footprint value="CollapsibleTower"/>
+        <DeadFootprint value="CollapsibleTowerDead"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Destructible,ObjectFamily:Campaign"/>
+        <AIEvaluateAlias value="CollapsibleRockTower"/>
     </CUnit>
     <CUnit id="Colonist">
         <ArmorType value="Small"/>
@@ -1474,10 +1513,14 @@
     <CUnit id="DestructibleRock4x4">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock6x6">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleSearchlight">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2123,6 +2166,7 @@
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Collide index="Burrow3" value="1"/>
         <!-- Do not give this unit a footprint because that can allow units to walk into unpathable areas -->
     </CUnit>
     <CUnit id="Forge">
@@ -2473,6 +2517,7 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="HighTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3198,6 +3243,8 @@
     <CUnit id="Mutalisk">
         <ArmorType value="None"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MutaliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3808,6 +3855,8 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Food value="0"/>
+        <BehaviorArray Link="ReaperRegen"/>
     </CUnit>
     <CUnit id="ReaperPlacement">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4311,8 +4360,13 @@
         <LifeArmor value="0"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
-    <CUnit id="SiegeTankSkinPreview"/>
+    <CUnit id="SiegeTankSkinPreview">
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
     <CUnit id="SpaceDiablo">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4380,6 +4434,7 @@
     </CUnit>
     <CUnit id="SpineCrawler">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SpineCrawlerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4387,6 +4442,7 @@
     </CUnit>
     <CUnit id="SpineCrawlerUprooted">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SpinningDizzyACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4429,6 +4485,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="StalkerShakurasACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4650,6 +4707,7 @@
         <LifeStart value="3000"/>
         <LifeMax value="3000"/>
         <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="StrikeGoliathACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5049,7 +5107,8 @@
         <WeaponArray Link="ReaperSquad"/>
         <WeaponArray Link="ReaperSquadCharge"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,0" Row="1" Column="0"/>
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="1" Column="1"/>
         </CardLayouts>
         <LifeStart value="4"/>
         <LifeMax value="4"/>
@@ -5450,6 +5509,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <!-- Dummy Units for the AC Gluescreen Begin -->
     <CUnit id="ZealotACGluescreenDummy">

@@ -92,6 +92,41 @@
         <BuildModel value="Invisible"/>
         <PlacementModel value="Invisible"/>
     </CActorUnit>
+    <CActorSiteOpLocalOffset id="CollapsibleRockTowerOffset">
+        <LocalOffset value="0.000000,-5.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
+    <CActorUnit id="CollapsibleRockTowerPurifier02" parent="DestructibleUnitStandard" unitName="CollapsibleRockTowerPurifier02">
+        <Macros value="CollapsibleTowerDoubleWideMacro"/>
+        <On Terms="UnitBirth.CollapsibleRockTowerPurifier02" Send="Create CollapsibleRockTowerTarget"/>
+        <On Terms="UnitBirth.CollapsibleRockTowerPurifier02.EditorPlaced" Send="StatusSet InEditor 1"/>
+        <On Terms="UnitBirth.CollapsibleRockTowerPurifier02; IsStatus InEditor 0" Target="CollapsibleRockTowerTarget" Send="SetVisibility"/>
+        <On Terms="UnitHighlightLocal.*.Start" Target="CollapsibleRockTowerTarget" Send="SetVisibility 1"/>
+        <On Terms="UnitHighlightLocal.*.Stop" Target="CollapsibleRockTowerTarget" Send="SetVisibility"/>
+        <Model value="Purifier_Collapsible_Rock_Tower"/>
+        <BuildModel value="Purifier_Collapsible_Rock_Tower"/>
+        <DeathArray index="Normal" ModelLink="Purifier_Collapsible_Rock_Tower"/>
+        <PlacementModel value="Purifier_Collapsible_Rock_Tower"/>
+        <BarWidth value="200"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-General-CollapsibleRockTower.dds"/>
+        </GroupIcon>
+        <HighlightTooltip value="Unit/Name/CollapsibleRockTowerPurifier02HighlightTooltip"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\Wireframe-General-CollapsibleRockTower.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-General-CollapsibleRockTower.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorModel id="CollapsibleRockTowerTarget">
+        <Inherits index="Visibility" value="1"/>
+        <FogVisibility value="Visible"/>
+        <On Terms="ActorCreation" Send="$Stand PlayForever"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <Host Subject="_Unit"/>
+        <HostSiteOps Ops="CollapsibleRockTowerOffset SOpShadow SOpTipability"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+    </CActorModel>
     <CActorUnit id="CommandCenter2" parent="TerranBuildingFlyerEx" unitName="CommandCenter2">
         <Macros value="MacroTownhallDeco_Terran"/>
         <Macros value="TerranCommandCenterPlayerDecalMacro"/>
@@ -737,6 +772,16 @@
         <On index="5" Terms="Effect.Start; At Caster"/>
         <ContainerAssets Model="BunkerAttackLaunch" Sound="BunkerAttackLaunch"/>
     </CActorAction>
+    <CActorModel id="ReaperHeal" parent="ModelAnimationStyleContinuous">
+        <On Terms="UnitRegen.Reaper.LifeOn" Send="Create"/>
+        <On Terms="Behavior.ReaperRegen.On" Send="Create"/>
+        <On Terms="ActorCreation" Send="AnimBracketStart Regen Birth"/>
+        <On Terms="Behavior.ReaperRegen.Off" Send="AnimBracketStop Regen"/>
+        <On Terms="Behavior.ReaperRegen.Off" Send="Destroy"/>
+        <On Terms="UnitRegen.Reaper.LifeOff" Send="Destroy"/>
+        <Host Subject="_Unit"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+    </CActorModel>
     <CActorUnit id="ReaperSquad" parent="ReaperPlaceholder" unitName="ReaperSquad">
         <On index="0" Terms="UnitBirth.ReaperSquad" Send="Create SoundEmitter ReaperSquad_Ambience"/>
         <On index="1" Terms="UnitBirth.ReaperSquad"/>
@@ -913,6 +958,10 @@
             <Image value="Assets\Textures\Wireframe-Terran-SensorTower.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorSound id="Spell_CombatDrugs_Launch" parent="SoundOneShot">
+        <On Terms="Behavior.ReaperRegen.On" Send="Create"/>
+        <On Terms="UnitRegen.Reaper.LifeOn" Send="Create"/>
+    </CActorSound>
     <CActorUnit id="Starport2" parent="TerranBuildingFlyerEx" unitName="Starport2">
         <On index="69" Send="Create StarportBuild"/>
         <On Terms="UnitDeathCustomize.Starport2Flying" Send="DeathCustomize Flying"/>

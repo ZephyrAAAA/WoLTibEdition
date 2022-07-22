@@ -6,9 +6,38 @@
     <CModel id="DevastationTurret" parent="Unit">
         <Model value="Assets\Buildings\Terran\GrenadeTurret\GrenadeTurret.m3"/>
         <EditorCategories value=""/>
+        <SelectionLayer value="2"/>
     </CModel>
     <CModel id="LowPower" parent="Glaze">
         <Model value="Assets\Effects\Glaze\Glaze_BlackDeath_Coop\Glaze_BlackDeath_Coop.m3"/>
         <EditorCategories value=""/>
+    </CModel>
+    <CModel id="Purifier_Collapsible_Rock_Tower" parent="Doodad">
+        <Model value="Assets\Buildings\Neutral\Purifier_Collapsible_Rock_Tower\Purifier_Collapsible_Rock_Tower.m3"/>
+        <Events>
+            <Anim value="Death,Alternate,00"/>
+            <Name value="Doodad_CollapsibleRockTower_Start"/>
+            <Type value="Sound"/>
+            <Time value="0.222000"/>
+            <Payload value="Doodad_CollapsibleRockTower_Start"/>
+        </Events>
+        <Events>
+            <Anim value="Death,Alternate,00"/>
+            <Name value="Doodad_CollapsibleRockTower_Impact"/>
+            <Type value="Sound"/>
+            <Time value="1.665000"/>
+            <Payload value="Doodad_CollapsibleRockTower_Impact"/>
+        </Events>
+        <SelectionRadius value="3.000000"/>
+        <ShadowRadius value="3.000000"/>
+        <Tipability value="0.900000"/>
+        <TipabilityLength value="1.000000"/>
+        <TipabilityWidth value="1.000000"/>
+        <TextureDeclares Prefix="collapsiblerocktower_">
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="main"/>
+        </TextureDeclares>
+        <TextureDeclares Prefix="collapsiblerocktowerflat_">
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="generic01"/>
+        </TextureDeclares>
     </CModel>
 </Catalog>

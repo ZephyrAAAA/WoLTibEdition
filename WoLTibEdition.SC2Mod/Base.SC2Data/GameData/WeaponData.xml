@@ -17,9 +17,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
-        <DamagePoint value="0.5"/>
-        <Period value="0.5"/>
-        <Backswing value="3"/>
+        <DamagePoint value="0.2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
@@ -69,6 +67,8 @@
         <Effect value="SquadAttack"/>
         <RandomDelayMin value="-1.45"/>
         <RandomDelayMax value="-1.45"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -127,8 +127,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
-        <Period value="0.55"/>
-        <Backswing value="0.375"/>
+        <Period value="1"/>
+        <Backswing value="0.6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -136,6 +136,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ParticleDisruptors">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
@@ -145,9 +146,11 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PsiBlades">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PsionicShockwave">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
@@ -165,6 +168,8 @@
         <Effect value="SquadAttack"/>
         <RandomDelayMin value="-0.95"/>
         <RandomDelayMax value="-0.95"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FirebatSquad" parent="Firebat">
         <Name value="Weapon/Name/FirebatSquad"/>
@@ -176,11 +181,12 @@
         <Cost>
             <Cooldown Link="Weapon/FirebatSquad"/>
         </Cost>
-        <AttackType value="Unknown"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
         <RandomDelayMin value="-0.45"/>
         <RandomDelayMax value="-0.45"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarineSquad" parent="GuassRifle">
         <Name value="Weapon/Name/MarineSquad"/>
@@ -195,6 +201,8 @@
         <Effect value="SquadAttack"/>
         <RandomDelayMin value="-0.85"/>
         <RandomDelayMax value="-0.85"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
@@ -230,8 +238,10 @@
         </Cost>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
-        <RandomDelayMin value="-1.05"/>
-        <RandomDelayMax value="-1.05"/>
+        <RandomDelayMin value="-0.95"/>
+        <RandomDelayMax value="-0.95"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquadCharge" parent="D8Charge">
         <Name value="Weapon/Name/ReaperSquadCharge"/>
@@ -247,6 +257,8 @@
         <Effect value="SquadAttack"/>
         <RandomDelayMin value="-1.75"/>
         <RandomDelayMax value="-1.75"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
@@ -255,9 +267,11 @@
         <DisplayAttackCount value="2"/>
         <AttackType value="Normal"/>
         <Effect value="ShrikeTurretCP"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
