@@ -18,6 +18,8 @@
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
         <DamagePoint value="0.5"/>
+        <Period value="0.5"/>
+        <Backswing value="3"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>

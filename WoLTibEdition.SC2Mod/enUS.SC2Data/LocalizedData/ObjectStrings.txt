@@ -118,6 +118,7 @@ DataCollection/EditorPrefix/MarauderSquad=Squads -
 DataCollection/EditorPrefix/MarineSquad=Squads -
 DataCollection/EditorPrefix/MedicSquad=Squads -
 DataCollection/EditorPrefix/ReaperSquad=Squads -
+Effect/EditorPrefix/BrutalizeSearch=Brutalisk -
 Effect/EditorPrefix/BuildingRepair=C&C -
 Effect/EditorPrefix/BuildingRepairAB=C&C -
 Effect/EditorPrefix/BuildingRepairLoop=C&C -
