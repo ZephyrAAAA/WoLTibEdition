@@ -16,6 +16,9 @@
         <WhichUnit Value="Caster"/>
         <Behavior value="CarryMineralFieldMinerals"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitOrderTargetType id="SCVIsGathering">
+        <AbilLink value="SCVHarvest"/>
+    </CValidatorUnitOrderTargetType>
     <CValidatorUnitType id="IsNotMedic">
         <Value value="Medic"/>
         <Find value="0"/>

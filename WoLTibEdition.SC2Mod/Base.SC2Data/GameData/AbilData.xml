@@ -10,6 +10,22 @@
             <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
         </InfoArray>
     </CAbilResearch>
+    <CAbilEffectTarget id="BonesHeal">
+        <Marker Link="Abil/##id##"/>
+    </CAbilEffectTarget>
+    <CAbilArmMagazine id="Refinery">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="Bunker"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="20"/>
+        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="RefineryBounce">
+            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="Refinery"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <MaxCount value="1"/>
+    </CAbilArmMagazine>
     <CAbilTransport id="BunkerTransport">
         <MaxCargoSize value="4"/>
         <LoadCargoEffect value="BunkerLoadIterate"/>
@@ -1067,6 +1083,19 @@
         <ExternalAngle value="329.9963"/>
         <MaxCount value="6"/>
     </CAbilArmMagazine>
+    <CAbilEffectInstant id="RefineryBounce">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirm_Void\WayPointConfirm_Void.m3"/>
+        <AbilSetId value="Harv"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Gather"/>
+    </CAbilEffectInstant>
     <CAbilEffectInstant id="SquadStimpack" parent="Stimpack">
         <Name value="Abil/Name/SquadStimpack"/>
         <DataCollection value="MarineSquadStimpack"/>
@@ -1139,8 +1168,7 @@
     </CAbilArmMagazine>
     <CAbilHarvest id="SCVHarvest">
         <ResourceAmountCapacity index="Minerals" value="1400"/>
-        <AcquireRadius value="20"/>
-        <ReservedMarker Duration="0.1"/>
+        <AcquireRadius value="30"/>
         <ResourceAcquire index="Custom" value="1"/>
         <ResourceDestroy index="Vespene" value="0"/>
     </CAbilHarvest>

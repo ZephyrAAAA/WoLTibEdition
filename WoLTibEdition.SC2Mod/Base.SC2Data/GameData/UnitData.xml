@@ -752,6 +752,7 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <AcquireLeashRadius value="30"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
         <AcquireLeashResetRadius value="30"/>
     </CUnit>
     <CUnit id="BrutaliskACGluescreenDummy">
@@ -1767,6 +1768,9 @@
     <CUnit id="Diamondback">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="DisruptorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2350,6 +2354,13 @@
     </CUnit>
     <CUnit id="GlobeStatue">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="Goliath">
+        <ArmorType value="Medium"/>
+        <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="GoliathACGluescreenDummy">
@@ -3916,6 +3927,7 @@
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="Refinery"/>
         <BehaviorArray Link="Refinery"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <EffectArray index="Birth" value="CreateSCVHarvester"/>
@@ -3926,7 +3938,7 @@
         </CardLayouts>
         <Radius value="1.5"/>
         <SeparationRadius value="1.5"/>
-        <Footprint value="FootprintGeyserRoundedBuilt"/>
+        <Footprint value="Footprint3x3Contour"/>
         <PlacementFootprint value="Footprint3x3Contour"/>
         <ScoreMake value="75"/>
         <ScoreKill value="75"/>
@@ -3938,6 +3950,42 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechAliasArray value="Alias_Refinery"/>
         <ArmorType value="Hero"/>
+    </CUnit>
+    <CUnit id="RefineryBounce">
+        <Facing value="315"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <ResourceState value="Harvestable"/>
+        <ResourceType value="Minerals"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Speed value="3"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="1000"/>
+        <AbilArray Link="RefineryBounce"/>
+        <AbilArray Link="ProbeHarvest"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="stop"/>
+        <BehaviorArray Link="RefineryBounce"/>
+        <CardLayouts>
+            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="RefineryBounce,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="ProbeHarvest,Gather" Row="1" Column="0"/>
+        </CardLayouts>
+        <Radius value="1.625"/>
+        <SeparationRadius value="1.625"/>
+        <InnerRadius value="1.625"/>
+        <ScoreResult value="BuildOrder"/>
+        <MinimapRadius value="0"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TacticalAI value="Refinery2"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <AIEvaluateAlias value="Refinery2"/>
     </CUnit>
     <CUnit id="RefineryRich">
         <ArmorType value="Hero"/>
@@ -4044,6 +4092,7 @@
         <Attributes index="Light" value="1"/>
         <Attributes index="Biological" value="1"/>
         <Attributes index="Mechanical" value="1"/>
+        <ArmorType value="Small"/>
         <LifeStart value="45"/>
         <LifeMax value="45"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
@@ -4092,7 +4141,6 @@
             <ChanceArray index="Idle" value="33"/>
             <ChanceArray index="Turn" value="33"/>
         </Fidget>
-        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="SILiberatorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4435,6 +4483,8 @@
     <CUnit id="SpineCrawler">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SpineCrawlerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4443,6 +4493,8 @@
     <CUnit id="SpineCrawlerUprooted">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SpinningDizzyACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

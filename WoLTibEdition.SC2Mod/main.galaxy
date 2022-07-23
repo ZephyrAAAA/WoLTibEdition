@@ -1,6 +1,7 @@
 include "TriggerLibs/NativeLib"
 
 trigger gather;
+trigger passiveHarvest;
 trigger returning;
 trigger idle;
 trigger building;
@@ -94,9 +95,7 @@ bool Gather_Func (bool testConds, bool runActions) {
 	}
 	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
 		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
-		if (DistanceBetweenPoints(UnitGetPosition(gatherUnit), UnitGetPosition(AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true))) < 5) {
-			//UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
-		}
+		UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("RefineryBounce", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
 	}
 	return true;
 }
@@ -122,11 +121,18 @@ void Returning_Init () {
 }
 
 bool Idle_Func (bool testConds, bool runActions) {
+	int owner;
 	unit idleUnit;
 	unitgroup resourceGroup;
 	bool remainsIdle;
 	if (testConds) {
+		if (UnitHasBehavior(EventUnit(), "IdleTaken")) {
+			return false;
+		}
 		if (!UnitAbilityExists(EventUnit(), "SCVHarvest")) {
+			return false;
+		}
+		if (UnitOrderCount(EventUnit()) > 0 && !UnitHasBehavior(OrderGetTargetUnit(UnitOrder(EventUnit(), 0)), "RefineryBounce")) {
 			return false;
 		}
 	}
@@ -135,21 +141,26 @@ bool Idle_Func (bool testConds, bool runActions) {
 		return false;
 	}
 	idleUnit = EventUnit();
+	owner = EventPlayer();
 	UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
+	UnitBehaviorAdd(idleUnit, "IdleTaken", idleUnit, 1);
 	do {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);
 		Wait(1, c_timeGame);
-		resourceGroup = UnitGroup("TibVein", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
-	} while (UnitGroupCount(resourceGroup, c_unitCountAlive) == 0 && (UnitOrderCount(idleUnit) == 0 || remainsIdle) || DistanceBetweenPoints(UnitGetPosition(idleUnit), UnitGetPosition(AIGetClosestUnit(idleUnit, resourceGroup, true))) > 5);
-	if ((UnitOrderCount(idleUnit) == 0 || remainsIdle)) {
-		UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueReplace);
-	}
+		if ((UnitOrderCount(idleUnit) == 0 && remainsIdle) || (UnitOrderCount(EventUnit()) > 0 && UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce"))) {
+			resourceGroup = UnitGroup("RefineryBounce", owner, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
+			UnitIssueOrder(idleUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
+			UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueAddToEnd);
+		}
+	} while ((UnitOrderCount(idleUnit) == 0 || remainsIdle) || (UnitOrderCount(EventUnit()) > 0 && UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce")));
+	UnitBehaviorRemove(idleUnit, "IdleTaken", 1);
 	return true;
 }
 
 void Idle_Init () {
 	idle = TriggerCreate("Idle_Func");
 	TriggerAddEventUnitBecomesIdle(idle, null, true);
+	TriggerAddEventUnitAbility(idle, null, AbilityCommand("SCVHarvest", 0), c_abilHarvestStageApproachResource, false);
 }
 
 bool Building_Func (bool testConds, bool runActions) {

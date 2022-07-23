@@ -213,6 +213,12 @@
         <EffectArray value="BuildingRepairStop"/>
         <EffectArray value="BuildingRepair"/>
     </CEffectSet>
+    <CEffectIssueOrder id="RefineryBounce">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="ProbeHarvest"/>
+        <Target Value="CasterUnit"/>
+    </CEffectIssueOrder>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>
@@ -420,11 +426,6 @@
         <EffectArray value="CranePlace"/>
         <EffectArray value="DevastatorTurretPlace"/>
     </CEffectSet>
-    <CEffectModifyPlayer id="ResourceCost">
-        <EditorCategories value=""/>
-        <WhichPlayer Value="Caster"/>
-        <Resources index="Minerals" value="-10"/>
-    </CEffectModifyPlayer>
     <CEffectCreatePersistent id="SquadAttack">
         <EditorCategories value=""/>
         <WhichLocation Value="CasterUnit"/>
@@ -769,6 +770,9 @@
     <CEffectRemoveBehavior id="BuildingRepairRB">
         <BehaviorLink value="BuildingRepair"/>
     </CEffectRemoveBehavior>
+    <CEffectCreatePersistent id="DummyEffect">
+        <EditorCategories value=""/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="VolatileBurstFriendlyUnitDamage">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>

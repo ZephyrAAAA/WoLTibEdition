@@ -33,6 +33,8 @@ Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
 Abil/Name/ReaperSquad=Reaper Squad
+Abil/Name/Refinery=Refinery
+Abil/Name/RefineryBounce=Refinery Bounce
 Abil/Name/SquadStimpack=Squad - Stimpack
 Abil/Name/Starport2AddOns=AddOns
 Abil/Name/Starport2Land=Land
@@ -90,6 +92,7 @@ Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="As
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Sell=Sells selected building for a refund
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
@@ -223,14 +226,15 @@ Effect/Name/DepowerSwitch=Depower Switch
 Effect/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
 Effect/Name/DevastatorTurretPlace=DevastatorTurretPlace
 Effect/Name/DropOffStun=Drop Off Stun
+Effect/Name/DummyEffect=Dummy Effect
 Effect/Name/MarineSquadStim=Marine Squad Stim
 Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
+Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
-Effect/Name/ResourceCost=Resource Cost
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
 Effect/Name/ShrikeTurretCP=Shrike Turret
 Effect/Name/SquadAttack=Squad Attack
@@ -310,6 +314,7 @@ Unit/Name/PlanetaryFortress2=Planetary Fortress
 Unit/Name/RailgunWeapon=Railgun Weapon
 Unit/Name/ReaperSquad=Reaper Squad
 Unit/Name/Refinery2=Refinery
+Unit/Name/RefineryBounce=Refinery Bounce
 Unit/Name/SCV2=SCV
 Unit/Name/SensorTower2=Sensor Tower
 Unit/Name/Starport2=Starport
