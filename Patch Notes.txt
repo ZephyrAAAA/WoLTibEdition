@@ -1,5 +1,6 @@
-Factory and Starport spawn 3 repair drones now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 1 SCV.
+Factory and Starport spawn 3 repair drones now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 5% health/s.
 Goliath, Hellion, Diamondback no longer take supply
+Goliath damage increased by 33%
 
 Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed

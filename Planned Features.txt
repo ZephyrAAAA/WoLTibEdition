@@ -152,7 +152,7 @@ Breakout:
 Ghost of a Chance:
 
 The Dig:
--The Laser Drill now has a really expensive (20K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K.
+-The Laser Drill now has a really expensive (30K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K.
 
 The Moebius Factor:
 
@@ -209,7 +209,7 @@ Thor- Reduce damage by 33%, Barrage no longer stuns, Barrage starts area
 
 Diamondback- Increase speed to match hellion, Increase firing speed, Get more range
 
-Goliath- Starts with Ares
+Goliath- Starts with Ares, Damage increased by 33%
 
 Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
 
@@ -219,9 +219,9 @@ Medivac- Heals units inside it
 
 Kerrigan- Massive units are now immune to Implosion
 
-Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 1000 sniper at 0.5 speed, No nuke
+Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 1000 sniper at 0.5 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 
-Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse does damage and no stun, Autoattack does 1000 sniper at 0.5 speed, No nuke
+Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse does damage and no stun, Autoattack does 1000 sniper at 0.5 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 
 
 ARMORY UPGRADE CHANGES:
@@ -306,9 +306,9 @@ Psi Disruptor- Now a topbar power
 
 Regenerative Bio-steel- BEEG buff 2% health/s
 
-Cellular Reactor->
+Cellular Reactor-> Health upgrade- +25% health for all units
 
-Predator->
+Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 
 Hercules-> Cellular Reactor- Also increases energy regen
 
@@ -324,7 +324,7 @@ Building Health and Armour [Engineering Bay]
 
 Defense turret range [Engineering Bay]
 
-Marauder shoulder rockets- [Barracks Tech Lab]
+Marauder shoulder rockets- [Spec Ops]
 
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
