@@ -1,0 +1,16 @@
+Factory and Starport spawn 3 repair drones now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 1 SCV.
+Goliath, Hellion, Diamondback no longer take supply
+
+Bel'Shir:
+Resources all converted, SCVs deleted, starting refinery placed
+Starting infrantry replaced with squads
+
+Outbreak:
+Resources all converted, SCVs deleted, starting refinery placed
+Starting infrantry replaced with squads
+Removed 2 of the starting depots
+
+Trains:
+Resources all converted, SCVs deleted, starting refinery placed
+Starting infrantry replaced with squads
+Removed 1 of the starting depots
