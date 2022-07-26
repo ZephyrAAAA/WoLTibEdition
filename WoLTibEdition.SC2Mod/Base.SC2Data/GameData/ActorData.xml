@@ -929,6 +929,7 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Terran-SCV.dds"/>
         </Wireframe>
+        <Scale value="1.400000"/>
     </CActorUnit>
     <CActorAction id="SCVAttack2" parent="GenericAttack" effectAttack="FusionCutter">
         <LaunchAssets Model="SCVAttackLaunch"/>
