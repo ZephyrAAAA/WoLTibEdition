@@ -159,6 +159,9 @@
         <TimeFactor value="1"/>
         <ValidatorArray value="noMarkers"/>
     </CEffectCreateHealer>
+    <CEffectCreatePersistent id="P38ScytheGuassPistolBurst">
+        <PeriodicPeriodArray index="1" value="0"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="ParasiteSporeDamage">
         <AttributeBonus index="Massive" value="0"/>
         <Amount value="22"/>
