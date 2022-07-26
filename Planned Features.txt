@@ -36,19 +36,21 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 
 
 
-Missions that aren't at least somewhat defense in nature (And thus get regular attack waves to apply near constant pressure) have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
+Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
 
 *Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
 
 Implemented a topbar of Support Powers.
 
-Mercenaries are now a topbar power, with unlimited uses.
+Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought.
 
 You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
 
 Ghosts/Spectres have been reworked to be a unique Commando unit. Ghosts are better at taking down structures and tough enemies, Spectres are better at Crowd Control. 
 
 Bonus Objectives now generally give something good in-mission.
+
+Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
 
 
 MISSION SPECIFIC CHANGES:
@@ -66,7 +68,7 @@ Liberation Day:
 -There is now 4 marines on the path to the APC from the square. This is increased to 6 on hard, or a viking and 2 marines on Brutal
 -Killing 3 and 6 holoboards rewards you with an additional marine squad.
 -Killing a holoboard heals all your units, and restores any lost squad members.
--Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed)
+-Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed), and you get a message saying this.
 -Added a tip about squads
 
 The Outlaws:
@@ -114,7 +116,7 @@ The Evacuation:
 -Added an alternate victory condition to clear all the zerg out of the area
 
 Devil's Playground:
--You now need to collect 80k minerals, or 70k on Casual.
+-You now need to collect 120k minerals
 -Tosh's miners now have a node, refinery, and 1 SCV, instead of a CC and 5 SCVs.
 
 Smash and Grab:
@@ -122,24 +124,25 @@ Smash and Grab:
 
 Outbreak:
 
+Welcome to the Jungle:
+
+Great Train Robbery:
+
 Safe Haven:
 -Purifier Mothership no longer has less range than vikings
 -Get the "Call in the FLeet - Protoss Edition" support power
 
 Haven's Fall:
 
-Great Train Robbery:
-
 Cutthroat:
 
 Engine of Destruction:
+-Loki something something
 
 Media Blitz:
 
 Piercing the Shroud:
 -Collecting the Chrono Rift device now unlocks a topbar power for future use.
-
-Welcome to the Jungle:
 
 Breakout:
 -Give Tosh Psionic Lash
@@ -157,23 +160,29 @@ Supernova:
 
 Maw of the Void:
 -Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs.
+-Convert to an open-ended macro mission
 
 Gates of Hell:
 
 Belly of the Beast:
+-The Heroes now have a combined Command Card
+-Stettman no longer blocks medic healing
 
 Shatter the Sky:
 
 All-in:
 
 Whispers of Doom:
+-Zeratul swole now, 3 charges of blink, 33% faster attack speed
 
 A Sinister Turn:
+-Stealth misison, free the preservers while avoiding Ma'ar and Protoss guardians
 
 Echoes of the Future:
+-No-build mission, touch the overmind 4 times
 
 In Utter Darkness:
-
+-Unit management mission, no building for you
 
 
 UNIT CHANGES:
@@ -190,13 +199,17 @@ Hellion- Now fires constantly
 
 Reaper- Guns now do Sniper damage, charges are now melee range.
 
-Wraith- Triple attack damage and attack coodown, on both weapons, and Fire On The Move, with a 135 degree firing cone.
+Wraith- Triple attack damage and attack coodown, on both weapons, and Fire On The Move, with a 135 degree firing cone. Laser can fire up
 
 Predator- Comparitively Cheaper, not locked behind research
 
-Thor- Reduce damage by 33%
+Viking- Reduce Viking missile range
 
-Diamondback- Increase speed to match hellion
+Thor- Reduce damage by 33%, Barrage no longer stuns, Barrage starts area
+
+Diamondback- Increase speed to match hellion, Increase firing speed, Get more range
+
+Goliath- Starts with Ares
 
 Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
 
@@ -206,10 +219,24 @@ Medivac- Heals units inside it
 
 Kerrigan- Massive units are now immune to Implosion
 
+Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 1000 sniper at 0.5 speed, No nuke
+
+Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse does damage and no stun, Autoattack does 1000 sniper at 0.5 speed, No nuke
+
 
 ARMORY UPGRADE CHANGES:
 
-Orbital Command- Unlock support powers on each tech building. Scan on EBay, veteran infantry on shadow ops, veteran vehicles on armoury, yamato strike on fusion core.
+Stimpack- No movement bonus
+
+Concussive- Applies to Devastation Turret
+
+Stabilizer->
+
+Medic Tech-
+
+Projectile Accelerator- Affects Shrike Turret
+
+Orbital Command- Unlock support powers on each tech building. Scan on EBay, nuke on shadow ops, Banshee Airstrike on armoury, yamato strike on fusion core.
 
 Advanced Construction- Reduce build time of units (Also affects cost)
 
@@ -217,11 +244,17 @@ Dual Fusion- General repair speed increase, since SCVs no longer repair
 
 Thermite-> Hydraulic Stabilizers- Allow Hellion to Fire on the move
 
+Thicc flame- Fixed
+
 Neosteel Bunker-> Shrike Turret, also shrike is buffed (6x2, 6 range+1 with projectie accelerator, affected by infantry ultracaps)
 
 Displacement Field- Dodge chance increased to 40%
 
-Maelstrom-> Smart Servos- Reduce transformation time, and Fire on the Move
+Tomahak power cells- Also increases energy regen
+
+Hyperflight rotors-> Half energy cloak
+
+Maelstrom-> Smart Servos- Reduce transformation time, and armour in siege mode
 
 Concussive Shells- Affects the Devastation Turret
 
@@ -233,6 +266,19 @@ U-238 Shells- Increases damage, instead of damage vs light
 
 G-4 Cluster Bomb-> Combat Drugs- Life Regen
 
+Ripwave missiles-> 
+
+Tri-lithium-> 
+
+Ares Class-> Health
+
+Barrage Area-> Thor speedy boi
+
+Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, that have a preference for targeting different units.
+
+Medivac drop speed-> Medivac bunker for infantry
+
+Ghost/Spectre upgrades- Banned
 
 
 RESEARCH LAB CHANGES:
@@ -243,11 +289,11 @@ Tech Reactor-> Plasma Shielding- Shields for all units
 
 Autogas-> Autoharvesting
 
-Command Center Reactor- Reduce build time of units (Also affects cost)
+Command Center Reactor- Reduce build time of buildings (Also affects cost)
 
-Orbital Supply Depot- Increase Build Radius
+Orbital Supply Depot- Passive income
 
-Micro Filtering- SCVs collect more minerals per gather action, without depleting the field more
+Micro Filtering- SCVs collect double the minerals per gather action
 
 Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 
@@ -264,7 +310,7 @@ Cellular Reactor->
 
 Predator->
 
-Hercules-> Cellular Reactor
+Hercules-> Cellular Reactor- Also increases energy regen
 
 Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than having to research every mission.
 
@@ -278,19 +324,17 @@ Building Health and Armour [Engineering Bay]
 
 Defense turret range [Engineering Bay]
 
+Marauder shoulder rockets- [Barracks Tech Lab]
+
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee, Seige Tank) [Engineering Bay]
 
-Infantry Health and Armour [Shadow Ops]
-
-Vehicle Health and Armour [Factory Tech Lab]
-
 Improved Engines-Ships move faster [Starport Tech Lab]
 
-Ship Health and armour [Starport Tech Lab]
+BC Health- [Starport Tech Lab]
 
 Blue Flame- all fire weapons deal more damage [Armoury]
 
