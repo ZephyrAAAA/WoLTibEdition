@@ -13,6 +13,53 @@
     <CAbilEffectTarget id="BonesHeal">
         <Marker Link="Abil/##id##"/>
     </CAbilEffectTarget>
+    <CAbilArmMagazine id="CCMechanicalRepair">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Launch value="ReleaseAtSource"/>
+        <Flags index="AutoCreate" value="1"/>
+        <Flags index="Retarget" value="1"/>
+        <Flags index="ShowStatus" value="0"/>
+        <Leash value="4"/>
+        <InfoArray index="Ammo1" CountStart="3" Manage="Recall" Unit="CCRepairDrone">
+            <Charge HideCount="1" Link="CarrierRepairDrone" Location="Unit"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="RepairDrones">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="External" value="1"/>
+        </InfoArray>
+        <Alert value="NoAlert"/>
+        <EffectArray index="Create" value="CarrierRepairDroneRecall"/>
+        <ExternalAngle value="59.9963"/>
+        <ExternalAngle value="180"/>
+        <ExternalAngle value="299.9926"/>
+        <MaxCount value="3"/>
+    </CAbilArmMagazine>
+    <CAbilEffectTarget id="RepairDroneHeal">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="MechanicalRepair"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <TargetFilters value="Mechanical,Visible;Self,Neutral,Enemy,Missile,Uncommandable,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSLifeFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="2"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Mechanical,Visible;Self,Neutral,Enemy,Structure,Missile,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="NotWarpingIn"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CarrierRepairDroneHeal"/>
+        <AcquireAttackers value="1"/>
+    </CAbilEffectTarget>
     <CAbilArmMagazine id="Refinery">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="Bunker"/>

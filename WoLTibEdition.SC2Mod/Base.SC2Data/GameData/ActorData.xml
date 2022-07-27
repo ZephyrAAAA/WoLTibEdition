@@ -92,6 +92,39 @@
         <BuildModel value="Invisible"/>
         <PlacementModel value="Invisible"/>
     </CActorUnit>
+    <CActorUnit id="CarrierRepairDrone" parent="GenericUnitStandard" unitName="CCRepairDrone">
+        <On Terms="Behavior.WarpInEffect15.On" Send="ModelSwap ObserverWarpIn"/>
+        <On Terms="Behavior.WarpInEffect15.On" Send="$Birth"/>
+        <On Terms="Behavior.WarpInEffect15.Off" Send="ModelSwap Observer"/>
+        <On Terms="Behavior.WarpInEffect15.Off" Send="AnimBaselineStart"/>
+        <Model value="PortJunker"/>
+        <AnimBlendTime value="1.200000"/>
+        <BuildModel value="PortJunker"/>
+        <DeathArray index="Normal" ModelLink="PortJunker" SoundLink="Observer_Explode"/>
+        <PlacementModel value="PortJunker"/>
+        <PortraitModel value="ObserverPortrait"/>
+        <BarOffset value="40"/>
+        <BarWidth value="42"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Protoss-Observer.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-protoss-observer.dds"/>
+        <HighlightTooltip value="Unit/Name/CarrierRepairDrone"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-protoss-airarmorlevel0.dds"/>
+        <SoundArray index="Ready" value="Observer_Ready"/>
+        <SoundArray index="What" value="Observer_What"/>
+        <SoundArray index="Yes" value="Observer_Yes"/>
+        <SoundArray index="Pissed" value="Observer_Pissed"/>
+        <UnitIcon value="Assets\Textures\btn-unit-protoss-observer.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Protoss-Observer.dds"/>
+        </Wireframe>
+        <WireframeShield>
+            <Image value="Assets\Textures\Wireframe-Protoss-Observer-Shield01.dds"/>
+            <Image value="Assets\Textures\Wireframe-Protoss-Observer-Shield02.dds"/>
+            <Image value="Assets\Textures\Wireframe-Protoss-Observer-Shield03.dds"/>
+        </WireframeShield>
+    </CActorUnit>
     <CActorSiteOpLocalOffset id="CollapsibleRockTowerOffset">
         <LocalOffset value="0.000000,-5.000000,0.000000"/>
     </CActorSiteOpLocalOffset>
@@ -672,6 +705,36 @@
             <Image value="Assets\Textures\Wireframe-Terran-MissileTurret.dds"/>
         </Wireframe>
     </CActorUnit>
+    <CActorModel id="MechanicalRepairModel" parent="ModelAnimationStyleContinuous">
+        <On Terms="ActorCreation" Send="$Birth PlayForever"/>
+        <On Terms="Effect.MechanicalRepair.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.MechanicalRepair.TargetStop; At Target" Send="Destroy"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <Model value="NanoRepairBeamImpact"/>
+    </CActorModel>
+    <CActorBeamSimple id="MechanicalRepairBeam" parent="BeamSimpleAnimationStyleContinuous">
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Effect.MechanicalRepair.TargetStart" Send="Create"/>
+        <On Terms="Effect.MechanicalRepair.TargetStop" Send="Destroy"/>
+        <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <Model value="NanoRepairBeam"/>
+        <HostLaunch Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <HostLaunchSiteOps Ops="SOpAttachCenter"/>
+        <HostImpact Subject="_Unit" Scope="Target" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorSound id="MechanicalRepairSound" parent="SoundContinuous">
+        <On Terms="Effect.MechanicalRepair.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.MechanicalRepair.TargetStop; At Target" Send="Destroy"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="Create NanoRepairSoundStart"/>
+        <On Terms="ActorDestruction" Send="Create NanoRepairSoundStop"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOverhead"/>
+        <Sound value="Medivac_HealLoop"/>
+    </CActorSound>
     <CActorUnit id="OrbitalCommand2" parent="TerranBuildingFlyerEx" unitName="OrbitalCommand2">
         <Macros value="MacroTownhallDeco_Terran"/>
         <Macros value="TerranOrbitalCommandPlayerDecalMacro"/>

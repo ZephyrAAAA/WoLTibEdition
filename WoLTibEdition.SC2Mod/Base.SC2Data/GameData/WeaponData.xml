@@ -42,6 +42,7 @@
         <DamagePoint value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Diamondback">
+        <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
@@ -81,18 +82,22 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA">
         <Tip value="Weapon/Tip/Rocket"/>
+        <Range value="9"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathAUpgraded">
         <Tip value="Weapon/Tip/Rocket"/>
+        <Range value="9"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathG">
         <Tip value="Weapon/Tip/Rifle"/>
+        <Range value="7"/>
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathGUpgraded">
         <Tip value="Weapon/Tip/Rifle"/>
+        <Range value="7"/>
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle">
@@ -284,6 +289,12 @@
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ScoutAir">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ScoutGround">
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="ShrikeTurret">
         <DisplayAttackCount value="2"/>
         <AttackType value="Normal"/>
@@ -295,6 +306,9 @@
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealotEyeBlast">
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThermalLances">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">
