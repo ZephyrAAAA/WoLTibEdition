@@ -38,7 +38,9 @@
         <Indices index="16" Name="ConversationState/Tech/Tech2_Reaper_1"/>
         <Indices index="17" Name="ConversationState/Tech/Tech2_Reaper_2"/>
         <Indices index="18" Name="ConversationState/Tech/Tech2_Hellion_1"/>
-        <Indices index="19" Name="ConversationState/Tech/Tech2_Hellion_2"/>
+        <Indices index="19" Name="ConversationState/Tech/Tech2_Hellion_2">
+            <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
+        </Indices>
         <Indices index="20" Name="ConversationState/Tech/Tech2_Goliath_1"/>
         <Indices index="21" Name="ConversationState/Tech/Tech2_Goliath_2"/>
         <Indices index="22" Name="ConversationState/Tech/Tech2_Diamondback_1"/>
@@ -67,6 +69,9 @@
     <CConversationState id="TechState">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>
+        </Indices>
+        <Indices index="19">
+            <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
         </Indices>
     </CConversationState>
 </Catalog>

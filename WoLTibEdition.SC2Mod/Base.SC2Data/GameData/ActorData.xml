@@ -288,14 +288,8 @@
     <CActorUnit id="DevastationTurret" parent="TerranBuildingEx" unitName="DevastationTurret">
         <Aliases value="_UnitHuge"/>
         <On index="69" Terms="UnitConstruction.DevastationTurret.Start" Send="Create MissileTurretBuild"/>
-        <On Terms="ActorCreation; ValidateUnit MissileTurretUpgraded" Send="ModelSwap MissileTurretTitaniumHousing"/>
-        <On Terms="Upgrade.ReinforcedSuperstructure.Add" Send="ModelSwap MissileTurretTitaniumHousing"/>
-        <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
         <On Terms="Signal.*.test" Send="Create TurretUnitDeathModel"/>
         <On Terms="Signal.*.test" Send="SetOpacity"/>
-        <On Terms="ActorCreation; ValidateUnit MissileTurretUpgraded" Send="ModelSwap MissileTurretTitaniumHousing"/>
-        <On Terms="Upgrade.ReinforcedSuperstructure.Add" Send="ModelSwap MissileTurretTitaniumHousing"/>
-        <On Terms="UnitDeathCustomize; ValidateUnit MissileTurretUpgradedNoConstruction" Send="DeathCustomize Upgrade"/>
         <CreepHeightClass value="Small"/>
         <BuildModel value="MissileTurretBuild"/>
         <DeathArray index="Normal" ModelLink="MissileTurretDeath"/>

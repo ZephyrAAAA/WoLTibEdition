@@ -2322,6 +2322,11 @@
     <CUnit id="Ghost">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <BehaviorArray Link="Veterancy"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3906,6 +3911,7 @@
         <LifeMax value="250"/>
         <LifeArmor value="1"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <AlliedPushPriority value="11"/>
     </CUnit>
     <CUnit id="RaynorCommando">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

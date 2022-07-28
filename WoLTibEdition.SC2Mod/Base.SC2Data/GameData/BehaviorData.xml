@@ -299,22 +299,21 @@
     <CBehaviorVeterancy id="Veterancy">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <ShareFilters index="DamageDealt" value="-;Player,Ally,Neutral,Enemy,Hallucination"/>
-        <XPFraction index="DamageDealt" value="1"/>
-        <XPFraction index="Kills" value="0"/>
         <SharedXPMaxCount index="DamageDealt" value="0"/>
-        <VeterancyLevelArray MinVeterancyXP="1200" LevelGainEffect="SquadVeterancy1Iterate">
+        <SharedXPMaxCount index="Kills" value="0"/>
+        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy1Iterate">
             <Modification>
                 <DamageDealtFraction index="Ranged" value="0.1"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="1200" LevelGainEffect="SquadVeterancy1Iterate">
+        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy1Iterate">
             <Modification>
                 <DamageDealtFraction index="Ranged" value="0.1"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="1200" LevelGainEffect="SquadVeterancy2Iterate">
+        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy2Iterate">
             <Modification>
                 <AdditiveAttackSpeedFactor value="1"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>

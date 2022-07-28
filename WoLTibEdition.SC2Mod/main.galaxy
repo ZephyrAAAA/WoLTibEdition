@@ -565,6 +565,16 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	for (lv_i = 0; lv_i < 8; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", lv_i)));
 	}
+	if (TechTreeUpgradeCount(1, "UltraCapacitors", c_techCountCompleteOnly) > 0) {
+		TechTreeUpgradeAddLevel(1, "TerranInfantryUltraCapacitors", 1);
+		TechTreeUpgradeAddLevel(1, "TerranVehicleUltraCapacitors", 1);
+		TechTreeUpgradeAddLevel(1, "TerranShipUltraCapacitors", 1);
+	}
+	if (TechTreeUpgradeCount(1, "VanadiumPlating", c_techCountCompleteOnly) > 0) {
+		TechTreeUpgradeAddLevel(1, "TerranInfantryVanadiumPlating", 1);
+		TechTreeUpgradeAddLevel(1, "TerranVehicleVanadiumPlating", 1);
+		TechTreeUpgradeAddLevel(1, "TerranShipVanadiumPlating", 1);
+	}
 	ConversationDataStateSetValue("StoryState|AchievementDisabled", 1);
 	AchievementsDisable(1); //one of these should work
 	return true;
