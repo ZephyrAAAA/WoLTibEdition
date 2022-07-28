@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CEffectDamage id="90mmCannons">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="25"/>
+    </CEffectDamage>
     <CEffectEnumMagazine id="AirTransportLoadIterate2">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -48,6 +52,10 @@
         <Abil value="BunkerTransportSquad"/>
         <AbilCmdIndex value="1"/>
     </CEffectIssueOrder>
+    <CEffectDamage id="C10CanisterRifle">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="500"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="CollapsibleRockTowerCPFinalPurifier02">
         <EditorCategories value=""/>
         <Marker Link="Effect/CollapsibleRockTowerCPPurifier02"/>
@@ -103,6 +111,10 @@
     <CEffectSet id="DevilDogSet">
         <EffectArray index="1" value="DevilDogSearchArea"/>
     </CEffectSet>
+    <CEffectDamage id="DiamondbackBeam">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="40"/>
+    </CEffectDamage>
     <CEffectDamage id="EyeBeamsGroundLineDamage">
         <Amount value="20"/>
     </CEffectDamage>
@@ -131,13 +143,20 @@
         <KindSplash value="Splash"/>
         <Amount value="6"/>
     </CEffectDamage>
+    <CEffectDamage id="GoliathAU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="16"/>
+    </CEffectDamage>
+    <CEffectDamage id="GoliathG">
+        <Amount value="24"/>
+    </CEffectDamage>
     <CEffectDamage id="ImpalerTentacleU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="30"/>
     </CEffectDamage>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
-        <Amount value="15"/>
+        <Amount value="12"/>
     </CEffectDamage>
     <CEffectIssueOrder id="MarineSquadStim">
         <EditorCategories value=""/>
@@ -148,6 +167,16 @@
         <WhichUnit Value="Caster"/>
         <EffectExternal value="MarineSquadStim"/>
     </CEffectEnumMagazine>
+    <CEffectCreateHealer id="MechanicalRepair">
+        <ValidatorArray value="NotHidden"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="NotThorWreckage"/>
+        <ValidatorArray value="NotOdinWreckage"/>
+        <ValidatorArray value="NotVortexd"/>
+        <EditorCategories value="Race:Terran"/>
+        <DrainVital value="Energy"/>
+        <RechargeVitalFraction value="0.0507"/>
+    </CEffectCreateHealer>
     <CEffectDamage id="P38ScytheGuassPistol">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="12"/>
@@ -360,8 +389,13 @@
     <CEffectDamage id="ConcussiveGrenadesU" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="50"/>
+        <Amount value="35"/>
         <Death value="Blast"/>
+        <AreaArray Radius="0.4687" Fraction="1" Validator="HasHellstormMissilePods"/>
+        <AreaArray Radius="0.7812" Fraction="0.5" Validator="HasHellstormMissilePods"/>
+        <AreaArray Radius="1.25" Fraction="0.25" Validator="HasHellstormMissilePods"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFlags index="OffsetByUnitRadius" value="0"/>
     </CEffectDamage>
     <CEffectDamage id="PunisherGrenadesU">
         <AttributeBonus index="Armored" value="0"/>

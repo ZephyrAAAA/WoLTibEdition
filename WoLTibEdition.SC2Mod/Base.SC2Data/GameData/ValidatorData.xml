@@ -9,6 +9,10 @@
     <CValidatorPlayerRequirement id="D8ClusterBombsResearched">
         <WhichPlayer Value="Source"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasHellstormMissilePods">
+        <Find value="1"/>
+        <Value value="UseHailstormMissilePods"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerCompareResource id="HasRepairMoney">
         <Compare value="GT"/>
     </CValidatorPlayerCompareResource>
