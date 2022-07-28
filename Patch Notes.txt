@@ -1,6 +1,13 @@
 Factory and Starport spawn 3 repair drones now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 5% health/s.
 Goliath, Hellion, Diamondback no longer take supply
 Goliath damage increased by 33%
+Goliath now starts with Ares. Armoury upgrade is health now.
+Hellion Blue Flame is now a general Blue Flame upgrade that affects all fire weaponry.
+Hellion second Armoury upgrade is now a Fire On The Move upgrade
+The merc compound no longer shows up. Ever.
+
+Liberation Day:
+Jim has push priority over the marines now
 
 Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
