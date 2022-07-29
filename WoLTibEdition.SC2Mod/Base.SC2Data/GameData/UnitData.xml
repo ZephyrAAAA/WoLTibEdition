@@ -1829,6 +1829,9 @@
     <CUnit id="DominionKillTeam">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="DragoonACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4667,6 +4670,7 @@
         <AbilArray Link="Rally"/>
         <AbilArray Link="Starport2LiftOff"/>
         <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray Link="CCMechanicalRepair"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>

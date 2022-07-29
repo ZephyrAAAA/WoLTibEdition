@@ -50,6 +50,8 @@
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
         <Period value="1.5"/>
+        <Range value="7"/>
+        <Effect value="DiamondbackCP"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>

@@ -162,6 +162,16 @@
         <AffectedUnitArray value="SiegeBreaker"/>
         <AffectedUnitArray value="SiegeBreakerSieged"/>
     </CUpgrade>
+    <CUpgrade id="AresClassWeaponsSystem">
+        <EffectArray index="0" Reference="Unit,Goliath,LifeMax" Value="50"/>
+        <EffectArray index="1" Reference="Unit,Goliath,LifeStart" Value="50"/>
+        <EffectArray index="2" Reference="Unit,SpartanCompany,LifeMax" Value="50"/>
+        <EffectArray index="3" Reference="Unit,SpartanCompany,LifeStart" Value="50"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+    </CUpgrade>
     <CUpgrade id="BearclawNozzles">
         <EffectArray index="2" removed="1"/>
         <EffectArray index="3" removed="1"/>
@@ -412,6 +422,9 @@
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>
+    </CUpgrade>
+    <CUpgrade id="TriLithiumPowerCells">
+        <EffectArray index="0" removed="1"/>
     </CUpgrade>
     <CUpgrade id="TwinLinkedFlameThrowers">
         <EffectArray index="0" Reference="Effect,InfernalFlameThrower,AreaArray[0].Radius"/>
