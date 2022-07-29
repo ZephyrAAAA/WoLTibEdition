@@ -326,6 +326,10 @@
         <DamageMap index="None" Model="DevastationTurretAttackDamage" Sound="DevastationTurretAttackDamage" ModelReaction="DevastationTurretAttackDamageReaction"/>
         <DamageMap index="Shield" Sound="DevastationTurretAttackDamageShield" ModelReaction="DevastationTurretAttackDamageReactionShield"/>
     </CActorAction>
+    <CActorAction id="DevilDogAttack">
+        <LaunchAttachQuery Methods="$GenericAttackLaunchMethods"/>
+        <LaunchModel value="FirebatAttackModel"/>
+    </CActorAction>
     <CActorUnit id="EngineeringBay2" parent="TerranBuildingEx" unitName="EngineeringBay2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -385,7 +389,8 @@
         <On Terms="AbilMorph.*.Start; MorphTo Factory2" Send="Create"/>
     </CActorSound>
     <CActorModel id="FirebatAttackModel">
-        <Scale value="1.000000,2.500000,1.000000"/>
+        <On index="2" Send="SetScale 2.250000,1.000000,1.000000"/>
+        <On Terms="ActorCreation; ValidateUnit HasHellionInfernalPreIgniter" Send="SetTintColor 40,120,255"/>
     </CActorModel>
     <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
         <Aliases value="_UnitHuge"/>

@@ -8,6 +8,10 @@
         <EditorCategories value=""/>
         <SelectionLayer value="2"/>
     </CModel>
+    <CModel id="FirebatAttackLaunch">
+        <ScaleMax value="1.000000,3.750000,1.000000"/>
+        <ScaleMin value="1.000000,3.750000,1.000000"/>
+    </CModel>
     <CModel id="LowPower" parent="Glaze">
         <Model value="Assets\Effects\Glaze\Glaze_BlackDeath_Coop\Glaze_BlackDeath_Coop.m3"/>
         <EditorCategories value=""/>

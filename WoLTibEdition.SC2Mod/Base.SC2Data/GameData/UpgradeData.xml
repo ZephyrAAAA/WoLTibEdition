@@ -1,6 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CUpgrade default="1" id="TerranShipVanadiumPlating">
+    <CUpgrade id="ProtossGroundArmorsLevel1">
+        <EffectArray index="0" Reference="Unit,Zealot,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,Zealot,LifeArmor"/>
+        <EffectArray index="2" Reference="Unit,Immortal,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,Immortal,LifeArmor" Value="1.000000"/>
+        <EffectArray index="4" Reference="Unit,Colossus,LifeArmorLevel"/>
+        <EffectArray index="5" Reference="Unit,Colossus,LifeArmor" Value="1"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,HighTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="8" Reference="Unit,Zeratul,LifeArmor" Value="1.000000"/>
+        <EffectArray index="9" Reference="Unit,Zeratul,LifeArmorLevel" Value="1"/>
+        <EffectArray index="10" Reference="Unit,Karass,LifeArmor" Value="1.000000"/>
+        <EffectArray index="11" Reference="Unit,Karass,LifeArmorLevel"/>
+        <EffectArray index="12" Operation="Set" Reference="Actor,Zeratul,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="13" Operation="Set" Reference="Actor,Karass,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="14" Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundArmorsLevel2">
+        <EffectArray index="0" Reference="Unit,Zealot,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,Zealot,LifeArmor" Value="2"/>
+        <EffectArray index="2" Reference="Unit,Stalker,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,Stalker,LifeArmor"/>
+        <EffectArray index="4" Reference="Unit,Immortal,LifeArmorLevel"/>
+        <EffectArray index="5" Reference="Unit,Immortal,LifeArmor" Value="2"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Actor,Zeratul,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundWeaponsLevel1">
+        <EffectArray index="0" Operation="Set" Reference="Weapon,DisruptionBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="1" Operation="Multiply" Reference="Effect,DisruptionBeamDamage,Amount" Value="1.2"/>
+        <EffectArray index="2" Reference="Weapon,ParticleDisruptors,Level"/>
+        <EffectArray index="3" Operation="Multiply" Reference="Effect,ParticleDisruptorsU,Amount" Value="1.5"/>
+        <EffectArray index="4" Reference="Weapon,PsionicShockwave,Level"/>
+        <EffectArray index="5" Operation="Multiply" Reference="Effect,PsionicShockwaveDamage,Amount" Value="1.3"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,ParticleDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Weapon,PsionicShockwave,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="8" Reference="Weapon,Zeratul,Level" Value="1"/>
+        <EffectArray index="9" Reference="Effect,Zeratul,Amount" Value="5"/>
+        <EffectArray index="10" Reference="Effect,PsiDischargeDamage,Amount" Value="2"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
+        <EffectArray index="12" Reference="Weapon,DisruptionBeam,Level" Value="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossGroundWeaponsLevel2">
+        <EffectArray index="1" Operation="Multiply" Value="1.5"/>
+        <EffectArray index="2" Reference="Weapon,PhaseDisruptors,Level"/>
+        <EffectArray index="3" Operation="Multiply" Reference="Effect,PhaseDisruptors,Amount" Value="1.3"/>
+        <EffectArray index="4" Reference="Weapon,ThermalLances,Level"/>
+        <EffectArray index="5" Operation="Multiply" Reference="Effect,ThermalLancesMU,Amount" Value="1.2"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,PsiBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Weapon,PhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,ThermalLances,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="9" Reference="Weapon,Zeratul,Level"/>
+        <EffectArray index="10" Reference="Effect,Zeratul,Amount"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossShieldsLevel2">
+        <EffectArray index="1" Value="1.33"/>
+        <EffectArray index="3" Value="1.33"/>
+        <EffectArray index="5" Value="1.33"/>
+        <EffectArray index="7" Value="1.33"/>
+        <EffectArray index="9" Value="1.33"/>
+        <EffectArray index="11" Value="1.33"/>
+        <EffectArray index="13" Value="1.33"/>
+        <EffectArray index="15" Value="1.33"/>
+        <EffectArray index="17" Value="1.33"/>
+        <EffectArray index="19" Value="1.33"/>
+        <EffectArray index="21" Value="1.33"/>
+        <EffectArray index="23" Value="1.33"/>
+        <EffectArray index="25" Value="1.33"/>
+        <EffectArray index="27" Value="1.33"/>
+        <EffectArray index="29" Value="1.33"/>
+        <EffectArray index="31" Value="1.33"/>
+        <EffectArray index="32" Value="1.33"/>
+        <EffectArray index="35" Value="1.33"/>
+        <EffectArray index="37" Value="1.33"/>
+        <EffectArray index="39" Value="1.33"/>
+        <EffectArray index="41" Value="1.33"/>
+        <EffectArray index="43" Value="1.33"/>
+        <EffectArray index="45" Value="1.33"/>
+        <EffectArray index="47" Value="1.33"/>
+        <EffectArray index="48" Value="1.33"/>
+        <EffectArray index="51" Value="1.33"/>
+        <EffectArray index="53" Value="1.33"/>
+        <EffectArray index="55" Value="1.33"/>
+        <EffectArray index="57" Value="1.33"/>
+        <EffectArray index="59" Value="1.33"/>
+        <EffectArray index="61" Value="1.33"/>
+        <EffectArray index="63" Value="1.33"/>
+        <EffectArray index="96" Value="1.33"/>
+        <EffectArray index="98" Value="1.33"/>
+        <EffectArray index="100" Value="1.33"/>
+        <EffectArray index="102" Value="1.33"/>
+        <EffectArray index="104" Value="1.33"/>
+        <EffectArray index="106" Value="1.33"/>
+        <EffectArray index="108" Value="1.33"/>
+        <EffectArray index="110" Value="1.33"/>
+        <EffectArray index="113" Value="1.33"/>
+        <EffectArray index="114" Value="1.33"/>
+        <EffectArray index="117" Value="1.33"/>
+        <EffectArray index="119" Value="1.33"/>
+        <EffectArray index="121" Value="1.33"/>
+        <EffectArray index="128" removed="1"/>
+        <EffectArray index="129" removed="1"/>
+        <EffectArray index="130" removed="1"/>
+        <EffectArray index="131" removed="1"/>
+        <EffectArray index="132" removed="1"/>
+        <EffectArray index="133" removed="1"/>
+        <EffectArray index="134" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="TerranShipVanadiumPlating">
         <Flags index="UpgradeCheat" value="0"/>
         <Race value="Terr"/>
         <ScoreCount value="ArmorTechnologyCount"/>
@@ -32,6 +217,8 @@
         <EffectArray Reference="Unit,HelsAngelFighter,LifeArmor" Value="1.000000"/>
         <EffectArray Reference="Unit,HelsAngelFighter,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,VikingAssault,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
         <AffectedUnitArray value="Banshee"/>
         <AffectedUnitArray value="Battlecruiser"/>
@@ -48,8 +235,10 @@
         <AffectedUnitArray value="HelsAngelAssault"/>
         <AffectedUnitArray value="HelsAngelFighter"/>
         <AffectedUnitArray value="DukesRevenge"/>
+        <LeaderAlias value="VanadiumPlating"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
     </CUpgrade>
-    <CUpgrade default="1" id="TerranShipUltraCapacitors">
+    <CUpgrade id="TerranShipUltraCapacitors">
         <Flags index="UpgradeCheat" value="0"/>
         <Race value="Terr"/>
         <ScoreCount value="WeaponTechnologyCount"/>
@@ -71,6 +260,7 @@
         <EffectArray Reference="Weapon,DRBattlecruiserG,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,DRCannonsG,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,DRBattlecruiserFakeG,RateMultiplier" Value="0.2"/>
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <AffectedUnitArray value="Banshee"/>
         <AffectedUnitArray value="Battlecruiser"/>
@@ -81,8 +271,10 @@
         <AffectedUnitArray value="HelsAngelAssault"/>
         <AffectedUnitArray value="HelsAngelFighter"/>
         <AffectedUnitArray value="DukesRevenge"/>
+        <LeaderAlias value="UltraCapacitors"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
     </CUpgrade>
-    <CUpgrade default="1" id="TerranVehicleVanadiumPlating">
+    <CUpgrade id="TerranVehicleVanadiumPlating">
         <Flags index="UpgradeCheat" value="0"/>
         <Race value="Terr"/>
         <ScoreCount value="ArmorTechnologyCount"/>
@@ -112,6 +304,8 @@
         <EffectArray Reference="Unit,Odin,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,Predator,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Predator,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
         <AffectedUnitArray value="Odin"/>
         <AffectedUnitArray value="Hellion"/>
@@ -124,8 +318,10 @@
         <AffectedUnitArray value="SpartanCompany"/>
         <AffectedUnitArray value="SiegeBreaker"/>
         <AffectedUnitArray value="SiegeBreakerSieged"/>
+        <LeaderAlias value="VanadiumPlating"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
     </CUpgrade>
-    <CUpgrade default="1" id="TerranVehicleUltraCapacitors">
+    <CUpgrade id="TerranVehicleUltraCapacitors">
         <Flags index="UpgradeCheat" value="0"/>
         <Race value="Terr"/>
         <ScoreCount value="WeaponTechnologyCount"/>
@@ -149,6 +345,7 @@
         <EffectArray Reference="Weapon,SiegeBreaker,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,ArcliteShockCannon,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,Predator,RateMultiplier" Value="0.2"/>
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <AffectedUnitArray value="Odin"/>
         <AffectedUnitArray value="Hellion"/>
@@ -161,6 +358,8 @@
         <AffectedUnitArray value="SpartanCompany"/>
         <AffectedUnitArray value="SiegeBreaker"/>
         <AffectedUnitArray value="SiegeBreakerSieged"/>
+        <LeaderAlias value="UltraCapacitors"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
     </CUpgrade>
     <CUpgrade id="AresClassWeaponsSystem">
         <EffectArray index="0" Reference="Unit,Goliath,LifeMax" Value="50"/>
@@ -190,6 +389,8 @@
     <CUpgrade id="HellionCampaignInfernalPreIgniter">
         <EffectArray index="0" Operation="Multiply" Reference="Effect,InfernalFlameThrower,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,FirebatUFull,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,DevilDogDamage,Amount" Value="1.5"/>
+        <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HiSecAutoTracking">
         <EffectArray Reference="Weapon,ConcussiveGrenades,Range" Value="1"/>
@@ -374,6 +575,12 @@
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>
+        <Flags index="UpgradeCheat" value="0"/>
+        <Race value="Terr"/>
+        <ScoreCount value="WeaponTechnologyCount"/>
+        <ScoreValue value="WeaponTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <LeaderAlias value="UltraCapacitors"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryVanadiumPlating">
         <EffectArray Reference="Unit,SCV,LifeArmorLevel" Value="1"/>
@@ -422,6 +629,12 @@
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>
+        <Flags index="UpgradeCheat" value="0"/>
+        <Race value="Terr"/>
+        <ScoreCount value="ArmorTechnologyCount"/>
+        <ScoreValue value="ArmorTechnologyValue"/>
+        <ScoreResult value="BuildOrder"/>
+        <LeaderAlias value="VanadiumPlating"/>
     </CUpgrade>
     <CUpgrade id="TriLithiumPowerCells">
         <EffectArray index="0" removed="1"/>

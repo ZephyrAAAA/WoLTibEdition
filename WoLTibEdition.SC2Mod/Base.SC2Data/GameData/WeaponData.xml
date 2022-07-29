@@ -12,6 +12,9 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ArcliteShockCannon">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
@@ -45,11 +48,12 @@
         <Range value="4"/>
         <Period value="0.5"/>
         <DamagePoint value="0"/>
+        <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Diamondback">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
-        <Period value="1.5"/>
         <Range value="7"/>
         <Effect value="DiamondbackCP"/>
     </CWeaponLegacy>
@@ -309,6 +313,9 @@
         <AttackType value="Normal"/>
         <Effect value="ShrikeTurretCP"/>
         <Tip value="Weapon/Tip/Rifle"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SiegeBreaker">
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>

@@ -122,11 +122,21 @@
     <CRequirement id="IsNotCrane">
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirement>
+    <CRequirement id="LearnThermiteFilamints">
+        <EditorCategories value="Race:Protoss,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnInfantryUltraCaps">
         <NodeArray index="Show" Link="NotCountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnVehicleUltraCaps">
+        <NodeArray index="Show" Link="NotCountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnInfantryVanadium">
         <NodeArray index="Show" Link="NotCountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnVehicleVanadium">
+        <NodeArray index="Show" Link="NotCountUpgradeTerranVehicleVanadiumPlatingQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="PlayerHasPower">
         <EditorCategories value="Race:Neutral"/>

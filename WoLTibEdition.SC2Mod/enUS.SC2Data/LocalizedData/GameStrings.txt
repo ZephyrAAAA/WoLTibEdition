@@ -65,8 +65,11 @@ Button/Name/Depower=Depower
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/PauseQueue=Pause Queue
+Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResumeQueue=Resume Queue
 Button/Name/Sell=Sell
+Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
+Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
@@ -95,6 +98,7 @@ Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG pat
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Sell=Sells selected building for a refund
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
@@ -106,6 +110,8 @@ Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
+Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
+Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">All units affected by this upgrade attack 20% faster.</s>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources and build base structures. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
