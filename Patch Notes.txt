@@ -16,8 +16,8 @@ Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
 Starting infrantry replaced with squads
 In addition to the expansion, there is now 4 nodes spread around the map.
-Getting the first bonus now gives you Goliath Neosteel Plating
-Getting the second bonus now gives you Multilock
+Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
+Getting the second bonus now gives you Multilock, and a message saying so
 SCVs can now harvest terrazine
 
 Outbreak:
@@ -27,7 +27,9 @@ Removed 2 of the starting depots
 Bonus objectives give hellion armoury upgrades
 The main base only has 1 node
 There is a node outside each entrance.
-Getting the bonuses now gives you hellion armoury upgrades
+The node in your base starts empty
+Getting the bonuses now gives you hellion armoury upgrades, and messages saying so
+Aberrations now show up at the end of the first night, and every night thereafter
 
 Trains:
 Resources all converted, SCVs deleted, starting refinery placed
@@ -36,5 +38,6 @@ Removed 1 of the starting depots
 Replaced 2 mineral pallets with vespene pallets.
 The starting fields and expansion fields are empty
 Added 2 mineral pallets
-Getting the second bonus now gives you Diamondback Shaped Hull
-Getting the third bonus now gives you Diamondback Piercing
+Getting the second bonus now gives you Diamondback Shaped Hull, and a message saying so
+Getting the third bonus now gives you Diamondback Piercing, and a message saying so
+Kill team marauders don't have 1 base armour anymore
