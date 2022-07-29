@@ -1,4 +1,4 @@
-Factory and Starport spawn 3 repair drones now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 5% health/s.
+Factory and Starport spawn 3 repair drones when landed and powered now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 5% health/s.
 Goliath, Hellion, Diamondback no longer take supply
 Goliath damage increased by 33%
 Goliath now starts with Ares. Armoury upgrade is health now.
@@ -8,6 +8,7 @@ The merc compound no longer shows up. Ever.
 Diamondback range buffed.
 Diamondback speed buffed to be the same as Hellion.
 Diamondback tri-lithium upgrade is now Piercing.
+Firebat damage nerfed by 25%
 
 Liberation Day:
 Jim has push priority over the marines now
