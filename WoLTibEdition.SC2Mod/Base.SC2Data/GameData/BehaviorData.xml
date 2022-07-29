@@ -46,6 +46,7 @@
             <StateFlags index="SuppressFoodUsed" value="1"/>
             <StateFlags index="SuppressRequirements" value="1"/>
             <StateFlags index="SuppressTech" value="1"/>
+            <AbilClassDisableArray index="CAbilArmMagazine" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
             <AbilClassDisableArray index="CAbilBuild" value="1"/>
             <AbilClassDisableArray index="CAbilSpecialize" value="1"/>

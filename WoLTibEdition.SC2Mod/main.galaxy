@@ -113,7 +113,7 @@ bool Returning_Func (bool testConds, bool runActions) {
 	if (!runActions) {
 		return true;
 	}
-	if (UnitHasBehavior(EventUnitTargetUnit(), "Refinery")) {
+	if (UnitHasBehavior(EventUnitTargetUnit(), "Refinery") && UnitGetPropertyInt(EventUnit(), c_unitPropCarriedMinerals, true) > 0) {
 		UnitIssueOrder(EventUnit(), OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), EventUnitTargetUnit()), c_orderQueueAddToFront);
 	}
 	return true;

@@ -144,4 +144,8 @@
         <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>
         <NodeArray index="Show" Link="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
     </CRequirement>
+    <CRequirement id="TriLithiumResearched">
+        <EditorCategories value="Race:Terran"/>
+        <NodeArray index="Use" Link="CountUpgradeTriLithiumPowerCellsCompleteOnly"/>
+    </CRequirement>
 </Catalog>
