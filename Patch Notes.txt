@@ -13,12 +13,14 @@ Colossi are no longer blocked by fields of green
 Added the Infantry Mercenary topbar power.
 Added the Vehicle Mercenary topbar power.
 Added the Ship Mercenary topbar power.
+SCVs you start with separate from a Refinery now start mining on their own.
 
 Liberation Day:
 Jim has push priority over the marines now
 
 Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
+You start with 2 SCVs now.
 Starting infrantry replaced with squads
 In addition to the expansion, there is now 5 nodes spread around the map. The Tal'darim defend and contest these nodes.
 Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
@@ -38,7 +40,7 @@ Getting the bonuses now gives you hellion armoury upgrades, and messages saying 
 Aberrations now show up at the end of the first night, and every night thereafter
 
 Trains:
-Resources all converted, SCVs deleted, starting refinery placed
+Resources all converted, SCVs deleted
 Starting infrantry replaced with squads
 Removed 1 of the starting depots
 Replaced 2 mineral pallets with vespene pallets.
