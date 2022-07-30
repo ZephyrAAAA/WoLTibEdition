@@ -9,6 +9,10 @@ Diamondback range buffed.
 Diamondback speed buffed to be the same as Hellion.
 Diamondback tri-lithium upgrade is now Piercing.
 Firebat damage nerfed by 25%
+Colossi are no longer blocked by fields of green
+Added the Infantry Mercenary topbar power.
+Added the Vehicle Mercenary topbar power.
+Added the Ship Mercenary topbar power.
 
 Liberation Day:
 Jim has push priority over the marines now
@@ -16,10 +20,11 @@ Jim has push priority over the marines now
 Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
 Starting infrantry replaced with squads
-In addition to the expansion, there is now 4 nodes spread around the map.
+In addition to the expansion, there is now 5 nodes spread around the map. The Tal'darim defend and contest these nodes.
 Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
 Getting the second bonus now gives you Multilock, and a message saying so
-SCVs can now harvest terrazine
+SCVs can now harvest terrazine, and return it to Refineries
+The expansion now has a HT on brutal
 
 Outbreak:
 Resources all converted, SCVs deleted, starting refinery placed
