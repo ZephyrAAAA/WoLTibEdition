@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CBehaviorBuff id="BioMode">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMaximum="2.25"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BuildHandled">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -64,6 +69,15 @@
         <Duration value="60"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="HailstormLaunchers">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="HasHailstormLaunchers"/>
+        <Modification>
+            <WeaponEnableArray value="HailstormLauncher"/>
+            <WeaponEnableArray value="HailstormLauncher2"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorResource id="HighYieldMineralFieldMinerals">
         <HarvestTime value="0.1"/>
         <HarvestAmount value="28"/>
@@ -77,6 +91,10 @@
     <CBehaviorBuff id="IdleTaken">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PrecursorMerc">
+        <InitialEffect value="MercSquadDropDelay"/>
+        <FinalEffect value="RemovePrecursorMercIterate"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>

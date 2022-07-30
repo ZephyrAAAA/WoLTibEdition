@@ -82,9 +82,18 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Crane" State="CompleteOnlyAtUnit"/>
     </CRequirementCountUnit>
-    <CRequirementCountUpgrade id="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
+    <CRequirementCountUpgrade id="CountUpgradeHailstormLaunchersCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="HailstormLaunchers" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHailstormLaunchersQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="HailstormLaunchers" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
         <Count Link="HellionCampaignInfernalPreIgniter" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeLowPowerCompleteOnly">
@@ -101,12 +110,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="TerranVehicleUltraCapacitors" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranVehicleVanadiumPlatingQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="TerranVehicleVanadiumPlating" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementEq id="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1">
@@ -256,8 +263,11 @@
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirementNot>
-    <CRequirementNot id="NotCountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
+    <CRequirementNot id="NotCountUpgradeHailstormLaunchersQueuedOrBetter">
         <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeHailstormLaunchersQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLowPowerCompleteOnly">
@@ -270,11 +280,9 @@
         <OperandArray index="0" value="CountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranVehicleVanadiumPlatingQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeTerranVehicleVanadiumPlatingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">

@@ -153,6 +153,45 @@
             <Effect value="DiamondbackBeam"/>
         </AreaArray>
     </CEffectEnumArea>
+    <CEffectCreateUnit id="DropDevilDogs">
+        <ValidatorArray value="HasDevilDogs"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercGroundDrop"/>
+        <SpawnUnit value="DevilDogSquad"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="DropSpartanCompany">
+        <ValidatorArray value="HasSpartanCompany"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercGroundDrop"/>
+        <SpawnUnit value="SpartanCompany"/>
+        <SpawnCount value="3"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="DropHammerSecurities">
+        <ValidatorArray value="HasHammerSecurities"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercGroundDrop"/>
+        <SpawnUnit value="HammerSecuritiesSquad"/>
+        <SpawnCount value="3"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="DropSiegeBreakers">
+        <ValidatorArray value="HasSiegeBreakers"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercGroundDrop"/>
+        <SpawnUnit value="SiegeBreaker"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="DropWarPigs">
+        <ValidatorArray value="HasWarPigs"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercGroundDrop"/>
+        <SpawnUnit value="WarPigSquad"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
     <CEffectDamage id="EyeBeamsGroundLineDamage">
         <Amount value="20"/>
     </CEffectDamage>
@@ -188,14 +227,52 @@
     <CEffectDamage id="GoliathG">
         <Amount value="24"/>
     </CEffectDamage>
+    <CEffectLaunchMissile id="HailstormLauncherLM">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="HailstormLauncherU"/>
+        <AmmoUnit value="GoliathAWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="HailstormLauncherU">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="12"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="HammerSecurityDamage">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="24"/>
+    </CEffectDamage>
     <CEffectDamage id="ImpalerTentacleU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="30"/>
     </CEffectDamage>
+    <CEffectSet id="InfantryMercSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DropWarPigs"/>
+        <EffectArray value="DropDevilDogs"/>
+        <EffectArray value="DropHammerSecurities"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="9"/>
     </CEffectDamage>
+    <CEffectEnumMagazine id="MakePrecursorMercIterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Source"/>
+        <EffectExternal value="MakePrecursorMerc"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="RemovePrecursorMercIterate">
+        <EditorCategories value=""/>
+        <EffectExternal value="RemovePrecursorMerc"/>
+    </CEffectEnumMagazine>
     <CEffectIssueOrder id="MarineSquadStim">
         <EditorCategories value=""/>
         <Abil value="Stimpack"/>
@@ -307,6 +384,10 @@
     <CEffectDamage id="SiegeBreakerDamage">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="SpartanCompanyAU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="22"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="SquadBunkerUnload">
         <EditorCategories value=""/>
@@ -451,6 +532,13 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectCreatePersistent id="MercSquadDropDelay">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnitOrPoint"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="MakePrecursorMercIterate"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="SquadMainAttack">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -854,6 +942,12 @@
     <CEffectCreatePersistent id="DummyEffect">
         <EditorCategories value=""/>
     </CEffectCreatePersistent>
+    <CEffectSet id="VehicleMercSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DropSiegeBreakers"/>
+        <EffectArray value="DropSpartanCompany"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
     <CEffectDamage id="VolatileBurstFriendlyUnitDamage">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>

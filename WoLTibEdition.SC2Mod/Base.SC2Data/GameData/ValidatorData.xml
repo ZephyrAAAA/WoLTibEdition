@@ -6,6 +6,26 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
         <Behavior value="Depowered"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="HasDevilDogs">
+        <Find value="1"/>
+        <Value value="MercPHTrainFirebat"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasSiegeBreakers">
+        <Find value="1"/>
+        <Value value="MercPHTrainSiegeTank"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasSpartanCompany">
+        <Find value="1"/>
+        <Value value="MercPHTrainGoliath"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasHammerSecurities">
+        <Find value="1"/>
+        <Value value="MercPHTrainMarauder"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasWarPigs">
+        <Find value="1"/>
+        <Value value="MercPHTrainMarine"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="TriLithiumPurchased">
         <Find value="1"/>
         <Value value="TriLithiumResearched"/>

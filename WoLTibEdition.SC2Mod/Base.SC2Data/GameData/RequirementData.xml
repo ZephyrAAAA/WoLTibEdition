@@ -78,6 +78,12 @@
     <CRequirement id="HasBuiltFusionCore">
         <NodeArray index="Show" Link="EqCountBehaviorFusionCoreBuiltCompleteOnly1"/>
     </CRequirement>
+    <CRequirement id="HasHailstormLaunchers">
+        <NodeArray index="Use" Link="CountUpgradeHailstormLaunchersCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnHailstormLaunchers">
+        <NodeArray index="Show" Link="NotCountUpgradeHailstormLaunchersQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="HaveArmory">
         <NodeArray index="Use" Link="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
     </CRequirement>

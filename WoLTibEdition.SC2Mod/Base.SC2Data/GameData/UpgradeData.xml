@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CUpgrade id="HailstormLaunchers">
+        <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher2,Options[Hidden]" Value="0"/>
+        <BonusResourcePerLevel index="Minerals" value="1500"/>
+    </CUpgrade>
     <CUpgrade id="ProtossGroundArmorsLevel1">
         <EffectArray index="0" Reference="Unit,Zealot,LifeArmorLevel"/>
         <EffectArray index="1" Reference="Unit,Zealot,LifeArmor"/>

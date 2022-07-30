@@ -18,10 +18,12 @@ trigger techUnlock;
 trigger INI;
 int rate;
 int spendrate;
+unit topbarUnit;
 bool noTopBar;
 int topbarCastingPanel;
 int topbarPanel;
 int topbarCommandPanel;
+string[12] topbarAbils;
 
 void buildingSwap (unit building) {
 	if (UnitGetType(building) == "CommandCenter") {
@@ -58,6 +60,16 @@ void buildingSwap (unit building) {
 bool DisableTopBar () {
 	noTopBar = true;
 	return noTopBar;
+}
+
+void AddTopbarAbil(string abil, int lv_i) {
+	if (lv_i > 12) {
+		return;
+	}
+	UnitAbilityAdd(topbarUnit, abil);
+	topbarAbils[lv_i] = abil;
+	CatalogFieldValueSet(c_gameCatalogButton, abil, "DefaultButtonLayout.Column", 1, IntToString((lv_i+3) % 5));
+	CatalogFieldValueSet(c_gameCatalogButton, abil, "DefaultButtonLayout.Row", 1, IntToString(FloorI((lv_i+3) /5)));
 }
 
 bool Gather_Func (bool testConds, bool runActions) {
@@ -514,6 +526,18 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		DialogControlSetVisible(topbarCastingPanel, PlayerGroupAll(), false);
 		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), false);
 		DialogControlSetVisible(topbarCommandPanel, PlayerGroupAll(), false);
+	} else {
+		lv_i = 0;
+		if (TechTreeUpgradeCount(1, "HireKelmorianMinersPH", c_techCountCompleteOnly) > 0) {
+			UnitAbilityAdd(topbarUnit, "InfantryMercenaries");
+			//AddTopbarAbil("InfantryMercenaries", lv_i);
+			lv_i += 1;
+		}
+		if (TechTreeUpgradeCount(1, "HireSiegeBreakersPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireSpartanCompanyPH", c_techCountCompleteOnly) > 0) {
+			UnitAbilityAdd(topbarUnit, "VehicleMercenaries");
+			//AddTopbarAbil("VehicleMercenaries", lv_i);
+			lv_i += 1;
+		}
 	}
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
@@ -588,7 +612,6 @@ void TechUnlock_Init () {
 }
 
 bool INI_Func (bool testConds, bool runActions) {
-	unit topbarUnit;
 	int lv_lastFrame;
 	int panel;
 	

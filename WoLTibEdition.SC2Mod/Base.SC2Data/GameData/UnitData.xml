@@ -1786,6 +1786,7 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="DevourerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1832,6 +1833,9 @@
     <CUnit id="DukesRevenge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="DumpTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1842,6 +1846,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="None"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="Egg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2182,6 +2187,17 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="DevilDogSquad" parent="BaseSquad">
+        <Race value="Terr"/>
+        <LifeStart value="4"/>
+        <LifeMax value="4"/>
+        <Speed value="2.25"/>
+        <AbilArray Link="DevilDogSquad"/>
+        <WeaponArray Link="DevilDogSquad"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,0" Row="1" Column="0"/>
+        </CardLayouts>
+    </CUnit>
     <CUnit id="FlamingBetty">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2468,6 +2484,10 @@
     <CUnit id="HammerSecurity">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Small"/>
+        <LifeArmor value="0"/>
+        <Food value="0"/>
+        <BehaviorArray Link="HailstormLaunchers"/>
     </CUnit>
     <CUnit id="Hatchery">
         <ArmorType value="Hero"/>
@@ -2547,10 +2567,14 @@
     <CUnit id="HelsAngelAssault">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="HelsAngelFighter">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="Hercules">
         <AbilArray Link="AirTransportMag"/>
@@ -3046,6 +3070,8 @@
         <Food value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <BehaviorArray Link="HailstormLaunchers"/>
+        <WeaponArray Link="HailstormLauncher"/>
     </CUnit>
     <CUnit id="MarauderACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3058,6 +3084,17 @@
     <CUnit id="MarauderMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="HammerSecuritiesSquad" parent="BaseSquad">
+        <Race value="Terr"/>
+        <LifeStart value="2"/>
+        <LifeMax value="2"/>
+        <Speed value="2.25"/>
+        <AbilArray Link="HammerSecuritiesSquad"/>
+        <WeaponArray Link="HammerSecuritiesSquad"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="Marine">
         <Food value="0"/>
@@ -4446,6 +4483,7 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="SiegeBreakerSieged">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4453,6 +4491,7 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="SiegeTank">
         <ArmorType value="Large"/>
@@ -4518,6 +4557,7 @@
         <ArmorType value="Medium"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="SpawningPool">
         <ArmorType value="Hero"/>
@@ -5207,11 +5247,13 @@
         <Speed value="2.25"/>
         <AbilArray Link="MarauderSquad"/>
         <WeaponArray Link="MarauderSquad"/>
+        <WeaponArray Link="HailstormLauncher2"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarauderSquad,Ammo1" Row="1" Column="0"/>
         </CardLayouts>
         <LifeStart value="2"/>
         <LifeMax value="2"/>
+        <BehaviorArray Link="HailstormLaunchers"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -5231,11 +5273,14 @@
         <Race value="Terr"/>
         <Speed value="3.8437"/>
         <AbilArray Link="ReaperSquad"/>
+        <AbilArray Link="BioMode"/>
         <WeaponArray Link="ReaperSquad"/>
         <WeaponArray Link="ReaperSquadCharge"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,Ammo1" Row="1" Column="0"/>
-            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="1" Column="1"/>
+            <LayoutButtons Face="Charge" Type="AbilCmd" AbilCmd="BioMode,On" Row="1" Column="1"/>
+            <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="1"/>
+            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="2" Column="2"/>
         </CardLayouts>
         <LifeStart value="4"/>
         <LifeMax value="4"/>
@@ -5308,9 +5353,8 @@
     <CUnit id="TibVein" parent="MineralFieldDefault">
         <Name value="Unit/Name/TibVein"/>
         <Description value="Button/Tooltip/TibVein"/>
-        <Collide index="Burrow" value="0"/>
         <Collide index="Ground" value="0"/>
-        <Collide index="RoachBurrow" value="0"/>
+        <Collide index="Structure" value="0"/>
         <Collide index="ForceField" value="0"/>
         <Collide index="Small" value="0"/>
         <BehaviorArray index="0" Link="TibVeinMinerals"/>
@@ -5535,6 +5579,21 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <Food value="0"/>
+    </CUnit>
+    <CUnit id="WarPigSquad" parent="BaseSquad">
+        <Race value="Terr"/>
+        <ArmorType value="Small"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <Speed value="2.25"/>
+        <AbilArray Link="WarPigSquad"/>
+        <AbilArray Link="SquadStimpack"/>
+        <WeaponArray Link="WarPigSquad"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,0" Row="1" Column="0"/>
+            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+        </CardLayouts>
+        <SubgroupPriorityDelta value="1"/>
     </CUnit>
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
