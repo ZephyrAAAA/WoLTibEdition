@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="HailstormLaunchers">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-multilocktargetingsystem.dds"/>
+        <AlertIcon value="Assets\Textures\btn-techupgrade-terran-multilocktargetingsystem.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+    </CButton>
     <CButton id="BuildDevastatorTurret">
         <Icon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <AlertIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
@@ -23,6 +29,19 @@
         <AlertIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <TintRacially value="1"/>
         <Universal value="1"/>
+    </CButton>
+    <CButton id="InfantryMercenaries">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="VehicleMercenaries">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="InfantryMercenaries"/>
+        <DefaultButtonLayout Column="4"/>
     </CButton>
     <CButton id="InfantryUltraCapacitors">
         <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>

@@ -71,6 +71,23 @@
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="DevilDogSquad">
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="FirebatUFull"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="0.5"/>
+        <AttackType value="Pierce"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="-0.45"/>
+        <RandomDelayMax value="-0.45"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
         <Name value="Weapon/Name/GhostSquad"/>
         <EditorCategories value=""/>
@@ -116,8 +133,31 @@
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HailstormLauncher2">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="HailstormLauncherU"/>
+        <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.5"/>
+        <AttackType value="Siege"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="-1.45"/>
+        <RandomDelayMax value="-1.45"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HailstormMissilePods">
         <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HammerSecurity">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>
@@ -157,6 +197,23 @@
     <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HammerSecuritiesSquad">
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="HammerSecurityDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1"/>
+        <AttackType value="Magic"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="-0.95"/>
+        <RandomDelayMax value="-0.95"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
@@ -260,6 +317,21 @@
         <Effect value="ConcussiveGrenadesLM"/>
         <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HailstormLauncher">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="HailstormLauncherU"/>
+        <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.5"/>
+        <AttackType value="Siege"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="HailstormLauncherLM"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
         <AttackType value="Magic"/>
         <Period value="1"/>
@@ -317,6 +389,26 @@
     <CWeaponLegacy id="SiegeBreaker">
         <AttackType value="Magic"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="SpartanCompanyA">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Range value="9"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SpartanCompanyAUpgraded">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Range value="9"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SpartanCompanyG">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <Range value="7"/>
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SpartanCompanyGUpgraded">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <Range value="7"/>
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
         <Tip value="Weapon/Tip/Grenade"/>
@@ -345,5 +437,21 @@
     <!--                                                                                         -->
     <CWeaponLegacy id="VolatileBurstDummy">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarPigSquad">
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/Rifle"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="KelmorianMinerDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.8608"/>
+        <AttackType value="Normal"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="-0.85"/>
+        <RandomDelayMax value="-0.85"/>
     </CWeaponLegacy>
 </Catalog>

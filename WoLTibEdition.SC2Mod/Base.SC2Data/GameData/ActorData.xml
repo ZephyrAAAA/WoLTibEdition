@@ -392,6 +392,45 @@
         <On index="2" Send="SetScale 2.250000,1.000000,1.000000"/>
         <On Terms="ActorCreation; ValidateUnit HasHellionInfernalPreIgniter" Send="SetTintColor 40,120,255"/>
     </CActorModel>
+    <CActorUnit id="DevilDogSquad" parent="GenericUnitStandard" unitName="DevilDogSquad">
+        <Aliases value="_UnitMedium"/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <On Terms="Behavior.MercGroundDrop.On" Send="Create DevilDogDropModel"/>
+        <Model value="SiegeTank"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
+        <BuildModel value="SiegeTank"/>
+        <PlacementModel value="SiegeTank"/>
+        <PortraitModel value="FirebatMercenaryPortrait"/>
+        <StandAnimTurnTime value="4"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <GlossaryAnim value="Spell"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-terran-firebat-mercenary.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="What" value="Firebat_GroupWhat"/>
+        <GroupSoundArray index="Yes" value="Firebat_GroupYes"/>
+        <GroupSoundArray index="Attack" value="Firebat_GroupAttack"/>
+        <GroupSoundArray index="Board" value="Firebat_GroupBoard"/>
+        <HeroIcon value="Assets\Textures\btn-unit-terran-firebat.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <SoundArray index="Birth" value="Firebat_Birth"/>
+        <SoundArray index="Ready" value="Firebat_Ready"/>
+        <SoundArray index="Help" value="Firebat_Help"/>
+        <SoundArray index="What" value="Firebat_What"/>
+        <SoundArray index="Yes" value="Firebat_Yes"/>
+        <SoundArray index="Attack" value="Firebat_Attack"/>
+        <SoundArray index="Pissed" value="Firebat_Pissed"/>
+        <SoundArray index="Movement" value="Firebat_Movement"/>
+        <SoundArray index="Turning" value="Firebat_Turning"/>
+        <SoundArray index="Board" value="Firebat_Board"/>
+        <SoundArray index="Click" value="Firebat_Click"/>
+        <SoundArray index="ClickError" value="Firebat_ClickError"/>
+        <SoundArray index="Highlight" value="Firebat_Highlight"/>
+        <UnitIcon value="Assets\Textures\btn-unit-terran-firebatmercenary.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-terran-firebat-mercenary.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -511,6 +550,17 @@
         <SelectAbilCmd value=""/>
         <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
+    <CActorAction id="MarauderHailstormRockets" parent="GenericAttack" effectImpact="HailstormLauncherU" effectLaunch="HailstormLauncherLM">
+        <LaunchAttachQuery Methods="AMPatternMarauder"/>
+        <LaunchAssets Model="MarauderAttackLaunch" Sound="VikingFighter_AttackLaunch"/>
+        <Beam value="GoliathAirAttackBeam"/>
+        <Missile value="GoliathAirAttackMissile"/>
+        <ImpactAttachQuery Methods="AMFilterTarget AMProximityAll"/>
+        <ImpactMap index="None" Model="GoliathAirAttackImpact" Sound="VikingFighter_AttackImpact" ModelReaction="GoliathAirAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="GoliathAirAttackImpactShield" ModelReaction="GoliathAirAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="GoliathAirAttackDamage" Sound="GoliathAirAttackDamage" ModelReaction="GoliathAirAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="GoliathAirAttackDamageShield" ModelReaction="GoliathAirAttackDamageReactionShield"/>
+    </CActorAction>
     <CActorModelMaterial id="LowPower" parent="BehaviorGlaze" buff="PowerCheck">
         <EditorCategories value=""/>
     </CActorModelMaterial>
@@ -579,6 +629,50 @@
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/FirebatSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
+    </CActorUnit>
+    <CActorUnit id="HammerSecuritiesSquad" parent="GenericUnitBase" unitName="HammerSecuritiesSquad">
+        <Aliases value="_UnitSmall"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <On Terms="Behavior.MercGroundDrop.On" Send="Create HammerSecurityDropModel"/>
+        <Model value="SiegeTank"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
+        <BuildModel value="SiegeTank"/>
+        <PlacementModel value="SiegeTank"/>
+        <PortraitModel value="MarauderMercenaryPortrait"/>
+        <StandAnimTurnTime value="4"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <GlossaryAnim value="Spell"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-terran-marauder-mercenary.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="What" value="Marine_GroupWhat"/>
+        <GroupSoundArray index="Yes" value="Marine_GroupYes"/>
+        <GroupSoundArray index="Attack" value="Marine_GroupAttack"/>
+        <GroupSoundArray index="Board" value="Marine_GroupBoard"/>
+        <HeroIcon value="Assets\Textures\btn-unit-terran-marauder.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <SoundArray index="Birth" value="Marauder_Birth"/>
+        <SoundArray index="Ready" value="Marauder_Ready"/>
+        <SoundArray index="Help" value="Marauder_Help"/>
+        <SoundArray index="What" value="Marauder_What"/>
+        <SoundArray index="Yes" value="Marauder_Yes"/>
+        <SoundArray index="Attack" value="Marauder_Attack"/>
+        <SoundArray index="Pissed" value="Marauder_Pissed"/>
+        <SoundArray index="Movement" value="Marauder_Movement"/>
+        <SoundArray index="Turning" value="Marauder_Turning"/>
+        <SoundArray index="Board" value="Marauder_Board"/>
+        <SoundArray index="Click" value="Marauder_Click"/>
+        <SoundArray index="ClickError" value="Marauder_ClickError"/>
+        <SoundArray index="Highlight" value="Marauder_Highlight"/>
+        <UnitIcon value="Assets\Textures\btn-unit-terran-maraudermercenary.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-terran-marauder-mercenary.dds"/>
+        </Wireframe>
     </CActorUnit>
     <CActorUnit id="MarineSquad" parent="Marine" unitName="MarineSquad">
         <Macros index="1" removed="1"/>
@@ -1385,4 +1479,48 @@
         <Model value="Invisible"/>
     </CActorMissile>
     <CActorSite id="WarHoundImpactHoldingSite"/>
+    <CActorUnit id="WarPigSquad" parent="GenericUnitBase" unitName="WarPigSquad">
+        <Aliases value="_UnitSmall"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <On Terms="Behavior.MercGroundDrop.On" Send="Create WarPigDropModel"/>
+        <Model value="SiegeTank"/>
+        <Scale value="1.500000,1.500000,0.750000"/>
+        <BuildModel value="SiegeTank"/>
+        <PlacementModel value="SiegeTank"/>
+        <PortraitModel value="MarineMercenaryPortrait"/>
+        <StandAnimTurnTime value="4"/>
+        <WalkAnimMoveSpeed value="2.25"/>
+        <GlossaryAnim value="Spell"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-terran-marine-mercenary.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="What" value="Marine_GroupWhat"/>
+        <GroupSoundArray index="Yes" value="Marine_GroupYes"/>
+        <GroupSoundArray index="Attack" value="Marine_GroupAttack"/>
+        <GroupSoundArray index="Board" value="Marine_GroupBoard"/>
+        <HeroIcon value="Assets\Textures\btn-unit-terran-marine.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-infantryarmorlevel0.dds"/>
+        <SoundArray index="Birth" value="Marine_Birth"/>
+        <SoundArray index="Ready" value="Marine_Ready"/>
+        <SoundArray index="Help" value="Marine_Help"/>
+        <SoundArray index="What" value="Marine_What"/>
+        <SoundArray index="Yes" value="Marine_Yes"/>
+        <SoundArray index="Attack" value="Marine_Attack"/>
+        <SoundArray index="Pissed" value="Marine_Pissed"/>
+        <SoundArray index="Movement" value="Marine_Movement"/>
+        <SoundArray index="Turning" value="Marine_Turning"/>
+        <SoundArray index="Board" value="Marine_Board"/>
+        <SoundArray index="Click" value="Marine_Click"/>
+        <SoundArray index="ClickError" value="Marine_ClickError"/>
+        <SoundArray index="Highlight" value="Marine_Highlight"/>
+        <UnitIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-terran-marine-mercenary.dds"/>
+        </Wireframe>
+    </CActorUnit>
 </Catalog>

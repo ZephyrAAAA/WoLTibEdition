@@ -129,6 +129,15 @@
         <Button value="Factory"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="DevilDogSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,DevilDogSquad"/>
+        <DataRecord Entry="Weapon,DevilDogSquad"/>
+        <DataRecord Entry="Actor,DevilDogSquad"/>
+        <DataRecord Entry="Unit,DevilDogSquad"/>
+        <TechInfoUnit value="MarineSquad"/>
+        <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore">
         <EditorCategories value=""/>
         <DataRecord Entry="Abil,FusionCoreResearch"/>
@@ -187,6 +196,15 @@
         <DataRecord Entry="Weapon,FirebatSquad"/>
         <DataRecord Entry="Actor,FirebatSquad"/>
         <DataRecord Entry="Unit,FirebatSquad"/>
+        <TechInfoUnit value="MarineSquad"/>
+        <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="HammerSecuritiesSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,HammerSecuritiesSquad"/>
+        <DataRecord Entry="Weapon,HammerSecuritiesSquad"/>
+        <DataRecord Entry="Actor,HammerSecuritiesSquad"/>
+        <DataRecord Entry="Unit,HammerSecuritiesSquad"/>
         <TechInfoUnit value="MarineSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
@@ -353,5 +371,13 @@
         <DataRecord Entry="Actor,VespeneGeyser"/>
         <DataRecord Entry="Actor,VespeneGeyserSplat"/>
         <DataRecord Entry="Unit,VespeneGeyser"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="WarPigSquad">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Abil,WarPigSquad"/>
+        <DataRecord Entry="Weapon,WarPigSquad"/>
+        <DataRecord Entry="Actor,WarPigSquad"/>
+        <DataRecord Entry="Unit,WarPigSquad"/>
+        <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
 </Catalog>
