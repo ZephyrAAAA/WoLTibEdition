@@ -34,6 +34,12 @@ Flat armour has been removed in favour of damage types, so units do damage based
 
 Terrans, starting at Zero Hour, now have access to the Devastation Turret, an anti-armour defensive weapon.
 
+Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought.
+
+Bonus Objectives now generally give something good in-mission.
+
+Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
+
 
 MISSION SPECIFIC CHANGES:
 
@@ -43,6 +49,7 @@ Liberation Day:
 -There are now 3 marines starting at mine entrances on hard and brutal on the road.
 -The square now has 13 marines. On hard, 3 of them are replaced by a viking. On brutal, it is a firebat instead.
 -Each holoboard (after the first) now has at least 2 marines at it. There is 1 more on hard, or a viking on Brutal.
+-One of the holoboards from just off the square moved to before the square instead
 -Moved the marines after the first holoboard back, added a group between them and the holoboard.
 -The third viking at the logistics thing is now also present on hard.
 -The firebat at the logistics thing is now also present on hard.
@@ -50,7 +57,7 @@ Liberation Day:
 -There is now 4 marines on the path to the APC from the square. This is increased to 6 on hard, or a viking and 2 marines on Brutal
 -Killing 3 and 6 holoboards rewards you with an additional marine squad.
 -Killing a holoboard heals all your units, and restores any lost squad members.
--Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed)
+-Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed), and you get a message saying this.
 -Added a tip about squads
 
 The Outlaws:
@@ -65,13 +72,14 @@ The Outlaws:
 -Edited the Tech Lab tip to mention upgrades
 -Disabled the Vespene tip
 -Fixed the SCV tip for this mod
+-Removed the trigger to give you an SCV if you've been supply blocked for a bit
 -Infantry Ultra Capacitors are available to research on the Barracks tech lab
 -Attack waves now have somewhat randomized timing and composition.
 
 Zero Hour:
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
--Pallets to the west of the western bridge replaced with a resource node
--2 additional resource pallets placed in the town
+-A resource node has been placed on the other side of the east bridge
+-1 additional resource pallet placed in the town
 -Reworked how, when, and what attack waves do things to apply more constant and stronger pressure that scales with time
 -Attack waves can now bring Ultras on higher difficulties. Tychus announces the first one.
 -Muta attack waves are more often, and randomized a bit.
@@ -89,19 +97,38 @@ Zero Hour:
 -Hi-Sec Auto Tracking is available to research on the Engineering Bay
 -Building Armour is available to research on the Engineering Bay
 -Removed the trigger to give you a free SCV if you take bunker damage from the first attack wave on Hard or Lower.
+-A bonus spawning now moves the next attack wave on that side, or the next 2 attack waves on Brutal, to the other side. This gives a minute of time to rescue.
+-First two bonus objectives give Marine and Bunker Armoury upgrades.
+-Added a text message saying you got upgrades when you rescue the first 2 groups
+-Added a Firebat to the first Rescue Group
+-Added a Goliath to the second Rescue Group
+-Added a Firebat and Siege Tank to the third Rescue Group
 
 The Evacuation:
 -Deleted 3 mineral pallets
 -Moved one of the mineral pallets from the secret area to the starting road area
 -Removed the other 2 pallets in the secret area
 -The Zerg now send attacks against your base between evac runs
+-Nydus worms now appear on the rear road to your base.
+-Added an alternate victory condition to clear all the zerg out of the area
 
 Devil's Playground:
--You now need to collect 80k minerals, or 70k on Casual.
--Tosh's miners now have a node, refinery, and 1 SCV, instead of a CC and 5 SCVs.
+-You now need to collect 120k minerals
+-Rare Mineral fields have a lot more minerals now. There is now 116k minerals in rare mineral fields.
+-Removed/Downgraded a bunch of pickups.
+-You start with 2 less depots
+-Tosh's miners now have a node, refinery, a depot, and 1 SCV, instead of a CC and 5 SCVs.
+-Killing the Brutalisk now gives the first reaper armoury upgrade, and a message
+-Collecting half the required minerals now gives the second reaper armoury upgrade, and a message
+-Brutalisk attack fixed to not have an absurd windup
+-There is now some destructible rocks to help with the Brutalisk
+-Attack Wave strength scales with time and lava surges
 
 Smash and Grab:
 -Stone Zealots now do 20x2 damage to ground, and have 1500/2500/3750/5000 health on Casual/Normal/Hard/Brutal.
+-Bonus 2 and 3 give Marauder Armoury upgrades, and messages saying this
+-Protoss send attack waves now, that scale with time and clearing.
+-Zerg attack waves tweaked
 
 
 UNIT CHANGES:
@@ -118,6 +145,39 @@ Hellion- Now fires constantly
 
 Reaper- Guns now do Sniper damage, charges are now melee range.
 
+Diamondback- Increase speed to match hellion, Increase firing speed, range increased
+
+Goliath- Starts with Ares, Anti-ground Damage increased by 33%
+
+ARMORY UPGRADE CHANGES:
+
+Stimpack- No movement bonus
+
+Concussive- Applies to Devastation Turret
+
+Projectile Accelerator- Affects Shrike Turret
+
+Thermite-> Hydraulic Stabilizers- Allow Hellion to Fire on the move
+
+Thicc flame- Fixed
+
+Neosteel Bunker-> Shrike Turret, also shrike is buffed (6x2, 6 range+1 with projectie accelerator, affected by infantry ultracaps)
+
+Titanium Shell- Buffs health of Devastation Turret as well
+
+Hellstorm- Also makes Devastation Turret do area damage
+
+U-238 Shells- Increases damage, instead of damage vs light
+
+G-4 Cluster Bomb-> Combat Drugs- Life Regen
+Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
+
+Vanadium Plating- Gives all Vanadium Plating upgrades permanently
+
+Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than having to research every mission.
+
+Bunker Health-> Building Armour Now gives the Building Armour upgrade permanently, rather than having to research every mission.
+
 
 
 NEW IN-GAME UPGRADES:
@@ -126,6 +186,9 @@ Building Health and Armour [Engineering Bay]
 
 Defense turret range [Engineering Bay]
 
+Marauder shoulder rockets- [Spec Ops]
+
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
+

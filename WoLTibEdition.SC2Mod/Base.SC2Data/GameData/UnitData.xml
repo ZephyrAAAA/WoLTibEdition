@@ -5359,7 +5359,7 @@
         <Collide index="Small" value="0"/>
         <BehaviorArray index="0" Link="TibVeinMinerals"/>
         <BehaviorArray Link="TibGrow"/>
-        <Radius value="0.5"/>
+        <Radius value="0.625"/>
         <SeparationRadius value="0.5"/>
         <Footprint value=""/>
     </CUnit>

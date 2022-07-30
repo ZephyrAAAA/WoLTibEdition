@@ -14,6 +14,7 @@ Added the Infantry Mercenary topbar power.
 Added the Vehicle Mercenary topbar power.
 Added the Ship Mercenary topbar power.
 SCVs you start with separate from a Refinery now start mining on their own.
+Increased the size of mineral patches by 20%
 
 Liberation Day:
 Jim has push priority over the marines now
