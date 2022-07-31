@@ -306,12 +306,15 @@
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="que5"/>
         <AbilArray Link="Armory2Research"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
         <CardLayouts>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
         </CardLayouts>
@@ -1916,29 +1919,32 @@
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="que5"/>
         <AbilArray Link="EngineeringBay2Research"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
         <CardLayouts>
-            <LayoutButtons Face="TerranInfantryWeaponsLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,2" Row="0" Column="0"/>
-            <LayoutButtons Face="TerranInfantryWeaponsLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,3" Row="0" Column="0"/>
-            <LayoutButtons Face="TerranInfantryWeaponsLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,4" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranInfantryWeaponsLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research3" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranInfantryWeaponsLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research4" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranInfantryWeaponsLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research5" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranInfantryWeaponsUltraCapacitorsLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research11" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranInfantryWeaponsUltraCapacitorsLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research12" Row="0" Column="0"/>
+            <LayoutButtons Face="TerranInfantryWeaponsUltraCapacitorsLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research13" Row="0" Column="0"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="ResearchNeosteelFrame" Type="AbilCmd" AbilCmd="EngineeringBay2Research,5" Row="1" Column="1"/>
-            <LayoutButtons Face="UpgradeBuildingArmorLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,1" Row="1" Column="2"/>
-            <LayoutButtons Face="ResearchHiSecAutoTracking" Type="AbilCmd" AbilCmd="EngineeringBay2Research,0" Row="1" Column="0"/>
-            <LayoutButtons Face="TerranInfantryArmorLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,6" Row="0" Column="1"/>
-            <LayoutButtons Face="TerranInfantryArmorLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,7" Row="0" Column="1"/>
-            <LayoutButtons Face="TerranInfantryArmorLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,8" Row="0" Column="1"/>
+            <LayoutButtons Face="ResearchNeosteelFrame" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research6" Row="1" Column="1"/>
+            <LayoutButtons Face="UpgradeBuildingArmorLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research2" Row="1" Column="2"/>
+            <LayoutButtons Face="ResearchHiSecAutoTracking" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research1" Row="1" Column="0"/>
+            <LayoutButtons Face="TerranInfantryArmorLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research7" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranInfantryArmorLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research8" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranInfantryArmorLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research9" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranInfantryArmorVanadiumPlatingLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research14" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranInfantryArmorVanadiumPlatingLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research15" Row="0" Column="1"/>
+            <LayoutButtons Face="TerranInfantryArmorVanadiumPlatingLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,Research16" Row="0" Column="1"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
-            <LayoutButtons Face="TerranInfantryWeaponsUltraCapacitorsLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,10" Row="0" Column="0"/>
-            <LayoutButtons Face="TerranInfantryWeaponsUltraCapacitorsLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,11" Row="0" Column="0"/>
-            <LayoutButtons Face="TerranInfantryWeaponsUltraCapacitorsLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,12" Row="0" Column="0"/>
-            <LayoutButtons Face="TerranInfantryArmorVanadiumPlatingLevel1" Type="AbilCmd" AbilCmd="EngineeringBay2Research,13" Row="0" Column="1"/>
-            <LayoutButtons Face="TerranInfantryArmorVanadiumPlatingLevel2" Type="AbilCmd" AbilCmd="EngineeringBay2Research,14" Row="0" Column="1"/>
-            <LayoutButtons Face="TerranInfantryArmorVanadiumPlatingLevel3" Type="AbilCmd" AbilCmd="EngineeringBay2Research,15" Row="0" Column="1"/>
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>
