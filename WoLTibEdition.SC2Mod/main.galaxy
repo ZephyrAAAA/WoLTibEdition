@@ -43,7 +43,7 @@ void OrderWorkerToGather (unit worker) { //reduced "order workers to gather" fun
 	for (;; auto9E4A1F0D_u -= 1) {
 		lv_indexResource = UnitGroupUnitFromEnd(auto9E4A1F0D_g, auto9E4A1F0D_u);
 		if (lv_indexResource == null) { break; }
-		if ((true) && ((UnitGetOwner(lv_indexResource) == 0) || (UnitGetOwner(lv_indexResource) == UnitGetOwner(worker)))) {
+		if ((!UnitHasBehavior(lv_indexResource, "Refinery")) && ((UnitGetOwner(lv_indexResource) == 0) || (UnitGetOwner(lv_indexResource) == UnitGetOwner(worker)))) {
 			UnitGroupAdd(lv_resourceGroup, lv_indexResource);
 		}
 	}
@@ -77,9 +77,14 @@ void buildingSwap (unit building) {
 		libNtve_gf_ReplaceUnit(building, "SensorTower2", 1);
 	} else if (UnitGetType(building) == "SupplyDepot") {
 		libNtve_gf_ReplaceUnit(building, "SupplyDepot2", 1);
+		if (TechTreeUnitAliasCount(UnitGetOwner(libNtve_gf_LastReplacedUnit()), "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {
+			UnitCreateEffectUnit(libNtve_gf_LastReplacedUnit(), "SupplyDropApplyTempBehavior", libNtve_gf_LastReplacedUnit());
+		}
 	} else if (UnitGetType(building) == "SCV") {
 		libNtve_gf_ReplaceUnit(building, "SCV2", 1);
 		OrderWorkerToGather(libNtve_gf_LastReplacedUnit());
+	} else if (UnitGetType(building) == "SCV2") {
+		OrderWorkerToGather(building);
 	} else if (UnitGetType(building) == "MercCompound") {
 		UnitRemove(building);
 	}
@@ -144,8 +149,8 @@ bool Gather_Func (bool testConds, bool runActions) {
 	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
 		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
 		for (lv_i = 1; lv_i <= 4; lv_i += 1) {
-			if (UnitRallyPointTargetPoint(refinery, 1, lv_i) != null)  {
-				if (UnitRallyPointTargetUnit(refinery, 1, lv_i) != refinery && UnitIsValid(UnitRallyPointTargetUnit(refinery, 1, lv_i)) && UnitRallyPointTargetUnit(refinery, 1, lv_i) != null) {
+			if (UnitRallyPointTargetPoint(refinery, 1, lv_i) != null && UnitRallyPointTargetUnit(refinery, 1, lv_i) != refinery)  {
+				if (UnitIsValid(UnitRallyPointTargetUnit(refinery, 1, lv_i)) && UnitRallyPointTargetUnit(refinery, 1, lv_i) != null) {
 					lv_order = OrderTargetingUnit(null, UnitRallyPointTargetUnit(refinery, 1, lv_i));
 					OrderSetFlag(lv_order, c_cmdSmartRally, true);
 					if (UnitFilterMatch(UnitRallyPointTargetUnit(refinery, 1, lv_i), 1, UnitFilterStr("HarvestableResource;Dead,Missile"))){
