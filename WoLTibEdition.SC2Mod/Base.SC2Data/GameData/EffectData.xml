@@ -385,6 +385,13 @@
         <Abil value="ProbeHarvest"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectIssueOrder id="ResetRally">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="RallyCommand"/>
+        <Player Value="Caster"/>
+        <Target Value="CasterUnit"/>
+    </CEffectIssueOrder>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>

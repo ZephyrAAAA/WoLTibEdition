@@ -25,6 +25,33 @@ int topbarPanel;
 int topbarCommandPanel;
 string[12] topbarAbils;
 
+void OrderWorkerToGather (unit worker) { //reduced "order workers to gather" function
+	// Variable Declarations
+    unitgroup lv_resourceGroup;
+    unit lv_indexResource;
+
+    // Automatic Variable Declarations
+    unitgroup auto9E4A1F0D_g;
+    int auto9E4A1F0D_u;
+
+    // Variable Initialization
+
+    // Implementation
+	lv_resourceGroup = UnitGroupEmpty();
+	auto9E4A1F0D_g = UnitGroup(null, c_playerAny, RegionCircle(UnitGetPosition(worker), 9.0), UnitFilter((1 << c_targetFilterHarvestableResource), 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+	auto9E4A1F0D_u = UnitGroupCount(auto9E4A1F0D_g, c_unitCountAll);
+	for (;; auto9E4A1F0D_u -= 1) {
+		lv_indexResource = UnitGroupUnitFromEnd(auto9E4A1F0D_g, auto9E4A1F0D_u);
+		if (lv_indexResource == null) { break; }
+		if ((true) && ((UnitGetOwner(lv_indexResource) == 0) || (UnitGetOwner(lv_indexResource) == UnitGetOwner(worker)))) {
+			UnitGroupAdd(lv_resourceGroup, lv_indexResource);
+		}
+	}
+	if ((UnitGroupCount(lv_resourceGroup, c_unitCountAlive) > 0)) {
+		UnitIssueOrder(worker, OrderTargetingUnit(null, UnitGroupClosestToPoint(lv_resourceGroup, UnitGetPosition(worker))), c_orderQueueReplace);
+	}
+}
+
 void buildingSwap (unit building) {
 	if (UnitGetType(building) == "CommandCenter") {
 		libNtve_gf_ReplaceUnit(building, "CommandCenter2", 1);
@@ -52,6 +79,7 @@ void buildingSwap (unit building) {
 		libNtve_gf_ReplaceUnit(building, "SupplyDepot2", 1);
 	} else if (UnitGetType(building) == "SCV") {
 		libNtve_gf_ReplaceUnit(building, "SCV2", 1);
+		OrderWorkerToGather(libNtve_gf_LastReplacedUnit());
 	} else if (UnitGetType(building) == "MercCompound") {
 		UnitRemove(building);
 	}
@@ -78,6 +106,8 @@ bool Gather_Func (bool testConds, bool runActions) {
 	int resourceAmount;
 	fixed time;
 	int resourceDelta;
+	order lv_order;
+	int lv_i;
 	
 	if (testConds) {
 		if (UnitHasBehavior(EventUnit(), "DropOffStun")) {
@@ -113,7 +143,26 @@ bool Gather_Func (bool testConds, bool runActions) {
 	}
 	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
 		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
-		UnitIssueOrder(gatherUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("RefineryBounce", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueReplace);
+		for (lv_i = 1; lv_i <= 4; lv_i += 1) {
+			if (UnitRallyPointTargetPoint(refinery, 1, lv_i) != null)  {
+				if (UnitRallyPointTargetUnit(refinery, 1, lv_i) != refinery && UnitIsValid(UnitRallyPointTargetUnit(refinery, 1, lv_i)) && UnitRallyPointTargetUnit(refinery, 1, lv_i) != null) {
+					lv_order = OrderTargetingUnit(null, UnitRallyPointTargetUnit(refinery, 1, lv_i));
+					OrderSetFlag(lv_order, c_cmdSmartRally, true);
+					if (UnitFilterMatch(UnitRallyPointTargetUnit(refinery, 1, lv_i), 1, UnitFilterStr("HarvestableResource;Dead,Missile"))){
+						UnitIssueOrder(gatherUnit, lv_order, c_orderQueueAddToEnd);
+						break;
+					}
+				} else {
+					lv_order = OrderTargetingPoint(AbilityCommand("move", 0), UnitRallyPointTargetPoint(refinery, 1, lv_i));
+					OrderSetFlag(lv_order, c_cmdSmartRally, true);
+				} 
+			}
+			else {
+				lv_order = OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("RefineryBounce", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true));
+				break;
+			}
+			UnitIssueOrder(gatherUnit, lv_order, c_orderQueueAddToEnd);
+		}
 	}
 	UnitBehaviorRemove(gatherUnit, "DropOffStun", 1);
 	return true;
@@ -161,7 +210,11 @@ bool Idle_Func (bool testConds, bool runActions) {
 	}
 	idleUnit = EventUnit();
 	owner = EventPlayer();
-	UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
+	if (UnitGetPropertyInt(idleUnit, c_unitPropCarriedMinerals, true) < 1400) {
+		OrderWorkerToGather(idleUnit);
+	} else {
+		UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
+	}
 	UnitBehaviorAdd(idleUnit, "IdleTaken", idleUnit, 1);
 	do {
 		remainsIdle = (UnitOrderCount(idleUnit) == 0);

@@ -36,6 +36,14 @@
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
+    <CButton id="ResetRally">
+        <Icon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
     <CButton id="VehicleMercenaries">
         <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>

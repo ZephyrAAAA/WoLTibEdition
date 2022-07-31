@@ -3995,6 +3995,7 @@
         <FlagArray index="NoPortraitTalk" value="1"/>
         <FlagArray index="ShowResources" value="0"/>
         <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
         <ResourceState value="Harvestable"/>
         <ResourceType value="Custom"/>
         <ResourceDropOff index="Minerals" value="1"/>
@@ -4025,6 +4026,8 @@
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="Refinery"/>
+        <AbilArray Link="RallyCommand"/>
+        <AbilArray Link="ResetRally"/>
         <BehaviorArray Link="Refinery"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <EffectArray index="Birth" value="CreateSCVHarvester"/>
@@ -4032,6 +4035,7 @@
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
         </CardLayouts>
         <Radius value="1.5"/>
         <SeparationRadius value="1.5"/>

@@ -115,6 +115,13 @@
         <ExternalAngle value="270"/>
         <MaxCount value="2"/>
     </CAbilArmMagazine>
+    <CAbilEffectInstant id="ResetRally">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ResetRally">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="VehicleMercenaries">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="InfantryMercenaries"/>
