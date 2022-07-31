@@ -288,6 +288,12 @@
         <WhichUnit Value="Source"/>
         <EffectExternal value="MakePrecursorMerc"/>
     </CEffectEnumMagazine>
+    <CEffectDamage id="PsiStormDamage">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="PsiStormDamageInitial">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectEnumMagazine id="RemovePrecursorMercIterate">
         <EditorCategories value=""/>
         <EffectExternal value="RemovePrecursorMerc"/>
