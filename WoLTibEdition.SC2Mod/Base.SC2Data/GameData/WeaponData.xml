@@ -75,7 +75,7 @@
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/Grenade"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
-        <DisplayEffect value="FirebatUFull"/>
+        <DisplayEffect value="DevilDogDamage"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="4"/>
         <Period value="0.5"/>
@@ -151,6 +151,40 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-1.45"/>
         <RandomDelayMax value="-1.45"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HailstormLauncher2Merc">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="HailstormLauncherUMerc"/>
+        <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.5"/>
+        <AttackType value="Siege"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="-1.45"/>
+        <RandomDelayMax value="-1.45"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HailstormLauncherMerc">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="HailstormLauncherUMerc"/>
+        <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Period value="1.5"/>
+        <AttackType value="Siege"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="HailstormLauncherLMMerc"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HailstormMissilePods">
         <AttackType value="Siege"/>

@@ -1059,6 +1059,8 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ColossusACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2488,6 +2490,7 @@
         <LifeArmor value="0"/>
         <Food value="0"/>
         <BehaviorArray Link="HailstormLaunchers"/>
+        <WeaponArray Link="HailstormLauncherMerc"/>
     </CUnit>
     <CUnit id="Hatchery">
         <ArmorType value="Hero"/>
@@ -3092,9 +3095,11 @@
         <Speed value="2.25"/>
         <AbilArray Link="HammerSecuritiesSquad"/>
         <WeaponArray Link="HammerSecuritiesSquad"/>
+        <WeaponArray Link="HailstormLauncher2Merc"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <BehaviorArray Link="HailstormLaunchers"/>
     </CUnit>
     <CUnit id="Marine">
         <Food value="0"/>
@@ -5549,6 +5554,7 @@
         <ArmorType value="Fort"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="VoidRayACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

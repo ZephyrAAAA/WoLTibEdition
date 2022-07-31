@@ -76,6 +76,8 @@
         <Modification>
             <WeaponEnableArray value="HailstormLauncher"/>
             <WeaponEnableArray value="HailstormLauncher2"/>
+            <WeaponEnableArray value="HailstormLauncherMerc"/>
+            <WeaponEnableArray value="HailstormLauncher2Merc"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorResource id="HighYieldMineralFieldMinerals">
