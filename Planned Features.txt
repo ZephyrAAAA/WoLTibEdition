@@ -224,6 +224,7 @@ All-in:
 Whispers of Doom:
 -Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 33% faster attack speed
 -Abilities are no longer disabled at the start of the mission
+-Each shrine no longer forces you to wait and listen to Zeratul before continuing.
 
 A Sinister Turn:
 -Stealth misison, free the preservers while avoiding Ma'ar and Protoss guardians
@@ -339,7 +340,7 @@ Autogas-> Autoharvesting
 
 Command Center Reactor- Reduce build time of buildings (Also affects cost)
 
-Orbital Supply Depot-> Orbital Supply Drop- Passive income
+Orbital Supply Depot-> Orbital Supply Drop- 15/s (1800/min) Passive income
 
 Micro Filtering-> Expanded Hold- SCVs collect double the minerals per gather action
 
