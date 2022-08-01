@@ -15,9 +15,17 @@ Added the Vehicle Mercenary topbar power.
 Added the Ship Mercenary topbar power.
 SCVs you start with separate from a Refinery now start mining on their own.
 Increased the size of mineral patches by 20%
+Refineries now have a rally point that they will send workers to.
+Psi Storm no longer ignores armour.
+Engi Bay and Armoury can now pause and cancel properly to give you a refund.
+There is now a Marauder Rocket upgrade on the Shadow Ops.
 
 Liberation Day:
 Jim has push priority over the marines now
+
+Outlaws:
+Added a tip about Refinery Rally.
+
 
 Zero Hour:
 Tychus now actually announces the first ultra
@@ -26,7 +34,7 @@ Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
 You start with 2 SCVs now.
 Starting infrantry replaced with squads
-In addition to the expansion, there is now 5 nodes spread around the map. The Tal'darim defend and contest these nodes.
+In addition to the expansion, there is now 6 nodes spread around the map. The Tal'darim defend and contest these nodes.
 Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
 Getting the second bonus now gives you Multilock, and a message saying so
 SCVs can now harvest terrazine, and return it to Refineries
