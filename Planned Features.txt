@@ -38,6 +38,8 @@ Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 
 
 Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
 
+You start with 3 protoss research now.
+
 *Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
 
 Implemented a topbar of Support Powers.
@@ -141,11 +143,38 @@ Smash and Grab:
 -Zerg attack waves tweaked
 
 Outbreak:
+-Removed 2 of the starting depots
+-Bonus objectives give hellion armoury upgrades
+-The main base only has 1 node
+-There is a node outside each entrance.
+-The node in your base starts empty, your Adjutant notes that you have no minerals in your base, and can find some outside it.
+-Getting the bonuses now gives you hellion armoury upgrades, and messages saying so
+-Aberrations now show up at the end of the first night, and every night thereafter
 
 Welcome to the Jungle:
+-You start with 2 SCVs now.
+-In addition to the expansion, there is now 6 nodes spread around the map. The 2 clostest to your base are Medium, the rest are Small. They all start empty.
+-The Tal'darim defend and contest these nodes. 1 warp prism, 2 stalkers, 1 scout, and 2 void rays, plus 1 colossus on hard, and 1 HT (After 3 reinforce cycles) on brutal. These units have bullies, and are replaced as often as every 2.5 minutes on brutal, provided there is less than (3/3/4/6) units.
+-The node bullies get disabled as you clear the map outside the main protoss base
+-Each area has some "stickyness" with the bullies. They won't give up the area right away.
+-Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
+-Getting the second bonus now gives you Multilock, and a message saying so
+-SCVs harvest terrazine, and return it to Refineries
+-The expansion now has a HT on brutal
+-The expansion and west outpost both have an extra cannon on hard and brutal
 
 Great Train Robbery:
--Starting fields and expansion fields are empty
+-Removed 1 of the starting depots
+-Replaced 2 mineral pallets with vespene pallets.
+-The starting fields and expansion fields are empty
+-Removed 1 mineral pallet
+-Relocated a mineral pallet from the bottom right diamondback area
+-Getting the second bonus now gives you Diamondback Shaped Hull, and a message saying so
+-Getting the third bonus now gives you Diamondback Piercing, and a message saying so
+-Kill team marauders don't have 1 base armour anymore
+-The dominion now rebuilds bunkers after each train
+-Removed unnecessary triggers to award resources when picking up pallets, as the pallets already do that themselves.
+-Each Train drops 2 less vespene pallets, and up to 3 less mineral pallets
 
 Safe Haven:
 -Purifier Mothership no longer has less range than vikings
@@ -277,8 +306,6 @@ Hyperflight rotors-> Half energy cloak
 
 Maelstrom-> Smart Servos- Reduce transformation time, and armour in siege mode
 
-Concussive Shells- Affects the Devastation Turret
-
 Titanium Shell- Buffs health of Devastation Turret as well
 
 Hellstorm- Also makes Devastation Turret do area damage
@@ -289,7 +316,7 @@ G-4 Cluster Bomb-> Combat Drugs- Life Regen
 
 Ripwave missiles-> 
 
-Tri-lithium-> 
+Tri-lithium-> Railgun Piercing
 
 Ares Class-> Health
 
