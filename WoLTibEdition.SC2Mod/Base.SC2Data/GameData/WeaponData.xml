@@ -361,6 +361,11 @@
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PerditionTurretFlamethrower">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Period value="0.5"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
@@ -552,6 +557,10 @@
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TwinIbiksCannon">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurst">
         <AttackType value="Pierce"/>

@@ -634,6 +634,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), ConversationDataStateGetValue("MissionCompletedCount") > 6);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 11), ConversationDataStateGetValue("MissionCompletedCount") > 9);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 11), ConversationDataStateGetValue("MissionCompletedCount") > 9);
+	//TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 19)));
+	//TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 19)));
 	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 1), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 0)));

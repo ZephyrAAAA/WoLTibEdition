@@ -3224,7 +3224,6 @@
     </CUnit>
     <CUnit id="MercenaryFortress">
         <ArmorType value="Hero"/>
-        <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -3705,6 +3704,9 @@
     </CUnit>
     <CUnit id="PlanetaryFortress">
         <ArmorType value="Hero"/>
+        <LifeArmor value="1"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="PlanetaryFortress2">
         <DeathRevealRadius value="3"/>
@@ -3731,14 +3733,15 @@
         <Attributes index="Armored" value="1"/>
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
-        <LifeArmor value="3"/>
+        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Sight value="11"/>
         <Food value="10"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="550"/>
+        <CostResource index="Minerals" value="1175"/>
         <CostResource index="Vespene" value="150"/>
         <RepairTime value="150"/>
         <AttackTargetPriority value="20"/>
@@ -3773,7 +3776,6 @@
         <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="240"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="PlatformConnector">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

@@ -293,6 +293,10 @@
         <WhichPlayer Value="Source"/>
         <Resources index="Minerals" value="15"/>
     </CEffectModifyPlayer>
+    <CEffectDamage id="PerditionTurretFlameThrowerDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="20"/>
+    </CEffectDamage>
     <CEffectDamage id="PsiStormDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -979,6 +983,9 @@
     <CEffectCreatePersistent id="DummyEffect">
         <EditorCategories value=""/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="TwinIbiksCannon">
+        <Amount value="80"/>
+    </CEffectDamage>
     <CEffectSet id="VehicleMercSet">
         <EditorCategories value=""/>
         <EffectArray value="DropSiegeBreakers"/>

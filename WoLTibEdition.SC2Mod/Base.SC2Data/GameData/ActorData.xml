@@ -165,22 +165,23 @@
         <Macros value="TerranCommandCenterPlayerDecalMacro"/>
         <Macros value="SprayHelperMacro"/>
         <AcceptedHostedPropTransfers index="Decal" value="0"/>
+        <On index="69" Send="Create CommandCenterBuild"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove A"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimGroupApply B"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimBaselineStop"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimPlay Morph Morph 0 0.000000"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand" Send="AnimBaselineStart"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimGroupApply A"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimBaselineStop"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimPlay Morph Morph 0 1.500000"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimGroupRemove A"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress" Send="AnimBaselineStart"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimGroupApply B"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimBaselineStop"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimPlay Morph Morph 0 0.000000"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimClear Morph"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimGroupRemove B"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimBaselineStart"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="Destroy"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimGroupApply A"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimBaselineStop"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimPlay Morph Morph 0 1.500000"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimClear Morph"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimGroupRemove A"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimBaselineStart"/>
         <On Terms="Abil.*.TransportOccupy" Send="AnimPlay StandC Stand,Work,C PlayForever"/>
         <On Terms="Abil.*.TransportEmpty" Send="AnimClear StandC"/>
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter2"/>
@@ -226,10 +227,10 @@
         <On Terms="UnitPlayerChange; !ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
         <On Terms="Upgrade.CommandCenterReactor" Send="Create CommandCenterReactor"/>
         <On Terms="Upgrade.CommandCenterReactor" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimPlay Morph Morph,C 0 1.500000"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimClear Morph"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimPlay Morph Morph,C 0 1.500000"/>
+        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
+        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
         <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction" Send="DeathCustomize Variation6"/>
         <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction; IsStatus FlyDeathAnim 2" Send="DeathCustomize Variation9"/>
         <On Terms="UnitDeathCustomize; ValidateUnit CommandCenterReactorPurchasedAndNotUnderConstruction" Send="Create CommandCenter2ReactorDeath"/>
@@ -893,7 +894,7 @@
         <Macros value="TerranPlanetaryFortressPlayerDecalMacro"/>
         <AcceptedHostedPropTransfers index="Decal" value="0"/>
         <On Terms="ActorCreation" Send="AnimGroupApply A"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter; MorphTo PlanetaryFortress" Send="Create"/>
+        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="Create"/>
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter"/>
         <On Terms="Abil.*.TransportOccupy" Send="AnimPlay StandC Stand,Work,C PlayForever"/>
         <On Terms="Abil.*.TransportEmpty" Send="AnimClear StandC"/>

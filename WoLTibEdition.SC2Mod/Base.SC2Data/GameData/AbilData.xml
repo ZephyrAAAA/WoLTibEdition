@@ -1355,17 +1355,18 @@
         <Flags index="DisableAbils" value="1"/>
         <Flags index="FastBuild" value="1"/>
         <Flags index="Interruptible" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Produce" value="1"/>
         <Flags index="ShowProgress" value="1"/>
         <InfoArray Score="1" Unit="PlanetaryFortress2">
             <SectionArray index="Abils">
-                <DurationArray index="Delay" value="50"/>
+                <DurationArray index="Delay" value="12"/>
             </SectionArray>
             <SectionArray index="Actor">
-                <DurationArray index="Duration" value="50"/>
+                <DurationArray index="Duration" value="12"/>
             </SectionArray>
             <SectionArray index="Stats">
-                <DurationArray index="Delay" value="50"/>
+                <DurationArray index="Delay" value="12"/>
             </SectionArray>
         </InfoArray>
         <Alert value="UpgradeComplete"/>
