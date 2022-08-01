@@ -4,6 +4,77 @@
         <AttackType value="Magic"/>
         <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ATALaserBattery">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Arc value="360"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="-0.125"/>
+        <RandomDelayMax value="0.125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ATALaserBattery2">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="ATALaserBatteryU"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireTargetSorts>
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSRandom"/>
+        </AcquireTargetSorts>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <Marker Link="Weapon/ATALaserBattery">
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.225"/>
+        <Effect value="ATALaserBatteryLM"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="-0.125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ATSLaserBattery">
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="-0.125"/>
+        <RandomDelayMax value="0.125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ATSLaserBattery2">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="ATSLaserBatteryU"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireTargetSorts>
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSRandom"/>
+        </AcquireTargetSorts>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <Marker Link="Weapon/ATSLaserBattery">
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.225"/>
+        <Effect value="ATSLaserBatteryLM"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="-0.125"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="AcidSaliva">
         <AttackType value="Magic"/>
         <Tip value="Weapon/Tip/Cannon"/>
@@ -17,6 +88,10 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BattleCruiserLoki">
+        <RandomDelayMin value="-0.125"/>
+        <RandomDelayMax value="0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
@@ -43,6 +118,20 @@
         <AttackType value="Pierce"/>
         <Options index="Melee" value="1"/>
         <Range value="1"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRBattlecruiserA">
+        <RandomDelayMin value="-0.125"/>
+        <RandomDelayMax value="0.125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRBattlecruiserFakeA">
+        <RandomDelayMin value="-0.125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRBattlecruiserFakeG">
+        <RandomDelayMin value="-0.125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRBattlecruiserG">
+        <RandomDelayMin value="-0.125"/>
+        <RandomDelayMax value="0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogFlameThrower">
         <Range value="4"/>
