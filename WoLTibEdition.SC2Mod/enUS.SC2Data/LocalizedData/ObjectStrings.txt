@@ -115,6 +115,7 @@ Behavior/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
 Behavior/Name/DropOffStun=Drop Off Stun
 Behavior/Name/HailstormLaunchers=Hailstorm Launchers
 Behavior/Name/IdleTaken=Idle Taken
+Behavior/Name/OrbitalSupplyDrop=Orbital Supply Drop
 Behavior/Name/QueuePaused=QueuePaused
 Behavior/Name/ReaperRegen=Reaper Regen
 Behavior/Name/Refinery=Refinery

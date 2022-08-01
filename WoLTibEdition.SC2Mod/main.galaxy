@@ -659,6 +659,12 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		TechTreeUpgradeAddLevel(1, "TerranVehicleVanadiumPlating", 1);
 		TechTreeUpgradeAddLevel(1, "TerranShipVanadiumPlating", 1);
 	}
+	if (TechTreeUpgradeCount(1, "SupplyDepotDrop", c_techCountCompleteOnly) > 0) {
+		UnitBehaviorAddPlayer(topbarUnit, "OrbitalSupplyDrop", 1, 1);
+	}
+	if (TechTreeUpgradeCount(1, "MicroFiltering", c_techCountCompleteOnly) > 0) {
+		rate += 116;
+	}
 	ConversationDataStateSetValue("StoryState|AchievementDisabled", 1);
 	AchievementsDisable(1); //one of these should work
 	return true;

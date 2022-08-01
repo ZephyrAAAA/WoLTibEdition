@@ -272,6 +272,7 @@ Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechanicalRepair=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
+Effect/Name/OrbitalSupplyDrop=Orbital Supply Drop
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
@@ -376,6 +377,7 @@ Unit/Name/WarPigSquad=War Pig Squad
 Unit/Tip/Air=<c val="FFBF00">Light Air</c> armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
+Unit/Tip/Infantry=
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers

@@ -93,6 +93,10 @@
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingStrike">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
         <DamagePoint value="0.2"/>
@@ -576,5 +580,11 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.85"/>
         <RandomDelayMax value="-0.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Zeratul">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Period value="1"/>
+        <AttackType value="Pierce"/>
+        <Backswing value="0.6"/>
     </CWeaponLegacy>
 </Catalog>

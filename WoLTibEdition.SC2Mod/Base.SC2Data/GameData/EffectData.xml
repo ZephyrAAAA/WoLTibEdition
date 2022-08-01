@@ -288,6 +288,11 @@
         <WhichUnit Value="Source"/>
         <EffectExternal value="MakePrecursorMerc"/>
     </CEffectEnumMagazine>
+    <CEffectModifyPlayer id="OrbitalSupplyDrop">
+        <EditorCategories value=""/>
+        <WhichPlayer Value="Source"/>
+        <Resources index="Minerals" value="15"/>
+    </CEffectModifyPlayer>
     <CEffectDamage id="PsiStormDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -987,5 +992,9 @@
     <CEffectDamage id="VolatileBurstU">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="Zeratul">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="110"/>
     </CEffectDamage>
 </Catalog>

@@ -1394,6 +1394,14 @@
         <ExternalAngle value="329.9963"/>
         <MaxCount value="6"/>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="ZeratulBlink">
+        <Cost index="0">
+            <Charge CountMax="3" CountUse="1" TimeUse="10">
+                <Flags index="RestoreAllChargesOnCooldown" value="1"/>
+            </Charge>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="heal">
         <TargetSorts>
             <SortArray index="1" value="TSLifeFraction"/>

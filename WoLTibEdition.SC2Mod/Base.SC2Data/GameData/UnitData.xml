@@ -2213,6 +2213,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <SelectAlias value="FirebatSquad"/>
     </CUnit>
     <CUnit id="FlamingBetty">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3114,6 +3115,7 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
         </CardLayouts>
         <BehaviorArray Link="HailstormLaunchers"/>
+        <SelectAlias value="MarauderSquad"/>
     </CUnit>
     <CUnit id="Marine">
         <Food value="0"/>
@@ -5618,6 +5620,7 @@
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="1"/>
+        <SelectAlias value="MarineSquad"/>
     </CUnit>
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5750,6 +5753,9 @@
     <CUnit id="Zeratul">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="ZeratulDarkTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
