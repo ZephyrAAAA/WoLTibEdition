@@ -7,7 +7,7 @@
     <CWeaponLegacy id="ATALaserBattery">
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <Options index="DisplayCooldown" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
         <Arc value="360"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
@@ -43,7 +43,7 @@
     <CWeaponLegacy id="ATSLaserBattery">
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <Options index="DisplayCooldown" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
