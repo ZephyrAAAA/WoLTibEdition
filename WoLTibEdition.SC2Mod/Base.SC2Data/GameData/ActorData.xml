@@ -886,6 +886,9 @@
     <CActorSplat id="OrbitalCommandSplat2" parent="TerranBuildingMorphSplat" unitName="OrbitalCommand2">
         <Model value="OrbitalCommandSplat"/>
     </CActorSplat>
+    <CActorAction id="PerditionTurretAttack">
+        <LaunchModel value="FirebatAttackModel"/>
+    </CActorAction>
     <CActorUnit id="PlanetaryFortress2" parent="TerranBuildingEx" unitName="PlanetaryFortress2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>

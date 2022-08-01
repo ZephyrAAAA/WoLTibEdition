@@ -64,6 +64,10 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PerditionTurretBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DropOffStun">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="60"/>

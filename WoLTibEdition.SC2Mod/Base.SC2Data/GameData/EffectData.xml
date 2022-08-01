@@ -123,6 +123,16 @@
         <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
         <CaseDefault value="DepowerRB"/>
     </CEffectSwitch>
+    <CEffectApplyBehavior id="PerditionTurretBuilt">
+        <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="PerditionTurretPlace">
+        <ValidatorArray index="0" value="DevastatorTurretPlaceTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectRemoveBehavior>
     <CEffectEnumArea id="DevilDogSearchArea">
         <IncludeArray Effect="DevilDogSet" Value="Target"/>
     </CEffectEnumArea>
@@ -635,6 +645,7 @@
         <EffectArray value="FusionCorePlace"/>
         <EffectArray value="CranePlace"/>
         <EffectArray value="DevastatorTurretPlace"/>
+        <EffectArray value="PerditionTurretPlace"/>
     </CEffectSet>
     <CEffectCreatePersistent id="SquadAttack">
         <EditorCategories value=""/>

@@ -397,6 +397,7 @@
         <EffectArray index="0" Operation="Multiply" Reference="Effect,InfernalFlameThrower,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,FirebatUFull,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DevilDogDamage,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,PerditionTurretFlameThrowerDamage,Amount" Value="1.5"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HiSecAutoTracking">

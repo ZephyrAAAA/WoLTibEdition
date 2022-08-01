@@ -42,6 +42,9 @@
     <CRequirement id="HasBuiltDevastatorTurret">
         <NodeArray index="Show" Link="CountBehaviorDevastatorTurretBuiltCompleteOnlyAtUnit"/>
     </CRequirement>
+    <CRequirement id="HasBuiltPerditionTurret">
+        <NodeArray index="Show" Link="CountBehaviorPerditionTurretBuiltCompleteOnlyAtUnit"/>
+    </CRequirement>
     <CRequirement id="HasBuiltSupplyDepot">
         <NodeArray index="Show" Link="EqCountBehaviorSupplyDepotBuiltCompleteOnly1"/>
     </CRequirement>
