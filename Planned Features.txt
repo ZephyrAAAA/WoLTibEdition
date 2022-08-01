@@ -36,7 +36,6 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 
 Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought.
 
-
 Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
 
 *Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
@@ -195,6 +194,7 @@ All-in:
 
 Whispers of Doom:
 -Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 33% faster attack speed
+-Abilities are no longer disabled at the start of the mission
 
 A Sinister Turn:
 -Stealth misison, free the preservers while avoiding Ma'ar and Protoss guardians
@@ -312,9 +312,9 @@ Autogas-> Autoharvesting
 
 Command Center Reactor- Reduce build time of buildings (Also affects cost)
 
-Orbital Supply Depot- Passive income
+Orbital Supply Depot-> Orbital Supply Drop- Passive income
 
-Micro Filtering- SCVs collect double the minerals per gather action
+Micro Filtering-> Expanded Hold- SCVs collect double the minerals per gather action
 
 Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 

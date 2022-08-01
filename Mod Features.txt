@@ -36,6 +36,7 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 
 Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought.
 
+Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
 Bonus Objectives now generally give something good in-mission.
 
 Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
@@ -170,6 +171,8 @@ Hellstorm- Also makes Devastation Turret do area damage
 U-238 Shells- Increases damage, instead of damage vs light
 
 G-4 Cluster Bomb-> Combat Drugs- Life Regen
+
+Ares Class-> Health
 Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 
 Vanadium Plating- Gives all Vanadium Plating upgrades permanently
@@ -191,4 +194,7 @@ Marauder shoulder rockets- [Spec Ops]
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
+
+
+Blue Flame- all fire weapons deal more damage [Armoury]
 

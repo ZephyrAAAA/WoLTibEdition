@@ -19,13 +19,17 @@ Refineries now have a rally point that they will send workers to.
 Psi Storm no longer ignores armour.
 Engi Bay and Armoury can now pause and cancel properly to give you a refund.
 There is now a Marauder Rocket upgrade on the Shadow Ops.
+The Devastation Turret now gets AOE from Hellstorm.
+The Devastation Turret now gets health from Titanium Housing.
+Mineral patches are now 20% bigger, meaning a full field has less
+BCs are no longer trash
+Vanadium and UltraCaps lab research actually do what they're supposed to do.
 
 Liberation Day:
 Jim has push priority over the marines now
 
 Outlaws:
 Added a tip about Refinery Rally.
-
 
 Zero Hour:
 Tychus now actually announces the first ultra
@@ -34,11 +38,15 @@ Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
 You start with 2 SCVs now.
 Starting infrantry replaced with squads
-In addition to the expansion, there is now 6 nodes spread around the map. The Tal'darim defend and contest these nodes.
+In addition to the expansion, there is now 6 nodes spread around the map. The 2 clostest to your base are Medium, the rest are Small. They all start empty.
+The Tal'darim defend and contest these nodes. 1 warp prism, 2 stalkers, 1 scout, and 2 void rays, plus 1 colossus on hard, and 1 HT (After 3 reinforce cycles) on brutal. These units have bullies, and are replaced as often as every 2.5 minutes on brutal, provided there is less than (3/3/4/6) units.
+The node bullies get disabled as you clear the map outside the main protoss base
+Each area has some "stickyness" with the bullies. They won't give up the area right away.
 Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
 Getting the second bonus now gives you Multilock, and a message saying so
-SCVs can now harvest terrazine, and return it to Refineries
+SCVs harvest terrazine, and return it to Refineries
 The expansion now has a HT on brutal
+The expansion and west outpost both have an extra cannon on hard and brutal
 
 Outbreak:
 Resources all converted, SCVs deleted, starting refinery placed
@@ -52,7 +60,7 @@ Getting the bonuses now gives you hellion armoury upgrades, and messages saying 
 Aberrations now show up at the end of the first night, and every night thereafter
 
 Trains:
-Resources all converted, SCVs deleted
+Resources all converted, SCVs deleted, no starting refinery.
 Starting infrantry replaced with squads
 Removed 1 of the starting depots
 Replaced 2 mineral pallets with vespene pallets.
@@ -64,3 +72,4 @@ Getting the third bonus now gives you Diamondback Piercing, and a message saying
 Kill team marauders don't have 1 base armour anymore
 The dominion now rebuilds bunkers after each train
 Removed unnecessary triggers to award resources when picking up pallets, as the pallets already do that themselves.
+Each Train drops 2 less vespene pallets, and up to 3 less mineral pallets
