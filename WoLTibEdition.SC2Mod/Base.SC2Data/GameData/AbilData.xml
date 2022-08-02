@@ -762,7 +762,7 @@
         </InfoArray>
         <InfoArray index="Build15" Unit="PerditionTurret" Time="3">
             <Resource index="Custom" value="-12"/>
-            <Charge Link="Abil/CCBuild"/>
+            <Charge CountMax="1" CountUse="1" Link="Abil/CCBuild"/>
             <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
