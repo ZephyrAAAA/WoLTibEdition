@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CDataCollectionUnit id="Armory">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,ArmoryResearch"/>
         <DataRecord Entry="Actor,Armory"/>
         <DataRecord Entry="Actor,ArmorySplat"/>
         <DataRecord Entry="Unit,Armory"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Armory2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,Armory2Research"/>
         <DataRecord Entry="Actor,Armory2"/>
         <DataRecord Entry="Actor,Armory2Splat"/>
@@ -17,7 +15,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Barracks">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,BarracksAddOns"/>
         <DataRecord Entry="Abil,BarracksLand"/>
         <DataRecord Entry="Abil,BarracksLiftOff"/>
@@ -27,7 +24,6 @@
         <DataRecord Entry="Actor,Barracks"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Barracks2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,Barracks2AddOns"/>
         <DataRecord Entry="Abil,Barracks2Land"/>
         <DataRecord Entry="Abil,Barracks2LiftOff"/>
@@ -39,7 +35,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="CommandCenter">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,CommandCenterLand"/>
         <DataRecord Entry="Abil,CommandCenterLiftOff"/>
         <DataRecord Entry="Abil,UpgradeToPlanetaryFortress"/>
@@ -58,7 +53,6 @@
         <DataRecord Entry="Unit,PlanetaryFortress"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="CommandCenter2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,CommandCenter2Land"/>
         <DataRecord Entry="Abil,CommandCenter2LiftOff"/>
         <DataRecord Entry="Abil,UpgradeToPlanetaryFortress2"/>
@@ -79,27 +73,23 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Crane">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,Crane"/>
         <DataRecord Entry="Unit,Crane"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="DevastationTurret">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,DevastationTurret"/>
         <DataRecord Entry="Unit,DevastationTurret"/>
         <Button value="MissileTurret"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="EngineeringBay">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,EngineeringBayResearch"/>
         <DataRecord Entry="Actor,EngineeringBay"/>
         <DataRecord Entry="Actor,EngineeringBaySplat"/>
         <DataRecord Entry="Unit,EngineeringBay"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="EngineeringBay2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,EngineeringBay2Research"/>
         <DataRecord Entry="Actor,EngineeringBay2"/>
         <DataRecord Entry="Actor,EngineeringBay2Splat"/>
@@ -108,7 +98,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Factory">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,FactoryLand"/>
         <DataRecord Entry="Abil,FactoryLiftOff"/>
         <DataRecord Entry="Abil,FactoryTrain"/>
@@ -118,7 +107,6 @@
         <DataRecord Entry="Unit,FactoryFlying"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Factory2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,Factory2Land"/>
         <DataRecord Entry="Abil,Factory2LiftOff"/>
         <DataRecord Entry="Abil,Factory2Train"/>
@@ -130,7 +118,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="DevilDogSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,DevilDogSquad"/>
         <DataRecord Entry="Weapon,DevilDogSquad"/>
         <DataRecord Entry="Actor,DevilDogSquad"/>
@@ -139,14 +126,12 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,FusionCoreResearch"/>
         <DataRecord Entry="Actor,FusionCore"/>
         <DataRecord Entry="Actor,FusionCoreSplat"/>
         <DataRecord Entry="Unit,FusionCore"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,FusionCore2Research"/>
         <DataRecord Entry="Actor,FusionCore2"/>
         <DataRecord Entry="Actor,FusionCore2Splat"/>
@@ -155,7 +140,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="GhostAcademy">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,ArmSiloWithNuke"/>
         <DataRecord Entry="Abil,GhostAcademyResearch"/>
         <DataRecord Entry="Actor,GhostAcademy"/>
@@ -163,7 +147,6 @@
         <DataRecord Entry="Unit,GhostAcademy"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="GhostAcademy2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,ArmSiloWithNuke2"/>
         <DataRecord Entry="Abil,GhostAcademy2Research"/>
         <DataRecord Entry="Actor,GhostAcademy2"/>
@@ -173,7 +156,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="GhostSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,GhostSquad"/>
         <DataRecord Entry="Weapon,GhostSquad"/>
         <DataRecord Entry="Actor,GhostSquad"/>
@@ -182,7 +164,6 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MarauderSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,MarauderSquad"/>
         <DataRecord Entry="Weapon,MarauderSquad"/>
         <DataRecord Entry="Actor,MarauderSquad"/>
@@ -191,7 +172,6 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="FirebatSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,FirebatSquad"/>
         <DataRecord Entry="Weapon,FirebatSquad"/>
         <DataRecord Entry="Actor,FirebatSquad"/>
@@ -200,7 +180,6 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="HammerSecuritiesSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,HammerSecuritiesSquad"/>
         <DataRecord Entry="Weapon,HammerSecuritiesSquad"/>
         <DataRecord Entry="Actor,HammerSecuritiesSquad"/>
@@ -209,7 +188,6 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MarineSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,MarineSquad"/>
         <DataRecord Entry="Weapon,MarineSquad"/>
         <DataRecord Entry="Actor,MarineSquad"/>
@@ -217,7 +195,6 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MedicSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,MedicSquad"/>
         <DataRecord Entry="Weapon,MedicSquad"/>
         <DataRecord Entry="Actor,MedicSquad"/>
@@ -225,7 +202,6 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MineralField">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,MineralField"/>
         <DataRecord Entry="Actor,MineralFieldSplat"/>
         <DataRecord Entry="Actor,MineralFieldSplatSmall"/>
@@ -233,19 +209,24 @@
         <DataRecord Entry="Unit,MineralField"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MissileTurret">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,MissileTurret"/>
         <DataRecord Entry="Unit,MissileTurret"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MissileTurret2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,MissileTurret2"/>
         <DataRecord Entry="Unit,MissileTurret2"/>
         <Button value="MissileTurret"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="PlanetaryFortress2">
+        <DataRecord Entry="Actor,PlanetaryFortress2"/>
+        <DataRecord Entry="Actor,PlanetaryFortressSplat2"/>
+        <DataRecord Entry="Unit,PlanetaryFortress2"/>
+        <Button value="UpgradeToPlanetaryFortress"/>
+        <UpgradeInfoUnitLifeArmorPerLevel value="1"/>
+        <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="ReaperSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,ReaperSquad"/>
         <DataRecord Entry="Weapon,ReaperSquad"/>
         <DataRecord Entry="Actor,ReaperSquad"/>
@@ -253,25 +234,21 @@
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Refinery2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Unit,Refinery2"/>
         <DataRecord Entry="Actor,Refinery2"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SensorTower">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,SensorTower"/>
         <DataRecord Entry="Unit,SensorTower"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SensorTower2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,SensorTower2"/>
         <DataRecord Entry="Unit,SensorTower2"/>
         <Button value="SensorTower"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Starport">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,StarportAddOns"/>
         <DataRecord Entry="Abil,StarportLand"/>
         <DataRecord Entry="Abil,StarportLiftOff"/>
@@ -281,7 +258,6 @@
         <DataRecord Entry="Unit,StarportFlying"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Starport2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,Starport2AddOns"/>
         <DataRecord Entry="Abil,Starport2Land"/>
         <DataRecord Entry="Abil,Starport2LiftOff"/>
@@ -293,7 +269,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot">
-        <EditorCategories value=""/>
         <DataRecord Entry="Unit,SupplyDepotLowered"/>
         <DataRecord Entry="Abil,SupplyDepotRaise"/>
         <DataRecord Entry="Abil,SupplyDepotLower"/>
@@ -303,7 +278,6 @@
         <DataRecord Entry="Unit,SupplyDepot"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Unit,SupplyDepot2Lowered"/>
         <DataRecord Entry="Abil,SupplyDepot2Raise"/>
         <DataRecord Entry="Abil,SupplyDepot2Lower"/>
@@ -316,11 +290,9 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot2Lowered">
-        <EditorCategories value=""/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TibNodeLarge">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,TibNodeLarge"/>
         <DataRecord Entry="Actor,TibNodeLargeSplat"/>
         <DataRecord Entry="Unit,TibNodeLarge"/>
@@ -333,7 +305,6 @@
         <DataRecord Entry="Effect,TibNodeLargeGrow"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TibNodeMedium">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,TibNodeMedium"/>
         <DataRecord Entry="Actor,TibNodeMediumSplat"/>
         <DataRecord Entry="Unit,TibNodeMedium"/>
@@ -346,7 +317,6 @@
         <DataRecord Entry="Effect,TibNodeMediumGrow"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TibNodeSmall">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,TibNodeSmall"/>
         <DataRecord Entry="Actor,TibNodeSmallSplat"/>
         <DataRecord Entry="Unit,TibNodeSmall"/>
@@ -359,7 +329,6 @@
         <DataRecord Entry="Effect,TibNodeSmallGrow"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TibVein">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,TibVein"/>
         <DataRecord Entry="Actor,TibVeinSplat"/>
         <DataRecord Entry="Actor,TibVeinSplatSmall"/>
@@ -367,13 +336,11 @@
         <DataRecord Entry="Unit,TibVein"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="VespeneGeyser">
-        <EditorCategories value=""/>
         <DataRecord Entry="Actor,VespeneGeyser"/>
         <DataRecord Entry="Actor,VespeneGeyserSplat"/>
         <DataRecord Entry="Unit,VespeneGeyser"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="WarPigSquad">
-        <EditorCategories value=""/>
         <DataRecord Entry="Abil,WarPigSquad"/>
         <DataRecord Entry="Weapon,WarPigSquad"/>
         <DataRecord Entry="Actor,WarPigSquad"/>

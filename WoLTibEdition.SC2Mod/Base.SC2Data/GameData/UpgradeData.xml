@@ -397,6 +397,7 @@
         <EffectArray index="0" Operation="Multiply" Reference="Effect,InfernalFlameThrower,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,FirebatUFull,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DevilDogDamage,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,PerditionTurretFlameThrowerDamage,Amount" Value="1.5"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HiSecAutoTracking">
@@ -554,7 +555,7 @@
         <EffectArray index="73" Value="1"/>
         <EffectArray index="74" Value="1.000000"/>
         <EffectArray index="75" Value="1"/>
-        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{1+DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>

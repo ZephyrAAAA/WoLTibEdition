@@ -123,6 +123,16 @@
         <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
         <CaseDefault value="DepowerRB"/>
     </CEffectSwitch>
+    <CEffectApplyBehavior id="PerditionTurretBuilt">
+        <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="PerditionTurretPlace">
+        <ValidatorArray index="0" value="DevastatorTurretPlaceTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectRemoveBehavior>
     <CEffectEnumArea id="DevilDogSearchArea">
         <IncludeArray Effect="DevilDogSet" Value="Target"/>
     </CEffectEnumArea>
@@ -288,6 +298,15 @@
         <WhichUnit Value="Source"/>
         <EffectExternal value="MakePrecursorMerc"/>
     </CEffectEnumMagazine>
+    <CEffectModifyPlayer id="OrbitalSupplyDrop">
+        <EditorCategories value=""/>
+        <WhichPlayer Value="Source"/>
+        <Resources index="Minerals" value="15"/>
+    </CEffectModifyPlayer>
+    <CEffectDamage id="PerditionTurretFlameThrowerDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="20"/>
+    </CEffectDamage>
     <CEffectDamage id="PsiStormDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -626,6 +645,7 @@
         <EffectArray value="FusionCorePlace"/>
         <EffectArray value="CranePlace"/>
         <EffectArray value="DevastatorTurretPlace"/>
+        <EffectArray value="PerditionTurretPlace"/>
     </CEffectSet>
     <CEffectCreatePersistent id="SquadAttack">
         <EditorCategories value=""/>
@@ -974,6 +994,9 @@
     <CEffectCreatePersistent id="DummyEffect">
         <EditorCategories value=""/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="TwinIbiksCannon">
+        <Amount value="80"/>
+    </CEffectDamage>
     <CEffectSet id="VehicleMercSet">
         <EditorCategories value=""/>
         <EffectArray value="DropSiegeBreakers"/>
@@ -987,5 +1010,9 @@
     <CEffectDamage id="VolatileBurstU">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="Zeratul">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="110"/>
     </CEffectDamage>
 </Catalog>

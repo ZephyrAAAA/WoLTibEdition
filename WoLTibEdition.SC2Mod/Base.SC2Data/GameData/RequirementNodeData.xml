@@ -32,6 +32,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="DevastatorTurretBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPerditionTurretBuiltCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PerditionTurretBuilt" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SupplyDepotBuilt" State="CompleteOnlyAtUnit"/>
@@ -84,12 +89,10 @@
     </CRequirementCountUnit>
     <CRequirementCountUpgrade id="CountUpgradeHailstormLaunchersCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="HailstormLaunchers" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeHailstormLaunchersQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="HailstormLaunchers" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
@@ -264,7 +267,6 @@
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHailstormLaunchersQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeHailstormLaunchersQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">

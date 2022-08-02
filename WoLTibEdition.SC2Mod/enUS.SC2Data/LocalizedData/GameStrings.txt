@@ -204,6 +204,7 @@ DataCollection/Name/MedicSquad=Medic Squad
 DataCollection/Name/MineralField=Mineral Field
 DataCollection/Name/MissileTurret=Missile Turret
 DataCollection/Name/MissileTurret2=Missile Turret Copy
+DataCollection/Name/PlanetaryFortress2=Planetary Fortress Copy
 DataCollection/Name/ReaperSquad=Reaper Squad
 DataCollection/Name/Refinery2=Refinery Copy
 DataCollection/Name/SensorTower=Sensor Tower
@@ -272,6 +273,9 @@ Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechanicalRepair=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
+Effect/Name/OrbitalSupplyDrop=Orbital Supply Drop
+Effect/Name/PerditionTurretBuilt=PerditionTurretBuilt
+Effect/Name/PerditionTurretPlace=PerditionTurretPlace
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
@@ -376,6 +380,7 @@ Unit/Name/WarPigSquad=War Pig Squad
 Unit/Tip/Air=<c val="FFBF00">Light Air</c> armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
+Unit/Tip/Infantry=
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers

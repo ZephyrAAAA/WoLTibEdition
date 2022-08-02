@@ -64,6 +64,10 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="PerditionTurretBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DropOffStun">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="60"/>
@@ -93,6 +97,13 @@
     <CBehaviorBuff id="IdleTaken">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OrbitalSupplyDrop">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="AutoHarvesterHarvest"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="OrbitalSupplyDrop"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PrecursorMerc">
         <InitialEffect value="MercSquadDropDelay"/>

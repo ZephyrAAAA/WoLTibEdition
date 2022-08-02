@@ -541,9 +541,17 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Specialize15">
-            <Charge HideCount="1"/>
-            <Button>
+        <InfoArray index="Specialize15" Time="15" Effect="PerditionTurretBuilt">
+            <Resource index="Vespene" value="1500"/>
+            <Resource index="Custom" value="-12"/>
+            <Display index="Custom" value="1"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="-1"/>
+                <HideCount value="1"/>
+                <Location value="Unit"/>
+            </Charge>
+            <Button DefaultButtonFace="PerditionTurret" Requirements="StaticDefEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -752,8 +760,10 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Build15">
-            <Button>
+        <InfoArray index="Build15" Unit="PerditionTurret" Time="3">
+            <Resource index="Custom" value="-12"/>
+            <Charge Link="Abil/CCBuild"/>
+            <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1355,21 +1365,25 @@
         <Flags index="DisableAbils" value="1"/>
         <Flags index="FastBuild" value="1"/>
         <Flags index="Interruptible" value="1"/>
+        <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Produce" value="1"/>
         <Flags index="ShowProgress" value="1"/>
         <InfoArray Score="1" Unit="PlanetaryFortress2">
             <SectionArray index="Abils">
-                <DurationArray index="Delay" value="50"/>
+                <DurationArray index="Delay" value="12"/>
             </SectionArray>
             <SectionArray index="Actor">
-                <DurationArray index="Duration" value="50"/>
+                <DurationArray index="Duration" value="12"/>
             </SectionArray>
             <SectionArray index="Stats">
-                <DurationArray index="Delay" value="50"/>
+                <DurationArray index="Delay" value="12"/>
             </SectionArray>
         </InfoArray>
         <Alert value="UpgradeComplete"/>
         <ValidatorArray value="HasNoCargo"/>
+        <Cost>
+            <Resource index="Minerals" value="1200"/>
+        </Cost>
     </CAbilMorph>
     <CAbilArmMagazine id="WarPigSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1394,6 +1408,14 @@
         <ExternalAngle value="329.9963"/>
         <MaxCount value="6"/>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="ZeratulBlink">
+        <Cost index="0">
+            <Charge CountMax="3" CountUse="1" TimeUse="10">
+                <Flags index="RestoreAllChargesOnCooldown" value="1"/>
+            </Charge>
+            <Cooldown TimeUse="0"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="heal">
         <TargetSorts>
             <SortArray index="1" value="TSLifeFraction"/>

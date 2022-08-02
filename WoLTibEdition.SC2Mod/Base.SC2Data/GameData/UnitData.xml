@@ -1165,6 +1165,15 @@
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
+            <LayoutButtons>
+                <Face value="TerranBuildAdvanced"/>
+                <Type value="Submenu"/>
+                <AbilCmd value="BuildInProgress,Cancel"/>
+                <SubmenuCardId value="0003"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
@@ -1175,12 +1184,6 @@
             <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCBuild,Specialize3" Row="1" Column="0"/>
             <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="1" Column="1"/>
             <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCBuild,Specialize4" Row="1" Column="1"/>
-            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
-            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
-            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
-            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
             <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="1" Column="2"/>
             <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCBuild,Specialize8" Row="1" Column="2"/>
             <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="3"/>
@@ -1194,8 +1197,19 @@
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
-            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="2" Column="3"/>
-            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="2" Column="3"/>
+        </CardLayouts>
+        <CardLayouts CardId="0003">
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="2" Column="3"/>
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize15" Row="2" Column="3"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="1" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
         </CardLayouts>
         <Radius value="2.5"/>
         <SeparationRadius value="2.5"/>
@@ -1345,8 +1359,6 @@
         <CardLayouts>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="2" Column="3"/>
-            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="2" Column="3"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que1,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -1371,12 +1383,28 @@
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
+            <LayoutButtons>
+                <Face value="TerranBuildAdvanced"/>
+                <Type value="Submenu"/>
+                <AbilCmd value="BuildInProgress,Cancel"/>
+                <SubmenuCardId value="0003"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="0003">
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="2" Column="3"/>
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize15" Row="2" Column="3"/>
             <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
             <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
             <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
             <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
             <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
             <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="1" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
         </CardLayouts>
         <Radius value="1.75"/>
         <SeparationRadius value="1.75"/>
@@ -2213,6 +2241,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <SelectAlias value="FirebatSquad"/>
     </CUnit>
     <CUnit id="FlamingBetty">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3114,6 +3143,7 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
         </CardLayouts>
         <BehaviorArray Link="HailstormLaunchers"/>
+        <SelectAlias value="MarauderSquad"/>
     </CUnit>
     <CUnit id="Marine">
         <Food value="0"/>
@@ -3222,7 +3252,6 @@
     </CUnit>
     <CUnit id="MercenaryFortress">
         <ArmorType value="Hero"/>
-        <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -3664,6 +3693,8 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Food value="-12"/>
+        <BehaviorArray Link="PowerCheck"/>
     </CUnit>
     <CUnit id="PerditionTurretACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3674,6 +3705,8 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Food value="-12"/>
+        <BehaviorArray Link="PowerCheck"/>
     </CUnit>
     <CUnit id="PhoenixAiurACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3703,6 +3736,9 @@
     </CUnit>
     <CUnit id="PlanetaryFortress">
         <ArmorType value="Hero"/>
+        <LifeArmor value="1"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="PlanetaryFortress2">
         <DeathRevealRadius value="3"/>
@@ -3729,14 +3765,15 @@
         <Attributes index="Armored" value="1"/>
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
-        <LifeArmor value="3"/>
+        <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Sight value="11"/>
         <Food value="10"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="550"/>
+        <CostResource index="Minerals" value="1175"/>
         <CostResource index="Vespene" value="150"/>
         <RepairTime value="150"/>
         <AttackTargetPriority value="20"/>
@@ -3744,15 +3781,70 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
         <AbilArray Link="que5PassiveCancelToSelection"/>
+        <AbilArray Link="CCBuild"/>
+        <AbilArray Link="CCPlaceBuilding"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
         <WeaponArray Link="TwinIbiksCannon" Turret="PlanetaryFortress"/>
         <CardLayouts>
-            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons>
+                <Face value="TerranBuild"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="TerranBuildAdvanced"/>
+                <Type value="Submenu"/>
+                <AbilCmd value="BuildInProgress,Cancel"/>
+                <SubmenuCardId value="0003"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCBuild,Specialize1" Row="0" Column="2"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="1"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCBuild,Specialize2" Row="0" Column="1"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="1" Column="0"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCBuild,Specialize3" Row="1" Column="0"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="1" Column="1"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCBuild,Specialize4" Row="1" Column="1"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="1" Column="2"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCBuild,Specialize8" Row="1" Column="2"/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="3"/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCBuild,Specialize9" Row="0" Column="3"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="4"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCBuild,Specialize10" Row="0" Column="4"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="1" Column="3"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCBuild,Specialize11" Row="1" Column="3"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
+        </CardLayouts>
+        <CardLayouts CardId="0003">
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="2" Column="3"/>
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize15" Row="2" Column="3"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="2" Column="0"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
+            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="1" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="1" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
         </CardLayouts>
         <Radius value="2.5"/>
         <SeparationRadius value="2.5"/>
@@ -3771,7 +3863,6 @@
         <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="240"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="PlatformConnector">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5618,6 +5709,7 @@
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="1"/>
+        <SelectAlias value="MarineSquad"/>
     </CUnit>
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5750,6 +5842,9 @@
     <CUnit id="Zeratul">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="ZeratulDarkTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

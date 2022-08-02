@@ -93,6 +93,10 @@
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingStrike">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
         <DamagePoint value="0.2"/>
@@ -357,6 +361,11 @@
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PerditionTurretFlamethrower">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Period value="0.5"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
@@ -549,6 +558,10 @@
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="TwinIbiksCannon">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurst">
         <AttackType value="Pierce"/>
         <Tip value="Weapon/Tip/Grenade"/>
@@ -576,5 +589,11 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.85"/>
         <RandomDelayMax value="-0.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Zeratul">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Period value="1"/>
+        <AttackType value="Pierce"/>
+        <Backswing value="0.6"/>
     </CWeaponLegacy>
 </Catalog>
