@@ -41,6 +41,9 @@ Added a tip about Refinery Rally.
 Zero Hour:
 Tychus now actually announces the first ultra
 
+Redstone:
+Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
+
 Bel'Shir:
 Resources all converted, SCVs deleted, starting refinery placed
 You start with 2 SCVs now.
@@ -52,8 +55,12 @@ Each area has some "stickyness" with the bullies. They won't give up the area ri
 Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
 Getting the second bonus now gives you Multilock, and a message saying so
 SCVs harvest terrazine, and return it to Refineries
-The expansion now has a HT on brutal
+The expansion now has a HT on brutal after 3 reinforce waves
 The expansion and west outpost both have an extra cannon on hard and brutal
+The protoss now send 2 counterattacks against each defended area you take, in an attempt to take it back. You have to successfully defend 2 of these attacks consecutively in order for them to give up
+These attack waves scale with the relative importance of the area being contested.
+Added a scout to the expansion.
+Replaced a stalker in the expansion with a colossus
 
 Outbreak:
 Resources all converted, SCVs deleted, starting refinery placed
@@ -65,6 +72,8 @@ There is a node outside each entrance.
 The node in your base starts empty, your Adjutant notes that you have no minerals in your base, and can find some outside it.
 Getting the bonuses now gives you hellion armoury upgrades, and messages saying so
 Aberrations now show up at the end of the first night, and every night thereafter
+The infested now know about your expansion even if you don't have a CC there. It now checks for *any* structures owned by the player
+Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
 
 Trains:
 Resources all converted, SCVs deleted, no starting refinery.
@@ -80,3 +89,8 @@ Kill team marauders don't have 1 base armour anymore
 The dominion now rebuilds bunkers after each train
 Removed unnecessary triggers to award resources when picking up pallets, as the pallets already do that themselves.
 Each Train drops 2 less vespene pallets, and up to 3 less mineral pallets
+Train Health doubled
+Kill teams now get medics on all difficulties.
+Kill teams now have triple the medics(On brutal, with decreasing numbers below brutal), double the marauders, and some devil dogs.
+Kill teams now respawn up to 3 times on hard and brutal. Killing one gives about a minute of reprieve before it is replaced.
+Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
