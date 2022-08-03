@@ -1527,4 +1527,12 @@
             <Image value="Assets\Textures\wireframe-terran-marine-mercenary.dds"/>
         </Wireframe>
     </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Zeratul ............................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Zeratul">
+        <On Terms="Abil.PowerStructure.SourceCastStart" Send="AnimBracketStart Work Stand,Work,Start Stand,Work Stand,Work,End 0 1.000000 AsDuration"/>
+        <On Terms="Abil.PowerStructure.SourceChannelStop" Send="AnimBracketStop Work 0 0.050000"/>
+        <On Terms="Abil.PowerStructure.SourceCastStop" Send="AnimBracketStop Work 0 0.050000"/>
+    </CActorUnit>
 </Catalog>

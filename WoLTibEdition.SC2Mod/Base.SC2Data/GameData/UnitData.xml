@@ -5833,6 +5833,11 @@
         <ArmorType value="Normal"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <ShieldsStart value="300"/>
+        <ShieldsMax value="300"/>
+        <ShieldRegenRate value="10"/>
     </CUnit>
     <CUnit id="ZeratulDarkTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

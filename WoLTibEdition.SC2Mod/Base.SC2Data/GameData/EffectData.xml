@@ -103,6 +103,18 @@
         <SpawnUnit value="DestructibleRock6x6"/>
         <SpawnRange value="0"/>
     </CEffectCreateUnit>
+    <CEffectEnumArea id="DeathRecallS">
+        <EditorCategories value="Race:Protoss"/>
+        <AreaArray Radius="500" Effect="DeathRecallT"/>
+    </CEffectEnumArea>
+    <CEffectTeleport id="DeathRecallT">
+        <ValidatorArray value="IsVoidSeeker"/>
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Caster"/>
+        <PlacementAround Value="CasterUnit"/>
+        <TargetLocation Value="TargetUnitOrPoint"/>
+        <TeleportFlags index="TestFog" value="0"/>
+    </CEffectTeleport>
     <CEffectApplyBehavior id="DepowerAB">
         <EditorCategories value=""/>
         <Behavior value="Depowered"/>
@@ -307,6 +319,22 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="20"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="PowerStructure">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <InitialEffect value="PowerStructureAB"/>
+        <ExpireDelay value="9.875"/>
+        <FinalEffect value="PowerStructureRB"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="PowerStructureAB">
+        <EditorCategories value="Race:Protoss"/>
+        <Behavior value="PowerStructure"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="PowerStructureRB">
+        <EditorCategories value="Race:Protoss"/>
+        <BehaviorLink value="PowerStructure"/>
+    </CEffectRemoveBehavior>
     <CEffectDamage id="PsiStormDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>

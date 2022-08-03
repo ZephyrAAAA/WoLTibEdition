@@ -45,6 +45,17 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilEffectInstant id="DeathRecall">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <Effect index="0" value="DeathRecallS"/>
+        <Cost>
+            <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DeathRecall">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilResearch id="FactoryTechLabResearch">
         <InfoArray index="Research5" Time="90" Upgrade="TerranVehicleUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
@@ -115,6 +126,18 @@
         <ExternalAngle value="270"/>
         <MaxCount value="2"/>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="PowerStructure">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
+        <TargetFilters value="Structure;Ally,Enemy"/>
+        <Range value="0.1"/>
+        <CastIntroTime value="10"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="PowerStructure"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PowerStructure">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="ResetRally">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ResetRally">
@@ -871,60 +894,12 @@
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="UpgradeBuildingArmorLevel1" State="Restricted" Requirements="LearnTerranBuildingArmor"/>
         </InfoArray>
-        <InfoArray index="Research3">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research4">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research5">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
         <InfoArray index="Research6" Time="110" Upgrade="NeosteelFrame">
             <Resource index="Minerals" value="100"/>
             <Resource index="Vespene" value="100"/>
             <Button DefaultButtonFace="ResearchNeosteelFrame" State="Restricted" Requirements="LearnNeosteelFrame">
                 <Flags index="ShowInGlossary" value="1"/>
             </Button>
-        </InfoArray>
-        <InfoArray index="Research7">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research8">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research9">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research11">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research12">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research13">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research14">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research15">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-        </InfoArray>
-        <InfoArray index="Research16">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilBuild id="Factory2AddOns" parent="TerranAddOns">

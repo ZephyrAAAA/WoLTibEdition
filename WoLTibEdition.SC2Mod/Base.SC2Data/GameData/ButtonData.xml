@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="PowerStructure">
+        <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
+        <HotkeyAlias value="CommanderTraitArtanisSOAProjectPowerField"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="DeathRecall">
+        <Icon value="Assets\Textures\btn-ability-protoss-recallondeath.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-recallondeath.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
     <CButton id="HailstormLaunchers">
         <Icon value="Assets\Textures\btn-techupgrade-terran-multilocktargetingsystem.dds"/>
         <AlertIcon value="Assets\Textures\btn-techupgrade-terran-multilocktargetingsystem.dds"/>
