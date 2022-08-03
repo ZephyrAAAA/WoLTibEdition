@@ -26,6 +26,9 @@
         <Find value="1"/>
         <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitType id="IsVoidSeeker">
+        <Value value="VoidSeeker"/>
+    </CValidatorUnitType>
     <CValidatorPlayerRequirement id="TriLithiumPurchased">
         <Find value="1"/>
         <Value value="TriLithiumResearched"/>

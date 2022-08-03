@@ -42,6 +42,16 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DeathRecall">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="DeathRecallS" ModifyFraction="0">
+            <Chance value="1"/>
+            <Cost>
+                <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Depowered">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -105,6 +115,13 @@
         <Period value="0.5"/>
         <PeriodicEffect value="OrbitalSupplyDrop"/>
     </CBehaviorBuff>
+    <CBehaviorPowerSource id="PowerStructure">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Structures"/>
+        <Radius value="0.5"/>
+        <PowerLink value="PowerSource"/>
+    </CBehaviorPowerSource>
     <CBehaviorBuff id="PrecursorMerc">
         <InitialEffect value="MercSquadDropDelay"/>
         <FinalEffect value="RemovePrecursorMercIterate"/>

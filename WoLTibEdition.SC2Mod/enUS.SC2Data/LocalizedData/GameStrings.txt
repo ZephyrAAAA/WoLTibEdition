@@ -18,6 +18,7 @@ Abil/Name/CCRepair=C&C Repair
 Abil/Name/CCSell=C&C Sell
 Abil/Name/CommandCenter2Land=Land (Command Center)
 Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
+Abil/Name/DeathRecall=Death Recall
 Abil/Name/DevilDogSquad=Devil Dog Squad
 Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
 Abil/Name/Factory2AddOns=AddOns
@@ -37,6 +38,7 @@ Abil/Name/MedicSquadAcquire=Medic Squad Acquire
 Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
+Abil/Name/PowerStructure=Power Structure
 Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
@@ -68,12 +70,14 @@ Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supp
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
 Button/Name/BuildingRepair=Building Repair
 Button/Name/CombatDrugs=Combat Drugs
+Button/Name/DeathRecall=Recall
 Button/Name/Depower=Depower
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/InfantryMercenaries=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/PauseQueue=Pause Queue
+Button/Name/PowerStructure=Power Structure
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
@@ -92,6 +96,7 @@ Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
 Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
+Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
 Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
@@ -109,6 +114,7 @@ Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive res
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
@@ -248,6 +254,8 @@ Effect/Name/ConcussiveGrenadesU=Concussive Grenades
 Effect/Name/CraneBuilt=CraneBuilt
 Effect/Name/CranePlace=Crane Place
 Effect/Name/CreateSCVHarvester=Create SCV Harvester
+Effect/Name/DeathRecallS=Death Recall
+Effect/Name/DeathRecallT=Death Recall
 Effect/Name/DepowerAB=Depower AB
 Effect/Name/DepowerRB=Depower RB
 Effect/Name/DepowerSwitch=Depower Switch
@@ -276,6 +284,9 @@ Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
 Effect/Name/OrbitalSupplyDrop=Orbital Supply Drop
 Effect/Name/PerditionTurretBuilt=PerditionTurretBuilt
 Effect/Name/PerditionTurretPlace=PerditionTurretPlace
+Effect/Name/PowerStructure=Power Structure
+Effect/Name/PowerStructureAB=Power Structure
+Effect/Name/PowerStructureRB=Power Structure
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
