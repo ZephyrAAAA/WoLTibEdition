@@ -262,7 +262,7 @@ Diamondback- Increase speed to match hellion, Increase firing speed, range incre
 
 Goliath- Starts with Ares, Anti-ground Damage increased by 33%
 
-Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost.
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost. Tech requirement move from Fusion Core to Armoury.
 
 Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
 
@@ -274,6 +274,8 @@ Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 1000 sniper at 0.5
 
 Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse does damage and no stun, Autoattack does 1000 sniper at 0.5 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 
+Fusion Core- yamato strike support power, all mission-unlocked support powers
+
 
 ARMORY UPGRADE CHANGES:
 
@@ -281,13 +283,13 @@ Stimpack- No movement bonus
 
 Concussive- Applies to Devastation Turret
 
-Stabilizer->
+Stabilizer-  Only reduces required energy now
 
 Medic Tech-
 
 Projectile Accelerator- Affects Shrike Turret
 
-Orbital Command- Unlock support powers on each tech building. Scan on EBay, nuke on shadow ops, Banshee Airstrike on armoury, yamato strike on fusion core.
+Orbital Command- Unlock support powers on tech buildings. Scan on EBay, nuke on shadow ops, Banshee Airstrike on armoury
 
 Advanced Construction- Reduce build time of units (Also affects cost)
 
@@ -379,9 +381,9 @@ Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
-Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Battlecruiser, Thor, Banshee, Seige Tank) [Engineering Bay]
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Thor, Banshee, Marauder Crotch Rockets) [Engineering Bay]
 
-Improved Engines-Ships move faster [Starport Tech Lab]
+Improved Engines- Ships move faster [Starport Tech Lab]
 
 BC Health- [Starport Tech Lab]
 
@@ -389,6 +391,6 @@ Blue Flame- all fire weapons deal more damage [Armoury]
 
 Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded [Armoury]
 
-Improved Shields-Requires the Shield Research. Improves shield stats [Fusion Core]
+Improved Shields-Requires the Shield Research. Improves shield stats [Armoury]
 
-Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Fusion Core]
+Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Armoury]
