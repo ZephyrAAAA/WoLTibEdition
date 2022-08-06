@@ -574,6 +574,10 @@
     <CWeaponLegacy id="VolatileBurstDummy">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Vulture">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarPigSquad">
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/Rifle"/>

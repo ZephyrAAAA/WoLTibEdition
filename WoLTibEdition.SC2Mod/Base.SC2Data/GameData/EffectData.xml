@@ -141,9 +141,9 @@
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
     <CEffectRemoveBehavior id="PerditionTurretPlace">
-        <ValidatorArray index="0" value="DevastatorTurretPlaceTargetFilters"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
+        <BehaviorLink value="PerditionTurretBuilt"/>
     </CEffectRemoveBehavior>
     <CEffectEnumArea id="DevilDogSearchArea">
         <IncludeArray Effect="DevilDogSet" Value="Target"/>
@@ -362,7 +362,8 @@
         <ValidatorArray value="NotVortexd"/>
         <EditorCategories value="Race:Terran"/>
         <DrainVital value="Energy"/>
-        <RechargeVitalFraction value="0.0507"/>
+        <RechargeVitalFraction value="0.0195"/>
+        <RechargeVitalRate value="5"/>
     </CEffectCreateHealer>
     <CEffectDamage id="P38ScytheGuassPistol">
         <AttributeBonus index="Light" value="0"/>

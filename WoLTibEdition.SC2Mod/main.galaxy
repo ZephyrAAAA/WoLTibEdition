@@ -215,7 +215,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 	}
 	idleUnit = EventUnit();
 	owner = EventPlayer();
-	if (UnitGetPropertyInt(idleUnit, c_unitPropCarriedMinerals, true) < 1400) {
+	if (UnitGetPropertyInt(idleUnit, c_unitPropCarriedMinerals, true) < 1400 && !UnitHasBehavior(OrderGetTargetUnit(UnitOrder(EventUnit(), 0)), "RefineryBounce")) {
 		OrderWorkerToGather(idleUnit);
 	} else {
 		UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
@@ -605,6 +605,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("MarineSquad", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("MedicSquad", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("ReaperSquad", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("TrainStone", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 1), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 2), true);
