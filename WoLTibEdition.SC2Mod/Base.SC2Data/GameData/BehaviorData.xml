@@ -9,6 +9,18 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorPowerSource id="BuildRadiusLarge">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Radius value="15"/>
+        <PowerLink value="BuildRadius"/>
+    </CBehaviorPowerSource>
+    <CBehaviorPowerSource id="BuildRadiusSmall">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Radius value="8"/>
+        <PowerLink value="BuildRadius"/>
+    </CBehaviorPowerSource>
     <CBehaviorBuff id="BuildingRepair">
         <Alignment value="Positive"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
@@ -74,6 +86,21 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorPowerUser id="NeedsBuildRadius">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <PowerLink value="BuildRadius"/>
+        <PlacementMinPowerLevel value="1"/>
+        <PowerStageArray/>
+        <PowerStageArray MinPowerLevel="1">
+            <Modification>
+                <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
+                <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
+            </Modification>
+        </PowerStageArray>
+    </CBehaviorPowerUser>
     <CBehaviorBuff id="PerditionTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

@@ -7,5 +7,6 @@ Button/Hotkey/PauseQueue=Escape
 Button/Hotkey/ResearchThermiteFilaments=T
 Button/Hotkey/ResetRally=E
 Button/Hotkey/ResumeQueue=H
+Button/Hotkey/Stone=S
 Button/Hotkey/VehicleUltraCapacitors=C
 Button/Hotkey/VehicleVanadiumPlating=V

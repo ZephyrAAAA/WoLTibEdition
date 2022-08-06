@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="Stone">
+        <Icon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        <AlertIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="PowerStructure">
         <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
         <HotkeyAlias value="CommanderTraitArtanisSOAProjectPowerField"/>
