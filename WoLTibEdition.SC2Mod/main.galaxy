@@ -674,7 +674,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 
 void TechUnlock_Init () {
 	techUnlock = TriggerCreate("TechUnlock_Func");
-	TriggerAddEventTimeElapsed(techUnlock, 0.2, c_timeGame);
+	TriggerAddEventTimeElapsed(techUnlock, 0.125, c_timeGame);
 }
 
 bool INI_Func (bool testConds, bool runActions) {

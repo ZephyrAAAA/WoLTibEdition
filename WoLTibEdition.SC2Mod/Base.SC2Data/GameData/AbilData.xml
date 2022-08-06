@@ -45,6 +45,16 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilTrain id="TrainStone">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <InfoArray index="Train1" Time="15">
+            <Button DefaultButtonFace="Stone" State="Restricted">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+            <Unit value="Stone"/>
+        </InfoArray>
+        <Alert value="TrainWorkerComplete"/>
+    </CAbilTrain>
     <CAbilEffectInstant id="DeathRecall">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="DeathRecallS"/>
@@ -145,6 +155,17 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilBuild id="StoneDeploy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <FlagArray index="IgnoreFood" value="1"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <FlagArray index="PeonHide" value="1"/>
+        <FlagArray index="PeonKillFinish" value="1"/>
+        <FlagArray index="RangeIncludesBuilding" value="0"/>
+        <InfoArray index="Build1" Unit="SensorTower2" Time="10">
+            <Button DefaultButtonFace="SensorTower"/>
+        </InfoArray>
+    </CAbilBuild>
     <CAbilEffectTarget id="VehicleMercenaries">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="InfantryMercenaries"/>

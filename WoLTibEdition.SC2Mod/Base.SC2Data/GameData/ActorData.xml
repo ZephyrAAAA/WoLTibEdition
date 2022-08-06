@@ -59,6 +59,30 @@
     <CActorSound id="BarracksLand">
         <On Terms="AbilMorph.*.Start; MorphTo Barracks2" Send="Create"/>
     </CActorSound>
+    <CActorRange id="BuildRadius" unitName="Bogus">
+        <Behavior value="BuildRadiusLarge"/>
+        <Icon value="Assets\Textures\build_radius.tga"/>
+        <IconArcLength value="0.100000"/>
+    </CActorRange>
+    <CActorRange id="BuildRadius2" unitName="Bogus">
+        <Behavior value="BuildRadiusSmall"/>
+        <Icon value="Assets\Textures\build_radius.tga"/>
+        <IconArcLength value="0.100000"/>
+    </CActorRange>
+    <CActorPower id="BuildRadiusLarge">
+        <On Terms="Behavior.BuildRadiusLarge.Create" Send="Create"/>
+        <On Terms="Behavior.BuildRadiusLarge.Destroy" Send="Destroy"/>
+        <PowerSource value="BuildRadiusLarge"/>
+        <VisualArray value="BuildRadius"/>
+        <VisualArray value="BuildRadius"/>
+    </CActorPower>
+    <CActorPower id="BuildRadiusSmall">
+        <On Terms="Behavior.BuildRadiusSmall.Create" Send="Create"/>
+        <On Terms="Behavior.BuildRadiusSmall.Destroy" Send="Destroy"/>
+        <PowerSource value="BuildRadiusSmall"/>
+        <VisualArray value="BuildRadius2"/>
+        <VisualArray value="BuildRadius2"/>
+    </CActorPower>
     <CActorUnit id="Bunker">
         <BuildModel value="BunkerBuild"/>
         <On index="105" removed="1"/>
@@ -1152,6 +1176,23 @@
     <CActorSound id="StarportLand">
         <On Terms="AbilMorph.*.Start; MorphTo Starport2" Send="Create"/>
     </CActorSound>
+    <CActorUnit id="Stone" parent="GenericUnitStandard" unitName="Stone">
+        <Aliases value="_UnitLarge"/>
+        <Model value="CargoTruckUnitTrailer"/>
+        <BuildModel value="CargoTruckUnitTrailer"/>
+        <DeathArray index="Normal" ModelLink="CargoTruckUnitFlatbedDeath" SoundLink="SiegeTank_Explode"/>
+        <PlacementModel value="CargoTruckUnitTrailer"/>
+        <PortraitModel value="GhostPortrait"/>
+        <WalkAnimMoveSpeed value="1"/>
+        <BarOffset value="80"/>
+        <BarWidth value="102"/>
+        <HeroIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-vehicleplatinglevel0.dds"/>
+        <UnitIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <CActorUnit id="SupplyDepot2" parent="TerranBuildingEx" unitName="SupplyDepot2">
         <Aliases value="_UnitLarge"/>
         <On index="69" Terms="UnitConstruction.SupplyDepot2.Start" Send="Create SupplyDepotBuild"/>

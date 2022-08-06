@@ -369,11 +369,12 @@
         <Amount value="12"/>
     </CEffectDamage>
     <CEffectCreateHealer id="BuildingRepair">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="IsNotConstructing"/>
         <Flags index="Channeled" value="0"/>
         <DrainResourceCostFactor index="Minerals" value="1"/>
         <RechargeVitalRate value="1"/>
         <TimeFactor value="1"/>
-        <ValidatorArray value="noMarkers"/>
     </CEffectCreateHealer>
     <CEffectCreatePersistent id="P38ScytheGuassPistolBurst">
         <PeriodicPeriodArray index="1" value="0"/>
