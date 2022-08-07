@@ -134,11 +134,20 @@ Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
+Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
 Button/Tooltip/VehicleMercenaries=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
-ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">All units affected by this upgrade attack 20% faster.</s>
+ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
+ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s>
+ConversationState/LabResearch/ResearchP1_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Vanadium Plating</s><n/><s val="TooltipDescription_Protoss"> Permanently researches all Vanadium Plating upgrades.</s>
+ConversationState/LabResearch/ResearchZ1_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Hi-Sec Autotracking</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Building Armour.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ1_1/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches the Hi-Sec Autotracking upgrade, granting +1 range to Missile and Devatation Turrets.<n/><n/></s><s val="ResearchDescription_Zerg">Through researching Spore Crawlers, we have discovered a more efficient (and thus cheaper) method of threat detection and tracking, allowing us to implement it as standard on all base defenses.</s>
+ConversationState/LabResearch/ResearchZ1_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Hi-Sec Autotracking</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Hi-Sec Autotracking upgrade.</s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Building Armour</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Hi-Sec Autotracking.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches Building Armour, granting a 20% damage resistance to all structures.</s><n/><n/><s val="ResearchDescription_Zerg">This improved structure plating design, inspired by the Ultralisk exoskeleton, is cheaper to manufacture than traditional extra plating, allowing us to use it as standard outfit.</s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Building Armour</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Building Armour upgrade.</s>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources and build base structures. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
 ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
@@ -186,8 +195,13 @@ ConversationState/Tech/Tech2_Vulture_1=Cerberus Mine
 ConversationState/Tech/Tech2_Vulture_2=Replenishable Magazine
 ConversationState/Tech/Tech2_Wraith_1=Tomahawk Power Cells
 ConversationState/Tech/Tech2_Wraith_2=Displacement Field
+ConversationState/Tech/Tech_Bunker_1/Info/Description=<s val="TechSummary">- Bunkers gain an automated Shrike Turret<n/><n/><s val="TechDescription">Placing an automated turret on top of bunkers allows them to provide more than just protection to the infantry inside, able to provide additional Rifle firepower.</s>
+ConversationState/Tech/Tech_Bunker_2/Info/Description=<s val="TechSummary">- Bunkered units gain +1 range.<n/>-Also affects the Shrike Turret.</s><n/><n/><s val="TechDescription">Wolfe Industries has developed a Bunker port that houses a magnetic rail. This device dramatically accelerates all projectiles coming out of the port, increasing the range of all weapons fired from the Bunker. The same technology can be applied to Shrike Turrets, if we have purchased them.</s>
+ConversationState/Tech/Tech_Hellion_1/Info/Tooltip=
 ConversationState/Tech/Tech_Hellion_2=Hydraulic Stabilizers
-DOCSTR_0000=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
+ConversationState/Tech/Tech_Reaper_1/Info/Tooltip=<s val="TooltipTitle_Tech">Combat Drugs</s><n/><s val="TooltipDescription_Tech">Reapers regenerate life out of combat.</s>
+ConversationState/Tech/Tech_Reaper_2/Info/Description=<s val="TechSummary">- Reapers gain +1 range.</s><n/><s val="TechSummary">- Reapers do an additional +3 damage.</s><n/><n/><s val="TechDescription">U-238 Rounds are made from depleted uranium. These rounds are extremely dense (1.67 times the density of lead), so they have increased range and hit much harder.</s>
+ConversationState/Tech/Tech_Reaper_2/Info/Tooltip=<s val="TooltipTitle_Tech">U-238 Rounds</s><n/><s val="TooltipDescription_Tech">Reapers gain +1 range and do an additional +3 damage.</s>
 DataCollection/Name/Armory=Armory
 DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks
@@ -337,6 +351,19 @@ Effect/Name/VehicleMercSet=Vehicle Merc Set
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=Player 1
 MapInfo/Player02/Name=Hostile
+Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
+Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
+Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Squad</s>
+Param/Value/lib_Camp_6C8DF40F=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Siege Tanks</s>
+Param/Value/lib_Camp_6EF98CCD=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +33% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
+Param/Value/lib_Camp_79400908=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Squads</s>
+Param/Value/lib_Camp_84A6C943=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+65% Health, +35% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Infantry Topbar</s>
+Param/Value/lib_Camp_8F80A835=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +20% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Infantry Topbar</s>
+Param/Value/lib_Camp_AA55AF0B=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+30% Health, +33% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Unique Topbar</s>
+Param/Value/lib_Camp_CB897CEB=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+60% Health, +25% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Infantry Topbar</s>
+Param/Value/lib_Camp_E31332D4=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +50% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Tobpar</s>
+Param/Value/lib_Camp_E6C595F8=<s val="MercCategory">Calldown Size:</s><s val="MercSummary">  2 Elite Squads</s>
+Param/Value/lib_Camp_EF94B48A=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+45% Health, +40% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Topbar</s>
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
 RequirementNode/Tooltip/CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat=Engineering Bay
