@@ -1146,7 +1146,6 @@
         <AbilArray Link="TrainStone"/>
         <AbilArray Link="RallyCommand"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
-        <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
         <BehaviorArray Link="BuildRadiusLarge"/>
@@ -1870,6 +1869,11 @@
     <CUnit id="DrakkenLaserDrill">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmor value="0"/>
+        <AbilArray index="1" Link="attack"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" Face="Attack" AbilCmd="attack,Execute"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
@@ -5834,9 +5838,11 @@
     </CUnit>
     <CUnit id="XelNagaShrineXil">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="XelNagaTemple">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="XelNagaTempleDoor">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

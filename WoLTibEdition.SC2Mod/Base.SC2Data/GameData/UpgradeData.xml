@@ -1,5 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CUpgrade id="AdvancedConstruction">
+        <EffectArray index="0" Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train1].Resource[Vespene]" Value="4"/>
+        <EffectArray index="1" Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train1].Resource[Vespene]" Value="5"/>
+        <EffectArray index="2" Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train1].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train1].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train1].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train1].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train2].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train2].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train2].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train3].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train3].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train3].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train4].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train4].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train4].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train5].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train5].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train5].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train6].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train6].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train6].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train7].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Barracks2Train,InfoArray[Train7].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Barracks2Train,InfoArray[Train7].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train2].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train2].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train2].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train5].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train5].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train5].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train6].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train6].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train6].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train7].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train7].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train7].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train8].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train8].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train8].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train9].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train9].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train9].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train10].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Factory2Train,InfoArray[Train10].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Factory2Train,InfoArray[Train10].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train1].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train1].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train1].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train2].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train2].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train2].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train3].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train3].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train3].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train4].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train4].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train4].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train5].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train5].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train5].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train6].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train6].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train6].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train7].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train7].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train7].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train8].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train8].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train8].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train9].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train9].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train9].Time" Value="0.800000"/>
+    </CUpgrade>
+    <CUpgrade id="CommandCenterReactor">
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize3].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize3].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize3].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize4].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize4].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize4].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize5].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize5].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize5].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize6].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize6].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize6].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize7].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize7].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize7].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize8].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize8].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize8].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize9].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize9].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize9].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize10].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize10].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize10].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize11].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize11].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize11].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize12].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize12].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize12].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize13].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize13].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize13].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize14].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize14].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize14].Time" Value="0.800000"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="4"/>
+		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="5"/>
+		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Time" Value="0.800000"/>
+    </CUpgrade>
+    <CUpgrade id="DualFusionWelders">
+        <EffectArray Operation="Divide" Reference="Effect,BuildingRepair,TimeFactor" Value="2"/>
+    </CUpgrade>
     <CUpgrade id="HailstormLaunchers">
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher,Options[Hidden]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher2,Options[Hidden]" Value="0"/>

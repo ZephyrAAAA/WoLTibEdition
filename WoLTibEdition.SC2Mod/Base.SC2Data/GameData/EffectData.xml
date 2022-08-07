@@ -135,6 +135,15 @@
         <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
         <CaseDefault value="DepowerRB"/>
     </CEffectSwitch>
+    <CEffectCreatePersistent id="LaserBeamFinalPersistant">
+        <FinalEffect value="LaserBeamTripodInitialDamage"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LaserDrillTripodCreatePersistent">
+        <PeriodCount value="10"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="LaserDrillTripodDamage">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
         <EditorCategories value=""/>
@@ -300,6 +309,7 @@
         <EffectArray value="DropDevilDogs"/>
         <EffectArray value="DropHammerSecurities"/>
         <TargetLocationType value="UnitOrPoint"/>
+        <ValidatorArray value="AutoHarvesterHarvest"/>
     </CEffectSet>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
@@ -1032,6 +1042,7 @@
         <EffectArray value="DropSiegeBreakers"/>
         <EffectArray value="DropSpartanCompany"/>
         <TargetLocationType value="UnitOrPoint"/>
+        <ValidatorArray value="AutoHarvesterHarvest"/>
     </CEffectSet>
     <CEffectDamage id="VolatileBurstFriendlyUnitDamage">
         <AttributeBonus index="Light" value="0"/>
