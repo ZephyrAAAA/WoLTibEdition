@@ -806,7 +806,12 @@
         </InfoArray>
         <InfoArray index="Build15" Unit="PerditionTurret" Time="3">
             <Resource index="Custom" value="-12"/>
-            <Charge CountMax="1" CountUse="1" Link="Abil/CCBuild"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/CCBuild"/>
+                <Location value="Unit"/>
+            </Charge>
             <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -966,7 +971,7 @@
             <Unit value="SCV2"/>
         </InfoArray>
         <InfoArray index="Train2" Time="25">
-            <Resource index="Vespene" value="25"/>
+            <Resource index="Vespene" value="2500"/>
             <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="SiegeTank"/>
         </InfoArray>
