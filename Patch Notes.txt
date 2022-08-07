@@ -1,96 +1,13 @@
-Factory and Starport spawn 3 repair drones when landed and powered now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 5% health/s.
-Goliath, Hellion, Diamondback no longer take supply
-Goliath damage increased by 33%
-Goliath now starts with Ares. Armoury upgrade is health now.
-Hellion Blue Flame is now a general Blue Flame upgrade that affects all fire weaponry.
-Hellion second Armoury upgrade is now a Fire On The Move upgrade
-The merc compound no longer shows up. Ever.
-Diamondback range buffed.
-Diamondback speed buffed to be the same as Hellion.
-Diamondback tri-lithium upgrade is now Piercing.
-Firebat damage nerfed by 25%
-Colossi are no longer blocked by fields of green
-Added the Infantry Mercenary topbar power.
-Added the Vehicle Mercenary topbar power.
-Added the Ship Mercenary topbar power.
-SCVs you start with separate from a Refinery now start mining on their own.
-Increased the size of mineral patches by 20%
-Refineries now have a rally point that they will send newly idlings workers to. Changing the waypoint does not make existing idling workers move, you'll have to manually order them.
-Psi Storm no longer ignores armour.
-Engi Bay and Armoury can now pause and cancel properly to give you a refund.
-There is now a Marauder Rocket upgrade on the Shadow Ops.
-The Devastation Turret now gets AOE from Hellstorm.
-The Devastation Turret now gets health from Titanium Housing.
-Mineral patches are now 20% bigger, meaning a full field has less
-BCs are no longer trash(Not that this is relevant at this time)
-Vanadium and UltraCaps lab research actually do what they're supposed to do.
-You start with 3 protoss research now.
-Defensive Structures have been moved to their own page, as they don't all fit on 1 command card.
-Orbital Supply Depot is now Orbital Supply Drop, and gives passive income.
-Micro Filtering is now Expanded Cargo Hold, and increases SCV capacity and drop off speed.
-Planetaries have their cost upfront, due to code limitations.
-Perdition Turrets do more damage, to be on par with the Hellion and Firebat.
-Devastation Turrets now do 35 damage at 1 fire rate.
+Repair Drones now do 2% + 5 health/s.
 
-Liberation Day:
-Jim has push priority over the marines now
-
-Outlaws:
-Added a tip about Refinery Rally.
 
 Zero Hour:
-Tychus now actually announces the first ultra
-
-Redstone:
-Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
-
-Bel'Shir:
-Resources all converted, SCVs deleted, starting refinery placed
-You start with 2 SCVs now.
-Starting infrantry replaced with squads
-In addition to the expansion, there is now 6 nodes spread around the map. The 2 clostest to your base are Medium, the rest are Small. They all start empty.
-The Tal'darim defend and contest these nodes. 1 warp prism, 2 stalkers, 1 scout, and 2 void rays, plus 1 colossus on hard, and 1 HT (After 3 reinforce cycles) on brutal. These units have bullies, and are replaced as often as every 2.5 minutes on brutal, provided there is less than (3/3/4/6) units.
-The node bullies get disabled as you clear the map outside the main protoss base
-Each area has some "stickyness" with the bullies. They won't give up the area right away.
-Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
-Getting the second bonus now gives you Multilock, and a message saying so
-SCVs harvest terrazine, and return it to Refineries
-The expansion now has a HT on brutal after 3 reinforce waves
-The expansion and west outpost both have an extra cannon on hard and brutal
-The protoss now send 2 counterattacks against each defended area you take, in an attempt to take it back. You have to successfully defend 2 of these attacks consecutively in order for them to give up
-These attack waves scale with the relative importance of the area being contested.
-Added a scout to the expansion.
-Replaced a stalker in the expansion with a colossus
-
-Outbreak:
-Resources all converted, SCVs deleted, starting refinery placed
-Starting infrantry replaced with squads
-Removed 2 of the starting depots
-Bonus objectives give hellion armoury upgrades
-The main base only has 1 node
-There is a node outside each entrance.
-The node in your base starts empty, your Adjutant notes that you have no minerals in your base, and can find some outside it.
-Getting the bonuses now gives you hellion armoury upgrades, and messages saying so
-Aberrations now show up at the end of the first night, and every night thereafter
-The infested now know about your expansion even if you don't have a CC there. It now checks for *any* structures owned by the player
-Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
+Added 2 Sensor Towers to give build radius on the low ground
 
 Trains:
-Resources all converted, SCVs deleted, no starting refinery.
-Starting infrantry replaced with squads
 Removed 1 of the starting depots
-Replaced 2 mineral pallets with vespene pallets.
-The starting fields and expansion fields are empty
-Removed 1 mineral pallet
-Relocated a mineral pallet from the bottom right diamondback area
-Getting the second bonus now gives you Diamondback Shaped Hull, and a message saying so
-Getting the third bonus now gives you Diamondback Piercing, and a message saying so
-Kill team marauders don't have 1 base armour anymore
-The dominion now rebuilds bunkers after each train
-Removed unnecessary triggers to award resources when picking up pallets, as the pallets already do that themselves.
-Each Train drops 2 less vespene pallets, and up to 3 less mineral pallets
-Train Health doubled
-Kill teams now get medics on all difficulties.
-Kill teams now have triple the medics(On brutal, with decreasing numbers below brutal), double the marauders, and some devil dogs.
-Kill teams now respawn up to 3 times on hard and brutal. Killing one gives about a minute of reprieve before it is replaced.
-Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
+
+The Dig:
+The protoss defense force for the east shrines now has 3 cannons on brutal
+The protoss bases have nodes now
+

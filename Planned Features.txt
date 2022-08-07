@@ -52,6 +52,8 @@ Bonus Objectives now generally give something good in-mission.
 
 Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
 
+Factory and Starport spawn 3 repair drones when landed and powered now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 2% + 5 health/s.
+
 
 MISSION SPECIFIC CHANGES:
 
@@ -84,6 +86,7 @@ The Outlaws:
 -Edited the Tech Lab tip to mention upgrades
 -Disabled the Vespene tip
 -Fixed the SCV tip for this mod
+-Added a tip about Refinery Rally.
 -Removed the trigger to give you an SCV if you've been supply blocked for a bit
 -Infantry Ultra Capacitors are available to research on the Barracks tech lab
 -Attack waves now have somewhat randomized timing and composition.
@@ -135,6 +138,7 @@ Devil's Playground:
 -Brutalisk attack fixed to not have an absurd windup
 -There is now some destructible rocks to help with the Brutalisk
 -Attack Wave strength scales with time and lava surges
+-Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
 
 Smash and Grab:
 -Stone Zealots now do 20x2 damage to ground, and have 1500/2500/3750/5000 health on Casual/Normal/Hard/Brutal.
@@ -144,37 +148,45 @@ Smash and Grab:
 
 Outbreak:
 -Removed 2 of the starting depots
--Bonus objectives give hellion armoury upgrades
 -The main base only has 1 node
 -There is a node outside each entrance.
 -The node in your base starts empty, your Adjutant notes that you have no minerals in your base, and can find some outside it.
 -Getting the bonuses now gives you hellion armoury upgrades, and messages saying so
 -Aberrations now show up at the end of the first night, and every night thereafter
+-The infested now know about your expansion even if you don't have a CC there. It now checks for *any* structures owned by the player
+-Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
 
 Welcome to the Jungle:
 -You start with 2 SCVs now.
--In addition to the expansion, there is now 6 nodes spread around the map. The 2 clostest to your base are Medium, the rest are Small. They all start empty.
+-In addition to the expansion, there is now 6 nodes spread around the map. The 2 closest to your base are Medium, the rest are Small. They all start empty.
 -The Tal'darim defend and contest these nodes. 1 warp prism, 2 stalkers, 1 scout, and 2 void rays, plus 1 colossus on hard, and 1 HT (After 3 reinforce cycles) on brutal. These units have bullies, and are replaced as often as every 2.5 minutes on brutal, provided there is less than (3/3/4/6) units.
 -The node bullies get disabled as you clear the map outside the main protoss base
 -Each area has some "stickyness" with the bullies. They won't give up the area right away.
 -Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
 -Getting the second bonus now gives you Multilock, and a message saying so
 -SCVs harvest terrazine, and return it to Refineries
--The expansion now has a HT on brutal
+-The expansion now has a HT on brutal after some time has passed
 -The expansion and west outpost both have an extra cannon on hard and brutal
+-The protoss now send 2 counterattacks against each defended area you take, in an attempt to take it back. You have to successfully defend 2 of these attacks consecutively in order for them to give up
+-These attack waves scale with the relative importance of the area being contested.
+-Added a scout to the expansion.
+-Replaced a stalker in the expansion with a colossus
 
 Great Train Robbery:
--Removed 1 of the starting depots
+-Removed 2 of the starting depots
 -Replaced 2 mineral pallets with vespene pallets.
 -The starting fields and expansion fields are empty
 -Removed 1 mineral pallet
 -Relocated a mineral pallet from the bottom right diamondback area
 -Getting the second bonus now gives you Diamondback Shaped Hull, and a message saying so
 -Getting the third bonus now gives you Diamondback Piercing, and a message saying so
--Kill team marauders don't have 1 base armour anymore
 -The dominion now rebuilds bunkers after each train
--Removed unnecessary triggers to award resources when picking up pallets, as the pallets already do that themselves.
 -Each Train drops 2 less vespene pallets, and up to 3 less mineral pallets
+-Train Health doubled
+-Kill teams now get medics on all difficulties.
+-Kill teams now have triple the medics(On brutal, with decreasing numbers below brutal), double the marauders, and some devil dogs.
+-Kill teams now respawn up to 3 times on hard and brutal. Killing one gives about a minute of reprieve before it is replaced.
+-Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
 
 Safe Haven:
 -Purifier Mothership no longer has less range than vikings
@@ -258,7 +270,7 @@ Viking- Reduce Viking missile range
 
 Thor- Reduce damage by 33%, Barrage no longer stuns, Barrage starts area
 
-Diamondback- Increase speed to match hellion, Increase firing speed, range increased
+Diamondback- Increase speed to match hellion, range increased
 
 Goliath- Starts with Ares, Anti-ground Damage increased by 33%
 
@@ -276,6 +288,8 @@ Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse does damage and n
 
 Fusion Core- yamato strike support power, all mission-unlocked support powers
 
+
+High Templar- Storm no longer ignores armour
 
 ARMORY UPGRADE CHANGES:
 
@@ -387,10 +401,13 @@ Improved Engines- Ships move faster [Starport Tech Lab]
 
 BC Health- [Starport Tech Lab]
 
-Blue Flame- all fire weapons deal more damage [Armoury]
+Blue Flame- all fire weapons (Firebat, Hellion, Perdition) deal more damage [Armoury]
 
 Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded [Armoury]
 
 Improved Shields-Requires the Shield Research. Improves shield stats [Armoury]
 
 Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Armoury]
+
+MISC CHANGES:
+You now start with 3 protoss research as well
