@@ -75,60 +75,60 @@
         <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train9].Time" Value="0.800000"/>
     </CUpgrade>
     <CUpgrade id="CommandCenterReactor">
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize3].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize3].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize3].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize4].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize4].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize4].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize5].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize5].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize5].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize6].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize6].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize6].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize7].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize7].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize7].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize8].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize8].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize8].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize9].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize9].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize9].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize10].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize10].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize10].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize11].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize11].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize11].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize12].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize12].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize12].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize13].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize13].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize13].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize14].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize14].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize14].Time" Value="0.800000"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="4"/>
-		<EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="5"/>
-		<EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize3].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize3].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize3].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize4].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize4].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize4].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize5].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize5].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize5].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize6].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize6].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize6].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize7].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize7].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize7].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize8].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize8].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize8].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize9].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize9].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize9].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize10].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize10].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize10].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize11].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize11].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize11].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize12].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize12].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize12].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize13].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize13].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize13].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize14].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize14].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize14].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="5"/>
+        <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Time" Value="0.800000"/>
     </CUpgrade>
     <CUpgrade id="DualFusionWelders">
         <EffectArray Operation="Divide" Reference="Effect,BuildingRepair,TimeFactor" Value="2"/>
     </CUpgrade>
     <CUpgrade id="HailstormLaunchers">
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher,Options[Hidden]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher2,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,MarauderSquad@2,Options[Hidden]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncherMerc,Options[Hidden]" Value="0"/>
-        <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher2Merc,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,HammerSecuritiesSquad@2,Options[Hidden]" Value="0"/>
         <BonusResourcePerLevel index="Minerals" value="1500"/>
     </CUpgrade>
     <CUpgrade id="ProtossGroundArmorsLevel1">
@@ -704,6 +704,9 @@
         <EffectArray Reference="Weapon,Tosh,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,RaynorGaussRifle,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,ShrikeTurret,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,HailstormLauncher,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,HailstormLauncherMerc,RateMultiplier" Value="0.2"/>
+        <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>

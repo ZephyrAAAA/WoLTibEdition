@@ -122,6 +122,7 @@
         <AttackType value="Pierce"/>
         <Options index="Melee" value="1"/>
         <Range value="1"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserA">
         <RandomDelayMin value="-0.125"/>
@@ -143,6 +144,7 @@
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Diamondback">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -163,6 +165,7 @@
         <AttackType value="Pierce"/>
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogSquad">
         <EditorCategories value=""/>
@@ -180,6 +183,7 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.45"/>
         <RandomDelayMax value="-0.45"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
         <Name value="Weapon/Name/GhostSquad"/>
@@ -197,6 +201,7 @@
         <RandomDelayMax value="-1.45"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -225,8 +230,9 @@
     <CWeaponLegacy id="GuassRifle">
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="HailstormLauncher2">
+    <CWeaponLegacy id="MarauderSquad@2">
         <EditorCategories value="Race:Terran"/>
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="Disabled" value="1"/>
@@ -242,10 +248,11 @@
         <Effect value="SquadAttack"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-1.45"/>
         <RandomDelayMax value="-1.45"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="HailstormLauncher2Merc">
+    <CWeaponLegacy id="HammerSecuritiesSquad@2">
         <EditorCategories value="Race:Terran"/>
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="Disabled" value="1"/>
@@ -261,6 +268,7 @@
         <Effect value="SquadAttack"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-1.45"/>
         <RandomDelayMax value="-1.45"/>
     </CWeaponLegacy>
@@ -278,6 +286,7 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="HailstormLauncherLMMerc"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HailstormMissilePods">
         <AttackType value="Siege"/>
@@ -285,6 +294,7 @@
     <CWeaponLegacy id="HammerSecurity">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>
@@ -316,6 +326,7 @@
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoes">
         <AttackType value="Siege"/>
@@ -341,6 +352,7 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.95"/>
         <RandomDelayMax value="-0.95"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
@@ -352,6 +364,7 @@
         <AttackType value="Chaos"/>
         <Period value="1"/>
         <Backswing value="0.6"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -383,6 +396,7 @@
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
         <AttackType value="Magic"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
@@ -463,6 +477,7 @@
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="HailstormLauncherLM"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
         <AttackType value="Magic"/>
@@ -593,6 +608,7 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.85"/>
         <RandomDelayMax value="-0.85"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Zeratul">
         <Tip value="Weapon/Tip/Grenade"/>

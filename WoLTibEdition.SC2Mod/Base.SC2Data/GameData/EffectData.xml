@@ -135,6 +135,37 @@
         <CaseArray Validator="BuildingNotDepowered" Effect="DepowerAB"/>
         <CaseDefault value="DepowerRB"/>
     </CEffectSwitch>
+    <CEffectDamage id="GuassRifle">
+        <Amount value="5"/>
+    </CEffectDamage>
+    <!--    <CEffectLaunchMissile id="HammerSecurityLMOne">-->
+    <!--        <EditorCategories value="Race:Terran"/>-->
+    <!--        <ImpactEffect value="HammerSecuritySet"/>-->
+    <!--        <Movers Link="MarauderWeapon"/>-->
+    <!--        <AmmoUnit value="HammerSecurityLMWeapon"/>-->
+    <!--    </CEffectLaunchMissile>-->
+    <!--    <CEffectLaunchMissile id="HammerSecurityLMTwo">-->
+    <!--        <EditorCategories value="Race:Terran"/>-->
+    <!--        <ImpactEffect value="HammerSecuritySet"/>-->
+    <!--        <Movers Link="MarauderWeapon"/>-->
+    <!--        <AmmoUnit value="HammerSecurityLMWeapon"/>-->
+    <!--    </CEffectLaunchMissile> -->
+    <!--    <CEffectSet id="HammerSecuritySet">-->
+    <!--        <EditorCategories value="Race:Terran"/>-->
+    <!--        <EffectArray value="PunisherGrenadesSlow"/>-->
+    <!--        <EffectArray value="HammerSecuritySlowAOE"/>-->
+    <!--        <EffectArray value="HammerSecurityDamage"/>-->
+    <!--    </CEffectSet> -->
+    <!--    <CEffectEnumArea id="HammerSecuritySlowAOE">-->
+    <!--        <EditorCategories value="Race:Terran"/>-->
+    <!--        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>-->
+    <!--        <AreaArray Radius="1" Effect="PunisherGrenadesSlow"/>-->
+    <!--        <ExcludeArray Value="Target"/>-->
+    <!--        <ValidatorArray value="JackhammerConcussionGrenadesPurchased"/>-->
+    <!--    </CEffectEnumArea> -->
+    <CEffectDamage id="KelmorianMinerDamage">
+        <Amount value="6.75"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="LaserBeamFinalPersistant">
         <FinalEffect value="LaserBeamTripodInitialDamage"/>
     </CEffectCreatePersistent>
@@ -373,7 +404,7 @@
         <EditorCategories value="Race:Terran"/>
         <DrainVital value="Energy"/>
         <RechargeVitalFraction value="0.0195"/>
-        <RechargeVitalRate value="5"/>
+        <RechargeVitalRate value="10"/>
     </CEffectCreateHealer>
     <CEffectDamage id="P38ScytheGuassPistol">
         <AttributeBonus index="Light" value="0"/>
@@ -612,6 +643,7 @@
         <AreaArray Radius="1.25" Fraction="0.25" Validator="HasHellstormMissilePods"/>
         <ExcludeArray Value="Target"/>
         <SearchFlags index="OffsetByUnitRadius" value="0"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="PunisherGrenadesU">
         <AttributeBonus index="Armored" value="0"/>
@@ -1056,4 +1088,8 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="110"/>
     </CEffectDamage>
+    <CEffectCreateHealer id="heal">
+        <DrainVitalCostFactor value="0.5"/>
+        <RechargeVitalRate value="6"/>
+    </CEffectCreateHealer>
 </Catalog>

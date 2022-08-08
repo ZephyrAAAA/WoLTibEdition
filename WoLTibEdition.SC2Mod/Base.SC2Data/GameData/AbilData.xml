@@ -21,6 +21,14 @@
     <CAbilEffectTarget id="BonesHeal">
         <Marker Link="Abil/BonesHeal"/>
     </CAbilEffectTarget>
+    <CAbilQueue id="CCMCVQueue">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="CancelLast">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <QueueCount value="2"/>
+        <QueueSize value="2"/>
+    </CAbilQueue>
     <CAbilArmMagazine id="CCMechanicalRepair">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Launch value="ReleaseAtSource"/>
@@ -462,6 +470,7 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="StaticDefBarracks">
@@ -475,6 +484,7 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="StaticDefEngineeringBay">
@@ -579,6 +589,7 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="BuildDevastatorTurret" State="Restricted" Requirements="StaticDefBarracks">
@@ -593,6 +604,7 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="PerditionTurret" Requirements="StaticDefEngineeringBay">
@@ -689,7 +701,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HasBuiltBunker">
@@ -701,7 +713,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HasBuiltMissileTurret">
@@ -797,7 +809,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="BuildDevastatorTurret" Requirements="HasBuiltDevastatorTurret">
@@ -809,7 +821,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
