@@ -1138,7 +1138,7 @@
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="PauseResumeQueue"/>
-        <AbilArray Link="que1"/>
+        <AbilArray Link="CCMCVQueue"/>
         <AbilArray Link="CommandCenter2LiftOff"/>
         <AbilArray Link="UpgradeToPlanetaryFortress2"/>
         <AbilArray Link="CCBuild"/>
@@ -1157,7 +1157,7 @@
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="CommandCenter2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que1,CancelLast" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelUpgradeMorph" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="CommandCenterTrain,Train1" Row="1" Column="3"/>
@@ -3144,7 +3144,7 @@
         <Speed value="2.25"/>
         <AbilArray Link="HammerSecuritiesSquad"/>
         <WeaponArray Link="HammerSecuritiesSquad"/>
-        <WeaponArray Link="HailstormLauncher2Merc"/>
+        <WeaponArray Link="HammerSecuritiesSquad@2"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
         </CardLayouts>
@@ -3787,11 +3787,12 @@
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
-        <AbilArray Link="que5PassiveCancelToSelection"/>
+        <AbilArray Link="CCMCVQueue"/>
         <AbilArray Link="CCBuild"/>
         <AbilArray Link="CCPlaceBuilding"/>
         <AbilArray Link="TrainStone"/>
         <AbilArray Link="RallyCommand"/>
+        <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
@@ -3801,6 +3802,8 @@
         <CardLayouts>
             <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons>
                 <Face value="TerranBuild"/>
@@ -3820,6 +3823,7 @@
                 <Column value="1"/>
             </LayoutButtons>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
@@ -5425,7 +5429,7 @@
         <Speed value="2.25"/>
         <AbilArray Link="MarauderSquad"/>
         <WeaponArray Link="MarauderSquad"/>
-        <WeaponArray Link="HailstormLauncher2"/>
+        <WeaponArray Link="MarauderSquad@2"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarauderSquad,Ammo1" Row="1" Column="0"/>
         </CardLayouts>
