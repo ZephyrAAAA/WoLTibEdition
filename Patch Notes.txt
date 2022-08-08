@@ -6,7 +6,6 @@ Seige tanks and vultures have been converted
 Advanced Construction now decreases the build time of all units (And the cost)
 Dual Fusion increases repair speed of Topbar Repair.
 Command Center Reactor now decreases the build time of all units (And the cost)
-Structures and Defenses now use separate queues.
 Marine damage nerfed to 5. War Pig damage nerfed to 6.75
 Medic healing nerfed to 6hp/s for 3E/s
 Infantry Ultracaps now affects Marauder rockets

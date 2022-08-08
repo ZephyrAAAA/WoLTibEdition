@@ -54,6 +54,8 @@ Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, 
 
 Factory and Starport spawn 3 repair drones when landed and powered now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 2% + 5 health/s.
 
+Reactor Addon has been removed, because of issues with double queues.
+
 
 MISSION SPECIFIC CHANGES:
 
@@ -190,7 +192,7 @@ Great Train Robbery:
 
 Safe Haven:
 -Purifier Mothership no longer has less range than vikings
--Get the "Call in the FLeet - Protoss Edition" support power
+-Get the "Call in the FLeet - Protoss Edition" support power on the fusion core
 
 Haven's Fall:
 
@@ -202,7 +204,7 @@ Engine of Destruction:
 Media Blitz:
 
 Piercing the Shroud:
--Collecting the Chrono Rift device now unlocks a topbar power for future use.
+-Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
 
 Breakout:
 -Give Tosh Psionic Lash
@@ -212,14 +214,14 @@ Breakout:
 Ghost of a Chance:
 
 The Dig:
--The Laser Drill now has a really expensive (30K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K.
+-The Laser Drill now has a really expensive (30K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K on the fusion core
 
 The Moebius Factor:
 
 Supernova:
 
 Maw of the Void:
--Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs.
+-Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
 -Convert to an open-ended macro mission
 
 Gates of Hell:
@@ -252,9 +254,13 @@ UNIT CHANGES:
 
 Command Center- Can no longer load SCVs
 
+SCV- Can no longer repair
+
+Marine-Marine damage nerfed to 5. War Pig damage nerfed to 6.75
+
 Firebat- Rework to be an expensive tanky unit, firing a stream of flame at range, dealing damage around the target.
 
-Medic- Better Healing priority.
+Medic- Better Healing priority. Medic healing nerfed to 6hp/s for 3E/s
 
 Bunker- Has 4 slots, fits 1 squad
 
