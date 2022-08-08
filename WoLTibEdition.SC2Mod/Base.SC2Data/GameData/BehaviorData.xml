@@ -265,16 +265,16 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadUnit">
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UnitNotInBunker"/>
+        <Period value="1"/>
+        <PeriodicEffect value="SquadUnitTeleport"/>
+        <FinalEffect value="SquadDeathDamage"/>
         <Modification RadiusMultiplier="0.5" MoveSpeedMultiplier="1.75" WeaponScanLimit="0">
             <StateFlags index="SuppressFoodUsed" value="1"/>
             <StateFlags index="SuppressArmySelect" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
-        <FinalEffect value="SquadDeathDamage"/>
-        <DisableValidatorArray value="UnitNotInBunker"/>
-        <Period value="1"/>
-        <PeriodicEffect value="SquadUnitTeleport"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
         <InfoFlags index="Hidden" value="1"/>

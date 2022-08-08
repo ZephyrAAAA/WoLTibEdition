@@ -26,7 +26,6 @@
         <CmdButtonArray index="CancelLast">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <QueueCount value="2"/>
         <QueueSize value="2"/>
     </CAbilQueue>
     <CAbilArmMagazine id="CCMechanicalRepair">
