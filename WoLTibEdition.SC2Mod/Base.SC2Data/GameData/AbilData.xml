@@ -469,7 +469,6 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
-                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="StaticDefBarracks">
@@ -483,7 +482,6 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
-                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="StaticDefEngineeringBay">
@@ -588,7 +586,6 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
-                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="BuildDevastatorTurret" State="Restricted" Requirements="StaticDefBarracks">
@@ -603,7 +600,6 @@
                 <CountMax value="1"/>
                 <CountUse value="-1"/>
                 <HideCount value="1"/>
-                <Link value="Defense"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="PerditionTurret" Requirements="StaticDefEngineeringBay">
@@ -700,7 +696,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Defense"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HasBuiltBunker">
@@ -712,7 +708,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Defense"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HasBuiltMissileTurret">
@@ -724,7 +720,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="HasBuiltSensorTower">
@@ -736,7 +732,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HasBuiltGhostAcademy">
@@ -748,7 +744,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HasBuiltFactory">
@@ -760,7 +756,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HasBuiltArmory">
@@ -772,7 +768,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HasBuiltStarport">
@@ -784,7 +780,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HasBuiltFusionCore">
@@ -796,7 +792,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Decal_Terran_0047_01" Requirements="HasBuiltCrane">
@@ -808,7 +804,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Defense"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="BuildDevastatorTurret" Requirements="HasBuiltDevastatorTurret">
@@ -820,7 +816,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Defense"/>
+                <Link value=""/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
@@ -828,76 +824,91 @@
             </Button>
         </InfoArray>
         <InfoArray index="Build16">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build17">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build18">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build19">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build20">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build21">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build22">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build23">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build24">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build25">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build26">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build27">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build28">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build29">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build30">
+            <Charge Link=""/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
