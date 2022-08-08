@@ -1,4 +1,4 @@
-Repair Drones now do 2% + 5 health/s.
+Repair Drones now do 2% + 10 health/s.
 Build radius is now a thing. Buildings must have their center within the radius.
 Sensor towers no longer require power, and provide build radius.
 There is now a truck to build a sensor tower, buildable from the Command Center.
@@ -6,6 +6,11 @@ Seige tanks and vultures have been converted
 Advanced Construction now decreases the build time of all units (And the cost)
 Dual Fusion increases repair speed of Topbar Repair.
 Command Center Reactor now decreases the build time of all units (And the cost)
+Structures and Defenses now use separate queues.
+Marine damage nerfed to 5. War Pig damage nerfed to 6.75
+Medic healing nerfed to 6hp/s for 3E/s
+Infantry Ultracaps now affects Marauder rockets
+*Imported the HOTS void ray
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
