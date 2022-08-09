@@ -52,6 +52,9 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="HybridCPlasmaBlast">
+        <PrepTime index="0" value="1"/>
+    </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
@@ -66,6 +69,7 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="DeathRecallS"/>
         <Cost>
+            <Charge Link="Abil/##id##"/>
             <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="DeathRecall">
@@ -1428,6 +1432,22 @@
             </Charge>
             <Cooldown TimeUse="0"/>
         </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZeratulSeek">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <Range value="500"/>
+        <AutoCastRange value="500"/>
+        <PrepTime value="2"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <TargetFilters value="Visible;Player,Ally,Neutral"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="heal">
         <TargetSorts>

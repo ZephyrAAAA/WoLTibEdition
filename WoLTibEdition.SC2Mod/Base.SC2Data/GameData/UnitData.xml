@@ -3084,6 +3084,8 @@
     <CUnit id="Maar">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="ZeratulSeek"/>
+        <BehaviorArray Link="MaarPassiveSpeed"/>
     </CUnit>
     <CUnit id="MaarWarpInUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3894,13 +3896,25 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="PreserverA">
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="PreserverB">
+        <LifeArmor value="0"/>
+    </CUnit>
     <CUnit id="PreserverBase">
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmor value="0"/>
+    </CUnit>
+    <CUnit id="PreserverC">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="PreserverPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="PreviewBunkerUpgraded">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

@@ -777,6 +777,11 @@
     <CUpgrade id="TwinLinkedFlameThrowers">
         <EffectArray index="0" Reference="Effect,InfernalFlameThrower,AreaArray[0].Radius"/>
     </CUpgrade>
+    <CUpgrade id="ZeratulDeathRecallCharges">
+        <EffectArray Operation="Subtract" Reference="Abil,DeathRecall,Cost[0].Cooldown.TimeUse" Value="10.000000"/>
+        <EffectArray Operation="Subtract" Reference="Behavior,DeathRecall,DamageResponse.Cost.Cooldown.TimeUse" Value="10.000000"/>
+        <MaxLevel value="3"/>
+    </CUpgrade>
     <CUpgrade id="ZergGroundArmorsLevel1">
         <EffectArray index="0" Reference="Unit,Zergling,LifeArmorLevel"/>
         <EffectArray index="1" Reference="Unit,Zergling,LifeArmor"/>

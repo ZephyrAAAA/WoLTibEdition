@@ -57,7 +57,7 @@
     <CBehaviorBuff id="DeathRecall">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DamageResponse Fatal="1" Handled="DeathRecallS" ModifyFraction="0">
+        <DamageResponse Fatal="1" Handled="DeathRecallSet" ModifyFraction="0">
             <Chance value="1"/>
             <Cost>
                 <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
@@ -82,9 +82,41 @@
             <RateMultiplierArray index="Queueable" value="0.5"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DetectorCone9">
+        <InfoFlags index="Hidden" value="1"/>
+        <Period value="0.25"/>
+        <InitialEffect value="StealthCreateLookPoint"/>
+        <PeriodicEffect value="DetectorCone9"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DetectorConeDetected">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="0.325"/>
+        <Period value="1"/>
+        <PeriodicEffect value="DetectorCone9Reveal"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DetectorConeReveal">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="2"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DevastatorTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MaarPassiveSpeed">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="AICasterNotInCombat"/>
+        <DisableValidatorArray value="StetmannOutOfCombat"/>
+        <DisableValidatorArray value="ZeratulNear"/>
+        <Modification MoveSpeedMaximum="1.5"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MercGroundDrop">
         <DurationRandomMin value="0"/>
@@ -403,4 +435,9 @@
             </Modification>
         </VeterancyLevelArray>
     </CBehaviorVeterancy>
+    <CBehaviorBuff id="ZeratulStun">
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
 </Catalog>
