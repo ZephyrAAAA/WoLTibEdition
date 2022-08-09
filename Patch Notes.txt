@@ -62,6 +62,8 @@ The Laser Drill targets faster
 The Laser Drill has some interesting notes on it.
 Added 3 small nodes to the east protoss base
 The 2 main Protoss fields now have 2 medium nodes each
+Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
+Getting the second bonus now gives you Siege Tank Shaped Blast, and a message saying so
 
 Cutthroat:
 Resources all converted, SCVs deleted, starting refinery placed
@@ -77,6 +79,8 @@ Starting infrantry replaced with squads
 Reorganized Mira's based to fit a refinery next to the nodes
 Mira starts with 2 SCVs instead of 8.
 Move'd Orlan's CCs closer to the nodes they mine from
+Getting the second bonus now gives you Vulture Cerberus Mine, and a message saying so
+Getting the third bonus now gives you Vulture Nanofabricator, and a message saying so
 
 Whispers of Doom:
 Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 69% faster attack speed
