@@ -190,13 +190,47 @@ Great Train Robbery:
 -Kill teams now respawn up to 3 times on hard and brutal. Killing one gives about a minute of reprieve before it is replaced.
 -Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
 
+The Dig:
+-The protoss defense force for the east shrines now has 3 cannons on brutal
+-The protoss bases have nodes now
+-No camera stealing on Hard or Brutal
+-Cliff on the east side of the east choke is now accessible and slightly larger
+-Protoss defenders of east temples moved up a bit
+-The Abandoned Base SCVs no longer mine minerals
+-Removed the merc compound
+-Fixed the Unit Move after the cinematic shot taking the hidden refinery entity
+-The Laser Drill targets faster
+-The Laser Drill has some interesting notes on it.
+-Added 3 small nodes to the east protoss base
+-The 2 main Protoss fields now have 2 medium nodes each
+-Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
+-Getting the second bonus now gives you Siege Tank Shaped Blast, and a message saying so
+-The Laser Drill now has a really expensive (30K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K on the fusion core
+
+Cutthroat:
+-You now recieve a refinery
+-You now need to collect 80k minerals.
+-Scrap now gives 10x the minerals.
+-Removed unnecessary triggers to award resources when picking up non-scrap
+-Orlan now mines 1400 minerals per load.
+-Orlan now has 1 SCV per base
+-You now start with 1 SCV
+-Reorganized Mira's based to fit a refinery next to the nodes
+-Mira starts with 2 SCVs instead of 8.
+-Move'd Orlan's CCs closer to the nodes they mine from
+-Getting the second bonus now gives you Vulture Cerberus Mine, and a message saying so
+-Getting the third bonus now gives you Vulture Nanofabricator, and a message saying so
+
+Whispers of Doom:
+-Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 33% faster attack speed
+-Abilities are no longer disabled at the start of the mission
+-Each shrine no longer forces you to wait and listen to Zeratul before continuing.
+
 Safe Haven:
 -Purifier Mothership no longer has less range than vikings
 -Get the "Call in the FLeet - Protoss Edition" support power on the fusion core
 
 Haven's Fall:
-
-Cutthroat:
 
 Engine of Destruction:
 -Loki something something
@@ -212,10 +246,6 @@ Breakout:
 -Add abilities to influence what/when Jim sends attack waves
 
 Ghost of a Chance:
-
-The Dig:
--The Laser Drill now has a really expensive (30K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K on the fusion core
-
 The Moebius Factor:
 
 Supernova:
@@ -234,11 +264,6 @@ Shatter the Sky:
 
 All-in:
 -Omegalisks are now sent in the ground version
-
-Whispers of Doom:
--Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 33% faster attack speed
--Abilities are no longer disabled at the start of the mission
--Each shrine no longer forces you to wait and listen to Zeratul before continuing.
 
 A Sinister Turn:
 -Stealth misison, free the preservers while avoiding Ma'ar and Protoss guardians
@@ -327,7 +352,7 @@ Tomahak power cells- Also increases energy regen
 
 Hyperflight rotors-> Half energy cloak
 
-Maelstrom-> Smart Servos- Reduce transformation time, and armour in siege mode
+Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
 
 Titanium Shell- Buffs health of Devastation Turret as well
 
