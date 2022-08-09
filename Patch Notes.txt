@@ -10,6 +10,9 @@ Marine damage nerfed to 5. War Pig damage nerfed to 6.75
 Medic healing nerfed to 6hp/s for 3E/s
 Infantry Ultracaps now affects Marauder rockets
 *Imported the HOTS void ray
+*Autogas is now Autoharvesting
+*Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
+*Hercules-> Cellular Reactor- Also increases energy regen
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
@@ -76,10 +79,16 @@ Mira starts with 2 SCVs instead of 8.
 Move'd Orlan's CCs closer to the nodes they mine from
 
 Whispers of Doom:
--Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 33% faster attack speed
--Abilities are no longer disabled at the start of the mission
--Each shrine no longer forces you to wait and listen to Zeratul before continuing.
+Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 69% faster attack speed
+Abilities are no longer disabled at the start of the mission
+Each shrine no longer forces you to wait and listen to Zeratul before continuing.
 
 A Sinister Turn:
-
-
+2 preservers moved to outposts
+Killing a Preserver prison no longer teleports Maar back
+Maar now follows zeratul slowly. If zeratul become detected by Maar, he moves faster. If zeratul is detected by other means, Maar will teleport to zeratul within a few seconds.
+The bonuses no longer warp in extra units
+You don't get a base, instead getting zeratul
+Zeratul only gets 1 charge of blink
+Zeratul gets a Power ability, to temporarily power any protoss structure
+Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
