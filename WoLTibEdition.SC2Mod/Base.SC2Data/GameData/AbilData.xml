@@ -797,7 +797,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuildAbil/CCBuild"/>
+                <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HasBuiltArmory">
