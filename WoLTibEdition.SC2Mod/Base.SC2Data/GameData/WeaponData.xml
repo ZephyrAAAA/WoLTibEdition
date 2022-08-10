@@ -227,6 +227,10 @@
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HybridC">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad@2">
         <EditorCategories value="Race:Terran"/>
         <Tip value="Weapon/Tip/Rocket"/>

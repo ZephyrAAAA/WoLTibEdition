@@ -95,7 +95,6 @@
         <VisualArray value="BuildRadius2"/>
     </CActorPower>
     <CActorUnit id="Bunker">
-        <BuildModel value="BunkerBuild"/>
         <On index="105" removed="1"/>
         <On index="106" removed="1"/>
         <On index="107" removed="1"/>
@@ -108,20 +107,147 @@
         <On index="114" removed="1"/>
         <On index="115" removed="1"/>
     </CActorUnit>
-    <CActorUnit id="Bunker2" parent="GenericUnitStandard" unitName="Bunker2">
-        <Model value="Bunker"/>
-        <BuildModel value="Bunker"/>
+    <CActorUnit id="BunkerSQ" parent="Bunker" unitName="BunkerSQ">
+        <Aliases index="2" removed="1"/>
+        <Aliases index="3" removed="1"/>
+        <On index="0" Terms="UnitBirth.BunkerSQ" Send="Create SoundEmitter Bunker2_Ambience"/>
+        <On index="1" Terms="UnitBirth.BunkerSQ"/>
+        <On index="2" Terms="UnitRevive.BunkerSQ"/>
+        <On index="3" Terms="UnitRevive.BunkerSQ"/>
+        <On index="4" Terms="UnitConstruction.BunkerSQ.Start"/>
+        <On index="5" Terms="UnitConstruction.BunkerSQ.Finish"/>
+        <On index="69" Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On index="70" Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On index="71" removed="1"/>
+        <On index="72" removed="1"/>
+        <On index="73" removed="1"/>
+        <On index="74" removed="1"/>
+        <On index="75" removed="1"/>
+        <On index="76" removed="1"/>
+        <On index="77" removed="1"/>
+        <On index="78" removed="1"/>
+        <On index="79" removed="1"/>
+        <On index="80" removed="1"/>
+        <On index="81" removed="1"/>
+        <On index="82" removed="1"/>
+        <On index="83" removed="1"/>
+        <On index="84" removed="1"/>
+        <On index="85" removed="1"/>
+        <On index="86" removed="1"/>
+        <On index="87" removed="1"/>
+        <On index="88" removed="1"/>
+        <On index="89" removed="1"/>
+        <On index="90" removed="1"/>
+        <On index="91" removed="1"/>
+        <On index="92" removed="1"/>
+        <On index="93" removed="1"/>
+        <On index="94" removed="1"/>
+        <On index="95" removed="1"/>
+        <On index="96" removed="1"/>
+        <On index="97" removed="1"/>
+        <On index="98" removed="1"/>
+        <On index="99" removed="1"/>
+        <On index="100" removed="1"/>
+        <On index="101" removed="1"/>
+        <On index="102" removed="1"/>
+        <On index="103" removed="1"/>
+        <On index="104" removed="1"/>
+        <ModelFlags index="OutlineOccluder" value="0"/>
+        <DeathCustoms index="5" removed="1"/>
+        <DeathCustoms index="6" removed="1"/>
         <PlacementModel value="Bunker"/>
-        <Macros value="SnowVisualUnitMacroMP"/>
-        <Macros value="BunkerTransportAnim"/>
-        <GlossaryAnim value="Stand,Work"/>
-        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <PlacementSound value=""/>
+        <PlaceholderActorModel value="PlaceholderModel"/>
+        <HeroIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+        <HighlightTooltip value="Unit/Name/BunkerSQ"/>
+        <LifeArmorIcon value=""/>
+        <SoundArray index="Birth" value="Bunker2_Birth"/>
+        <SoundArray index="Ready" value="Bunker2_Ready"/>
+        <SoundArray index="Help" value="Bunker2_Help"/>
+        <SoundArray index="What" value="Bunker2_What"/>
+        <SoundArray index="Yes" value="Bunker2_Yes"/>
+        <SoundArray index="Attack" value="Bunker2_Attack"/>
+        <SoundArray index="Pissed" value="Bunker2_Pissed"/>
+        <SoundArray index="Movement" value="Bunker2_Movement"/>
+        <SoundArray index="Turning" value="Bunker2_Turning"/>
+        <SoundArray index="Board" value="Bunker2_Board"/>
+        <SoundArray index="Construction" value=""/>
+        <SoundArray index="Click" value="Bunker2_Click"/>
+        <SoundArray index="ClickError" value="Bunker2_ClickError"/>
+        <SoundArray index="Highlight" value="Bunker2_Highlight"/>
+        <UnitIcon value="Assets\Textures\btn-missing-kaeo.dds"/>
+        <Wireframe>
+            <Image index="0" removed="1"/>
+        </Wireframe>
     </CActorUnit>
     <CActorUnit id="AirTransport" parent="GenericUnitStandard" unitName="AirTransport">
         <Model value="Invisible"/>
         <BuildModel value="Invisible"/>
         <PlacementModel value="Invisible"/>
     </CActorUnit>
+    <CActorUnit id="Bunker2" parent="TerranBuildingEx" unitName="Bunker2">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="BunkerTransportAnim"/>
+        <On index="69" Terms="UnitConstruction.Bunker2.Start" Send="Create BunkerBuild"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit BunkerIsEmpty" Send="DeathCustomize Empty"/>
+        <On Terms="UnitDeathCustomize; ValidateUnit NeosteelFramePurchasedNoConstruction" Send="DeathCustomize Upgrade"/>
+        <On Terms="Upgrade.NeosteelFrame.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On Terms="UnitBirth.Bunker2; ValidateUnit NeosteelFramePurchased" Send="ModelSwap BunkerUpgrade"/>
+        <On Terms="Upgrade.NeosteelFrame.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On Terms="UnitBirth.Bunker2" Send="StatusSet BunkerBuilt 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="StatusSet ShrikeTurret 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="Create ShrikeTurret"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Send="Create ShrikeTurretPlaceholder"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Target="ShrikeTurret" Send="Signal TurretHide"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurret" Send="Signal TurretDeath"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
+        <On Terms="UnitBirth.Bunker2" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
+        <On Terms="UnitBirth.Bunker2" Target="ShrikeTurret" Send="Signal TurretShow"/>
+        <On Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On Terms="UnitBirth.Bunker2" Send="StatusSet BunkerBuilt 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="StatusSet ShrikeTurret 1"/>
+        <On Terms="Behavior.ShrikeTurret.On" Send="Create ShrikeTurret"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Send="Create ShrikeTurretPlaceholder"/>
+        <On Terms="Behavior.ShrikeTurret.On; IsStatus BunkerBuilt 0" Target="ShrikeTurret" Send="Signal TurretHide"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurret" Send="Signal TurretDeath"/>
+        <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
+        <On Terms="UnitBirth.Bunker2" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
+        <On Terms="UnitBirth.Bunker2" Target="ShrikeTurret" Send="Signal TurretShow"/>
+        <Model value="Bunker"/>
+        <CreepHeightClass value="Small"/>
+        <BuildModel value="Bunker"/>
+        <DeathArray index="Normal" ModelLink="BunkerDeath"/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="Bunker_Explode"/>
+        <DeathCustoms ModelLink="BunkerUpgradeDeath" Name="Upgrade"/>
+        <DeathCustoms ModelLink="BunkerDeathEmpty" Name="Empty"/>
+        <PlacementModel value="BunkerPlacement"/>
+        <PlacementActorModel value="BunkerPlacementModelCampaign"/>
+        <PlaceholderActorModel value="BunkerPlaceholderModelCampaign"/>
+        <PortraitModel value="BunkerPortrait"/>
+        <BarOffset value="80"/>
+        <BarWidth value="85"/>
+        <GlossaryAnim value="Stand,Work"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Terran-Bunker.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-Bunker.dds"/>
+        <NameOffset value="70"/>
+        <SoundArray index="Ready" value="Bunker_Ready"/>
+        <SoundArray index="What" value="Bunker_What"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-Bunker.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Terran-Bunker.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorSplat id="Bunker2Splat" parent="GenericUnitSplat" unitName="Bunker2">
+        <Model value="BunkerSplat"/>
+    </CActorSplat>
+    <CActorEventMacro id="BunkerTransportAnim">
+        <On Terms="Abil.BunkerTransportSquad.TransportOccupy" Send="AnimGroupApply Work Work,Start Work,End"/>
+        <On Terms="Abil.BunkerTransportSquad.TransportEmpty" Send="AnimGroupRemove Work"/>
+    </CActorEventMacro>
     <CActorUnit id="CCTopbar" parent="GenericUnitStandard" unitName="CCTopbar">
         <Model value="Invisible"/>
         <BuildModel value="Invisible"/>
@@ -1565,6 +1691,12 @@
         <HostImpact Subject="_Missile" Actor="Find"/>
         <HostImpactSiteOps Ops="SOpAttachCenter"/>
     </CActorBeamSimple>
+    <CActorEventMacro id="UnloadDropAnim">
+        <On Terms="AbilTransport.AirTransport.CargoUnload" Send="AnimBracketStop Unload"/>
+        <On Terms="AbilTransport.AirTransport.TransportUnload" Send="AnimBracketStop Unload"/>
+        <On Terms="AbilTransport.AirTransport.CargoLoad" Send="AnimBracketStart Unload IGNORE Unload Unload,End DontResetOnUnhide"/>
+        <On Terms="AbilTransport.AirTransport.CargoLoadSuppressed" Send="AnimBracketStart Unload IGNORE Unload Unload,End DontResetOnUnhide"/>
+    </CActorEventMacro>
     <CActorAction id="WarHoundAttack" parent="GenericAttack" effectImpact="RaynorGaussRifleDamage" effectLaunch="RailgunLaunch">
         <LaunchAssets Sound="RailGun_Launch"/>
         <BeamScope value="Caster"/>

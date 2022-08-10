@@ -432,7 +432,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="ShowStatus" value="0"/>
         <Leash value="0"/>
-        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="Bunker2">
+        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="BunkerSQ">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Bunker"/>
@@ -733,7 +733,7 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Build5" Unit="Bunker" Time="3">
+        <InfoArray index="Build5" Unit="Bunker2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>

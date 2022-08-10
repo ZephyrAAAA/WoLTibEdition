@@ -767,11 +767,11 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
-    <CUnit id="Bunker2" parent="Bunker">
-        <Name value="Unit/Name/Bunker2"/>
-        <Description value="Button/Tooltip/Bunker2"/>
+    <CUnit id="BunkerSQ" parent="Bunker">
+        <Name value="Unit/Name/BunkerSQ"/>
+        <Description value="Button/Tooltip/BunkerSQ"/>
         <DeathRevealRadius value="0"/>
-        <ReviveType value="Bunker2"/>
+        <ReviveType value="BunkerSQ"/>
         <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Invulnerable" value="1"/>
@@ -781,6 +781,7 @@
         <Collide index="RoachBurrow" value="0"/>
         <Collide index="ForceField" value="0"/>
         <Collide index="Small" value="0"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
         <Sight value="0"/>
         <AbilArray index="0" Link="BunkerTransportSquad"/>
         <AbilArray index="1" Link="StimpackRedirect"/>
@@ -811,15 +812,130 @@
         <SeparationRadius value="0"/>
         <MinimapRadius value="0"/>
         <TacticalAI value="Bunker2"/>
-        <LeaderAlias value="Bunker2"/>
-        <SelectAlias value="Bunker2"/>
-        <SubgroupAlias value="Bunker2"/>
-        <AIEvaluateAlias value="Bunker2"/>
+        <LeaderAlias value="BunkerSQ"/>
+        <SelectAlias value="BunkerSQ"/>
+        <SubgroupAlias value="BunkerSQ"/>
+        <AIEvaluateAlias value="BunkerSQ"/>
         <ReviveInfoBase>
             <Charge Link="Bunker2/Revive"/>
             <Cooldown Link="Bunker2/Revive"/>
         </ReviveInfoBase>
-        <LifeArmorTip value="Unit/Tip/Infantry"/>
+    </CUnit>
+    <CUnit id="Bunker2">
+        <DeathRevealRadius value="3"/>
+        <Facing value="315"/>
+        <Race value="Terr"/>
+        <Mob value="Multiplayer"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDefeat" value="1"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="AIDefense" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
+        <LifeStart value="400"/>
+        <LifeMax value="400"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Sight value="10"/>
+        <CostCategory value="Technology"/>
+        <CostResource index="Minerals" value="100"/>
+        <RepairTime value="40"/>
+        <AttackTargetPriority value="19"/>
+        <AbilArray Link="BuildInProgress"/>
+        <AbilArray Link="BunkerTransport"/>
+        <AbilArray Link="SalvageShared"/>
+        <AbilArray Link="SalvageBunkerRefund"/>
+        <AbilArray Link="Rally"/>
+        <AbilArray Link="StimpackRedirect"/>
+        <AbilArray Link="StimpackMarauderRedirect"/>
+        <AbilArray Link="StopRedirect"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="healRedirect"/>
+        <AbilArray Link="BunkerAttack"/>
+        <AbilArray Link="BunkerStop"/>
+        <AbilArray Link="Bunker"/>
+        <BehaviorArray Link="TerranBuildingBurnDown"/>
+        <BehaviorArray Link="BunkerNotJumbo"/>
+        <BehaviorArray Link="ShrikeTurret"/>
+        <BehaviorArray Link="FireSuppressionSystem"/>
+        <BehaviorArray Link="NeedsBuildRadius"/>
+        <WeaponArray Link="ShrikeTurret" Turret="ShrikeTurret"/>
+        <CardLayouts>
+            <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackMarauderRedirect,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="2" Column="1"/>
+            <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="2" Column="2"/>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
+            <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
+            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
+            <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
+            <LayoutButtons Face="StopBunker" Type="AbilCmd" AbilCmd="BunkerStop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="ShrikeTurretResearched" Row="1" Column="2"/>
+            <LayoutButtons>
+                <Face value="FortifiedBunker"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255"/>
+                <Requirements value="FortifiedCarapace"/>
+                <Row value="1"/>
+                <Column value="2"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="NeoSteelFrame"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255"/>
+                <Requirements value="UseNeoSteelFrame"/>
+                <Row value="1"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="ProjectileAccelerators"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255"/>
+                <Requirements value="UseProjectileAccelerators"/>
+                <Row value="1"/>
+                <Column value="0"/>
+            </LayoutButtons>
+        </CardLayouts>
+        <Radius value="1.25"/>
+        <SeparationRadius value="1.25"/>
+        <Footprint value="Footprint3x3Contour"/>
+        <PlacementFootprint value="Footprint3x3"/>
+        <ScoreMake value="100"/>
+        <ScoreKill value="100"/>
+        <ScoreResult value="BuildOrder"/>
+        <SubgroupPriority value="3"/>
+        <MinimapRadius value="1.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
+        <TacticalAIThink value="AIThinkBunker"/>
+        <AIEvalFactor value="1.1"/>
+        <GlossaryCategory value="Unit/Category/TerranUnits"/>
+        <GlossaryPriority value="220"/>
+        <GlossaryStrongArray value="Zergling"/>
+        <GlossaryStrongArray value="InfestedTerranCampaign"/>
+        <GlossaryStrongArray value="Zealot"/>
+        <GlossaryStrongArray value="Marine"/>
+        <GlossaryWeakArray value="Baneling"/>
+        <GlossaryWeakArray value="Colossus"/>
+        <GlossaryWeakArray value="SiegeTank"/>
+        <HotkeyCategory value="Unit/Category/TerranUnits"/>
     </CUnit>
     <CUnit id="BunkerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

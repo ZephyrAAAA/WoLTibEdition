@@ -103,6 +103,7 @@ Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
 Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
 Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
@@ -215,6 +216,8 @@ DataCollection/Name/Armory=Armory
 DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks
 DataCollection/Name/Barracks2=Barracks Copy
+DataCollection/Name/Bunker=Bunker
+DataCollection/Name/Bunker2=Bunker Copy
 DataCollection/Name/CommandCenter=Command Center
 DataCollection/Name/CommandCenter2=Command Center Copy
 DataCollection/Name/Crane=Crane
@@ -415,6 +418,7 @@ Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks
 Unit/Name/Bunker2=Bunker
+Unit/Name/BunkerSQ=Bunker
 Unit/Name/CCRepairDrone=Repair Drone
 Unit/Name/CCTopbar=C&C Topbar
 Unit/Name/CollapsibleRockTowerPurifier02=Rock Tower

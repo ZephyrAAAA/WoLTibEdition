@@ -193,6 +193,10 @@
     <CEffectApplyBehavior id="HideInTheShadows">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectDamage id="HybridCDamage">
+        <AttributeBonus index="Structure" value="0"/>
+        <Amount value="50"/>
+    </CEffectDamage>
     <CEffectDamage id="HybridCPlasmaBlastDamage">
         <Amount value="400"/>
         <ExcludeArray Value="Target"/>
@@ -1234,6 +1238,9 @@
     <CEffectDamage id="VolatileBurstU">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="VultureU">
+        <Amount value="25"/>
     </CEffectDamage>
     <CEffectDamage id="Zeratul">
         <AttributeBonus index="Armored" value="0"/>
