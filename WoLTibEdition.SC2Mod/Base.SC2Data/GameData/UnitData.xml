@@ -3087,6 +3087,7 @@
         <AbilArray Link="ZeratulSeek"/>
         <BehaviorArray Link="MaarPassiveSpeed"/>
         <Attributes index="Heroic" value="1"/>
+        <TacticalAIThink value="AIThinkMaar"/>
     </CUnit>
     <CUnit id="MaarWarpInUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

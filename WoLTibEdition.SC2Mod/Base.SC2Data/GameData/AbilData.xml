@@ -64,6 +64,18 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="GravitonPrison">
+        <Cost index="0">
+            <Charge>
+                <CountMax value="6"/>
+                <CountStart value="6"/>
+                <CountUse value="1"/>
+                <TimeUse value="25"/>
+                <Flags index="RestoreAllChargesOnCooldown" value="1"/>
+            </Charge>
+        </Cost>
+        <PrepTime value="0.0625"/>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="HideInTheShadows">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="Transient" value="1"/>
@@ -77,6 +89,9 @@
     </CAbilEffectInstant>
     <CAbilEffectTarget id="HybridCPlasmaBlast">
         <PrepTime index="0" value="1"/>
+        <Cost index="0">
+            <Cooldown TimeUse="10"/>
+        </Cost>
     </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
