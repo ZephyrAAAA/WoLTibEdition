@@ -13,6 +13,8 @@ Infantry Ultracaps now affects Marauder rockets
 *Autogas is now Autoharvesting
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 *Hercules-> Cellular Reactor- Also increases energy regen
+*Hi-Sec now gives defenses 15% attack speed, and costs 2k.
+Fixed shrike turret not spinning
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
