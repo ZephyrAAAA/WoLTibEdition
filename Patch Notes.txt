@@ -25,6 +25,9 @@ Fixed shrike turret not spinning
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
 
+Outlaws:
+Removed one of the supply depots at the rebel base
+
 Zero Hour:
 Added 2 Sensor Towers to give build radius on the low ground
 Slightly reduced the zergling scaling based on time.
@@ -35,9 +38,18 @@ Protoss attack waves now happen every 90s instead of every 60.
 Protoss attack waves now restart if they manage to rebuild the lower base.
 Doubled field regen in the main field
 Moved the expansion field back a bit
+Fixed Zerg attack wave timings so you can't get 2 stacked attack waves.
+Reduced zerg attack wave frequency.
+Fixed a freeze that would happen when you killed the nexus or all the gateways in the protoss base.
 
 Evacuation:
 You now get a message for upgrades from bonus objectives
+
+Redstone:
+Corrected the Minerals from Pickups variable only counting 100 per pickup, and none from gas pickups.
+
+Outbreak:
+Added a sensor tower on the south high ground, for build radius around the third entrance
 
 Bel'shir:
 Swapped some void rays for zealots in counterattack waves
@@ -48,6 +60,7 @@ Counterattacks are now sent right after killing the Warp Prism/Nexus in the area
 Reinforcements are warped in 30s after the first unit is killed in an area.
 Fixed way too many stalkers being warped in
 Fixed reinforcements warping in if the warp prism is dead
+Fixed the bullies on the two nexus bases
 
 Trains:
 Removed 1 of the starting depots
@@ -104,3 +117,4 @@ You don't get a base, instead getting zeratul
 Zeratul only gets 1 charge of blink
 Zeratul gets a Power ability, to temporarily power any protoss structure
 Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
+Zeratul gets a new ability from each of the Dark Shrine, Robotics Facility, and Templar Archives.
