@@ -15,6 +15,12 @@ Infantry Ultracaps now affects Marauder rockets
 *Hercules-> Cellular Reactor- Also increases energy regen
 *Hi-Sec now gives defenses 15% attack speed, and costs 2k.
 Fixed shrike turret not spinning
+*Vanadium Research text is now correct
+*Ultracap research text is now correct
+*All Mercenaries now say they're trained from the Topbar
+*Mercenaries no longer say they have a limit per mission
+*Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
+
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
