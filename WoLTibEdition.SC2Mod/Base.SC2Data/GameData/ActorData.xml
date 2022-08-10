@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CActorModel default="1" id="SuperCloak" parent="ModelAddition">
+        <?token id="behaviorCloak" value="Bogus"?>
+        <Inherits index="CloakEffect" value="0"/>
+        <On Terms="Behavior.##behaviorCloak##.On" Send="Create"/>
+        <On Terms="Behavior.##behaviorCloak##.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation" Send="SetOpacity 0.250000"/>
+        <On Terms="UnitDeath" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+        <Model value="SuperCloak"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
     <CActorUnit id="Armory2" parent="TerranBuildingEx" unitName="Armory2">
         <Aliases value="_UnitHuge"/>
         <On index="69" Terms="UnitConstruction.Armory2.Start" Send="Create ArmoryBuild"/>
@@ -1617,4 +1628,7 @@
         <On Terms="Abil.PowerStructure.SourceChannelStop" Send="AnimBracketStop Work 0 0.050000"/>
         <On Terms="Abil.PowerStructure.SourceCastStop" Send="AnimBracketStop Work 0 0.050000"/>
     </CActorUnit>
+    <CActorModel id="HideInTheShadows" parent="SuperCloak" behaviorCloak="HideInTheShadows">
+        <EditorCategories value=""/>
+    </CActorModel>
 </Catalog>

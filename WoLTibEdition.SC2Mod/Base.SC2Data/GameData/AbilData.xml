@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilEffectTarget id="AstralProjection">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AstralProjectionCU"/>
+        <Cost>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <Range value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AstralProjection">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilResearch id="BarracksTechLabResearch">
         <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
@@ -52,6 +64,17 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilEffectInstant id="HideInTheShadows">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HideInTheShadows">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="HybridCPlasmaBlast">
         <PrepTime index="0" value="1"/>
     </CAbilEffectTarget>
@@ -69,7 +92,6 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
         <Effect index="0" value="DeathRecallS"/>
         <Cost>
-            <Charge Link="Abil/##id##"/>
             <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="DeathRecall">

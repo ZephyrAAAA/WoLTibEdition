@@ -41,6 +41,15 @@
     <CEffectDamage id="ArcliteShockCannonFriendlyDamage">
         <Amount value="41.5"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="AstralProjection">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="AstralProjectionCU">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnEffect value="AstralProjection"/>
+        <SpawnUnit value="Zeratul"/>
+    </CEffectCreateUnit>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
@@ -163,10 +172,12 @@
     </CEffectCreatePersistent>
     <CEffectApplyBehavior id="DetectorCone9AB">
         <ValidatorArray index="0" value="CasterNotStunned"/>
+        <ValidatorArray value="NotSupercloaked"/>
         <Behavior value="DetectorConeDetected"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="DetectorCone9Reveal">
         <ValidatorArray index="0" value="CasterNotStunned"/>
+        <ValidatorArray value="NotSupercloaked"/>
         <EditorCategories value=""/>
         <Behavior value="DetectorConeReveal"/>
     </CEffectApplyBehavior>
@@ -179,6 +190,9 @@
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="HideInTheShadows">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="HybridCPlasmaBlastDamage">
         <Amount value="400"/>
         <ExcludeArray Value="Target"/>
@@ -734,20 +748,27 @@
     <CEffectApplyBehavior id="SquadVeterancy2">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
-    <CEffectCreatePersistent id="StealthCreateLookPoint">
+    <CEffectCreatePersistent id="StealthCreateForwardLookPoint">
         <EditorCategories value=""/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="StealthRememberLookPoint"/>
         <PeriodicOffsetArray value="0,-5,0"/>
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthCreateForwardLookPointLong">
+        <EditorCategories value=""/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="StealthRememberLookPointLong"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
     <CEffectIssueOrder id="StealthLookAt">
         <ValidatorArray value="CasterHasNoOrders"/>
         <EditorCategories value=""/>
-        <WhichUnit Value="Caster"/>
+        <WhichUnit Value="Source"/>
         <Abil value="move"/>
         <AbilCmdIndex value="4"/>
-        <Player Value="Caster"/>
+        <Player Value="Source"/>
         <Target Value="TargetPoint"/>
     </CEffectIssueOrder>
     <CEffectCreatePersistent id="StealthRememberLookPoint">
@@ -759,6 +780,66 @@
         <PeriodicOffsetArray value="0,0,0"/>
         <PeriodicPeriodArray value="0.25"/>
     </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthRememberLookPointLong">
+        <EditorCategories value=""/>
+        <OffsetVectorStartLocation Value="SourcePoint"/>
+        <OffsetFacingFallback Value="SourcePoint"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialDelay value="1.5"/>
+        <PeriodicEffectArray value="StealthLookAt"/>
+        <PeriodicOffsetArray value="0,0,0"/>
+        <PeriodicPeriodArray value="20"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthRightTurn">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="StealthCreateForwardLookPointLong"/>
+        <PeriodicEffectArray value="StealthTurnRight"/>
+        <PeriodicEffectArray value="StealthTurnLeft"/>
+        <PeriodicPeriodArray value="10"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthLeftTurn">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="StealthCreateForwardLookPointLong"/>
+        <PeriodicEffectArray value="StealthTurnLeft"/>
+        <PeriodicEffectArray value="StealthTurnRight"/>
+        <PeriodicPeriodArray value="10"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthSpinLeft">
+        <EditorCategories value=""/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="StealthCreateForwardLookPointLong"/>
+        <PeriodicEffectArray value="StealthTurnLeft"/>
+        <PeriodicPeriodArray value="5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthSpinRight">
+        <EditorCategories value=""/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="StealthCreateForwardLookPointLong"/>
+        <PeriodicEffectArray value="StealthTurnRight"/>
+        <PeriodicPeriodArray value="5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthTurnLeft">
+        <EditorCategories value=""/>
+        <PeriodCount value="16"/>
+        <PeriodicEffectArray value="StealthLookAt"/>
+        <PeriodicOffsetArray value="1.18,-12,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StealthTurnRight">
+        <EditorCategories value=""/>
+        <PeriodCount value="16"/>
+        <PeriodicEffectArray value="StealthLookAt"/>
+        <PeriodicOffsetArray value="-1.18,-12,0"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="SupercloakUnreveal">
+        <EditorCategories value=""/>
+        <BehaviorLink value="DetectorConeReveal"/>
+    </CEffectRemoveBehavior>
     <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnit"/>
