@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilEffectTarget id="AstralProjection">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AstralProjectionCU"/>
+        <Cost>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <Range value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AstralProjection">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilResearch id="BarracksTechLabResearch">
         <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
@@ -52,6 +64,35 @@
         <ExternalAngle value="299.9926"/>
         <MaxCount value="3"/>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="GravitonPrison">
+        <Cost index="0">
+            <Charge>
+                <CountMax value="6"/>
+                <CountStart value="6"/>
+                <CountUse value="1"/>
+                <TimeUse value="25"/>
+                <Flags index="RestoreAllChargesOnCooldown" value="1"/>
+            </Charge>
+        </Cost>
+        <PrepTime value="0.0625"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="HideInTheShadows">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HideInTheShadows">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="HybridCPlasmaBlast">
+        <PrepTime index="0" value="1"/>
+        <Cost index="0">
+            <Cooldown TimeUse="10"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
@@ -391,7 +432,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="ShowStatus" value="0"/>
         <Leash value="0"/>
-        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="Bunker2">
+        <InfoArray index="Ammo1" CountStart="1" Manage="Recall" Unit="BunkerSQ">
             <Charge CountUse="1" Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="Bunker"/>
@@ -692,7 +733,7 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Build5" Unit="Bunker" Time="3">
+        <InfoArray index="Build5" Unit="Bunker2" Time="3">
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
@@ -756,7 +797,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuildAbil/CCBuild"/>
+                <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HasBuiltArmory">
@@ -1428,6 +1469,22 @@
             </Charge>
             <Cooldown TimeUse="0"/>
         </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ZeratulSeek">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <Range value="500"/>
+        <AutoCastRange value="500"/>
+        <PrepTime value="2"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <TargetFilters value="Visible;Player,Ally,Neutral"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="heal">
         <TargetSorts>

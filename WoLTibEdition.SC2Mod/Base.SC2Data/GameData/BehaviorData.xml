@@ -57,12 +57,13 @@
     <CBehaviorBuff id="DeathRecall">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <DamageResponse Fatal="1" Handled="DeathRecallS" ModifyFraction="0">
+        <DamageResponse Fatal="1" Handled="DeathRecallSet" ModifyFraction="0">
             <Chance value="1"/>
             <Cost>
                 <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
             </Cost>
         </DamageResponse>
+        <RemoveValidatorArray value="NotHallucination"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Depowered">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
@@ -82,9 +83,67 @@
             <RateMultiplierArray index="Queueable" value="0.5"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DetectorCone9">
+        <InfoFlags index="Hidden" value="1"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="DetectorCone9"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DetectorConeDetected">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="0.325"/>
+        <Period value="1"/>
+        <PeriodicEffect value="DetectorCone9Reveal"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DetectorConeReveal">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="2"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DevastatorTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AstralProjection">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <Duration value="20"/>
+        <InitialEffect value="HallucinationCreateUnitBHal"/>
+        <ExpireEffect value="KillHallucination"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressPassenger" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectInstant" value="1"/>
+            <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
+        </Modification>
+        <DamageResponse ModifyFraction="0.25">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HideInTheShadows">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <InitialEffect value="SupercloakUnreveal"/>
+        <Modification>
+            <StateFlags index="Undetectable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MaarPassiveSpeed">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="AICasterNotInCombat"/>
+        <DisableValidatorArray value="StetmannOutOfCombat"/>
+        <DisableValidatorArray value="ZeratulNear"/>
+        <Modification MoveSpeedMaximum="1.5"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MercGroundDrop">
         <DurationRandomMin value="0"/>
@@ -214,6 +273,46 @@
         <Modification AttackSpeedMultiplier="2">
             <VitalMaxFractionArray index="Life" value="0.3"/>
             <VitalRegenArray index="Life" value="0.1992"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StealthSpinLeft">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <InitialEffect value="StealthSpinLeft"/>
+        <Modification>
+            <StateFlags index="SuppressFidgeting" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StealthRightTurn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <InitialEffect value="StealthRightTurn"/>
+        <Modification>
+            <StateFlags index="SuppressFidgeting" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StealthLeftTurn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <InitialEffect value="StealthLeftTurn"/>
+        <Modification>
+            <StateFlags index="SuppressFidgeting" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StealthSpinRight">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <InitialEffect value="StealthSpinRight"/>
+        <Modification>
+            <StateFlags index="SuppressFidgeting" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StealthLookForward">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <InitialEffect value="StealthCreateForwardLookPoint"/>
+        <Modification>
+            <StateFlags index="SuppressFidgeting" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotStartingUpgrade">
@@ -403,4 +502,13 @@
             </Modification>
         </VeterancyLevelArray>
     </CBehaviorVeterancy>
+    <CBehaviorBuff id="ZeratulStun">
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+        <DurationOverride>
+            <Duration value="4"/>
+            <ValidatorArray value="IsHeroic"/>
+        </DurationOverride>
+    </CBehaviorBuff>
 </Catalog>

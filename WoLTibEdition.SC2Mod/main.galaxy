@@ -736,3 +736,44 @@ void main() {
 	TechUnlock_Init();
 	INI_Init();
 }
+
+void AIThinkMaar (int player, unit aiUnit, unitgroup scanGroup) {
+    unit target;
+    int targetCount;
+    int desiredCasts;
+    aifilter filterUnit;
+    unitgroup targetGroup;
+
+    // Automatic Variable Declarations
+    int auto70BA07A7_i;
+
+    // Variable Initialization
+    targetGroup = UnitGroupEmpty();
+
+    // Implementation
+    if (OrderGetAbilityCommand(UnitOrder(aiUnit, 0)) != AbilityCommand("attack", 0) && OrderGetAbilityCommand(UnitOrder(aiUnit, 0)) != AbilityCommand("move", 0) && UnitOrderCount(aiUnit) > 0) {
+		return;
+    }
+    else {
+        target = UnitGroupRandomUnit(scanGroup, c_unitCountAlive);
+        if ((target != null)) {
+            AICastCooldown(aiUnit, OrderTargetingUnit(AbilityCommand("HybridCPlasmaBlast", 0), target), c_noMarker, c_castHold, c_tactTimerSecond, 10);
+			return;
+        }
+        targetCount = UnitGroupCount(scanGroup, c_unitCountAlive);
+        desiredCasts = FixedToInt((IntToFixed(targetCount) * libNtve_gf_DifficultyValueFixed(0.5, 0.5, 0.6, 0.75)));
+        desiredCasts = MinI(desiredCasts, libNtve_gf_DifficultyValueInt(5, 5, 8, 9));
+        desiredCasts = MaxI(desiredCasts, 1);
+        for (auto70BA07A7_i = 1; auto70BA07A7_i <= desiredCasts; auto70BA07A7_i += 1) {
+            targetGroup = scanGroup;
+            target = UnitGroupRandomUnit(targetGroup, c_unitCountAlive);
+            if ((target != null)) {
+                UnitGroupRemove(targetGroup, target);
+                AICastCooldown(aiUnit, OrderTargetingUnit(AbilityCommand("GravitonPrison", 0), target), c_noMarker, c_castHold, c_tactTimerFirst, 25);
+            }
+        }
+		if (UnitGroupCount(scanGroup, c_unitCountAlive) == 0) {
+			AICast(aiUnit, OrderTargetingPoint(AbilityCommand("attack", 0), UnitGetPosition(UnitGroupRandomUnit(UnitGroup("Zeratul", 1, RegionEntireMap(), UnitFilterStr("-;Hallucination"), 0), c_unitCountAlive))), c_noMarker, c_castHold);
+		}
+    }
+}

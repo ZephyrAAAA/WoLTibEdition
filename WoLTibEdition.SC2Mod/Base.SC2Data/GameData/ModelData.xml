@@ -3,6 +3,14 @@
     <CModel id="ConstructionCrane">
         <SelectionLayer value="2"/>
     </CModel>
+    <CModel id="DetectionCone" parent="UI">
+        <Model value="Assets/UI/Cursors/DOM_TerranCone/DOM_TerranCone.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="1.000000,1.000000,5.000000"/>
+        <ScaleMin value="1.000000,1.000000,5.000000"/>
+        <SelectionRadius value="2.500000"/>
+        <ShadowRadius value="2.500000"/>
+    </CModel>
     <CModel id="DevastationTurret" parent="Unit">
         <Model value="Assets\Buildings\Terran\GrenadeTurret\GrenadeTurret.m3"/>
         <EditorCategories value=""/>
@@ -43,5 +51,8 @@
         <TextureDeclares Prefix="collapsiblerocktowerflat_">
             <Adaptions TriggerOnSubstring="_Diffuse" Slot="generic01"/>
         </TextureDeclares>
+    </CModel>
+    <CModel id="SuperCloak" parent="RacePersistentSpellFX" Race="Zerg">
+        <Model value="Assets\COOP\Zeratul\Effects\SuperCloak_Zeratul_COOP\SuperCloak_Zeratul_COOP.m3"/>
     </CModel>
 </Catalog>

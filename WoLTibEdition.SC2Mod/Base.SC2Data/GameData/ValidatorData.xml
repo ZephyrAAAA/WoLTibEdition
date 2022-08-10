@@ -6,6 +6,10 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
         <Behavior value="Depowered"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="CasterNotStunned">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Stunned"/>
+    </CValidatorUnitFilters>
     <CValidatorPlayerRequirement id="HasDevilDogs">
         <Find value="1"/>
         <Value value="MercPHTrainFirebat"/>
@@ -26,9 +30,23 @@
         <Find value="1"/>
         <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitFilters id="IsHeroic">
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
     <CValidatorUnitType id="IsVoidSeeker">
         <Value value="VoidSeeker"/>
     </CValidatorUnitType>
+    <CValidatorUnitType id="IsZeratul">
+        <Value value="Zeratul"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="MaarAllowedToTeleport">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="MaarPassiveSpeed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotSupercloaked">
+        <Behavior value="HideInTheShadows"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorPlayerRequirement id="TriLithiumPurchased">
         <Find value="1"/>
         <Value value="TriLithiumResearched"/>
@@ -76,4 +94,9 @@
     <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
         <Behavior value="BunkerWeaponRangeBonus"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="ZeratulNear">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Radius="10" Validator="IsZeratul"/>
+        <Compare value="Eq"/>
+    </CValidatorLocationEnumArea>
 </Catalog>

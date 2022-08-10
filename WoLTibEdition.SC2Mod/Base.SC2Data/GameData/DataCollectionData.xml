@@ -34,6 +34,14 @@
         <Button value="Barracks"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Bunker2">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Unit,Bunker2"/>
+        <DataRecord Entry="Actor,Bunker2"/>
+        <DataRecord Entry="Actor,Bunker2Splat"/>
+        <Button value="Bunker"/>
+        <TechInfoUnit value="BunkerSQ"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="CommandCenter">
         <DataRecord Entry="Abil,CommandCenterLand"/>
         <DataRecord Entry="Abil,CommandCenterLiftOff"/>
@@ -339,6 +347,12 @@
         <DataRecord Entry="Actor,TibVeinSplatSmall"/>
         <DataRecord Entry="Behavior,TibVeinMinerals"/>
         <DataRecord Entry="Unit,TibVein"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Bunker">
+        <EditorCategories value=""/>
+        <DataRecord Entry="Unit,Bunker"/>
+        <DataRecord Entry="Actor,Bunker"/>
+        <DataRecord Entry="Actor,BunkerSplat"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="VespeneGeyser">
         <DataRecord Entry="Actor,VespeneGeyser"/>

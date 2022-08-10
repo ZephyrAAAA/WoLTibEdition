@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CButton id="AstralProjection">
+        <Icon value="Assets\Textures\btn-ability-protoss-hallucination-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-protoss-hallucination-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="Hallucination"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="HideInTheShadows">
+        <Icon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-darktemplar-color.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+        <HotkeyAlias value="PermanentlyCloaked"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
     <CButton id="Stone">
         <Icon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
         <AlertIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
