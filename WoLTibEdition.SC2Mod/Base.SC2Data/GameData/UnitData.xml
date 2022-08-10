@@ -3086,6 +3086,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <AbilArray Link="ZeratulSeek"/>
         <BehaviorArray Link="MaarPassiveSpeed"/>
+        <Attributes index="Heroic" value="1"/>
     </CUnit>
     <CUnit id="MaarWarpInUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

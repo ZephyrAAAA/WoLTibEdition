@@ -63,6 +63,7 @@
                 <Cooldown Link="ZeratulDeathRecall" Location="Unit" TimeUse="60"/>
             </Cost>
         </DamageResponse>
+        <RemoveValidatorArray value="NotHallucination"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="Depowered">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
