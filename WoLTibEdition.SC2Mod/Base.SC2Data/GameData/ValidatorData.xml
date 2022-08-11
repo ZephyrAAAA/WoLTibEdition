@@ -6,6 +6,10 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
         <Behavior value="Depowered"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CanLoadSiegeTank">
+        <CombineArray value="NotSiegeTank"/>
+        <CombineArray value="HasMaelstromRounds"/>
+    </CValidatorCombine>
     <CValidatorUnitFilters id="CasterNotStunned">
         <WhichUnit Value="Caster"/>
         <Filters value="-;Stunned"/>

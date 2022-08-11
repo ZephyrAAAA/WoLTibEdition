@@ -11,6 +11,12 @@
         <Model value="SuperCloak"/>
         <AutoScaleFactor value="1.000000"/>
     </CActorModel>
+    <CActorUnit id="AirTargeter" parent="GenericUnitStandard" unitName="AirTargeter">
+        <EditorCategories value=""/>
+        <Model value="Invisible"/>
+        <BuildModel value="Invisible"/>
+        <PlacementModel value="Invisible"/>
+    </CActorUnit>
     <CActorUnit id="Armory2" parent="TerranBuildingEx" unitName="Armory2">
         <Aliases value="_UnitHuge"/>
         <On index="69" Terms="UnitConstruction.Armory2.Start" Send="Create ArmoryBuild"/>
@@ -69,6 +75,12 @@
     </CActorUnit>
     <CActorSound id="BarracksLand">
         <On Terms="AbilMorph.*.Start; MorphTo Barracks2" Send="Create"/>
+    </CActorSound>
+    <CActorSound id="HyperionTopbarYamatoChargeSound" parent="SoundContinuous">
+        <On Terms="Effect.YamatoGunTopbarPersistent.Start" Send="Create"/>
+        <On Terms="Effect.YamatoGunTopbarPersistent.Stop" Send="Destroy"/>
+        <Host Subject="BattlecruiserYamatoAttackChargeModel"/>
+        <Sound value="Battlecruiser_YamatoAttackChargeUp"/>
     </CActorSound>
     <CActorRange id="BuildRadius" unitName="Bogus">
         <Behavior value="BuildRadiusLarge"/>
@@ -753,6 +765,14 @@
     <CActorUnit id="HybridC">
         <On Terms="Effect.ZeratulSeek.Stop" Send="Create HybridWarpInEffect"/>
     </CActorUnit>
+    <CActorAction id="HyperionYamatoSpecialAttack2" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
+        <LaunchAssets Sound="HyperionYamatoSpecialAttackLaunch"/>
+        <Missile value="HyperionYamatoSpecialAttackMissile2"/>
+        <ImpactSiteOps HoldPosition="1"/>
+        <ImpactAttachQuery Methods="Origin"/>
+        <ImpactMap index="None" Model="HyperionYamatoSpecialAttackImpact" Sound="HyperionYamatoSpecialAttackImpact"/>
+    </CActorAction>
+    <CActorMissile id="HyperionYamatoSpecialAttackMissile2" parent="GenericAttackMissile" unitName="HyperionYamatoSpecialWeapon"/>
     <CActorAction id="MarauderHailstormRockets" parent="GenericAttack" effectImpact="HailstormLauncherU" effectLaunch="HailstormLauncherLM">
         <LaunchAttachQuery Methods="AMPatternMarauder"/>
         <LaunchAssets Model="MarauderAttackLaunch" Sound="VikingFighter_AttackLaunch"/>

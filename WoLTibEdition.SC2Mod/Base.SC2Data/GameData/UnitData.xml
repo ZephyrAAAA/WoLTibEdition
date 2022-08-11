@@ -240,6 +240,18 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="AirTargeter">
+        <FlagArray index="Uncommandable" value="1"/>
+        <FlagArray index="Unselectable" value="1"/>
+        <FlagArray index="Untargetable" value="1"/>
+        <FlagArray index="NoDraw" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Cloaked" value="1"/>
+        <Mover value="Fly"/>
+        <Height value="20"/>
+        <EditorCategories value=""/>
+    </CUnit>
     <CUnit id="Archive">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
@@ -2860,6 +2872,16 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="Immortal">
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <ShieldsStart value="200"/>
+        <ShieldsMax value="200"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <BehaviorArray index="0" removed="1"/>
+    </CUnit>
     <CUnit id="ImmortalACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4754,6 +4776,7 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
+        <CargoSize value="4"/>
     </CUnit>
     <CUnit id="SiegeTank">
         <ArmorType value="Large"/>
@@ -4776,6 +4799,7 @@
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <CargoSize value="4"/>
     </CUnit>
     <CUnit id="SiegeTankSkinPreview">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
