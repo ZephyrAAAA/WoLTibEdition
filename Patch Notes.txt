@@ -20,7 +20,7 @@ Fixed shrike turret not spinning
 *All Mercenaries now say they're trained from the Topbar
 *Mercenaries no longer say they have a limit per mission
 *Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
-
+*Raynor now has a headache after doing a Zeratul Mission.
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
@@ -104,6 +104,7 @@ Getting the second bonus now gives you Vulture Cerberus Mine, and a message sayi
 Getting the third bonus now gives you Vulture Nanofabricator, and a message saying so
 
 Whispers of Doom:
+Zeratul has 100/300, instead of 300/100
 Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 69% faster attack speed
 Abilities are no longer disabled at the start of the mission
 Each shrine no longer forces you to wait and listen to Zeratul before continuing.
