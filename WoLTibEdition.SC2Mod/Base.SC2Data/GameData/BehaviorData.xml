@@ -502,6 +502,13 @@
             </Modification>
         </VeterancyLevelArray>
     </CBehaviorVeterancy>
+    <CBehaviorBuff id="ZeratulHoldFire">
+        <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification WeaponScanLimit="0">
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ZeratulStun">
         <Modification>
             <StateFlags index="Stun" value="1"/>
