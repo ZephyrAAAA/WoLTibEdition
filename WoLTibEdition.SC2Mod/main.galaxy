@@ -13,6 +13,7 @@ trigger cancel;
 trigger unloadSquads;
 trigger power;
 trigger ownerSwap;
+trigger topbarCheck;
 trigger rallyCopy;
 trigger techUnlock;
 trigger INI;
@@ -97,14 +98,67 @@ bool DisableTopBar () {
 	return noTopBar;
 }
 
-void AddTopbarAbil(string abil, int lv_i) {
+void AddTopbarAbil(string abil) {
+	int lv_i;
+	if (UnitAbilityExists(topbarUnit, abil)) {
+		return;
+	}
+	for (lv_i = 0; topbarAbils[lv_i] != null; lv_i += 1) {
+		if (lv_i == 12) {
+			return;
+		}
+	}
 	if (lv_i > 12) {
 		return;
 	}
 	UnitAbilityAdd(topbarUnit, abil);
 	topbarAbils[lv_i] = abil;
-	CatalogFieldValueSet(c_gameCatalogButton, abil, "DefaultButtonLayout.Column", 1, IntToString((lv_i+3) % 5));
-	CatalogFieldValueSet(c_gameCatalogButton, abil, "DefaultButtonLayout.Row", 1, IntToString(FloorI((lv_i+3) /5)));
+}
+
+void RemoveTopbarAbil(string abil) {
+	int lv_i;
+	if (!UnitAbilityExists(topbarUnit, abil)) {
+		return;
+	}
+	for (lv_i = 0; topbarAbils[lv_i] != abil; lv_i += 1) {
+		if (lv_i == 12) {
+			return;
+		}
+	}
+	if (lv_i > 12) {
+		return;
+	}
+	UnitAbilityRemove(topbarUnit, abil);
+	for (; topbarAbils[lv_i] != null; lv_i += 1) {
+		if (lv_i == 0) {
+			continue;
+		}
+		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
+	}
+}
+
+void AddTopbars () {
+	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) > 0) {
+		if (TechTreeUpgradeCount(1, "HireKelmorianMinersPH", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("InfantryMercenaries");
+		}
+		if (TechTreeUpgradeCount(1, "HireSiegeBreakersPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireSpartanCompanyPH", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("VehicleMercenaries");
+		}
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {
+		AddTopbarAbil("HyperionYamato");
+	}
+}
+
+void RemoveTopbars () {
+	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) == 0) {
+		RemoveTopbarAbil("InfantryMercenaries");
+		RemoveTopbarAbil("VehicleMercenaries");
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) == 0) {
+		RemoveTopbarAbil("HyperionYamato");
+	}
 }
 
 bool Gather_Func (bool testConds, bool runActions) {
@@ -551,6 +605,7 @@ bool OwnerSwap_Func (bool testConds, bool runActions) {
 		UnitBehaviorAddPlayer(EventUnit(), "PowerCheck", EventUnitOwnerNew(), 1);
 	}
 	if (EventUnitOwnerNew() == 1) {
+		AddTopbars();
 		buildingSwap(EventUnit());
 	}
 	return true;
@@ -559,6 +614,18 @@ bool OwnerSwap_Func (bool testConds, bool runActions) {
 void OwnerSwap_Init () {
 	ownerSwap = TriggerCreate("OwnerSwap_Func");
 	TriggerAddEventUnitChangeOwner(ownerSwap, null);
+}
+
+bool TopbarCheck_Func (bool testConds, bool runActions) {
+	AddTopbars();
+	RemoveTopbars();
+	return true;
+}
+
+void TopbarCheck_Init () {
+	topbarCheck = TriggerCreate("TopbarCheck_Func");
+	TriggerAddEventUnitConstructProgress(topbarCheck, null, c_unitProgressStageComplete);
+	TriggerAddEventUnitDied(topbarCheck, null);
 }
 
 bool RallyCopy_Func (bool testConds, bool runActions) {
@@ -587,17 +654,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), false);
 		DialogControlSetVisible(topbarCommandPanel, PlayerGroupAll(), false);
 	} else {
-		lv_i = 0;
-		if (TechTreeUpgradeCount(1, "HireKelmorianMinersPH", c_techCountCompleteOnly) > 0) {
-			UnitAbilityAdd(topbarUnit, "InfantryMercenaries");
-			//AddTopbarAbil("InfantryMercenaries", lv_i);
-			lv_i += 1;
-		}
-		if (TechTreeUpgradeCount(1, "HireSiegeBreakersPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireSpartanCompanyPH", c_techCountCompleteOnly) > 0) {
-			UnitAbilityAdd(topbarUnit, "VehicleMercenaries");
-			//AddTopbarAbil("VehicleMercenaries", lv_i);
-			lv_i += 1;
-		}
+		AddTopbars();
 	}
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
@@ -618,6 +675,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 2), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 3), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 8), true);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 7), ConversationDataStateGetValue("MissionCompletedCount") > 3);
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 7), ConversationDataStateGetValue("MissionCompletedCount") > 3);
     TechTreeAbilityAllow(1, AbilityCommand("Barracks2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksAddOns", 0)));
     TechTreeAbilityAllow(1, AbilityCommand("Factory2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 5)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 8))); //hellion or vulture
     TechTreeAbilityAllow(1, AbilityCommand("Starport2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 4)));
@@ -631,8 +690,6 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 8)));
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 13), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
-	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 7), ConversationDataStateGetValue("MissionCompletedCount") > 3);
-	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 7), ConversationDataStateGetValue("MissionCompletedCount") > 3);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 9), ConversationDataStateGetValue("MissionCompletedCount") > 6);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), ConversationDataStateGetValue("MissionCompletedCount") > 6);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 11), ConversationDataStateGetValue("MissionCompletedCount") > 9);
@@ -643,6 +700,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 1), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 0)));
 	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
+	TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 2), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)));
 	TechTreeAbilityAllow(1, AbilityCommand("SquadStimpack", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("Stimpack", 0), true);
 	for (lv_i = 0; lv_i < 9; lv_i += 1) {
@@ -732,6 +790,7 @@ void main() {
 	UnloadSquads_Init();
 	Power_Init();
 	OwnerSwap_Init();
+	TopbarCheck_Init();
 	RallyCopy_Init();
 	TechUnlock_Init();
 	INI_Init();

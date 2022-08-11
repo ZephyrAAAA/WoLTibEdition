@@ -93,6 +93,29 @@
             <Cooldown TimeUse="10"/>
         </Cost>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="HyperionYamato">
+        <Alignment value="Negative"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="YamatoGunTopbarPersistent"/>
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Resource index="Minerals" value="3000"/>
+            <Cooldown TimeUse="300"/>
+        </Cost>
+        <TargetFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <RangeSlop value="10"/>
+        <Arc value="360"/>
+        <CursorEffect value="YamatoGunTopbarDamage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HyperionYamato5">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
@@ -160,7 +183,7 @@
         </Cost>
         <Range value="500"/>
         <CursorEffect value="DropWarPigs"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="InfantryMercenaries">
+        <CmdButtonArray index="Execute" DefaultButtonFace="InfantryMercenaries3">
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
@@ -225,7 +248,7 @@
         <Range value="500"/>
         <CursorEffect value="DropWarPigs"/>
         <AINotifyEffect value="InfantryMercenaries"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="VehicleMercenaries">
+        <CmdButtonArray index="Execute" DefaultButtonFace="VehicleMercenaries4">
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
@@ -310,6 +333,7 @@
         <TotalCargoSpace value="32"/>
         <LoadCargoEffect value="AirTransportLoadIterate"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
+        <LoadValidatorArray value="CanLoadSiegeTank"/>
     </CAbilTransport>
     <CAbilTransport id="AirTransport" parent="HerculesTransport">
         <Name value="Abil/Name/AirTransport"/>
@@ -326,6 +350,7 @@
         <LoadCargoBehavior value=""/>
         <UnloadPeriod value="0"/>
         <SearchRadius value="5"/>
+        <LoadValidatorArray index="0" removed="1"/>
     </CAbilTransport>
     <CAbilArmMagazine id="AirTransportMag">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -857,7 +882,7 @@
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
-                <Link value="Abil/CCBuildAbil/CCBuild"/>
+                <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
             <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
@@ -1234,6 +1259,7 @@
     <CAbilTransport id="MedivacTransport">
         <LoadCargoEffect value="AirTransportLoadIterate"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
+        <LoadValidatorArray value="CanLoadSiegeTank"/>
     </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>

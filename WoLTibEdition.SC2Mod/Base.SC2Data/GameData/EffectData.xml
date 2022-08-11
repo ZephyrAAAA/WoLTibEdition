@@ -417,11 +417,15 @@
     <CEffectModifyPlayer id="OrbitalSupplyDrop">
         <EditorCategories value=""/>
         <WhichPlayer Value="Source"/>
-        <Resources index="Minerals" value="15"/>
+        <Resources index="Minerals" value="5"/>
     </CEffectModifyPlayer>
     <CEffectDamage id="PerditionTurretFlameThrowerDamage">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="PhaseDisruptors">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="50"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="PowerStructure">
         <EditorCategories value="Race:Protoss"/>
@@ -1240,8 +1244,51 @@
         <Amount value="35"/>
     </CEffectDamage>
     <CEffectDamage id="VultureU">
+        <AttributeBonus index="Light" value="0"/>
         <Amount value="25"/>
     </CEffectDamage>
+    <CEffectCreateUnit id="YamatoGunTopbarCreateUnit">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <Origin Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="YamatoGunTopbarPersistent"/>
+        <SpawnUnit value="AirTargeter"/>
+        <SpawnOffset value="0,0"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="YamatoGunTopbarDamage">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <LaunchLocation Effect="YamatoGunTopbarOffset" Value="TargetPoint"/>
+        <Visibility value="Visible"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="400"/>
+        <Death value="Blast"/>
+        <AreaArray Radius="3" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="YamatoGunTopbarLaunchMissile">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="TargetUnitOrPoint"/>
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <LaunchOffset value="0,1,30"/>
+        <ImpactEffect value="YamatoGunTopbarDamage"/>
+        <AmmoUnit value="HyperionYamatoSpecialWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="YamatoGunTopbarPersistent">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <OffsetVectorStartLocation Value="TargetUnitOrPoint"/>
+        <OffsetVectorEndLocation Value="TargetUnitOrPoint"/>
+        <ExpireDelay value="2"/>
+        <ExpireEffect value="TimedLifeFate"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="YamatoGunTopbarLaunchMissile"/>
+        <PeriodicPeriodArray value="2"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="Zeratul">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="110"/>

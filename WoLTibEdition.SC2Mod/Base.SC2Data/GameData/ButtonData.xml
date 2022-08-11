@@ -13,6 +13,26 @@
         <HotkeyAlias value="PermanentlyCloaked"/>
         <DefaultButtonLayout Row="2" Column="2"/>
     </CButton>
+    <CButton id="HyperionYamato3">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="HyperionYamato5"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="HyperionYamato5">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="HyperionYamato4">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="HyperionYamato5"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
     <CButton id="Stone">
         <Icon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
         <AlertIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
@@ -58,11 +78,11 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="InfantryMercenaries">
+    <CButton id="InfantryMercenaries3">
         <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <DefaultButtonLayout Column="3"/>
+        <DefaultButtonLayout Row="1"/>
     </CButton>
     <CButton id="ResetRally">
         <Icon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
@@ -72,11 +92,11 @@
         <Universal value="1"/>
         <DefaultButtonLayout Column="4"/>
     </CButton>
-    <CButton id="VehicleMercenaries">
+    <CButton id="VehicleMercenaries4">
         <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="InfantryMercenaries"/>
+        <HotkeyAlias value="InfantryMercenaries3"/>
         <DefaultButtonLayout Column="4"/>
     </CButton>
     <CButton id="InfantryUltraCapacitors">

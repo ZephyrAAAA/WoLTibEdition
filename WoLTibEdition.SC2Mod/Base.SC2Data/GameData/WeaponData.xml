@@ -371,6 +371,10 @@
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PhaseDisruptors">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
     </CWeaponLegacy>

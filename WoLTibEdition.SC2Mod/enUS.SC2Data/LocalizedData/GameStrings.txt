@@ -33,6 +33,7 @@ Abil/Name/GhostAcademy2Research=Research
 Abil/Name/GhostSquad=Ghost Squad
 Abil/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Abil/Name/HideInTheShadows=Hide In The Shadows
+Abil/Name/HyperionYamato=Yamato Gun
 Abil/Name/InfantryMercenaries=Infantry Mercenaries
 Abil/Name/MarauderSquad=Marauder Squad
 Abil/Name/MarineSquad=Marine Squad
@@ -83,7 +84,10 @@ Button/Name/DeathRecall=Recall
 Button/Name/Depower=Depower
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
-Button/Name/InfantryMercenaries=Infantry Mercenaries
+Button/Name/HyperionYamato3=Hyperion Yamato
+Button/Name/HyperionYamato4=Hyperion Yamato
+Button/Name/HyperionYamato5=Hyperion Yamato
+Button/Name/InfantryMercenaries3=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/PauseQueue=Pause Queue
@@ -93,7 +97,7 @@ Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
 Button/Name/Sell=Sell
 Button/Name/Stone=Train Stone
-Button/Name/VehicleMercenaries=Vehicle Mercenaries
+Button/Name/VehicleMercenaries4=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
@@ -119,7 +123,10 @@ Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff
 Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
-Button/Tooltip/InfantryMercenaries=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/HyperionYamato3=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato4=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato5=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/InfantryMercenaries3=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
@@ -146,7 +153,7 @@ Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene G
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
-Button/Tooltip/VehicleMercenaries=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries4=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
@@ -380,6 +387,10 @@ Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
 Effect/Name/TibNodeSmallSearch=Tib Node Small Search
 Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
 Effect/Name/VehicleMercSet=Vehicle Merc Set
+Effect/Name/YamatoGunTopbarCreateUnit=Yamato Gun
+Effect/Name/YamatoGunTopbarDamage=Yamato Gun
+Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
+Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
 Effect/Name/ZeratulSeek=Zeratul Seek
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=Player 1
