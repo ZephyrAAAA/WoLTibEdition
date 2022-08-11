@@ -322,6 +322,10 @@ Fusion Core- yamato strike support power, all mission-unlocked support powers
 
 High Templar- Storm no longer ignores armour
 
+Void Ray- Imported the HOTS version
+
+Immortals- Hardened Shield removed, shield health doubled
+
 ARMORY UPGRADE CHANGES:
 
 Stimpack- No movement bonus
@@ -387,7 +391,7 @@ Autogas-> Autoharvesting
 
 Command Center Reactor- Reduce build time of buildings (Also affects cost)
 
-Orbital Supply Depot-> Orbital Supply Drop- 15/s (1800/min) Passive income
+Orbital Supply Depot-> Orbital Supply Drop- 5/s (600/min) Passive income
 
 Micro Filtering-> Expanded Hold- SCVs collect double the minerals per gather action
 

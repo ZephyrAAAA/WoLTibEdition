@@ -6,21 +6,34 @@ Seige tanks and vultures have been converted
 Advanced Construction now decreases the build time of all units (And the cost)
 Dual Fusion increases repair speed of Topbar Repair.
 Command Center Reactor now decreases the build time of all units (And the cost)
+*Autogas is now autoharvesting.
 Marine damage nerfed to 5. War Pig damage nerfed to 6.75
 Medic healing nerfed to 6hp/s for 3E/s
 Infantry Ultracaps now affects Marauder rockets
-*Imported the HOTS void ray
-*Autogas is now Autoharvesting
-*Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
-*Hercules-> Cellular Reactor- Also increases energy regen
-*Hi-Sec now gives defenses 15% attack speed, and costs 2k.
 Fixed shrike turret not spinning
+Orbital Supply Drop nerfed to 5/s income (600/min)
+Factories can now build tech labs on Outbreak
+*Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
 *Vanadium Research text is now correct
 *Ultracap research text is now correct
+Mercs Calldowns are now on the Spec Ops
 *All Mercenaries now say they're trained from the Topbar
 *Mercenaries no longer say they have a limit per mission
 *Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
 *Raynor now has a headache after doing a Zeratul Mission.
+*Added the Orbital Scan support power on the Engineering Bay, unlocked by Orbital Command.
+*Added the Nuclear Strike support power on the Spec Ops, unlocked by Orbital Command.
+*Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Command.
+*Added the Yamato Strike support power on the Fusion Core.
+*Added the Improved Railguns upgrade on the Armoury.
+*Added the Improved Explosives upgrade on the Engineering Bay.
+*Imported the HOTS void ray
+Immortal Hardened Shield removed, shield health doubled
+*Autogas is now Autoharvesting
+*Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
+*Hercules-> Cellular Reactor- Also increases energy regen
+*Hi-Sec now gives defenses 15% attack speed, and costs 2k.
+*Ultras, Colossi, and Thors now crush infrantry they walk over.
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
@@ -85,12 +98,18 @@ Added 3 small nodes to the east protoss base
 The 2 main Protoss fields now have 2 medium nodes each
 Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
 Getting the second bonus now gives you Siege Tank Shaped Blast, and a message saying so
+The Tal'Darim now start with Extended Thermal Lance
+The Tal'Darim now start with Charge (After the no-build segment)
+The Tal'Darim now start with Blink (After the no-build segment)
+The Tal'Darim now start with Graviton Catapult (After the no-build segment)
+The Tal'darim now start warping in non-stop at 5% health remaining, not 3%.
+Removed the attack wave based on getting the temple to 33% health.
 
 Cutthroat:
 Resources all converted, SCVs deleted, starting refinery placed
 Starting infrantry replaced with squads
 You now recieve a refinery
-You now need to collect 80k minerals.
+You now need to collect 120k minerals.
 Scrap now gives 10x the minerals.
 Removed unnecessary triggers to award resources when picking up non-scrap
 Orlan now mines 1400 minerals per load.
@@ -112,9 +131,10 @@ Each shrine no longer forces you to wait and listen to Zeratul before continuing
 A Sinister Turn:
 2 preservers moved to outposts
 Killing a Preserver prison no longer teleports Maar back
-Maar now follows zeratul slowly. If zeratul become detected by Maar, he moves faster. If zeratul is detected by other means, Maar will teleport to zeratul within a few seconds.
+Maar now follows zeratul slowly. If zeratul becomes detected by Maar, he moves faster. If zeratul is detected by other means, Maar will teleport to zeratul within a few seconds.
 The bonuses no longer warp in extra units
 You don't get a base, instead getting zeratul
+Zeratul no slap if he's not told to.
 Zeratul only gets 1 charge of blink
 Zeratul gets a Power ability, to temporarily power any protoss structure
 Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
