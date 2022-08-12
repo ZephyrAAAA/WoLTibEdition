@@ -238,6 +238,11 @@
     <CEffectDamage id="LaserDrillTripodDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectCreateHealer id="NanoRepair">
+        <ValidatorArray index="0" value="LT3Markers"/>
+        <DrainVitalCostFactor value="0.2"/>
+        <RechargeVitalRate value="5"/>
+    </CEffectCreateHealer>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
         <EditorCategories value=""/>
@@ -505,15 +510,15 @@
     </CEffectModifyPlayer>
     <CEffectDamage id="PrismaticBeamMUx1">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="6"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="PrismaticBeamMUx2">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="12"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="PrismaticBeamMUx3">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="24"/>
+        <Amount value="16"/>
     </CEffectDamage>
     <CEffectDamage id="PsionicShockwaveDamage">
         <AttributeBonus index="Biological" value="0"/>
@@ -1272,8 +1277,8 @@
     <CEffectLaunchMissile id="YamatoGunTopbarLaunchMissile">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <LaunchLocation Value="TargetUnitOrPoint"/>
-        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="TargetPoint"/>
         <LaunchOffset value="0,1,30"/>
         <ImpactEffect value="YamatoGunTopbarDamage"/>
         <AmmoUnit value="HyperionYamatoSpecialWeapon"/>

@@ -765,14 +765,13 @@
     <CActorUnit id="HybridC">
         <On Terms="Effect.ZeratulSeek.Stop" Send="Create HybridWarpInEffect"/>
     </CActorUnit>
-    <CActorAction id="HyperionYamatoSpecialAttack2" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
+    <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
         <LaunchAssets Sound="HyperionYamatoSpecialAttackLaunch"/>
-        <Missile value="HyperionYamatoSpecialAttackMissile2"/>
         <ImpactSiteOps HoldPosition="1"/>
         <ImpactAttachQuery Methods="Origin"/>
         <ImpactMap index="None" Model="HyperionYamatoSpecialAttackImpact" Sound="HyperionYamatoSpecialAttackImpact"/>
     </CActorAction>
-    <CActorMissile id="HyperionYamatoSpecialAttackMissile2" parent="GenericAttackMissile" unitName="HyperionYamatoSpecialWeapon"/>
+    <CActorMissile id="HyperionYamatoTopbarAttackMissile" parent="GenericAttackMissile" unitName="HyperionYamatoSpecialWeapon"/>
     <CActorAction id="MarauderHailstormRockets" parent="GenericAttack" effectImpact="HailstormLauncherU" effectLaunch="HailstormLauncherLM">
         <LaunchAttachQuery Methods="AMPatternMarauder"/>
         <LaunchAssets Model="MarauderAttackLaunch" Sound="VikingFighter_AttackLaunch"/>
