@@ -238,6 +238,11 @@
     <CEffectDamage id="LaserDrillTripodDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectCreateHealer id="NanoRepair">
+        <ValidatorArray index="0" value="LT3Markers"/>
+        <DrainVitalCostFactor value="0.2"/>
+        <RechargeVitalRate value="5"/>
+    </CEffectCreateHealer>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
         <EditorCategories value=""/>

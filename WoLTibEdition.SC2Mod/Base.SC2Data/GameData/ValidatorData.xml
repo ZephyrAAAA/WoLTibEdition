@@ -103,4 +103,9 @@
         <AreaArray Radius="10" Validator="IsZeratul"/>
         <Compare value="Eq"/>
     </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareMarkerCount id="LT3Markers">
+        <ResultFailed value="AlreadyTargeted"/>
+        <Compare value="LE"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareMarkerCount>
 </Catalog>
