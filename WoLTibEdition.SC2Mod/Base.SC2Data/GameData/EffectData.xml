@@ -505,15 +505,15 @@
     </CEffectModifyPlayer>
     <CEffectDamage id="PrismaticBeamMUx1">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="6"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="PrismaticBeamMUx2">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="12"/>
+        <Amount value="10"/>
     </CEffectDamage>
     <CEffectDamage id="PrismaticBeamMUx3">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="24"/>
+        <Amount value="16"/>
     </CEffectDamage>
     <CEffectDamage id="PsionicShockwaveDamage">
         <AttributeBonus index="Biological" value="0"/>
