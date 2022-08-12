@@ -82,7 +82,7 @@
         <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
         <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <DefaultButtonLayout Row="1"/>
+        <DefaultButtonLayout Column="3"/>
     </CButton>
     <CButton id="ResetRally">
         <Icon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
