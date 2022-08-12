@@ -1272,8 +1272,8 @@
     <CEffectLaunchMissile id="YamatoGunTopbarLaunchMissile">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:Terran"/>
-        <LaunchLocation Value="TargetUnitOrPoint"/>
-        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="TargetPoint"/>
         <LaunchOffset value="0,1,30"/>
         <ImpactEffect value="YamatoGunTopbarDamage"/>
         <AmmoUnit value="HyperionYamatoSpecialWeapon"/>

@@ -2872,6 +2872,9 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="HyperionYamatoSpecialWeapon">
+        <Height value="30"/>
+    </CUnit>
     <CUnit id="Immortal">
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
