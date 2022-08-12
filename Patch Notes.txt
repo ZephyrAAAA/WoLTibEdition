@@ -13,21 +13,21 @@ Infantry Ultracaps now affects Marauder rockets
 Fixed shrike turret not spinning
 Orbital Supply Drop nerfed to 5/s income (600/min)
 Factories can now build tech labs on Outbreak
-*Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
+Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
 *Vanadium Research text is now correct
 *Ultracap research text is now correct
 Mercs Calldowns are now on the Spec Ops
 *All Mercenaries now say they're trained from the Topbar
 *Mercenaries no longer say they have a limit per mission
 *Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
-*Raynor now has a headache after doing a Zeratul Mission.
+Raynor now has a headache after doing a Zeratul Mission.
 *Added the Orbital Scan support power on the Engineering Bay, unlocked by Orbital Command.
 *Added the Nuclear Strike support power on the Spec Ops, unlocked by Orbital Command.
 *Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Command.
-*Added the Yamato Strike support power on the Fusion Core.
+Added the Yamato Strike support power on the Fusion Core.
 *Added the Improved Railguns upgrade on the Armoury.
 *Added the Improved Explosives upgrade on the Engineering Bay.
-*Imported the HOTS void ray
+Imported the HOTS void ray
 Immortal Hardened Shield removed, shield health doubled
 *Autogas is now Autoharvesting
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
@@ -79,7 +79,6 @@ Trains:
 Removed 1 of the starting depots
 Removed free vision from trains and kill teams.
 Added sensor towers to cover the area around your plateau.
-Added a starting supply depot.
 
 The Dig:
 Resources all converted, SCVs deleted, starting refinery placed
