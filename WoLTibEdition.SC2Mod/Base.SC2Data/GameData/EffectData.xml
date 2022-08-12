@@ -112,6 +112,9 @@
         <SpawnUnit value="DestructibleRock6x6"/>
         <SpawnRange value="0"/>
     </CEffectCreateUnit>
+    <CEffectDamage id="ConsumptionDamage">
+        <LeechFraction index="Life" value="2"/>
+    </CEffectDamage>
     <CEffectDamage id="DeathRecallD">
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
@@ -134,6 +137,7 @@
         <EffectArray value="DeathRecallD"/>
         <EffectArray value="DeathRecallMU"/>
         <EffectArray value="DeathRecallS"/>
+        <EffectArray value="SupercloakUnreveal"/>
     </CEffectSet>
     <CEffectTeleport id="DeathRecallT">
         <ValidatorArray value="IsVoidSeeker"/>
@@ -187,6 +191,11 @@
         <AreaArray Arc="59.9963" Radius="9" Effect="DetectorCone9AB"/>
         <SearchFlags index="CenterAtLaunch" value="1"/>
     </CEffectEnumArea>
+    <CEffectDamage id="ExplosiveCharges">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Amount value="5000"/>
+    </CEffectDamage>
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
     </CEffectDamage>
@@ -237,6 +246,9 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="LaserDrillTripodDamage">
         <ArmorReduction value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="MindBlast">
+        <Amount value="45"/>
     </CEffectDamage>
     <CEffectCreateHealer id="NanoRepair">
         <ValidatorArray index="0" value="LT3Markers"/>
@@ -1230,6 +1242,9 @@
     <CEffectCreatePersistent id="DummyEffect">
         <EditorCategories value=""/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="ToshU">
+        <Amount value="1000"/>
+    </CEffectDamage>
     <CEffectDamage id="TwinIbiksCannon">
         <Amount value="80"/>
     </CEffectDamage>

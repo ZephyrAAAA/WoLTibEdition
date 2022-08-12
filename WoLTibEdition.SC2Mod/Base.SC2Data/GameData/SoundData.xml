@@ -68,4 +68,10 @@
             <Subtitle value="Conversation//LineRoastBruta"/>
         </AssetArray>
     </CSound>
+    <CSound id="ExplosiveCharge" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\WidowMine_Pulse.wav" FacialGroup=""/>
+        <DupeHistoryCount value="3"/>
+        <Pitch value="6.000000,6.100000"/>
+    </CSound>
 </Catalog>

@@ -154,6 +154,13 @@
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ExplosiveCharges">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
+        <Range value="0.1"/>
+        <Period value="0.75"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
@@ -562,6 +569,15 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tosh">
+        <Tip value="Weapon/Tip/Sniper"/>
+        <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5"/>
+        <Range value="7"/>
+        <Period value="0.4"/>
+        <AttackType value="Chaos"/>
+        <Backswing value="0.25"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>

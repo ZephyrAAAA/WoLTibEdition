@@ -76,6 +76,17 @@
     <CActorSound id="BarracksLand">
         <On Terms="AbilMorph.*.Start; MorphTo Barracks2" Send="Create"/>
     </CActorSound>
+    <CActorSound id="ExplosiveChargeSound" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Abil.ExplosiveCharges.SourcePrepStart" Send="Create"/>
+        <Sound value="ExplosiveCharge"/>
+    </CActorSound>
+    <CActorModel id="ExplosiveCharges" parent="ModelAnimationStyleOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.ExplosiveCharges.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="SetScale 3.000000"/>
+        <Model value="TerranSmallTriggeredExplosion"/>
+    </CActorModel>
     <CActorSound id="HyperionTopbarYamatoChargeSound" parent="SoundContinuous">
         <On Terms="Effect.YamatoGunTopbarPersistent.Start" Send="Create"/>
         <On Terms="Effect.YamatoGunTopbarPersistent.Stop" Send="Destroy"/>
@@ -1710,6 +1721,13 @@
         <HostImpact Subject="_Missile" Actor="Find"/>
         <HostImpactSiteOps Ops="SOpAttachCenter"/>
     </CActorBeamSimple>
+    <!--                                                                                         -->
+    <!-- Tosh .................................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Tosh">
+        <On Terms="Abil.Obliterate.SourcePrepStart" Send="$Spell"/>
+        <On Terms="Abil.Obliterate.SourcePrepStop" Send="AnimClear Spell"/>
+    </CActorUnit>
     <CActorEventMacro id="UnloadDropAnim">
         <On Terms="AbilTransport.AirTransport.CargoUnload" Send="AnimBracketStop Unload"/>
         <On Terms="AbilTransport.AirTransport.TransportUnload" Send="AnimBracketStop Unload"/>

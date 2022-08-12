@@ -33,6 +33,11 @@
         <HotkeyAlias value="HyperionYamato5"/>
         <DefaultButtonLayout Column="4"/>
     </CButton>
+    <CButton id="SendWave">
+        <Icon value="Assets\Textures\inspiration_coop.dds"/>
+        <AlertIcon value="Assets\Textures\inspiration_coop.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
     <CButton id="Stone">
         <Icon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
         <AlertIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
