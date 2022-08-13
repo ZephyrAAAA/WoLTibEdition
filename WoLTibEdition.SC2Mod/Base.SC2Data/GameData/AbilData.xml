@@ -71,8 +71,8 @@
         <Flags index="Smart" value="1"/>
         <TargetFilters value="Ground,Structure,Visible;Player,Ally,Missile,Hidden,Invulnerable"/>
         <TargetSorts>
-            <SortArray value="TSPriority"/>
             <SortArray value="TSDistance"/>
+            <SortArray value="TSPriority"/>
         </TargetSorts>
         <Range value="0.1"/>
         <AutoCastRange value="8"/>
@@ -163,6 +163,12 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
+    <CAbilEffectTarget id="Snipe">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="20"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
@@ -436,16 +442,16 @@
         <FlagArray index="IgnoreUnitCost" value="1"/>
         <InfoArray index="Build1" Unit="BarracksTechLab" Time="2">
             <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="BuildTechLabBarracks" Requirements="UseTechReactorHide"/>
+            <Button DefaultButtonFace="BuildTechLabBarracks" Requirements="MonoTrackDestroyed"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="BarracksReactor" Time="50">
-            <Button Requirements="UseTechReactorHide"/>
+            <Button Requirements="MonoTrackDestroyed"/>
         </InfoArray>
         <InfoArray index="Build3" Unit="BarracksTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactorAI" Requirements="UseTechReactorAI"/>
+            <Button DefaultButtonFace="TechReactorAI" Requirements="MonoTrackBend90"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="BarracksTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactor" Requirements="UseTechReactor"/>
+            <Button DefaultButtonFace="TechReactor" Requirements="CharCrystalLarge"/>
         </InfoArray>
     </CAbilBuild>
     <CAbilMorphPlacement id="Barracks2Land" parent="TerranBuildingLand" unit="Barracks">
@@ -474,7 +480,7 @@
             <Unit value="ReaperSquad"/>
         </InfoArray>
         <InfoArray index="Train3" Time="20">
-            <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
+            <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="OilSplash"/>
             <Unit value="Ghost"/>
         </InfoArray>
         <InfoArray index="Train4" Time="6">
@@ -493,7 +499,7 @@
             <Unit value="FirebatSquad"/>
         </InfoArray>
         <InfoArray index="Train7" Time="50">
-            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps"/>
+            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="OilSplash"/>
             <Unit value="Spectre"/>
         </InfoArray>
         <Flags index="BypassFoodRestriction" value="1"/>
@@ -1070,16 +1076,16 @@
         <FlagArray index="IgnoreUnitCost" value="1"/>
         <InfoArray index="Build1" Unit="FactoryTechLab" Time="2">
             <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="BuildTechLabFactory" Requirements="UseTechReactorHide"/>
+            <Button DefaultButtonFace="BuildTechLabFactory" Requirements="MonoTrackDestroyed"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="FactoryReactor" Time="50">
-            <Button Requirements="UseTechReactorHide"/>
+            <Button Requirements="MonoTrackDestroyed"/>
         </InfoArray>
         <InfoArray index="Build3" Unit="FactoryTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactorAI" Requirements="UseTechReactorAI"/>
+            <Button DefaultButtonFace="TechReactorAI" Requirements="MonoTrackBend90"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="FactoryTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactor" Requirements="UseTechReactor"/>
+            <Button DefaultButtonFace="TechReactor" Requirements="CharCrystalLarge"/>
         </InfoArray>
     </CAbilBuild>
     <CAbilMorphPlacement id="Factory2Land" parent="TerranBuildingLand" unit="Factory">
@@ -1111,7 +1117,7 @@
             <Unit value="SiegeTank"/>
         </InfoArray>
         <InfoArray index="Train5" Time="60">
-            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmoryAndAttachedTechLabOrAttachedTechReactor"/>
+            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="Outhouse"/>
             <Unit value="Thor"/>
         </InfoArray>
         <InfoArray index="Train6" Time="8">
@@ -1365,16 +1371,16 @@
         <FlagArray index="IgnoreUnitCost" value="1"/>
         <InfoArray index="Build1" Unit="StarportTechLab" Time="2">
             <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="BuildTechLabStarport" Requirements="UseTechReactorHide"/>
+            <Button DefaultButtonFace="BuildTechLabStarport" Requirements="MonoTrackDestroyed"/>
         </InfoArray>
         <InfoArray index="Build2" Unit="StarportReactor" Time="50">
-            <Button Requirements="UseTechReactorHide"/>
+            <Button Requirements="MonoTrackDestroyed"/>
         </InfoArray>
         <InfoArray index="Build3" Unit="StarportTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactorAI" Requirements="UseTechReactorAI"/>
+            <Button DefaultButtonFace="TechReactorAI" Requirements="MonoTrackBend90"/>
         </InfoArray>
         <InfoArray index="Build4" Unit="StarportTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactor" Requirements="UseTechReactor"/>
+            <Button DefaultButtonFace="TechReactor" Requirements="CharCrystalLarge"/>
         </InfoArray>
     </CAbilBuild>
     <CAbilMorphPlacement id="Starport2Land" parent="TerranBuildingLand" unit="Starport">
@@ -1417,7 +1423,7 @@
             <Unit value="Hercules"/>
         </InfoArray>
         <InfoArray index="Train7" Time="60">
-            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="BuildScienceVessel"/>
+            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="DecalProtoss"/>
             <Unit value="ScienceVessel"/>
         </InfoArray>
         <InfoArray index="Train8" Time="50">

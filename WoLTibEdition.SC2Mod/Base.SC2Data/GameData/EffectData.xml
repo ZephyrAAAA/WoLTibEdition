@@ -591,6 +591,9 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="35"/>
     </CEffectDamage>
+    <CEffectDamage id="SnipeDamage">
+        <Amount value="170"/>
+    </CEffectDamage>
     <CEffectDamage id="SpartanCompanyAU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="22"/>

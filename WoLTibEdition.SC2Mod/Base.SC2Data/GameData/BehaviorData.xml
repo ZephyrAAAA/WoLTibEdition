@@ -517,7 +517,7 @@
         <ShareFilters index="DamageDealt" value="-;Player,Ally,Neutral,Enemy,Hallucination"/>
         <SharedXPMaxCount index="DamageDealt" value="0"/>
         <SharedXPMaxCount index="Kills" value="0"/>
-        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy1Iterate">
+        <VeterancyLevelArray MinVeterancyXP="4000" LevelGainEffect="SquadVeterancy1Iterate">
             <Modification>
                 <DamageDealtFraction index="Spell" value="0.1"/>
                 <DamageDealtFraction index="Melee" value="0.1"/>
@@ -527,7 +527,7 @@
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy1Iterate">
+        <VeterancyLevelArray MinVeterancyXP="4000" LevelGainEffect="SquadVeterancy1Iterate">
             <Modification>
                 <DamageDealtFraction index="Spell" value="0.1"/>
                 <DamageDealtFraction index="Melee" value="0.1"/>
@@ -537,7 +537,7 @@
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy2Iterate">
+        <VeterancyLevelArray MinVeterancyXP="4000" LevelGainEffect="SquadVeterancy2Iterate">
             <Modification>
                 <AdditiveAttackSpeedFactor value="1"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
@@ -546,6 +546,7 @@
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.3"/>
                 <VitalRegenArray index="Life" value="5"/>
                 <VitalRegenMultiplier index="Energy" value="1"/>
+                <RateMultiplierArray index="Cooldown" value="2"/>
             </Modification>
         </VeterancyLevelArray>
         <XPFraction index="Kills" value="0"/>

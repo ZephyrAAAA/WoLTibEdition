@@ -169,15 +169,9 @@
         </Element>
         <Element Type="Param" Id="11B39B01">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
-            <ExpressionType Type="fixed"/>
-            <ExpressionText>~A~/2</ExpressionText>
-            <ExpressionParam Type="Param" Library="3B48F5E9" Id="779FC0FA"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="2B0E2A63"/>
         </Element>
-        <Element Type="Param" Id="779FC0FA">
-            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="D5EE0C7C"/>
-            <ExpressionCode Value="A"/>
-        </Element>
-        <Element Type="FunctionCall" Id="D5EE0C7C">
+        <Element Type="FunctionCall" Id="2B0E2A63">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000098"/>
         </Element>
         <Element Type="FunctionCall" Id="90ABB105">
@@ -343,6 +337,8 @@
         </Element>
     </Library>
     <Root>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>
     </Root>
     <Element Type="CustomScript" Id="E9EBA397">
