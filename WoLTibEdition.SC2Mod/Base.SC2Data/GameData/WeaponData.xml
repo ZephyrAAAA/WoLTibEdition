@@ -254,6 +254,13 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponStrafe id="InterceptorBeam">
+        <AttackType value="Magic"/>
+    </CWeaponStrafe>
+    <CWeaponLegacy id="InterceptorLaunch">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="JavelinMissileLaunchers">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
