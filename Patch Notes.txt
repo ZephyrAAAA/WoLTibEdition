@@ -29,6 +29,7 @@ Added the Yamato Strike support power on the Fusion Core.
 *Added the Improved Explosives upgrade on the Engineering Bay.
 Imported the HOTS void ray
 Immortal Hardened Shield removed, shield health doubled
+Sentry Guardian Shield now gives 30% damage resist
 *Autogas is now Autoharvesting
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 *Hercules-> Cellular Reactor- Also increases energy regen
