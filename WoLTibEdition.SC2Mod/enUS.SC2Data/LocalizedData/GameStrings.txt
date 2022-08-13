@@ -23,6 +23,7 @@ Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
 Abil/Name/DeathRecall=Death Recall
 Abil/Name/DevilDogSquad=Devil Dog Squad
 Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
+Abil/Name/ExplosiveCharges=Explosive Charges
 Abil/Name/Factory2AddOns=AddOns
 Abil/Name/Factory2Land=Land
 Abil/Name/Factory2LiftOff=Lift Off
@@ -48,6 +49,7 @@ Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
 Abil/Name/RepairDroneHeal=Repair
 Abil/Name/ResetRally=Reset Rally
+Abil/Name/SendWave=Send Wave
 Abil/Name/SquadStimpack=Squad - Stimpack
 Abil/Name/Starport2AddOns=AddOns
 Abil/Name/Starport2Land=Land
@@ -66,6 +68,7 @@ Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/Depowered=Depowered
 Behavior/Name/HideInTheShadows=Hide In The Shadows
 Behavior/Name/PowerCheck=Power Check
+Behavior/Name/PsiSight=Psi Sight
 Behavior/Name/SquadAttack=Squad Attack
 Behavior/Name/SquadBunkerUnload=Squad Bunker Unload
 Behavior/Name/SquadUnit=Squad Unit
@@ -74,6 +77,8 @@ Behavior/Name/SquadVeterancy2=Squad Veterancy2
 Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
 Behavior/Name/Veterancy=Veterancy
 Behavior/Name/ZeratulHoldFire=Hold Fire
+Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 30%.
+Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/AstralProjection=Astral Projection
@@ -96,6 +101,7 @@ Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
 Button/Name/Sell=Sell
+Button/Name/SendWave=Send Wave
 Button/Name/Stone=Train Stone
 Button/Name/VehicleMercenaries4=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
@@ -142,6 +148,7 @@ Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="f
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/Sell=Sells selected building for a refund
+Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
 Button/Tooltip/Starport2Flying=Starport must land to start unit production.
@@ -315,6 +322,7 @@ Effect/Name/DropSiegeBreakers=Drop Siege Breakers
 Effect/Name/DropSpartanCompany=Drop Spartan Company
 Effect/Name/DropWarPigs=Drop War Pigs
 Effect/Name/DummyEffect=Dummy Effect
+Effect/Name/ExplosiveCharges=Explosive Charges
 Effect/Name/HailstormLauncherLM=Hailstorm Launcher
 Effect/Name/HailstormLauncherLMMerc=Hailstorm Launcher
 Effect/Name/HailstormLauncherU=Hailstorm Launcher
@@ -471,7 +479,7 @@ Unit/Name/WarPigSquad=War Pig Squad
 Unit/Tip/Air=<c val="FFBF00">Light Air</c> armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
-Unit/Tip/Infantry=
+Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
@@ -491,6 +499,7 @@ Weapon/Name/ATALaserBattery2=ATA Laser Battery
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery
 Weapon/Name/ConcussiveGrenades=Concussive Grenades
 Weapon/Name/DevilDogSquad=Devil Dog Squad
+Weapon/Name/ExplosiveCharges=Explosive Charges
 Weapon/Name/FirebatSquad=Firebat Squad
 Weapon/Name/GhostSquad=Ghost Squad
 Weapon/Name/HailstormLauncher=Hailstorm Launcher

@@ -900,12 +900,12 @@
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
             <LayoutButtons Face="StopBunker" Type="AbilCmd" AbilCmd="BunkerStop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="ShrikeTurretResearched" Row="1" Column="2"/>
+            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="CharCurtain90E" Row="1" Column="2"/>
             <LayoutButtons>
                 <Face value="FortifiedBunker"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255"/>
-                <Requirements value="FortifiedCarapace"/>
+                <Requirements value="Decal"/>
                 <Row value="1"/>
                 <Column value="2"/>
             </LayoutButtons>
@@ -913,7 +913,7 @@
                 <Face value="NeoSteelFrame"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255"/>
-                <Requirements value="UseNeoSteelFrame"/>
+                <Requirements value="MetalWallDiagonal"/>
                 <Row value="1"/>
                 <Column value="1"/>
             </LayoutButtons>
@@ -921,7 +921,7 @@
                 <Face value="ProjectileAccelerators"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255"/>
-                <Requirements value="UseProjectileAccelerators"/>
+                <Requirements value="MiningBot"/>
                 <Row value="1"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -1919,7 +1919,7 @@
                 <Face value="ReinforcedSuperstructure"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255,255"/>
-                <Requirements value="UseReinforcedSuperstructure"/>
+                <Requirements value="MonlythCrystals"/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -1927,7 +1927,7 @@
                 <Face value="HellstormMissileBatteries"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255,255"/>
-                <Requirements value="UseHailstormMissilePods"/>
+                <Requirements value="MarSaraTreeDeath"/>
                 <Row value="2"/>
                 <Column value="1"/>
             </LayoutButtons>
@@ -2507,6 +2507,7 @@
         <LifeMax value="300"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <BehaviorArray Link="Veterancy"/>
+        <BehaviorArray Link="CommandoSniperResist"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3471,7 +3472,7 @@
                 <Face value="ReinforcedSuperstructure"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255"/>
-                <Requirements value="UseReinforcedSuperstructure"/>
+                <Requirements value="MonlythCrystals"/>
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -3479,7 +3480,7 @@
                 <Face value="HellstormMissileBatteries"/>
                 <Type value="Passive"/>
                 <AbilCmd value="255"/>
-                <Requirements value="UseHailstormMissilePods"/>
+                <Requirements value="MarSaraTreeDeath"/>
                 <Row value="2"/>
                 <Column value="1"/>
             </LayoutButtons>
@@ -5530,6 +5531,10 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="Thor">
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+    </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5621,7 +5626,7 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="Charge" Type="AbilCmd" AbilCmd="BioMode,On" Row="1" Column="1"/>
             <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="1"/>
-            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="2" Column="2"/>
+            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="CaveEntrance" Row="2" Column="2"/>
         </CardLayouts>
         <LifeStart value="4"/>
         <LifeMax value="4"/>
@@ -5711,6 +5716,27 @@
     <CUnit id="Tosh">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <FlagArray index="Cloaked" value="0"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="1"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <EnergyRegenRate value="2"/>
+        <AbilArray Link="Obliterate"/>
+        <AbilArray Link="SendWave"/>
+        <AbilArray Link="ExplosiveCharges"/>
+        <BehaviorArray Link="Veterancy"/>
+        <BehaviorArray Link="CommandoSniperResist"/>
+        <BehaviorArray Link="OutOfCombatRegenTosh"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" Face="MindBlast" Type="AbilCmd" AbilCmd="MindBlast,Execute" Row="2"/>
+            <LayoutButtons index="6" Face="VoodooShield" AbilCmd="VoodooShield,Execute" Column="1"/>
+            <LayoutButtons index="7" Face="Consumption" AbilCmd="Consumption,Execute" Column="2"/>
+            <LayoutButtons index="8" Face="HeroNukeCalldown" AbilCmd="HeroNuclearStrike,Execute" Column="3"/>
+            <LayoutButtons index="9" Face="Obliterate" AbilCmd="Obliterate,Execute" Row="1" Column="0"/>
+        </CardLayouts>
+        <EquipmentArray Weapon="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="TrafficSignal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

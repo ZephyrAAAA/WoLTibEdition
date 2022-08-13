@@ -51,6 +51,10 @@
     <CValidatorUnitCompareBehaviorCount id="NotSupercloaked">
         <Behavior value="HideInTheShadows"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareDamageDealtTime id="ToshHasFired">
+        <Compare value="GE"/>
+        <Value value="10"/>
+    </CValidatorUnitCompareDamageDealtTime>
     <CValidatorPlayerRequirement id="TriLithiumPurchased">
         <Find value="1"/>
         <Value value="TriLithiumResearched"/>

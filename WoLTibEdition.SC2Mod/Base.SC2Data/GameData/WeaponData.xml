@@ -127,6 +127,8 @@
     <CWeaponLegacy id="DRBattlecruiserA">
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserFakeA">
         <RandomDelayMin value="-0.125"/>
@@ -137,6 +139,16 @@
     <CWeaponLegacy id="DRBattlecruiserG">
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRCannonsA">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRCannonsG">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogFlameThrower">
         <Range value="4"/>
@@ -153,6 +165,17 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DuskWingBanshee">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ExplosiveCharges">
+        <EditorCategories value=""/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
+        <Range value="0.1"/>
+        <Period value="0.75"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">
         <AttackType value="Siege"/>
@@ -228,6 +251,10 @@
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridC">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="JavelinMissileLaunchers">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
@@ -560,8 +587,21 @@
     <CWeaponLegacy id="ThermalLances">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ThorsHammer">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tosh">
+        <Tip value="Weapon/Tip/Sniper"/>
+        <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="5"/>
+        <Range value="7"/>
+        <Period value="0.4"/>
+        <AttackType value="Chaos"/>
+        <Backswing value="0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>

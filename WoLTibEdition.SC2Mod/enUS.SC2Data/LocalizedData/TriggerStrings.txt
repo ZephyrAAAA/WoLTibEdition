@@ -2,3 +2,5 @@
 CustomScript/Name/lib_3B48F5E9_8B5EDD23=Imports
 FunctionDef/Name/lib_3B48F5E9_54F2C3F5=DisableTopBar
 Library/Name/3B48F5E9=WoLTibLib
+Trigger/Name/lib_3B48F5E9_B0684CF0=Commando EXP
+Variable/Name/lib_3B48F5E9_1ADBB68B=XP

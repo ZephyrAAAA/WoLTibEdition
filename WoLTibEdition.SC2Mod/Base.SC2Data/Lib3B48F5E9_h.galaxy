@@ -5,3 +5,6 @@ include "TriggerLibs/natives"
 //--------------------------------------------------------------------------------------------------
 // Function Declarations
 
+// Trigger Declarations
+trigger lib3B48F5E9_gt_CommandoEXP;
+

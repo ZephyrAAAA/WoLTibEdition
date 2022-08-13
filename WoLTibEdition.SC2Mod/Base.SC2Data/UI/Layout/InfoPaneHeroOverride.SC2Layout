@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+	<Frame type="InfoPanel" name="GameUI/UIContainer/ConsoleUIContainer" file="GameUI">
+	   <Frame type="SelectionUnitStatusPanel" name="UnitSelection">
+		  <Anchor relative="$parent" />
+		  <StateGroup name="UnitSelected">
+			 <DefaultState val="NoSelectionOrInvalidUnit" />
+			 <State name="NoSelectionOrInvalidUnit">
+				<Action type="SetState" frame="$this" group="PaneState" state="Default" />
+			 </State>
+			 <State name="GroundUnit">
+			   <When type="Property" frame="$this/UnitStatusFrame0" operator="NotEqual" Unit="Homeworld"/>
+			   <When type="Property" frame="$this/UnitStatusFrame0" operator="NotEqual" Unit="Planet"/>
+			   <When type="Property" frame="$parent/InfoPanel/InfoPaneHero" Visible="True" />
+			   <Action type="SetState" frame="$this" group="PaneState" state="Custom" />
+			   <Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneUnit/ExperienceBar" Visible="True" />
+			 </State>
+			 <State name="Homeworld">
+			   <When type="Property" frame="$this/UnitStatusFrame0" operator="Equal" Unit="Homeworld"/>
+			   <When type="Property" frame="$parent/InfoPanel/InfoPaneHero" Visible="True" />
+			   <Action type="SetState" frame="$this" group="PaneState" state="Custom" />
+			   <Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneUnit/AttributeLabel1" Visible="True" />
+			 </State>
+			 <State name="Planet">
+			   <When type="Property" frame="$this/UnitStatusFrame0" operator="Equal" Unit="Planet"/>
+			   <When type="Property" frame="$parent/InfoPanel/InfoPaneHero" Visible="True" />
+			   <Action type="SetState" frame="$this" group="PaneState" state="Custom" />
+			   <Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneUnit/AttributeLabel1" Visible="True" />
+			 </State>
+		  </StateGroup>
+		  <StateGroup name="PaneState">
+			 <State name="Default" />
+			 <State name="Custom">
+				<Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneHero" Alpha="0" />
+				<Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneHero/WeaponIcon" AcceptsMouse="False" />
+				<Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneHero/ArmorIcon" AcceptsMouse="False" />
+				<Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneUnit" Visible="True" />
+				<Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneUnit" RenderPriority="513" />
+				<Action type="SetAnchor" frame="$parent/InfoPanel/InfoPaneUnit/SubtitleLabel" side="Top" relative="$parent/NameLabel" pos="Max" offset="25"/>
+				<!-- <Action type="SetProperty" frame="$parent/InfoPanel/InfoPaneUnit/InfoLabel" Alpha="0" /> -->
+			 </State>
+		  </StateGroup>
+		  <Frame type="UnitStatusFrame" name="UnitStatusFrame0">
+			 <Anchor relative="$parent" />
+		  </Frame>
+	   </Frame>
+	   <Frame type="InfoPanel" Name="InfoPanel">
+		  <Frame type="Frame" name="InfoPaneUnit">
+			 <Frame type="ProgressBar" name="ExperienceBar">
+				<Anchor side="Top" relative="$parent/NameLabel" pos="Max" offset="2" />
+				<Anchor side="Left" relative="$parent/NameLabel" pos="Mid" offset="0" />
+				<Anchor side="Right" relative="$parent/NameLabel" pos="Mid" offset="0" />
+				<Texture val="@@@UI/ProgressQueueLarge" />
+				<MinValue val="{$parent/$parent/InfoPaneHero/ExperienceBar/@MinValue}" />
+				<MaxValue val="{$parent/$parent/InfoPaneHero/ExperienceBar/@MaxValue}" />
+				<Value val="{$parent/$parent/InfoPaneHero/ExperienceBar/@Value}" />
+				<Color val="###StandardProgressBorder" />
+				<ColorStep val="###StandardProgressFill" />
+				<Width val="300" />
+				<Height val="26" />
+				<Tooltip val="{$parent/$parent/InfoPaneHero/ExperienceBar/@Tooltip}" />
+				<Visible val="False" />
+			 </Frame>
+			 <!--
+			 <Frame type="Label" name="FakeInfoLabel">
+			    <Anchor relative="$parent/InfoLabel" />
+			    <Style val="{$parent/InfoLabel/@Style}" />
+			    <Visible val="{$parent/ExperienceBar/@Visible}" />
+			    <Text val="{$parent/$parent/InfoPaneHero/InfoLabel/@Text}" />
+			 </Frame>
+			 -->
+			 <Frame type="Label" name="ExperienceLabel">
+				<Anchor side="Top" relative="$parent/ExperienceBar" pos="Min" offset="2" />
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0" />
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0" />
+				<Style val="@@@InfoPaneHeroLevel" />
+				<Options val="NoWrapping" />
+				<RenderPriority val="520" />
+				<Text val="{$parent/$parent/InfoPaneHero/ExperienceLabel/@Text}" />
+				<Visible val="{$parent/ExperienceBar/@Visible}" />
+			 </Frame>
+			 <Frame type="Label" name="AttributeLabel1">
+				<Style val="@@@InfoPaneHeroAttribute"/>
+				<Anchor side="Top" relative="$parent/ExperienceBar" pos="min" offset="0"/>
+				<Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+				<Text val="{$parent/$parent/InfoPaneHero/AttributeLabel1/@Text}" />
+				<Tooltip val="{$parent/$parent/InfoPaneHero/AttributeLabel1/@Tooltip}" />
+				<Visible val="False" />
+			 </Frame>
+		  </Frame>
+	   </Frame>
+	</Frame>
+</Desc>

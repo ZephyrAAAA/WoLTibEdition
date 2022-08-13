@@ -42,6 +42,20 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InitialEffect value="CollapsibleRockTowerCPPurifier02"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CommandoSniperResist">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Minimum="50" ModifyFraction="0.15">
+            <Chance value="1"/>
+            <AttackType index="Spell" value="0"/>
+            <AttackType index="Normal" value="0"/>
+            <AttackType index="Pierce" value="0"/>
+            <AttackType index="Siege" value="0"/>
+            <AttackType index="Magic" value="0"/>
+            <AttackType index="Hero" value="0"/>
+            <AttackType index="None" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ConstructStop">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -128,6 +142,11 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianShield">
+        <DamageResponse ModifyFraction="0.7">
+            <ModifyAmount value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="HideInTheShadows">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar-color.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -163,6 +182,17 @@
             </Modification>
         </PowerStageArray>
     </CBehaviorPowerUser>
+    <CBehaviorBuff id="OutOfCombatRegenTosh">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="StetmannOutOfCombat"/>
+        <DisableValidatorArray value="NotMaxEnergyOrNotMaxHP"/>
+        <DisableValidatorArray value="ToshHasFired"/>
+        <Modification>
+            <VitalRegenArray index="Energy" value="15"/>
+            <RateMultiplierArray index="Cooldown" value="15"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PerditionTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -214,6 +244,14 @@
     <CBehaviorBuff id="PrecursorMerc">
         <InitialEffect value="MercSquadDropDelay"/>
         <FinalEffect value="RemovePrecursorMercIterate"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiSight">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-techupgrade-terran-ocularimplants.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification SightBonus="3">
+            <StateFlags index="SuppressUnitUseLineOfSight" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
@@ -479,28 +517,39 @@
         <ShareFilters index="DamageDealt" value="-;Player,Ally,Neutral,Enemy,Hallucination"/>
         <SharedXPMaxCount index="DamageDealt" value="0"/>
         <SharedXPMaxCount index="Kills" value="0"/>
-        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy1Iterate">
+        <VeterancyLevelArray MinVeterancyXP="4000" LevelGainEffect="SquadVeterancy1Iterate">
             <Modification>
+                <DamageDealtFraction index="Spell" value="0.1"/>
+                <DamageDealtFraction index="Melee" value="0.1"/>
                 <DamageDealtFraction index="Ranged" value="0.1"/>
+                <DamageDealtFraction index="Splash" value="0.1"/>
+                <DamageDealtFraction index="NoProc" value="0.1"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy1Iterate">
+        <VeterancyLevelArray MinVeterancyXP="4000" LevelGainEffect="SquadVeterancy1Iterate">
             <Modification>
+                <DamageDealtFraction index="Spell" value="0.1"/>
+                <DamageDealtFraction index="Melee" value="0.1"/>
                 <DamageDealtFraction index="Ranged" value="0.1"/>
+                <DamageDealtFraction index="Splash" value="0.1"/>
+                <DamageDealtFraction index="NoProc" value="0.1"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
-        <VeterancyLevelArray MinVeterancyXP="2000" LevelGainEffect="SquadVeterancy2Iterate">
+        <VeterancyLevelArray MinVeterancyXP="4000" LevelGainEffect="SquadVeterancy2Iterate">
             <Modification>
                 <AdditiveAttackSpeedFactor value="1"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Life" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Shields" value="0"/>
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.3"/>
-                <VitalRegenArray index="Life" value="1"/>
+                <VitalRegenArray index="Life" value="5"/>
+                <VitalRegenMultiplier index="Energy" value="1"/>
+                <RateMultiplierArray index="Cooldown" value="2"/>
             </Modification>
         </VeterancyLevelArray>
+        <XPFraction index="Kills" value="0"/>
     </CBehaviorVeterancy>
     <CBehaviorBuff id="ZeratulHoldFire">
         <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
