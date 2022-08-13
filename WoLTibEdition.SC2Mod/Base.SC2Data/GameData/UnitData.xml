@@ -2007,6 +2007,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="0" Face="Attack" AbilCmd="attack,Execute"/>
         </CardLayouts>
+        <Food value="-200"/>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
