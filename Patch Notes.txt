@@ -34,6 +34,7 @@ Immortal Hardened Shield removed, shield health doubled
 *Hercules-> Cellular Reactor- Also increases energy regen
 *Hi-Sec now gives defenses 15% attack speed, and costs 2k.
 *Ultras, Colossi, and Thors now crush infrantry they walk over.
+Science Vessel heals 5/s, takes 1e/5, up to 3 science vessels can stack.
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
