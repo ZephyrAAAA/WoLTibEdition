@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CSound id="MengskCommander_NuclearAnnihilationUsed" parent="ACVO_Pings">
+        <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed00.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed01.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed02.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed03.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed04.ogg" FacialGroup=""/>
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="NuclearAnnihilation_NukeDropWhistle" parent="Combat">
+        <AssetArray File="Assets\Sounds\Griffin_Bomb_Whistle_01.wav" FacialGroup=""/>
+        <DupeDestroyCount value="2"/>
+        <DupeMuteCount value="2"/>
+        <Pitch value="-3.000000,1.000000"/>
+        <Spread value="15.000000"/>
+        <Volume value="-15.000000,-12.000000"/>
+    </CSound>
+    <CSound id="NuclearAnnihilation_SmallNukeDropWhistle" parent="Combat">
+        <AssetArray File="Assets\Sounds\Mengsk_ExpStrike_BombWhistle_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mengsk_ExpStrike_BombWhistle_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mengsk_ExpStrike_BombWhistle_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mengsk_ExpStrike_BombWhistle_04.wav" Pitch="-6.000000,-6.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mengsk_ExpStrike_BombWhistle_05.wav" Pitch="-2.000000,-2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Mengsk_ExpStrike_BombWhistle_08.wav" FacialGroup=""/>
+        <Chance value="35"/>
+        <Pitch value="-4.000000,0.000000"/>
+        <Volume value="-12.000000,-8.000000"/>
+    </CSound>
+    <CSound id="NukeBig_Mengsk_Explode" parent="Death">
+        <AssetArray File="Assets\Sounds\Nuke_Explo_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nuke_Explo_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nuke_Explo_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nuke_Explo_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Nuke_Explo_06.wav" FacialGroup=""/>
+        <Pitch value="-2.000000,0.000000"/>
+        <Select value="Random"/>
+        <SpeakerMix index="LFE" value="0.250000"/>
+        <Spread value="15.000000"/>
+        <SustainFade index="1" Time="1500"/>
+        <Volume value="-1.000000,-1.000000"/>
+    </CSound>
+    <CSound id="NukeSmall_Mengsk_Explode" parent="Death">
+        <AssetArray File="Assets\Sounds\Explo_Lrg_Distant_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Explo_Lrg_Distant_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Colossus_Explode_Large_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Colossus_Explode_Large_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Colossus_Explode_Large_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Colossus_Explode_Large_04.wav" FacialGroup=""/>
+        <AssetArray>
+            <File value="Assets\Sounds\Mengsk_ExpStrike_Explo_RockHeavy.wav"/>
+            <Pitch value="3.000000,3.000000"/>
+            <Volume value="-2.000000,-2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <DupeMuteCount value="5"/>
+        <Pitch value="-2.000000,1.000000"/>
+        <Select value="Random"/>
+        <SpeakerMix index="LFE" value="0.100000"/>
+        <Spread value="15.000000"/>
+        <SustainFade index="1" Time="1500"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
     <CSound id="RailGun_Impact" parent="Combat">
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="Assets\Sounds\Thrasher_Missile_Impact_01.wav" FacialGroup=""/>
@@ -73,5 +135,25 @@
         <AssetArray File="Assets\Sounds\WidowMine_Pulse.wav" FacialGroup=""/>
         <DupeHistoryCount value="3"/>
         <Pitch value="6.000000,6.100000"/>
+    </CSound>
+    <CSound id="acObj_Stone_2291" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02291">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="acObj_Stone_2292" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02292">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="acObj_Stone_2293" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02293">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="acObj_Stone_2301" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02301">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+    <CSound id="acObj_Stone_2302" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02302">
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
     </CSound>
 </Catalog>

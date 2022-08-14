@@ -2,6 +2,10 @@
 <Catalog>
     <CGame id="Dflt">
         <FormationSeparationFactor value="4.5"/>
+        <AttackArmorTable index="Spell">
+            <ArmorFactor index="Hero" value="1"/>
+            <ArmorFactor index="Divine" value="1"/>
+        </AttackArmorTable>
         <AttackArmorTable index="Normal" SupportedFilters="-;-">
             <ArmorFactor index="Medium" value="0.5"/>
             <ArmorFactor index="Large" value="0.25"/>

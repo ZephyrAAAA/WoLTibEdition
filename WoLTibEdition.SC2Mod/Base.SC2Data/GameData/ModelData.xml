@@ -24,6 +24,58 @@
         <Model value="Assets\Effects\Glaze\Glaze_BlackDeath_Coop\Glaze_BlackDeath_Coop.m3"/>
         <EditorCategories value=""/>
     </CModel>
+    <CModel id="NuclearAnnihilationMengskBigNukeDrop" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\NukeFalling\NukeFalling.m3"/>
+        <AnimSpeed value="0.260000"/>
+        <EditorCategories value="Race:Terran"/>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="Mengsk_BigNuke_Drop"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Attachment value="Ref_Head"/>
+            <Payload value="Mengsk_BigNuke_Drop"/>
+        </Events>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="NuclearAnnihilationMengskBigNukeExplode" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\Nuke\Nuke.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="NukeBig_Mengsk_FireCloud"/>
+            <Type value="Sound"/>
+            <Time value="0.343000"/>
+            <Payload value="NukeBig_Mengsk_FireCloud"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="NukeBig_Mengsk_FireCloud_Sweet"/>
+            <Type value="Sound"/>
+            <Time value="1.105000"/>
+            <Payload value="NukeBig_Mengsk_FireCloud_Sweet"/>
+        </Events>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="1.700000,1.700000,1.700000"/>
+        <ScaleMin value="1.700000,1.700000,1.700000"/>
+    </CModel>
+    <CModel id="NuclearAnnihilationMengskSmallNukeDrop" parent="OneShotSpellFX">
+        <Model value="Assets\COOP\Mengsk\Effects\Ghost_Mengsk_COOP_MiniNuke_Land\Ghost_Mengsk_COOP_MiniNuke_Land.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="0.500000,0.500000,1.000000"/>
+        <ScaleMin value="0.500000,0.500000,1.000000"/>
+    </CModel>
+    <CModel id="NuclearAnnihilationMengskSmallNukeExplode" parent="OneShotSpellFX">
+        <Model value="Assets\COOP\Mengsk\Effects\Ghost_Mengsk_COOP_MiniNuke_Impact\Ghost_Mengsk_COOP_MiniNuke_Impact.m3"/>
+        <AnimSpeed value="2.000000"/>
+        <EditorCategories value="Race:Terran"/>
+        <RadiusLoose value="1.000000"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
     <CModel id="Purifier_Collapsible_Rock_Tower" parent="Doodad">
         <Model value="Assets\Buildings\Neutral\Purifier_Collapsible_Rock_Tower\Purifier_Collapsible_Rock_Tower.m3"/>
         <Events>

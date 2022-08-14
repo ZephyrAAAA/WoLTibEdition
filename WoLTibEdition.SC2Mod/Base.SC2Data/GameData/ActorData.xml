@@ -397,11 +397,11 @@
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo CommandCenter2Flying" Target="TerranPlayerTrophy" Send="Signal DestroyFlag"/>
         <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2Flying; MorphTo CommandCenter2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
         <On Terms="UnitBirth.CommandCenter2; PlayerHasTrophy" Send="Create TerranPlayerTrophy"/>
-        <On Terms="UnitBirth.CommandCenter2.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
-        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenterReactor"/>
+        <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenterReactor"/>
         <On Terms="UnitBirth.CommandCenter2.Suppressed; ValidateUnit CommandCenterReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
-        <On Terms="UnitBirth.CommandCenter2Flying.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
-        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenter2Reactor"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenterReactor"/>
+        <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenterReactor"/>
         <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
         <On Terms="ActorCreation; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
         <On Terms="UnitConstruction.*.Start; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply Jump"/>
@@ -1060,6 +1060,33 @@
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachOverhead"/>
         <Sound value="Medivac_HealLoop"/>
+    </CActorSound>
+    <CActorModel id="NuclearAnnihilationMengskBigNukeDrop">
+        <On Terms="Effect.NuclearAnnihilationMengskBigNukeDropDelayCP.Initial; At Effect" Send="Create"/>
+        <On Terms="ActorCreation" Send="$Birth"/>
+        <On Terms="AnimDone; AnimName Birth" Send="Destroy"/>
+        <HostSiteOps Ops="SOpTargetPointStationary SOpShadow"/>
+    </CActorModel>
+    <CActorSquib id="NuclearAnnihilationMengskBigNukeExplode">
+        <On Terms="Effect.NuclearAnnihilationMengskBigNukeDamageSearch.Start; At Effect" Send="Create"/>
+        <HostSiteOps Ops="SOpTargetPointStationary SOpShadow"/>
+        <Map index="None" Sound="NukeBig_Mengsk_Explode"/>
+    </CActorSquib>
+    <CActorModel id="NuclearAnnihilationMengskSmallNukeDrop">
+        <On Terms="Effect.NuclearAnnihilationMengskSmallNukeDropDelayCP.Start; At Effect" Send="Create"/>
+        <On Terms="ActorCreation" Send="$Birth"/>
+        <On Terms="AnimDone; AnimName Birth" Send="Destroy"/>
+        <HostSiteOps Ops="SOpTargetPointStationary SOpShadow"/>
+    </CActorModel>
+    <CActorSquib id="NuclearAnnihilationMengskSmallNukeExplode">
+        <On Terms="Effect.NuclearAnnihilationMengskSmallNukeDamageSearch.Start; At Effect" Send="Create"/>
+        <HostSiteOps Ops="SOpTargetPointStationary SOpShadow"/>
+        <Map index="None" Sound="NukeSmall_Mengsk_Explode"/>
+    </CActorSquib>
+    <CActorSound id="NuclearAnnihilation_NukeDropWhistle_AS" parent="SoundOneShot">
+        <On Terms="Effect.NuclearAnnihilationMengskSmallNukeDropDelayCP.Start; At Effect" Send="Create"/>
+        <Sound value="NuclearAnnihilation_NukeDropWhistle"/>
+        <Layers Sound="NuclearAnnihilation_SmallNukeDropWhistle"/>
     </CActorSound>
     <CActorUnit id="OrbitalCommand2" parent="TerranBuildingFlyerEx" unitName="OrbitalCommand2">
         <Macros value="MacroTownhallDeco_Terran"/>
