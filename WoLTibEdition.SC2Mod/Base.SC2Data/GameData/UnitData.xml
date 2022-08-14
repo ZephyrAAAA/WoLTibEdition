@@ -3855,6 +3855,8 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="-12"/>
         <BehaviorArray Link="PowerCheck"/>
+        <BehaviorArray Link="NeedsBuildRadius"/>
+        <CostResource index="Minerals" value="375"/>
     </CUnit>
     <CUnit id="PerditionTurretACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3867,6 +3869,10 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="-12"/>
         <BehaviorArray Link="PowerCheck"/>
+        <BehaviorArray Link="NeedsBuildRadius"/>
+        <CostResource index="Minerals" value="375"/>
+        <Footprint value="Footprint2x2Underground"/>
+        <PlacementFootprint value="Footprint2x2Underground"/>
     </CUnit>
     <CUnit id="PhoenixAiurACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
