@@ -122,6 +122,7 @@ Mira starts with 2 SCVs instead of 8.
 Move'd Orlan's CCs closer to the nodes they mine from
 Getting the second bonus now gives you Vulture Cerberus Mine, and a message saying so
 Getting the third bonus now gives you Vulture Nanofabricator, and a message saying so
+Added a "Dominion Arrives" timer. When they do, they bombard your main, and give Orlan a deathball to kill you with.
 
 Whispers of Doom:
 Zeratul has 100/300, instead of 300/100
