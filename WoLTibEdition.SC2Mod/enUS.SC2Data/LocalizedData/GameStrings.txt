@@ -144,6 +144,7 @@ Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and rece
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -160,6 +161,7 @@ Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene G
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
+Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 20% damage resist.
 Button/Tooltip/VehicleMercenaries4=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
@@ -221,7 +223,7 @@ ConversationState/Tech/Tech2_Vulture_2=Replenishable Magazine
 ConversationState/Tech/Tech2_Wraith_1=Tomahawk Power Cells
 ConversationState/Tech/Tech2_Wraith_2=Displacement Field
 ConversationState/Tech/Tech_Bunker_1/Info/Description=<s val="TechSummary">- Bunkers gain an automated Shrike Turret<n/><n/><s val="TechDescription">Placing an automated turret on top of bunkers allows them to provide more than just protection to the infantry inside, able to provide additional Rifle firepower.</s>
-ConversationState/Tech/Tech_Bunker_2/Info/Description=<s val="TechSummary">- Bunkered units gain +1 range.<n/>-Also affects the Shrike Turret.</s><n/><n/><s val="TechDescription">Wolfe Industries has developed a Bunker port that houses a magnetic rail. This device dramatically accelerates all projectiles coming out of the port, increasing the range of all weapons fired from the Bunker. The same technology can be applied to Shrike Turrets, if we have purchased them.</s>
+ConversationState/Tech/Tech_Bunker_2/Info/Description=<s val="TechSummary">- Bunkered units gain +1 range.<n/>- Also affects the Shrike Turret.</s><n/><n/><s val="TechDescription">Wolfe Industries has developed a Bunker port that houses a magnetic rail. This device dramatically accelerates all projectiles coming out of the port, increasing the range of all weapons fired from the Bunker. The same technology can be applied to Shrike Turrets, if we have purchased them.</s>
 ConversationState/Tech/Tech_Hellion_1/Info/Tooltip=
 ConversationState/Tech/Tech_Hellion_2=Hydraulic Stabilizers
 ConversationState/Tech/Tech_Reaper_1/Info/Tooltip=<s val="TooltipTitle_Tech">Combat Drugs</s><n/><s val="TooltipDescription_Tech">Reapers regenerate life out of combat.</s>

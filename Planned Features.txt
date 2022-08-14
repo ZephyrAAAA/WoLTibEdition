@@ -293,6 +293,8 @@ Hellion- Now fires constantly
 
 Reaper- Guns now do Sniper damage, charges are now melee range.
 
+Vulture- No longer needs an upgrade to replenish mines.
+
 Wraith- Triple attack damage and attack coodown, on both weapons, and Fire On The Move, with a 135 degree firing cone. Laser can fire up
 
 Predator- Comparitively Cheaper, not locked behind research
@@ -381,6 +383,8 @@ Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batt
 Medivac drop speed-> Medivac bunker for infantry
 
 Ghost/Spectre upgrades- Banned
+
+Replenishable Magazine-> EMP- Disables mechanical units on attack
 
 
 RESEARCH LAB CHANGES:

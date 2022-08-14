@@ -1054,7 +1054,7 @@
     <CAbilResearch id="EngineeringBay2Research">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Research1" Time="30" Upgrade="HiSecAutoTracking">
-            <Resource index="Vespene" value="1000"/>
+            <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="ResearchHiSecAutoTracking" State="Restricted" Requirements="LearnTerranDefenseRangeBonus"/>
         </InfoArray>
         <InfoArray index="Research2" Time="60" Upgrade="TerranBuildingArmor">

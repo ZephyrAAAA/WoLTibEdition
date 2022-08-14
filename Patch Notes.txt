@@ -2,50 +2,65 @@ Repair Drones now do 2% + 10 health/s.
 Build radius is now a thing. Buildings must have their center within the radius.
 Sensor towers no longer require power, and provide build radius.
 There is now a truck to build a sensor tower, buildable from the Command Center.
-Seige tanks and vultures have been converted
-Advanced Construction now decreases the build time of all units (And the cost)
-Dual Fusion increases repair speed of Topbar Repair.
-Command Center Reactor now decreases the build time of all units (And the cost)
-*Autogas is now autoharvesting.
-Marine damage nerfed to 5. War Pig damage nerfed to 6.75
-Medic healing nerfed to 6hp/s for 3E/s
 Infantry Ultracaps now affects Marauder rockets
 Fixed shrike turret not spinning
-Orbital Supply Drop nerfed to 5/s income (600/min)
 Factories can now build tech labs on Outbreak
-Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
-*Vanadium Research text is now correct
-*Ultracap research text is now correct
 Mercs Calldowns are now on the Spec Ops
-*All Mercenaries now say they're trained from the Topbar
-*Mercenaries no longer say they have a limit per mission
-*Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
+All Mercenaries now say they're trained from the Topbar
+Mercenaries no longer say they have a limit per mission
+Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
 Raynor now has a headache after doing a Zeratul Mission.
+The AI will now blink stalkers.
 *Added the Orbital Scan support power on the Engineering Bay, unlocked by Orbital Command.
 *Added the Nuclear Strike support power on the Spec Ops, unlocked by Orbital Command.
 *Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Command.
 Added the Yamato Strike support power on the Fusion Core.
-*Added the Improved Railguns upgrade on the Armoury.
-*Added the Improved Explosives upgrade on the Engineering Bay.
+
+Units:
+*Ultras, Colossi, and Thors now crush infrantry they walk over.
+Science Vessel heals 5/s, takes 1e/5, up to 3 science vessels can stack.
 Imported the HOTS void ray
 Immortal Hardened Shield removed, shield health doubled
 Sentry Guardian Shield now gives 30% damage resist
-*Autogas is now Autoharvesting
+Marine damage nerfed to 5. War Pig damage nerfed to 6.75
+Medic healing nerfed to 6hp/s for 3E/s
+
+Upgrades:
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 *Hercules-> Cellular Reactor- Also increases energy regen
-*Hi-Sec now gives defenses 15% attack speed, and costs 2k.
-*Ultras, Colossi, and Thors now crush infrantry they walk over.
-Science Vessel heals 5/s, takes 1e/5, up to 3 science vessels can stack.
+Command Center Reactor now decreases the build time of all units (And the cost)
+*Autogas is now autoharvesting.
+*Replenishable Magazine-> EMP- Disables mechanical units on attack
+Advanced Construction now decreases the build time of all units (And the cost)
+Dual Fusion increases repair speed of Topbar Repair.
+Hi-Sec now gives defenses 15% attack speed, and costs 2k.
+Hi-Sec now says everything it does.
+Building Armour now says the correct stuff.
+*Added the Improved Railguns upgrade on the Armoury.
+*Added the Improved Explosives upgrade on the Engineering Bay.
+Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
+Stabilizer Medpack no longer increases heal speed.
+Vanadium Research text is now correct
+Ultracap research text is now correct
+U-238 rounds no longer references light armour
+The Shrike Turret upgrade now says stuff related to Shrike Turret
+The Projectile Accelerator upgrade now mentions that it affects the Shrike Turret.
+The second Reaper Armoury upgrade now has the correct tooltip.
+The text warning you that choosing the first level of zerg research will lock you out of the other one now correctly says what Hi-sec and Building Armour are.
+Hi-Sec and Building Armour lab researches are now correct.
+Orbital Supply Drop nerfed to 5/s income (600/min)
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
 
 Outlaws:
 Removed one of the supply depots at the rebel base
+Added a highlight when you build a tech lab, and text for what it does.
 
 Zero Hour:
 Added 2 Sensor Towers to give build radius on the low ground
 Slightly reduced the zergling scaling based on time.
+Moved both of the low ground spines so they don't block the Omegalisks.
 
 Smash and Grab:
 Fixed the protoss warping in so many stalkers
@@ -65,6 +80,7 @@ Corrected the Minerals from Pickups variable only counting 100 per pickup, and n
 
 Outbreak:
 Added a sensor tower on the south high ground, for build radius around the third entrance
+Fixed being unable to make a tech lab from factories.
 
 Bel'shir:
 Swapped some void rays for zealots in counterattack waves
@@ -110,7 +126,7 @@ Cutthroat:
 Resources all converted, SCVs deleted, starting refinery placed
 Starting infrantry replaced with squads
 You now recieve a refinery
-You now need to collect 120k minerals.
+You now need to collect 80k minerals.
 Scrap now gives 10x the minerals.
 Removed unnecessary triggers to award resources when picking up non-scrap
 Orlan now mines 1400 minerals per load.
@@ -122,7 +138,7 @@ Mira starts with 2 SCVs instead of 8.
 Move'd Orlan's CCs closer to the nodes they mine from
 Getting the second bonus now gives you Vulture Cerberus Mine, and a message saying so
 Getting the third bonus now gives you Vulture Nanofabricator, and a message saying so
-Added a "Dominion Arrives" timer. When they do, they bombard your main, and give Orlan a deathball to kill you with.
+Added a "Dominion Arrives" timer. When they do, they bombard your main, and give Orlan a deathball to kill you with, and another deathball every 5 minutes.
 
 Whispers of Doom:
 Zeratul has 100/300, instead of 300/100
