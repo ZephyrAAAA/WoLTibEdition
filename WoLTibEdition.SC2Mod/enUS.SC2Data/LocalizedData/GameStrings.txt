@@ -335,6 +335,13 @@ Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechanicalRepair=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
+Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
+Effect/Name/NuclearAnnihilationMengskBigNukeDropDelayCP=NuclearAnnihilationMengskBigNukeDropDelayCP
+Effect/Name/NuclearAnnihilationMengskDamage=NuclearAnnihilationMengskBigNukeDamage
+Effect/Name/NuclearAnnihilationMengskSmallNukeDamage=NuclearAnnihilationMengskSmallNukeDamage
+Effect/Name/NuclearAnnihilationMengskSmallNukeDamageSearch=NuclearAnnihilationMengskSmallNukeDamageSearch
+Effect/Name/NuclearAnnihilationMengskSmallNukeDropDelayCP=NuclearAnnihilationMengskSmallNukeDropDelayCP
+Effect/Name/NuclearAnnihilationMengskSmallNukeDummyCP=NuclearAnnihilationMengskSmallNukeDummyCP
 Effect/Name/OrbitalSupplyDrop=Orbital Supply Drop
 Effect/Name/PerditionTurretBuilt=PerditionTurretBuilt
 Effect/Name/PerditionTurretPlace=PerditionTurretPlace
@@ -395,7 +402,6 @@ Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
 Effect/Name/TibNodeSmallSearch=Tib Node Small Search
 Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
 Effect/Name/VehicleMercSet=Vehicle Merc Set
-Effect/Name/YamatoGunTopbarCreateUnit=Yamato Gun
 Effect/Name/YamatoGunTopbarDamage=Yamato Gun
 Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
 Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
@@ -517,5 +523,5 @@ Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent agai
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
 Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles and structures
-Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles, structures<n/>Moderate against infantry
+Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles<n/>Moderate against infantry, structures
 Weapon/Tip/Sniper=Deals <c val="FFBF00">Sniper</c> Damage<n/>Effective against Infantry<n/>Abysmal against all other targets

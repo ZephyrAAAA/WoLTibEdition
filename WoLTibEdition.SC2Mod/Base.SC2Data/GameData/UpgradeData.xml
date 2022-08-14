@@ -120,6 +120,12 @@
         <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="4"/>
         <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize15].Resource[Vespene]" Value="5"/>
         <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize15].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,TrainStone,InfoArray[Train1].Time" Value="0.800000"/>
+        <EffectArray Operation="Multiply" Reference="Abil,TrainStone,InfoArray[Train1].Resource[Vespene]" Value="4"/>
+        <EffectArray Operation="Divide" Reference="Abil,TrainStone,InfoArray[Train1].Resource[Vespene]" Value="5"/>
+        <AffectedUnitArray index="1" value="CommandCenter2Flying"/>
+        <AffectedUnitArray value="CommandCenter2"/>
+        <AffectedUnitArray value="CommandCenterFlying"/>
     </CUpgrade>
     <CUpgrade id="DualFusionWelders">
         <EffectArray index="0" Value="1.5"/>
@@ -702,6 +708,8 @@
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{1+DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
+        <AffectedUnitArray value="Bunker2"/>
+        <AffectedUnitArray value="BunkerSQ"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryUltraCapacitors">
         <EffectArray Reference="Weapon,GuassRifle,RateMultiplier" Value="0.2"/>

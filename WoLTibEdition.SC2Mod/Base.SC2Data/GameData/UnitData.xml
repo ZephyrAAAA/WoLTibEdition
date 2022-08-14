@@ -2514,6 +2514,8 @@
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
+        <AbilArray Link="ExplosiveCharges"/>
+        <EquipmentArray Weapon="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -5946,6 +5948,9 @@
     <CUnit id="Vulture">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmor value="0"/>
+        <ArmorType value="Medium"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="VultureACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

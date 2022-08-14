@@ -634,6 +634,9 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="VultureSpiderMines">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarPigSquad">
         <EditorCategories value=""/>
         <Tip value="Weapon/Tip/Rifle"/>

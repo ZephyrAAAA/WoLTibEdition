@@ -126,7 +126,7 @@
             <Resource index="Minerals" value="3000"/>
             <Cooldown TimeUse="300"/>
         </Cost>
-        <TargetFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="500"/>
         <RangeSlop value="10"/>
         <Arc value="360"/>
@@ -136,6 +136,11 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilSpecialize id="MakeVultureSpiderMines">
+        <InfoArray index="Specialize1">
+            <Button Requirements=""/>
+        </InfoArray>
+    </CAbilSpecialize>
     <CAbilEffectTarget id="Obliterate">
         <Cost index="0">
             <Vital index="Energy" value="75"/>
@@ -172,6 +177,7 @@
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
+            <Resource index="Vespene" value="1500"/>
             <Button DefaultButtonFace="Stone" State="Restricted">
                 <Flags index="ToSelection" value="1"/>
             </Button>

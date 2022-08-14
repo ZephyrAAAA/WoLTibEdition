@@ -194,7 +194,8 @@
     <CEffectDamage id="ExplosiveCharges">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetUnit"/>
-        <Amount value="5000"/>
+        <VitalFractionCurrent index="Life" value="1"/>
+        <VitalFractionCurrent index="Shields" value="1"/>
     </CEffectDamage>
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
@@ -255,6 +256,72 @@
         <DrainVitalCostFactor value="0.2"/>
         <RechargeVitalRate value="5"/>
     </CEffectCreateHealer>
+    <CEffectEnumArea id="NuclearAnnihilationMengskBigNukeDamageSearch">
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="10" Effect="NuclearAnnihilationMengskDamage"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="NuclearAnnihilationMengskBigNukeDropDelayCP">
+        <EditorCategories value="Race:Terran"/>
+        <InitialDelay value="2"/>
+        <ExpireDelay value="5"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="NuclearAnnihilationMengskBigNukeDamageSearch"/>
+        <PeriodicPeriodArray value="5"/>
+        <RevealRadius value="15"/>
+        <RevealFlags index="Unfog" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="NuclearAnnihilationMengskDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Structure" value="300"/>
+        <Kind value="Splash"/>
+        <Amount value="500"/>
+    </CEffectDamage>
+    <CEffectDamage id="NuclearAnnihilationMengskSmallNukeDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <AttributeBonus index="Structure" value="100"/>
+        <Kind value="Splash"/>
+        <Amount value="150"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="NuclearAnnihilationMengskSmallNukeDamageSearch">
+        <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="3" Effect="NuclearAnnihilationMengskSmallNukeDamage"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="NuclearAnnihilationMengskSmallNukeDropDelayCP">
+        <EditorCategories value="Race:Terran"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="NuclearAnnihilationMengskSmallNukeDamageSearch"/>
+        <PeriodicPeriodArray value="1.2"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="NuclearAnnihilationMengskSmallNukeDummyCP">
+        <EditorCategories value=""/>
+        <Flags index="RandomOffset" value="1"/>
+        <InitialEffect value="NuclearAnnihilationMengskBigNukeDropDelayCP"/>
+        <PeriodCount value="40"/>
+        <PeriodicEffectArray value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
+        <PeriodicOffsetArray value="0,0,0"/>
+        <PeriodicOffsetArray value="2.5,0,0"/>
+        <PeriodicOffsetArray value="0,5,0"/>
+        <PeriodicOffsetArray value="7.5,0,0"/>
+        <PeriodicOffsetArray value="-1.25,2.165,0"/>
+        <PeriodicOffsetArray value="-1.25,-2.165,0"/>
+        <PeriodicOffsetArray value="4.33,-2.5,0"/>
+        <PeriodicOffsetArray value="-4.33,2.5,0"/>
+        <PeriodicOffsetArray value="0,-5,0"/>
+        <PeriodicOffsetArray value="4.33,2.5,0"/>
+        <PeriodicOffsetArray value="-4.33,-2.5,0"/>
+        <PeriodicOffsetArray value="-6.068,4.408,0"/>
+        <PeriodicOffsetArray value="-2.318,7.133,0"/>
+        <PeriodicOffsetArray value="2.318,-7.133,0"/>
+        <PeriodicOffsetArray value="-6.068,-4.408,0"/>
+        <PeriodicOffsetArray value="-7.5,0,0"/>
+        <PeriodicOffsetArray value="6.068,-4.408,0"/>
+        <PeriodicOffsetArray value="2.318,7.133,0"/>
+        <PeriodicOffsetArray value="-2.318,-7.133,0"/>
+        <PeriodicOffsetArray value="6.068,4.408,0"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <RevealRadius value="7.5"/>
+        <OffsetRandMode value="Shuffle"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
         <EditorCategories value=""/>
@@ -511,7 +578,7 @@
     </CEffectDamage>
     <CEffectDamage id="ParticleDisruptorsU">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="14"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectModifyPlayer id="PickupGas100">
         <Resources index="Minerals" value="2000"/>
@@ -577,6 +644,13 @@
             <Resource index="Minerals" value="-2"/>
         </SalvageFactor>
     </CEffectModifyUnit>
+    <CEffectDamage id="ScoutAirU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="14"/>
+    </CEffectDamage>
+    <CEffectDamage id="ScoutGround">
+        <Amount value="16"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="ShrikeTurretCP">
         <EditorCategories value="Race:Terran"/>
         <WhichLocation Value="TargetUnit"/>
@@ -1266,18 +1340,13 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>
     </CEffectDamage>
+    <CEffectDamage id="VultureSpiderMinesDamage">
+        <Amount value="95"/>
+    </CEffectDamage>
     <CEffectDamage id="VultureU">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="25"/>
     </CEffectDamage>
-    <CEffectCreateUnit id="YamatoGunTopbarCreateUnit">
-        <EditorCategories value=""/>
-        <WhichLocation Value="TargetUnitOrPoint"/>
-        <Origin Value="TargetUnitOrPoint"/>
-        <SpawnEffect value="YamatoGunTopbarPersistent"/>
-        <SpawnUnit value="AirTargeter"/>
-        <SpawnOffset value="0,0"/>
-    </CEffectCreateUnit>
     <CEffectDamage id="YamatoGunTopbarDamage">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Flee" value="1"/>
@@ -1307,7 +1376,6 @@
         <OffsetVectorStartLocation Value="TargetUnitOrPoint"/>
         <OffsetVectorEndLocation Value="TargetUnitOrPoint"/>
         <ExpireDelay value="2"/>
-        <ExpireEffect value="TimedLifeFate"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="YamatoGunTopbarLaunchMissile"/>
         <PeriodicPeriodArray value="2"/>
