@@ -16,9 +16,6 @@
         <Element Type="FunctionDef" Id="54F2C3F5">
             <FlagAction/>
             <FlagNative/>
-            <ReturnType>
-                <Type Value="bool"/>
-            </ReturnType>
         </Element>
         <Element Type="Trigger" Id="B0684CF0">
             <Variable Type="Variable" Library="3B48F5E9" Id="1ADBB68B"/>

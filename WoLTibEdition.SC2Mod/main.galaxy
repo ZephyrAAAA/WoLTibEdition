@@ -93,7 +93,7 @@ void buildingSwap (unit building) {
 	}
 }
 
-bool DisableTopBar () {
+void DisableTopBar () {
 	noTopBar = true;
 }
 
