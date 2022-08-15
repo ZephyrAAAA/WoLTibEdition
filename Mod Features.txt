@@ -39,9 +39,17 @@ Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 
 Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
 
 You start with 3 protoss research now.
+Implemented a topbar of Support Powers.
+
+You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
+
 Bonus Objectives now generally give something good in-mission.
 
 Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
+
+Factory and Starport spawn 3 repair drones when landed and powered now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 2% + 5 health/s.
+
+Reactor Addon has been removed, because of issues with double queues.
 
 
 MISSION SPECIFIC CHANGES:
@@ -75,6 +83,7 @@ The Outlaws:
 -Edited the Tech Lab tip to mention upgrades
 -Disabled the Vespene tip
 -Fixed the SCV tip for this mod
+-Added a tip about Refinery Rally.
 -Removed the trigger to give you an SCV if you've been supply blocked for a bit
 -Infantry Ultra Capacitors are available to research on the Barracks tech lab
 -Attack waves now have somewhat randomized timing and composition.
@@ -126,6 +135,7 @@ Devil's Playground:
 -Brutalisk attack fixed to not have an absurd windup
 -There is now some destructible rocks to help with the Brutalisk
 -Attack Wave strength scales with time and lava surges
+-Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
 
 Smash and Grab:
 -Stone Zealots now do 20x2 damage to ground, and have 1500/2500/3750/5000 health on Casual/Normal/Hard/Brutal.
@@ -141,39 +151,54 @@ Outbreak:
 -The node in your base starts empty, your Adjutant notes that you have no minerals in your base, and can find some outside it.
 -Getting the bonuses now gives you hellion armoury upgrades, and messages saying so
 -Aberrations now show up at the end of the first night, and every night thereafter
+-The infested now know about your expansion even if you don't have a CC there. It now checks for *any* structures owned by the player
+-Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
 
 Welcome to the Jungle:
 -You start with 2 SCVs now.
--In addition to the expansion, there is now 6 nodes spread around the map. The 2 clostest to your base are Medium, the rest are Small. They all start empty.
+-In addition to the expansion, there is now 6 nodes spread around the map. The 2 closest to your base are Medium, the rest are Small. They all start empty.
 -The Tal'darim defend and contest these nodes. 1 warp prism, 2 stalkers, 1 scout, and 2 void rays, plus 1 colossus on hard, and 1 HT (After 3 reinforce cycles) on brutal. These units have bullies, and are replaced as often as every 2.5 minutes on brutal, provided there is less than (3/3/4/6) units.
 -The node bullies get disabled as you clear the map outside the main protoss base
 -Each area has some "stickyness" with the bullies. They won't give up the area right away.
 -Getting the first bonus now gives you Goliath Neosteel Plating, and a message saying so
 -Getting the second bonus now gives you Multilock, and a message saying so
 -SCVs harvest terrazine, and return it to Refineries
--The expansion now has a HT on brutal
+-The expansion now has a HT on brutal after some time has passed
 -The expansion and west outpost both have an extra cannon on hard and brutal
+-The protoss now send 2 counterattacks against each defended area you take, in an attempt to take it back. You have to successfully defend 2 of these attacks consecutively in order for them to give up
+-These attack waves scale with the relative importance of the area being contested.
+-Added a scout to the expansion.
+-Replaced a stalker in the expansion with a colossus
 
 Great Train Robbery:
--Removed 1 of the starting depots
+-Removed 2 of the starting depots
 -Replaced 2 mineral pallets with vespene pallets.
 -The starting fields and expansion fields are empty
 -Removed 1 mineral pallet
 -Relocated a mineral pallet from the bottom right diamondback area
 -Getting the second bonus now gives you Diamondback Shaped Hull, and a message saying so
 -Getting the third bonus now gives you Diamondback Piercing, and a message saying so
--Kill team marauders don't have 1 base armour anymore
 -The dominion now rebuilds bunkers after each train
 -Removed unnecessary triggers to award resources when picking up pallets, as the pallets already do that themselves.
 -Each Train drops 2 less vespene pallets, and up to 3 less mineral pallets
+-Train Health doubled
+-Kill teams now get medics on all difficulties.
+-Kill teams now have triple the medics(On brutal, with decreasing numbers below brutal), double the marauders, and some devil dogs.
+-Kill teams now respawn up to 3 times on hard and brutal. Killing one gives about a minute of reprieve before it is replaced.
+-Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
+
 
 UNIT CHANGES:
 
 Command Center- Can no longer load SCVs
 
+SCV- Can no longer repair
+
+Marine-Marine damage nerfed to 5. War Pig damage nerfed to 6.75
+
 Firebat- Rework to be an expensive tanky unit, firing a stream of flame at range, dealing damage around the target.
 
-Medic- Better Healing priority.
+Medic- Better Healing priority. Medic healing nerfed to 6hp/s for 3E/s
 
 Bunker- Has 4 slots, fits 1 squad
 
@@ -181,9 +206,26 @@ Hellion- Now fires constantly
 
 Reaper- Guns now do Sniper damage, charges are now melee range.
 
-Diamondback- Increase speed to match hellion, Increase firing speed, range increased
+Vulture- No longer needs an upgrade to replenish mines.
+
+Predator- Comparitively Cheaper, not locked behind research
+
+Diamondback- Increase speed to match hellion, range increased
 
 Goliath- Starts with Ares, Anti-ground Damage increased by 33%
+
+Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
+
+Fusion Core- yamato strike support power, all mission-unlocked support powers
+
+
+High Templar- Storm no longer ignores armour
+
+Void Ray- Imported the HOTS version
+
+Immortals- Hardened Shield removed, shield health doubled
+
+Sentry- Guardian Shield now gives 30% damage resist
 
 ARMORY UPGRADE CHANGES:
 
@@ -200,6 +242,7 @@ Thicc flame- Fixed
 Neosteel Bunker-> Shrike Turret, also shrike is buffed (6x2, 6 range+1 with projectie accelerator, affected by infantry ultracaps)
 
 
+Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
 
 Titanium Shell- Buffs health of Devastation Turret as well
 
@@ -212,6 +255,18 @@ G-4 Cluster Bomb-> Combat Drugs- Life Regen
 Tri-lithium-> Railgun Piercing
 
 Ares Class-> Health
+Replenishable Magazine-> EMP- Disables mechanical units on attack
+
+
+
+Autogas-> Autoharvesting
+
+Command Center Reactor- Reduce build time of buildings (Also affects cost)
+
+Orbital Supply Depot-> Orbital Supply Drop- 5/s (600/min) Passive income
+
+Micro Filtering-> Expanded Hold- SCVs collect double the minerals per gather action
+
 Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 
 Vanadium Plating- Gives all Vanadium Plating upgrades permanently
@@ -226,7 +281,7 @@ NEW IN-GAME UPGRADES:
 
 Building Health and Armour [Engineering Bay]
 
-Defense turret range [Engineering Bay]
+Defense turret range and fire rate [Engineering Bay]
 
 Marauder shoulder rockets- [Spec Ops]
 
@@ -234,6 +289,10 @@ Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
+Blue Flame- all fire weapons (Firebat, Hellion, Perdition) deal more damage [Armoury]
+
 
 Blue Flame- all fire weapons deal more damage [Armoury]
 
+MISC CHANGES:
+You now start with 3 protoss research as well

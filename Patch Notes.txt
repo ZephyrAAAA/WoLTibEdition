@@ -123,6 +123,7 @@ Removed the merc compound
 Fixed the Unit Move after the cinematic shot taking the hidden refinery entity
 The Laser Drill targets faster
 The Laser Drill has some interesting notes on it.
+*The Laser Drill now has an upgrade to take it with you.
 Added 3 small nodes to the east protoss base
 The 2 main Protoss fields now have 2 medium nodes each
 Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
