@@ -796,10 +796,14 @@
     </CActorAction>
     <CActorModelMaterial id="LowPower" parent="BehaviorGlaze" buff="PowerCheck">
         <EditorCategories value=""/>
+        <On index="6" Terms="Behavior.PowerCheck.Off" Send="AnimBracketStop BSD 0 0.250000 AsDuration"/>
     </CActorModelMaterial>
     <CActorModelMaterial id="Depowered" parent="BehaviorGlaze" buff="Depowered">
         <EditorCategories value=""/>
         <Model value="LowPower"/>
+        <On index="6" Terms="Behavior.Depowered.Off" Send="AnimBracketStop BSD 0 0.250000 AsDuration"/>
+        <On Terms="Behavior.MechEMP.On" Send="Create"/>
+        <On Terms="Behavior.MechEMP.Off" Send="AnimBracketStop BSD 0 0.250000 AsDuration"/>
     </CActorModelMaterial>
     <CActorUnit id="MarauderSquad" parent="Marauder" unitName="MarauderSquad">
         <Aliases index="2" value="_UnitSmall"/>
@@ -1267,6 +1271,7 @@
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationRefinery"/>
         <On Terms="UnitDeathCustomize; ValidateUnit NoVespene" Send="DeathCustomize Empty"/>
         <On Terms="UnitBirth.Refinery2" Send="TimerSet 0.100000 HideGeyser"/>
+        <On Terms="ActorCreation; ValidateUnit HaveAutoHarvester" Send="ModelSwap AutomatedRefinery"/>
         <Model value="Refinery"/>
         <CreepHeightClass value="Medium"/>
         <BuildModel value="RefineryBuild"/>
@@ -1354,6 +1359,9 @@
         <LaunchAssets Model="SCVAttackLaunch"/>
         <ShieldFlashType value="Header"/>
     </CActorAction>
+    <CActorSiteOpLocalOffset id="SOpVultureLeft">
+        <LocalOffset value="0.300000,0.000000,0.000000"/>
+    </CActorSiteOpLocalOffset>
     <CActorUnit id="SensorTower2" parent="TerranBuildingEx" unitName="SensorTower2">
         <Aliases value="_UnitMedium"/>
         <On index="69" Terms="UnitConstruction.SensorTower2.Start" Send="Create SensorTowerBuild"/>
@@ -1761,6 +1769,17 @@
         <On Terms="AbilTransport.AirTransport.CargoLoad" Send="AnimBracketStart Unload IGNORE Unload Unload,End DontResetOnUnhide"/>
         <On Terms="AbilTransport.AirTransport.CargoLoadSuppressed" Send="AnimBracketStart Unload IGNORE Unload Unload,End DontResetOnUnhide"/>
     </CActorEventMacro>
+    <CActorAction id="VultureAttackLeft" parent="GenericAttack" effectImpact="VultureU" effectLaunch="VultureLeft">
+        <LaunchSiteOps Ops="SOpAttachWeapon00 SOpVultureLeft"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon01"/>
+        <LaunchAssets Model="VultureAttackLaunch" Sound="VultureAttackLaunch"/>
+        <Beam value="VultureAttackBeam"/>
+        <Missile value="VultureAttackMissile"/>
+        <ImpactMap index="None" Model="VultureAttackImpact" Sound="VultureAttackImpact" ModelReaction="VultureAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="VultureAttackImpactShield" ModelReaction="VultureAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="VultureAttackDamage" Sound="VultureAttackDamage" ModelReaction="VultureAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="VultureAttackDamageShield" ModelReaction="VultureAttackDamageReactionShield"/>
+    </CActorAction>
     <CActorAction id="WarHoundAttack" parent="GenericAttack" effectImpact="RaynorGaussRifleDamage" effectLaunch="RailgunLaunch">
         <LaunchAssets Sound="RailGun_Launch"/>
         <BeamScope value="Caster"/>

@@ -51,6 +51,9 @@
     <CValidatorUnitCompareBehaviorCount id="NotSupercloaked">
         <Behavior value="HideInTheShadows"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="TargetIsMechanical">
+        <Filters value="Mechanical;-"/>
+    </CValidatorUnitFilters>
     <CValidatorUnitCompareDamageDealtTime id="ToshHasFired">
         <Compare value="GE"/>
         <Value value="10"/>
@@ -102,6 +105,10 @@
     <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
         <Behavior value="BunkerWeaponRangeBonus"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="UseMechEMP">
+        <Find value="1"/>
+        <Value value="UseNanoConstructor"/>
+    </CValidatorPlayerRequirement>
     <CValidatorLocationEnumArea id="ZeratulNear">
         <WhichLocation Value="CasterUnit"/>
         <AreaArray Radius="10" Validator="IsZeratul"/>

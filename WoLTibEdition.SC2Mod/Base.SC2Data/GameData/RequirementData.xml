@@ -144,8 +144,14 @@
     <CRequirement id="LearnInfantryVanadium">
         <NodeArray index="Show" Link="NotCountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnStarshipUltraCaps">
+        <NodeArray index="Show" Link="NotCountUpgradeTerranShipUltraCapacitorsQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnVehicleVanadium">
         <NodeArray index="Show" Link="NotCountUpgradeTerranVehicleVanadiumPlatingQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnStarshipVanadium">
+        <NodeArray index="Show" Link="NotCountUpgradeTerranShipVanadiumPlatingQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="PlayerHasPower">
         <EditorCategories value="Race:Neutral"/>

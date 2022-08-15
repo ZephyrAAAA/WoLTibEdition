@@ -14,7 +14,7 @@
             <InitFunc>main</InitFunc>
         </Element>
         <Element Type="FunctionDef" Id="54F2C3F5">
-            <FlagCall/>
+            <FlagAction/>
             <FlagNative/>
             <ReturnType>
                 <Type Value="bool"/>

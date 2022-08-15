@@ -95,7 +95,6 @@ void buildingSwap (unit building) {
 
 bool DisableTopBar () {
 	noTopBar = true;
-	return noTopBar;
 }
 
 void AddTopbarAbil(string abil) {

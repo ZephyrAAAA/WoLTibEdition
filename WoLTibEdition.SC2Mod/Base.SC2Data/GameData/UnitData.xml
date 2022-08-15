@@ -732,6 +732,8 @@
         <ArmorType value="Fort"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="BroodLordACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2758,12 +2760,14 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Large"/>
         <Food value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="HelsAngelFighter">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Large"/>
         <Food value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="Hercules">
         <AbilArray Link="AirTransportMag"/>
@@ -4320,6 +4324,7 @@
         <AbilArray Link="Refinery"/>
         <AbilArray Link="RallyCommand"/>
         <AbilArray Link="ResetRally"/>
+        <AbilArray Link="AutoHarvest"/>
         <BehaviorArray Link="Refinery"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="BuildRadiusSmall"/>
@@ -4888,10 +4893,12 @@
     <CUnit id="SpiderMine">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <CostResource index="Minerals" value="0"/>
     </CUnit>
     <CUnit id="SpiderMineBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <CostResource index="Minerals" value="0"/>
     </CUnit>
     <CUnit id="SpineCrawler">
         <ArmorType value="Hero"/>
@@ -5910,10 +5917,12 @@
     <CUnit id="VikingAssault">
         <ArmorType value="Large"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="VikingFighter">
         <ArmorType value="Large"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="VikingMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5926,6 +5935,7 @@
     <CUnit id="Virophage">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="VoidRay">
         <ArmorType value="Fort"/>
@@ -6011,6 +6021,10 @@
     <CUnit id="WolfStatue">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="Wraith">
+        <ArmorType value="None"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
     </CUnit>
     <CUnit id="WraithACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
