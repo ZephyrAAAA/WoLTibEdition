@@ -673,6 +673,9 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectEnumArea id="RetributionFieldSearch">
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>

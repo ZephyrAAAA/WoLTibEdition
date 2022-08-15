@@ -103,7 +103,7 @@
         <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="HaveAttachedStarportTechLabAndFusionCore">
-        <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_FusionCoreCompleteOnlyTechTreeCheat"/>
+        <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="HaveBarracks">
         <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>

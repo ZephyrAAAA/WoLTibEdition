@@ -9,6 +9,8 @@
     <CValidatorCombine id="CanLoadSiegeTank">
         <CombineArray value="NotSiegeTank"/>
         <CombineArray value="HasMaelstromRounds"/>
+        <CombineArray value="IsUnsiegedTank"/>
+        <CombineArray value="IsUnsiegedSiegeBreaker"/>
     </CValidatorCombine>
     <CValidatorUnitFilters id="CasterNotStunned">
         <WhichUnit Value="Caster"/>
@@ -37,6 +39,12 @@
     <CValidatorUnitFilters id="IsHeroic">
         <Filters value="Heroic;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitType id="IsUnsiegedTank">
+        <Value value="SiegeTank"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsUnsiegedSiegeBreaker">
+        <Value value="SiegeBreaker"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="IsVoidSeeker">
         <Value value="VoidSeeker"/>
     </CValidatorUnitType>

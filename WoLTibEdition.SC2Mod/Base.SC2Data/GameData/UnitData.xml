@@ -2771,6 +2771,9 @@
     </CUnit>
     <CUnit id="Hercules">
         <AbilArray Link="AirTransportMag"/>
+        <ArmorType value="Fort"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="HerculesACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4058,6 +4061,8 @@
     <CUnit id="Predator">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Medium"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="PreserverA">
         <LifeArmor value="0"/>

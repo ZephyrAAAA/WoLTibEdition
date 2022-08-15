@@ -776,6 +776,9 @@
     <CActorUnit id="HybridC">
         <On Terms="Effect.ZeratulSeek.Stop" Send="Create HybridWarpInEffect"/>
     </CActorUnit>
+    <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
+        <EditorCategories value=""/>
+    </CActorSplat>
     <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
         <LaunchAssets Sound="HyperionYamatoSpecialAttackLaunch"/>
         <ImpactSiteOps HoldPosition="1"/>

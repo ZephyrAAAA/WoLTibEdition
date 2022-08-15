@@ -413,6 +413,10 @@
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Predator">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PrismaticBeam">
         <AttackType value="Magic"/>
     </CWeaponLegacy>

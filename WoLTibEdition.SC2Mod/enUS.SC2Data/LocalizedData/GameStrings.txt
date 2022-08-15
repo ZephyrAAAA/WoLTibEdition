@@ -435,6 +435,7 @@ Param/Value/lib_Camp_CB897CEB=<s val="MercCategory">Vitals:</s>  <s val="MercSum
 Param/Value/lib_Camp_E31332D4=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +50% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Tobpar</s>
 Param/Value/lib_Camp_E6C595F8=<s val="MercCategory">Calldown Size:</s><s val="MercSummary">  2 Elite Squads</s>
 Param/Value/lib_Camp_EF94B48A=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+45% Health, +40% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Topbar</s>
+RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
 RequirementNode/Tooltip/CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat=Engineering Bay

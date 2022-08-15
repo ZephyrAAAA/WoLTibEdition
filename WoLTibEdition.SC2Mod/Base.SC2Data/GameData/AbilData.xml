@@ -1186,7 +1186,8 @@
             <Button DefaultButtonFace="Vulture" State="Restricted" Requirements="JumboBunkerNotResearched"/>
             <Unit value="Vulture"/>
         </InfoArray>
-        <InfoArray index="Train10" Time="40">
+        <InfoArray index="Train10" Time="14">
+            <Resource index="Vespene" value="1400"/>
             <Button DefaultButtonFace="Predator" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Predator"/>
         </InfoArray>
@@ -1465,7 +1466,8 @@
             <Button DefaultButtonFace="VikingFighter" State="Restricted"/>
             <Unit value="VikingFighter"/>
         </InfoArray>
-        <InfoArray index="Train6" Time="70">
+        <InfoArray index="Train6" Time="20">
+            <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
             <Unit value="Hercules"/>
         </InfoArray>
