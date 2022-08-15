@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilMorph id="AssaultMode">
+        <Flags index="WaitUntilStopped" value="0"/>
+    </CAbilMorph>
     <CAbilEffectTarget id="AstralProjection">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="AstralProjectionCU"/>
@@ -11,6 +14,22 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="AutoHarvest">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AutoHarvestCP"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.5"/>
+        </Cost>
+        <TargetFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
+        <Range value="4"/>
+        <Arc value="360"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
+        <AutoCastRange value="4"/>
+        <CmdButtonArray index="Execute" Requirements="AutoHarvesterResearched"/>
     </CAbilEffectTarget>
     <CAbilResearch id="BarracksTechLabResearch">
         <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
@@ -84,6 +103,9 @@
         <AcquirePriority value="1"/>
         <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
+    <CAbilMorph id="FighterMode">
+        <Flags index="WaitUntilStopped" value="0"/>
+    </CAbilMorph>
     <CAbilEffectTarget id="GravitonPrison">
         <Cost index="0">
             <Charge>
@@ -137,7 +159,9 @@
         </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilSpecialize id="MakeVultureSpiderMines">
-        <InfoArray index="Specialize1">
+        <InfoArray index="Specialize1" Time="1.5">
+            <Resource index="Minerals" value="0"/>
+            <Resource index="Vespene" value="150"/>
             <Button Requirements=""/>
         </InfoArray>
     </CAbilSpecialize>
@@ -174,6 +198,22 @@
             <Cooldown TimeUse="20"/>
         </Cost>
     </CAbilEffectTarget>
+    <CAbilResearch id="StarportTechLabResearch">
+        <InfoArray index="Research9" Time="90" Upgrade="TerranShipUltraCapacitors">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="StarshipUltraCapacitors" Requirements="LearnStarshipUltraCaps">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research10" Time="90" Upgrade="TerranShipVanadiumPlating">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="StarshipVanadiumPlating" Requirements="LearnStarshipVanadium">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
@@ -1123,7 +1163,7 @@
             <Unit value="SiegeTank"/>
         </InfoArray>
         <InfoArray index="Train5" Time="60">
-            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="Outhouse"/>
+            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmoryAndAttachedTechLab"/>
             <Unit value="Thor"/>
         </InfoArray>
         <InfoArray index="Train6" Time="8">
@@ -1142,11 +1182,12 @@
             <Unit value="Diamondback"/>
         </InfoArray>
         <InfoArray index="Train9" Time="9">
-            <Resource index="Vespene" value="9"/>
-            <Button DefaultButtonFace="Vulture" State="Restricted"/>
+            <Resource index="Vespene" value="900"/>
+            <Button DefaultButtonFace="Vulture" State="Restricted" Requirements="JumboBunkerNotResearched"/>
             <Unit value="Vulture"/>
         </InfoArray>
-        <InfoArray index="Train10" Time="40">
+        <InfoArray index="Train10" Time="14">
+            <Resource index="Vespene" value="1400"/>
             <Button DefaultButtonFace="Predator" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Predator"/>
         </InfoArray>
@@ -1420,11 +1461,13 @@
             <Button DefaultButtonFace="Battlecruiser" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
             <Unit value="Battlecruiser"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="42">
+        <InfoArray index="Train5" Time="15">
+            <Resource index="Vespene" value="1500"/>
             <Button DefaultButtonFace="VikingFighter" State="Restricted"/>
             <Unit value="VikingFighter"/>
         </InfoArray>
-        <InfoArray index="Train6" Time="70">
+        <InfoArray index="Train6" Time="20">
+            <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
             <Unit value="Hercules"/>
         </InfoArray>
@@ -1547,6 +1590,12 @@
         <ExternalAngle value="329.9963"/>
         <MaxCount value="6"/>
     </CAbilArmMagazine>
+    <CAbilMorph id="WreckingCrewAssaultMode">
+        <Flags index="WaitUntilStopped" value="0"/>
+    </CAbilMorph>
+    <CAbilMorph id="WreckingCrewFighterMode">
+        <Flags index="WaitUntilStopped" value="0"/>
+    </CAbilMorph>
     <CAbilEffectTarget id="ZeratulBlink">
         <Cost index="0">
             <Charge CountMax="3" CountUse="1" TimeUse="10">

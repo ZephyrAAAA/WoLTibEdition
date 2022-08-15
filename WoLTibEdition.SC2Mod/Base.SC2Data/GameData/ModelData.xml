@@ -21,8 +21,9 @@
         <ScaleMin value="1.000000,3.750000,1.000000"/>
     </CModel>
     <CModel id="LowPower" parent="Glaze">
-        <Model value="Assets\Effects\Glaze\Glaze_BlackDeath_Coop\Glaze_BlackDeath_Coop.m3"/>
+        <Model value="Assets\Effects\Glaze\Glaze_Corrupted_TangentSpace\Glaze_Corrupted_TangentSpace.m3"/>
         <EditorCategories value=""/>
+        <AnimSpeed value="0.750000"/>
     </CModel>
     <CModel id="NuclearAnnihilationMengskBigNukeDrop" parent="OneShotSpellFX">
         <Model value="Assets\Effects\Terran\NukeFalling\NukeFalling.m3"/>

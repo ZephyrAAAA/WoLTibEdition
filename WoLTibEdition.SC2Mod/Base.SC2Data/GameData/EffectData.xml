@@ -50,6 +50,21 @@
         <SpawnEffect value="AstralProjection"/>
         <SpawnUnit value="Zeratul"/>
     </CEffectCreateUnit>
+    <CEffectCreatePersistent id="AutoHarvestCP">
+        <ValidatorArray value="HaveAutoHarvester"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="5"/>
+        <PeriodicEffectArray value="AutoHarvestTib"/>
+        <PeriodicPeriodArray value="0.1"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="AutoHarvestTib">
+        <EditorCategories value=""/>
+        <Resources value="-7"/>
+        <ResourcesHarvestedFraction value="1"/>
+    </CEffectModifyUnit>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
@@ -197,6 +212,16 @@
         <VitalFractionCurrent index="Life" value="1"/>
         <VitalFractionCurrent index="Shields" value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="FragmentationGrenadeCP">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="Vulture"/>
+        <PeriodicEffectArray value="VultureLeft"/>
+        <PeriodicPeriodArray value="0"/>
+        <InitialEffect value="MechEMP"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
     </CEffectDamage>
@@ -239,6 +264,10 @@
     <CEffectDamage id="KelmorianMinerDamage">
         <Amount value="6.75"/>
     </CEffectDamage>
+    <CEffectDamage id="LanzerTorpedoesDamage">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="14"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="LaserBeamFinalPersistant">
         <FinalEffect value="LaserBeamTripodInitialDamage"/>
     </CEffectCreatePersistent>
@@ -248,6 +277,11 @@
     <CEffectDamage id="LaserDrillTripodDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="MechEMP">
+        <ValidatorArray index="0" value="UseMechEMP"/>
+        <ValidatorArray value="TargetIsMechanical"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
     </CEffectDamage>
@@ -639,6 +673,9 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectEnumArea id="RetributionFieldSearch">
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>
@@ -1340,12 +1377,25 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="35"/>
     </CEffectDamage>
+    <CEffectLaunchMissile id="VultureLeft">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="VultureU"/>
+        <AmmoUnit value="VultureWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="VultureSpiderMinesDamage">
         <Amount value="95"/>
     </CEffectDamage>
     <CEffectDamage id="VultureU">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="25"/>
+    </CEffectDamage>
+    <CEffectDamage id="WraithAU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="WreckingCrewFighterU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="YamatoGunTopbarDamage">
         <EditorCategories value="Race:Terran"/>

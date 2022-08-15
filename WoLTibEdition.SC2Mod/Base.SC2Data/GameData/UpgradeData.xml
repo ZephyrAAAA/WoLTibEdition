@@ -74,6 +74,9 @@
         <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train9].Resource[Vespene]" Value="5"/>
         <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train9].Time" Value="0.800000"/>
     </CUpgrade>
+    <CUpgrade id="AutoHarvester">
+        <EffectArray Operation="Set" Reference="Actor,Refinery2,Wireframe.Image[0]" Value="Assets\Textures\wireframe-terran-refinery-automated.dds"/>
+    </CUpgrade>
     <CUpgrade id="CommandCenterReactor">
         <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="4"/>
         <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="5"/>
@@ -220,6 +223,41 @@
         <EffectArray index="31" removed="1"/>
         <EffectArray index="32" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="ProtossGroundArmorsLevel3">
+        <EffectArray index="0" Reference="Unit,Zealot,LifeArmorLevel"/>
+        <EffectArray index="1" Operation="AddBaseMultiply" Reference="Unit,Zealot,LifeMax"/>
+        <EffectArray index="2" Reference="Unit,Stalker,LifeArmorLevel"/>
+        <EffectArray index="3" Operation="AddBaseMultiply" Reference="Unit,Stalker,LifeMax" Value="0.25"/>
+        <EffectArray index="4" Reference="Unit,Immortal,LifeArmorLevel"/>
+        <EffectArray index="5" Operation="AddBaseMultiply" Reference="Unit,Immortal,LifeMax" Value="1"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
+        <EffectArray index="9" Operation="AddBaseMultiply" Reference="Unit,Immortal,LifeStart" Value="1"/>
+        <EffectArray index="10" Operation="AddBaseMultiply" Reference="Unit,Stalker,LifeStart" Value="0.25"/>
+        <EffectArray index="11" Operation="AddBaseMultiply" Reference="Unit,Zealot,LifeStart" Value="0.25"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+    </CUpgrade>
     <CUpgrade id="ProtossGroundWeaponsLevel1">
         <EffectArray index="0" Operation="Set" Reference="Weapon,DisruptionBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
         <EffectArray index="1" Operation="Multiply" Reference="Effect,DisruptionBeamDamage,Amount" Value="1.2"/>
@@ -282,7 +320,34 @@
         <EffectArray index="28" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossGroundWeaponsLevel3">
-        <EffectArray index="24" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="2"/>
+        <EffectArray index="1" Reference="Weapon,ParticleDisruptors,Level"/>
+        <EffectArray index="2" Reference="Effect,ParticleDisruptorsU,AttributeBonus[Structure]" Value="0.5"/>
+        <EffectArray index="3" Reference="Weapon,PhaseDisruptors,Level"/>
+        <EffectArray index="4" Reference="Effect,PhaseDisruptors,AttributeBonus[Structure]"/>
+        <EffectArray index="5" Reference="Weapon,WarpBlades,Level" Value="1"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,WarpBlades,Amount" Value="1.3"/>
+        <EffectArray index="7" Reference="Effect,PsiBlades,AttributeBonus[Structure]" Value="0.5"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,PsiBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,ParticleDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Weapon,PhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,WarpBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="12" Reference="Weapon,Zeratul,Level" Value="1"/>
+        <EffectArray index="13" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="2"/>
+        <EffectArray index="14" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossShieldsLevel2">
         <EffectArray index="1" Value="1.33"/>
@@ -330,6 +395,60 @@
         <EffectArray index="117" Value="1.33"/>
         <EffectArray index="119" Value="1.33"/>
         <EffectArray index="121" Value="1.33"/>
+        <EffectArray index="128" removed="1"/>
+        <EffectArray index="129" removed="1"/>
+        <EffectArray index="130" removed="1"/>
+        <EffectArray index="131" removed="1"/>
+        <EffectArray index="132" removed="1"/>
+        <EffectArray index="133" removed="1"/>
+        <EffectArray index="134" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ProtossShieldsLevel3">
+        <EffectArray index="1" Operation="AddBaseMultiply" Reference="Unit,Probe,ShieldsMax" Value="0.25"/>
+        <EffectArray index="3" Operation="AddBaseMultiply" Reference="Unit,Zealot,ShieldsMax" Value="0.25"/>
+        <EffectArray index="5" Operation="AddBaseMultiply" Reference="Unit,Sentry,ShieldsMax" Value="0.25"/>
+        <EffectArray index="7" Operation="AddBaseMultiply" Reference="Unit,Stalker,ShieldsMax" Value="0.25"/>
+        <EffectArray index="9" Operation="AddBaseMultiply" Reference="Unit,Immortal,ShieldsMax" Value="0.25"/>
+        <EffectArray index="11" Operation="AddBaseMultiply" Reference="Unit,HighTemplar,ShieldsMax" Value="0.25"/>
+        <EffectArray index="13" Operation="AddBaseMultiply" Reference="Unit,DarkTemplar,ShieldsMax" Value="0.25"/>
+        <EffectArray index="15" Operation="AddBaseMultiply" Reference="Unit,Archon,ShieldsMax" Value="0.25"/>
+        <EffectArray index="17" Operation="AddBaseMultiply" Reference="Unit,Observer,ShieldsMax" Value="0.25"/>
+        <EffectArray index="19" Operation="AddBaseMultiply" Reference="Unit,WarpPrism,ShieldsMax" Value="0.25"/>
+        <EffectArray index="21" Operation="AddBaseMultiply" Reference="Unit,WarpPrismPhasing,ShieldsMax" Value="0.25"/>
+        <EffectArray index="23" Operation="AddBaseMultiply" Reference="Unit,Colossus,ShieldsMax" Value="0.25"/>
+        <EffectArray index="25" Operation="AddBaseMultiply" Reference="Unit,Phoenix,ShieldsMax" Value="0.25"/>
+        <EffectArray index="27" Operation="AddBaseMultiply" Reference="Unit,VoidRay,ShieldsMax" Value="0.25"/>
+        <EffectArray index="29" Operation="AddBaseMultiply" Reference="Unit,Carrier,ShieldsMax" Value="0.25"/>
+        <EffectArray index="31" Operation="AddBaseMultiply" Reference="Unit,Interceptor,ShieldsMax" Value="0.25"/>
+        <EffectArray index="32" Operation="AddBaseMultiply" Reference="Unit,Mothership,ShieldsMax" Value="0.25"/>
+        <EffectArray index="35" Operation="AddBaseMultiply" Reference="Unit,Nexus,ShieldsMax" Value="0.25"/>
+        <EffectArray index="37" Operation="AddBaseMultiply" Reference="Unit,Assimilator,ShieldsMax" Value="0.25"/>
+        <EffectArray index="39" Operation="AddBaseMultiply" Reference="Unit,Pylon,ShieldsMax" Value="0.25"/>
+        <EffectArray index="41" Operation="AddBaseMultiply" Reference="Unit,Gateway,ShieldsMax" Value="0.25"/>
+        <EffectArray index="43" Operation="AddBaseMultiply" Reference="Unit,WarpGate,ShieldsMax" Value="0.25"/>
+        <EffectArray index="45" Operation="AddBaseMultiply" Reference="Unit,Forge,ShieldsMax" Value="0.25"/>
+        <EffectArray index="47" Operation="AddBaseMultiply" Reference="Unit,PhotonCannon,ShieldsMax" Value="0.25"/>
+        <EffectArray index="48" Operation="AddBaseMultiply" Reference="Unit,CyberneticsCore,ShieldsMax" Value="0.25"/>
+        <EffectArray index="51" Operation="AddBaseMultiply" Reference="Unit,TwilightCouncil,ShieldsMax" Value="0.25"/>
+        <EffectArray index="53" Operation="AddBaseMultiply" Reference="Unit,TemplarArchive,ShieldsMax" Value="0.25"/>
+        <EffectArray index="55" Operation="AddBaseMultiply" Reference="Unit,DarkShrine,ShieldsMax" Value="0.25"/>
+        <EffectArray index="57" Operation="AddBaseMultiply" Reference="Unit,RoboticsFacility,ShieldsMax" Value="0.25"/>
+        <EffectArray index="59" Operation="AddBaseMultiply" Reference="Unit,RoboticsBay,ShieldsMax" Value="0.25"/>
+        <EffectArray index="61" Operation="AddBaseMultiply" Reference="Unit,Stargate,ShieldsMax" Value="0.25"/>
+        <EffectArray index="63" Operation="AddBaseMultiply" Reference="Unit,FleetBeacon,ShieldsMax" Value="0.25"/>
+        <EffectArray index="96" Operation="AddBaseMultiply" Reference="Unit,TalDarimMothership,ShieldsMax" Value="0.25"/>
+        <EffectArray index="98" Operation="AddBaseMultiply" Reference="Unit,Purifier,ShieldsMax" Value="0.25"/>
+        <EffectArray index="100" Operation="AddBaseMultiply" Reference="Unit,Scout,ShieldsMax" Value="0.25"/>
+        <EffectArray index="102" Operation="AddBaseMultiply" Reference="Unit,Zeratul,ShieldsMax" Value="0.25"/>
+        <EffectArray index="104" Operation="AddBaseMultiply" Reference="Unit,Urun,ShieldsMax" Value="0.25"/>
+        <EffectArray index="106" Operation="AddBaseMultiply" Reference="Unit,Mohandar,ShieldsMax" Value="0.25"/>
+        <EffectArray index="108" Operation="AddBaseMultiply" Reference="Unit,Selendis,ShieldsMax" Value="0.25"/>
+        <EffectArray index="110" Operation="AddBaseMultiply" Reference="Unit,Artanis,ShieldsMax" Value="0.25"/>
+        <EffectArray index="113" Operation="AddBaseMultiply" Reference="Unit,SelendisInterceptor,ShieldsMax" Value="0.25"/>
+        <EffectArray index="114" Operation="AddBaseMultiply" Reference="Unit,Karass,ShieldsMax" Value="0.25"/>
+        <EffectArray index="117" Operation="AddBaseMultiply" Reference="Unit,Obelisk,ShieldsMax" Value="0.25"/>
+        <EffectArray index="119" Operation="AddBaseMultiply" Reference="Unit,HybridReaver,ShieldsMax" Value="0.25"/>
+        <EffectArray index="121" Operation="AddBaseMultiply" Reference="Unit,HybridDestroyer,ShieldsMax" Value="0.25"/>
         <EffectArray index="128" removed="1"/>
         <EffectArray index="129" removed="1"/>
         <EffectArray index="130" removed="1"/>

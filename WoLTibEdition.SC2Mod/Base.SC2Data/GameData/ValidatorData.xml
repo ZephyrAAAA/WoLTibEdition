@@ -9,6 +9,8 @@
     <CValidatorCombine id="CanLoadSiegeTank">
         <CombineArray value="NotSiegeTank"/>
         <CombineArray value="HasMaelstromRounds"/>
+        <CombineArray value="IsUnsiegedTank"/>
+        <CombineArray value="IsUnsiegedSiegeBreaker"/>
     </CValidatorCombine>
     <CValidatorUnitFilters id="CasterNotStunned">
         <WhichUnit Value="Caster"/>
@@ -37,6 +39,12 @@
     <CValidatorUnitFilters id="IsHeroic">
         <Filters value="Heroic;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitType id="IsUnsiegedTank">
+        <Value value="SiegeTank"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsUnsiegedSiegeBreaker">
+        <Value value="SiegeBreaker"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="IsVoidSeeker">
         <Value value="VoidSeeker"/>
     </CValidatorUnitType>
@@ -51,6 +59,9 @@
     <CValidatorUnitCompareBehaviorCount id="NotSupercloaked">
         <Behavior value="HideInTheShadows"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="TargetIsMechanical">
+        <Filters value="Mechanical;-"/>
+    </CValidatorUnitFilters>
     <CValidatorUnitCompareDamageDealtTime id="ToshHasFired">
         <Compare value="GE"/>
         <Value value="10"/>
@@ -102,6 +113,10 @@
     <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
         <Behavior value="BunkerWeaponRangeBonus"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="UseMechEMP">
+        <Find value="1"/>
+        <Value value="UseNanoConstructor"/>
+    </CValidatorPlayerRequirement>
     <CValidatorLocationEnumArea id="ZeratulNear">
         <WhichLocation Value="CasterUnit"/>
         <AreaArray Radius="10" Validator="IsZeratul"/>

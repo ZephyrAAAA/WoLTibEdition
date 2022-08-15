@@ -351,6 +351,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades">
         <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
@@ -411,6 +412,10 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Predator">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PrismaticBeam">
         <AttackType value="Magic"/>
@@ -633,6 +638,9 @@
     <CWeaponLegacy id="Vulture">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+        <Period value="2.5"/>
+        <Effect value="FragmentationGrenadeCP"/>
+        <DisplayAttackCount value="2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VultureSpiderMines">
         <AttackType value="Siege"/>
@@ -652,6 +660,23 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.85"/>
         <RandomDelayMax value="-0.85"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WraithA">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Period value="2.5"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WraithG">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WreckingCrewAssault">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WreckingCrewFighter">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Zeratul">
         <Tip value="Weapon/Tip/Grenade"/>

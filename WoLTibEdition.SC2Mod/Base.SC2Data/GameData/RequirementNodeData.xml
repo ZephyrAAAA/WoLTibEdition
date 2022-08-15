@@ -4,13 +4,14 @@
         <OperandArray value="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
         <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
-    </CRequirementAnd>
-    <CRequirementAnd id="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_FusionCoreCompleteOnlyTechTreeCheat">
-        <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
-        <OperandArray value="CountUnitAlias_FusionCoreCompleteOnlyTechTreeCheat"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat">
         <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
@@ -34,7 +35,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorPerditionTurretBuiltCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="PerditionTurretBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
@@ -49,6 +49,9 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SupplyDropEnRoute" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat">
+        <Count Link="Alias_Armory" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
         <Count Link="Alias_Armory" State="InProgressOrBetter"/>
     </CRequirementCountUnit>
@@ -60,9 +63,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat">
         <Count Link="Alias_Factory" State="InProgressOrBetter"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitAlias_FusionCoreCompleteOnlyTechTreeCheat">
-        <Count Link="Alias_FusionCore" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
         <Count Link="Alias_Refinery" State="InProgressOrBetter"/>
@@ -79,6 +79,9 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat">
         <Count Link="Alias_SupplyDepot" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat">
         <Tooltip value="RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
@@ -110,6 +113,14 @@
     <CRequirementCountUpgrade id="CountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TerranInfantryVanadiumPlating" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranShipUltraCapacitorsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TerranShipUltraCapacitors" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranShipVanadiumPlatingQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TerranShipVanadiumPlating" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -280,6 +291,12 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeTerranInfantryVanadiumPlatingQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeTerranShipUltraCapacitorsQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeTerranShipUltraCapacitorsQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeTerranShipVanadiumPlatingQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeTerranShipVanadiumPlatingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeTerranVehicleUltraCapacitorsQueuedOrBetter"/>

@@ -170,6 +170,17 @@
         <Modification MoveSpeedMaximum="1.5"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="MechEMP">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MercGroundDrop">
         <DurationRandomMin value="0"/>
     </CBehaviorBuff>
