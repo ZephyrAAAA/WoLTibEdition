@@ -29,7 +29,27 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
-        <CmdButtonArray index="Execute" Requirements="AutoHarvesterResearched"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TacticalMissileStrike">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+        <Effect index="0" value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
+        <Cost>
+            <Resource index="Minerals" value="1500"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeStart value="180"/>
+                <TimeUse value="180"/>
+            </Charge>
+        </Cost>
+        <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <CursorEffect value="NuclearAnnihilationMengskSmallNukeDamageSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TacticalMissileStrike9">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilResearch id="BarracksTechLabResearch">
         <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
@@ -164,6 +184,7 @@
             <Resource index="Vespene" value="150"/>
             <Button Requirements=""/>
         </InfoArray>
+        <Alert value="SpecializeComplete"/>
     </CAbilSpecialize>
     <CAbilEffectTarget id="Obliterate">
         <Cost index="0">
@@ -171,6 +192,24 @@
         </Cost>
         <PrepTime index="0" value="1"/>
         <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScannerSweepTopbar">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <DataCollection value="ScannerSweep"/>
+        <Effect index="0" value="ScannerSweep"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Resource index="Minerals" value="500"/>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="ScannerSweep"/>
+        <AINotifyEffect value="ScannerSweep"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ScannerSweepTopbar7">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilEffectInstant id="SendWave">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -209,6 +248,37 @@
         <InfoArray index="Research10" Time="90" Upgrade="TerranShipVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
             <Button DefaultButtonFace="StarshipVanadiumPlating" Requirements="LearnStarshipVanadium">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
+    <CAbilEffectTarget id="TacNukeStrikeTopbar">
+        <TechPlayer value="Owner"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="NukePersistentTopbar"/>
+        <Cost>
+            <Resource index="Minerals" value="3000"/>
+            <Cooldown TimeUse="300"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <ValidatedArray index="Channel" value="0"/>
+        <AlertArray index="Cast" value="CalldownLaunch"/>
+        <CursorEffect value="NukeDamage"/>
+        <CalldownEffect value="Nuke"/>
+        <AINotifyEffect value="Nuke"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NukeCalldown8">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectTarget>
+    <CAbilResearch id="TakeTheDrill">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Research1" Time="300" Upgrade="TakeTheDrill">
+            <Resource index="Vespene" value="20000"/>
+            <Button DefaultButtonFace="TakeTheDrill" Requirements="HasNotTakenDrill">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -335,6 +405,22 @@
         <InfoArray index="Build1" Unit="SensorTower2" Time="10">
             <Button DefaultButtonFace="SensorTower"/>
         </InfoArray>
+    </CAbilBuild>
+    <CAbilBuild id="DeployLaserDrill">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <FlagArray index="IgnoreFood" value="1"/>
+        <FlagArray index="IgnoreUnitCost" value="1"/>
+        <FlagArray index="PeonDisableCollision" value="1"/>
+        <FlagArray index="PeonMaintained" value="0"/>
+        <InfoArray index="Build1" Unit="DrakkenLaserDrill" Time="3">
+            <Resource index="Minerals" value="20000"/>
+            <Resource index="Custom" value="200"/>
+            <Button DefaultButtonFace="DeployLaserDrill6" Requirements="UnknownRequirement">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <Range value="500"/>
     </CAbilBuild>
     <CAbilEffectTarget id="VehicleMercenaries">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1403,7 +1489,7 @@
     </CAbilArmMagazine>
     <CAbilHarvest id="SCVHarvest">
         <ResourceAmountCapacity index="Minerals" value="1400"/>
-        <AcquireRadius value="30"/>
+        <AcquireRadius value="20"/>
         <ResourceAcquire index="Custom" value="1"/>
         <ResourceDestroy index="Vespene" value="0"/>
     </CAbilHarvest>

@@ -265,6 +265,10 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="LaserDrillTripodLaserBeam">
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad@2">
         <EditorCategories value="Race:Terran"/>
         <Tip value="Weapon/Tip/Rocket"/>

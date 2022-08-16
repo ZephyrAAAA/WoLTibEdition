@@ -144,9 +144,25 @@ void AddTopbars () {
 		if (TechTreeUpgradeCount(1, "HireSiegeBreakersPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireSpartanCompanyPH", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("VehicleMercenaries");
 		}
+		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("TacNukeStrikeTopbar");
+		}
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {
 		AddTopbarAbil("HyperionYamato");
+		if (TechTreeAbilityIsAllowed(1, AbilityCommand("DeployLaserDrill", 0))) {
+			AddTopbarAbil("DeployLaserDrill");
+		}
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {
+		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("ScannerSweepTopbar");
+		}
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_Armory", c_techCountCompleteOnly) > 0) {
+		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("TacticalMissileStrike");
+		}
 	}
 }
 
@@ -154,9 +170,17 @@ void RemoveTopbars () {
 	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("InfantryMercenaries");
 		RemoveTopbarAbil("VehicleMercenaries");
+		RemoveTopbarAbil("TacNukeStrikeTopbar");
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("HyperionYamato");
+		RemoveTopbarAbil("DeployLaserDrill");
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) == 0) {
+		RemoveTopbarAbil("ScannerSweepTopbar");
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_Armory", c_techCountCompleteOnly) == 0) {
+		RemoveTopbarAbil("TacticalMissileStrike");
 	}
 }
 
@@ -730,6 +754,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	if (TechTreeUpgradeCount(1, "MicroFiltering", c_techCountCompleteOnly) > 0) {
 		rate += 116;
 	}
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), FixedToInt(ConversationDataStateFixedValue("CCEditionPermanence|Laser_Drill", "Allowed")) == 1);
 	ConversationDataStateSetValue("StoryState|AchievementDisabled", 1);
 	AchievementsDisable(1); //one of these should work
 	return true;
@@ -761,9 +786,9 @@ bool INI_Func (bool testConds, bool runActions) {
 	lv_lastFrame = DialogControlLastCreated();
 	DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
 	lv_lastFrame = DialogControlLastCreated();
-	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
-	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
-	DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
+	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
+	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
+	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
 	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
 	topbarCommandPanel = DialogControlLastCreated();
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);

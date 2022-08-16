@@ -65,6 +65,21 @@
         <Resources value="-7"/>
         <ResourcesHarvestedFraction value="1"/>
     </CEffectModifyUnit>
+    <CEffectCreatePersistent id="BansheeAirstrikeCP">
+        <EditorCategories value="Race:Terran"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="BansheeAirstrikeSearch"/>
+        <PeriodicPeriodArray value="2.375"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="BansheeAirstrikeDamage">
+        <EditorCategories value="Race:Terran"/>
+        <Amount value="100"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="BansheeAirstrikeSearch">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="5" Effect="BansheeAirstrikeDamage"/>
+    </CEffectEnumArea>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
@@ -355,6 +370,15 @@
         <PeriodicPeriodArray value="0.125"/>
         <RevealRadius value="7.5"/>
         <OffsetRandMode value="Shuffle"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="NukePersistentTopbar">
+        <EditorCategories value="Race:Terran"/>
+        <Alert value="CalldownLaunchObserver"/>
+        <InitialDelay value="8.75"/>
+        <ExpireEffect value="NukeDetonate"/>
+        <PeriodCount value="50"/>
+        <PeriodicPeriodArray value="0.2"/>
+        <AINotifyEffect value="NukeDamage"/>
     </CEffectCreatePersistent>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>

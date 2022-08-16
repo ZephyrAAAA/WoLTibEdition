@@ -1143,9 +1143,7 @@
         <ArmorType value="Hero"/>
         <LifeStart value="150"/>
         <LifeMax value="150"/>
-        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
         <LifeArmorName value="Unit/LifeArmorName/HardenedMaterial"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
         <OccludeHeight value="1"/>
         <BehaviorArray Link="CollapsibleRockTowerPurifier02"/>
         <Radius value="0"/>
@@ -2010,6 +2008,7 @@
             <LayoutButtons index="0" Face="Attack" AbilCmd="attack,Execute"/>
         </CardLayouts>
         <Food value="-200"/>
+        <CostResource index="Minerals" value="5000"/>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
@@ -2758,14 +2757,14 @@
     <CUnit id="HelsAngelAssault">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <ArmorType value="Large"/>
+        <ArmorType value="Medium"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="HelsAngelFighter">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <ArmorType value="Large"/>
+        <ArmorType value="Medium"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
@@ -4617,6 +4616,11 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="SS_TerraTron">
+        <FlagArray index="Unselectable" value="0"/>
+        <FlagArray index="Untargetable" value="0"/>
+        <FlagArray index="ArmySelect" value="1"/>
+    </CUnit>
     <CUnit id="ScienceFacility">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5920,12 +5924,12 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="VikingAssault">
-        <ArmorType value="Large"/>
+        <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
     </CUnit>
     <CUnit id="VikingFighter">
-        <ArmorType value="Large"/>
+        <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
     </CUnit>

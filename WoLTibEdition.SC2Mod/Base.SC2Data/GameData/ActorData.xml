@@ -87,6 +87,17 @@
         <On Terms="ActorCreation" Send="SetScale 3.000000"/>
         <Model value="TerranSmallTriggeredExplosion"/>
     </CActorModel>
+    <CActorModel id="GhostNukeIndicator">
+        <On Terms="Effect.NukePersistentTopbar.Start" Send="Create"/>
+        <On Terms="Effect.NukePersistentTopbar.Stop" Send="Destroy"/>
+    </CActorModel>
+    <CActorSquib id="GhostNukeLaunch">
+        <On Terms="Effect.NukePersistentTopbar.Start" Send="Create"/>
+    </CActorSquib>
+    <CActorSound id="GhostNukeSeek">
+        <On Terms="Effect.NukePersistentTopbar.Initial" Send="Create"/>
+        <On Terms="Effect.NukePersistentTopbar.Stop; At Effect" Send="Destroy"/>
+    </CActorSound>
     <CActorSound id="HyperionTopbarYamatoChargeSound" parent="SoundContinuous">
         <On Terms="Effect.YamatoGunTopbarPersistent.Start" Send="Create"/>
         <On Terms="Effect.YamatoGunTopbarPersistent.Stop" Send="Destroy"/>
@@ -352,13 +363,6 @@
         <On index="69" Send="Create CommandCenterBuild"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove A"/>
         <On Terms="ActorCreation" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="Destroy"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimGroupApply B"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimBaselineStop"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimPlay Morph Morph 0 0.000000"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo OrbitalCommand2" Send="AnimBaselineStart"/>
         <On Terms="AbilMorph.*.Finish; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="Destroy"/>
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimGroupApply A"/>
         <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimBaselineStop"/>
@@ -368,7 +372,7 @@
         <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2" Send="AnimBaselineStart"/>
         <On Terms="Abil.*.TransportOccupy" Send="AnimPlay StandC Stand,Work,C PlayForever"/>
         <On Terms="Abil.*.TransportEmpty" Send="AnimClear StandC"/>
-        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter2"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationCommandCenter"/>
         <On Terms="Behavior.Corruption.On" Send="AnimSetPaused Morph"/>
         <On Terms="Behavior.Corruption.Off" Send="AnimSetPaused Morph 0"/>
         <On Terms="UnitDeathCustomize; AnimPlaying Morph; !ModelIsLowQuality" Send="Create CommandCenter2MorphDeath"/>
@@ -403,20 +407,8 @@
         <On Terms="UnitBirth.CommandCenter2Flying.Normal; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenterReactor"/>
         <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Send="Create CommandCenterReactor"/>
         <On Terms="UnitBirth.CommandCenter2Flying.Suppressed; ValidateUnit CommandCenterReactorPurchased" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
-        <On Terms="ActorCreation; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
-        <On Terms="UnitConstruction.*.Start; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply Jump"/>
-        <On Terms="UnitBirth.*.Normal; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove Jump"/>
-        <On Terms="Upgrade.OrbitalRelay.Add" Send="AnimGroupApply B"/>
-        <On Terms="UnitPlayerChange; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
-        <On Terms="UnitPlayerChange; !ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
         <On Terms="Upgrade.CommandCenterReactor" Send="Create CommandCenterReactor"/>
         <On Terms="Upgrade.CommandCenterReactor" Target="CommandCenter2Reactor" Send="Signal FastBirth"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimClear Morph"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimPlay Morph Morph,C 0 1.500000"/>
-        <On Terms="AbilMorph.*.Start; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupRemove B"/>
-        <On Terms="AbilMorph.*.Cancel; MorphFrom CommandCenter2; MorphTo PlanetaryFortress2; ValidateUnit OrbitalRelayUpgraded" Send="AnimGroupApply B"/>
-        <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction" Send="DeathCustomize Variation6"/>
-        <On Terms="UnitDeathCustomize; ValidateUnit OrbitalRelayUpgradedAndNotUnderConstruction; IsStatus FlyDeathAnim 2" Send="DeathCustomize Variation9"/>
         <On Terms="UnitDeathCustomize; ValidateUnit CommandCenterReactorPurchasedAndNotUnderConstruction" Send="Create CommandCenter2ReactorDeath"/>
         <DeathArray index="Normal" ModelLink="CommandCenterDeath"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranLargeBuildingDeath" SoundLink="CommandCenter_Explode"/>
@@ -779,6 +771,21 @@
     <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
         <EditorCategories value=""/>
     </CActorSplat>
+    <CActorSplat id="BansheeAirstrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
+        <EditorCategories value=""/>
+    </CActorSplat>
+    <CActorAction id="HyperionTopbarYamatoAttack" parent="GenericAttack" effectImpact="YamatoGunSpecialDamage" effectLaunch="YamatoGunSpecialLaunchMissile">
+        <LaunchAttachQuery Methods="Weapon 9"/>
+        <LaunchAssets Model="HyperionYamatoSpecialAttackLaunch" Sound="HyperionYamatoSpecialAttackLaunch"/>
+        <Beam value="HyperionYamatoSpecialAttackBeam"/>
+        <Missile value="HyperionYamatoSpecialAttackMissile"/>
+        <ImpactSiteOps HoldPosition="1"/>
+        <ImpactAttachQuery Methods="Origin"/>
+        <ImpactMap index="None" Model="HyperionYamatoSpecialAttackImpact" Sound="HyperionYamatoSpecialAttackImpact" ModelReaction="HyperionYamatoSpecialAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HyperionYamatoSpecialAttackImpactShield" ModelReaction="HyperionYamatoSpecialAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="HyperionYamatoSpecialAttackDamage" Sound="HyperionYamatoSpecialAttackDamage" ModelReaction="HyperionYamatoSpecialAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="HyperionYamatoSpecialAttackDamageShield" ModelReaction="HyperionYamatoSpecialAttackDamageReactionShield"/>
+    </CActorAction>
     <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
         <LaunchAssets Sound="HyperionYamatoSpecialAttackLaunch"/>
         <ImpactSiteOps HoldPosition="1"/>
@@ -1365,6 +1372,9 @@
     <CActorSiteOpLocalOffset id="SOpVultureLeft">
         <LocalOffset value="0.300000,0.000000,0.000000"/>
     </CActorSiteOpLocalOffset>
+    <CActorSplat id="ScannerSweepCursorSplat">
+        <On Terms="Abil.ScannerSweepTopbar.Cursor" Send="Create"/>
+    </CActorSplat>
     <CActorUnit id="SensorTower2" parent="TerranBuildingEx" unitName="SensorTower2">
         <Aliases value="_UnitMedium"/>
         <On index="69" Terms="UnitConstruction.SensorTower2.Start" Send="Create SensorTowerBuild"/>
@@ -1849,4 +1859,8 @@
     <CActorModel id="HideInTheShadows" parent="SuperCloak" behaviorCloak="HideInTheShadows">
         <EditorCategories value=""/>
     </CActorModel>
+    <!-- Nuke                                                                                    -->
+    <CActorSplat id="nukeCursorSplat">
+        <On Terms="Abil.TacNukeStrikeTopbar.Cursor" Send="Create"/>
+    </CActorSplat>
 </Catalog>

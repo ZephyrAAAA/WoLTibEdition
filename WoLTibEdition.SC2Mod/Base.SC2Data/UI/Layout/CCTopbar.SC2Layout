@@ -13,10 +13,10 @@
 		</Frame>
 	</Frame>
     <Frame type="CommandButton" name="CCCommandButtonTemplate" template="CommandButton/CommandButtonTemplate">
-        <!--Width val="76"/>
-        <Height val="76"/>
+        <Width val="57"/>
+        <Height val="57"/>
         
-        <Frame type="Image" name="GameButtonBorderImage">
+        <!--Frame type="Image" name="GameButtonBorderImage">
             <LayerCount val="2"/>
             <Texture val="Assets\Textures\ui_void_mission_CC_frame_ability_normal.dds" layer="0"/>
             <Texture val="Assets\Textures\ui_void_mission_CC_frame_ability_pressed.dds" layer="1"/>

@@ -5,7 +5,6 @@
         <OperandArray value="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat"/>
     </CRequirementAnd>
@@ -90,6 +89,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="Crane" State="CompleteOnlyAtUnit"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitDrakkenLaserDrillQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="DrakkenLaserDrill" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
     <CRequirementCountUpgrade id="CountUpgradeHailstormLaunchersCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="HailstormLaunchers" State="CompleteOnly"/>
@@ -105,6 +109,10 @@
     <CRequirementCountUpgrade id="CountUpgradeLowPowerCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="LowPower" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTakeTheDrillQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="TakeTheDrill" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -274,6 +282,9 @@
         <OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
+    <CRequirementNot id="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter">
+        <OperandArray index="0" value="CountUnitDrakkenLaserDrillQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirementNot>
@@ -285,6 +296,9 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLowPowerCompleteOnly">
         <OperandArray index="0" value="CountUpgradeLowPowerCompleteOnly"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeTakeTheDrillQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeTakeTheDrillQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter"/>

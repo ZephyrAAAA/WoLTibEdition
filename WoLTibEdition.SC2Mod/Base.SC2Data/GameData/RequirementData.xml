@@ -84,6 +84,9 @@
     <CRequirement id="HasHailstormLaunchers">
         <NodeArray index="Use" Link="CountUpgradeHailstormLaunchersCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="HasNotTakenDrill">
+        <NodeArray index="Show" Link="NotCountUpgradeTakeTheDrillQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnHailstormLaunchers">
         <NodeArray index="Show" Link="NotCountUpgradeHailstormLaunchersQueuedOrBetter"/>
     </CRequirement>
@@ -172,5 +175,8 @@
     <CRequirement id="TriLithiumResearched">
         <EditorCategories value="Race:Terran"/>
         <NodeArray index="Use" Link="CountUpgradeTriLithiumPowerCellsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnknownRequirement">
+        <NodeArray index="Show" Link="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter"/>
     </CRequirement>
 </Catalog>

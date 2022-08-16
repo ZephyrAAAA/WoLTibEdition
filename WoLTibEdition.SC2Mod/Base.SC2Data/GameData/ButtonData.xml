@@ -7,6 +7,18 @@
         <HotkeyAlias value="Hallucination"/>
         <DefaultButtonLayout Row="1" Column="1"/>
     </CButton>
+    <CButton id="TacticalMissileStrike9">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="DeployLaserDrill6">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
     <CButton id="HideInTheShadows">
         <Icon value="Assets\Textures\BTN-ability-Protoss-permanentlycloaked-darktemplar-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
@@ -32,6 +44,18 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="HyperionYamato5"/>
         <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="NukeCalldown8">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar7">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
     </CButton>
     <CButton id="SendWave">
         <Icon value="Assets\Textures\inspiration_coop.dds"/>
@@ -96,6 +120,10 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
         <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="TakeTheDrill">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
     </CButton>
     <CButton id="VehicleMercenaries4">
         <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>

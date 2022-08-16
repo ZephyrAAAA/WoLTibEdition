@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CConversationState id="CCEditionPermanence">
+        <Indices Id="Laser_Drill" Name="ConversationState/CCEditionPermanence/Laser_Drill"/>
+        <InfoIds index="Text">
+            <Id value=""/>
+        </InfoIds>
+        <InfoIds index="Value">
+            <Id value="Allowed"/>
+        </InfoIds>
+        <InfoIds index="Model">
+            <Id value=""/>
+        </InfoIds>
+        <InfoIds index="Upgrade">
+            <Id value="Upgrade1"/>
+        </InfoIds>
+        <InfoIds index="AbilCmd">
+            <Id value="AC1"/>
+        </InfoIds>
+    </CConversationState>
     <CConversationState id="LabResearch">
         <Indices index="0" ImagePath="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds">
             <InfoUpgrade index="0" Upgrade="HiSecAutoTracking"/>

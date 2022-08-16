@@ -22,6 +22,7 @@ Abil/Name/CCSell=C&C Sell
 Abil/Name/CommandCenter2Land=Land (Command Center)
 Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
 Abil/Name/DeathRecall=Death Recall
+Abil/Name/DeployLaserDrill=Deploy Laser Drill
 Abil/Name/DevilDogSquad=Devil Dog Squad
 Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
 Abil/Name/ExplosiveCharges=Explosive Charges
@@ -50,6 +51,7 @@ Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
 Abil/Name/RepairDroneHeal=Repair
 Abil/Name/ResetRally=Reset Rally
+Abil/Name/ScannerSweepTopbar=Scanner Sweep
 Abil/Name/SendWave=Send Wave
 Abil/Name/SquadStimpack=Squad - Stimpack
 Abil/Name/Starport2AddOns=AddOns
@@ -59,6 +61,9 @@ Abil/Name/Starport2Train=Train (Starport)
 Abil/Name/StoneDeploy=Deploy
 Abil/Name/SupplyDepot2Lower=Lower
 Abil/Name/SupplyDepot2Raise=Raise
+Abil/Name/TacNukeStrikeTopbar=Nuclear Strike
+Abil/Name/TacticalMissileStrike=Tactical Missile Strike
+Abil/Name/TakeTheDrill=Take The Drill
 Abil/Name/TrainStone=Train Stone
 Abil/Name/UpgradeDepot=Upgrade Depot
 Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
@@ -88,6 +93,7 @@ Button/Name/BuildDevastatorTurret=Build Devastator Turret
 Button/Name/BuildingRepair=Building Repair
 Button/Name/CombatDrugs=Combat Drugs
 Button/Name/DeathRecall=Recall
+Button/Name/DeployLaserDrill6=Deploy Laser Drill
 Button/Name/Depower=Depower
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
@@ -97,16 +103,20 @@ Button/Name/HyperionYamato5=Hyperion Yamato
 Button/Name/InfantryMercenaries3=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
+Button/Name/NukeCalldown8=Tac Nuke Strike
 Button/Name/PauseQueue=Pause Queue
 Button/Name/PowerStructure=Power Structure
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
+Button/Name/ScannerSweepTopbar7=Scanner Sweep
 Button/Name/Sell=Sell
 Button/Name/SendWave=Send Wave
 Button/Name/StarshipUltraCapacitors=Starship Ultra Capacitors
 Button/Name/StarshipVanadiumPlating=Starship Vanadium Plating
 Button/Name/Stone=Train Stone
+Button/Name/TacticalMissileStrike9=Tactical Missile Strike
+Button/Name/TakeTheDrill=Take The Drill
 Button/Name/VehicleMercenaries4=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
@@ -124,6 +134,7 @@ Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
+Button/Tooltip/DeployLaserDrill6=Deploys the laser drill.
 Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
@@ -140,6 +151,7 @@ Button/Tooltip/InfantryMercenaries3=Calls down all purchased infantry mercenarie
 Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
 Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
@@ -152,6 +164,7 @@ Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to 
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ScannerSweepTopbar7=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/Sell=Sells selected building for a refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
@@ -162,6 +175,8 @@ Button/Tooltip/StarshipVanadiumPlating=Gives Starships 20% resistance to damage
 Button/Tooltip/Stone=Expands Build Radius.<n/>Obsessed with trucks.
 Button/Tooltip/SupplyDepot2=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
+Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
 Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
@@ -171,6 +186,7 @@ Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 2
 Button/Tooltip/VehicleMercenaries4=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
+ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
 ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s>
@@ -292,6 +308,8 @@ Effect/Name/AstralProjection=Astral Projection
 Effect/Name/AstralProjectionCU=Astral Projection
 Effect/Name/AutoHarvestCP=Auto Harvest
 Effect/Name/AutoHarvestTib=Auto Harvest Tib
+Effect/Name/BansheeAirstrikeDamage=Banshee Airstrike Damage
+Effect/Name/BansheeAirstrikeSearch=Banshee Airstrike Search
 Effect/Name/BuildingRepair=Building Repair
 Effect/Name/BuildingRepairAB=Building Repair AB
 Effect/Name/BuildingRepairLoop=Building Repair Loop
@@ -354,6 +372,7 @@ Effect/Name/NuclearAnnihilationMengskSmallNukeDamage=NuclearAnnihilationMengskSm
 Effect/Name/NuclearAnnihilationMengskSmallNukeDamageSearch=NuclearAnnihilationMengskSmallNukeDamageSearch
 Effect/Name/NuclearAnnihilationMengskSmallNukeDropDelayCP=NuclearAnnihilationMengskSmallNukeDropDelayCP
 Effect/Name/NuclearAnnihilationMengskSmallNukeDummyCP=NuclearAnnihilationMengskSmallNukeDummyCP
+Effect/Name/NukePersistentTopbar=Nuke
 Effect/Name/OrbitalSupplyDrop=Orbital Supply Drop
 Effect/Name/PerditionTurretBuilt=PerditionTurretBuilt
 Effect/Name/PerditionTurretPlace=PerditionTurretPlace
@@ -448,6 +467,7 @@ RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912Te
 RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
+RequirementNode/Tooltip/Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter=Only 1 Laser Drill.
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
 Unit/Category/TerranUnits=Terran
@@ -504,6 +524,7 @@ Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
 Upgrade/Name/LowPower=Low Power
+Upgrade/Name/TakeTheDrill=Take The Drill
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
 Upgrade/Name/TerranInfantryVanadiumPlating=Terran Infantry Vanadium Plating
 Upgrade/Name/TerranShipArmorsVanadiumPlating2=Terran Ship Armor Vanadium Plating Copy

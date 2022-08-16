@@ -404,51 +404,133 @@
         <EffectArray index="134" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossShieldsLevel3">
-        <EffectArray index="1" removed="1"/>
-        <EffectArray index="3" removed="1"/>
-        <EffectArray index="5" removed="1"/>
-        <EffectArray index="7" removed="1"/>
-        <EffectArray index="9" removed="1"/>
-        <EffectArray index="11" removed="1"/>
-        <EffectArray index="13" removed="1"/>
-        <EffectArray index="15" removed="1"/>
-        <EffectArray index="17" removed="1"/>
-        <EffectArray index="19" removed="1"/>
-        <EffectArray index="21" removed="1"/>
-        <EffectArray index="23" removed="1"/>
-        <EffectArray index="25" removed="1"/>
-        <EffectArray index="27" removed="1"/>
-        <EffectArray index="29" removed="1"/>
-        <EffectArray index="31" removed="1"/>
-        <EffectArray index="32" removed="1"/>
-        <EffectArray index="35" removed="1"/>
-        <EffectArray index="37" removed="1"/>
-        <EffectArray index="39" removed="1"/>
-        <EffectArray index="41" removed="1"/>
-        <EffectArray index="43" removed="1"/>
-        <EffectArray index="45" removed="1"/>
-        <EffectArray index="47" removed="1"/>
-        <EffectArray index="48" removed="1"/>
-        <EffectArray index="51" removed="1"/>
-        <EffectArray index="53" removed="1"/>
-        <EffectArray index="55" removed="1"/>
-        <EffectArray index="57" removed="1"/>
-        <EffectArray index="59" removed="1"/>
-        <EffectArray index="61" removed="1"/>
-        <EffectArray index="63" removed="1"/>
+        <EffectArray index="1" Operation="Multiply" Reference="Unit,Probe,ShieldsMax" Value="1.25"/>
+        <EffectArray index="2" Operation="Multiply" Reference="Unit,Zealot,ShieldsMax" Value="1.25"/>
+        <EffectArray index="3" Operation="Multiply" Reference="Unit,Sentry,ShieldsMax" Value="1.25"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Unit,Stalker,ShieldsMax" Value="1.25"/>
+        <EffectArray index="5" Operation="Multiply" Reference="Unit,Immortal,ShieldsMax" Value="1.25"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Unit,HighTemplar,ShieldsMax" Value="1.25"/>
+        <EffectArray index="7" Operation="Multiply" Reference="Unit,DarkTemplar,ShieldsMax" Value="1.25"/>
+        <EffectArray index="8" Operation="Multiply" Reference="Unit,Archon,ShieldsMax" Value="1.25"/>
+        <EffectArray index="9" Operation="Multiply" Reference="Unit,Observer,ShieldsMax" Value="1.25"/>
+        <EffectArray index="10" Operation="Multiply" Reference="Unit,WarpPrism,ShieldsMax" Value="1.25"/>
+        <EffectArray index="11" Operation="Multiply" Reference="Unit,WarpPrismPhasing,ShieldsMax" Value="1.25"/>
+        <EffectArray index="12" Operation="Multiply" Reference="Unit,Colossus,ShieldsMax" Value="1.25"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Unit,Phoenix,ShieldsMax" Value="1.25"/>
+        <EffectArray index="14" Operation="Multiply" Reference="Unit,VoidRay,ShieldsMax" Value="1.25"/>
+        <EffectArray index="15" Operation="Multiply" Reference="Unit,Carrier,ShieldsMax" Value="1.25"/>
+        <EffectArray index="16" Operation="Multiply" Reference="Unit,Interceptor,ShieldsMax" Value="1.25"/>
+        <EffectArray index="17" Operation="Multiply" Reference="Unit,Mothership,ShieldsMax" Value="1.25"/>
+        <EffectArray index="18" Operation="Multiply" Reference="Unit,Nexus,ShieldsMax" Value="1.25"/>
+        <EffectArray index="19" Operation="Multiply" Reference="Unit,Assimilator,ShieldsMax" Value="1.25"/>
+        <EffectArray index="20" Operation="Multiply" Reference="Unit,Pylon,ShieldsMax" Value="1.25"/>
+        <EffectArray index="21" Operation="Multiply" Reference="Unit,Gateway,ShieldsMax" Value="1.25"/>
+        <EffectArray index="22" Operation="Multiply" Reference="Unit,WarpGate,ShieldsMax" Value="1.25"/>
+        <EffectArray index="23" Operation="Multiply" Reference="Unit,Forge,ShieldsMax" Value="1.25"/>
+        <EffectArray index="24" Operation="Multiply" Reference="Unit,PhotonCannon,ShieldsMax" Value="1.25"/>
+        <EffectArray index="25" Operation="Multiply" Reference="Unit,CyberneticsCore,ShieldsMax" Value="1.25"/>
+        <EffectArray index="26" Operation="Multiply" Reference="Unit,TwilightCouncil,ShieldsMax" Value="1.25"/>
+        <EffectArray index="27" Operation="Multiply" Reference="Unit,TemplarArchive,ShieldsMax" Value="1.25"/>
+        <EffectArray index="28" Operation="Multiply" Reference="Unit,DarkShrine,ShieldsMax" Value="1.25"/>
+        <EffectArray index="29" Operation="Multiply" Reference="Unit,RoboticsFacility,ShieldsMax" Value="1.25"/>
+        <EffectArray index="30" Operation="Multiply" Reference="Unit,RoboticsBay,ShieldsMax" Value="1.25"/>
+        <EffectArray index="31" Operation="Multiply" Reference="Unit,Stargate,ShieldsMax" Value="1.25"/>
+        <EffectArray index="32" Operation="Multiply" Reference="Unit,FleetBeacon,ShieldsMax" Value="1.25"/>
+        <EffectArray index="33" Operation="Multiply" Reference="Unit,TalDarimMothership,ShieldsMax" Value="1.25"/>
+        <EffectArray index="34" Operation="Multiply" Reference="Unit,Purifier,ShieldsMax" Value="1.25"/>
+        <EffectArray index="35" Operation="Multiply" Reference="Unit,Scout,ShieldsMax" Value="1.25"/>
+        <EffectArray index="36" Operation="Multiply" Reference="Unit,Zeratul,ShieldsMax" Value="1.25"/>
+        <EffectArray index="37" Operation="Multiply" Reference="Unit,Urun,ShieldsMax" Value="1.25"/>
+        <EffectArray index="38" Operation="Multiply" Reference="Unit,Mohandar,ShieldsMax" Value="1.25"/>
+        <EffectArray index="39" Operation="Multiply" Reference="Unit,Selendis,ShieldsMax" Value="1.25"/>
+        <EffectArray index="40" Operation="Multiply" Reference="Unit,Artanis,ShieldsMax" Value="1.25"/>
+        <EffectArray index="41" Operation="Multiply" Reference="Unit,SelendisInterceptor,ShieldsMax" Value="1.25"/>
+        <EffectArray index="42" Operation="Multiply" Reference="Unit,Karass,ShieldsMax" Value="1.25"/>
+        <EffectArray index="43" Operation="Multiply" Reference="Unit,Obelisk,ShieldsMax" Value="1.25"/>
+        <EffectArray index="44" Operation="Multiply" Reference="Unit,HybridReaver,ShieldsMax" Value="1.25"/>
+        <EffectArray index="45" Operation="Multiply" Reference="Unit,HybridDestroyer,ShieldsMax" Value="1.25"/>
+        <EffectArray index="46" Operation="Multiply" Reference="Unit,Probe,ShieldsStart" Value="1.25"/>
+        <EffectArray index="47" Operation="Multiply" Reference="Unit,Zealot,ShieldsStart" Value="1.25"/>
+        <EffectArray index="48" Operation="Multiply" Reference="Unit,Sentry,ShieldsStart" Value="1.25"/>
+        <EffectArray index="49" Operation="Multiply" Reference="Unit,Stalker,ShieldsStart" Value="1.25"/>
+        <EffectArray index="50" Operation="Multiply" Reference="Unit,Immortal,ShieldsStart" Value="1.25"/>
+        <EffectArray index="51" Operation="Multiply" Reference="Unit,HighTemplar,ShieldsStart" Value="1.25"/>
+        <EffectArray index="52" Operation="Multiply" Reference="Unit,DarkTemplar,ShieldsStart" Value="1.25"/>
+        <EffectArray index="53" Operation="Multiply" Reference="Unit,Archon,ShieldsStart" Value="1.25"/>
+        <EffectArray index="54" Operation="Multiply" Reference="Unit,Observer,ShieldsStart" Value="1.25"/>
+        <EffectArray index="55" Operation="Multiply" Reference="Unit,WarpPrism,ShieldsStart" Value="1.25"/>
+        <EffectArray index="56" Operation="Multiply" Reference="Unit,WarpPrismPhasing,ShieldsStart" Value="1.25"/>
+        <EffectArray index="57" Operation="Multiply" Reference="Unit,Colossus,ShieldsStart" Value="1.25"/>
+        <EffectArray index="58" Operation="Multiply" Reference="Unit,Phoenix,ShieldsStart" Value="1.25"/>
+        <EffectArray index="59" Operation="Multiply" Reference="Unit,VoidRay,ShieldsStart" Value="1.25"/>
+        <EffectArray index="60" Operation="Multiply" Reference="Unit,Carrier,ShieldsStart" Value="1.25"/>
+        <EffectArray index="61" Operation="Multiply" Reference="Unit,Interceptor,ShieldsStart" Value="1.25"/>
+        <EffectArray index="62" Operation="Multiply" Reference="Unit,Mothership,ShieldsStart" Value="1.25"/>
+        <EffectArray index="63" Operation="Multiply" Reference="Unit,Nexus,ShieldsStart" Value="1.25"/>
+        <EffectArray index="64" Operation="Multiply" Reference="Unit,Assimilator,ShieldsStart" Value="1.25"/>
+        <EffectArray index="65" Operation="Multiply" Reference="Unit,Pylon,ShieldsStart" Value="1.25"/>
+        <EffectArray index="66" Operation="Multiply" Reference="Unit,Gateway,ShieldsStart" Value="1.25"/>
+        <EffectArray index="67" Operation="Multiply" Reference="Unit,WarpGate,ShieldsStart" Value="1.25"/>
+        <EffectArray index="68" Operation="Multiply" Reference="Unit,Forge,ShieldsStart" Value="1.25"/>
+        <EffectArray index="69" Operation="Multiply" Reference="Unit,PhotonCannon,ShieldsStart" Value="1.25"/>
+        <EffectArray index="70" Operation="Multiply" Reference="Unit,CyberneticsCore,ShieldsStart" Value="1.25"/>
+        <EffectArray index="71" Operation="Multiply" Reference="Unit,TwilightCouncil,ShieldsStart" Value="1.25"/>
+        <EffectArray index="72" Operation="Multiply" Reference="Unit,TemplarArchive,ShieldsStart" Value="1.25"/>
+        <EffectArray index="73" Operation="Multiply" Reference="Unit,DarkShrine,ShieldsStart" Value="1.25"/>
+        <EffectArray index="74" Operation="Multiply" Reference="Unit,RoboticsFacility,ShieldsStart" Value="1.25"/>
+        <EffectArray index="75" Operation="Multiply" Reference="Unit,RoboticsBay,ShieldsStart" Value="1.25"/>
+        <EffectArray index="76" Operation="Multiply" Reference="Unit,Stargate,ShieldsStart" Value="1.25"/>
+        <EffectArray index="77" Operation="Multiply" Reference="Unit,FleetBeacon,ShieldsStart" Value="1.25"/>
+        <EffectArray index="78" Operation="Multiply" Reference="Unit,TalDarimMothership,ShieldsStart" Value="1.25"/>
+        <EffectArray index="79" Operation="Multiply" Reference="Unit,Purifier,ShieldsStart" Value="1.25"/>
+        <EffectArray index="80" Operation="Multiply" Reference="Unit,Scout,ShieldsStart" Value="1.25"/>
+        <EffectArray index="81" Operation="Multiply" Reference="Unit,Zeratul,ShieldsStart" Value="1.25"/>
+        <EffectArray index="82" Operation="Multiply" Reference="Unit,Urun,ShieldsStart" Value="1.25"/>
+        <EffectArray index="83" Operation="Multiply" Reference="Unit,Mohandar,ShieldsStart" Value="1.25"/>
+        <EffectArray index="84" Operation="Multiply" Reference="Unit,Selendis,ShieldsStart" Value="1.25"/>
+        <EffectArray index="85" Operation="Multiply" Reference="Unit,Artanis,ShieldsStart" Value="1.25"/>
+        <EffectArray index="86" Operation="Multiply" Reference="Unit,SelendisInterceptor,ShieldsStart" Value="1.25"/>
+        <EffectArray index="87" Operation="Multiply" Reference="Unit,Karass,ShieldsStart" Value="1.25"/>
+        <EffectArray index="88" Operation="Multiply" Reference="Unit,Obelisk,ShieldsStart" Value="1.25"/>
+        <EffectArray index="89" Operation="Multiply" Reference="Unit,HybridReaver,ShieldsStart" Value="1.25"/>
+        <EffectArray index="90" Operation="Multiply" Reference="Unit,HybridDestroyer,ShieldsStart" Value="1.25"/>
+        <EffectArray index="91" removed="1"/>
+        <EffectArray index="92" removed="1"/>
+        <EffectArray index="93" removed="1"/>
+        <EffectArray index="94" removed="1"/>
+        <EffectArray index="95" removed="1"/>
         <EffectArray index="96" removed="1"/>
+        <EffectArray index="97" removed="1"/>
         <EffectArray index="98" removed="1"/>
+        <EffectArray index="99" removed="1"/>
         <EffectArray index="100" removed="1"/>
+        <EffectArray index="101" removed="1"/>
         <EffectArray index="102" removed="1"/>
+        <EffectArray index="103" removed="1"/>
         <EffectArray index="104" removed="1"/>
+        <EffectArray index="105" removed="1"/>
         <EffectArray index="106" removed="1"/>
+        <EffectArray index="107" removed="1"/>
         <EffectArray index="108" removed="1"/>
+        <EffectArray index="109" removed="1"/>
         <EffectArray index="110" removed="1"/>
+        <EffectArray index="111" removed="1"/>
+        <EffectArray index="112" removed="1"/>
         <EffectArray index="113" removed="1"/>
         <EffectArray index="114" removed="1"/>
+        <EffectArray index="115" removed="1"/>
+        <EffectArray index="116" removed="1"/>
         <EffectArray index="117" removed="1"/>
+        <EffectArray index="118" removed="1"/>
         <EffectArray index="119" removed="1"/>
+        <EffectArray index="120" removed="1"/>
         <EffectArray index="121" removed="1"/>
+        <EffectArray index="122" removed="1"/>
+        <EffectArray index="123" removed="1"/>
+        <EffectArray index="124" removed="1"/>
+        <EffectArray index="125" removed="1"/>
+        <EffectArray index="126" removed="1"/>
+        <EffectArray index="127" removed="1"/>
         <EffectArray index="128" removed="1"/>
         <EffectArray index="129" removed="1"/>
         <EffectArray index="130" removed="1"/>
@@ -456,101 +538,13 @@
         <EffectArray index="132" removed="1"/>
         <EffectArray index="133" removed="1"/>
         <EffectArray index="134" removed="1"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Probe,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Zealot,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Sentry,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Stalker,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Immortal,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,HighTemplar,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,DarkTemplar,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Archon,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Observer,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,WarpPrism,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,WarpPrismPhasing,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Colossus,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Phoenix,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,VoidRay,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Carrier,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Interceptor,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Mothership,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Nexus,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Assimilator,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Pylon,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Gateway,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,WarpGate,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Forge,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,PhotonCannon,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,CyberneticsCore,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,TwilightCouncil,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,TemplarArchive,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,DarkShrine,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,RoboticsFacility,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,RoboticsBay,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Stargate,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,FleetBeacon,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,TalDarimMothership,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Purifier,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Scout,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Zeratul,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Urun,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Mohandar,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Selendis,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Artanis,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,SelendisInterceptor,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Karass,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Obelisk,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,HybridReaver,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,HybridDestroyer,ShieldsMax" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Probe,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Zealot,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Sentry,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Stalker,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Immortal,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,HighTemplar,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,DarkTemplar,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Archon,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Observer,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,WarpPrism,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,WarpPrismPhasing,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Colossus,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Phoenix,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,VoidRay,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Carrier,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Interceptor,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Mothership,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Nexus,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Assimilator,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Pylon,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Gateway,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,WarpGate,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Forge,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,PhotonCannon,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,CyberneticsCore,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,TwilightCouncil,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,TemplarArchive,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,DarkShrine,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,RoboticsFacility,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,RoboticsBay,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Stargate,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,FleetBeacon,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,TalDarimMothership,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Purifier,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Scout,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Zeratul,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Urun,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Mohandar,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Selendis,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Artanis,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,SelendisInterceptor,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Karass,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,Obelisk,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,HybridReaver,ShieldsStart" Value="1.25"/>
-		<EffectArray Operation="Multiply" Reference="Unit,HybridDestroyer,ShieldsStart" Value="1.25"/>
-
     </CUpgrade>
     <CUpgrade id="StabilizerMedPacks">
         <EffectArray index="0" Value="0.375"/>
         <EffectArray index="1" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="TakeTheDrill">
+        <BonusResourcePerLevel index="Minerals" value="20000"/>
     </CUpgrade>
     <CUpgrade id="TerranShipVanadiumPlating">
         <Flags index="UpgradeCheat" value="0"/>
