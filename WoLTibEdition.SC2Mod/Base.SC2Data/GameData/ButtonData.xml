@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <!--
+Find: ^'(.+?) (.+)
+Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Column="3"/>\r\n\t</CButton>\r\n\t<CButton id="\14">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Column="4"/>\r\n\t</CButton>\r\n\t<CButton id="\15">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="1"/>\r\n\t</CButton>\r\n\t<CButton id="\16">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="1"/>\r\n\t\t<DefaultButtonLayout Column="1"/>\r\n\t</CButton>\r\n\t<CButton id="\17">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="1"/>\r\n\t\t<DefaultButtonLayout Column="2"/>\r\n\t</CButton>\r\n\t<CButton id="\18">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="1"/>\r\n\t\t<DefaultButtonLayout Column="3"/>\r\n\t</CButton>\r\n\t<CButton id="\19">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="1"/>\r\n\t\t<DefaultButtonLayout Column="4"/>\r\n\t</CButton>\r\n\t<CButton id="\110">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="2"/>\r\n\t</CButton>\r\n\t<CButton id="\111">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="2"/>\r\n\t\t<DefaultButtonLayout Column="1"/>\r\n\t</CButton>\r\n\t<CButton id="\112">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="2"/>\r\n\t\t<DefaultButtonLayout Column="2"/>\r\n\t</CButton>\r\n\t<CButton id="\113">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="2"/>\r\n\t\t<DefaultButtonLayout Column="3"/>\r\n\t</CButton>\r\n\t<CButton id="\114">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value="\2"/>\r\n\t\t<DefaultButtonLayout Row="2"/>\r\n\t\t<DefaultButtonLayout Column="4"/>\r\n\t</CButton>
+-->
     <CButton id="AstralProjection">
         <Icon value="Assets\Textures\btn-ability-protoss-hallucination-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-hallucination-color.dds"/>
         <EditorCategories value="Race:Protoss"/>
         <HotkeyAlias value="Hallucination"/>
-        <DefaultButtonLayout Row="1" Column="1"/>
-    </CButton>
-    <CButton id="TacticalMissileStrike9">
-        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <DefaultButtonLayout Row="1" Column="4"/>
-    </CButton>
-    <CButton id="DeployLaserDrill6">
-        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
-        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
-        <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Row="1" Column="1"/>
     </CButton>
     <CButton id="HideInTheShadows">
@@ -32,12 +24,6 @@
         <HotkeyAlias value="HyperionYamato5"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
-    <CButton id="HyperionYamato5">
-        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <DefaultButtonLayout Row="1"/>
-    </CButton>
     <CButton id="HyperionYamato4">
         <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
@@ -45,17 +31,65 @@
         <HotkeyAlias value="HyperionYamato5"/>
         <DefaultButtonLayout Column="4"/>
     </CButton>
-    <CButton id="NukeCalldown8">
-        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+    <CButton id="HyperionYamato5">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="HyperionYamato6">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="HyperionYamato7">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="HyperionYamato8">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Row="1" Column="3"/>
     </CButton>
-    <CButton id="ScannerSweepTopbar7">
-        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
-        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+    <CButton id="HyperionYamato9">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
         <EditorCategories value="Race:Terran"/>
-        <DefaultButtonLayout Row="1" Column="2"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="HyperionYamato10">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="HyperionYamato11">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="HyperionYamato12">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="HyperionYamato13">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="HyperionYamato14">
+        <Icon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-yamatogun-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
     <CButton id="SendWave">
         <Icon value="Assets\Textures\inspiration_coop.dds"/>
@@ -107,12 +141,6 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="InfantryMercenaries3">
-        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <DefaultButtonLayout Column="3"/>
-    </CButton>
     <CButton id="ResetRally">
         <Icon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
@@ -124,13 +152,6 @@
     <CButton id="TakeTheDrill">
         <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
         <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
-    </CButton>
-    <CButton id="VehicleMercenaries4">
-        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
-        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
-        <EditorCategories value="Race:Terran"/>
-        <HotkeyAlias value="InfantryMercenaries3"/>
-        <DefaultButtonLayout Column="4"/>
     </CButton>
     <CButton id="InfantryUltraCapacitors">
         <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
@@ -190,5 +211,365 @@
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="InfantryVanadiumPlating"/>
         <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="DeployLaserDrill3">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="DeployLaserDrill4">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="DeployLaserDrill5">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="DeployLaserDrill6">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="DeployLaserDrill7">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="DeployLaserDrill8">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="DeployLaserDrill9">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="DeployLaserDrill10">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="DeployLaserDrill11">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="DeployLaserDrill12">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="DeployLaserDrill13">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="DeployLaserDrill14">
+        <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike3">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike4">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike5">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike6">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike7">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike8">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike9">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike10">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike11">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike12">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike13">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="TacticalMissileStrike14">
+        <Icon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-ghost-tacticalmissilestrike.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
+    <CButton id="InfantryMercenaries3">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="InfantryMercenaries4">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="InfantryMercenaries5">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="InfantryMercenaries6">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="InfantryMercenaries7">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="InfantryMercenaries8">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="InfantryMercenaries9">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="InfantryMercenaries10">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="InfantryMercenaries11">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="InfantryMercenaries12">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="InfantryMercenaries13">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="InfantryMercenaries14">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
+    <CButton id="VehicleMercenaries3">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="VehicleMercenaries4">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="VehicleMercenaries5">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="VehicleMercenaries6">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="VehicleMercenaries7">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="VehicleMercenaries8">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="VehicleMercenaries9">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="VehicleMercenaries10">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="VehicleMercenaries11">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="VehicleMercenaries12">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="VehicleMercenaries13">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="VehicleMercenaries14">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
+    <CButton id="NukeCalldown3">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="NukeCalldown4">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="NukeCalldown5">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="NukeCalldown6">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="NukeCalldown7">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="NukeCalldown8">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="NukeCalldown9">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="NukeCalldown10">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="NukeCalldown11">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="NukeCalldown12">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="NukeCalldown13">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="NukeCalldown14">
+        <Icon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-nuclearstrike-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar3">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar4">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar5">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar6">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar7">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar8">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar9">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar10">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar11">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar12">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar13">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="ScannerSweepTopbar14">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
 </Catalog>

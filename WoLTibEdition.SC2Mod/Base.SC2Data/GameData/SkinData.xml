@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Find: ^'([a-zA-Z]+)(..?)
+Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\13"/>\r\n\t</CSkin>\r\n\t<CSkin id="\14">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\14"/>\r\n\t</CSkin>\r\n\t<CSkin id="\15">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\15"/>\r\n\t</CSkin>\r\n\t<CSkin id="\16">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\16"/>\r\n\t</CSkin>\r\n\t<CSkin id="\17">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\17"/>\r\n\t</CSkin>\r\n\t<CSkin id="\18">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\18"/>\r\n\t</CSkin>\r\n\t<CSkin id="\19">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\19"/>\r\n\t</CSkin>\r\n\t<CSkin id="\110">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\110"/>\r\n\t</CSkin>\r\n\t<CSkin id="\111">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\111"/>\r\n\t</CSkin>\r\n\t<CSkin id="\112">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\112"/>\r\n\t</CSkin>\r\n\t<CSkin id="\113">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\113"/>\r\n\t</CSkin>\r\n\t<CSkin id="\114">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\114"/>\r\n\t</CSkin>
+-->
+<Catalog>
+    <CSkin id="HyperionYamato3">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato3"/>
+    </CSkin>
+    <CSkin id="HyperionYamato4">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato4"/>
+    </CSkin>
+    <CSkin id="HyperionYamato5">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato5"/>
+    </CSkin>
+    <CSkin id="HyperionYamato6">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato6"/>
+    </CSkin>
+    <CSkin id="HyperionYamato7">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato7"/>
+    </CSkin>
+    <CSkin id="HyperionYamato8">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato8"/>
+    </CSkin>
+    <CSkin id="HyperionYamato9">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato9"/>
+    </CSkin>
+    <CSkin id="HyperionYamato10">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato10"/>
+    </CSkin>
+    <CSkin id="HyperionYamato11">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato11"/>
+    </CSkin>
+    <CSkin id="HyperionYamato12">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato12"/>
+    </CSkin>
+    <CSkin id="HyperionYamato13">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato13"/>
+    </CSkin>
+    <CSkin id="HyperionYamato14">
+        <ReplacementArray Catalog="Button" From="HyperionYamato5" To="HyperionYamato14"/>
+    </CSkin>
+	<CSkin id="InfantryMercenaries3">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries3"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries4">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries4"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries5">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries5"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries6">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries6"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries7">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries7"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries8">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries8"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries9">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries9"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries10">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries10"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries11">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries11"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries12">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries12"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries13">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries13"/>
+	</CSkin>
+	<CSkin id="InfantryMercenaries14">
+		<ReplacementArray Catalog="Button" From="InfantryMercenaries3" To="InfantryMercenaries14"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill3">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill3"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill4">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill4"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill5">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill5"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill6">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill6"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill7">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill7"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill8">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill8"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill9">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill9"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill10">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill10"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill11">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill11"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill12">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill12"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill13">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill13"/>
+	</CSkin>
+	<CSkin id="DeployLaserDrill14">
+		<ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill14"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike3">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike3"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike4">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike4"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike5">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike5"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike6">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike6"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike7">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike7"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike8">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike8"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike9">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike9"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike10">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike10"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike11">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike11"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike12">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike12"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike13">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike13"/>
+	</CSkin>
+	<CSkin id="TacticalMissileStrike14">
+		<ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike14"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries3">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries3"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries4">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries4"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries5">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries5"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries6">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries6"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries7">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries7"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries8">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries8"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries9">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries9"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries10">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries10"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries11">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries11"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries12">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries12"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries13">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries13"/>
+	</CSkin>
+	<CSkin id="VehicleMercenaries14">
+		<ReplacementArray Catalog="Button" From="VehicleMercenaries4" To="VehicleMercenaries14"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar3">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown3"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar4">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown4"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar5">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown5"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar6">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown6"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar7">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown7"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar8">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown8"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar9">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown9"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar10">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown10"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar11">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown11"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar12">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown12"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar13">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown13"/>
+	</CSkin>
+	<CSkin id="TacNukeStrikeTopbar14">
+		<ReplacementArray Catalog="Button" From="NukeCalldown8" To="NukeCalldown14"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar3">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar3"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar4">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar4"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar5">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar5"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar6">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar6"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar7">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar7"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar8">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar8"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar9">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar9"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar10">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar10"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar11">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar11"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar12">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar12"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar13">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar13"/>
+	</CSkin>
+	<CSkin id="ScannerSweepTopbar14">
+		<ReplacementArray Catalog="Button" From="ScannerSweepTopbar7" To="ScannerSweepTopbar14"/>
+	</CSkin>
+</Catalog>

@@ -103,15 +103,17 @@ void AddTopbarAbil(string abil) {
 		return;
 	}
 	for (lv_i = 0; topbarAbils[lv_i] != null; lv_i += 1) {
-		if (lv_i == 12) {
+		if (lv_i == 11) {
 			return;
 		}
 	}
-	if (lv_i > 12) {
+	if (lv_i > 11) {
 		return;
 	}
+	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Adding: " +abil+IntToString(lv_i+3)));
 	UnitAbilityAdd(topbarUnit, abil);
 	topbarAbils[lv_i] = abil;
+	PlayerApplySkin(1, abil+IntToString(lv_i+3), true);
 }
 
 void RemoveTopbarAbil(string abil) {
@@ -120,19 +122,24 @@ void RemoveTopbarAbil(string abil) {
 		return;
 	}
 	for (lv_i = 0; topbarAbils[lv_i] != abil; lv_i += 1) {
-		if (lv_i == 12) {
+		if (lv_i == 11) {
 			return;
 		}
 	}
-	if (lv_i > 12) {
+	if (lv_i > 11) {
 		return;
 	}
 	UnitAbilityRemove(topbarUnit, abil);
+	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
+	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Removing: " +abil+IntToString(lv_i+3)));
+	lv_i += 1;
 	for (; topbarAbils[lv_i] != null; lv_i += 1) {
-		if (lv_i == 0) {
-			continue;
-		}
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
+		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
+		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
+		topbarAbils[lv_i] = null;
 	}
 }
 

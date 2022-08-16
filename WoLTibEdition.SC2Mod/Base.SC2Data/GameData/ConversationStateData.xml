@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CConversationState id="CCEditionPermanence">
-        <Indices Id="Laser_Drill" Name="ConversationState/CCEditionPermanence/Laser_Drill"/>
+        <Indices Id="Laser_Drill" Name="ConversationState/CCEditionPermanence/Laser_Drill">
+            <InfoAbilCmd Id="AC1" Abil="DeployLaserDrill"/>
+        </Indices>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>
