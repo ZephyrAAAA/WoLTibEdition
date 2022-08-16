@@ -1446,9 +1446,7 @@
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="YamatoGunTopbarPersistent">
         <EditorCategories value="Race:Terran"/>
-        <WhichLocation Value="TargetUnitOrPoint"/>
-        <OffsetVectorStartLocation Value="TargetUnitOrPoint"/>
-        <OffsetVectorEndLocation Value="TargetUnitOrPoint"/>
+        <OffsetVectorStartLocation Value="TargetPoint"/>
         <ExpireDelay value="2"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="YamatoGunTopbarLaunchMissile"/>
