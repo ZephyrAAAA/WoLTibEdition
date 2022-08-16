@@ -371,6 +371,9 @@
         <RevealRadius value="7.5"/>
         <OffsetRandMode value="Shuffle"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="NukeDamage">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="NukePersistentTopbar">
         <EditorCategories value="Race:Terran"/>
         <Alert value="CalldownLaunchObserver"/>
@@ -1434,6 +1437,7 @@
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="YamatoGunTopbarLaunchMissile">
         <ValidatorArray index="0" removed="1"/>
