@@ -26,16 +26,17 @@ Marine damage nerfed to 5. War Pig damage nerfed to 6.75
 Medic healing nerfed to 6hp/s for 3E/s
 You now get the Predator after 3 missions.
 You now get the Hercules after 6 missions.
-Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
-Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Mindblast, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Ghost-Cloak is gone, Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Psi Storm, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+The Laser Drill is now deactivated in low power mode.
 
 Upgrades:
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 *Hercules-> Cellular Reactor- Also increases energy regen
 Command Center Reactor now decreases the build time of all units (And the cost)
-*CC Reactor now has the correct text
+CC Reactor now has the correct text
 Autogas is now autoharvesting.
-*Autoharvesting now has the correct text.
+Autoharvesting now has the correct text.
 Replenishable Magazine-> EMP- Disables mechanical units on attack
 Advanced Construction now decreases the build time of all units (And the cost)
 Dual Fusion increases repair speed of Topbar Repair by 50%.
@@ -43,7 +44,7 @@ Orbital Command now unlocks support powers on tech buildings. Scan on EBay, tact
 Dual Fusion now says what it actually does.
 Advanced Construction now says what it actually does.
 Orbital Command now says what it actually does.
-*HellStorm batteries and Titanium Housing now mention affecting the devastation turret.
+HellStorm batteries and Titanium Housing now mention affecting the devastation turret.
 Stabilizer Medpack no longer increases heal speed.
 Stabilizer no longer lies about what it does.
 Fixed the tooltip text for Hydraulic Stabilizers
@@ -53,8 +54,8 @@ Maelstrom rounds text fixed.
 Hi-Sec now gives defenses 15% attack speed, and costs 2k.
 Hi-Sec now says everything it does.
 Building Armour now says the correct stuff.
-*Added the Improved Railguns upgrade on the Armoury.
-*Added the Improved Explosives upgrade on the Engineering Bay.
+Added the Improved Railguns upgrade on the Armoury.
+Added the Improved Explosives upgrade on the Engineering Bay.
 Vanadium Research text is now correct
 Ultracap research text is now correct
 U-238 rounds no longer references light armour
@@ -64,6 +65,7 @@ The second Reaper Armoury upgrade now has the correct tooltip.
 The text warning you that choosing the first level of zerg research will lock you out of the other one now correctly says what Hi-sec and Building Armour are.
 Hi-Sec and Building Armour lab researches are now correct.
 Orbital Supply Drop nerfed to 5/s income (600/min)
+Fixed the Goliath Neosteel Plating flavour text.
 
 Liberation Day:
 Added a tip about the existence of Armour and Damage Types
