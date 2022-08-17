@@ -1444,7 +1444,7 @@
         <EditorCategories value="Race:Terran"/>
         <LaunchLocation Value="TargetPoint"/>
         <ImpactLocation Value="TargetPoint"/>
-        <LaunchOffset value="0,1,30"/>
+        <LaunchOffset value="0,1,20"/>
         <ImpactEffect value="YamatoGunTopbarDamage"/>
         <AmmoUnit value="HyperionYamatoSpecialWeapon"/>
     </CEffectLaunchMissile>

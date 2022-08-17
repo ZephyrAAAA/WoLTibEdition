@@ -768,15 +768,20 @@
     <CActorUnit id="HybridC">
         <On Terms="Effect.ZeratulSeek.Stop" Send="Create HybridWarpInEffect"/>
     </CActorUnit>
+    <CActorSound id="HyperionTopbarYamatoLaunchSound" parent="SoundOneShot" effectAttack="Bogus" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
+        <On Terms="Effect.YamatoGunTopbarLaunchMissile.Start; At Effect" Send="Create"/>
+        <Sound value="HyperionYamatoSpecialAttackLaunch"/>
+    </CActorSound>
     <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
         <EditorCategories value=""/>
     </CActorSplat>
     <CActorSplat id="BansheeAirstrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
         <EditorCategories value=""/>
     </CActorSplat>
-    <CActorAction id="HyperionTopbarYamatoAttack" parent="GenericAttack" effectImpact="YamatoGunSpecialDamage" effectLaunch="YamatoGunSpecialLaunchMissile">
-        <LaunchAttachQuery Methods="Weapon 9"/>
-        <LaunchAssets Model="HyperionYamatoSpecialAttackLaunch" Sound="HyperionYamatoSpecialAttackLaunch"/>
+    <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
+        <On index="6" Terms="Effect.YamatoGunTopbarLaunchMissile.Start; At Effect" Send="Create"/>
+        <LaunchAttachQuery Methods=""/>
+        <LaunchAssets Model="HyperionYamatoSpecialAttackLaunch" Sound=""/>
         <Beam value="HyperionYamatoSpecialAttackBeam"/>
         <Missile value="HyperionYamatoSpecialAttackMissile"/>
         <ImpactSiteOps HoldPosition="1"/>
@@ -786,13 +791,6 @@
         <DamageMap index="None" Model="HyperionYamatoSpecialAttackDamage" Sound="HyperionYamatoSpecialAttackDamage" ModelReaction="HyperionYamatoSpecialAttackDamageReaction"/>
         <DamageMap index="Shield" Sound="HyperionYamatoSpecialAttackDamageShield" ModelReaction="HyperionYamatoSpecialAttackDamageReactionShield"/>
     </CActorAction>
-    <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
-        <LaunchAssets Sound="HyperionYamatoSpecialAttackLaunch"/>
-        <ImpactSiteOps HoldPosition="1"/>
-        <ImpactAttachQuery Methods="Origin"/>
-        <ImpactMap index="None" Model="HyperionYamatoSpecialAttackImpact" Sound="HyperionYamatoSpecialAttackImpact"/>
-    </CActorAction>
-    <CActorMissile id="HyperionYamatoTopbarAttackMissile" parent="GenericAttackMissile" unitName="HyperionYamatoSpecialWeapon"/>
     <CActorAction id="MarauderHailstormRockets" parent="GenericAttack" effectImpact="HailstormLauncherU" effectLaunch="HailstormLauncherLM">
         <LaunchAttachQuery Methods="AMPatternMarauder"/>
         <LaunchAssets Model="MarauderAttackLaunch" Sound="VikingFighter_AttackLaunch"/>
