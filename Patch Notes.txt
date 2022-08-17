@@ -11,9 +11,9 @@ Mercenaries no longer say they have a limit per mission
 Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
 Raynor now has a headache after doing a Zeratul Mission.
 The AI will now blink stalkers.
-*Added the Orbital Scan support power on the Engineering Bay, unlocked by Orbital Command.
-*Added the Nuclear Strike support power on the Spec Ops, unlocked by Orbital Command.
-*Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Command.
+Added the Orbital Scan support power on the Engineering Bay, unlocked by Orbital Command.
+Added the Nuclear Strike support power on the Spec Ops, unlocked by Orbital Command.
+Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Command.
 Added the Yamato Strike support power on the Fusion Core.
 
 Units:
@@ -26,6 +26,8 @@ Marine damage nerfed to 5. War Pig damage nerfed to 6.75
 Medic healing nerfed to 6hp/s for 3E/s
 You now get the Predator after 3 missions.
 You now get the Hercules after 6 missions.
+Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Mindblast, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 
 Upgrades:
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
@@ -36,17 +38,18 @@ Autogas is now autoharvesting.
 *Autoharvesting now has the correct text.
 Replenishable Magazine-> EMP- Disables mechanical units on attack
 Advanced Construction now decreases the build time of all units (And the cost)
-Dual Fusion increases repair speed of Topbar Repair.
-*Dual Fusion now says what it actually does.
-*Advanced Construction now says what it actually does.
-*Orbital Command now says what it actually does.
+Dual Fusion increases repair speed of Topbar Repair by 50%.
+Orbital Command now unlocks support powers on tech buildings. Scan on EBay, tactical missiles on shadow ops, nuke on armoury
+Dual Fusion now says what it actually does.
+Advanced Construction now says what it actually does.
+Orbital Command now says what it actually does.
 *HellStorm batteries and Titanium Housing now mention affecting the devastation turret.
 Stabilizer Medpack no longer increases heal speed.
-*Stabilizer no longer lies about what it does.
-*Fixed the tooltip text for Hydraulic Stabilizers
-*Tri-lithium power cell flavour text fixed
+Stabilizer no longer lies about what it does.
+Fixed the tooltip text for Hydraulic Stabilizers
+Tri-lithium power cell flavour text fixed
 Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
-*Maelstrom rounds text fixed.
+Maelstrom rounds text fixed.
 Hi-Sec now gives defenses 15% attack speed, and costs 2k.
 Hi-Sec now says everything it does.
 Building Armour now says the correct stuff.
@@ -123,7 +126,7 @@ Removed the merc compound
 Fixed the Unit Move after the cinematic shot taking the hidden refinery entity
 The Laser Drill targets faster
 The Laser Drill has some interesting notes on it.
-*The Laser Drill now has an upgrade to take it with you.
+The Laser Drill now has an upgrade to take it with you.
 Added 3 small nodes to the east protoss base
 The 2 main Protoss fields now have 2 medium nodes each
 Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
@@ -170,3 +173,14 @@ Zeratul only gets 1 charge of blink
 Zeratul gets a Power ability, to temporarily power any protoss structure
 Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
 Zeratul gets a new ability from each of the Dark Shrine, Robotics Facility, and Templar Archives.
+
+Breakout:
+-Tosh has an Anti-structure attack that deals 100% of the target's health.
+-Gave Tosh Psionic Lash
+-Tosh now regens energy really fast while out of combat.
+-Consumption now heals Tosh for the same value as energy gained.
+-Tosh now has an ability to trigger an attack wave from Jim. Stores up to 3 charges.
+
+Ghost of a Chance:
+-Nova has an Anti-structure attack that deals 100% of the target's health.
+-Nova

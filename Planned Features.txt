@@ -317,9 +317,9 @@ Medivac- Heals units inside it
 
 Kerrigan- Massive units are now immune to Implosion
 
-Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 1000 sniper at 0.5 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Ghost-Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 
-Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse does damage and no stun, Autoattack does 1000 sniper at 0.5 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Spectre-Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Mindblast, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 
 Fusion Core- yamato strike support power, all mission-unlocked support powers
 
@@ -344,7 +344,7 @@ Medic Tech-
 
 Projectile Accelerator- Affects Shrike Turret
 
-Orbital Command- Unlock support powers on tech buildings. Scan on EBay, nuke on shadow ops, Banshee Airstrike on armoury
+Orbital Command- Unlock support powers on tech buildings. Scan on EBay, tactical missiles on shadow ops, nuke on armoury
 
 Advanced Construction- Reduce build time of units (Also affects cost)
 
