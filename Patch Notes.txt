@@ -32,7 +32,8 @@ The Laser Drill is now deactivated in low power mode.
 
 Upgrades:
 *Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
-*Hercules-> Cellular Reactor- Also increases energy regen
+Hercules-> Cellular Reactor- Also increases energy regen
+*Cellular Reactor-> Titansteel- +25% health for all units
 Command Center Reactor now decreases the build time of all units (And the cost)
 CC Reactor now has the correct text
 Autogas is now autoharvesting.
