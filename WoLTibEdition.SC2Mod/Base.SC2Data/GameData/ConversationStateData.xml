@@ -27,6 +27,11 @@
         <Indices index="1" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds">
             <InfoUpgrade index="0" Upgrade="TerranBuildingArmor"/>
         </Indices>
+        <Indices index="4" ImagePath="Assets\Textures\btn-upgrade-nova-equipment-blinksuit.dds"/>
+        <Indices index="5" ImagePath="Assets\Textures\btn-research-zerg-cellularreactor.dds" MoviePath="Assets\Textures\research_cellularreactors.ogv">
+            <InfoUpgrade Id="Upgrade 1" Upgrade="CellularReactors"/>
+        </Indices>
+        <Indices index="6" ImagePath="Assets\Textures\btn-ability-stetmann-stetelliteoverloadhealth.dds"/>
     </CConversationState>
     <CConversationState id="LabResearchCompleted">
         <Indices index="0" ImagePath="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds">
@@ -36,62 +41,31 @@
             <InfoUpgrade index="0" Upgrade="TerranBuildingArmor"/>
         </Indices>
     </CConversationState>
+    <CConversationState id="LabResearchConstants">
+        <Indices index="1">
+            <InfoValue index="0" Value="3"/>
+        </Indices>
+    </CConversationState>
     <CConversationState id="Tech">
-        <Indices index="0" Name="ConversationState/Tech/Tech2_Bunker_1" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
+        <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>
         </Indices>
-        <Indices index="1" Name="ConversationState/Tech/Tech2_Bunker_2"/>
-        <Indices index="2" Name="ConversationState/Tech/Tech2_SCV_1"/>
-        <Indices index="3" Name="ConversationState/Tech/Tech2_SCV_2"/>
-        <Indices index="4" Name="ConversationState/Tech/Tech2_CommandCenter_1"/>
-        <Indices index="5" Name="ConversationState/Tech/Tech2_CommandCenter_2"/>
-        <Indices index="6" Name="ConversationState/Tech/Tech2_MissileTurret_1"/>
-        <Indices index="7" Name="ConversationState/Tech/Tech2_MissileTurret_2"/>
-        <Indices index="8" Name="ConversationState/Tech/Tech2_Marine_1"/>
-        <Indices index="9" Name="ConversationState/Tech/Tech2_Marine_2"/>
-        <Indices index="10" Name="ConversationState/Tech/Tech2_Medic_1"/>
-        <Indices index="11" Name="ConversationState/Tech/Tech2_Medic_2"/>
-        <Indices index="12" Name="ConversationState/Tech/Tech2_Firebat_1"/>
-        <Indices index="13" Name="ConversationState/Tech/Tech2_Firebat_2"/>
-        <Indices index="14" Name="ConversationState/Tech/Tech2_Marauder_1"/>
-        <Indices index="15" Name="ConversationState/Tech/Tech2_Marauder_2"/>
-        <Indices index="16" Name="ConversationState/Tech/Tech2_Reaper_1"/>
-        <Indices index="17" Name="ConversationState/Tech/Tech2_Reaper_2"/>
-        <Indices index="18" Name="ConversationState/Tech/Tech2_Hellion_1"/>
-        <Indices index="19" Name="ConversationState/Tech/Tech2_Hellion_2">
+        <Indices index="17" ImagePath="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
+        <Indices index="19">
             <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
         </Indices>
-        <Indices index="20" Name="ConversationState/Tech/Tech2_Goliath_1"/>
-        <Indices index="21" Name="ConversationState/Tech/Tech2_Goliath_2"/>
-        <Indices index="22" Name="ConversationState/Tech/Tech2_Diamondback_1"/>
-        <Indices index="23" Name="ConversationState/Tech/Tech2_Diamondback_2"/>
-        <Indices index="24" Name="ConversationState/Tech/Tech2_Vulture_1"/>
-        <Indices index="25" Name="ConversationState/Tech/Tech2_Vulture_2"/>
-        <Indices index="26" Name="ConversationState/Tech/Tech2_SiegeTank_1"/>
-        <Indices index="27" Name="ConversationState/Tech/Tech2_SiegeTank_2"/>
-        <Indices index="28" Name="ConversationState/Tech/Tech2_Medivac_1"/>
-        <Indices index="29" Name="ConversationState/Tech/Tech2_Medivac_2"/>
-        <Indices index="30" Name="ConversationState/Tech/Tech2_Wraith_1"/>
-        <Indices index="31" Name="ConversationState/Tech/Tech2_Wraith_2"/>
-        <Indices index="32" Name="ConversationState/Tech/Tech2_Viking_1"/>
-        <Indices index="33" Name="ConversationState/Tech/Tech2_Viking_2"/>
-        <Indices index="34" Name="ConversationState/Tech/Tech2_Banshee_1"/>
-        <Indices index="35" Name="ConversationState/Tech/Tech2_Banshee_2"/>
-        <Indices index="36" Name="ConversationState/Tech/Tech2_Battlecruiser_1"/>
-        <Indices index="37" Name="ConversationState/Tech/Tech2_Battlecruiser_2"/>
-        <Indices index="38" Name="ConversationState/Tech/Tech2_Ghost_1"/>
-        <Indices index="39" Name="ConversationState/Tech/Tech2_Ghost_2"/>
-        <Indices index="40" Name="ConversationState/Tech/Tech2_Spectre_1"/>
-        <Indices index="41" Name="ConversationState/Tech/Tech2_Spectre_2"/>
-        <Indices index="42" Name="ConversationState/Tech/Tech2_Thor_1"/>
-        <Indices index="43" Name="ConversationState/Tech/Tech2_Thor_2"/>
+        <Indices index="20" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <Indices index="25" ImagePath="Assets\Textures\btn-ability-terran-emp.dds"/>
+        <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
     </CConversationState>
     <CConversationState id="TechState">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>
         </Indices>
+        <Indices index="17" ImagePath="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
         <Indices index="19">
             <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
         </Indices>
+        <Indices index="20" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
     </CConversationState>
 </Catalog>
