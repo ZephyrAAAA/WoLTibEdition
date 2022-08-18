@@ -87,6 +87,9 @@
     <CRequirement id="HasNotTakenDrill">
         <NodeArray index="Show" Link="NotCountUpgradeTakeTheDrillQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnEnhancedExplosives">
+        <NodeArray index="Show" Link="NotCountUpgradeEnhancedExplosivesQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnHailstormLaunchers">
         <NodeArray index="Show" Link="NotCountUpgradeHailstormLaunchersQueuedOrBetter"/>
     </CRequirement>
@@ -133,6 +136,9 @@
     </CRequirement>
     <CRequirement id="IsNotCrane">
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="LearnImprovedRailguns">
+        <NodeArray index="Show" Link="NotCountUpgradeImprovedRailgunsQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnThermiteFilamints">
         <EditorCategories value="Race:Protoss,TechType:Ability"/>

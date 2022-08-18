@@ -91,9 +91,13 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitDrakkenLaserDrillQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="DrakkenLaserDrill" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeEnhancedExplosivesQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="EnhancedExplosives" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeHailstormLaunchersCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="HailstormLaunchers" State="CompleteOnly"/>
@@ -105,6 +109,11 @@
     <CRequirementCountUpgrade id="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="HellionCampaignInfernalPreIgniter" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeImprovedRailgunsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ImprovedRailguns" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeLowPowerCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -288,11 +297,19 @@
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeEnhancedExplosivesQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeEnhancedExplosivesQueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHailstormLaunchersQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeHailstormLaunchersQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeImprovedRailgunsQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeImprovedRailgunsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLowPowerCompleteOnly">
         <OperandArray index="0" value="CountUpgradeLowPowerCompleteOnly"/>

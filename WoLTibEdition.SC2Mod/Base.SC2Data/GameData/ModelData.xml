@@ -105,6 +105,12 @@
             <Adaptions TriggerOnSubstring="_Diffuse" Slot="generic01"/>
         </TextureDeclares>
     </CModel>
+    <CModel id="Spectre_Heavens_COOP_UltrasonicPulse" parent="PersistentSpellFX">
+        <Model value="Assets\COOP\Tychus\Effects\Spectre_Heavens_COOP_UltrasonicPulse\Spectre_Heavens_COOP_UltrasonicPulse.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="0.725000,0.725000,0.725000"/>
+        <ScaleMin value="0.725000,0.725000,0.725000"/>
+    </CModel>
     <CModel id="SuperCloak" parent="RacePersistentSpellFX" Race="Zerg">
         <Model value="Assets\COOP\Zeratul\Effects\SuperCloak_Zeratul_COOP\SuperCloak_Zeratul_COOP.m3"/>
     </CModel>

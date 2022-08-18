@@ -2,6 +2,8 @@
 Button/Hotkey/BuildDevastatorTurret=D
 Button/Hotkey/DeathRecall=R
 Button/Hotkey/Decal_Terran_0047_01=C
+Button/Hotkey/EMPSpectre=E
+Button/Hotkey/FeedbackGhost=F
 Button/Hotkey/HyperionYamato3=
 Button/Hotkey/HyperionYamato4=
 Button/Hotkey/HyperionYamato5=
@@ -9,6 +11,7 @@ Button/Hotkey/InfantryUltraCapacitors=C
 Button/Hotkey/InfantryVanadiumPlating=V
 Button/Hotkey/NukeCalldown8=
 Button/Hotkey/PauseQueue=Escape
+Button/Hotkey/ResearchImprovedRailguns=R
 Button/Hotkey/ResearchThermiteFilaments=T
 Button/Hotkey/ResetRally=E
 Button/Hotkey/ResumeQueue=H

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTacticalSet id="Spectre">
+        <Array value="SpectreEMP"/>
+        <Array value="SpectreUltrasonic"/>
+    </CTacticalSet>
+    <CTacticalOrder id="SpectreEMP">
+        <Abil value="EMPSpectre"/>
+        <TargetFind value="EMP"/>
+    </CTacticalOrder>
+    <CTacticalOrder id="SpectreUltrasonic">
+        <Abil value="UltrasonicPulse"/>
+        <TargetFind value="PsiStorm"/>
+    </CTacticalOrder>
+</Catalog>

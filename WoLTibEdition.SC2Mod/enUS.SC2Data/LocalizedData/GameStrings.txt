@@ -24,12 +24,14 @@ Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
 Abil/Name/DeathRecall=Death Recall
 Abil/Name/DeployLaserDrill=Deploy Laser Drill
 Abil/Name/DevilDogSquad=Devil Dog Squad
+Abil/Name/EMPSpectre=EMP
 Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
 Abil/Name/ExplosiveCharges=Explosive Charges
 Abil/Name/Factory2AddOns=AddOns
 Abil/Name/Factory2Land=Land
 Abil/Name/Factory2LiftOff=Lift Off
 Abil/Name/Factory2Train=Train (Factory)
+Abil/Name/FeedbackGhost=Feedback
 Abil/Name/FirebatSquad=Firebat Squad
 Abil/Name/FusionCore2Research=Research
 Abil/Name/GhostAcademy2Research=Research
@@ -106,6 +108,8 @@ Button/Name/DeployLaserDrill7=Deploy Laser Drill
 Button/Name/DeployLaserDrill8=Deploy Laser Drill
 Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
+Button/Name/EMPSpectre=EMP Round
+Button/Name/FeedbackGhost=Feedback
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
 Button/Name/HyperionYamato10=Hyperion Yamato
@@ -148,6 +152,8 @@ Button/Name/NukeCalldown8=Tac Nuke Strike
 Button/Name/NukeCalldown9=Tac Nuke Strike
 Button/Name/PauseQueue=Pause Queue
 Button/Name/PowerStructure=Power Structure
+Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
+Button/Name/ResearchImprovedRailguns=Research Improved Railguns
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
@@ -223,9 +229,11 @@ Button/Tooltip/DeployLaserDrill8=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
 Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
+Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
 Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
@@ -277,7 +285,9 @@ Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and rece
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of Goliath, Wraith, Viking, Thor, Banshee, and Marauder rockets by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
+Button/Tooltip/ResearchImprovedRailguns=Increases Goliath and Viking ground damage by +50%, and Diamondback damage by +30%
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -296,6 +306,7 @@ Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked
 Button/Tooltip/Sell=Sells selected building for a refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
+Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,snipeDamage,Amount"/> damage.
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
 Button/Tooltip/Starport2Flying=Starport must land to start unit production.
 Button/Tooltip/StarshipUltraCapacitors=Increases attack speed of Starships by 20%
@@ -500,7 +511,13 @@ Effect/Name/DropSiegeBreakers=Drop Siege Breakers
 Effect/Name/DropSpartanCompany=Drop Spartan Company
 Effect/Name/DropWarPigs=Drop War Pigs
 Effect/Name/DummyEffect=Dummy Effect
+Effect/Name/EMPLaunchMissileSpectre=EMP
+Effect/Name/EMPSearchSpectre=EMP
+Effect/Name/EMPSetSpectre=EMP
 Effect/Name/ExplosiveCharges=Explosive Charges
+Effect/Name/FeedbackGhost=Feedback
+Effect/Name/FeedbackSetGhost=Feedback
+Effect/Name/FeedbackSpectre=Feedback
 Effect/Name/FragmentationGrenadeCP=Fragmentation Grenade
 Effect/Name/HailstormLauncherLM=Hailstorm Launcher
 Effect/Name/HailstormLauncherLMMerc=Hailstorm Launcher
@@ -582,6 +599,9 @@ Effect/Name/TibNodeSmall=Tib Node Small
 Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
 Effect/Name/TibNodeSmallSearch=Tib Node Small Search
 Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
+Effect/Name/TychusSpectreUltrasonicDamageLv1=TychusSpectreUltrasonicDamageLv1
+Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
+Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1
 Effect/Name/VehicleMercSet=Vehicle Merc Set
 Effect/Name/VultureLeft=Fragmentation Grenade (Missile, left)
 Effect/Name/YamatoGunTopbarDamage=Yamato Gun
@@ -676,8 +696,10 @@ Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
 Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
+Upgrade/Name/EnhancedExplosives=Enhanced Explosives
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
+Upgrade/Name/ImprovedRailguns=Improved Railguns
 Upgrade/Name/LowPower=Low Power
 Upgrade/Name/TakeTheDrill=Take The Drill
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors

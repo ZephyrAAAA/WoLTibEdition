@@ -529,6 +529,14 @@
         <CarryResourceBehavior value="CarryMineralFieldMinerals"/>
         <IdealHarvesterCount value="1"/>
     </CBehaviorResource>
+    <CBehaviorBuff id="ToshNoFeedbackDeath">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="DeathRecallD" ModifyFraction="0">
+            <RequireEffectArray value="FeedbackGhost"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorVeterancy id="Veterancy">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <ShareFilters index="DamageDealt" value="-;Player,Ally,Neutral,Enemy,Hallucination"/>

@@ -76,6 +76,8 @@
     <CActorSound id="BarracksLand">
         <On Terms="AbilMorph.*.Start; MorphTo Barracks2" Send="Create"/>
     </CActorSound>
+    <CActorSplat id="EMPCursorSplat2" parent="TerranCursorSplat" abil="EMPSpectre"/>
+    <CActorRange id="EMPRange2" parent="RangeAbil" abil="EMPSpectre"/>
     <CActorSound id="ExplosiveChargeSound" parent="SoundOneShot">
         <EditorCategories value=""/>
         <On Terms="Abil.ExplosiveCharges.SourcePrepStart" Send="Create"/>
@@ -87,6 +89,43 @@
         <On Terms="ActorCreation" Send="SetScale 3.000000"/>
         <Model value="TerranSmallTriggeredExplosion"/>
     </CActorModel>
+    <CActorModel id="FeedbackImpact2" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.FeedbackGhost.Start; At Target" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="FeedbackImpact"/>
+    </CActorModel>
+    <CActorSound id="FeedbackImpactSound2" parent="SoundOneShot">
+        <On Terms="Effect.FeedbackGhost.Start; At Target" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <Sound value="Obelisk_ArgusLinkImpact"/>
+    </CActorSound>
+    <CActorModel id="FeedbackLaunch2" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.FeedbackGhost.Start; At Caster" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachOrigin"/>
+        <Model value="FeedbackLaunch"/>
+    </CActorModel>
+    <CActorSound id="FeedbackLaunchSound2" parent="SoundOneShot">
+        <On Terms="Effect.FeedbackGhost.Start; At Caster" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <Sound value="Obelisk_ArgusLinkLaunch"/>
+    </CActorSound>
+    <CActorRange id="FeedbackRange2" parent="RangeAbil" abil="FeedbackGhost"/>
+    <CActorAction id="GhostEMPAttack2" parent="GenericAttack" effectImpact="EMPSearchSpectre" effectLaunch="EMPLaunchMissileSpectre">
+        <On Terms="Effect.EMPDamage.Start; At Caster" Send="ActionDamage"/>
+        <LaunchAssets Sound="Ghost_EMPAttackLaunch"/>
+        <Missile value="GhostEMPAttackMissile2"/>
+        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow GhostEMPOffset"/>
+        <ImpactMap index="None" Sound="Ghost_EMPAttackImpact"/>
+    </CActorAction>
+    <CActorModel id="GhostEMPAttackImpactEffect2" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.EMPSearchSpectre.Start" Send="Create"/>
+        <On Terms="Effect.EMPSearchSpectre.Stop" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Model value="GhostEMPAttackImpactEffect"/>
+    </CActorModel>
+    <CActorMissile id="GhostEMPAttackMissile2" parent="GenericAttackMissile" unitName="EMP2Weapon"/>
     <CActorModel id="GhostNukeIndicator">
         <On Terms="Effect.NukePersistentTopbar.Start" Send="Create"/>
         <On Terms="Effect.NukePersistentTopbar.Stop" Send="Destroy"/>
@@ -1397,6 +1436,13 @@
             <Image value="Assets\Textures\Wireframe-Terran-SensorTower.dds"/>
         </Wireframe>
     </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Spectre ............................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="SpecterUnit">
+        <On Terms="Abil.EMPSpectre.SourceCastStart" Send="AnimPlay Attack Attack 0 0.000000"/>
+        <On Terms="Abil.EMPSpectre.SourceCastStart" Send="AnimSetTimeScale Attack 2.500000"/>
+    </CActorUnit>
     <CActorSound id="Spell_CombatDrugs_Launch" parent="SoundOneShot">
         <On Terms="Behavior.ReaperRegen.On" Send="Create"/>
         <On Terms="UnitRegen.Reaper.LifeOn" Send="Create"/>
@@ -1773,7 +1819,15 @@
     <CActorUnit id="Tosh">
         <On Terms="Abil.Obliterate.SourcePrepStart" Send="$Spell"/>
         <On Terms="Abil.Obliterate.SourcePrepStop" Send="AnimClear Spell"/>
+        <On Terms="Abil.Obliterate.SourcePrepStart" Send="AnimSetTimeScale BSD 0.150000"/>
     </CActorUnit>
+    <CActorModel id="TychusSpectreUltrasonicPulseModel" parent="ModelAnimationStyleContinuous">
+        <On Terms="Effect.TychusSpectreUltrasonicPulseCPLv1.Start" Send="Create"/>
+        <On Terms="Effect.TychusSpectreUltrasonicPulseCPLv1.Stop" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Model value="Spectre_Heavens_COOP_UltrasonicPulse"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModel>
     <CActorEventMacro id="UnloadDropAnim">
         <On Terms="AbilTransport.AirTransport.CargoUnload" Send="AnimBracketStop Unload"/>
         <On Terms="AbilTransport.AirTransport.TransportUnload" Send="AnimBracketStop Unload"/>

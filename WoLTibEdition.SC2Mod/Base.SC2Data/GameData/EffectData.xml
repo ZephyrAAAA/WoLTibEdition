@@ -221,12 +221,62 @@
         <AreaArray Arc="59.9963" Radius="9" Effect="DetectorCone9AB"/>
         <SearchFlags index="CenterAtLaunch" value="1"/>
     </CEffectEnumArea>
+    <CEffectLaunchMissile id="EMPLaunchMissileSpectre">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactEffect value="EMPSearchSpectre"/>
+        <AmmoUnit value="EMP2Weapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="EMPSearchSpectre">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="EMPSetSpectre"/>
+    </CEffectEnumArea>
+    <CEffectSet id="EMPSetSpectre">
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="FeedbackSpectre"/>
+        <EffectArray value="EMPModifyUnit"/>
+        <EffectArray value="EMPApplyDecloakBehavior"/>
+    </CEffectSet>
     <CEffectDamage id="ExplosiveCharges">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetUnit"/>
         <VitalFractionCurrent index="Life" value="1"/>
         <VitalFractionCurrent index="Shields" value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="FeedbackSpectre">
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+        <VitalFractionCurrent index="Energy" value="1"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectDamage id="FeedbackGhost">
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ImpactLocation Value="TargetUnit"/>
+        <Flags index="Notification" value="1"/>
+        <Fraction value="2"/>
+        <VitalFractionCurrent index="Energy" value="1"/>
+        <Death value="Blast"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
+    </CEffectDamage>
+    <CEffectSet id="FeedbackSetGhost">
+        <ValidatorArray value=""/>
+        <EditorCategories value="Race:Protoss"/>
+        <EffectArray value="FeedbackGhost"/>
+        <EffectArray value="FeedbackEnergyLoss"/>
+    </CEffectSet>
     <CEffectCreatePersistent id="FragmentationGrenadeCP">
         <EditorCategories value=""/>
         <WhichLocation Value="TargetUnit"/>
@@ -250,6 +300,10 @@
     <CEffectDamage id="HybridCPlasmaBlastDamage">
         <Amount value="400"/>
         <ExcludeArray Value="Target"/>
+    </CEffectDamage>
+    <CEffectDamage id="JavelinMissileLaunchersDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="12"/>
     </CEffectDamage>
     <!--    <CEffectLaunchMissile id="HammerSecurityLMOne">-->
     <!--        <EditorCategories value="Race:Terran"/>-->
@@ -305,6 +359,13 @@
         <DrainVitalCostFactor value="0.2"/>
         <RechargeVitalRate value="5"/>
     </CEffectCreateHealer>
+    <CEffectDamage id="Nova">
+        <Amount value="1000"/>
+    </CEffectDamage>
+    <CEffectDamage id="NovaSnipe">
+        <ArmorReduction value="1"/>
+        <Amount value="170"/>
+    </CEffectDamage>
     <CEffectEnumArea id="NuclearAnnihilationMengskBigNukeDamageSearch">
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="10" Effect="NuclearAnnihilationMengskDamage"/>
@@ -731,10 +792,15 @@
     </CEffectDamage>
     <CEffectDamage id="SnipeDamage">
         <Amount value="170"/>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectDamage id="SpartanCompanyAU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="22"/>
+    </CEffectDamage>
+    <CEffectDamage id="SpecterU">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="500"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="SquadBunkerUnload">
         <EditorCategories value=""/>
@@ -1389,6 +1455,31 @@
     <CEffectDamage id="TwinIbiksCannon">
         <Amount value="80"/>
     </CEffectDamage>
+    <CEffectDamage id="TychusSpectreUltrasonicDamageLv1">
+        <EditorCategories value="Race:Terran"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="TychusSpectreUltrasonicPulseCPLv1">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="MajorDanger" value="1"/>
+        <InitialEffect value="TychusSpectreUltrasonicSearchLv1"/>
+        <PeriodCount value="12"/>
+        <PeriodicEffectArray value="TychusSpectreUltrasonicSearchLv1"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <RevealRadius value="2"/>
+        <RevealFlags index="Unfog" value="1"/>
+        <RevealFlags index="Detect" value="1"/>
+        <AINotifyEffect value="TychusSpectreUltrasonicSearchLv1"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TychusSpectreUltrasonicSearchLv1">
+        <EditorCategories value="Race:Terran"/>
+        <LaunchLocation Value="TargetPoint"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Stasis,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="TychusSpectreUltrasonicDamageLv1"/>
+    </CEffectEnumArea>
     <CEffectSet id="VehicleMercSet">
         <EditorCategories value=""/>
         <EffectArray value="DropSiegeBreakers"/>

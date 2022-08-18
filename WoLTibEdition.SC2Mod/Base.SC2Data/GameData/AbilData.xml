@@ -30,6 +30,57 @@
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="EMPSpectre">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="EMPLaunchMissileSpectre"/>
+        <Cost>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeStart value="30"/>
+                <TimeUse value="30"/>
+            </Charge>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <Range value="10"/>
+        <PrepTime value="0.01"/>
+        <FinishTime value="0"/>
+        <CursorEffect value="EMPSearchSpectre"/>
+        <AINotifyEffect value="EMPLaunchMissile"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EMPSpectre" State="Restricted">
+            <Flags index="ShowInGlossary" value="0"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="FeedbackGhost">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="FeedbackSetGhost"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeStart value="30"/>
+                <TimeUse value="30"/>
+            </Charge>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Visible,HasEnergy;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <AINotifyEffect value=""/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FeedbackGhost">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="NovaSnipe">
+        <CastIntroTime index="0" value="0.1"/>
+        <FinishTime index="0" value="0"/>
+        <TargetFilters index="0" value="Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="TacticalMissileStrike">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
@@ -122,6 +173,7 @@
         <UninterruptibleArray index="Finish" value="1"/>
         <AcquirePriority value="1"/>
         <AcquireAttackers value="1"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral"/>
     </CAbilEffectTarget>
     <CAbilMorph id="FighterMode">
         <Flags index="WaitUntilStopped" value="0"/>
@@ -234,8 +286,17 @@
     <CAbilEffectTarget id="Snipe">
         <Cost index="0">
             <Vital index="Energy" value="0"/>
-            <Cooldown TimeUse="20"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <TimeStart value="20"/>
+                <TimeUse value="20"/>
+            </Charge>
+            <Cooldown TimeUse="5"/>
         </Cost>
+        <CastIntroTime index="0" value="0.1"/>
+        <TargetFilters index="0" value="Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CAbilEffectTarget>
     <CAbilResearch id="StarportTechLabResearch">
         <InfoArray index="Research9" Time="90" Upgrade="TerranShipUltraCapacitors">
@@ -266,7 +327,6 @@
         <ValidatedArray index="Channel" value="0"/>
         <AlertArray index="Cast" value="CalldownLaunch"/>
         <CursorEffect value="NukeDamage"/>
-        <CalldownEffect value="Nuke"/>
         <AINotifyEffect value="Nuke"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="NukeCalldown8">
             <Flags index="UseDefaultButton" value="1"/>
@@ -422,6 +482,22 @@
         </InfoArray>
         <Range value="500"/>
     </CAbilBuild>
+    <CAbilEffectTarget id="UltrasonicPulse">
+        <Effect index="0" value="TychusSpectreUltrasonicPulseCPLv1"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/Snipe"/>
+                <TimeStart value="20"/>
+                <TimeUse value="20"/>
+            </Charge>
+            <Cooldown Link="Abil/Snipe" TimeUse="5"/>
+        </Cost>
+        <CursorEffect index="0" value="TychusSpectreUltrasonicSearchLv1"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="VehicleMercenaries">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="InfantryMercenaries"/>
@@ -562,6 +638,20 @@
         <InfoArray index="Research1" Time="60" Upgrade="HellionCampaignInfernalPreIgniter">
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="ResearchThermiteFilaments" Requirements="LearnThermiteFilamints">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="60" Upgrade="EnhancedExplosives">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchEnhancedExplosives" Requirements="LearnEnhancedExplosives">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research3" Time="60" Upgrade="ImprovedRailguns">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchImprovedRailguns" Requirements="LearnImprovedRailguns">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>

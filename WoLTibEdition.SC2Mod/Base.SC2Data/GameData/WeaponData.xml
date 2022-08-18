@@ -105,7 +105,10 @@
     <CWeaponLegacy id="C10CanisterRifle">
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
-        <Backswing value="0.25"/>
+        <Backswing value="0.125"/>
+        <Tip value="Weapon/Tip/Sniper"/>
+        <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
@@ -221,6 +224,8 @@
         <RandomDelayMax value="-1.45"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -388,6 +393,13 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Nova">
+        <Tip value="Weapon/Tip/Sniper"/>
+        <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.4"/>
+        <AttackType value="Chaos"/>
+        <Backswing value="0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Omegalisk">
         <Tip value="Weapon/Tip/Grenade"/>
@@ -592,6 +604,14 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Specter">
+        <Tip value="Weapon/Tip/Sniper"/>
+        <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="0.4"/>
+        <AttackType value="Chaos"/>
+        <Backswing value="0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>

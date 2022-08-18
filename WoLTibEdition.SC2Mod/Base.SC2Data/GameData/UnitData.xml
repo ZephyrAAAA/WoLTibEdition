@@ -423,6 +423,9 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="AvernusGateControl">
+        <ArmorType value="Hero"/>
+    </CUnit>
     <CUnit id="Ball">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2009,6 +2012,7 @@
         </CardLayouts>
         <Food value="-200"/>
         <CostResource index="Minerals" value="5000"/>
+        <BehaviorArray Link="PowerCheck"/>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
@@ -2515,8 +2519,40 @@
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
-        <AbilArray Link="ExplosiveCharges"/>
+        <AbilArray index="3" Link="Snipe"/>
+        <AbilArray index="4" Link="GhostHoldFire"/>
+        <AbilArray index="5" Link="FeedbackGhost"/>
+        <AbilArray index="6" Link="GhostWeaponsFree"/>
+        <AbilArray index="7" Link="ExplosiveCharges"/>
+        <AbilArray index="8" removed="1"/>
         <EquipmentArray Weapon="ExplosiveCharges"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="8" Face="WeaponsFree" AbilCmd="GhostWeaponsFree,Execute" Row="1"/>
+            <LayoutButtons index="9">
+                <Face value="OcularImplants"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseGhostOcularImplants"/>
+                <Row value="1"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons index="10">
+                <Face value="CriusSuit"/>
+                <Type value="Passive"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseGhostCriusSuit"/>
+                <Row value="1"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+            <LayoutButtons index="14" removed="1"/>
+        </CardLayouts>
+        <TacticalAIThink value="AIThinkGhostNew"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3582,6 +3618,18 @@
     <CUnit id="Nova">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <AbilArray Link="ExplosiveCharges"/>
+        <BehaviorArray Link="Veterancy"/>
+        <BehaviorArray Link="CommandoSniperResist"/>
+        <EquipmentArray Weapon="ExplosiveCharges"/>
+        <EnergyStart value="150"/>
+        <EnergyMax value="150"/>
+        <EnergyRegenRate value="2"/>
     </CUnit>
     <CUnit id="Nuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4894,6 +4942,36 @@
     <CUnit id="Spectre">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <Speed value="2.25"/>
+        <AbilArray index="3" Link="UltrasonicPulse"/>
+        <AbilArray index="4" Link="SpectreHoldFire"/>
+        <AbilArray index="5" Link="SpectreWeaponsFree"/>
+        <AbilArray index="6" Link="ExplosiveCharges"/>
+        <AbilArray index="7" Link="EMPSpectre"/>
+        <AbilArray index="8" Link="RogueGhostCloak"/>
+        <BehaviorArray Link="Veterancy"/>
+        <BehaviorArray Link="CommandoSniperResist"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="4" Face="AttackGhost" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons index="5" Face="Cancel" AbilCmd="SpectreNuke,Cancel" Column="4"/>
+            <LayoutButtons index="6" Face="SpectreHoldFire" AbilCmd="SpectreHoldFire,Execute" Row="1" Column="2"/>
+            <LayoutButtons index="7" Face="SpectreWeaponsFree" AbilCmd="SpectreWeaponsFree,Execute" Row="1" Column="3"/>
+            <LayoutButtons index="8" Face="NyxClassCloakingModule" Type="Passive" AbilCmd="255,255" Requirements="UseSpectreNyxSuit" Column="1"/>
+            <LayoutButtons index="9" Face="UltrasonicPulse" AbilCmd="UltrasonicPulse,Execute" Row="2" Column="0"/>
+            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="12" removed="1"/>
+            <LayoutButtons index="13" removed="1"/>
+        </CardLayouts>
+        <TacticalAI value="Spectre"/>
+        <EquipmentArray Weapon="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5565,6 +5643,7 @@
     <CUnit id="Thor">
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
+        <Radius value="1"/>
     </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5760,6 +5839,7 @@
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
         <BehaviorArray Link="OutOfCombatRegenTosh"/>
+        <BehaviorArray Link="ToshNoFeedbackDeath"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="MindBlast" Type="AbilCmd" AbilCmd="MindBlast,Execute" Row="2"/>
             <LayoutButtons index="6" Face="VoodooShield" AbilCmd="VoodooShield,Execute" Column="1"/>
