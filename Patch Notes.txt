@@ -17,7 +17,7 @@ Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Co
 Added the Yamato Strike support power on the Fusion Core.
 
 Units:
-Science Vessel heals 5/s, takes 1e/5, up to 3 science vessels can stack.
+Science Vessel heals 5/s, takes 1e/5hp, up to 3 science vessels can stack.
 Imported the HOTS void ray
 Immortal Hardened Shield removed, shield health doubled
 Sentry Guardian Shield now gives 30% damage resist
@@ -187,6 +187,8 @@ Tosh now regens energy really fast while out of combat.
 Consumption now heals Tosh for the same value as energy gained.
 Tosh now has an ability to trigger an attack wave from Jim. Stores up to 3 charges.
 Tosh has an XP bar
+Added an autosave after each bonus objective.
+Added an autosave after clearing the entrance to the main base.
 
 Ghost of a Chance:
 Nova has 500 health
