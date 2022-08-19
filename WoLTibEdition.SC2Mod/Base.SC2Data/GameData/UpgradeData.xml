@@ -77,6 +77,32 @@
     <CUpgrade id="AutoHarvester">
         <EffectArray Operation="Set" Reference="Actor,Refinery2,Wireframe.Image[0]" Value="Assets\Textures\wireframe-terran-refinery-automated.dds"/>
     </CUpgrade>
+    <CUpgrade id="CellularReactors">
+        <EffectArray index="1" Reference="Unit,Medic,EnergyStart"/>
+        <EffectArray index="2" Reference="Unit,Medivac,EnergyStart"/>
+        <EffectArray index="3" Reference="Unit,Wraith,EnergyStart"/>
+        <EffectArray index="4" Reference="Unit,Banshee,EnergyStart"/>
+        <EffectArray index="5" Reference="Unit,ScienceVessel,EnergyMax"/>
+        <EffectArray index="6" Reference="Unit,DuskWing,EnergyStart"/>
+        <EffectArray index="7" Reference="Unit,Raven,EnergyMax"/>
+        <EffectArray index="8" Reference="Unit,Medic,EnergyMax"/>
+        <EffectArray index="9" Reference="Unit,Medivac,EnergyMax"/>
+        <EffectArray index="10" Reference="Unit,Wraith,EnergyMax"/>
+        <EffectArray index="11" Reference="Unit,Banshee,EnergyMax"/>
+        <EffectArray index="12" Reference="Unit,DuskWing,EnergyMax"/>
+        <EffectArray index="13" Reference="Unit,ScienceVessel,EnergyStart"/>
+        <EffectArray index="14" Operation="AddBaseMultiply" Reference="Unit,Banshee,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="15" Operation="AddBaseMultiply" Reference="Unit,Medic,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="16" Operation="AddBaseMultiply" Reference="Unit,Medivac,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="17" Operation="AddBaseMultiply" Reference="Unit,DuskWing,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="18" Operation="AddBaseMultiply" Reference="Unit,Raven,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="19" Operation="Set" Reference="Unit,ScienceVessel,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="20" Operation="AddBaseMultiply" Reference="Unit,Wraith,EnergyRegenRate" Value="0.500000"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+    </CUpgrade>
     <CUpgrade id="CommandCenterReactor">
         <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="4"/>
         <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="5"/>
