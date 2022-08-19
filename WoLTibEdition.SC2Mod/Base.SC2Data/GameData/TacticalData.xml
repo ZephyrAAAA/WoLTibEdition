@@ -12,4 +12,8 @@
         <Abil value="UltrasonicPulse"/>
         <TargetFind value="PsiStorm"/>
     </CTacticalOrder>
+    <CTacticalOrder id="Thor">
+        <Abil value="330mmBarrageCannons"/>
+        <TargetFind value="330mmBarrage"/>
+    </CTacticalOrder>
 </Catalog>
