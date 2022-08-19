@@ -80,6 +80,12 @@
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="5" Effect="BansheeAirstrikeDamage"/>
     </CEffectEnumArea>
+    <CEffectModifyUnit id="BiosteelRegen">
+        <EditorCategories value=""/>
+        <VitalArray index="Life">
+            <ChangeFraction value="0.003"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>

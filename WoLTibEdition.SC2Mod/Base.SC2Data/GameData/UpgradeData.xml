@@ -573,6 +573,56 @@
         <EffectArray index="133" removed="1"/>
         <EffectArray index="134" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="RegenerativeBioSteel">
+        <EffectArray index="0" removed="1"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+        <EffectArray index="41" removed="1"/>
+        <EffectArray index="42" removed="1"/>
+        <EffectArray index="43" removed="1"/>
+        <EffectArray index="44" removed="1"/>
+        <EffectArray index="45" removed="1"/>
+        <EffectArray index="46" removed="1"/>
+        <EffectArray index="47" removed="1"/>
+    </CUpgrade>
     <CUpgrade id="StabilizerMedPacks">
         <EffectArray index="0" Value="0.375"/>
         <EffectArray index="1" removed="1"/>
@@ -1043,6 +1093,100 @@
         <ScoreValue value="ArmorTechnologyValue"/>
         <ScoreResult value="BuildOrder"/>
         <LeaderAlias value="VanadiumPlating"/>
+    </CUpgrade>
+    <CUpgrade id="TitanSteel">
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Banshee,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Banshee,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Battlecruiser,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Battlecruiser,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Medivac,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Medivac,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Raven,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Raven,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,VikingAssault,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,VikingFighter,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,VikingFighter,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Wraith,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Wraith,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Hercules,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Hercules,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DukesRevenge,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DukesRevenge,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DuskWing,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DuskWing,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ScienceVessel,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,ScienceVessel,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HelsAngelAssault,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HelsAngelAssault,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HelsAngelFighter,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HelsAngelFighter,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,VikingAssault,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SCV,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SCV,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Marine,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Marine,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Reaper,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Reaper,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Marauder,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Marauder,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Ghost,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Ghost,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MULE,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,MULE,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Firebat,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Firebat,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Medic,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Medic,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Spectre,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Spectre,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,WarPig,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,WarPig,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HammerSecurity,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,HammerSecurity,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DevilDog,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DevilDog,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DominionKillTeam,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,DominionKillTeam,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,RaynorCommando,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,RaynorCommando,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Raynor,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Raynor,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TychusCommando,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TychusCommando,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TychusChaingun,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,TychusChaingun,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Swann,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Swann,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Stetmann,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Stetmann,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Nova,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Nova,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Tosh,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Tosh,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Thor,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Thor,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeTank,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeTank,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeTankSieged,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeTankSieged,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Diamondback,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Diamondback,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Hellion,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Hellion,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Vulture,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Vulture,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Goliath,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Goliath,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SpartanCompany,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SpartanCompany,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeBreakerSieged,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeBreakerSieged,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeBreaker,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,SiegeBreaker,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Odin,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Odin,LifeMax" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Predator,LifeStart" Value="0.25"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Unit,Predator,LifeMax" Value="0.25"/>
     </CUpgrade>
     <CUpgrade id="TriLithiumPowerCells">
         <EffectArray index="0" removed="1"/>
