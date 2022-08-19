@@ -1,4 +1,401 @@
-﻿Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
+﻿﻿Abil/Name/AirTransport=Air Transport
+Abil/Name/AirTransportMag=Air Transport
+Abil/Name/ArmSiloWithNuke2=Arm Magazine (Nuke)
+Abil/Name/Armory2Research=Research (Armory)
+Abil/Name/AstralProjection=Astral Projection
+Abil/Name/AutoHarvest=Auto Harvest
+Abil/Name/Barracks2AddOns=AddOns
+Abil/Name/Barracks2Land=Land
+Abil/Name/Barracks2LiftOff=Lift Off
+Abil/Name/Barracks2Train=Train
+Abil/Name/BioMode=Bio Mode
+Abil/Name/Bunker=Bunker
+Abil/Name/BunkerTransportSquad=Load-Unload
+Abil/Name/CCBuild=C&C Build
+Abil/Name/CCDepower=C&C Depower
+Abil/Name/CCMCVQueue=C&C MCV Queue
+Abil/Name/CCMechanicalRepair=C&C Mechanical Repair
+Abil/Name/CCPlaceBuilding=C&C Place Building
+Abil/Name/CCQueue=C&CQueue
+Abil/Name/CCRepair=C&C Repair
+Abil/Name/CCSell=C&C Sell
+Abil/Name/CommandCenter2Land=Land (Command Center)
+Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
+Abil/Name/DeathRecall=Death Recall
+Abil/Name/DeployLaserDrill=Deploy Laser Drill
+Abil/Name/DevilDogSquad=Devil Dog Squad
+Abil/Name/EMPSpectre=EMP
+Abil/Name/EngineeringBay2Research=Research (Engineering Bay)
+Abil/Name/ExplosiveCharges=Explosive Charges
+Abil/Name/Factory2AddOns=AddOns
+Abil/Name/Factory2Land=Land
+Abil/Name/Factory2LiftOff=Lift Off
+Abil/Name/Factory2Train=Train (Factory)
+Abil/Name/FeedbackGhost=Feedback
+Abil/Name/FirebatSquad=Firebat Squad
+Abil/Name/FusionCore2Research=Research
+Abil/Name/GhostAcademy2Research=Research
+Abil/Name/GhostSquad=Ghost Squad
+Abil/Name/HammerSecuritiesSquad=Hammer Securities Squad
+Abil/Name/HideInTheShadows=Hide In The Shadows
+Abil/Name/HyperionYamato=Yamato Gun
+Abil/Name/InfantryMercenaries=Infantry Mercenaries
+Abil/Name/MarauderSquad=Marauder Squad
+Abil/Name/MarineSquad=Marine Squad
+Abil/Name/MedicSquad=Medic Squad
+Abil/Name/MedicSquadAcquire=Medic Squad Acquire
+Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
+Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
+Abil/Name/PauseResumeQueue=PauseResumeQueue
+Abil/Name/PowerStructure=Power Structure
+Abil/Name/ReaperSquad=Reaper Squad
+Abil/Name/Refinery=Refinery
+Abil/Name/RefineryBounce=Refinery Bounce
+Abil/Name/RepairDroneHeal=Repair
+Abil/Name/ResetRally=Reset Rally
+Abil/Name/ScannerSweepTopbar=Scanner Sweep
+Abil/Name/SendWave=Send Wave
+Abil/Name/SquadStimpack=Squad - Stimpack
+Abil/Name/Starport2AddOns=AddOns
+Abil/Name/Starport2Land=Land
+Abil/Name/Starport2LiftOff=Lift Off
+Abil/Name/Starport2Train=Train (Starport)
+Abil/Name/StoneDeploy=Deploy
+Abil/Name/SupplyDepot2Lower=Lower
+Abil/Name/SupplyDepot2Raise=Raise
+Abil/Name/TacNukeStrikeTopbar=Nuclear Strike
+Abil/Name/TacticalMissileStrike=Tactical Missile Strike
+Abil/Name/TakeTheDrill=Take The Drill
+Abil/Name/TrainStone=Train Stone
+Abil/Name/UpgradeDepot=Upgrade Depot
+Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
+Abil/Name/VehicleMercenaries=Vehicle Mercenaries
+Abil/Name/WarPigSquad=War Pig Squad
+Abil/Name/ZeratulSeek=Zeratul Seek
+Behavior/Name/BuildingRepair=Building Repair
+Behavior/Name/Depowered=Depowered
+Behavior/Name/HideInTheShadows=Hide In The Shadows
+Behavior/Name/MechEMP=Mech EMP
+Behavior/Name/PowerCheck=Power Check
+Behavior/Name/PsiSight=Psi Sight
+Behavior/Name/SquadAttack=Squad Attack
+Behavior/Name/SquadBunkerUnload=Squad Bunker Unload
+Behavior/Name/SquadUnit=Squad Unit
+Behavior/Name/SquadVeterancy1=Squad Veterancy1
+Behavior/Name/SquadVeterancy2=Squad Veterancy2
+Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
+Behavior/Name/Veterancy=Veterancy
+Behavior/Name/ZeratulHoldFire=Hold Fire
+Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 30%.
+Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
+Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
+Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
+Button/Name/AstralProjection=Astral Projection
+Button/Name/BuildDevastatorTurret=Build Devastator Turret
+Button/Name/BuildingRepair=Building Repair
+Button/Name/CombatDrugs=Combat Drugs
+Button/Name/DeathRecall=Recall
+Button/Name/DeployLaserDrill10=Deploy Laser Drill
+Button/Name/DeployLaserDrill11=Deploy Laser Drill
+Button/Name/DeployLaserDrill12=Deploy Laser Drill
+Button/Name/DeployLaserDrill13=Deploy Laser Drill
+Button/Name/DeployLaserDrill14=Deploy Laser Drill
+Button/Name/DeployLaserDrill3=Deploy Laser Drill
+Button/Name/DeployLaserDrill4=Deploy Laser Drill
+Button/Name/DeployLaserDrill5=Deploy Laser Drill
+Button/Name/DeployLaserDrill6=Deploy Laser Drill
+Button/Name/DeployLaserDrill7=Deploy Laser Drill
+Button/Name/DeployLaserDrill8=Deploy Laser Drill
+Button/Name/DeployLaserDrill9=Deploy Laser Drill
+Button/Name/Depower=Depower
+Button/Name/EMPSpectre=EMP Round
+Button/Name/FeedbackGhost=Feedback
+Button/Name/HailstormLaunchers=Hailstorm Launchers
+Button/Name/HideInTheShadows=Hide In The Shadows
+Button/Name/HyperionYamato10=Hyperion Yamato
+Button/Name/HyperionYamato11=Hyperion Yamato
+Button/Name/HyperionYamato12=Hyperion Yamato
+Button/Name/HyperionYamato13=Hyperion Yamato
+Button/Name/HyperionYamato14=Hyperion Yamato
+Button/Name/HyperionYamato3=Hyperion Yamato
+Button/Name/HyperionYamato4=Hyperion Yamato
+Button/Name/HyperionYamato5=Hyperion Yamato
+Button/Name/HyperionYamato6=Hyperion Yamato
+Button/Name/HyperionYamato7=Hyperion Yamato
+Button/Name/HyperionYamato8=Hyperion Yamato
+Button/Name/HyperionYamato9=Hyperion Yamato
+Button/Name/InfantryMercenaries10=Infantry Mercenaries
+Button/Name/InfantryMercenaries11=Infantry Mercenaries
+Button/Name/InfantryMercenaries12=Infantry Mercenaries
+Button/Name/InfantryMercenaries13=Infantry Mercenaries
+Button/Name/InfantryMercenaries14=Infantry Mercenaries
+Button/Name/InfantryMercenaries3=Infantry Mercenaries
+Button/Name/InfantryMercenaries4=Infantry Mercenaries
+Button/Name/InfantryMercenaries5=Infantry Mercenaries
+Button/Name/InfantryMercenaries6=Infantry Mercenaries
+Button/Name/InfantryMercenaries7=Infantry Mercenaries
+Button/Name/InfantryMercenaries8=Infantry Mercenaries
+Button/Name/InfantryMercenaries9=Infantry Mercenaries
+Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
+Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
+Button/Name/NukeCalldown10=Tac Nuke Strike
+Button/Name/NukeCalldown11=Tac Nuke Strike
+Button/Name/NukeCalldown12=Tac Nuke Strike
+Button/Name/NukeCalldown13=Tac Nuke Strike
+Button/Name/NukeCalldown14=Tac Nuke Strike
+Button/Name/NukeCalldown3=Tac Nuke Strike
+Button/Name/NukeCalldown4=Tac Nuke Strike
+Button/Name/NukeCalldown5=Tac Nuke Strike
+Button/Name/NukeCalldown6=Tac Nuke Strike
+Button/Name/NukeCalldown7=Tac Nuke Strike
+Button/Name/NukeCalldown8=Tac Nuke Strike
+Button/Name/NukeCalldown9=Tac Nuke Strike
+Button/Name/PauseQueue=Pause Queue
+Button/Name/PowerStructure=Power Structure
+Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
+Button/Name/ResearchImprovedRailguns=Research Improved Railguns
+Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
+Button/Name/ResetRally=Reset Rally
+Button/Name/ResumeQueue=Resume Queue
+Button/Name/ScannerSweepTopbar10=Scanner Sweep
+Button/Name/ScannerSweepTopbar11=Scanner Sweep
+Button/Name/ScannerSweepTopbar12=Scanner Sweep
+Button/Name/ScannerSweepTopbar13=Scanner Sweep
+Button/Name/ScannerSweepTopbar14=Scanner Sweep
+Button/Name/ScannerSweepTopbar3=Scanner Sweep
+Button/Name/ScannerSweepTopbar4=Scanner Sweep
+Button/Name/ScannerSweepTopbar5=Scanner Sweep
+Button/Name/ScannerSweepTopbar6=Scanner Sweep
+Button/Name/ScannerSweepTopbar7=Scanner Sweep
+Button/Name/ScannerSweepTopbar8=Scanner Sweep
+Button/Name/ScannerSweepTopbar9=Scanner Sweep
+Button/Name/Sell=Sell
+Button/Name/SendWave=Send Wave
+Button/Name/StarshipUltraCapacitors=Starship Ultra Capacitors
+Button/Name/StarshipVanadiumPlating=Starship Vanadium Plating
+Button/Name/Stone=Train Stone
+Button/Name/TacticalMissileStrike10=Tactical Missile Strike
+Button/Name/TacticalMissileStrike11=Tactical Missile Strike
+Button/Name/TacticalMissileStrike12=Tactical Missile Strike
+Button/Name/TacticalMissileStrike13=Tactical Missile Strike
+Button/Name/TacticalMissileStrike14=Tactical Missile Strike
+Button/Name/TacticalMissileStrike3=Tactical Missile Strike
+Button/Name/TacticalMissileStrike4=Tactical Missile Strike
+Button/Name/TacticalMissileStrike5=Tactical Missile Strike
+Button/Name/TacticalMissileStrike6=Tactical Missile Strike
+Button/Name/TacticalMissileStrike7=Tactical Missile Strike
+Button/Name/TacticalMissileStrike8=Tactical Missile Strike
+Button/Name/TacticalMissileStrike9=Tactical Missile Strike
+Button/Name/TakeTheDrill=Take The Drill
+Button/Name/VehicleMercenaries10=Vehicle Mercenaries
+Button/Name/VehicleMercenaries11=Vehicle Mercenaries
+Button/Name/VehicleMercenaries12=Vehicle Mercenaries
+Button/Name/VehicleMercenaries13=Vehicle Mercenaries
+Button/Name/VehicleMercenaries14=Vehicle Mercenaries
+Button/Name/VehicleMercenaries3=Vehicle Mercenaries
+Button/Name/VehicleMercenaries4=Vehicle Mercenaries
+Button/Name/VehicleMercenaries5=Vehicle Mercenaries
+Button/Name/VehicleMercenaries6=Vehicle Mercenaries
+Button/Name/VehicleMercenaries7=Vehicle Mercenaries
+Button/Name/VehicleMercenaries8=Vehicle Mercenaries
+Button/Name/VehicleMercenaries9=Vehicle Mercenaries
+Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
+Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
+Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
+Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
+Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
+Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
+Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
+Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
+Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
+Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
+Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
+Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
+Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
+Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
+Button/Tooltip/DeployLaserDrill10=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill11=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill12=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill13=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill14=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill3=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill4=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill5=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill6=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill7=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill8=Deploys the laser drill.
+Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
+Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
+Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
+Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
+Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
+Button/Tooltip/Factory2Flying=Factory must land to start unit production.
+Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
+Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
+Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
+Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
+Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato12=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato13=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato14=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato3=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato4=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato5=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato6=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato7=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato8=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato9=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/InfantryMercenaries10=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries11=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries12=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries13=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries14=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries3=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries4=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries5=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries6=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries7=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries8=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenaries9=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
+Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
+Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown11=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown12=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown13=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown14=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown3=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown4=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown5=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown6=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown7=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown9=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
+Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
+Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
+Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
+Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of Goliath, Wraith, Viking, Thor, Banshee, and Marauder rockets by +30%.
+Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
+Button/Tooltip/ResearchImprovedRailguns=Increases Goliath and Viking ground damage by +50%, and Diamondback damage by +30%
+Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
+Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
+Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/ScannerSweepTopbar10=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar11=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar12=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar13=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar14=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar3=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar4=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar5=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar6=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar7=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar8=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
+Button/Tooltip/Sell=Sells selected building for a refund
+Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
+Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
+Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,snipeDamage,Amount"/> damage.
+Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
+Button/Tooltip/Starport2Flying=Starport must land to start unit production.
+Button/Tooltip/StarshipUltraCapacitors=Increases attack speed of Starships by 20%
+Button/Tooltip/StarshipVanadiumPlating=Gives Starships 20% resistance to damage
+Button/Tooltip/Stone=Expands Build Radius.<n/>Obsessed with trucks.
+Button/Tooltip/SupplyDepot2=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
+Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
+Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike13=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike14=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike3=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike4=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike5=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
+Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Geyser.
+Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
+Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
+Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
+Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
+Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 20% damage resist.
+Button/Tooltip/VehicleMercenaries10=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries11=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries12=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries13=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries14=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries3=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries4=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries5=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries6=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries7=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries8=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
+Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
+ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
+Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
+ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources and build base structures. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
+ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
+ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
+ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
+ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
+ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods
+ConversationState/Tech/Tech2_Battlecruiser_2=Defensive Matrix
+ConversationState/Tech/Tech2_Bunker_1=Neosteel Bunker
+ConversationState/Tech/Tech2_Bunker_2=Projectile Accelerator
+ConversationState/Tech/Tech2_CommandCenter_1=Fire-Suppression System
+ConversationState/Tech/Tech2_CommandCenter_2=Orbital Command
+ConversationState/Tech/Tech2_Diamondback_1=Tri-Lithium Power Cell
+ConversationState/Tech/Tech2_Diamondback_2=Shaped Hull
+ConversationState/Tech/Tech2_Firebat_1=Incinerator Gauntlets
+ConversationState/Tech/Tech2_Firebat_2=Juggernaut Plating
+ConversationState/Tech/Tech2_Ghost_1=Ocular Implants
+ConversationState/Tech/Tech2_Ghost_2=Crius Suit
+ConversationState/Tech/Tech2_Goliath_1=Ares-Class Targeting System
+ConversationState/Tech/Tech2_Goliath_2=Multi-Lock Weapons System
+ConversationState/Tech/Tech2_Hellion_1=Twin-Linked Flamethrower
+ConversationState/Tech/Tech2_Hellion_2=Hydraulic Stabilizers
+ConversationState/Tech/Tech2_Marauder_1=Kinetic Foam
+ConversationState/Tech/Tech2_Marauder_2=Concussive Shells
+ConversationState/Tech/Tech2_Marine_1=Stimpacks
+ConversationState/Tech/Tech2_Marine_2=Combat Shield
+ConversationState/Tech/Tech2_Medic_1=Stabilizer Medpacks
+ConversationState/Tech/Tech2_Medic_2=Advanced Medic Facilities
+ConversationState/Tech/Tech2_Medivac_1=Rapid Deployment Tube
+ConversationState/Tech/Tech2_Medivac_2=Advanced Healing AI
+ConversationState/Tech/Tech2_MissileTurret_1=Titanium Housing
+ConversationState/Tech/Tech2_MissileTurret_2=Hellstorm Batteries
+ConversationState/Tech/Tech2_Reaper_1=U-238 Rounds
+ConversationState/Tech/Tech2_Reaper_2=G-4 Clusterbomb
+ConversationState/Tech/Tech2_SCV_1=Dual-Fusion Welders
+ConversationState/Tech/Tech2_SCV_2=Advanced Construction
+ConversationState/Tech/Tech2_SiegeTank_1=Maelstrom Rounds
+ConversationState/Tech/Tech2_SiegeTank_2=Shaped Blast
+ConversationState/Tech/Tech2_Spectre_1=Psionic Lash
+ConversationState/Tech/Tech2_Spectre_2=Nyx-Class Cloaking Module
+ConversationState/Tech/Tech2_Thor_1=330mm Barrage Cannon
+ConversationState/Tech/Tech2_Thor_2=Immortality Protocol
+ConversationState/Tech/Tech2_Viking_1=Phobos-Class Weapons System
+ConversationState/Tech/Tech2_Viking_2=Ripwave Missiles
+ConversationState/Tech/Tech2_Vulture_1=Cerberus Mine
+ConversationState/Tech/Tech2_Vulture_2=Replenishable Magazine
+ConversationState/Tech/Tech2_Wraith_1=Tomahawk Power Cells
+ConversationState/Tech/Tech2_Wraith_2=Displacement Field
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
 ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s><n/><n/>
@@ -69,6 +466,202 @@ ConversationState/Tech/Tech_SiegeTank_1/Info/Tooltip=<s val="TooltipTitle_Tech">
 ConversationState/Tech/Tech_Vulture_2=EMP Rounds
 ConversationState/Tech/Tech_Vulture_2/Info/Description=<s val="TechSummary">- Vulture attacks disable mechanical units and structures for 1s.<n/><n/><s val="TechDescription">Enlightened Dynamics has developed a emp frag grenade for use on vultures, allowing them to temporarily disable targets they hit.</s>
 ConversationState/Tech/Tech_Vulture_2/Info/Tooltip=<s val="TooltipTitle_Tech">EMP Rounds</s><n/><s val="TooltipDescription_Tech">Vultures disable mechanical units and structures they hit for 1s.</s>
+DataCollection/Name/Armory=Armory
+DataCollection/Name/Armory2=Armory Copy
+DataCollection/Name/Barracks=Barracks
+DataCollection/Name/Barracks2=Barracks Copy
+DataCollection/Name/Bunker=Bunker
+DataCollection/Name/Bunker2=Bunker Copy
+DataCollection/Name/CommandCenter=Command Center
+DataCollection/Name/CommandCenter2=Command Center Copy
+DataCollection/Name/Crane=Crane
+DataCollection/Name/DevastationTurret=Devastation Turret
+DataCollection/Name/DevilDogSquad=Devil Dog Squad
+DataCollection/Name/EngineeringBay=Engineering Bay
+DataCollection/Name/EngineeringBay2=Engineering Bay Copy
+DataCollection/Name/Factory=Factory
+DataCollection/Name/Factory2=Factory Copy
+DataCollection/Name/FirebatSquad=Firebat Squad
+DataCollection/Name/FusionCore=Fusion Core
+DataCollection/Name/FusionCore2=Fusion Core Copy
+DataCollection/Name/GhostAcademy=Ghost Academy
+DataCollection/Name/GhostAcademy2=Ghost Academy Copy
+DataCollection/Name/GhostSquad=Ghost Squad
+DataCollection/Name/HammerSecuritiesSquad=Hammer Securities Squad
+DataCollection/Name/MarauderSquad=Marauder Squad
+DataCollection/Name/MarineSquad=Marine Squad
+DataCollection/Name/MedicSquad=Medic Squad
+DataCollection/Name/MineralField=Mineral Field
+DataCollection/Name/MissileTurret=Missile Turret
+DataCollection/Name/MissileTurret2=Missile Turret Copy
+DataCollection/Name/PlanetaryFortress2=Planetary Fortress Copy
+DataCollection/Name/ReaperSquad=Reaper Squad
+DataCollection/Name/Refinery2=Refinery Copy
+DataCollection/Name/SensorTower=Sensor Tower
+DataCollection/Name/SensorTower2=Sensor Tower Copy
+DataCollection/Name/Starport=Starport
+DataCollection/Name/Starport2=Starport Copy
+DataCollection/Name/Stone=Stone
+DataCollection/Name/SupplyDepot=Supply Depot
+DataCollection/Name/SupplyDepot2=Supply Depot Copy
+DataCollection/Name/SupplyDepot2Lowered=Supply Depot Lowered Copy
+DataCollection/Name/TibNodeLarge=Tib Node Large
+DataCollection/Name/TibNodeMedium=Tib Node Medium
+DataCollection/Name/TibNodeSmall=Tib Node Small
+DataCollection/Name/TibVein=Tib Vein
+DataCollection/Name/VespeneGeyser=Vespene Geyser
+DataCollection/Name/WarPigSquad=War Pig Squad
+DocInfo/DescLong=stuff
+DocInfo/DescShort=Any
+DocInfo/Name=Wings Of Liberty Tib Editions
+Effect/Name/AirTransportLoadIterate=Air Transport Load Iterate
+Effect/Name/AirTransportLoadIterate2=Air Transport Load Iterate2
+Effect/Name/AirTransportLoadSquad=Air Transport Load Squad
+Effect/Name/AirTransportUnloadIterate=Air Transport Unload Iterate
+Effect/Name/AirTransportUnloadSquad=Air Transport Unload Squad
+Effect/Name/AstralProjection=Astral Projection
+Effect/Name/AstralProjectionCU=Astral Projection
+Effect/Name/AutoHarvestCP=Auto Harvest
+Effect/Name/AutoHarvestTib=Auto Harvest Tib
+Effect/Name/BansheeAirstrikeDamage=Banshee Airstrike Damage
+Effect/Name/BansheeAirstrikeSearch=Banshee Airstrike Search
+Effect/Name/BuildingRepair=Building Repair
+Effect/Name/BuildingRepairAB=Building Repair AB
+Effect/Name/BuildingRepairLoop=Building Repair Loop
+Effect/Name/BuildingRepairRB=Building Repair RB
+Effect/Name/BuildingRepairStop=Building Repair Stop
+Effect/Name/BuildingRepairSwitch=Building Repair Switch
+Effect/Name/BunkerLoadIterate=Bunker Load Iterate
+Effect/Name/BunkerLoadIterate2=Bunker Load Iterate2
+Effect/Name/BunkerLoadSquad=Bunker Load Squad
+Effect/Name/BunkerUnloadIterate=Bunker Unload Iterate
+Effect/Name/BunkerUnloadSquad2=Bunker Unload Squad
+Effect/Name/CollapsibleRockTowerCPFinalPurifier02=Collapsible Rock Tower CPFinal
+Effect/Name/CollapsibleRockTowerCPPurifier02=Collapsible Rock Tower CP
+Effect/Name/CollapsibleRockTowerCreateDebrisPurifier02=Collapsible Rock Tower Create Debris
+Effect/Name/ConcussiveGrenadesLM=Concussive Grenades
+Effect/Name/ConcussiveGrenadesSet=Concussive Grenades
+Effect/Name/ConcussiveGrenadesU=Concussive Grenades
+Effect/Name/CraneBuilt=CraneBuilt
+Effect/Name/CranePlace=Crane Place
+Effect/Name/CreateSCVHarvester=Create SCV Harvester
+Effect/Name/DeathRecallD=Death Recall
+Effect/Name/DeathRecallMU=Death Recall
+Effect/Name/DeathRecallS=Death Recall
+Effect/Name/DeathRecallSet=Death Recall
+Effect/Name/DeathRecallT=Death Recall
+Effect/Name/DepowerAB=Depower AB
+Effect/Name/DepowerRB=Depower RB
+Effect/Name/DepowerSwitch=Depower Switch
+Effect/Name/DetectorCone9Reveal=DetectorCone9Reveal
+Effect/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
+Effect/Name/DevastatorTurretPlace=DevastatorTurretPlace
+Effect/Name/DiamondbackCP=Eviscerator
+Effect/Name/DiamondbackPierce=Eviscerator
+Effect/Name/DropDevilDogs=Drop Devil Dogs
+Effect/Name/DropHammerSecurities=Drop Hammer Securities
+Effect/Name/DropOffStun=Drop Off Stun
+Effect/Name/DropSiegeBreakers=Drop Siege Breakers
+Effect/Name/DropSpartanCompany=Drop Spartan Company
+Effect/Name/DropWarPigs=Drop War Pigs
+Effect/Name/DummyEffect=Dummy Effect
+Effect/Name/EMPLaunchMissileSpectre=EMP
+Effect/Name/EMPSearchSpectre=EMP
+Effect/Name/EMPSetSpectre=EMP
+Effect/Name/ExplosiveCharges=Explosive Charges
+Effect/Name/FeedbackGhost=Feedback
+Effect/Name/FeedbackSetGhost=Feedback
+Effect/Name/FeedbackSpectre=Feedback
+Effect/Name/FragmentationGrenadeCP=Fragmentation Grenade
+Effect/Name/HailstormLauncherLM=Hailstorm Launcher
+Effect/Name/HailstormLauncherLMMerc=Hailstorm Launcher
+Effect/Name/HailstormLauncherU=Hailstorm Launcher
+Effect/Name/HailstormLauncherUMerc=Hailstorm Launcher
+Effect/Name/HideInTheShadows=Hide In The Shadows
+Effect/Name/InfantryMercSet=Infantry Merc Set
+Effect/Name/MakePrecursorMercIterate=Make Precursor Merc Iterate
+Effect/Name/MarineSquadStim=Marine Squad Stim
+Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
+Effect/Name/MechEMP=Mech EMP
+Effect/Name/MechanicalRepair=Mechanical Repair
+Effect/Name/MedicSquadAcquire=Medic Squad Acquire
+Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
+Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
+Effect/Name/NuclearAnnihilationMengskBigNukeDropDelayCP=NuclearAnnihilationMengskBigNukeDropDelayCP
+Effect/Name/NuclearAnnihilationMengskDamage=NuclearAnnihilationMengskBigNukeDamage
+Effect/Name/NuclearAnnihilationMengskSmallNukeDamage=NuclearAnnihilationMengskSmallNukeDamage
+Effect/Name/NuclearAnnihilationMengskSmallNukeDamageSearch=NuclearAnnihilationMengskSmallNukeDamageSearch
+Effect/Name/NuclearAnnihilationMengskSmallNukeDropDelayCP=NuclearAnnihilationMengskSmallNukeDropDelayCP
+Effect/Name/NuclearAnnihilationMengskSmallNukeDummyCP=NuclearAnnihilationMengskSmallNukeDummyCP
+Effect/Name/NukePersistentTopbar=Nuke
+Effect/Name/OrbitalSupplyDrop=Orbital Supply Drop
+Effect/Name/PerditionTurretBuilt=PerditionTurretBuilt
+Effect/Name/PerditionTurretPlace=PerditionTurretPlace
+Effect/Name/PowerStructure=Power Structure
+Effect/Name/PowerStructureAB=Power Structure
+Effect/Name/PowerStructureRB=Power Structure
+Effect/Name/RailgunLaunch=Railgun Launch
+Effect/Name/RallyCopy=Rally Copy
+Effect/Name/RallyIterate=Rally Iterate
+Effect/Name/RefineryBounce=Refinery Bounce
+Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
+Effect/Name/RemovePrecursorMercIterate=Remove Precursor Merc Iterate
+Effect/Name/ResetRally=Reset Rally
+Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
+Effect/Name/ShrikeTurretCP=Shrike Turret
+Effect/Name/SquadAttack=Squad Attack
+Effect/Name/SquadAttackAB=Squad Attack AB
+Effect/Name/SquadAttackIterate=Squad Attack Iterate
+Effect/Name/SquadBunkerUnload=Squad Bunker Unload
+Effect/Name/SquadDeathDamage=Squad Death Damage
+Effect/Name/SquadMainAttack=Squad Main Attack
+Effect/Name/SquadStop=Squad Stop
+Effect/Name/SquadStopIterate=Squad Stop Iterate
+Effect/Name/SquadUnit=Squad Unit
+Effect/Name/SquadUnitTeleport=Squad Unit Teleport
+Effect/Name/SquadVeterancy1=Squad Veterancy1
+Effect/Name/SquadVeterancy1Iterate=Squad Veterancy1 Iterate
+Effect/Name/SquadVeterancy2=Squad Veterancy2
+Effect/Name/SquadVeterancy2Iterate=Squad Veterancy2 Iterate
+Effect/Name/StealthCreateForwardLookPoint=Stealth Create Forward Look Point
+Effect/Name/StealthCreateForwardLookPointLong=Stealth Create Forward Look Point Long
+Effect/Name/StealthLeftTurn=Stealth Left Turn
+Effect/Name/StealthLookAt=Stealth Look At
+Effect/Name/StealthRememberLookPoint=Stealth Remember Look Point
+Effect/Name/StealthRememberLookPointLong=Stealth Remember Look Point Long
+Effect/Name/StealthRightTurn=Stealth Right Turn
+Effect/Name/StealthSpinLeft=Stealth Spin Left
+Effect/Name/StealthSpinRight=Stealth Spin Right
+Effect/Name/StealthTurnLeft=Stealth Turn Left
+Effect/Name/StealthTurnRight=Stealth Turn Right
+Effect/Name/SupercloakUnreveal=Supercloak Unreveal
+Effect/Name/SupplyDepotBuilt=Supply Depot Built
+Effect/Name/SupplyDepotPlace=Supply Depot Place
+Effect/Name/TibGrow=Tib Grow
+Effect/Name/TibNodeLarge=Tib Node Large
+Effect/Name/TibNodeLargeGrow=Tib Node Large Grow
+Effect/Name/TibNodeLargeSearch=Tib Node Large Search
+Effect/Name/TibNodeLargeStarter=Tib Node Large Starter
+Effect/Name/TibNodeLargeStarter2=Tib Node Large Starter2
+Effect/Name/TibNodeLargeStarter22=Tib Node Large Starter3
+Effect/Name/TibNodeMedium=Tib Node Medium
+Effect/Name/TibNodeMediumGrow=Tib Node Medium Grow
+Effect/Name/TibNodeMediumSearch=Tib Node Medium Search
+Effect/Name/TibNodeMediumStarter=Tib Node Medium Starter
+Effect/Name/TibNodeMediumStarter2=Tib Node Medium Starter2
+Effect/Name/TibNodeSmall=Tib Node Small
+Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
+Effect/Name/TibNodeSmallSearch=Tib Node Small Search
+Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
+Effect/Name/TychusSpectreUltrasonicDamageLv1=TychusSpectreUltrasonicDamageLv1
+Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
+Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1
+Effect/Name/VehicleMercSet=Vehicle Merc Set
+Effect/Name/VultureLeft=Fragmentation Grenade (Missile, left)
+Effect/Name/YamatoGunTopbarDamage=Yamato Gun
+Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
+Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
+Effect/Name/ZeratulSeek=Zeratul Seek
 DocInfo/Author=Blizzard Entertainment
 DocInfo/DescLong=
 DocInfo/DescShort=Storymode map
@@ -478,3 +1071,116 @@ Param/Value/lib_Camp_D68DB969=<s val="MercCategory">Calldown Size:</s>  <s val="
 Param/Value/lib_Camp_E31332D4=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +50% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Tobpar</s>
 Param/Value/lib_Camp_E6C595F8=<s val="MercCategory">Calldown Size:</s><s val="MercSummary">  2 Elite Marine Squads</s>
 Param/Value/lib_Camp_EF94B48A=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+45% Health, +40% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Topbar</s>
+RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
+RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
+RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
+RequirementNode/Tooltip/CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat=Engineering Bay
+RequirementNode/Tooltip/CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat=Factory
+RequirementNode/Tooltip/CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat=Refinery
+RequirementNode/Tooltip/CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat=Shadow Ops
+RequirementNode/Tooltip/CountUnitAlias_StarportInProgressOrBetter4195804750TechTreeCheat=Starport
+RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912=Supply Depot
+RequirementNode/Tooltip/CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat=Supply Depot
+RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
+RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
+RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
+RequirementNode/Tooltip/Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter=Only 1 Laser Drill.
+Skin/Name/HyperionYamato3=Hyperion Yamato
+Skin/Name/HyperionYamato4=Hyperion Yamato
+Skin/Name/HyperionYamato5=Hyperion Yamato
+Skin/Name/InfantryMercenaries3=Infantry Mercenaries
+Skin/Name/InfantryMercenaries4=Infantry Mercenaries
+UI/ResourceName1=Vespene
+UI/ResourceName3=Custom
+Unit/Category/TerranUnits=Terran
+Unit/InfoText/PalletGas=Use any ground unit to collect 2000 minerals.
+Unit/InfoText/PalletMinerals=Use any ground unit to collect 1000 minerals.
+Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
+Unit/Name/AirTransport=Air Transport
+Unit/Name/Armory2=Armory
+Unit/Name/Barracks2=Barracks
+Unit/Name/Bunker2=Bunker
+Unit/Name/BunkerSQ=Bunker
+Unit/Name/CCRepairDrone=Repair Drone
+Unit/Name/CCTopbar=C&C Topbar
+Unit/Name/CollapsibleRockTowerPurifier02=Rock Tower
+Unit/Name/CommandCenter2=Command Center
+Unit/Name/Crane=Crane
+Unit/Name/DevastationTurret=Devastation Turret
+Unit/Name/DevilDogSquad=Devil Dog Squad
+Unit/Name/EngineeringBay2=Engineering Bay
+Unit/Name/Factory2=Factory
+Unit/Name/FirebatSquad=Firebat Squad
+Unit/Name/FusionCore2=Fusion Core
+Unit/Name/GhostAcademy2=Shadow Ops
+Unit/Name/GhostSquad=Ghost Squad
+Unit/Name/HammerSecuritiesSquad=Hammer Securities Squad
+Unit/Name/MarauderSquad=Marauder Squad
+Unit/Name/MarineSquad=Marine Squad
+Unit/Name/MedicSquad=Medic Squad
+Unit/Name/MissileTurret2=Missile Turret
+Unit/Name/OrbitalCommand2=Orbital Command
+Unit/Name/OrbitalCommandFlying2=Orbital Command
+Unit/Name/PlanetaryFortress2=Planetary Fortress
+Unit/Name/RailgunWeapon=Railgun Weapon
+Unit/Name/ReaperSquad=Reaper Squad
+Unit/Name/Refinery2=Refinery
+Unit/Name/RefineryBounce=Refinery Bounce
+Unit/Name/SCV2=SCV
+Unit/Name/SensorTower2=Sensor Tower
+Unit/Name/Starport2=Starport
+Unit/Name/Stone=Stone
+Unit/Name/SupplyDepot2=Supply Depot
+Unit/Name/SupplyDepot2Lowered=Supply Depot
+Unit/Name/TibNodeLarge=Vespene Geyser
+Unit/Name/TibNodeMedium=Vespene Geyser
+Unit/Name/TibNodeSmall=Vespene Geyser
+Unit/Name/TibVein=Mineral Field
+Unit/Name/Vehicle=Vehicle
+Unit/Name/WarPigSquad=War Pig Squad
+Unit/Tip/Air=<c val="FFBF00">Light Air</c> armor
+Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
+Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
+Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
+Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
+Upgrade/Name/EnhancedExplosives=Enhanced Explosives
+Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
+Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
+Upgrade/Name/ImprovedRailguns=Improved Railguns
+Upgrade/Name/LowPower=Low Power
+Upgrade/Name/TakeTheDrill=Take The Drill
+Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
+Upgrade/Name/TerranInfantryVanadiumPlating=Terran Infantry Vanadium Plating
+Upgrade/Name/TerranShipArmorsVanadiumPlating2=Terran Ship Armor Vanadium Plating Copy
+Upgrade/Name/TerranShipUltraCapacitors=Terran Ship Ultra-Capacitors
+Upgrade/Name/TerranShipVanadiumPlating=Terran Ship Vanadium Plating
+Upgrade/Name/TerranShipWeaponsUltraCapacitors2=Terran Ship Weapons Ultra-Capacitors Copy
+Upgrade/Name/TerranVehicleArmorsVanadiumPlating2=Terran Vehicle Armor Vanadium Plating Copy
+Upgrade/Name/TerranVehicleUltraCapacitors=Terran Vehicle Ultra-Capacitors
+Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
+Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
+Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
+Weapon/Name/ATALaserBattery2=ATA Laser Battery
+Weapon/Name/ATSLaserBattery2=ATS Laser Battery
+Weapon/Name/ConcussiveGrenades=Concussive Grenades
+Weapon/Name/DevilDogSquad=Devil Dog Squad
+Weapon/Name/ExplosiveCharges=Explosive Charges
+Weapon/Name/FirebatSquad=Firebat Squad
+Weapon/Name/GhostSquad=Ghost Squad
+Weapon/Name/HailstormLauncher=Hailstorm Launcher
+Weapon/Name/HailstormLauncherMerc=Hailstorm Launcher
+Weapon/Name/HammerSecuritiesSquad=Hammer Securities Squad
+Weapon/Name/HammerSecuritiesSquad@2=Hailstorm Launcher
+Weapon/Name/MarauderSquad=Marauder Squad
+Weapon/Name/MarauderSquad@2=Hailstorm Launcher
+Weapon/Name/MarineSquad=Marine Squad
+Weapon/Name/ReaperSquad=Reaper Squad
+Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
+Weapon/Name/WarPigSquad=War Pig Squad
+Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
+Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
+Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
+Weapon/Tip/Ram=Only used against structures.
+Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles and structures
+Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles<n/>Moderate against infantry, structures
+Weapon/Tip/Sniper=Deals <c val="FFBF00">Sniper</c> Damage<n/>Effective against Infantry<n/>Abysmal against all other targets
