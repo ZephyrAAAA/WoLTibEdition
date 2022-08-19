@@ -17,7 +17,6 @@ Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Co
 Added the Yamato Strike support power on the Fusion Core.
 
 Units:
-*Ultras, Colossi, and Thors now crush infrantry they walk over.
 Science Vessel heals 5/s, takes 1e/5, up to 3 science vessels can stack.
 Imported the HOTS void ray
 Immortal Hardened Shield removed, shield health doubled
@@ -31,16 +30,17 @@ Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is
 The Laser Drill is now deactivated in low power mode.
 
 Upgrades:
-*Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
+Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 Hercules-> Cellular Reactor- Also increases energy regen
-*Cellular Reactor-> Titansteel- +25% health for all units
+Cellular Reactor-> Titansteel- +25% health for all units
+Biosteel now regens 2% health/s
 Command Center Reactor now decreases the build time of all units (And the cost)
 CC Reactor now has the correct text
 Autogas is now autoharvesting.
 Autoharvesting now has the correct text.
 Replenishable Magazine-> EMP- Disables mechanical units on attack
 Advanced Construction now decreases the build time of all units (And the cost)
-Dual Fusion increases repair speed of Topbar Repair by 50%.
+Dual Fusion increases repair speed of Topbar Repair and Repair Drones by 50%.
 Orbital Command now unlocks support powers on tech buildings. Scan on EBay, tactical missiles on shadow ops, nuke on armoury
 Dual Fusion now says what it actually does.
 Advanced Construction now says what it actually does.

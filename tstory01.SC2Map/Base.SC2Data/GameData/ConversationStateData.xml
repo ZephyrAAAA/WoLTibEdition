@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CConversationState id="ABChoice"/>
+    <CConversationState id="ABChoiceRewards">
+        <Indices index="1" ImagePath="Assets\Textures\btn-ability-terran-emp-color.dds"/>
+        <Indices index="2" ImagePath="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+        <Indices index="4" ImagePath="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
+        <Indices index="5" ImagePath="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+    </CConversationState>
     <CConversationState id="CCEditionPermanence">
         <Indices Id="Laser_Drill" Name="ConversationState/CCEditionPermanence/Laser_Drill">
             <InfoAbilCmd Id="AC1" Abil="DeployLaserDrill"/>
