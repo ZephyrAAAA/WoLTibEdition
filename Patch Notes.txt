@@ -176,14 +176,23 @@ Zeratul only gets 1 charge of blink
 Zeratul gets a Power ability, to temporarily power any protoss structure
 Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
 Zeratul gets a new ability from each of the Dark Shrine, Robotics Facility, and Templar Archives.
+Archons, Sentries, and High Templar now have a detection cone.
 
 Breakout:
--Tosh has an Anti-structure attack that deals 100% of the target's health.
--Gave Tosh Psionic Lash
--Tosh now regens energy really fast while out of combat.
--Consumption now heals Tosh for the same value as energy gained.
--Tosh now has an ability to trigger an attack wave from Jim. Stores up to 3 charges.
+Tosh has 500 health
+Tosh has an Anti-structure attack that deals 100% of the target's health.
+Tosh hits for 1000 sniper damage at 0.4 speed
+Gave Tosh Psionic Lash
+Tosh now regens energy really fast while out of combat.
+Consumption now heals Tosh for the same value as energy gained.
+Tosh now has an ability to trigger an attack wave from Jim. Stores up to 3 charges.
+Tosh has an XP bar
 
 Ghost of a Chance:
--Nova has an Anti-structure attack that deals 100% of the target's health.
--Nova
+Nova has 500 health
+Snipe can hit anything, does 170 damage, and is affected by armour.
+Nova hits for 1000 sniper damage at 0.4 speed
+Nova's max energy is now 150, and regenerates faster, at 2/s.
+You have Marauders in the first section
+Nova has an Anti-structure attack that deals 100% of the target's health.
+Nova has an XP bar
