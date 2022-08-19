@@ -457,6 +457,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="BansheeACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -662,6 +663,7 @@
         <WeaponArray Link="ATALaserBattery2"/>
         <WeaponArray Link="ATSLaserBattery2"/>
         <Speed value="1.875"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="BattlecruiserACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1986,6 +1988,7 @@
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Speed value="4.25"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="DisruptorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2026,6 +2029,7 @@
         <ArmorType value="Fort"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="DumpTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2650,6 +2654,7 @@
         <LifeArmorTip value="Unit/Tip/Light"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="GoliathACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2737,6 +2742,7 @@
         <ArmorType value="Medium"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="AirTransport">
         <DeathRevealRadius value="3"/>
@@ -2796,6 +2802,7 @@
         <ArmorType value="Medium"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="HelsAngelFighter">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2803,12 +2810,14 @@
         <ArmorType value="Medium"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="Hercules">
         <AbilArray Link="AirTransportMag"/>
         <ArmorType value="Fort"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="HerculesACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3430,6 +3439,7 @@
     </CUnit>
     <CUnit id="Medivac">
         <AbilArray Link="AirTransportMag"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="MedivacMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4110,6 +4120,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="PreserverA">
         <LifeArmor value="0"/>
@@ -4277,6 +4288,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="RavenTypeIIACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4676,6 +4688,7 @@
     <CUnit id="ScienceVessel">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="ScienceVesselACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4849,6 +4862,7 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="SiegeBreakerSieged">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4858,12 +4872,14 @@
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
         <CargoSize value="4"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="SiegeTank">
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="SiegeTankACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4881,6 +4897,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <CargoSize value="4"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="SiegeTankSkinPreview">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4925,6 +4942,7 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="SpawningPool">
         <ArmorType value="Hero"/>
@@ -5644,6 +5662,7 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <Radius value="1"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6007,11 +6026,13 @@
         <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="VikingFighter">
         <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="VikingMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6050,6 +6071,7 @@
         <LifeArmor value="0"/>
         <ArmorType value="Medium"/>
         <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="VultureACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

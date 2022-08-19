@@ -1,4 +1,4 @@
-﻿﻿Abil/Name/AirTransport=Air Transport
+﻿Abil/Name/AirTransport=Air Transport
 Abil/Name/AirTransportMag=Air Transport
 Abil/Name/ArmSiloWithNuke2=Arm Magazine (Nuke)
 Abil/Name/Armory2Research=Research (Armory)
@@ -347,8 +347,43 @@ Button/Tooltip/VehicleMercenaries8=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
-ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
 Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
+ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
+ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
+ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
+ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s><n/><n/>
+ConversationState/LabResearch/ResearchP1_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Vanadium Plating</s><n/><s val="TooltipDescription_Protoss"> Permanently researches all Vanadium Plating upgrades.</s>
+ConversationState/LabResearch/ResearchP2_1=Orbital Supply Drop
+ConversationState/LabResearch/ResearchP2_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Gives 600 minerals per minute.<n/><n/></s><s val="ResearchDescription_Protoss"></s><s val="ResearchDescription_Protoss">Someone discovered a new use for drop pods.
+ConversationState/LabResearch/ResearchP2_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Orbital Supply Drop</s><n/><s val="TooltipDescription_Protoss">Gives 600 minerals per minute.</s>
+ConversationState/LabResearch/ResearchP2_2=Expanded Hold
+ConversationState/LabResearch/ResearchP2_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Doubles SCV capacity.<n/>- Drop off time remains the same.</s><n/><n/><s val="ResearchDescription_Protoss">Research of  Protoss filtering techniques allows our SCVs to pre-refine the minerals they gather, so they can carry less dead weight.</s>
+ConversationState/LabResearch/ResearchP2_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Expanded Hold</s><n/><s val="TooltipDescription_Protoss">Doubles SCV capacity.</s>
+ConversationState/LabResearch/ResearchP3_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Refineries auto-harvest up to 4 range.</n>- Refineries now cost 2000.</n>- Refineries no longer come with an SCV.</n>- SCVs can still drop off at refineries.</s><n/><n/><s val="ResearchDescription_Protoss">We have adapted Protoss warp technology to transport minerals straight from the fields to the Refinery, eliminating the need for SCVs to harvest and return.<n/><n/>Why the Protoss have never thought to transport minerals in this fashion is a mystery. Perhaps they lack Terran creativity and pragmatism, or possibly their primitive superstitions forbid the practice.</s>
+ConversationState/LabResearch/ResearchP3_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Automated Refinery</s><n/><s val="TooltipDescription_Protoss">Refineries harvest within a set range, are cheaper, and don't come with an SCV.</s>
+ConversationState/LabResearch/ResearchP3_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Structures take 20% less time to build.<n/>- Structures also cost 20% less to make.<n/></s><n/><s val="ResearchDescription_Protoss">Expanded power production in our building construction facilities allows them to greatly speed up their production cycles.</s><n/>
+ConversationState/LabResearch/ResearchP3_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Command Center Reactor</s><n/><s val="TooltipDescription_Protoss">Buildings are constructed faster and cheaper.</s>
+ConversationState/LabResearch/ResearchZ1_1=Hi-Sec Autotracking
+ConversationState/LabResearch/ResearchZ1_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Hi-Sec Autotracking</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Building Armour.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ1_1/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches the Hi-Sec Autotracking upgrade, granting +1 range and +15% attack speed to all automated defensive structures.<n/><n/></s><s val="ResearchDescription_Zerg">Through researching Spore Crawlers, we have discovered a more efficient (and thus cheaper) method of threat detection and tracking, allowing us to implement it as standard on all base defenses.</s>
+ConversationState/LabResearch/ResearchZ1_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Hi-Sec Autotracking</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Hi-Sec Autotracking upgrade.</s>
+ConversationState/LabResearch/ResearchZ1_2=Building Armor
+ConversationState/LabResearch/ResearchZ1_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Building Armour</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Hi-Sec Autotracking.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches Building Armour, granting a 20% damage resistance to all structures.</s><n/><n/><s val="ResearchDescription_Zerg">This improved structure plating design, inspired by the Ultralisk exoskeleton, is cheaper to manufacture than traditional extra plating, allowing us to use it as standard outfit.</s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Building Armour</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Building Armour upgrade.</s>
+ConversationState/LabResearch/ResearchZ3_1=Commando Suit
+ConversationState/LabResearch/ResearchZ3_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Commando Suit</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Cellular Reactor.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ3_1/Info/Description=<s val="ResearchDescSummary_Zerg">- +1 max charge on all abilities<n/>- Charge cooldown reduced by 25%.<n/>- Usage cooldown reduced to 2s from 5s.</s><n/><n/><s val="ResearchDescription_Zerg">Equipping our Elite infantry with the best equipment makes them far more effective on the ground.</s>
+ConversationState/LabResearch/ResearchZ3_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Commando Suit</s><n/><s val="TooltipDescription_Zerg">Upgraded Equipment for the Ghost and Spectre.</s>
+ConversationState/LabResearch/ResearchZ3_2=Cellular Reactor
+ConversationState/LabResearch/ResearchZ3_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Cellular Reactor</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Commando Suit.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ3_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Specialist units start with +100 energy.<n/>- Specialist units gain +100 maximum energy.<n/>- Specialist units gain +50% energy regen.</s><n/><n/><s val="ResearchDescription_Zerg">This reactor has a larger energy reserve on startup and can hold a much larger charge. Now our specialist units can use their abilities the moment they hit the battlefield, and they can store more energy when idle for long periods of time.<n/><n/>Specialist units are units that use energy, such as the Medic, Ghost, and Wraith.</s>
+ConversationState/LabResearch/ResearchZ3_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Cellular Reactor</s><n/><s val="TooltipDescription_Zerg">Specialist units gain +100 starting and maximum energy, and +50% energy regen.</s>
+ConversationState/LabResearch/ResearchZ4_1=Titansteel
+ConversationState/LabResearch/ResearchZ4_1/Info/Confirmation=<s val="WarningText"><n/>Researching </s><s val="WarningHighlight">Titansteel</s><s val="WarningText"> will prevent you from researching </s><s val="WarningHighlight">Regenerative Bio-Steel.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ4_1/Info/Description=<s val="ResearchDescSummary_Zerg">- All units gain +25% health.<n/><n/><s val="ResearchDescription_Zerg">Inspired by zerg bones.</s>
+ConversationState/LabResearch/ResearchZ4_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Titansteel</s><n/><s val="TooltipDescription_Zerg">All units gain +25% hp.</s>
+ConversationState/LabResearch/ResearchZ4_2/Info/Confirmation=<s val="WarningText"><n/>Researching </s><s val="WarningHighlight">Regenerative Bio-Steel</s><s val="WarningText"> will prevent you from researching </s><s val="WarningHighlight">Titansteel.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources and build base structures. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
 ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
@@ -396,41 +431,6 @@ ConversationState/Tech/Tech2_Vulture_1=Cerberus Mine
 ConversationState/Tech/Tech2_Vulture_2=Replenishable Magazine
 ConversationState/Tech/Tech2_Wraith_1=Tomahawk Power Cells
 ConversationState/Tech/Tech2_Wraith_2=Displacement Field
-ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
-ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
-ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s><n/><n/>
-ConversationState/LabResearch/ResearchP1_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Vanadium Plating</s><n/><s val="TooltipDescription_Protoss"> Permanently researches all Vanadium Plating upgrades.</s>
-ConversationState/LabResearch/ResearchP2_1=Orbital Supply Drop
-ConversationState/LabResearch/ResearchP2_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Gives 600 minerals per minute.<n/><n/></s><s val="ResearchDescription_Protoss"></s><s val="ResearchDescription_Protoss">Someone discovered a new use for drop pods.
-ConversationState/LabResearch/ResearchP2_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Orbital Supply Drop</s><n/><s val="TooltipDescription_Protoss">Gives 600 minerals per minute.</s>
-ConversationState/LabResearch/ResearchP2_2=Expanded Hold
-ConversationState/LabResearch/ResearchP2_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Doubles SCV capacity.<n/>- Drop off time remains the same.</s><n/><n/><s val="ResearchDescription_Protoss">Research of  Protoss filtering techniques allows our SCVs to pre-refine the minerals they gather, so they can carry less dead weight.</s>
-ConversationState/LabResearch/ResearchP2_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Expanded Hold</s><n/><s val="TooltipDescription_Protoss">Doubles SCV capacity.</s>
-ConversationState/LabResearch/ResearchP3_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Refineries auto-harvest up to 4 range.</n>- Refineries now cost 2000.</n>- Refineries no longer come with an SCV.</n>- SCVs can still drop off at refineries.</s><n/><n/><s val="ResearchDescription_Protoss">We have adapted Protoss warp technology to transport minerals straight from the fields to the Refinery, eliminating the need for SCVs to harvest and return.<n/><n/>Why the Protoss have never thought to transport minerals in this fashion is a mystery. Perhaps they lack Terran creativity and pragmatism, or possibly their primitive superstitions forbid the practice.</s>
-ConversationState/LabResearch/ResearchP3_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Automated Refinery</s><n/><s val="TooltipDescription_Protoss">Refineries harvest within a set range, are cheaper, and don't come with an SCV.</s>
-ConversationState/LabResearch/ResearchP3_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Structures take 20% less time to build.<n/>- Structures also cost 20% less to make.<n/></s><n/><s val="ResearchDescription_Protoss">Expanded power production in our building construction facilities allows them to greatly speed up their production cycles.</s><n/>
-ConversationState/LabResearch/ResearchP3_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Command Center Reactor</s><n/><s val="TooltipDescription_Protoss">Buildings are constructed faster and cheaper.</s>
-ConversationState/LabResearch/ResearchZ1_1=Hi-Sec Autotracking
-ConversationState/LabResearch/ResearchZ1_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Hi-Sec Autotracking</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Building Armour.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchZ1_1/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches the Hi-Sec Autotracking upgrade, granting +1 range and +15% attack speed to all automated defensive structures.<n/><n/></s><s val="ResearchDescription_Zerg">Through researching Spore Crawlers, we have discovered a more efficient (and thus cheaper) method of threat detection and tracking, allowing us to implement it as standard on all base defenses.</s>
-ConversationState/LabResearch/ResearchZ1_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Hi-Sec Autotracking</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Hi-Sec Autotracking upgrade.</s>
-ConversationState/LabResearch/ResearchZ1_2=Building Armor
-ConversationState/LabResearch/ResearchZ1_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Building Armour</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Hi-Sec Autotracking.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchZ1_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches Building Armour, granting a 20% damage resistance to all structures.</s><n/><n/><s val="ResearchDescription_Zerg">This improved structure plating design, inspired by the Ultralisk exoskeleton, is cheaper to manufacture than traditional extra plating, allowing us to use it as standard outfit.</s>
-ConversationState/LabResearch/ResearchZ1_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Building Armour</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Building Armour upgrade.</s>
-ConversationState/LabResearch/ResearchZ3_1=Commando Suit
-ConversationState/LabResearch/ResearchZ3_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Commando Suit</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Cellular Reactor.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchZ3_1/Info/Description=<s val="ResearchDescSummary_Zerg">- +1 max charge on all abilities<n/>- Charge cooldown reduced by 25%.<n/>- Usage cooldown reduced to 2s from 5s.</s><n/><n/><s val="ResearchDescription_Zerg">Equipping our Elite infantry with the best equipment makes them far more effective on the ground.</s>
-ConversationState/LabResearch/ResearchZ3_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Commando Suit</s><n/><s val="TooltipDescription_Zerg">Upgraded Equipment for the Ghost and Spectre.</s>
-ConversationState/LabResearch/ResearchZ3_2=Cellular Reactor
-ConversationState/LabResearch/ResearchZ3_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Cellular Reactor</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Commando Suit.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchZ3_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Specialist units start with +100 energy.<n/>- Specialist units gain +100 maximum energy.<n/>- Specialist units gain +50% energy regen.</s><n/><n/><s val="ResearchDescription_Zerg">This reactor has a larger energy reserve on startup and can hold a much larger charge. Now our specialist units can use their abilities the moment they hit the battlefield, and they can store more energy when idle for long periods of time.<n/><n/>Specialist units are units that use energy, such as the Medic, Ghost, and Wraith.</s>
-ConversationState/LabResearch/ResearchZ3_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Cellular Reactor</s><n/><s val="TooltipDescription_Zerg">Specialist units gain +100 starting and maximum energy, and +50% energy regen.</s>
-ConversationState/LabResearch/ResearchZ4_1=Titansteel
-ConversationState/LabResearch/ResearchZ4_1/Info/Confirmation=<s val="WarningText"><n/>Researching </s><s val="WarningHighlight">Titansteel</s><s val="WarningText"> will prevent you from researching </s><s val="WarningHighlight">Regenerative Bio-Steel.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchZ4_1/Info/Description=<s val="ResearchDescSummary_Zerg">- All units gain +25% health.<n/><n/><s val="ResearchDescription_Zerg">Inspired by zerg bones.</s>
-ConversationState/LabResearch/ResearchZ4_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Titansteel</s><n/><s val="TooltipDescription_Zerg">All units gain +25% hp.</s>
-ConversationState/LabResearch/ResearchZ4_2/Info/Confirmation=<s val="WarningText"><n/>Researching </s><s val="WarningHighlight">Regenerative Bio-Steel</s><s val="WarningText"> will prevent you from researching </s><s val="WarningHighlight">Titansteel.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
 ConversationState/Tech/Tech_Bunker_1=Shrike Turret
 ConversationState/Tech/Tech_Bunker_1/Info/Description=<s val="TechSummary">- Bunkers gain an automated Shrike Turret<n/><n/><s val="TechDescription">Placing an automated turret on top of bunkers allows them to provide more than just protection to the infantry inside, able to provide additional Rifle firepower.</s>
 ConversationState/Tech/Tech_Bunker_1/Info/Tooltip=<s val="TooltipTitle_Tech">Shrike Turret</s><n/><s val="TooltipDescription_Tech">Gives the bunker an automated turret.</s>
@@ -511,9 +511,10 @@ DataCollection/Name/TibNodeSmall=Tib Node Small
 DataCollection/Name/TibVein=Tib Vein
 DataCollection/Name/VespeneGeyser=Vespene Geyser
 DataCollection/Name/WarPigSquad=War Pig Squad
-DocInfo/DescLong=stuff
-DocInfo/DescShort=Any
-DocInfo/Name=Wings Of Liberty Tib Editions
+DocInfo/Author=Blizzard Entertainment
+DocInfo/DescLong=
+DocInfo/DescShort=Storymode map
+DocInfo/Name=Wings of Liberty
 Effect/Name/AirTransportLoadIterate=Air Transport Load Iterate
 Effect/Name/AirTransportLoadIterate2=Air Transport Load Iterate2
 Effect/Name/AirTransportLoadSquad=Air Transport Load Squad
@@ -525,6 +526,7 @@ Effect/Name/AutoHarvestCP=Auto Harvest
 Effect/Name/AutoHarvestTib=Auto Harvest Tib
 Effect/Name/BansheeAirstrikeDamage=Banshee Airstrike Damage
 Effect/Name/BansheeAirstrikeSearch=Banshee Airstrike Search
+Effect/Name/BiosteelRegen=Biosteel Regen
 Effect/Name/BuildingRepair=Building Repair
 Effect/Name/BuildingRepairAB=Building Repair AB
 Effect/Name/BuildingRepairLoop=Building Repair Loop
@@ -662,10 +664,6 @@ Effect/Name/YamatoGunTopbarDamage=Yamato Gun
 Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
 Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
 Effect/Name/ZeratulSeek=Zeratul Seek
-DocInfo/Author=Blizzard Entertainment
-DocInfo/DescLong=
-DocInfo/DescShort=Storymode map
-DocInfo/Name=Wings of Liberty
 LoadingScreen/TextBody=<s val="LoadingScreenTitleMarSara">Mar Sara</s><n/><n/><s val="LoadingScreenBody">Fringe World, Dominion Space <n/>Koprulu Sector<n/><n/>Recolonized 2502</s>
 LoadingScreen/Tip=<sp/>
 MapInfo/Player00/Name=Neutral
@@ -1159,6 +1157,7 @@ Upgrade/Name/TerranVehicleArmorsVanadiumPlating2=Terran Vehicle Armor Vanadium P
 Upgrade/Name/TerranVehicleUltraCapacitors=Terran Vehicle Ultra-Capacitors
 Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
 Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
+Upgrade/Name/TitanSteel=Titan Steel
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
 Weapon/Name/ATALaserBattery2=ATA Laser Battery
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery

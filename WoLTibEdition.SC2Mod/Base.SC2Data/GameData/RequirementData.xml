@@ -36,6 +36,9 @@
     <CRequirement id="CanBuildFusionCore">
         <NodeArray index="Show" Link="LTCountBehaviorFusionCoreBuiltCompleteOnly1"/>
     </CRequirement>
+    <CRequirement id="HasBiosteel">
+        <NodeArray index="Show" Link="CountUpgradeRegenerativeBioSteelCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="HasBuiltCrane">
         <NodeArray index="Show" Link="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1"/>
     </CRequirement>
@@ -182,7 +185,7 @@
         <EditorCategories value="Race:Terran"/>
         <NodeArray index="Use" Link="CountUpgradeTriLithiumPowerCellsCompleteOnly"/>
     </CRequirement>
-    <CRequirement id="UnknownRequirement">
+    <CRequirement id="DoesnothaveLaserDrill">
         <NodeArray index="Show" Link="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter"/>
     </CRequirement>
 </Catalog>

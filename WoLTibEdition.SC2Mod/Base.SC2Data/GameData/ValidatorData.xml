@@ -16,6 +16,10 @@
         <WhichUnit Value="Caster"/>
         <Filters value="-;Stunned"/>
     </CValidatorUnitFilters>
+    <CValidatorPlayerRequirement id="HasBiosteel">
+        <Find value="1"/>
+        <Value value="HasBiosteel"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDevilDogs">
         <Find value="1"/>
         <Value value="MercPHTrainFirebat"/>

@@ -31,7 +31,9 @@
         <Indices index="5" ImagePath="Assets\Textures\btn-research-zerg-cellularreactor.dds" MoviePath="Assets\Textures\research_cellularreactors.ogv">
             <InfoUpgrade Id="Upgrade 1" Upgrade="CellularReactors"/>
         </Indices>
-        <Indices index="6" ImagePath="Assets\Textures\btn-ability-stetmann-stetelliteoverloadhealth.dds"/>
+        <Indices index="6" ImagePath="Assets\Textures\btn-ability-stetmann-stetelliteoverloadhealth.dds">
+            <InfoUpgrade index="0" Upgrade="TitanSteel"/>
+        </Indices>
     </CConversationState>
     <CConversationState id="LabResearchCompleted">
         <Indices index="0" ImagePath="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds">
@@ -39,6 +41,9 @@
         </Indices>
         <Indices index="1" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds">
             <InfoUpgrade index="0" Upgrade="TerranBuildingArmor"/>
+        </Indices>
+        <Indices index="6">
+            <InfoUpgrade index="0" Upgrade="TitanSteel"/>
         </Indices>
     </CConversationState>
     <CConversationState id="LabResearchConstants">

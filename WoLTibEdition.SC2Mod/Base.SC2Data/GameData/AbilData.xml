@@ -475,7 +475,7 @@
         <InfoArray index="Build1" Unit="DrakkenLaserDrill" Time="3">
             <Resource index="Minerals" value="20000"/>
             <Resource index="Custom" value="200"/>
-            <Button DefaultButtonFace="DeployLaserDrill6" Requirements="UnknownRequirement">
+            <Button DefaultButtonFace="DeployLaserDrill6" Requirements="DoesnothaveLaserDrill">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>

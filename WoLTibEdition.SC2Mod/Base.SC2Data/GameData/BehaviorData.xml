@@ -5,6 +5,14 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMaximum="2.25"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="Biosteel">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterNotInCombat"/>
+        <DisableValidatorArray value="HasBiosteel"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="BiosteelRegen"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BuildHandled">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
