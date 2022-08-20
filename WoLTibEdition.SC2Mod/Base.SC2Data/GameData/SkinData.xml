@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CSkin id="CCTerranSwap">
-        <ReplacementArray Catalog="Unit" From="CommandCenter" To="CommandCenter2"/>
-        <ReplacementArray Catalog="Unit" From="PlanetaryFortress" To="PlanetaryFortress2"/>
-        <ReplacementArray Catalog="Unit" From="Barracks" To="Barracks2"/>
-        <ReplacementArray Catalog="Unit" From="EngineeringBay" To="EngineeringBay2"/>
-        <ReplacementArray Catalog="Unit" From="Factory" To="Factory2"/>
-        <ReplacementArray Catalog="Unit" From="Starport" To="Starport2"/>
-        <ReplacementArray Catalog="Unit" From="Armory" To="Armory2"/>
-        <ReplacementArray Catalog="Unit" From="FusionCore" To="FusionCore2"/>
-        <ReplacementArray Catalog="Unit" From="MissileTurret" To="MissileTurret2"/>
-        <ReplacementArray Catalog="Unit" From="GhostAcademy" To="GhostAcademy2"/>
-        <ReplacementArray Catalog="Unit" From="SensorTower" To="SensorTower2"/>
-        <ReplacementArray Catalog="Unit" From="SupplyDepot" To="SupplyDepot2"/>
-        <ReplacementArray Catalog="Unit" From="SCV" To="SCV2"/>
-    </CSkin>
     <!--
 Find: ^'([a-zA-Z]+)(..?)
 Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\13"/>\r\n\t</CSkin>\r\n\t<CSkin id="\14">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\14"/>\r\n\t</CSkin>\r\n\t<CSkin id="\15">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\15"/>\r\n\t</CSkin>\r\n\t<CSkin id="\16">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\16"/>\r\n\t</CSkin>\r\n\t<CSkin id="\17">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\17"/>\r\n\t</CSkin>\r\n\t<CSkin id="\18">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\18"/>\r\n\t</CSkin>\r\n\t<CSkin id="\19">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\19"/>\r\n\t</CSkin>\r\n\t<CSkin id="\110">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\110"/>\r\n\t</CSkin>\r\n\t<CSkin id="\111">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\111"/>\r\n\t</CSkin>\r\n\t<CSkin id="\112">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\112"/>\r\n\t</CSkin>\r\n\t<CSkin id="\113">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\113"/>\r\n\t</CSkin>\r\n\t<CSkin id="\114">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\114"/>\r\n\t</CSkin>

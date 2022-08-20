@@ -1094,7 +1094,6 @@ RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTr
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter=Only 1 Laser Drill.
-Skin/Name/CCTerranSwap=C&C Terran Swap
 Skin/Name/HyperionYamato3=Hyperion Yamato
 Skin/Name/HyperionYamato4=Hyperion Yamato
 Skin/Name/HyperionYamato5=Hyperion Yamato
