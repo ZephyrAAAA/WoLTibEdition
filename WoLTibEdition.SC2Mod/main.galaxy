@@ -191,6 +191,11 @@ void RemoveTopbars () {
 	}
 }
 
+void RefreshTopbar () {
+	AddTopbars();
+	RemoveTopbars();
+}
+
 bool Gather_Func (bool testConds, bool runActions) {
 	unit gatherUnit;
 	unit refinery;
@@ -289,6 +294,9 @@ bool Idle_Func (bool testConds, bool runActions) {
 			return false;
 		}
 		if (!UnitAbilityExists(EventUnit(), "SCVHarvest")) {
+			return false;
+		}
+		if (PlayerType(UnitGetOwner(EventUnit())) == c_playerTypeComputer) {
 			return false;
 		}
 		if (UnitOrderCount(EventUnit()) > 0 && !UnitHasBehavior(OrderGetTargetUnit(UnitOrder(EventUnit(), 0)), "RefineryBounce")) {
@@ -647,8 +655,7 @@ void OwnerSwap_Init () {
 }
 
 bool TopbarCheck_Func (bool testConds, bool runActions) {
-	AddTopbars();
-	RemoveTopbars();
+	RefreshTopbar();
 	return true;
 }
 
@@ -690,6 +697,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	PlayerModifyPropertyInt(1, c_playerPropVespene, c_playerPropOperSetTo, 2000000);
 	TechTreeAbilityAllow(1, AbilityCommand("MakeVultureSpiderMines", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("330mmBarrageCannons", 0), true);
+	TechTreeAbilityAllow(1, AbilityCommand("EMPSpectre", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("FirebatSquad", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("MarauderSquad", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("MarineSquad", 0), true);

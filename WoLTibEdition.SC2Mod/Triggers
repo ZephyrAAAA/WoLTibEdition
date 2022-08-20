@@ -4,6 +4,7 @@
         <Root>
             <Item Type="CustomScript" Library="3B48F5E9" Id="8B5EDD23"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="54F2C3F5"/>
+            <Item Type="FunctionDef" Library="3B48F5E9" Id="ADD8FA84"/>
             <Item Type="Trigger" Library="3B48F5E9" Id="B0684CF0"/>
         </Root>
         <Element Type="CustomScript" Id="8B5EDD23">
@@ -14,6 +15,10 @@
             <InitFunc>main</InitFunc>
         </Element>
         <Element Type="FunctionDef" Id="54F2C3F5">
+            <FlagAction/>
+            <FlagNative/>
+        </Element>
+        <Element Type="FunctionDef" Id="ADD8FA84">
             <FlagAction/>
             <FlagNative/>
         </Element>

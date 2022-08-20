@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetFindSet id="330mmBarrage">
+        <Type value="Successful"/>
+        <Array value="330mmBarrageNormal"/>
+        <Array value="330mmBarrageLow"/>
+    </CTargetFindSet>
+    <CTargetFindBestPoint id="330mmBarrageBestPointNormal">
+        <Flags index="EvaluateCmd" value="1"/>
+        <DamageBase value="500"/>
+        <Effect value="330mmBarrageCannonsDamage"/>
+        <MinScore value="3"/>
+    </CTargetFindBestPoint>
+    <CTargetFindSet id="330mmBarrageLow">
+        <CasterValidator value="CasterLifeLT50Percent"/>
+        <Type value="Sequential"/>
+        <Array value="330mmBarrageDamage"/>
+        <Array value="330mmBarrageBestPointLow"/>
+    </CTargetFindSet>
+    <CTargetFindBestPoint id="330mmBarrageBestPointLow">
+        <Flags index="EvaluateCmd" value="1"/>
+        <DamageBase value="200"/>
+        <Effect value="330mmBarrageCannonsDamage"/>
+        <MinScore value="1"/>
+    </CTargetFindBestPoint>
+    <CTargetFindEffect id="330mmBarrageDamage">
+        <Effect value="330mmBarrageCannonsDamage"/>
+    </CTargetFindEffect>
+    <CTargetFindSet id="330mmBarrageNormal">
+        <Type value="Sequential"/>
+        <Array value="330mmBarrageDamage"/>
+        <Array value="330mmBarrageBestPointNormal"/>
+    </CTargetFindSet>
+    <!--    -->
+    <!--    Stalker Blink-->
+    <!--    -->
+    <!--    -->
+    <CTargetFindSet id="Blink">
+        <CasterValidator value=""/>
+    </CTargetFindSet>
+</Catalog>

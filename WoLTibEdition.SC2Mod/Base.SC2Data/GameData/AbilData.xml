@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilEffectTarget id="330mmBarrageCannons">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="120"/>
+        </Cost>
+        <CastIntroTime index="0" value="1"/>
+        <FinishTime index="0" value="1"/>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
     <CAbilMorph id="AssaultMode">
         <Flags index="WaitUntilStopped" value="0"/>
     </CAbilMorph>
@@ -29,6 +38,12 @@
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="DukesRevengeYamato">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="120"/>
+        </Cost>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="EMPSpectre">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -76,11 +91,23 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilBehavior id="GhostCloak">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+        </Cost>
+        <BehaviorArray index="0" value="PersonalCloakingFree"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="NovaSnipe">
         <CastIntroTime index="0" value="0.1"/>
         <FinishTime index="0" value="0"/>
         <TargetFilters index="0" value="Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CAbilEffectTarget>
+    <CAbilBehavior id="RogueGhostCloak">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+        </Cost>
+        <BehaviorArray index="0" value="SpectreCloakingFree"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="TacticalMissileStrike">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
@@ -271,7 +298,7 @@
             <Charge>
                 <CountMax value="3"/>
                 <CountUse value="1"/>
-                <Location value="Unit"/>
+                <Location value="Player"/>
                 <TimeStart value="60"/>
                 <TimeUse value="60"/>
             </Charge>
@@ -1772,6 +1799,12 @@
     <CAbilMorph id="WreckingCrewFighterMode">
         <Flags index="WaitUntilStopped" value="0"/>
     </CAbilMorph>
+    <CAbilEffectTarget id="Yamato">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="120"/>
+        </Cost>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ZeratulBlink">
         <Cost index="0">
             <Charge CountMax="3" CountUse="1" TimeUse="10">
