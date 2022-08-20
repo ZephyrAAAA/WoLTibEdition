@@ -408,12 +408,12 @@
     </CUpgrade>
     <CUpgrade id="ProtossGroundWeaponsLevel3">
         <EffectArray index="1" Reference="Weapon,ParticleDisruptors,Level"/>
-        <EffectArray index="2" Reference="Effect,ParticleDisruptorsU,AttributeBonus[Structure]" Value="0.5"/>
+        <EffectArray index="2" Reference="Effect,ParticleDisruptorsU,AttributeFactor[Structure]" Value="0.5"/>
         <EffectArray index="3" Reference="Weapon,PhaseDisruptors,Level"/>
-        <EffectArray index="4" Reference="Effect,PhaseDisruptors,AttributeBonus[Structure]"/>
+        <EffectArray index="4" Reference="Effect,PhaseDisruptors,AttributeFactor[Structure]"/>
         <EffectArray index="5" Reference="Weapon,WarpBlades,Level" Value="1"/>
         <EffectArray index="6" Operation="Multiply" Reference="Effect,WarpBlades,Amount" Value="1.3"/>
-        <EffectArray index="7" Reference="Effect,PsiBlades,AttributeBonus[Structure]" Value="0.5"/>
+        <EffectArray index="7" Reference="Effect,PsiBlades,AttributeFactor[Structure]" Value="0.5"/>
         <EffectArray index="8" Operation="Set" Reference="Weapon,PsiBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
         <EffectArray index="9" Operation="Set" Reference="Weapon,ParticleDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
         <EffectArray index="10" Operation="Set" Reference="Weapon,PhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
@@ -1073,7 +1073,7 @@
         <EffectArray Reference="Weapon,HailstormLauncher,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,HailstormLauncherMerc,RateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
-        <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
+        <EffectArrayTemplate Reference="Weapon,^ParamId^@2,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>
         <Flags index="UpgradeCheat" value="0"/>

@@ -729,11 +729,12 @@
             <Unit value="ReaperSquad"/>
         </InfoArray>
         <InfoArray index="Train3" Time="20">
-            <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="OilSplash"/>
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="Ghost" State="Restricted"/>
             <Unit value="Ghost"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="6">
-            <Resource index="Vespene" value="600"/>
+        <InfoArray index="Train4" Time="8">
+            <Resource index="Vespene" value="800"/>
             <Button DefaultButtonFace="Marauder" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="MarauderSquad"/>
         </InfoArray>
@@ -747,8 +748,9 @@
             <Button DefaultButtonFace="FlameMech" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="FirebatSquad"/>
         </InfoArray>
-        <InfoArray index="Train7" Time="50">
-            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="OilSplash"/>
+        <InfoArray index="Train7" Time="20">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="Spectre" State="Restricted"/>
             <Unit value="Spectre"/>
         </InfoArray>
         <Flags index="BypassFoodRestriction" value="1"/>

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CTacticalSet id="Karass">
+        <Array value="KarassPlasmaSurge"/>
+        <Array value="KarassPsiStorm"/>
+    </CTacticalSet>
+    <CTacticalOrder id="KarassPlasmaSurge">
+        <Abil value="KarassPlasmaSurge"/>
+        <TargetFind value="KarassPlasmaSurgeSearch"/>
+    </CTacticalOrder>
+    <CTacticalOrder id="KarassPsiStorm">
+        <Abil value="KarassPsiStorm"/>
+        <TargetFind value="PsiStormKarass"/>
+    </CTacticalOrder>
     <CTacticalSet id="Spectre">
         <Array value="SpectreEMP"/>
         <Array value="SpectreUltrasonic"/>

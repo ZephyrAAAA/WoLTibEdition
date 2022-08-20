@@ -1,13 +1,4 @@
-Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
-ConversationState/ABChoice/ABChoiceTosh03A/Info/Tooltip=<s val="TooltipTitle_Tech">Spectre</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Ultrasonic Pulse and EMP abilities. Has Veterancy.</s>
-ConversationState/ABChoice/ABChoiceTosh03B/Info/Tooltip=<s val="TooltipTitle_Tech">Ghost</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Snipe and Feedback abilities. Has Veterancy.</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsGhost1/Info/Tooltip=<s val="TooltipTitle_Tech">Snipe</s><n/><s val="TooltipDescription_Tech">Snipes a non-structure enemy unit, dealing 170 damage (Affected by armour).</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsGhost3/Info/Tooltip=<s val="TooltipTitle_Tech">Feedback</s><n/><s val="TooltipDescription_Tech">Depletes a target of energy, dealing 2 damage per energy. Deals 400 shield damage (Affected by armour).</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsGhost4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre1/Info/Tooltip=<s val="TooltipTitle_Tech">Ultrasonic Pulse</s><n/><s val="TooltipDescription_Tech">Does 144 damage over 3s (Affected by armour).</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre3/Info/Tooltip=<s val="TooltipTitle_Tech">EMP</s><n/><s val="TooltipDescription_Tech">Does 100 damage to shields (Affected by armour), and depletes the energy of all targets, dealing 1 damage per energy.</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
-Abil/Name/AirTransport=Air Transport
+﻿Abil/Name/AirTransport=Air Transport
 Abil/Name/AirTransportMag=Air Transport
 Abil/Name/ArmSiloWithNuke2=Arm Magazine (Nuke)
 Abil/Name/Armory2Research=Research (Armory)
@@ -358,6 +349,14 @@ Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
+ConversationState/ABChoice/ABChoiceTosh03A/Info/Tooltip=<s val="TooltipTitle_Tech">Spectre</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Ultrasonic Pulse and EMP abilities. Has Veterancy.</s>
+ConversationState/ABChoice/ABChoiceTosh03B/Info/Tooltip=<s val="TooltipTitle_Tech">Ghost</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Snipe and Feedback abilities. Has Veterancy.</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsGhost1/Info/Tooltip=<s val="TooltipTitle_Tech">Snipe</s><n/><s val="TooltipDescription_Tech">Snipes a non-structure enemy unit, dealing 170 damage (Affected by armour).</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsGhost3/Info/Tooltip=<s val="TooltipTitle_Tech">Feedback</s><n/><s val="TooltipDescription_Tech">Depletes a target of energy, dealing 2 damage per energy. Deals 400 shield damage (Affected by armour).</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsGhost4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre1/Info/Tooltip=<s val="TooltipTitle_Tech">Ultrasonic Pulse</s><n/><s val="TooltipDescription_Tech">Does 144 damage over 3s (Affected by armour).</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre3/Info/Tooltip=<s val="TooltipTitle_Tech">EMP</s><n/><s val="TooltipDescription_Tech">Does 100 damage to shields (Affected by armour), and depletes the energy of all targets, dealing 1 damage per energy.</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
@@ -1095,6 +1094,7 @@ RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTr
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter=Only 1 Laser Drill.
+Skin/Name/CCTerranSwap=C&C Terran Swap
 Skin/Name/HyperionYamato3=Hyperion Yamato
 Skin/Name/HyperionYamato4=Hyperion Yamato
 Skin/Name/HyperionYamato5=Hyperion Yamato
