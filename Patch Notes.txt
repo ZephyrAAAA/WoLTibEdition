@@ -1,200 +1,22 @@
-Repair Drones now do 2% + 10 health/s.
-Build radius is now a thing. Buildings must have their center within the radius.
-Sensor towers no longer require power, and provide build radius.
-There is now a truck to build a sensor tower, buildable from the Command Center.
-Infantry Ultracaps now affects Marauder rockets
-Fixed shrike turret not spinning
-Factories can now build tech labs on Outbreak
-Mercs Calldowns are now on the Spec Ops
-All Mercenaries now say they're trained from the Topbar
-Mercenaries no longer say they have a limit per mission
-Mercenaries no longer make references to Squad Size, since that is now a specific thing used elsewhere.
-Raynor now has a headache after doing a Zeratul Mission.
-The AI will now blink stalkers.
-Added the Orbital Scan support power on the Engineering Bay, unlocked by Orbital Command.
-Added the Nuclear Strike support power on the Spec Ops, unlocked by Orbital Command.
-Added the Banshee Airstrike support power on the Armoury, unlocked by Orbital Command.
-Added the Yamato Strike support power on the Fusion Core.
-
-Units:
-Science Vessel heals 5/s, takes 1e/5hp, up to 3 science vessels can stack.
-Imported the HOTS void ray
-Immortal Hardened Shield removed, shield health doubled
-Sentry Guardian Shield now gives 30% damage resist
-Marine damage nerfed to 5. War Pig damage nerfed to 6.75
-Medic healing nerfed to 6hp/s for 3E/s
-You now get the Predator after 3 missions.
-You now get the Hercules after 6 missions.
-Ghost-Cloak is gone, Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
-Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Psi Storm, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
-The Laser Drill is now deactivated in low power mode.
-
-Upgrades:
-Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
-Hercules-> Cellular Reactor- Also increases energy regen
-Cellular Reactor-> Titansteel- +25% health for all units
-Biosteel now regens 2% health/s
-Command Center Reactor now decreases the build time of all units (And the cost)
-CC Reactor now has the correct text
-Autogas is now autoharvesting.
-Autoharvesting now has the correct text.
-Replenishable Magazine-> EMP- Disables mechanical units on attack
-Advanced Construction now decreases the build time of all units (And the cost)
-Dual Fusion increases repair speed of Topbar Repair and Repair Drones by 50%.
-Orbital Command now unlocks support powers on tech buildings. Scan on EBay, tactical missiles on shadow ops, nuke on armoury
-Dual Fusion now says what it actually does.
-Advanced Construction now says what it actually does.
-Orbital Command now says what it actually does.
-HellStorm batteries and Titanium Housing now mention affecting the devastation turret.
-Stabilizer Medpack no longer increases heal speed.
-Stabilizer no longer lies about what it does.
-Fixed the tooltip text for Hydraulic Stabilizers
-Tri-lithium power cell flavour text fixed
-Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
-Maelstrom rounds text fixed.
-Hi-Sec now gives defenses 15% attack speed, and costs 2k.
-Hi-Sec now says everything it does.
-Building Armour now says the correct stuff.
-Added the Improved Railguns upgrade on the Armoury.
-Added the Improved Explosives upgrade on the Engineering Bay.
-Vanadium Research text is now correct
-Ultracap research text is now correct
-U-238 rounds no longer references light armour
-The Shrike Turret upgrade now says stuff related to Shrike Turret
-The Projectile Accelerator upgrade now mentions that it affects the Shrike Turret.
-The second Reaper Armoury upgrade now has the correct tooltip.
-The text warning you that choosing the first level of zerg research will lock you out of the other one now correctly says what Hi-sec and Building Armour are.
-Hi-Sec and Building Armour lab researches are now correct.
-Orbital Supply Drop nerfed to 5/s income (600/min)
-Fixed the Goliath Neosteel Plating flavour text.
-
-Liberation Day:
-Added a tip about the existence of Armour and Damage Types
-
-Outlaws:
-Removed one of the supply depots at the rebel base
-Added a highlight when you build a tech lab, and text for what it does.
-
-Zero Hour:
-Added 2 Sensor Towers to give build radius on the low ground
-Slightly reduced the zergling scaling based on time.
-Moved both of the low ground spines so they don't block the Omegalisks.
-
-Smash and Grab:
-Fixed the protoss warping in so many stalkers
-Protoss attack waves now happen every 90s instead of every 60.
-Protoss attack waves now restart if they manage to rebuild the lower base.
-Doubled field regen in the main field
-Moved the expansion field back a bit
-Fixed Zerg attack wave timings so you can't get 2 stacked attack waves.
-Reduced zerg attack wave frequency.
-Fixed a freeze that would happen when you killed the nexus or all the gateways in the protoss base.
-
-Evacuation:
-You now get a message for upgrades from bonus objectives
-
-Redstone:
-Corrected the Minerals from Pickups variable only counting 100 per pickup, and none from gas pickups.
-
-Outbreak:
-Added a sensor tower on the south high ground, for build radius around the third entrance
-Fixed being unable to make a tech lab from factories.
-
-Bel'shir:
-Swapped some void rays for zealots in counterattack waves
-Counterattack waves are sent faster
-The protoss are no longer very concerned with taking back the Terrazine Field to the west of your base.
-Counterattack HT have been pushed back to being after reinforcement wave 5
-Counterattacks are now sent right after killing the Warp Prism/Nexus in the area, instead of at the next reinforcement timing.
-Reinforcements are warped in 30s after the first unit is killed in an area.
-Fixed way too many stalkers being warped in
-Fixed reinforcements warping in if the warp prism is dead
-Fixed the bullies on the two nexus bases
-
-Trains:
-Removed 1 of the starting depots
-Removed free vision from trains and kill teams.
-Added sensor towers to cover the area around your plateau.
+Karass' psi storm no longer ignores armour
+*You can now make planetaries
+Concussive reduces movement speed by 33% instead of 50%
+*Marauder Missiles nerfed
+*Marauder Missile upgrade now costs 2500
+Marauder now costs 800
+Ghost/Spectre now say how much they cost
+Ghost/Spectre now have the correct cost of 2000 instead of 5000
+*Autorefinery is now accurate to the upgrade text
+*Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and everyone does. As you do more missions, they get it faster.
 
 The Dig:
-Resources all converted, SCVs deleted, starting refinery placed
-Starting infrantry replaced with squads
-The protoss defense force for the east shrines now has 3 cannons on brutal
-The protoss bases have nodes now
-No camera stealing on Hard or Brutal
-Cliff on the east side of the east choke is now accessible and slightly larger
-Protoss defenders of east temples moved up a bit
-The Abandoned Base SCVs no longer mine minerals
-Removed the merc compound
-Fixed the Unit Move after the cinematic shot taking the hidden refinery entity
-The Laser Drill targets faster
-The Laser Drill has some interesting notes on it.
-The Laser Drill now has an upgrade to take it with you.
-Added 3 small nodes to the east protoss base
-The 2 main Protoss fields now have 2 medium nodes each
-Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
-Getting the second bonus now gives you Siege Tank Shaped Blast, and a message saying so
-The Tal'Darim now start with Extended Thermal Lance
-The Tal'Darim now start with Charge (After the no-build segment)
-The Tal'Darim now start with Blink (After the no-build segment)
-The Tal'Darim now start with Graviton Catapult (After the no-build segment)
-The Tal'darim now start warping in non-stop at 5% health remaining, not 3%.
-Removed the attack wave based on getting the temple to 33% health.
-
-Cutthroat:
-Resources all converted, SCVs deleted, starting refinery placed
-Starting infrantry replaced with squads
-You now recieve a refinery
-You now need to collect 80k minerals.
-Scrap now gives 10x the minerals.
-Removed unnecessary triggers to award resources when picking up non-scrap
-Orlan now mines 1400 minerals per load.
-Orlan now has 1 SCV per base
-You now start with 1 SCV
-Starting infrantry replaced with squads
-Reorganized Mira's based to fit a refinery next to the nodes
-Mira starts with 2 SCVs instead of 8.
-Move'd Orlan's CCs closer to the nodes they mine from
-Getting the second bonus now gives you Vulture Cerberus Mine, and a message saying so
-Getting the third bonus now gives you Vulture Nanofabricator, and a message saying so
-Added a "Dominion Arrives" timer. When they do, they bombard your main, and give Orlan a deathball to kill you with, and another deathball every 5 minutes.
+*Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
+Pushed back the protoss upgrades 2 minutes
+Extended the chasm in front of the drill to have little tendrils around your plateau
+The protoss now get 3/3/3 if you have done at least 9 missions, instead of always guaranteed
 
 Whispers of Doom:
-Zeratul has 100/300, instead of 300/100
-Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 69% faster attack speed
-Abilities are no longer disabled at the start of the mission
-Each shrine no longer forces you to wait and listen to Zeratul before continuing.
+*Kerrigan now slaughters the zealots
 
 A Sinister Turn:
-2 preservers moved to outposts
-Killing a Preserver prison no longer teleports Maar back
-Maar now follows zeratul slowly. If zeratul becomes detected by Maar, he moves faster. If zeratul is detected by other means, Maar will teleport to zeratul within a few seconds.
-The bonuses no longer warp in extra units
-You don't get a base, instead getting zeratul
-Zeratul no slap if he's not told to.
-Zeratul only gets 1 charge of blink
-Zeratul gets a Power ability, to temporarily power any protoss structure
-Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
-Zeratul gets a new ability from each of the Dark Shrine, Robotics Facility, and Templar Archives.
-Archons, Sentries, and High Templar now have a detection cone.
-
-Breakout:
-Tosh has 500 health
-Tosh has an Anti-structure attack that deals 100% of the target's health.
-Tosh hits for 1000 sniper damage at 0.4 speed
-Gave Tosh Psionic Lash
-Tosh now regens energy really fast while out of combat.
-Consumption now heals Tosh for the same value as energy gained.
-Tosh now has an ability to trigger an attack wave from Jim. Stores up to 3 charges.
-Tosh has an XP bar
-Added an autosave after each bonus objective.
-Added an autosave after clearing the entrance to the main base.
-
-Ghost of a Chance:
-Nova has 500 health
-Snipe can hit anything, does 170 damage, and is affected by armour.
-Nova hits for 1000 sniper damage at 0.4 speed
-Nova's max energy is now 150, and regenerates faster, at 2/s.
-You have Marauders in the first section
-Nova has an Anti-structure attack that deals 100% of the target's health.
-Nova has an XP bar
+Maar now teleports to the preserver prison you just killed.
