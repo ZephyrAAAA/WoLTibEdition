@@ -4435,6 +4435,13 @@ void gf_DisplayMissionDebriefing (int lp_mission) {
     // Implementation
     libCamp_gf_HideStoryUI(false, true);
     UISetCursorVisible(PlayerGroupAll(), false);
+    if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9) && (libCamp_gf_ScenePlayed(libCamp_ge_SceneID_SceneTerran03ZeratulsWarning) == false)) {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTZeratul01, true);
+        gf_DisplayTimestamp(ge_TimestampType_BeforeCinematic);
+        TriggerExecute(gt_Scene03ZeratulWarning, true, true);
+        libCamp_gf_SetScenePlayed(libCamp_ge_SceneID_SceneTerran03ZeratulsWarning, true);
+    }
+
     auto92483638_val = lp_mission;
     if (auto92483638_val == libCamp_ge_MapID_MapNone) {
         if ((libCamp_gf_ScenePlayed(libCamp_ge_SceneID_SceneTerran01RaynorIntro) == false)) {
@@ -4560,14 +4567,8 @@ void gf_DisplayMissionDebriefing (int lp_mission) {
 
     }
     else if (auto92483638_val == libCamp_ge_MapID_MapTTychus02) {
-        if ((libCamp_gf_ScenePlayed(libCamp_ge_SceneID_SceneTerran03ZeratulsWarning) == false)) {
-            gf_DisplayTimestamp(ge_TimestampType_BeforeCinematic);
-            TriggerExecute(gt_Scene03ZeratulWarning, true, true);
-            libCamp_gf_SetScenePlayed(libCamp_ge_SceneID_SceneTerran03ZeratulsWarning, true);
-            gf_DisplayTimestamp(ge_TimestampType_BeforeDebrief);
-            TriggerExecute(gt_DebriefingTTychus02, true, true);
-        }
-
+        gf_DisplayTimestamp(ge_TimestampType_BeforeDebrief);
+        TriggerExecute(gt_DebriefingTTychus02, true, true);
     }
     else if (auto92483638_val == libCamp_ge_MapID_MapTTychus03) {
         if ((libCamp_gf_ScenePlayed(libCamp_ge_SceneID_SceneTerran10RaynorsDream) == false)) {
@@ -7680,7 +7681,7 @@ void gf_PrepareRoomCharArtifactLogic () {
 bool gf_LabCrystalEnabled () {
     // Automatic Variable Declarations
     // Implementation
-    return libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTTychus02, libCamp_ge_MissionStatus_Completed);
+    return libCamp_gf_ScenePlayed(libCamp_ge_SceneID_SceneTerran03ZeratulsWarning);
 }
 
 void gf_PrepareRoomLabCrystalAtrifactVisibilityLogic () {

@@ -1430,8 +1430,8 @@
                 <Flags index="ShowInGlossary" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Research3" Time="30" Upgrade="HailstormLaunchers">
-            <Resource index="Vespene" value="1500"/>
+        <InfoArray index="Research3" Time="60" Upgrade="HailstormLaunchers">
+            <Resource index="Vespene" value="2500"/>
             <Button DefaultButtonFace="HailstormLaunchers" Requirements="LearnHailstormLaunchers">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>

@@ -614,7 +614,7 @@
         <ArmorReduction value="1"/>
         <Flags index="Notification" value="1"/>
         <Kind value="Ranged"/>
-        <Amount value="12"/>
+        <Amount value="10"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
@@ -627,7 +627,7 @@
         <ArmorReduction value="1"/>
         <Flags index="Notification" value="1"/>
         <Kind value="Ranged"/>
-        <Amount value="14.4"/>
+        <Amount value="12"/>
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
