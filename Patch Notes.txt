@@ -1,4 +1,4 @@
-Karass' psi storm no longer ignores armour
+*Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
 *You can now make planetaries
 Concussive reduces movement speed by 33% instead of 50%
 *Marauder Missiles nerfed
@@ -7,7 +7,7 @@ Marauder now costs 800
 Ghost/Spectre now say how much they cost
 Ghost/Spectre now have the correct cost of 2000 instead of 5000
 *Autorefinery is now accurate to the upgrade text
-*Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and everyone does. As you do more missions, they get it faster.
+*Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and then everyone does. As you do more missions, they get it faster.
 
 The Dig:
 *Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
@@ -16,7 +16,9 @@ Extended the chasm in front of the drill to have little tendrils around your pla
 The protoss now get 3/3/3 if you have done at least 9 missions, instead of always guaranteed
 
 Whispers of Doom:
-*Kerrigan now slaughters the zealots
+Kerrigan now uses Razor Swarm, and has more energy.
+Karass' psi storm no longer ignores armour
+Karass now has 2000 energy and 10 energy regen per second
 
 A Sinister Turn:
 Maar now teleports to the preserver prison you just killed.

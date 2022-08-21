@@ -2,8 +2,17 @@
 CustomScript/Name/lib_3B48F5E9_8B5EDD23=Imports
 FunctionDef/Grammar/lib_3B48F5E9_54F2C3F5=Disable Topbar()
 FunctionDef/Grammar/lib_3B48F5E9_ADD8FA84=Refresh Topbar()
+FunctionDef/Grammar/lib_3B48F5E9_EA7A58BA=Give Protoss 3/3/3 Upgrades with delay(~playerGroupRace|Player Group Race,~~enemyPlayers~,~upgradeInitialTimeDelay|Upgrade Initial Time Delay,~~upgradeTimeScalar|Upgrade Time Scalar,~~upgradeTimeDelay|Upgrade Time Delay,~~maxUpgradeLevel|Max Upgrade Level,~~airFirst~)
 FunctionDef/Name/lib_3B48F5E9_54F2C3F5=DisableTopBar
 FunctionDef/Name/lib_3B48F5E9_ADD8FA84=RefreshTopbar
+FunctionDef/Name/lib_3B48F5E9_EA7A58BA=Give Protoss 3/3/3 Upgrades
 Library/Name/3B48F5E9=WoLTibLib
+ParamDef/Name/lib_3B48F5E9_5897526C=Air First
+ParamDef/Name/lib_3B48F5E9_60AC4846=Upgrade Time Delay
+ParamDef/Name/lib_3B48F5E9_B536C632=Enemy Players
+ParamDef/Name/lib_3B48F5E9_C54103F8=Max Upgrade Level
+ParamDef/Name/lib_3B48F5E9_D224BA39=Player Group Race
+ParamDef/Name/lib_3B48F5E9_ED4E31FB=Upgrade Time Scalar
+ParamDef/Name/lib_3B48F5E9_F0FF9BED=Upgrade Initial Time Delay
 Trigger/Name/lib_3B48F5E9_B0684CF0=Commando EXP
 Variable/Name/lib_3B48F5E9_1ADBB68B=XP

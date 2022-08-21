@@ -1,4 +1,5 @@
 include "TriggerLibs/NativeLib"
+include "TriggerLibs/CampaignLib"
 
 include "Lib3B48F5E9_h"
 
@@ -8,6 +9,7 @@ include "Lib3B48F5E9_h"
 // External Library Initialization
 void lib3B48F5E9_InitLibraries () {
     libNtve_InitVariables();
+    libCamp_InitVariables();
 }
 
 // Custom Script
@@ -21,6 +23,119 @@ void lib3B48F5E9_InitCustomScript () {
 }
 
 // Functions
+void lib3B48F5E9_gf_GiveProtoss333Upgrades (int lp_playerGroupRace, playergroup lp_enemyPlayers, int lp_upgradeInitialTimeDelay, int lp_upgradeTimeScalar, int lp_upgradeTimeDelay, int lp_maxUpgradeLevel, bool lp_airFirst) {
+    // Automatic Variable Declarations
+    playergroup autoEDF2BA49_g;
+    int autoEDF2BA49_var;
+    playergroup autoCFFBE515_g;
+    int autoCFFBE515_var;
+    playergroup auto312B0582_g;
+    int auto312B0582_var;
+    playergroup auto34DDDCEF_g;
+    int auto34DDDCEF_var;
+    playergroup auto3B7EA4FE_g;
+    int auto3B7EA4FE_var;
+    playergroup auto06B100EE_g;
+    int auto06B100EE_var;
+    playergroup auto50AF84EE_g;
+    int auto50AF84EE_var;
+    playergroup auto859051E5_g;
+    int auto859051E5_var;
+    playergroup autoA2DB271E_g;
+    int autoA2DB271E_var;
+
+    // Implementation
+    Wait(IntToFixed(lp_upgradeInitialTimeDelay), c_timeGame);
+    if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+        lp_maxUpgradeLevel = 3;
+    }
+
+    Wait(((((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
+    if ((lp_maxUpgradeLevel >= 3)) {
+        if ((lp_airFirst == false)) {
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            auto312B0582_g = lp_enemyPlayers;
+            auto312B0582_var = -1;
+            while (true) {
+                auto312B0582_var = PlayerGroupNextPlayer(auto312B0582_g, auto312B0582_var);
+                if (auto312B0582_var < 0) { break; }
+                TechTreeUpgradeAddLevel(auto312B0582_var, "ProtossGroundArmorsLevel3", 1);
+            }
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            auto34DDDCEF_g = lp_enemyPlayers;
+            auto34DDDCEF_var = -1;
+            while (true) {
+                auto34DDDCEF_var = PlayerGroupNextPlayer(auto34DDDCEF_g, auto34DDDCEF_var);
+                if (auto34DDDCEF_var < 0) { break; }
+                TechTreeUpgradeAddLevel(auto34DDDCEF_var, "ProtossAirArmorsLevel3", 1);
+            }
+        }
+        else {
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            autoEDF2BA49_g = lp_enemyPlayers;
+            autoEDF2BA49_var = -1;
+            while (true) {
+                autoEDF2BA49_var = PlayerGroupNextPlayer(autoEDF2BA49_g, autoEDF2BA49_var);
+                if (autoEDF2BA49_var < 0) { break; }
+                TechTreeUpgradeAddLevel(autoEDF2BA49_var, "ProtossAirArmorsLevel3", 1);
+            }
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            autoCFFBE515_g = lp_enemyPlayers;
+            autoCFFBE515_var = -1;
+            while (true) {
+                autoCFFBE515_var = PlayerGroupNextPlayer(autoCFFBE515_g, autoCFFBE515_var);
+                if (autoCFFBE515_var < 0) { break; }
+                TechTreeUpgradeAddLevel(autoCFFBE515_var, "ProtossGroundArmorsLevel3", 1);
+            }
+        }
+        if ((lp_airFirst == false)) {
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            auto50AF84EE_g = lp_enemyPlayers;
+            auto50AF84EE_var = -1;
+            while (true) {
+                auto50AF84EE_var = PlayerGroupNextPlayer(auto50AF84EE_g, auto50AF84EE_var);
+                if (auto50AF84EE_var < 0) { break; }
+                TechTreeUpgradeAddLevel(auto50AF84EE_var, "ProtossGroundWeaponsLevel3", 1);
+            }
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            auto859051E5_g = lp_enemyPlayers;
+            auto859051E5_var = -1;
+            while (true) {
+                auto859051E5_var = PlayerGroupNextPlayer(auto859051E5_g, auto859051E5_var);
+                if (auto859051E5_var < 0) { break; }
+                TechTreeUpgradeAddLevel(auto859051E5_var, "ProtossAirWeaponsLevel3", 1);
+            }
+        }
+        else {
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            auto3B7EA4FE_g = lp_enemyPlayers;
+            auto3B7EA4FE_var = -1;
+            while (true) {
+                auto3B7EA4FE_var = PlayerGroupNextPlayer(auto3B7EA4FE_g, auto3B7EA4FE_var);
+                if (auto3B7EA4FE_var < 0) { break; }
+                TechTreeUpgradeAddLevel(auto3B7EA4FE_var, "ProtossAirWeaponsLevel3", 1);
+            }
+            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+            auto06B100EE_g = lp_enemyPlayers;
+            auto06B100EE_var = -1;
+            while (true) {
+                auto06B100EE_var = PlayerGroupNextPlayer(auto06B100EE_g, auto06B100EE_var);
+                if (auto06B100EE_var < 0) { break; }
+                TechTreeUpgradeAddLevel(auto06B100EE_var, "ProtossGroundWeaponsLevel3", 1);
+            }
+        }
+        Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
+        autoA2DB271E_g = lp_enemyPlayers;
+        autoA2DB271E_var = -1;
+        while (true) {
+            autoA2DB271E_var = PlayerGroupNextPlayer(autoA2DB271E_g, autoA2DB271E_var);
+            if (autoA2DB271E_var < 0) { break; }
+            TechTreeUpgradeAddLevel(autoA2DB271E_var, "ProtossShieldsLevel3", 1);
+        }
+    }
+
+}
+
 // Triggers
 //--------------------------------------------------------------------------------------------------
 // Trigger: Commando EXP
