@@ -16,6 +16,7 @@ ParamDef/Name/lib_3B48F5E9_D224BA39=Player Group Race
 ParamDef/Name/lib_3B48F5E9_EA27C011=Initial Upgrade Level
 ParamDef/Name/lib_3B48F5E9_ED4E31FB=Upgrade Time Scalar
 ParamDef/Name/lib_3B48F5E9_F0FF9BED=Upgrade Initial Time Delay
+Trigger/Name/lib_3B48F5E9_29DDE1E8=Terran Upgrade Swap
 Trigger/Name/lib_3B48F5E9_35DE14C5=Fake Warp In Off
 Trigger/Name/lib_3B48F5E9_B0684CF0=Commando EXP
 Variable/Name/lib_3B48F5E9_1A58B561=AssortedUpgrades

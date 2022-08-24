@@ -24561,20 +24561,17 @@ bool gt_LabCrystalClicked_Func (bool testConds, bool runActions) {
     if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul01) == libCamp_ge_MissionStatus_Available)) {
         lv_mission = libCamp_ge_MapID_MapTZeratul01;
     }
-    else if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul02) == libCamp_ge_MissionStatus_Available) && ((libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTZeratul01, libCamp_ge_MissionStatus_Completed) > 1) || (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 15))) {
+    else if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul02) == libCamp_ge_MissionStatus_Available) && ((libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTZeratul01, libCamp_ge_MissionStatus_Completed) > 1) || (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 23))) {
         lv_mission = libCamp_ge_MapID_MapTZeratul02;
     }
-    else if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul03) == libCamp_ge_MissionStatus_Available) && ((libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTZeratul02, libCamp_ge_MissionStatus_Completed) > 1) || (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 16))) {
+    else if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul03) == libCamp_ge_MissionStatus_Available) && ((libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTZeratul02, libCamp_ge_MissionStatus_Completed) > 1) || (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 24))) {
         lv_mission = libCamp_ge_MapID_MapTZeratul03;
     }
-    else if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul04) == libCamp_ge_MissionStatus_Available) && ((libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTZeratul03, libCamp_ge_MissionStatus_Completed) > 1) || (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 17))) {
+    else if ((libCamp_gf_MissionStatus(libCamp_ge_MapID_MapTZeratul04) == libCamp_ge_MissionStatus_Available) && ((libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTZeratul03, libCamp_ge_MissionStatus_Completed) > 1) || (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 25))) {
         lv_mission = libCamp_ge_MapID_MapTZeratul04;
     }
     else if (true) {
-        gf_SetAllSoundChannelVolumesStoryMode(libNtve_ge_VolumeChannelMode_Speech);
-        gf_StopAllTransmissionConversation();
-        gf_PlayFidget("HyperionfidgetsRaynor", ge_ActorID_ActorRaynor, ge_ActorID_ActorNone);
-        gf_SetAllSoundChannelVolumesStoryMode(libNtve_ge_VolumeChannelMode_Game);
+        gf_PlayGossip(ge_ActorID_ActorRaynor);
         return true;
     }
     gf_TurnClickablesOnOff(gv_clickables, false);

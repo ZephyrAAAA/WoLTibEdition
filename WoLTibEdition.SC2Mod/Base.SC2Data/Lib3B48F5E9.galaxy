@@ -467,6 +467,87 @@ void lib3B48F5E9_gt_CommandoEXP_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Terran Upgrade Swap
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    string autoAB0E8CEF_val;
+
+    // Conditions
+    if (testConds) {
+        if (!((PlayerType(EventPlayer()) == c_playerTypeComputer))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    autoAB0E8CEF_val = EventUpgradeName();
+    if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleArmorsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranVehicleVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranShipVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranBuildingArmor", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleArmorsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleArmorsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryWeaponsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryUltraCapacitors", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryWeaponsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HailstormLaunchers", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryWeaponsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranShipUltraCapacitors", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleWeaponsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranVehicleUltraCapacitors", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HellionCampaignInfernalPreIgniter", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HiSecAutoTracking", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleWeaponsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "ImprovedRailguns", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleWeaponsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_TerranUpgradeSwap_Init () {
+    lib3B48F5E9_gt_TerranUpgradeSwap = TriggerCreate("lib3B48F5E9_gt_TerranUpgradeSwap_Func");
+    TriggerAddEventUpgradeLevelChanged(lib3B48F5E9_gt_TerranUpgradeSwap, c_playerAny);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Fake Warp In Off
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_FakeWarpInOff_Func (bool testConds, bool runActions) {
@@ -488,6 +569,7 @@ void lib3B48F5E9_gt_FakeWarpInOff_Init () {
 
 void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
+    lib3B48F5E9_gt_TerranUpgradeSwap_Init();
     lib3B48F5E9_gt_FakeWarpInOff_Init();
 }
 

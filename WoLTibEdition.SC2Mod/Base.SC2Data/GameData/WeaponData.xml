@@ -401,6 +401,14 @@
         <AttackType value="Chaos"/>
         <Backswing value="0.125"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Odin">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="OdinAntiAir">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="Omegalisk">
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
@@ -647,6 +655,11 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="TychusChaingun">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <AttackType value="Normal"/>
+        <!--         <Effect value="TychusChaingun"/> -->
+    </CWeaponLegacy>
     <CWeaponLegacy id="Val03QueenOfBladesPsiBlast">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
@@ -697,11 +710,22 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Period value="3.75"/>
         <AttackType value="Siege"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Arc value="29.9926"/>
+        <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithG">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
         <Period value="3.75"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Arc value="135"/>
+        <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewAssault">
         <Tip value="Weapon/Tip/Rifle"/>

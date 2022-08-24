@@ -485,6 +485,18 @@
         <PeriodicPeriodArray value="0.2"/>
         <AINotifyEffect value="NukeDamage"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="OdinDamage">
+        <AttributeBonus index="Structure" value="0"/>
+        <AttributeFactor index="Structure" value="1.5"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamageLeft">
+        <AttributeBonus index="Structure" value="0"/>
+        <AttributeFactor index="Structure" value="1.5"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamageRight">
+        <AttributeBonus index="Structure" value="0"/>
+        <AttributeFactor index="Structure" value="1.5"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
         <EditorCategories value=""/>
