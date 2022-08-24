@@ -161,6 +161,8 @@
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Diamondback">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -192,6 +194,8 @@
         <AttackType value="Pierce"/>
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogSquad">
         <EditorCategories value=""/>
@@ -209,6 +213,8 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.45"/>
         <RandomDelayMax value="-0.45"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
         <Name value="Weapon/Name/GhostSquad"/>
@@ -228,8 +234,6 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
-        <Options index="OnlyFireWhileInAttackOrder" value="1"/>
-        <Options index="OnlyFireAtAttackOrderTarget" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -285,6 +289,8 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="Disabled" value="1"/>
         <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayEffect value="HailstormLauncherU"/>
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -304,6 +310,8 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="Disabled" value="1"/>
         <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayEffect value="HailstormLauncherUMerc"/>
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -323,6 +331,8 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="Disabled" value="1"/>
         <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayEffect value="HailstormLauncherUMerc"/>
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -398,6 +408,8 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.95"/>
         <RandomDelayMax value="-0.95"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
@@ -424,6 +436,8 @@
         <AttackType value="Chaos"/>
         <Period value="1"/>
         <Backswing value="0.6"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -478,6 +492,8 @@
         <RandomDelayMax value="-0.95"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FirebatSquad" parent="Firebat">
         <Name value="Weapon/Name/FirebatSquad"/>
@@ -534,6 +550,8 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="Disabled" value="1"/>
         <Options index="Hidden" value="1"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
         <DisplayEffect value="HailstormLauncherU"/>
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -582,6 +600,7 @@
         <RandomDelayMax value="-1.75"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <Options index="Melee" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
