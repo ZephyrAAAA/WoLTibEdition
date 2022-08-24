@@ -181,6 +181,13 @@
             <StateFlags index="Undetectable" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="InsideMedivac">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="RapidDeploymentPurchased"/>
+        <Modification>
+            <AbilClassEnableArray index="CAbilAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MaarPassiveSpeed">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="AICasterNotInCombat"/>

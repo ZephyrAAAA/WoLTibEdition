@@ -24,6 +24,13 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilRedirectTarget id="AttackRedirectMedivac">
+        <DataCollection value="AttackRedirect"/>
+        <Abil value="attack"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AttackRedirect" Requirements="RapidDeploymentResearched">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilRedirectTarget>
     <CAbilEffectTarget id="AutoHarvest">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="AutoHarvestCP"/>
@@ -661,7 +668,7 @@
         <MaxUnloadRange value="5"/>
         <MaxCargoCount value="200"/>
         <TotalCargoSpace value="200"/>
-        <LoadCargoBehavior value=""/>
+        <LoadCargoBehavior value="InsideMedivac"/>
         <UnloadPeriod value="0"/>
         <SearchRadius value="5"/>
         <LoadValidatorArray index="0" removed="1"/>
@@ -763,7 +770,7 @@
         </InfoArray>
         <InfoArray index="Train3" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="Ghost" State="Restricted"/>
+            <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
             <Unit value="Ghost"/>
         </InfoArray>
         <InfoArray index="Train4" Time="8">
@@ -783,7 +790,7 @@
         </InfoArray>
         <InfoArray index="Train7" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="Spectre" State="Restricted"/>
+            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
             <Unit value="Spectre"/>
         </InfoArray>
         <Flags index="BypassFoodRestriction" value="1"/>
@@ -1595,9 +1602,10 @@
         <MaxCount value="3"/>
     </CAbilArmMagazine>
     <CAbilTransport id="MedivacTransport">
-        <LoadCargoEffect value="AirTransportLoadIterate"/>
+        <LoadCargoEffect value="MedivacLoadSet"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
         <LoadValidatorArray value="CanLoadSiegeTank"/>
+        <LoadCargoBehavior value="InsideMedivac"/>
     </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>
@@ -1692,7 +1700,8 @@
             <Button DefaultButtonFace="Banshee" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Banshee"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="60">
+        <InfoArray index="Train3" Time="25">
+            <Resource index="Vespene" value="2500"/>
             <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Raven"/>
         </InfoArray>
@@ -1710,8 +1719,9 @@
             <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
             <Unit value="Hercules"/>
         </InfoArray>
-        <InfoArray index="Train7" Time="60">
-            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="DecalProtoss"/>
+        <InfoArray index="Train7" Time="25">
+            <Resource index="Vespene" value="2500"/>
+            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="JumboBunkerNotResearched"/>
             <Unit value="ScienceVessel"/>
         </InfoArray>
         <InfoArray index="Train8" Time="15">

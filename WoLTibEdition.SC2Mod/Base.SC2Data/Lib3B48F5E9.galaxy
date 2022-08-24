@@ -519,7 +519,7 @@ bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
         libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranShipUltraCapacitors", 1);
     }
     else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel2") {
-        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HighEnergyCapacitors", 1);
     }
     else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel3") {
         libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);

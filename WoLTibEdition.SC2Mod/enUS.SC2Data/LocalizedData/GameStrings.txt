@@ -3,6 +3,7 @@ Abil/Name/AirTransportMag=Air Transport
 Abil/Name/ArmSiloWithNuke2=Arm Magazine (Nuke)
 Abil/Name/Armory2Research=Research (Armory)
 Abil/Name/AstralProjection=Astral Projection
+Abil/Name/AttackRedirectMedivac=Attack Redirect
 Abil/Name/AutoHarvest=Auto Harvest
 Abil/Name/Barracks2AddOns=AddOns
 Abil/Name/Barracks2Land=Land
@@ -76,6 +77,7 @@ Abil/Name/ZeratulSeek=Zeratul Seek
 Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/Depowered=Depowered
 Behavior/Name/HideInTheShadows=Hide In The Shadows
+Behavior/Name/InsideMedivac=Inside Medivac
 Behavior/Name/MechEMP=Mech EMP
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/PsiSight=Psi Sight
@@ -601,6 +603,9 @@ Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechEMP=Mech EMP
 Effect/Name/MechanicalRepair=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
+Effect/Name/MedivacHealInternal=Heal
+Effect/Name/MedivacHealIterate=Heal Iterate
+Effect/Name/MedivacLoadSet=Load
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
 Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
 Effect/Name/NuclearAnnihilationMengskBigNukeDropDelayCP=NuclearAnnihilationMengskBigNukeDropDelayCP
@@ -1084,6 +1089,7 @@ Param/Value/lib_Camp_D68DB969=<s val="MercCategory">Calldown Size:</s>  <s val="
 Param/Value/lib_Camp_E31332D4=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +50% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Tobpar</s>
 Param/Value/lib_Camp_E6C595F8=<s val="MercCategory">Calldown Size:</s><s val="MercSummary">  2 Elite Marine Squads</s>
 Param/Value/lib_Camp_EF94B48A=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+45% Health, +40% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Topbar</s>
+RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
@@ -1098,6 +1104,7 @@ RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTr
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter=Only 1 Laser Drill.
+RequirementNode/Tooltip/Not1584299796CountUnitAlias_GhostQueuedOrBetter=Limit 1 Commando Unit
 Skin/Name/HyperionYamato3=Hyperion Yamato
 Skin/Name/HyperionYamato4=Hyperion Yamato
 Skin/Name/HyperionYamato5=Hyperion Yamato

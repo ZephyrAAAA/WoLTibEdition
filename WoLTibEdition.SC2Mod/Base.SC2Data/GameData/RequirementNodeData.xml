@@ -16,9 +16,12 @@
         <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat">
+    <CRequirementAnd id="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
+        <OperandArray value="Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
         <OperandArray value="CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
@@ -48,6 +51,10 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SupplyDropEnRoute" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitAlias_ArmoryCompleteOnly609241497">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Alias_Armory" State="CompleteOnly"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat">
         <Count Link="Alias_Armory" State="CompleteOnly"/>
     </CRequirementCountUnit>
@@ -62,6 +69,11 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat">
         <Count Link="Alias_Factory" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_GhostQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Alias_Ghost" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
         <Count Link="Alias_Refinery" State="InProgressOrBetter"/>
@@ -81,9 +93,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat">
         <Tooltip value="RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat">
-        <Tooltip value="RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitCraneCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
@@ -300,6 +309,9 @@
     </CRequirementEq>
     <CRequirementNot id="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter">
         <OperandArray index="0" value="CountUnitDrakkenLaserDrillQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not1584299796CountUnitAlias_GhostQueuedOrBetter">
+        <OperandArray index="0" value="CountUnitAlias_GhostQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>

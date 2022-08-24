@@ -392,6 +392,33 @@
         <ValidatorArray value="TargetIsMechanical"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectCreateHealer id="MedivacHeal">
+        <DrainVitalCostFactor value="0.375"/>
+        <RechargeVitalRate value="8"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="MedivacHealInternal">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <ValidatorArray value="IsHidden"/>
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/MedivacHeal"/>
+        <Flags index="Channeled" value="0"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.375"/>
+        <RechargeVitalRate value="8"/>
+    </CEffectCreateHealer>
+    <CEffectEnumMagazine id="MedivacHealIterate">
+        <EditorCategories value=""/>
+        <EffectInternal value="MedivacHealInternal"/>
+        <EffectExternal value="MedivacHealInternal"/>
+    </CEffectEnumMagazine>
+    <CEffectSet id="MedivacLoadSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MedivacHealInternal"/>
+        <EffectArray value="MedivacHealIterate"/>
+        <EffectArray value="AirTransportLoadIterate"/>
+    </CEffectSet>
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
     </CEffectDamage>

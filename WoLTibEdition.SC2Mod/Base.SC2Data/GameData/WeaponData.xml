@@ -109,6 +109,8 @@
         <Tip value="Weapon/Tip/Sniper"/>
         <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
@@ -226,6 +228,8 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="1"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
@@ -254,6 +258,8 @@
     <CWeaponLegacy id="GuassRifle">
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridC">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -365,6 +371,8 @@
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoes">
         <AttackType value="Siege"/>
@@ -705,6 +713,8 @@
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
         <RandomDelayMin value="-0.85"/>
         <RandomDelayMax value="-0.85"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithA">
         <Tip value="Weapon/Tip/Rocket"/>

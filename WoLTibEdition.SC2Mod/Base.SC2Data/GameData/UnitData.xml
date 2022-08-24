@@ -2563,6 +2563,7 @@
             <LayoutButtons index="14" removed="1"/>
         </CardLayouts>
         <TacticalAIThink value="AIThinkGhostNew"/>
+        <TechAliasArray value="Alias_Ghost"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3471,20 +3472,30 @@
     <CUnit id="Medivac">
         <AbilArray Link="AirTransportMag"/>
         <AbilArray Link="attack"/>
+        <AbilArray Link="AttackRedirectMedivac"/>
         <BehaviorArray Link="Biosteel"/>
         <CardLayouts index="0">
+            <LayoutButtons index="5" Face="AttackRedirect" AbilCmd="AttackRedirectMedivac,Execute"/>
             <LayoutButtons index="6" Face="Heal" AbilCmd="MedivacHeal,Execute" Row="2" Column="0"/>
             <LayoutButtons index="7" Face="MedivacUnloadAll" AbilCmd="MedivacTransport,UnloadAt" Column="3"/>
             <LayoutButtons index="8" Face="Heal" AbilCmd="MedivacDoubleBeamHeal,Execute" Column="0"/>
             <LayoutButtons index="9" Face="RapidDeploymentTubes" Type="Passive" AbilCmd="" Requirements="RapidDeploymentResearched" Row="1"/>
             <LayoutButtons index="10" Face="AdvancedHealingAI" Requirements="AdvancedHealingAIPurchased" Column="1"/>
-            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="11">
+                <Face value="Attack"/>
+                <Type value="AbilCmd"/>
+                <AbilCmd value="attack,Execute"/>
+                <Requirements value=""/>
+                <Row value="0"/>
+                <Column value="4"/>
+            </LayoutButtons>
         </CardLayouts>
         <ArmorType value="None"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="MedivacMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4342,6 +4353,7 @@
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <BehaviorArray Link="Biosteel"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="RavenTypeIIACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4749,6 +4761,9 @@
             <LayoutButtons index="7" Face="NanoRepair" AbilCmd="NanoRepair,Execute" Column="0"/>
             <LayoutButtons index="8" removed="1"/>
         </CardLayouts>
+        <ArmorType value="None"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="ScienceVesselACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5054,6 +5069,7 @@
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <TechAliasArray value="Alias_Ghost"/>
     </CUnit>
     <CUnit id="SpiderMine">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
