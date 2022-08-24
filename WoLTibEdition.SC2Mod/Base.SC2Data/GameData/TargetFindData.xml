@@ -38,4 +38,36 @@
     <CTargetFindSet id="Blink">
         <CasterValidator value=""/>
     </CTargetFindSet>
+    <CTargetFindEffect id="KarassPlasmaSurgeSearch">
+        <TargetFilters value="Visible;Ally,Neutral,Enemy"/>
+        <TargetValidator value="ShieldLQuarter"/>
+        <Effect value="KarassPlasmaSurgeSearchArea"/>
+    </CTargetFindEffect>
+    <CTargetFindBestPoint id="PsiStormBestPointKarass">
+        <Flags index="EvaluateCmd" value="1"/>
+        <DamageBase value="40"/>
+        <Effect value="KarassPsiStormSearch"/>
+        <MinCount value="3"/>
+        <MinScore value="2.5"/>
+    </CTargetFindBestPoint>
+    <CTargetFindBestPoint id="PlasmaSurgeBestPointKarass">
+        <Flags index="EvaluateCmd" value="1"/>
+        <Effect value="KarassPlasmaSurgeSearchArea"/>
+        <MinCount value="3"/>
+        <MinScore value="1"/>
+    </CTargetFindBestPoint>
+    <CTargetFindSet id="PsiStormKarass">
+        <Type value="Sequential"/>
+        <Array value="KarassPsiStormSearch"/>
+        <Array value="PsiStormBestPointKarass"/>
+    </CTargetFindSet>
+    <CTargetFindEffect id="KarassPsiStormSearch">
+        <TargetFilters value="Visible;Player,Ally,Neutral,Air"/>
+        <TargetValidator value="PsiStormTestBuffKarass"/>
+    </CTargetFindEffect>
+    <CTargetFindSet id="PlasmaSurge">
+        <Type value="Sequential"/>
+        <Array value="KarassPlasmaSurgeSearch"/>
+        <Array value="PlasmaSurgeBestPointKarass"/>
+    </CTargetFindSet>
 </Catalog>

@@ -304,6 +304,9 @@
         <CarryResourceBehavior value="CarryRefinery"/>
         <IdealHarvesterCount value="1"/>
     </CBehaviorResource>
+    <CBehaviorBuff id="Slow">
+        <Modification MoveSpeedMultiplier="0.667"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="SquadBunkerUnload">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="0.5"/>

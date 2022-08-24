@@ -840,6 +840,9 @@
         <ImpactMap index="Shield" Sound="GoliathAirAttackImpactShield" ModelReaction="GoliathAirAttackImpactReactionShield"/>
         <DamageMap index="None" Model="GoliathAirAttackDamage" Sound="GoliathAirAttackDamage" ModelReaction="GoliathAirAttackDamageReaction"/>
         <DamageMap index="Shield" Sound="GoliathAirAttackDamageShield" ModelReaction="GoliathAirAttackDamageReactionShield"/>
+        <On Terms="Effect.HailstormLauncherLMMerc.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.HammerSecurityDamage.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On Terms="Effect.HammerSecurityDamage.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
     </CActorAction>
     <CActorModelMaterial id="LowPower" parent="BehaviorGlaze" buff="PowerCheck">
         <EditorCategories value=""/>
