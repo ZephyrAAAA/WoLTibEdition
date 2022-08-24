@@ -1142,6 +1142,12 @@
         <Sound value="NuclearAnnihilation_NukeDropWhistle"/>
         <Layers Sound="NuclearAnnihilation_SmallNukeDropWhistle"/>
     </CActorSound>
+    <!--                                                                                         -->
+    <!-- Odin .................................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Odin">
+        <On index="79" Send="AnimPlay MorphEnd Morph,End 0 -1.000000 -1.000000 0.915000 AsTimeScale"/>
+    </CActorUnit>
     <CActorUnit id="OrbitalCommand2" parent="TerranBuildingFlyerEx" unitName="OrbitalCommand2">
         <Macros value="MacroTownhallDeco_Terran"/>
         <Macros value="TerranOrbitalCommandPlayerDecalMacro"/>

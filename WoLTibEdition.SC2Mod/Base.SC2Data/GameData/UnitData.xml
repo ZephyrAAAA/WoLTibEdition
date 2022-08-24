@@ -3480,6 +3480,11 @@
             <LayoutButtons index="10" Face="AdvancedHealingAI" Requirements="AdvancedHealingAIPurchased" Column="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
+        <ArmorType value="None"/>
+        <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MedivacMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3739,6 +3744,9 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <BehaviorArray Link="Biosteel"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
     </CUnit>
     <CUnit id="OdinBuild">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6213,6 +6221,10 @@
     <CUnit id="Wraith">
         <ArmorType value="None"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Food value="0"/>
+        <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="WraithACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

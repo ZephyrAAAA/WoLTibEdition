@@ -487,15 +487,18 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="OdinDamage">
         <AttributeBonus index="Structure" value="0"/>
-        <AttributeFactor index="Structure" value="1.5"/>
+        <AttributeFactor index="Structure" value="1"/>
+        <Amount value="80"/>
     </CEffectDamage>
     <CEffectDamage id="OdinDamageLeft">
         <AttributeBonus index="Structure" value="0"/>
-        <AttributeFactor index="Structure" value="1.5"/>
+        <AttributeFactor index="Structure" value="1"/>
+        <Amount value="80"/>
     </CEffectDamage>
     <CEffectDamage id="OdinDamageRight">
         <AttributeBonus index="Structure" value="0"/>
-        <AttributeFactor index="Structure" value="1.5"/>
+        <AttributeFactor index="Structure" value="1"/>
+        <Amount value="80"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
@@ -1122,6 +1125,9 @@
         <EditorCategories value=""/>
         <BehaviorLink value="DetectorConeReveal"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="ThorsHammerDamage">
+        <Amount value="30"/>
+    </CEffectDamage>
     <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnit"/>

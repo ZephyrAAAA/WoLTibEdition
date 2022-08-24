@@ -140,6 +140,9 @@
     <CRequirement id="IsNotCrane">
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirement>
+    <CRequirement id="LearnHighEnergyCapacitors">
+        <NodeArray index="Show" Link="NotCountUpgradeHighEnergyCapacitorsQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnImprovedRailguns">
         <NodeArray index="Show" Link="NotCountUpgradeImprovedRailgunsQueuedOrBetter"/>
     </CRequirement>

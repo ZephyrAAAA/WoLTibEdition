@@ -109,6 +109,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="HellionCampaignInfernalPreIgniter" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHighEnergyCapacitorsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="HighEnergyCapacitors" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeImprovedRailgunsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="ImprovedRailguns" State="QueuedOrBetter"/>
@@ -119,7 +124,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeRegenerativeBioSteelCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="RegenerativeBioSteel" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTakeTheDrillQueuedOrBetter">
@@ -308,6 +312,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHighEnergyCapacitorsQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeHighEnergyCapacitorsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeImprovedRailgunsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeImprovedRailgunsQueuedOrBetter"/>

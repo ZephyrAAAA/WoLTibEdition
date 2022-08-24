@@ -19,6 +19,7 @@
     <CValidatorPlayerRequirement id="HasBiosteel">
         <Find value="1"/>
         <Value value="HasBiosteel"/>
+        <WhichPlayer Value="Source"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDevilDogs">
         <Find value="1"/>
