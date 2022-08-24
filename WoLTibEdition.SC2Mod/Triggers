@@ -7,6 +7,7 @@
             <Item Type="FunctionDef" Library="3B48F5E9" Id="ADD8FA84"/>
             <Item Type="Trigger" Library="3B48F5E9" Id="B0684CF0"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="EA7A58BA"/>
+            <Item Type="Category" Library="3B48F5E9" Id="F0FC06A9"/>
         </Root>
         <Element Type="CustomScript" Id="8B5EDD23">
             <Identifier>Imports</Identifier>
@@ -5465,8 +5466,61 @@
             <Value>3</Value>
             <ValueType Type="int"/>
         </Element>
+        <Element Type="Category" Id="F0FC06A9">
+            <Item Type="Trigger" Library="3B48F5E9" Id="35DE14C5"/>
+        </Element>
+        <Element Type="Trigger" Id="35DE14C5">
+            <Event Type="FunctionCall" Library="3B48F5E9" Id="799CEBC4"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="79150D22"/>
+        </Element>
+        <Element Type="FunctionCall" Id="799CEBC4">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="3C0566C4"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="509B46CA"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="501A1940"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="9B3905BF"/>
+        </Element>
+        <Element Type="Param" Id="509B46CA">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="F3A8B0DC"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="C84C7A78"/>
+        </Element>
+        <Element Type="Param" Id="501A1940">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="1CDCC284"/>
+            <Value>FakeWarpIn</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Behavior"/>
+        </Element>
+        <Element Type="Param" Id="9B3905BF">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="3029CA3C"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="D7C48C02"/>
+        </Element>
+        <Element Type="FunctionCall" Id="79150D22">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="25FDDB2A"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="9022D72E"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="BE7F6A87"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="DE083B36"/>
+        </Element>
+        <Element Type="Param" Id="9022D72E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4EED99E0"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="4AD154C5"/>
+        </Element>
+        <Element Type="FunctionCall" Id="4AD154C5">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000092"/>
+        </Element>
+        <Element Type="Param" Id="BE7F6A87">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="44545BCD"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="DE083B36">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="E7F1F6D7"/>
+            <Value>100</Value>
+            <ValueType Type="int"/>
+        </Element>
     </Library>
     <Root>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>

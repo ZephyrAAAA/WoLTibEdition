@@ -518,8 +518,29 @@ void lib3B48F5E9_gt_CommandoEXP_Init () {
     TriggerAddEventUnitDamaged(lib3B48F5E9_gt_CommandoEXP, null, c_unitDamageTypeAny, c_unitDamageEither, null);
 }
 
+//--------------------------------------------------------------------------------------------------
+// Trigger: Fake Warp In Off
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_FakeWarpInOff_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitSetProgressComplete(EventUnit(), 1, 100);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_FakeWarpInOff_Init () {
+    lib3B48F5E9_gt_FakeWarpInOff = TriggerCreate("lib3B48F5E9_gt_FakeWarpInOff_Func");
+    TriggerAddEventUnitBehaviorChange(lib3B48F5E9_gt_FakeWarpInOff, null, "FakeWarpIn", c_unitBehaviorChangeDestroy);
+}
+
 void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
+    lib3B48F5E9_gt_FakeWarpInOff_Init();
 }
 
 //--------------------------------------------------------------------------------------------------
