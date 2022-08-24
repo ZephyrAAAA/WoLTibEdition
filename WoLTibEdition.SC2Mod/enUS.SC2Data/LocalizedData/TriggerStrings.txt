@@ -20,6 +20,7 @@ Variable/Name/lib_3B48F5E9_1A58B561=AssortedUpgrades
 Variable/Name/lib_3B48F5E9_1ADBB68B=XP
 Variable/Name/lib_3B48F5E9_31E3FA1A=AssortedUpgrades 5
 Variable/Name/lib_3B48F5E9_34FBD971=AttackUpgrades
+Variable/Name/lib_3B48F5E9_4869FA38=SpecialUpgrade
 Variable/Name/lib_3B48F5E9_58BED34A=AssortedUpgrades 2
 Variable/Name/lib_3B48F5E9_7A8D728A=AssortedUpgrades 3
 Variable/Name/lib_3B48F5E9_884CB042=Current Upgrades

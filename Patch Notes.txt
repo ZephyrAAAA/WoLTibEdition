@@ -1,11 +1,38 @@
 *Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and then everyone does. As you do more missions, they get it faster.
 
 Liberation Day:
+*Ripped out the old upgrade system, replaced with our upgrade function.
 
 The Outlaws:
 *The Dominion now starts with Blue Flame
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Zero Hour:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Smash and Grab:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Devil's Playground:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Evacuation:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Trains:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Bel'shir:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Outbreak:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+
+Cutthroat:
+*Ripped out the old upgrade system, replaced with our upgrade function.
 
 The Dig:
+*Ripped out the old upgrade system, replaced with our upgrade function.
 *Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
 
 Echoes of the Past:

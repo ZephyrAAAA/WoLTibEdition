@@ -32,6 +32,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     int lv_currentUpgrades;
     string[4][4] lv_attackUpgrades;
     string[4][4] lv_armourUpgrades;
+    string[4] lv_specialUpgrade;
     string[7] lv_assortedUpgrades;
     string lv_assortedUpgrades2;
     string lv_assortedUpgrades3;
@@ -63,24 +64,6 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     int auto42BCAE4C_var;
     playergroup autoB3BE9141_g;
     int autoB3BE9141_var;
-    playergroup autoEDF2BA49_g;
-    int autoEDF2BA49_var;
-    playergroup autoCFFBE515_g;
-    int autoCFFBE515_var;
-    playergroup auto312B0582_g;
-    int auto312B0582_var;
-    playergroup auto34DDDCEF_g;
-    int auto34DDDCEF_var;
-    playergroup auto3B7EA4FE_g;
-    int auto3B7EA4FE_var;
-    playergroup auto06B100EE_g;
-    int auto06B100EE_var;
-    playergroup auto50AF84EE_g;
-    int auto50AF84EE_var;
-    playergroup auto859051E5_g;
-    int auto859051E5_var;
-    playergroup autoA2DB271E_g;
-    int autoA2DB271E_var;
 
     // Variable Initialization
     for (init_i = 0; init_i <= 3; init_i += 1) {
@@ -92,6 +75,9 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
         for (init_j = 0; init_j <= 3; init_j += 1) {
             lv_armourUpgrades[init_i][init_j] = "";
         }
+    }
+    for (init_i = 0; init_i <= 3; init_i += 1) {
+        lv_specialUpgrade[init_i] = "";
     }
     for (init_i = 0; init_i <= 6; init_i += 1) {
         lv_assortedUpgrades[init_i] = "";
@@ -117,18 +103,18 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
         lv_armourUpgrades[0][1] = "TerranVehicleArmorsLevel1";
         lv_armourUpgrades[1][1] = "TerranVehicleArmorsLevel2";
         lv_armourUpgrades[2][1] = "TerranVehicleArmorsLevel3";
-        lv_assortedUpgrades[3] = "MedivacCaduceusReactor";
-        lv_assortedUpgrades[3] = "BattlecruiserBehemothReactor";
-        lv_assortedUpgrades[3] = "DefensiveMatrixResearch";
-        lv_assortedUpgrades[3] = "GhostMoebiusReactor";
-        lv_assortedUpgrades[3] = "RavenCorvidReactor";
+        lv_specialUpgrade[0] = "TerranShipWeaponsLevel1";
+        lv_specialUpgrade[1] = "TerranShipWeaponsLevel2";
+        lv_specialUpgrade[2] = "TerranShipWeaponsLevel3";
+        lv_assortedUpgrades[0] = "MedivacCaduceusReactor";
+        lv_assortedUpgrades[1] = "RavenCorvidReactor";
+        lv_assortedUpgrades[2] = "DefensiveMatrixResearch";
         auto46D14E10_g = lp_enemyPlayers;
         auto46D14E10_var = -1;
         while (true) {
             auto46D14E10_var = PlayerGroupNextPlayer(auto46D14E10_g, auto46D14E10_var);
             if (auto46D14E10_var < 0) { break; }
             TechTreeUpgradeAddLevel(auto46D14E10_var, "BansheeCloak", 1);
-            TechTreeUpgradeAddLevel(auto46D14E10_var, "PersonalCloaking", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "HunterSeeker", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "WraithCloak", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "BattlecruiserEnableSpecializations", 1);
@@ -188,9 +174,12 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 10)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "CerberusMines", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "NanoConstructor", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 11)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "Predator", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 12)) {
@@ -217,35 +206,72 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
         }
     }
     else if (autoDFC0F681_val == 2) {
-        lv_assortedUpgrades[0] = "hydraliskspeed";
-        lv_assortedUpgrades[0] = "CentrificalHooks";
-        lv_assortedUpgrades[0] = "InfestorEnergyUpgrade";
-        lv_assortedUpgrades[0] = "ChitinousPlating";
+        lv_attackUpgrades[0][0] = "ZergMeleeWeaponsLevel1";
+        lv_attackUpgrades[1][0] = "ZergMeleeWeaponsLevel2";
+        lv_attackUpgrades[2][0] = "ZergMeleeWeaponsLevel3";
+        lv_attackUpgrades[0][1] = "ZergFlyerWeaponsLevel1";
+        lv_attackUpgrades[1][1] = "ZergFlyerWeaponsLevel2";
+        lv_attackUpgrades[2][1] = "ZergFlyerWeaponsLevel3";
+        lv_armourUpgrades[0][0] = "ZergGroundArmorsLevel1";
+        lv_armourUpgrades[1][0] = "ZergGroundArmorsLevel2";
+        lv_armourUpgrades[2][0] = "ZergGroundArmorsLevel3";
+        lv_armourUpgrades[0][1] = "ZergFlyerArmorsLevel1";
+        lv_armourUpgrades[1][1] = "ZergFlyerArmorsLevel2";
+        lv_armourUpgrades[2][1] = "ZergFlyerArmorsLevel3";
+        lv_specialUpgrade[0] = "ZergMissileWeaponsLevel1";
+        lv_specialUpgrade[1] = "ZergMissileWeaponsLevel2";
+        lv_specialUpgrade[2] = "ZergMissileWeaponsLevel3";
+        lv_assortedUpgrades[0] = "zerglingmovementspeed";
+        lv_assortedUpgrades[1] = "GlialReconstitution";
+        lv_assortedUpgrades[2] = "CentrificalHooks";
+        lv_assortedUpgrades[3] = "AnabolicSynthesis";
+        lv_assortedUpgrades[4] = "zerglingattackspeed";
+        lv_assortedUpgrades[5] = "ChitinousPlating";
         auto9317D1ED_g = lp_enemyPlayers;
         auto9317D1ED_var = -1;
         while (true) {
             auto9317D1ED_var = PlayerGroupNextPlayer(auto9317D1ED_g, auto9317D1ED_var);
             if (auto9317D1ED_var < 0) { break; }
             TechTreeUpgradeAddLevel(auto9317D1ED_var, "InfestorPeristalsis", 1);
+            TechTreeUpgradeAddLevel(auto9317D1ED_var, "InfestorEnergyUpgrade", 1);
+            TechTreeUpgradeAddLevel(auto9317D1ED_var, "hydraliskspeed", 1);
+            TechTreeUpgradeAddLevel(auto9317D1ED_var, "Burrow", 1);
             TechTreeUpgradeAddLevel(auto9317D1ED_var, "overlordspeed", 1);
             TechTreeUpgradeAddLevel(auto9317D1ED_var, "overlordtransport", 1);
         }
     }
     else if (autoDFC0F681_val == 3) {
-        lv_assortedUpgrades[0] = "Charge";
-        lv_assortedUpgrades[1] = "BlinkTech";
-        lv_assortedUpgrades[2] = "ExtendedThermalLance";
-        lv_assortedUpgrades[3] = "HighTemplarKhaydarinAmulet";
-        lv_assortedUpgrades[4] = "CarrierLaunchSpeedUpgrade";
+        lv_attackUpgrades[0][0] = "ProtossGroundWeaponsLevel1";
+        lv_attackUpgrades[1][0] = "ProtossGroundWeaponsLevel2";
+        lv_attackUpgrades[2][0] = "ProtossGroundWeaponsLevel3";
+        lv_attackUpgrades[0][1] = "ProtossAirWeaponsLevel1";
+        lv_attackUpgrades[1][1] = "ProtossAirWeaponsLevel2";
+        lv_attackUpgrades[2][1] = "ProtossAirWeaponsLevel3";
+        lv_armourUpgrades[0][0] = "ProtossGroundArmorsLevel1";
+        lv_armourUpgrades[1][0] = "ProtossGroundArmorsLevel2";
+        lv_armourUpgrades[2][0] = "ProtossGroundArmorsLevel3";
+        lv_armourUpgrades[0][1] = "ProtossAirArmorsLevel1";
+        lv_armourUpgrades[1][1] = "ProtossAirArmorsLevel2";
+        lv_armourUpgrades[2][1] = "ProtossAirArmorsLevel3";
+        lv_specialUpgrade[0] = "ProtossShieldsLevel1";
+        lv_specialUpgrade[1] = "ProtossShieldsLevel2";
+        lv_specialUpgrade[2] = "ProtossShieldsLevel3";
+        lv_assortedUpgrades[0] = "HighTemplarKhaydarinAmulet";
+        lv_assortedUpgrades[1] = "ExtendedThermalLance";
+        lv_assortedUpgrades[2] = "VoidRaySpeedUpgrade";
+        lv_assortedUpgrades[3] = "CarrierLaunchSpeedUpgrade";
         auto5EC2CC13_g = lp_enemyPlayers;
         auto5EC2CC13_var = -1;
         while (true) {
             auto5EC2CC13_var = PlayerGroupNextPlayer(auto5EC2CC13_g, auto5EC2CC13_var);
             if (auto5EC2CC13_var < 0) { break; }
+            TechTreeUpgradeAddLevel(auto5EC2CC13_var, "WarpGateResearch", 1);
             TechTreeUpgradeAddLevel(auto5EC2CC13_var, "PsiStormTech", 1);
             TechTreeUpgradeAddLevel(auto5EC2CC13_var, "haltech", 1);
             TechTreeUpgradeAddLevel(auto5EC2CC13_var, "ObserverGraviticBooster", 1);
             TechTreeUpgradeAddLevel(auto5EC2CC13_var, "GraviticDrive", 1);
+            TechTreeUpgradeAddLevel(auto5EC2CC13_var, "Charge", 1);
+            TechTreeUpgradeAddLevel(auto5EC2CC13_var, "BlinkTech", 1);
         }
     }
     else {
@@ -253,7 +279,12 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
 
     }
     lv_currentUpgradeLevel = (lp_initialUpgradeLevel-1);
-    lv_currentUpgrades = (lp_initialUpgrades-1);
+    if ((lp_initialUpgrades >= 7)) {
+        lv_currentUpgrades = (((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-3)/3));
+    }
+    else {
+        lv_currentUpgrades = (lp_initialUpgrades-1);
+    }
     autoA7838E67_g = lp_enemyPlayers;
     autoA7838E67_var = -1;
     while (true) {
@@ -280,7 +311,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
         }
         else {
         }
-        auto9C176D4E_val = lp_initialUpgrades;
+        auto9C176D4E_val = lv_currentUpgrades;
         if (auto9C176D4E_val == 1) {
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_assortedUpgrades[0], 1);
         }
@@ -319,7 +350,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     }
     Wait(lp_upgradeInitialTimeDelay, c_timeGame);
     while (true) {
-        if ((lv_currentUpgradeLevel >= 2)) {
+        if ((lv_currentUpgradeLevel >= 2) && (lv_currentUpgradeLevel < lp_maxUpgradeLevel)) {
         }
         else {
             Wait(((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
@@ -386,89 +417,6 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
         lv_currentUpgradeLevel += 1;
         lv_currentUpgrades += 1;
     }
-    if ((lp_maxUpgradeLevel >= 3)) {
-        if ((lp_airFirst == false)) {
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            auto312B0582_g = lp_enemyPlayers;
-            auto312B0582_var = -1;
-            while (true) {
-                auto312B0582_var = PlayerGroupNextPlayer(auto312B0582_g, auto312B0582_var);
-                if (auto312B0582_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto312B0582_var, "ProtossGroundArmorsLevel3", 1);
-            }
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            auto34DDDCEF_g = lp_enemyPlayers;
-            auto34DDDCEF_var = -1;
-            while (true) {
-                auto34DDDCEF_var = PlayerGroupNextPlayer(auto34DDDCEF_g, auto34DDDCEF_var);
-                if (auto34DDDCEF_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto34DDDCEF_var, "ProtossAirArmorsLevel3", 1);
-            }
-        }
-        else {
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            autoEDF2BA49_g = lp_enemyPlayers;
-            autoEDF2BA49_var = -1;
-            while (true) {
-                autoEDF2BA49_var = PlayerGroupNextPlayer(autoEDF2BA49_g, autoEDF2BA49_var);
-                if (autoEDF2BA49_var < 0) { break; }
-                TechTreeUpgradeAddLevel(autoEDF2BA49_var, "ProtossAirArmorsLevel3", 1);
-            }
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            autoCFFBE515_g = lp_enemyPlayers;
-            autoCFFBE515_var = -1;
-            while (true) {
-                autoCFFBE515_var = PlayerGroupNextPlayer(autoCFFBE515_g, autoCFFBE515_var);
-                if (autoCFFBE515_var < 0) { break; }
-                TechTreeUpgradeAddLevel(autoCFFBE515_var, "ProtossGroundArmorsLevel3", 1);
-            }
-        }
-        if ((lp_airFirst == false)) {
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            auto50AF84EE_g = lp_enemyPlayers;
-            auto50AF84EE_var = -1;
-            while (true) {
-                auto50AF84EE_var = PlayerGroupNextPlayer(auto50AF84EE_g, auto50AF84EE_var);
-                if (auto50AF84EE_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto50AF84EE_var, "ProtossGroundWeaponsLevel3", 1);
-            }
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            auto859051E5_g = lp_enemyPlayers;
-            auto859051E5_var = -1;
-            while (true) {
-                auto859051E5_var = PlayerGroupNextPlayer(auto859051E5_g, auto859051E5_var);
-                if (auto859051E5_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto859051E5_var, "ProtossAirWeaponsLevel3", 1);
-            }
-        }
-        else {
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            auto3B7EA4FE_g = lp_enemyPlayers;
-            auto3B7EA4FE_var = -1;
-            while (true) {
-                auto3B7EA4FE_var = PlayerGroupNextPlayer(auto3B7EA4FE_g, auto3B7EA4FE_var);
-                if (auto3B7EA4FE_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto3B7EA4FE_var, "ProtossAirWeaponsLevel3", 1);
-            }
-            Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-            auto06B100EE_g = lp_enemyPlayers;
-            auto06B100EE_var = -1;
-            while (true) {
-                auto06B100EE_var = PlayerGroupNextPlayer(auto06B100EE_g, auto06B100EE_var);
-                if (auto06B100EE_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto06B100EE_var, "ProtossGroundWeaponsLevel3", 1);
-            }
-        }
-        Wait(IntToFixed(lp_upgradeTimeDelay), c_timeGame);
-        autoA2DB271E_g = lp_enemyPlayers;
-        autoA2DB271E_var = -1;
-        while (true) {
-            autoA2DB271E_var = PlayerGroupNextPlayer(autoA2DB271E_g, autoA2DB271E_var);
-            if (autoA2DB271E_var < 0) { break; }
-            TechTreeUpgradeAddLevel(autoA2DB271E_var, "ProtossShieldsLevel3", 1);
-        }
-    }
-
 }
 
 // Triggers
