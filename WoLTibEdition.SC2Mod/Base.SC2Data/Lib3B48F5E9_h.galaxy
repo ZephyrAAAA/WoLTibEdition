@@ -4,7 +4,7 @@ include "TriggerLibs/natives"
 // Library: WoLTibLib
 //--------------------------------------------------------------------------------------------------
 // Function Declarations
-void lib3B48F5E9_gf_GiveProtoss333Upgrades (int lp_playerGroupRace, playergroup lp_enemyPlayers, int lp_upgradeInitialTimeDelay, int lp_upgradeTimeScalar, int lp_upgradeTimeDelay, int lp_maxUpgradeLevel, bool lp_airFirst);
+void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, int lp_upgradeTimeScalar, int lp_upgradeTimeDelay, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airFirst);
 
 // Trigger Declarations
 trigger lib3B48F5E9_gt_CommandoEXP;
