@@ -35,6 +35,15 @@ The Dig:
 *Ripped out the old upgrade system, replaced with our upgrade function.
 *Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
 
+Engine of Destruction:
+Replaced starting units with squads
+Removed merc compound
+Fixed resources
+Replaced starting buildings
+Doubled Tychus' health
+The Odin now has Biosteel.
+You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
+
 Echoes of the Past:
 
 
