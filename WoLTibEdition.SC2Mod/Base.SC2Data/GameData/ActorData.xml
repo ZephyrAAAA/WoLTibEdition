@@ -1240,6 +1240,10 @@
     <CActorSplat id="PlanetaryFortressSplat2" parent="TerranBuildingMorphSplat" unitName="PlanetaryFortress2">
         <Model value="PlanetaryFortressSplat"/>
     </CActorSplat>
+    <CActorProgress id="ProtossWarpIn">
+        <On Terms="Behavior.FakeWarpIn.On" Send="Create"/>
+        <On Terms="Behavior.FakeWarpIn.On" Target="_Unit" Send="$Birth 0 0.000000 0.000000 5.000000 AsDuration"/>
+    </CActorProgress>
     <CActorAction id="Raynor01Attack" effectAttack="">
         <On index="0" Terms="Effect.Stop; FromEffectTreeDescendant"/>
         <On index="5" Terms="Effect.Start; At Caster"/>

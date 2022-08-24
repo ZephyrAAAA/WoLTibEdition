@@ -150,6 +150,14 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="FakeWarpIn">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="SuppressEnergyRegen" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="FastBuild">
         <Modification>
             <RateMultiplierArray index="Charge" value="2"/>
