@@ -695,12 +695,13 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithA">
         <Tip value="Weapon/Tip/Rocket"/>
-        <Period value="2.5"/>
+        <Period value="3.75"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithG">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Period value="3.75"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewAssault">
         <Tip value="Weapon/Tip/Rifle"/>

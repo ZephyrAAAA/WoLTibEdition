@@ -1556,7 +1556,10 @@
     </CEffectDamage>
     <CEffectDamage id="WraithAU">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="20"/>
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectDamage id="WraithGU">
+        <Amount value="18"/>
     </CEffectDamage>
     <CEffectDamage id="WreckingCrewFighterU">
         <AttributeBonus index="Armored" value="0"/>

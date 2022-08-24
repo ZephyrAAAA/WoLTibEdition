@@ -97,6 +97,25 @@
         </Cost>
         <BehaviorArray index="0" value="PersonalCloakingFree"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="HighTemplarAttackDummy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CCLoadDummy"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Smart" value="1"/>
+        <TargetFilters value="Ground,Visible;Player,Ally,Neutral"/>
+        <Range value="8"/>
+        <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral"/>
+        <AutoCastRange value="8"/>
+        <CastIntroTime value="0.125"/>
+        <AcquirePriority value="2"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
+        <AcquireAttackers value="1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="NanoRepair">
+        <AutoCastRange value="9"/>
+        <FollowRange value="2"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="NovaSnipe">
         <CastIntroTime index="0" value="0.1"/>
         <FinishTime index="0" value="0"/>
@@ -465,7 +484,7 @@
     </CAbilArmMagazine>
     <CAbilEffectTarget id="PowerStructure">
         <EditorCategories value="AbilityorEffectType:Units,Race:Protoss"/>
-        <TargetFilters value="Structure;Ally,Enemy"/>
+        <TargetFilters value="Structure;Enemy"/>
         <Range value="0.1"/>
         <CastIntroTime value="10"/>
         <ShowProgressArray index="Cast" value="1"/>

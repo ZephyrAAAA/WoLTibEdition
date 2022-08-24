@@ -77,6 +77,14 @@
         <ScaleMax value="0.500000,0.500000,0.500000"/>
         <ScaleMin value="0.500000,0.500000,0.500000"/>
     </CModel>
+    <CModel id="ProtossGenericWarpInOut" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\Protoss_Generic_WarpOut\Protoss_Generic_WarpOut.m3"/>
+        <LowQualityModel value="ProtossUnitBirth"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="0.555400"/>
+        <ShadowRadius value="0.555400"/>
+    </CModel>
     <CModel id="Purifier_Collapsible_Rock_Tower" parent="Doodad">
         <Model value="Assets\Buildings\Neutral\Purifier_Collapsible_Rock_Tower\Purifier_Collapsible_Rock_Tower.m3"/>
         <Events>
