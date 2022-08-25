@@ -45,6 +45,11 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CloakDistortionField">
+        <DamageResponse ModifyFraction="0.6">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="CollapsibleRockTowerPurifier02">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

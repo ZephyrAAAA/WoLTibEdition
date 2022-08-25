@@ -3,4 +3,6 @@
 WoLTibEdition.SC2Mod/DocumentHeader
 WoLTibEdition.SC2Mod/GameText.version
 WoLTibEdition.SC2Mod/DocumentHeader
+tstory01.SC2Map\enUS.SC2Data\LocalizedData\GameStrings.txt
+tstory01.SC2Map\Base.SC2Data\GameData\ConversationStateData.xml
 *.version

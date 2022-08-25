@@ -192,6 +192,9 @@
         <EffectArray Operation="AddBaseMultiply" Reference="Effect,MechanicalRepair,RechargeVitalFraction" Value="0.500000"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Effect,MechanicalRepair,RechargeVitalRate" Value="0.500000"/>
     </CUpgrade>
+    <CUpgrade id="DynamicPowerRouting">
+        <EffectArray Reference="Unit,Wraith,EnergyRegenRate" Value="0.281200"/>
+    </CUpgrade>
     <CUpgrade id="EnhancedExplosives">
         <EffectArray Operation="Multiply" Reference="Effect,GoliathAU,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,WraithAU,Amount" Value="1.3"/>
