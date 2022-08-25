@@ -411,6 +411,14 @@
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MedivacFakeWeapon">
+        <EditorCategories value=""/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Backswing value="0.2"/>
+        <Effect value="CCLoadDummy"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>

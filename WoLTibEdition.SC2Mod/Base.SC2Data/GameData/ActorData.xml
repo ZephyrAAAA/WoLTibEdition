@@ -1615,13 +1615,38 @@
         <On Terms="AbilMorph.*.Start; MorphTo OrbitalCommandFlying2" Send="Create"/>
     </CActorSound>
     <CActorStateMonitor id="TerranFlamesLargeBuilding2" parent="TerranFlames">
-        <On Terms="UnitCreation.CommandCenter3" Send="Create"/>
-        <On Terms="UnitCreation.CommandCenterFlying" Send="Create"/>
-        <On Terms="UnitCreation.PlanetaryFortress" Send="Create"/>
-        <On Terms="UnitCreation.OrbitalCommand" Send="Create"/>
-        <On Terms="UnitCreation.OrbitalCommandFlying" Send="Create"/>
+        <On Terms="UnitCreation.CommandCenter2" Send="Create"/>
+        <On Terms="UnitCreation.CommandCenter2Flying" Send="Create"/>
+        <On Terms="UnitCreation.PlanetaryFortress2" Send="Create"/>
         <On Terms="StateChange; StateValid Fire" Send="Create TerranFlameLoopLarge"/>
         <On Terms="StateChange; !StateValid Fire" Target="TerranFlameLoopLarge" Send="Destroy"/>
+    </CActorStateMonitor>
+    <CActorStateMonitor id="TerranFlamesMediumBuilding2" parent="TerranFlamesMediumBuilding">
+        <On index="13" Terms="UnitCreation.SupplyDepot2"/>
+        <On index="14" Terms="UnitCreation.SupplyDepot2Lowered"/>
+        <On index="15" Terms="UnitCreation.Refinery2"/>
+        <On index="16" Terms="UnitCreation.Barracks2"/>
+        <On index="17" Terms="UnitCreation.Barracks2Flying"/>
+        <On index="18" Terms="UnitCreation.EngineeringBay2"/>
+        <On index="19" Terms="UnitCreation.Bunker2"/>
+        <On index="20" Terms="UnitCreation.GhostAcademy2"/>
+        <On index="21" Terms="UnitCreation.Factory2"/>
+        <On index="22" Terms="UnitCreation.Factory2Flying"/>
+        <On index="23" Terms="UnitCreation.Armory2"/>
+        <On index="24" Terms="UnitCreation.Starport2"/>
+        <On index="25" Terms="UnitCreation.Starport2Flying"/>
+        <On index="26" Terms="UnitCreation.FusionCore2"/>
+        <On index="27" Terms="StateChange; StateValid Fire" Send="Create TerranFlameLoopMedium"/>
+        <On index="28" Terms="StateChange; !StateValid Fire" Target="TerranFlameLoopMedium" Send="Destroy"/>
+        <On index="29" removed="1"/>
+        <On index="30" removed="1"/>
+        <On index="31" removed="1"/>
+        <On index="32" removed="1"/>
+        <On index="33" removed="1"/>
+        <On index="34" removed="1"/>
+        <On index="35" removed="1"/>
+        <On index="36" removed="1"/>
+        <On index="37" removed="1"/>
     </CActorStateMonitor>
     <CActorUnit id="TibNodeLarge" parent="GenericUnitStandardNoAutoSoundLinks" unitName="TibNodeLarge">
         <Aliases value="_Geyser"/>

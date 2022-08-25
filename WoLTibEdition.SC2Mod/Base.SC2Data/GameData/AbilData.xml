@@ -24,13 +24,6 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
-    <CAbilRedirectTarget id="AttackRedirectMedivac">
-        <DataCollection value="AttackRedirect"/>
-        <Abil value="attack"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="AttackRedirect" Requirements="RapidDeploymentResearched">
-            <Flags index="ToSelection" value="1"/>
-        </CmdButtonArray>
-    </CAbilRedirectTarget>
     <CAbilEffectTarget id="AutoHarvest">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="AutoHarvestCP"/>
@@ -111,9 +104,9 @@
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
         <TargetFilters value="Ground,Visible;Player,Ally,Neutral"/>
-        <Range value="8"/>
+        <Range value="7"/>
         <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral"/>
-        <AutoCastRange value="8"/>
+        <AutoCastRange value="7"/>
         <CastIntroTime value="0.125"/>
         <AcquirePriority value="2"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
@@ -226,7 +219,7 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
-        <TargetFilters value="Ground,Structure,Visible;Player,Ally,Missile,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Structure,Visible;Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
         <TargetSorts>
             <SortArray value="TSDistance"/>
             <SortArray value="TSPriority"/>
@@ -681,6 +674,7 @@
             <Charge Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Flags index="External" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
         </InfoArray>
         <MaxCount value="1"/>
     </CAbilArmMagazine>
@@ -1859,6 +1853,7 @@
             </Charge>
             <Cooldown TimeUse="0"/>
         </Cost>
+        <FinishTime value="0.125"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ZeratulSeek">
         <EditorCategories value="AbilityorEffectType:Units"/>

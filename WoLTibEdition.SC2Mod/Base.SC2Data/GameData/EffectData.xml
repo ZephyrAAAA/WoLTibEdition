@@ -402,7 +402,10 @@
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="UnitIsBiological"/>
         <EditorCategories value="Race:Terran"/>
-        <Marker Link="Effect/MedivacHeal"/>
+        <Marker Link="Effect/MedivacHeal">
+            <MatchFlags index="Link" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
         <Flags index="Channeled" value="0"/>
         <DrainVital value="Energy"/>
         <DrainVitalCostFactor value="0.375"/>
@@ -416,8 +419,8 @@
     <CEffectSet id="MedivacLoadSet">
         <EditorCategories value=""/>
         <EffectArray value="MedivacHealInternal"/>
-        <EffectArray value="MedivacHealIterate"/>
         <EffectArray value="AirTransportLoadIterate"/>
+        <EffectArray value="MedivacHealIterate"/>
     </CEffectSet>
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
@@ -915,7 +918,8 @@
     <CEffectIssueOrder id="AirTransportUnloadSquad">
         <EditorCategories value=""/>
         <Abil value="AirTransport"/>
-        <AbilCmdIndex value="1"/>
+        <AbilCmdIndex value="2"/>
+        <Target Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CraneBuilt">
         <EditorCategories value=""/>

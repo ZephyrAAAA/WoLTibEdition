@@ -207,6 +207,14 @@
             <StateFlags index="SuppressEnergyRegen" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="MedivacWeaponEnable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="RapidDeploymentPurchased"/>
+        <Modification>
+            <WeaponEnableArray value="MedivacFakeWeapon"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MercGroundDrop">
         <DurationRandomMin value="0"/>
     </CBehaviorBuff>
