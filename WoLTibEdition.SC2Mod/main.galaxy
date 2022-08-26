@@ -817,7 +817,7 @@ bool INI_Func (bool testConds, bool runActions) {
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	rate = 117;
 	spendrate = 100;
-	PlayerSetState(1, c_playerStateFormationMove, true);
+	//PlayerSetState(1, c_playerStateFormationMove, true);
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
 	return true;
 }

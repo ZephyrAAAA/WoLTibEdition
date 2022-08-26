@@ -10369,13 +10369,13 @@ void gf_ArmoryTechShowall () {
 void gf_CCEditionMissionFlowChanges () {
     // Automatic Variable Declarations
     // Implementation
-    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTHanson01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTHanson01, libCamp_ge_MissionStatus_Completed) >= 5)) {
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTHanson01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 5)) {
         libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTHanson02, true);
     }
     else {
         libCamp_gf_TS_LockUnlockMissionIfCondition(true, libCamp_ge_MapID_MapTHanson02, true);
     }
-    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTTosh01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTTosh01, libCamp_ge_MissionStatus_Completed) >= 5)) {
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTTosh01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 5)) {
         libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTTosh02, true);
     }
     else {
