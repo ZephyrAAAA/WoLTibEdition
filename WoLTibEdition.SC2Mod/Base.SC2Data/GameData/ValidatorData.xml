@@ -19,6 +19,7 @@
     <CValidatorPlayerRequirement id="HasBiosteel">
         <Find value="1"/>
         <Value value="HasBiosteel"/>
+        <WhichPlayer Value="Source"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDevilDogs">
         <Find value="1"/>
@@ -66,6 +67,9 @@
     <CValidatorUnitCompareBehaviorCount id="PsiStormTestBuffKarass">
         <Behavior value="KarassPsiStorm"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="RapidDeploymentPurchased">
+        <WhichPlayer Value="Source"/>
+    </CValidatorPlayerRequirement>
     <CValidatorUnitFilters id="TargetIsMechanical">
         <Filters value="Mechanical;-"/>
     </CValidatorUnitFilters>

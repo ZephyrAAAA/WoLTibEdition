@@ -78,6 +78,8 @@ void buildingSwap (unit building) {
 		libNtve_gf_ReplaceUnit(building, "GhostAcademy2", 1);
 	} else if (UnitGetType(building) == "SensorTower") {
 		libNtve_gf_ReplaceUnit(building, "SensorTower2", 1);
+	} else if (UnitGetType(building) == "Bunker") {
+		libNtve_gf_ReplaceUnit(building, "Bunker2", 1);
 	} else if (UnitGetType(building) == "SupplyDepot") {
 		libNtve_gf_ReplaceUnit(building, "SupplyDepot2", 1);
 		if (TechTreeUnitAliasCount(UnitGetOwner(libNtve_gf_LastReplacedUnit()), "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {
@@ -744,6 +746,10 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("BarracksTechLabResearch", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 5)));
 	TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 2), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)));
     TechTreeAbilityAllow(1, AbilityCommand("UpgradeToPlanetaryFortress2", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("UpgradeToPlanetaryFortress", 0)));
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 5)) || TechTreeAbilityIsAllowed(1, AbilityCommand("TerranBuild", 19)));
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 1), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 6)));
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 2), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 7)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 6)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 4)));
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 7)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 3)));
 	for (lv_i = 0; lv_i < 9; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", lv_i)));
 	}

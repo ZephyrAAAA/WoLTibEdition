@@ -18,6 +18,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="EMP"/>
         <DefaultButtonLayout Row="2" Column="1"/>
     </CButton>
+    <CButton id="ResearchHighEnergyCapacitors">
+        <Icon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
     <CButton id="ResearchEnhancedExplosives">
         <Icon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-explosiveshrapnelshells.dds"/>

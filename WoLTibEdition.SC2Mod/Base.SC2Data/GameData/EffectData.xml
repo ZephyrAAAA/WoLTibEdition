@@ -392,6 +392,36 @@
         <ValidatorArray value="TargetIsMechanical"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectCreateHealer id="MedivacHeal">
+        <DrainVitalCostFactor value="0.375"/>
+        <RechargeVitalRate value="8"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="MedivacHealInternal">
+        <ValidatorArray value="CasterIsNotHidden"/>
+        <ValidatorArray value="IsHidden"/>
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value="Race:Terran"/>
+        <Marker Link="Effect/MedivacHeal">
+            <MatchFlags index="Link" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Flags index="Channeled" value="0"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.375"/>
+        <RechargeVitalRate value="8"/>
+    </CEffectCreateHealer>
+    <CEffectEnumMagazine id="MedivacHealIterate">
+        <EditorCategories value=""/>
+        <EffectInternal value="MedivacHealInternal"/>
+        <EffectExternal value="MedivacHealInternal"/>
+    </CEffectEnumMagazine>
+    <CEffectSet id="MedivacLoadSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MedivacHealInternal"/>
+        <EffectArray value="AirTransportLoadIterate"/>
+        <EffectArray value="MedivacHealIterate"/>
+    </CEffectSet>
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
     </CEffectDamage>
@@ -485,6 +515,21 @@
         <PeriodicPeriodArray value="0.2"/>
         <AINotifyEffect value="NukeDamage"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="OdinDamage">
+        <AttributeBonus index="Structure" value="0"/>
+        <AttributeFactor index="Structure" value="1"/>
+        <Amount value="80"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamageLeft">
+        <AttributeBonus index="Structure" value="0"/>
+        <AttributeFactor index="Structure" value="1"/>
+        <Amount value="80"/>
+    </CEffectDamage>
+    <CEffectDamage id="OdinDamageRight">
+        <AttributeBonus index="Structure" value="0"/>
+        <AttributeFactor index="Structure" value="1"/>
+        <Amount value="80"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
         <EditorCategories value=""/>
@@ -873,7 +918,8 @@
     <CEffectIssueOrder id="AirTransportUnloadSquad">
         <EditorCategories value=""/>
         <Abil value="AirTransport"/>
-        <AbilCmdIndex value="1"/>
+        <AbilCmdIndex value="2"/>
+        <Target Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CraneBuilt">
         <EditorCategories value=""/>
@@ -1110,6 +1156,9 @@
         <EditorCategories value=""/>
         <BehaviorLink value="DetectorConeReveal"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="ThorsHammerDamage">
+        <Amount value="30"/>
+    </CEffectDamage>
     <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnit"/>

@@ -104,9 +104,9 @@
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
         <TargetFilters value="Ground,Visible;Player,Ally,Neutral"/>
-        <Range value="8"/>
+        <Range value="7"/>
         <AutoCastFilters value="Ground,Visible;Player,Ally,Neutral"/>
-        <AutoCastRange value="8"/>
+        <AutoCastRange value="7"/>
         <CastIntroTime value="0.125"/>
         <AcquirePriority value="2"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
@@ -120,6 +120,19 @@
         <CastIntroTime index="0" value="0.1"/>
         <FinishTime index="0" value="0"/>
         <TargetFilters index="0" value="Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="OdinBarrage">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge>
+                <CountMax value="4"/>
+                <CountStart value="4"/>
+                <CountUse value="1"/>
+                <TimeUse value="120"/>
+            </Charge>
+        </Cost>
+        <CastIntroTime index="0" value="1"/>
+        <FinishTime index="0" value="1"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="RogueGhostCloak">
         <Cost index="0">
@@ -147,6 +160,7 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilResearch id="BarracksTechLabResearch">
         <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
@@ -205,7 +219,7 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <Flags index="Smart" value="1"/>
-        <TargetFilters value="Ground,Structure,Visible;Player,Ally,Missile,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Structure,Visible;Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
         <TargetSorts>
             <SortArray value="TSDistance"/>
             <SortArray value="TSPriority"/>
@@ -257,18 +271,12 @@
         <Alignment value="Negative"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="YamatoGunTopbarPersistent"/>
-        <Flags index="AbortOnAllianceChange" value="0"/>
-        <Flags index="AllowMovement" value="1"/>
-        <Flags index="BestUnit" value="0"/>
-        <Flags index="NoDeceleration" value="1"/>
-        <Flags index="RequireTargetVision" value="0"/>
         <Cost>
             <Resource index="Minerals" value="3000"/>
             <Cooldown TimeUse="300"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="500"/>
-        <RangeSlop value="10"/>
         <Arc value="360"/>
         <CursorEffect value="YamatoGunTopbarDamage"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="HyperionYamato5">
@@ -361,7 +369,6 @@
         </InfoArray>
     </CAbilResearch>
     <CAbilEffectTarget id="TacNukeStrikeTopbar">
-        <TechPlayer value="Owner"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="NukePersistentTopbar"/>
         <Cost>
@@ -370,7 +377,6 @@
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="500"/>
-        <ValidatedArray index="Channel" value="0"/>
         <AlertArray index="Cast" value="CalldownLaunch"/>
         <CursorEffect value="NukeDamage"/>
         <AINotifyEffect value="Nuke"/>
@@ -379,6 +385,7 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
         <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilResearch id="TakeTheDrill">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -654,7 +661,7 @@
         <MaxUnloadRange value="5"/>
         <MaxCargoCount value="200"/>
         <TotalCargoSpace value="200"/>
-        <LoadCargoBehavior value=""/>
+        <LoadCargoBehavior value="InsideMedivac"/>
         <UnloadPeriod value="0"/>
         <SearchRadius value="5"/>
         <LoadValidatorArray index="0" removed="1"/>
@@ -667,6 +674,7 @@
             <Charge Link="Abil/##id##"/>
             <Cooldown Link="Abil/##id##"/>
             <Flags index="External" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
         </InfoArray>
         <MaxCount value="1"/>
     </CAbilArmMagazine>
@@ -698,6 +706,13 @@
         <InfoArray index="Research3" Time="60" Upgrade="ImprovedRailguns">
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="ResearchImprovedRailguns" Requirements="LearnImprovedRailguns">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research4" Time="60" Upgrade="HighEnergyCapacitors">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchHighEnergyCapacitors" Requirements="LearnHighEnergyCapacitors">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -749,7 +764,7 @@
         </InfoArray>
         <InfoArray index="Train3" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="Ghost" State="Restricted"/>
+            <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
             <Unit value="Ghost"/>
         </InfoArray>
         <InfoArray index="Train4" Time="8">
@@ -769,7 +784,7 @@
         </InfoArray>
         <InfoArray index="Train7" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="Spectre" State="Restricted"/>
+            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
             <Unit value="Spectre"/>
         </InfoArray>
         <Flags index="BypassFoodRestriction" value="1"/>
@@ -1581,9 +1596,10 @@
         <MaxCount value="3"/>
     </CAbilArmMagazine>
     <CAbilTransport id="MedivacTransport">
-        <LoadCargoEffect value="AirTransportLoadIterate"/>
+        <LoadCargoEffect value="MedivacLoadSet"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
         <LoadValidatorArray value="CanLoadSiegeTank"/>
+        <LoadCargoBehavior value="InsideMedivac"/>
     </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>
@@ -1669,7 +1685,8 @@
     <CAbilTrain id="Starport2Train">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <Activity value="UI/Building"/>
-        <InfoArray index="Train1" Time="42">
+        <InfoArray index="Train1" Time="12">
+            <Resource index="Vespene" value="1200"/>
             <Button DefaultButtonFace="Medivac" State="Restricted"/>
             <Unit value="Medivac"/>
         </InfoArray>
@@ -1677,7 +1694,8 @@
             <Button DefaultButtonFace="Banshee" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Banshee"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="60">
+        <InfoArray index="Train3" Time="25">
+            <Resource index="Vespene" value="2500"/>
             <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Raven"/>
         </InfoArray>
@@ -1695,11 +1713,13 @@
             <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
             <Unit value="Hercules"/>
         </InfoArray>
-        <InfoArray index="Train7" Time="60">
-            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="DecalProtoss"/>
+        <InfoArray index="Train7" Time="25">
+            <Resource index="Vespene" value="2500"/>
+            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="JumboBunkerNotResearched"/>
             <Unit value="ScienceVessel"/>
         </InfoArray>
-        <InfoArray index="Train8" Time="50">
+        <InfoArray index="Train8" Time="15">
+            <Resource index="Vespene" value="1500"/>
             <Button DefaultButtonFace="Wraith" State="Restricted" Requirements="HaveAttachedTechLab"/>
             <Unit value="Wraith"/>
         </InfoArray>
@@ -1833,6 +1853,7 @@
             </Charge>
             <Cooldown TimeUse="0"/>
         </Cost>
+        <FinishTime value="0.125"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ZeratulSeek">
         <EditorCategories value="AbilityorEffectType:Units"/>

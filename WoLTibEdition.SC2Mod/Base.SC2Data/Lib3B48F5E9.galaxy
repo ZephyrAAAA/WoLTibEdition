@@ -572,7 +572,7 @@ bool lib3B48F5E9_gt_CommandoEXP_Func (bool testConds, bool runActions) {
     }
 
     lv_xP = EventUnitDamageAmount();
-    if ((UnitFilterMatch(EventUnit(), EventPlayer(), UnitFilter((1 << c_targetFilterStructure), 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterHidden - 32)))) == true)) {
+    if ((UnitFilterMatch(EventUnit(), EventPlayer(), UnitFilter((1 << c_targetFilterStructure), 0, 0, 0)) == true)) {
         if ((UnitGetPropertyInt(EventUnit(), c_unitPropLife, c_unitPropNormal) >= 600)) {
             lv_xP = (lv_xP/4);
         }
@@ -592,28 +592,89 @@ void lib3B48F5E9_gt_CommandoEXP_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Fake Warp In Off
+// Trigger: Terran Upgrade Swap
 //--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_FakeWarpInOff_Func (bool testConds, bool runActions) {
+bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
+    string autoAB0E8CEF_val;
+
+    // Conditions
+    if (testConds) {
+        if (!((PlayerType(EventPlayer()) == c_playerTypeComputer))) {
+            return false;
+        }
+    }
+
     // Actions
     if (!runActions) {
         return true;
     }
 
-    UnitSetProgressComplete(EventUnit(), 1, 100);
+    autoAB0E8CEF_val = EventUpgradeName();
+    if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleArmorsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranVehicleVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranShipVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranBuildingArmor", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleArmorsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleArmorsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryWeaponsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryUltraCapacitors", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryWeaponsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HailstormLaunchers", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranInfantryWeaponsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranShipUltraCapacitors", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HighEnergyCapacitors", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranShipWeaponsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleWeaponsLevel1") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranVehicleUltraCapacitors", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HellionCampaignInfernalPreIgniter", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "HiSecAutoTracking", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleWeaponsLevel2") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "ImprovedRailguns", 1);
+    }
+    else if (autoAB0E8CEF_val == "TerranVehicleWeaponsLevel3") {
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+    }
+    else {
+    }
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_FakeWarpInOff_Init () {
-    lib3B48F5E9_gt_FakeWarpInOff = TriggerCreate("lib3B48F5E9_gt_FakeWarpInOff_Func");
-    TriggerAddEventUnitBehaviorChange(lib3B48F5E9_gt_FakeWarpInOff, null, "FakeWarpIn", c_unitBehaviorChangeDestroy);
+void lib3B48F5E9_gt_TerranUpgradeSwap_Init () {
+    lib3B48F5E9_gt_TerranUpgradeSwap = TriggerCreate("lib3B48F5E9_gt_TerranUpgradeSwap_Func");
+    TriggerAddEventUpgradeLevelChanged(lib3B48F5E9_gt_TerranUpgradeSwap, c_playerAny);
 }
 
 void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
-    lib3B48F5E9_gt_FakeWarpInOff_Init();
+    lib3B48F5E9_gt_TerranUpgradeSwap_Init();
 }
 
 //--------------------------------------------------------------------------------------------------

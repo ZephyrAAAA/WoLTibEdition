@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CSkin id="DominionMercs">
+        <ReplacementArray Catalog="Model" From="HammerSecurity" To="MarauderMengsk"/>
+        <ReplacementArray Catalog="Model" From="MarauderMercenaryDeath" To="MarauderMengskDeath"/>
+        <ReplacementArray Catalog="Model" From="SiegeBreaker" To="SiegeTank_Mengsk_COOP"/>
+        <ReplacementArray Catalog="Model" From="SiegeBreakerDeath" To="SiegeTank_Mengsk_COOP_Death"/>
+        <ReplacementArray Catalog="Model" From="SiegeBreakerSieged" To="SiegeTank_Mengsk_COOP_Sieged"/>
+        <ReplacementArray Catalog="Model" From="SiegeBreakerSiegedMorph" To="SiegeTank_Mengsk_COOP_Morph"/>
+        <ReplacementArray Catalog="Model" From="SiegeBreakerSiegedDeath" To="SiegeTankMengskSiegedDeath"/>
+        <ReplacementArray Catalog="Model" From="HelsAngelAssault" To="VikingMengskAssault"/>
+        <ReplacementArray Catalog="Model" From="HelsAngelFighter" To="VikingMengskFighter"/>
+        <ReplacementArray Catalog="Model" From="WreckingCrewAssaultDeath" To="VikingMengskAssaultDeath"/>
+        <ReplacementArray Catalog="Model" From="WreckingCrewFighterDeath" To="VikingMengskFighterDeath"/>
+        <ReplacementArray Catalog="Model" From="WreckingCrewMorph" To="VikingMengskMorph"/>
+        <ReplacementArray Catalog="Model" From="DukesRevenge" To="BattlecruiserMengsk"/>
+        <ReplacementArray Catalog="Model" From="DukesRevengeDeath" To="BattlecruiserMengskDeath"/>
+    </CSkin>
     <!--
 Find: ^'([a-zA-Z]+)(..?)
 Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\13"/>\r\n\t</CSkin>\r\n\t<CSkin id="\14">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\14"/>\r\n\t</CSkin>\r\n\t<CSkin id="\15">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\15"/>\r\n\t</CSkin>\r\n\t<CSkin id="\16">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\16"/>\r\n\t</CSkin>\r\n\t<CSkin id="\17">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\17"/>\r\n\t</CSkin>\r\n\t<CSkin id="\18">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\18"/>\r\n\t</CSkin>\r\n\t<CSkin id="\19">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\19"/>\r\n\t</CSkin>\r\n\t<CSkin id="\110">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\110"/>\r\n\t</CSkin>\r\n\t<CSkin id="\111">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\111"/>\r\n\t</CSkin>\r\n\t<CSkin id="\112">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\112"/>\r\n\t</CSkin>\r\n\t<CSkin id="\113">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\113"/>\r\n\t</CSkin>\r\n\t<CSkin id="\114">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2" To="\114"/>\r\n\t</CSkin>

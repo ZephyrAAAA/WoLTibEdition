@@ -76,6 +76,7 @@ Abil/Name/ZeratulSeek=Zeratul Seek
 Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/Depowered=Depowered
 Behavior/Name/HideInTheShadows=Hide In The Shadows
+Behavior/Name/InsideMedivac=Inside Medivac
 Behavior/Name/MechEMP=Mech EMP
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/PsiSight=Psi Sight
@@ -154,6 +155,7 @@ Button/Name/NukeCalldown9=Tac Nuke Strike
 Button/Name/PauseQueue=Pause Queue
 Button/Name/PowerStructure=Power Structure
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
+Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
 Button/Name/ResearchImprovedRailguns=Research Improved Railguns
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResetRally=Reset Rally
@@ -286,9 +288,10 @@ Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and rece
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
-Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of Goliath, Wraith, Viking, Thor, Banshee, and Marauder rockets by +30%.
+Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a>Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, and <c val="FFFF8A">Marauder</c> rockets by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
-Button/Tooltip/ResearchImprovedRailguns=Increases Goliath and Viking ground damage by +50%, and Diamondback damage by +30%
+Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
+Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -599,6 +602,9 @@ Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechEMP=Mech EMP
 Effect/Name/MechanicalRepair=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
+Effect/Name/MedivacHealInternal=Heal
+Effect/Name/MedivacHealIterate=Heal Iterate
+Effect/Name/MedivacLoadSet=Load
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
 Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
 Effect/Name/NuclearAnnihilationMengskBigNukeDropDelayCP=NuclearAnnihilationMengskBigNukeDropDelayCP
@@ -1082,6 +1088,7 @@ Param/Value/lib_Camp_D68DB969=<s val="MercCategory">Calldown Size:</s>  <s val="
 Param/Value/lib_Camp_E31332D4=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +50% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Tobpar</s>
 Param/Value/lib_Camp_E6C595F8=<s val="MercCategory">Calldown Size:</s><s val="MercSummary">  2 Elite Marine Squads</s>
 Param/Value/lib_Camp_EF94B48A=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+45% Health, +40% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Topbar</s>
+RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
@@ -1096,6 +1103,8 @@ RequirementNode/Tooltip/CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTr
 RequirementNode/Tooltip/CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat=Attached Tech Lab
 RequirementNode/Tooltip/Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter=Only 1 Laser Drill.
+RequirementNode/Tooltip/Not1584299796CountUnitAlias_GhostQueuedOrBetter=Limit 1 Commando Unit
+Skin/Name/DominionMercs=Dominion Mercs
 Skin/Name/HyperionYamato3=Hyperion Yamato
 Skin/Name/HyperionYamato4=Hyperion Yamato
 Skin/Name/HyperionYamato5=Hyperion Yamato
@@ -1158,6 +1167,7 @@ Upgrade/Name/330mmBarrageCannons=Thor Speed
 Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
 Upgrade/Name/EnhancedExplosives=Enhanced Explosives
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
+Upgrade/Name/HighEnergyCapacitors=High-Energy Capacitors
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
 Upgrade/Name/ImprovedRailguns=Improved Railguns
 Upgrade/Name/LowPower=Low Power
@@ -1189,6 +1199,7 @@ Weapon/Name/HammerSecuritiesSquad@2=Hailstorm Launcher
 Weapon/Name/MarauderSquad=Marauder Squad
 Weapon/Name/MarauderSquad@2=Hailstorm Launcher
 Weapon/Name/MarineSquad=Marine Squad
+Weapon/Name/MedivacFakeWeapon=Medivac Fake Weapon
 Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
 Weapon/Name/WarPigSquad=War Pig Squad

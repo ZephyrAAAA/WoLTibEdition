@@ -106,7 +106,7 @@
         <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="HaveAttachedBarrTechLabAndShadowOps">
-        <NodeArray index="Use" Link="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
+        <NodeArray index="Use" Link="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps">
         <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
@@ -139,6 +139,9 @@
     </CRequirement>
     <CRequirement id="IsNotCrane">
         <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="LearnHighEnergyCapacitors">
+        <NodeArray index="Show" Link="NotCountUpgradeHighEnergyCapacitorsQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnImprovedRailguns">
         <NodeArray index="Show" Link="NotCountUpgradeImprovedRailgunsQueuedOrBetter"/>

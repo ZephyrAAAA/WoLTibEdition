@@ -8,5 +8,5 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
 
 // Trigger Declarations
 trigger lib3B48F5E9_gt_CommandoEXP;
-trigger lib3B48F5E9_gt_FakeWarpInOff;
+trigger lib3B48F5E9_gt_TerranUpgradeSwap;
 

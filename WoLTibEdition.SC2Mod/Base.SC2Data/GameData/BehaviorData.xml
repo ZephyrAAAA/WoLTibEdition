@@ -45,6 +45,11 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="CloakDistortionField">
+        <DamageResponse ModifyFraction="0.6">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="CollapsibleRockTowerPurifier02">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -181,6 +186,13 @@
             <StateFlags index="Undetectable" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="InsideMedivac">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="RapidDeploymentPurchased"/>
+        <Modification>
+            <AbilClassEnableArray index="CAbilAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MaarPassiveSpeed">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="AICasterNotInCombat"/>
@@ -198,6 +210,14 @@
             <StateFlags index="SuppressCloak" value="1"/>
             <StateFlags index="SuppressShieldsRegen" value="1"/>
             <StateFlags index="SuppressEnergyRegen" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MedivacWeaponEnable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="RapidDeploymentPurchased"/>
+        <Modification>
+            <WeaponEnableArray value="MedivacFakeWeapon"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="MercGroundDrop">
