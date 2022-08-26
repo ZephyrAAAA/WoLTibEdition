@@ -1,14 +1,26 @@
+Wraith damage and firing period tripled.
+Wraith laser can shoot up.
+Wraith Displacement Field now gives 40% damage resistance.
+*Displacement Field text is now correct.
+Wraith Tomahawk Power Cells now also increases energy regen by 50%.
+*Tomahawk Power Cells text is now correct.
+Outbreak and Bel'shir now require you to have done 5 missions.
+Cutthroat, Engine of Destruction, and Meda Blitz can no longer be done right after the preceding mission.
+*Removed the ghost and spectre armoury upgrades since they don't do anything anyway.
+Medivac Rapid Deployment is now Medivac Bunker, allowing infantry to shoot out of the medivac. It also still gives Rapid Deployment.
+*Rapid Deployment text is now correct.
+Medivac now heals units inside it at 8hp/s for 3e/s.
+Medivac now heals 8hp/s for 3e/s
+Improved Energy Weapons on the Armoury- Improves damage of Battlecruiser, Thor ground attack, and Wraith ground attack
 *Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and then everyone does. As you do more missions, they get it faster.
-
-Liberation Day:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Finished importing the HOTS void ray.
 
 The Outlaws:
-*The Dominion now starts with Blue Flame
-*Ripped out the old upgrade system, replaced with our upgrade function.
+The Dominion now starts with Blue Flame
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Zero Hour:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Smash and Grab:
 *Ripped out the old upgrade system, replaced with our upgrade function.
@@ -34,17 +46,33 @@ Cutthroat:
 The Dig:
 *Ripped out the old upgrade system, replaced with our upgrade function.
 *Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
+*Swann now says you can take the drill when you're actually able to do something about it.
+*Relocated the engineering bay.
+*Fixed the Adjutant stealing swann's lines.
+*Put the infinite spawning zealots and stalkers back to 3% health left.
 
 Engine of Destruction:
-Replaced starting units with squads
-Removed merc compound
-Fixed resources
-Replaced starting buildings
+*Ripped out the old upgrade system, replaced with our upgrade function.
 Doubled Tychus' health
 The Odin now has Biosteel.
 You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
+Each base now has a field, encouraging setting up an expansion after clearing.
+*There's now an autosave after each base.
+*The first and second bonus objectives now give Wraith armoury upgrades
+*Killing the Loki now gives money
+
+The Morbius Factor:
+*Ripped out the old upgrade system, replaced with our upgrade function.
+*Stranded mercs are no longer just war pigs and spartans (Except for that one pair of hamsec)
+*Killing the brutalisk unlocks the first medivac upgrade.
+*Killing the second datacore unlocks the second medivac upgrade.
 
 Echoes of the Past:
-
+No base for you
+Powering structures gives reinforcements
+Powering Obelisks give upgrades
+Clearing zerg bases gives terran units
+Touching the overmind gives upgrades
+Zeratul now shuts up long enough for the cutscene to happen if you get to the nexus before he finishes talking about the observer.
 
 In Utter Darkness:

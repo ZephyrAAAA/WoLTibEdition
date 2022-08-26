@@ -23,12 +23,13 @@ void lib3B48F5E9_InitCustomScript () {
 }
 
 // Functions
-void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, int lp_upgradeTimeScalar, int lp_upgradeTimeDelay, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airFirst) {
+void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, fixed lp_upgradeTimeScalar, fixed lp_upgradeTime, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airFirst, bool lp_armourWithAttack) {
     int init_i;
     int init_j;
 
     // Variable Declarations
     int lv_currentUpgradeLevel;
+    int lv_maxUpgradeLevel;
     int lv_currentUpgrades;
     string[4][4] lv_attackUpgrades;
     string[4][4] lv_armourUpgrades;
@@ -39,6 +40,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     string lv_assortedUpgrades4;
     string lv_assortedUpgrades5;
     string lv_assortedUpgrades6;
+    fixed lv_upgradeDelayTimer;
 
     // Automatic Variable Declarations
     int autoDFC0F681_val;
@@ -54,16 +56,24 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     int autoA7838E67_var;
     int autoC11D4559_val;
     int auto9C176D4E_val;
-    playergroup auto15123776_g;
-    int auto15123776_var;
+    playergroup autoCF4BA73B_g;
+    int autoCF4BA73B_var;
+    playergroup autoA0AC99DB_g;
+    int autoA0AC99DB_var;
     playergroup auto5CFBA425_g;
     int auto5CFBA425_var;
     playergroup auto6F24484E_g;
     int auto6F24484E_var;
-    playergroup auto42BCAE4C_g;
-    int auto42BCAE4C_var;
-    playergroup autoB3BE9141_g;
-    int autoB3BE9141_var;
+    playergroup autoD4E41929_g;
+    int autoD4E41929_var;
+    playergroup auto8D1DCEC3_g;
+    int auto8D1DCEC3_var;
+    playergroup auto9890C451_g;
+    int auto9890C451_var;
+    playergroup auto4992AF7F_g;
+    int auto4992AF7F_var;
+    playergroup autoEA3719EB_g;
+    int autoEA3719EB_var;
 
     // Variable Initialization
     for (init_i = 0; init_i <= 3; init_i += 1) {
@@ -89,6 +99,33 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     lv_assortedUpgrades6 = "";
 
     // Implementation
+    if ((lp_maxUpgradeLevel == 0)) {
+        if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+            lv_maxUpgradeLevel = 3;
+        }
+        else {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 5)) {
+                lv_maxUpgradeLevel = 2;
+            }
+            else {
+                lv_maxUpgradeLevel = 1;
+            }
+        }
+    }
+    else {
+        lv_maxUpgradeLevel = lp_maxUpgradeLevel;
+    }
+    if ((lp_upgradeTime > 0.0)) {
+        lv_upgradeDelayTimer = lp_upgradeTime;
+    }
+    else {
+        if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+            lv_upgradeDelayTimer = ((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*lp_upgradeTimeScalar));
+        }
+        else {
+            lv_upgradeDelayTimer = (((300)*lp_upgradeTimeScalar));
+        }
+    }
     autoDFC0F681_val = lp_playerGroupRace;
     if (autoDFC0F681_val == 1) {
         lv_attackUpgrades[0][0] = "TerranInfantryWeaponsLevel1";
@@ -129,57 +166,63 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 1)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "CombatShield", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MarineStimpack", 1);
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 2)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "StabilizerMedPacks", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "AdvancedMedicTraining", 1);
             }
 
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 3)) {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 2)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "HailstormMissilePods", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ReinforcedSuperstructure", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ProjectileAccelerators", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ShrikeTurret", 1);
             }
 
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 4)) {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 3)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "JackhammerConcussionGrenades", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MarauderLifeBoost", 1);
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 5)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "BearclawNozzles", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "FirebatJuggernautPlating", 1);
             }
 
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 4)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ReaperU238Rounds", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ClusterBomb", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "TriLithiumPowerCells", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "ShapedHull", 1);
             }
 
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 7)) {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 5)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "HellionCampaignInfernalPreIgniter", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "TwinLinkedFlameThrowers", 1);
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 8)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MultilockTargetingSystems", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "AresClassWeaponsSystem", 1);
             }
 
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "SiegeTankShapedBlast", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MaelstromRounds", 1);
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 10)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "CerberusMines", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "NanoConstructor", 1);
             }
 
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 11)) {
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 7)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "Predator", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "CloakDistortionField", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "DynamicPowerRouting", 1);
+            }
+
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 8)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "MedivacRapidDeployment", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "AdvancedHealingAI", 1);
+            }
+
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+            }
+
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 10)) {
+            }
+
+            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 11)) {
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 12)) {
@@ -296,18 +339,36 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[0], 1);
         }
         else if (autoC11D4559_val == 2) {
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[1], 1);
         }
         else if (autoC11D4559_val == 3) {
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[2][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[2][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[2][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[2][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[2], 1);
         }
         else {
         }
@@ -350,72 +411,136 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     }
     Wait(lp_upgradeInitialTimeDelay, c_timeGame);
     while (true) {
-        if ((lv_currentUpgradeLevel >= 2) && (lv_currentUpgradeLevel < lp_maxUpgradeLevel)) {
+        if ((lv_currentUpgradeLevel >= 2) && (lv_currentUpgradeLevel < lv_maxUpgradeLevel) && (lv_currentUpgrades < 6)) {
+            break;
         }
         else {
-            Wait(((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
-            auto15123776_g = lp_enemyPlayers;
-            auto15123776_var = -1;
-            while (true) {
-                auto15123776_var = PlayerGroupNextPlayer(auto15123776_g, auto15123776_var);
-                if (auto15123776_var < 0) { break; }
-                TechTreeUpgradeAddLevel(auto15123776_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
-            }
-            Wait(((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
-            auto5CFBA425_g = lp_enemyPlayers;
-            auto5CFBA425_var = -1;
-            while (true) {
-                auto5CFBA425_var = PlayerGroupNextPlayer(auto5CFBA425_g, auto5CFBA425_var);
-                if (auto5CFBA425_var < 0) { break; }
-                if ((lp_airFirst == false)) {
-                    TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
+            Wait(lv_upgradeDelayTimer, c_timeGame);
+            if ((lp_armourWithAttack == true)) {
+                auto5CFBA425_g = lp_enemyPlayers;
+                auto5CFBA425_var = -1;
+                while (true) {
+                    auto5CFBA425_var = PlayerGroupNextPlayer(auto5CFBA425_g, auto5CFBA425_var);
+                    if (auto5CFBA425_var < 0) { break; }
+                    TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
+                    lv_currentUpgrades += 1;
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
                 }
-                else {
-                    TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
-                }
-            }
-            Wait(((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
-            auto6F24484E_g = lp_enemyPlayers;
-            auto6F24484E_var = -1;
-            while (true) {
-                auto6F24484E_var = PlayerGroupNextPlayer(auto6F24484E_g, auto6F24484E_var);
-                if (auto6F24484E_var < 0) { break; }
-                if ((lp_airFirst == false)) {
-                    TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
-                }
-                else {
-                    TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                auto6F24484E_g = lp_enemyPlayers;
+                auto6F24484E_var = -1;
+                while (true) {
+                    auto6F24484E_var = PlayerGroupNextPlayer(auto6F24484E_g, auto6F24484E_var);
+                    if (auto6F24484E_var < 0) { break; }
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
                 }
             }
-            Wait(((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
-            auto42BCAE4C_g = lp_enemyPlayers;
-            auto42BCAE4C_var = -1;
-            while (true) {
-                auto42BCAE4C_var = PlayerGroupNextPlayer(auto42BCAE4C_g, auto42BCAE4C_var);
-                if (auto42BCAE4C_var < 0) { break; }
-                if ((lp_airFirst == false)) {
-                    TechTreeUpgradeAddLevel(auto42BCAE4C_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
+            else {
+                autoCF4BA73B_g = lp_enemyPlayers;
+                autoCF4BA73B_var = -1;
+                while (true) {
+                    autoCF4BA73B_var = PlayerGroupNextPlayer(autoCF4BA73B_g, autoCF4BA73B_var);
+                    if (autoCF4BA73B_var < 0) { break; }
+                    TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
+                    lv_currentUpgrades += 1;
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
                 }
-                else {
-                    TechTreeUpgradeAddLevel(auto42BCAE4C_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
+                Wait(lv_upgradeDelayTimer, c_timeGame);
+                autoA0AC99DB_g = lp_enemyPlayers;
+                autoA0AC99DB_var = -1;
+                while (true) {
+                    autoA0AC99DB_var = PlayerGroupNextPlayer(autoA0AC99DB_g, autoA0AC99DB_var);
+                    if (autoA0AC99DB_var < 0) { break; }
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(autoA0AC99DB_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(autoA0AC99DB_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
                 }
             }
-            Wait(((((5-((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-9)/3))*60)*IntToFixed(lp_upgradeTimeScalar))), c_timeGame);
-            autoB3BE9141_g = lp_enemyPlayers;
-            autoB3BE9141_var = -1;
-            while (true) {
-                autoB3BE9141_var = PlayerGroupNextPlayer(autoB3BE9141_g, autoB3BE9141_var);
-                if (autoB3BE9141_var < 0) { break; }
-                if ((lp_airFirst == false)) {
-                    TechTreeUpgradeAddLevel(autoB3BE9141_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+            Wait(lv_upgradeDelayTimer, c_timeGame);
+            if ((lp_armourWithAttack == true)) {
+                autoD4E41929_g = lp_enemyPlayers;
+                autoD4E41929_var = -1;
+                while (true) {
+                    autoD4E41929_var = PlayerGroupNextPlayer(autoD4E41929_g, autoD4E41929_var);
+                    if (autoD4E41929_var < 0) { break; }
+                    TechTreeUpgradeAddLevel(autoD4E41929_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
+                    lv_currentUpgrades += 1;
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(autoD4E41929_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(autoD4E41929_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
                 }
-                else {
-                    TechTreeUpgradeAddLevel(autoB3BE9141_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                auto8D1DCEC3_g = lp_enemyPlayers;
+                auto8D1DCEC3_var = -1;
+                while (true) {
+                    auto8D1DCEC3_var = PlayerGroupNextPlayer(auto8D1DCEC3_g, auto8D1DCEC3_var);
+                    if (auto8D1DCEC3_var < 0) { break; }
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(auto8D1DCEC3_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(auto8D1DCEC3_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
                 }
             }
+            else {
+                auto9890C451_g = lp_enemyPlayers;
+                auto9890C451_var = -1;
+                while (true) {
+                    auto9890C451_var = PlayerGroupNextPlayer(auto9890C451_g, auto9890C451_var);
+                    if (auto9890C451_var < 0) { break; }
+                    TechTreeUpgradeAddLevel(auto9890C451_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
+                    lv_currentUpgrades += 1;
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(auto9890C451_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(auto9890C451_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
+                }
+                Wait(lv_upgradeDelayTimer, c_timeGame);
+                auto4992AF7F_g = lp_enemyPlayers;
+                auto4992AF7F_var = -1;
+                while (true) {
+                    auto4992AF7F_var = PlayerGroupNextPlayer(auto4992AF7F_g, auto4992AF7F_var);
+                    if (auto4992AF7F_var < 0) { break; }
+                    if ((lp_airFirst == false)) {
+                        TechTreeUpgradeAddLevel(auto4992AF7F_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                    }
+                    else {
+                        TechTreeUpgradeAddLevel(auto4992AF7F_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                    }
+                }
+            }
+            Wait(lv_upgradeDelayTimer, c_timeGame);
+            autoEA3719EB_g = lp_enemyPlayers;
+            autoEA3719EB_var = -1;
+            while (true) {
+                autoEA3719EB_var = PlayerGroupNextPlayer(autoEA3719EB_g, autoEA3719EB_var);
+                if (autoEA3719EB_var < 0) { break; }
+                TechTreeUpgradeAddLevel(autoEA3719EB_var, lv_specialUpgrade[lv_currentUpgradeLevel], 1);
+            }
+            lv_currentUpgradeLevel += 1;
         }
-        lv_currentUpgradeLevel += 1;
-        lv_currentUpgrades += 1;
     }
 }
 

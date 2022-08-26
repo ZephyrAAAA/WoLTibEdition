@@ -297,7 +297,7 @@ Reaper- Guns now do Sniper damage, charges are now melee range.
 
 Vulture- No longer needs an upgrade to replenish mines.
 
-Wraith- Triple attack damage and attack coodown, on both weapons, and Fire On The Move, with a 135 degree firing cone. Laser can fire up
+Wraith- Triple attack damage and attack coodown, on both weapons. Laser can fire up
 
 Predator- Comparitively Cheaper, not locked behind research
 
@@ -309,11 +309,11 @@ Diamondback- Increase speed to match hellion, range increased
 
 Goliath- Starts with Ares, Anti-ground Damage increased by 33%
 
-Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Rebalance of ability energy cost. Tech requirement move from Fusion Core to Armoury.
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Removal of energy bar. Tech requirement move from Fusion Core to Armoury.
 
 Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
 
-Medivac- Heals units inside it
+Medivac- Heals units inside it for energy
 
 Kerrigan- Massive units are now immune to Implosion, More Health
 
@@ -331,6 +331,7 @@ Void Ray- Imported the HOTS version
 Immortals- Hardened Shield removed, shield health doubled
 
 Sentry- Guardian Shield now gives 30% damage resist
+
 
 ARMORY UPGRADE CHANGES:
 
@@ -408,13 +409,13 @@ Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 Vanadium Plating- Gives all Vanadium Plating upgrades permanently
 
 
-Hive Mind Emulator- Now a topbar power
+Hive Mind Emulator- Now a topbar power on the fusion core
 
-Psi Disruptor- Now a topbar power
+Psi Disruptor- Now a topbar power on the fusion core
 
 Regenerative Bio-steel- BEEG buff 2% health/s
 
-Cellular Reactor-> Health upgrade- +25% health for all units
+Cellular Reactor-> Titansteel- +25% health for all units
 
 Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
 
