@@ -471,6 +471,9 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PredatorShields">
+        <EditorCategories value=""/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="PrismaticBeam">
         <AttackType value="Magic"/>
         <Range value="6"/>

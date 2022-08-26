@@ -4200,6 +4200,18 @@
         <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
+        <LifeArmor value="0"/>
+        <EnergyStart value="30"/>
+        <EnergyMax value="30"/>
+        <EnergyRegenRate value="0.5625"/>
+        <EnergyDamageRatio value="1"/>
+        <Food value="0"/>
+        <EquipmentArray>
+            <Effect value="ExplosiveCharges"/>
+            <Icon value="Assets\Textures\btn-ability-stetmann-banelingmanashield.dds"/>
+            <Name value="Name/PredatorShield"/>
+            <Tooltip value="Tip/PredatorShield"/>
+        </EquipmentArray>
     </CUnit>
     <CUnit id="PreserverA">
         <LifeArmor value="0"/>
