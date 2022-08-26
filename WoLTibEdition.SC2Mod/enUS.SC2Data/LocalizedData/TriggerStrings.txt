@@ -9,6 +9,7 @@ Library/Name/3B48F5E9=WoLTibLib
 ParamDef/Name/lib_3B48F5E9_5897526C=Air First
 ParamDef/Name/lib_3B48F5E9_6D456E8E=ArmourWithAttack
 ParamDef/Name/lib_3B48F5E9_76CA01C9=Upgrade Time
+ParamDef/Name/lib_3B48F5E9_96EB6506=Air At All
 ParamDef/Name/lib_3B48F5E9_A967638E=Initial Upgrades
 ParamDef/Name/lib_3B48F5E9_B536C632=Enemy Players
 ParamDef/Name/lib_3B48F5E9_C54103F8=Max Upgrade Level
