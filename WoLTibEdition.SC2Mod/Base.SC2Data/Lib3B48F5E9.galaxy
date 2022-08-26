@@ -411,7 +411,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     }
     Wait(lp_upgradeInitialTimeDelay, c_timeGame);
     while (true) {
-        if ((lv_currentUpgradeLevel >= 2) && (lv_currentUpgradeLevel < lv_maxUpgradeLevel) && (lv_currentUpgrades < 6)) {
+        if ((lv_currentUpgradeLevel >= 2) && (lv_currentUpgradeLevel < lv_maxUpgradeLevel) && (lv_currentUpgrades >= 6)) {
             break;
         }
         else {
@@ -600,7 +600,7 @@ bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((PlayerType(EventPlayer()) == c_playerTypeComputer))) {
+        if (!((PlayerType(EventPlayer()) < c_playerTypeComputer))) {
             return false;
         }
     }
