@@ -386,6 +386,7 @@ FunctionDef/Name/40E1AC12=Perform Fidget Line
 FunctionDef/Name/41245599=Briefing - Play Video
 FunctionDef/Name/41A9075C=New Armory Technology
 FunctionDef/Name/43AAFE4B=RoomCheatUpdateDialog
+FunctionDef/Name/44205FFF=C&C Edition Mission Flow Changes
 FunctionDef/Name/457CEB56=Get Current Pinboard Item
 FunctionDef/Name/460B2006=Planet Panel - Close
 FunctionDef/Name/4623E04A=RoomCheatUpdateButton
