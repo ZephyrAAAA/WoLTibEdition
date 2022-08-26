@@ -473,6 +473,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PrismaticBeam">
         <AttackType value="Magic"/>
+        <Range value="6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PsiBlades">
         <AttackType value="Pierce"/>
