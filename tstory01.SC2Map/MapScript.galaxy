@@ -1370,6 +1370,7 @@ void gf_ArmoryTech_HotspotClicked (string lp_convoID, string lp_camera, unit lp_
 void gf_ArmoryTech_HotspotLeave ();
 void gf_ArmoryTechHideallbut (unit lp_displayUnit);
 void gf_ArmoryTechShowall ();
+void gf_CCEditionMissionFlowChanges ();
 void gf_MercDisplay (trigger lp_exitCallback);
 void gf_MercPreload ();
 void gf_LabResearchDisplay (trigger lp_exitCallback);
@@ -10362,6 +10363,41 @@ void gf_ArmoryTechShowall () {
         autoBD209207_var = UnitGroupUnitFromEnd(autoBD209207_g, autoBD209207_u);
         if (autoBD209207_var == null) { break; }
         libNtve_gf_ShowHideUnit(autoBD209207_var, true);
+    }
+}
+
+void gf_CCEditionMissionFlowChanges () {
+    // Automatic Variable Declarations
+    // Implementation
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTHanson01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTHanson01, libCamp_ge_MissionStatus_Completed) >= 5)) {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTHanson02, true);
+    }
+    else {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(true, libCamp_ge_MapID_MapTHanson02, true);
+    }
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTTosh01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTTosh01, libCamp_ge_MissionStatus_Completed) >= 5)) {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTTosh02, true);
+    }
+    else {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(true, libCamp_ge_MapID_MapTTosh02, true);
+    }
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTHorner01, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTHorner01, libCamp_ge_MissionStatus_Completed) >= 2)) {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTHorner02, true);
+    }
+    else {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(true, libCamp_ge_MapID_MapTHorner02, true);
+    }
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTHorner02, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTHorner02, libCamp_ge_MissionStatus_Completed) >= 2)) {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTHorner03, true);
+    }
+    else {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(true, libCamp_ge_MapID_MapTHorner03, true);
+    }
+    if ((libCamp_gf_MissionStatusCheck(libCamp_ge_MapID_MapTHorner03, libCamp_ge_MissionStatus_Completed) == true) && (libCamp_gf_MissionStatusAge(libCamp_ge_MapID_MapTHorner03, libCamp_ge_MissionStatus_Completed) >= 2)) {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(false, libCamp_ge_MapID_MapTHorner04, true);
+    }
+    else {
+        libCamp_gf_TS_LockUnlockMissionIfCondition(true, libCamp_ge_MapID_MapTHorner04, true);
     }
 }
 
@@ -23079,6 +23115,7 @@ bool gt_BridgeStarmapClicked_Func (bool testConds, bool runActions) {
         return true;
     }
 
+    gf_CCEditionMissionFlowChanges();
     gf_TurnClickablesOnOff(gv_clickables, false);
     gf_SetAllSoundChannelVolumesStoryMode(libNtve_ge_VolumeChannelMode_Cinematic);
     gf_StopAllTransmissionConversation();
