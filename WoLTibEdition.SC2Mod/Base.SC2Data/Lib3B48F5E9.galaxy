@@ -23,7 +23,49 @@ void lib3B48F5E9_InitCustomScript () {
 }
 
 // Functions
+trigger auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger = null;
+int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_playerGroupRace;
+playergroup auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_enemyPlayers;
+fixed auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeInitialTimeDelay;
+fixed auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeTimeScalar;
+fixed auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeTime;
+int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgrades;
+int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgradeLevel;
+int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_maxUpgradeLevel;
+bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airFirst;
+bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armourWithAttack;
+
 void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, fixed lp_upgradeTimeScalar, fixed lp_upgradeTime, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airFirst, bool lp_armourWithAttack) {
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_playerGroupRace = lp_playerGroupRace;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_enemyPlayers = lp_enemyPlayers;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeInitialTimeDelay = lp_upgradeInitialTimeDelay;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeTimeScalar = lp_upgradeTimeScalar;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeTime = lp_upgradeTime;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgrades = lp_initialUpgrades;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgradeLevel = lp_initialUpgradeLevel;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_maxUpgradeLevel = lp_maxUpgradeLevel;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airFirst = lp_airFirst;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armourWithAttack = lp_armourWithAttack;
+
+    if (auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger == null) {
+        auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger = TriggerCreate("auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc");
+    }
+
+    TriggerExecute(auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger, false, false);
+}
+
+bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool runActions) {
+    int lp_playerGroupRace = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_playerGroupRace;
+    playergroup lp_enemyPlayers = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_enemyPlayers;
+    fixed lp_upgradeInitialTimeDelay = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeInitialTimeDelay;
+    fixed lp_upgradeTimeScalar = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeTimeScalar;
+    fixed lp_upgradeTime = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeTime;
+    int lp_initialUpgrades = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgrades;
+    int lp_initialUpgradeLevel = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgradeLevel;
+    int lp_maxUpgradeLevel = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_maxUpgradeLevel;
+    bool lp_airFirst = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airFirst;
+    bool lp_armourWithAttack = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armourWithAttack;
+
     int init_i;
     int init_j;
 
@@ -411,7 +453,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     }
     Wait(lp_upgradeInitialTimeDelay, c_timeGame);
     while (true) {
-        if ((lv_currentUpgradeLevel >= 2) && (lv_currentUpgradeLevel < lv_maxUpgradeLevel) && (lv_currentUpgrades >= 6)) {
+        if (((lv_currentUpgradeLevel >= 2) || (lv_currentUpgradeLevel >= lv_maxUpgradeLevel)) && (lv_currentUpgrades >= 6)) {
             break;
         }
         else {
@@ -542,6 +584,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
             lv_currentUpgradeLevel += 1;
         }
     }
+    return true;
 }
 
 // Triggers
