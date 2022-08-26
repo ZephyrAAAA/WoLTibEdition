@@ -687,7 +687,7 @@ bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((PlayerType(EventPlayer()) < c_playerTypeComputer))) {
+        if (!((PlayerType(EventPlayer()) == c_playerTypeComputer))) {
             return false;
         }
     }
