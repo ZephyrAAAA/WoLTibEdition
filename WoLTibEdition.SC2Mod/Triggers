@@ -2,13 +2,27 @@
 <TriggerData>
     <Library Id="3B48F5E9">
         <Root>
+            <Item Type="Variable" Library="3B48F5E9" Id="D8BD6DEF"/>
             <Item Type="CustomScript" Library="3B48F5E9" Id="8B5EDD23"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="54F2C3F5"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="ADD8FA84"/>
             <Item Type="Trigger" Library="3B48F5E9" Id="B0684CF0"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="EA7A58BA"/>
             <Item Type="Trigger" Library="3B48F5E9" Id="29DDE1E8"/>
+            <Item Type="Category" Library="3B48F5E9" Id="FC8603D7"/>
         </Root>
+        <Element Type="Variable" Id="D8BD6DEF">
+            <VariableType>
+                <Type Value="unitgroup"/>
+            </VariableType>
+            <Value Type="Param" Library="3B48F5E9" Id="2A354AEF"/>
+        </Element>
+        <Element Type="Param" Id="2A354AEF">
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="E798356C"/>
+        </Element>
+        <Element Type="FunctionCall" Id="E798356C">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000104"/>
+        </Element>
         <Element Type="CustomScript" Id="8B5EDD23">
             <Identifier>Imports</Identifier>
             <ScriptCode>
@@ -8655,6 +8669,392 @@
             <Value>TerranInfantryVanadiumPlating</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="Category" Id="FC8603D7">
+            <Item Type="Trigger" Library="3B48F5E9" Id="EF3D33EE"/>
+            <Item Type="Trigger" Library="3B48F5E9" Id="2BBEA4DF"/>
+        </Element>
+        <Element Type="Trigger" Id="EF3D33EE">
+            <Event Type="FunctionCall" Library="3B48F5E9" Id="C2FC9356"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="4F51CCDB"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="30050C91"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="76ABCF99"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="447F2E16"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C2FC9356">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="18377668"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="02376D33"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="21579277"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="55A536DA"/>
+        </Element>
+        <Element Type="Param" Id="02376D33">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="B38CA56F"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="C84C7A78"/>
+        </Element>
+        <Element Type="Param" Id="21579277">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="B6D9C7C9"/>
+            <Value>FleetTargeting</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Abil"/>
+        </Element>
+        <Element Type="Param" Id="55A536DA">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4E42D7EB"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="C9DCA6C0"/>
+        </Element>
+        <Element Type="FunctionCall" Id="4F51CCDB">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="943DF2F7"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="3A4955BE"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="90328D4A"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="0901EFC2"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="7F8D291C"/>
+        </Element>
+        <Element Type="Param" Id="3A4955BE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="75FC31CB"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="9D43943D"/>
+        </Element>
+        <Element Type="FunctionCall" Id="9D43943D">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="90328D4A">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4AA9487D"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="0794D450"/>
+        </Element>
+        <Element Type="Param" Id="0901EFC2">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="C93A9DCB"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="A9A13ADB"/>
+        </Element>
+        <Element Type="Param" Id="7F8D291C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EEF303AC"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="82ED4D36"/>
+        </Element>
+        <Element Type="FunctionCall" Id="82ED4D36">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="70AF8BB2"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="4F1A0418"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="A4D2F731"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="069E2F64"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="3C94F970"/>
+        </Element>
+        <Element Type="Param" Id="4F1A0418">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="356612FA"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="DB5AA8C3"/>
+        </Element>
+        <Element Type="FunctionCall" Id="DB5AA8C3">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="A4D2F731">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EBBE6FE0"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000510"/>
+        </Element>
+        <Element Type="Param" Id="069E2F64">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0B726DCE"/>
+            <Value>FleetTargeting</Value>
+            <ValueType Type="catalogentry"/>
+        </Element>
+        <Element Type="Param" Id="3C94F970">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="940E72C2"/>
+            <Value>Cost[0].Resource[1]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CAbilEffectTarget"/>
+            <ValueParam Type="Param" Library="3B48F5E9" Id="86740B30"/>
+            <ValueParam Type="Param" Library="3B48F5E9" Id="033F1C6B"/>
+        </Element>
+        <Element Type="Param" Id="86740B30">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="033F1C6B">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="30050C91">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="1D502AEE"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="21CE6B16"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="E6DADCFF"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="F4F74BE5"/>
+        </Element>
+        <Element Type="Param" Id="21CE6B16">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="BA852648"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="4EACC515"/>
+        </Element>
+        <Element Type="FunctionCall" Id="4EACC515">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="E6DADCFF">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="46AD72A9"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="BE2A6E09"/>
+        </Element>
+        <Element Type="FunctionCall" Id="BE2A6E09">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000383"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="7FDC78C8"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="48CFA21D"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="6FF7006F"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="70AF75B6"/>
+        </Element>
+        <Element Type="Param" Id="7FDC78C8">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000750"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="F3469898"/>
+        </Element>
+        <Element Type="FunctionCall" Id="F3469898">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="48CFA21D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000747"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000510"/>
+        </Element>
+        <Element Type="Param" Id="6FF7006F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000748"/>
+            <Value>FleetTargeting</Value>
+            <ValueType Type="catalogentry"/>
+        </Element>
+        <Element Type="Param" Id="70AF75B6">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000749"/>
+            <Value>Cost[0].Charge.Link</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CAbilEffectTarget"/>
+            <ValueParam Type="Param" Library="3B48F5E9" Id="2A3A8788"/>
+        </Element>
+        <Element Type="Param" Id="2A3A8788">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="F4F74BE5">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="F5087ACF"/>
+            <Value>-1.0</Value>
+            <ValueType Type="fixed"/>
+        </Element>
+        <Element Type="FunctionCall" Id="76ABCF99">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="B0B30A81"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="60CB9288"/>
+        </Element>
+        <Element Type="Param" Id="B0B30A81">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="3B48F5E9" Id="D8BD6DEF"/>
+        </Element>
+        <Element Type="Param" Id="60CB9288">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="BF187C86"/>
+        </Element>
+        <Element Type="FunctionCall" Id="BF187C86">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="BAEAC6C3"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="DAD25641"/>
+        </Element>
+        <Element Type="Param" Id="DAD25641">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="E208E60F"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="5F7887FE"/>
+        </Element>
+        <Element Type="FunctionCall" Id="5F7887FE">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="11EB5EB1"/>
+        </Element>
+        <Element Type="FunctionCall" Id="447F2E16">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="0B3D8934"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="75C8F0F1"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="DDA346A6"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="92EBDEFF"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="C8F82847"/>
+        </Element>
+        <Element Type="Param" Id="75C8F0F1">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="DEEDBCBE"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="86B15490"/>
+        </Element>
+        <Element Type="FunctionCall" Id="86B15490">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000057"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="1E046200"/>
+        </Element>
+        <Element Type="Param" Id="1E046200">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000094"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="783B076E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="783B076E">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="DDA346A6">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="A21D1423"/>
+            <Variable Type="Variable" Library="3B48F5E9" Id="D8BD6DEF"/>
+        </Element>
+        <Element Type="Param" Id="92EBDEFF">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0CA083F2"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="75C48512"/>
+        </Element>
+        <Element Type="FunctionCall" Id="75C48512">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="43F16BA5"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="4C36F48D"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="2E4B2DC1"/>
+        </Element>
+        <Element Type="Param" Id="4C36F48D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="B796880B"/>
+            <Value>FleetActivate</Value>
+            <ValueType Type="abilcmd"/>
+            <ValueTypeInfo Value="2"/>
+        </Element>
+        <Element Type="Param" Id="2E4B2DC1">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="32BBED47"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="90D3E9AD"/>
+        </Element>
+        <Element Type="FunctionCall" Id="90D3E9AD">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000083"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="96D67199"/>
+        </Element>
+        <Element Type="Param" Id="96D67199">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000144"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="58E126B5"/>
+        </Element>
+        <Element Type="FunctionCall" Id="58E126B5">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="11EB5EB1"/>
+        </Element>
+        <Element Type="Param" Id="C8F82847">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="B35E76BE"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000072"/>
+        </Element>
+        <Element Type="Trigger" Id="2BBEA4DF">
+            <Event Type="FunctionCall" Library="3B48F5E9" Id="FAD5B85B"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="7D10DD0F"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="B3D1ED53"/>
+        </Element>
+        <Element Type="FunctionCall" Id="FAD5B85B">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="D00F9D6F"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="B4CED44E"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="145B2389"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="9297448D"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="F1123370"/>
+        </Element>
+        <Element Type="Param" Id="B4CED44E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EE631277"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="C84C7A78"/>
+        </Element>
+        <Element Type="Param" Id="145B2389">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="BB4C37B6"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="A518F664"/>
+        </Element>
+        <Element Type="Param" Id="9297448D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="ACC52290"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="03977D39"/>
+        </Element>
+        <Element Type="Param" Id="F1123370">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="3F2584C8"/>
+            <Value>FleetActivate</Value>
+            <ValueType Type="abilcmd"/>
+        </Element>
+        <Element Type="FunctionCall" Id="7D10DD0F">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="943DF2F7"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="F75F0E4D"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="87ECE6D7"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="15131EAC"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="DF7590CE"/>
+        </Element>
+        <Element Type="Param" Id="F75F0E4D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="75FC31CB"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="9538521F"/>
+        </Element>
+        <Element Type="FunctionCall" Id="9538521F">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="87ECE6D7">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="4AA9487D"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="0794D450"/>
+        </Element>
+        <Element Type="Param" Id="15131EAC">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="C93A9DCB"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="F854D914"/>
+        </Element>
+        <Element Type="Param" Id="DF7590CE">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EEF303AC"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="8FE76985"/>
+        </Element>
+        <Element Type="FunctionCall" Id="8FE76985">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="70AF8BB2"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="283A457C"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="22784819"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="65290481"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="B7B5400D"/>
+        </Element>
+        <Element Type="Param" Id="283A457C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="356612FA"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="581819CB"/>
+        </Element>
+        <Element Type="FunctionCall" Id="581819CB">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="22784819">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="EBBE6FE0"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000510"/>
+        </Element>
+        <Element Type="Param" Id="65290481">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="0B726DCE"/>
+            <Value>FleetTargeting</Value>
+            <ValueType Type="catalogentry"/>
+        </Element>
+        <Element Type="Param" Id="B7B5400D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="940E72C2"/>
+            <Value>Cost[0].Resource[1]</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CAbilEffectTarget"/>
+            <ValueParam Type="Param" Library="3B48F5E9" Id="DC89179A"/>
+            <ValueParam Type="Param" Library="3B48F5E9" Id="C97E5D1B"/>
+        </Element>
+        <Element Type="Param" Id="DC89179A">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="C97E5D1B">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B3D1ED53">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="1D502AEE"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="6B8B693F"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="0AA1D63D"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="5F5F3B5E"/>
+        </Element>
+        <Element Type="Param" Id="6B8B693F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="BA852648"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="A5D9536D"/>
+        </Element>
+        <Element Type="FunctionCall" Id="A5D9536D">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="0AA1D63D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="46AD72A9"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="B662CE09"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B662CE09">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000383"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="71836E82"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="0D09270F"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="B742DB60"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="4B19002D"/>
+        </Element>
+        <Element Type="Param" Id="71836E82">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000750"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="54798401"/>
+        </Element>
+        <Element Type="FunctionCall" Id="54798401">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="0D09270F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000747"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000510"/>
+        </Element>
+        <Element Type="Param" Id="B742DB60">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000748"/>
+            <Value>FleetTargeting</Value>
+            <ValueType Type="catalogentry"/>
+        </Element>
+        <Element Type="Param" Id="4B19002D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000749"/>
+            <Value>Cost[0].Charge.Link</Value>
+            <ValueType Type="catalogfieldpath"/>
+            <ValueContext Value="CAbilEffectTarget"/>
+            <ValueParam Type="Param" Library="3B48F5E9" Id="0C90E3BB"/>
+        </Element>
+        <Element Type="Param" Id="0C90E3BB">
+            <Value>0</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="5F5F3B5E">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="F5087ACF"/>
+            <Value>1.0</Value>
+            <ValueType Type="fixed"/>
         </Element>
     </Library>
     <Root>

@@ -100,6 +100,8 @@ void DisableTopBar () {
 }
 
 void AddTopbarAbil(string abil) {
+	// maybe set cooldowns to global
+	// needs reset, which means clear charges, re-add starting charges, then add 0 cooldown, with delays between each.
 	int lv_i;
 	if (UnitAbilityExists(topbarUnit, abil)) {
 		return;
@@ -159,6 +161,7 @@ void AddTopbars () {
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {
 		AddTopbarAbil("HyperionYamato");
+		//AddTopbarAbil("FleetTargeting");
 		if (TechTreeAbilityIsAllowed(1, AbilityCommand("DeployLaserDrill", 0))) {
 			AddTopbarAbil("DeployLaserDrill");
 		}
@@ -600,17 +603,22 @@ void Cancel_Init () {
 }
 
 bool UnloadSquads_Func (bool testConds, bool runActions) {
-	if (UnitGetMagazine(EventUnitCargo()) != null) {
-		if (libNtve_gf_UnitIsInsideTransport(UnitGetMagazine(EventUnitCargo()))) {
-			UnitPutInTransport(EventUnitCargo(), EventUnit());
-		}
-	}
+	order ord;
+//	if (UnitGetMagazine(EventUnitCargo()) != null) {
+//		if (libNtve_gf_UnitIsInsideTransport(UnitGetMagazine(EventUnitCargo()))) {
+//			UnitPutInTransport(EventUnitCargo(), EventUnit());
+//		}
+//	}
+	ord = Order(AbilityCommand("AirTransport", 3));
+	OrderSetTargetPassenger(ord, EventPlayerEffectUsedUnit(c_effectUnitTarget));
+	UnitIssueOrder(UnitTransport(EventPlayerEffectUsedUnit(c_effectUnitTarget)), ord, c_orderQueueAddToFront);
 	return true;
 }
 
 void UnloadSquads_Init () {
 	unloadSquads = TriggerCreate("UnloadSquads_Func");
-	TriggerAddEventUnitCargo(unloadSquads, null, false);
+	//TriggerAddEventUnitCargo(unloadSquads, null, false);
+	TriggerAddEventPlayerEffectUsed(unloadSquads, c_playerAny, "AirTransportUnloadDummy");
 }
 
 bool Power_Func (bool testConds, bool runActions) {

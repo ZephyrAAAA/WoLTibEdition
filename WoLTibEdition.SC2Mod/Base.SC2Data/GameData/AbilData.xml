@@ -91,6 +91,18 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="FleetActivate">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FleetMoveSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost/>
+        <Range value="500"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CommanderAlarakUnlockDeathFleet">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+        <CursorEffect value="FleetDummySearch"/>
+    </CAbilEffectTarget>
     <CAbilBehavior id="GhostCloak">
         <Cost index="0">
             <Vital index="Energy" value="0"/>
@@ -112,6 +124,9 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
         <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
+    <CAbilTransport id="InfestableHutTransport">
+        <UnloadPeriod value="2"/>
+    </CAbilTransport>
     <CAbilEffectTarget id="NanoRepair">
         <AutoCastRange value="9"/>
         <FollowRange value="2"/>
@@ -133,6 +148,28 @@
         </Cost>
         <CastIntroTime index="0" value="1"/>
         <FinishTime index="0" value="1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="FleetTargeting">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FleetTargeter"/>
+        <Cost>
+            <Resource index="Minerals" value="8000"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Abil/FleetActivate"/>
+                <Location value="Player"/>
+            </Charge>
+            <Cooldown Link="Abil/FleetActivate" TimeUse="0.25"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CommanderAlarakUnlockDeathFleet">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilBehavior id="RogueGhostCloak">
         <Cost index="0">
@@ -298,6 +335,9 @@
         </Cost>
         <PrepTime index="0" value="1"/>
         <CmdButtonArray index="Execute" Requirements=""/>
+        <RefundFraction>
+            <VitalFraction index="Energy" value="-1"/>
+        </RefundFraction>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ScannerSweepTopbar">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -648,6 +688,7 @@
         <LoadCargoEffect value="AirTransportLoadIterate"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
         <LoadValidatorArray value="CanLoadSiegeTank"/>
+        <UnloadPeriod value="0.4"/>
     </CAbilTransport>
     <CAbilTransport id="AirTransport" parent="HerculesTransport">
         <Name value="Abil/Name/AirTransport"/>
@@ -1600,6 +1641,7 @@
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
         <LoadValidatorArray value="CanLoadSiegeTank"/>
         <LoadCargoBehavior value="InsideMedivac"/>
+        <UnloadPeriod value="2"/>
     </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>

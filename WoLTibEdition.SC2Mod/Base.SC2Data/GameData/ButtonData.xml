@@ -11,6 +11,9 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="Hallucination"/>
         <DefaultButtonLayout Row="1" Column="1"/>
     </CButton>
+    <CButton id="CommanderAlarakUnlockDeathFleet">
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
     <CButton id="EMPSpectre">
         <Icon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
