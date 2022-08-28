@@ -38,6 +38,10 @@
     <CTargetFindSet id="Blink">
         <CasterValidator value=""/>
     </CTargetFindSet>
+    <!-- If we have an attack target and it is outside of attack range, blink to within attack range. -->
+    <CTargetFindSet id="BlinkAttack">
+        <TargetValidator value="IsSiegeTank"/>
+    </CTargetFindSet>
     <CTargetFindEffect id="KarassPlasmaSurgeSearch">
         <TargetFilters value="Visible;Ally,Neutral,Enemy"/>
         <TargetValidator value="ShieldLQuarter"/>

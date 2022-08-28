@@ -1246,6 +1246,21 @@
     <CActorSplat id="PlanetaryFortressSplat2" parent="TerranBuildingMorphSplat" unitName="PlanetaryFortress2">
         <Model value="PlanetaryFortressSplat"/>
     </CActorSplat>
+    <!--                                                                                         -->
+    <!-- Predator .............................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Predator">
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,255,128,64"/>
+            <ColorArray value="255,255,128,64"/>
+        </StatusColors>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,255,128,64"/>
+        </StatusColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,255,128,64"/>
+        </VitalColors>
+    </CActorUnit>
     <CActorModel id="ProtossGenericWarpInOut" parent="ModelAnimationStyleContinuous">
         <EditorCategories value=""/>
         <On Terms="Behavior.FakeWarpIn.On" Send="Create"/>

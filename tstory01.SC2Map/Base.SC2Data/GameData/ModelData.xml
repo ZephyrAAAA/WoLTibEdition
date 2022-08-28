@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CModel id="Hercules">
+        <TechPurchaseCamera value="TechPurchaseBattlecruiser"/>
+    </CModel>
+    <CModel id="Predator">
+        <TechPurchaseCamera value="TechPurchaseVehicle"/>
+    </CModel>
+</Catalog>

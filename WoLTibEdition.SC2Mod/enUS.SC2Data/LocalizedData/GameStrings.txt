@@ -686,6 +686,7 @@ LoadingScreen/TextBody=<s val="LoadingScreenTitleMarSara">Mar Sara</s><n/><n/><s
 LoadingScreen/Tip=<sp/>
 MapInfo/Player00/Name=Neutral
 MapInfo/Player01/Name=Player 1
+Name/PredatorShield=Impact Barrier
 Param/Value/014C5176= 
 Param/Value/02875348=
 Param/Value/03979B30=Laboratory
@@ -1088,6 +1089,7 @@ Param/Value/lib_Camp_D68DB969=<s val="MercCategory">Calldown Size:</s>  <s val="
 Param/Value/lib_Camp_E31332D4=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+25% Health, +50% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Tobpar</s>
 Param/Value/lib_Camp_E6C595F8=<s val="MercCategory">Calldown Size:</s><s val="MercSummary">  2 Elite Marine Squads</s>
 Param/Value/lib_Camp_EF94B48A=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+45% Health, +40% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Ship Topbar</s>
+PredatorShield=Impact Barrier
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
@@ -1110,6 +1112,7 @@ Skin/Name/HyperionYamato4=Hyperion Yamato
 Skin/Name/HyperionYamato5=Hyperion Yamato
 Skin/Name/InfantryMercenaries3=Infantry Mercenaries
 Skin/Name/InfantryMercenaries4=Infantry Mercenaries
+Tip/PredatorShield=Uses energy to absorb damage
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
 Unit/Category/TerranUnits=Terran
@@ -1200,6 +1203,7 @@ Weapon/Name/MarauderSquad=Marauder Squad
 Weapon/Name/MarauderSquad@2=Hailstorm Launcher
 Weapon/Name/MarineSquad=Marine Squad
 Weapon/Name/MedivacFakeWeapon=Medivac Fake Weapon
+Weapon/Name/PredatorShields=Predator Shields
 Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
 Weapon/Name/WarPigSquad=War Pig Squad
