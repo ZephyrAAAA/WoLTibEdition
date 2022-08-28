@@ -6,7 +6,9 @@ Wraith Tomahawk Power Cells now also increases energy regen by 50%.
 *Tomahawk Power Cells text is now correct.
 Outbreak and Bel'shir now require you to have done 5 missions.
 Cutthroat, Engine of Destruction, and Meda Blitz can no longer be done right after the preceding mission.
-*Removed the ghost and spectre armoury upgrades since they don't do anything anyway.
+Removed the ghost and spectre armoury upgrades since they don't do anything anyway.
+*The Predator and Hercules now have armoury upgrades, and their text is correct
+The Predator now has an "Energy" shield
 Medivac Rapid Deployment is now Medivac Bunker, allowing infantry to shoot out of the medivac. It also still gives Rapid Deployment.
 *Rapid Deployment text is now correct.
 Medivac now heals units inside it at 8hp/s for 3e/s.
@@ -23,10 +25,10 @@ Zero Hour:
 Ripped out the old upgrade system, replaced with our upgrade function.
 
 Smash and Grab:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Devil's Playground:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Evacuation:
 *Ripped out the old upgrade system, replaced with our upgrade function.
