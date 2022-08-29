@@ -11,11 +11,12 @@
         <Model value="SuperCloak"/>
         <AutoScaleFactor value="1.000000"/>
     </CActorModel>
-    <CActorUnit id="AirTargeter" parent="GenericUnitStandard" unitName="AirTargeter">
+    <CActorUnit id="AirTargeter" parent="GenericUnitStandard" unitName="FleetTargeter">
         <EditorCategories value=""/>
         <Model value="Invisible"/>
         <BuildModel value="Invisible"/>
         <PlacementModel value="Invisible"/>
+        <HighlightTooltip value="Unit/Name/AirTargeter"/>
     </CActorUnit>
     <CActorUnit id="Armory2" parent="TerranBuildingEx" unitName="Armory2">
         <Aliases value="_UnitHuge"/>
@@ -1115,6 +1116,15 @@
         <HostSiteOps Ops="SOpAttachOverhead"/>
         <Sound value="Medivac_HealLoop"/>
     </CActorSound>
+    <CActorQuad id="FleetGuide" parent="ZergGuideVisualQuadDown" abil="FleetActivate">
+        <FogVisibility value="Visible"/>
+        <HostSiteOps Ops="SOpAttachOrigin SOpMoveBackBy1"/>
+        <LaunchActor value="TerranGuideVisualQuadLaunch"/>
+        <CenterActor value="TerranGuideVisualQuadCenter"/>
+        <ImpactActor value="TerranGuideVisualQuadImpact"/>
+        <Height value="18.000000"/>
+        <Width value="6.000000"/>
+    </CActorQuad>
     <CActorModel id="NuclearAnnihilationMengskBigNukeDrop">
         <On Terms="Effect.NuclearAnnihilationMengskBigNukeDropDelayCP.Initial; At Effect" Send="Create"/>
         <On Terms="ActorCreation" Send="$Birth"/>
@@ -1208,6 +1218,45 @@
     <CActorAction id="PerditionTurretAttack">
         <LaunchModel value="FirebatAttackModel"/>
     </CActorAction>
+    <CActorAction id="PhoenixAirAttackFleet" parent="GenericAttackNoCreateBase" effectImpact="IonCannonsUFleet" effectLaunch="IonCannonsLMRightFleet">
+        <On Terms="Effect.IonCannonsLMLeftFleet.Start; At Effect" Send="Create"/>
+        <On Terms="Effect.IonCannonsLMRightFleet.Start; At Effect" Send="Create"/>
+        <LaunchSiteOps Ops="SOpAttachHarness SOpMoveBy7" HoldPosition="1"/>
+        <LaunchAttachQuery Methods=""/>
+        <LaunchAssets Model="PhoenixAirAttackRightLaunch" Sound="Phoenix_AirAttackLaunch"/>
+        <Beam value="PhoenixAirAttackRightBeam"/>
+        <Missile value="PhoenixAirAttackMissile"/>
+        <ImpactMap index="None" Model="PhoenixAirAttackImpact" Sound="Phoenix_AirAttackImpact" ModelReaction="PhoenixAirAttackRightImpactReaction"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactMap index="Shield" Sound="PhoenixAirAttackRightImpactShield" ModelReaction="PhoenixAirAttackRightImpactReactionShield"/>
+        <DamageMap index="None" Model="PhoenixAirAttackRightDamage" Sound="PhoenixAirAttackRightDamage" ModelReaction="PhoenixAirAttackRightDamageReaction"/>
+        <DamageMap index="Shield" Sound="PhoenixAirAttackRightDamageShield" ModelReaction="PhoenixAirAttackRightDamageReactionShield"/>
+    </CActorAction>
+    <CActorSound id="PhoenixAirAttackSoundFleet" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.IonCannonsLMLeftFleet.Start; At Effect" Send="Create"/>
+        <On Terms="Effect.IonCannonsLMRightFleet.Start; At Effect" Send="Create"/>
+        <Sound value="Phoenix_AirAttackLaunch"/>
+    </CActorSound>
+    <CActorAction id="ScoutAirAttackFleet" parent="GenericAttack" effectImpact="ScoutAirUFleet" effectLaunch="ScoutAirLMLeftFleet">
+        <On index="6" Terms="Effect.ScoutAirLMLeftFleet.Start; At Effect" Send="Create"/>
+        <On Terms="Effect.ScoutAirLMRightFleet.Start; At Effect" Send="Create"/>
+        <LaunchSiteOps Ops="SOpAttachHarness SOpMoveBy7" HoldPosition="1"/>
+        <LaunchAttachQuery Methods=""/>
+        <LaunchAssets Model="ScoutAirLeftAttackLaunch" Sound="Scout_AirAttackLaunch"/>
+        <Beam value="ScoutAirLeftAttackBeam"/>
+        <Missile value="ScoutAirLeftAttackMissile"/>
+        <ImpactMap index="None" Model="ScoutAirLeftAttackImpact" Sound="Scout_AirAttackImpact" ModelReaction="ScoutAirLeftAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="ScoutAirLeftAttackImpactShield" ModelReaction="ScoutAirLeftAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="ScoutAirLeftAttackDamage" Sound="ScoutAirLeftAttackDamage" ModelReaction="ScoutAirLeftAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="ScoutAirLeftAttackDamageShield" ModelReaction="ScoutAirLeftAttackDamageReactionShield"/>
+    </CActorAction>
+    <CActorSound id="ScoutAirAttackSoundFleet" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.ScoutAirLMLeftFleet.Start; At Effect" Send="Create"/>
+        <On Terms="Effect.ScoutAirLMRightFleet.Start; At Effect" Send="Create"/>
+        <Sound value="Scout_AirAttackLaunch"/>
+    </CActorSound>
     <CActorUnit id="PlanetaryFortress2" parent="TerranBuildingEx" unitName="PlanetaryFortress2">
         <Aliases value="_UnitHuge"/>
         <Macros value="QueueAnim"/>
@@ -1445,6 +1494,11 @@
     <CActorSplat id="ScannerSweepCursorSplat">
         <On Terms="Abil.ScannerSweepTopbar.Cursor" Send="Create"/>
     </CActorSplat>
+    <CActorSound id="TempestAirAttackSoundFleet" parent="SoundOneShot">
+        <EditorCategories value=""/>
+        <On Terms="Effect.TempestLaunchMissileFleet.Start; At Effect" Send="Create"/>
+        <Sound value="Tempest_AirAttackLaunch"/>
+    </CActorSound>
     <CActorUnit id="SensorTower2" parent="TerranBuildingEx" unitName="SensorTower2">
         <Aliases value="_UnitMedium"/>
         <On index="69" Terms="UnitConstruction.SensorTower2.Start" Send="Create SensorTowerBuild"/>
@@ -1618,6 +1672,40 @@
         <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2" Send="AnimGroupRemove Burrow"/>
         <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2" Send="StatusSet Raised 1"/>
     </CActorModel>
+    <CActorAction id="TempestAttackFleet" parent="GenericAttack" effectImpact="TempestDamageFleet" effectLaunch="TempestLaunchMissileFleet">
+        <On index="6" Terms="Effect.TempestLaunchMissileFleet.Start; At Effect" Send="Create"/>
+        <LaunchSiteOps Ops="SOpAttachHarness SOpMoveBy7" HoldPosition="1"/>
+        <LaunchAttachQuery Methods=""/>
+        <LaunchAssets Sound="Tempest_AirAttackLaunch"/>
+        <Missile value="TempestAttackMissile"/>
+        <ImpactSiteOps HoldPosition="1"/>
+        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpUpDefault"/>
+        <ImpactMap index="None" Model="TempestAttackImpact" Sound="Tempest_AirAttackImpact"/>
+        <ImpactMap index="Flesh" ModelReaction="BloodTargetImpact"/>
+        <ImpactModel value="DarkTempestTestImpact"/>
+        <ImpactPhysics Name="KineticOverloadImpact" MatchKeys="Basic" Physics="TempestAttackForce"/>
+        <ShieldFlashType value="Full"/>
+    </CActorAction>
+    <CActorForceSphere id="TempestAttackForce">
+        <On Terms="ActorCreation" Send="ForceSetRadius 2.000000 0.450000"/>
+        <HostSiteOps Ops="SOpRandomPointInSphereDot25"/>
+        <Duration value="0.450000"/>
+        <Magnitude value="31.500000,22.500000"/>
+    </CActorForceSphere>
+    <CActorMissile id="TempestAttackMissile" unitName="TempestWeapon">
+        <Aliases value="_Unit"/>
+        <Aliases value="_Missile"/>
+        <Macros value="GlobalLoopMacro"/>
+        <Macros value="GlobalLoopMacroMore"/>
+        <On Terms="UnitBirth.TempestWeapon" Send="Create"/>
+        <On Terms="UnitBirth" Send="AnimBracketStart Lifetime Birth Walk"/>
+        <On Terms="UnitDeath" Send="Destroy"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Upgrade.DarkProtoss.Add" Send="ModelSwap TempestTalDarimWeapon"/>
+        <On Terms="ActorCreation; ValidateUnit NoDarkProtoss" Send="ModelSwap TempestTalDarimWeapon"/>
+        <Model value="TempestWeapon"/>
+        <PreHost value="_ActorAction"/>
+    </CActorMissile>
     <CActorSound id="TerranBuildingLand">
         <On Terms="AbilMorph.*.Start; MorphTo SupplyDepot2Lowered" Send="Create"/>
     </CActorSound>
@@ -1663,6 +1751,18 @@
         <On index="36" removed="1"/>
         <On index="37" removed="1"/>
     </CActorStateMonitor>
+    <CActorModel id="TerranGuideVisualQuadCenter" parent="GuideVisualQuadModel">
+        <Model value="TerranGuideVisualQuadCenter"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModel>
+    <CActorModel id="TerranGuideVisualQuadImpact" parent="GuideVisualQuadModel">
+        <Model value="TerranGuideVisualQuadImpact"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModel>
+    <CActorModel id="TerranGuideVisualQuadLaunch" parent="GuideVisualQuadModel">
+        <Model value="TerranGuideVisualQuadLaunch"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModel>
     <CActorUnit id="TibNodeLarge" parent="GenericUnitStandardNoAutoSoundLinks" unitName="TibNodeLarge">
         <Aliases value="_Geyser"/>
         <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>

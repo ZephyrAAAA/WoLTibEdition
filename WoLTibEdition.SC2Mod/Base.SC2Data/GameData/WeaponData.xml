@@ -673,6 +673,7 @@
     <CWeaponLegacy id="ThorsHammer">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Period value="1.28"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">
         <AttackType value="Pierce"/>

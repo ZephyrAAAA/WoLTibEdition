@@ -240,8 +240,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
-    <CUnit id="AirTargeter">
-        <FlagArray index="Uncommandable" value="1"/>
+    <CUnit id="FleetTargeter">
         <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="NoDraw" value="1"/>
@@ -249,8 +248,9 @@
         <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="Cloaked" value="1"/>
         <Mover value="Fly"/>
-        <Height value="20"/>
+        <AbilArray Link="FleetActivate"/>
         <EditorCategories value=""/>
+        <BehaviorArray Link="AutoTurretTimedLife"/>
     </CUnit>
     <CUnit id="Archive">
         <ArmorType value="Hero"/>
@@ -3192,6 +3192,9 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="IonCannonsWeapon">
+        <Height value="20"/>
+    </CUnit>
     <CUnit id="JoriumStockpile">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
@@ -4822,6 +4825,12 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="ScoutAirWeaponLeft">
+        <Height value="20"/>
+    </CUnit>
+    <CUnit id="ScoutAirWeaponRight">
+        <Height value="20"/>
+    </CUnit>
     <CUnit id="ScrapHuge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5718,6 +5727,14 @@
     <CUnit id="TempestACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="TempestWeapon" parent="MISSILE">
+        <Race value="Prot"/>
+        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
+        <Mover value="MissileDefault"/>
+        <Height value="20"/>
+        <EditorCategories value="ObjectFamily:Melee,ObjectType:Projectile"/>
     </CUnit>
     <CUnit id="TemplarArchive">
         <ArmorType value="Hero"/>
