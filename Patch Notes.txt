@@ -1,16 +1,16 @@
 Wraith damage and firing period tripled.
 Wraith laser can shoot up.
 Wraith Displacement Field now gives 40% damage resistance.
-*Displacement Field text is now correct.
+Displacement Field text is now correct.
 Wraith Tomahawk Power Cells now also increases energy regen by 50%.
-*Tomahawk Power Cells text is now correct.
+Tomahawk Power Cells text is now correct.
 Outbreak and Bel'shir now require you to have done 5 missions.
 Cutthroat, Engine of Destruction, and Meda Blitz can no longer be done right after the preceding mission.
 Removed the ghost and spectre armoury upgrades since they don't do anything anyway.
 *The Predator and Hercules now have armoury upgrades, and their text is correct
 The Predator now has an "Energy" shield
 Medivac Rapid Deployment is now Medivac Bunker, allowing infantry to shoot out of the medivac. It also still gives Rapid Deployment.
-*Rapid Deployment text is now correct.
+Rapid Deployment text is now correct.
 Medivac now heals units inside it at 8hp/s for 3e/s.
 Medivac now heals 8hp/s for 3e/s
 Improved Energy Weapons on the Armoury- Improves damage of Battlecruiser, Thor ground attack, and Wraith ground attack
@@ -31,13 +31,13 @@ Devil's Playground:
 Ripped out the old upgrade system, replaced with our upgrade function.
 
 Evacuation:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Trains:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Bel'shir:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 Outbreak:
 *Ripped out the old upgrade system, replaced with our upgrade function.
@@ -76,5 +76,3 @@ Powering Obelisks give upgrades
 Clearing zerg bases gives terran units
 Touching the overmind gives upgrades
 Zeratul now shuts up long enough for the cutscene to happen if you get to the nexus before he finishes talking about the observer.
-
-In Utter Darkness:

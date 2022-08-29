@@ -2240,6 +2240,8 @@
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="62545D50"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="5C1E393D"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="AD9801B9"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="B4CBC342"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="CA385BCC"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="B4B253D4"/>
         </Element>
         <Element Type="FunctionCall" Id="E1796A0D">
@@ -2339,6 +2341,56 @@
         <Element Type="Param" Id="054C22AC">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
             <Value>AresClassWeaponsSystem</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B4CBC342">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000158"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="3ACC9CB2"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="C220DF16"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="4904AB34"/>
+        </Element>
+        <Element Type="Param" Id="3ACC9CB2">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000255"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="ACF0D46F"/>
+        </Element>
+        <Element Type="FunctionCall" Id="ACF0D46F">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
+        </Element>
+        <Element Type="Param" Id="C220DF16">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000257"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="4904AB34">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
+            <Value>DualFusionWelders</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="FunctionCall" Id="CA385BCC">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000158"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="E35D1AB0"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="6757FB7D"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="B8123ED0"/>
+        </Element>
+        <Element Type="Param" Id="E35D1AB0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000255"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="BCDE8E9E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="BCDE8E9E">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
+        </Element>
+        <Element Type="Param" Id="6757FB7D">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000257"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="B8123ED0">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
+            <Value>AdvancedConstruction</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
         </Element>
@@ -2513,6 +2565,8 @@
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="1ECCDA64"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="B791E84D"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="61DB5194"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="18940034"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="1A43F17B"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="522E30A3"/>
         </Element>
         <Element Type="FunctionCall" Id="1ECCDA64">
@@ -2587,6 +2641,56 @@
         <Element Type="Param" Id="555C7B92">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
             <Value>DynamicPowerRouting</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="FunctionCall" Id="18940034">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000158"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="DE1F8D04"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="E86B3B09"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="5D99F776"/>
+        </Element>
+        <Element Type="Param" Id="DE1F8D04">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000255"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="221163D4"/>
+        </Element>
+        <Element Type="FunctionCall" Id="221163D4">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
+        </Element>
+        <Element Type="Param" Id="E86B3B09">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000257"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="5D99F776">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
+            <Value>FireSuppressionSystems</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="FunctionCall" Id="1A43F17B">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000158"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="00000004"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="83097784"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="BC725C6F"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="595AE63C"/>
+        </Element>
+        <Element Type="Param" Id="83097784">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000255"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="FE928623"/>
+        </Element>
+        <Element Type="FunctionCall" Id="FE928623">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="8570CA61"/>
+        </Element>
+        <Element Type="Param" Id="BC725C6F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000257"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="595AE63C">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
+            <Value>OrbitalRelay</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
         </Element>
@@ -8658,6 +8762,42 @@
         </Element>
     </Library>
     <Root>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
+        <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>
         <Item Type="CustomScript" Id="E9EBA397"/>

@@ -247,6 +247,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "TwinLinkedFlameThrowers", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MultilockTargetingSystems", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "AresClassWeaponsSystem", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "DualFusionWelders", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "AdvancedConstruction", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
@@ -260,6 +262,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "Predator", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "CloakDistortionField", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "DynamicPowerRouting", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "FireSuppressionSystems", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "OrbitalRelay", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 8)) {
