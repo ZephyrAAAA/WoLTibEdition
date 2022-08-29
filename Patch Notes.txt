@@ -59,15 +59,15 @@ Doubled Tychus' health
 The Odin now has Biosteel.
 You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
 Each base now has a field, encouraging setting up an expansion after clearing.
-*There's now an autosave after each base.
+There's now an autosave after each base.
 *The first and second bonus objectives now give Wraith armoury upgrades
 *Killing the Loki now gives money
 
 The Morbius Factor:
 *Ripped out the old upgrade system, replaced with our upgrade function.
 *Stranded mercs are no longer just war pigs and spartans (Except for that one pair of hamsec)
-*Killing the brutalisk unlocks the first medivac upgrade.
-*Killing the second datacore unlocks the second medivac upgrade.
+Killing the brutalisk unlocks the first medivac upgrade.
+Killing the second datacore unlocks the second medivac upgrade.
 
 Echoes of the Past:
 No base for you
