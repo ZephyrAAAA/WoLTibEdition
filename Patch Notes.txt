@@ -13,6 +13,8 @@ Medivac Rapid Deployment is now Medivac Bunker, allowing infantry to shoot out o
 Rapid Deployment text is now correct.
 Medivac now heals units inside it at 8hp/s for 3e/s.
 Medivac now heals 8hp/s for 3e/s
+*Medivac no longer cancels any orders it has when it heals something.
+*Bunker medivacs now have a button to stim the units inside them
 Improved Energy Weapons on the Armoury- Improves damage of Battlecruiser, Thor ground attack, and Wraith ground attack
 *Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and then everyone does. As you do more missions, they get it faster.
 Finished importing the HOTS void ray.
@@ -39,24 +41,23 @@ Ripped out the old upgrade system, replaced with our upgrade function.
 Bel'shir:
 Ripped out the old upgrade system, replaced with our upgrade function.
 
-Outbreak:
-*Ripped out the old upgrade system, replaced with our upgrade function.
-
 Cutthroat:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 
 The Dig:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 *Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
-*Swann now says you can take the drill when you're actually able to do something about it.
-*Relocated the engineering bay.
+Swann now says you can take the drill when you're actually able to do something about it.
+Relocated the engineering bay.
 *Fixed the Adjutant stealing swann's lines.
-*Put the infinite spawning zealots and stalkers back to 3% temple health left.
+Put the infinite spawning zealots and stalkers back to 3% temple health left.
+Added an extra stargate to each base, so maybe they can keep up with late-game attack wave demands.
 
 Engine of Destruction:
 *Ripped out the old upgrade system, replaced with our upgrade function.
 Doubled Tychus' health
 The Odin now has Biosteel.
+The Odin now prefers to hit ground targets
 You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
 Each base now has a field, encouraging setting up an expansion after clearing.
 There's now an autosave after each base.
