@@ -2779,6 +2779,7 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="move"/>
         <AbilArray Link="AirTransport"/>
+        <AbilArray Link="StimpackRedirect"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
@@ -3139,9 +3140,17 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="Infestor">
+        <ArmorType value="Medium"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
     <CUnit id="InfestorBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Medium"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="InfestorTerran">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3479,24 +3488,18 @@
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="0"/>
-        <AbilArray Link="AirTransportMag"/>
+        <AbilArray index="4" Link="AirTransportMag"/>
         <AbilArray Link="attack"/>
+        <AbilArray Link="StimpackRedirect"/>
         <BehaviorArray Link="Biosteel"/>
         <BehaviorArray Link="MedivacWeaponEnable"/>
+        <BehaviorArray Link="MedivacInternalHealLoop"/>
         <WeaponArray Link="MedivacFakeWeapon"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="Heal" AbilCmd="MedivacHeal,Execute" Row="2" Column="0"/>
             <LayoutButtons index="6" Face="MedivacUnloadAll" AbilCmd="MedivacTransport,UnloadAt" Row="2" Column="3"/>
-            <LayoutButtons index="7" AbilCmd="MedivacDoubleBeamHeal,Execute"/>
+            <LayoutButtons index="7" Face="RapidDeploymentTubes" Type="Passive" AbilCmd="" Requirements="RapidDeploymentResearched" Row="1"/>
             <LayoutButtons index="8">
-                <Face value="RapidDeploymentTubes"/>
-                <Type value="Passive"/>
-                <AbilCmd value=""/>
-                <Requirements value="RapidDeploymentResearched"/>
-                <Row value="1"/>
-                <Column value="0"/>
-            </LayoutButtons>
-            <LayoutButtons index="9">
                 <Face value="AdvancedHealingAI"/>
                 <Type value="Passive"/>
                 <AbilCmd value=""/>
@@ -3504,14 +3507,8 @@
                 <Row value="1"/>
                 <Column value="1"/>
             </LayoutButtons>
-            <LayoutButtons index="10">
-                <Face value="Attack"/>
-                <Type value="AbilCmd"/>
-                <AbilCmd value="attack,Execute"/>
-                <Requirements value=""/>
-                <Row value="0"/>
-                <Column value="4"/>
-            </LayoutButtons>
+            <LayoutButtons index="9" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons index="10" Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
     </CUnit>

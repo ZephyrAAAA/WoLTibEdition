@@ -648,9 +648,52 @@
         <ValidatorArray value="TargetIsMechanical"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectCreateHealer id="MedivacDoubleHeal">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="HiddenCompareAB"/>
+        <ValidatorArray value="HiddenCompareBA"/>
+        <ValidatorArray value="NotSpineCrawlerUprooted"/>
+        <ValidatorArray value="NotSporeCrawlerUprooted"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NotUncommandable"/>
+        <ValidatorArray value="SourceNotHidden"/>
+        <EditorCategories value=""/>
+        <Marker Link="Abil/MedivacHeal">
+            <MatchFlags index="Link" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Flags index="Channeled" value="0"/>
+        <PeriodCount value="1"/>
+        <PeriodicPeriod value="0.33"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.375"/>
+        <RechargeVitalRate value="8"/>
+    </CEffectCreateHealer>
+    <CEffectCreatePersistent id="MedivacDoubleHealDelay">
+        <EditorCategories value=""/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="MedivacDoubleHealSearch"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="MedivacDoubleHealSearch">
+        <ValidatorArray value="AdvancedHealingAIPurchased"/>
+        <EditorCategories value=""/>
+        <ExcludeArray/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Biological,Visible;Neutral,Enemy,Structure,Missile,Uncommandable,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSLifeFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="4" Effect="MedivacDoubleHeal"/>
+    </CEffectEnumArea>
     <CEffectCreateHealer id="MedivacHeal">
         <DrainVitalCostFactor value="0.375"/>
         <RechargeVitalRate value="8"/>
+        <PeriodicEffect value="MedivacDoubleHealDelay"/>
+        <PeriodicPeriod value="0.33"/>
     </CEffectCreateHealer>
     <CEffectCreateHealer id="MedivacHealInternal">
         <ValidatorArray value="CasterIsNotHidden"/>
@@ -672,11 +715,25 @@
         <EffectInternal value="MedivacHealInternal"/>
         <EffectExternal value="MedivacHealInternal"/>
     </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="MedivacHealLoopMagazine">
+        <EditorCategories value=""/>
+        <EffectInternal value="MedivacHealLoopTransport"/>
+        <EffectExternal value="MedivacHealLoopTransport"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumTransport id="MedivacHealLoopTransport">
+        <EditorCategories value=""/>
+        <Effect value="MedivacHealInternal"/>
+    </CEffectEnumTransport>
     <CEffectSet id="MedivacLoadSet">
         <EditorCategories value=""/>
         <EffectArray value="MedivacHealInternal"/>
         <EffectArray value="AirTransportLoadIterate"/>
         <EffectArray value="MedivacHealIterate"/>
+    </CEffectSet>
+    <CEffectSet id="MedivacHealLoopSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MedivacHealLoopTransport"/>
+        <EffectArray value="MedivacHealLoopMagazine"/>
     </CEffectSet>
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
