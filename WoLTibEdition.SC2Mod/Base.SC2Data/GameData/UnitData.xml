@@ -269,6 +269,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Attributes index="Massive" value="1"/>
     </CUnit>
     <CUnit id="ArchonACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2421,6 +2422,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Collide index="Burrow3" value="1"/>
+        <AbilArray Link="Shatter"/>
         <!-- Do not give this unit a footprint because that can allow units to walk into unpathable areas -->
     </CUnit>
     <CUnit id="Forge">

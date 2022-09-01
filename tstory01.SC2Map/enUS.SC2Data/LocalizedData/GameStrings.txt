@@ -791,6 +791,7 @@ Param/Value/457FF79A=Tech Purchase
 Param/Value/463C00B5=Raynor's Dream
 Param/Value/46FE2B3C=Big Tuna
 Param/Value/474CF0AF=Galaxy
+Param/Value/4852F762=Armory and Hercules have been unlocked.
 Param/Value/48AD46C5=,  Repeat=
 Param/Value/48F0105E=<n/>ConvertedZerg = 
 Param/Value/491BD4D7=ZRewardSummary_Protoss
@@ -962,6 +963,7 @@ Param/Value/B5946436=Mission Rewards:
 Param/Value/B60C206F=Credits = 
 Param/Value/B640B0E5=
 Param/Value/B6BC152E=
+Param/Value/B77093F8=Predator and Shadow Ops have been unlocked.
 Param/Value/B875D0C4=
 Param/Value/B94305C5=highlight 
 Param/Value/BA1734B0=TV News
@@ -1018,6 +1020,7 @@ Param/Value/DAFC6ABC=Preload Room:
 Param/Value/DC642613=American Trilogy
 Param/Value/DC6A50B2=Corridor
 Param/Value/DCAFD624=Horner Bridge Intro
+Param/Value/DE39B2F2=Fusion core has been unlocked.
 Param/Value/DE8C56DB=Return Room = 
 Param/Value/DF2FFC7C=Mission Archieves
 Param/Value/E07F138B=Start preloading locations

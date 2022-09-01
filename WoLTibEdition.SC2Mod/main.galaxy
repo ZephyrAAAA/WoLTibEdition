@@ -730,7 +730,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 7), ConversationDataStateGetValue("MissionCompletedCount") > 3);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 7), ConversationDataStateGetValue("MissionCompletedCount") > 3);
     TechTreeAbilityAllow(1, AbilityCommand("Barracks2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksAddOns", 0)));
-    TechTreeAbilityAllow(1, AbilityCommand("Factory2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 5))); //hellion
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 5)) || ConversationDataStateGetValue("MissionCompletedCount") > 3); //hellion
     TechTreeAbilityAllow(1, AbilityCommand("Starport2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 4)) || ConversationDataStateGetValue("MissionCompletedCount") > 6);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 10), (TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 5))));
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 10), (TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 5))));
