@@ -783,7 +783,7 @@ bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) 
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 4))) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 3))) {
             return false;
         }
     }
@@ -814,7 +814,7 @@ bool lib3B48F5E9_gt_ArmoryHercules_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 7))) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 3))) {
             return false;
         }
     }
@@ -845,7 +845,7 @@ bool lib3B48F5E9_gt_FusionCore_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 10))) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 9))) {
             return false;
         }
     }
