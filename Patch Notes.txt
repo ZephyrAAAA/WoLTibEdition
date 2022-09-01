@@ -49,7 +49,7 @@ Ripped out the old upgrade system, replaced with our upgrade function.
 *Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
 Swann now says you can take the drill when you're actually able to do something about it.
 Relocated the engineering bay.
-*Fixed the Adjutant stealing swann's lines.
+Fixed the Adjutant stealing swann's lines.
 Put the infinite spawning zealots and stalkers back to 3% temple health left.
 Added an extra stargate to each base, so maybe they can keep up with late-game attack wave demands.
 
