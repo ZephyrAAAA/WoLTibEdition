@@ -235,6 +235,21 @@
         <EffectArray Operation="Divide" Reference="Abil,SiegeMode,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="2.000000"/>
         <EffectArray Operation="Divide" Reference="Abil,Unsiege,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="2.000000"/>
     </CUpgrade>
+    <CUpgrade id="OcularImplants">
+        <EffectArray index="0" Reference="Unit,Predator,EnergyDamageRatio" Value="1"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="PermanentCloakGhost">
+        <EffectArray index="0" Operation="Add" Reference="Effect,RetributionFieldDamage,AreaArray.Radius" Value="0.25"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="PermanentCloakSpectre">
+        <EffectArray index="0" Reference="Abil,HerculesTransport,UnloadPeriod" Value="0.000000"/>
+        <EffectArray index="1" Operation="Add" Reference="Abil,HerculesTransport,Range" Value="2"/>
+        <EffectArray index="2" Reference="Abil,HerculesTransport,DeathUnloadEffect" Value="CCLoadDummy"/>
+    </CUpgrade>
     <CUpgrade id="Predator">
         <EffectArray Reference="Abil,Snipe,Cost[0].Charge.CountMax" Value="1"/>
         <EffectArray Operation="Multiply" Reference="Abil,Snipe,Cost[0].Charge.TimeStart" Value="0.750000"/>
@@ -2233,6 +2248,10 @@
     </CUpgrade>
     <CUpgrade id="TwinLinkedFlameThrowers">
         <EffectArray index="0" Reference="Effect,InfernalFlameThrower,AreaArray[0].Radius"/>
+    </CUpgrade>
+    <CUpgrade id="UltrasonicPulse">
+        <EffectArray Reference="Unit,Hercules,Speed" Value="0.824200"/>
+        <EffectArray Reference="Unit,Hercules,Acceleration" Value="0.687500"/>
     </CUpgrade>
     <CUpgrade id="ZeratulDeathRecallCharges">
         <EffectArray Operation="Subtract" Reference="Abil,DeathRecall,Cost[0].Cooldown.TimeUse" Value="10.000000"/>

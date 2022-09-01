@@ -456,6 +456,12 @@ ConversationState/Tech/Tech_CommandCenter_2/Info/Description=<s val="TechSummary
 ConversationState/Tech/Tech_CommandCenter_2/Info/Tooltip=<s val="TooltipTitle_Tech">Orbital Command</s><n/><s val="TooltipDescription_Tech">Unlocks the Scanner Sweep, Tactical Missile, and Nuclear Strike support powers.
 ConversationState/Tech/Tech_Diamondback_1/Info/Description=<s val="TechSummary">- Diamondback attacks pierce to another target.</s><n/><n/><s val="TechDescription">The Tri-Lithium Power Cell has 40% more capacity and fits in the same slot as the outdated monolithium power cell. This increased power surge allows the Diamondback to fire faster projectiles, piercing the initial target.</s>
 ConversationState/Tech/Tech_Diamondback_1/Info/Tooltip=<s val="TooltipTitle_Tech">Tri-Lithium Power Cell</s><n/><s val="TooltipDescription_Tech">Diamondback attacks pierce to another target.</s>
+ConversationState/Tech/Tech_Ghost_1=Reinforced Barrier
+ConversationState/Tech/Tech_Ghost_1/Info/Description=<s val="TechSummary">- Predator energy barrier is absorbs twice as much damage</s><n/><n/><s val="TechDescription">Ocular Implants increase the Ghost's sight radius, making it easier to spot potential targets and weak points in the enemy perimeter.<n/><n/>The current generation also includes an automated targeting system that instantly calculates atmospheric pressure and wind shear, greatly increasing the effective sniping range of the Ghost.
+ConversationState/Tech/Tech_Ghost_1/Info/Tooltip=<s val="TooltipTitle_Tech">Reinforced Barrier</s><n/><s val="TooltipDescription_Tech">Doubles Barrier effectiveness.</s>
+ConversationState/Tech/Tech_Ghost_2=Field Projectors
+ConversationState/Tech/Tech_Ghost_2/Info/Description=<s val="TechSummary">- Increases Retribution Field radius by +50%.</s><n/><n/><s val="TechDescription">This combat suit has a psi-augmenter dedicated to maintaining cloak. This allows the Ghost to maintain his Cloaking Field indefinitely and frees up psionic energy for other uses.</s>
+ConversationState/Tech/Tech_Ghost_2/Info/Tooltip=<s val="TooltipTitle_Tech">Field Projectors</s><n/><s val="TooltipDescription_Tech">Increases Retribution Field area.</s>
 ConversationState/Tech/Tech_Goliath_1=Neosteel Plating
 ConversationState/Tech/Tech_Goliath_1/Info/Description=<s val="TechSummary">- Goliaths gain +50 HP.</s><n/><n/><s val="TechDescription">Improving the Goliath's ability to withstand fire is a pivotal point in making it reliable on the battlefield.</s>
 ConversationState/Tech/Tech_Goliath_1/Info/Tooltip=<s val="TooltipTitle_Tech">Neosteel Plating</s><n/><s val="TooltipDescription_Tech">Goliaths gain +50 HP.</s>
@@ -482,6 +488,12 @@ ConversationState/Tech/Tech_SCV_2/Info/Tooltip=<s val="TooltipTitle_Tech">Advanc
 ConversationState/Tech/Tech_SiegeTank_1=Smart Servos
 ConversationState/Tech/Tech_SiegeTank_1/Info/Description=<s val="TechSummary">- Siege Tanks transform 2x as fast.</s><n/><s val="TechSummary">- Can be loaded into transports while sieged.</s><n/><n/><s val="TechDescription">Improved software and hardware for the transformation system of siege tanks allows them to deploy the big guns far quicker in battlefield conditions. This also gives enough mobility that they do not require fully packing up in order to be transported.</s>
 ConversationState/Tech/Tech_SiegeTank_1/Info/Tooltip=<s val="TooltipTitle_Tech">Smart Servos</s><n/><s val="TooltipDescription_Tech">Siege Tank transforms faster, and can be loaded while sieged.</s>
+ConversationState/Tech/Tech_Spectre_1=Behemoth Engines
+ConversationState/Tech/Tech_Spectre_1/Info/Description=<s val="TechSummary">- Increases Hercules speed and acceleration by 30%.</s><n/><n/><s val="TechDescription">With proper training, Spectres can unleash a concentrated blast of psionic fury at a single target. This blast drains the Spectre's energy reserve, but it will kill most targets outright.<n/><n/>For obvious reasons, Remedius Medical Systems recommends limiting this training to Spectres who have an exceptionally high opinion of their superior officers.</s>
+ConversationState/Tech/Tech_Spectre_1/Info/Tooltip=<s val="TooltipTitle_Tech">Behemoth Engines</s><n/><s val="TooltipDescription_Tech">Increases Hercules Speed.</s>
+ConversationState/Tech/Tech_Spectre_2=Miniature Drop Pods
+ConversationState/Tech/Tech_Spectre_2/Info/Description=<s val="TechSummary">- Increases Hercules pickup range.</s><n/><s val="TechSummary">- Hercules drop units instantly</s><n/><s val="TechSummary">- Hercules emergency drop pods damage reduced to 10%</s><n/><n/><s val="TechDescription">This combat suit comes with a psi enhancer dedicated entirely to maintaining cloak. This allows the Spectre to effortlessly maintain a Cloaking Field and channel his psionic energies elsewhere.</s>
+ConversationState/Tech/Tech_Spectre_2/Info/Tooltip=<s val="TooltipTitle_Tech">Miniature Drop Pods</s><n/><s val="TooltipDescription_Tech">Improves Hercules Transportation.</s>
 ConversationState/Tech/Tech_Vulture_2=EMP Rounds
 ConversationState/Tech/Tech_Vulture_2/Info/Description=<s val="TechSummary">- Vulture attacks disable mechanical units and structures for 1s.<n/><n/><s val="TechDescription">Enlightened Dynamics has developed a emp frag grenade for use on vultures, allowing them to temporarily disable targets they hit.</s>
 ConversationState/Tech/Tech_Vulture_2/Info/Tooltip=<s val="TooltipTitle_Tech">EMP Rounds</s><n/><s val="TooltipDescription_Tech">Vultures disable mechanical units and structures they hit for 1s.</s>
@@ -1213,6 +1225,9 @@ Upgrade/Name/HighEnergyCapacitors=High-Energy Capacitors
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
 Upgrade/Name/ImprovedRailguns=Improved Railguns
 Upgrade/Name/LowPower=Low Power
+Upgrade/Name/OcularImplants=Reinforced Barrier
+Upgrade/Name/PermanentCloakGhost=Field Projectors
+Upgrade/Name/PermanentCloakSpectre=Miniature Drop Pods
 Upgrade/Name/Predator=Commando Suit
 Upgrade/Name/TakeTheDrill=Take The Drill
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
@@ -1226,6 +1241,7 @@ Upgrade/Name/TerranVehicleUltraCapacitors=Terran Vehicle Ultra-Capacitors
 Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
 Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
 Upgrade/Name/TitanSteel=Titan Steel
+Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
 Weapon/Name/ATALaserBattery2=ATA Laser Battery
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery
