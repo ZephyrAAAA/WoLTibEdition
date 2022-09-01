@@ -16,7 +16,7 @@ Medivac now heals 8hp/s for 3e/s
 *Medivac no longer cancels any orders it has when it heals something.
 *Bunker medivacs now have a button to stim the units inside them
 Improved Energy Weapons on the Armoury- Improves damage of Battlecruiser, Thor ground attack, and Wraith ground attack
-*Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and then everyone does. As you do more missions, they get it faster.
+Implemented scaling upgrades for the enemy based on how many missions you've done. Noone can get 3/3/3 until you've done 9 missions, and then everyone does. As you do more missions, they get it faster.
 Finished importing the HOTS void ray.
 
 The Outlaws:
@@ -54,7 +54,7 @@ Put the infinite spawning zealots and stalkers back to 3% temple health left.
 Added an extra stargate to each base, so maybe they can keep up with late-game attack wave demands.
 
 Engine of Destruction:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 Doubled Tychus' health
 The Odin now has Biosteel.
 The Odin now prefers to hit ground targets
@@ -65,7 +65,7 @@ The first and second bonus objectives now give Wraith armoury upgrades
 *Killing the Loki now gives money
 
 The Morbius Factor:
-*Ripped out the old upgrade system, replaced with our upgrade function.
+Ripped out the old upgrade system, replaced with our upgrade function.
 Stranded mercs are no longer just war pigs and spartans (Except for that one pair of hamsec)
 Killing the brutalisk unlocks the first medivac upgrade.
 Killing the second datacore unlocks the second medivac upgrade.
