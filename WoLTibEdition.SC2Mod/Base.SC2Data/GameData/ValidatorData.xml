@@ -109,6 +109,7 @@
     </CValidatorUnitType>
     <CValidatorPlayerRequirement id="PlayerHasPower">
         <Value value="PlayerHasPower"/>
+        <WhichPlayer Value="Source"/>
     </CValidatorPlayerRequirement>
     <CValidatorUnitCompareDamageTakenTime id="ReaperOutOfCombat">
         <Compare value="GE"/>
