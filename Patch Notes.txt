@@ -7,8 +7,8 @@ Tomahawk Power Cells text is now correct.
 Outbreak and Bel'shir now require you to have done 5 missions.
 Cutthroat, Engine of Destruction, and Meda Blitz can no longer be done right after the preceding mission.
 Removed the ghost and spectre armoury upgrades since they don't do anything anyway.
-*The Predator now has armoury upgrades to improve shield efficiency, and to improve AOE.
-*Hercules now has armoury upgrades for Speed, and Pickup range, drop speed, and reduced forced drop damage.
+The Predator now has armoury upgrades to improve shield efficiency, and to improve AOE.
+Hercules now has armoury upgrades for Speed, and Pickup range, drop speed, and reduced forced drop damage.
 The Predator now has an "Energy" shield
 Medivac Rapid Deployment is now Medivac Bunker, allowing infantry to shoot out of the medivac. It also still gives Rapid Deployment.
 Rapid Deployment text is now correct.
@@ -21,9 +21,9 @@ Implemented scaling upgrades for the enemy based on how many missions you've don
 Finished importing the HOTS void ray.
 Archons are now massive.
 Forcefields break when a massive unit walks on them.
-Added progression messages when you return to the Hyperion.
+Added progression messages when you return to the Hyperion, and when you start a mission.
 The predator and spec ops now unlock after the proper number of completed missions.
-Siege tank and Colossi now have turret tracking
+Siege tank, Colossi, Immortal, Goliath, Hellion now have turret tracking
 
 The Outlaws:
 The Dominion now starts with Blue Flame
