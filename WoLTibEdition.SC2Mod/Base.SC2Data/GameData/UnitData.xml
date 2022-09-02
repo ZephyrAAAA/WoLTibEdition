@@ -2566,6 +2566,7 @@
         </CardLayouts>
         <TacticalAIThink value="AIThinkGhostNew"/>
         <TechAliasArray value="Alias_Ghost"/>
+        <Sight value="9"/>
         <Food value="0"/>
     </CUnit>
     <CUnit id="GhostAcademy">
@@ -5109,6 +5110,7 @@
         </CardLayouts>
         <TacticalAI value="Spectre"/>
         <EquipmentArray Weapon="ExplosiveCharges"/>
+        <Sight value="9"/>
         <Food value="0"/>
     </CUnit>
     <CUnit id="SpectreNuke">
