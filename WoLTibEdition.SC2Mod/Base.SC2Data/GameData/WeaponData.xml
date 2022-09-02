@@ -3,6 +3,8 @@
     <CWeaponLegacy id="90mmCannons">
         <AttackType value="Magic"/>
         <Tip value="Weapon/Tip/Cannon"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATALaserBattery">
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
@@ -243,6 +245,8 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="9"/>
         <AttackType value="Siege"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathAUpgraded">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -253,6 +257,8 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathGUpgraded">
         <Tip value="Weapon/Tip/Rifle"/>
@@ -360,6 +366,8 @@
         <AttackType value="Pierce"/>
         <Period value="0.5"/>
         <Tip value="Weapon/Tip/Grenade"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="ContinuousScan" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedAbomination">
@@ -463,6 +471,8 @@
     <CWeaponLegacy id="PhaseDisruptors">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
@@ -631,6 +641,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="SiegeBreaker">
         <AttackType value="Magic"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SpartanCompanyA">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -669,6 +681,8 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ThermalLances">
         <AttackType value="Pierce"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThorsHammer">
         <Tip value="Weapon/Tip/Cannon"/>

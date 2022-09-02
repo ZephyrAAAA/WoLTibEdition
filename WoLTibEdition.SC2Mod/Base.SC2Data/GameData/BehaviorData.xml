@@ -189,6 +189,7 @@
     <CBehaviorBuff id="InsideMedivac">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="RapidDeploymentPurchased"/>
+        <DisableValidatorArray value="UnitIsBiological"/>
         <Modification>
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
