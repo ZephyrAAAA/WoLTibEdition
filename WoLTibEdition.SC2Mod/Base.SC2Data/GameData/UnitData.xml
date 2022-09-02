@@ -2566,6 +2566,7 @@
         </CardLayouts>
         <TacticalAIThink value="AIThinkGhostNew"/>
         <TechAliasArray value="Alias_Ghost"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -5102,6 +5103,7 @@
         </CardLayouts>
         <TacticalAI value="Spectre"/>
         <EquipmentArray Weapon="ExplosiveCharges"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
