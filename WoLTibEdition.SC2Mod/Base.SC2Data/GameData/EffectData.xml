@@ -700,6 +700,7 @@
         <ValidatorArray value="IsHidden"/>
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="UnitIsBiological"/>
+        <ValidatorArray value="NotInvulnerable"/>
         <EditorCategories value="Race:Terran"/>
         <Marker Link="Effect/MedivacHeal">
             <MatchFlags index="Link" value="1"/>
