@@ -1051,6 +1051,27 @@
         <HighlightTooltip value="Unit/Name/MedicSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
     </CActorUnit>
+    <CActorBeamSimple id="MedivacHealBeamRev1">
+        <HostLaunch Subject="" Scope="Implicit" Actor="Implicit"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachCenter"/>
+        <HostImpact Subject="" Scope="Implicit" Actor="Implicit"/>
+        <HostImpactSiteOps Ops="SOpTargetUnit SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorBeamSimple id="MedivacHealBeamSecond" parent="BeamSimpleAnimationStyleContinuous">
+        <Inherits index="Visibility" value="1"/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Stand Stand Stand"/>
+        <On Terms="Effect.MedivacDoubleHeal.TargetStart" Send="Create"/>
+        <On Terms="ActorCreation" Send="TimerSet 0.330000 TimerStop"/>
+        <On Terms="TimerExpired; TimerName TimerStop" Send="AnimBracketStop BSD Instant"/>
+        <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <Model value="MedivacHealBeam"/>
+        <HostLaunchSiteOps Ops="SOpCasterUnit SOpAttachCenter"/>
+        <HostImpactSiteOps Ops="SOpTargetUnit SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorModel id="MedivacHealModelRev1">
+        <On Terms="Effect.MedivacDoubleHeal.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.MedivacDoubleHeal.TargetStop; At Target" Send="Destroy"/>
+    </CActorModel>
     <CActorUnit id="MissileTurret2" parent="TerranBuildingEx" unitName="MissileTurret2">
         <Aliases value="_UnitHuge"/>
         <On index="69" Terms="UnitConstruction.MissileTurret2.Start" Send="Create MissileTurretBuild"/>

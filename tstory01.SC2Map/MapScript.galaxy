@@ -1493,6 +1493,9 @@ void gf_StartTipHint ();
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
+trigger gt_PredatorGhostAcademy;
+trigger gt_ArmoryHercules;
+trigger gt_FusionCore;
 trigger gt_WaitForSkipTrig;
 trigger gt_BackButtonClicked;
 trigger gt_BackButtonEscape;
@@ -14821,6 +14824,87 @@ void gf_StartTipHint () {
     TriggerExecute(gt_TipMoebiusArtifactNote, true, false);
     TriggerExecute(gt_TipSellResearchForCreditsProtoss, true, false);
     TriggerExecute(gt_TipSellResearchForCreditsZerg, true, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Predator/Ghost Academy
+//--------------------------------------------------------------------------------------------------
+bool gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 3))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/B77093F8"));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_PredatorGhostAcademy_Init () {
+    gt_PredatorGhostAcademy = TriggerCreate("gt_PredatorGhostAcademy_Func");
+    TriggerAddEventTimeElapsed(gt_PredatorGhostAcademy, 2.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Armory/Hercules
+//--------------------------------------------------------------------------------------------------
+bool gt_ArmoryHercules_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 6))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/4852F762"));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ArmoryHercules_Init () {
+    gt_ArmoryHercules = TriggerCreate("gt_ArmoryHercules_Func");
+    TriggerAddEventTimeElapsed(gt_ArmoryHercules, 2.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Fusion Core
+//--------------------------------------------------------------------------------------------------
+bool gt_FusionCore_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 9))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/DE39B2F2"));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_FusionCore_Init () {
+    gt_FusionCore = TriggerCreate("gt_FusionCore_Func");
+    TriggerAddEventTimeElapsed(gt_FusionCore, 2.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -41781,6 +41865,9 @@ void gt_TipAfterTValerian01_Init () {
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
+    gt_PredatorGhostAcademy_Init();
+    gt_ArmoryHercules_Init();
+    gt_FusionCore_Init();
     gt_WaitForSkipTrig_Init();
     gt_BackButtonClicked_Init();
     gt_BackButtonEscape_Init();

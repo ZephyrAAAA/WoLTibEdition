@@ -58,6 +58,12 @@
             <InfoValue index="0" Value="3"/>
         </Indices>
     </CConversationState>
+    <CConversationState id="MissionObjective">
+        <Indices index="42">
+            <InfoValue Id="Credits Per Item" Value="50000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+    </CConversationState>
     <CConversationState id="Tech">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>
@@ -69,6 +75,18 @@
         <Indices index="20" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
         <Indices index="25" ImagePath="Assets\Textures\btn-ability-terran-emp.dds"/>
         <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+        <Indices index="38" ImagePath="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds">
+            <InfoValue index="0" Value="60000"/>
+        </Indices>
+        <Indices index="39" ImagePath="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
+        <Indices index="40" ImagePath="Assets\Textures\btn-upgrade-terran-medivacemergencythrusters.dds">
+            <InfoValue index="0" Value="40000"/>
+        </Indices>
+        <Indices index="41" ImagePath="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds">
+            <InfoValue index="0" Value="80000"/>
+        </Indices>
     </CConversationState>
     <CConversationState id="TechState">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
@@ -79,5 +97,16 @@
             <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
         </Indices>
         <Indices index="20" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <Indices index="25" ImagePath="Assets\Textures\btn-ability-terran-emp.dds"/>
+        <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+        <Indices index="38" ImagePath="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds">
+            <InfoValue index="0" Value="60000"/>
+        </Indices>
+        <Indices index="39" ImagePath="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
+        <Indices index="40" ImagePath="Assets\Textures\btn-upgrade-terran-medivacemergencythrusters.dds">
+            <InfoValue index="0" Value="40000"/>
+        </Indices>
     </CConversationState>
 </Catalog>

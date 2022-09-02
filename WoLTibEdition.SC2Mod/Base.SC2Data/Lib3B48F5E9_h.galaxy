@@ -12,6 +12,14 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
 // Trigger Declarations
 trigger lib3B48F5E9_gt_CommandoEXP;
 trigger lib3B48F5E9_gt_TerranUpgradeSwap;
+trigger lib3B48F5E9_gt_PredatorGhostAcademy;
+trigger lib3B48F5E9_gt_ArmoryHercules;
+trigger lib3B48F5E9_gt_FusionCore;
+trigger lib3B48F5E9_gt_UnhighlightPredator;
+trigger lib3B48F5E9_gt_UnhighlightGhostAcademy;
+trigger lib3B48F5E9_gt_UnhighlightArmory;
+trigger lib3B48F5E9_gt_UnhighlightHercules;
+trigger lib3B48F5E9_gt_UnhighlightFusionCore;
 trigger lib3B48F5E9_gt_FleetAbilitySwap;
 trigger lib3B48F5E9_gt_FleetAbilityCost;
 

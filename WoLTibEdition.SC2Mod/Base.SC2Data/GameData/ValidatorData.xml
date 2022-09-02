@@ -70,6 +70,11 @@
     <CValidatorPlayerRequirement id="RapidDeploymentPurchased">
         <WhichPlayer Value="Source"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="AdvancedHealingAIPurchased">
+        <WhichPlayer Value="Source"/>
+        <Find value="1"/>
+        <Value value="AdvancedHealingAIPurchased"/>
+    </CValidatorPlayerRequirement>
     <CValidatorUnitFilters id="TargetIsMechanical">
         <Filters value="Mechanical;-"/>
     </CValidatorUnitFilters>
@@ -104,6 +109,7 @@
     </CValidatorUnitType>
     <CValidatorPlayerRequirement id="PlayerHasPower">
         <Value value="PlayerHasPower"/>
+        <WhichPlayer Value="Source"/>
     </CValidatorPlayerRequirement>
     <CValidatorUnitCompareDamageTakenTime id="ReaperOutOfCombat">
         <Compare value="GE"/>

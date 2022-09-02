@@ -777,6 +777,202 @@ void lib3B48F5E9_gt_TerranUpgradeSwap_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Predator/Ghost Academy
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 3))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_7101F21A"));
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "Predator", true);
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "GhostAcademy", true);
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightPredator, true);
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightGhostAcademy, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_PredatorGhostAcademy_Init () {
+    lib3B48F5E9_gt_PredatorGhostAcademy = TriggerCreate("lib3B48F5E9_gt_PredatorGhostAcademy_Func");
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_PredatorGhostAcademy, 10.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Armory/Hercules
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_ArmoryHercules_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 3))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_C216B0DE"));
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "Armory", true);
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "BuildHercules", true);
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightArmory, true);
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightHercules, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_ArmoryHercules_Init () {
+    lib3B48F5E9_gt_ArmoryHercules = TriggerCreate("lib3B48F5E9_gt_ArmoryHercules_Func");
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_ArmoryHercules, 10.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Fusion Core
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_FusionCore_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 9))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_AB0D213A"));
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "FusionCore", true);
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightFusionCore, true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_FusionCore_Init () {
+    lib3B48F5E9_gt_FusionCore = TriggerCreate("lib3B48F5E9_gt_FusionCore_Func");
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_FusionCore, 10.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unhighlight Predator
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnhighlightPredator_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "Predator", false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnhighlightPredator_Init () {
+    lib3B48F5E9_gt_UnhighlightPredator = TriggerCreate("lib3B48F5E9_gt_UnhighlightPredator_Func");
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightPredator, false);
+    TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightPredator, 1, "Predator");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unhighlight Ghost Academy
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnhighlightGhostAcademy_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "GhostAcademy", false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnhighlightGhostAcademy_Init () {
+    lib3B48F5E9_gt_UnhighlightGhostAcademy = TriggerCreate("lib3B48F5E9_gt_UnhighlightGhostAcademy_Func");
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightGhostAcademy, false);
+    TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightGhostAcademy, 1, "GhostAcademy");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unhighlight Armory
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnhighlightArmory_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "Armory", false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnhighlightArmory_Init () {
+    lib3B48F5E9_gt_UnhighlightArmory = TriggerCreate("lib3B48F5E9_gt_UnhighlightArmory_Func");
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightArmory, false);
+    TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightArmory, 1, "Armory");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unhighlight Hercules
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnhighlightHercules_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "BuildHercules", false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnhighlightHercules_Init () {
+    lib3B48F5E9_gt_UnhighlightHercules = TriggerCreate("lib3B48F5E9_gt_UnhighlightHercules_Func");
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightHercules, false);
+    TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightHercules, 1, "BuildHercules");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unhighlight Fusion Core
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnhighlightFusionCore_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UISetButtonFaceHighlighted(PlayerGroupAll(), "FusionCore", false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnhighlightFusionCore_Init () {
+    lib3B48F5E9_gt_UnhighlightFusionCore = TriggerCreate("lib3B48F5E9_gt_UnhighlightFusionCore_Func");
+    TriggerEnable(lib3B48F5E9_gt_UnhighlightFusionCore, false);
+    TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightFusionCore, 1, "FusionCore");
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Fleet Ability Swap
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_FleetAbilitySwap_Func (bool testConds, bool runActions) {
@@ -823,6 +1019,14 @@ void lib3B48F5E9_gt_FleetAbilityCost_Init () {
 void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
     lib3B48F5E9_gt_TerranUpgradeSwap_Init();
+    lib3B48F5E9_gt_PredatorGhostAcademy_Init();
+    lib3B48F5E9_gt_ArmoryHercules_Init();
+    lib3B48F5E9_gt_FusionCore_Init();
+    lib3B48F5E9_gt_UnhighlightPredator_Init();
+    lib3B48F5E9_gt_UnhighlightGhostAcademy_Init();
+    lib3B48F5E9_gt_UnhighlightArmory_Init();
+    lib3B48F5E9_gt_UnhighlightHercules_Init();
+    lib3B48F5E9_gt_UnhighlightFusionCore_Init();
     lib3B48F5E9_gt_FleetAbilitySwap_Init();
     lib3B48F5E9_gt_FleetAbilityCost_Init();
 }

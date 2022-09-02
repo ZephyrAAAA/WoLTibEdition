@@ -127,6 +127,9 @@
     <CAbilTransport id="InfestableHutTransport">
         <UnloadPeriod value="2"/>
     </CAbilTransport>
+    <CAbilEffectTarget id="MedivacHeal">
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="NanoRepair">
         <AutoCastRange value="9"/>
         <FollowRange value="2"/>
@@ -1614,7 +1617,11 @@
         <Name value="Abil/Name/SquadStimpack"/>
         <DataCollection value="MarineSquadStimpack"/>
         <Effect index="0" value="MarineSquadStimIterate"/>
-        <Cost index="0" removed="1"/>
+        <Cost index="0">
+            <Vital index="Life" value="0"/>
+            <Charge Link="Abil/MedivacStim"/>
+            <Cooldown Link="Abil/MedivacStim"/>
+        </Cost>
     </CAbilEffectInstant>
     <CAbilArmMagazine id="MedicSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>

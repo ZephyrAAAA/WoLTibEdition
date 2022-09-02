@@ -243,6 +243,7 @@ Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage p
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
 Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
+Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
 Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
 Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
@@ -291,7 +292,7 @@ Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and rece
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
-Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a>Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, and <c val="FFFF8A">Marauder</c> rockets by +30%.
+Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, and <c val="FFFF8A">Marauder</c> rockets by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
 Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
@@ -313,7 +314,7 @@ Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked
 Button/Tooltip/Sell=Sells selected building for a refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
-Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,snipeDamage,Amount"/> damage.
+Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
 Button/Tooltip/Starport2Flying=Starport must land to start unit production.
 Button/Tooltip/StarshipUltraCapacitors=Increases attack speed of Starships by 20%
@@ -455,6 +456,12 @@ ConversationState/Tech/Tech_CommandCenter_2/Info/Description=<s val="TechSummary
 ConversationState/Tech/Tech_CommandCenter_2/Info/Tooltip=<s val="TooltipTitle_Tech">Orbital Command</s><n/><s val="TooltipDescription_Tech">Unlocks the Scanner Sweep, Tactical Missile, and Nuclear Strike support powers.
 ConversationState/Tech/Tech_Diamondback_1/Info/Description=<s val="TechSummary">- Diamondback attacks pierce to another target.</s><n/><n/><s val="TechDescription">The Tri-Lithium Power Cell has 40% more capacity and fits in the same slot as the outdated monolithium power cell. This increased power surge allows the Diamondback to fire faster projectiles, piercing the initial target.</s>
 ConversationState/Tech/Tech_Diamondback_1/Info/Tooltip=<s val="TooltipTitle_Tech">Tri-Lithium Power Cell</s><n/><s val="TooltipDescription_Tech">Diamondback attacks pierce to another target.</s>
+ConversationState/Tech/Tech_Ghost_1=Reinforced Barrier
+ConversationState/Tech/Tech_Ghost_1/Info/Description=<s val="TechSummary">- Predator energy barrier is absorbs twice as much damage</s><n/><n/><s val="TechDescription">Ocular Implants increase the Ghost's sight radius, making it easier to spot potential targets and weak points in the enemy perimeter.<n/><n/>The current generation also includes an automated targeting system that instantly calculates atmospheric pressure and wind shear, greatly increasing the effective sniping range of the Ghost.
+ConversationState/Tech/Tech_Ghost_1/Info/Tooltip=<s val="TooltipTitle_Tech">Reinforced Barrier</s><n/><s val="TooltipDescription_Tech">Doubles Barrier effectiveness.</s>
+ConversationState/Tech/Tech_Ghost_2=Field Projectors
+ConversationState/Tech/Tech_Ghost_2/Info/Description=<s val="TechSummary">- Increases Retribution Field radius by +50%.</s><n/><n/><s val="TechDescription">This combat suit has a psi-augmenter dedicated to maintaining cloak. This allows the Ghost to maintain his Cloaking Field indefinitely and frees up psionic energy for other uses.</s>
+ConversationState/Tech/Tech_Ghost_2/Info/Tooltip=<s val="TooltipTitle_Tech">Field Projectors</s><n/><s val="TooltipDescription_Tech">Increases Retribution Field area.</s>
 ConversationState/Tech/Tech_Goliath_1=Neosteel Plating
 ConversationState/Tech/Tech_Goliath_1/Info/Description=<s val="TechSummary">- Goliaths gain +50 HP.</s><n/><n/><s val="TechDescription">Improving the Goliath's ability to withstand fire is a pivotal point in making it reliable on the battlefield.</s>
 ConversationState/Tech/Tech_Goliath_1/Info/Tooltip=<s val="TooltipTitle_Tech">Neosteel Plating</s><n/><s val="TooltipDescription_Tech">Goliaths gain +50 HP.</s>
@@ -481,6 +488,12 @@ ConversationState/Tech/Tech_SCV_2/Info/Tooltip=<s val="TooltipTitle_Tech">Advanc
 ConversationState/Tech/Tech_SiegeTank_1=Smart Servos
 ConversationState/Tech/Tech_SiegeTank_1/Info/Description=<s val="TechSummary">- Siege Tanks transform 2x as fast.</s><n/><s val="TechSummary">- Can be loaded into transports while sieged.</s><n/><n/><s val="TechDescription">Improved software and hardware for the transformation system of siege tanks allows them to deploy the big guns far quicker in battlefield conditions. This also gives enough mobility that they do not require fully packing up in order to be transported.</s>
 ConversationState/Tech/Tech_SiegeTank_1/Info/Tooltip=<s val="TooltipTitle_Tech">Smart Servos</s><n/><s val="TooltipDescription_Tech">Siege Tank transforms faster, and can be loaded while sieged.</s>
+ConversationState/Tech/Tech_Spectre_1=Behemoth Engines
+ConversationState/Tech/Tech_Spectre_1/Info/Description=<s val="TechSummary">- Increases Hercules speed and acceleration by 30%.</s><n/><n/><s val="TechDescription">With proper training, Spectres can unleash a concentrated blast of psionic fury at a single target. This blast drains the Spectre's energy reserve, but it will kill most targets outright.<n/><n/>For obvious reasons, Remedius Medical Systems recommends limiting this training to Spectres who have an exceptionally high opinion of their superior officers.</s>
+ConversationState/Tech/Tech_Spectre_1/Info/Tooltip=<s val="TooltipTitle_Tech">Behemoth Engines</s><n/><s val="TooltipDescription_Tech">Increases Hercules Speed.</s>
+ConversationState/Tech/Tech_Spectre_2=Miniature Drop Pods
+ConversationState/Tech/Tech_Spectre_2/Info/Description=<s val="TechSummary">- Increases Hercules pickup range.</s><n/><s val="TechSummary">- Hercules drop units instantly</s><n/><s val="TechSummary">- Hercules emergency drop pods damage reduced to 10%</s><n/><n/><s val="TechDescription">This combat suit comes with a psi enhancer dedicated entirely to maintaining cloak. This allows the Spectre to effortlessly maintain a Cloaking Field and channel his psionic energies elsewhere.</s>
+ConversationState/Tech/Tech_Spectre_2/Info/Tooltip=<s val="TooltipTitle_Tech">Miniature Drop Pods</s><n/><s val="TooltipDescription_Tech">Improves Hercules Transportation.</s>
 ConversationState/Tech/Tech_Vulture_2=EMP Rounds
 ConversationState/Tech/Tech_Vulture_2/Info/Description=<s val="TechSummary">- Vulture attacks disable mechanical units and structures for 1s.<n/><n/><s val="TechDescription">Enlightened Dynamics has developed a emp frag grenade for use on vultures, allowing them to temporarily disable targets they hit.</s>
 ConversationState/Tech/Tech_Vulture_2/Info/Tooltip=<s val="TooltipTitle_Tech">EMP Rounds</s><n/><s val="TooltipDescription_Tech">Vultures disable mechanical units and structures they hit for 1s.</s>
@@ -624,8 +637,14 @@ Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechEMP=Mech EMP
 Effect/Name/MechanicalRepair=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
+Effect/Name/MedivacDoubleHeal=Double Heal
+Effect/Name/MedivacDoubleHealDelay=Double Heal
+Effect/Name/MedivacDoubleHealSearch=Double Heal
 Effect/Name/MedivacHealInternal=Heal
 Effect/Name/MedivacHealIterate=Heal Iterate
+Effect/Name/MedivacHealLoopMagazine=Heal Loop
+Effect/Name/MedivacHealLoopSet=Heal Loop
+Effect/Name/MedivacHealLoopTransport=Heal Loop
 Effect/Name/MedivacLoadSet=Load
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
 Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
@@ -1101,7 +1120,10 @@ Param/Value/FDEB51AC=Cantina
 Param/Value/FEDA652A=Big Tuna
 Param/Value/FEDED7E3=Protoss Research Points = 
 Param/Value/FFFD0315=Bridge
+Param/Value/lib_3B48F5E9_7101F21A=Predator and Shadow Ops have been unlocked.
+Param/Value/lib_3B48F5E9_AB0D213A=Fusion core has been unlocked.
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
+Param/Value/lib_3B48F5E9_C216B0DE=Armory and Hercules have been unlocked.
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>
@@ -1203,6 +1225,9 @@ Upgrade/Name/HighEnergyCapacitors=High-Energy Capacitors
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
 Upgrade/Name/ImprovedRailguns=Improved Railguns
 Upgrade/Name/LowPower=Low Power
+Upgrade/Name/OcularImplants=Reinforced Barrier
+Upgrade/Name/PermanentCloakGhost=Field Projectors
+Upgrade/Name/PermanentCloakSpectre=Miniature Drop Pods
 Upgrade/Name/Predator=Commando Suit
 Upgrade/Name/TakeTheDrill=Take The Drill
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
@@ -1216,6 +1241,7 @@ Upgrade/Name/TerranVehicleUltraCapacitors=Terran Vehicle Ultra-Capacitors
 Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
 Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
 Upgrade/Name/TitanSteel=Titan Steel
+Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
 Weapon/Name/ATALaserBattery2=ATA Laser Battery
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery

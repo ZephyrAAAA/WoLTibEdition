@@ -189,6 +189,7 @@
     <CBehaviorBuff id="InsideMedivac">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="RapidDeploymentPurchased"/>
+        <DisableValidatorArray value="UnitIsBiological"/>
         <Modification>
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
@@ -211,6 +212,12 @@
             <StateFlags index="SuppressShieldsRegen" value="1"/>
             <StateFlags index="SuppressEnergyRegen" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MedivacInternalHealLoop">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="MedivacHealLoopSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MedivacWeaponEnable">
         <InfoFlags index="Hidden" value="1"/>
