@@ -248,7 +248,7 @@
     <CUpgrade id="PermanentCloakSpectre">
         <EffectArray index="0" Reference="Abil,HerculesTransport,UnloadPeriod" Value="0.000000"/>
         <EffectArray index="1" Operation="Add" Reference="Abil,HerculesTransport,Range" Value="2"/>
-        <EffectArray index="2" Reference="Abil,HerculesTransport,DeathUnloadEffect" Value="CCLoadDummy"/>
+        <EffectArray index="2" Reference="Effect,RescuePodsDamage,VitalFractionMax[Life]" Value="0.1"/>
     </CUpgrade>
     <CUpgrade id="Predator">
         <EffectArray Reference="Abil,Snipe,Cost[0].Charge.CountMax" Value="1"/>
