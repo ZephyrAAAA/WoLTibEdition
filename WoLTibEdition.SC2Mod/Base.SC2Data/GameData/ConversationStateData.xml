@@ -84,6 +84,9 @@
         <Indices index="40" ImagePath="Assets\Textures\btn-upgrade-terran-medivacemergencythrusters.dds">
             <InfoValue index="0" Value="40000"/>
         </Indices>
+        <Indices index="41" ImagePath="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds">
+            <InfoValue index="0" Value="80000"/>
+        </Indices>
     </CConversationState>
     <CConversationState id="TechState">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
