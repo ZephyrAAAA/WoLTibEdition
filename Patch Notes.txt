@@ -28,7 +28,7 @@ Siege tank, Colossi, Immortal, Goliath, Hellion now have turret tracking
 The Outlaws:
 The Dominion now starts with Blue Flame
 Ripped out the old upgrade system, replaced with our upgrade function.
-*Changed the tip about refineries to mention 3 SCVs is optimal
+Changed the tip about refineries to mention 3 SCVs is optimal
 
 Zero Hour:
 Ripped out the old upgrade system, replaced with our upgrade function.
