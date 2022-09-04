@@ -212,6 +212,10 @@
             <StateFlags index="SuppressShieldsRegen" value="1"/>
             <StateFlags index="SuppressEnergyRegen" value="1"/>
         </Modification>
+        <DurationOverride>
+            <Duration value="0.2"/>
+            <ValidatorArray value="IsHeroic"/>
+        </DurationOverride>
     </CBehaviorBuff>
     <CBehaviorBuff id="MedivacInternalHealLoop">
         <InfoFlags index="Hidden" value="1"/>

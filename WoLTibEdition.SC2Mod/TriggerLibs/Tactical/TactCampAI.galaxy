@@ -242,6 +242,7 @@ order AIOrderLokiYamato (int player, unit aiUnit, unitgroup scanGroup, marker ma
 	filter = AIFilter(player);
 	AISetFilterAlliance(filter, c_playerGroupEnemy);
 	AISetFilterLifePerMarker(filter, damage*0.5, mark);
+	AISetFilterLife(filter, damage*0.3, c_noMax);
 	AISetFilterLifeSortReference(filter, damage, damage*c_distanceFromDamage); 
 	targetGroup = AIGetFilterGroup(filter, scanGroup);
 	if (targetGroup == null) {
