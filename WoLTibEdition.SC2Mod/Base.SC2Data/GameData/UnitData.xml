@@ -3286,6 +3286,13 @@
     <CUnit id="Loki">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeStart value="7500"/>
+        <LifeMax value="7500"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
     </CUnit>
     <CUnit id="Lurker">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3779,6 +3786,7 @@
         <EnergyRegenRate value="0"/>
         <WeaponArray index="0" Link="Odin"/>
         <WeaponArray index="1" Link="OdinAntiAir"/>
+        <Attributes index="Heroic" value="1"/>
     </CUnit>
     <CUnit id="OdinBuild">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6296,6 +6304,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
+        <WeaponArray index="1" Turret="Goliath"/>
     </CUnit>
     <CUnit id="WraithACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

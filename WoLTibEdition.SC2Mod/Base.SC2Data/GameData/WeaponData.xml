@@ -88,12 +88,22 @@
     <CWeaponLegacy id="ArcliteShockCannon">
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ArmageddonCannons">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="BacklashRockets">
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="BattleCruiserLoki">
-        <RandomDelayMin value="-0.125"/>
-        <RandomDelayMax value="0.125"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <Period value="0.2"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BroodlingStrike">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -177,7 +187,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="DuskWingBanshee">
         <Tip value="Weapon/Tip/Grenade"/>
-        <AttackType value="Pierce"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ExplosiveCharges">
         <EditorCategories value=""/>
@@ -780,7 +790,6 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="LinkedCooldown" value="0"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Arc value="135"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewAssault">

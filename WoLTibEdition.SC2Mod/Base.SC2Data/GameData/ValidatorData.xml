@@ -44,6 +44,9 @@
     <CValidatorUnitFilters id="IsHeroic">
         <Filters value="Heroic;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="IsMassive">
+        <Filters value="Massive;-"/>
+    </CValidatorUnitFilters>
     <CValidatorUnitType id="IsUnsiegedTank">
         <Value value="SiegeTank"/>
     </CValidatorUnitType>

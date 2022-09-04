@@ -766,6 +766,7 @@ Validator/Name/HasSpartanCompany=Has Spartan Company
 Validator/Name/HasWarPigs=Has War Pigs
 Validator/Name/HoldingResources=Holding Resources
 Validator/Name/IsHeroic=Is Heroic
+Validator/Name/IsMassive=Is Massive
 Validator/Name/IsNotMedic=Is Not Medic
 Validator/Name/IsUnsiegedSiegeBreaker=Is Unsieged Siege Breaker
 Validator/Name/IsUnsiegedTank=Is Unsieged Tank

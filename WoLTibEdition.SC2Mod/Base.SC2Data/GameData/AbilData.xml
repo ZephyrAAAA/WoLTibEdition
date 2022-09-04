@@ -127,6 +127,30 @@
     <CAbilTransport id="InfestableHutTransport">
         <UnloadPeriod value="2"/>
     </CAbilTransport>
+    <CAbilEffectTarget id="LokiMissilePods">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="3"/>
+                <CountUse value="1"/>
+                <TimeUse value="20"/>
+            </Charge>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="LokiYamato">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge>
+                <CountMax value="2"/>
+                <CountStart value="2"/>
+                <CountUse value="1"/>
+                <TimeStart value="30"/>
+                <TimeUse value="30"/>
+            </Charge>
+        </Cost>
+        <PrepTime index="0" value="1.5"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="MedivacHeal">
         <CmdButtonArray index="Execute" Requirements=""/>
     </CAbilEffectTarget>

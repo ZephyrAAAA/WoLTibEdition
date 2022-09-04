@@ -203,6 +203,7 @@
         <EffectArray Operation="Multiply" Reference="Effect,BacklashRocketsU,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,HailstormLauncherU,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,HailstormLauncherUMerc,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,OdinAADamage,Amount" Value="1.3"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HailstormLaunchers">
@@ -217,6 +218,9 @@
         <EffectArray Operation="Multiply" Reference="Effect,ATSLaserBatteryU,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,WraithGU,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,ThorsHammerDamage,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,OdinDamageLeft,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,OdinDamageRight,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,OdinDamage,Amount" Value="1.5"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="ImprovedRailguns">

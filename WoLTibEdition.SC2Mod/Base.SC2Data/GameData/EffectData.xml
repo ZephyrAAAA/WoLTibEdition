@@ -55,6 +55,12 @@
     <CEffectDamage id="ArcliteShockCannonFriendlyDamage">
         <Amount value="41.5"/>
     </CEffectDamage>
+    <CEffectDamage id="ArmageddonCannonL">
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArmageddonCannonR">
+        <Amount value="15"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="AstralProjection">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -94,6 +100,9 @@
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="5" Effect="BansheeAirstrikeDamage"/>
     </CEffectEnumArea>
+    <CEffectDamage id="BattlecruiserLokiU">
+        <Amount value="15"/>
+    </CEffectDamage>
     <CEffectModifyUnit id="BiosteelRegen">
         <EditorCategories value=""/>
         <VitalArray index="Life">
@@ -643,6 +652,22 @@
     <CEffectDamage id="LaserDrillTripodDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="LokiHurricaneMissile">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LokiHurricaneMissileBurstPersistent">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="LokiHurricaneMissileDamage">
+        <AttributeBonus index="Light" value="0"/>
+        <Amount value="18"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="LokiHurricaneMissileDamageDelayPersistent">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LokiHurricaneMissileDamagePersistent">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="MechEMP">
         <ValidatorArray index="0" value="UseMechEMP"/>
         <ValidatorArray value="TargetIsMechanical"/>
@@ -837,17 +862,17 @@
     <CEffectDamage id="OdinDamage">
         <AttributeBonus index="Structure" value="0"/>
         <AttributeFactor index="Structure" value="1"/>
-        <Amount value="80"/>
+        <Amount value="60"/>
     </CEffectDamage>
     <CEffectDamage id="OdinDamageLeft">
         <AttributeBonus index="Structure" value="0"/>
         <AttributeFactor index="Structure" value="1"/>
-        <Amount value="80"/>
+        <Amount value="60"/>
     </CEffectDamage>
     <CEffectDamage id="OdinDamageRight">
         <AttributeBonus index="Structure" value="0"/>
         <AttributeFactor index="Structure" value="1"/>
-        <Amount value="80"/>
+        <Amount value="60"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="PerditionTurretBuilt">
         <ValidatorArray index="0" value="DevastatorTurretBuiltTargetFilters"/>
