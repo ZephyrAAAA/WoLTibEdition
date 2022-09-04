@@ -66,9 +66,13 @@ The Odin now has Biosteel.
 The Odin now prefers to hit ground targets
 You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
 Each base now has a field, encouraging setting up an expansion after clearing.
+*Attack wave against the Odin from the third base now sends hellions instead of most of the vultures.
 There's now an autosave after each base.
 The first and second bonus objectives now give Wraith armoury upgrades
 Killing the Loki now gives money
+Loki hp buffed to be 6k on normal, change by 2k per difficulty step away. 
+Loki now has a second volley of missile pods
+Loki given the EMP ability from the pirate ship on With Friends Like These
 
 The Morbius Factor:
 Ripped out the old upgrade system, replaced with our upgrade function.
