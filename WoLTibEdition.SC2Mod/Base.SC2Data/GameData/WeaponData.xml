@@ -332,7 +332,7 @@
         <DisplayEffect value="HailstormLauncherUMerc"/>
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
-        <Period value="1.5"/>
+        <Period value="1"/>
         <AttackType value="Siege"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
@@ -353,7 +353,7 @@
         <DisplayEffect value="HailstormLauncherUMerc"/>
         <TargetFilters value="Air,Visible;Ground,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="6"/>
-        <Period value="1.5"/>
+        <Period value="1"/>
         <AttackType value="Siege"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
@@ -365,6 +365,7 @@
     <CWeaponLegacy id="HammerSecurity">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>

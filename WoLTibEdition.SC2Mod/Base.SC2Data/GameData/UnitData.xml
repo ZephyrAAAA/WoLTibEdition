@@ -2730,6 +2730,7 @@
         <Food value="0"/>
         <BehaviorArray Link="HailstormLaunchers"/>
         <WeaponArray Link="HailstormLauncherMerc"/>
+        <AbilArray index="3" removed="1"/>
     </CUnit>
     <CUnit id="Hatchery">
         <ArmorType value="Hero"/>

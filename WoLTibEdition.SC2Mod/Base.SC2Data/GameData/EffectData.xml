@@ -103,12 +103,16 @@
     <CEffectDamage id="BattlecruiserLokiU">
         <Amount value="15"/>
     </CEffectDamage>
-    <CEffectModifyUnit id="BiosteelRegen">
+    <CEffectCreateHealer id="BiosteelRegen">
+        <ValidatorArray value="noMarkers"/>
         <EditorCategories value=""/>
-        <VitalArray index="Life">
-            <ChangeFraction value="0.003"/>
-        </VitalArray>
-    </CEffectModifyUnit>
+        <Marker>
+            <MatchFlags index="Link" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <PeriodicValidator value="CasterNotInCombat"/>
+        <RechargeVitalFraction value="0.0156"/>
+    </CEffectCreateHealer>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
         <Behavior value="BuildingRepair"/>
