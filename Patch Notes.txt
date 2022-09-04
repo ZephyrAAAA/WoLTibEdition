@@ -53,7 +53,7 @@ Ripped out the old upgrade system, replaced with our upgrade function.
 
 The Dig:
 Ripped out the old upgrade system, replaced with our upgrade function.
-*Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
+Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
 Swann now says you can take the drill when you're actually able to do something about it.
 Relocated the engineering bay.
 Fixed the Adjutant stealing swann's lines.
