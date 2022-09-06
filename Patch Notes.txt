@@ -24,14 +24,26 @@ Forcefields break when a massive unit walks on them.
 Added progression messages when you return to the Hyperion, and when you start a mission.
 The predator and spec ops now unlock after the proper number of completed missions.
 Siege tank, Colossi, Immortal, Goliath, Hellion now have turret tracking
+*Research bonus objectives now give 10000 credits (Tentative)
+*Rebalancing of Armoury Upgrade Costs
+*Hive Mind Emulator is now a topbar power
+*Psi Disruptor is now a topbar power
+*You now actually keep the drill when you take it.
+*Rebalance of armoury credit costs
+*The ghost and spectre now prefer to target infantry
+
+Liberation Day:
+*Each Holoboard now gives 5k credits
 
 The Outlaws:
 The Dominion now starts with Blue Flame
 Ripped out the old upgrade system, replaced with our upgrade function.
 Changed the tip about refineries to mention 3 SCVs is optimal
+*Rescuing the Rebels gives 30k credits
 
 Zero Hour:
 Ripped out the old upgrade system, replaced with our upgrade function.
+*Each rescue group gives 10k credits
 
 Smash and Grab:
 Ripped out the old upgrade system, replaced with our upgrade function.
@@ -60,6 +72,9 @@ Fixed the Adjutant stealing swann's lines.
 Put the infinite spawning zealots and stalkers back to 3% temple health left.
 Added an extra stargate to each base, so maybe they can keep up with late-game attack wave demands.
 
+Ghost of a Chance:
+*Nova now has a heal ability
+
 Engine of Destruction:
 Ripped out the old upgrade system, replaced with our upgrade function.
 Doubled Tychus' health
@@ -71,7 +86,7 @@ Attack wave against the Odin from the third base now sends hellions instead of m
 There's now an autosave after each base.
 The first and second bonus objectives now give Wraith armoury upgrades
 Loki no longer uses energy
-Killing the Loki now gives money
+Killing the Loki now gives 50k credits
 Loki hp buffed to be 6k on normal, change by 2k per difficulty step away.
 Loki now has a second and third volley of missile pods
 Loki now has a second yamato
