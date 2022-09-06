@@ -781,6 +781,13 @@
         <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray RectangleWidth="10" RectangleHeight="18" Effect="TempestDamageFleet"/>
     </CEffectEnumArea>
+    <CEffectCreateHealer id="NovaHeal">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value=""/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="2"/>
+        <RechargeVitalRate value="10"/>
+    </CEffectCreateHealer>
     <CEffectDamage id="NovaSnipe">
         <ArmorReduction value="1"/>
         <Amount value="170"/>

@@ -3719,6 +3719,7 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <AbilArray Link="ExplosiveCharges"/>
+        <AbilArray Link="NovaHeal"/>
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
         <EquipmentArray Weapon="ExplosiveCharges"/>

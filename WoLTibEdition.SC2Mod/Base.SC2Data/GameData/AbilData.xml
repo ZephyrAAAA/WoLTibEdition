@@ -158,6 +158,16 @@
         <AutoCastRange value="9"/>
         <FollowRange value="2"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="NovaHeal">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NovaHeal">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="NovaSnipe">
         <CastIntroTime index="0" value="0.1"/>
         <FinishTime index="0" value="0"/>

@@ -9,6 +9,7 @@ Button/Hotkey/HyperionYamato4=
 Button/Hotkey/HyperionYamato5=
 Button/Hotkey/InfantryUltraCapacitors=C
 Button/Hotkey/InfantryVanadiumPlating=V
+Button/Hotkey/NovaHeal=E
 Button/Hotkey/NukeCalldown8=
 Button/Hotkey/PauseQueue=Escape
 Button/Hotkey/ResearchImprovedRailguns=R
