@@ -22774,10 +22774,14 @@ bool gt_ArmoryTechConsoleClicked_Func (bool testConds, bool runActions) {
     gf_PauseNewItemInfo(true);
     libCamp_gf_DisplayTechConsole(gt_ArmoryTechConsoleLeave);
     UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypePurchasePanel, false);
+    libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost] = libCamp_ge_StoryTechStates_TechUnavailable;
+    PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], "Assets\\Textures\\blank.dds");
     PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], "Predator");
     PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], c_purchaseGroupStateEnabled);
     PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostOcularImplants], c_purchaseItemStateEnabled);
     PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostPermaCloak], c_purchaseItemStateEnabled);
+    libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre] = libCamp_ge_StoryTechStates_TechUnavailable;
+    PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], "Assets\\Textures\\blank.dds");
     PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], "Hercules");
     PurchaseGroupSetSlot(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], 2);
     if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
