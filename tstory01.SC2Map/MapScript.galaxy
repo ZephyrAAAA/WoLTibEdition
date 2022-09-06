@@ -14843,7 +14843,7 @@ bool gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/B77093F8"));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
     return true;
 }
 
@@ -14870,7 +14870,7 @@ bool gt_ArmoryHercules_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/4852F762"));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
     return true;
 }
 
@@ -14897,7 +14897,7 @@ bool gt_FusionCore_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/DE39B2F2"));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
     return true;
 }
 
@@ -22776,6 +22776,8 @@ bool gt_ArmoryTechConsoleClicked_Func (bool testConds, bool runActions) {
     UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypePurchasePanel, false);
     PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], "Predator");
     PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], c_purchaseGroupStateEnabled);
+    PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostOcularImplants], c_purchaseItemStateEnabled);
+    PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostPermaCloak], c_purchaseItemStateEnabled);
     PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], "Hercules");
     PurchaseGroupSetSlot(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], 2);
     if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
