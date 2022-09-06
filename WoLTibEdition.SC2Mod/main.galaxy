@@ -101,7 +101,7 @@ void DisableTopBar () {
 
 void AddTopbarAbil(string abil) {
 	// maybe set cooldowns to global
-	// needs reset, which means clear charges, re-add starting charges, then add 0 cooldown, with delays between each.
+	// needs reset, which means clear charges, re-add starting charges, then add 0 cooldown, with delays betweenf each.
 	int lv_i;
 	if (UnitAbilityExists(topbarUnit, abil)) {
 		return;
@@ -136,6 +136,7 @@ void RemoveTopbarAbil(string abil) {
 	UnitAbilityRemove(topbarUnit, abil);
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
 	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Removing: " +abil+IntToString(lv_i+3)));
+	topbarAbils[lv_i] = null;
 	lv_i += 1;
 	for (; topbarAbils[lv_i] != null; lv_i += 1) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
@@ -164,6 +165,12 @@ void AddTopbars () {
 		//AddTopbarAbil("FleetTargeting");
 		if (TechTreeAbilityIsAllowed(1, AbilityCommand("DeployLaserDrill", 0))) {
 			AddTopbarAbil("DeployLaserDrill");
+		}
+		if (TechTreeUpgradeCount(1, "HiveMindEmulator", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("HiveMindEmulator");
+		}
+		if (TechTreeUpgradeCount(1, "PsiDisruptor", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("PsiDisruptor");
 		}
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {

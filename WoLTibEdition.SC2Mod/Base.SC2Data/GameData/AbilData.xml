@@ -124,6 +124,23 @@
         <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
         <AcquireAttackers value="1"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="HiveMindEmulator">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="HMEMindControlSearchArea"/>
+        <Cost>
+            <Resource index="Minerals" value="8000"/>
+            <Cooldown TimeUse="450"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="HMEMindControlSearchArea"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HiveMindEmulator3">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilTransport id="InfestableHutTransport">
         <UnloadPeriod value="2"/>
     </CAbilTransport>
@@ -204,6 +221,23 @@
         <Range value="500"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CommanderAlarakUnlockDeathFleet">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PsiDisruptor">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="PsiDisruptionSearchArea"/>
+        <Cost>
+            <Resource index="Minerals" value="8000"/>
+            <Cooldown TimeUse="450"/>
+        </Cost>
+        <TargetFilters value="Visible;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="PsiDisruptionSearchArea"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PsiDisruptor3">
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>

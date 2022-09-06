@@ -178,6 +178,26 @@
     <CEffectDamage id="ConsumptionDamage">
         <LeechFraction index="Life" value="2"/>
     </CEffectDamage>
+    <CEffectIssueOrder id="ConfusionAttack">
+        <EditorCategories value="Race:Protoss"/>
+        <WhichUnit Value="Source"/>
+        <Abil value="attack"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="ConfusionAttackSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSDistanceFromSource"/>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray MaxCount="1" Radius="12" Effect="ConfusionAttack"/>
+    </CEffectEnumArea>
+    <CEffectIssueOrder id="ConfusionStop">
+        <EditorCategories value="Race:Protoss"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
     <CEffectDamage id="DeathRecallD">
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
@@ -555,6 +575,12 @@
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
     </CEffectDamage>
+    <CEffectEnumArea id="HMEMindControlSearchArea">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Structure,Heroic,Worker,Missile,Stasis,UnderConstruction,Dead,Invulnerable"/>
+        <AreaArray Radius="4" Effect="MindControl"/>
+    </CEffectEnumArea>
     <CEffectApplyBehavior id="HideInTheShadows">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -1087,6 +1113,10 @@
         <EditorCategories value="Race:Protoss"/>
         <BehaviorLink value="PowerStructure"/>
     </CEffectRemoveBehavior>
+    <CEffectEnumArea id="PsiDisruptionSearchArea">
+        <AreaArray index="0" Radius="9"/>
+        <ImpactLocation Value="TargetPoint"/>
+    </CEffectEnumArea>
     <CEffectDamage id="PsiStormDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>

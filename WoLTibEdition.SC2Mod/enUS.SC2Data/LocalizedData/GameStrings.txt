@@ -41,6 +41,7 @@ Abil/Name/GhostSquad=Ghost Squad
 Abil/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Abil/Name/HideInTheShadows=Hide In The Shadows
 Abil/Name/HighTemplarAttackDummy=High Templar Attack Dummy
+Abil/Name/HiveMindEmulator=Hive Mind Emulator
 Abil/Name/HyperionYamato=Yamato Gun
 Abil/Name/InfantryMercenaries=Infantry Mercenaries
 Abil/Name/MarauderSquad=Marauder Squad
@@ -52,6 +53,7 @@ Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
 Abil/Name/PowerStructure=Power Structure
+Abil/Name/PsiDisruptor=Psi Disruptor
 Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
@@ -92,6 +94,7 @@ Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
 Behavior/Name/Veterancy=Veterancy
 Behavior/Name/ZeratulHoldFire=Hold Fire
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 30%.
+Behavior/Tooltip/PsiDisruption=Unit will attack nearby units.
 Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
@@ -117,6 +120,18 @@ Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
+Button/Name/HiveMindEmulator10=Hive Mind Emulator
+Button/Name/HiveMindEmulator11=Hive Mind Emulator
+Button/Name/HiveMindEmulator12=Hive Mind Emulator
+Button/Name/HiveMindEmulator13=Hive Mind Emulator
+Button/Name/HiveMindEmulator14=Hive Mind Emulator
+Button/Name/HiveMindEmulator3=Hive Mind Emulator
+Button/Name/HiveMindEmulator4=Hive Mind Emulator
+Button/Name/HiveMindEmulator5=Hive Mind Emulator
+Button/Name/HiveMindEmulator6=Hive Mind Emulator
+Button/Name/HiveMindEmulator7=Hive Mind Emulator
+Button/Name/HiveMindEmulator8=Hive Mind Emulator
+Button/Name/HiveMindEmulator9=Hive Mind Emulator
 Button/Name/HyperionYamato10=Hyperion Yamato
 Button/Name/HyperionYamato11=Hyperion Yamato
 Button/Name/HyperionYamato12=Hyperion Yamato
@@ -158,6 +173,18 @@ Button/Name/NukeCalldown8=Tac Nuke Strike
 Button/Name/NukeCalldown9=Tac Nuke Strike
 Button/Name/PauseQueue=Pause Queue
 Button/Name/PowerStructure=Power Structure
+Button/Name/PsiDisruptor10=Psi Disruptor
+Button/Name/PsiDisruptor11=Psi Disruptor
+Button/Name/PsiDisruptor12=Psi Disruptor
+Button/Name/PsiDisruptor13=Psi Disruptor
+Button/Name/PsiDisruptor14=Psi Disruptor
+Button/Name/PsiDisruptor3=Psi Disruptor
+Button/Name/PsiDisruptor4=Psi Disruptor
+Button/Name/PsiDisruptor5=Psi Disruptor
+Button/Name/PsiDisruptor6=Psi Disruptor
+Button/Name/PsiDisruptor7=Psi Disruptor
+Button/Name/PsiDisruptor8=Psi Disruptor
+Button/Name/PsiDisruptor9=Psi Disruptor
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
 Button/Name/ResearchImprovedRailguns=Research Improved Railguns
@@ -247,6 +274,18 @@ Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val=
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
 Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
+Button/Tooltip/HiveMindEmulator10=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator11=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator12=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator13=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator14=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator3=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator4=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator5=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator6=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator7=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator8=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HiveMindEmulator9=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
 Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
 Button/Tooltip/HyperionYamato12=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
@@ -293,6 +332,18 @@ Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="As
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
+Button/Tooltip/PsiDisruptor10=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor11=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor12=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor13=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor14=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor3=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor4=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor5=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor6=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor7=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, and <c val="FFFF8A">Marauder</c> rockets by +30%.
@@ -526,6 +577,7 @@ DataCollection/Name/GhostAcademy=Ghost Academy
 DataCollection/Name/GhostAcademy2=Ghost Academy Copy
 DataCollection/Name/GhostSquad=Ghost Squad
 DataCollection/Name/HammerSecuritiesSquad=Hammer Securities Squad
+DataCollection/Name/HiveMindEmulator=Hive Mind Emulator
 DataCollection/Name/MarauderSquad=Marauder Squad
 DataCollection/Name/MarineSquad=Marine Squad
 DataCollection/Name/MedicSquad=Medic Squad
@@ -533,6 +585,7 @@ DataCollection/Name/MineralField=Mineral Field
 DataCollection/Name/MissileTurret=Missile Turret
 DataCollection/Name/MissileTurret2=Missile Turret Copy
 DataCollection/Name/PlanetaryFortress2=Planetary Fortress Copy
+DataCollection/Name/PsiDisruptor=Psi Disruptor
 DataCollection/Name/ReaperSquad=Reaper Squad
 DataCollection/Name/Refinery2=Refinery Copy
 DataCollection/Name/SensorTower=Sensor Tower
@@ -583,6 +636,9 @@ Effect/Name/CollapsibleRockTowerCreateDebrisPurifier02=Collapsible Rock Tower Cr
 Effect/Name/ConcussiveGrenadesLM=Concussive Grenades
 Effect/Name/ConcussiveGrenadesSet=Concussive Grenades
 Effect/Name/ConcussiveGrenadesU=Concussive Grenades
+Effect/Name/ConfusionAttack=Confusion Attack
+Effect/Name/ConfusionAttackSearch=Confusion Attack Search
+Effect/Name/ConfusionStop=Confusion Stop
 Effect/Name/CraneBuilt=CraneBuilt
 Effect/Name/CranePlace=Crane Place
 Effect/Name/CreateSCVHarvester=Create SCV Harvester
@@ -626,6 +682,7 @@ Effect/Name/FleetSearchTempest=Fleet Search Tempest
 Effect/Name/FleetTargeter=Fleet Targeter
 Effect/Name/FleetTempestCP=Tempest
 Effect/Name/FragmentationGrenadeCP=Fragmentation Grenade
+Effect/Name/HMEMindControlSearchArea=Mind Control
 Effect/Name/HailstormLauncherLM=Hailstorm Launcher
 Effect/Name/HailstormLauncherLMMerc=Hailstorm Launcher
 Effect/Name/HailstormLauncherU=Hailstorm Launcher
@@ -1166,6 +1223,18 @@ Skin/Name/HyperionYamato4=Hyperion Yamato
 Skin/Name/HyperionYamato5=Hyperion Yamato
 Skin/Name/InfantryMercenaries3=Infantry Mercenaries
 Skin/Name/InfantryMercenaries4=Infantry Mercenaries
+Skin/Name/PsiDisruptor10=PsiDisruptor10
+Skin/Name/PsiDisruptor11=PsiDisruptor11
+Skin/Name/PsiDisruptor12=PsiDisruptor12
+Skin/Name/PsiDisruptor13=PsiDisruptor13
+Skin/Name/PsiDisruptor14=PsiDisruptor14
+Skin/Name/PsiDisruptor3=PsiDisruptor3
+Skin/Name/PsiDisruptor4=PsiDisruptor4
+Skin/Name/PsiDisruptor5=PsiDisruptor5
+Skin/Name/PsiDisruptor6=PsiDisruptor6
+Skin/Name/PsiDisruptor7=PsiDisruptor7
+Skin/Name/PsiDisruptor8=PsiDisruptor8
+Skin/Name/PsiDisruptor9=PsiDisruptor9
 Tip/PredatorShield=Uses energy to absorb damage
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom

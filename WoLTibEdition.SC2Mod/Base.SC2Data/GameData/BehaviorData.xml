@@ -234,6 +234,13 @@
     <CBehaviorBuff id="MercGroundDrop">
         <DurationRandomMin value="0"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="MindControl">
+        <Duration value="60"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+    </CBehaviorBuff>
     <CBehaviorPowerUser id="NeedsBuildRadius">
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-building-protoss-pylon.dds"/>
@@ -311,6 +318,14 @@
     <CBehaviorBuff id="PrecursorMerc">
         <InitialEffect value="MercSquadDropDelay"/>
         <FinalEffect value="RemovePrecursorMercIterate"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsiDisruption">
+        <Duration value="120"/>
+        <InitialEffect value="ConfusionAttackSearch"/>
+        <PeriodicEffect value="ConfusionAttackSearch"/>
+        <FinalEffect value="ConfusionStop"/>
+        <Modification MoveSpeedMultiplier="1" AttackSpeedMultiplier="1"/>
+        <Period value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="PsiSight">
         <Alignment value="Positive"/>

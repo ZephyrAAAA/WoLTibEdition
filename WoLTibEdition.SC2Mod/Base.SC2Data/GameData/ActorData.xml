@@ -138,6 +138,18 @@
         <On Terms="Effect.NukePersistentTopbar.Initial" Send="Create"/>
         <On Terms="Effect.NukePersistentTopbar.Stop; At Effect" Send="Destroy"/>
     </CActorSound>
+    <CActorBeamSimple id="HiveMindEmulatorBeam">
+        <HostLaunch Subject="::global.HMESource" Scope="Implicit"/>
+        <HostLaunchSiteOps Ops=""/>
+    </CActorBeamSimple>
+    <CActorSite id="HiveMindEmulatorSource">
+        <EditorCategories value=""/>
+        <On Terms="Effect.HMEMindControlSearchArea.Start; At Effect" Send="Create"/>
+        <On Terms="ActorCreation" Send="RefSet ::global.HMESource ::Self"/>
+    </CActorSite>
+    <CActorSplat id="PsiDisruptorCursorSplat" parent="TerranCursorSplat" abil="PsiDisruptor">
+        <EditorCategories value=""/>
+    </CActorSplat>
     <CActorSound id="HyperionTopbarYamatoChargeSound" parent="SoundContinuous">
         <On Terms="Effect.YamatoGunTopbarPersistent.Start" Send="Create"/>
         <On Terms="Effect.YamatoGunTopbarPersistent.Stop" Send="Destroy"/>
@@ -816,6 +828,9 @@
         <EditorCategories value=""/>
     </CActorSplat>
     <CActorSplat id="BansheeAirstrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
+        <EditorCategories value=""/>
+    </CActorSplat>
+    <CActorSplat id="HiveMindEmulatorCursorSplat" parent="TerranCursorSplat" abil="HiveMindEmulator">
         <EditorCategories value=""/>
     </CActorSplat>
     <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
