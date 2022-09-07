@@ -5124,6 +5124,7 @@
         <EquipmentArray Weapon="ExplosiveCharges"/>
         <Sight value="9"/>
         <Food value="0"/>
+        <TechAliasArray value="Alias_Ghost"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
