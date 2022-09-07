@@ -2022,6 +2022,7 @@
         <Food value="-200"/>
         <CostResource index="Minerals" value="5000"/>
         <BehaviorArray Link="PowerCheck"/>
+        <Sight value="9"/>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
