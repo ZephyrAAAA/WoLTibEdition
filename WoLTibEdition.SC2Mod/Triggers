@@ -9,6 +9,7 @@
             <Item Type="Trigger" Library="3B48F5E9" Id="B0684CF0"/>
             <Item Type="FunctionDef" Library="3B48F5E9" Id="EA7A58BA"/>
             <Item Type="Trigger" Library="3B48F5E9" Id="29DDE1E8"/>
+            <Item Type="Trigger" Library="3B48F5E9" Id="F89B0124"/>
             <Item Type="Category" Library="3B48F5E9" Id="47AD0A9F"/>
             <Item Type="Category" Library="3B48F5E9" Id="FC8603D7"/>
         </Root>
@@ -8774,6 +8775,70 @@
             <Value>TerranInfantryVanadiumPlating</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="Trigger" Id="F89B0124">
+            <Disabled/>
+            <Event Type="FunctionCall" Library="3B48F5E9" Id="4E409CC0"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="97B43B99"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="06662DB5"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="8F1B06A7"/>
+        </Element>
+        <Element Type="FunctionCall" Id="4E409CC0">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000120"/>
+        </Element>
+        <Element Type="FunctionCall" Id="97B43B99">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="7D278C76"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="51770B18"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="014D2C57"/>
+        </Element>
+        <Element Type="Param" Id="51770B18">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="6B3940B7"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="014D2C57">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="437A2BAF"/>
+            <Value>TCampaign</Value>
+            <ValueType Type="string"/>
+        </Element>
+        <Element Type="FunctionCall" Id="06662DB5">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000292"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="BDBA7F86"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="A68DB6B9"/>
+        </Element>
+        <Element Type="Param" Id="BDBA7F86">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000499"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="A68DB6B9">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000498"/>
+            <Value>TCampaign</Value>
+            <ValueType Type="string"/>
+        </Element>
+        <Element Type="FunctionCall" Id="8F1B06A7">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C89D042F"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="AA3DD408"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="1FA09A51"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="2582451A"/>
+        </Element>
+        <Element Type="Param" Id="AA3DD408">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="2B37EF43"/>
+            <Value>CCEditionPermanence</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="ConversationState"/>
+        </Element>
+        <Element Type="Param" Id="1FA09A51">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="897BB1AD"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="8635FF1D"/>
+        </Element>
+        <Element Type="FunctionCall" Id="8635FF1D">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000279"/>
+        </Element>
+        <Element Type="Param" Id="2582451A">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="70C76B47"/>
+            <Value>CCEditionPermanence</Value>
+            <ValueType Type="string"/>
         </Element>
         <Element Type="Category" Id="47AD0A9F">
             <Item Type="Trigger" Library="3B48F5E9" Id="1B6F233D"/>
