@@ -24,26 +24,26 @@ Forcefields break when a massive unit walks on them.
 Added progression messages when you return to the Hyperion, and when you start a mission.
 The predator and spec ops now unlock after the proper number of completed missions.
 Siege tank, Colossi, Immortal, Goliath, Hellion now have turret tracking
-*Research bonus objectives now give 10000 credits (Tentative)
-*Rebalancing of Armoury Upgrade Costs
-*Hive Mind Emulator is now a topbar power
-*Psi Disruptor is now a topbar power
+Research bonus objectives now give 10000 credits
+Hive Mind Emulator is now a topbar power
+Psi Disruptor is now a topbar power
+Fixed Titanium Housing not affecting the missile turret.
 *You now actually keep the drill when you take it.
-*Rebalance of armoury credit costs
+*Rebalancing of Armoury Upgrade Costs
 *The ghost and spectre now prefer to target infantry
 
 Liberation Day:
-*Each Holoboard now gives 5k credits
+Each Holoboard now gives 5k credits
 
 The Outlaws:
 The Dominion now starts with Blue Flame
 Ripped out the old upgrade system, replaced with our upgrade function.
 Changed the tip about refineries to mention 3 SCVs is optimal
-*Rescuing the Rebels gives 30k credits
+Rescuing the Rebels gives 30k credits
 
 Zero Hour:
 Ripped out the old upgrade system, replaced with our upgrade function.
-*Each rescue group gives 10k credits
+Each rescue group gives 10k credits
 
 Smash and Grab:
 Ripped out the old upgrade system, replaced with our upgrade function.
