@@ -59,8 +59,133 @@
         </Indices>
     </CConversationState>
     <CConversationState id="MissionObjective">
+        <Indices index="0">
+            <InfoValue Id="Credits Per Item" Value="5000"/>
+            <InfoValue Id="Item Count" Value="6"/>
+        </Indices>
+        <Indices index="1">
+            <InfoValue Id="Credits Per Item"/>
+            <InfoValue Id="Item Count"/>
+        </Indices>
+        <Indices index="3">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="5">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="8">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="11">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="2"/>
+        </Indices>
+        <Indices index="13">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="15">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="18">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="21">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="23">
+            <InfoValue index="0" Value="37500"/>
+        </Indices>
+        <Indices index="24">
+            <InfoValue index="0" Value="37500"/>
+        </Indices>
+        <Indices index="29">
+            <InfoValue index="0" Value="7500"/>
+        </Indices>
+        <Indices index="34">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="37">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="39">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
         <Indices index="42">
             <InfoValue Id="Credits Per Item" Value="50000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="43">
+            <InfoValue Id="Credits Per Item"/>
+            <InfoValue Id="Item Count"/>
+        </Indices>
+        <Indices index="51">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="52">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="4"/>
+        </Indices>
+        <Indices index="54">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="4"/>
+        </Indices>
+        <Indices index="59">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="62">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="65">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="68">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="4"/>
+        </Indices>
+        <Indices index="70">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="72">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="74">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="75">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="3"/>
+        </Indices>
+        <Indices index="78">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="4"/>
+        </Indices>
+        <Indices index="79">
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="2"/>
+        </Indices>
+        <Indices index="81">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
+            <InfoValue Id="Item Count" Value="1"/>
+        </Indices>
+        <Indices index="83">
+            <InfoValue Id="Credits Per Item" Value="30000"/>
             <InfoValue Id="Item Count" Value="1"/>
         </Indices>
     </CConversationState>
@@ -68,13 +193,39 @@
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>
         </Indices>
+        <Indices index="10">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
         <Indices index="17" ImagePath="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
         <Indices index="19">
             <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
         </Indices>
         <Indices index="20" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
         <Indices index="25" ImagePath="Assets\Textures\btn-ability-terran-emp.dds"/>
-        <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+        <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
+        <Indices index="27">
+            <InfoValue index="0" Value="105000"/>
+        </Indices>
+        <Indices index="28">
+            <InfoValue index="0" Value="75000"/>
+        </Indices>
+        <Indices index="29">
+            <InfoValue index="0" Value="80000"/>
+        </Indices>
+        <Indices index="30">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
+        <Indices index="31">
+            <InfoValue index="0" Value="100000"/>
+        </Indices>
+        <Indices index="36">
+            <InfoValue index="0" Value="100000"/>
+        </Indices>
+        <Indices index="37">
+            <InfoValue index="0" Value="90000"/>
+        </Indices>
         <Indices index="38" ImagePath="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds">
             <InfoValue index="0" Value="60000"/>
         </Indices>
@@ -87,10 +238,16 @@
         <Indices index="41" ImagePath="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds">
             <InfoValue index="0" Value="80000"/>
         </Indices>
+        <Indices index="42">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
     </CConversationState>
     <CConversationState id="TechState">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>
+        </Indices>
+        <Indices index="10">
+            <InfoValue index="0" Value="70000"/>
         </Indices>
         <Indices index="17" ImagePath="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
         <Indices index="19">
@@ -98,7 +255,30 @@
         </Indices>
         <Indices index="20" ImagePath="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
         <Indices index="25" ImagePath="Assets\Textures\btn-ability-terran-emp.dds"/>
-        <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+        <Indices index="26" ImagePath="Assets\Textures\btn-upgrade-terran-transformationservos.dds">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
+        <Indices index="27">
+            <InfoValue index="0" Value="105000"/>
+        </Indices>
+        <Indices index="28">
+            <InfoValue index="0" Value="75000"/>
+        </Indices>
+        <Indices index="29">
+            <InfoValue index="0" Value="80000"/>
+        </Indices>
+        <Indices index="30">
+            <InfoValue index="0" Value="70000"/>
+        </Indices>
+        <Indices index="31">
+            <InfoValue index="0" Value="100000"/>
+        </Indices>
+        <Indices index="36">
+            <InfoValue index="0" Value="100000"/>
+        </Indices>
+        <Indices index="37">
+            <InfoValue index="0" Value="90000"/>
+        </Indices>
         <Indices index="38" ImagePath="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds">
             <InfoValue index="0" Value="60000"/>
         </Indices>
@@ -107,6 +287,12 @@
         </Indices>
         <Indices index="40" ImagePath="Assets\Textures\btn-upgrade-terran-medivacemergencythrusters.dds">
             <InfoValue index="0" Value="40000"/>
+        </Indices>
+        <Indices index="41" ImagePath="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds">
+            <InfoValue index="0" Value="80000"/>
+        </Indices>
+        <Indices index="42">
+            <InfoValue index="0" Value="70000"/>
         </Indices>
     </CConversationState>
 </Catalog>

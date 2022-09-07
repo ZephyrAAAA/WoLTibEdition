@@ -659,6 +659,8 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="9"/>
         <AttackType value="Siege"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SpartanCompanyAUpgraded">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -669,6 +671,8 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SpartanCompanyGUpgraded">
         <Tip value="Weapon/Tip/Rifle"/>

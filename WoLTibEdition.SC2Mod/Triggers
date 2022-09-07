@@ -8977,7 +8977,7 @@
         </Element>
         <Element Type="Param" Id="9DF69439">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
-            <Value>3</Value>
+            <Value>6</Value>
             <ValueType Type="int"/>
         </Element>
         <Element Type="FunctionCall" Id="A8DB3AD1">
