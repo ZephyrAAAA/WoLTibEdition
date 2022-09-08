@@ -22772,21 +22772,14 @@ bool gt_ArmoryTechConsoleClicked_Func (bool testConds, bool runActions) {
     Wait(0.1, c_timeGame);
     gf_GoToRoom(ge_RoomID_RoomTechPurchase, false);
     gf_PauseNewItemInfo(true);
-    libCamp_gv_tS_MissionTechUnitsEnabled[libCamp_ge_MapID_MapTRaynor01][2] = libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost;
-    if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
-        libCamp_gv_tS_MissionTechUnitsEnabled[libCamp_ge_MapID_MapTRaynor01][3] = libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre;
-    }
-
     libCamp_gf_DisplayTechConsole(gt_ArmoryTechConsoleLeave);
     UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypePurchasePanel, false);
     PurchaseCategorySetState(libCamp_gv_tS_TechCategory_UI[(libCamp_ge_StoryTechCategory_StoryTechCategoryDominion)], c_purchaseCategoryStateEnabled);
     if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostOcularImplants] == libCamp_ge_StoryTechStates_TechPurchased)))) {
-        libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostOcularImplants] = libCamp_ge_StoryTechStates_TechAvailable;
         PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostOcularImplants], c_purchaseItemStateEnabled);
     }
 
     if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostPermaCloak] == libCamp_ge_StoryTechStates_TechPurchased)))) {
-        libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostPermaCloak] = libCamp_ge_StoryTechStates_TechAvailable;
         PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostPermaCloak], c_purchaseItemStateEnabled);
     }
 
@@ -22795,12 +22788,10 @@ bool gt_ArmoryTechConsoleClicked_Func (bool testConds, bool runActions) {
     PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], c_purchaseGroupStateEnabled);
     if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
         if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectrePermaCloak] == libCamp_ge_StoryTechStates_TechPurchased)))) {
-            libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectrePermaCloak] = libCamp_ge_StoryTechStates_TechAvailable;
             PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechSpectrePermaCloak], c_purchaseItemStateEnabled);
         }
 
         if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectreUltrasonicPulse] == libCamp_ge_StoryTechStates_TechPurchased)))) {
-            libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectreUltrasonicPulse] = libCamp_ge_StoryTechStates_TechAvailable;
             PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechSpectreUltrasonicPulse], c_purchaseItemStateEnabled);
         }
 
