@@ -794,6 +794,7 @@ bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) 
     }
 
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_7101F21A"));
+    libCamp_gf_EnableCampaignTechUnit(true, libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost, 1);
     UISetButtonFaceHighlighted(PlayerGroupAll(), "Predator", true);
     UISetButtonFaceHighlighted(PlayerGroupAll(), "GhostAcademy", true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightPredator, true);
@@ -825,6 +826,7 @@ bool lib3B48F5E9_gt_ArmoryHercules_Func (bool testConds, bool runActions) {
     }
 
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_C216B0DE"));
+    libCamp_gf_EnableCampaignTechUnit(true, libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre, 1);
     UISetButtonFaceHighlighted(PlayerGroupAll(), "Armory", true);
     UISetButtonFaceHighlighted(PlayerGroupAll(), "BuildHercules", true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightArmory, true);
