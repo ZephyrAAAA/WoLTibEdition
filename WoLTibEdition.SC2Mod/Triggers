@@ -8789,7 +8789,6 @@
             <Event Type="FunctionCall" Library="3B48F5E9" Id="A3961907"/>
             <Condition Type="FunctionCall" Library="3B48F5E9" Id="BF327A5E"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="60824BA8"/>
-            <Action Type="FunctionCall" Library="3B48F5E9" Id="6603CEDF"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="7995A8B2"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="1225B3C0"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="EBC7C315"/>
@@ -8856,25 +8855,6 @@
         <Element Type="Param" Id="7101F21A">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="78A54B52"/>
             <ValueType Type="text"/>
-        </Element>
-        <Element Type="FunctionCall" Id="6603CEDF">
-            <FunctionDef Type="FunctionDef" Library="Camp" Id="D1F798AD"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="AEA64D6D"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="2B56B9E9"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="B3A730CF"/>
-        </Element>
-        <Element Type="Param" Id="AEA64D6D">
-            <ParameterDef Type="ParamDef" Library="Camp" Id="6103B514"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000063"/>
-        </Element>
-        <Element Type="Param" Id="2B56B9E9">
-            <ParameterDef Type="ParamDef" Library="Camp" Id="997923DF"/>
-            <Preset Type="PresetValue" Library="Camp" Id="E1EAB239"/>
-        </Element>
-        <Element Type="Param" Id="B3A730CF">
-            <ParameterDef Type="ParamDef" Library="Camp" Id="A9AD04F2"/>
-            <Value>1</Value>
-            <ValueType Type="int"/>
         </Element>
         <Element Type="FunctionCall" Id="7995A8B2">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="5967E3C2"/>
@@ -8954,7 +8934,6 @@
             <Event Type="FunctionCall" Library="3B48F5E9" Id="6916EECB"/>
             <Condition Type="FunctionCall" Library="3B48F5E9" Id="548AD3E9"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="A8DB3AD1"/>
-            <Action Type="FunctionCall" Library="3B48F5E9" Id="FF94FB56"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="4C1A54D6"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="4CFF3472"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="4CA412DC"/>
@@ -9021,25 +9000,6 @@
         <Element Type="Param" Id="C216B0DE">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="78A54B52"/>
             <ValueType Type="text"/>
-        </Element>
-        <Element Type="FunctionCall" Id="FF94FB56">
-            <FunctionDef Type="FunctionDef" Library="Camp" Id="D1F798AD"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="3792F6D0"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="494F9014"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="0693F94E"/>
-        </Element>
-        <Element Type="Param" Id="3792F6D0">
-            <ParameterDef Type="ParamDef" Library="Camp" Id="6103B514"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000063"/>
-        </Element>
-        <Element Type="Param" Id="494F9014">
-            <ParameterDef Type="ParamDef" Library="Camp" Id="997923DF"/>
-            <Preset Type="PresetValue" Library="Camp" Id="E25F61DE"/>
-        </Element>
-        <Element Type="Param" Id="0693F94E">
-            <ParameterDef Type="ParamDef" Library="Camp" Id="A9AD04F2"/>
-            <Value>1</Value>
-            <ValueType Type="int"/>
         </Element>
         <Element Type="FunctionCall" Id="4C1A54D6">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="5967E3C2"/>
