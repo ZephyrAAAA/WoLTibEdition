@@ -228,25 +228,6 @@
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
-    <CWeaponLegacy id="GhostSquad" parent="C10CanisterRifle">
-        <Name value="Weapon/Name/GhostSquad"/>
-        <EditorCategories value=""/>
-        <Tip value="Weapon/Tip/GhostSquad"/>
-        <DisplayName value="Weapon/Name/GhostSquad"/>
-        <Marker Link="Weapon/GhostSquad"/>
-        <Cost>
-            <Cooldown Link="Weapon/GhostSquad"/>
-        </Cost>
-        <DamagePoint value="0"/>
-        <Backswing value="0"/>
-        <Effect value="SquadAttack"/>
-        <RandomDelayMin value="-1.45"/>
-        <RandomDelayMax value="-1.45"/>
-        <LegacyOptions index="UseRangeToCenter" value="1"/>
-        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <Range value="6"/>
-    </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
@@ -430,6 +411,23 @@
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MedicSquad">
+        <EditorCategories value=""/>
+        <Tip value="Weapon/Tip/Rifle"/>
+        <Options index="Hidden" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="GuassRifle"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="0.05"/>
+        <AttackType value="Normal"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="SquadAttack"/>
+        <LegacyOptions index="UseRangeToCenter" value="1"/>
+        <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="MedivacFakeWeapon">
         <EditorCategories value=""/>
         <Options index="Disabled" value="1"/>
@@ -447,6 +445,8 @@
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
         <Backswing value="0.125"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Odin">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -686,6 +686,8 @@
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
         <Backswing value="0.125"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
@@ -715,6 +717,8 @@
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
         <Backswing value="0.125"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>

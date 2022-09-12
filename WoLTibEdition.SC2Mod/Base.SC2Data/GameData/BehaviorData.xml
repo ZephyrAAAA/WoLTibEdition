@@ -380,6 +380,13 @@
         <Duration value="0.3"/>
         <Modification RadiusMultiplier="0.1" WeaponRange="0.5"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SquadMainUnit">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="SquadVeterancy1">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="2"/>
@@ -490,13 +497,15 @@
         <DisableValidatorArray value="UnitNotInBunker"/>
         <Period value="1"/>
         <PeriodicEffect value="SquadUnitTeleport"/>
-        <FinalEffect value="SquadDeathDamage"/>
         <Modification RadiusMultiplier="0.5" MoveSpeedMultiplier="1.75" WeaponScanLimit="0">
             <StateFlags index="SuppressFoodUsed" value="1"/>
             <StateFlags index="SuppressArmySelect" value="1"/>
             <StateFlags index="Unselectable" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
+        <DamageResponse Handled="SquadDeathDamage" Priority="1" HandledValue="Remaining">
+            <Chance value="1"/>
+        </DamageResponse>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
         <InfoFlags index="Hidden" value="1"/>

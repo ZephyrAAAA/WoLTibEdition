@@ -161,7 +161,6 @@
     <CUnit default="1" id="BaseSquad">
         <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="Invulnerable" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
         <Collide index="Burrow3" value="1"/>
         <Attributes index="Biological" value="1"/>
@@ -191,6 +190,8 @@
         <LifeStart value="6"/>
         <LifeMax value="6"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <BehaviorArray Link="SquadMainUnit"/>
+        <TechAliasArray value="Alias_Squad"/>
     </CUnit>
     <CUnit id="AbandonedBuilding">
         <ArmorType value="Hero"/>
@@ -2388,8 +2389,8 @@
     </CUnit>
     <CUnit id="DevilDogSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <LifeStart value="4"/>
-        <LifeMax value="4"/>
+        <LifeStart value="960"/>
+        <LifeMax value="960"/>
         <Speed value="2.25"/>
         <AbilArray Link="DevilDogSquad"/>
         <WeaponArray Link="DevilDogSquad"/>
@@ -3372,14 +3373,16 @@
     </CUnit>
     <CUnit id="FirebatSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <LifeStart value="4"/>
-        <LifeMax value="4"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
         <Speed value="2.25"/>
         <AbilArray Link="FirebatSquad"/>
         <WeaponArray Link="FirebatSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="FirebatSquad,0" Row="1" Column="0"/>
         </CardLayouts>
+        <ArmorType value="Normal"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
     </CUnit>
     <CUnit id="Marauder">
         <ArmorType value="Normal"/>
@@ -3404,8 +3407,8 @@
     </CUnit>
     <CUnit id="HammerSecuritiesSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <LifeStart value="2"/>
-        <LifeMax value="2"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <Speed value="2.25"/>
         <AbilArray Link="HammerSecuritiesSquad"/>
         <WeaponArray Link="HammerSecuritiesSquad"/>
@@ -3413,7 +3416,8 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
         </CardLayouts>
-        <BehaviorArray Link="HailstormLaunchers"/>
+        <BehaviorArray index="0" Link="HailstormLaunchers"/>
+        <BehaviorArray Link="SquadMainUnit"/>
         <SelectAlias value="MarauderSquad"/>
     </CUnit>
     <CUnit id="Marine">
@@ -3478,6 +3482,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <AbilArray index="1" Link="move"/>
+        <AbilArray index="2" Link="attack"/>
     </CUnit>
     <CUnit id="MedicACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3485,6 +3491,10 @@
     </CUnit>
     <CUnit id="MedicSquad" parent="BaseSquad">
         <Race value="Terr"/>
+        <ArmorType value="Small"/>
+        <LifeStart value="180"/>
+        <LifeMax value="180"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <Speed value="2.25"/>
         <AbilArray Link="MedicSquad"/>
         <AbilArray Link="MedicSquadAcquire"/>
@@ -3492,9 +3502,6 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
         </CardLayouts>
-        <LifeStart value="3"/>
-        <LifeMax value="3"/>
-        <ArmorType value="Small"/>
     </CUnit>
     <CUnit id="Medivac">
         <ArmorType value="None"/>
@@ -4442,6 +4449,8 @@
             <LayoutButtons index="6" AbilCmd="255,255"/>
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
+        <LifeStart value="60"/>
+        <LifeMax value="60"/>
     </CUnit>
     <CUnit id="ReaperPlacement">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5874,15 +5883,6 @@
         <EditorCategories value="ObjectType:Resource,ObjectFamily:Melee"/>
         <Fidget DelayMax="0"/>
     </CUnit>
-    <CUnit id="GhostSquad" parent="BaseSquad">
-        <Race value="Terr"/>
-        <Speed value="2.25"/>
-        <AbilArray Link="GhostSquad"/>
-        <WeaponArray Link="GhostSquad"/>
-        <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="GhostSquad,0" Row="1" Column="0"/>
-        </CardLayouts>
-    </CUnit>
     <CUnit id="MarauderSquad" parent="BaseSquad">
         <Race value="Terr"/>
         <Speed value="2.25"/>
@@ -5892,9 +5892,10 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarauderSquad,Ammo1" Row="1" Column="0"/>
         </CardLayouts>
-        <LifeStart value="2"/>
-        <LifeMax value="2"/>
-        <BehaviorArray Link="HailstormLaunchers"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <BehaviorArray index="0" Link="HailstormLaunchers"/>
+        <BehaviorArray Link="SquadMainUnit"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -5909,6 +5910,8 @@
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="1"/>
+        <LifeStart value="270"/>
+        <LifeMax value="270"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -5923,8 +5926,8 @@
             <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="1"/>
             <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="2" Column="2"/>
         </CardLayouts>
-        <LifeStart value="4"/>
-        <LifeMax value="4"/>
+        <LifeStart value="240"/>
+        <LifeMax value="240"/>
         <Mover value="Colossus"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
@@ -6272,6 +6275,8 @@
         </CardLayouts>
         <SubgroupPriorityDelta value="1"/>
         <SelectAlias value="MarineSquad"/>
+        <LifeStart value="450"/>
+        <LifeMax value="450"/>
     </CUnit>
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

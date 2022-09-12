@@ -147,6 +147,9 @@
         <On Terms="Effect.HMEMindControlSearchArea.Start; At Effect" Send="Create"/>
         <On Terms="ActorCreation" Send="RefSet ::global.HMESource ::Self"/>
     </CActorSite>
+    <CActorUnit id="Medivac">
+        <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
+    </CActorUnit>
     <CActorSplat id="PsiDisruptorCursorSplat" parent="TerranCursorSplat" abil="PsiDisruptor">
         <EditorCategories value=""/>
     </CActorSplat>
@@ -270,6 +273,68 @@
         <Model value="Invisible"/>
         <BuildModel value="Invisible"/>
         <PlacementModel value="Invisible"/>
+        <On index="7" Terms="StatusOn.*.PreTargetingModel" Send="Create ModelPretargetGround"/>
+        <On index="8" Terms="StatusOff.*.PreTargetingModel" Target="ModelPretargetGround" Send="Destroy"/>
+        <On index="9" Terms="StatusOn.*.PreTargetingModel; ValidateUnit IsFlying" Send="Create GroundPreSelection"/>
+        <On index="10" Target="GroundPreSelection"/>
+        <On index="11" Terms="StatusIncrement.*.PreTargetingModel; IsStatus PreTargetingModel 2" Send="StatusSet PreTargetingModel 1"/>
+        <On index="12" Terms="PreTargetingUpdate.*.Start" Target="" Send="SetTintColorBlendPair 255,192,192 255,128,128 0.150000 Bounce Pretarget"/>
+        <On index="13" Terms="PreTargetingUpdate.*.Stop" Send="ClearTintColor 0.100000 Pretarget"/>
+        <On index="14" Terms="StatusOn.*.PreTargetingTint" Send="PreTargetingUpdate Start"/>
+        <On index="15" Terms="StatusOff.*.PreTargetingTint" Send="PreTargetingUpdate Stop"/>
+        <On index="16" Terms="StatusIncrement.*.PreTargetingTint; IsStatus PreTargetingTint 2" Send="StatusSet PreTargetingTint 1"/>
+        <On index="17" Terms="UnitBirth.*.Normal" Send="$Birth 0 0.000000"/>
+        <On index="18" Terms="UnitFidget" Send="AnimPlay Fidget Fidget"/>
+        <On index="19" Terms="UnitMovementUpdate.*.Walk" Send="AnimClear Fidget"/>
+        <On index="20" Terms="UnitDetectedByViewer.*.On; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOn"/>
+        <On index="21" Terms="UnitDetectedByViewer.*.Off; ValidateUnit IsHallucination" Target="_HallucinationTinter" Send="Signal HallucinationTintOff"/>
+        <On index="22" Terms="UnitDeathCustomize; ValidateUnit NotStructure; IsStatus InAir 1" Send="DeathCustomize AntiGravGeneric"/>
+        <On index="23" Terms="UnitDeathCustomize; ValidateUnit IsProtossUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="24" Terms="UnitDeathCustomize; ValidateUnit IsTerranUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravTerran"/>
+        <On index="25" Terms="UnitDeathCustomize; ValidateUnit IsZergUnit; IsStatus InAir 1" Send="DeathCustomize AntiGravZerg"/>
+        <On index="26" Terms="UnitDeathCustomize; ValidateUnit IsVortexed" Send="DeathCustomize Vortex"/>
+        <On index="27" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathProtoss" Send="DeathCustomize AntiGravProtoss"/>
+        <On index="28" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathZerg" Target="" Send="DeathCustomize AntiGravZerg"/>
+        <On index="29" Terms="UnitDeathCustomize; ValidateUnit HasForceLowDeathTerran" Send="DeathCustomize AntiGravTerran"/>
+        <On index="30" Terms="Behavior.PhoenixAntiGrav.On" Target="" Send="ModelSuddenMotionStart"/>
+        <On index="31" Terms="Behavior.PhoenixAntiGrav.Off" Target="" Send="ModelSuddenMotionStop"/>
+        <On index="32" Terms="Behavior.ForceLowDeath.On" Send="DeathCustomsEnablePhysics 0"/>
+        <On index="33" Terms="UnitTaunt.*.Start; Taunt" Target="" Send="AnimPlay Cheer Stand,Victory"/>
+        <On index="34" Terms="UnitTaunt.*.Stop; Taunt" Send="AnimClear Cheer"/>
+        <On index="35" Terms="UnitTaunt.*.Start; Taunt Dance" Send="AnimPlay Dance Stand,Dance"/>
+        <On index="36" Terms="UnitTaunt.*.Stop; Taunt Dance" Send="AnimClear Dance"/>
+        <On index="37" Terms="UnitTaunt.*.Start; Taunt Tease" Send="AnimPlay Taunt Taunt"/>
+        <On index="38" Terms="UnitTaunt.*.Stop; Taunt Tease" Target="" Send="AnimClear Taunt"/>
+        <On index="39" Terms="ActorCreation" Target="" Send="StatusSet InAir 0"/>
+        <On index="40" Terms="UnitHeightUpdate.*.Lift" Send="StatusSet InAir 1"/>
+        <On index="41" Terms="UnitHeightUpdate.*.Land" Send="StatusSet InAir 0"/>
+        <On index="42" Terms="BuildCoachHover.*.On" Send="TimerKill DelayUnhighlight"/>
+        <On index="43" Terms="BuildCoachHover.*.On" Send="SetTintColor 0,255,0 0.100000"/>
+        <On index="44" Terms="BuildCoachHover.*.Off" Send="TimerSet 0.300000 DelayUnhighlight"/>
+        <On index="45" Terms="TimerExpired; TimerName DelayUnhighlight" Send="SetTintColor 255,255,255 0.500000"/>
+        <On index="46" Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On index="47" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On index="48" Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
+        <On index="49" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On index="50" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On index="51" removed="1"/>
+        <On index="52" removed="1"/>
+        <On index="53" removed="1"/>
+        <On index="54" removed="1"/>
+        <On index="55" removed="1"/>
+        <On index="56" removed="1"/>
+        <On index="57" removed="1"/>
+        <On index="58" removed="1"/>
+        <On index="59" removed="1"/>
+        <On index="60" removed="1"/>
+        <On index="61" removed="1"/>
+        <On index="62" removed="1"/>
+        <On index="63" removed="1"/>
+        <On index="64" removed="1"/>
+        <On index="65" removed="1"/>
+        <On index="66" removed="1"/>
+        <On index="67" removed="1"/>
+        <On index="68" removed="1"/>
     </CActorUnit>
     <CActorUnit id="Bunker2" parent="TerranBuildingEx" unitName="Bunker2">
         <Aliases value="_UnitHuge"/>
@@ -689,6 +754,7 @@
         <Wireframe>
             <Image value="Assets\Textures\wireframe-terran-firebat-mercenary.dds"/>
         </Wireframe>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
         <Aliases value="_UnitHuge"/>
@@ -748,67 +814,6 @@
     <CActorSplat id="GhostAcademy2Splat" parent="GenericUnitSplat" unitName="GhostAcademy2">
         <Model value="GhostAcademySplat"/>
     </CActorSplat>
-    <CActorUnit id="GhostSquad" parent="Ghost" unitName="GhostSquad">
-        <Macros index="1" removed="1"/>
-        <On index="0" Terms="UnitBirth.GhostSquad" Send="Create SoundEmitter GhostSquad_Ambience"/>
-        <On index="1" Terms="UnitBirth.GhostSquad"/>
-        <On index="2" Terms="UnitRevive.GhostSquad"/>
-        <On index="3" Terms="UnitRevive.GhostSquad"/>
-        <On index="4" Terms="UnitConstruction.GhostSquad.Start"/>
-        <On index="5" Terms="UnitConstruction.GhostSquad.Finish"/>
-        <On index="64" Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
-        <On index="65" Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
-        <On index="66" Terms="WeaponStart.*.AttackStart; AnimPlaying Birth" Send="AnimClear Birth"/>
-        <On index="67" Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
-        <On index="68" Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
-        <On index="69" Terms="ActorCreation" Send="SetOpacity"/>
-        <On index="70" removed="1"/>
-        <On index="71" removed="1"/>
-        <On index="72" removed="1"/>
-        <On index="73" removed="1"/>
-        <On index="74" removed="1"/>
-        <On index="75" removed="1"/>
-        <On index="76" removed="1"/>
-        <On index="77" removed="1"/>
-        <On index="78" removed="1"/>
-        <On index="79" removed="1"/>
-        <On index="80" removed="1"/>
-        <On index="81" removed="1"/>
-        <On index="82" removed="1"/>
-        <On index="83" removed="1"/>
-        <On index="84" removed="1"/>
-        <On index="85" removed="1"/>
-        <On index="86" removed="1"/>
-        <On index="87" removed="1"/>
-        <On index="88" removed="1"/>
-        <On index="89" removed="1"/>
-        <On index="90" removed="1"/>
-        <On index="91" removed="1"/>
-        <On index="92" removed="1"/>
-        <On index="93" removed="1"/>
-        <Model value="SiegeTank"/>
-        <AnimBlendTime value="-1.000000"/>
-        <ModelFlags index="OutlineEmitter" value="0"/>
-        <EventDataFootprint index="0" Actor="UnitFootprint" Model="GhostSquadFootprint"/>
-        <BuildModel value="SiegeTank"/>
-        <DeathArray index="Normal" ModelLink="GhostSquad" SoundLink="GhostSquadDeath" VoiceLink="GhostSquadDeathVoice"/>
-        <DeathArray index="Blast" ModelLink=""/>
-        <DeathArray index="Disintegrate" ModelLink="" SoundLink=""/>
-        <DeathArray index="Eviscerate" ModelLink="" SoundLink=""/>
-        <DeathArray index="Fire" ModelLink="" SoundLink=""/>
-        <DeathCustoms index="5" removed="1"/>
-        <PlacementModel value="SiegeTank"/>
-        <StandAnimTurnTime value="4"/>
-        <AbilSoundArray index="0" removed="1"/>
-        <AbilSoundArray index="1" removed="1"/>
-        <AbilSoundArray index="2" removed="1"/>
-        <BarOffset value="100"/>
-        <BarWidth value="60"/>
-        <GlossaryAnim value="Spell"/>
-        <HighlightTooltip value="Unit/Name/GhostSquad"/>
-        <SelectAbilCmd value=""/>
-        <Scale value="1.500000,1.500000,0.750000"/>
-    </CActorUnit>
     <CActorModel id="HybridBlinkIn">
         <On Terms="Effect.ZeratulSeek.Stop; At Source" Send="Create"/>
     </CActorModel>
@@ -910,6 +915,7 @@
         <GroupSoundArray index="Board" value="Marine_GroupBoard"/>
         <HighlightTooltip value="Unit/Name/MarauderSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="FirebatSquad" parent="Firebat" unitName="FirebatSquad">
         <Macros index="1" removed="1"/>
@@ -932,6 +938,7 @@
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/FirebatSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="HammerSecuritiesSquad" parent="GenericUnitBase" unitName="HammerSecuritiesSquad">
         <Aliases value="_UnitSmall"/>
@@ -976,6 +983,7 @@
         <Wireframe>
             <Image value="Assets\Textures\wireframe-terran-marauder-mercenary.dds"/>
         </Wireframe>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="MarineSquad" parent="Marine" unitName="MarineSquad">
         <Macros index="1" removed="1"/>
@@ -1039,6 +1047,7 @@
         <BarWidth value="60"/>
         <HighlightTooltip value="Unit/Name/MarineSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="MedicSquad" parent="Medic" unitName="MedicSquad">
         <Macros index="1" removed="1"/>
@@ -1065,6 +1074,7 @@
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/MedicSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorBeamSimple id="MedivacHealBeamRev1">
         <HostLaunch Subject="" Scope="Implicit" Actor="Implicit"/>
@@ -1422,6 +1432,7 @@
             <Image value="Assets\Textures\Wireframe-Terran-Reaper.dds"/>
         </Wireframe>
         <Scale value="1.500000,1.500000,0.750000"/>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="Refinery2" parent="TerranBuildingEx" unitName="Refinery2">
         <Aliases value="_UnitHuge"/>
@@ -2093,6 +2104,7 @@
         <Wireframe>
             <Image value="Assets\Textures\wireframe-terran-marine-mercenary.dds"/>
         </Wireframe>
+        <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <!--                                                                                         -->
     <!-- Zeratul ............................................................................... -->

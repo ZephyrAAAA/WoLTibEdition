@@ -6,6 +6,11 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
         <Behavior value="Depowered"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CanFeedback">
+        <ResultFailed value="NotEnoughEnergy"/>
+        <CombineArray value="hasShields"/>
+        <CombineArray value="hasEnergy"/>
+    </CValidatorCombine>
     <CValidatorCombine id="CanLoadSiegeTank">
         <CombineArray value="NotSiegeTank"/>
         <CombineArray value="HasMaelstromRounds"/>
@@ -47,6 +52,10 @@
     <CValidatorUnitFilters id="IsMassive">
         <Filters value="Massive;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitType id="IsSquad">
+        <Value value="BaseSquad"/>
+        <Type value="TechAlias"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="IsUnsiegedTank">
         <Value value="SiegeTank"/>
     </CValidatorUnitType>
@@ -63,6 +72,9 @@
         <WhichUnit Value="Caster"/>
         <Value value="1"/>
         <Behavior value="MaarPassiveSpeed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotSquadUnit">
+        <Behavior value="SquadUnit"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="NotSupercloaked">
         <Behavior value="HideInTheShadows"/>

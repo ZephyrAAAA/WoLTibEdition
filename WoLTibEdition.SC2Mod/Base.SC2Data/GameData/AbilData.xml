@@ -83,7 +83,7 @@
             </Charge>
             <Cooldown TimeUse="5"/>
         </Cost>
-        <TargetFilters value="Visible,HasEnergy;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="9"/>
         <AINotifyEffect value=""/>
         <CmdButtonArray index="Execute" DefaultButtonFace="FeedbackGhost">
@@ -718,6 +718,7 @@
         <MaxCargoSize value="4"/>
         <LoadCargoEffect value="BunkerLoadIterate"/>
         <UnloadCargoEffect value="BunkerUnloadIterate"/>
+        <LoadValidatorArray value="NotSquadUnit"/>
     </CAbilTransport>
     <CAbilEffectTarget id="CCDepower">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -759,7 +760,14 @@
         <LoadCargoEffect value="AirTransportLoadIterate"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
         <LoadValidatorArray value="CanLoadSiegeTank"/>
+        <LoadValidatorArray value="NotSquadUnit"/>
         <UnloadPeriod value="0.4"/>
+        <CmdButtonArray index="LoadAll" DefaultButtonFace="MedivacLoadNearby">
+            <Flags index="Hidden" value="0"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+        <SearchRadius value="5"/>
     </CAbilTransport>
     <CAbilTransport id="AirTransport" parent="HerculesTransport">
         <Name value="Abil/Name/AirTransport"/>
@@ -775,8 +783,13 @@
         <TotalCargoSpace value="200"/>
         <LoadCargoBehavior value="InsideMedivac"/>
         <UnloadPeriod value="0"/>
-        <SearchRadius value="5"/>
         <LoadValidatorArray index="0" removed="1"/>
+        <LoadValidatorArray index="1" removed="1"/>
+        <CmdButtonArray index="LoadAll" DefaultButtonFace="">
+            <Flags index="Hidden" value="1"/>
+            <Flags index="UseDefaultButton" value="0"/>
+            <Flags index="CreateDefaultButton" value="0"/>
+        </CmdButtonArray>
     </CAbilTransport>
     <CAbilArmMagazine id="AirTransportMag">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -924,6 +937,7 @@
         <LoadCargoEffect value=""/>
         <UnloadCargoBehavior value="SquadBunkerUnload"/>
         <UnloadCargoEffect value=""/>
+        <LoadValidatorArray index="1" removed="1"/>
     </CAbilTransport>
     <CAbilSpecialize id="CCBuild">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1584,27 +1598,6 @@
             </Button>
         </InfoArray>
     </CAbilResearch>
-    <CAbilArmMagazine id="GhostSquad">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Flags index="AutoCastOffOwnerLeave" value="0"/>
-        <Flags index="IgnoreUnitCost" value="1"/>
-        <Flags index="Retarget" value="1"/>
-        <Flags index="ShowStatus" value="0"/>
-        <Leash value="0.55"/>
-        <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Ghost">
-            <Charge CountUse="1" Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
-            <Flags index="External" value="1"/>
-        </InfoArray>
-        <EffectArray index="Create" value="SquadUnit"/>
-        <EffectArray index="Launch" value="TransferKillsToCaster"/>
-        <ExternalAngle value="45"/>
-        <ExternalAngle value="135"/>
-        <ExternalAngle value="225"/>
-        <ExternalAngle value="315"/>
-        <MaxCount value="4"/>
-    </CAbilArmMagazine>
     <CAbilArmMagazine id="MarauderSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
@@ -1715,8 +1708,20 @@
         <LoadCargoEffect value="MedivacLoadSet"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
         <LoadValidatorArray value="CanLoadSiegeTank"/>
+        <LoadValidatorArray value="NotSquadUnit"/>
         <LoadCargoBehavior value="InsideMedivac"/>
         <UnloadPeriod value="2"/>
+        <CmdButtonArray index="LoadAll" DefaultButtonFace="MedivacLoadNearby">
+            <Flags index="Hidden" value="0"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+        <SearchRadius value="5"/>
+        <TargetSorts>
+            <SortArray index="1" value="TSBiological"/>
+            <SortArray value="TSLifeFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
     </CAbilTransport>
     <CAbilMorphPlacement id="OrbitalCommandLand2" parent="TerranBuildingLand" unit="OrbitalCommand">
         <Name value="Abil/Name/OrbitalCommandLand2"/>
