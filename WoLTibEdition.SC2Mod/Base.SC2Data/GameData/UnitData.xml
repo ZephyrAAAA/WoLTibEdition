@@ -2539,9 +2539,8 @@
         <AbilArray index="4" Link="GhostHoldFire"/>
         <AbilArray index="5" Link="FeedbackGhost"/>
         <AbilArray index="6" Link="GhostWeaponsFree"/>
-        <AbilArray index="7" Link="ExplosiveCharges"/>
+        <AbilArray index="7" removed="1"/>
         <AbilArray index="8" removed="1"/>
-        <EquipmentArray Weapon="ExplosiveCharges"/>
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
@@ -2572,6 +2571,7 @@
         <TechAliasArray value="Alias_Ghost"/>
         <Sight value="9"/>
         <Food value="0"/>
+        <WeaponArray Link="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3726,14 +3726,13 @@
         <LifeMax value="500"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
-        <AbilArray Link="ExplosiveCharges"/>
         <AbilArray Link="NovaHeal"/>
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
-        <EquipmentArray Weapon="ExplosiveCharges"/>
         <EnergyStart value="150"/>
         <EnergyMax value="150"/>
         <EnergyRegenRate value="2"/>
+        <WeaponArray Link="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="Nuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5113,9 +5112,9 @@
         <AbilArray index="3" Link="UltrasonicPulse"/>
         <AbilArray index="4" Link="SpectreHoldFire"/>
         <AbilArray index="5" Link="SpectreWeaponsFree"/>
-        <AbilArray index="6" Link="ExplosiveCharges"/>
-        <AbilArray index="7" Link="EMPSpectre"/>
-        <AbilArray index="8" Link="RogueGhostCloak"/>
+        <AbilArray index="6" Link="EMPSpectre"/>
+        <AbilArray index="7" Link="RogueGhostCloak"/>
+        <AbilArray index="8" removed="1"/>
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
         <CardLayouts index="0">
@@ -5131,10 +5130,10 @@
             <LayoutButtons index="13" removed="1"/>
         </CardLayouts>
         <TacticalAI value="Spectre"/>
-        <EquipmentArray Weapon="ExplosiveCharges"/>
         <Sight value="9"/>
         <Food value="0"/>
         <TechAliasArray value="Alias_Ghost"/>
+        <WeaponArray Link="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5430,6 +5429,7 @@
         <DeathRevealRadius value="3"/>
         <Race value="Terr"/>
         <Mob value="Multiplayer"/>
+        <FlagArray index="Worker" value="1"/>
         <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="TurnBeforeMove" value="1"/>
@@ -6029,13 +6029,15 @@
         <BehaviorArray Link="OutOfCombatRegenTosh"/>
         <BehaviorArray Link="ToshNoFeedbackDeath"/>
         <CardLayouts index="0">
+            <LayoutButtons index="4" AbilCmd="ExplosiveCharges,Execute"/>
             <LayoutButtons index="5" Face="MindBlast" Type="AbilCmd" AbilCmd="MindBlast,Execute" Row="2"/>
             <LayoutButtons index="6" Face="VoodooShield" AbilCmd="VoodooShield,Execute" Column="1"/>
             <LayoutButtons index="7" Face="Consumption" AbilCmd="Consumption,Execute" Column="2"/>
             <LayoutButtons index="8" Face="HeroNukeCalldown" AbilCmd="HeroNuclearStrike,Execute" Column="3"/>
             <LayoutButtons index="9" Face="Obliterate" AbilCmd="Obliterate,Execute" Row="1" Column="0"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
         </CardLayouts>
-        <EquipmentArray Weapon="ExplosiveCharges"/>
+        <WeaponArray Link="ExplosiveCharges"/>
     </CUnit>
     <CUnit id="TrafficSignal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

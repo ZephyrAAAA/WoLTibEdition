@@ -193,8 +193,11 @@
         <EditorCategories value=""/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
+        <TargetFilters value="Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="0.1"/>
         <Period value="0.75"/>
+        <Effect value="CCLoadDummy"/>
+        <UninterruptibleDelay value="0.75"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">
         <AttackType value="Siege"/>
@@ -700,6 +703,7 @@
         <AttackType value="Pierce"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Period value="1.65"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThorsHammer">
         <Tip value="Weapon/Tip/Cannon"/>

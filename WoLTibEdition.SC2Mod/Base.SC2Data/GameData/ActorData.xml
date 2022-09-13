@@ -81,7 +81,7 @@
     <CActorRange id="EMPRange2" parent="RangeAbil" abil="EMPSpectre"/>
     <CActorSound id="ExplosiveChargeSound" parent="SoundOneShot">
         <EditorCategories value=""/>
-        <On Terms="Abil.ExplosiveCharges.SourcePrepStart" Send="Create"/>
+        <On Terms="Effect.ExplosiveChargesDelay.Start" Send="Create"/>
         <Sound value="ExplosiveCharge"/>
     </CActorSound>
     <CActorModel id="ExplosiveCharges" parent="ModelAnimationStyleOneShot">
@@ -2025,6 +2025,7 @@
         <On Terms="Abil.Obliterate.SourcePrepStart" Send="$Spell"/>
         <On Terms="Abil.Obliterate.SourcePrepStop" Send="AnimClear Spell"/>
         <On Terms="Abil.Obliterate.SourcePrepStart" Send="AnimSetTimeScale BSD 0.150000"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Tosh_Attack"/>
     </CActorUnit>
     <CActorModel id="TychusSpectreUltrasonicPulseModel" parent="ModelAnimationStyleContinuous">
         <On Terms="Effect.TychusSpectreUltrasonicPulseCPLv1.Start" Send="Create"/>

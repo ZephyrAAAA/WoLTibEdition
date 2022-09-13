@@ -671,6 +671,7 @@ Effect/Name/EMPLaunchMissileSpectre=EMP
 Effect/Name/EMPSearchSpectre=EMP
 Effect/Name/EMPSetSpectre=EMP
 Effect/Name/ExplosiveCharges=Explosive Charges
+Effect/Name/ExplosiveChargesDelay=Explosive Charges
 Effect/Name/FeedbackGhost=Feedback
 Effect/Name/FeedbackGhostDamage=Feedback
 Effect/Name/FeedbackSetGhost=Feedback

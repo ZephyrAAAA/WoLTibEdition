@@ -310,6 +310,15 @@
         <VitalFractionCurrent index="Life" value="1"/>
         <VitalFractionCurrent index="Shields" value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="ExplosiveChargesDelay">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="ExplosiveCharges"/>
+        <PeriodicPeriodArray value="0.75"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="FeedbackGhostDamage">
         <EditorCategories value=""/>
         <VitalFractionCurrent index="Shields" value="1"/>

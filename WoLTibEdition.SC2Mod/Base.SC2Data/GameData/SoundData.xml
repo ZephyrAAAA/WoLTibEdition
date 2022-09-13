@@ -136,6 +136,9 @@
         <DupeHistoryCount value="3"/>
         <Pitch value="6.000000,6.100000"/>
     </CSound>
+    <CSound id="Tosh_Explosives" parent="TerranAck">
+        <AssetArray File="Assets\sfx\Tosh_Explosives.ogg" FacialGroup=""/>
+    </CSound>
     <CSound id="acObj_Stone_2291" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02291">
         <Flags index="NeedsUpdate" value="1"/>
         <Flags index="NeedsTTS" value="1"/>
