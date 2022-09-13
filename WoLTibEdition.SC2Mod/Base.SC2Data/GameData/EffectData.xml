@@ -299,10 +299,10 @@
     </CEffectEnumArea>
     <CEffectSet id="EMPSetSpectre">
         <EditorCategories value="Race:Terran"/>
-        <EffectArray value="FeedbackSpectre"/>
-        <EffectArray value="EMPModifyUnit"/>
         <EffectArray value="EMPApplyDecloakBehavior"/>
         <EffectArray value="EMPDamageSpectre"/>
+        <EffectArray value="FeedbackSpectre"/>
+        <EffectArray value="EMPModifyUnit"/>
     </CEffectSet>
     <CEffectDamage id="ExplosiveCharges">
         <EditorCategories value=""/>
@@ -310,6 +310,15 @@
         <VitalFractionCurrent index="Life" value="1"/>
         <VitalFractionCurrent index="Shields" value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="ExplosiveChargesDelay">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="ExplosiveCharges"/>
+        <PeriodicPeriodArray value="0.75"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="FeedbackGhostDamage">
         <EditorCategories value=""/>
         <VitalFractionCurrent index="Shields" value="1"/>
@@ -341,7 +350,7 @@
         <SearchFlags index="SameCliff" value="0"/>
     </CEffectDamage>
     <CEffectSet id="FeedbackSetGhost">
-        <ValidatorArray value=""/>
+        <ValidatorArray value="CanFeedback"/>
         <EditorCategories value="Race:Protoss"/>
         <EffectArray value="FeedbackGhostDamage"/>
         <EffectArray value="FeedbackGhost"/>
@@ -1306,11 +1315,15 @@
     <CEffectApplyBehavior id="SquadBunkerUnload">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
-    <CEffectDamage id="SquadDeathDamage">
+    <CEffectModifyUnit id="SquadDeathDamage">
         <EditorCategories value=""/>
-        <ImpactLocation Value="CasterUnit"/>
-        <Amount value="1"/>
-    </CEffectDamage>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="-1">
+                <AccumulatorArray value="CapDamageByMaxVital"/>
+            </Change>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectEnumMagazine id="BunkerLoadIterate">
         <EditorCategories value=""/>
         <EffectInternal value="BunkerLoadIterate2"/>

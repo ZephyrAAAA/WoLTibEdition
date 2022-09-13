@@ -133,6 +133,12 @@
         <AffectedUnitArray index="10" removed="1"/>
         <AffectedUnitArray index="11" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="CombatShield">
+        <EffectArray Reference="Unit,MarineSquad,LifeMax" Value="60"/>
+        <EffectArray Reference="Unit,MarineSquad,LifeStart" Value="60"/>
+        <EffectArray Reference="Unit,WarPigSquad,LifeMax" Value="60"/>
+        <EffectArray Reference="Unit,WarPigSquad,LifeStart" Value="60"/>
+    </CUpgrade>
     <CUpgrade id="CommandCenterReactor">
         <EffectArray Operation="Multiply" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="4"/>
         <EffectArray Operation="Divide" Reference="Abil,CCBuild,InfoArray[Specialize1].Resource[Vespene]" Value="5"/>
@@ -206,6 +212,10 @@
         <EffectArray Operation="Multiply" Reference="Effect,OdinAADamage,Amount" Value="1.3"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
+    <CUpgrade id="FirebatJuggernautPlating">
+        <EffectArray Reference="Unit,DevilDogSquad,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,FirebatSquad,LifeArmor" Value="2"/>
+    </CUpgrade>
     <CUpgrade id="HailstormLaunchers">
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher,Options[Hidden]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,MarauderSquad@2,Options[Hidden]" Value="0"/>
@@ -239,9 +249,18 @@
         <EffectArray Operation="Divide" Reference="Abil,SiegeMode,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="2.000000"/>
         <EffectArray Operation="Divide" Reference="Abil,Unsiege,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="2.000000"/>
     </CUpgrade>
+    <CUpgrade id="MarauderLifeBoost">
+        <EffectArray Reference="Unit,HammerSecuritiesSquad,LifeMax" Value="50"/>
+        <EffectArray Reference="Unit,HammerSecuritiesSquad,LifeStart" Value="50"/>
+        <EffectArray Reference="Unit,MarauderSquad,LifeStart" Value="50"/>
+        <EffectArray Reference="Unit,MarauderSquad,LifeMax" Value="50"/>
+    </CUpgrade>
+    <CUpgrade id="MedivacRapidDeployment">
+        <AffectedUnitArray value="Medivac"/>
+    </CUpgrade>
     <CUpgrade id="OcularImplants">
         <EffectArray index="0" Reference="Unit,Predator,EnergyDamageRatio" Value="1"/>
-        <EffectArray index="1" Operation="Set" Reference="Unit,Predator,EnergyMax" Value="300"/>
+        <EffectArray index="1" removed="1"/>
         <EffectArray index="2" removed="1"/>
     </CUpgrade>
     <CUpgrade id="PermanentCloakGhost">

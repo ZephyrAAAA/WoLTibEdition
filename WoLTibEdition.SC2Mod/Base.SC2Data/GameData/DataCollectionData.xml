@@ -163,14 +163,6 @@
         <Button value="GhostAcademy"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="GhostSquad">
-        <DataRecord Entry="Abil,GhostSquad"/>
-        <DataRecord Entry="Weapon,GhostSquad"/>
-        <DataRecord Entry="Actor,GhostSquad"/>
-        <DataRecord Entry="Unit,GhostSquad"/>
-        <TechInfoUnit value="MarineSquad"/>
-        <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
-    </CDataCollectionUnit>
     <CDataCollectionUnit id="HiveMindEmulator">
         <EditorCategories value="DataGroup:Ability"/>
         <DataRecord Entry="Abil,HiveMindEmulator"/>
