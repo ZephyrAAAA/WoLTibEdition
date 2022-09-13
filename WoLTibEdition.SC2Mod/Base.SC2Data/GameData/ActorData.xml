@@ -436,6 +436,7 @@
             <Image value="Assets\Textures\Wireframe-Protoss-Observer-Shield02.dds"/>
             <Image value="Assets\Textures\Wireframe-Protoss-Observer-Shield03.dds"/>
         </WireframeShield>
+        <Scale value="0.750000"/>
     </CActorUnit>
     <CActorSiteOpLocalOffset id="CollapsibleRockTowerOffset">
         <LocalOffset value="0.000000,-5.000000,0.000000"/>
