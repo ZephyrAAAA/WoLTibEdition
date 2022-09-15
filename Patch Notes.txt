@@ -5,9 +5,14 @@
 *All mercs are now unlocked from the start
 *Goliath hotkey no longer overlaps with worker rally
 *Colossus attack rate increased, to match later incarnations of the unit
+*Fixed a typo in Predator energy upgrade
+*SCVs now cost 1600
+*Selling a refinery now gives back 700
 
 Smash and Grab:
-*Fixed zerg
+Fixed nobody sending attack waves
+Moved the CC over a bit so you have better build radius coverage
+The zerg now actually have a chance to beat the protoss
 
 Bel'shir:
 *You no longer get free vision of all the altars
@@ -16,6 +21,7 @@ Bel'shir:
 
 Safe Haven:
 *The protoss now send a counterattack when you kill a nexus. If this attack clears the position, they will rebuild the nexus.
+*These counterattacks scale with Nexi cleared and Terror Fleets stopped.
 *Killing all 3 nexi stops any rebuilding.
 *Armoury upgrades are granted from stopping terror fleets *or* from stopping counterattacks.
 
