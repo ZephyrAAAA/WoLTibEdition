@@ -1315,15 +1315,40 @@
     <CEffectApplyBehavior id="SquadBunkerUnload">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
-    <CEffectModifyUnit id="SquadDeathDamage">
+    <CEffectCreatePersistent id="SquadDamaged">
+        <EditorCategories value=""/>
+        <InitialEffect value="SquadDamagedRB"/>
+        <ExpireDelay value="0.125"/>
+        <ExpireEffect value="SquadDamagedRefresh"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="SquadDamagedUnit"/>
+        <PeriodicEffectArray value="SquadDamagedMain"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectModifyUnit id="SquadDamagedMain">
         <EditorCategories value=""/>
         <ImpactUnit Value="Caster"/>
         <VitalArray index="Life">
             <Change value="-1">
-                <AccumulatorArray value="CapDamageByMaxVital"/>
+                <AccumulatorArray value="DamageTaken"/>
             </Change>
         </VitalArray>
     </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="SquadDamagedRB">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Source"/>
+        <BehaviorLink value="SquadUnit"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="SquadDamagedRefresh">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Source"/>
+        <Behavior value="SquadUnit"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SquadDamagedUnit">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectEnumMagazine id="BunkerLoadIterate">
         <EditorCategories value=""/>
         <EffectInternal value="BunkerLoadIterate2"/>

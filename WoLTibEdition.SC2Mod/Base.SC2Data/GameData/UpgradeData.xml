@@ -1938,6 +1938,22 @@
         <EffectArray Reference="Unit,Nova,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Tosh,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,Tosh,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,DevilDogSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,DevilDogSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,FirebatSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,FirebatSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HammerSecuritiesSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,HammerSecuritiesSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MarauderSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MarauderSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MarineSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,MarineSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MedicSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,MedicSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ReaperSquad,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,ReaperSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,WarPigSquad,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,WarPigSquad,LifeArmorLevel" Value="1"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>

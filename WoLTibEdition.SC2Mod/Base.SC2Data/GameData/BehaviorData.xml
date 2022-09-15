@@ -503,9 +503,15 @@
             <StateFlags index="Unselectable" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
-        <DamageResponse Handled="SquadDeathDamage" Priority="1" HandledValue="Remaining">
+        <DamageResponse>
+            <Handled value="SquadDamagedUnit"/>
+            <ModifyFraction value="0"/>
+            <Priority value="1"/>
+            <HandledValue value="Absorbed"/>
+            <ExcludeEffectArray value="SquadDamagedUnit"/>
             <Chance value="1"/>
         </DamageResponse>
+        <BehaviorFlags index="EnabledWhileDead" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
         <InfoFlags index="Hidden" value="1"/>
