@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
-    <CAccumulatorArithmetic id="CapDamageByMaxVital">
-        <ApplicationRule value="Multiply"/>
-        <Parameters value="0">
-            <AccumulatorArray value="DamageTaken"/>
-        </Parameters>
-        <Parameters value="0">
-            <AccumulatorArray value="Life"/>
-        </Parameters>
-        <Operation value="Minimum"/>
-    </CAccumulatorArithmetic>
     <CAccumulatorEffectAmount id="DamageTaken">
         <AmountType value="DamageInherited"/>
+        <ApplicationRule value="Multiply"/>
     </CAccumulatorEffectAmount>
-    <CAccumulatorVitals id="Life">
-        <Ratio value="1"/>
-        <UnitSource Value="Source"/>
-        <ModificationType value="PerUnit"/>
-    </CAccumulatorVitals>
 </Catalog>

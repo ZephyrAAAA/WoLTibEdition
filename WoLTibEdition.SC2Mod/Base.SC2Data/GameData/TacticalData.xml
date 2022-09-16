@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <!--Infestor no longer has InfestorDisease ability-->
+    <CTacticalSet id="Infestor">
+        <Array value="InfestorFungal"/>
+        <!--<Array value="InfestorDisease"/>-->
+    </CTacticalSet>
+    <CTacticalOrder id="InfestorFungal">
+        <Abil value="FungalGrowth"/>
+        <TargetFind value="InfestorFungal"/>
+    </CTacticalOrder>
     <CTacticalSet id="Karass">
         <Array value="KarassPlasmaSurge"/>
         <Array value="KarassPsiStorm"/>

@@ -8781,7 +8781,6 @@
         <Element Type="Trigger" Id="74DDD3D9">
             <Variable Type="Variable" Library="3B48F5E9" Id="F3B4131B"/>
             <Event Type="FunctionCall" Library="3B48F5E9" Id="B8153869"/>
-            <Condition Type="FunctionCall" Library="3B48F5E9" Id="B4AFB1B7"/>
             <Condition Type="FunctionCall" Library="3B48F5E9" Id="F20506B0"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="6FCD0B85"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="85220650"/>
@@ -8807,28 +8806,6 @@
         <Element Type="Param" Id="5EAF6C39">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="DBE4165B"/>
             <Preset Type="PresetValue" Library="Ntve" Id="00000029"/>
-        </Element>
-        <Element Type="FunctionCall" Id="B4AFB1B7">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="DF725FC2"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="0A10411A"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="D9E39802"/>
-        </Element>
-        <Element Type="Param" Id="DF725FC2">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
-            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="8847DDAA"/>
-        </Element>
-        <Element Type="FunctionCall" Id="8847DDAA">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="AF08AFB4"/>
-        </Element>
-        <Element Type="Param" Id="0A10411A">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="40567BEE"/>
-        </Element>
-        <Element Type="Param" Id="D9E39802">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
-            <Value>0.0</Value>
-            <ValueType Type="fixed"/>
         </Element>
         <Element Type="FunctionCall" Id="F20506B0">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="C439C375"/>
