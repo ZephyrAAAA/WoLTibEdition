@@ -4,16 +4,20 @@
 *Viking damage reduced, fire rate increased.
 *All mercs are now unlocked from the start
 *Goliath hotkey no longer overlaps with worker rally
-*Colossus attack rate increased, to match later incarnations of the unit
+Colossus attack rate increased, to match later incarnations of the unit
 *Fixed a typo in Predator energy upgrade
 *Fixed a typo in Hellion hydraulic stabilizer upgrade
 *SCVs now cost 1600
-*Selling a refinery now gives back 700
+*Selling a refinery now gives back 700, as that is half of the 1400 the refinery alone costs
+Infestors now fungal
+Fixed squad health bars being jank af
+Bio units now say an attack line when you tell them to a-move.
 
 Smash and Grab:
 Fixed nobody sending attack waves
 Moved the CC over a bit so you have better build radius coverage
 The zerg now actually have a chance to beat the protoss
+*Reduced strength of protoss attack waves
 
 Bel'shir:
 *You no longer get free vision of all the altars
