@@ -396,7 +396,6 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
         <MaxTrackedUnits value="2"/>
-        <WhichLocation Value="TargetUnit"/>
     </CBehaviorUnitTracker>
     <CBehaviorBuff id="SquadVeterancy1">
         <EditorCategories value="AbilityorEffectType:Units"/>

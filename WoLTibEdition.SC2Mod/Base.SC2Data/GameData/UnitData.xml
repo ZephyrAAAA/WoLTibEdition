@@ -4506,7 +4506,7 @@
         <Sight value="9"/>
         <Food value="-15"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="750"/>
+        <CostResource index="Minerals" value="350"/>
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
