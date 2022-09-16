@@ -680,7 +680,10 @@
     </CEffectDamage>
     <CEffectDamage id="LanzerTorpedoesDamage">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="14"/>
+        <Amount value="7"/>
+        <AreaArray index="0" Radius="0.15" Validator=""/>
+        <AreaArray index="1" Radius="0.3" Validator=""/>
+        <AreaArray index="2" Radius="0.6" Validator=""/>
     </CEffectDamage>
     <CEffectCreatePersistent id="LaserBeamFinalPersistant">
         <FinalEffect value="LaserBeamTripodInitialDamage"/>
@@ -2104,7 +2107,10 @@
     </CEffectDamage>
     <CEffectDamage id="WreckingCrewFighterU">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="20"/>
+        <Amount value="10"/>
+        <AreaArray index="0" Radius="0.15" Validator=""/>
+        <AreaArray index="1" Radius="0.3" Validator=""/>
+        <AreaArray index="2" Radius="0.6" Validator=""/>
     </CEffectDamage>
     <CEffectDamage id="YamatoGunTopbarDamage">
         <EditorCategories value="Race:Terran"/>

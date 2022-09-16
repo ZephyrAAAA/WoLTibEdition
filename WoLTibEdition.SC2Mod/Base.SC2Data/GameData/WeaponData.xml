@@ -390,6 +390,8 @@
     <CWeaponLegacy id="LanzerTorpedoes">
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
+        <Range value="7"/>
+        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
@@ -812,6 +814,8 @@
     <CWeaponLegacy id="WreckingCrewFighter">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+        <Range value="7"/>
+        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Zeratul">
         <Tip value="Weapon/Tip/Grenade"/>
