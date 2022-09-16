@@ -17,7 +17,7 @@ Smash and Grab:
 Fixed nobody sending attack waves
 Moved the CC over a bit so you have better build radius coverage
 The zerg now actually have a chance to beat the protoss
-*Reduced strength of protoss attack waves
+Protoss attack waves start timescaling later, and they scale slower.
 
 Bel'shir:
 *You no longer get free vision of all the altars
@@ -28,6 +28,7 @@ Safe Haven:
 *The protoss now send a counterattack when you kill a nexus. If this attack clears the position, they will rebuild the nexus.
 *These counterattacks scale with Nexi cleared and Terror Fleets stopped.
 *Killing all 3 nexi stops any rebuilding.
+*Each protoss base is actually a takeable base now
 *Armoury upgrades are granted from stopping terror fleets *or* from stopping counterattacks.
 
 Haven's Fall:
