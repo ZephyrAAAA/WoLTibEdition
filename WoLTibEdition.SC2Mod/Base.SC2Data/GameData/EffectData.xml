@@ -274,6 +274,29 @@
         <AreaArray Arc="59.9963" Radius="9" Effect="DetectorCone9AB"/>
         <SearchFlags index="CenterAtLaunch" value="1"/>
     </CEffectEnumArea>
+    <CEffectCreateUnit id="DropJackson">
+        <ValidatorArray value="HasJackson"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercAirDrop"/>
+        <SpawnUnit value="DukesRevenge"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="DropHelsAngels">
+        <ValidatorArray value="HasHelsAngels"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercAirDrop"/>
+        <SpawnUnit value="HelsAngelFighter"/>
+        <SpawnCount value="3"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="DropDuskwings">
+        <ValidatorArray value="HasDuskWings"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <SpawnEffect value="MercAirDrop"/>
+        <SpawnUnit value="DuskWing"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
     <CEffectDamage id="EMPDamageSpectre">
         <EditorCategories value=""/>
         <VitalFractionCurrent index="Shields" value="1"/>
@@ -590,6 +613,12 @@
         <SearchFilters value="-;Self,Player,Ally,Neutral,Structure,Heroic,Worker,Missile,Stasis,UnderConstruction,Dead,Invulnerable"/>
         <AreaArray Radius="4" Effect="MindControl"/>
     </CEffectEnumArea>
+    <CEffectLaunchMissile id="HailstormLauncherLMMerc">
+        <ValidatorArray index="0" value="HailstormLauncherLMTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="HailstormLauncherU"/>
+        <AmmoUnit value="GoliathAWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectApplyBehavior id="HideInTheShadows">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -1040,12 +1069,6 @@
         <ImpactEffect value="HailstormLauncherU"/>
         <AmmoUnit value="GoliathAWeapon"/>
     </CEffectLaunchMissile>
-    <CEffectLaunchMissile id="HailstormLauncherLMMerc">
-        <ValidatorArray index="0" value="HailstormLauncherLMTargetFilters"/>
-        <EditorCategories value="Race:Terran"/>
-        <ImpactEffect value="HailstormLauncherU"/>
-        <AmmoUnit value="GoliathAWeapon"/>
-    </CEffectLaunchMissile>
     <CEffectDamage id="HailstormLauncherU">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -1086,7 +1109,6 @@
         <EffectArray value="DropDevilDogs"/>
         <EffectArray value="DropHammerSecurities"/>
         <TargetLocationType value="UnitOrPoint"/>
-        <ValidatorArray value="AutoHarvesterHarvest"/>
     </CEffectSet>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
@@ -1536,6 +1558,13 @@
     <CEffectApplyBehavior id="SquadVeterancy2">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectSet id="StarshipMercSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DropHelsAngels"/>
+        <EffectArray value="DropDuskwings"/>
+        <EffectArray value="DropJackson"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
     <CEffectCreatePersistent id="StealthCreateForwardLookPoint">
         <EditorCategories value=""/>
         <PeriodCount value="1"/>
@@ -2076,7 +2105,6 @@
         <EffectArray value="DropSiegeBreakers"/>
         <EffectArray value="DropSpartanCompany"/>
         <TargetLocationType value="UnitOrPoint"/>
-        <ValidatorArray value="AutoHarvesterHarvest"/>
     </CEffectSet>
     <CEffectDamage id="VolatileBurstFriendlyUnitDamage">
         <AttributeBonus index="Light" value="0"/>

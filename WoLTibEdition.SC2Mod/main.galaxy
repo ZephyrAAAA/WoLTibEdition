@@ -156,6 +156,9 @@ void AddTopbars () {
 		if (TechTreeUpgradeCount(1, "HireSiegeBreakersPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireSpartanCompanyPH", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("VehicleMercenaries");
 		}
+		if (TechTreeUpgradeCount(1, "HireHelsAngelsPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireDuskWingPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireDukesRevenge", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("StarshipMercenaries");
+		}
 		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("TacticalMissileStrike");
 		}
@@ -189,6 +192,7 @@ void RemoveTopbars () {
 	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("InfantryMercenaries");
 		RemoveTopbarAbil("VehicleMercenaries");
+		RemoveTopbarAbil("StarshipMercenaries");
 		RemoveTopbarAbil("TacticalMissileStrike");
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) == 0) {
