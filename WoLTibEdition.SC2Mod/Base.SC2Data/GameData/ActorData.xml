@@ -756,6 +756,7 @@
             <Image value="Assets\Textures\wireframe-terran-firebat-mercenary.dds"/>
         </Wireframe>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Firebat_Attack"/>
     </CActorUnit>
     <CActorUnit id="FusionCore2" parent="TerranBuildingEx" unitName="FusionCore2">
         <Aliases value="_UnitHuge"/>
@@ -917,6 +918,7 @@
         <HighlightTooltip value="Unit/Name/MarauderSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Marauder_Attack"/>
     </CActorUnit>
     <CActorUnit id="FirebatSquad" parent="Firebat" unitName="FirebatSquad">
         <Macros index="1" removed="1"/>
@@ -940,6 +942,7 @@
         <HighlightTooltip value="Unit/Name/FirebatSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Firebat_Attack"/>
     </CActorUnit>
     <CActorUnit id="HammerSecuritiesSquad" parent="GenericUnitBase" unitName="HammerSecuritiesSquad">
         <Aliases value="_UnitSmall"/>
@@ -985,6 +988,7 @@
             <Image value="Assets\Textures\wireframe-terran-marauder-mercenary.dds"/>
         </Wireframe>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Marauder_Attack"/>
     </CActorUnit>
     <CActorUnit id="MarineSquad" parent="Marine" unitName="MarineSquad">
         <Macros index="1" removed="1"/>
@@ -1043,7 +1047,7 @@
         <DeathActorModel value="UnitDeathModel"/>
         <PlacementModel value="SiegeTank"/>
         <TerrainSquibs index="0" removed="1"/>
-        <AbilSoundArray index="0" removed="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Marine_Attack"/>
         <BarOffset value="100"/>
         <BarWidth value="60"/>
         <HighlightTooltip value="Unit/Name/MarineSquad"/>
@@ -1076,6 +1080,7 @@
         <HighlightTooltip value="Unit/Name/MedicSquad"/>
         <Scale value="1.500000,1.500000,0.750000"/>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Medic_Attack"/>
     </CActorUnit>
     <CActorBeamSimple id="MedivacHealBeamRev1">
         <HostLaunch Subject="" Scope="Implicit" Actor="Implicit"/>
@@ -1285,6 +1290,24 @@
         <On Terms="Effect.IonCannonsLMRightFleet.Start; At Effect" Send="Create"/>
         <Sound value="Phoenix_AirAttackLaunch"/>
     </CActorSound>
+    <!--                                                                                         -->
+    <!-- Raynor ................................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="Raynor">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Raynor_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Raynor For TRaynor01 .................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Raynor01">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Raynor_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Raynor Commando ....................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="RaynorCommando">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Raynor_Attack"/>
+    </CActorUnit>
     <CActorAction id="ScoutAirAttackFleet" parent="GenericAttack" effectImpact="ScoutAirUFleet" effectLaunch="ScoutAirLMLeftFleet">
         <On index="6" Terms="Effect.ScoutAirLMLeftFleet.Start; At Effect" Send="Create"/>
         <On Terms="Effect.ScoutAirLMRightFleet.Start; At Effect" Send="Create"/>
@@ -1434,6 +1457,7 @@
         </Wireframe>
         <Scale value="1.500000,1.500000,0.750000"/>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Reaper_Attack"/>
     </CActorUnit>
     <CActorUnit id="Refinery2" parent="TerranBuildingEx" unitName="Refinery2">
         <Aliases value="_UnitHuge"/>
@@ -2107,6 +2131,8 @@
             <Image value="Assets\Textures\wireframe-terran-marine-mercenary.dds"/>
         </Wireframe>
         <StatusBarOn index="Life" value="1"/>
+        <AbilSoundArray AbilCmd="Stimpack,Execute" Sound="Marine_StimPackVO"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Marine_Attack"/>
     </CActorUnit>
     <!--                                                                                         -->
     <!-- Zeratul ............................................................................... -->
