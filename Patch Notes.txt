@@ -6,6 +6,7 @@
 *Goliath hotkey no longer overlaps with worker rally
 *Colossus attack rate increased, to match later incarnations of the unit
 *Fixed a typo in Predator energy upgrade
+*Fixed a typo in Hellion hydraulic stabilizer upgrade
 *SCVs now cost 1600
 *Selling a refinery now gives back 700
 
