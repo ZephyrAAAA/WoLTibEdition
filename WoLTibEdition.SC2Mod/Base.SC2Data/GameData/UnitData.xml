@@ -2759,6 +2759,10 @@
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
+        <LifeStart value="130"/>
+        <LifeMax value="130"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AirTransport">
         <DeathRevealRadius value="3"/>

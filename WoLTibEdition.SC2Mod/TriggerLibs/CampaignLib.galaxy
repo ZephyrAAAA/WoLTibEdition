@@ -3643,13 +3643,12 @@ void libCamp_gf_TS_UpdateMercStatus () {
         lv_indexMerc = libCamp_gv_tS_MercID[auto94ADC81C_i];
         lv_enabled = true;
         lv_index = 1;
-        for ( ; ( (auto9CD7260A_ai >= 0 && lv_index <= auto9CD7260A_ae) || (auto9CD7260A_ai < 0 && lv_index >= auto9CD7260A_ae) ) ; lv_index += auto9CD7260A_ai ) {
-            if ((libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index) != libCamp_ge_StoryTechGroup_StoryTechGroupNone) && (libCamp_gv_tS_TechGroupState[(libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index))] != c_purchaseCategoryStateEnabled)) {
-                lv_enabled = false;
-                break;
-            }
-
-        }
+//        for ( ; ( (auto9CD7260A_ai >= 0 && lv_index <= auto9CD7260A_ae) || (auto9CD7260A_ai < 0 && lv_index >= auto9CD7260A_ae) ) ; lv_index += auto9CD7260A_ai ) {
+//            if ((libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index) != libCamp_ge_StoryTechGroup_StoryTechGroupNone) && (libCamp_gv_tS_TechGroupState[(libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index))] != c_purchaseCategoryStateEnabled)) {
+//                lv_enabled = false;
+//                break;
+//            }
+//        }
         if ((lv_enabled == true)) {
             if ((libCamp_gf_MercStatusCheck(lv_indexMerc, libCamp_ge_StoryMercStatus_Locked) == true)) {
                 libCamp_gf_SetMercStatus(lv_indexMerc, libCamp_ge_StoryMercStatus_New);
@@ -7928,16 +7927,16 @@ void libCamp_gf_TS_UpdateTechVisuals () {
                 if ((libCamp_gf_TS_StoryTechGroupUIUnlocked(lv_indexGroup) == true)) {
                     lv_slot += 1;
                     libCamp_gv_tSX_TechCategoryCount[lv_categoryIndex] += 1;
-                    PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], "Assets\\Textures\\blank.dds");
-                    PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], libCamp_gv_tS_TechGroupUnitType[lv_groupIndex]);
+                    //PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], "Assets\\Textures\\blank.dds");
+                    //PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], libCamp_gv_tS_TechGroupUnitType[lv_groupIndex]);
                     if ((lv_purchasedCounts[lv_groupIndex] == 2)) {
-                        PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], "InvisiblePylon");
-                        PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], lv_purchasedCounts_Images[lv_groupIndex]);
+                        //PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], "InvisiblePylon");
+                        //PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], lv_purchasedCounts_Images[lv_groupIndex]);
                     }
 
                     if (((lv_lowMoneyCounts[lv_groupIndex] == 2) || ((lv_lowMoneyCounts[lv_groupIndex] == 1) && (lv_purchasedCounts[lv_groupIndex] == 1)))) {
-                        PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], "InvisiblePylon");
-                        PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], lv_lowMoneyCounts_Images[lv_groupIndex]);
+                        //PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], "InvisiblePylon");
+                        //PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[lv_groupIndex], lv_lowMoneyCounts_Images[lv_groupIndex]);
                     }
 
                 }
