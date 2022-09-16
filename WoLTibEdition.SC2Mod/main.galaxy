@@ -334,6 +334,9 @@ bool Idle_Func (bool testConds, bool runActions) {
 			resourceGroup = UnitGroup("RefineryBounce", owner, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
 			UnitIssueOrder(idleUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
 			UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueAddToEnd);
+			if (UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce")) {
+				UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, UnitGroup("Refinery2", owner, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueAddToFront);
+			}
 		}
 	} while ((UnitOrderCount(idleUnit) == 0 || remainsIdle) || (UnitOrderCount(EventUnit()) > 0 && UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce")));
 	UnitBehaviorRemove(idleUnit, "IdleTaken", 1);
