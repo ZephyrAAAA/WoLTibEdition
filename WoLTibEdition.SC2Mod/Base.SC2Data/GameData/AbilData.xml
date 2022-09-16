@@ -560,7 +560,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="InfantryMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="1500"/>
+            <Resource index="Minerals" value="2000"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
@@ -656,7 +656,7 @@
         <DataCollection value="InfantryMercenaries"/>
         <Effect index="0" value="VehicleMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="3000"/>
+            <Resource index="Minerals" value="3500"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
