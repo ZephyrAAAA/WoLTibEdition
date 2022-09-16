@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CAccumulatorEffectAmount id="DamageTaken">
+        <AmountType value="DamageInherited"/>
         <ApplicationRule value="Multiply"/>
-        <Total value="1"/>
     </CAccumulatorEffectAmount>
 </Catalog>

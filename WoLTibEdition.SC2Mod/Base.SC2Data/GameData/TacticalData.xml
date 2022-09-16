@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CTacticalOrder id="InfestorFungal">
+        <Abil value="FungalGrowth"/>
+    </CTacticalOrder>
     <CTacticalSet id="Karass">
         <Array value="KarassPlasmaSurge"/>
         <Array value="KarassPsiStorm"/>

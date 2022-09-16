@@ -42,6 +42,22 @@
     <CTargetFindSet id="BlinkAttack">
         <TargetValidator value="IsSiegeTank"/>
     </CTargetFindSet>
+    <CTargetFindSet id="InfestorFungal">
+        <Type value="Sequential"/>
+        <Array value="InfestorFungalSearch"/>
+        <Array value="InfestorFungalBestPoint"/>
+    </CTargetFindSet>
+    <CTargetFindBestPoint id="InfestorFungalBestPoint">
+        <Flags index="EvaluateCmd" value="1"/>
+        <DamageBase value="50"/>
+        <Effect value="FungalGrowthSearch"/>
+        <MinCount value="4"/>
+        <MinScore value="2"/>
+    </CTargetFindBestPoint>
+    <CTargetFindEffect id="InfestorFungalSearch">
+        <TargetValidator value="NotFungalGrowthed"/>
+        <Effect value="FungalGrowthSearch"/>
+    </CTargetFindEffect>
     <CTargetFindEffect id="KarassPlasmaSurgeSearch">
         <TargetFilters value="Visible;Ally,Neutral,Enemy"/>
         <TargetValidator value="ShieldLQuarter"/>

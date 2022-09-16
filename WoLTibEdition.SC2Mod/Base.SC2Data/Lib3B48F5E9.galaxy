@@ -788,10 +788,6 @@ bool lib3B48F5E9_gt_SquadHealth_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!((EventUnitPropertyChangeFixed() > 0.0))) {
-            return false;
-        }
-
         if (!((UnitHasBehavior2(EventUnit(), "SquadUnit") == true))) {
             return false;
         }

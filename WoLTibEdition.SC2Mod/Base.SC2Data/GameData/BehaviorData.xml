@@ -81,6 +81,10 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DamageMarker">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="DeathRecall">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -387,6 +391,13 @@
             <StateFlags index="Invulnerable" value="1"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorUnitTracker id="SquadTracker">
+        <BehaviorFlags index="Permanent" value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+        <MaxTrackedUnits value="2"/>
+        <WhichLocation Value="TargetUnit"/>
+    </CBehaviorUnitTracker>
     <CBehaviorBuff id="SquadVeterancy1">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="2"/>
@@ -503,14 +514,7 @@
             <StateFlags index="Unselectable" value="1"/>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
-        <DamageResponse>
-            <Handled value="SquadDamagedUnit"/>
-            <ModifyFraction value="0"/>
-            <Priority value="1"/>
-            <HandledValue value="Absorbed"/>
-            <ExcludeEffectArray value="SquadDamagedUnit"/>
-            <Chance value="1"/>
-        </DamageResponse>
+        <BehaviorFlags index="Permanent" value="1"/>
         <BehaviorFlags index="EnabledWhileDead" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDepotBuilt">
