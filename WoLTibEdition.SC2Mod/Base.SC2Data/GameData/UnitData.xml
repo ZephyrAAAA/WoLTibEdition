@@ -6205,13 +6205,13 @@
         <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
     </CUnit>
     <CUnit id="VikingFighter">
         <ArmorType value="Medium"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
     </CUnit>
     <CUnit id="VikingMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
