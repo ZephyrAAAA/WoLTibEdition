@@ -358,6 +358,7 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="SameCliff" value="0"/>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectDamage id="FeedbackGhost">
         <ValidatorArray value=""/>
@@ -371,6 +372,7 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="SameCliff" value="0"/>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectSet id="FeedbackSetGhost">
         <ValidatorArray value="CanFeedback"/>
