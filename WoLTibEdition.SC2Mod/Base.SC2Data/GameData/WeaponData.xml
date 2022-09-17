@@ -299,7 +299,7 @@
         <TargetFilters value="Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="0.1"/>
         <Period value="0.75"/>
-        <Effect value="CCLoadDummy"/>
+        <Effect value="ExplosiveChargesDelay"/>
         <UninterruptibleDelay value="0.75"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">

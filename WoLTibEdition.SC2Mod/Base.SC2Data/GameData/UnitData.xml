@@ -6035,19 +6035,17 @@
         <EnergyRegenRate value="2"/>
         <AbilArray Link="Obliterate"/>
         <AbilArray Link="SendWave"/>
-        <AbilArray Link="ExplosiveCharges"/>
         <BehaviorArray Link="Veterancy"/>
         <BehaviorArray Link="CommandoSniperResist"/>
         <BehaviorArray Link="OutOfCombatRegenTosh"/>
         <BehaviorArray Link="ToshNoFeedbackDeath"/>
         <CardLayouts index="0">
-            <LayoutButtons index="4" AbilCmd="ExplosiveCharges,Execute"/>
-            <LayoutButtons index="5" Face="MindBlast" Type="AbilCmd" AbilCmd="MindBlast,Execute" Row="2"/>
-            <LayoutButtons index="6" Face="VoodooShield" AbilCmd="VoodooShield,Execute" Column="1"/>
-            <LayoutButtons index="7" Face="Consumption" AbilCmd="Consumption,Execute" Column="2"/>
-            <LayoutButtons index="8" Face="HeroNukeCalldown" AbilCmd="HeroNuclearStrike,Execute" Column="3"/>
-            <LayoutButtons index="9" Face="Obliterate" AbilCmd="Obliterate,Execute" Row="1" Column="0"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons index="4" Face="MindBlast" AbilCmd="MindBlast,Execute" Row="2" Column="0"/>
+            <LayoutButtons index="5" Face="VoodooShield" Type="AbilCmd" AbilCmd="VoodooShield,Execute" Row="2" Column="1"/>
+            <LayoutButtons index="6" Face="Consumption" AbilCmd="Consumption,Execute" Column="2"/>
+            <LayoutButtons index="7" Face="HeroNukeCalldown" AbilCmd="HeroNuclearStrike,Execute" Column="3"/>
+            <LayoutButtons index="8" Face="Obliterate" AbilCmd="Obliterate,Execute" Row="1" Column="0"/>
+            <LayoutButtons index="9" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
         </CardLayouts>
         <WeaponArray Link="ExplosiveCharges"/>
     </CUnit>

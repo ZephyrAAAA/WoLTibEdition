@@ -3616,6 +3616,7 @@ void libCamp_gf_TS_ApplyMercenaryTech (int lp_player) {
 
         }
         if ((lv_allowDisallow == true)) {
+			libNtve_gf_SetUpgradeLevelForPlayer(lp_player, libCamp_gf_MercUpgrade(lv_indexMerc), 1);
             libCamp_gf_AddUnitTypeToUnitHelpPanel(libCamp_gf_MercUnitText2(lv_indexMerc), true, lp_player);
         }
 
@@ -3682,14 +3683,13 @@ void libCamp_gf_TS_ApplyMercUpgrades (int lp_player) {
         lv_indexMerc = libCamp_gv_tS_MercID[auto373D0882_i];
         lv_enabled = true;
         lv_index = 1;
-//        for ( ; ( (auto5DBA7D93_ai >= 0 && lv_index <= auto5DBA7D93_ae) || (auto5DBA7D93_ai < 0 && lv_index >= auto5DBA7D93_ae) ) ; lv_index += auto5DBA7D93_ai ) {
-//            if ((libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index) != libCamp_ge_StoryTechGroup_StoryTechGroupNone) && (libCamp_gv_tS_TechGroupState[(libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index))] != c_purchaseCategoryStateEnabled)) {
-//                lv_enabled = false;
-//                break;
-//            }
-//        }
+        for ( ; ( (auto5DBA7D93_ai >= 0 && lv_index <= auto5DBA7D93_ae) || (auto5DBA7D93_ai < 0 && lv_index >= auto5DBA7D93_ae) ) ; lv_index += auto5DBA7D93_ai ) {
+            if ((libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index) != libCamp_ge_StoryTechGroup_StoryTechGroupNone) && (libCamp_gv_tS_TechGroupState[(libCamp_gf_MercTechSubgroup(lv_indexMerc, lv_index))] != c_purchaseCategoryStateEnabled)) {
+                lv_enabled = false;
+                break;
+            }
+        }
         if ((lv_enabled == true)) {
-            libNtve_gf_SetUpgradeLevelForPlayer(lp_player, libCamp_gf_MercUpgrade(lv_indexMerc), 1);
         }
 
         auto373D0882_i = auto373D0882_i + 1;
