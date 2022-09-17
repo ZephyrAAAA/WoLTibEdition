@@ -730,10 +730,14 @@
     <CUnit id="BraxisAlphaDestructible1x1">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="BraxisAlphaDestructible2x2">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="BreachingCharge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1070,6 +1074,8 @@
     <CUnit id="CastanarDestructibleDebris">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CastanarUltraliskShackledUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1088,18 +1094,26 @@
     <CUnit id="CharDestructibleRockCover">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CharDestructibleRockCoverULDR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CharDestructibleRockCoverURDL">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CharDestructibleRockCoverV">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CheckStation">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1655,18 +1669,26 @@
     <CUnit id="DestructibleDebris4x4">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleDebris6x6">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleDebrisRampDiagonalHugeBLUR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleDebrisRampDiagonalHugeULBR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleGarage">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1703,34 +1725,50 @@
     <CUnit id="DestructibleRampDiagonalHugeBLUR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRampDiagonalHugeULBR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRampHorizontalHuge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRampVerticalHuge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x4Horizontal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x4Vertical">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x6Horizontal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x6Vertical">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock4x4">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3553,14 +3591,18 @@
     <CUnit id="MengskHologramBillboard">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MengskStatue">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="MengskStatueAlone">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="MercCompound">
         <ArmorType value="Hero"/>
@@ -4623,10 +4665,12 @@
     <CUnit id="RipFieldGenerator">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="RipFieldGeneratorSmall">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Roach">
         <ArmorType value="Medium"/>
@@ -4672,6 +4716,8 @@
     <CUnit id="Rocks2x2NonConjoined">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SCV">
         <ArmorType value="Medium"/>
@@ -4821,6 +4867,8 @@
     <CUnit id="ScienceFacility">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="ScienceVessel">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4876,6 +4924,7 @@
     <CUnit id="ScrapHuge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Selendis">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5720,10 +5769,12 @@
     <CUnit id="TalDarimPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="TalDarimPrisonCrystal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="TankerTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6340,6 +6391,7 @@
     <CUnit id="XelNagaPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="XelNagaPrisonConsole">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6348,14 +6400,17 @@
     <CUnit id="XelNagaPrisonHeight2">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="XelNagaPrisonNorth">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="XelNagaPrisonNorthHeight2">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="XelNagaShrine">
         <ArmorType value="Hero"/>
@@ -6391,10 +6446,14 @@
     <CUnit id="XelNagaVault">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="XelNagaWorldshipVault">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Zealot">
         <ArmorType value="Normal"/>
