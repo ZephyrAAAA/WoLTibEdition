@@ -41,6 +41,7 @@
         <Effect value="ATALaserBatteryLM"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery">
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
@@ -76,6 +77,7 @@
         <Effect value="ATSLaserBatteryLM"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSaliva">
         <AttackType value="Magic"/>
@@ -146,26 +148,127 @@
         <RandomDelayMax value="0.125"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Marker Link="Weapon/DRCannonsA">
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRBattlecruiserA2">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="DRBattlecruiserAU"/>
+        <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireTargetSorts>
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSRandom"/>
+        </AcquireTargetSorts>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <Marker Link="Weapon/DRCannonsA">
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.225"/>
+        <AttackType value="Magic"/>
+        <Effect value="DRBattlecruiserALM"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="-0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserFakeA">
         <RandomDelayMin value="-0.125"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserFakeG">
         <RandomDelayMin value="-0.125"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserG">
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Marker Link="Weapon/DRCannonsG">
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DRBattlecruiserG2">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
+        <DisplayEffect value="DRBattlecruiserGU"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireTargetSorts>
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSRandom"/>
+        </AcquireTargetSorts>
+        <Range value="2"/>
+        <Arc value="360"/>
+        <Marker Link="Weapon/DRCannonsG">
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.225"/>
+        <AttackType value="Magic"/>
+        <Effect value="DRBattlecruiserGLM"/>
+        <AllowedMovement value="Moving"/>
+        <RandomDelayMin value="-0.125"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRCannonsA">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Options index="Hidden" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <MinimumRange value="0"/>
+        <Arc value="360"/>
+        <Marker>
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.225"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRCannonsG">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <Options index="Hidden" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <MinimumRange value="0"/>
+        <Arc value="360"/>
+        <Marker>
+            <MatchFlags index="Link" value="1"/>
+            <MatchFlags index="CasterUnit" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.225"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DevilDogFlameThrower">
         <Range value="4"/>

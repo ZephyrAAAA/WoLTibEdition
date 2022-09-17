@@ -665,10 +665,11 @@
         <WeaponArray Link="ATALaserBattery2"/>
         <WeaponArray Link="ATSLaserBattery2"/>
         <Speed value="1.875"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="BattlecruiserACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2041,6 +2042,13 @@
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
+        <Speed value="1.875"/>
+        <WeaponArray index="0" Link="DRCannonsG"/>
+        <WeaponArray index="1" Link="DRCannonsA"/>
+        <WeaponArray index="2" Link="DRBattlecruiserA2"/>
+        <WeaponArray index="3" Link="DRBattlecruiserG2"/>
+        <EquipmentArray index="0" removed="1"/>
+        <EquipmentArray index="1" removed="1"/>
     </CUnit>
     <CUnit id="DumpTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

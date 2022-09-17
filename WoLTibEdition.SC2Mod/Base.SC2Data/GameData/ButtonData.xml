@@ -785,72 +785,64 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
         <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
-	<CButton id="StarshipMercenaries3">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Column="3"/>
-	</CButton>
-	<CButton id="StarshipMercenaries4">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Column="4"/>
-	</CButton>
-	<CButton id="StarshipMercenaries5">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="1"/>
-	</CButton>
-	<CButton id="StarshipMercenaries6">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="1"/>
-		<DefaultButtonLayout Column="1"/>
-	</CButton>
-	<CButton id="StarshipMercenaries7">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="1"/>
-		<DefaultButtonLayout Column="2"/>
-	</CButton>
-	<CButton id="StarshipMercenaries8">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="1"/>
-		<DefaultButtonLayout Column="3"/>
-	</CButton>
-	<CButton id="StarshipMercenaries9">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="1"/>
-		<DefaultButtonLayout Column="4"/>
-	</CButton>
-	<CButton id="StarshipMercenaries10">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="2"/>
-	</CButton>
-	<CButton id="StarshipMercenaries11">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="2"/>
-		<DefaultButtonLayout Column="1"/>
-	</CButton>
-	<CButton id="StarshipMercenaries12">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="2"/>
-		<DefaultButtonLayout Column="2"/>
-	</CButton>
-	<CButton id="StarshipMercenaries13">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="2"/>
-		<DefaultButtonLayout Column="3"/>
-	</CButton>
-	<CButton id="StarshipMercenaries14">
-		<Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter"/>
-		<DefaultButtonLayout Row="2"/>
-		<DefaultButtonLayout Column="4"/>
-	</CButton>
+    <CButton id="StarshipMercenaries3">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="StarshipMercenaries4">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="StarshipMercenaries5">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="StarshipMercenaries6">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="StarshipMercenaries7">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="StarshipMercenaries8">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="StarshipMercenaries9">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="StarshipMercenaries10">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="StarshipMercenaries11">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="StarshipMercenaries12">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="StarshipMercenaries13">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="StarshipMercenaries14">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
 </Catalog>
