@@ -740,6 +740,9 @@
     <CEffectCreatePersistent id="LokiHurricaneMissileDamagePersistent">
         <Flags index="Channeled" value="0"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="LokiYamatoU">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectApplyBehavior id="MechEMP">
         <ValidatorArray index="0" value="UseMechEMP"/>
         <ValidatorArray value="TargetIsMechanical"/>
@@ -2172,6 +2175,9 @@
         <PeriodicEffectArray value="YamatoGunTopbarLaunchMissile"/>
         <PeriodicPeriodArray value="2"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="YamatoU">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="Zeratul">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="110"/>
