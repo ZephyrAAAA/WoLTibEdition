@@ -95,6 +95,7 @@
         <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="2000"/>
         <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="20.000000"/>
         <EffectArray Operation="Set" Reference="Unit,Refinery2,EffectArray[Birth]"/>
+        <EffectArray Operation="Set" Reference="Unit,Refinery2,CostResource[Minerals]" Value="500"/>
     </CUpgrade>
     <CUpgrade id="CellularReactors">
         <EffectArray index="1" Reference="Unit,Medic,EnergyStart"/>

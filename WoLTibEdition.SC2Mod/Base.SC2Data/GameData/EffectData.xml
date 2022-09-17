@@ -177,6 +177,7 @@
     </CEffectCreateUnit>
     <CEffectDamage id="ConsumptionDamage">
         <LeechFraction index="Life" value="2"/>
+        <Kind value="NoProc"/>
     </CEffectDamage>
     <CEffectIssueOrder id="ConfusionAttack">
         <EditorCategories value="Race:Protoss"/>
@@ -301,6 +302,7 @@
         <EditorCategories value=""/>
         <VitalFractionCurrent index="Shields" value="1"/>
         <Maximum value="100"/>
+        <Kind value="NoProc"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="EMPLaunchMissileSpectre">
         <EditorCategories value="Race:Terran"/>
@@ -346,6 +348,7 @@
         <EditorCategories value=""/>
         <VitalFractionCurrent index="Shields" value="1"/>
         <Maximum value="400"/>
+        <Kind value="NoProc"/>
     </CEffectDamage>
     <CEffectDamage id="FeedbackSpectre">
         <ValidatorArray value=""/>
@@ -358,6 +361,7 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="SameCliff" value="0"/>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectDamage id="FeedbackGhost">
         <ValidatorArray value=""/>
@@ -371,6 +375,7 @@
         <Death value="Blast"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="SameCliff" value="0"/>
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectSet id="FeedbackSetGhost">
         <ValidatorArray value="CanFeedback"/>
