@@ -221,10 +221,10 @@
             <InfoValue index="0" Value="100000"/>
         </Indices>
         <Indices index="36">
-            <InfoValue index="0" Value="100000"/>
+            <InfoValue index="0" Value="90000"/>
         </Indices>
         <Indices index="37">
-            <InfoValue index="0" Value="90000"/>
+            <InfoValue index="0" Value="100000"/>
         </Indices>
         <Indices index="38" ImagePath="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds">
             <InfoValue index="0" Value="60000"/>
