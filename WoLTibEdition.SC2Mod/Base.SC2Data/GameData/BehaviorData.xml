@@ -634,7 +634,6 @@
                 <DamageDealtFraction index="Melee" value="0.1"/>
                 <DamageDealtFraction index="Ranged" value="0.1"/>
                 <DamageDealtFraction index="Splash" value="0.1"/>
-                <DamageDealtFraction index="NoProc" value="0.1"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
@@ -644,7 +643,6 @@
                 <DamageDealtFraction index="Melee" value="0.1"/>
                 <DamageDealtFraction index="Ranged" value="0.1"/>
                 <DamageDealtFraction index="Splash" value="0.1"/>
-                <DamageDealtFraction index="NoProc" value="0.1"/>
                 <VitalMaxAdditiveMultiplierArray index="Life" value="0.1"/>
             </Modification>
         </VeterancyLevelArray>
