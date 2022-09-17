@@ -210,6 +210,9 @@
         <EffectArray Operation="Multiply" Reference="Effect,HailstormLauncherU,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,HailstormLauncherUMerc,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,OdinAADamage,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,DuskWingScreecherMissilesCarpetBombDamage,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,SpartanCompanyAU,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,WreckingCrewFighterU,Amount" Value="1.3"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="FirebatJuggernautPlating">
@@ -231,12 +234,16 @@
         <EffectArray Operation="Multiply" Reference="Effect,OdinDamageLeft,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,OdinDamageRight,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,OdinDamage,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserAU,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserGU,Amount" Value="1.5"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="ImprovedRailguns">
         <EffectArray Operation="Multiply" Reference="Effect,GoliathG,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DiamondbackBeam,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,TwinGatlingCannons,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,SpartanCompanyG,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,WreckingCrewAssault,Amount" Value="1.5"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="MaelstromRounds">
@@ -437,7 +444,7 @@
         <EffectArray index="7" Operation="Set" Reference="Weapon,PhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
         <EffectArray index="8" Operation="Set" Reference="Weapon,ThermalLances,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
         <EffectArray index="9" Reference="Weapon,Zeratul,Level"/>
-        <EffectArray index="10" Reference="Effect,Zeratul,AttributeBonus[Structure]" Value="1"/>
+        <EffectArray index="10" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="1"/>
         <EffectArray index="11" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>

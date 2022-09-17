@@ -156,6 +156,9 @@ void AddTopbars () {
 		if (TechTreeUpgradeCount(1, "HireSiegeBreakersPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireSpartanCompanyPH", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("VehicleMercenaries");
 		}
+		if (TechTreeUpgradeCount(1, "HireHelsAngelsPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireDuskWingPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireDukesRevenge", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("StarshipMercenaries");
+		}
 		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("TacticalMissileStrike");
 		}
@@ -189,6 +192,7 @@ void RemoveTopbars () {
 	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("InfantryMercenaries");
 		RemoveTopbarAbil("VehicleMercenaries");
+		RemoveTopbarAbil("StarshipMercenaries");
 		RemoveTopbarAbil("TacticalMissileStrike");
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) == 0) {
@@ -334,6 +338,9 @@ bool Idle_Func (bool testConds, bool runActions) {
 			resourceGroup = UnitGroup("RefineryBounce", owner, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
 			UnitIssueOrder(idleUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
 			UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, resourceGroup, true)), c_orderQueueAddToEnd);
+			if (UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce")) {
+				UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, UnitGroup("Refinery2", owner, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueAddToFront);
+			}
 		}
 	} while ((UnitOrderCount(idleUnit) == 0 || remainsIdle) || (UnitOrderCount(EventUnit()) > 0 && UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce")));
 	UnitBehaviorRemove(idleUnit, "IdleTaken", 1);

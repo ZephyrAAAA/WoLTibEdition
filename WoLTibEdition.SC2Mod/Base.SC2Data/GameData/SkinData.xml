@@ -344,4 +344,40 @@ Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2
     <CSkin id="HiveMindEmulator14">
         <ReplacementArray Catalog="Button" From="HiveMindEmulator3" To="HiveMindEmulator14"/>
     </CSkin>
+	<CSkin id="StarshipMercenaries3">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries3"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries4">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries4"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries5">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries5"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries6">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries6"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries7">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries7"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries8">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries8"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries9">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries9"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries10">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries10"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries11">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries11"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries12">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries12"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries13">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries13"/>
+	</CSkin>
+	<CSkin id="StarshipMercenaries14">
+		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries14"/>
+	</CSkin>
 </Catalog>

@@ -30,6 +30,14 @@
         <Find value="1"/>
         <Value value="MercPHTrainFirebat"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasDuskWings">
+        <Find value="1"/>
+        <Value value="MercPHTrainBanshee"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasJackson">
+        <Find value="1"/>
+        <Value value="MercPHTrainBattleCruiser"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasSiegeBreakers">
         <Find value="1"/>
         <Value value="MercPHTrainSiegeTank"/>
@@ -41,6 +49,10 @@
     <CValidatorPlayerRequirement id="HasHammerSecurities">
         <Find value="1"/>
         <Value value="MercPHTrainMarauder"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasHelsAngels">
+        <Find value="1"/>
+        <Value value="MercPHTrainViking"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasWarPigs">
         <Find value="1"/>

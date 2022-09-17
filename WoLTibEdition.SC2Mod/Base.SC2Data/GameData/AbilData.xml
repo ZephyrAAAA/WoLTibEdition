@@ -560,7 +560,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="InfantryMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="1500"/>
+            <Resource index="Minerals" value="2000"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
@@ -656,7 +656,7 @@
         <DataCollection value="InfantryMercenaries"/>
         <Effect index="0" value="VehicleMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="3000"/>
+            <Resource index="Minerals" value="4500"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
@@ -1922,6 +1922,22 @@
             <Resource index="Minerals" value="1200"/>
         </Cost>
     </CAbilMorph>
+    <CAbilEffectTarget id="StarshipMercenaries">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="InfantryMercenaries"/>
+        <Effect index="0" value="StarshipMercSet"/>
+        <Cost>
+            <Resource index="Minerals" value="6000"/>
+            <Cooldown Location="Global" TimeUse="300"/>
+        </Cost>
+        <Range value="500"/>
+        <CursorEffect value="DropWarPigs"/>
+        <AINotifyEffect value="InfantryMercenaries"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StarshipMercenaries3">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilArmMagazine id="WarPigSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
