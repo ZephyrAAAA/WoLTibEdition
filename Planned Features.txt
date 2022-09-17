@@ -1,6 +1,6 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
-Also rebalancing units and upgrades to make them more viable, and missions to make them better, and better handle the new systems.
+Also includes rebalancing missions, units, and upgrades to make them better, more viable, and better handle the new systems.
 
 
 
@@ -450,11 +450,11 @@ Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
-Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Thor, Banshee, Marauder Crotch Rockets) [Engineering Bay]
-
 Improved Engines- Ships move faster [Starport Tech Lab]
 
 BC Health- [Starport Tech Lab]
+
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Thor, Banshee, Marauder Crotch Rockets) [Armoury]
 
 Blue Flame- all fire weapons (Firebat, Hellion, Perdition) deal more damage [Armoury]
 
