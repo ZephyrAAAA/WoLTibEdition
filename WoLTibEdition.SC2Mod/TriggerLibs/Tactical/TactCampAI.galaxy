@@ -857,9 +857,9 @@ order AIOrderFeedback (int player, unit aiUnit, unitgroup scanGroup, marker mark
 	order ord;
 	fixed damage;
 	aifilter filterAI;
-	unitfilter filterUnit;
+	aifilter filterShield;
 	unitgroup targetGroup;
-	unitgroup psiGroup;
+	unitgroup shieldGroup;
 	unitgroup nonpsiGroup;
 
 	if (!AITactCooldownAllow(aiUnit, c_tactTimerSecond)) {
@@ -890,7 +890,15 @@ order AIOrderFeedback (int player, unit aiUnit, unitgroup scanGroup, marker mark
 	//  Select starting from the end, to obtain the target that has health closest to snipe
 	//  damage.
 	//
-	targetGroup = AIGetFilterGroup(filterAI, scanGroup);
+	filterShield = AIFilter(player);
+	AISetFilterAlliance(filterShield, c_playerGroupEnemy);
+	AISetFilterBits(filterShield, UnitFilterStr(AIAbilityStr(player, "FeedbackGhost", c_fieldTargetFiltersAB)));
+	AISetFilterRange(filterShield, aiUnit, AIAbilityFixed(player, "FeedbackGhost", c_fieldRange0) + 1);
+	AISetFilterShields(filterShield, 75, c_noMax);
+	
+	
+	targetGroup = AIGetFilterGroup(filterShield, scanGroup);
+	UnitGroupAddUnitGroup(targetGroup, AIGetFilterGroup(filterAI, scanGroup));
 	if (targetGroup == null) {
 		return null;
 	}
