@@ -41,6 +41,7 @@
         <DataRecord Entry="Actor,Bunker2Splat"/>
         <Button value="Bunker"/>
         <TechInfoUnit value="BunkerSQ"/>
+        <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="CommandCenter">
         <DataRecord Entry="Abil,CommandCenterLand"/>

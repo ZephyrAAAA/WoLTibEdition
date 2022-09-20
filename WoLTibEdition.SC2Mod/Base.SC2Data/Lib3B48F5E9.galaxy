@@ -803,7 +803,6 @@ bool lib3B48F5E9_gt_SquadHealth_Func (bool testConds, bool runActions) {
     Wait(0.625, c_timeGame);
     if ((UnitMagazineCount(lv_mainUnit, "DevilDogSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "FirebatSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "HammerSecuritiesSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "MarauderSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "MarineSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "MedicSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "ReaperSquad") == 0) && (UnitMagazineCount(lv_mainUnit, "WarPigSquad") == 0)) {
         UnitRemove(lv_mainUnit);
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("removing"));
     }
 
     return true;
