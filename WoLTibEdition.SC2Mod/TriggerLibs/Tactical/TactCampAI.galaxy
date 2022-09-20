@@ -920,22 +920,6 @@ void AIThinkGhostNew (int player, unit aiUnit, unitgroup scanGroup) {
 //		}
 //	}
 
-	mark = AIMarker(aiUnit, c_MK_Snipe);
-	ord = AIOrderSnipeNew(player, aiUnit, scanGroup, mark);
-	if (ord != null) {
-		if (AIIsCampaign(player)) {
-			if (AIPlayerDifficulty(player) < c_campAdvanced) {
-				cooldown = 8.0;
-			}
-			else if (AIPlayerDifficulty(player) < c_campExpert) {
-				cooldown = 3.0;
-			}
-		}
-
-		AICastCooldown(aiUnit, ord, mark, c_castHold, c_tactTimerFirst, cooldown);
-		return;
-	}
-
 	// void melee version of snipe
 	mark = AIMarker(aiUnit, c_MK_SteadyTargeting);
 	ord = AIOrderFeedback(player, aiUnit, scanGroup, mark);
@@ -950,6 +934,22 @@ void AIThinkGhostNew (int player, unit aiUnit, unitgroup scanGroup) {
 		}
 
 		AICastCooldown(aiUnit, ord, mark, c_castHold, c_tactTimerSecond, cooldown);
+		return;
+	}
+
+	mark = AIMarker(aiUnit, c_MK_Snipe);
+	ord = AIOrderSnipeNew(player, aiUnit, scanGroup, mark);
+	if (ord != null) {
+		if (AIIsCampaign(player)) {
+			if (AIPlayerDifficulty(player) < c_campAdvanced) {
+				cooldown = 8.0;
+			}
+			else if (AIPlayerDifficulty(player) < c_campExpert) {
+				cooldown = 3.0;
+			}
+		}
+
+		AICastCooldown(aiUnit, ord, mark, c_castHold, c_tactTimerFirst, cooldown);
 		return;
 	}
 }
