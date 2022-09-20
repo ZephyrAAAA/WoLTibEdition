@@ -16,6 +16,10 @@ Fixed nobody sending attack waves
 Moved the CC over a bit so you have better build radius coverage
 The zerg now actually have a chance to beat the protoss
 Protoss attack waves start timescaling later, and they scale slower.
+Added 2 small nodes on the close side of the bridge.
+Added a second small node on the far side of the bridge.
+Added a second layer of cannons on the close side of the bridge
+Marauder rockets are now researchable
 
 Bel'shir:
 You no longer get free vision of all the altars
