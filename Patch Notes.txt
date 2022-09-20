@@ -10,6 +10,7 @@ SCVs idling at a refinery now periodically check if it has a rally, and go to it
 Infestors now fungal
 Fixed squad health bars being jank af
 Bio units now say an attack line when you tell them to a-move.
+Bunkers are now affected by Building Armour.
 
 Smash and Grab:
 Fixed nobody sending attack waves
