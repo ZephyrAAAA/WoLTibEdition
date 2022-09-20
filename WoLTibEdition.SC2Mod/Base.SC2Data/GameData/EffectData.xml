@@ -674,6 +674,12 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="10"/>
     </CEffectDamage>
+    <CEffectDamage id="IrradiateInitialDamageApply">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="IrradiatePeriodicDamage">
+        <ArmorReduction value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="JavelinMissileLaunchersDamage">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="12"/>
@@ -1318,6 +1324,9 @@
     </CEffectDamage>
     <CEffectDamage id="ScoutGround">
         <Amount value="16"/>
+    </CEffectDamage>
+    <CEffectDamage id="SeekerMissileDamage">
+        <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="ShrikeTurretCP">
         <EditorCategories value="Race:Terran"/>
