@@ -1584,16 +1584,19 @@
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="0"/>
     </CUnit>
     <CUnit id="CreepTumorBurrowed">
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="0"/>
     </CUnit>
     <CUnit id="CreepTumorQueen">
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="0"/>
     </CUnit>
     <CUnit id="CreeperHostACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
