@@ -133,6 +133,7 @@
         <DataRecord Entry="Unit,DevilDogSquad"/>
         <TechInfoUnit value="MarineSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore">
         <DataRecord Entry="Abil,FusionCoreResearch"/>
@@ -200,6 +201,7 @@
         <DataRecord Entry="Unit,MarauderSquad"/>
         <TechInfoUnit value="MarineSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="FirebatSquad">
         <DataRecord Entry="Abil,FirebatSquad"/>
@@ -208,6 +210,7 @@
         <DataRecord Entry="Unit,FirebatSquad"/>
         <TechInfoUnit value="MarineSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="HammerSecuritiesSquad">
         <DataRecord Entry="Abil,HammerSecuritiesSquad"/>
@@ -216,6 +219,7 @@
         <DataRecord Entry="Unit,HammerSecuritiesSquad"/>
         <TechInfoUnit value="MarineSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MarineSquad">
         <DataRecord Entry="Abil,MarineSquad"/>
@@ -223,6 +227,7 @@
         <DataRecord Entry="Actor,MarineSquad"/>
         <DataRecord Entry="Unit,MarineSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MedicSquad">
         <DataRecord Entry="Abil,MedicSquad"/>
@@ -230,6 +235,7 @@
         <DataRecord Entry="Actor,MedicSquad"/>
         <DataRecord Entry="Unit,MedicSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="MineralField">
         <DataRecord Entry="Actor,MineralField"/>
@@ -291,11 +297,15 @@
         <DataRecord Entry="Actor,ReaperSquad"/>
         <DataRecord Entry="Unit,ReaperSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Refinery2">
         <DataRecord Entry="Unit,Refinery2"/>
         <DataRecord Entry="Actor,Refinery2"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="SCV2">
+        <TechInfoUpgradeUsed value="TerranVehicleVanadiumPlating"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SensorTower">
         <DataRecord Entry="Actor,SensorTower"/>
@@ -416,5 +426,6 @@
         <DataRecord Entry="Actor,WarPigSquad"/>
         <DataRecord Entry="Unit,WarPigSquad"/>
         <TechInfoUpgradeUsed value="TerranInfantryUltraCapacitors"/>
+        <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
     </CDataCollectionUnit>
 </Catalog>

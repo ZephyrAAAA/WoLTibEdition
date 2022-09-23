@@ -759,6 +759,17 @@
         <ValidatorArray value="TargetIsMechanical"/>
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
+    <CEffectEnumMagazine id="MechanicalRepairEnum">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectInternal value="MechanicalRepairOrder"/>
+        <EffectExternal value="MechanicalRepairOrder"/>
+    </CEffectEnumMagazine>
+    <CEffectIssueOrder id="MechanicalRepairOrder">
+        <EditorCategories value=""/>
+        <Abil value="RepairDroneHeal"/>
+        <Target Effect="MechanicalRepairEnum" Value="TargetUnit"/>
+    </CEffectIssueOrder>
     <CEffectCreateHealer id="MedivacDoubleHeal">
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="NotWarpingIn"/>

@@ -58,6 +58,11 @@
             <InfoValue index="0" Value="3"/>
         </Indices>
     </CConversationState>
+    <CConversationState id="MissionAvailable">
+        <Indices index="0">
+            <InfoValue Id="Reward" Value="60000"/>
+        </Indices>
+    </CConversationState>
     <CConversationState id="MissionObjective">
         <Indices index="0">
             <InfoValue Id="Credits Per Item" Value="5000"/>

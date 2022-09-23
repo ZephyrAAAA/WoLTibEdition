@@ -1070,6 +1070,11 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
         <HotkeyAlias value="CarrierRepairDrone"/>
         <AIEvaluateAlias value="CarrierRepairDrone"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="10"/>
+            <ChanceArray index="Idle" value="60"/>
+            <ChanceArray index="Turn" value="30"/>
+        </Fidget>
     </CUnit>
     <CUnit id="CastanarDestructibleDebris">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1584,16 +1589,19 @@
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="0"/>
     </CUnit>
     <CUnit id="CreepTumorBurrowed">
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="0"/>
     </CUnit>
     <CUnit id="CreepTumorQueen">
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="0"/>
     </CUnit>
     <CUnit id="CreeperHostACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2274,6 +2282,7 @@
         <AbilArray Link="Factory2LiftOff"/>
         <AbilArray Link="PauseResumeQueue"/>
         <AbilArray Link="CCMechanicalRepair"/>
+        <AbilArray Link="RepairMechOrder"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
@@ -5332,6 +5341,7 @@
         <AbilArray Link="Starport2LiftOff"/>
         <AbilArray Link="PauseResumeQueue"/>
         <AbilArray Link="CCMechanicalRepair"/>
+        <AbilArray Link="RepairMechOrder"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
