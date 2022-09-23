@@ -304,6 +304,9 @@
         <DataRecord Entry="Actor,Refinery2"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="SCV2">
+        <TechInfoUpgradeUsed value="TerranVehicleVanadiumPlating"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="SensorTower">
         <DataRecord Entry="Actor,SensorTower"/>
         <DataRecord Entry="Unit,SensorTower"/>

@@ -621,6 +621,7 @@ DataCollection/Name/PlanetaryFortress2=Planetary Fortress Copy
 DataCollection/Name/PsiDisruptor=Psi Disruptor
 DataCollection/Name/ReaperSquad=Reaper Squad
 DataCollection/Name/Refinery2=Refinery Copy
+DataCollection/Name/SCV2=SCV Copy
 DataCollection/Name/SensorTower=Sensor Tower
 DataCollection/Name/SensorTower2=Sensor Tower Copy
 DataCollection/Name/Starport=Starport
