@@ -1,32 +1,26 @@
-Fixed Ghost/Spectre veterancy damage bonus allowing feedback and EMP to damage health.
-Viking range reduced.
-Viking damage reduced, fire rate increased.
-Viking now has a small amount of AOE base.
-All mercs are now unlocked from the start
-Colossus attack rate increased, to match later incarnations of the unit
-Selling a refinery now gives back 700, as that is half of the 1400 the refinery alone costs
-Autoref now has the proper cost to interact with Selling and Repair.
-SCVs idling at a refinery now periodically check if it has a rally, and go to it if it does.
-Infestors now fungal
-Fixed squad health bars being jank af
-Bio units now say an attack line when you tell them to a-move.
-Bunkers are now affected by Building Armour.
+Barracks now says it unlocks bunkers from the CC, not SCVs
+Factory says it builds SCVs
+Starport says it build CC
+CC now says it builds stuff
+Raynor now suggests doing something else if you try to do 2 Zeratul missions in a row.
+Description of Shadow Ops, Engineering Bay, Armoury, and Fusion Core now list things they have/unlock.
+Refinery no longer says stuff about being built on a geyser.
+Supply depot upgrade no longer says it's free
+Supply depot says stuff about power.
+*All of our tips now have their title coloured.
+The goliath no longer starts with discount multilock.
+*The crane can now build defenses.
+SCV no longer says it can build stuff
+
+Liberation Day:
+A message appears saying that coloured tips are new.
 
 Smash and Grab:
-Fixed nobody sending attack waves
-Moved the CC over a bit so you have better build radius coverage
-The zerg now actually have a chance to beat the protoss
-Protoss attack waves start timescaling later, and they scale slower.
-Added 2 small nodes on the close side of the bridge.
-Added a second small node on the far side of the bridge.
-Added a second layer of cannons on the close side of the bridge
-Marauder rockets are now researchable
+*You now start with a Spec Ops
 
-Bel'shir:
-You no longer get free vision of all the altars
-Fixed the protoss warping in extra counterattacks
-Moved the colossus at the expansion a bit, so he doesn't shoot passersby.
+Evacuation:
+*You now start with a Spec Ops
 
-The Dig:
-Matt now says those are archons when they're actually there.
+Devil's Playground:
+*You now start with a Spec Ops
 
