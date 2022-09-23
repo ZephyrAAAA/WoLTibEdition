@@ -14,6 +14,7 @@
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATALaserBattery2">
         <EditorCategories value="Race:Terran"/>
@@ -50,6 +51,7 @@
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
+        <AttackType value="Magic"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery2">
         <EditorCategories value="Race:Terran"/>
@@ -344,6 +346,9 @@
         <AttackType value="Siege"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Cost>
+            <Cooldown Link="Weapon/Goliath" Location="Unit"/>
+        </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathAUpgraded">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -356,6 +361,9 @@
         <AttackType value="Normal"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Cost>
+            <Cooldown Link="Weapon/Goliath" Location="Unit"/>
+        </Cost>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathGUpgraded">
         <Tip value="Weapon/Tip/Rifle"/>

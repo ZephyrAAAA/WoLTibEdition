@@ -252,12 +252,31 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="RepairMechOrder">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="MechanicalRepairEnum"/>
+        <Cost>
+            <Cooldown TimeUse="0.5"/>
+        </Cost>
+        <TargetFilters value="Mechanical,Visible;Self,Neutral,Enemy,Missile,Uncommandable,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <Arc value="360"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RepairOrder">
+            <Flags index="ToSelection" value="1"/>
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilBehavior id="RogueGhostCloak">
         <Cost index="0">
             <Vital index="Energy" value="0"/>
         </Cost>
         <BehaviorArray index="0" value="SpectreCloakingFree"/>
     </CAbilBehavior>
+    <CAbilMorph id="SiegeMode">
+        <AbilLinkDisableArray value="attack"/>
+    </CAbilMorph>
     <CAbilEffectTarget id="TacticalMissileStrike">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
@@ -651,6 +670,9 @@
         </Cost>
         <CursorEffect index="0" value="TychusSpectreUltrasonicSearchLv1"/>
     </CAbilEffectTarget>
+    <CAbilMorph id="Unsiege">
+        <AbilLinkDisableArray value="attack"/>
+    </CAbilMorph>
     <CAbilEffectTarget id="VehicleMercenaries">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="InfantryMercenaries"/>
@@ -668,7 +690,6 @@
         </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="RepairDroneHeal">
-        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
         <Effect index="0" value="MechanicalRepair"/>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="AutoCast" value="1"/>

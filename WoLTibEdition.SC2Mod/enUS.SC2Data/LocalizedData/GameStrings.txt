@@ -57,6 +57,7 @@ Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
 Abil/Name/RepairDroneHeal=Repair
+Abil/Name/RepairMechOrder=Repair
 Abil/Name/ResetRally=Reset Rally
 Abil/Name/ScannerSweepTopbar=Scanner Sweep
 Abil/Name/SendWave=Send Wave
@@ -187,6 +188,7 @@ Button/Name/PsiDisruptor6=Psi Disruptor
 Button/Name/PsiDisruptor7=Psi Disruptor
 Button/Name/PsiDisruptor8=Psi Disruptor
 Button/Name/PsiDisruptor9=Psi Disruptor
+Button/Name/RepairOrder=Repair
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
 Button/Name/ResearchImprovedRailguns=Research Improved Railguns
@@ -361,6 +363,7 @@ Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/RepairOrder=Orders repair drones to heal the target
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, and <c val="FFFF8A">Marauder</c> rockets by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
 Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
@@ -730,6 +733,8 @@ Effect/Name/MarineSquadStim=Marine Squad Stim
 Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
 Effect/Name/MechEMP=Mech EMP
 Effect/Name/MechanicalRepair=Mechanical Repair
+Effect/Name/MechanicalRepairEnum=Mechanical Repair
+Effect/Name/MechanicalRepairOrder=Mechanical Repair
 Effect/Name/MedicSquadAcquire=Medic Squad Acquire
 Effect/Name/MedivacDoubleHeal=Double Heal
 Effect/Name/MedivacDoubleHealDelay=Double Heal

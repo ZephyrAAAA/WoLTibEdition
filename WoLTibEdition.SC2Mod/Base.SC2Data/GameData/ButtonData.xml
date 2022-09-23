@@ -202,6 +202,14 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="PsiDisruptor3"/>
         <DefaultButtonLayout Row="1" Column="4"/>
     </CButton>
+    <CButton id="RepairOrder">
+        <Icon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-repair.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
     <CButton id="ResearchHighEnergyCapacitors">
         <Icon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
