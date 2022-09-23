@@ -371,10 +371,10 @@
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle">
-        <AttackType value="Normal"/>
         <Tip value="Weapon/Tip/Rifle"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridC">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -676,6 +676,10 @@
         <RandomDelayMax value="-0.85"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <Tip value="Weapon/Tip/Rifle"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
@@ -812,6 +816,7 @@
     <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="TaurenSpaceMarineGaussRifle"/>
     <CWeaponLegacy id="ThermalLances">
         <AttackType value="Pierce"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>

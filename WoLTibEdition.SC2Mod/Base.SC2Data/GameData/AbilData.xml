@@ -1908,6 +1908,8 @@
     <CAbilSpecialize id="UpgradeDepot">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Specialize1" Time="3" Effect="SupplyDropApplyTempBehavior">
+            <Resource index="Vespene" value="300"/>
+            <Resource index="Custom" value="-10"/>
             <Button DefaultButtonFace="SupplyDrop" Requirements="SupplyDepotUpgrade"/>
             <Flags index="AutoCast" value="1"/>
             <Flags index="AutoCastOn" value="1"/>
