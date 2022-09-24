@@ -52,10 +52,10 @@
     </CTargetFindSet>
     <CTargetFindBestPoint id="InfestorFungalBestPoint">
         <Flags index="EvaluateCmd" value="1"/>
-        <DamageBase value="50"/>
+        <DamageBase value="30"/>
         <Effect value="FungalGrowthSearch"/>
-        <MinCount value="4"/>
-        <MinScore value="2"/>
+        <MinCount value="5"/>
+        <MinScore value="3"/>
     </CTargetFindBestPoint>
     <CTargetFindEffect id="InfestorFungalSearch">
         <TargetValidator value="IsNotFungalGrowthed"/>

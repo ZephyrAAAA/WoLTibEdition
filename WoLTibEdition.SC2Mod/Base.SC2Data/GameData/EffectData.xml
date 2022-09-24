@@ -609,6 +609,12 @@
         <PeriodicPeriodArray value="0"/>
         <InitialEffect value="MechEMP"/>
     </CEffectCreatePersistent>
+    <CEffectDamage id="FungalGrowthDamage">
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectSet id="FungalGrowthInitialSet">
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
     </CEffectDamage>
@@ -861,6 +867,9 @@
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="MohandarChargeInitial">
+        <PeriodicPeriodArray index="0" value="0"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="MohandarMUx1">
         <Amount value="20"/>
     </CEffectDamage>
@@ -1344,6 +1353,12 @@
     </CEffectDamage>
     <CEffectDamage id="SeekerMissileDamage">
         <ArmorReduction value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="ShockDDamage">
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectDamage id="ShockEDamage">
+        <Amount value="75"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="ShrikeTurretCP">
         <EditorCategories value="Race:Terran"/>

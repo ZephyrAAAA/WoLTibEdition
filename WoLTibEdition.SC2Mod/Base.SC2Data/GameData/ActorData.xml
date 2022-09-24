@@ -150,6 +150,9 @@
     <CActorUnit id="Medivac">
         <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
     </CActorUnit>
+    <CActorTurret id="PhoenixTurret">
+        <On Terms="TurretEnable.Phoenix" Send="Create"/>
+    </CActorTurret>
     <CActorSplat id="PsiDisruptorCursorSplat" parent="TerranCursorSplat" abil="PsiDisruptor">
         <EditorCategories value=""/>
     </CActorSplat>
@@ -2137,7 +2140,7 @@
     <CActorUnit id="WarpConduit" parent="GenericUnitStandard" unitName="WarpConduit">
         <EditorCategories value=""/>
         <On Terms="ActorCreation" Send="SetOpacity"/>
-        <Model value="TerrainObjectShakurasHeroGateDoodad"/>
+        <Model value="Nexus"/>
         <HighlightTooltip value="Unit/Name/Bogus"/>
     </CActorUnit>
     <!--                                                                                         -->

@@ -258,12 +258,14 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="CCMechanicalRepair"/>
     </CUnit>
     <CUnit id="ArchiveSealed">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="CCMechanicalRepair"/>
     </CUnit>
     <CUnit id="Archon">
         <ArmorType value="Large"/>
@@ -356,6 +358,7 @@
     <CUnit id="Artanis">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="LongRangeMassRecall"/>
     </CUnit>
     <CUnit id="Artifact">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2980,10 +2983,22 @@
     <CUnit id="HybridDestroyer">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Massive" value="1"/>
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <ShieldsStart value="250"/>
+        <ShieldsMax value="250"/>
     </CUnit>
     <CUnit id="HybridReaver">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Massive" value="1"/>
+        <ArmorType value="Large"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="Hydralisk">
         <ArmorType value="Small"/>
@@ -4104,6 +4119,13 @@
         <CostResource index="Minerals" value="375"/>
         <Footprint value="Footprint2x2Underground"/>
         <PlacementFootprint value="Footprint2x2Underground"/>
+    </CUnit>
+    <CUnit id="Phoenix">
+        <ArmorType value="None"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <WeaponArray index="0" Turret="Phoenix"/>
     </CUnit>
     <CUnit id="PhoenixAiurACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6241,6 +6263,10 @@
     <CUnit id="Urun">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <WeaponArray index="0" Turret="Phoenix"/>
     </CUnit>
     <CUnit id="ValhallaBaseDestructibleDoor">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

@@ -8,6 +8,7 @@
     <CTacticalOrder id="InfestorFungal">
         <Abil value="FungalGrowth"/>
         <TargetFind value="InfestorFungal"/>
+        <Retreat value="1"/>
     </CTacticalOrder>
     <CTacticalSet id="Karass">
         <Array value="KarassPlasmaSurge"/>

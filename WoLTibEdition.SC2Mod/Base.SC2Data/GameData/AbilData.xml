@@ -160,6 +160,7 @@
     <CAbilSpecialize id="IUDTrain">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <InfoArray index="Specialize1" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="500"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountStart value="8"/>
@@ -171,6 +172,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize2" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="800"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountStart value="4"/>
@@ -182,6 +184,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize3" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1000"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountStart value="2"/>
@@ -193,6 +196,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize4" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1800"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountStart value="2"/>
@@ -204,6 +208,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize5" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1600"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountStart value="2"/>
@@ -215,6 +220,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize6" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1200"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountUse value="-1"/>
@@ -225,6 +231,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize7" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1500"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountUse value="-1"/>
@@ -235,6 +242,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize8" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="3000"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountUse value="-1"/>
@@ -245,6 +253,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize9" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="700"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountUse value="-1"/>
@@ -255,6 +264,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize10" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1200"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountUse value="-1"/>
@@ -264,6 +274,7 @@
             <Button DefaultButtonFace="DarkTemplar"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
+        <Alert value=""/>
     </CAbilSpecialize>
     <CAbilTransport id="InfestableHutTransport">
         <UnloadPeriod value="2"/>
@@ -292,6 +303,21 @@
         </Cost>
         <PrepTime index="0" value="1.5"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="LongRangeMassRecall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CCLoadDummy"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="500"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LongRangeMassRecall">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="MedivacHeal">
         <CmdButtonArray index="Execute" Requirements=""/>
     </CAbilEffectTarget>

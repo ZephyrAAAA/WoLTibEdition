@@ -134,6 +134,9 @@
         <AffectedUnitArray index="10" removed="1"/>
         <AffectedUnitArray index="11" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="Charge">
+        <EffectArray index="0" Value="0.750000"/>
+    </CUpgrade>
     <CUpgrade id="CombatShield">
         <EffectArray Reference="Unit,MarineSquad,LifeMax" Value="60"/>
         <EffectArray Reference="Unit,MarineSquad,LifeStart" Value="60"/>

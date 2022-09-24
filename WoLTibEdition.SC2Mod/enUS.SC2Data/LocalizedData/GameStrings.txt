@@ -44,6 +44,7 @@ Abil/Name/HiveMindEmulator=Hive Mind Emulator
 Abil/Name/HyperionYamato=Yamato Gun
 Abil/Name/IUDTrain=IUD Train
 Abil/Name/InfantryMercenaries=Infantry Mercenaries
+Abil/Name/LongRangeMassRecall=Long-Range Mass Recall
 Abil/Name/MarauderSquad=Marauder Squad
 Abil/Name/MarineSquad=Marine Squad
 Abil/Name/MedicSquad=Medic Squad
@@ -161,6 +162,7 @@ Button/Name/InfantryMercenaries8=Infantry Mercenaries
 Button/Name/InfantryMercenaries9=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
+Button/Name/LongRangeMassRecall=Long-Range Mass Recall
 Button/Name/MedivacLoadNearby=Load Nearby
 Button/Name/NovaHeal=Heal
 Button/Name/NukeCalldown10=Tac Nuke Strike
@@ -336,6 +338,7 @@ Button/Tooltip/InfantryMercenaries8=Calls down all purchased infantry mercenarie
 Button/Tooltip/InfantryMercenaries9=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
+Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NovaHeal=Heals Nova.<n/><n/><c val="f078ff">Heals <d ref="Effect,NovaHeal,RechargeVitalRate"/> life per second for <d ref="Effect,NovaHeal,RechargeVitalRate * Effect,NovaHeal,DrainVitalCostFactor"/> energy.</c>

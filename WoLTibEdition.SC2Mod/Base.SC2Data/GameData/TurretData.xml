@@ -3,4 +3,13 @@
     <CTurret id="Battlecruiser">
         <YawArc value="360"/>
     </CTurret>
+    <CTurret id="Phoenix" parent="FreeRotate">
+        <Idle value="ResetIfMoving"/>
+        <YawRate value="539.2968"/>
+        <Fidget TurnAngle="0">
+            <ChanceArray index="Anim" value="50"/>
+            <ChanceArray index="Idle" value="50"/>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
 </Catalog>
