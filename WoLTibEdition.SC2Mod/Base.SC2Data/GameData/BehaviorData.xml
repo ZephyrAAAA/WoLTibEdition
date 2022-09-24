@@ -176,6 +176,13 @@
             <RateMultiplierArray index="Cooldown" value="2"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="FungalGrowth">
+        <Duration value="4.01"/>
+        <Period value="0.2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FungalGrowthMovement">
+        <Duration value="4"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield">
         <DamageResponse ModifyFraction="0.7">
             <ModifyAmount value="0"/>

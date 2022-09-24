@@ -104,6 +104,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="HiveMindEmulator3"/>
         <DefaultButtonLayout Row="1" Column="4"/>
     </CButton>
+    <CButton id="LongRangeMassRecall">
+        <Icon value="Assets\Textures\btn-ability-spearofadun-massrecall.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-spearofadun-massrecall.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
     <CButton id="MedivacLoadNearby">
         <Icon value="Assets\Textures\btn-ability-terran-load.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-terran-load.dds"/>

@@ -380,12 +380,28 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HybridD">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HybridE">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponStrafe id="InterceptorBeam">
         <AttackType value="Magic"/>
     </CWeaponStrafe>
     <CWeaponLegacy id="InterceptorLaunch">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="IonCannons">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Range value="5"/>
+        <AttackType value="Siege"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="JavelinMissileLaunchers">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -552,6 +568,12 @@
         <Backswing value="0.2"/>
         <Effect value="CCLoadDummy"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MohandarPrismaticBeam">
+        <RangeSlop value="2"/>
+        <Period value="0.6"/>
+        <AttackType value="Magic"/>
+        <Backswing value="0.75"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -676,10 +698,6 @@
         <RandomDelayMax value="-0.85"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-        <Tip value="Weapon/Tip/Rifle"/>
-        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
-        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
@@ -854,6 +872,13 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
         <!--         <Effect value="TychusChaingun"/> -->
+    </CWeaponLegacy>
+    <CWeaponLegacy id="UrunEnergyBeam">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <AttackType value="Siege"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Val03QueenOfBladesPsiBlast">
         <Tip value="Weapon/Tip/Rocket"/>

@@ -39,6 +39,12 @@
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
     </CAbilEffectTarget>
+    <CAbilArmMagazine id="CarrierHangar">
+        <InfoArray index="Ammo1">
+            <Cooldown Link="Abil/##id##"/>
+            <Flags index="AutoBuildOn" value="1"/>
+        </InfoArray>
+    </CAbilArmMagazine>
     <CAbilEffectTarget id="DukesRevengeYamato">
         <Cost index="0">
             <Vital index="Energy" value="0"/>
@@ -151,6 +157,125 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilSpecialize id="IUDTrain">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray index="Specialize1" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="500"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountStart value="8"/>
+                <CountUse value="-1"/>
+                <Link value="Zealot"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Zealot"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize2" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="800"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountStart value="4"/>
+                <CountUse value="-1"/>
+                <Link value="Stalker"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Stalker" Requirements="JumboBunkerNotResearched"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize3" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1000"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountStart value="2"/>
+                <CountUse value="-1"/>
+                <Link value="HighTemplar"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="HighTemplar"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize4" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1800"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountStart value="2"/>
+                <CountUse value="-1"/>
+                <Link value="Immortal"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Immortal"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize5" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1600"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountStart value="2"/>
+                <CountUse value="-1"/>
+                <Link value="Colossus"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Colossus"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize6" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1200"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountUse value="-1"/>
+                <Link value="Phoenix"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Phoenix" State="Restricted"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize7" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1500"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountUse value="-1"/>
+                <Link value="VoidRay"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="VoidRay" State="Restricted"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize8" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="3000"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountUse value="-1"/>
+                <Link value="Carrier"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Carrier" State="Restricted"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize9" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="700"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountUse value="-1"/>
+                <Link value="Sentry"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="Sentry"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize10" Effect="CCLoadDummy">
+            <Resource index="Minerals" value="1200"/>
+            <Charge>
+                <CountMax value="99"/>
+                <CountUse value="-1"/>
+                <Link value="DarkTemplar"/>
+                <Location value="Player"/>
+            </Charge>
+            <Button DefaultButtonFace="DarkTemplar"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <Alert value=""/>
+    </CAbilSpecialize>
     <CAbilTransport id="InfestableHutTransport">
         <UnloadPeriod value="2"/>
     </CAbilTransport>
@@ -178,6 +303,21 @@
         </Cost>
         <PrepTime index="0" value="1.5"/>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="LongRangeMassRecall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CCLoadDummy"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="500"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LongRangeMassRecall">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="MedivacHeal">
         <CmdButtonArray index="Execute" Requirements=""/>
     </CAbilEffectTarget>
@@ -274,6 +414,14 @@
         </Cost>
         <BehaviorArray index="0" value="SpectreCloakingFree"/>
     </CAbilBehavior>
+    <CAbilArmMagazine id="SelendisHangar">
+        <InfoArray index="Ammo1">
+            <Resource index="Minerals" value="0"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Flags index="AutoBuildOn" value="1"/>
+            <Flags index="LeashRetarget" value="1"/>
+        </InfoArray>
+    </CAbilArmMagazine>
     <CAbilMorph id="SiegeMode">
         <AbilLinkDisableArray value="attack"/>
     </CAbilMorph>

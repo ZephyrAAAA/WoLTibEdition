@@ -258,12 +258,14 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="CCMechanicalRepair"/>
     </CUnit>
     <CUnit id="ArchiveSealed">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="CCMechanicalRepair"/>
     </CUnit>
     <CUnit id="Archon">
         <ArmorType value="Large"/>
@@ -356,6 +358,7 @@
     <CUnit id="Artanis">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="LongRangeMassRecall"/>
     </CUnit>
     <CUnit id="Artifact">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2980,10 +2983,22 @@
     <CUnit id="HybridDestroyer">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Massive" value="1"/>
+        <ArmorType value="Large"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <ShieldsStart value="250"/>
+        <ShieldsMax value="250"/>
     </CUnit>
     <CUnit id="HybridReaver">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Massive" value="1"/>
+        <ArmorType value="Large"/>
+        <LifeStart value="1500"/>
+        <LifeMax value="1500"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="Hydralisk">
         <ArmorType value="Small"/>
@@ -4104,6 +4119,13 @@
         <CostResource index="Minerals" value="375"/>
         <Footprint value="Footprint2x2Underground"/>
         <PlacementFootprint value="Footprint2x2Underground"/>
+    </CUnit>
+    <CUnit id="Phoenix">
+        <ArmorType value="None"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <WeaponArray index="0" Turret="Phoenix"/>
     </CUnit>
     <CUnit id="PhoenixAiurACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6241,6 +6263,10 @@
     <CUnit id="Urun">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <WeaponArray index="0" Turret="Phoenix"/>
     </CUnit>
     <CUnit id="ValhallaBaseDestructibleDoor">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6352,6 +6378,35 @@
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="WarpConduit">
+        <Race value="Prot"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="Movable" value="0"/>
+        <FlagArray index="Hero" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Cloaked" value="1"/>
+        <FlagArray index="Buried" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <FlagArray index="CameraFollow" value="0"/>
+        <AbilArray Link="IUDTrain"/>
+        <AbilArray Link="que5Passive"/>
+        <CardLayouts>
+            <LayoutButtons Face="Zealot" Type="AbilCmd" AbilCmd="IUDTrain,Specialize1" Row="0" Column="0"/>
+            <LayoutButtons Face="Stalker" Type="AbilCmd" AbilCmd="IUDTrain,Specialize2" Row="0" Column="2"/>
+            <LayoutButtons Face="Immortal" Type="AbilCmd" AbilCmd="IUDTrain,Specialize4" Row="1" Column="0"/>
+            <LayoutButtons Face="Colossus" Type="AbilCmd" AbilCmd="IUDTrain,Specialize5" Row="1" Column="1"/>
+            <LayoutButtons Face="VoidRay" Type="AbilCmd" AbilCmd="IUDTrain,Specialize7" Row="2" Column="1"/>
+            <LayoutButtons Face="Sentry" Type="AbilCmd" AbilCmd="IUDTrain,Specialize9" Row="0" Column="1"/>
+            <LayoutButtons Face="HighTemplar" Type="AbilCmd" AbilCmd="IUDTrain,Specialize3" Row="0" Column="3"/>
+            <LayoutButtons Face="DarkTemplar" Type="AbilCmd" AbilCmd="IUDTrain,Specialize10" Row="0" Column="4"/>
+            <LayoutButtons Face="Phoenix" Type="AbilCmd" AbilCmd="IUDTrain,Specialize6" Row="2" Column="0"/>
+            <LayoutButtons Face="Carrier" Type="AbilCmd" AbilCmd="IUDTrain,Specialize8" Row="2" Column="2"/>
+        </CardLayouts>
+        <MinimapRadius value="1.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Campaign"/>
     </CUnit>
     <CUnit id="WarpGate">
         <ArmorType value="Hero"/>

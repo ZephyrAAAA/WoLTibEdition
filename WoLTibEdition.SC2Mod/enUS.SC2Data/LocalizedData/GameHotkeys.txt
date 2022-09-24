@@ -13,6 +13,7 @@ Button/Hotkey/HyperionYamato4=
 Button/Hotkey/HyperionYamato5=
 Button/Hotkey/InfantryUltraCapacitors=C
 Button/Hotkey/InfantryVanadiumPlating=V
+Button/Hotkey/LongRangeMassRecall=R
 Button/Hotkey/MedivacLoadNearby=L
 Button/Hotkey/NovaHeal=E
 Button/Hotkey/NukeCalldown8=
