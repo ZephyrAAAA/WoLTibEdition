@@ -10,7 +10,6 @@ Supply depot says stuff about power.
 The goliath no longer starts with discount multilock.
 The crane can now build defenses.
 SCV no longer says it can build stuff
-*All of our tips now have their title coloured.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -35,3 +34,17 @@ Coloured all our tips
 Outbreak:
 Coloured all our tips
 
+Supernova:
+Added our upgrade function
+You now start with 2 scvs instead of 6
+Removed the gas pickups at base 4
+Added another pylon and cannon pair at base 4
+Removed the gas pickups at base 5
+Moved the gas pickups from base 3 to the ledge north of the starting base
+
+
+Safe Haven:
+
+Haven's Fall:
+
+In Utter Darkness:
