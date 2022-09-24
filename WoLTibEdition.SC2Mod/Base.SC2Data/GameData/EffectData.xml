@@ -861,6 +861,12 @@
     <CEffectDamage id="MindBlast">
         <Amount value="45"/>
     </CEffectDamage>
+    <CEffectDamage id="MohandarMUx1">
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="MohandarMUx3">
+        <Amount value="32"/>
+    </CEffectDamage>
     <CEffectCreateHealer id="NanoRepair">
         <ValidatorArray index="0" value="LT3Markers"/>
         <DrainVitalCostFactor value="0.2"/>

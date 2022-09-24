@@ -6353,6 +6353,35 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="WarpConduit">
+        <Race value="Prot"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="Movable" value="0"/>
+        <FlagArray index="Hero" value="1"/>
+        <FlagArray index="Undetectable" value="1"/>
+        <FlagArray index="KillCredit" value="0"/>
+        <FlagArray index="Invulnerable" value="1"/>
+        <FlagArray index="Cloaked" value="1"/>
+        <FlagArray index="Buried" value="1"/>
+        <FlagArray index="ClearRallyOnTargetLost" value="0"/>
+        <FlagArray index="CameraFollow" value="0"/>
+        <AbilArray Link="IUDTrain"/>
+        <AbilArray Link="que5Passive"/>
+        <CardLayouts>
+            <LayoutButtons Face="Zealot" Type="AbilCmd" AbilCmd="IUDTrain,Specialize1" Row="0" Column="0"/>
+            <LayoutButtons Face="Stalker" Type="AbilCmd" AbilCmd="IUDTrain,Specialize2" Row="0" Column="2"/>
+            <LayoutButtons Face="Immortal" Type="AbilCmd" AbilCmd="IUDTrain,Specialize4" Row="1" Column="0"/>
+            <LayoutButtons Face="Colossus" Type="AbilCmd" AbilCmd="IUDTrain,Specialize5" Row="1" Column="1"/>
+            <LayoutButtons Face="VoidRay" Type="AbilCmd" AbilCmd="IUDTrain,Specialize7" Row="2" Column="1"/>
+            <LayoutButtons Face="Sentry" Type="AbilCmd" AbilCmd="IUDTrain,Specialize9" Row="0" Column="1"/>
+            <LayoutButtons Face="HighTemplar" Type="AbilCmd" AbilCmd="IUDTrain,Specialize3" Row="0" Column="3"/>
+            <LayoutButtons Face="DarkTemplar" Type="AbilCmd" AbilCmd="IUDTrain,Specialize10" Row="0" Column="4"/>
+            <LayoutButtons Face="Phoenix" Type="AbilCmd" AbilCmd="IUDTrain,Specialize6" Row="2" Column="0"/>
+            <LayoutButtons Face="Carrier" Type="AbilCmd" AbilCmd="IUDTrain,Specialize8" Row="2" Column="2"/>
+        </CardLayouts>
+        <MinimapRadius value="1.75"/>
+        <EditorCategories value="ObjectType:Structure,ObjectFamily:Campaign"/>
+    </CUnit>
     <CUnit id="WarpGate">
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>

@@ -42,6 +42,7 @@ Abil/Name/HideInTheShadows=Hide In The Shadows
 Abil/Name/HighTemplarAttackDummy=High Templar Attack Dummy
 Abil/Name/HiveMindEmulator=Hive Mind Emulator
 Abil/Name/HyperionYamato=Yamato Gun
+Abil/Name/IUDTrain=IUD Train
 Abil/Name/InfantryMercenaries=Infantry Mercenaries
 Abil/Name/MarauderSquad=Marauder Squad
 Abil/Name/MarineSquad=Marine Squad
@@ -1343,6 +1344,7 @@ Unit/Name/TibNodeSmall=Vespene Geyser
 Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
 Unit/Name/WarPigSquad=War Pig Squad
+Unit/Name/WarpConduit=Warp Conduit
 Unit/Tip/Air=<c val="FFBF00">Light Air</c> armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor

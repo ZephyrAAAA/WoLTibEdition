@@ -552,6 +552,12 @@
         <Backswing value="0.2"/>
         <Effect value="CCLoadDummy"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MohandarPrismaticBeam">
+        <RangeSlop value="2"/>
+        <Period value="0.6"/>
+        <AttackType value="Magic"/>
+        <Backswing value="0.75"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -676,10 +682,6 @@
         <RandomDelayMax value="-0.85"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-        <Tip value="Weapon/Tip/Rifle"/>
-        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
-        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>

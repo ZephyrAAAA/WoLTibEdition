@@ -2134,6 +2134,12 @@
         <AbilSoundArray AbilCmd="Stimpack,Execute" Sound="Marine_StimPackVO"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Marine_Attack"/>
     </CActorUnit>
+    <CActorUnit id="WarpConduit" parent="GenericUnitStandard" unitName="WarpConduit">
+        <EditorCategories value=""/>
+        <On Terms="ActorCreation" Send="SetOpacity"/>
+        <Model value="TerrainObjectShakurasHeroGateDoodad"/>
+        <HighlightTooltip value="Unit/Name/Bogus"/>
+    </CActorUnit>
     <!--                                                                                         -->
     <!-- Zeratul ............................................................................... -->
     <!--                                                                                         -->
