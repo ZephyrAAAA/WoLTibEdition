@@ -259,6 +259,9 @@ Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">En
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
+Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrades.
+Button/Tooltip/BuildTechLabFactory=Enables additional units. Researches upgrades.
+Button/Tooltip/BuildTechLabStarport=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
@@ -286,7 +289,7 @@ Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage.
 Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
 Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Armoury<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With the Lab Research)<n/>- Planetary Fortress (With the Lab Research)<n/>- Sensor Tower <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
-Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs<n/>
+Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
@@ -431,6 +434,9 @@ Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target locatio
 Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
 Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
+Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
+Button/Tooltip/TechLabFactory=Enables additional units. Researches upgrades.
+Button/Tooltip/TechLabStarport=Enables additional units. Researches upgrades.
 Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
