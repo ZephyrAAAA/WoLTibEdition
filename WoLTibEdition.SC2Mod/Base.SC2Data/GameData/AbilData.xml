@@ -51,6 +51,13 @@
             <Cooldown TimeUse="60"/>
         </Cost>
     </CAbilEffectInstant>
+    <CAbilEffectInstant id="DukesRevengeDefensiveMatrix">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Charge Link="Abil/DefensiveMatrix"/>
+            <Cooldown Link="Abil/DefensiveMatrix" TimeUse="60"/>
+        </Cost>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="DukesRevengeYamato">
         <Cost index="0">
             <Vital index="Energy" value="0"/>

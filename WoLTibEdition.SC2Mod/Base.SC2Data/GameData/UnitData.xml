@@ -2106,6 +2106,13 @@
         <WeaponArray index="3" Link="DRBattlecruiserG2"/>
         <EquipmentArray index="0" removed="1"/>
         <EquipmentArray index="1" removed="1"/>
+        <AbilArray index="4" Link="DukesRevengeDefensiveMatrix"/>
+        <AbilArray index="5" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="DefensiveMatrix" AbilCmd="DukesRevengeDefensiveMatrix,Execute"/>
+            <LayoutButtons index="7" removed="1"/>
+        </CardLayouts>
+        <TacticalAI value="BattlecruiserDefensiveMatrix"/>
     </CUnit>
     <CUnit id="DumpTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
