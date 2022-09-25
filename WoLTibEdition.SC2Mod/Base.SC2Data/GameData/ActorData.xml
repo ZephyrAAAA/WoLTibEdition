@@ -2068,6 +2068,11 @@
         <On Terms="AbilTransport.AirTransport.CargoLoad" Send="AnimBracketStart Unload IGNORE Unload Unload,End DontResetOnUnhide"/>
         <On Terms="AbilTransport.AirTransport.CargoLoadSuppressed" Send="AnimBracketStart Unload IGNORE Unload Unload,End DontResetOnUnhide"/>
     </CActorEventMacro>
+    <CActorAction id="VikingFighterUpgradedAttack">
+        <On Terms="Effect.LanzerTorpedoesDamageG.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On Terms="Effect.LanzerTorpedoesDamageG.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
+        <On Terms="Effect.LanzerTorpedoesLMG.Start; At Caster" Send="Create"/>
+    </CActorAction>
     <CActorAction id="VultureAttackLeft" parent="GenericAttack" effectImpact="VultureU" effectLaunch="VultureLeft">
         <LaunchSiteOps Ops="SOpAttachWeapon00 SOpVultureLeft"/>
         <LaunchAttachQuery Methods="AMFilterWeapon01"/>
@@ -2143,6 +2148,15 @@
         <Model value="Nexus"/>
         <HighlightTooltip value="Unit/Name/Bogus"/>
     </CActorUnit>
+    <CActorAction id="WreckingCrewFighterAttack">
+        <On Terms="Effect.WreckingCrewFighterUG.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On Terms="Effect.WreckingCrewFighterUG.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
+    </CActorAction>
+    <CActorAction id="WreckingCrewFighterUpgradedAttack">
+        <On Terms="Effect.WreckingCrewFighterUG.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On Terms="Effect.WreckingCrewFighterUG.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
+        <On Terms="Effect.WreckingCrewFighterLMG.Start; At Caster" Send="Create"/>
+    </CActorAction>
     <!--                                                                                         -->
     <!-- Zeratul ............................................................................... -->
     <!--                                                                                         -->

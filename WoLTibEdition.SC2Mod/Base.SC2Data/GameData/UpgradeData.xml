@@ -90,6 +90,36 @@
         <EffectArray index="6" removed="1"/>
         <EffectArray index="7" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="AresClassWeaponsSystemViking">
+        <EffectArray index="0" Operation="Subtract" Reference="Weapon,LanzerTorpedoes,Period" Value="0.375000"/>
+        <EffectArray index="1" Operation="Subtract" Reference="Weapon,TwinGatlingCannon,Period" Value="0.375000"/>
+        <EffectArray index="2" Operation="Subtract" Reference="Weapon,WreckingCrewAssault,Period" Value="0.375000"/>
+        <EffectArray index="3" Operation="Subtract" Reference="Weapon,WreckingCrewFighter,Period" Value="0.375000"/>
+        <EffectArray Operation="Subtract" Reference="Weapon,WreckingCrewFighterGround,Period" Value="0.375000"/>
+        <EffectArray Operation="Subtract" Reference="Weapon,LanzerTorpedoesGround,Period" Value="0.375000"/>
+        <EffectArray Operation="Divide" Reference="Abil,AssaultMode,InfoArray[0].RandomDelayMax" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,AssaultMode,InfoArray[0].SectionArray[Actor].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,AssaultMode,InfoArray[0].SectionArray[Mover].DurationArray[Delay]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,AssaultMode,InfoArray[0].SectionArray[Mover].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,AssaultMode,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,FighterMode,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,FighterMode,InfoArray[0].SectionArray[Mover].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,FighterMode,InfoArray[0].SectionArray[Mover].DurationArray[Delay]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,FighterMode,InfoArray[0].SectionArray[Collide].DurationArray[Delay]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,FighterMode,InfoArray[0].SectionArray[Actor].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,FighterMode,InfoArray[0].RandomDelayMax" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewAssaultMode,InfoArray[0].RandomDelayMax" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewAssaultMode,InfoArray[0].SectionArray[Actor].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewAssaultMode,InfoArray[0].SectionArray[Mover].DurationArray[Delay]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewAssaultMode,InfoArray[0].SectionArray[Mover].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewAssaultMode,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewFighterMode,InfoArray[0].SectionArray[Stats].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewFighterMode,InfoArray[0].SectionArray[Mover].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewFighterMode,InfoArray[0].SectionArray[Mover].DurationArray[Delay]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewFighterMode,InfoArray[0].SectionArray[Collide].DurationArray[Delay]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewFighterMode,InfoArray[0].SectionArray[Actor].DurationArray[Duration]" Value="3.000000"/>
+        <EffectArray Operation="Divide" Reference="Abil,WreckingCrewFighterMode,InfoArray[0].RandomDelayMax" Value="3.000000"/>
+    </CUpgrade>
     <CUpgrade id="AutoHarvester">
         <EffectArray Operation="Set" Reference="Actor,Refinery2,Wireframe.Image[0]" Value="Assets\Textures\wireframe-terran-refinery-automated.dds"/>
         <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="2000"/>
@@ -217,11 +247,19 @@
         <EffectArray Operation="Multiply" Reference="Effect,DuskWingScreecherMissilesCarpetBombDamage,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,SpartanCompanyAU,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,WreckingCrewFighterU,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,WreckingCrewFighterUG,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,LanzerTorpedoesDamageG,Amount" Value="1.3"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="FirebatJuggernautPlating">
         <EffectArray Reference="Unit,DevilDogSquad,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,FirebatSquad,LifeArmor" Value="2"/>
+    </CUpgrade>
+    <CUpgrade id="HALORockets">
+        <EffectArray Operation="Set" Reference="Weapon,LanzerTorpedoesGround,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,LanzerTorpedoesGround,MinimumRange" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,WreckingCrewFighterGround,MinimumRange" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,WreckingCrewFighterGround,Options[Hidden]" Value="0"/>
     </CUpgrade>
     <CUpgrade id="HailstormLaunchers">
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncher,Options[Hidden]" Value="0"/>
@@ -241,6 +279,16 @@
         <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserAU,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserGU,Amount" Value="1.5"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
+    </CUpgrade>
+    <CUpgrade id="HurricaneMissiles">
+        <EffectArray Operation="Set" Reference="Weapon,ATALaserBattery2,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,ATALaserBattery2,MinimumRange" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,ATSLaserBattery2,MinimumRange" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,ATSLaserBattery2,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,DRBattlecruiserA2,Options[Hidden]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,DRBattlecruiserA2,MinimumRange" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,DRBattlecruiserG2,MinimumRange" Value="0"/>
+        <EffectArray Operation="Set" Reference="Weapon,DRBattlecruiserG2,Options[Hidden]" Value="0"/>
     </CUpgrade>
     <CUpgrade id="ImprovedRailguns">
         <EffectArray Operation="Multiply" Reference="Effect,GoliathG,Amount" Value="1.5"/>
@@ -1314,7 +1362,7 @@
         <EffectArray Reference="Weapon,BacklashRockets,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,ATSLaserBattery,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,ATALaserBattery,RateMultiplier" Value="0.2"/>
-        <EffectArray Reference="Weapon,LanzerTorpedoes,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,LanzerTorpedoesGround,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,TwinGatlingCannon,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,WraithG,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,WraithA,RateMultiplier" Value="0.2"/>
@@ -1327,6 +1375,12 @@
         <EffectArray Reference="Weapon,DRBattlecruiserG,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,DRCannonsG,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,DRBattlecruiserFakeG,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,WreckingCrewFighterGround,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,LanzerTorpedoes,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,ATALaserBattery2,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,ATSLaserBattery2,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,DRBattlecruiserA2,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,DRBattlecruiserG2,RateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <AffectedUnitArray value="Banshee"/>

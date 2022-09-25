@@ -751,6 +751,9 @@ Effect/Name/HideInTheShadows=Hide In The Shadows
 Effect/Name/InfantryMercSet=Infantry Merc Set
 Effect/Name/IonCannonsFleet=Ion Cannons
 Effect/Name/IonCannonsUFleet=Ion Cannons
+Effect/Name/LanzerTorpedoesDamageG=Halo Rockets (Damage2)
+Effect/Name/LanzerTorpedoesG=Halo Rockets (Persistent2)
+Effect/Name/LanzerTorpedoesLMG=Halo Rockets (Launch Missile2)
 Effect/Name/MakePrecursorMercIterate=Make Precursor Merc Iterate
 Effect/Name/MarineSquadStim=Marine Squad Stim
 Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
@@ -855,6 +858,9 @@ Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
 Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1
 Effect/Name/VehicleMercSet=Vehicle Merc Set
 Effect/Name/VultureLeft=Fragmentation Grenade (Missile, left)
+Effect/Name/WreckingCrewFighterG=Halo Rockets (Persistent2)
+Effect/Name/WreckingCrewFighterLMG=Halo Rockets
+Effect/Name/WreckingCrewFighterUG=Halo Rockets (Damage2)
 Effect/Name/YamatoGunTopbarDamage=Yamato Gun
 Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
 Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
@@ -1361,7 +1367,9 @@ Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
 Upgrade/Name/330mmBarrageCannons=Thor Speed
 Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
+Upgrade/Name/AresClassWeaponsSystemViking=Improved Mechanics
 Upgrade/Name/EnhancedExplosives=Enhanced Explosives
+Upgrade/Name/HALORockets=Turreted Missile Pods
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HighEnergyCapacitors=High-Energy Capacitors
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
@@ -1397,6 +1405,7 @@ Weapon/Name/HailstormLauncher=Hailstorm Launcher
 Weapon/Name/HailstormLauncherMerc=Hailstorm Launcher
 Weapon/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Weapon/Name/HammerSecuritiesSquad@2=Hailstorm Launcher
+Weapon/Name/LanzerTorpedoesGround=Lanzer Torpedoes
 Weapon/Name/MarauderSquad=Marauder Squad
 Weapon/Name/MarauderSquad@2=Hailstorm Launcher
 Weapon/Name/MarineSquad=Marine Squad
@@ -1406,6 +1415,7 @@ Weapon/Name/PredatorShields=Predator Shields
 Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
 Weapon/Name/WarPigSquad=War Pig Squad
+Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS

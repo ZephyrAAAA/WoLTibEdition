@@ -2878,15 +2878,16 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Medium"/>
         <Food value="0"/>
-        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
+        <WeaponArray Link="WreckingCrewFighterGround"/>
     </CUnit>
     <CUnit id="HelsAngelFighter">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Medium"/>
         <Food value="0"/>
-        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
     </CUnit>
     <CUnit id="Hercules">
@@ -6294,15 +6295,20 @@
     </CUnit>
     <CUnit id="VikingAssault">
         <ArmorType value="Medium"/>
-        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
         <Food value="0"/>
         <BehaviorArray index="0" Link="Biosteel"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <WeaponArray Link="LanzerTorpedoesGround"/>
     </CUnit>
     <CUnit id="VikingFighter">
         <ArmorType value="Medium"/>
-        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
         <Food value="0"/>
         <BehaviorArray index="0" Link="Biosteel"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="VikingMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

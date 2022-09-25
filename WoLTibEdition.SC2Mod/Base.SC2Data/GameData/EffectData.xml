@@ -724,13 +724,40 @@
     <CEffectDamage id="KelmorianMinerDamage">
         <Amount value="6.75"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="LanzerTorpedoesG">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="LanzerTorpedoesLMG"/>
+        <PeriodicEffectArray value="LanzerTorpedoesLMG"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="LanzerTorpedoesDamage">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="5"/>
-        <AreaArray index="0" Radius="0.15" Validator=""/>
-        <AreaArray index="1" Radius="0.3" Validator=""/>
-        <AreaArray index="2" Radius="0.6" Validator=""/>
+        <AreaArray index="0" Radius="0.225" Validator=""/>
+        <AreaArray index="1" Radius="0.45" Validator=""/>
+        <AreaArray index="2" Radius="0.9" Validator=""/>
     </CEffectDamage>
+    <CEffectDamage id="LanzerTorpedoesDamageG" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Terran"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Splash"/>
+        <Amount value="5"/>
+        <AreaArray Radius="0.225" Fraction="1"/>
+        <AreaArray Radius="0.45" Fraction="0.5"/>
+        <AreaArray Radius="0.9" Fraction="0.25"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="LanzerTorpedoesLMG">
+        <ValidatorArray index="0" value="RangeCheckLE15"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="LanzerTorpedoesDamageG"/>
+        <AmmoUnit value="VikingFighterWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectCreatePersistent id="LaserBeamFinalPersistant">
         <FinalEffect value="LaserBeamTripodInitialDamage"/>
     </CEffectCreatePersistent>
@@ -2182,12 +2209,37 @@
     <CEffectDamage id="WraithGU">
         <Amount value="18"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="WreckingCrewFighterG">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="WreckingCrewFighterLMG"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.21"/>
+    </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="WreckingCrewFighterLMG">
+        <ValidatorArray index="0" value="WreckingCrewFighterLMTargetFilters"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="WreckingCrewFighterUG"/>
+        <AmmoUnit value="HelsAngelFighterWeapon"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="WreckingCrewFighterU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="7"/>
-        <AreaArray index="0" Radius="0.15" Validator=""/>
-        <AreaArray index="1" Radius="0.3" Validator=""/>
-        <AreaArray index="2" Radius="0.6" Validator=""/>
+        <AreaArray index="0" Radius="0.225" Validator=""/>
+        <AreaArray index="1" Radius="0.45" Validator=""/>
+        <AreaArray index="2" Radius="0.9" Validator=""/>
+    </CEffectDamage>
+    <CEffectDamage id="WreckingCrewFighterUG" parent="DU_WEAP_SPLASH">
+        <EditorCategories value="Race:Terran"/>
+        <Visibility value="Visible"/>
+        <Kind value="Ranged"/>
+        <Amount value="7"/>
+        <AreaArray Radius="0.225" Fraction="1"/>
+        <AreaArray Radius="0.45" Fraction="0.5"/>
+        <AreaArray Radius="0.9" Fraction="0.25"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="YamatoGunTopbarDamage">
         <EditorCategories value="Race:Terran"/>
