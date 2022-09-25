@@ -703,6 +703,7 @@ Effect/Name/DeathRecallMU=Death Recall
 Effect/Name/DeathRecallS=Death Recall
 Effect/Name/DeathRecallSet=Death Recall
 Effect/Name/DeathRecallT=Death Recall
+Effect/Name/DefensiveMatrixRepair=Defensive Matrix Repair
 Effect/Name/DepowerAB=Depower AB
 Effect/Name/DepowerRB=Depower RB
 Effect/Name/DepowerSwitch=Depower Switch

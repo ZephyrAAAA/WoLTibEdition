@@ -21,6 +21,9 @@
         <WhichUnit Value="Caster"/>
         <Filters value="-;Stunned"/>
     </CValidatorUnitFilters>
+    <CValidatorCombine id="DefensiveMatrixHostileCheckLT75%">
+        <CombineArray index="1" value="CasterInCombat"/>
+    </CValidatorCombine>
     <CValidatorPlayerRequirement id="HasBiosteel">
         <Find value="1"/>
         <Value value="HasBiosteel"/>
@@ -102,6 +105,28 @@
         <Find value="1"/>
         <Value value="AdvancedHealingAIPurchased"/>
     </CValidatorPlayerRequirement>
+    <!--    -->
+    <!--    BattleCruiser Defensive Matrix-->
+    <!--    -->
+    <!--    If (Recently Attacked) {-->
+    <!--    -->
+    <!--    If (Health < 75% && Nearby Enemies >= 3)-->
+    <!--        return true;-->
+    <!--    -->
+    <!--    If (Health < 60% && Nearby Enemies >= 2)-->
+    <!--        return true;-->
+    <!--        -->
+    <!--    If (Health < 40% && Nearby Enemies >= 1)-->
+    <!--        return true;-->
+    <!--        -->
+    <!--    }-->
+    <!--    -->
+    <!--    -->
+    <CValidatorCombine id="TacticalDefensiveMatrix">
+        <Type value="Or"/>
+        <CombineArray index="0" value="CasterLifeLT60Percent"/>
+        <CombineArray index="1" value="DefensiveMatrixHostileCheckLT75%"/>
+    </CValidatorCombine>
     <CValidatorUnitFilters id="TargetIsMechanical">
         <Filters value="Mechanical;-"/>
     </CValidatorUnitFilters>

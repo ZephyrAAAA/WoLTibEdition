@@ -231,6 +231,17 @@
         <TargetLocation Value="TargetUnitOrPoint"/>
         <TeleportFlags index="TestFog" value="0"/>
     </CEffectTeleport>
+    <CEffectCreateHealer id="DefensiveMatrixRepair">
+        <EditorCategories value=""/>
+        <Flags index="Channeled" value="0"/>
+        <Flags index="ContinueWhenFull" value="1"/>
+        <PeriodCount value="160"/>
+        <PeriodicPeriod value="0.125"/>
+        <RechargeVitalRate value="10"/>
+    </CEffectCreateHealer>
+    <CEffectSet id="DefensiveMatrixSet">
+        <EffectArray value="DefensiveMatrixRepair"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="DepowerAB">
         <EditorCategories value=""/>
         <Behavior value="Depowered"/>
@@ -820,7 +831,7 @@
         </Marker>
         <Flags index="Channeled" value="0"/>
         <PeriodCount value="1"/>
-        <PeriodicPeriod value="0.33"/>
+        <PeriodicPeriod value="0.25"/>
         <DrainVital value="Energy"/>
         <DrainVitalCostFactor value="0.375"/>
         <RechargeVitalRate value="8"/>
@@ -848,7 +859,11 @@
         <DrainVitalCostFactor value="0.375"/>
         <RechargeVitalRate value="8"/>
         <PeriodicEffect value="MedivacDoubleHealDelay"/>
-        <PeriodicPeriod value="0.33"/>
+        <PeriodicPeriod value="0.25"/>
+        <Marker>
+            <MatchFlags index="Link" value="1"/>
+            <MismatchFlags index="Id" value="1"/>
+        </Marker>
     </CEffectCreateHealer>
     <CEffectCreateHealer id="MedivacHealInternal">
         <ValidatorArray value="CasterIsNotHidden"/>

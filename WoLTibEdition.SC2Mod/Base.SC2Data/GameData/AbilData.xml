@@ -45,6 +45,12 @@
             <Flags index="AutoBuildOn" value="1"/>
         </InfoArray>
     </CAbilArmMagazine>
+    <CAbilEffectInstant id="DefensiveMatrix">
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="DukesRevengeYamato">
         <Cost index="0">
             <Vital index="Energy" value="0"/>

@@ -673,6 +673,13 @@
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
         <Food value="0"/>
+        <AbilArray index="5" Link="DefensiveMatrix"/>
+        <AbilArray index="6" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="DefensiveMatrix" AbilCmd="DefensiveMatrix,Execute"/>
+            <LayoutButtons index="7" removed="1"/>
+        </CardLayouts>
+        <TacticalAI value="BattlecruiserDefensiveMatrix"/>
     </CUnit>
     <CUnit id="BattlecruiserACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
