@@ -9,9 +9,10 @@
         <AttackArmorTable index="Normal" SupportedFilters="-;-">
             <ArmorFactor index="Medium" value="0.5"/>
             <ArmorFactor index="Large" value="0.25"/>
-            <ArmorFactor index="Fort" value="0.5"/>
+            <ArmorFactor index="Fort" value="0.25"/>
             <ArmorFactor index="Hero" value="0.25"/>
             <ArmorFactor index="Divine" value="1"/>
+            <ArmorFactor index="None" value="0.75"/>
         </AttackArmorTable>
         <AttackArmorTable index="Pierce" SupportedFilters="-;-">
             <ArmorFactor index="Small" value="0.75"/>

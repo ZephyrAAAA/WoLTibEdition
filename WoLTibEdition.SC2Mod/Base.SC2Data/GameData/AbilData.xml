@@ -163,7 +163,7 @@
             <Resource index="Minerals" value="500"/>
             <Charge>
                 <CountMax value="99"/>
-                <CountStart value="8"/>
+                <CountStart value="12"/>
                 <CountUse value="-1"/>
                 <Link value="Zealot"/>
                 <Location value="Player"/>
@@ -231,7 +231,7 @@
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize7" Effect="CCLoadDummy">
-            <Resource index="Minerals" value="1500"/>
+            <Resource index="Minerals" value="1800"/>
             <Charge>
                 <CountMax value="99"/>
                 <CountUse value="-1"/>
@@ -309,14 +309,13 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
-            <Vital index="Energy" value="500"/>
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
+            <Vital index="Energy" value="300"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="LongRangeMassRecall">
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="MedivacHeal">
         <CmdButtonArray index="Execute" Requirements=""/>

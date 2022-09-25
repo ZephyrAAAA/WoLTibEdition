@@ -1410,6 +1410,6 @@ Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against v
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
-Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles and structures
+Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry<n/>Good against light aircraft<n/>Moderate against light vehicles<n/>Bad against heavy vehicles, heavy aircraft and structures
 Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles<n/>Moderate against infantry, structures
 Weapon/Tip/Sniper=Deals <c val="FFBF00">Sniper</c> Damage<n/>Effective against Infantry<n/>Abysmal against all other targets
