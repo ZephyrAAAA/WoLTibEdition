@@ -31,6 +31,7 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="ContinuousScan" value="1"/>
         <Options index="LinkedCooldown" value="0"/>
+        <Options index="IgnoreThreat" value="1"/>
         <Options index="IgnoreAttackPriority" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <DisplayEffect value="ATALaserBatteryU"/>
@@ -79,6 +80,7 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="ContinuousScan" value="1"/>
         <Options index="LinkedCooldown" value="0"/>
+        <Options index="IgnoreThreat" value="1"/>
         <Options index="IgnoreAttackPriority" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <DisplayEffect value="ATSLaserBatteryU"/>
@@ -189,6 +191,7 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="ContinuousScan" value="1"/>
         <Options index="LinkedCooldown" value="0"/>
+        <Options index="IgnoreThreat" value="1"/>
         <Options index="IgnoreAttackPriority" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <DisplayEffect value="DRBattlecruiserAU"/>
@@ -249,6 +252,7 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="ContinuousScan" value="1"/>
         <Options index="LinkedCooldown" value="0"/>
+        <Options index="IgnoreThreat" value="1"/>
         <Options index="IgnoreAttackPriority" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <DisplayEffect value="DRBattlecruiserGU"/>
