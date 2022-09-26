@@ -312,6 +312,12 @@
         <SpawnUnit value="DuskWing"/>
         <SpawnCount value="2"/>
     </CEffectCreateUnit>
+    <CEffectDamage id="DuskWingBansheeDamage">
+        <Amount value="24"/>
+    </CEffectDamage>
+    <CEffectDamage id="DuskWingScreecherMissilesCarpetBombDamage">
+        <Amount value="24"/>
+    </CEffectDamage>
     <CEffectDamage id="EMPDamageSpectre">
         <EditorCategories value=""/>
         <VitalFractionCurrent index="Shields" value="1"/>
@@ -1394,6 +1400,9 @@
         <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="ScoutGround">
+        <Amount value="16"/>
+    </CEffectDamage>
+    <CEffectDamage id="ScreecherMissilesCarpetBombDamage">
         <Amount value="16"/>
     </CEffectDamage>
     <CEffectDamage id="SeekerMissileDamage">
