@@ -182,6 +182,9 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="FungalGrowthMovement">
         <Duration value="4"/>
+        <Modification MoveSpeedMultiplier="0.75">
+            <ModifyFlags index="SuppressMoving" value="0"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield">
         <DamageResponse ModifyFraction="0.7">
