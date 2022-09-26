@@ -648,6 +648,14 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     return true;
 }
 
+void lib3B48F5E9_gf_NewModTips () {
+    // Automatic Variable Declarations
+    // Implementation
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/lib_3B48F5E9_6C689267"));
+    Wait(10.0, c_timeGame);
+    UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
+}
+
 // Triggers
 //--------------------------------------------------------------------------------------------------
 // Trigger: Commando EXP
@@ -831,18 +839,20 @@ bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) 
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_7101F21A"));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/lib_3B48F5E9_7101F21A"));
     UISetButtonFaceHighlighted(PlayerGroupAll(), "Predator", true);
     UISetButtonFaceHighlighted(PlayerGroupAll(), "GhostAcademy", true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightPredator, true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightGhostAcademy, true);
+    Wait(10.0, c_timeGame);
+    UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_PredatorGhostAcademy_Init () {
     lib3B48F5E9_gt_PredatorGhostAcademy = TriggerCreate("lib3B48F5E9_gt_PredatorGhostAcademy_Func");
-    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_PredatorGhostAcademy, 10.0, c_timeGame);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_PredatorGhostAcademy, 30.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -862,18 +872,20 @@ bool lib3B48F5E9_gt_ArmoryHercules_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_C216B0DE"));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/lib_3B48F5E9_C216B0DE"));
     UISetButtonFaceHighlighted(PlayerGroupAll(), "Armory", true);
     UISetButtonFaceHighlighted(PlayerGroupAll(), "BuildHercules", true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightArmory, true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightHercules, true);
+    Wait(10.0, c_timeGame);
+    UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_ArmoryHercules_Init () {
     lib3B48F5E9_gt_ArmoryHercules = TriggerCreate("lib3B48F5E9_gt_ArmoryHercules_Func");
-    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_ArmoryHercules, 10.0, c_timeGame);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_ArmoryHercules, 30.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -893,16 +905,18 @@ bool lib3B48F5E9_gt_FusionCore_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_AB0D213A"));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/lib_3B48F5E9_AB0D213A"));
     UISetButtonFaceHighlighted(PlayerGroupAll(), "FusionCore", true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightFusionCore, true);
+    Wait(10.0, c_timeGame);
+    UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_FusionCore_Init () {
     lib3B48F5E9_gt_FusionCore = TriggerCreate("lib3B48F5E9_gt_FusionCore_Func");
-    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_FusionCore, 10.0, c_timeGame);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_FusionCore, 30.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------

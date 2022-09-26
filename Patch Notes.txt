@@ -13,15 +13,18 @@ SCV no longer says it can build stuff
 Nodes are now always visible.
 Veins are now visible on the minimap.
 You now get a "build complete" line when a CC or crane finishes making something.
+"Unit unlocked" messages now display in a more prominent position, 30s into a mission.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
 Coloured all our tips
 
 Outlaws:
+A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
 Zero Hour:
+A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
 Smash and Grab:
@@ -32,9 +35,11 @@ You now start with a Spec Ops
 
 Devil's Playground:
 You now start with a Spec Ops
+A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
 Outbreak:
+A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
 Supernova:

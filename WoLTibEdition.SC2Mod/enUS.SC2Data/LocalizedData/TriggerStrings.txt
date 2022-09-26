@@ -5,6 +5,7 @@ CustomScript/Name/lib_3B48F5E9_8B5EDD23=Imports
 FunctionDef/Grammar/lib_3B48F5E9_54F2C3F5=Disable Topbar()
 FunctionDef/Grammar/lib_3B48F5E9_ADD8FA84=Refresh Topbar()
 FunctionDef/Name/lib_3B48F5E9_54F2C3F5=DisableTopBar
+FunctionDef/Name/lib_3B48F5E9_9B86B538=New Mod Tips
 FunctionDef/Name/lib_3B48F5E9_ADD8FA84=RefreshTopbar
 FunctionDef/Name/lib_3B48F5E9_EA7A58BA=CNC Upgrades Function
 Library/Name/3B48F5E9=WoLTibLib
