@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAlert id="BuildComplete">
+        <Sound value="Alert_TerranBuildComplete"/>
+        <Voice value="Unknown"/>
+    </CAlert>
+    <CAlert id="BuildComplete_Terr">
+        <Sound value="Alert_TerranBuildComplete"/>
+        <Voice value="Unknown"/>
+    </CAlert>
+    <CAlert id="MULEExpired">
+        <PrimaryActions index="Flash" value="1"/>
+        <PrimaryActions index="Select" value="1"/>
+        <PrimaryActions index="View" value="1"/>
+        <SecondaryActions index="Flash" value="1"/>
+        <SecondaryActions index="Select" value="1"/>
+        <SecondaryActions index="View" value="1"/>
+        <Icon value=""/>
+        <QueueTime value="0.000000"/>
+        <Sound value="Alert_TerranBuildComplete"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+</Catalog>

@@ -789,6 +789,7 @@ Skin/EditorSuffix/HyperionYamato5=(5)
 Skin/EditorSuffix/InfantryMercenaries3=(3)
 Skin/EditorSuffix/InfantryMercenaries4=(4)
 Sound/EditorPrefix/ExplosiveCharge=Commando -
+Sound/Name/Alert_TerranBuildComplete=Alert_TerranBuildComplete
 Sound/Name/ExplosiveCharge=Explosive Charge
 Sound/Name/MengskCommander_NuclearAnnihilationUsed=MengskCommander_NuclearAnnihilationUsed
 Sound/Name/NuclearAnnihilation_NukeDropWhistle=NuclearAnnihilation_NukeDropWhistle

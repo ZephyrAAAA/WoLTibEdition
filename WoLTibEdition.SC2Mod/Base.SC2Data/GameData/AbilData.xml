@@ -1336,7 +1336,7 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <Alert value="BuildComplete"/>
+        <Alert value="MULEExpired"/>
     </CAbilSpecialize>
     <CAbilBuild id="CCPlaceBuilding">
         <EditorCategories value="AbilityorEffectType:Units"/>

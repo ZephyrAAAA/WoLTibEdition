@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CSound id="Alert_TerranBuildComplete" parent="Alert">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="LocalizedData\Sounds\TerranUnitVO\SCV\SCV_JobsFinished00.ogg" FacialGroup=""/>
+    </CSound>
     <CSound id="MengskCommander_NuclearAnnihilationUsed" parent="ACVO_Pings">
         <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed00.ogg" FacialGroup=""/>
         <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed01.ogg" FacialGroup=""/>
