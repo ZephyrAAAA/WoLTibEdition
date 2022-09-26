@@ -5973,7 +5973,7 @@
         <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
         <ResourceState value="Raw"/>
         <ResourceType value="Custom"/>
-        <FogVisibility value="Snapshot"/>
+        <FogVisibility value="Dimmed"/>
         <EditorFlags index="NeutralDefault" value="1"/>
         <PlaneArray index="Ground" value="1"/>
         <Collide index="Structure" value="1"/>
@@ -6052,7 +6052,7 @@
         <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
         <ResourceState value="Raw"/>
         <ResourceType value="Custom"/>
-        <FogVisibility value="Snapshot"/>
+        <FogVisibility value="Dimmed"/>
         <EditorFlags index="NeutralDefault" value="1"/>
         <PlaneArray index="Ground" value="1"/>
         <Collide index="Structure" value="1"/>
@@ -6084,7 +6084,7 @@
         <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
         <ResourceState value="Raw"/>
         <ResourceType value="Custom"/>
-        <FogVisibility value="Snapshot"/>
+        <FogVisibility value="Dimmed"/>
         <EditorFlags index="NeutralDefault" value="1"/>
         <PlaneArray index="Ground" value="1"/>
         <Collide index="Structure" value="1"/>
