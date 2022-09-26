@@ -85,6 +85,9 @@
         <Resources value="-7"/>
         <ResourcesHarvestedFraction value="1"/>
     </CEffectModifyUnit>
+    <CEffectDamage id="BacklashRocketsU">
+        <Amount value="16"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="BansheeAirstrikeCP">
         <EditorCategories value="Race:Terran"/>
         <PeriodCount value="1"/>
