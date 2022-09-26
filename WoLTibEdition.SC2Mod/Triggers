@@ -1616,7 +1616,7 @@
         </Element>
         <Element Type="Param" Id="D0D7A934">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
-            <Value>BattlecruiserEnableSpecializations</Value>
+            <Value>YamatoCannon</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
         </Element>
