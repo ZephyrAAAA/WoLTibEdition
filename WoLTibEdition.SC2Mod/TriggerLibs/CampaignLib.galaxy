@@ -747,25 +747,25 @@ void libCamp_gf_TS_CreateNewUpgradeTips () {
     }
 
     if ((libCamp_gv_tS_UpgradeInfantry2 == true) && (ConversationDataStateGetValue("StoryTips|EngineeringBay2") == 0)) {
-        libCamp_gf_CreateTipFromConversationState("StoryTips|EngineeringBay2", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
+//        libCamp_gf_CreateTipFromConversationState("StoryTips|EngineeringBay2", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
         ConversationDataStateSetValue("StoryTips|EngineeringBay2", 1);
         Wait(libCamp_gv_campaignHintDelay, c_timeReal);
     }
 
     if ((libCamp_gv_tS_UpgradeInfantry3 == true) && (ConversationDataStateGetValue("StoryTips|EngineeringBay3") == 0)) {
-        libCamp_gf_CreateTipFromConversationState("StoryTips|EngineeringBay3", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
+//        libCamp_gf_CreateTipFromConversationState("StoryTips|EngineeringBay3", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
         ConversationDataStateSetValue("StoryTips|EngineeringBay3", 1);
         Wait(libCamp_gv_campaignHintDelay, c_timeReal);
     }
 
     if (((libCamp_gv_tS_UpgradeVehicle2 == true) || (libCamp_gv_tS_UpgradeShip2 == true)) && (ConversationDataStateGetValue("StoryTips|ArmoryLevel2") == 0)) {
-        libCamp_gf_CreateTipFromConversationState("StoryTips|ArmoryLevel2", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
+//        libCamp_gf_CreateTipFromConversationState("StoryTips|ArmoryLevel2", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
         ConversationDataStateSetValue("StoryTips|ArmoryLevel2", 1);
         Wait(libCamp_gv_campaignHintDelay, c_timeReal);
     }
 
     if (((libCamp_gv_tS_UpgradeVehicle3 == true) || (libCamp_gv_tS_UpgradeShip3 == true)) && (ConversationDataStateGetValue("StoryTips|ArmoryLevel3") == 0)) {
-        libCamp_gf_CreateTipFromConversationState("StoryTips|ArmoryLevel3", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
+//        libCamp_gf_CreateTipFromConversationState("StoryTips|ArmoryLevel3", libNtve_ge_TipType_NormalTip, PlayerGroupAll());
         ConversationDataStateSetValue("StoryTips|ArmoryLevel3", 1);
         Wait(libCamp_gv_campaignHintDelay, c_timeReal);
     }
