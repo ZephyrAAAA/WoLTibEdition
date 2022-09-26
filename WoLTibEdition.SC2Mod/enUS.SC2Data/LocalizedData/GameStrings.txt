@@ -274,6 +274,7 @@ Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
+Button/Tooltip/Decal_Terran_0047_01=Support structure. Used to construct buildings.
 Button/Tooltip/DeployLaserDrill10=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill11=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill12=Deploys the laser drill.

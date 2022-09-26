@@ -4200,8 +4200,8 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
-        <LifeStart value="1500"/>
-        <LifeMax value="1500"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
         <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <Sight value="11"/>
@@ -4220,6 +4220,11 @@
         <AbilArray Link="TrainStone"/>
         <AbilArray Link="RallyCommand"/>
         <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray Link="BunkerTransport"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="Bunker"/>
+        <AbilArray Link="StopRedirect"/>
+        <AbilArray Link="healRedirect"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
@@ -4227,7 +4232,9 @@
         <BehaviorArray Link="BuildRadiusLarge"/>
         <WeaponArray Link="TwinIbiksCannon" Turret="PlanetaryFortress"/>
         <CardLayouts>
+            <LayoutButtons Face="StopRedirect" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="1"/>
             <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
@@ -4251,6 +4258,8 @@
             </LayoutButtons>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="1" Column="0"/>
+            <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="1" Column="1"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>

@@ -174,11 +174,9 @@
     </CRequirement>
     <CRequirement id="StaticDefBarracks">
         <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
-        <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="StaticDefEngineeringBay">
         <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>
-        <NodeArray index="Show" Link="NotCountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirement>
     <CRequirement id="SupplyDepotUpgrade">
         <NodeArray index="Use" Link="CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat"/>
