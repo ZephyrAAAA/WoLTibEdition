@@ -10,6 +10,9 @@ Supply depot says stuff about power.
 The goliath no longer starts with discount multilock.
 The crane can now build defenses.
 SCV no longer says it can build stuff
+Nodes are now always visible.
+Veins are now visible on the minimap.
+You now get a "build complete" line when a CC or crane finishes making something.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -41,10 +44,31 @@ Removed the gas pickups at base 4
 Added another pylon and cannon pair at base 4
 Removed the gas pickups at base 5
 Moved the gas pickups from base 3 to the ledge north of the starting base
-
+Bonus 2 and 3 now give banshee armoury upgrades
+Moved the bonus relic (And its defenders) south of the expansion to base 4
 
 Safe Haven:
+You start with 3 SCVs
+Each protoss base now has resources
+You start with 2 Supply Depots instead of 3
+Shuffled buildings around to give better build radius coverage
+*Protoss send more attack waves
+*Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
+*Counterattacks scale with how many terror fleets you've stopped
+*Stopping terrorfleets or counterattacks gives armoury upgrades
+You no longer have free vision of the terrain around the purifier mothership
 
 Haven's Fall:
+You start with 3 SCVs
+Removed the gas pickups from gas island
+Each settlment now has a 4-stack of small nodes
+The zerg base at the south now has resources
+You now start with an Engineering Bay
+You start with 2 Supply Depots instead of 3
+You start with a Sensor Tower
+Shuffled buildings around to give better build radius coverage
+*Removed free vision from each settlement
+*Infested are spawned faster
+*Stopping reinfestations grants armoury upgrades
 
 In Utter Darkness:
