@@ -266,6 +266,7 @@ Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrade
 Button/Tooltip/BuildTechLabFactory=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildTechLabStarport=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
+Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
@@ -298,7 +299,7 @@ Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
-Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
+Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GhostAcademy2=Can build Nukes that Ghosts can use.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
 Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
@@ -343,6 +344,7 @@ Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
+Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NovaHeal=Heals Nova.<n/><n/><c val="f078ff">Heals <d ref="Effect,NovaHeal,RechargeVitalRate"/> life per second for <d ref="Effect,NovaHeal,RechargeVitalRate * Effect,NovaHeal,DrainVitalCostFactor"/> energy.</c>
 Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
@@ -1258,10 +1260,10 @@ Param/Value/FEDA652A=Big Tuna
 Param/Value/FEDED7E3=Protoss Research Points = 
 Param/Value/FFFD0315=Bridge
 Param/Value/lib_3B48F5E9_6C689267=CNC Edition has new or relevant tips in this mission
-Param/Value/lib_3B48F5E9_7101F21A=Predator and Shadow Ops have been unlocked.
-Param/Value/lib_3B48F5E9_AB0D213A=Fusion core has been unlocked.
+Param/Value/lib_3B48F5E9_7101F21A=The Predator and Shadow Ops have been unlocked.
+Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
-Param/Value/lib_3B48F5E9_C216B0DE=Armory and Hercules have been unlocked.
+Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>

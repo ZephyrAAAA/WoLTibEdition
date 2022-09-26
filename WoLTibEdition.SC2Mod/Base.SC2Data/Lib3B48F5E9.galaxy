@@ -648,12 +648,23 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     return true;
 }
 
+trigger auto_lib3B48F5E9_gf_NewModTips_Trigger = null;
+
 void lib3B48F5E9_gf_NewModTips () {
+    if (auto_lib3B48F5E9_gf_NewModTips_Trigger == null) {
+        auto_lib3B48F5E9_gf_NewModTips_Trigger = TriggerCreate("auto_lib3B48F5E9_gf_NewModTips_TriggerFunc");
+    }
+
+    TriggerExecute(auto_lib3B48F5E9_gf_NewModTips_Trigger, false, false);
+}
+
+bool auto_lib3B48F5E9_gf_NewModTips_TriggerFunc (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Implementation
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/lib_3B48F5E9_6C689267"));
     Wait(10.0, c_timeGame);
     UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
+    return true;
 }
 
 // Triggers

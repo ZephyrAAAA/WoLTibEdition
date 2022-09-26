@@ -9485,6 +9485,7 @@
         </Element>
         <Element Type="FunctionDef" Id="9B86B538">
             <FlagAction/>
+            <FlagCreateThread/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="B280CD29"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="09C85761"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="8D6DAA18"/>

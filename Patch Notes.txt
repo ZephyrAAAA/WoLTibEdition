@@ -14,6 +14,7 @@ Nodes are now always visible.
 Veins are now visible on the minimap.
 You now get a "build complete" line when a CC or crane finishes making something.
 "Unit unlocked" messages now display in a more prominent position, 30s into a mission.
+Rifle damage against air units has been nerfed (Because man with gun OP)
 
 Liberation Day:
 A message appears saying that coloured tips are new.
