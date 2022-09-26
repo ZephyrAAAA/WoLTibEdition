@@ -52,11 +52,11 @@ You start with 3 SCVs
 Each protoss base now has resources
 You start with 2 Supply Depots instead of 3
 Shuffled buildings around to give better build radius coverage
+You no longer have free vision of the terrain around the purifier mothership
 *Protoss send more attack waves
 *Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
 *Counterattacks scale with how many terror fleets you've stopped
 *Stopping terrorfleets or counterattacks gives armoury upgrades
-You no longer have free vision of the terrain around the purifier mothership
 
 Haven's Fall:
 You start with 3 SCVs
