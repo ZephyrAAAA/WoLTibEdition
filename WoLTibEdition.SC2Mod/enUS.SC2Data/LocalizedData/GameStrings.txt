@@ -381,7 +381,7 @@ Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Automated Refi
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RepairOrder=Orders repair drones to heal the target
-Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, and <c val="FFFF8A">Marauder</c> rockets by +30%.
+Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c><c val="FFFF8A">Marauder</c> rockets, and <c val="FFFF8A">Planetary Fortress</c> by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
 Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
