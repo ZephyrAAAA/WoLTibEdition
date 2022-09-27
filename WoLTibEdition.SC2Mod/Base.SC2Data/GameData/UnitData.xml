@@ -359,6 +359,10 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <AbilArray Link="LongRangeMassRecall"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <Speed value="1.875"/>
     </CUnit>
     <CUnit id="Artifact">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3760,6 +3764,9 @@
     <CUnit id="Mohandar">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="MonlythArtifactForceField">
         <ArmorType value="Hero"/>
@@ -4141,6 +4148,9 @@
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <WeaponArray index="0" Turret="Phoenix"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
     </CUnit>
     <CUnit id="PhoenixAiurACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4983,6 +4993,9 @@
     <CUnit id="Selendis">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="SelendisInterceptor">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6299,6 +6312,9 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
         <WeaponArray index="0" Turret="Phoenix"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
     </CUnit>
     <CUnit id="ValhallaBaseDestructibleDoor">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

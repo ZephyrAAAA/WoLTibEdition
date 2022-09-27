@@ -61,6 +61,15 @@
     <CEffectDamage id="ArmageddonCannonR">
         <Amount value="15"/>
     </CEffectDamage>
+    <CEffectDamage id="ArtanisBeamDamage">
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="ArtanisBeamPersistent">
+        <PeriodicPeriodArray index="0" value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="ArtanisSecondaryBeamPersistent">
+        <PeriodicPeriodArray index="0" value="0.125"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="AstralProjection">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>
@@ -634,6 +643,18 @@
     </CEffectDamage>
     <CEffectSet id="FungalGrowthInitialSet">
         <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="GravitonBeam">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="GravitonBeamInitialSet">
+        <EffectArray index="0" value="InstantUnburrow"/>
+        <EffectArray index="1" value="GravitonBeamHeightBehavior"/>
+        <EffectArray index="2" value="GravitonBeamHaltTerranBuild"/>
+        <EffectArray index="3" value="AttackCancel"/>
+        <EffectArray index="4" removed="1"/>
+        <!-- Adding a stop order -->
+        <EffectArray index="5" removed="1"/>
     </CEffectSet>
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>

@@ -24,6 +24,9 @@
     <CValidatorCombine id="DefensiveMatrixHostileCheckLT75%">
         <CombineArray index="1" value="CasterInCombat"/>
     </CValidatorCombine>
+    <CValidatorCombine id="GravitonBeamValidators">
+        <CombineArray index="0" value="CasterNotDead"/>
+    </CValidatorCombine>
     <CValidatorPlayerRequirement id="HasBiosteel">
         <Find value="1"/>
         <Value value="HasBiosteel"/>
