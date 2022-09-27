@@ -187,6 +187,9 @@
             <AbilClassDisableArray index="CAbilMove" value="0"/>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorBuff id="GravitonBeamHeight">
+        <Duration value="10"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield">
         <DamageResponse ModifyFraction="0.7">
             <ModifyAmount value="0"/>

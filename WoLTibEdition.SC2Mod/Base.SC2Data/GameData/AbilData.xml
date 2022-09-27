@@ -138,6 +138,20 @@
         </Cost>
         <BehaviorArray index="0" value="PersonalCloakingFree"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="GravitonBeam">
+        <Flags index="AutoCast" value="1"/>
+        <Cost index="0">
+            <Vital index="Energy" value="0"/>
+            <Cooldown TimeUse="60"/>
+        </Cost>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSPriority"/>
+            <SortArray value="TSLifeLargestFirst"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AutoCastRange value="6"/>
+        <CancelableArray index="Channel" value="0"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="HighTemplarAttackDummy">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="CCLoadDummy"/>

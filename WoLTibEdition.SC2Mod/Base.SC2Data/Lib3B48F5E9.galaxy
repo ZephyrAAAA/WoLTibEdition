@@ -218,7 +218,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             TechTreeUpgradeAddLevel(auto46D14E10_var, "BansheeCloak", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "HunterSeeker", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "WraithCloak", 1);
-            TechTreeUpgradeAddLevel(auto46D14E10_var, "BattlecruiserEnableSpecializations", 1);
+            TechTreeUpgradeAddLevel(auto46D14E10_var, "YamatoCannon", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "SiegeTech", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "ReaperSpeed", 1);
         }

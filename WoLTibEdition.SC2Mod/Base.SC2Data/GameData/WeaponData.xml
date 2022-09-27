@@ -120,11 +120,16 @@
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ArtanisBeam">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BacklashRockets">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BattleCruiserLoki">
         <RandomDelayMin value="0"/>
@@ -331,7 +336,7 @@
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DuskWingBanshee">
-        <Tip value="Weapon/Tip/Grenade"/>
+        <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ExplosiveCharges">
@@ -432,6 +437,10 @@
         <AttackType value="Magic"/>
     </CWeaponStrafe>
     <CWeaponLegacy id="InterceptorLaunch">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InterceptorsDummy">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
     </CWeaponLegacy>
@@ -629,6 +638,7 @@
         <Period value="0.6"/>
         <AttackType value="Magic"/>
         <Backswing value="0.75"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
@@ -838,6 +848,19 @@
     <CWeaponLegacy id="ScoutGround">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Selendis">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <Period value="0.125"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SelendisInterceptor">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponStrafe id="SelendisInterceptorBeam">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponStrafe>
     <CWeaponLegacy id="ShrikeTurret">
         <DisplayAttackCount value="2"/>
         <AttackType value="Normal"/>
