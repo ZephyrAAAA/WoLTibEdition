@@ -16,6 +16,10 @@ You now get a "build complete" line when a CC or crane finishes making something
 "Unit unlocked" messages now display in a more prominent position, 30s into a mission.
 Rifle damage against air units has been nerfed (Because man with gun OP)
 *The planetary fortress now has 2k hp, has a bunker, and is affected by the explosive damage upgrade.
+*Fixed the Wraith displacement field saying they resist 8% of damage.
+*Orbital Strike is now Topbar Efficiency. It reduces the cooldown and cost of all topbar abilities.
+*Tech Reactor is now Plasma Shields. It gives shields to all units.
+*Fixed typos in the Dusk Wings and Jackson's Revenge merc card.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -39,6 +43,9 @@ Devil's Playground:
 You now start with a Spec Ops
 A message appears saying that new/relevant tips are available.
 Coloured all our tips
+
+Bel'shir:
+Fixed things, it appears to no longer swarm you
 
 Outbreak:
 A message appears saying that new/relevant tips are available.
@@ -81,6 +88,7 @@ Shuffled buildings around to give better build radius coverage
 In Utter Darkness:
 You have no base.
 You gain resources by killing enemies.
-You spend resources to determine the composition of your next reinforcement wave.
+You spend resources to increase how many of each unit you can have.
+Reinforcement waves warp in all units missing from your army.
 Reinforcement waves happen more often.
 After getting Artanis, you need to spend 300 energy off him to get another reinforcement wave.
