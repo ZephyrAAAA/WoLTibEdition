@@ -81,6 +81,14 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorCreepSource id="CreepGrowthInfested">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.0625"/>
+        <Start value="CreepGrowthInfested"/>
+        <Birth value="Footprint8x6CreepSourceStart"/>
+        <Grown value="CreepGrowthInfested"/>
+    </CBehaviorCreepSource>
     <CBehaviorBuff id="DamageMarker">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="65535"/>

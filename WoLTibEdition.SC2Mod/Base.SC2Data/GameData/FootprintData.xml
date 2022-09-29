@@ -1,5 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CFootprint id="CreepGrowthInfested">
+        <Layers index="Check" Area="-24,-24,24,24">
+            <Sets Character="o">
+                <Negative index="NoCreep" value="1"/>
+            </Sets>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="................................................"/>
+            <Rows value="............oooooooo............................"/>
+            <Rows value=".........oooooooooooooo........................."/>
+            <Rows value=".......oooooooooooooooooo......................."/>
+            <Rows value="......oooooooooooooooooooo......................"/>
+            <Rows value=".....oooooooooooooooooooooo....................."/>
+            <Rows value="....oooooooooooooooooooooooo...................."/>
+            <Rows value="...oooooooooooooooooooooooooo..................."/>
+            <Rows value="..oooooooooooooooooooooooooooo.................."/>
+            <Rows value="..oooooooooooooooooooooooooooo.................."/>
+            <Rows value=".oooooooooooooooooooooooooooooo................."/>
+            <Rows value=".oooooooooooooooooooooooooooooo................."/>
+            <Rows value=".oooooooooooooooooooooooooooooo................."/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value="oooooooooooooooooooooooooooooooo................"/>
+            <Rows value=".oooooooooooooooooooooooooooooo................."/>
+            <Rows value=".oooooooooooooooooooooooooooooo................."/>
+            <Rows value=".oooooooooooooooooooooooooooooo................."/>
+            <Rows value="..oooooooooooooooooooooooooooo.................."/>
+            <Rows value="..oooooooooooooooooooooooooooo.................."/>
+            <Rows value="...oooooooooooooooooooooooooo..................."/>
+            <Rows value="....oooooooooooooooooooooooo...................."/>
+            <Rows value=".....oooooooooooooooooooooo....................."/>
+            <Rows value="......oooooooooooooooooooo......................"/>
+            <Rows value=".......oooooooooooooooooo......................."/>
+            <Rows value=".........oooooooooooooo........................."/>
+            <Rows value="............oooooooo............................"/>
+        </Layers>
+        <Layers index="Place" Area="-24,-24,24,24">
+            <Sets Character="o">
+                <Positive index="Creep" value="1"/>
+            </Sets>
+            <Rows value="..................oooooooooooo.................."/>
+            <Rows value="..............ooooooooooooooooooooo............."/>
+            <Rows value="............oooooooooooooooooooooooo............"/>
+            <Rows value="...........oooooooooooooooooooooooooo..........."/>
+            <Rows value="..........oooooooooooooooooooooooooooo.........."/>
+            <Rows value=".........oooooooooooooooooooooooooooooo........."/>
+            <Rows value="........oooooooooooooooooooooooooooooooo........"/>
+            <Rows value=".......oooooooooooooooooooooooooooooooooo......."/>
+            <Rows value="......oooooooooooooooooooooooooooooooooooo......"/>
+            <Rows value=".....oooooooooooooooooooooooooooooooooooooo....."/>
+            <Rows value="....oooooooooooooooooooooooooooooooooooooooo...."/>
+            <Rows value="...oooooooooooooooooooooooooooooooooooooooooo..."/>
+            <Rows value="..oooooooooooooooooooooooooooooooooooooooooooo.."/>
+            <Rows value="..oooooooooooooooooooooooooooooooooooooooooooo.."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value="oooooooooooooooooooooooooooooooooooooooooooooooo"/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value=".oooooooooooooooooooooooooooooooooooooooooooooo."/>
+            <Rows value="..oooooooooooooooooooooooooooooooooooooooooooo.."/>
+            <Rows value="..oooooooooooooooooooooooooooooooooooooooooooo.."/>
+            <Rows value="...oooooooooooooooooooooooooooooooooooooooooo..."/>
+            <Rows value="....oooooooooooooooooooooooooooooooooooooooo...."/>
+            <Rows value=".....oooooooooooooooooooooooooooooooooooooo....."/>
+            <Rows value="......oooooooooooooooooooooooooooooooooooo......"/>
+            <Rows value=".......oooooooooooooooooooooooooooooooooo......."/>
+            <Rows value="........oooooooooooooooooooooooooooooooo........"/>
+            <Rows value=".........oooooooooooooooooooooooooooooo........."/>
+            <Rows value="..........oooooooooooooooooooooooooooo.........."/>
+            <Rows value="...........oooooooooooooooooooooooooo..........."/>
+            <Rows value="............oooooooooooooooooooooooo............"/>
+            <Rows value="..............oooooooooooooooooooo.............."/>
+            <Rows value="..................oooooooooooo.................."/>
+        </Layers>
+        <Shape>
+            <Radius value="40.792"/>
+            <Offsets value="-24,-24;24,-24;-24,24;24,24"/>
+            <Borders value="0,2,2;1,0,2;2,3,2;3,1,2"/>
+        </Shape>
+    </CFootprint>
     <CFootprint id="MarSaraBridgeENLARGED">
         <Layers index="Check" Area="-5,-5,5,5">
             <Rows value=".........."/>

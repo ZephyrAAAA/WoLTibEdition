@@ -6370,9 +6370,9 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="Virophage">
+        <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="VoidRay">
         <ArmorType value="Fort"/>
