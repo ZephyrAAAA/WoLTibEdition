@@ -17,7 +17,6 @@
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
@@ -72,7 +71,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_GhostQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="Alias_Ghost" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
@@ -120,8 +118,11 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeHighEnergyCapacitorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="HighEnergyCapacitors" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeHyperflightRotorsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="HyperflightRotors" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeImprovedRailgunsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -307,6 +308,10 @@
         <OperandArray index="0" value="CountBehaviorFusionCoreBuiltCompleteOnly"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
+    <CRequirementNot id="Not1">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="1"/>
+    </CRequirementNot>
     <CRequirementNot id="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter">
         <OperandArray index="0" value="CountUnitDrakkenLaserDrillQueuedOrBetter"/>
     </CRequirementNot>
@@ -326,8 +331,10 @@
         <OperandArray index="0" value="CountUpgradeHellionCampaignInfernalPreIgniterQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHighEnergyCapacitorsQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeHighEnergyCapacitorsQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeHyperflightRotorsQueuedOrBetter">
+        <OperandArray index="0" value="CountUpgradeHyperflightRotorsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeImprovedRailgunsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeImprovedRailgunsQueuedOrBetter"/>

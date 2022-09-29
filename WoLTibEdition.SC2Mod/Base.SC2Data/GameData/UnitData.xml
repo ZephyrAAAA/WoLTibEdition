@@ -466,7 +466,9 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="DistortionBlasters"/>
+        <BehaviorArray index="1" Link="Biosteel"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="BansheeACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2058,6 +2060,7 @@
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
         <SubgroupPriority value="7"/>
+        <AIKiteRange value="6"/>
     </CUnit>
     <CUnit id="DisruptorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2128,6 +2131,7 @@
         <ArmorType value="None"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <Food value="0"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
     </CUnit>
     <CUnit id="Egg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

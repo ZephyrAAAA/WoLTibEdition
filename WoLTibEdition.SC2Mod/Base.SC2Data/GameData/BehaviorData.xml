@@ -188,6 +188,7 @@
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="GravitonBeamHeight">
+        <BuffFlags index="Channeling" value="0"/>
         <Duration value="10"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield">
@@ -258,6 +259,9 @@
         <DisplayDuration index="Ally" value="1"/>
         <DisplayDuration index="Neutral" value="1"/>
         <DisplayDuration index="Enemy" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MorphToTechReactor">
+        <ExpireEffect value=""/>
     </CBehaviorBuff>
     <CBehaviorPowerUser id="NeedsBuildRadius">
         <InfoFlags index="Hidden" value="1"/>
@@ -357,6 +361,11 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorJump id="ReaperJump">
+        <DurationPreLaunch value="0.025"/>
+        <DurationPostLand value="0.0375"/>
+        <DurationMoveOut value="0.04"/>
+    </CBehaviorJump>
     <CBehaviorBuff id="ReaperRegen">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>

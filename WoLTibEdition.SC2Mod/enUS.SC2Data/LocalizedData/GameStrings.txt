@@ -137,6 +137,7 @@ Button/Name/HiveMindEmulator6=Hive Mind Emulator
 Button/Name/HiveMindEmulator7=Hive Mind Emulator
 Button/Name/HiveMindEmulator8=Hive Mind Emulator
 Button/Name/HiveMindEmulator9=Hive Mind Emulator
+Button/Name/HyperflightRotors=Hyperflight Rotors
 Button/Name/HyperionYamato10=Hyperion Yamato
 Button/Name/HyperionYamato11=Hyperion Yamato
 Button/Name/HyperionYamato12=Hyperion Yamato
@@ -318,6 +319,7 @@ Button/Tooltip/HiveMindEmulator6=Converts targeted Zerg units to player control 
 Button/Tooltip/HiveMindEmulator7=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HiveMindEmulator8=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HiveMindEmulator9=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HyperflightRotors=Increases <c val="ffff8a">Banshee</c> speed to 3.75 (same as Wraith)
 Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
 Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
 Button/Tooltip/HyperionYamato12=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
@@ -624,6 +626,7 @@ DataCollection/Name/Bunker2=Bunker Copy
 DataCollection/Name/CommandCenter=Command Center
 DataCollection/Name/CommandCenter2=Command Center Copy
 DataCollection/Name/Crane=Crane
+DataCollection/Name/DeployLaserDrill=Deploy Laser Drill
 DataCollection/Name/DevastationTurret=Devastation Turret
 DataCollection/Name/DevilDogSquad=Devil Dog Squad
 DataCollection/Name/EngineeringBay=Engineering Bay
@@ -637,30 +640,40 @@ DataCollection/Name/GhostAcademy=Ghost Academy
 DataCollection/Name/GhostAcademy2=Ghost Academy Copy
 DataCollection/Name/HammerSecuritiesSquad=Hammer Securities Squad
 DataCollection/Name/HiveMindEmulator=Hive Mind Emulator
+DataCollection/Name/HyperionYamato=Hyperion Yamato
+DataCollection/Name/InfantryMercenaries=Infantry Mercenaries
 DataCollection/Name/MarauderSquad=Marauder Squad
 DataCollection/Name/MarineSquad=Marine Squad
 DataCollection/Name/MedicSquad=Medic Squad
 DataCollection/Name/MineralField=Mineral Field
 DataCollection/Name/MissileTurret=Missile Turret
 DataCollection/Name/MissileTurret2=Missile Turret Copy
+DataCollection/Name/Odin=Odin
 DataCollection/Name/PlanetaryFortress2=Planetary Fortress Copy
 DataCollection/Name/PsiDisruptor=Psi Disruptor
 DataCollection/Name/ReaperSquad=Reaper Squad
 DataCollection/Name/Refinery2=Refinery Copy
 DataCollection/Name/SCV2=SCV Copy
+DataCollection/Name/ScannerSweepTopbar=Scanner Sweep
 DataCollection/Name/SensorTower=Sensor Tower
 DataCollection/Name/SensorTower2=Sensor Tower Copy
 DataCollection/Name/Starport=Starport
 DataCollection/Name/Starport2=Starport Copy
+DataCollection/Name/StarshipMercenaries=Starship Mercenaries
 DataCollection/Name/Stone=Stone
 DataCollection/Name/SupplyDepot=Supply Depot
 DataCollection/Name/SupplyDepot2=Supply Depot Copy
 DataCollection/Name/SupplyDepot2Lowered=Supply Depot Lowered Copy
+DataCollection/Name/TacNukeStrikeTopbar=Nuclear Strike
+DataCollection/Name/TacticalMissileStrike=Tactical Missile Strike
 DataCollection/Name/TibNodeLarge=Tib Node Large
 DataCollection/Name/TibNodeMedium=Tib Node Medium
 DataCollection/Name/TibNodeSmall=Tib Node Small
 DataCollection/Name/TibVein=Tib Vein
+DataCollection/Name/VehicleMercenaries=Vehicle Mercenaries
 DataCollection/Name/VespeneGeyser=Vespene Geyser
+DataCollection/Name/VikingAssault=Viking
+DataCollection/Name/VikingFighter=Viking
 DataCollection/Name/WarPigSquad=War Pig Squad
 DocInfo/Author=Blizzard Entertainment
 DocInfo/DescLong=
@@ -1366,7 +1379,7 @@ Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
 Unit/Name/WarPigSquad=War Pig Squad
 Unit/Name/WarpConduit=Warp Conduit
-Unit/Tip/Air=<c val="FFBF00">Light Air</c> armor
+Unit/Tip/Air=<c val="FFBF00">Light Air</c> Armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
 Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
@@ -1379,6 +1392,7 @@ Upgrade/Name/HALORockets=Turreted Missile Pods
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
 Upgrade/Name/HighEnergyCapacitors=High-Energy Capacitors
 Upgrade/Name/HydraulicStabilizers=Hydraulic Stabilizers
+Upgrade/Name/HyperflightRotors=Hyperflight Rotors
 Upgrade/Name/ImprovedRailguns=Improved Railguns
 Upgrade/Name/LowPower=Low Power
 Upgrade/Name/OcularImplants=Reinforced Barrier
@@ -1386,6 +1400,7 @@ Upgrade/Name/PermanentCloakGhost=Field Projectors
 Upgrade/Name/PermanentCloakSpectre=Miniature Drop Pods
 Upgrade/Name/Predator=Commando Suit
 Upgrade/Name/TakeTheDrill=Take The Drill
+Upgrade/Name/TechReactor=Plasma Shields
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors
 Upgrade/Name/TerranInfantryVanadiumPlating=Terran Infantry Vanadium Plating
 Upgrade/Name/TerranShipArmorsVanadiumPlating2=Terran Ship Armor Vanadium Plating Copy
