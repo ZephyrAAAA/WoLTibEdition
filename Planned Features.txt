@@ -276,9 +276,9 @@ Gates of Hell:
 Belly of the Beast:
 -The Heroes now have a combined Command Card
 -Stettman no longer blocks medic healing
-Tychus' and Raynor's abilities are no longer blocked by fog of war
-Swann now gets betty's kills
-Betty now fires continuously
+-Tychus' and Raynor's abilities are no longer blocked by fog of war
+-Swann now gets betty's kills
+-Betty now fires continuously
 
 Shatter the Sky:
 
@@ -394,7 +394,7 @@ Barrage Area-> Thor speedy boi
 
 Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, that have a preference for targeting different units.
 
-Medivac drop speed-> Medivac bunker for infantry
+Medivac drop speed-> Medivac bunker for infantry, medivac drop speed, and pickup range
 
 Ghost/Spectre upgrades- Banned
 
@@ -437,7 +437,6 @@ Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than hav
 Bunker Health-> Building Armour Now gives the Building Armour upgrade permanently, rather than having to research every mission.
 
 
-
 NEW IN-GAME UPGRADES:
 
 Building Health and Armour [Engineering Bay]
@@ -450,7 +449,9 @@ Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
-Improved Engines- Ships move faster [Starport Tech Lab]
+Improved Rotors- Banshees move faster [Starport Tech Lab]
+
+Improved Engines- Battlecruisers move faster [Starport Tech Lab]
 
 BC Health- [Starport Tech Lab]
 
@@ -463,6 +464,7 @@ Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded [
 Improved Shields-Requires the Shield Research. Improves shield stats [Armoury]
 
 Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Armoury]
+
 
 MISC CHANGES:
 You now start with 3 protoss research as well

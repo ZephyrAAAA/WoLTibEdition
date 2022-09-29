@@ -15,11 +15,16 @@ Veins are now visible on the minimap.
 You now get a "build complete" line when a CC or crane finishes making something.
 "Unit unlocked" messages now display in a more prominent position, 30s into a mission.
 Rifle damage against air units has been nerfed (Because man with gun OP)
-*The planetary fortress now has 2k hp, has a bunker, and is affected by the explosive damage upgrade.
-*Fixed the Wraith displacement field saying they resist 8% of damage.
+The planetary fortress now has 2k hp, has a bunker, and is affected by the explosive damage upgrade.
+Fixed the Wraith displacement field saying they resist 8% of damage.
 *Orbital Strike is now Topbar Efficiency. It reduces the cooldown and cost of all topbar abilities.
 *Tech Reactor is now Plasma Shields. It gives shields to all units.
-*Fixed typos in the Dusk Wings and Jackson's Revenge merc card.
+Fixed typos in the Dusk Wings and Jackson's Revenge merc card.
+HME research text is now correct
+Psi Disruptor research text is now correct
+Hyperflight Rotors- Banshees move faster [Starport Tech Lab]
+Flavour text for Hercules upgrades no longer mentions spectre upgrades
+*More units now say attack lines when told to attack move
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -92,3 +97,4 @@ You spend resources to increase how many of each unit you can have.
 Reinforcement waves warp in all units missing from your army.
 Reinforcement waves happen more often.
 After getting Artanis, you need to spend 300 energy off him to get another reinforcement wave.
+Attack wave timings adjusted to be faster, and not stack up so bad.
