@@ -242,6 +242,7 @@ bool Gather_Func (bool testConds, bool runActions) {
 		resourceDelta = RoundI((GameGetMissionTime() - time) * rate);
 		time = GameGetMissionTime();
 		PlayerModifyPropertyInt(UnitGetOwner(gatherUnit), c_playerPropMinerals, c_playerPropOperAdd, MinI(resourceAmount, resourceDelta));
+		PlayerModifyPropertyInt(UnitGetOwner(gatherUnit), c_playerPropMineralsCollected, c_playerPropOperAdd, MinI(resourceAmount, resourceDelta));
 		resourceAmount -= MinI(resourceAmount, resourceDelta);
 		UnitSetPropertyInt(gatherUnit, c_unitPropCarriedMinerals, resourceAmount);
 		Wait(0.0625, c_timeGame);
@@ -687,6 +688,7 @@ void TopbarCheck_Init () {
 	topbarCheck = TriggerCreate("TopbarCheck_Func");
 	TriggerAddEventUnitConstructProgress(topbarCheck, null, c_unitProgressStageComplete);
 	TriggerAddEventUnitDied(topbarCheck, null);
+	TriggerAddEventUnitBehaviorChange(topbarCheck, null, "Depowered", c_unitBehaviorChangeAny);
 }
 
 bool RallyCopy_Func (bool testConds, bool runActions) {

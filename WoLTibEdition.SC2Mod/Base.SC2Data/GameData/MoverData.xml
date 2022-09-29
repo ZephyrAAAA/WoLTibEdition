@@ -8,4 +8,7 @@
             <YawPitchRoll value="5759.6484"/>
         </MotionPhases>
     </CMoverMissile>
+    <CMoverMissile id="ReaperJumpDown">
+        <MotionPhases index="0" Speed="10.5" MinSpeed="10.5" MaxSpeed="10.5"/>
+    </CMoverMissile>
 </Catalog>

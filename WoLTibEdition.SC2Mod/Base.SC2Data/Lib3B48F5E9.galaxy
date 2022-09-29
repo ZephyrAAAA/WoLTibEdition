@@ -834,6 +834,39 @@ void lib3B48F5E9_gt_SquadHealth_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Squad Shields
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_SquadShields_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unit lv_mainUnit;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitHasBehavior2(EventUnit(), "SquadUnit") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_mainUnit = UnitBehaviorEffectUnit(EventUnit(), "SquadUnit", c_effectUnitCaster, 0);
+    UnitSetPropertyFixed(lv_mainUnit, c_unitPropShields, (UnitGetPropertyFixed(lv_mainUnit, c_unitPropShields, c_unitPropCurrent) + EventUnitPropertyChangeFixed()));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_SquadShields_Init () {
+    lib3B48F5E9_gt_SquadShields = TriggerCreate("lib3B48F5E9_gt_SquadShields_Func");
+    TriggerAddEventUnitProperty(lib3B48F5E9_gt_SquadShields, null, c_unitPropShields);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Predator/Ghost Academy
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) {
@@ -1083,6 +1116,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
     lib3B48F5E9_gt_TerranUpgradeSwap_Init();
     lib3B48F5E9_gt_SquadHealth_Init();
+    lib3B48F5E9_gt_SquadShields_Init();
     lib3B48F5E9_gt_PredatorGhostAcademy_Init();
     lib3B48F5E9_gt_ArmoryHercules_Init();
     lib3B48F5E9_gt_FusionCore_Init();

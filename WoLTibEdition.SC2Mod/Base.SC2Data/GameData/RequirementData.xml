@@ -143,6 +143,9 @@
     <CRequirement id="LearnHighEnergyCapacitors">
         <NodeArray index="Show" Link="NotCountUpgradeHighEnergyCapacitorsQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnHyperflightRotors">
+        <NodeArray index="Show" Link="NotCountUpgradeHyperflightRotorsQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnImprovedRailguns">
         <NodeArray index="Show" Link="NotCountUpgradeImprovedRailgunsQueuedOrBetter"/>
     </CRequirement>

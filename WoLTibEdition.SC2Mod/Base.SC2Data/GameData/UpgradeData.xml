@@ -291,6 +291,12 @@
         <EffectArray Operation="Set" Reference="Weapon,DRBattlecruiserG2,MinimumRange" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,DRBattlecruiserG2,Options[Hidden]" Value="0"/>
     </CUpgrade>
+    <CUpgrade id="HyperflightRotors">
+        <EffectArray Reference="Unit,Banshee,Speed" Value="1.000000"/>
+        <EffectArray Reference="Unit,DuskWing,Speed" Value="1.000000"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+        <BonusResourcePerLevel index="Minerals" value="1000"/>
+    </CUpgrade>
     <CUpgrade id="ImprovedRailguns">
         <EffectArray Operation="Multiply" Reference="Effect,GoliathG,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DiamondbackBeam,Amount" Value="1.3"/>
@@ -322,6 +328,37 @@
         <EffectArray index="0" Reference="Unit,Predator,EnergyDamageRatio" Value="1"/>
         <EffectArray index="1" removed="1"/>
         <EffectArray index="2" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="OrbitalStrike">
+        <EffectArray index="0" removed="1"/>
+        <EffectArray index="1" removed="1"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
+        <EffectArray index="4" removed="1"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArrayTemplate Operation="Multiply" Reference="Abil,^ParamId^,Cost[0].Resource[Minerals]" Value="2"/>
+        <EffectArrayTemplate Operation="Divide" Reference="Abil,^ParamId^,Cost[0].Resource[Minerals]" Value="3"/>
+        <EffectArrayTemplate Operation="Multiply" Reference="Abil,^ParamId^,InfoArray[Build1].Resource[Minerals]" Value="2"/>
+        <EffectArrayTemplate Operation="Divide" Reference="Abil,^ParamId^,InfoArray[Build1].Resource[Minerals]" Value="3"/>
+        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Cooldown.TimeUse" Value="0.5"/>
+        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Charge.TimeUse" Value="0.5"/>
+        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Charge.TimeStart" Value="0.5"/>
     </CUpgrade>
     <CUpgrade id="PermanentCloakGhost">
         <EffectArray index="0" Operation="Add" Reference="Effect,RetributionFieldDamage,AreaArray.Radius" Value="0.25"/>
@@ -1074,6 +1111,12 @@
     </CUpgrade>
     <CUpgrade id="TakeTheDrill">
         <BonusResourcePerLevel index="Minerals" value="20000"/>
+    </CUpgrade>
+    <CUpgrade id="TechReactor">
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldsMax" Value="{Unit,^ParamId^,LifeMax*0.2}"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldsStart" Value="{Unit,^ParamId^,LifeMax*0.2}"/>
+        <EffectArrayTemplate Operation="Set" Reference="Unit,^ParamId^,ShieldRegenRate" Value="2"/>
+        <EffectArrayTemplate Operation="Set" Reference="Unit,^ParamId^,ShieldRegenDelay" Value="10"/>
     </CUpgrade>
     <CUpgrade id="TerranInfantryArmorsLevel1">
         <EffectArray index="0" removed="1"/>

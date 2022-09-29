@@ -138,6 +138,10 @@
         <On Terms="Effect.NukePersistentTopbar.Initial" Send="Create"/>
         <On Terms="Effect.NukePersistentTopbar.Stop; At Effect" Send="Destroy"/>
     </CActorSound>
+    <CActorBeamSimple id="GravitonBeam">
+        <On index="3" removed="1"/>
+        <On index="4" removed="1"/>
+    </CActorBeamSimple>
     <CActorBeamSimple id="HiveMindEmulatorBeam">
         <HostLaunch Subject="::global.HMESource" Scope="Implicit"/>
         <HostLaunchSiteOps Ops=""/>
@@ -1211,7 +1215,7 @@
     <!-- Odin .................................................................................. -->
     <!--                                                                                         -->
     <CActorUnit id="Odin">
-        <On index="79" Send="AnimPlay MorphEnd Morph,End 0 -1.000000 -1.000000 0.915000 AsTimeScale"/>
+        <On index="79" Send="AnimPlay MorphEnd Morph,End 0 -1.000000 -1.000000 3.660000 AsTimeScale"/>
     </CActorUnit>
     <CActorUnit id="OrbitalCommand2" parent="TerranBuildingFlyerEx" unitName="OrbitalCommand2">
         <Macros value="MacroTownhallDeco_Terran"/>
@@ -1569,6 +1573,9 @@
     <CActorSplat id="ScannerSweepCursorSplat">
         <On Terms="Abil.ScannerSweepTopbar.Cursor" Send="Create"/>
     </CActorSplat>
+    <CActorShieldImpact id="ShieldImpact">
+        <On Terms="UnitCreation; ValidateUnit HasPlasmaShields; Exclude Missile" Send="Create"/>
+    </CActorShieldImpact>
     <CActorSound id="TempestAirAttackSoundFleet" parent="SoundOneShot">
         <EditorCategories value=""/>
         <On Terms="Effect.TempestLaunchMissileFleet.Start; At Effect" Send="Create"/>
