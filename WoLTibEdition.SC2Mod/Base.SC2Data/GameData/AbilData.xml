@@ -151,6 +151,7 @@
         </TargetSorts>
         <AutoCastRange value="6"/>
         <CancelableArray index="Channel" value="0"/>
+        <AcquirePriority value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="HighTemplarAttackDummy">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -417,6 +418,29 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="RepairDroneRestore">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ShieldRestore"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <TargetFilters value="Visible;Self,Neutral,Enemy,Missile,Uncommandable,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSShieldsFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="2"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Self,Neutral,Enemy,Structure,Missile,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="NotWarpingIn"/>
+        <Marker Link="Abil/RepairDroneHeal"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CarrierRepairDroneHeal" Requirements="HasImprovedPlasmaShields"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="RepairMechOrder">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -890,7 +914,7 @@
         <AutoCastValidatorArray value="NotWarpingIn"/>
         <DefaultError value="RequiresHealTarget"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="CarrierRepairDroneHeal"/>
-        <AcquireAttackers value="1"/>
+        <AcquirePriority value="4"/>
     </CAbilEffectTarget>
     <CAbilArmMagazine id="Refinery">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -1029,6 +1053,13 @@
         <InfoArray index="Research4" Time="60" Upgrade="HighEnergyCapacitors">
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="ResearchHighEnergyCapacitors" Requirements="LearnHighEnergyCapacitors">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research5" Time="90" Upgrade="ImprovedPlasmaShields">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="ResearchImprovedPlasmaShields" Requirements="LearnImprovedPlasmaShields">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>

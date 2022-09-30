@@ -1150,6 +1150,8 @@
         <On Terms="Effect.MechanicalRepair.TargetStart; At Target" Send="Create"/>
         <On Terms="Effect.MechanicalRepair.TargetStop; At Target" Send="Destroy"/>
         <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Effect.ShieldRestore.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.ShieldRestore.TargetStop; At Target" Send="Destroy"/>
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachOverhead"/>
         <Model value="NanoRepairBeamImpact"/>
@@ -1158,6 +1160,8 @@
         <Inherits index="Visibility" value="1"/>
         <On Terms="Effect.MechanicalRepair.TargetStart" Send="Create"/>
         <On Terms="Effect.MechanicalRepair.TargetStop" Send="Destroy"/>
+        <On Terms="Effect.ShieldRestore.TargetStart" Send="Create"/>
+        <On Terms="Effect.ShieldRestore.TargetStop" Send="Destroy"/>
         <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
         <Model value="NanoRepairBeam"/>
         <HostLaunch Subject="_Unit" Scope="Caster" Actor="Find"/>
@@ -1171,6 +1175,8 @@
         <On Terms="ActorOrphan" Send="Destroy"/>
         <On Terms="ActorCreation" Send="Create NanoRepairSoundStart"/>
         <On Terms="ActorDestruction" Send="Create NanoRepairSoundStop"/>
+        <On Terms="Effect.ShieldRestore.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.ShieldRestore.TargetStop; At Target" Send="Destroy"/>
         <Host Subject="_Selectable"/>
         <HostSiteOps Ops="SOpAttachOverhead"/>
         <Sound value="Medivac_HealLoop"/>

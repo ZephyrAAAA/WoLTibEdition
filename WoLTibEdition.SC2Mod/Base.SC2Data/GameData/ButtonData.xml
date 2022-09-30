@@ -321,6 +321,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
+    <CButton id="ResearchImprovedPlasmaShields">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
     <CButton id="ResearchImprovedRailguns">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel2.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel2.dds"/>

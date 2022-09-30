@@ -297,6 +297,11 @@
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
         <BonusResourcePerLevel index="Minerals" value="1000"/>
     </CUpgrade>
+    <CUpgrade id="ImprovedPlasmaShields">
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmor" Value="1.33"/>
+        <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
+        <BonusResourcePerLevel index="Minerals" value="3000"/>
+    </CUpgrade>
     <CUpgrade id="ImprovedRailguns">
         <EffectArray Operation="Multiply" Reference="Effect,GoliathG,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DiamondbackBeam,Amount" Value="1.3"/>

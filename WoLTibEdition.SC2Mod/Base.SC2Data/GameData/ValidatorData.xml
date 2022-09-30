@@ -40,6 +40,11 @@
         <Find value="1"/>
         <Value value="MercPHTrainBanshee"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HasImprovedPlasmaShields">
+        <Find value="1"/>
+        <Value value="HasImprovedPlasmaShields"/>
+        <WhichPlayer Value="Source"/>
+    </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasJackson">
         <Find value="1"/>
         <Value value="MercPHTrainBattleCruiser"/>
@@ -68,6 +73,12 @@
         <Find value="1"/>
         <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
+    <CValidatorLocationCompareRange id="InfestedCreepTooClose">
+        <WhichLocation Effect="CreepSpreadInfestedSet" Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="3"/>
+        <Value Value="TargetUnit"/>
+    </CValidatorLocationCompareRange>
     <CValidatorUnitFilters id="IsHeroic">
         <Filters value="Heroic;-"/>
     </CValidatorUnitFilters>
@@ -95,6 +106,13 @@
         <Value value="1"/>
         <Behavior value="MaarPassiveSpeed"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="NoNearbyInfestedTumors">
+        <AreaArray Radius="3" Validator="IsInfestedTumor"/>
+        <Compare value="Eq"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="IsInfestedTumor">
+        <Value value="CreepTumorInfested"/>
+    </CValidatorUnitType>
     <CValidatorUnitCompareBehaviorCount id="NotSquadUnit">
         <Behavior value="SquadUnit"/>
     </CValidatorUnitCompareBehaviorCount>
@@ -186,6 +204,12 @@
     <CValidatorUnitCompareBehaviorCount id="TibNodeNonStarter">
         <Behavior value="TibNodeNonStarter"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCrossChasm id="TumorNotAcrossChasm">
+        <WhichLocation Value="SourceUnitOrPoint"/>
+    </CValidatorLocationCrossChasm>
+    <CValidatorLocationCrossCliff id="TumorNotAcrossCliff">
+        <WhichLocation Value="SourceUnitOrPoint"/>
+    </CValidatorLocationCrossCliff>
     <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
         <Behavior value="BunkerWeaponRangeBonus"/>
     </CValidatorUnitCompareBehaviorCount>
