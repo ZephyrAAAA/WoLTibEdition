@@ -81,7 +81,7 @@ You no longer have free vision of the terrain around the purifier mothership
 *Counterattacks scale with how many terror fleets you've stopped
 Stopping terrorfleets gives armoury upgrades
 *Stopping counterattacks gives armoury upgrades
-*Gives less base money, but gives money for each settlement saved.
+Gives less base money, but gives money for each settlement saved.
 
 Haven's Fall:
 You start with 3 SCVs
@@ -95,7 +95,7 @@ Shuffled buildings around to give better build radius coverage
 *Removed free vision from each settlement
 *Infested are spawned faster
 Stopping reinfestations grants armoury upgrades
-*Gives less base money, but gives money for each settlement saved.
+Gives less base money, but gives money for each settlement saved.
 
 In Utter Darkness:
 You have no base.

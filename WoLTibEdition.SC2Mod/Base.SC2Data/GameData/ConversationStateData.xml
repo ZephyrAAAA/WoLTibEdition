@@ -58,9 +58,38 @@
             <InfoValue index="0" Value="3"/>
         </Indices>
     </CConversationState>
+    <CConversationState id="Maps">
+        <Indices index="0">
+            <InfoValue Id="Reward" Value="60"/>
+        </Indices>
+        <Indices index="5">
+            <InfoValue index="0" Value="75"/>
+        </Indices>
+        <Indices index="6">
+            <InfoValue index="0" Value="75"/>
+        </Indices>
+    </CConversationState>
     <CConversationState id="MissionAvailable">
         <Indices index="0">
             <InfoValue Id="Reward" Value="60000"/>
+        </Indices>
+        <Indices index="5">
+            <InfoValue index="0" Value="75"/>
+        </Indices>
+        <Indices index="6">
+            <InfoValue index="0" Value="75"/>
+        </Indices>
+    </CConversationState>
+    <CConversationState id="MissionCompleted">
+        <Indices index="0">
+            <InfoValue Id="Reward" Value="60000"/>
+        </Indices>
+        <Indices index="5">
+            <InfoText Id="Epilogue"/>
+            <InfoValue index="0" Value="75"/>
+        </Indices>
+        <Indices index="6">
+            <InfoValue index="0" Value="75"/>
         </Indices>
     </CConversationState>
     <CConversationState id="MissionObjective">
@@ -88,13 +117,21 @@
             <InfoValue Id="Credits Per Item" Value="10000"/>
             <InfoValue Id="Item Count" Value="2"/>
         </Indices>
+        <Indices index="12">
+            <InfoValue Id="Credits Per Item" Value="15000"/>
+            <InfoValue Id="Item Count" Value="5"/>
+        </Indices>
         <Indices index="13">
             <InfoValue Id="Credits Per Item" Value="30000"/>
             <InfoValue Id="Item Count" Value="1"/>
         </Indices>
+        <Indices index="14">
+            <InfoValue Id="Credits Per Item"/>
+            <InfoValue Id="Item Count"/>
+        </Indices>
         <Indices index="15">
-            <InfoValue Id="Credits Per Item" Value="30000"/>
-            <InfoValue Id="Item Count" Value="1"/>
+            <InfoValue Id="Credits Per Item" Value="15000"/>
+            <InfoValue Id="Item Count" Value="7"/>
         </Indices>
         <Indices index="18">
             <InfoValue Id="Credits Per Item" Value="30000"/>
