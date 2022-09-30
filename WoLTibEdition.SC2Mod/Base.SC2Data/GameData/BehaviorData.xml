@@ -83,12 +83,33 @@
     </CBehaviorBuff>
     <CBehaviorCreepSource id="CreepGrowthInfested">
         <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="0.0625"/>
-        <Start value="CreepGrowthInfested"/>
-        <Birth value="Footprint8x6CreepSourceStart"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Period value="1.5"/>
+        <Start value="Footprint2x2CreepSourceStart"/>
+        <Birth value="Footprint2x2CreepSourceStart"/>
         <Grown value="CreepGrowthInfested"/>
     </CBehaviorCreepSource>
+    <CBehaviorBuff id="CreepMainInfested">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Fatal="1" Handled="CreepDeathInfestedEnum">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CreepSpreadInfested">
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
+        <Duration value="120"/>
+        <ExpireEffect value="CreepSpreadInfestedOffset"/>
+        <DurationRandomMin value="30"/>
+    </CBehaviorBuff>
+    <CBehaviorUnitTracker id="CreepTrackInfested">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Zerg"/>
+        <MaxTrackedUnits value="60000"/>
+        <BehaviorFlags index="Permanent" value="1"/>
+        <BehaviorFlags index="EnabledWhileDead" value="1"/>
+    </CBehaviorUnitTracker>
     <CBehaviorBuff id="DamageMarker">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <MaxStackCount value="65535"/>

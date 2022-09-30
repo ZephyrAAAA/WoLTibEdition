@@ -451,6 +451,7 @@
         <Range value="5"/>
         <AttackType value="Siege"/>
         <AllowedMovement value="Moving"/>
+        <MinScanRange value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="JavelinMissileLaunchers">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -471,6 +472,7 @@
         <AttackType value="Siege"/>
         <Backswing value="0"/>
         <Effect value="LanzerTorpedoesG"/>
+        <DamagePoint value="0.0834"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LaserDrillTripodLaserBeam">
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -584,6 +586,7 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="7"/>
         <Period value="1"/>
+        <DamagePoint value="0.0834"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
@@ -959,6 +962,7 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <AttackType value="Siege"/>
         <AllowedMovement value="Moving"/>
+        <MinScanRange value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Val03QueenOfBladesPsiBlast">
         <Tip value="Weapon/Tip/Rocket"/>

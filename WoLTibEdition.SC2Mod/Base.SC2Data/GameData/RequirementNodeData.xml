@@ -26,6 +26,11 @@
         <OperandArray value="CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
     </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountUpgradeImprovedPlasmaShieldsQueuedOrBetterCountUpgradeTechReactorCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="NotCountUpgradeImprovedPlasmaShieldsQueuedOrBetter"/>
+        <OperandArray value="CountUpgradeTechReactorCompleteOnly"/>
+    </CRequirementAnd>
     <CRequirementCountBehavior id="CountBehaviorCraneBuiltCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="CraneBuilt" State="CompleteOnlyAtUnit"/>
@@ -123,6 +128,16 @@
     <CRequirementCountUpgrade id="CountUpgradeHyperflightRotorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="HyperflightRotors" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeImprovedPlasmaShieldsCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ImprovedPlasmaShields" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeImprovedPlasmaShieldsQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ImprovedPlasmaShields" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeImprovedRailgunsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -309,7 +324,6 @@
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementNot id="Not1">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="1"/>
     </CRequirementNot>
     <CRequirementNot id="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter">
@@ -335,6 +349,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeHyperflightRotorsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeHyperflightRotorsQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeImprovedPlasmaShieldsQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeImprovedPlasmaShieldsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeImprovedRailgunsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeImprovedRailgunsQueuedOrBetter"/>

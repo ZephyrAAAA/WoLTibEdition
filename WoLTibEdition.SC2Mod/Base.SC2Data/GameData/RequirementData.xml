@@ -87,6 +87,9 @@
     <CRequirement id="HasHailstormLaunchers">
         <NodeArray index="Use" Link="CountUpgradeHailstormLaunchersCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="HasImprovedPlasmaShields">
+        <NodeArray index="Use" Link="CountUpgradeImprovedPlasmaShieldsCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="HasNotTakenDrill">
         <NodeArray index="Show" Link="NotCountUpgradeTakeTheDrillQueuedOrBetter"/>
     </CRequirement>
@@ -145,6 +148,9 @@
     </CRequirement>
     <CRequirement id="LearnHyperflightRotors">
         <NodeArray index="Show" Link="NotCountUpgradeHyperflightRotorsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="LearnImprovedPlasmaShields">
+        <NodeArray index="Show" Link="AndNotCountUpgradeImprovedPlasmaShieldsQueuedOrBetterCountUpgradeTechReactorCompleteOnly"/>
     </CRequirement>
     <CRequirement id="LearnImprovedRailguns">
         <NodeArray index="Show" Link="NotCountUpgradeImprovedRailgunsQueuedOrBetter"/>
