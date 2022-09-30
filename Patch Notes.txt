@@ -26,6 +26,8 @@ Hyperflight Rotors- Banshees move faster [Starport Tech Lab]
 Flavour text for Hercules upgrades no longer mentions spectre upgrades
 *More units now say attack lines when told to attack move
 Shadow Ops now has the correct button tooltip whether you get ghosts or spectres
+Doubled the damage of hellstorm missile pods.
+Hellstorm missile pods no longer ignore armour.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -78,6 +80,7 @@ You no longer have free vision of the terrain around the purifier mothership
 *Counterattacks scale with how many terror fleets you've stopped
 Stopping terrorfleets gives armoury upgrades
 *Stopping counterattacks gives armoury upgrades
+*Gives less base money, but gives money for each settlement saved.
 
 Haven's Fall:
 You start with 3 SCVs
@@ -90,7 +93,8 @@ You start with a Sensor Tower
 Shuffled buildings around to give better build radius coverage
 *Removed free vision from each settlement
 *Infested are spawned faster
-*Stopping reinfestations grants armoury upgrades
+Stopping reinfestations grants armoury upgrades
+*Gives less base money, but gives money for each settlement saved.
 
 In Utter Darkness:
 You have no base.
