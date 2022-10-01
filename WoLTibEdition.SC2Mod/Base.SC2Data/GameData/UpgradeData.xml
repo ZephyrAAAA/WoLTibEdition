@@ -2813,12 +2813,12 @@
         <EffectArray index="19" Operation="Set" Reference="Unit,QueenBurrowed,SpeedMultiplierCreep" Value="2"/>
         <EffectArray index="20" Operation="Set" Reference="Unit,Infestor,SpeedMultiplierCreep" Value="2"/>
         <EffectArray index="21" Operation="Set" Reference="Unit,Broodling,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="22" Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="22" Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="4"/>
         <EffectArray index="23" Operation="Set" Reference="Unit,BanelingCocoon,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="24" Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="25" Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="26" Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="27" Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="24" Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="25" Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="26" Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="27" Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="4"/>
         <EffectArray index="28" Operation="Set" Reference="Unit,InfestedAbomination,SpeedMultiplierCreep" Value="2"/>
         <EffectArray index="29" Operation="Set" Reference="Unit,InfestedAbominationBurrowed,SpeedMultiplierCreep" Value="2"/>
         <EffectArray index="30" Operation="Set" Reference="Unit,Lurker,SpeedMultiplierCreep" Value="2"/>

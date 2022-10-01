@@ -3146,12 +3146,14 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
+        <SpeedMultiplierCreep value="1.3"/>
     </CUnit>
     <CUnit id="InfestedAbominationBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
+        <SpeedMultiplierCreep value="1.3"/>
     </CUnit>
     <CUnit id="InfestedArmory">
         <ArmorType value="Hero"/>
@@ -3178,11 +3180,13 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
+        <SpeedMultiplierCreep value="2"/>
     </CUnit>
     <CUnit id="InfestedCivilianBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
+        <SpeedMultiplierCreep value="2"/>
     </CUnit>
     <CUnit id="InfestedCocoon">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3248,6 +3252,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
+        <SpeedMultiplierCreep value="2"/>
     </CUnit>
     <CUnit id="InfestedTerransEgg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3285,11 +3290,13 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
+        <SpeedMultiplierCreep value="2"/>
     </CUnit>
     <CUnit id="InfestorTerranBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
+        <SpeedMultiplierCreep value="2"/>
     </CUnit>
     <CUnit id="InhibitorZoneFlyingLarge">
         <ArmorType value="Hero"/>
