@@ -104,9 +104,11 @@ void AddTopbarAbil(string abil) {
 	// needs reset, which means clear charges, re-add starting charges, then add 0 cooldown, with delays betweenf each.
 	int lv_i;
 	if (UnitAbilityExists(topbarUnit, abil)) {
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, already has ability: " +abil));
 		return;
 	}
 	for (lv_i = 0; topbarAbils[lv_i] != null; lv_i += 1) {
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Skipping "+ IntToString(lv_i) + ": " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 		if (lv_i == 11) {
 			return;
 		}
@@ -114,7 +116,7 @@ void AddTopbarAbil(string abil) {
 	if (lv_i > 11) {
 		return;
 	}
-	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Adding: " +abil+IntToString(lv_i+3)));
+	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Adding: " +abil+IntToString(lv_i+3)));
 	UnitAbilityAdd(topbarUnit, abil);
 	topbarAbils[lv_i] = abil;
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), true);
@@ -123,26 +125,32 @@ void AddTopbarAbil(string abil) {
 void RemoveTopbarAbil(string abil) {
 	int lv_i;
 	if (!UnitAbilityExists(topbarUnit, abil)) {
-		return;
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, does not have: " +abil));
+		//return;
 	}
 	for (lv_i = 0; topbarAbils[lv_i] != abil; lv_i += 1) {
 		if (lv_i == 11) {
+			UnitAbilityAdd(topbarUnit, abil);
+			UnitAbilityRemove(topbarUnit, abil);
+			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, could not find: " +abil));
 			return;
 		}
 	}
 	if (lv_i > 11) {
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, what???: " +abil));
 		return;
 	}
+	UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Removing: " +abil+IntToString(lv_i+3)));
+	topbarAbils[lv_i] = null;
+	UnitAbilityAdd(topbarUnit, abil); //I have no idea why this changes anything
 	UnitAbilityRemove(topbarUnit, abil);
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
-	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Removing: " +abil+IntToString(lv_i+3)));
-	topbarAbils[lv_i] = null;
 	lv_i += 1;
 	for (; topbarAbils[lv_i] != null; lv_i += 1) {
-		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
-		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
+		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
 		topbarAbils[lv_i] = null;
 	}
@@ -198,6 +206,8 @@ void RemoveTopbars () {
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("HyperionYamato");
 		RemoveTopbarAbil("DeployLaserDrill");
+		RemoveTopbarAbil("HiveMindEmulator");
+		RemoveTopbarAbil("PsiDisruptor");
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("ScannerSweepTopbar");
