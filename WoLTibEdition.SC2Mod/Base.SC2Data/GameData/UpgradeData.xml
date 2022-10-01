@@ -298,7 +298,7 @@
         <BonusResourcePerLevel index="Minerals" value="1000"/>
     </CUpgrade>
     <CUpgrade id="ImprovedPlasmaShields">
-        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmor" Value="1.334"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmor" Value="1"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,ShieldArmorLevel" Value="1"/>
         <EditorCategories value="Race:Terran,UpgradeType:ArmorBonus"/>
         <BonusResourcePerLevel index="Minerals" value="3000"/>
