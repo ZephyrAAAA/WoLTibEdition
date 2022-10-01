@@ -808,7 +808,7 @@
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
     <CEffectDamage id="InfestedAbomination">
-        <Amount value="3"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="IonCannonsFleet">
         <EditorCategories value="Race:Protoss"/>

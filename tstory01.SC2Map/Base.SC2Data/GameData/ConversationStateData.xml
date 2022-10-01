@@ -68,6 +68,18 @@
         <Indices index="6">
             <InfoValue index="0" Value="75"/>
         </Indices>
+        <Indices index="17">
+            <InfoValue index="0" Value="180"/>
+        </Indices>
+        <Indices index="18">
+            <InfoValue index="0" Value="180"/>
+        </Indices>
+        <Indices index="19">
+            <InfoValue index="0" Value="180"/>
+        </Indices>
+        <Indices index="20">
+            <InfoValue index="0" Value="200"/>
+        </Indices>
     </CConversationState>
     <CConversationState id="MissionAvailable">
         <Indices index="0">
