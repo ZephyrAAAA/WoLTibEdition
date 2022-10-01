@@ -2885,7 +2885,6 @@
         <EffectArray index="91" removed="1"/>
         <EffectArray index="92" removed="1"/>
     </CUpgrade>
-    <CUpgrade id="ZergGroundArmorsLevel3"/>
     <CUpgrade id="ZergMeleeWeaponsLevel1">
         <EffectArray index="0" Reference="Weapon,Ram,Level"/>
         <EffectArray index="1" Operation="Multiply" Reference="Effect,Ram,Amount" Value="1.3"/>
