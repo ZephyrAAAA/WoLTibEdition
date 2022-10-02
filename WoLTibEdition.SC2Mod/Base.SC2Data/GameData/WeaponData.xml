@@ -802,6 +802,10 @@
         <Backswing value="0"/>
         <Effect value="HailstormLauncherLM"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="PurifierWeapon">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
         <AttackType value="Magic"/>
         <Period value="1"/>

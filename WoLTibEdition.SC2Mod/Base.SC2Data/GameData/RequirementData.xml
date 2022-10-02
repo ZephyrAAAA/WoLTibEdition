@@ -196,6 +196,6 @@
         <NodeArray index="Use" Link="CountUpgradeTriLithiumPowerCellsCompleteOnly"/>
     </CRequirement>
     <CRequirement id="DoesnothaveLaserDrill">
-        <NodeArray index="Show" Link="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter"/>
+        <NodeArray index="Use" Link="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter"/>
     </CRequirement>
 </Catalog>

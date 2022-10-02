@@ -257,6 +257,7 @@
         <FlagArray index="Unstoppable" value="1"/>
         <Collide index="CreepTumor" value="1"/>
         <BehaviorArray Link="CreepGrowthInfested"/>
+        <BehaviorArray Link="CreepTrackInfested"/>
         <Radius value="1"/>
         <SeparationRadius value="1"/>
         <InnerRadius value="0.5"/>
@@ -264,6 +265,9 @@
         <MinimapRadius value="0.75"/>
         <EditorCategories value="ObjectType:Structure"/>
         <AIEvalFactor value="0"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
+        <LifeRegenRate value="100"/>
     </CUnit>
     <CUnit id="FleetTargeter">
         <FlagArray index="Unselectable" value="1"/>
@@ -1197,7 +1201,6 @@
         <EditorFacingAlignment value="90"/>
         <FlagArray index="CreateVisible" value="1"/>
         <FlagArray index="Unhighlightable" value="0"/>
-        <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="Destructible" value="1"/>
         <FlagArray index="NoPortraitTalk" value="1"/>
@@ -2066,6 +2069,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="0"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="DevourerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2838,6 +2842,7 @@
         <BehaviorArray Link="HailstormLaunchers"/>
         <WeaponArray Link="HailstormLauncherMerc"/>
         <AbilArray index="3" removed="1"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="Hatchery">
         <ArmorType value="Hero"/>
@@ -3247,6 +3252,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
+        <SpeedMultiplierCreep value="2"/>
     </CUnit>
     <CUnit id="InfestedTerranCampaignBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3519,6 +3525,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <BehaviorArray Link="HailstormLaunchers"/>
         <WeaponArray Link="HailstormLauncher"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="MarauderACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3553,6 +3560,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="MarineACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3611,10 +3619,7 @@
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <AbilArray index="1" Link="move"/>
         <AbilArray index="2" Link="attack"/>
-    </CUnit>
-    <CUnit id="MedicACGluescreenDummy">
-        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="MedicSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -4480,6 +4485,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <FogVisibility value="Visible"/>
+        <ArmorType value="Fort"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="PurifierBlastMarkUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4569,6 +4576,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmor value="1"/>
+        <WeaponArray index="0" Link="RaynorGaussRifle"/>
+        <BehaviorArray Link="CommandoSniperResist"/>
     </CUnit>
     <CUnit id="Raynor01">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4578,7 +4587,6 @@
         <LifeMax value="250"/>
         <LifeArmor value="1"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
-        <AlliedPushPriority value="11"/>
     </CUnit>
     <CUnit id="RaynorCommando">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4604,6 +4612,7 @@
         </CardLayouts>
         <LifeStart value="60"/>
         <LifeMax value="60"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="ReaperPlacement">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6277,10 +6286,6 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
-    <CUnit id="TychusMedicACGluescreenDummy">
-        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-    </CUnit>
     <CUnit id="TychusReaperACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6448,6 +6453,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <Food value="0"/>
+        <AlliedPushPriority value="-1"/>
     </CUnit>
     <CUnit id="WarPigSquad" parent="BaseSquad">
         <Race value="Terr"/>

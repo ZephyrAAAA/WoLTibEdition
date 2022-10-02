@@ -17,6 +17,23 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="25"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="AirTransportIntroCP">
+        <EditorCategories value=""/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="AirTransportIntroEnum"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumMagazine id="AirTransportIntroEnum">
+        <EditorCategories value=""/>
+        <EffectInternal value="AirTransportIntroLoad"/>
+        <EffectExternal value="AirTransportIntroLoad"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectEnumMagazine>
+    <CEffectIssueOrder id="AirTransportIntroLoad">
+        <EditorCategories value=""/>
+        <Abil value="AirTransport"/>
+        <AbilCmdIndex value="4"/>
+    </CEffectIssueOrder>
     <CEffectEnumMagazine id="AirTransportLoadIterate2">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -231,11 +248,23 @@
         <EditorCategories value=""/>
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
+    <CEffectEnumTrackedUnits id="CreepDeathInfestedBranch">
+        <EditorCategories value=""/>
+        <BehaviorLink value="CreepTrackInfested"/>
+        <TrackerUnit Value="Target"/>
+        <Effect value="CreepDeathInfestedSet"/>
+    </CEffectEnumTrackedUnits>
     <CEffectEnumTrackedUnits id="CreepDeathInfestedEnum">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
-        <Effect value="CreepDeathInfested"/>
+        <Effect value="CreepDeathInfestedSet"/>
+        <TrackerUnit Value="Source"/>
     </CEffectEnumTrackedUnits>
+    <CEffectSet id="CreepDeathInfestedSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CreepDeathInfestedBranch"/>
+        <EffectArray value="CreepDeathInfested"/>
+    </CEffectSet>
     <CEffectEnumTrackedUnits id="CreepSpreadDistanceCheck">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
@@ -306,6 +335,7 @@
         <EditorCategories value=""/>
         <EffectArray value="CreepSpreadDistanceCheck"/>
         <EffectArray value="CreepTrackInfested"/>
+        <EffectArray value="CreepTrackInfestedSource"/>
         <EffectArray value="CreepSpreadInfestedAB"/>
     </CEffectSet>
     <CEffectDamage id="CreepSpreadTooClose">
@@ -317,6 +347,12 @@
     <CEffectAddTrackedUnit id="CreepTrackInfested">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectAddTrackedUnit id="CreepTrackInfestedSource">
+        <EditorCategories value=""/>
+        <BehaviorLink value="CreepTrackInfested"/>
+        <TrackerUnit Value="Source"/>
         <TrackedUnit Value="Target"/>
     </CEffectAddTrackedUnit>
     <CEffectDamage id="DeathRecallD">
@@ -1206,6 +1242,28 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="PerditionTurretFlameThrowerCreatePersistent">
+        <PeriodCount value="16"/>
+        <PeriodicOffsetArray value="0.5,-4,0"/>
+        <PeriodicOffsetArray value="-0.5,-4,0"/>
+        <PeriodicPeriodArray index="0" value="0"/>
+        <PeriodicPeriodArray index="1" removed="1"/>
+        <PeriodicPeriodArray index="2" removed="1"/>
+        <PeriodicPeriodArray index="3" removed="1"/>
+        <PeriodicPeriodArray index="4" removed="1"/>
+        <PeriodicPeriodArray index="5" removed="1"/>
+        <PeriodicPeriodArray index="6" removed="1"/>
+        <PeriodicPeriodArray index="7" removed="1"/>
+        <PeriodicPeriodArray index="8" removed="1"/>
+        <PeriodicPeriodArray index="9" removed="1"/>
+        <PeriodicPeriodArray index="10" removed="1"/>
+        <PeriodicPeriodArray index="11" removed="1"/>
+        <PeriodicPeriodArray index="12" removed="1"/>
+        <PeriodicPeriodArray index="13" removed="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="PerditionTurretFlameThrowerSet">
+        <EffectArray index="1" value="PerditionTurretFlameThrowerSearchArea"/>
+    </CEffectSet>
     <CEffectRemoveBehavior id="PerditionTurretPlace">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -1262,7 +1320,7 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="MercGroundDrop"/>
         <SpawnUnit value="HammerSecuritiesSquad"/>
-        <SpawnCount value="3"/>
+        <SpawnCount value="2"/>
     </CEffectCreateUnit>
     <CEffectCreateUnit id="DropSiegeBreakers">
         <ValidatorArray value="HasSiegeBreakers"/>
@@ -1278,7 +1336,7 @@
         <WhichLocation Value="TargetUnitOrPoint"/>
         <SpawnEffect value="MercGroundDrop"/>
         <SpawnUnit value="WarPigSquad"/>
-        <SpawnCount value="2"/>
+        <SpawnCount value="3"/>
     </CEffectCreateUnit>
     <CEffectDamage id="EyeBeamsGroundLineDamage">
         <Amount value="20"/>
@@ -1409,6 +1467,9 @@
     <CEffectDamage id="PsiStormDamageInitial">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="PurifierBeamDamage">
+        <Amount value="16"/>
+    </CEffectDamage>
     <CEffectDamage id="RaynorSnipeDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -1512,6 +1573,12 @@
         <Abil value="ProbeHarvest"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectCreatePersistent id="RescuePods">
+        <FinalEffect value="RescuePodsSwitch"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="RescuePodsDamage">
+        <VitalFractionMax index="Shields" value="1"/>
+    </CEffectDamage>
     <CEffectIssueOrder id="ResetRally">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -1519,6 +1586,11 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectSwitch id="RescuePodsSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="IsSquad" Effect="CCLoadDummy"/>
+        <CaseArray Effect="RescuePodsDamage"/>
+    </CEffectSwitch>
     <CEffectDamage id="RetributionFieldDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -1662,7 +1734,7 @@
     <CEffectIssueOrder id="AirTransportUnloadSquad">
         <EditorCategories value=""/>
         <Abil value="AirTransport"/>
-        <AbilCmdIndex value="2"/>
+        <AbilCmdIndex value="1"/>
         <Target Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CraneBuilt">
