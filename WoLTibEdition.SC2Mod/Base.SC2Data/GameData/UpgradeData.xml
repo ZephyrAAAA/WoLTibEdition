@@ -80,6 +80,9 @@
         <EffectArray Operation="Divide" Reference="Abil,Starport2Train,InfoArray[Train9].Resource[Vespene]" Value="5"/>
         <EffectArray Operation="Multiply" Reference="Abil,Starport2Train,InfoArray[Train9].Time" Value="0.800000"/>
     </CUpgrade>
+    <CUpgrade id="AnabolicSynthesis">
+        <EffectArray Reference="Unit,Omegalisk,Speed" Value="0.894500"/>
+    </CUpgrade>
     <CUpgrade id="AresClassWeaponsSystem">
         <EffectArray index="0" Reference="Unit,Goliath,LifeMax" Value="50"/>
         <EffectArray index="1" Reference="Unit,Goliath,LifeStart" Value="50"/>
@@ -166,6 +169,12 @@
     </CUpgrade>
     <CUpgrade id="Charge">
         <EffectArray index="0" Value="1.125000"/>
+    </CUpgrade>
+    <CUpgrade id="ChitinousPlating">
+        <EffectArray Reference="Unit,Omegalisk,LifeArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,Omegalisk,LifeArmor" Value="4"/>
+        <EffectArray Reference="Unit,OmegaliskBurrowed,LifeArmorLevel" Value="2"/>
+        <EffectArray Reference="Unit,OmegaliskBurrowed,LifeArmor" Value="4"/>
     </CUpgrade>
     <CUpgrade id="CombatShield">
         <EffectArray Reference="Unit,MarineSquad,LifeMax" Value="60"/>
@@ -2797,42 +2806,42 @@
         <EffectArray index="1" Reference="Unit,Roach,LifeArmor" Value="2"/>
         <EffectArray index="2" Reference="Unit,RoachBurrowed,LifeArmorLevel"/>
         <EffectArray index="3" Reference="Unit,RoachBurrowed,LifeArmor" Value="2"/>
-        <EffectArray index="4" Operation="AddBaseMultiply" Reference="Unit,Ultralisk,Speed" Value="0.398400"/>
-        <EffectArray index="5" Operation="AddBaseMultiply" Reference="Unit,Omegalisk,Speed" Value="0.398400"/>
-        <EffectArray index="6" Operation="Set" Reference="Unit,Drone,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="7" Operation="Set" Reference="Unit,DroneBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="8" Operation="Set" Reference="Unit,Zergling,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="9" Operation="Set" Reference="Unit,ZerglingBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="10" Operation="Set" Reference="Unit,Hydralisk,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="11" Operation="Set" Reference="Unit,HydraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="12" Operation="Set" Reference="Unit,Baneling,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="13" Operation="Set" Reference="Unit,BanelingBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="14" Operation="Set" Reference="Unit,Roach,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="15" Operation="Set" Reference="Unit,RoachBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="16" Operation="Set" Reference="Unit,Ultralisk,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="17" Operation="Set" Reference="Unit,UltraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="18" Operation="Set" Reference="Unit,Queen,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="19" Operation="Set" Reference="Unit,QueenBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="20" Operation="Set" Reference="Unit,Infestor,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="21" Operation="Set" Reference="Unit,Broodling,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="22" Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="4"/>
-        <EffectArray index="23" Operation="Set" Reference="Unit,BanelingCocoon,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="24" Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="4"/>
-        <EffectArray index="25" Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="4"/>
-        <EffectArray index="26" Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="4"/>
-        <EffectArray index="27" Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="4"/>
-        <EffectArray index="28" Operation="Set" Reference="Unit,InfestedAbomination,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="29" Operation="Set" Reference="Unit,InfestedAbominationBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="30" Operation="Set" Reference="Unit,Lurker,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="31" Operation="Set" Reference="Unit,LurkerBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="32" Operation="Set" Reference="Unit,Omegalisk,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="33" Operation="Set" Reference="Unit,OmegaliskBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="34" Operation="Set" Reference="Unit,Swarmling,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="35" Operation="Set" Reference="Unit,HunterKiller,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="36" Operation="Set" Reference="Unit,HunterKillerBurrowed,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="37" Operation="Set" Reference="Unit,KerriganChar,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="38" Operation="Set" Reference="Unit,HybridDestroyer,SpeedMultiplierCreep" Value="2"/>
-        <EffectArray index="39" Operation="Set" Reference="Unit,HybridReaver,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="4" Operation="Set" Reference="Unit,Drone,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="5" Operation="Set" Reference="Unit,DroneBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="6" Operation="Set" Reference="Unit,Zergling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="7" Operation="Set" Reference="Unit,ZerglingBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="8" Operation="Set" Reference="Unit,Hydralisk,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="9" Operation="Set" Reference="Unit,HydraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="10" Operation="Set" Reference="Unit,Baneling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="11" Operation="Set" Reference="Unit,BanelingBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="12" Operation="Set" Reference="Unit,Roach,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="13" Operation="Set" Reference="Unit,RoachBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="14" Operation="Set" Reference="Unit,Ultralisk,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="15" Operation="Set" Reference="Unit,UltraliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="16" Operation="Set" Reference="Unit,Queen,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="17" Operation="Set" Reference="Unit,QueenBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="18" Operation="Set" Reference="Unit,Infestor,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="19" Operation="Set" Reference="Unit,Broodling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="20" Operation="Set" Reference="Unit,InfestorTerranBurrowed,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="21" Operation="Set" Reference="Unit,BanelingCocoon,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="22" Operation="Set" Reference="Unit,InfestedCivilian,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="23" Operation="Set" Reference="Unit,InfestedCivilianBurrowed,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="24" Operation="Set" Reference="Unit,InfestedTerranCampaign,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="25" Operation="Set" Reference="Unit,InfestedTerranCampaignBurrowed,SpeedMultiplierCreep" Value="4"/>
+        <EffectArray index="26" Operation="Set" Reference="Unit,InfestedAbomination,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="27" Operation="Set" Reference="Unit,InfestedAbominationBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="28" Operation="Set" Reference="Unit,Lurker,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="29" Operation="Set" Reference="Unit,LurkerBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="30" Operation="Set" Reference="Unit,Omegalisk,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="31" Operation="Set" Reference="Unit,OmegaliskBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="32" Operation="Set" Reference="Unit,Swarmling,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="33" Operation="Set" Reference="Unit,HunterKiller,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="34" Operation="Set" Reference="Unit,HunterKillerBurrowed,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="35" Operation="Set" Reference="Unit,KerriganChar,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="36" Operation="Set" Reference="Unit,HybridDestroyer,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="37" Operation="Set" Reference="Unit,HybridReaver,SpeedMultiplierCreep" Value="2"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
         <EffectArray index="40" removed="1"/>
         <EffectArray index="41" removed="1"/>
         <EffectArray index="42" removed="1"/>
@@ -2844,6 +2853,101 @@
         <EffectArray index="48" removed="1"/>
         <EffectArray index="49" removed="1"/>
         <EffectArray index="50" removed="1"/>
+        <EffectArray index="51" removed="1"/>
+        <EffectArray index="52" removed="1"/>
+        <EffectArray index="53" removed="1"/>
+        <EffectArray index="54" removed="1"/>
+        <EffectArray index="55" removed="1"/>
+        <EffectArray index="56" removed="1"/>
+        <EffectArray index="57" removed="1"/>
+        <EffectArray index="58" removed="1"/>
+        <EffectArray index="59" removed="1"/>
+        <EffectArray index="60" removed="1"/>
+        <EffectArray index="61" removed="1"/>
+        <EffectArray index="62" removed="1"/>
+        <EffectArray index="63" removed="1"/>
+        <EffectArray index="64" removed="1"/>
+        <EffectArray index="65" removed="1"/>
+        <EffectArray index="66" removed="1"/>
+        <EffectArray index="67" removed="1"/>
+        <EffectArray index="68" removed="1"/>
+        <EffectArray index="69" removed="1"/>
+        <EffectArray index="70" removed="1"/>
+        <EffectArray index="71" removed="1"/>
+        <EffectArray index="72" removed="1"/>
+        <EffectArray index="73" removed="1"/>
+        <EffectArray index="74" removed="1"/>
+        <EffectArray index="75" removed="1"/>
+        <EffectArray index="76" removed="1"/>
+        <EffectArray index="77" removed="1"/>
+        <EffectArray index="78" removed="1"/>
+        <EffectArray index="79" removed="1"/>
+        <EffectArray index="80" removed="1"/>
+        <EffectArray index="81" removed="1"/>
+        <EffectArray index="82" removed="1"/>
+        <EffectArray index="83" removed="1"/>
+        <EffectArray index="84" removed="1"/>
+        <EffectArray index="85" removed="1"/>
+        <EffectArray index="86" removed="1"/>
+        <EffectArray index="87" removed="1"/>
+        <EffectArray index="88" removed="1"/>
+        <EffectArray index="89" removed="1"/>
+        <EffectArray index="90" removed="1"/>
+        <EffectArray index="91" removed="1"/>
+        <EffectArray index="92" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergGroundArmorsLevel3">
+        <EffectArray index="0" Reference="Unit,Zergling,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,Zergling,LifeArmor" Value="2"/>
+        <EffectArray index="2" Reference="Unit,ZerglingBurrowed,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,ZerglingBurrowed,LifeArmor" Value="2"/>
+        <EffectArray index="4" Reference="Unit,Hydralisk,LifeArmorLevel"/>
+        <EffectArray index="5" Reference="Unit,Hydralisk,LifeArmor"/>
+        <EffectArray index="6" Reference="Unit,HydraliskBurrowed,LifeArmorLevel"/>
+        <EffectArray index="7" Reference="Unit,HydraliskBurrowed,LifeArmor"/>
+        <EffectArray index="8" Reference="Unit,Baneling,LifeArmorLevel"/>
+        <EffectArray index="9" Reference="Unit,Baneling,LifeArmor" Value="2"/>
+        <EffectArray index="10" Reference="Unit,BanelingBurrowed,LifeArmorLevel"/>
+        <EffectArray index="11" Reference="Unit,BanelingBurrowed,LifeArmor" Value="2"/>
+        <EffectArray index="12" Reference="Unit,Queen,LifeArmor"/>
+        <EffectArray index="13" Reference="Unit,Queen,LifeArmorLevel"/>
+        <EffectArray index="14" Reference="Unit,QueenBurrowed,LifeArmor"/>
+        <EffectArray index="15" Reference="Unit,QueenBurrowed,LifeArmorLevel"/>
+        <EffectArray index="16" Reference="Unit,Infestor,LifeArmorLevel"/>
+        <EffectArray index="17" Reference="Unit,Infestor,LifeArmor"/>
+        <EffectArray index="18" Reference="Unit,InfestorBurrowed,LifeArmorLevel"/>
+        <EffectArray index="19" Reference="Unit,InfestorBurrowed,LifeArmor"/>
+        <EffectArray index="20" Reference="Unit,Broodling,LifeArmor" Value="1.000000"/>
+        <EffectArray index="21" Reference="Unit,Broodling,LifeArmorLevel"/>
+        <EffectArray index="22" Reference="Unit,InfestorTerran,LifeArmor"/>
+        <EffectArray index="23" Reference="Unit,InfestorTerranBurrowed,LifeArmor"/>
+        <EffectArray index="24" Reference="Unit,InfestorTerran,LifeArmorLevel"/>
+        <EffectArray index="25" Reference="Unit,InfestorTerranBurrowed,LifeArmorLevel"/>
+        <EffectArray index="26" Reference="Unit,BanelingCocoon,LifeArmorLevel"/>
+        <EffectArray index="27" Reference="Unit,BanelingCocoon,LifeArmor" Value="2"/>
+        <EffectArray index="28" Reference="Unit,InfestedCivilian,LifeArmor" Value="1.000000"/>
+        <EffectArray index="29" Reference="Unit,InfestedCivilian,LifeArmorLevel"/>
+        <EffectArray index="30" Reference="Unit,InfestedCivilianBurrowed,LifeArmor" Value="1.000000"/>
+        <EffectArray index="31" Reference="Unit,InfestedCivilianBurrowed,LifeArmorLevel"/>
+        <EffectArray index="32" Reference="Unit,InfestedTerranCampaign,LifeArmor"/>
+        <EffectArray index="33" Reference="Unit,InfestedTerranCampaign,LifeArmorLevel"/>
+        <EffectArray index="34" Reference="Unit,InfestedTerranCampaignBurrowed,LifeArmor" Value="1.000000"/>
+        <EffectArray index="35" Reference="Unit,InfestedTerranCampaignBurrowed,LifeArmorLevel"/>
+        <EffectArray index="36" Reference="Unit,InfestedAbomination,LifeArmor" Value="2"/>
+        <EffectArray index="37" Reference="Unit,InfestedAbomination,LifeArmorLevel"/>
+        <EffectArray index="38" Reference="Unit,InfestedAbominationBurrowed,LifeArmor" Value="2"/>
+        <EffectArray index="39" Reference="Unit,InfestedAbominationBurrowed,LifeArmorLevel"/>
+        <EffectArray index="40" Operation="Add" Reference="Unit,Swarmling,LifeArmor" Value="1.000000"/>
+        <EffectArray index="41" Operation="Add" Reference="Unit,Swarmling,LifeArmorLevel" Value="1"/>
+        <EffectArray index="42" Operation="Add" Reference="Unit,HunterKiller,LifeArmor" Value="1.000000"/>
+        <EffectArray index="43" Operation="Add" Reference="Unit,HunterKiller,LifeArmorLevel" Value="1"/>
+        <EffectArray index="44" Operation="Add" Reference="Unit,HunterKillerBurrowed,LifeArmor" Value="1.000000"/>
+        <EffectArray index="45" Operation="Add" Reference="Unit,HunterKillerBurrowed,LifeArmorLevel" Value="1"/>
+        <EffectArray index="46" Operation="Add" Reference="Unit,KerriganChar,LifeArmor" Value="1.000000"/>
+        <EffectArray index="47" Operation="Add" Reference="Unit,HybridDestroyer,LifeArmor" Value="2"/>
+        <EffectArray index="48" Operation="Add" Reference="Unit,HybridDestroyer,LifeArmorLevel" Value="1"/>
+        <EffectArray index="49" Operation="Add" Reference="Unit,HybridReaver,LifeArmor" Value="2"/>
+        <EffectArray index="50" Operation="Add" Reference="Unit,HybridReaver,LifeArmorLevel" Value="1"/>
         <EffectArray index="51" removed="1"/>
         <EffectArray index="52" removed="1"/>
         <EffectArray index="53" removed="1"/>
@@ -2979,6 +3083,51 @@
         <EffectArray index="42" removed="1"/>
         <EffectArray index="43" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="ZergMeleeWeaponsLevel3">
+        <EffectArray index="1" Reference="Weapon,KaiserBlades,Level"/>
+        <EffectArray index="2" Reference="Weapon,Ram,Level"/>
+        <EffectArray index="3" Operation="Multiply" Reference="Effect,NeedleClaws,Amount" Value="1.5"/>
+        <EffectArray index="4" Reference="Weapon,NeedleClaws,Level"/>
+        <EffectArray index="5" Reference="Weapon,VolatileBurstDummy,Level" Value="1"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,Claws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Weapon,NeedleClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,KaiserBlades,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,Ram,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="10" Operation="Multiply" Reference="Effect,InfestedAbomination,Amount" Value="1.4"/>
+        <EffectArray index="11" Reference="Weapon,InfestedAbomination,Level" Value="1"/>
+        <EffectArray index="12" Reference="Weapon,InfestedClaws,Level"/>
+        <EffectArray index="13" Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
+        <EffectArray index="14" Reference="Weapon,Omegalisk,Level" Value="1"/>
+        <EffectArray index="15" Operation="Multiply" Reference="Effect,Swarmling,Amount" Value="1.5"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,Swarmling,Level" Value="1"/>
+        <EffectArray index="17" Operation="Multiply" Reference="Effect,Val03RazorTalonsDamage,Amount" Value="1.3"/>
+        <EffectArray index="18" Operation="Add" Reference="Weapon,Val03RazorTalons,Level" Value="1"/>
+        <EffectArray index="19" Operation="Multiply" Reference="Effect,ShockDDamage,Amount" Value="1.3"/>
+        <EffectArray index="20" Reference="Weapon,HybridD,Level"/>
+        <EffectArray index="21" Operation="Multiply" Reference="Effect,ShockEDamage,Amount" Value="1.3"/>
+        <EffectArray index="22" Reference="Weapon,HybridE,Level"/>
+        <EffectArray index="23" Operation="Set" Reference="Weapon,InfestedAbomination,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="24" Operation="Set" Reference="Weapon,InfestedClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="25" Operation="Set" Reference="Weapon,OmegaliskHeadAttack,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="26" Operation="Set" Reference="Weapon,Omegalisk,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="27" Operation="Set" Reference="Weapon,Swarmling,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="28" Operation="Set" Reference="Weapon,Val03RazorTalons,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="29" Operation="Set" Reference="Weapon,HybridD,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="30" Operation="Set" Reference="Weapon,HybridE,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="31" removed="1"/>
+        <EffectArray index="32" removed="1"/>
+        <EffectArray index="33" removed="1"/>
+        <EffectArray index="34" removed="1"/>
+        <EffectArray index="35" removed="1"/>
+        <EffectArray index="36" removed="1"/>
+        <EffectArray index="37" removed="1"/>
+        <EffectArray index="38" removed="1"/>
+        <EffectArray index="39" removed="1"/>
+        <EffectArray index="40" removed="1"/>
+        <EffectArray index="41" removed="1"/>
+        <EffectArray index="42" removed="1"/>
+        <EffectArray index="43" removed="1"/>
+    </CUpgrade>
     <CUpgrade id="ZergMissileWeaponsLevel1">
         <EffectArray index="1" Operation="Multiply" Value="1.4"/>
         <EffectArray index="2" Operation="Multiply" Reference="Effect,AcidSpines,Amount" Value="1.2"/>
@@ -2990,10 +3139,10 @@
         <EffectArray index="8" Reference="Weapon,InfestedTerranCampaign,Level"/>
         <EffectArray index="9" Reference="Weapon,Lurker,Level" Value="1"/>
         <EffectArray index="10" Operation="Multiply" Reference="Effect,LurkerU,Amount" Value="1.3"/>
-        <EffectArray index="11" Reference="Effect,Val03PsiBlastDamage,Amount" Value="5.000000"/>
-        <EffectArray index="12" Operation="Add" Reference="Weapon,Val03QueenOfBladesPsiBlast,Level" Value="1"/>
-        <EffectArray index="13" Operation="Multiply" Reference="Effect,AcidSalivaU,Amount" Value="1.2"/>
-        <EffectArray index="14" Operation="Multiply" Reference="Effect,HydraliskMelee,Amount" Value="1.4"/>
+        <EffectArray index="11" Operation="Multiply" Reference="Effect,AcidSalivaU,Amount" Value="1.2"/>
+        <EffectArray index="12" Operation="Multiply" Reference="Effect,HydraliskMelee,Amount" Value="1.4"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
         <EffectArray index="15" removed="1"/>
         <EffectArray index="16" removed="1"/>
         <EffectArray index="17" removed="1"/>
@@ -3037,6 +3186,37 @@
         <EffectArray index="23" removed="1"/>
         <EffectArray index="24" removed="1"/>
         <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergMissileWeaponsLevel3">
+        <EffectArray index="1" Reference="Weapon,HydraliskMelee,RateMultiplier" Value="0.2"/>
+        <EffectArray index="3" Operation="Multiply" Value="1.5"/>
+        <EffectArray index="4" Reference="Weapon,AcidSaliva,Level" Value="1"/>
+        <EffectArray index="5" Reference="Weapon,AcidSaliva,RateMultiplier" Value="0.5"/>
+        <EffectArray index="6" Reference="Weapon,AcidSpines,Level" Value="1"/>
+        <EffectArray index="7" Reference="Weapon,InfestedGuassRifle,Level"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,NeedleSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Weapon,AcidSaliva,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="12" Reference="Weapon,InfestedGuassRifle,Icon"/>
+        <EffectArray index="13" Operation="Add" Reference="Weapon,InfestedTerranCampaign,Level" Value="1"/>
+        <EffectArray index="14" Operation="Add" Reference="Weapon,HunterKiller,RateMultiplier" Value="0.2"/>
+        <EffectArray index="15" Operation="Add" Reference="Weapon,HunterKillerMelee,RateMultiplier" Value="0.2"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,HunterKiller,Level" Value="1"/>
+        <EffectArray index="17" Reference="Weapon,Lurker,Level" Value="1"/>
+        <EffectArray index="18" Operation="Multiply" Reference="Effect,Val03PsiBlastDamage,Amount" Value="1.3"/>
+        <EffectArray index="19" Reference="Weapon,Val03QueenOfBladesPsiBlast,Level" Value="1"/>
+        <EffectArray index="20" Operation="Set" Reference="Weapon,InfestedTerranCampaign,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="21" Operation="Set" Reference="Weapon,HunterKiller,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="22" Operation="Set" Reference="Weapon,Lurker,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="23" Operation="Set" Reference="Weapon,Val03QueenOfBladesPsiBlast,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
+        <EffectArray index="24" Reference="Weapon,NeedleSpines,RateMultiplier" Value="0.2"/>
+        <EffectArray index="25" Reference="Weapon,RoachMelee,RateMultiplier" Value="0.5"/>
         <EffectArray index="26" removed="1"/>
         <EffectArray index="27" removed="1"/>
         <EffectArray index="28" removed="1"/>
