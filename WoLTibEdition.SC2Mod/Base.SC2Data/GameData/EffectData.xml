@@ -17,6 +17,23 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="25"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="AirTransportIntroCP">
+        <EditorCategories value=""/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="AirTransportIntroEnum"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumMagazine id="AirTransportIntroEnum">
+        <EditorCategories value=""/>
+        <EffectInternal value="AirTransportIntroLoad"/>
+        <EffectExternal value="AirTransportIntroLoad"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectEnumMagazine>
+    <CEffectIssueOrder id="AirTransportIntroLoad">
+        <EditorCategories value=""/>
+        <Abil value="AirTransport"/>
+        <AbilCmdIndex value="4"/>
+    </CEffectIssueOrder>
     <CEffectEnumMagazine id="AirTransportLoadIterate2">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
