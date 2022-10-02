@@ -367,11 +367,6 @@
         <Radius value="0.5"/>
         <PowerLink value="PowerSource"/>
     </CBehaviorPowerSource>
-    <CBehaviorBuff id="Precursor">
-        <Modification>
-            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
-        </Modification>
-    </CBehaviorBuff>
     <CBehaviorBuff id="PrecursorMerc">
         <InitialEffect value="MercSquadDropDelay"/>
         <FinalEffect value="RemovePrecursorMercIterate"/>
@@ -449,6 +444,7 @@
             <StateFlags index="Invulnerable" value="1"/>
             <StateFlags index="SuppressLifeRegen" value="1"/>
             <StateFlags index="SuppressShieldsRegen" value="1"/>
+            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorUnitTracker id="SquadTracker">
@@ -721,16 +717,6 @@
         </VeterancyLevelArray>
         <XPFraction index="Kills" value="0"/>
     </CBehaviorVeterancy>
-    <CBehaviorBuff id="VortexBehavior">
-        <Modification>
-            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
-        </Modification>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="VortexBehaviorEnemy">
-        <Modification>
-            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
-        </Modification>
-    </CBehaviorBuff>
     <CBehaviorBuff id="ZeratulHoldFire">
         <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

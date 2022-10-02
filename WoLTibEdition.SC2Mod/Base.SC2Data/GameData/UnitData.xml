@@ -1201,7 +1201,6 @@
         <EditorFacingAlignment value="90"/>
         <FlagArray index="CreateVisible" value="1"/>
         <FlagArray index="Unhighlightable" value="0"/>
-        <FlagArray index="Untooltipable" value="0"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="Destructible" value="1"/>
         <FlagArray index="NoPortraitTalk" value="1"/>
