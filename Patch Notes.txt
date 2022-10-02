@@ -94,8 +94,10 @@ You now start with an Engineering Bay
 You start with 2 Supply Depots instead of 3
 You start with a Sensor Tower
 Shuffled buildings around to give better build radius coverage
-*Removed free vision from each settlement
-*Infested are spawned faster
+Removed free vision from each settlement
+All infested spawn twice as fast.
+Civilians and marines spawn twice as many.
+Aberrations start coming in half the time
 Stopping reinfestations grants armoury upgrades
 Gives less base money, but gives money for each settlement saved.
 Virophage health is now always based on difficulty.
