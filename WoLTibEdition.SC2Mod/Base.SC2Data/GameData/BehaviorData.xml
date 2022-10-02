@@ -447,6 +447,8 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
             <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="SuppressLifeRegen" value="1"/>
+            <StateFlags index="SuppressShieldsRegen" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorUnitTracker id="SquadTracker">
