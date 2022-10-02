@@ -762,14 +762,23 @@
     <CAbilArmMagazine id="DevilDogSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="DevilDog">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -797,14 +806,23 @@
     <CAbilArmMagazine id="HammerSecuritiesSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="2" Distance="0.25" Manage="Recall" Unit="HammerSecurity">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -1824,14 +1842,23 @@
     <CAbilArmMagazine id="MarauderSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="2" Distance="0.25" Manage="Recall" Unit="Marauder">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -1843,14 +1870,23 @@
     <CAbilArmMagazine id="FirebatSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Firebat">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -1864,14 +1900,23 @@
     <CAbilArmMagazine id="MarineSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="6" Distance="0.25" Manage="Recall" Unit="Marine">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -1910,14 +1955,23 @@
     <CAbilArmMagazine id="MedicSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="3" Distance="0.25" Manage="Recall" Unit="Medic">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -1968,14 +2022,23 @@
     <CAbilArmMagazine id="ReaperSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="4" Distance="0.25" Manage="Recall" Unit="Reaper">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -2178,14 +2241,23 @@
     <CAbilArmMagazine id="WarPigSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
+        <Flags index="AutoCreate" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="Retarget" value="1"/>
         <Flags index="ShowStatus" value="0"/>
+        <Flags index="Transient" value="1"/>
         <Leash value="0.55"/>
         <InfoArray index="Ammo1" CountStart="6" Distance="0.25" Manage="Recall" Unit="WarPig">
-            <Charge CountUse="1" Link="Abil/##id##"/>
+            <Charge>
+                <CountMax value="5"/>
+                <CountUse value="1"/>
+                <Link value="Squads"/>
+                <Location value="Unit"/>
+            </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine" State="Suppressed"/>
+            <Button DefaultButtonFace="Marine"/>
+            <Flags index="AutoBuild" value="1"/>
+            <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
         </InfoArray>
         <EffectArray index="Create" value="SquadUnit"/>
@@ -2259,4 +2331,9 @@
         <AcquireAttackers value="1"/>
         <Flags index="Smart" value="0"/>
     </CAbilEffectTarget>
+    <CAbilQueue id="que1Passive">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <QueueSize value="1"/>
+        <Flags index="Passive" value="1"/>
+    </CAbilQueue>
 </Catalog>

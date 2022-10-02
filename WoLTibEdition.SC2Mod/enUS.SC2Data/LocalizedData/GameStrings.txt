@@ -82,6 +82,7 @@ Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress
 Abil/Name/VehicleMercenaries=Vehicle Mercenaries
 Abil/Name/WarPigSquad=War Pig Squad
 Abil/Name/ZeratulSeek=Zeratul Seek
+Abil/Name/que1Passive=Queue (1) Passive
 Alert/Text/MULEExpired=Structure complete.
 Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/CreepSpreadInfested=CreepSpreadInfested

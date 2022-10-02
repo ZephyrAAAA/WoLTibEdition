@@ -347,7 +347,8 @@
         <Range value="0.1"/>
         <Period value="0.75"/>
         <Effect value="ExplosiveChargesDelay"/>
-        <UninterruptibleDelay value="0.75"/>
+        <DamagePoint value="0"/>
+        <LegacyOptions index="KeepChanneling" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">
         <AttackType value="Siege"/>
