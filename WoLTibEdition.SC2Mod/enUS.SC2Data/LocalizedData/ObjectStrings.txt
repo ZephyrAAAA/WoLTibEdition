@@ -596,6 +596,7 @@ Effect/EditorPrefix/PowerStructure=Zeratul -
 Effect/EditorPrefix/PowerStructureAB=Zeratul -
 Effect/EditorPrefix/PowerStructureRB=Zeratul -
 Effect/EditorPrefix/RailgunLaunch=Raynor -
+Effect/EditorPrefix/RescuePodsSwitch=Hercules -
 Effect/EditorPrefix/ScoutAirFleet=Fleet -
 Effect/EditorPrefix/ScoutAirLMLeftFleet=Fleet -
 Effect/EditorPrefix/ScoutAirLMRightFleet=Fleet -

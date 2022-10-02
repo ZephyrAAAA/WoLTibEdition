@@ -1553,6 +1553,12 @@
         <Abil value="ProbeHarvest"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectCreatePersistent id="RescuePods">
+        <FinalEffect value="RescuePodsSwitch"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="RescuePodsDamage">
+        <VitalFractionMax index="Shields" value="1"/>
+    </CEffectDamage>
     <CEffectIssueOrder id="ResetRally">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
@@ -1560,6 +1566,11 @@
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectSwitch id="RescuePodsSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="IsSquad" Effect="CCLoadDummy"/>
+        <CaseArray Effect="RescuePodsDamage"/>
+    </CEffectSwitch>
     <CEffectDamage id="RetributionFieldDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -1703,7 +1714,7 @@
     <CEffectIssueOrder id="AirTransportUnloadSquad">
         <EditorCategories value=""/>
         <Abil value="AirTransport"/>
-        <AbilCmdIndex value="2"/>
+        <AbilCmdIndex value="1"/>
         <Target Value="TargetUnit"/>
     </CEffectIssueOrder>
     <CEffectApplyBehavior id="CraneBuilt">

@@ -992,7 +992,7 @@
         <Flags index="AllowPassengerSmartCmd" value="0"/>
         <Flags index="AllowSmartCmd" value="0"/>
         <Flags index="ShowStatus" value="0"/>
-        <Range value="5"/>
+        <Range value="7"/>
         <MaxUnloadRange value="5"/>
         <MaxCargoCount value="200"/>
         <TotalCargoSpace value="200"/>
@@ -1017,6 +1017,7 @@
             <Flags index="LeashRetarget" value="1"/>
         </InfoArray>
         <MaxCount value="1"/>
+        <SharedFlags index="DisableWhileDead" value="0"/>
     </CAbilArmMagazine>
     <CAbilArmMagazine id="ArmSiloWithNuke2">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>

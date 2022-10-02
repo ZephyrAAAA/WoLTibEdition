@@ -86,7 +86,7 @@
         <Filters value="Massive;-"/>
     </CValidatorUnitFilters>
     <CValidatorUnitType id="IsSquad">
-        <Value value="BaseSquad"/>
+        <Value value="Alias_Squad"/>
         <Type value="TechAlias"/>
     </CValidatorUnitType>
     <CValidatorUnitType id="IsUnsiegedTank">

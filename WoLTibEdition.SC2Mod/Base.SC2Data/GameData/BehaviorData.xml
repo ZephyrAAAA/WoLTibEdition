@@ -238,6 +238,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DisableValidatorArray value="RapidDeploymentPurchased"/>
         <DisableValidatorArray value="UnitIsBiological"/>
+        <DisableValidatorArray value="NotVortexd"/>
         <Modification>
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
@@ -366,6 +367,11 @@
         <Radius value="0.5"/>
         <PowerLink value="PowerSource"/>
     </CBehaviorPowerSource>
+    <CBehaviorBuff id="Precursor">
+        <Modification>
+            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="PrecursorMerc">
         <InitialEffect value="MercSquadDropDelay"/>
         <FinalEffect value="RemovePrecursorMercIterate"/>
@@ -713,6 +719,11 @@
         </VeterancyLevelArray>
         <XPFraction index="Kills" value="0"/>
     </CBehaviorVeterancy>
+    <CBehaviorBuff id="VortexBehavior">
+        <Modification>
+            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="VortexBehaviorEnemy">
         <Modification>
             <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>

@@ -837,6 +837,7 @@ Effect/Name/RallyIterate=Rally Iterate
 Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
 Effect/Name/RemovePrecursorMercIterate=Remove Precursor Merc Iterate
+Effect/Name/RescuePodsSwitch=Rescue Pods Switch
 Effect/Name/ResetRally=Reset Rally
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
 Effect/Name/ScoutAirFleet=Scout Air
