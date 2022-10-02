@@ -171,6 +171,8 @@
         <AbilArray Link="move"/>
         <AbilArray Link="stop"/>
         <AbilArray Link="attack"/>
+        <AbilArray Link="BaseSquad"/>
+        <AbilArray Link="que1Passive"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
@@ -2502,7 +2504,7 @@
         <LifeStart value="960"/>
         <LifeMax value="960"/>
         <Speed value="2.25"/>
-        <AbilArray Link="DevilDogSquad"/>
+        <AbilArray index="3" Link="DevilDogSquad"/>
         <WeaponArray Link="DevilDogSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,0" Row="1" Column="0"/>
@@ -3509,7 +3511,7 @@
         <LifeStart value="600"/>
         <LifeMax value="600"/>
         <Speed value="2.25"/>
-        <AbilArray Link="FirebatSquad"/>
+        <AbilArray index="3" Link="FirebatSquad"/>
         <WeaponArray Link="FirebatSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="FirebatSquad,0" Row="1" Column="0"/>
@@ -3544,7 +3546,7 @@
         <LifeStart value="250"/>
         <LifeMax value="250"/>
         <Speed value="2.25"/>
-        <AbilArray Link="HammerSecuritiesSquad"/>
+        <AbilArray index="3" Link="HammerSecuritiesSquad"/>
         <WeaponArray Link="HammerSecuritiesSquad"/>
         <WeaponArray Link="HammerSecuritiesSquad@2"/>
         <CardLayouts index="0">
@@ -3628,8 +3630,9 @@
         <LifeMax value="180"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <Speed value="2.25"/>
-        <AbilArray Link="MedicSquad"/>
-        <AbilArray Link="MedicSquadAcquire"/>
+        <AbilArray index="3" Link="MedicSquad"/>
+        <AbilArray index="4" Link="MedicSquadAcquire"/>
+        <AbilArray Link="que1Passive"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
@@ -6064,7 +6067,7 @@
     <CUnit id="MarauderSquad" parent="BaseSquad">
         <Race value="Terr"/>
         <Speed value="2.25"/>
-        <AbilArray Link="MarauderSquad"/>
+        <AbilArray index="3" Link="MarauderSquad"/>
         <WeaponArray Link="MarauderSquad"/>
         <WeaponArray Link="MarauderSquad@2"/>
         <CardLayouts index="0">
@@ -6080,8 +6083,9 @@
         <ArmorType value="Small"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <Speed value="2.25"/>
-        <AbilArray Link="MarineSquad"/>
-        <AbilArray Link="SquadStimpack"/>
+        <AbilArray index="3" Link="MarineSquad"/>
+        <AbilArray index="4" Link="SquadStimpack"/>
+        <AbilArray Link="que1Passive"/>
         <WeaponArray Link="MarineSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarineSquad,Ammo1" Row="1" Column="0"/>
@@ -6094,8 +6098,9 @@
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
         <Speed value="3.8437"/>
-        <AbilArray Link="ReaperSquad"/>
-        <AbilArray Link="BioMode"/>
+        <AbilArray index="3" Link="ReaperSquad"/>
+        <AbilArray index="4" Link="BioMode"/>
+        <AbilArray Link="que1Passive"/>
         <WeaponArray Link="ReaperSquad"/>
         <WeaponArray Link="ReaperSquadCharge"/>
         <CardLayouts index="0">
@@ -6460,8 +6465,9 @@
         <ArmorType value="Small"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <Speed value="2.25"/>
-        <AbilArray Link="WarPigSquad"/>
-        <AbilArray Link="SquadStimpack"/>
+        <AbilArray index="3" Link="WarPigSquad"/>
+        <AbilArray index="4" Link="SquadStimpack"/>
+        <AbilArray Link="que1Passive"/>
         <WeaponArray Link="WarPigSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,0" Row="1" Column="0"/>
