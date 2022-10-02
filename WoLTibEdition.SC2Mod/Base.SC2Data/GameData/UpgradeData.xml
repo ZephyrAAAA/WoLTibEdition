@@ -250,6 +250,8 @@
         <EffectArray Operation="Multiply" Reference="Effect,WreckingCrewFighterUG,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,LanzerTorpedoesDamageG,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,TwinIbiksCannon,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,DuskWingBansheeDamage,Amount" Value="1.3"/>
+        <EffectArray Operation="Multiply" Reference="Effect,ScreecherMissilesCarpetBombDamage,Amount" Value="1.3"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="FirebatJuggernautPlating">

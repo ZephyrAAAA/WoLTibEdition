@@ -713,6 +713,11 @@
         </VeterancyLevelArray>
         <XPFraction index="Kills" value="0"/>
     </CBehaviorVeterancy>
+    <CBehaviorBuff id="VortexBehaviorEnemy">
+        <Modification>
+            <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ZeratulHoldFire">
         <InfoIcon value="Assets\Textures\btn-ability-terran-holdfire.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
