@@ -29,6 +29,8 @@ Shadow Ops now has the correct button tooltip whether you get ghosts or spectres
 Doubled the damage of hellstorm missile pods.
 Hellstorm missile pods no longer ignore armour.
 Improved Shields-Requires the Shield Research. grants 20% damage resist to shields [Armoury]
+Infested now move faster on creep.
+Hercules dying removes all shields from units dropped.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -96,6 +98,7 @@ Shuffled buildings around to give better build radius coverage
 *Infested are spawned faster
 Stopping reinfestations grants armoury upgrades
 Gives less base money, but gives money for each settlement saved.
+Virophage health is now always based on difficulty.
 
 In Utter Darkness:
 You have no base.
@@ -105,3 +108,4 @@ Reinforcement waves warp in all units missing from your army.
 Reinforcement waves happen more often.
 After getting Artanis, you need to spend 300 energy off him to get another reinforcement wave.
 Attack wave timings adjusted to be faster, and not stack up so bad.
+Added a "Die Now" button after you've killed enough.
