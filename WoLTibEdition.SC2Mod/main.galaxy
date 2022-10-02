@@ -132,7 +132,7 @@ void RemoveTopbarAbil(string abil) {
 		if (lv_i == 11) {
 			UnitAbilityAdd(topbarUnit, abil);
 			UnitAbilityRemove(topbarUnit, abil);
-			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, could not find: " +abil));
+			//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, could not find: " +abil));
 			return;
 		}
 	}
@@ -140,7 +140,7 @@ void RemoveTopbarAbil(string abil) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, what???: " +abil));
 		return;
 	}
-	UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Removing: " +abil+IntToString(lv_i+3)));
+	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Removing: " +abil+IntToString(lv_i+3)));
 	topbarAbils[lv_i] = null;
 	UnitAbilityAdd(topbarUnit, abil); //I have no idea why this changes anything
 	UnitAbilityRemove(topbarUnit, abil);
@@ -150,7 +150,7 @@ void RemoveTopbarAbil(string abil) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
-		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
 		topbarAbils[lv_i] = null;
 	}

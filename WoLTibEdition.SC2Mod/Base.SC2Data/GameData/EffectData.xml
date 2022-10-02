@@ -231,11 +231,23 @@
         <EditorCategories value=""/>
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
+    <CEffectEnumTrackedUnits id="CreepDeathInfestedBranch">
+        <EditorCategories value=""/>
+        <BehaviorLink value="CreepTrackInfested"/>
+        <TrackerUnit Value="Target"/>
+        <Effect value="CreepDeathInfestedSet"/>
+    </CEffectEnumTrackedUnits>
     <CEffectEnumTrackedUnits id="CreepDeathInfestedEnum">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
-        <Effect value="CreepDeathInfested"/>
+        <Effect value="CreepDeathInfestedSet"/>
+        <TrackerUnit Value="Source"/>
     </CEffectEnumTrackedUnits>
+    <CEffectSet id="CreepDeathInfestedSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CreepDeathInfestedBranch"/>
+        <EffectArray value="CreepDeathInfested"/>
+    </CEffectSet>
     <CEffectEnumTrackedUnits id="CreepSpreadDistanceCheck">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
@@ -306,6 +318,7 @@
         <EditorCategories value=""/>
         <EffectArray value="CreepSpreadDistanceCheck"/>
         <EffectArray value="CreepTrackInfested"/>
+        <EffectArray value="CreepTrackInfestedSource"/>
         <EffectArray value="CreepSpreadInfestedAB"/>
     </CEffectSet>
     <CEffectDamage id="CreepSpreadTooClose">
@@ -317,6 +330,12 @@
     <CEffectAddTrackedUnit id="CreepTrackInfested">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
+        <TrackedUnit Value="Target"/>
+    </CEffectAddTrackedUnit>
+    <CEffectAddTrackedUnit id="CreepTrackInfestedSource">
+        <EditorCategories value=""/>
+        <BehaviorLink value="CreepTrackInfested"/>
+        <TrackerUnit Value="Source"/>
         <TrackedUnit Value="Target"/>
     </CEffectAddTrackedUnit>
     <CEffectDamage id="DeathRecallD">
