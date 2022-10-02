@@ -1450,6 +1450,9 @@
     <CEffectDamage id="PsiStormDamageInitial">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectDamage id="PurifierBeamDamage">
+        <Amount value="16"/>
+    </CEffectDamage>
     <CEffectDamage id="RaynorSnipeDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
