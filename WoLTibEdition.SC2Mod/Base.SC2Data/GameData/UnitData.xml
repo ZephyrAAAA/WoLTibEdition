@@ -1615,8 +1615,7 @@
             <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCBuild,Specialize5" Row="2" Column="0"/>
             <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="2" Column="1"/>
             <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize6" Row="2" Column="1"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build7" Row="2" Column="2"/>
-            <LayoutButtons Face="SensorTower" Type="AbilCmd" AbilCmd="CCBuild,Specialize7" Row="2" Column="2"/>
+            <LayoutButtons Face="Stone" Type="AbilCmd" AbilCmd="TrainStone,Train1" Row="2" Column="2"/>
             <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="1" Column="0"/>
             <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCBuild,Specialize14" Row="1" Column="0"/>
             <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
@@ -4672,7 +4671,7 @@
         <Sight value="9"/>
         <Food value="-15"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="350"/>
+        <CostResource index="Minerals" value="250"/>
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>

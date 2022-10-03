@@ -18,6 +18,7 @@
     </CModel>
     <CModel id="ConstructionCrane">
         <SelectionLayer value="2"/>
+        <SelectionRadius value="2.150300"/>
     </CModel>
     <CModel id="DetectionCone" parent="UI">
         <Model value="Assets/UI/Cursors/DOM_TerranCone/DOM_TerranCone.m3"/>
