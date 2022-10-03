@@ -31,6 +31,7 @@ Hellstorm missile pods no longer ignore armour.
 Improved Shields-Requires the Shield Research. grants 20% damage resist to shields [Armoury]
 Infested now move faster on creep.
 Hercules dying removes all shields from units dropped.
+*Fixed starting refineries doing weird things when you have autoref
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -57,6 +58,7 @@ Coloured all our tips
 
 Bel'shir:
 Fixed things, it appears to no longer swarm you
+*The protoss send their counterattack in 1 wave instead of 2 now.
 
 Outbreak:
 A message appears saying that new/relevant tips are available.
@@ -73,20 +75,20 @@ Bonus 2 and 3 now give banshee armoury upgrades
 Moved the bonus relic (And its defenders) south of the expansion to base 4
 
 Safe Haven:
-You start with 3 SCVs
+You start with 2 SCVs
 Each protoss base now has resources
 You start with 2 Supply Depots instead of 3
 Shuffled buildings around to give better build radius coverage
 You no longer have free vision of the terrain around the purifier mothership
 *Protoss send more attack waves
-*Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
-*Counterattacks scale with how many terror fleets you've stopped
+Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
+Counterattacks scale with how many terror fleets you've stopped
 Stopping terrorfleets gives armoury upgrades
 *Stopping counterattacks gives armoury upgrades
 Gives less base money, but gives money for each settlement saved.
 
 Haven's Fall:
-You start with 3 SCVs
+You start with 2 SCVs
 Removed the gas pickups from gas island
 Each settlment now has a 4-stack of small nodes
 The zerg base at the south now has resources
