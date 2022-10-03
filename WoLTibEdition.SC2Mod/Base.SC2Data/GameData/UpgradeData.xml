@@ -125,10 +125,11 @@
     </CUpgrade>
     <CUpgrade id="AutoHarvester">
         <EffectArray Operation="Set" Reference="Actor,Refinery2,Wireframe.Image[0]" Value="Assets\Textures\wireframe-terran-refinery-automated.dds"/>
-        <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="2000"/>
-        <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="20.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Resource[Vespene]" Value="1500"/>
+        <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="15.000000"/>
         <EffectArray Operation="Set" Reference="Unit,Refinery2,EffectArray[Birth]"/>
-        <EffectArray Operation="Set" Reference="Unit,Refinery2,CostResource[Minerals]" Value="500"/>
+        <EffectArray Operation="Set" Reference="Unit,Refinery2,CostResource[Minerals]" Value="375"/>
+        <AffectedUnitArray value="Refinery2"/>
     </CUpgrade>
     <CUpgrade id="CellularReactors">
         <EffectArray index="1" Reference="Unit,Medic,EnergyStart"/>

@@ -944,6 +944,7 @@ Validator/Name/IsZeratul=Is Zeratul
 Validator/Name/LT3Markers=LT 3 Markers
 Validator/Name/MaarAllowedToTeleport=Maar Allowed To Teleport
 Validator/Name/NoNearbyInfestedTumors=No Nearby Infested Tumors
+Validator/Name/NotHaveAutoHarvester=Not Have AutoHarvester
 Validator/Name/NotSquadUnit=Not Squad Unit
 Validator/Name/NotSupercloaked=Not Supercloaked
 Validator/Name/PlayerHasPower=Player Has Power

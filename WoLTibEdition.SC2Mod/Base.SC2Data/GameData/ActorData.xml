@@ -586,6 +586,20 @@
         </Wireframe>
         <Aliases value="_CreepEngulfable"/>
         <Aliases value="_UnitHuge"/>
+        <SoundArray index="Birth" value="CommandCenter2_Birth"/>
+        <SoundArray index="Ready" value="CommandCenter_Ready"/>
+        <SoundArray index="Help" value="CommandCenter2_Help"/>
+        <SoundArray index="What" value="CommandCenter_What"/>
+        <SoundArray index="Yes" value="CommandCenter2_Yes"/>
+        <SoundArray index="Attack" value="CommandCenter2_Attack"/>
+        <SoundArray index="Pissed" value="CommandCenter2_Pissed"/>
+        <SoundArray index="Movement" value="CommandCenter_Movement2"/>
+        <SoundArray index="Turning" value="CommandCenter2_Turning"/>
+        <SoundArray index="Board" value="CommandCenter2_Board"/>
+        <SoundArray index="Construction" value="Terran_ConstructionWhat"/>
+        <SoundArray index="Click" value="CommandCenter2_Click"/>
+        <SoundArray index="ClickError" value="CommandCenter2_ClickError"/>
+        <SoundArray index="Highlight" value="CommandCenter2_Highlight"/>
     </CActorUnit>
     <CActorModel id="DetectionCone9Guide" parent="ModelAnimationStyleContinuous">
         <On Terms="ActorCreation" Send="StatusSet State 0"/>
@@ -1486,6 +1500,7 @@
         <On Terms="UnitDeathCustomize; ValidateUnit NoVespene" Send="DeathCustomize Empty"/>
         <On Terms="UnitBirth.Refinery2" Send="TimerSet 0.100000 HideGeyser"/>
         <On Terms="ActorCreation; ValidateUnit HaveAutoHarvester" Send="ModelSwap AutomatedRefinery"/>
+        <On Terms="Upgrade.AutoHarvester.Add" Send="ModelSwap AutomatedRefinery"/>
         <Model value="Refinery"/>
         <CreepHeightClass value="Medium"/>
         <BuildModel value="RefineryBuild"/>

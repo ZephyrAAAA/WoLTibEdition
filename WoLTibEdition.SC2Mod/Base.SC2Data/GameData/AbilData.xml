@@ -1195,8 +1195,8 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Specialize2" Time="30" Effect="RefineryBuilt">
-            <Resource index="Vespene" value="3000"/>
+        <InfoArray index="Specialize2" Time="25" Effect="RefineryBuilt">
+            <Resource index="Vespene" value="2500"/>
             <Resource index="Custom" value="15"/>
             <Charge>
                 <CountMax value="1"/>
