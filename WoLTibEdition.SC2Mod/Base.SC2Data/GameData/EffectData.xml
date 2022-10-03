@@ -253,17 +253,35 @@
         <EditorCategories value=""/>
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
-    <CEffectEnumTrackedUnits id="CreepDeathInfestedBranch">
+    <CEffectEnumTrackedUnits id="CreepDeathInfestedEnumBranch">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
         <TrackerUnit Value="Target"/>
-        <Effect value="CreepDeathInfestedSet"/>
+        <Effect value="CreepDeathInfestedBranch"/>
     </CEffectEnumTrackedUnits>
+    <CEffectCreatePersistent id="CreepDeathInfestedBranch">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <OffsetVectorStartLocation Value="TargetUnit"/>
+        <OffsetVectorEndLocation Value="TargetUnit"/>
+        <OffsetFacingFallback Value="TargetUnit"/>
+        <Flags index="RandomPeriod" value="1"/>
+        <FinalEffect value="CreepDeathInfested"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="CreepDeathInfestedBranch"/>
+        <PeriodicPeriodArray value="0.125"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <PeriodicPeriodArray value="0.375"/>
+        <PeriodicPeriodArray value="0.5"/>
+        <PeriodicPeriodArray value="0.625"/>
+        <PeriodicPeriodArray value="0.75"/>
+        <PeriodicPeriodArray value="0.875"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
     <CEffectEnumTrackedUnits id="CreepDeathInfestedEnum">
         <EditorCategories value=""/>
         <BehaviorLink value="CreepTrackInfested"/>
-        <Effect value="CreepDeathInfestedSet"/>
-        <TrackerUnit Value="Source"/>
+        <Effect value="CreepDeathInfestedBranch"/>
     </CEffectEnumTrackedUnits>
     <CEffectSet id="CreepDeathInfestedSet">
         <EditorCategories value=""/>

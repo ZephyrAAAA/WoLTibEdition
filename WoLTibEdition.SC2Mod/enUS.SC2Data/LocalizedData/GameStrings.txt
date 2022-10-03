@@ -737,6 +737,7 @@ Effect/Name/CreateSCVHarvesterDelay=Create SCV Harvester Delay
 Effect/Name/CreepDeathInfested=CreepDeathInfested
 Effect/Name/CreepDeathInfestedBranch=CreepDeathInfested
 Effect/Name/CreepDeathInfestedEnum=CreepDeathInfested
+Effect/Name/CreepDeathInfestedEnumBranch=CreepDeathInfested
 Effect/Name/CreepDeathInfestedSet=CreepDeathInfested
 Effect/Name/CreepSpreadDistanceCheck=CreepSpreadDistanceCheck
 Effect/Name/CreepSpreadInfested=CreepSpreadInfested
