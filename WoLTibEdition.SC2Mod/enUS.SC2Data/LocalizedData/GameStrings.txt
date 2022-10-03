@@ -733,6 +733,7 @@ Effect/Name/ConfusionStop=Confusion Stop
 Effect/Name/CraneBuilt=CraneBuilt
 Effect/Name/CranePlace=Crane Place
 Effect/Name/CreateSCVHarvester=Create SCV Harvester
+Effect/Name/CreateSCVHarvesterDelay=Create SCV Harvester Delay
 Effect/Name/CreepDeathInfested=CreepDeathInfested
 Effect/Name/CreepDeathInfestedBranch=CreepDeathInfested
 Effect/Name/CreepDeathInfestedEnum=CreepDeathInfested

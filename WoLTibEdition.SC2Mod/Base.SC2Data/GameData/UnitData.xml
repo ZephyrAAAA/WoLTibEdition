@@ -4683,7 +4683,7 @@
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="BuildRadiusSmall"/>
         <BehaviorArray Link="NeedsBuildRadius"/>
-        <EffectArray index="Birth" value="CreateSCVHarvester"/>
+        <EffectArray index="Birth" value="CreateSCVHarvesterDelay"/>
         <CardLayouts>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>

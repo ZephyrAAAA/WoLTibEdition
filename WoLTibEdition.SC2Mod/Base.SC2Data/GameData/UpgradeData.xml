@@ -129,6 +129,7 @@
         <EffectArray Operation="Set" Reference="Abil,CCBuild,InfoArray[Specialize2].Time" Value="15.000000"/>
         <EffectArray Operation="Set" Reference="Unit,Refinery2,EffectArray[Birth]"/>
         <EffectArray Operation="Set" Reference="Unit,Refinery2,CostResource[Minerals]" Value="375"/>
+        <AffectedUnitArray value="Refinery2"/>
     </CUpgrade>
     <CUpgrade id="CellularReactors">
         <EffectArray index="1" Reference="Unit,Medic,EnergyStart"/>

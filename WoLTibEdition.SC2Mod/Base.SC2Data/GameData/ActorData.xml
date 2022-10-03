@@ -1500,6 +1500,7 @@
         <On Terms="UnitDeathCustomize; ValidateUnit NoVespene" Send="DeathCustomize Empty"/>
         <On Terms="UnitBirth.Refinery2" Send="TimerSet 0.100000 HideGeyser"/>
         <On Terms="ActorCreation; ValidateUnit HaveAutoHarvester" Send="ModelSwap AutomatedRefinery"/>
+        <On Terms="Upgrade.AutoHarvester.Add" Send="ModelSwap AutomatedRefinery"/>
         <Model value="Refinery"/>
         <CreepHeightClass value="Medium"/>
         <BuildModel value="RefineryBuild"/>

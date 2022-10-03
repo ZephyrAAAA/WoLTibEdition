@@ -73,6 +73,9 @@
         <Find value="1"/>
         <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="NotHaveAutoHarvester">
+        <Value value="AutoHarvesterResearched"/>
+    </CValidatorPlayerRequirement>
     <CValidatorLocationCompareRange id="InfestedCreepTooClose">
         <WhichLocation Effect="CreepSpreadInfestedSet" Value="TargetUnit"/>
         <Compare value="LE"/>

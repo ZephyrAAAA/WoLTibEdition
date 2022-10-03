@@ -244,6 +244,11 @@
         <EditorCategories value="Race:Protoss"/>
         <Abil value="stop"/>
     </CEffectIssueOrder>
+    <CEffectCreatePersistent id="CreateSCVHarvesterDelay">
+        <EditorCategories value=""/>
+        <ExpireDelay value="0.25"/>
+        <ExpireEffect value="CreateSCVHarvester"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="CreepDeathInfested">
         <EditorCategories value=""/>
         <Flags index="Kill" value="1"/>
@@ -1752,6 +1757,7 @@
         <WhichLocation Value="CasterUnit"/>
         <SpawnEffect value="SCVHarvesterAWAY"/>
         <SpawnUnit value="SCV2"/>
+        <ValidatorArray value="NotHaveAutoHarvester"/>
     </CEffectCreateUnit>
     <CEffectDamage id="CrucioShockCannonBlast">
         <Amount value="100"/>
@@ -1842,7 +1848,7 @@
     </CEffectDamage>
     <CEffectIssueOrder id="SCVHarvesterAWAY">
         <EditorCategories value=""/>
-        <Abil value="move"/>
+        <Abil value="SCVHarvest"/>
         <Player Value="Caster"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
