@@ -171,12 +171,16 @@
             <InfoValue Id="Item Count" Value="3"/>
         </Indices>
         <Indices index="39">
-            <InfoValue Id="Credits Per Item" Value="10000"/>
-            <InfoValue Id="Item Count" Value="3"/>
+            <InfoValue Id="Credits Per Item"/>
+            <InfoValue Id="Item Count"/>
+        </Indices>
+        <Indices index="41">
+            <InfoValue Id="Credits Per Item"/>
+            <InfoValue Id="Item Count"/>
         </Indices>
         <Indices index="42">
-            <InfoValue Id="Credits Per Item" Value="50000"/>
-            <InfoValue Id="Item Count" Value="1"/>
+            <InfoValue Id="Credits Per Item" Value="10000"/>
+            <InfoValue Id="Item Count" Value="8"/>
         </Indices>
         <Indices index="43">
             <InfoValue Id="Credits Per Item"/>
