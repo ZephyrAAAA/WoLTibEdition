@@ -75,7 +75,7 @@ Bonus 2 and 3 now give banshee armoury upgrades
 Moved the bonus relic (And its defenders) south of the expansion to base 4
 
 Safe Haven:
-You start with 2 SCVs
+You start with 2 SCVs, 1 if you have autoref
 Each protoss base now has resources
 You start with 2 Supply Depots instead of 3
 Shuffled buildings around to give better build radius coverage
@@ -88,7 +88,7 @@ Stopping terrorfleets gives armoury upgrades
 Gives less base money, but gives money for each settlement saved.
 
 Haven's Fall:
-You start with 2 SCVs
+You start with 2 SCVs, 1 if you have autoref
 Removed the gas pickups from gas island
 Each settlment now has a 4-stack of small nodes
 The zerg base at the south now has resources
