@@ -742,7 +742,6 @@
     </CEffectDamage>
     <CEffectCreep id="InfiniteCreep">
         <EditorCategories value=""/>
-        <WhichLocation Value="CasterUnit"/>
         <Radius value="0">
             <AccumulatorArray value="CreepRadius"/>
         </Radius>
@@ -759,6 +758,16 @@
         <PeriodCount value="78"/>
         <PeriodicEffectArray value="InfiniteCreep"/>
         <PeriodicPeriodArray value="0.125"/>
+        <Flags index="RandomOffset" value="1"/>
+        <PeriodicOffsetArray value="1,0,0"/>
+        <PeriodicOffsetArray value="0,1,0"/>
+        <PeriodicOffsetArray value="-1,0,0"/>
+        <PeriodicOffsetArray value="0,-1,0"/>
+        <PeriodicOffsetArray value="1,1,0"/>
+        <PeriodicOffsetArray value="-1,1,0"/>
+        <PeriodicOffsetArray value="1,-1,0"/>
+        <PeriodicOffsetArray value="-1,-1,0"/>
+        <PeriodicOffsetArray value="0,0,0"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="InfiniteCreepDamage">
         <EditorCategories value=""/>
