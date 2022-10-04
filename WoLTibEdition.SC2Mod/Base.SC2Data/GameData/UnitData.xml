@@ -1563,7 +1563,7 @@
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="que1"/>
+        <AbilArray Link="CCMCVQueue"/>
         <AbilArray Link="CCBuild"/>
         <AbilArray Link="CCPlaceBuilding"/>
         <AbilArray Link="PauseResumeQueue"/>
