@@ -31,7 +31,8 @@ Hellstorm missile pods no longer ignore armour.
 Improved Shields-Requires the Shield Research. grants 20% damage resist to shields [Armoury]
 Infested now move faster on creep.
 Hercules dying removes all shields from units dropped.
-*Fixed starting refineries doing weird things when you have autoref
+Fixed starting refineries doing weird things when you have autoref
+Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -84,7 +85,7 @@ You no longer have free vision of the terrain around the purifier mothership
 Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
 Counterattacks scale with how many terror fleets you've stopped
 Stopping terrorfleets gives armoury upgrades
-*Stopping counterattacks gives armoury upgrades
+Stopping counterattacks gives armoury upgrades
 Gives less base money, but gives money for each settlement saved.
 
 Haven's Fall:
