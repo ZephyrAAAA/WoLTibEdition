@@ -1396,6 +1396,7 @@
     <CEffectEnumArea id="PsiDisruptionSearchArea">
         <AreaArray index="0" Radius="9"/>
         <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
     </CEffectEnumArea>
     <CEffectDamage id="PsiStormDamage">
         <ArmorReduction value="1"/>
