@@ -991,8 +991,8 @@
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>
-        <Footprint value="Footprint3x3Contour"/>
-        <PlacementFootprint value="Footprint3x3"/>
+        <Footprint value="Footprint3x3ContourIgnoreCreep"/>
+        <PlacementFootprint value="Footprint3x3ContourIgnoreCreep"/>
         <ScoreMake value="100"/>
         <ScoreKill value="100"/>
         <ScoreResult value="BuildOrder"/>
@@ -1563,7 +1563,7 @@
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="que1"/>
+        <AbilArray Link="CCMCVQueue"/>
         <AbilArray Link="CCBuild"/>
         <AbilArray Link="CCPlaceBuilding"/>
         <AbilArray Link="PauseResumeQueue"/>
@@ -4692,8 +4692,8 @@
         </CardLayouts>
         <Radius value="1.5"/>
         <SeparationRadius value="1.5"/>
-        <Footprint value="Footprint3x3Contour"/>
-        <PlacementFootprint value="Footprint3x3Contour"/>
+        <Footprint value="Footprint3x3ContourIgnoreCreep"/>
+        <PlacementFootprint value="Footprint3x3ContourIgnoreCreep"/>
         <ScoreMake value="75"/>
         <ScoreKill value="75"/>
         <ScoreResult value="BuildOrder"/>
