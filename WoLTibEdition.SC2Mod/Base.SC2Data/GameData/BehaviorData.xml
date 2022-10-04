@@ -207,12 +207,13 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="InfiniteCreep">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="10"/>
+        <Period value="1"/>
         <PeriodicEffect value="InfiniteCreepDamage"/>
         <DamageResponse Handled="InfiniteCreepCP" Priority="1" HandledValue="Original">
             <RequireEffectArray value="InfiniteCreepDamage"/>
             <Chance value="1"/>
         </DamageResponse>
+        <BuffFlags index="DisableWhileUnderConstruction" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="InsideMedivac">
         <EditorCategories value="AbilityorEffectType:Units"/>

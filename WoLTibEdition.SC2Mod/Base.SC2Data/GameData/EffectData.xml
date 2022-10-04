@@ -755,7 +755,7 @@
         <OffsetVectorEndLocation Value="CasterUnit"/>
         <InitialDelay value="0.0625"/>
         <InitialEffect value="InfiniteCreepRegen"/>
-        <PeriodCount value="78"/>
+        <PeriodCount value="7"/>
         <PeriodicEffectArray value="InfiniteCreep"/>
         <PeriodicPeriodArray value="0.125"/>
         <Flags index="RandomOffset" value="1"/>
@@ -773,6 +773,7 @@
         <EditorCategories value=""/>
         <ImpactLocation Value="CasterUnit"/>
         <Amount value="1"/>
+        <Flags index="Live" value="1"/>
     </CEffectDamage>
     <CEffectModifyUnit id="InfiniteCreepRegen">
         <EditorCategories value=""/>
