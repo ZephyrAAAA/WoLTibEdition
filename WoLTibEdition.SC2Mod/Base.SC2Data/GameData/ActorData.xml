@@ -177,18 +177,18 @@
         <IconArcLength value="0.100000"/>
     </CActorRange>
     <CActorPower id="BuildRadiusLarge">
-        <On Terms="Behavior.BuildRadiusLarge.Create" Send="Create"/>
+        <On Terms="Behavior.BuildRadiusLarge.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <On Terms="Behavior.BuildRadiusLarge.Destroy" Send="Destroy"/>
         <PowerSource value="BuildRadiusLarge"/>
-        <VisualArray value="BuildRadius"/>
-        <VisualArray value="BuildRadius"/>
+        <VisualArray value="StetmannBlobLarge"/>
+        <VisualArray value="StetmannBlobLarge"/>
     </CActorPower>
     <CActorPower id="BuildRadiusSmall">
-        <On Terms="Behavior.BuildRadiusSmall.Create" Send="Create"/>
+        <On Terms="Behavior.BuildRadiusSmall.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <On Terms="Behavior.BuildRadiusSmall.Destroy" Send="Destroy"/>
         <PowerSource value="BuildRadiusSmall"/>
-        <VisualArray value="BuildRadius2"/>
-        <VisualArray value="BuildRadius2"/>
+        <VisualArray value="StetmannBlob"/>
+        <VisualArray value="StetmannBlob"/>
     </CActorPower>
     <CActorUnit id="Bunker">
         <On index="105" removed="1"/>
@@ -1335,6 +1335,31 @@
     <CActorUnit id="RaynorCommando">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Raynor_Attack"/>
     </CActorUnit>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Global Config ========================================================================= -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <CActorGlobalConfig id="SYSTEM_ActorConfig">
+        <SplatEmitterInit>
+            <TextureResolution value="512,512"/>
+            <ProjectorModel value="PowerRadius_Stetmann"/>
+            <MaskBlobPath value="Assets\Textures\stetmannpowerfieldmask.dds"/>
+            <ScaleDeltaTime value="0.010000,0.010000"/>
+            <ScaleUpdateTime value="30"/>
+            <MaxBlobScale value="0.110000,0.110000"/>
+            <Tint value="255,255,255,255"/>
+            <TerrainUVTiling value="1.000000,1.000000,0.001000,-0.001000"/>
+            <MinHeightValue value="-1.000000"/>
+            <MaterialInfo>
+                <ReplacementLayers index="AlphaMask" value="1"/>
+            </MaterialInfo>
+            <MaterialInfo MaterialId="1">
+                <ReplacementLayers index="AlphaMask" value="1"/>
+                <ReplacementLayers index="AlphaMask2" value="1"/>
+            </MaterialInfo>
+        </SplatEmitterInit>
+    </CActorGlobalConfig>
     <CActorAction id="ScoutAirAttackFleet" parent="GenericAttack" effectImpact="ScoutAirUFleet" effectLaunch="ScoutAirLMLeftFleet">
         <On index="6" Terms="Effect.ScoutAirLMLeftFleet.Start; At Effect" Send="Create"/>
         <On Terms="Effect.ScoutAirLMRightFleet.Start; At Effect" Send="Create"/>
@@ -1597,6 +1622,22 @@
     <CActorShieldImpact id="ShieldImpact">
         <On Terms="UnitCreation; ValidateUnit HasPlasmaShields; Exclude Missile" Send="Create"/>
     </CActorShieldImpact>
+    <CActorBlob id="StetmannBlob">
+        <EditorCategories value=""/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
+        <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
+        <MaxScale value="0.137500,0.137500"/>
+        <ScaleDeltaTime value="0.015000,0.015000"/>
+    </CActorBlob>
+    <CActorBlob id="StetmannBlobLarge">
+        <EditorCategories value=""/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
+        <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
+        <MaxScale value="0.270000,0.270000"/>
+        <ScaleDeltaTime value="0.030000,0.030000"/>
+    </CActorBlob>
     <CActorSound id="TempestAirAttackSoundFleet" parent="SoundOneShot">
         <EditorCategories value=""/>
         <On Terms="Effect.TempestLaunchMissileFleet.Start; At Effect" Send="Create"/>
