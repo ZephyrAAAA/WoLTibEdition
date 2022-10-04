@@ -249,135 +249,6 @@
         <ExpireDelay value="0.25"/>
         <ExpireEffect value="CreateSCVHarvester"/>
     </CEffectCreatePersistent>
-    <CEffectDamage id="CreepDeathInfested">
-        <EditorCategories value=""/>
-        <Flags index="Kill" value="1"/>
-    </CEffectDamage>
-    <CEffectEnumTrackedUnits id="CreepDeathInfestedEnumBranch">
-        <EditorCategories value=""/>
-        <BehaviorLink value="CreepTrackInfested"/>
-        <TrackerUnit Value="Target"/>
-        <Effect value="CreepDeathInfestedBranch"/>
-    </CEffectEnumTrackedUnits>
-    <CEffectCreatePersistent id="CreepDeathInfestedBranch">
-        <EditorCategories value=""/>
-        <WhichLocation Value="TargetUnit"/>
-        <OffsetVectorStartLocation Value="TargetUnit"/>
-        <OffsetVectorEndLocation Value="TargetUnit"/>
-        <OffsetFacingFallback Value="TargetUnit"/>
-        <Flags index="RandomPeriod" value="1"/>
-        <FinalEffect value="CreepDeathInfested"/>
-        <PeriodCount value="1"/>
-        <PeriodicEffectArray value="CreepDeathInfestedBranch"/>
-        <PeriodicPeriodArray value="0.125"/>
-        <PeriodicPeriodArray value="0.25"/>
-        <PeriodicPeriodArray value="0.375"/>
-        <PeriodicPeriodArray value="0.5"/>
-        <PeriodicPeriodArray value="0.625"/>
-        <PeriodicPeriodArray value="0.75"/>
-        <PeriodicPeriodArray value="0.875"/>
-        <PeriodicPeriodArray value="1"/>
-    </CEffectCreatePersistent>
-    <CEffectEnumTrackedUnits id="CreepDeathInfestedEnum">
-        <EditorCategories value=""/>
-        <BehaviorLink value="CreepTrackInfested"/>
-        <Effect value="CreepDeathInfestedBranch"/>
-    </CEffectEnumTrackedUnits>
-    <CEffectSet id="CreepDeathInfestedSet">
-        <EditorCategories value=""/>
-        <EffectArray value="CreepDeathInfestedBranch"/>
-        <EffectArray value="CreepDeathInfested"/>
-    </CEffectSet>
-    <CEffectEnumTrackedUnits id="CreepSpreadDistanceCheck">
-        <EditorCategories value=""/>
-        <BehaviorLink value="CreepTrackInfested"/>
-        <Effect value="CreepSpreadTooClose"/>
-    </CEffectEnumTrackedUnits>
-    <CEffectCreateUnit id="CreepSpreadInfested">
-        <ValidatorArray value="TumorNotAcrossChasm"/>
-        <ValidatorArray value="TumorNotAcrossCliff"/>
-        <ValidatorArray value="TargetOnCreep"/>
-        <EditorCategories value="Race:Zerg"/>
-        <WhichLocation Value="TargetPoint"/>
-        <Origin Value="SourceUnit"/>
-        <CreateFlags index="OffsetByRadius" value="0"/>
-        <CreateFlags index="SetFacing" value="1"/>
-        <CreateFlags index="NormalizeSpawnOffset" value="0"/>
-        <SpawnEffect value="CreepSpreadInfestedSet"/>
-        <SpawnUnit value="CreepTumorInfested"/>
-        <SpawnRange value="3"/>
-        <SpawnOffset value="0,0"/>
-        <SpawnOffset value="1,0"/>
-        <SpawnOffset value="0,1"/>
-        <SpawnOffset value="-1,0"/>
-        <SpawnOffset value="0,-1"/>
-        <SpawnOffset value="0.7,0.7"/>
-        <SpawnOffset value="-0.7,0.7"/>
-        <SpawnOffset value="0.7,-0.7"/>
-        <SpawnOffset value="-0.7,-0.7"/>
-        <SpawnOffset value="2,0"/>
-        <SpawnOffset value="0,2"/>
-        <SpawnOffset value="-2,0"/>
-        <SpawnOffset value="0,-2"/>
-        <SpawnOffset value="1.4,1.4"/>
-        <SpawnOffset value="-1.4,1.4"/>
-        <SpawnOffset value="1.4,-1.4"/>
-        <SpawnOffset value="-1.4,-1.4"/>
-        <SpawnOwner Value="Source"/>
-    </CEffectCreateUnit>
-    <CEffectApplyBehavior id="CreepSpreadInfestedAB">
-        <EditorCategories value=""/>
-        <Behavior value="CreepSpreadInfested"/>
-    </CEffectApplyBehavior>
-    <CEffectCreatePersistent id="CreepSpreadInfestedOffset">
-        <EditorCategories value=""/>
-        <WhichLocation Value="SourcePoint"/>
-        <OffsetVectorEndLocation Value="SourcePoint"/>
-        <PeriodCount value="16"/>
-        <PeriodicEffectArray value="CreepSpreadInfested"/>
-        <PeriodicOffsetArray value="8,0,0"/>
-        <PeriodicOffsetArray value="0,8,0"/>
-        <PeriodicOffsetArray value="5.65,5.65,0"/>
-        <PeriodicOffsetArray value="-5.65,5.65,0"/>
-        <PeriodicOffsetArray value="-8,0,0"/>
-        <PeriodicOffsetArray value="0,-8,0"/>
-        <PeriodicOffsetArray value="-5.65,-5.65,0"/>
-        <PeriodicOffsetArray value="5.65,-5.65,0"/>
-        <PeriodicOffsetArray value="-7.39,-3.06,0"/>
-        <PeriodicOffsetArray value="-3.06,-7.39,0"/>
-        <PeriodicOffsetArray value="7.39,3.06,0"/>
-        <PeriodicOffsetArray value="-7.39,3.06,0"/>
-        <PeriodicOffsetArray value="3.06,7.39,0"/>
-        <PeriodicOffsetArray value="-3.06,7.39,0"/>
-        <PeriodicOffsetArray value="7.39,-3.06,0"/>
-        <PeriodicOffsetArray value="3.06,-7.39,0"/>
-        <PeriodicPeriodArray value="0"/>
-        <OffsetVectorStartLocation Value="SourcePoint"/>
-    </CEffectCreatePersistent>
-    <CEffectSet id="CreepSpreadInfestedSet">
-        <EditorCategories value=""/>
-        <EffectArray value="CreepSpreadDistanceCheck"/>
-        <EffectArray value="CreepTrackInfested"/>
-        <EffectArray value="CreepTrackInfestedSource"/>
-        <EffectArray value="CreepSpreadInfestedAB"/>
-    </CEffectSet>
-    <CEffectDamage id="CreepSpreadTooClose">
-        <ValidatorArray value="InfestedCreepTooClose"/>
-        <EditorCategories value=""/>
-        <ImpactLocation Effect="CreepSpreadInfestedSet" Value="TargetUnit"/>
-        <Flags index="Kill" value="1"/>
-    </CEffectDamage>
-    <CEffectAddTrackedUnit id="CreepTrackInfested">
-        <EditorCategories value=""/>
-        <BehaviorLink value="CreepTrackInfested"/>
-        <TrackedUnit Value="Target"/>
-    </CEffectAddTrackedUnit>
-    <CEffectAddTrackedUnit id="CreepTrackInfestedSource">
-        <EditorCategories value=""/>
-        <BehaviorLink value="CreepTrackInfested"/>
-        <TrackerUnit Value="Source"/>
-        <TrackedUnit Value="Target"/>
-    </CEffectAddTrackedUnit>
     <CEffectDamage id="DeathRecallD">
         <EditorCategories value=""/>
         <Flags index="Live" value="1"/>
@@ -869,6 +740,38 @@
     <CEffectDamage id="InfestedAbomination">
         <Amount value="30"/>
     </CEffectDamage>
+    <CEffectCreep id="InfiniteCreep">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <Radius value="0">
+            <AccumulatorArray value="CreepRadius"/>
+        </Radius>
+        <CreepFlags index="Permanent" value="0"/>
+        <CreepFlags index="Immediate" value="1"/>
+    </CEffectCreep>
+    <CEffectCreatePersistent id="InfiniteCreepCP">
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <OffsetVectorStartLocation Value="CasterUnit"/>
+        <OffsetVectorEndLocation Value="CasterUnit"/>
+        <InitialDelay value="0.0625"/>
+        <InitialEffect value="InfiniteCreepRegen"/>
+        <PeriodCount value="78"/>
+        <PeriodicEffectArray value="InfiniteCreep"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="InfiniteCreepDamage">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterUnit"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectModifyUnit id="InfiniteCreepRegen">
+        <EditorCategories value=""/>
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Life">
+            <Change value="1"/>
+        </VitalArray>
+    </CEffectModifyUnit>
     <CEffectCreatePersistent id="IonCannonsFleet">
         <EditorCategories value="Race:Protoss"/>
         <WhichLocation Value="TargetUnitOrPoint"/>

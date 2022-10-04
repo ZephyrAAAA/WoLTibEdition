@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAccumulatorEffectAmount id="CreepRadius">
+        <MaxAccumulation value="500"/>
+        <Total value="1"/>
+    </CAccumulatorEffectAmount>
     <CAccumulatorEffectAmount id="DamageTaken">
         <AmountType value="DamageInherited"/>
         <ApplicationRule value="Multiply"/>
