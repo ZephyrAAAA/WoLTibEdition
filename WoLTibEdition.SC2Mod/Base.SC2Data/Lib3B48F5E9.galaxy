@@ -390,12 +390,20 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
 
     }
     lv_currentUpgradeLevel = (lp_initialUpgradeLevel-1);
+    if ((lv_currentUpgradeLevel < 0)) {
+        lv_currentUpgradeLevel = 0;
+    }
+
     if ((lp_initialUpgrades >= 7)) {
         lv_currentUpgrades = (((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed)-3)/3));
     }
     else {
         lv_currentUpgrades = (lp_initialUpgrades-1);
     }
+    if ((lv_currentUpgrades < 0)) {
+        lv_currentUpgrades = 0;
+    }
+
     autoA7838E67_g = lp_enemyPlayers;
     autoA7838E67_var = -1;
     while (true) {
