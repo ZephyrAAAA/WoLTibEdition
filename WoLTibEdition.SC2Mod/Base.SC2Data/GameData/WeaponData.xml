@@ -575,6 +575,7 @@
     <CWeaponLegacy id="KaiserBlades">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+        <Effect value="KaiserBladesDamage"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
