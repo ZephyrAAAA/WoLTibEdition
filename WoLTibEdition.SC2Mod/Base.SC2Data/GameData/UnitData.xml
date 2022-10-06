@@ -2088,6 +2088,7 @@
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Speed value="4.25"/>
         <Food value="0"/>
+        <BehaviorArray index="0" Link="ShapedHull"/>
         <BehaviorArray Link="Biosteel"/>
         <SubgroupPriority value="7"/>
         <AIKiteRange value="6"/>
@@ -3858,6 +3859,10 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <ShieldsStart value="1000"/>
+        <ShieldsMax value="1000"/>
     </CUnit>
     <CUnit id="Nova">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

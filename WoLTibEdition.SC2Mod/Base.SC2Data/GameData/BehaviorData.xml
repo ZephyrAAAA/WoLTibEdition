@@ -399,6 +399,20 @@
         <CarryResourceBehavior value="CarryRefinery"/>
         <IdealHarvesterCount value="1"/>
     </CBehaviorResource>
+    <CBehaviorBuff id="ShapedHull">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UseShapedHull"/>
+        <DamageResponse ModifyFraction="0.75">
+            <Chance value="1"/>
+            <AttackType index="Spell" value="0"/>
+            <AttackType index="Normal" value="0"/>
+            <AttackType index="Pierce" value="0"/>
+            <AttackType index="Chaos" value="0"/>
+            <AttackType index="Hero" value="0"/>
+            <AttackType index="None" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Slow">
         <Modification MoveSpeedMultiplier="0.667"/>
     </CBehaviorBuff>

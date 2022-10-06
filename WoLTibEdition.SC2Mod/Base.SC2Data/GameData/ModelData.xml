@@ -110,6 +110,7 @@
         <ScaleMax value="0.500000,0.500000,0.500000"/>
         <ScaleMin value="0.500000,0.500000,0.500000"/>
     </CModel>
+    <CModel id="PowerRadius_Stetmann" parent="PersistentSpellFX_COOP" COOP="Stetmann" Race="Zerg"/>
     <CModel id="ProtossGenericWarpInOut" parent="OneShotSpellFX">
         <Model value="Assets\Effects\Protoss\Protoss_Generic_WarpOut\Protoss_Generic_WarpOut.m3"/>
         <LowQualityModel value="ProtossUnitBirth"/>
