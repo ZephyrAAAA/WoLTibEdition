@@ -116,6 +116,30 @@
         <VolumeRolloffPoints Distance="8.000000"/>
         <VolumeRolloffPoints Distance="24.000000" Volume="-96.000000"/>
     </CSound>
+    <CSound id="Stone_Help" parent="Alert">
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2291.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2292.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2293.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2288.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2289.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2294.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Stone_Movement" parent="Movement"/>
+    <CSound id="Stone_Ready" parent="Alert">
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2296.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2297.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2298.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2264.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Stone_What" parent="Alert">
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2260.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2257.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2270.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="Stone_Yes" parent="Alert">
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2270.ogg" FacialGroup=""/>
+        <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2279.ogg" FacialGroup=""/>
+    </CSound>
     <CSound id="TRaynor02Raynor00037Mod" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="TRaynor02" Speaker="CharRaynor" Line="00037Mod">
         <AssetArray index="0">
             <File value="Assets\sfx\TrainSCV.ogg"/>
@@ -142,25 +166,5 @@
     </CSound>
     <CSound id="Tosh_Explosives" parent="TerranAck">
         <AssetArray File="Assets\sfx\Tosh_Explosives.ogg" FacialGroup=""/>
-    </CSound>
-    <CSound id="acObj_Stone_2291" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02291">
-        <Flags index="NeedsUpdate" value="1"/>
-        <Flags index="NeedsTTS" value="1"/>
-    </CSound>
-    <CSound id="acObj_Stone_2292" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02292">
-        <Flags index="NeedsUpdate" value="1"/>
-        <Flags index="NeedsTTS" value="1"/>
-    </CSound>
-    <CSound id="acObj_Stone_2293" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02293">
-        <Flags index="NeedsUpdate" value="1"/>
-        <Flags index="NeedsTTS" value="1"/>
-    </CSound>
-    <CSound id="acObj_Stone_2301" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02301">
-        <Flags index="NeedsUpdate" value="1"/>
-        <Flags index="NeedsTTS" value="1"/>
-    </CSound>
-    <CSound id="acObj_Stone_2302" parent="ACVO_Priority" Portrait="GhostPortrait" Subtitle="acObj" Speaker="Stone" Line="02302">
-        <Flags index="NeedsUpdate" value="1"/>
-        <Flags index="NeedsTTS" value="1"/>
     </CSound>
 </Catalog>
