@@ -2088,6 +2088,7 @@
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Speed value="4.25"/>
         <Food value="0"/>
+        <BehaviorArray index="0" Link="ShapedHull"/>
         <BehaviorArray Link="Biosteel"/>
         <SubgroupPriority value="7"/>
         <AIKiteRange value="6"/>
