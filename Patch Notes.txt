@@ -2,7 +2,7 @@ Barracks now says it unlocks bunkers from the CC, not SCVs
 Factory says it builds SCVs
 Starport says it build CC
 CC now says it builds stuff
-Raynor now suggests doing something else if you try to do 2 Zeratul missions in a row.
+*Raynor now suggests doing something else if you try to do 2 Zeratul missions in a row.
 Description of Shadow Ops, Engineering Bay, Armoury, and Fusion Core now list things they have/unlock.
 Refinery no longer says stuff about being built on a geyser.
 Supply depot upgrade no longer says it's free
@@ -33,6 +33,9 @@ Infested now move faster on creep.
 Hercules dying removes all shields from units dropped.
 Fixed starting refineries doing weird things when you have autoref
 Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
+Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repair, and Irradiate
+Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
+Nexus- Now 1000/1000, like in later versions
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -98,7 +101,7 @@ You start with 2 Supply Depots instead of 3
 You start with a Sensor Tower
 Shuffled buildings around to give better build radius coverage
 Removed free vision from each settlement
-All infested spawn twice as fast.
+All infested spawn 33% faster.
 Civilians and marines spawn twice as many.
 Aberrations start coming in half the time
 Stopping reinfestations grants armoury upgrades

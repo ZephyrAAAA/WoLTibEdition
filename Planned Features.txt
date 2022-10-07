@@ -273,6 +273,13 @@ Maw of the Void:
 -Convert to an open-ended macro mission
 
 Gates of Hell:
+-Zerg attacks are now scaled to how much of the map you control
+-The zerg now give basically constant pressure, with strong attack waves
+-Nyduses now spawn all around the map, making zerg attack waves stronger
+-There's a *lot* of fields present around the map, giving a reason to try holding area.
+-Each Spore Cannon killed grants an additional drop pod wave
+-The default number of drop pod waves has been reduced.
+-There are more spore cannons around the map.
 
 Belly of the Beast:
 -The Heroes now have a combined Command Card
@@ -282,6 +289,8 @@ Belly of the Beast:
 -Betty now fires continuously
 
 Shatter the Sky:
+-Some sort of anti-cheese added to the towers
+-Leviathan no longer does weird useless things
 
 All-in:
 -Omegalisks are now sent in the ground version
@@ -333,6 +342,10 @@ Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is
 
 Fusion Core- yamato strike support power, all mission-unlocked support powers
 
+Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repair, and Irradiate
+
+Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
+
 
 High Templar- Storm no longer ignores armour
 
@@ -341,6 +354,8 @@ Void Ray- Imported the HOTS version
 Immortals- Hardened Shield removed, shield health doubled
 
 Sentry- Guardian Shield now gives 30% damage resist
+
+Nexus- Now 1000/1000, like in later versions
 
 
 ARMORY UPGRADE CHANGES:
