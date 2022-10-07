@@ -132,6 +132,19 @@
         </CmdButtonArray>
         <CursorEffect value="FleetDummySearch"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="FungalGrowthBrutalisk">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <DataCollection value="FungalGrowth"/>
+        <Effect index="0" value="FungalGrowthDelay"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown Link="Abil/Leech" Location="Unit" TimeUse="5"/>
+        </Cost>
+        <Range value="9"/>
+        <CursorEffect value="FungalGrowthSearch"/>
+        <AINotifyEffect value="FungalGrowth"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FungalGrowth"/>
+    </CAbilEffectTarget>
     <CAbilBehavior id="GhostCloak">
         <Cost index="0">
             <Vital index="Energy" value="0"/>

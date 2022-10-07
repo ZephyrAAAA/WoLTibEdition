@@ -113,6 +113,28 @@
         <Sound value="Obelisk_ArgusLinkLaunch"/>
     </CActorSound>
     <CActorRange id="FeedbackRange2" parent="RangeAbil" abil="FeedbackGhost"/>
+    <CActorModel id="FungalGrowthDelayWarning" parent="ModelAddition" abil="FungalGrowth">
+        <Flags index="SuppressSaveLoad" value="1"/>
+        <Inherits index="BaseModelScale" value="0"/>
+        <Inherits index="CastShadows" value="0"/>
+        <Inherits index="CloakEffect" value="0"/>
+        <Inherits index="CreepEngulfment" value="0"/>
+        <Inherits index="Decal" value="0"/>
+        <Inherits index="ModelMaterials" value="0"/>
+        <Inherits index="Opacity" value="0"/>
+        <Inherits index="Scale" value="0"/>
+        <Inherits index="TeamColor" value="0"/>
+        <Inherits index="TimeScale" value="0"/>
+        <Inherits index="TintColor" value="0"/>
+        <Inherits index="Visibility" value="0"/>
+        <Inherits index="WarpGroup" value="0"/>
+        <FogVisibility value="Visible"/>
+        <On Terms="Effect.FungalGrowthDelay.Start" Send="Create"/>
+        <On Terms="Effect.FungalGrowthDelay.Stop" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetScale 2.000000,2.000000,1.000000"/>
+        <HostSiteOps Ops="SOpTargetPoint"/>
+        <Model value="ZergAOECursorSplat"/>
+    </CActorModel>
     <CActorAction id="GhostEMPAttack2" parent="GenericAttack" effectImpact="EMPSearchSpectre" effectLaunch="EMPLaunchMissileSpectre">
         <On Terms="Effect.EMPDamage.Start; At Caster" Send="ActionDamage"/>
         <LaunchAssets Sound="Ghost_EMPAttackLaunch"/>

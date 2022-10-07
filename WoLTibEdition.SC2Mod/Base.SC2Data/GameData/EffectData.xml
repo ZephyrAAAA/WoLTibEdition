@@ -154,6 +154,12 @@
     </CEffectDamage>
     <CEffectDamage id="BrutalizeDamage">
         <ArmorReduction value="1"/>
+        <Kind value="Splash"/>
+        <KindSplash value="Splash"/>
+        <AreaArray Arc="45" Radius="2" Fraction="0.33"/>
+        <AreaArray Arc="180" Radius="2" Fraction="0.33"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
@@ -686,6 +692,14 @@
         <Amount value="3"/>
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="FungalGrowthDelay">
+        <EditorCategories value=""/>
+        <OffsetVectorStartLocation Value="TargetPoint"/>
+        <Flags index="Channeled" value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="FungalGrowthInitialSet"/>
+        <PeriodicPeriodArray value="3"/>
+    </CEffectCreatePersistent>
     <CEffectSet id="FungalGrowthInitialSet">
         <TargetLocationType value="Point"/>
     </CEffectSet>

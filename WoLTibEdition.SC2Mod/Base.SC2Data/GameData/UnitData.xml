@@ -823,9 +823,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
-        <AcquireLeashRadius value="30"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
-        <AcquireLeashResetRadius value="30"/>
     </CUnit>
     <CUnit id="BrutaliskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
