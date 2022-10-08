@@ -147,6 +147,14 @@
             <Adaptions TriggerOnSubstring="_Diffuse" Slot="generic01"/>
         </TextureDeclares>
     </CModel>
+    <CModel id="Sentry_HealingBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Sentry_HealingBeam\Sentry_HealingBeam.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="Sentry_HealingBeam_Impact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Sentry_HealingBeam_Impact\Sentry_HealingBeam_Impact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
     <CModel id="SiegeTankMengskSiegedDeath" parent="SiegeTankSiegedDeathBase">
         <Model value="Assets\COOP\Mengsk\Units\SiegeTank_Mengsk_COOP_Sieged_Death\SiegeTank_Mengsk_COOP_Sieged_Death.m3"/>
         <Events>

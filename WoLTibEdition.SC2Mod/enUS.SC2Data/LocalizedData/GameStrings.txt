@@ -81,6 +81,7 @@ Abil/Name/TrainStone=Train Stone
 Abil/Name/UpgradeDepot=Upgrade Depot
 Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
 Abil/Name/VehicleMercenaries=Vehicle Mercenaries
+Abil/Name/VoidSentryShieldRepair=Shield Repair
 Abil/Name/WarPigSquad=War Pig Squad
 Abil/Name/ZeratulSeek=Zeratul Seek
 Abil/Name/que1Passive=Queue (1) Passive
@@ -261,6 +262,7 @@ Button/Name/VehicleMercenaries8=Vehicle Mercenaries
 Button/Name/VehicleMercenaries9=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
+Button/Name/VoidSentryShieldRepair=Shield Recharge
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre at the Barracks (Requires Shadow Ops)<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
@@ -475,6 +477,7 @@ Button/Tooltip/VehicleMercenaries8=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
+Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
 Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
 ConversationState/ABChoice/ABChoiceTosh03A/Info/Tooltip=<s val="TooltipTitle_Tech">Spectre</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Ultrasonic Pulse and EMP abilities. Has Veterancy.</s>
 ConversationState/ABChoice/ABChoiceTosh03B/Info/Tooltip=<s val="TooltipTitle_Tech">Ghost</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Snipe and Feedback abilities. Has Veterancy.</s>
@@ -903,6 +906,7 @@ Effect/Name/TychusSpectreUltrasonicDamageLv1=TychusSpectreUltrasonicDamageLv1
 Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
 Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1
 Effect/Name/VehicleMercSet=Vehicle Merc Set
+Effect/Name/VoidSentryShieldRepair=Void Sentry Shield Repair
 Effect/Name/VultureLeft=Fragmentation Grenade (Missile, left)
 Effect/Name/WreckingCrewFighterG=Halo Rockets (Persistent2)
 Effect/Name/WreckingCrewFighterLMG=Halo Rockets
