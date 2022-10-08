@@ -242,7 +242,7 @@
             <Resource index="Minerals" value="1800"/>
             <Charge>
                 <CountMax value="99"/>
-                <CountStart value="2"/>
+                <CountStart value="4"/>
                 <CountUse value="-1"/>
                 <Link value="Immortal"/>
                 <Location value="Player"/>
