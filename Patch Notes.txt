@@ -86,7 +86,6 @@ Each protoss base now has resources
 You start with 2 Supply Depots instead of 3
 Shuffled buildings around to give better build radius coverage
 You no longer have free vision of the terrain around the purifier mothership
-*Protoss send more attack waves
 Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
 Counterattacks scale with how many terror fleets you've stopped
 Stopping terrorfleets gives armoury upgrades
@@ -119,3 +118,4 @@ Reinforcement waves happen more often.
 After getting Artanis, you need to spend 300 energy off him to get another reinforcement wave.
 Attack wave timings adjusted to be faster, and not stack up so bad.
 Added a "Die Now" button after you've killed enough.
+The mission is overall faster.
