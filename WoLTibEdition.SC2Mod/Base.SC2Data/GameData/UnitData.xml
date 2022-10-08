@@ -5121,6 +5121,21 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray index="8" Link="VoidSentryShieldRepair"/>
+        <AbilArray index="9" removed="1"/>
+        <AbilArray index="10" removed="1"/>
+        <AbilArray index="11" removed="1"/>
+        <AbilArray index="12" removed="1"/>
+        <AbilArray index="13" removed="1"/>
+        <AbilArray index="14" removed="1"/>
+        <AbilArray index="15" removed="1"/>
+        <AbilArray index="16" removed="1"/>
+        <AbilArray index="17" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Column="2"/>
+            <LayoutButtons index="8" AbilCmd="255,255" Column="3"/>
+            <LayoutButtons Face="VoidSentryShieldRepair" Type="AbilCmd" AbilCmd="VoidSentryShieldRepair,Execute" Row="2" Column="0"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="SentryACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

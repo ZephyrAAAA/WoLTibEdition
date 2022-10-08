@@ -2459,6 +2459,24 @@
         <EffectArray value="DropSpartanCompany"/>
         <TargetLocationType value="UnitOrPoint"/>
     </CEffectSet>
+    <CEffectCreateHealer id="VoidSentryShieldRepair">
+        <ValidatorArray value="noMarkers"/>
+        <ValidatorArray value="ShieldsNotFull"/>
+        <ValidatorArray value="NotWarpingIn"/>
+        <ValidatorArray value="HiddenCompareAB"/>
+        <ValidatorArray value="HiddenCompareBA"/>
+        <ValidatorArray value="NotVortexd"/>
+        <ValidatorArray value="NotUncommandable"/>
+        <ValidatorArray value="SourceNotHidden"/>
+        <ValidatorArray value="NotInterceptor"/>
+        <ValidatorArray value="IsNotK5Kerrigan"/>
+        <EditorCategories value="Race:Terran"/>
+        <PeriodicValidator value="ShieldsNotFull"/>
+        <DrainVital value="Energy"/>
+        <DrainVitalCostFactor value="0.33"/>
+        <RechargeVital value="Shields"/>
+        <RechargeVitalRate value="12"/>
+    </CEffectCreateHealer>
     <CEffectDamage id="VolatileBurstFriendlyBuildingDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
