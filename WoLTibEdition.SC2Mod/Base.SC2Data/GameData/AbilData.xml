@@ -63,6 +63,8 @@
             <Vital index="Energy" value="0"/>
             <Cooldown TimeUse="120"/>
         </Cost>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="EMPSpectre">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -815,6 +817,7 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilArmMagazine id="HammerSecuritiesSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -924,6 +927,7 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="RepairDroneHeal">
         <Effect index="0" value="MechanicalRepair"/>
@@ -2250,6 +2254,7 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <Arc value="360"/>
     </CAbilEffectTarget>
     <CAbilArmMagazine id="WarPigSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>

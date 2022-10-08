@@ -160,6 +160,8 @@
         <AreaArray Arc="180" Radius="2" Fraction="0.33"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="1"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
@@ -2534,7 +2536,7 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="CallForHelp" value="1"/>
-        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="SameCliff" value="0"/>
         <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="YamatoGunTopbarLaunchMissile">
