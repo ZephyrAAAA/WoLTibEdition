@@ -2,7 +2,7 @@ Barracks now says it unlocks bunkers from the CC, not SCVs
 Factory says it builds SCVs
 Starport says it build CC
 CC now says it builds stuff
-*Raynor now suggests doing something else if you try to do 2 Zeratul missions in a row.
+Raynor now suggests doing something else if you try to do 2 Zeratul missions in a row.
 Description of Shadow Ops, Engineering Bay, Armoury, and Fusion Core now list things they have/unlock.
 Refinery no longer says stuff about being built on a geyser.
 Supply depot upgrade no longer says it's free
@@ -24,7 +24,6 @@ HME research text is now correct
 Psi Disruptor research text is now correct
 Hyperflight Rotors- Banshees move faster [Starport Tech Lab]
 Flavour text for Hercules upgrades no longer mentions spectre upgrades
-*More units now say attack lines when told to attack move
 Shadow Ops now has the correct button tooltip whether you get ghosts or spectres
 Doubled the damage of hellstorm missile pods.
 Hellstorm missile pods no longer ignore armour.
@@ -37,6 +36,7 @@ Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repai
 Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
 Nexus- Now 1000/1000, like in later versions
 Stone has voice lines now
+*More units now say attack lines when told to attack move
 
 
 Liberation Day:
@@ -52,13 +52,14 @@ A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
 Smash and Grab:
-You now start with a Spec Ops
+You now start with a Spec Ops if you've purchased any mercs
 
 Evacuation:
-You now start with a Spec Ops
+You now start with a Spec Ops if you've purchased any mercs
+Moved the sensor tower near the starport to provide better build radius for the field.
 
 Devil's Playground:
-You now start with a Spec Ops
+You now start with a Spec Ops if you've purchased any mercs
 A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
