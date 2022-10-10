@@ -1,12 +1,14 @@
 Importing macro mechanics, resource gathering, tech tree elements, and other mechanics from Command and Conquer 3 into the Starcraft 2 Wings of Liberty Campaign.
 
-Also rebalancing units and upgrades to make them more viable, and missions to make them better, and better handle the new systems.
+Also includes rebalancing missions, units, and upgrades to make them better, more viable, and better handle the new systems.
 
 
 
 There is now only 1 resource. Most resource fields regrow over time.
 
 Each mission has been looked over, most mineral fields and all vespene geysers have been removed. All vespene resource pickups have been replaced with mineral pickups or removed. Mineral Pickups now give 1000. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
+
+Build radius is now a thing. Buildings must have their center within the radius. Sensor towers provide build radius, and are buildable from a truck from the Command Center.
 
 Primary Structures now construct buildings, then place then on the map instantly. Workers only harvest resources. Workers harvest multiple times before returning.
 
@@ -34,7 +36,7 @@ Flat armour has been removed in favour of damage types, so units do damage based
 
 Terrans, starting at Zero Hour, now have access to the Devastation Turret, an anti-armour defensive weapon.
 
-Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought.
+Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought. They are unlocked in-mission by building a Spec Ops
 
 Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
 
@@ -43,13 +45,25 @@ Implemented a topbar of Support Powers.
 
 You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
 
+Ghosts/Spectres have been reworked to be a unique Commando unit. Ghosts are better at taking down single targets, Spectres are better at Crowd Control. 
+
 Bonus Objectives now generally give something good in-mission.
 
 Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
 
-Factory and Starport spawn 3 repair drones when landed and powered now. These drones repair mechanical units for free in a certain radius around the structure. They have the repair speed of 2% + 5 health/s.
-
 Reactor Addon has been removed, because of issues with double queues.
+
+Bio units now say an attack line when you tell them to a-move.
+
+All mercs are now unlocked from the start
+
+Progression messages when you return to the Hyperion, and when you start a mission, notifying you of having unlocked the Spec Ops, Predator, Armoury, Hercules, and Fusion Core.
+
+Research bonus objectives now give 10000 credits
+
+Rebalancing of Armoury Upgrade Costs. With the extra money, you can buy everything.
+
+Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
 
 
 MISSION SPECIFIC CHANGES:
@@ -67,9 +81,11 @@ Liberation Day:
 -The two statues in the logistics compound now have 2 marines, 3 on hard and above
 -There is now 4 marines on the path to the APC from the square. This is increased to 6 on hard, or a viking and 2 marines on Brutal
 -Killing 3 and 6 holoboards rewards you with an additional marine squad.
--Killing a holoboard heals all your units, and restores any lost squad members.
+-Killing a holoboard drops a restoration charge that heals all your units, and restores any lost squad members.
 -Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed), and you get a message saying this.
 -Added a tip about squads
+-Added a tip about the existence of Armour and Damage Types
+-Each Holoboard now gives 5k credits
 
 The Outlaws:
 -Moved Supply Depots at the Rebel Base so a resource node could be placed
@@ -78,6 +94,9 @@ The Outlaws:
 -A general increase in the number of enemies in the enemy base, and on the path towards it.
 -Added a second Bunker of Death on Brutal
 -Bunker of Death has been moved slightly
+-The Dominion now starts with Blue Flame
+-Removed one of the supply depots at the rebel base
+-Added a highlight when you build a tech lab, and text for what it does.
 -Added tips about Selling, Power, and Repair
 -Added a tip about refineries and resource gathering
 -Edited the Tech Lab tip to mention upgrades
@@ -87,8 +106,10 @@ The Outlaws:
 -Removed the trigger to give you an SCV if you've been supply blocked for a bit
 -Infantry Ultra Capacitors are available to research on the Barracks tech lab
 -Attack waves now have somewhat randomized timing and composition.
+-Rescuing the Rebels gives 30k credits
 
 Zero Hour:
+-Added 2 Sensor Towers to give build radius on the low ground
 -A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
 -A resource node has been placed on the other side of the east bridge
 -1 additional resource pallet placed in the town
@@ -100,6 +121,7 @@ Zero Hour:
 -Bridges are wider to accomodate ultras on hard and brutal
 -The bridges no longer count as "low ground" for vision.
 -The first attack wave only steals your camera on Normal and Casual now
+-Moved both of the low ground spines so they don't block the Omegalisks.
 -Fixed drop pods, now they don't sometimes give nothing when they should give a hydra.
 -Drop pods now drop more enemy units, still scaling with difficulty.
 -Changed Engineering Bay Tip to reflect what it does in this mod.
@@ -115,6 +137,8 @@ Zero Hour:
 -Added a Firebat to the first Rescue Group
 -Added a Goliath to the second Rescue Group
 -Added a Firebat and Siege Tank to the third Rescue Group
+-Added resources on the low ground.
+-Each rescue group gives 10k credits
 
 The Evacuation:
 -Deleted 3 mineral pallets
@@ -123,13 +147,15 @@ The Evacuation:
 -The Zerg now send attacks against your base between evac runs
 -Nydus worms now appear on the rear road to your base.
 -Added an alternate victory condition to clear all the zerg out of the area
+-Added resources near the starport.
+-Bonus 1 and 2 give Firebat Armoury upgrades, and messages saying this
 
 Devil's Playground:
 -You now need to collect 120k minerals
 -Rare Mineral fields have a lot more minerals now. There is now 116k minerals in rare mineral fields.
 -Removed/Downgraded a bunch of pickups.
 -You start with 2 less depots
--Tosh's miners now have a node, refinery, a depot, and 1 SCV, instead of a CC and 5 SCVs.
+-Tosh's miners now have a node, a refinery, a depot, and 1 SCV, instead of a CC and 5 SCVs.
 -Killing the Brutalisk now gives the first reaper armoury upgrade, and a message
 -Collecting half the required minerals now gives the second reaper armoury upgrade, and a message
 -Brutalisk attack fixed to not have an absurd windup
@@ -141,11 +167,14 @@ Smash and Grab:
 -Stone Zealots now do 20x2 damage to ground, and have 1500/2500/3750/5000 health on Casual/Normal/Hard/Brutal.
 -Bonus 2 and 3 give Marauder Armoury upgrades, and messages saying this
 -Protoss send attack waves now, that scale with time and clearing.
--Zerg attack waves tweaked
+-Zerg attack waves tweaked, scale with time.
+-The CC is moved over a bit so that it gives better build radius coverage
+-There are resource fields on either side of the bridge.
+The protoss have an additional layer of cannons on the close side of the bridge.
 
 Outbreak:
+-You must have done 5 missions to unlock this one
 -Removed 2 of the starting depots
--Bonus objectives give hellion armoury upgrades
 -The main base only has 1 node
 -There is a node outside each entrance.
 -The node in your base starts empty, your Adjutant notes that you have no minerals in your base, and can find some outside it.
@@ -153,8 +182,10 @@ Outbreak:
 -Aberrations now show up at the end of the first night, and every night thereafter
 -The infested now know about your expansion even if you don't have a CC there. It now checks for *any* structures owned by the player
 -Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
+-Added a sensor tower on the south high ground, for build radius around the third entrance
 
 Welcome to the Jungle:
+-You must have done 5 missions to unlock this one
 -You start with 2 SCVs now.
 -In addition to the expansion, there is now 6 nodes spread around the map. The 2 closest to your base are Medium, the rest are Small. They all start empty.
 -The Tal'darim defend and contest these nodes. 1 warp prism, 2 stalkers, 1 scout, and 2 void rays, plus 1 colossus on hard, and 1 HT (After 3 reinforce cycles) on brutal. These units have bullies, and are replaced as often as every 2.5 minutes on brutal, provided there is less than (3/3/4/6) units.
@@ -165,13 +196,16 @@ Welcome to the Jungle:
 -SCVs harvest terrazine, and return it to Refineries
 -The expansion now has a HT on brutal after some time has passed
 -The expansion and west outpost both have an extra cannon on hard and brutal
--The protoss now send 2 counterattacks against each defended area you take, in an attempt to take it back. You have to successfully defend 2 of these attacks consecutively in order for them to give up
+-The protoss now send a counterattack against each defended area you take, in an attempt to take it back. You have to prevent them from deploying a warp prism and keeing it there long enough in order for them to give up
 -These attack waves scale with the relative importance of the area being contested.
 -Added a scout to the expansion.
 -Replaced a stalker in the expansion with a colossus
+-You no longer get free vision of all the altars
 
 Great Train Robbery:
 -Removed 2 of the starting depots
+-Removed free vision from trains and kill teams.
+-Added sensor towers to cover the area around your plateau.
 -Replaced 2 mineral pallets with vespene pallets.
 -The starting fields and expansion fields are empty
 -Removed 1 mineral pallet
@@ -187,10 +221,122 @@ Great Train Robbery:
 -Kill teams now respawn up to 3 times on hard and brutal. Killing one gives about a minute of reprieve before it is replaced.
 -Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
 
+The Dig:
+-The protoss defense force for the east shrines now has 3 cannons on brutal
+-No camera stealing on Hard or Brutal
+-Cliff on the east side of the east choke is now accessible and slightly larger
+-Protoss defenders of east temples moved up a bit
+-The Abandoned Base SCVs no longer mine minerals
+-The Laser Drill targets faster
+-The Laser Drill has some interesting notes on it.
+-Getting the first bonus now gives you Siege Tank Servo Motors, and a message saying so
+-Getting the second bonus now gives you Siege Tank Shaped Blast, and a message saying so
+-The Laser Drill now has a really expensive (30K) upgrade that lets you take it with you. It can be deployed, from the topbar, once per mission, for 20K on the fusion core
+-Added an extra stargate to each base, so maybe they can keep up with late-game attack wave demands.
+-Attack waves linger for shorter, and hitting them with the laser drill no longer sends them immediately.
+-Extended the chasm in front of the drill to have little tendrils around your plateau
+-The protoss now get 3/3/3 if you have done at least 9 missions, instead of always guaranteed
+-Removed the attack wave based on getting the temple to 33% health.
+
+Cutthroat:
+-Can no longer be done right after The Great Train Robbery
+-You now need to collect 80k minerals.
+-Scrap now gives 10x the minerals.
+-Removed unnecessary triggers to award resources when picking up non-scrap
+-Orlan now mines 1400 minerals per load.
+-Orlan now has 1 SCV per base
+-You now start with 1 SCV
+-Reorganized Mira's base to fit a refinery next to the nodes
+-Mira starts with 2 SCVs instead of 8.
+-Moved Orlan's CCs closer to the nodes they mine from
+-Getting the second bonus now gives you Vulture Cerberus Mine, and a message saying so
+-Getting the third bonus now gives you Vulture EMP Rounds, and a message saying so
+
+Whispers of Doom:
+-Zeratul swole now, 3 charges of blink, restores all 3 charges every 10s, 33% faster attack speed
+-Abilities are no longer disabled at the start of the mission
+-Each shrine no longer forces you to wait and listen to Zeratul before continuing.
+-Kerrigan now uses Razor Swarm, and has more energy.
+-Karass' psi storm no longer ignores armour
+-Karass now has 2000 energy and 10 energy regen per second
+
+A Sinister Turn:
+-Stealth misison, free the preservers while avoiding Ma'ar and Protoss guardians
+-There is a preserver in each base
+-Maar now teleports to the preserver prison you just killed.
+-Zeratul gets recalled to the void seeker when he kills a preserver prison
+-Maar now follows zeratul slowly. If zeratul becomes detected by Maar, he moves faster. If zeratul is detected by other means, Maar will teleport to zeratul within a few seconds.
+-The bonuses no longer warp in extra units
+-You don't get a base, instead getting zeratul
+-Zeratul no slap if he's not told to.
+-Zeratul only gets 1 charge of blink
+-Zeratul gets a Power ability, to temporarily power any protoss structure
+-Zeratul gets a Recall ability that autocasts on death. 60s cooldown, recalls him to the void seeker
+-Zeratul gets a new ability from each of the Dark Shrine, Robotics Facility, and Templar Archives.
+-Archons, Sentries, and High Templar now have a detection cone.
+
+Breakout:
+-Tosh has 500 health
+-Tosh has an Anti-structure attack that deals 100% of the target's health.
+-Tosh hits for 1000 sniper damage at 0.4 speed
+-Gave Tosh Psionic Lash
+-Tosh now regens energy really fast while out of combat.
+-Consumption now heals Tosh for the same value as energy gained.
+-Tosh now has an ability to trigger an attack wave from Jim. Stores up to 3 charges.
+-Tosh has an XP bar
+-Added an autosave after each bonus objective.
+-Added an autosave after clearing the entrance to the main base.
+-Ghosts are easier on lower difficulties.
+
+Ghost of a Chance:
+-Nova has 500 health
+-Snipe can hit anything, does 170 damage, and is affected by armour.
+-Nova hits for 1000 sniper damage at 0.4 speed
+-Nova's max energy is now 150, and regenerates faster, at 2/s.
+-You have Marauders in the first section
+-Nova has an Anti-structure attack that deals 100% of the target's health.
+-Nova has an XP bar
+-Nova now has a heal ability that has 50 base energy cost, and heals 10 HP/s for 20 energy
+
+The Moebius Factor:
+-Stranded mercs are no longer just war pigs and spartans (Except for that one pair of hamsec)
+-Killing the brutalisk unlocks the first medivac upgrade.
+-Killing the second datacore unlocks the second medivac upgrade.
+
+Engine of Destruction:
+-Can no longer be done right after Cutthroat
+-Doubled Tychus' health
+-The Odin now has Biosteel.
+-The Odin now prefers to hit ground targets
+-You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
+-You start with 2 lees supply depots.
+-You start with an Engineering Bay
+-Each base now has a field, encouraging setting up an expansion after clearing.
+-Attack wave against the Odin from the third base now sends hellions instead of most of the vultures.
+-There's now an autosave after each base.
+-The first and second bonus objectives now give Wraith armoury upgrades
+-Loki no longer uses energy
+-Killing the Loki now gives 50k credits
+-Loki hp buffed to be 6k on normal, change by 2k per difficulty step away.
+-Loki now has a second and third volley of missile pods
+-Loki now has a second yamato
+-Loki missile pods are no longer channeled
+
+Echoes of the Future:
+-No base for you
+-Powering structures gives reinforcements
+-Powering Obelisks give upgrades
+-Clearing zerg bases gives terran units
+-Touching the overmind gives upgrades
+-Zeratul now shuts up long enough for the cutscene to happen if you get to the nexus before he finishes talking about the observer.
 
 UNIT CHANGES:
 
 Command Center- Can no longer load SCVs
+
+Factory/Starport- Hosts 3 repair drones that heal 10+2%/s, to both health and shields
+
+Fusion Core- yamato strike support power, all mission-unlocked support powers
 
 SCV- Can no longer repair
 
@@ -202,22 +348,42 @@ Medic- Better Healing priority. Medic healing nerfed to 6hp/s for 3E/s
 
 Bunker- Has 4 slots, fits 1 squad
 
-Hellion- Now fires constantly
+Hellion- Now fires constantly, hp buff
 
 Reaper- Guns now do Sniper damage, charges are now melee range.
 
 Vulture- No longer needs an upgrade to replenish mines.
 
-Predator- Comparitively Cheaper, not locked behind research
+Wraith- Triple attack damage and attack coodown, on both weapons. Laser can fire up
+
+Predator- Comparitively Cheaper, not locked behind research, has an energy shield to absorb damage
+
+Viking- Reduce Viking missile range, give AOE base, reduce damage, increase fire rate
+
+Thor- Reduce damage by 33%, Barrage no longer stuns, Barrage starts area
 
 Diamondback- Increase speed to match hellion, range increased
 
 Goliath- Starts with Ares, Anti-ground Damage increased by 33%
 
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Removal of energy bar. Tech requirement move from Fusion Core to Armoury.
+
 Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheaper. Has 2 more slots. Not locked behind research
 
-Fusion Core- yamato strike support power, all mission-unlocked support powers
+Medivac- Heals units inside it at 8hp/3e/s, heals with beams for 8hp/3e/s. Medivacs no longer cancel orders when it heals something
 
+Kerrigan- Massive units are now immune to Implosion, More Health, no armour type
+
+Ghost-Cloak is gone, Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+
+Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Psi Storm, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+
+Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repair (5hp/1e/s), and Irradiate
+
+Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
+
+
+Zealots- Move faster
 
 High Templar- Storm no longer ignores armour
 
@@ -227,13 +393,35 @@ Immortals- Hardened Shield removed, shield health doubled
 
 Sentry- Guardian Shield now gives 30% damage resist
 
+Nexus- Now 1000/1000, like in later versions
+
+Colossus- Attack rate increased
+
+Archons- Are now massive
+
+Stalkers- Know how to blink
+
+
+Infestors- Now use fungal, fungal isn't garbage
+
+
 ARMORY UPGRADE CHANGES:
 
 Stimpack- No movement bonus
 
-Concussive- Applies to Devastation Turret
+Concussive- Applies to Devastation Turret, reduces movement speed by 33% instead of 50%
+
+Stabilizer-  Only reduces required energy now
+
+Medic Tech-
 
 Projectile Accelerator- Affects Shrike Turret
+
+Orbital Command- Unlock support powers on tech buildings. Scan on EBay, tactical missiles on shadow ops, nuke on armoury
+
+Advanced Construction- Reduces build time of units by 20% (Also affects cost)
+
+Dual Fusion- increases repair speed of Topbar Repair and Repair Drones by 50%.
 
 Thermite-> Hydraulic Stabilizers- Allow Hellion to Fire on the move
 
@@ -241,6 +429,11 @@ Thicc flame- Fixed
 
 Neosteel Bunker-> Shrike Turret, also shrike is buffed (6x2, 6 range+1 with projectie accelerator, affected by infantry ultracaps)
 
+Displacement Field- Resists 40% of damage
+
+Tomahak power cells- Also increases energy regen by 50%
+
+Hyperflight rotors-> Half energy cloak
 
 Maelstrom-> Smart Servos- Reduce transformation time, and can be loaded while sieged
 
@@ -252,16 +445,35 @@ U-238 Shells- Increases damage, instead of damage vs light
 
 G-4 Cluster Bomb-> Combat Drugs- Life Regen
 
+Phobos-> Advanced Machinery- Attack speed and transform speed
+
+Ripwave missiles-> Turret Missile Pods- Vikings can now use their missiles against ground targets in walker mode.
+
 Tri-lithium-> Railgun Piercing
 
 Ares Class-> Health
+Medivac Rapid Deployment-> Medivac Bunker- infantry can fire out of the medivac, the medivac drops faster, and has a larger pickup range. Units inside can use stim
+
+Ocular Implants-> Reinforced Barrier- Doubles the effectiveness of the Predator's energy shield
+
+Crius Suit-> Field Projectors- Increases the radius of the Predator's Retribution Field.
+
+Psionic Lash-> Behemoth Engines- Increases Hercules movement speed by 30%
+
+Nyx-Class Cloaking Module-> Miniature Drop Pods- Hercules have more pickup range, drop units instantly, and units take only 10% of health as damage when the hercules is destroyed.
+
 Replenishable Magazine-> EMP- Disables mechanical units on attack
 
 
+RESEARCH LAB CHANGES:
+
+Orbital Strike- Now reduces topbar costs and cooldown
+
+Tech Reactor-> Plasma Shielding- Shields for all units
 
 Autogas-> Autoharvesting
 
-Command Center Reactor- Reduce build time of buildings (Also affects cost)
+Command Center Reactor- Reduces build time of buildings by 20% (Also affects cost)
 
 Orbital Supply Depot-> Orbital Supply Drop- 5/s (600/min) Passive income
 
@@ -271,10 +483,22 @@ Ultra-Capacitors- Gives all Ultra Capacitor upgrades permanently
 
 Vanadium Plating- Gives all Vanadium Plating upgrades permanently
 
+
+Hive Mind Emulator- Now a topbar power on the fusion core
+
+Psi Disruptor- Now a topbar power on the fusion core
+
+Regenerative Bio-steel- BEEG buff 2% health/s
+
+Cellular Reactor-> Titansteel- +25% health for all units
+
+Predator-> Commando Upgrade- Reduced ability cooldown, more ability charges.
+
+Hercules-> Cellular Reactor- Also increases energy regen by 50%, and reduces ability cooldowns on the Thor and Battlecruiser
+
 Shrike Turret->Hi-Sec- Now gives the Hi-Sec upgrade permanently, rather than having to research every mission.
 
 Bunker Health-> Building Armour Now gives the Building Armour upgrade permanently, rather than having to research every mission.
-
 
 
 NEW IN-GAME UPGRADES:
@@ -283,16 +507,28 @@ Building Health and Armour [Engineering Bay]
 
 Defense turret range and fire rate [Engineering Bay]
 
-Marauder shoulder rockets- [Spec Ops]
+Marauder shoulder rockets- Gives Marauders and anti-air rocket attack [Spec Ops]
 
 Ultra Capacitors- 20% attack speed (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
 Vanadium Plating- 20% damage reduction (Separate Upgrade for Infantry/Vehicles/Ships) [Appropriate Tech Lab]
 
+Improved Rotors- Banshees move faster [Starport Tech Lab]
+
+Improved Engines- Battlecruisers move faster [Starport Tech Lab]
+
+BC Health- [Starport Tech Lab]
+
+Improved Explosives- All Missile weapons deal more damage (Goliath, Wraith, Viking, Thor, Banshee, Marauder Crotch Rockets) [Armoury]
+
 Blue Flame- all fire weapons (Firebat, Hellion, Perdition) deal more damage [Armoury]
 
+Railgun Upgrade- Diamondback deals more damage, Goliath ground attack upgraded [Armoury]
 
-Blue Flame- all fire weapons deal more damage [Armoury]
+Improved Shields-Requires the Shield Research. Improves shield stats [Armoury]
+
+Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Armoury]
+
 
 MISC CHANGES:
 You now start with 3 protoss research as well

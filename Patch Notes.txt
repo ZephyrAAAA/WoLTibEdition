@@ -32,12 +32,9 @@ Infested now move faster on creep.
 Hercules dying removes all shields from units dropped.
 Fixed starting refineries doing weird things when you have autoref
 Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
-Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repair, and Irradiate
-Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
 Nexus- Now 1000/1000, like in later versions
 Stone has voice lines now
 *More units now say attack lines when told to attack move
-
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -91,8 +88,8 @@ Killing a nexus causes the protoss to send a counterattack to try retake the are
 Counterattacks scale with how many terror fleets you've stopped
 Stopping terrorfleets gives armoury upgrades
 Stopping counterattacks gives armoury upgrades
-Gives less base money, but gives money for each settlement saved.
-*Attacking a base starts a 4/4/3/2 minute timer before they will warp in reinforcements
+Attacking a base starts a 4/4/3/2 minute timer before they will warp in reinforcements
+*Gives less base money, but gives money for each settlement saved. Also has a bonus objective tracking this
 
 Haven's Fall:
 You start with 2 SCVs, 1 if you have autoref
@@ -108,8 +105,9 @@ All infested spawn 33% faster.
 Civilians and marines spawn twice as many.
 Aberrations start coming in half the time
 Stopping reinfestations grants armoury upgrades
-Gives less base money, but gives money for each settlement saved.
 Virophage health is now always based on difficulty.
+*Gives less base money, but gives money for each settlement saved. Also has a bonus objective tracking this
+*Infested Eggs no longer block unit movement.
 
 In Utter Darkness:
 You have no base.
@@ -117,8 +115,9 @@ You gain resources by killing enemies.
 You spend resources to increase how many of each unit you can have.
 Reinforcement waves warp in all units missing from your army.
 Reinforcement waves happen more often.
-After getting Artanis, you need to spend 300 energy off him to get another reinforcement wave.
+After getting Artanis, you need to spend 300 energy off him to get a reinforcement wave.
 Attack wave timings adjusted to be faster, and not stack up so bad.
 Added a "Die Now" button after you've killed enough.
 The mission is overall faster.
 Sentries now have shield restore.
+The Archive now hosts 3 repair drones
