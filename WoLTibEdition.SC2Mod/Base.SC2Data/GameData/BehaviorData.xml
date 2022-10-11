@@ -728,4 +728,11 @@
             <ValidatorArray value="IsHeroic"/>
         </DurationOverride>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ZergHypervirus">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\BTN-Ability-Zerg-NeuralParasite.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Player Value="Hostile"/>
+        <Modification SightBonus="10" WeaponScanBonus="15"/>
+    </CBehaviorBuff>
 </Catalog>

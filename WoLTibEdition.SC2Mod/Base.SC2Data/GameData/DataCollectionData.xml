@@ -481,9 +481,15 @@
         <DataRecord Entry="Actor,Bunker"/>
         <DataRecord Entry="Actor,BunkerSplat"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="VehicleMercenaries">
+    <CDataCollectionUnit id="ZergHypervirus">
         <EditorCategories value="DataGroup:Ability"/>
-        <DataRecord Entry="Abil,VehicleMercenaries"/>
+        <DataRecord Entry="Abil,ZergHypervirus"/>
+        <Button value=""/>
+        <TechInfoUpgradeUsed value="OrbitalStrike"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="VehicleMercenaries2">
+        <EditorCategories value="DataGroup:Ability"/>
+        <DataRecord Entry="Abil,VehicleMercenaries2"/>
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
     </CDataCollectionUnit>

@@ -80,10 +80,11 @@ Abil/Name/TakeTheDrill=Take The Drill
 Abil/Name/TrainStone=Train Stone
 Abil/Name/UpgradeDepot=Upgrade Depot
 Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
-Abil/Name/VehicleMercenaries=Vehicle Mercenaries
+Abil/Name/VehicleMercenaries2=Vehicle Mercenaries
 Abil/Name/VoidSentryShieldRepair=Shield Repair
 Abil/Name/WarPigSquad=War Pig Squad
 Abil/Name/ZeratulSeek=Zeratul Seek
+Abil/Name/ZergHypervirus=Zerg Hypervirus
 Abil/Name/que1Passive=Queue (1) Passive
 Alert/Text/MULEExpired=Structure complete.
 Behavior/Name/BuildingRepair=Building Repair
@@ -103,6 +104,7 @@ Behavior/Name/SquadVeterancy2=Squad Veterancy2
 Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
 Behavior/Name/Veterancy=Veterancy
 Behavior/Name/ZeratulHoldFire=Hold Fire
+Behavior/Name/ZergHypervirus=Zerg Hypervirus
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 30%.
 Behavior/Tooltip/PsiDisruption=Unit will attack nearby units.
 Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
@@ -111,6 +113,18 @@ Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supp
 Button/Name/AstralProjection=Astral Projection
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
 Button/Name/BuildingRepair=Building Repair
+Button/Name/CallInGoldenArmada10=Call In Golden Armada
+Button/Name/CallInGoldenArmada11=Call In Golden Armada
+Button/Name/CallInGoldenArmada12=Call In Golden Armada
+Button/Name/CallInGoldenArmada13=Call In Golden Armada
+Button/Name/CallInGoldenArmada14=Call In Golden Armada
+Button/Name/CallInGoldenArmada3=Call In Golden Armada
+Button/Name/CallInGoldenArmada4=Call In Golden Armada
+Button/Name/CallInGoldenArmada5=Call In Golden Armada
+Button/Name/CallInGoldenArmada6=Call In Golden Armada
+Button/Name/CallInGoldenArmada7=Call In Golden Armada
+Button/Name/CallInGoldenArmada8=Call In Golden Armada
+Button/Name/CallInGoldenArmada9=Call In Golden Armada
 Button/Name/CombatDrugs=Combat Drugs
 Button/Name/DeathRecall=Recall
 Button/Name/DeployLaserDrill10=Deploy Laser Drill
@@ -263,6 +277,18 @@ Button/Name/VehicleMercenaries9=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
 Button/Name/VoidSentryShieldRepair=Shield Recharge
+Button/Name/ZergHypervirus10=Zerg Hypervirus
+Button/Name/ZergHypervirus11=Zerg Hypervirus
+Button/Name/ZergHypervirus12=Zerg Hypervirus
+Button/Name/ZergHypervirus13=Zerg Hypervirus
+Button/Name/ZergHypervirus14=Zerg Hypervirus
+Button/Name/ZergHypervirus3=Zerg Hypervirus
+Button/Name/ZergHypervirus4=Zerg Hypervirus
+Button/Name/ZergHypervirus5=Zerg Hypervirus
+Button/Name/ZergHypervirus6=Zerg Hypervirus
+Button/Name/ZergHypervirus7=Zerg Hypervirus
+Button/Name/ZergHypervirus8=Zerg Hypervirus
+Button/Name/ZergHypervirus9=Zerg Hypervirus
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre at the Barracks (Requires Shadow Ops)<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
@@ -278,6 +304,18 @@ Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of 
 Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/CallInGoldenArmada10=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada11=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada12=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada13=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada14=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada3=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada4=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada5=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada6=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada7=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada8=Calls in a portion of the golden armada to strafe across target area.
+Button/Tooltip/CallInGoldenArmada9=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
 Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- Supply Depot<n/>- Refinery<n/>- Crane<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Repair<n/>- Depower<n/>- Sell Structure
@@ -359,6 +397,7 @@ Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NovaHeal=Heals Nova.<n/><n/><c val="f078ff">Heals <d ref="Effect,NovaHeal,RechargeVitalRate"/> life per second for <d ref="Effect,NovaHeal,RechargeVitalRate * Effect,NovaHeal,DrainVitalCostFactor"/> energy.</c>
+Button/Tooltip/NovaSnipe=Fires a psi-charged bullet, dealing <d ref="Effect,NovaSnipe,Amount"/> damage.
 Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
 Button/Tooltip/NukeCalldown11=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
 Button/Tooltip/NukeCalldown12=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
@@ -478,6 +517,18 @@ Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
+Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus11=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus12=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus13=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus14=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus3=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus4=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus5=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus6=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus7=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus8=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/ZergHypervirus9=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
 ConversationState/ABChoice/ABChoiceTosh03A/Info/Tooltip=<s val="TooltipTitle_Tech">Spectre</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Ultrasonic Pulse and EMP abilities. Has Veterancy.</s>
 ConversationState/ABChoice/ABChoiceTosh03B/Info/Tooltip=<s val="TooltipTitle_Tech">Ghost</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Snipe and Feedback abilities. Has Veterancy.</s>
@@ -689,11 +740,12 @@ DataCollection/Name/TibNodeLarge=Tib Node Large
 DataCollection/Name/TibNodeMedium=Tib Node Medium
 DataCollection/Name/TibNodeSmall=Tib Node Small
 DataCollection/Name/TibVein=Tib Vein
-DataCollection/Name/VehicleMercenaries=Vehicle Mercenaries
+DataCollection/Name/VehicleMercenaries2=Vehicle Mercenaries
 DataCollection/Name/VespeneGeyser=Vespene Geyser
 DataCollection/Name/VikingAssault=Viking
 DataCollection/Name/VikingFighter=Viking
 DataCollection/Name/WarPigSquad=War Pig Squad
+DataCollection/Name/ZergHypervirus=Zerg Hypervirus
 DocInfo/Author=Blizzard Entertainment
 DocInfo/DescLong=
 DocInfo/DescShort=Storymode map
@@ -915,6 +967,8 @@ Effect/Name/YamatoGunTopbarDamage=Yamato Gun
 Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
 Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
 Effect/Name/ZeratulSeek=Zeratul Seek
+Effect/Name/ZergHypervirus=Zerg Hypervirus
+Effect/Name/ZergHypervirusSearch=Zerg Hypervirus
 LoadingScreen/TextBody=<s val="LoadingScreenTitleMarSara">Mar Sara</s><n/><n/><s val="LoadingScreenBody">Fringe World, Dominion Space <n/>Koprulu Sector<n/><n/>Recolonized 2502</s>
 LoadingScreen/Tip=<sp/>
 MapInfo/Player00/Name=Neutral

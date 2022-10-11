@@ -176,6 +176,34 @@
     <CActorUnit id="Medivac">
         <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
     </CActorUnit>
+    <!-- <CActorModel id="NeuralParasiteEgg" parent="ModelAddition">-->
+    <!--        <HostSiteOps Ops="SOpAttachHead"/>-->
+    <!--        <On Terms="Effect.NeuralParasitePersistent.Start; At Target" Send="Create"/>-->
+    <!--        <On Terms="Effect.NeuralParasitePersistent.Stop" Send="AnimBracketStop BSD"/>-->
+    <!--    </CActorModel>-->
+    <!--    <CActorSound id="NeuralParasiteSound" parent="SoundOneShot">-->
+    <!--        <Sound value="Infestor_NeuralParasiteAttackLaunch"/>-->
+    <!--        <Host Subject="NeuralParasiteModel"/>-->
+    <!--        <On Terms="Abil.NeuralParasite.SourceCastStart" Send="Create"/>-->
+    <!--    </CActorSound>-->
+    <!--    <CActorSound id="NeuralParasiteImpactSound" parent="SoundOneShot">-->
+    <!--        <Sound value="Infestor_NeuralParasiteAttackImpact"/>-->
+    <!--        <On Terms="Effect.NeuralParasitePersistent.Start" Send="Create"/>-->
+    <!--    </CActorSound>-->
+    <!--    <CActorMissile id="NeuralParasiteMissile" parent="GenericAttackMissile" unitName="NeuralParasiteWeapon">-->
+    <!--        <Model value="NeuralParasiteMissileModel"/>-->
+    <!--    </CActorMissile>-->
+    <!--    <CActorAction id="NeuralParasite" parent="GenericAttack" effectLaunch="NeuralParasiteLaunchMissile">-->
+    <!--        <ImpactSiteOps Ops="SOpAttachHead"/>-->
+    <!--        <ImpactAttachQuery Methods="Head"/>-->
+    <!--    </CActorAction> -->
+    <CActorModel id="NeuralParasiteModel">
+        <On index="4" Terms="ActorCreation"/>
+        <On index="5" Terms="ActorCreation"/>
+        <On Terms="Behavior.ZergHypervirus.On" Send="Create"/>
+        <On Terms="Behavior.ZergHypervirus.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZergHypervirus.Off; ValidateUnit SourceNotDead" Target="::Main" Send="SetSoundSuffix"/>
+    </CActorModel>
     <CActorTurret id="PhoenixTurret">
         <On Terms="TurretEnable.Phoenix" Send="Create"/>
     </CActorTurret>
@@ -875,7 +903,10 @@
     <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
         <EditorCategories value=""/>
     </CActorSplat>
-    <CActorSplat id="BansheeAirstrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
+    <CActorSplat id="ZergHypervirusCursorSplat" parent="TerranCursorSplat" abil="ZergHypervirus">
+        <EditorCategories value=""/>
+    </CActorSplat>
+    <CActorSplat id="TacticalMissileStrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
         <EditorCategories value=""/>
     </CActorSplat>
     <CActorSplat id="HiveMindEmulatorCursorSplat" parent="TerranCursorSplat" abil="HiveMindEmulator">
