@@ -989,6 +989,7 @@ bool lib3B48F5E9_gt_UnhighlightPredator_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_UnhighlightPredator_Init () {
     lib3B48F5E9_gt_UnhighlightPredator = TriggerCreate("lib3B48F5E9_gt_UnhighlightPredator_Func");
     TriggerEnable(lib3B48F5E9_gt_UnhighlightPredator, false);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_UnhighlightPredator, 90.0, c_timeGame);
     TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightPredator, 1, "Predator");
 }
 
@@ -1010,6 +1011,7 @@ bool lib3B48F5E9_gt_UnhighlightGhostAcademy_Func (bool testConds, bool runAction
 void lib3B48F5E9_gt_UnhighlightGhostAcademy_Init () {
     lib3B48F5E9_gt_UnhighlightGhostAcademy = TriggerCreate("lib3B48F5E9_gt_UnhighlightGhostAcademy_Func");
     TriggerEnable(lib3B48F5E9_gt_UnhighlightGhostAcademy, false);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_UnhighlightGhostAcademy, 90.0, c_timeGame);
     TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightGhostAcademy, 1, "GhostAcademy");
 }
 
@@ -1031,6 +1033,7 @@ bool lib3B48F5E9_gt_UnhighlightArmory_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_UnhighlightArmory_Init () {
     lib3B48F5E9_gt_UnhighlightArmory = TriggerCreate("lib3B48F5E9_gt_UnhighlightArmory_Func");
     TriggerEnable(lib3B48F5E9_gt_UnhighlightArmory, false);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_UnhighlightArmory, 90.0, c_timeGame);
     TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightArmory, 1, "Armory");
 }
 
@@ -1052,6 +1055,7 @@ bool lib3B48F5E9_gt_UnhighlightHercules_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_UnhighlightHercules_Init () {
     lib3B48F5E9_gt_UnhighlightHercules = TriggerCreate("lib3B48F5E9_gt_UnhighlightHercules_Func");
     TriggerEnable(lib3B48F5E9_gt_UnhighlightHercules, false);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_UnhighlightHercules, 90.0, c_timeGame);
     TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightHercules, 1, "BuildHercules");
 }
 
@@ -1073,6 +1077,7 @@ bool lib3B48F5E9_gt_UnhighlightFusionCore_Func (bool testConds, bool runActions)
 void lib3B48F5E9_gt_UnhighlightFusionCore_Init () {
     lib3B48F5E9_gt_UnhighlightFusionCore = TriggerCreate("lib3B48F5E9_gt_UnhighlightFusionCore_Func");
     TriggerEnable(lib3B48F5E9_gt_UnhighlightFusionCore, false);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_UnhighlightFusionCore, 90.0, c_timeGame);
     TriggerAddEventButtonPressed(lib3B48F5E9_gt_UnhighlightFusionCore, 1, "FusionCore");
 }
 
