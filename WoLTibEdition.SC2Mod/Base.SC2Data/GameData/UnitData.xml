@@ -930,8 +930,6 @@
         <AttackTargetPriority value="19"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="BunkerTransport"/>
-        <AbilArray Link="SalvageShared"/>
-        <AbilArray Link="SalvageBunkerRefund"/>
         <AbilArray Link="Rally"/>
         <AbilArray Link="StimpackRedirect"/>
         <AbilArray Link="StimpackMarauderRedirect"/>
@@ -956,7 +954,6 @@
             <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="2" Column="1"/>
             <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="2" Column="2"/>
-            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
