@@ -199,14 +199,12 @@
         <IconArcLength value="0.100000"/>
     </CActorRange>
     <CActorPower id="BuildRadiusLarge">
-        <On Terms="Behavior.BuildRadiusLarge.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <On Terms="Behavior.BuildRadiusLarge.Destroy" Send="Destroy"/>
         <PowerSource value="BuildRadiusLarge"/>
         <VisualArray value="StetmannBlobLarge"/>
         <VisualArray value="StetmannBlobLarge"/>
     </CActorPower>
     <CActorPower id="BuildRadiusSmall">
-        <On Terms="Behavior.BuildRadiusSmall.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <On Terms="Behavior.BuildRadiusSmall.Destroy" Send="Destroy"/>
         <PowerSource value="BuildRadiusSmall"/>
         <VisualArray value="StetmannBlob"/>
@@ -1695,6 +1693,7 @@
         <On Terms="ActorOrphan" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
         <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
+        <On Terms="Behavior.BuildRadiusSmall.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <MaxScale value="0.137500,0.137500"/>
         <ScaleDeltaTime value="0.015000,0.015000"/>
     </CActorBlob>
@@ -1703,8 +1702,9 @@
         <On Terms="ActorOrphan" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
         <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
-        <MaxScale value="0.270000,0.270000"/>
-        <ScaleDeltaTime value="0.030000,0.030000"/>
+        <On Terms="Behavior.BuildRadiusLarge.Create; ValidateUnit CasterNotDead" Send="Create"/>
+        <MaxScale value="0.257000,0.257000"/>
+        <ScaleDeltaTime value="0.028125,0.028125"/>
     </CActorBlob>
     <CActorSound id="TempestAirAttackSoundFleet" parent="SoundOneShot">
         <EditorCategories value=""/>

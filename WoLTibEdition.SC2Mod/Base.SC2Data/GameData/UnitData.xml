@@ -1566,6 +1566,8 @@
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
+        <BehaviorArray Link="BuildRadiusSmall"/>
+        <BehaviorArray Link="NeedsBuildRadius"/>
         <CardLayouts>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
