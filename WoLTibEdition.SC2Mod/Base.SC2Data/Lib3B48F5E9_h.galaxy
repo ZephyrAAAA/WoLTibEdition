@@ -25,6 +25,7 @@ trigger lib3B48F5E9_gt_UnhighlightHercules;
 trigger lib3B48F5E9_gt_UnhighlightFusionCore;
 trigger lib3B48F5E9_gt_FleetAbilitySwap;
 trigger lib3B48F5E9_gt_FleetAbilityCost;
+trigger lib3B48F5E9_gt_ZerghyperRemove;
 
 // Library Initialization
 void lib3B48F5E9_InitVariables ();

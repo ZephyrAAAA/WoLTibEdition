@@ -173,15 +173,20 @@ void AddTopbars () {
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {
 		AddTopbarAbil("HyperionYamato");
-		//AddTopbarAbil("FleetTargeting");
-		if (TechTreeAbilityIsAllowed(1, AbilityCommand("DeployLaserDrill", 0))) {
-			AddTopbarAbil("DeployLaserDrill");
-		}
 		if (TechTreeUpgradeCount(1, "HiveMindEmulator", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("HiveMindEmulator");
 		}
 		if (TechTreeUpgradeCount(1, "PsiDisruptor", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("PsiDisruptor");
+		}
+		if (TechTreeAbilityIsAllowed(1, AbilityCommand("DeployLaserDrill", 0))) {
+			AddTopbarAbil("DeployLaserDrill");
+		}
+		if (TechTreeAbilityIsAllowed(1, AbilityCommand("ZergHypervirus", 0))) {
+			AddTopbarAbil("ZergHypervirus");
+		}
+		if (TechTreeAbilityIsAllowed(1, AbilityCommand("CallInGoldenArmada", 0))) {
+			AddTopbarAbil("CallInGoldenArmada");
 		}
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {
@@ -208,6 +213,8 @@ void RemoveTopbars () {
 		RemoveTopbarAbil("DeployLaserDrill");
 		RemoveTopbarAbil("HiveMindEmulator");
 		RemoveTopbarAbil("PsiDisruptor");
+		RemoveTopbarAbil("ZergHypervirus");
+		RemoveTopbarAbil("CallInGoldenArmada");
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("ScannerSweepTopbar");
@@ -737,11 +744,6 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("MakeVultureSpiderMines", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("330mmBarrageCannons", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("EMPSpectre", 0), true);
-	TechTreeAbilityAllow(1, AbilityCommand("FirebatSquad", 0), true);
-	TechTreeAbilityAllow(1, AbilityCommand("MarauderSquad", 0), true);
-	TechTreeAbilityAllow(1, AbilityCommand("MarineSquad", 0), true);
-	TechTreeAbilityAllow(1, AbilityCommand("MedicSquad", 0), true);
-	TechTreeAbilityAllow(1, AbilityCommand("ReaperSquad", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("TrainStone", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 1), true);
@@ -812,6 +814,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		rate += 116;
 	}
 	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Laser_Drill") > 0);
+	TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 6)) > 0);
+	TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 7)) > 0);
 	ConversationDataStateSetValue("StoryState|AchievementDisabled", 1);
 	AchievementsDisable(1); //one of these should work
 	return true;

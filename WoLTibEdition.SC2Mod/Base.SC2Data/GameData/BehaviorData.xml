@@ -733,6 +733,8 @@
         <InfoIcon value="Assets\Textures\BTN-Ability-Zerg-NeuralParasite.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Player Value="Hostile"/>
-        <Modification SightBonus="10" WeaponScanBonus="15"/>
+        <Modification SightBonus="10" WeaponScanBonus="15">
+            <StateFlags index="IgnorePlayerAlliedFlags" value="1"/>
+        </Modification>
     </CBehaviorBuff>
 </Catalog>

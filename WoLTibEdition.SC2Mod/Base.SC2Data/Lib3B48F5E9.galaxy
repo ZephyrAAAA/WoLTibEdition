@@ -1091,8 +1091,8 @@ bool lib3B48F5E9_gt_FleetAbilitySwap_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    PlayerModifyPropertyInt(EventPlayer(), c_playerPropMinerals, c_playerPropOperAdd, CatalogFieldValueGetAsInt(c_gameCatalogAbil, "FleetTargeting", "Cost[" + IntToString(0) + "].Resource[" + IntToString(0) + "]", EventPlayer()));
-    PlayerAddChargeUsed(EventPlayer(), CatalogFieldValueGet(c_gameCatalogAbil, "FleetTargeting", "Cost[" + IntToString(0) + "].Charge.Link", EventPlayer()), -1.0);
+    PlayerModifyPropertyInt(EventPlayer(), c_playerPropMinerals, c_playerPropOperAdd, CatalogFieldValueGetAsInt(c_gameCatalogAbil, "CallInGoldenArmada", "Cost[" + IntToString(0) + "].Resource[" + IntToString(0) + "]", EventPlayer()));
+    PlayerAddChargeUsed(EventPlayer(), CatalogFieldValueGet(c_gameCatalogAbil, "CallInGoldenArmada", "Cost[" + IntToString(0) + "].Charge.Link", EventPlayer()), -1.0);
     lib3B48F5E9_gv_fleetGroup = libNtve_gf_ConvertUnitToUnitGroup(EventUnitCreatedUnit());
     UISetTargetingOrder(PlayerGroupSingle(EventPlayer()), lib3B48F5E9_gv_fleetGroup, OrderTargetingPoint(AbilityCommand("FleetActivate", 0), UnitGetPosition(EventUnitCreatedUnit())), false);
     return true;
@@ -1101,7 +1101,7 @@ bool lib3B48F5E9_gt_FleetAbilitySwap_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_FleetAbilitySwap_Init () {
     lib3B48F5E9_gt_FleetAbilitySwap = TriggerCreate("lib3B48F5E9_gt_FleetAbilitySwap_Func");
-    TriggerAddEventUnitCreated(lib3B48F5E9_gt_FleetAbilitySwap, null, "FleetTargeting", null);
+    TriggerAddEventUnitCreated(lib3B48F5E9_gt_FleetAbilitySwap, null, "CallInGoldenArmada", null);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1114,8 +1114,10 @@ bool lib3B48F5E9_gt_FleetAbilityCost_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    PlayerModifyPropertyInt(EventPlayer(), c_playerPropMinerals, c_playerPropOperSubtract, CatalogFieldValueGetAsInt(c_gameCatalogAbil, "FleetTargeting", "Cost[" + IntToString(0) + "].Resource[" + IntToString(0) + "]", EventPlayer()));
-    PlayerAddChargeUsed(EventPlayer(), CatalogFieldValueGet(c_gameCatalogAbil, "FleetTargeting", "Cost[" + IntToString(0) + "].Charge.Link", EventPlayer()), 1.0);
+    PlayerModifyPropertyInt(EventPlayer(), c_playerPropMinerals, c_playerPropOperSubtract, CatalogFieldValueGetAsInt(c_gameCatalogAbil, "CallInGoldenArmada", "Cost[" + IntToString(0) + "].Resource[" + IntToString(0) + "]", EventPlayer()));
+    PlayerAddChargeUsed(EventPlayer(), CatalogFieldValueGet(c_gameCatalogAbil, "CallInGoldenArmada", "Cost[" + IntToString(0) + "].Charge.Link", EventPlayer()), 1.0);
+    TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), false);
+    RefreshTopbar();
     return true;
 }
 
@@ -1123,6 +1125,27 @@ bool lib3B48F5E9_gt_FleetAbilityCost_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_FleetAbilityCost_Init () {
     lib3B48F5E9_gt_FleetAbilityCost = TriggerCreate("lib3B48F5E9_gt_FleetAbilityCost_Func");
     TriggerAddEventUnitAbility(lib3B48F5E9_gt_FleetAbilityCost, null, AbilityCommand("FleetActivate", 0), c_abilEffectStageFinish, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Zerghyper Remove
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_ZerghyperRemove_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), false);
+    RefreshTopbar();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_ZerghyperRemove_Init () {
+    lib3B48F5E9_gt_ZerghyperRemove = TriggerCreate("lib3B48F5E9_gt_ZerghyperRemove_Func");
+    TriggerAddEventUnitAbility(lib3B48F5E9_gt_ZerghyperRemove, null, AbilityCommand("ZergHypervirus", 0), c_abilEffectStageFinish, false);
 }
 
 void lib3B48F5E9_InitTriggers () {
@@ -1140,6 +1163,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_UnhighlightFusionCore_Init();
     lib3B48F5E9_gt_FleetAbilitySwap_Init();
     lib3B48F5E9_gt_FleetAbilityCost_Init();
+    lib3B48F5E9_gt_ZerghyperRemove_Init();
 }
 
 //--------------------------------------------------------------------------------------------------

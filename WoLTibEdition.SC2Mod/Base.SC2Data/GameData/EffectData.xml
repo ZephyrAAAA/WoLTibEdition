@@ -2598,7 +2598,7 @@
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetPoint"/>
         <SearchFilters value="-;Self,Player,Ally,Neutral,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
-        <AreaArray Radius="5" Effect="ZergHypervirus"/>
+        <AreaArray Radius="7" Effect="ZergHypervirus"/>
     </CEffectEnumArea>
     <CEffectCreateHealer id="heal">
         <DrainVitalCostFactor value="0.5"/>
