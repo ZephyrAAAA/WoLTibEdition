@@ -930,8 +930,6 @@
         <AttackTargetPriority value="19"/>
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="BunkerTransport"/>
-        <AbilArray Link="SalvageShared"/>
-        <AbilArray Link="SalvageBunkerRefund"/>
         <AbilArray Link="Rally"/>
         <AbilArray Link="StimpackRedirect"/>
         <AbilArray Link="StimpackMarauderRedirect"/>
@@ -950,22 +948,21 @@
         <CardLayouts>
             <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="1"/>
+            <LayoutButtons Face="StopBunker" Type="AbilCmd" AbilCmd="BunkerStop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackMarauderRedirect,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="2" Column="1"/>
             <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="2" Column="2"/>
-            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
-            <LayoutButtons Face="StopBunker" Type="AbilCmd" AbilCmd="BunkerStop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="CharCurtain90E" Row="1" Column="2"/>
+            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="ShrikeTurretResearched" Row="1" Column="2"/>
             <LayoutButtons>
                 <Face value="FortifiedBunker"/>
                 <Type value="Passive"/>
-                <AbilCmd value="255"/>
+                <AbilCmd value="255,255"/>
                 <Requirements value="Decal"/>
                 <Row value="1"/>
                 <Column value="2"/>
@@ -973,16 +970,16 @@
             <LayoutButtons>
                 <Face value="NeoSteelFrame"/>
                 <Type value="Passive"/>
-                <AbilCmd value="255"/>
-                <Requirements value="MetalWallDiagonal"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseNeoSteelFrame"/>
                 <Row value="1"/>
                 <Column value="1"/>
             </LayoutButtons>
             <LayoutButtons>
                 <Face value="ProjectileAccelerators"/>
                 <Type value="Passive"/>
-                <AbilCmd value="255"/>
-                <Requirements value="MiningBot"/>
+                <AbilCmd value="255,255"/>
+                <Requirements value="UseProjectileAccelerators"/>
                 <Row value="1"/>
                 <Column value="0"/>
             </LayoutButtons>
@@ -1569,6 +1566,8 @@
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
+        <BehaviorArray Link="BuildRadiusSmall"/>
+        <BehaviorArray Link="NeedsBuildRadius"/>
         <CardLayouts>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>

@@ -2591,6 +2591,15 @@
         <PlacementAround Value="CasterUnit"/>
         <TargetLocation Value="TargetUnitOrPoint"/>
     </CEffectTeleport>
+    <CEffectApplyBehavior id="ZergHypervirus">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ZergHypervirusSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable,Benign"/>
+        <AreaArray Radius="7" Effect="ZergHypervirus"/>
+    </CEffectEnumArea>
     <CEffectCreateHealer id="heal">
         <DrainVitalCostFactor value="0.5"/>
         <RechargeVitalRate value="6"/>

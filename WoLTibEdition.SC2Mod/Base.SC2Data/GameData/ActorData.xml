@@ -176,6 +176,34 @@
     <CActorUnit id="Medivac">
         <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
     </CActorUnit>
+    <!-- <CActorModel id="NeuralParasiteEgg" parent="ModelAddition">-->
+    <!--        <HostSiteOps Ops="SOpAttachHead"/>-->
+    <!--        <On Terms="Effect.NeuralParasitePersistent.Start; At Target" Send="Create"/>-->
+    <!--        <On Terms="Effect.NeuralParasitePersistent.Stop" Send="AnimBracketStop BSD"/>-->
+    <!--    </CActorModel>-->
+    <!--    <CActorSound id="NeuralParasiteSound" parent="SoundOneShot">-->
+    <!--        <Sound value="Infestor_NeuralParasiteAttackLaunch"/>-->
+    <!--        <Host Subject="NeuralParasiteModel"/>-->
+    <!--        <On Terms="Abil.NeuralParasite.SourceCastStart" Send="Create"/>-->
+    <!--    </CActorSound>-->
+    <!--    <CActorSound id="NeuralParasiteImpactSound" parent="SoundOneShot">-->
+    <!--        <Sound value="Infestor_NeuralParasiteAttackImpact"/>-->
+    <!--        <On Terms="Effect.NeuralParasitePersistent.Start" Send="Create"/>-->
+    <!--    </CActorSound>-->
+    <!--    <CActorMissile id="NeuralParasiteMissile" parent="GenericAttackMissile" unitName="NeuralParasiteWeapon">-->
+    <!--        <Model value="NeuralParasiteMissileModel"/>-->
+    <!--    </CActorMissile>-->
+    <!--    <CActorAction id="NeuralParasite" parent="GenericAttack" effectLaunch="NeuralParasiteLaunchMissile">-->
+    <!--        <ImpactSiteOps Ops="SOpAttachHead"/>-->
+    <!--        <ImpactAttachQuery Methods="Head"/>-->
+    <!--    </CActorAction> -->
+    <CActorModel id="NeuralParasiteModel">
+        <On index="4" Terms="ActorCreation"/>
+        <On index="5" Terms="ActorCreation"/>
+        <On Terms="Behavior.ZergHypervirus.On" Send="Create"/>
+        <On Terms="Behavior.ZergHypervirus.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="Behavior.ZergHypervirus.Off; ValidateUnit SourceNotDead" Target="::Main" Send="SetSoundSuffix"/>
+    </CActorModel>
     <CActorTurret id="PhoenixTurret">
         <On Terms="TurretEnable.Phoenix" Send="Create"/>
     </CActorTurret>
@@ -199,14 +227,12 @@
         <IconArcLength value="0.100000"/>
     </CActorRange>
     <CActorPower id="BuildRadiusLarge">
-        <On Terms="Behavior.BuildRadiusLarge.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <On Terms="Behavior.BuildRadiusLarge.Destroy" Send="Destroy"/>
         <PowerSource value="BuildRadiusLarge"/>
         <VisualArray value="StetmannBlobLarge"/>
         <VisualArray value="StetmannBlobLarge"/>
     </CActorPower>
     <CActorPower id="BuildRadiusSmall">
-        <On Terms="Behavior.BuildRadiusSmall.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <On Terms="Behavior.BuildRadiusSmall.Destroy" Send="Destroy"/>
         <PowerSource value="BuildRadiusSmall"/>
         <VisualArray value="StetmannBlob"/>
@@ -877,7 +903,10 @@
     <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
         <EditorCategories value=""/>
     </CActorSplat>
-    <CActorSplat id="BansheeAirstrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
+    <CActorSplat id="ZergHypervirusCursorSplat" parent="TerranCursorSplat" abil="ZergHypervirus">
+        <EditorCategories value=""/>
+    </CActorSplat>
+    <CActorSplat id="TacticalMissileStrikeCursorSplat" parent="TerranCursorSplat" abil="TacticalMissileStrike">
         <EditorCategories value=""/>
     </CActorSplat>
     <CActorSplat id="HiveMindEmulatorCursorSplat" parent="TerranCursorSplat" abil="HiveMindEmulator">
@@ -1695,6 +1724,7 @@
         <On Terms="ActorOrphan" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
         <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
+        <On Terms="Behavior.BuildRadiusSmall.Create; ValidateUnit CasterNotDead" Send="Create"/>
         <MaxScale value="0.137500,0.137500"/>
         <ScaleDeltaTime value="0.015000,0.015000"/>
     </CActorBlob>
@@ -1703,8 +1733,9 @@
         <On Terms="ActorOrphan" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
         <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
-        <MaxScale value="0.270000,0.270000"/>
-        <ScaleDeltaTime value="0.030000,0.030000"/>
+        <On Terms="Behavior.BuildRadiusLarge.Create; ValidateUnit CasterNotDead" Send="Create"/>
+        <MaxScale value="0.257000,0.257000"/>
+        <ScaleDeltaTime value="0.028125,0.028125"/>
     </CActorBlob>
     <CActorSound id="TempestAirAttackSoundFleet" parent="SoundOneShot">
         <EditorCategories value=""/>

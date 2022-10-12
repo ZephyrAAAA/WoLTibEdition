@@ -11,8 +11,65 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="Hallucination"/>
         <DefaultButtonLayout Row="1" Column="1"/>
     </CButton>
-    <CButton id="CommanderAlarakUnlockDeathFleet">
+    <CButton id="CallInGoldenArmada3">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada4">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
         <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada5">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada6">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada7">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada8">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada9">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada10">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada11">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada12">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada13">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="CallInGoldenArmada14">
+        <Icon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
     <CButton id="Decal_Terran_0047_01">
         <Tooltip value="Button/Tooltip/Decal_Terran_0047_01"/>
@@ -66,6 +123,67 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-research-zerg-hivemindemulator.dds"/>
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="ZergHypervirus3">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Column="3"/>
+        <Hotkey value="Button/Hotkey/ZergHypervirus10"/>
+    </CButton>
+    <CButton id="ZergHypervirus4">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="ZergHypervirus5">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="ZergHypervirus6">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="ZergHypervirus7">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="ZergHypervirus8">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="ZergHypervirus9">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="ZergHypervirus10">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="ZergHypervirus11">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="ZergHypervirus12">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="ZergHypervirus13">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="ZergHypervirus14">
+        <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
     <CButton id="HiveMindEmulator4">
         <Icon value="Assets\Textures\btn-research-zerg-hivemindemulator.dds"/>
