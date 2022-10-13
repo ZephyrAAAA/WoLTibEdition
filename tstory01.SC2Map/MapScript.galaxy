@@ -4444,6 +4444,8 @@ void gf_DisplayMissionDebriefing (int lp_mission) {
         gf_DisplayTimestamp(ge_TimestampType_BeforeCinematic);
         TriggerExecute(gt_Scene03ZeratulWarning, true, true);
         libCamp_gf_SetScenePlayed(libCamp_ge_SceneID_SceneTerran03ZeratulsWarning, true);
+        gf_DisplayTimestamp(ge_TimestampType_BeforeDebrief);
+        TriggerExecute(gt_DebriefingTTychus02, true, true);
     }
 
     auto92483638_val = lp_mission;
@@ -4571,8 +4573,6 @@ void gf_DisplayMissionDebriefing (int lp_mission) {
 
     }
     else if (auto92483638_val == libCamp_ge_MapID_MapTTychus02) {
-        gf_DisplayTimestamp(ge_TimestampType_BeforeDebrief);
-        TriggerExecute(gt_DebriefingTTychus02, true, true);
     }
     else if (auto92483638_val == libCamp_ge_MapID_MapTTychus03) {
         if ((libCamp_gf_ScenePlayed(libCamp_ge_SceneID_SceneTerran10RaynorsDream) == false)) {
