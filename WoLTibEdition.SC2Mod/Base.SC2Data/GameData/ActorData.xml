@@ -48,6 +48,9 @@
     <CActorSplat id="Armory2Splat" parent="GenericUnitSplat" unitName="Armory2">
         <Model value="ArmorySplat"/>
     </CActorSplat>
+    <CActorUnit id="Banshee">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Banshee_Attack"/>
+    </CActorUnit>
     <CActorUnit id="Barracks2" parent="TerranBuildingFlyerEx" unitName="Barracks2">
         <On index="69" Send="Create BarracksBuild"/>
         <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationBarracks"/>
@@ -77,6 +80,36 @@
     <CActorSound id="BarracksLand">
         <On Terms="AbilMorph.*.Start; MorphTo Barracks2" Send="Create"/>
     </CActorSound>
+    <!--                                                                                         -->
+    <!-- Battlecruiser ......................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Battlecruiser">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Battlecruiser_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Devil Dog ............................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="DevilDog">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Firebat_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Diamondback ........................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Diamondback">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Diamondback_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Duke's Revenge ........................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="DukesRevenge">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Battlecruiser_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Dusk Wing Banshee ..................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="DuskWingBanshee">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Banshee_Attack"/>
+    </CActorUnit>
     <CActorSplat id="EMPCursorSplat2" parent="TerranCursorSplat" abil="EMPSpectre"/>
     <CActorRange id="EMPRange2" parent="RangeAbil" abil="EMPSpectre"/>
     <CActorSound id="ExplosiveChargeSound" parent="SoundOneShot">
@@ -160,10 +193,28 @@
         <On Terms="Effect.NukePersistentTopbar.Initial" Send="Create"/>
         <On Terms="Effect.NukePersistentTopbar.Stop; At Effect" Send="Destroy"/>
     </CActorSound>
+    <!--                                                                                         -->
+    <!-- Goliath ............................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Goliath">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Goliath_Attack"/>
+    </CActorUnit>
     <CActorBeamSimple id="GravitonBeam">
         <On index="3" removed="1"/>
         <On index="4" removed="1"/>
     </CActorBeamSimple>
+    <!--                                                                                         -->
+    <!-- Hammer Security ....................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="HammerSecurity">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Marauder_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Hellion ............................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Hellion">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Hellion_Attack"/>
+    </CActorUnit>
     <CActorBeamSimple id="HiveMindEmulatorBeam">
         <HostLaunch Subject="::global.HMESource" Scope="Implicit"/>
         <HostLaunchSiteOps Ops=""/>
@@ -173,8 +224,20 @@
         <On Terms="Effect.HMEMindControlSearchArea.Start; At Effect" Send="Create"/>
         <On Terms="ActorCreation" Send="RefSet ::global.HMESource ::Self"/>
     </CActorSite>
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Merc Units ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!--                                                                                         -->
+    <!-- Kelmorian Miner ....................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="KelmorianMiner">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Marine_Attack"/>
+    </CActorUnit>
     <CActorUnit id="Medivac">
         <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Medivac_Attack"/>
     </CActorUnit>
     <!-- <CActorModel id="NeuralParasiteEgg" parent="ModelAddition">-->
     <!--        <HostSiteOps Ops="SOpAttachHead"/>-->
@@ -903,6 +966,60 @@
     <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
         <EditorCategories value=""/>
     </CActorSplat>
+    <!--                                                                                         -->
+    <!-- Science Vessel ........................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="ScienceVessel">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="ScienceVessel_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Siege Breaker ......................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="SiegeBreaker">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="SiegeTank_Attack"/>
+    </CActorUnit>
+    <CActorUnit id="SiegeBreakerSieged">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="SiegeTank_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Siege Tank ............................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="SiegeTank">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="SiegeTank_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Spartan Company (Goliath Merc) ........................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="SpartanCompany">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Goliath_Attack"/>
+    </CActorUnit>
+    <CActorUnit id="Thor">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
+    </CActorUnit>
+    <CActorUnit id="VikingAssault">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
+    </CActorUnit>
+    <CActorUnit id="VikingFighter">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Vulture ............................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Vulture">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Vulture_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Wraith ................................................................................ -->
+    <!--                                                                                         -->
+    <CActorUnit id="Wraith">
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Wraith_Attack"/>
+    </CActorUnit>
+    <CActorUnit id="WreckingCrewAssault">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
+    </CActorUnit>
+    <CActorUnit id="WreckingCrewFighter">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
+    </CActorUnit>
     <CActorSplat id="ZergHypervirusCursorSplat" parent="TerranCursorSplat" abil="ZergHypervirus">
         <EditorCategories value=""/>
     </CActorSplat>
@@ -1482,6 +1599,7 @@
         <VitalColors index="Energy">
             <ColorArray value="255,255,128,64"/>
         </VitalColors>
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Predator_Attack"/>
     </CActorUnit>
     <CActorModel id="ProtossGenericWarpInOut" parent="ModelAnimationStyleContinuous">
         <EditorCategories value=""/>
