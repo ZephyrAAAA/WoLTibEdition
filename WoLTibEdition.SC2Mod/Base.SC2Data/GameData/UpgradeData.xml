@@ -2331,21 +2331,21 @@
         <EffectArray Reference="Unit,DominionKillTeam,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,DominionKillTeam,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,RaynorCommando,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,RaynorCommando,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,RaynorCommando,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,Raynor,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,Raynor,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Raynor,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,TychusCommando,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,TychusCommando,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,TychusCommando,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,TychusChaingun,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,TychusChaingun,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,TychusChaingun,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,Swann,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,Swann,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Swann,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,Stetmann,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,Stetmann,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Stetmann,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,Nova,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,Nova,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Tosh,LifeArmorLevel" Value="1"/>
-        <EffectArray Reference="Unit,Tosh,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,Tosh,LifeArmor" Value="2"/>
         <EffectArray Reference="Unit,DevilDogSquad,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,DevilDogSquad,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,FirebatSquad,LifeArmor" Value="1"/>
