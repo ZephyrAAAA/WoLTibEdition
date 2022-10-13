@@ -2949,10 +2949,10 @@
         <EffectArray index="48" Operation="Add" Reference="Unit,HybridDestroyer,LifeArmorLevel" Value="1"/>
         <EffectArray index="49" Operation="Add" Reference="Unit,HybridReaver,LifeArmor" Value="2"/>
         <EffectArray index="50" Operation="Add" Reference="Unit,HybridReaver,LifeArmorLevel" Value="1"/>
-        <EffectArray index="51" removed="1"/>
-        <EffectArray index="52" removed="1"/>
-        <EffectArray index="53" removed="1"/>
-        <EffectArray index="54" removed="1"/>
+        <EffectArray index="51" Reference="Unit,Ultralisk,LifeArmorLevel" Value="1"/>
+        <EffectArray index="52" Reference="Unit,Ultralisk,LifeArmor" Value="2"/>
+        <EffectArray index="53" Reference="Unit,UltraliskBurrowed,LifeArmor" Value="2"/>
+        <EffectArray index="54" Reference="Unit,UltraliskBurrowed,LifeArmorLevel"/>
         <EffectArray index="55" removed="1"/>
         <EffectArray index="56" removed="1"/>
         <EffectArray index="57" removed="1"/>

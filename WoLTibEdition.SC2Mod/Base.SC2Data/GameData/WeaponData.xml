@@ -578,7 +578,9 @@
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
         <Effect value="KaiserBladesDamage"/>
-        <AcquirePrioritization value="ByDistance"/>
+        <AcquireTargetSorts RequestCount="5">
+            <SortArray value="TSDistance"/>
+        </AcquireTargetSorts>
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
