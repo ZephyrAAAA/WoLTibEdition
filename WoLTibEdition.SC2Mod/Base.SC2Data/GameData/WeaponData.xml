@@ -701,6 +701,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Predator">
         <Tip value="Weapon/Tip/Rifle"/>
