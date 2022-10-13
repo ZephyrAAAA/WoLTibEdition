@@ -489,7 +489,7 @@
     </CDataCollectionUnit>
     <CDataCollectionUnit id="VehicleMercenaries2">
         <EditorCategories value="DataGroup:Ability"/>
-        <DataRecord Entry="Abil,VehicleMercenaries2"/>
+        <DataRecord Entry="Abil,VehicleMercenaries"/>
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
     </CDataCollectionUnit>
