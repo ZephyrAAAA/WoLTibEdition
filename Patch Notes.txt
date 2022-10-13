@@ -34,6 +34,9 @@ Fixed starting refineries doing weird things when you have autoref
 Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
 Nexus- Now 1000/1000, like in later versions
 Stone has voice lines now
+Bunker salvage button removed
+Build radius now has a fancy orange overlay, stolen from coop Stettman
+Buttons that flash to indicate you unlocked it that mission now only flash for 60s
 *More units now say attack lines when told to attack move
 *Cellular Reactor now also reduces the cooldown of Thor and BC abilities
 
@@ -44,6 +47,7 @@ Coloured all our tips
 Outlaws:
 A message appears saying that new/relevant tips are available.
 Coloured all our tips
+Edited the refinery tip to remove the mention of max SCVs per refinery, since it seems pointless to say it at that point.
 
 Zero Hour:
 A message appears saying that new/relevant tips are available.
@@ -63,7 +67,7 @@ Coloured all our tips
 
 Bel'shir:
 Fixed things, it appears to no longer swarm you
-*The protoss send their counterattack in 1 wave instead of 2 now.
+The protoss send their counterattack in 1 wave instead of 2 now.
 
 Outbreak:
 A message appears saying that new/relevant tips are available.
