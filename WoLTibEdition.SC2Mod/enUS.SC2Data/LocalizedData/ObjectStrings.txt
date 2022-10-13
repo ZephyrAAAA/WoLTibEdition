@@ -548,6 +548,7 @@ Button/EditorSuffix/ZergHypervirus3=(3)
 ConversationState/Name/CCEditionPermanence=C&C Edition Permanence
 ConversationState/Name/LabResearch2=Lab Research
 ConversationState/Name/LabResearchCompleted2=Lab Research Completed
+DataCollection/EditorPrefix/CallInGoldenArmada=Topbar -
 DataCollection/EditorPrefix/DeployLaserDrill=Topbar -
 DataCollection/EditorPrefix/DevilDogSquad=Squads -
 DataCollection/EditorPrefix/FirebatSquad=Squads -

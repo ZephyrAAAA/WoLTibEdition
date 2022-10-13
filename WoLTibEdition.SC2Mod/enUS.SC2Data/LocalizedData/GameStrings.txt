@@ -695,6 +695,7 @@ DataCollection/Name/Barracks=Barracks
 DataCollection/Name/Barracks2=Barracks Copy
 DataCollection/Name/Bunker=Bunker
 DataCollection/Name/Bunker2=Bunker Copy
+DataCollection/Name/CallInGoldenArmada=Call In Golden Armada
 DataCollection/Name/CommandCenter=Command Center
 DataCollection/Name/CommandCenter2=Command Center Copy
 DataCollection/Name/Crane=Crane
