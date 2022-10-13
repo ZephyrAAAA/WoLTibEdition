@@ -38,7 +38,8 @@ Bunker salvage button removed
 Build radius now has a fancy orange overlay, stolen from coop Stettman
 Buttons that flash to indicate you unlocked it that mission now only flash for 60s
 More units now say attack lines when told to attack move
-*Cellular Reactor now also reduces the cooldown of Thor and BC abilities
+Cellular Reactor now also reduces the cooldown of Thor and BC abilities
+*Fixed hostile player on all maps
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -95,7 +96,7 @@ Stopping terrorfleets gives armoury upgrades
 Stopping counterattacks gives armoury upgrades
 Attacking a base starts a 4/4/3/2 minute timer before they will warp in reinforcements
 *Gives less base money, but gives money for each settlement saved. Also has a bonus objective tracking this
-*Grants the Zerg Virus support power.
+Grants the Zerg Virus support power.
 
 Haven's Fall:
 You start with 2 SCVs, 1 if you have autoref
@@ -113,8 +114,8 @@ Aberrations start coming in half the time
 Stopping reinfestations grants armoury upgrades
 Virophage health is now always based on difficulty.
 *Gives less base money, but gives money for each settlement saved. Also has a bonus objective tracking this
-*Infested Eggs no longer block unit movement.
-*Grants the Purification Fleet support power.
+Infested Eggs no longer block unit movement.
+Grants the Purification Fleet support power.
 
 In Utter Darkness:
 You have no base.
