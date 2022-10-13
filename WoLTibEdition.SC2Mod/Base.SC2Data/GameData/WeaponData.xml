@@ -156,6 +156,8 @@
         <Range value="7"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
@@ -656,6 +658,8 @@
         <Backswing value="0.125"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Odin">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -914,6 +918,8 @@
         <Backswing value="0.125"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
@@ -947,6 +953,8 @@
         <Backswing value="0.125"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>

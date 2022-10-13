@@ -2683,6 +2683,7 @@
         <Sight value="9"/>
         <Food value="0"/>
         <WeaponArray Link="ExplosiveCharges"/>
+        <StationaryTurningRate value="2879.8242"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3878,6 +3879,7 @@
         <EnergyMax value="150"/>
         <EnergyRegenRate value="2"/>
         <WeaponArray Link="ExplosiveCharges"/>
+        <TurningRate value="2879.8242"/>
     </CUnit>
     <CUnit id="Nuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5328,6 +5330,7 @@
         <Food value="0"/>
         <TechAliasArray value="Alias_Ghost"/>
         <WeaponArray Link="ExplosiveCharges"/>
+        <TurningRate value="2879.8242"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6242,6 +6245,7 @@
             <LayoutButtons index="9" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
         </CardLayouts>
         <WeaponArray Link="ExplosiveCharges"/>
+        <TurningRate value="2879.8242"/>
     </CUnit>
     <CUnit id="TrafficSignal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
