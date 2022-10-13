@@ -2141,10 +2141,12 @@
         <WeaponArray index="3" Link="DRBattlecruiserG2"/>
         <EquipmentArray index="0" removed="1"/>
         <EquipmentArray index="1" removed="1"/>
-        <AbilArray index="4" Link="DukesRevengeDefensiveMatrix"/>
+        <AbilArray index="3" Link="Yamato"/>
+        <AbilArray index="4" Link="DefensiveMatrix"/>
         <AbilArray index="5" removed="1"/>
         <CardLayouts index="0">
-            <LayoutButtons index="6" Face="DefensiveMatrix" AbilCmd="DukesRevengeDefensiveMatrix,Execute"/>
+            <LayoutButtons index="5" AbilCmd="Yamato,Execute"/>
+            <LayoutButtons index="6" Face="DefensiveMatrix" AbilCmd="DefensiveMatrix,Execute"/>
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
         <TacticalAI value="BattlecruiserDefensiveMatrix"/>

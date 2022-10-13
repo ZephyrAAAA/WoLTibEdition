@@ -152,9 +152,9 @@
         <EffectArray index="18" Operation="AddBaseMultiply" Reference="Unit,Raven,EnergyRegenRate" Value="0.500000"/>
         <EffectArray index="19" Operation="Set" Reference="Unit,ScienceVessel,EnergyRegenRate" Value="0.500000"/>
         <EffectArray index="20" Operation="AddBaseMultiply" Reference="Unit,Wraith,EnergyRegenRate" Value="0.500000"/>
-        <EffectArray index="21" removed="1"/>
-        <EffectArray index="22" removed="1"/>
-        <EffectArray index="23" removed="1"/>
+        <EffectArray index="21" Operation="Subtract" Reference="Abil,330mmBarrageCannons,Cost[0].Cooldown.TimeUse" Value="30.000000"/>
+        <EffectArray index="22" Operation="Subtract" Reference="Abil,Yamato,Cost[0].Cooldown.TimeUse" Value="30.000000"/>
+        <EffectArray index="23" Operation="Subtract" Reference="Abil,DefensiveMatrix,Cost[0].Cooldown.TimeUse" Value="15.000000"/>
         <EffectArray index="24" removed="1"/>
         <AffectedUnitArray index="1" value="Medic"/>
         <AffectedUnitArray index="2" value="Medivac"/>
