@@ -3176,6 +3176,9 @@
     </CUnit>
     <CUnit id="InfestedBunker">
         <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedCC">
         <ArmorType value="Hero"/>
