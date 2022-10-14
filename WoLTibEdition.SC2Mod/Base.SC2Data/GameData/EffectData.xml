@@ -1216,9 +1216,17 @@
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
     <CEffectCreatePersistent id="PerditionTurretFlameThrowerCreatePersistent">
-        <PeriodCount value="16"/>
+        <PeriodCount value="20"/>
         <PeriodicOffsetArray value="0.5,-4,0"/>
         <PeriodicOffsetArray value="-0.5,-4,0"/>
+        <PeriodicOffsetArray value="0.5,-4.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-4.5,0"/>
+        <PeriodicOffsetArray value="0.5,-5,0"/>
+        <PeriodicOffsetArray value="-0.5,-5,0"/>
+        <PeriodicOffsetArray value="0.5,-5.5,0"/>
+        <PeriodicOffsetArray value="-0.5,-5.5,0"/>
+        <PeriodicOffsetArray value="0.5,-6,0"/>
+        <PeriodicOffsetArray value="-0.5,-6,0"/>
         <PeriodicPeriodArray index="0" value="0"/>
         <PeriodicPeriodArray index="1" removed="1"/>
         <PeriodicPeriodArray index="2" removed="1"/>
