@@ -44,6 +44,7 @@ Fixed hostile player on all maps
 Heroes with base armour gain more from Vanadium.
 Stimpack no longer says it increases movement speed.
 Corrected the Enhanced Explosives upgrade description.
+Perdition buffed to 5 range and being affected by hi-sec, so bunkered firebat don't outrange them.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -79,10 +80,13 @@ A message appears saying that new/relevant tips are available.
 Coloured all our tips
 
 Morbin Time:
+Doubled money regen in the main base
 There's now a resource field on the low ground outside your base.
 Added a field to the brutalisk location
 Your camera is no longer stolen on Hard and Brutal when Narud tells you about giving you his medivacs
 Fixed rescuables voicelines
+Removed free vision of the datacores
+Removed free vision from Kerrigan
 
 Supernova:
 Added our upgrade function
