@@ -704,7 +704,7 @@ bool lib3B48F5E9_gt_CommandoEXP_Func (bool testConds, bool runActions) {
 
     lv_xP = EventUnitDamageAmount();
     if ((UnitFilterMatch(EventUnit(), EventPlayer(), UnitFilter((1 << c_targetFilterStructure), 0, 0, 0)) == true)) {
-        if ((UnitGetPropertyInt(EventUnit(), c_unitPropLife, c_unitPropNormal) >= 600)) {
+        if ((UnitWeaponCount(EventUnit()) == 0)) {
             lv_xP = (lv_xP/4);
         }
         else {

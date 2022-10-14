@@ -2109,7 +2109,10 @@
         <EffectArray Reference="Weapon,HailstormMissilePods,RateMultiplier" Value="0.15"/>
         <EffectArray Reference="Weapon,LongboltMissile,RateMultiplier" Value="0.15"/>
         <EffectArray Reference="Weapon,TwinIbiksCannon,RateMultiplier" Value="0.15"/>
-        <EffectArray Reference="Weapon,ParticleBeam,RateMultiplier" Value="0.15"/>
+        <EffectArray Reference="Weapon,PointDefenseLaser,RateMultiplier" Value="0.15"/>
+        <EffectArray Reference="Weapon,PerditionTurretFlamethrower,RateMultiplier" Value="0.15"/>
+        <EffectArray Reference="Weapon,PerditionTurretFlamethrower,Range" Value="1"/>
+        <EffectArray Reference="Effect,PerditionTurretFlameThrowerCreatePersistent,PeriodCount" Value="4"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HydraulicStabilizers">

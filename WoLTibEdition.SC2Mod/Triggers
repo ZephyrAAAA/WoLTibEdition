@@ -261,33 +261,23 @@
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="D9B66ADF"/>
         </Element>
         <Element Type="FunctionCall" Id="D9B66ADF">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="15E6A048"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="BAEDB770"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="91EA1662"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="1A0F9242"/>
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="7045D649"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="B13C901F"/>
         </Element>
-        <Element Type="Param" Id="BAEDB770">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="675568F7"/>
-            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="53F07A81"/>
+        <Element Type="Param" Id="B13C901F">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="DCD00193"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="BF0F41B1"/>
         </Element>
-        <Element Type="FunctionCall" Id="53F07A81">
+        <Element Type="FunctionCall" Id="BF0F41B1">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000092"/>
-        </Element>
-        <Element Type="Param" Id="91EA1662">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="8C622220"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000029"/>
-        </Element>
-        <Element Type="Param" Id="1A0F9242">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="D04C0973"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="C0B2586A"/>
         </Element>
         <Element Type="Param" Id="26D19CBD">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="B128CB9A"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="1E7A4625"/>
         </Element>
         <Element Type="Param" Id="3256197A">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="4A15EC5F"/>
-            <Value>600</Value>
+            <Value>0</Value>
             <ValueType Type="int"/>
         </Element>
         <Element Type="FunctionCall" Id="55A533A9">

@@ -694,6 +694,7 @@
         <Tip value="Weapon/Tip/Grenade"/>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
+        <Range value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PhaseDisruptors">
         <Tip value="Weapon/Tip/Cannon"/>
