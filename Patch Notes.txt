@@ -43,7 +43,7 @@ Cellular Reactor now also reduces the cooldown of Thor and BC abilities
 Fixed hostile player on all maps
 Heroes with base armour gain more from Vanadium.
 Stimpack no longer says it increases movement speed.
-Corrected the Enhance dExplosives upgrade description.
+Corrected the Enhanced Explosives upgrade description.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -80,6 +80,9 @@ Coloured all our tips
 
 Morbin Time:
 There's now a resource field on the low ground outside your base.
+Added a field to the brutalisk location
+Your camera is no longer stolen on Hard and Brutal when Narud tells you about giving you his medivacs
+Fixed rescuables voicelines
 
 Supernova:
 Added our upgrade function
