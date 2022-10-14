@@ -44,7 +44,8 @@ Fixed hostile player on all maps
 Heroes with base armour gain more from Vanadium.
 Stimpack no longer says it increases movement speed.
 Corrected the Enhanced Explosives upgrade description.
-Perdition buffed to 5 range and being affected by hi-sec, so bunkered firebat don't outrange them.
+Perdition buffed to 5 range and being affected by hi-sec, so bunkered firebats don't outrange them.
+The Build Refinery button now says it comes with an SCV
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -54,6 +55,9 @@ Outlaws:
 A message appears saying that new/relevant tips are available.
 Coloured all our tips
 Edited the refinery tip to remove the mention of max SCVs per refinery, since it seems pointless to say it at that point.
+Fixed the trigger that gives you replacement SCVs to give you the correct ones
+The rebel base now has a firebat squad
+Filled out text tags for all the buildings the player has access 
 
 Zero Hour:
 A message appears saying that new/relevant tips are available.

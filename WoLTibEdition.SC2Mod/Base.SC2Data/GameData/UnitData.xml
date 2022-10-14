@@ -3366,6 +3366,7 @@
     <CUnit id="Kerrigan">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <FogVisibility value="Visible"/>
     </CUnit>
     <CUnit id="KerriganChar">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
