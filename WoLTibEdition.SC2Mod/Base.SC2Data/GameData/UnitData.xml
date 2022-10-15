@@ -5651,7 +5651,7 @@
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
         <TurningRate value="360"/>
-        <Sight value="11"/>
+        <Sight value="9"/>
         <RepairTime value="45"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
