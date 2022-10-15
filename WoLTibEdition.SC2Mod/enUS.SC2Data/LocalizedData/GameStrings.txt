@@ -1418,6 +1418,7 @@ Skin/Name/PsiDisruptor6=PsiDisruptor6
 Skin/Name/PsiDisruptor7=PsiDisruptor7
 Skin/Name/PsiDisruptor8=PsiDisruptor8
 Skin/Name/PsiDisruptor9=PsiDisruptor9
+StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
