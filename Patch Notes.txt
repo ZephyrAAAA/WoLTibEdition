@@ -58,6 +58,7 @@ Edited the refinery tip to remove the mention of max SCVs per refinery, since it
 Fixed the trigger that gives you replacement SCVs to give you the correct ones
 The rebel base now has a firebat squad
 Filled out text tags for all the buildings the player has access 
+Added text tags to all buildings
 
 Zero Hour:
 A message appears saying that new/relevant tips are available.
@@ -65,6 +66,7 @@ Coloured all our tips
 
 Smash and Grab:
 You now start with a Spec Ops if you've purchased any mercs
+Toned down the protoss attack waves, since the marauder was nerfed.
 
 Evacuation:
 You now start with a Spec Ops if you've purchased any mercs
