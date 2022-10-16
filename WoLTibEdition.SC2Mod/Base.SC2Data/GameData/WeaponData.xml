@@ -941,6 +941,7 @@
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Period value="1.65"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThorsHammer">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -1032,6 +1033,10 @@
         <RandomDelayMax value="-0.85"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarpBlades">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithA">
         <Tip value="Weapon/Tip/Rocket"/>

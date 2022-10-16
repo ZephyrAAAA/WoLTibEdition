@@ -16,6 +16,235 @@
         <Model value="Assets\COOP\Mengsk\Units\Battlecruiser_Mengsk_COOP_DeathRagdoll\Battlecruiser_Mengsk_COOP_DeathRagdoll.m3"/>
         <Lighting value=""/>
     </CModel>
+    <CModel id="Brutalisk">
+        <Model value="Assets\Units\Zerg\BrutaliskEx3\BrutaliskEx3.m3"/>
+        <Events>
+            <Anim value="Burrow,Superior,00"/>
+            <Name value="Brutalisk_Dig_Burrow"/>
+            <Type value="Sound"/>
+            <Time value="0.009000"/>
+            <Payload value="Brutalisk_Dig_Burrow"/>
+        </Events>
+        <Events>
+            <Anim value="Unburrow,Superior,00"/>
+            <Name value="Brutalisk_Dig_UnBurrow"/>
+            <Type value="Sound"/>
+            <Time value="0.008000"/>
+            <Payload value="Brutalisk_Dig_UnBurrow"/>
+        </Events>
+        <Events>
+            <Anim value="Unburrow,00"/>
+            <Name value="Brutalisk_UnBurrow"/>
+            <Type value="Sound"/>
+            <Time value="0.006000"/>
+            <Payload value="Brutalisk_UnBurrow"/>
+        </Events>
+        <Events>
+            <Anim value="Burrow,00"/>
+            <Name value="Brutalisk_Burrow"/>
+            <Type value="Sound"/>
+            <Time value="0.006000"/>
+            <Payload value="Brutalisk_Burrow"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="Brutalisk_Spell_Vx"/>
+            <Type value="Sound"/>
+            <Time value="0.094000"/>
+            <Payload value="Brutalisk_Spell_Vx"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="0.038000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="1.286000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,00"/>
+            <Name value="Brutalisk_Footsteps"/>
+            <Type value="Sound"/>
+            <Time value="1.415000"/>
+            <Payload value="Brutalisk_Footsteps"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="0.016000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="0.481000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A,00"/>
+            <Name value="Brutalisk_Footsteps"/>
+            <Type value="Sound"/>
+            <Time value="0.546000"/>
+            <Payload value="Brutalisk_Footsteps"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A,00"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.548000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A,00"/>
+            <Name value="Brutalisk_AttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.685000"/>
+            <Payload value="Brutalisk_AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,A,00"/>
+            <Name value="Brutalisk_SpellA_Vx"/>
+            <Type value="Sound"/>
+            <Time value="0.015000"/>
+            <Payload value="Brutalisk_SpellA_Vx"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,B,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="0.016000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,B,00"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.110000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,B,00"/>
+            <Name value="Brutalisk_SpellA_Vx"/>
+            <Type value="Sound"/>
+            <Time value="0.015000"/>
+            <Payload value="Brutalisk_SpellA_Vx"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,C,00"/>
+            <Name value="Brutalisk_Stand2_Vx"/>
+            <Type value="Sound"/>
+            <Time value="0.009000"/>
+            <Payload value="Brutalisk_Stand2_Vx"/>
+        </Events>
+        <Events>
+            <Anim value="Spell,C,00"/>
+            <Name value="Brutalisk_Dig"/>
+            <Type value="Sound"/>
+            <Time value="0.102000"/>
+            <Payload value="Brutalisk_Dig"/>
+        </Events>
+        <Events>
+            <Anim value="Fidget,00"/>
+            <Name value="Brutalisk_Footsteps"/>
+            <Type value="Sound"/>
+            <Time value="4.837000"/>
+            <Payload value="Brutalisk_Footsteps"/>
+        </Events>
+        <Events>
+            <Anim value="Fidget,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="4.628000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Fidget,00"/>
+            <Name value="Brutalisk_Foot_ClawTip"/>
+            <Type value="Sound"/>
+            <Time value="0.146000"/>
+            <Payload value="Brutalisk_Foot_ClawTip"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.231000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="Brutalisk_AttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.313000"/>
+            <Payload value="Brutalisk_AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.585000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="Brutalisk_AttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.764000"/>
+            <Payload value="Brutalisk_AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,03"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.057000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,03"/>
+            <Name value="Brutalisk_AttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.171000"/>
+            <Payload value="Brutalisk_AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,03"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.441000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,03"/>
+            <Name value="Brutalisk_AttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.563000"/>
+            <Payload value="Brutalisk_AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,04"/>
+            <Name value="Brutalisk_AttackLaunch"/>
+            <Type value="Sound"/>
+            <Time value="0.202000"/>
+            <Payload value="Brutalisk_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,04"/>
+            <Name value="Brutalisk_AttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.400000"/>
+            <Payload value="Brutalisk_AttackImpact"/>
+        </Events>
+        <ScaleMax value="2.250000,2.250000,2.250000"/>
+        <ScaleMin value="2.250000,2.250000,2.250000"/>
+    </CModel>
     <CModel id="ConstructionCrane">
         <SelectionLayer value="2"/>
         <SelectionRadius value="2.150300"/>

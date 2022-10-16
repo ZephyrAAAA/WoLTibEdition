@@ -86,6 +86,18 @@
     <CActorUnit id="Battlecruiser">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Battlecruiser_Attack"/>
     </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Brutalisk ............................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Brutalisk">
+        <Macros value="ZergBurrowStandardAnimMacro"/>
+        <Macros value="ZergLargeBurrowEffects"/>
+        <On Terms="UnitBirth.Brutalisk" Send="$Birth"/>
+        <On Terms="AbilMorph.BurrowBrutalisk.Start" Send="Create BurrowDownLarge"/>
+        <On Terms="AbilMorph.BurrowBrutalisk.Start" Send="AnimClear Fidget"/>
+        <On Terms="UnitBirth.BrutaliskBurrowed" Send="Create"/>
+        <On Terms="UnitBirth.BrutaliskBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant"/>
+    </CActorUnit>
     <!-- Defensive Matrix Special Ability                                                        -->
     <CActorModel id="DefensiveMatrixModel">
         <HostSiteOps Ops="SOpAttachCenter"/>

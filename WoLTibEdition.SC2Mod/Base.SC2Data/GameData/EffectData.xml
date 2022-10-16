@@ -2624,6 +2624,9 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="25"/>
     </CEffectDamage>
+    <CEffectDamage id="WarpBlades">
+        <Amount value="80"/>
+    </CEffectDamage>
     <CEffectDamage id="WraithAU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="30"/>

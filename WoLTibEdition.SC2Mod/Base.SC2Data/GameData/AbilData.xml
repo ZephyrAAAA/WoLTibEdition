@@ -39,6 +39,27 @@
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
     </CAbilEffectTarget>
+    <CAbilMorph id="BurrowBrutalisk">
+        <AbilSetId value="BrwD"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowDown"/>
+        <ActorKey value="BurrowDown"/>
+        <Flags index="Interruptible" value="1"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="BrutaliskBurrowed" RandomDelayMax="0.3703">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1"/>
+            </SectionArray>
+            <SectionArray index="Collide">
+                <DurationArray index="Delay" value="0.5556"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="1"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
     <CAbilArmMagazine id="CarrierHangar">
         <InfoArray index="Ammo1">
             <Cooldown Link="Abil/##id##"/>
@@ -988,6 +1009,19 @@
         </Cost>
         <CursorEffect index="0" value="TychusSpectreUltrasonicSearchLv1"/>
     </CAbilEffectTarget>
+    <CAbilMorph id="UnburrowBrutalisk">
+        <AbilSetId value="BrwU"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:MorphsandBurrows"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BurrowUp"/>
+        <ActorKey value="BurrowUp"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="SuppressMovement" value="1"/>
+        <InfoArray Unit="Brutalisk" RandomDelayMax="0.5">
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
     <CAbilMorph id="Unsiege">
         <AbilLinkDisableArray value="attack"/>
     </CAbilMorph>
