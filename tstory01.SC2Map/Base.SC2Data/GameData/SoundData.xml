@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="FidgetRaynorHeadache" parent="Interactive" Portrait="SMRaynorCommander" Subtitle="RaynorHeadache" Speaker="CharRaynor" Actor="" Line="00001">
+        <AssetArray index="0">
+            <File value="Assets\sfx\RaynorHeadache.ogg"/>
+            <FacialAnim value="FidgetRaynorHeadache"/>
+            <PortraitModel value="SMRaynorCommander"/>
+            <Speaker value="ConversationState/Characters/CharRaynor"/>
+            <Subtitle value="Conversation/RaynorHeadache/Line"/>
+        </AssetArray>
+        <Flags index="NeedsUpdate" value="1"/>
+        <Flags index="NeedsTTS" value="1"/>
+    </CSound>
+</Catalog>

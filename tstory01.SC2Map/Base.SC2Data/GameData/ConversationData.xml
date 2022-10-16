@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CConversation id="RaynorHeadache">
+        <EditorCategories value="ConversationType:Fidget"/>
+        <Lines>
+            <Id value="Line00001"/>
+            <Text value="Conversation/RaynorHeadache/Line00001"/>
+            <Sound value="FidgetRaynorHeadache"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="250"/>
+            <AnimBlendOut value="250"/>
+            <Objects index="Speaker" value="CharRaynor"/>
+        </Lines>
+        <Groups>
+            <Id value="Group00001"/>
+            <Name value="Conversation/RaynorHeadache/Group00001"/>
+            <LineSelection value="Sequence"/>
+            <MaxLines value="1"/>
+            <Children value="Line00001"/>
+        </Groups>
+        <Groups Id="Group00002" Name="Conversation/RaynorHeadache/Group00002">
+            <Children value="Group00003"/>
+        </Groups>
+        <Groups Id="Group00003" Name="Conversation/RaynorHeadache/Group00003">
+            <Children value="Group00001"/>
+        </Groups>
+        <RootItems value="Group00002"/>
+    </CConversation>
+</Catalog>
