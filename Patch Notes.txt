@@ -1,5 +1,7 @@
 *Diamondback Shaped Hull now says in various places that it takes 25% less damage from Cannon.
 Raynor now actually complains about a headache if you try to do 2 Zeratul Missions in a row
+*Raven and Vessel text updated
+*Fixed vehicle mercs topbar not being affected by Topbar Efficiency.
 
 Outlaws:
 *Removed ability to build engineering bay
@@ -21,6 +23,9 @@ Redstone:
 
 Trains:
 *Upgrades have been looked at
+
+Cutthroat:
+*Fixed Orlan not mining.
 
 New Folsom:
 *Consumption now says it heals
