@@ -1,3 +1,5 @@
-﻿ConversationState/Name/CCEditionPermanence=C&C Edition Permanence
+﻿Conversation/Name/RaynorHeadache=Raynor Headache
+ConversationState/Name/CCEditionPermanence=C&C Edition Permanence
 ConversationState/Name/Tech2=Technology
 ConversationState/Name/TechState2=Technology State
+Sound/Name/FidgetRaynorHeadache=FidgetRaynorHeadache

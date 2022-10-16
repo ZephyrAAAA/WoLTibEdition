@@ -24733,7 +24733,14 @@ bool gt_LabCrystalClicked_Func (bool testConds, bool runActions) {
         lv_mission = libCamp_ge_MapID_MapTZeratul04;
     }
     else if (true) {
-        gf_PlayGossip(ge_ActorID_ActorRaynor);
+        if ((gv_currentGossipActor != ge_ActorID_ActorRaynor)) {
+            gv_currentGossipActor = ge_ActorID_ActorRaynor;
+            gf_SetAllSoundChannelVolumesStoryMode(libNtve_ge_VolumeChannelMode_Speech);
+            gf_PlayFidget("RaynorHeadache", ge_ActorID_ActorRaynor, ge_ActorID_ActorNone);
+            gf_SetAllSoundChannelVolumesStoryMode(libNtve_ge_VolumeChannelMode_Game);
+            gv_currentGossipActor = ge_ActorID_ActorNone;
+        }
+
         return true;
     }
     gf_TurnClickablesOnOff(gv_clickables, false);
