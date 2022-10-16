@@ -11,6 +11,7 @@ Abil/Name/Barracks2Train=Train
 Abil/Name/BioMode=Bio Mode
 Abil/Name/Bunker=Bunker
 Abil/Name/BunkerTransportSquad=Load-Unload
+Abil/Name/BurrowBrutalisk=Burrow (Brutalisk)
 Abil/Name/CCBuild=C&C Build
 Abil/Name/CCDepower=C&C Depower
 Abil/Name/CCMCVQueue=C&C MCV Queue
@@ -82,6 +83,7 @@ Abil/Name/TacNukeStrikeTopbar=Nuclear Strike
 Abil/Name/TacticalMissileStrike=Tactical Missile Strike
 Abil/Name/TakeTheDrill=Take The Drill
 Abil/Name/TrainStone=Train Stone
+Abil/Name/UnburrowBrutalisk=Unburrow (Brutalisk)
 Abil/Name/UpgradeDepot=Upgrade Depot
 Abil/Name/UpgradeToPlanetaryFortress2=Morph Building (COCE -> Planetary Fortress)
 Abil/Name/VehicleMercenaries=Vehicle Mercenaries
@@ -307,6 +309,7 @@ Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract oppo
 Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
+Button/Tooltip/BrutaliskBurrowed=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
 Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildTechLabFactory=Enables additional units. Researches upgrades.
@@ -1462,9 +1465,11 @@ Unit/LifeArmorName/TerranBuildingPlating=Terran Building Plating
 Unit/LifeArmorName/TerranInfantryArmor=Terran Infantry Armor
 Unit/LifeArmorName/TerranShipPlating=Terran Ship Plating
 Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
+Unit/LifeArmorName/ZergBrutaliskBurrowedArmor=Zerg Chitinous Plating
 Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks
+Unit/Name/BrutaliskBurrowed=Brutalisk
 Unit/Name/Bunker2=Bunker
 Unit/Name/BunkerSQ=Bunker
 Unit/Name/CCRepairDrone=Repair Drone
