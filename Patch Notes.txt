@@ -11,6 +11,10 @@ Zero Hour:
 *Fixed bonuses not showing up
 *Shifted starting depots so they aren't out of build radius
 
+Smash and Grab:
+If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
+The protoss no longer warp in extra stalkers in the bottom base
+
 Redstone:
 *Tosh's boys can now be rescued by air units.
 *Brutalisk now tries to escape his toasty fate
