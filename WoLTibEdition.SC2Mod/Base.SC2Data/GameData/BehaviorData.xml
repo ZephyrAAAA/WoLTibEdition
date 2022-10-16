@@ -320,6 +320,7 @@
                 <VitalMaxIncreaseAffectsCurrentArray index="Energy" value="0"/>
             </Modification>
         </PowerStageArray>
+        <Flags index="HideUnpoweredText" value="1"/>
     </CBehaviorPowerUser>
     <CBehaviorBuff id="OutOfCombatRegenTosh">
         <InfoFlags index="Hidden" value="1"/>
