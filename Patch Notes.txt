@@ -1,155 +1,25 @@
-Barracks now says it unlocks bunkers from the CC, not SCVs
-Factory says it builds SCVs
-Starport says it build CC
-CC now says it builds stuff
-Raynor now suggests doing something else if you try to do 2 Zeratul missions in a row.
-Description of Shadow Ops, Engineering Bay, Armoury, and Fusion Core now list things they have/unlock.
-Refinery no longer says stuff about being built on a geyser.
-Supply depot upgrade no longer says it's free
-Supply depot says stuff about power.
-The goliath no longer starts with discount multilock.
-The crane can now build defenses.
-SCV no longer says it can build stuff
-Nodes are now always visible.
-Veins are now visible on the minimap.
-You now get a "build complete" line when a CC or crane finishes making something.
-"Unit unlocked" messages now display in a more prominent position, 30s into a mission.
-Rifle damage against air units has been nerfed (Because man with gun OP)
-The planetary fortress now has 2k hp, has a bunker, and is affected by the explosive damage upgrade.
-Fixed the Wraith displacement field saying they resist 8% of damage.
-Orbital Strike is now Topbar Efficiency. It reduces the cooldown and cost of all topbar abilities.
-Tech Reactor is now Plasma Shields. It gives shields to all units.
-Fixed typos in the Dusk Wings and Jackson's Revenge merc card.
-HME research text is now correct
-Psi Disruptor research text is now correct
-Hyperflight Rotors- Banshees move faster [Starport Tech Lab]
-Flavour text for Hercules upgrades no longer mentions spectre upgrades
-Shadow Ops now has the correct button tooltip whether you get ghosts or spectres
-Doubled the damage of hellstorm missile pods.
-Hellstorm missile pods no longer ignore armour.
-Improved Shields-Requires the Shield Research. grants 20% damage resist to shields [Armoury]
-Infested now move faster on creep.
-Hercules dying removes all shields from units dropped.
-Fixed starting refineries doing weird things when you have autoref
-Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
-Nexus- Now 1000/1000, like in later versions
-Stone has voice lines now
-Bunker salvage button removed
-Build radius now has a fancy orange overlay, stolen from coop Stettman
-Buttons that flash to indicate you unlocked it that mission now only flash for 60s
-Cellular Reactor now also reduces the cooldown of Thor and BC abilities
-More units now say attack lines when told to attack move
-Cellular Reactor now also reduces the cooldown of Thor and BC abilities
-Fixed hostile player on all maps
-Heroes with base armour gain more from Vanadium.
-Stimpack no longer says it increases movement speed.
-Corrected the Enhanced Explosives upgrade description.
-Perdition buffed to 5 range and being affected by hi-sec, so bunkered firebats don't outrange them.
-The Build Refinery button now says it comes with an SCV
-Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repair (5hp/1e/s), and Irradiate
-Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
-Buildings no longer say they're Unpowered when out of build radius.
-
-Liberation Day:
-A message appears saying that coloured tips are new.
-Coloured all our tips
+*Diamondback Shaped Hull now says in various places that it takes 25% less damage from Cannon.
+Raynor now actually complains about a headache if you try to do 2 Zeratul Missions in a row
 
 Outlaws:
-A message appears saying that new/relevant tips are available.
-Coloured all our tips
-Edited the refinery tip to remove the mention of max SCVs per refinery, since it seems pointless to say it at that point.
-Fixed the trigger that gives you replacement SCVs to give you the correct ones
-The rebel base now has a firebat squad
-Filled out text tags for all the buildings the player has access 
-Added text tags to all buildings
-Replaced all nodes in your main base with a large node, to give a reason to have multiple SCVs.
+*Removed ability to build engineering bay
+*Moved the barracks so it can build a tech lab without lifting off
+*Enemy structures take double damage
 
 Zero Hour:
-A message appears saying that new/relevant tips are available.
-Coloured all our tips
+*The zerg now get chitinous plating when the omegalisks are sent
+*Fixed bonuses not showing up
+*Shifted starting depots so they aren't out of build radius
 
-Smash and Grab:
-You now start with a Spec Ops if you've purchased any mercs
-Toned down the protoss attack waves, since the marauder was nerfed.
+Redstone:
+*Tosh's boys can now be rescued by air units.
+*Brutalisk now tries to escape his toasty fate
 
-Evacuation:
-You now start with a Spec Ops if you've purchased any mercs
-Moved the sensor tower near the starport to provide better build radius for the field.
+Trains:
+*Upgrades have been looked at
 
-Devil's Playground:
-You now start with a Spec Ops if you've purchased any mercs
-A message appears saying that new/relevant tips are available.
-Coloured all our tips
+New Folsom:
+*Consumption now says it heals
 
-Bel'shir:
-Fixed things, it appears to no longer swarm you
-The protoss send their counterattack in 1 wave instead of 2 now.
-
-Outbreak:
-A message appears saying that new/relevant tips are available.
-Coloured all our tips
-
-Morbin Time:
-Doubled money regen in the main base
-There's now a resource field on the low ground outside your base.
-Added a field to the brutalisk location
-Your camera is no longer stolen on Hard and Brutal when Narud tells you about giving you his medivacs
-Fixed rescuables voicelines
-Removed free vision of the datacores
-Removed free vision from Kerrigan
-
-Supernova:
-Added our upgrade function
-You now start with 2 scvs instead of 6
-Removed the gas pickups at base 4
-Added another pylon and cannon pair at base 4
-Removed the gas pickups at base 5
-Moved the gas pickups from base 3 to the ledge north of the starting base
-Bonus 2 and 3 now give banshee armoury upgrades
-Moved the bonus relic (And its defenders) south of the expansion to base 4
-
-Safe Haven:
-You start with 2 SCVs, 1 if you have autoref
-Each protoss base now has resources
-You start with 2 Supply Depots instead of 3
-Shuffled buildings around to give better build radius coverage
-You no longer have free vision of the terrain around the purifier mothership
-Killing a nexus causes the protoss to send a counterattack to try retake the area, and rebuild
-Counterattacks scale with how many terror fleets you've stopped
-Stopping terrorfleets gives armoury upgrades
-Stopping counterattacks gives armoury upgrades
-Attacking a base starts a 4/4/3/2 minute timer before they will warp in reinforcements
-Gives less base money, but gives money for each settlement saved. Also has a bonus objective tracking this
-Grants the Zerg Virus support power.
-
-Haven's Fall:
-You start with 2 SCVs, 1 if you have autoref
-Removed the gas pickups from gas island
-Each settlment now has a 4-stack of small nodes
-The zerg base at the south now has resources
-You now start with an Engineering Bay
-You start with 2 Supply Depots instead of 3
-You start with a Sensor Tower
-Shuffled buildings around to give better build radius coverage
-Removed free vision from each settlement
-All infested spawn 100% faster.
-Civilians and marines spawn twice as many.
-Aberrations start coming in half the time
-Stopping reinfestations grants armoury upgrades
-Virophage health is now always based on difficulty.
-Gives less base money, but gives money for each settlement saved. Also has a bonus objective tracking this
-Infested Eggs no longer block unit movement.
-Grants the Purification Fleet support power.
-
-In Utter Darkness:
-You have no base.
-You gain resources by killing enemies.
-You spend resources to increase how many of each unit you can have.
-Reinforcement waves warp in all units missing from your army.
-Reinforcement waves happen more often.
-After getting Artanis, you need to spend 300 energy off him to get a reinforcement wave.
-Attack wave timings adjusted to be faster, and not stack up so bad.
-Added a "Die Now" button after you've killed enough.
-The mission is overall faster.
-Sentries now have shield restore.
-The Archive now hosts 3 repair drones
+Haven:
+*The split now mentions you get a once per mission support power
