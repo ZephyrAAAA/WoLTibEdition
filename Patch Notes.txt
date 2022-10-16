@@ -46,6 +46,8 @@ Stimpack no longer says it increases movement speed.
 Corrected the Enhanced Explosives upgrade description.
 Perdition buffed to 5 range and being affected by hi-sec, so bunkered firebats don't outrange them.
 The Build Refinery button now says it comes with an SCV
+Science Vessel- now has the abilities Gravity Rift, Defensive Matrix, Nano-Repair (5hp/1e/s), and Irradiate
+Raven- now has the abilities Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.
 
 Liberation Day:
 A message appears saying that coloured tips are new.
@@ -59,6 +61,7 @@ Fixed the trigger that gives you replacement SCVs to give you the correct ones
 The rebel base now has a firebat squad
 Filled out text tags for all the buildings the player has access 
 Added text tags to all buildings
+Replaced all nodes in your main base with a large node, to give a reason to have multiple SCVs.
 
 Zero Hour:
 A message appears saying that new/relevant tips are available.

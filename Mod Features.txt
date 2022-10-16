@@ -65,6 +65,12 @@ Rebalancing of Armoury Upgrade Costs. With the extra money, you can buy everythi
 
 Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
 
+Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
+
+Nodes are now always visible.
+
+Veins are now visible on the minimap.
+
 
 MISSION SPECIFIC CHANGES:
 
@@ -344,7 +350,7 @@ Marine-Marine damage nerfed to 5. War Pig damage nerfed to 6.75
 
 Firebat- Rework to be an expensive tanky unit, firing a stream of flame at range, dealing damage around the target.
 
-Medic- Better Healing priority. Medic healing nerfed to 6hp/s for 3E/s
+Medic- Better Healing priority. Medic healing nerfed to 6hp/3e/s
 
 Bunker- Has 4 slots, fits 1 squad
 
