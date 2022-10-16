@@ -115,6 +115,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ArcliteShockCannon">
         <AttackType value="Siege"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ArmageddonCannons">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -889,6 +890,7 @@
         <AttackType value="Magic"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SpartanCompanyA">
         <Tip value="Weapon/Tip/Rocket"/>

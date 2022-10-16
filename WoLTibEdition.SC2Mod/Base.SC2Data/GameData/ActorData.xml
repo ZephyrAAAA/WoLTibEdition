@@ -86,6 +86,10 @@
     <CActorUnit id="Battlecruiser">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Battlecruiser_Attack"/>
     </CActorUnit>
+    <!-- Defensive Matrix Special Ability                                                        -->
+    <CActorModel id="DefensiveMatrixModel">
+        <HostSiteOps Ops="SOpAttachCenter"/>
+    </CActorModel>
     <!--                                                                                         -->
     <!-- Devil Dog ............................................................................. -->
     <!--                                                                                         -->
@@ -224,6 +228,17 @@
         <On Terms="Effect.HMEMindControlSearchArea.Start; At Effect" Send="Create"/>
         <On Terms="ActorCreation" Send="RefSet ::global.HMESource ::Self"/>
     </CActorSite>
+    <CActorMissile id="HunterSeekerAttackMissile">
+        <On index="5" Terms="MotionPhaseStart; MotionPhase 2"/>
+        <!-- On Terms="ActorCreation" Send="Create SeekerSerpentHead"/-->
+    </CActorMissile>
+    <CActorSound id="HunterSeekerFailSound">
+        <On index="1" Terms="Behavior.SeekerMissileTimeout.Off"/>
+    </CActorSound>
+    <CActorModel id="IrradiateEffect">
+        <On Terms="Behavior.IrradiateBranch.On" Send="Create"/>
+        <On Terms="Behavior.IrradiateBranch.Off" Send="Destroy"/>
+    </CActorModel>
     <!--                                                                                         -->
     <!--                                                                                         -->
     <!-- Merc Units ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -966,12 +981,64 @@
     <CActorSplat id="HyperionYamatoCursorSplat" parent="TerranCursorSplat" abil="HyperionYamato">
         <EditorCategories value=""/>
     </CActorSplat>
+    <CActorModel id="RavenScramblerMissileBehavior" parent="ModelAnimationStyleContinuous">
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Behavior.RavenScramblerMissile.On" Send="Create"/>
+        <On Terms="Behavior.RavenScramblerMissile.Off" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorCreation; ValidateUnit IsColossus" Send="SetScale 1.000000,1.000000,1.500000"/>
+        <On Terms="ActorCreation; ValidateUnit IsCarrier" Send="SetScale 0.750000"/>
+        <On Terms="ActorCreation; ValidateUnit IsTempest" Send="SetScale 0.850000"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter" HoldRotation="1"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorModel id="RavenScramblerMissileImpact" parent="GenericAttackImpactModel">
+        <On Terms="Effect.RavenScramblerMissileAB.Start; At Target" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpForwardLaunchGuide SOp2DRotation" HoldRotation="1"/>
+        <Model value="RavenScramblerMissileImpact"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
+    <CActorSound id="RavenScramblerMissileImpactSound" parent="SoundOneShot">
+        <On Terms="Effect.RavenScramblerMissileAB.Start; At Target" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <Sound value="SkyTank_BarrageMissile_Impact"/>
+    </CActorSound>
+    <CActorAction id="RavenScramblerMissileLaunch" parent="GenericAttackBase" effectImpact="RavenScramblerMissileAB" effectLaunch="RavenScramblerMissileLM">
+        <On Terms="Effect.RavenScramblerMissileLM.Start; At Caster" Send="Create"/>
+        <LaunchAttachQuery Methods="AMFilterWeaponSetA2"/>
+        <LaunchAssets Sound="Raven_ScramblerMissileLaunch"/>
+        <Missile value="RavenScramblerMissileProjectile"/>
+        <ImpactSiteOps Ops="SOpAttachCenter SOpForwardLaunchGuide SOp2DRotation"/>
+        <ImpactAttachQuery Methods="Center 0"/>
+        <ImpactMap index="None" Model="RavenScramblerMissileImpact" Sound="Raven_ScramblerMissileImpact" ModelReaction=""/>
+        <ImpactMap index="Shield" Sound="" ModelReaction=""/>
+        <ImpactModel value="RavenScramblerMissileImpact"/>
+        <ShieldFlashType value="None"/>
+    </CActorAction>
+    <CActorSound id="RavenScramblerMissileLoopSound" parent="SoundContinuous">
+        <On Terms="Behavior.RavenScramblerMissile.On" Send="Create"/>
+        <On Terms="Behavior.RavenScramblerMissile.Off" Send="Destroy"/>
+        <Sound value="Raven_ScramblerMissileLoop"/>
+    </CActorSound>
+    <CActorMissile id="RavenScramblerMissileProjectile" parent="GenericAttackMissile" unitName="RavenScramblerMissile">
+        <Model value="RavenScramblerMissileWeapon"/>
+    </CActorMissile>
+    <CActorRange id="RavenScramblerMissileRange" parent="RangeAbil" abil="RavenScramblerMissile">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+        <IconArcLength value="3.250000"/>
+    </CActorRange>
     <!--                                                                                         -->
     <!-- Science Vessel ........................................................................ -->
     <!--                                                                                         -->
     <CActorUnit id="ScienceVessel">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="ScienceVessel_Attack"/>
     </CActorUnit>
+    <CActorSound id="ScienceVessel_IrradiateImpact">
+        <On Terms="Behavior.IrradiateBranch.On" Send="Create"/>
+    </CActorSound>
     <!--                                                                                         -->
     <!-- Siege Breaker ......................................................................... -->
     <!--                                                                                         -->
@@ -1002,6 +1069,31 @@
     <CActorUnit id="VikingFighter">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
+    <CActorModel id="GravityRiftModel" parent="ModelAnimationStyleContinuous">
+        <On Terms="Effect.GravityRiftCP.Start" Send="Create"/>
+        <On Terms="Effect.GravityRiftCP.Stop" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Model value="VortexModel"/>
+    </CActorModel>
+    <CActorSplat id="GravityRiftCursorSplat" parent="TerranCursorSplat" abil="GravityRift">
+        <Macros value="GlobalLoopMacro"/>
+    </CActorSplat>
+    <CActorSound id="GravityRiftStartSound" parent="SoundOneShot">
+        <On Terms="Effect.GravityRiftCP.Start" Send="Create"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Sound value="Mothership_VortexStart"/>
+    </CActorSound>
+    <CActorSound id="GravityRiftStopSound" parent="SoundOneShot">
+        <On Terms="Effect.GravityRiftCP.Stop" Send="Create"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Sound value="Mothership_VortexEnd"/>
+    </CActorSound>
+    <CActorSound id="GravityRiftLoopSound" parent="SoundContinuous">
+        <On Terms="Effect.GravityRiftCP.Start" Send="Create"/>
+        <On Terms="Effect.GravityRiftCP.Stop" Send="Destroy"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Sound value="Mothership_VortexLoop"/>
+    </CActorSound>
     <!--                                                                                         -->
     <!-- Vulture ............................................................................... -->
     <!--                                                                                         -->

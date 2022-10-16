@@ -38,6 +38,7 @@ Abil/Name/FleetActivate=Fleet Activate
 Abil/Name/FungalGrowthBrutalisk=Fungal Growth
 Abil/Name/FusionCore2Research=Research
 Abil/Name/GhostAcademy2Research=Research
+Abil/Name/GravityRift=Gravity Rift
 Abil/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Abil/Name/HideInTheShadows=Hide In The Shadows
 Abil/Name/HighTemplarAttackDummy=High Templar Attack Dummy
@@ -56,14 +57,17 @@ Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
 Abil/Name/PowerStructure=Power Structure
 Abil/Name/PsiDisruptor=Psi Disruptor
+Abil/Name/RavenScramblerMissile=Scrambler Missile
 Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
+Abil/Name/RepairDrone=Repair Drone
 Abil/Name/RepairDroneHeal=Repair
 Abil/Name/RepairDroneRestore=Shield Restore
 Abil/Name/RepairMechOrder=Repair
 Abil/Name/ResetRally=Reset Rally
 Abil/Name/ScannerSweepTopbar=Scanner Sweep
+Abil/Name/ScienceVesselDefensiveMatrix=Defensive Matrix
 Abil/Name/SendWave=Send Wave
 Abil/Name/SquadStimpack=Squad - Stimpack
 Abil/Name/Starport2AddOns=AddOns
@@ -90,12 +94,15 @@ Alert/Text/MULEExpired=Structure complete.
 Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/DamageMarker=Damage Marker
 Behavior/Name/Depowered=Depowered
+Behavior/Name/GravityRift=Gravity Rift
 Behavior/Name/HideInTheShadows=Hide In The Shadows
 Behavior/Name/InfiniteCreep=InfiniteCreep
 Behavior/Name/InsideMedivac=Inside Medivac
+Behavior/Name/IrradiateBranch=Irradiated
 Behavior/Name/MechEMP=Mech EMP
 Behavior/Name/PowerCheck=Power Check
 Behavior/Name/PsiSight=Psi Sight
+Behavior/Name/RavenScramblerMissile=Interference Matrix
 Behavior/Name/SquadAttack=Squad Attack
 Behavior/Name/SquadBunkerUnload=Squad Bunker Unload
 Behavior/Name/SquadUnit=Squad Unit
@@ -106,6 +113,7 @@ Behavior/Name/Veterancy=Veterancy
 Behavior/Name/ZeratulHoldFire=Hold Fire
 Behavior/Name/ZergHypervirus=Zerg Hypervirus
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 30%.
+Behavior/Tooltip/IrradiateBranch=Irradiated unit. All Biological units in or near the radiation field will take damage.
 Behavior/Tooltip/PsiDisruption=Unit will attack nearby units.
 Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
@@ -142,6 +150,7 @@ Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
+Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
 Button/Name/HiveMindEmulator10=Hive Mind Emulator
@@ -212,6 +221,8 @@ Button/Name/PsiDisruptor6=Psi Disruptor
 Button/Name/PsiDisruptor7=Psi Disruptor
 Button/Name/PsiDisruptor8=Psi Disruptor
 Button/Name/PsiDisruptor9=Psi Disruptor
+Button/Name/RavenRepairDrone=Repair Drone
+Button/Name/RavenScramblerMissile=Interference Matrix
 Button/Name/RepairOrder=Repair
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
@@ -323,6 +334,7 @@ Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive 
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
 Button/Tooltip/Decal_Terran_0047_01=Support structure. Used to construct buildings.
+Button/Tooltip/DefensiveMatrix=Surrounds the unit with a shield that can absorb <d ref="Behavior,DefensiveMatrix,Modification.VitalMaxArray[1]"/> damage. Lasts <d ref="Behavior,DefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/DeployLaserDrill10=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill11=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill12=Deploys the laser drill.
@@ -350,6 +362,7 @@ Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff
 Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GhostAcademy2=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GhostAcademySpectre=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Spectres at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
+Button/Tooltip/GravityRift=Creates a gravity Vortex that slows units in the target area, and damages them for <d ref="Effect,GravityRiftDamage,Amount * Effect,GravityRiftCP,PeriodCount"/>. Lasts for <d ref="Effect,GravityRiftCP,PeriodCount * Effect,GravityRiftCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
 Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
@@ -392,10 +405,12 @@ Button/Tooltip/InfantryMercenaries8=Calls down all purchased infantry mercenarie
 Button/Tooltip/InfantryMercenaries9=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
+Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/NanoRepair=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals <d ref="Effect,NanoRepair,RechargeVitalRate"/> life per second for <d ref="Effect,NanoRepair,RechargeVitalRate*Effect,NanoRepair,DrainVitalCostFactor"/> energy.</c><n/><c val="#ColorAttackInfo">Up to 3 Science Vessels can heal the same target</c>
 Button/Tooltip/NovaHeal=Heals Nova.<n/><n/><c val="f078ff">Heals <d ref="Effect,NovaHeal,RechargeVitalRate"/> life per second for <d ref="Effect,NovaHeal,RechargeVitalRate * Effect,NovaHeal,DrainVitalCostFactor"/> energy.</c>
 Button/Tooltip/NovaSnipe=Fires a psi-charged bullet, dealing <d ref="Effect,NovaSnipe,Amount"/> damage.
 Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
@@ -428,6 +443,8 @@ Button/Tooltip/PsiDisruptor6=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/PsiDisruptor7=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
+Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
@@ -799,6 +816,7 @@ Effect/Name/DeathRecallS=Death Recall
 Effect/Name/DeathRecallSet=Death Recall
 Effect/Name/DeathRecallT=Death Recall
 Effect/Name/DefensiveMatrixRepair=Defensive Matrix Repair
+Effect/Name/DefensiveMatrixSetVessel=Defensive Matrix Set
 Effect/Name/DepowerAB=Depower AB
 Effect/Name/DepowerRB=Depower RB
 Effect/Name/DepowerSwitch=Depower Switch
@@ -839,6 +857,11 @@ Effect/Name/FleetTargeter=Fleet Targeter
 Effect/Name/FleetTempestCP=Tempest
 Effect/Name/FragmentationGrenadeCP=Fragmentation Grenade
 Effect/Name/FungalGrowthDelay=Fungal Growth
+Effect/Name/GravityRiftAB=Gravity Rift
+Effect/Name/GravityRiftCP=Gravity Rift
+Effect/Name/GravityRiftDamage=Gravity Rift
+Effect/Name/GravityRiftSearch=Gravity Rift
+Effect/Name/GravityRiftSet=Gravity Rift
 Effect/Name/HMEMindControlSearchArea=Mind Control
 Effect/Name/HailstormLauncherLM=Hailstorm Launcher
 Effect/Name/HailstormLauncherLMMerc=Hailstorm Launcher
@@ -852,6 +875,11 @@ Effect/Name/InfiniteCreepDamage=InfiniteCreepDamage
 Effect/Name/InfiniteCreepRegen=InfiniteCreepRegen
 Effect/Name/IonCannonsFleet=Ion Cannons
 Effect/Name/IonCannonsUFleet=Ion Cannons
+Effect/Name/IrradiateBranchApply=Irradiate Branch Apply
+Effect/Name/IrradiateBranchDelay=Irradiate Branch Delay
+Effect/Name/IrradiatePanic=Irradiate Panic
+Effect/Name/IrradiatePanicSearch=Irradiate Panic Search
+Effect/Name/IrradiatePeriodicSet=Irradiate Periodic Set
 Effect/Name/LanzerTorpedoesDamageG=Halo Rockets (Damage2)
 Effect/Name/LanzerTorpedoesG=Halo Rockets (Persistent2)
 Effect/Name/LanzerTorpedoesLMG=Halo Rockets (Launch Missile2)
@@ -891,9 +919,13 @@ Effect/Name/PowerStructureRB=Power Structure
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
+Effect/Name/RavenScramblerDummy=RavenScramblerDummy
+Effect/Name/RavenScramblerSwitchInitial=RavenScramblerSwitchInitial
 Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
 Effect/Name/RemovePrecursorMercIterate=Remove Precursor Merc Iterate
+Effect/Name/RepairDroneReleaseCreateUnit=Repair Drone Release
+Effect/Name/RepairDroneTimedLife=Repair Drone
 Effect/Name/RescuePodsSwitch=Rescue Pods Switch
 Effect/Name/ResetRally=Reset Rally
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
@@ -972,6 +1004,8 @@ Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
 Effect/Name/ZeratulSeek=Zeratul Seek
 Effect/Name/ZergHypervirus=Zerg Hypervirus
 Effect/Name/ZergHypervirusSearch=Zerg Hypervirus
+Error/DefensiveMatrix=Already Has Defensive Matrix
+Error/MustTargetMechanicalorPsionic=Must Target Mechanical Or Psionic
 LoadingScreen/TextBody=<s val="LoadingScreenTitleMarSara">Mar Sara</s><n/><n/><s val="LoadingScreenBody">Fringe World, Dominion Space <n/>Koprulu Sector<n/><n/>Recolonized 2502</s>
 LoadingScreen/Tip=<sp/>
 MapInfo/Player00/Name=Neutral
@@ -1424,7 +1458,9 @@ UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
 Unit/InfoText/PalletGas=Use any ground unit to collect 2000 minerals.
 Unit/InfoText/PalletMinerals=Use any ground unit to collect 1000 minerals.
+Unit/LifeArmorName/TerranBuildingPlating=Terran Building Plating
 Unit/LifeArmorName/TerranInfantryArmor=Terran Infantry Armor
+Unit/LifeArmorName/TerranShipPlating=Terran Ship Plating
 Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
 Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory

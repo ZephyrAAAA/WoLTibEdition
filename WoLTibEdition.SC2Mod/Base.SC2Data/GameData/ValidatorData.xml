@@ -73,6 +73,23 @@
         <Find value="1"/>
         <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
+    <CValidatorLocationCompareRange id="IrradiateDistanceCheck">
+        <Compare value="LT"/>
+        <Range value="2"/>
+        <Value Value="SourceUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="IsMechanicalOrIsPsionic">
+        <ResultFailed value="Error,Error/MustTargetMechanicalorPsionic"/>
+        <CombineArray value="TargetIsMechanical"/>
+        <CombineArray value="IsPsionic"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="IsPsionic">
+        <Filters value="Psionic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="NotDefensiveMatrixd">
+        <ResultFailed value="Error,Error/DefensiveMatrix"/>
+        <Behavior value="DefensiveMatrix"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorPlayerRequirement id="NotHaveAutoHarvester">
         <Value value="AutoHarvesterResearched"/>
     </CValidatorPlayerRequirement>
@@ -116,6 +133,16 @@
     <CValidatorUnitType id="IsInfestedTumor">
         <Value value="CreepTumorInfested"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareMoverPhase id="NotInLastMotionPhase">
+        <Compare value="LT"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareMoverPhase>
+    <CValidatorUnitCompareBehaviorCount id="NotIrradiatedBranch">
+        <Behavior value="IrradiateBranch"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotIrradiatedMain">
+        <Behavior value="Irradiate"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="NotSquadUnit">
         <Behavior value="SquadUnit"/>
     </CValidatorUnitCompareBehaviorCount>
@@ -133,6 +160,26 @@
         <Find value="1"/>
         <Value value="AdvancedHealingAIPurchased"/>
     </CValidatorPlayerRequirement>
+    <CValidatorLocationCompareRange id="SeekerMissileMaxLaunchRange">
+        <WhichLocation Effect="SeekerMissileLaunchMissile"/>
+        <Compare value="GE"/>
+        <Range value="13"/>
+        <Value Value="SourceUnit"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="SourceIsIrradiated">
+        <CombineArray value="SourceIsIrradiatedMain"/>
+        <CombineArray value="SourceIsIrradiatedBranch"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="SourceIsIrradiatedBranch">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="IrradiateBranch"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SourceIsIrradiatedMain">
+        <WhichUnit Value="Source"/>
+        <Value value="1"/>
+        <Behavior value="Irradiate"/>
+    </CValidatorUnitCompareBehaviorCount>
     <!--    -->
     <!--    BattleCruiser Defensive Matrix-->
     <!--    -->
