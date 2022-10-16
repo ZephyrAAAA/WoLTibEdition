@@ -300,6 +300,14 @@
     <CEffectSet id="DefensiveMatrixSet">
         <EffectArray value="DefensiveMatrixRepair"/>
     </CEffectSet>
+    <CEffectSet id="DefensiveMatrixSetVessel">
+        <ValidatorArray value="NotDefensiveMatrixd"/>
+        <EditorCategories value="Race:Terran"/>
+        <EffectArray value="DefensiveMatrixApplyDummyBehavior"/>
+        <EffectArray value="DefensiveMatrixModifyUnit"/>
+        <EffectArray value="DefensiveMatrixApplyBehavior"/>
+        <EffectArray value="DefensiveMatrixRemoveDummyBehavior"/>
+    </CEffectSet>
     <CEffectApplyBehavior id="DepowerAB">
         <EditorCategories value=""/>
         <Behavior value="Depowered"/>
@@ -720,6 +728,34 @@
     <CEffectDamage id="GravitonPrisonDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="GravityRiftAB">
+        <EditorCategories value=""/>
+        <Behavior value="GravityRift"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="GravityRiftCP">
+        <EditorCategories value=""/>
+        <PeriodCount value="12"/>
+        <PeriodicEffectArray value="GravityRiftSearch"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="GravityRiftDamage">
+        <EditorCategories value=""/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="GravityRiftSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="GravityRiftSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="GravityRiftSet">
+        <EditorCategories value=""/>
+        <EffectArray value="GravityRiftDamage"/>
+        <EffectArray value="GravityRiftAB"/>
+    </CEffectSet>
     <CEffectDamage id="GuassRifle">
         <Amount value="5"/>
     </CEffectDamage>
@@ -837,12 +873,60 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="10"/>
     </CEffectDamage>
+    <CEffectApplyBehavior id="IrradiateBranchApply">
+        <ValidatorArray index="0" value="IrradiateDistanceCheck"/>
+        <ValidatorArray value="SourceIsIrradiated"/>
+        <EditorCategories value=""/>
+        <Behavior value="IrradiateBranch"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="IrradiateBranchDelay">
+        <ValidatorArray value="NotIrradiatedMain"/>
+        <ValidatorArray value="NotIrradiatedBranch"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnit"/>
+        <ExpireDelay value="1"/>
+        <ExpireEffect value="IrradiateBranchApply"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="IrradiateInitialDamageApply">
         <ArmorReduction value="1"/>
+        <ResponseFlags index="Acquire" value="0"/>
+        <ResponseFlags index="Flee" value="0"/>
+        <Amount value="5"/>
+        <SearchFlags index="CallForHelp" value="0"/>
     </CEffectDamage>
+    <CEffectIssueOrder id="IrradiatePanic">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Source"/>
+        <Abil value="attack"/>
+        <Player Value="Source"/>
+        <Target Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectRandomPointInCircle id="IrradiatePanicSearch">
+        <ValidatorArray value="TargetHasNoOrders"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <Effect value="IrradiatePanic"/>
+        <Radius value="2"/>
+        <RestrictToCircumference value="1"/>
+    </CEffectRandomPointInCircle>
     <CEffectDamage id="IrradiatePeriodicDamage">
         <ArmorReduction value="1"/>
+        <ResponseFlags index="Flee" value="0"/>
+        <ImpactUnitValidator value="UnitIsBiological"/>
+        <Amount value="5"/>
     </CEffectDamage>
+    <CEffectSet id="IrradiatePeriodicSet">
+        <EditorCategories value=""/>
+        <EffectArray value="IrradiatePeriodicDamage"/>
+        <EffectArray value="IrradiateSearchArea"/>
+        <EffectArray value="IrradiatePanicSearch"/>
+    </CEffectSet>
+    <CEffectEnumArea id="IrradiateSearchArea">
+        <ResponseFlags index="Flee" value="0"/>
+        <SearchFilters value="-;Structure,Dead,Hidden,Invulnerable"/>
+        <AreaArray index="0" Effect="IrradiateBranchDelay"/>
+    </CEffectEnumArea>
     <CEffectDamage id="JavelinMissileLaunchersDamage">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="12"/>
@@ -1455,6 +1539,25 @@
     <CEffectDamage id="Ram">
         <Amount value="80"/>
     </CEffectDamage>
+    <CEffectSet id="RavenScramblerDummy">
+        <EditorCategories value="Race:Terran"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="RavenScramblerMissileAB">
+        <EditorCategories value="Race:Terran"/>
+        <Behavior value="RavenScramblerMissile"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="RavenScramblerMissileLM">
+        <ValidatorArray index="0" value="IsMechanicalOrIsPsionic"/>
+        <ValidatorArray value="TargetNotTacticalJumping"/>
+        <EditorCategories value="Race:Terran"/>
+        <FinishEffect value="RavenScramblerMissileAB"/>
+        <AmmoUnit value="RavenScramblerMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectSwitch id="RavenScramblerSwitchInitial">
+        <EditorCategories value="Race:Terran"/>
+        <CaseArray Validator="IsDead" Effect="RavenScramblerDummy"/>
+        <CaseDefault value="RavenScramblerMissileLM"/>
+    </CEffectSwitch>
     <CEffectDamage id="RaynorSnipeDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -1558,6 +1661,16 @@
         <Abil value="ProbeHarvest"/>
         <Target Value="CasterUnit"/>
     </CEffectIssueOrder>
+    <CEffectCreateUnit id="RepairDroneReleaseCreateUnit">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <SpawnEffect value="RepairDroneTimedLife"/>
+        <SpawnUnit value="CCRepairDrone"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="RepairDroneTimedLife">
+        <EditorCategories value=""/>
+        <Behavior value="RepairDroneTimeout"/>
+    </CEffectApplyBehavior>
     <CEffectCreatePersistent id="RescuePods">
         <FinalEffect value="RescuePodsSwitch"/>
     </CEffectCreatePersistent>

@@ -83,6 +83,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="EMP"/>
         <DefaultButtonLayout Row="2" Column="1"/>
     </CButton>
+    <CButton id="GravityRift">
+        <Icon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
+        <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
     <CButton id="HiveMindEmulator10">
         <Icon value="Assets\Textures\btn-research-zerg-hivemindemulator.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-zerg-hivemindemulator.dds"/>
@@ -123,6 +128,15 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-research-zerg-hivemindemulator.dds"/>
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="RavenRepairDrone">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-defensivedrone.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-defensivedrone.dds"/>
+    </CButton>
+    <CButton id="RavenScramblerMissile">
+        <Icon value="Assets\Textures\btn-upgrade-terran-interferencematrix.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-interferencematrix.dds"/>
+        <EditorCategories value="Race:Terran"/>
     </CButton>
     <CButton id="ZergHypervirus3">
         <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>

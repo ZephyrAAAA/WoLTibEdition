@@ -96,6 +96,15 @@
         </DamageResponse>
         <RemoveValidatorArray value="NotHallucination"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DefensiveMatrix">
+        <RemoveValidatorArray index="0" removed="1"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="0"/>
+        </Modification>
+        <DamageResponse ModifyFraction="0" ModifyLimit="200">
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Depowered">
         <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm.dds"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -191,6 +200,11 @@
         <BuffFlags index="Channeling" value="0"/>
         <Duration value="10"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="GravityRift">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.625"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="GuardianShield">
         <DamageResponse ModifyFraction="0.7">
             <ModifyAmount value="0"/>
@@ -223,6 +237,24 @@
         <Modification>
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Irradiate">
+        <Duration value="19.5"/>
+        <Period value="0.5"/>
+        <InitialEffect value="IrradiatePeriodicSet"/>
+        <PeriodicEffect value="IrradiatePeriodicSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IrradiateBranch">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-irradiate.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0">
+            <AccumulatorArray value="IrradiateBranchTime"/>
+            <AccumulatorArray value="IrradiateBranchBranchTime"/>
+        </Duration>
+        <Period value="0.5"/>
+        <InitialEffect value="IrradiatePeriodicSet"/>
+        <PeriodicEffect value="IrradiatePeriodicSet"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="MaarPassiveSpeed">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -372,6 +404,27 @@
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="RavenScramblerMissile">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-interferencematrix.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <DisableValidatorArray value="TargetNotTacticalJumping"/>
+        <RemoveValidatorArray value="NotOracleStasisTrapped"/>
+        <BuffFlags index="UpdateDurationWhileDisabled" value="1"/>
+        <Duration value="15"/>
+        <ExpireEffect value="ImmortalBarrierCDFix"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="EnableMove" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <BehaviorLinkDisableArray value="ImmortalBarrierSupressed"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorJump id="ReaperJump">
         <DurationPreLaunch value="0.025"/>
         <DurationPostLand value="0.0375"/>
@@ -399,6 +452,21 @@
         <CarryResourceBehavior value="CarryRefinery"/>
         <IdealHarvesterCount value="1"/>
     </CBehaviorResource>
+    <CBehaviorBuff id="RepairDroneTimeout" parent="TimedLife">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="30"/>
+        <Modification>
+            <StateFlags index="SuppressInvulnerability" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SeekerMissileTimeout">
+        <DisableValidatorArray value="NotInLastMotionPhase"/>
+        <RemoveValidatorArray index="0" value="SeekerMissileMaxLaunchRange"/>
+        <Duration value="5.25"/>
+        <FinalEffect value="Kill"/>
+        <ExpireEffect value=""/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ShapedHull">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

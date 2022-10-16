@@ -15,4 +15,14 @@
     <CAccumulatorEffectAmount id="DamageTaken">
         <Total value="1"/>
     </CAccumulatorEffectAmount>
+    <CAccumulatorBehavior id="IrradiateBranchBranchTime">
+        <Behavior value="IrradiateBranch"/>
+        <UnitSource Value="Source"/>
+        <Type value="DurationRemaining"/>
+    </CAccumulatorBehavior>
+    <CAccumulatorBehavior id="IrradiateBranchTime">
+        <Behavior value="Irradiate"/>
+        <UnitSource Value="Source"/>
+        <Type value="DurationRemaining"/>
+    </CAccumulatorBehavior>
 </Catalog>
