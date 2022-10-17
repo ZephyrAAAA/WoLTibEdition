@@ -2,4 +2,8 @@
 <Preload>
 <Actor id="SYSTEM_ActorConfig"/>
 <Behavior id="Veterancy"/>
+<Unit id="EngineeringBay2"/>
+<Unit id="GhostAcademy2"/>
+<Unit id="Armory2"/>
+<Unit id="FusionCore2"/>
 </Preload>

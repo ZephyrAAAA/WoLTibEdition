@@ -493,7 +493,7 @@
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="VehicleMercenaries2">
+    <CDataCollectionUnit id="VehicleMercenaries">
         <EditorCategories value="DataGroup:Ability"/>
         <DataRecord Entry="Abil,VehicleMercenaries"/>
         <Button value=""/>

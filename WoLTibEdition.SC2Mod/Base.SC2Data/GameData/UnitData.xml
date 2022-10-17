@@ -268,7 +268,7 @@
         <LifeArmorName value="Unit/LifeArmorName/ZergBrutaliskBurrowedArmor"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Mover value="Burrowed"/>
-        <Speed value="1"/>
+        <Speed value="1.3984"/>
         <Acceleration value="1000"/>
         <StationaryTurningRate value="270"/>
         <TurningRate value="270"/>
@@ -281,24 +281,18 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="move"/>
         <AbilArray Link="UnburrowBrutalisk"/>
+        <AbilArray Link="UnburrowAtPoint"/>
         <CardLayouts>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="BurrowUp" Type="AbilCmd" AbilCmd="UnburrowBrutalisk,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="BurrowUp" Type="AbilCmd" AbilCmd="UnburrowAtPoint,Execute" Row="2" Column="4"/>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons>
-                <Face value="Stop"/>
-                <Type value="AbilCmd"/>
-                <AbilCmd value="stop,Stop"/>
-                <Requirements value="PlayerHasTunnelingClaws"/>
-                <Row value="0"/>
-                <Column value="1"/>
-            </LayoutButtons>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
         </CardLayouts>
         <Radius value="2.625"/>
         <SeparationRadius value="2.625"/>
-        <InnerRadius value="0.625"/>
+        <InnerRadius value="0.75"/>
         <ScoreMake value="800"/>
         <ScoreKill value="1600"/>
         <ScoreResult value="BuildOrder"/>
@@ -2207,6 +2201,7 @@
         <CostResource index="Minerals" value="5000"/>
         <BehaviorArray Link="PowerCheck"/>
         <Sight value="9"/>
+        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
@@ -4057,11 +4052,13 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <AlliedPushPriority value="2"/>
+        <ArmorType value="Large"/>
     </CUnit>
     <CUnit id="OmegaliskBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <ArmorType value="Large"/>
     </CUnit>
     <CUnit id="OracleACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
