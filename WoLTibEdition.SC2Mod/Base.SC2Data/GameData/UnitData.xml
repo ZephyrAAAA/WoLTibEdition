@@ -3788,6 +3788,28 @@
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <AbilArray index="3" Link="RallyCommand"/>
+        <AbilArray index="5" Link="que5PassiveCancelToSelection"/>
+        <AbilArray index="6" Link="Bunker"/>
+        <AbilArray Link="BunkerTransport"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="healRedirect"/>
+        <AbilArray Link="StopRedirect"/>
+        <BehaviorArray Link="FireSuppressionSystem"/>
+        <WeaponArray index="0" Link="TwinIbiksCannon"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" AbilCmd="BunkerTransport,Load"/>
+            <LayoutButtons index="1" Face="CommandCenterUnloadAll" AbilCmd="BunkerTransport,UnloadAll"/>
+            <LayoutButtons index="2" Face="StopRedirect" AbilCmd="StopRedirect,Execute"/>
+            <LayoutButtons index="3" Face="AttackRedirect" AbilCmd="AttackRedirect,Execute"/>
+            <LayoutButtons index="4" AbilCmd="que5PassiveCancelToSelection,CancelLast"/>
+            <LayoutButtons index="5" Face="CancelBuilding" AbilCmd="BuildInProgress,Cancel"/>
+            <LayoutButtons index="7" AbilCmd="RallyCommand,Rally1"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="MinerMale">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4324,6 +4346,21 @@
         <LifeArmor value="1"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="2000"/>
+        <LifeMax value="2000"/>
+        <AbilArray index="6" Link="Bunker"/>
+        <AbilArray Link="BunkerTransport"/>
+        <AbilArray Link="AttackRedirect"/>
+        <AbilArray Link="healRedirect"/>
+        <AbilArray Link="StopRedirect"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="0" AbilCmd="BunkerTransport,Load"/>
+            <LayoutButtons index="1" AbilCmd="BunkerTransport,UnloadAll"/>
+            <LayoutButtons index="2" Face="StopRedirect" AbilCmd="StopRedirect,Execute"/>
+            <LayoutButtons index="3" Face="AttackRedirect" AbilCmd="AttackRedirect,Execute"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="3"/>
+            <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="PlanetaryFortress2">
         <DeathRevealRadius value="3"/>
