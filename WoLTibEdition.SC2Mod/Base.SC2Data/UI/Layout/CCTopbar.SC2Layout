@@ -24,7 +24,7 @@
     </Frame>
 
     <Frame type="CommandPanel" name="CCCommandPanelTemplate" template="CommandPanel/CommandPanelTemplate">
-        <Width val="688"/>
+        <Width val="696"/>
         <Height val="700"/>
         
         <Anchor side="Top" relative="$parent" pos="Min" offset="1"/>
@@ -135,8 +135,8 @@
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton12" template="CCTopbar/CCCommandButtonTemplate">
-            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
-            <Anchor side="Left" relative="$parent/CommandButton11" pos="Max" offset="1"/>
+            <Anchor side="Top" relative="$parent/CommandButton00" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent/CommandButton00" pos="Min" offset="0"/>
             <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
             <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
@@ -209,10 +209,10 @@
         <Visible val="true"/>
         
         <Frame type="Frame" name="CCButtonHolder">
-            <Width val="688"/>
+            <Width val="696"/>
             <Height val="700"/>
             <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
-            <Anchor side="Left" relative="$parent" pos="Mid" offset="-344"/>
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="-348"/>
         </Frame>              
     </Frame>
     

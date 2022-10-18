@@ -675,6 +675,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Omegalisk">
         <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
@@ -717,6 +718,7 @@
     <CWeaponLegacy id="PrismaticBeam">
         <AttackType value="Magic"/>
         <Range value="6"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PsiBlades">
         <AttackType value="Pierce"/>

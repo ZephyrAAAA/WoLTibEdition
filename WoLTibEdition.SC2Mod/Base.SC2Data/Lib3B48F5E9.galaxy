@@ -1148,6 +1148,55 @@ void lib3B48F5E9_gt_ZerghyperRemove_Init () {
     TriggerAddEventUnitAbility(lib3B48F5E9_gt_ZerghyperRemove, null, AbilityCommand("ZergHypervirus", 0), c_abilEffectStageFinish, false);
 }
 
+//--------------------------------------------------------------------------------------------------
+// Trigger: Debug Topbar
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_DebugTopbar_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "OrbitalStrike", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "OrbitalRelay", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "PsiDisruptor", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireDevilDogsPH", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireDukesRevenge", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireDuskWingPH", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireHammerSecuritiesPH", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireHelsAngelsPH", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireSiegeBreakersPH", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireSpartanCompanyPH", 1);
+    libNtve_gf_SetUpgradeLevelForPlayer(1, "HireKelmorianMinersPH", 1);
+    TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("DeployLaserDrill", 0), true);
+    if ((TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountQueuedOrBetter) == 0)) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, "GhostAcademy2", 0, 1, PlayerStartLocation(1));
+    }
+
+    if ((TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountQueuedOrBetter) == 0)) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, "FusionCore2", 0, 1, PlayerStartLocation(1));
+    }
+
+    if ((TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountQueuedOrBetter) == 0)) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, "EngineeringBay2", 0, 1, PlayerStartLocation(1));
+    }
+
+    if ((TechTreeUnitAliasCount(1, "Alias_Armory", c_techCountQueuedOrBetter) == 0)) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, "Armory2", 0, 1, PlayerStartLocation(1));
+    }
+
+    RefreshTopbar();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_DebugTopbar_Init () {
+    lib3B48F5E9_gt_DebugTopbar = TriggerCreate("lib3B48F5E9_gt_DebugTopbar_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_DebugTopbar, c_playerAny, "Topbar", true);
+}
+
 void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
     lib3B48F5E9_gt_TerranUpgradeSwap_Init();
@@ -1164,6 +1213,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_FleetAbilitySwap_Init();
     lib3B48F5E9_gt_FleetAbilityCost_Init();
     lib3B48F5E9_gt_ZerghyperRemove_Init();
+    lib3B48F5E9_gt_DebugTopbar_Init();
 }
 
 //--------------------------------------------------------------------------------------------------

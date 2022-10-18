@@ -156,12 +156,13 @@
         <ArmorReduction value="1"/>
         <Kind value="Splash"/>
         <KindSplash value="Splash"/>
-        <AreaArray Arc="45" Radius="2" Fraction="0.33"/>
-        <AreaArray Arc="180" Radius="2" Fraction="0.33"/>
+        <AreaArray Arc="45" Radius="2" Fraction="0.5"/>
+        <AreaArray Arc="180" Radius="2" Fraction="0.5"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
         <SearchFlags index="OffsetAreaByAngle" value="1"/>
+        <Amount value="75"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="BuildingRepairAB">
         <ValidatorArray index="0" value="BuildingNotBeingRepaired"/>
@@ -1284,6 +1285,7 @@
     </CEffectDamage>
     <CEffectEnumArea id="OmegaliskCleave">
         <AreaArray index="0" Radius="2"/>
+        <MaxCount value="4294967295"/>
     </CEffectEnumArea>
     <CEffectDamage id="OmegaliskCleaveMU">
         <Amount value="27"/>
@@ -1742,9 +1744,20 @@
     <CEffectDamage id="ScreecherMissilesCarpetBombDamage">
         <Amount value="16"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="SeekerDistanceCheck">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <ExpireEffect value="SeekerSuicide"/>
+        <PeriodCount value="1"/>
+        <PeriodicValidator value="NotInLastMotionPhase"/>
+        <PeriodicPeriodArray value="5.0625"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="SeekerMissileDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectLaunchMissile id="SeekerMissileLaunchMissile">
+        <LaunchEffect value="SeekerDistanceCheck"/>
+    </CEffectLaunchMissile>
     <CEffectCreateHealer id="ShieldRestore">
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="NotWarpingIn"/>
@@ -2566,6 +2579,27 @@
         <AreaArray Radius="2" Effect="TychusSpectreUltrasonicDamageLv1"/>
         <AINotifyFlags index="HurtEnemy" value="1"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="UnburrowDamage">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterUnit"/>
+        <ExcludeArray/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="WarpBlades"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+    </CEffectEnumArea>
+    <CEffectIssueOrder id="UnburrowAtPoint">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="UnburrowBrutalisk"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="SeekerSuicide">
+        <ValidatorArray value="SeekerMissileMaxLaunchRange"/>
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="Val03PsiBlastDamage">
         <AttributeBonus index="Structure" value="0"/>
         <Amount value="150"/>

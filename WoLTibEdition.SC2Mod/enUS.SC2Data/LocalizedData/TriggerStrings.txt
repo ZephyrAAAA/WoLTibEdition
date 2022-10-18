@@ -39,6 +39,7 @@ Trigger/Name/lib_3B48F5E9_809EC2DF=Unhighlight Hercules
 Trigger/Name/lib_3B48F5E9_98CB7F94=Squad Health V2
 Trigger/Name/lib_3B48F5E9_B0684CF0=Commando EXP
 Trigger/Name/lib_3B48F5E9_CEA23E3D=Unhighlight Ghost Academy
+Trigger/Name/lib_3B48F5E9_E0F8B5C8=Debug Topbar
 Trigger/Name/lib_3B48F5E9_EF3D33EE=Fleet Ability Swap
 Trigger/Name/lib_3B48F5E9_F661A5BE=Fusion Core
 Variable/Name/lib_3B48F5E9_18A05A86=MainUnit

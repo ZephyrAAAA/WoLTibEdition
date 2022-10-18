@@ -1947,6 +1947,7 @@
         <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
         <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
         <On Terms="Behavior.BuildRadiusSmall.Create; ValidateUnit CasterNotDead" Send="Create"/>
+        <On Terms="Behavior.BuildRadiusSmall.Destroy" Send="Destroy"/>
         <MaxScale value="0.137500,0.137500"/>
         <ScaleDeltaTime value="0.015000,0.015000"/>
     </CActorBlob>
@@ -1956,6 +1957,7 @@
         <On Terms="ActorCreation" Send="SplatEmitterAddBlob"/>
         <On Terms="ActorCreation" Target="::Scene" Send="SplatEmitterUpdateTint 255,255,128,0"/>
         <On Terms="Behavior.BuildRadiusLarge.Create; ValidateUnit CasterNotDead" Send="Create"/>
+        <On Terms="Behavior.BuildRadiusLarge.Destroy" Send="Destroy"/>
         <MaxScale value="0.257000,0.257000"/>
         <ScaleDeltaTime value="0.028125,0.028125"/>
     </CActorBlob>
