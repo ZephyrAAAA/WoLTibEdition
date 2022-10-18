@@ -295,6 +295,7 @@ bool Gather_Func (bool testConds, bool runActions) {
 		}
 	}
 	UnitBehaviorRemove(gatherUnit, "DropOffStun", 1);
+	AISetUnitScriptControlled(gatherUnit, false);
 	return true;
 }
 
@@ -331,7 +332,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 			return false;
 		}
 		if (PlayerType(UnitGetOwner(EventUnit())) == c_playerTypeComputer) {
-			return false;
+			//return false;
 		}
 		if (UnitOrderCount(EventUnit()) > 0 && !UnitHasBehavior(OrderGetTargetUnit(UnitOrder(EventUnit(), 0)), "RefineryBounce")) {
 			return false;
@@ -347,6 +348,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 		OrderWorkerToGather(idleUnit);
 	} else {
 		UnitIssueOrder(idleUnit, Order(AbilityCommand("SCVHarvest", 1)), c_orderQueueReplace);
+		AISetUnitScriptControlled(idleUnit, false);
 	}
 	UnitBehaviorAdd(idleUnit, "IdleTaken", idleUnit, 1);
 	do {
@@ -360,6 +362,7 @@ bool Idle_Func (bool testConds, bool runActions) {
 				UnitIssueOrder(idleUnit, OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(idleUnit, UnitGroup("Refinery2", owner, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true)), c_orderQueueAddToFront);
 			}
 		}
+		AISetUnitScriptControlled(idleUnit, false);
 	} while ((UnitOrderCount(idleUnit) == 0 || remainsIdle) || (UnitOrderCount(EventUnit()) > 0 && UnitHasBehavior(OrderGetTargetUnit(UnitOrder(idleUnit, 0)), "RefineryBounce")));
 	UnitBehaviorRemove(idleUnit, "IdleTaken", 1);
 	return true;

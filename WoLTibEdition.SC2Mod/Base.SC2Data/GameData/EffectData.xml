@@ -1744,9 +1744,20 @@
     <CEffectDamage id="ScreecherMissilesCarpetBombDamage">
         <Amount value="16"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="SeekerDistanceCheck">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <ExpireEffect value="SeekerSuicide"/>
+        <PeriodCount value="1"/>
+        <PeriodicValidator value="NotInLastMotionPhase"/>
+        <PeriodicPeriodArray value="5.0625"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="SeekerMissileDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectLaunchMissile id="SeekerMissileLaunchMissile">
+        <LaunchEffect value="SeekerDistanceCheck"/>
+    </CEffectLaunchMissile>
     <CEffectCreateHealer id="ShieldRestore">
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="NotWarpingIn"/>
@@ -2583,6 +2594,12 @@
         <Player Value="Caster"/>
         <Target Value="TargetPoint"/>
     </CEffectIssueOrder>
+    <CEffectDamage id="SeekerSuicide">
+        <ValidatorArray value="SeekerMissileMaxLaunchRange"/>
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
     <CEffectDamage id="Val03PsiBlastDamage">
         <AttributeBonus index="Structure" value="0"/>
         <Amount value="150"/>
