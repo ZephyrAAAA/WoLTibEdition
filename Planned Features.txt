@@ -567,7 +567,7 @@ Hive Mind Emulator- Now a topbar power on the fusion core
 
 Psi Disruptor- Now a topbar power on the fusion core
 
-Regenerative Bio-steel- BEEG buff 2% health/s
+Regenerative Bio-steel- BEEG buff 1.5% health/s after not being hit for 2s
 
 Cellular Reactor-> Titansteel- +25% health for all units
 

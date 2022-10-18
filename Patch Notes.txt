@@ -2,6 +2,8 @@
 Raynor now actually complains about a headache if you try to do 2 Zeratul Missions in a row
 *Raven and Vessel text updated
 *Fixed vehicle mercs topbar not being affected by Topbar Efficiency.
+Omegalisks now have a damage and armour type.
+*Biosteel now says numbers
 
 Outlaws:
 *Removed ability to build engineering bay
@@ -23,6 +25,9 @@ Redstone:
 
 Trains:
 *Upgrades have been looked at
+
+Bel'shir:
+*Refactored bad code based on better code from Safe Haven.
 
 Cutthroat:
 *Fixed Orlan not mining.
