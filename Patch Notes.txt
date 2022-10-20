@@ -1,19 +1,19 @@
-*Diamondback Shaped Hull now says in various places that it takes 25% less damage from Cannon.
+Diamondback Shaped Hull now says in various places that it takes 25% less damage from Cannon.
 Raynor now actually complains about a headache if you try to do 2 Zeratul Missions in a row
-*Raven and Vessel text updated
+Raven and Vessel text updated
 *Fixed vehicle mercs topbar not being affected by Topbar Efficiency.
 Omegalisks now have a damage and armour type.
-*Biosteel now says numbers
+Biosteel now says numbers
 
 Outlaws:
 *Removed ability to build engineering bay
-*Moved the barracks so it can build a tech lab without lifting off
-*Enemy structures take double damage
+Moved the barracks so it can build a tech lab without lifting off
+Enemy structures (except the bunkers) have half health.
 
 Zero Hour:
 *The zerg now get chitinous plating when the omegalisks are sent
-*Fixed bonuses not showing up
-*Shifted starting depots so they aren't out of build radius
+Fixed bonuses not showing up
+Relocated starting depots so they aren't out of build radius
 
 Smash and Grab:
 If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
@@ -27,6 +27,7 @@ Trains:
 *Upgrades have been looked at
 
 Bel'shir:
+*Taking an area before Nyon shittalks you now means he doesn't try to secure it.
 *Refactored bad code based on better code from Safe Haven.
 
 Cutthroat:
