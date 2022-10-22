@@ -264,6 +264,7 @@
         <EffectArray Operation="Multiply" Reference="Effect,TwinIbiksCannon,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,DuskWingBansheeDamage,Amount" Value="1.3"/>
         <EffectArray Operation="Multiply" Reference="Effect,ScreecherMissilesCarpetBombDamage,Amount" Value="1.3"/>
+        <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="FirebatJuggernautPlating">
@@ -281,7 +282,16 @@
         <EffectArray Operation="Set" Reference="Weapon,MarauderSquad@2,Options[Hidden]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,HailstormLauncherMerc,Options[Hidden]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,HammerSecuritiesSquad@2,Options[Hidden]" Value="0"/>
+        <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="2500"/>
+    </CUpgrade>
+    <CUpgrade id="HellionCampaignInfernalPreIgniter">
+        <EffectArray index="0" Operation="Multiply" Reference="Effect,InfernalFlameThrower,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,FirebatUFull,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,DevilDogDamage,Amount" Value="1.5"/>
+        <EffectArray Operation="Multiply" Reference="Effect,PerditionTurretFlameThrowerDamage,Amount" Value="1.5"/>
+        <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
+        <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HighEnergyCapacitors">
         <EffectArray Operation="Multiply" Reference="Effect,ATALaserBatteryU,Amount" Value="1.5"/>
@@ -293,6 +303,7 @@
         <EffectArray Operation="Multiply" Reference="Effect,OdinDamage,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserAU,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserGU,Amount" Value="1.5"/>
+        <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HurricaneMissiles">
@@ -323,6 +334,7 @@
         <EffectArray Operation="Multiply" Reference="Effect,TwinGatlingCannons,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,SpartanCompanyG,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,WreckingCrewAssault,Amount" Value="1.5"/>
+        <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="MaelstromRounds">
@@ -2094,13 +2106,6 @@
         <EffectArray Operation="Set" Reference="Effect,ConcussiveGrenadesU,AreaArray[1].Arc" Value="360.000000"/>
         <EffectArray Operation="Set" Reference="Effect,ConcussiveGrenadesU,AreaArray[2].Arc" Value="360.000000"/>
     </CUpgrade>
-    <CUpgrade id="HellionCampaignInfernalPreIgniter">
-        <EffectArray index="0" Operation="Multiply" Reference="Effect,InfernalFlameThrower,Amount" Value="1.5"/>
-        <EffectArray Operation="Multiply" Reference="Effect,FirebatUFull,Amount" Value="1.5"/>
-        <EffectArray Operation="Multiply" Reference="Effect,DevilDogDamage,Amount" Value="1.5"/>
-        <EffectArray Operation="Multiply" Reference="Effect,PerditionTurretFlameThrowerDamage,Amount" Value="1.5"/>
-        <BonusResourcePerLevel index="Minerals" value="2000"/>
-    </CUpgrade>
     <CUpgrade id="HiSecAutoTracking">
         <EffectArray Reference="Weapon,ConcussiveGrenades,Range" Value="1"/>
         <EffectArray Reference="Weapon,AutoTurret,RateMultiplier" Value="0.15"/>
@@ -2119,7 +2124,7 @@
         <EffectArray Operation="Set" Reference="Weapon,InfernalFlameThrower,Options[OnlyFireAtAttackOrderTarget]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,InfernalFlameThrower,Options[OnlyFireWhileInAttackOrder]" Value="0"/>
         <EffectArray Operation="Set" Reference="Weapon,InfernalFlameThrower,AllowedMovement" Value="Moving"/>
-        <EditorCategories value="UpgradeType:Talents"/>
+        <EditorCategories value="UpgradeType:Talents,Race:Terran"/>
     </CUpgrade>
     <CUpgrade id="LowPower">
         <EditorCategories value="Race:Neutral"/>
@@ -2680,6 +2685,7 @@
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Odin,LifeMax" Value="0.25"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Predator,LifeStart" Value="0.25"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Predator,LifeMax" Value="0.25"/>
+        <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
     </CUpgrade>
     <CUpgrade id="TriLithiumPowerCells">
         <EffectArray index="0" removed="1"/>

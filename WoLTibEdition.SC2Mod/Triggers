@@ -2276,7 +2276,7 @@
         </Element>
         <Element Type="Param" Id="904DA21D">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="00000256"/>
-            <Value>HellionCampaignInfernalPreIgniter</Value>
+            <Value>HydraulicStabilizers</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
         </Element>
@@ -8556,6 +8556,7 @@
             <SubFunctionType Type="SubFuncType" Library="Ntve" Id="AD43BC93"/>
             <Parameter Type="Param" Library="3B48F5E9" Id="6AACEC1C"/>
             <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="913BFA4E"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="B8CCD3C5"/>
         </Element>
         <Element Type="Param" Id="6AACEC1C">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="9A8F1093"/>
@@ -8585,6 +8586,31 @@
         <Element Type="Param" Id="B8E30C7B">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="7E5035EE"/>
             <Value>TerranShipUltraCapacitors</Value>
+            <ValueType Type="gamelink"/>
+            <ValueGameType Type="Upgrade"/>
+        </Element>
+        <Element Type="FunctionCall" Id="B8CCD3C5">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="9F8EF8FB"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="363CE97C"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="50F58E89"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="685BE8D3"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="515A9D02"/>
+        </Element>
+        <Element Type="Param" Id="50F58E89">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="C7188352"/>
+            <FunctionCall Type="FunctionCall" Library="3B48F5E9" Id="9B3F7662"/>
+        </Element>
+        <Element Type="FunctionCall" Id="9B3F7662">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000053"/>
+        </Element>
+        <Element Type="Param" Id="685BE8D3">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="3BFEECBB"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="515A9D02">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="7E5035EE"/>
+            <Value>EnhancedExplosives</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
         </Element>
