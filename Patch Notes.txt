@@ -4,16 +4,25 @@ Raven and Vessel text updated
 *Fixed vehicle mercs topbar not being affected by Topbar Efficiency.
 Omegalisks now have a damage and armour type.
 Biosteel now says numbers
+*Gave the Pause Queue and Resume Queue buttons a tooltip.
+
+Liberation Day:
+*Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
+*Holoboard objective now says it gives credits
 
 Outlaws:
 *Removed ability to build engineering bay
 Moved the barracks so it can build a tech lab without lifting off
 Enemy structures (except the bunkers) have half health.
+*Fixed SCV and Supply Depot tips
+*Fixed the rebels sending out scouting parties
+*Rescue Rebels objective now says it gives credits
 
 Zero Hour:
 *The zerg now get chitinous plating when the omegalisks are sent
 Fixed bonuses not showing up
 Relocated starting depots so they aren't out of build radius
+*Rescue Rebels objective now says it gives credits
 
 Smash and Grab:
 If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
@@ -27,15 +36,26 @@ Trains:
 *Upgrades have been looked at
 
 Bel'shir:
-*Taking an area before Nyon shittalks you now means he doesn't try to secure it.
+*Taking an area before Nyon shittalks you now means he doesn't immediately secure it.
 *Refactored bad code based on better code from Safe Haven.
+*Attacking an area now gives some time before the protoss send their counterattack.
+*The protoss no longer warp in extra warp prisms.
+*Counterattacks are no longer tied to killing warp prisms specifically
+*Counterattack strength is now tied to how much of the area attacked was cleared out.
 
 Cutthroat:
 *Fixed Orlan not mining.
 
+Engine of Destruction:
+*Loki bonus now says it gives credits
+
 New Folsom:
 *Consumption now says it heals
+*Prison Block bonus objectives now say they give 37.5k
+
+Ghost of a Chance:
+*Spectre bonus objective now says it gives 7.5k per spectre
 
 Haven:
 *The split now mentions you get a once per mission support power
-*There are now bonus objectives tracking how many settlements you've saved
+*There are now bonus objectives tracking how many settlements you've saved, and that you get 15k credits for each
