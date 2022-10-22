@@ -2696,6 +2696,165 @@
         <EffectArray Operation="Subtract" Reference="Behavior,DeathRecall,DamageResponse.Cost.Cooldown.TimeUse" Value="10.000000"/>
         <MaxLevel value="3"/>
     </CUpgrade>
+    <CUpgrade id="ZergFlyerArmorsLevel1">
+        <EffectArray index="2" Reference="Unit,Corruptor,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,Corruptor,LifeArmor"/>
+        <EffectArray index="4" Reference="Unit,BroodLord,LifeArmorLevel"/>
+        <EffectArray index="5" Reference="Unit,BroodLord,LifeArmor"/>
+        <EffectArray index="6" Reference="Unit,BroodLordCocoon,LifeArmorLevel"/>
+        <EffectArray index="7" Reference="Unit,BroodLordCocoon,LifeArmor"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Mutalisk,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Actor,Corruptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray index="10" Operation="Set" Reference="Actor,BroodLord,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray index="11" Operation="Set" Reference="Actor,BroodLordCocoon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerArmorsLevel2">
+        <EffectArray index="0" Reference="Unit,Overlord,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,Overlord,LifeArmor"/>
+        <EffectArray index="2" Reference="Unit,Overseer,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,Overseer,LifeArmor"/>
+        <EffectArray index="4" Reference="Unit,OverlordCocoon,LifeArmorLevel"/>
+        <EffectArray index="5" Reference="Unit,OverlordCocoon,LifeArmor"/>
+        <EffectArray index="6" Operation="Set" Reference="Actor,Overlord,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray index="7" Operation="Set" Reference="Actor,Overseer,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,OverlordCocoon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray index="9" Operation="Set" Reference="Actor,Scourge,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
+        <EffectArray index="10" Reference="Unit,Scourge,LifeArmor"/>
+        <EffectArray index="11" Reference="Unit,Scourge,LifeArmorLevel"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerArmorsLevel3">
+        <EffectArray index="0" Reference="Unit,BroodLord,LifeArmorLevel"/>
+        <EffectArray index="1" Reference="Unit,BroodLord,LifeArmor"/>
+        <EffectArray index="2" Reference="Unit,BroodLordCocoon,LifeArmorLevel"/>
+        <EffectArray index="3" Reference="Unit,BroodLordCocoon,LifeArmor"/>
+        <EffectArray index="4" Operation="Set" Reference="Actor,BroodLord,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray index="5" Operation="Set" Reference="Actor,BroodLordCocoon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray index="6" Reference="Unit,Leviathan,LifeArmor" Value="1.000000"/>
+        <EffectArray index="7" Reference="Unit,Leviathan,LifeArmorLevel"/>
+        <EffectArray index="8" Operation="Set" Reference="Actor,Leviathan,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerWeaponsLevel1">
+        <EffectArray index="1" Reference="Effect,GlaiveWurmU2,Amount" Value="6"/>
+        <EffectArray index="2" Reference="Effect,GlaiveWurmU3,Amount" Value="8"/>
+        <EffectArray index="3" Reference="Weapon,ParasiteSpore,Level" Value="1"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,ParasiteSporeDamage,Amount" Value="1.5"/>
+        <EffectArray index="5" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray index="6" Operation="Set" Reference="Weapon,ParasiteSpore,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerWeaponsLevel2">
+        <EffectArray index="1" Reference="Effect,GlaiveWurmU1,AttributeFactor[Structure]"/>
+        <EffectArray index="2" Reference="Effect,GlaiveWurmU2,AttributeFactor[Structure]" Value="1"/>
+        <EffectArray index="3" Reference="Effect,GlaiveWurmU3,AttributeFactor[Structure]" Value="1"/>
+        <EffectArray index="5" Operation="Multiply" Value="1.3"/>
+        <EffectArray index="6" Operation="Multiply" Value="1.3"/>
+        <EffectArray index="7" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray index="8" Operation="Set" Reference="Weapon,BroodlingStrike,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
+        <EffectArray index="9" Reference="Weapon,Suicide,Level"/>
+        <EffectArray index="10" Operation="Multiply" Reference="Effect,SuicideDamage,Amount" Value="1.3"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+    </CUpgrade>
+    <CUpgrade id="ZergFlyerWeaponsLevel3">
+        <EffectArray index="1" Operation="Multiply" Value="1.5"/>
+        <EffectArray index="2" Operation="Multiply" Value="1.5"/>
+        <EffectArray index="3" Operation="Multiply" Value="1.5"/>
+        <EffectArray index="4" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray index="5" Operation="Multiply" Reference="Effect,LeviathanAirAttackDamage,Amount" Value="1.4"/>
+        <EffectArray index="6" Reference="Weapon,ScourgeSwarm,Level" Value="1"/>
+        <EffectArray index="7" Operation="Multiply" Reference="Effect,LeviathanGroundAttackDamage,Amount" Value="1.4"/>
+        <EffectArray index="8" Reference="Weapon,Tentacles,Level"/>
+        <EffectArray index="9" Operation="Set" Reference="Weapon,ScourgeSwarm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
+        <EffectArray index="10" Reference="Weapon,Tentacles,Icon"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+    </CUpgrade>
     <CUpgrade id="ZergGroundArmorsLevel1">
         <EffectArray index="0" Reference="Unit,Zergling,LifeArmorLevel"/>
         <EffectArray index="1" Reference="Unit,Zergling,LifeArmor"/>
