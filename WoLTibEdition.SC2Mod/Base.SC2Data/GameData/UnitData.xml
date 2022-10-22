@@ -4252,6 +4252,12 @@
         <GlossaryAlias value="OrbitalCommand"/>
         <ArmorType value="Hero"/>
     </CUnit>
+    <CUnit id="Overlord">
+        <ArmorType value="None"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
     <CUnit id="OverlordCocoon">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4270,6 +4276,13 @@
     </CUnit>
     <CUnit id="OvermindRemains">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="Overseer">
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="OverseerACGluescreenDummy">
