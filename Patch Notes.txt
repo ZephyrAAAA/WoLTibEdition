@@ -5,24 +5,30 @@ Raven and Vessel text updated
 Omegalisks now have a damage and armour type.
 Biosteel now says numbers
 *Gave the Pause Queue and Resume Queue buttons a tooltip.
+Fixed build radius not fully disappearing.
+Squads no longer get seconds from vanadium.
+*Crane now has a submenu for structures, to match the CC
+CC now has higher priority than crane
 
 Liberation Day:
 *Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
 *Holoboard objective now says it gives credits
 
 Outlaws:
-*Removed ability to build engineering bay
+*Removed ability to build engineering bay or crane
 Moved the barracks so it can build a tech lab without lifting off
 Enemy structures (except the bunkers) have half health.
 *Fixed SCV and Supply Depot tips
 *Fixed the rebels sending out scouting parties
 *Rescue Rebels objective now says it gives credits
+*Added a stone tutorial regarding the rebel base
 
 Zero Hour:
 *The zerg now get chitinous plating when the omegalisks are sent
 Fixed bonuses not showing up
 Relocated starting depots so they aren't out of build radius
 *Rescue Rebels objective now says it gives credits
+*Corruptors no longer have corruption
 
 Smash and Grab:
 If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
@@ -33,7 +39,7 @@ Redstone:
 *Brutalisk now tries to escape his toasty fate
 
 Trains:
-*Upgrades have been looked at
+*You no longer start with a CC, instead having a Crane.
 
 Bel'shir:
 *Taking an area before Nyon shittalks you now means he doesn't immediately secure it.
