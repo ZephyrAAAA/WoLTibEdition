@@ -122,6 +122,7 @@ Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for si
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/AstralProjection=Astral Projection
+Button/Name/BioSpeed=Bio Speed
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
 Button/Name/BuildingRepair=Building Repair
 Button/Name/CallInGoldenArmada10=Call In Golden Armada
@@ -310,6 +311,7 @@ Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract oppo
 Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
+Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
 Button/Tooltip/BrutaliskBurrowed=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
 Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrades.
