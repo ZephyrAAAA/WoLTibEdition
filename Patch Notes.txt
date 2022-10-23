@@ -10,6 +10,11 @@ Squads no longer get seconds from vanadium.
 *Crane now has a submenu for structures, to match the CC
 CC now has higher priority than crane
 Changed reaper button for changing speed.
+*Power button now says it is used to switch powered state, not just to depower.
+*Zeratul's power ability has a hotkey now
+*Fixed hotkey conflict with SCV and Siege Tank
+*Fixed hotkey conflict with Starport and Supply Depot
+*Immortal no longer has the hardened shield button
 
 Liberation Day:
 *Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -23,6 +28,7 @@ Enemy structures (except the bunkers) have half health.
 *Fixed the rebels sending out scouting parties
 *Rescue Rebels objective now says it gives credits
 *Added a stone tutorial about expanding to the rebel base
+*Power tip now says it is used to switch powered state, not just to depower.
 
 Zero Hour:
 *The zerg now get chitinous plating when the omegalisks are sent
@@ -31,9 +37,13 @@ Relocated starting depots so they aren't out of build radius
 *Rescue Rebels objective now says it gives credits
 *Corruptors no longer have corruption
 
+Evacuation:
+*Fixed the rear nydus not sticking around like it should
+
 Smash and Grab:
 If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
 The protoss no longer warp in extra stalkers in the bottom base
+*Fixed zerg attack waves suddenly getting weaker
 
 Redstone:
 *Tosh's boys can now be rescued by air units.
@@ -47,14 +57,23 @@ Bel'shir:
 *Refactored bad code
 *Attacking an area now gives some time before the protoss will warp in replacement units.
 *The protoss send a counterattack at mox once every 2 minutes per position
-*Matt now says that the protoss are mobilizing and that you should ready your defenses before a counterattack. The area to be attacked also gets pinged.
+*Matt now says that the protoss are mobilizing before a counterattack. The area to be attacked also gets pinged.
 The protoss no longer warp in extra warp prisms.
 Counterattacks are no longer tied to killing warp prisms specifically
 Counterattack strength is now tied to how much of the area attacked was cleared out.
 Relocated the first relic to near the 2 east altars, so it's not so immediate that you get it.
 
+A Sinister Turn:
+*Made it more obvious how the mission works
+*Void prison now says it only affects heroic for 4s
+*Fixed spastic detectors
+*Disabled sentry shield restore, so they don't detect zeratul when somehting is damaged.
+Plasma blast is slower, so it's easier to dodge
+
 Cutthroat:
 *Fixed Orlan not mining.
+*Orlan is no longer a pushover
+*Orlan's Ravens are no longer on break.
 
 Engine of Destruction:
 *Loki bonus now says it gives credits
@@ -69,3 +88,6 @@ Ghost of a Chance:
 Haven:
 *The split now mentions you get a once per mission support power
 *There are now bonus objectives tracking how many settlements you've saved, and that you get 15k credits for each
+
+Haven's Fall:
+*Looked at settlement markers not being removed.
