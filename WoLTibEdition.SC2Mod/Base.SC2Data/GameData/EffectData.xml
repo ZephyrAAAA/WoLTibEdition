@@ -2061,7 +2061,7 @@
         <PeriodicPeriodArray value="0"/>
     </CEffectCreatePersistent>
     <CEffectIssueOrder id="StealthLookAt">
-        <ValidatorArray value="CasterHasNoOrders"/>
+        <ValidatorArray value="SourceHasNoOrders"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Source"/>
         <Abil value="move"/>
