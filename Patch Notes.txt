@@ -21,7 +21,7 @@ Enemy structures (except the bunkers) have half health.
 *Fixed SCV and Supply Depot tips
 *Fixed the rebels sending out scouting parties
 *Rescue Rebels objective now says it gives credits
-*Added a stone tutorial regarding the rebel base
+*Added a stone tutorial about expanding to the rebel base
 
 Zero Hour:
 *The zerg now get chitinous plating when the omegalisks are sent
