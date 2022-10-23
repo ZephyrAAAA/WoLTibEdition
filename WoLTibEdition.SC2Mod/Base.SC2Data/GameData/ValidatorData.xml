@@ -166,6 +166,9 @@
         <Range value="13"/>
         <Value Value="SourceUnit"/>
     </CValidatorLocationCompareRange>
+    <CValidatorUnitCompareOrderCount id="SourceHasNoOrders">
+        <WhichUnit Value="Source"/>
+    </CValidatorUnitCompareOrderCount>
     <CValidatorCombine id="SourceIsIrradiated">
         <CombineArray value="SourceIsIrradiatedMain"/>
         <CombineArray value="SourceIsIrradiatedBranch"/>
