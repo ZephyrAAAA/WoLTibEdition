@@ -1174,11 +1174,17 @@
         <AreaArray RectangleWidth="10" RectangleHeight="18" Effect="TempestDamageFleet"/>
     </CEffectEnumArea>
     <CEffectCreateHealer id="NovaHeal">
-        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value=""/>
+        <PeriodCount value="5"/>
+        <PeriodicPeriod value="1"/>
+        <DrainVital value="Energy"/>
+        <RechargeVitalRate value="0.1015"/>
+        <FinalEffect value="NovaHeal2"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="NovaHeal2">
         <EditorCategories value=""/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="1.333"/>
-        <RechargeVitalRate value="10"/>
+        <RechargeVitalFraction value="0.5"/>
     </CEffectCreateHealer>
     <CEffectDamage id="NovaSnipe">
         <ArmorReduction value="1"/>
