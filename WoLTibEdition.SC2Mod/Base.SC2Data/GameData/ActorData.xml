@@ -1072,6 +1072,9 @@
     <CActorUnit id="SpartanCompany">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Goliath_Attack"/>
     </CActorUnit>
+    <CActorEventMacro id="TerranAttachmentAnims">
+        <On index="4" Send="AnimGroupApply Attached Attached,Start Attached,End"/>
+    </CActorEventMacro>
     <CActorUnit id="Thor">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
     </CActorUnit>
