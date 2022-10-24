@@ -6670,6 +6670,7 @@
         <Race value="Prot"/>
         <FlagArray index="Turnable" value="0"/>
         <FlagArray index="Movable" value="0"/>
+        <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Hero" value="1"/>
         <FlagArray index="Undetectable" value="1"/>
         <FlagArray index="KillCredit" value="0"/>
