@@ -9782,7 +9782,7 @@
         </Element>
         <Element Type="Param" Id="8D42A4D1">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="00000419"/>
-            <Value>10.0</Value>
+            <Value>15.0</Value>
             <ValueType Type="fixed"/>
         </Element>
         <Element Type="Param" Id="90F86011">

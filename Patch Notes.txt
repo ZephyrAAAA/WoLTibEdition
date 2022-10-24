@@ -15,26 +15,27 @@ Changed reaper button for changing speed.
 *Fixed hotkey conflict with SCV and Siege Tank
 *Fixed hotkey conflict with Starport and Supply Depot
 *Immortal no longer has the hardened shield button
+Crane now has a cancel button
 
 Liberation Day:
-*Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
-*Holoboard objective now says it gives credits
+Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
+Holoboard objective now says it gives credits
+The big message now says that tips Edited by CNC edition are Orange.
 
 Outlaws:
-*Removed ability to build engineering bay or crane
+Removed ability to build engineering bay or crane
 Moved the barracks so it can build a tech lab without lifting off
 Enemy structures (except the bunkers) have half health.
-*Fixed SCV and Supply Depot tips
-*Fixed the rebels sending out scouting parties
-*Rescue Rebels objective now says it gives credits
+Added a tip about Build Radius
+Fixed SCV and Supply Depot tips
+Fixed the rebels sending out scouting parties
+Rescue Rebels objective now says it gives 30k credits
 *Added a stone tutorial about expanding to the rebel base
-*Power tip now says it is used to switch powered state, not just to depower.
 
 Zero Hour:
-*The zerg now get chitinous plating when the omegalisks are sent
 Fixed bonuses not showing up
 Relocated starting depots so they aren't out of build radius
-*Rescue Rebels objective now says it gives credits
+*Rescue Rebels objective now says it gives 30k credits
 *Corruptors no longer have corruption
 
 Evacuation:
@@ -77,10 +78,13 @@ Cutthroat:
 
 Engine of Destruction:
 *Loki bonus now says it gives credits
+*Wraiths start cloaked
 
-New Folsom:
+Breakout:
 *Consumption now says it heals
 *Prison Block bonus objectives now say they give 37.5k
+*Send Wave starts autocast not
+*Ghosts no longer have energy.
 
 Ghost of a Chance:
 *Spectre bonus objective now says it gives 7.5k per spectre
@@ -91,3 +95,8 @@ Haven:
 
 Haven's Fall:
 *Looked at settlement markers not being removed.
+
+Supernova:
+Fixed poor johnny being spawned at the wrong time
+Disabled supply depot requirements
+Disabled Engibay requirements
