@@ -1177,7 +1177,7 @@
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value=""/>
         <DrainVital value="Energy"/>
-        <DrainVitalCostFactor value="2"/>
+        <DrainVitalCostFactor value="1.333"/>
         <RechargeVitalRate value="10"/>
     </CEffectCreateHealer>
     <CEffectDamage id="NovaSnipe">
