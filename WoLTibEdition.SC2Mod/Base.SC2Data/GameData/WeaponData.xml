@@ -139,6 +139,10 @@
         <Period value="0.2"/>
         <AttackType value="Magic"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingEscort">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="BroodlingStrike">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
