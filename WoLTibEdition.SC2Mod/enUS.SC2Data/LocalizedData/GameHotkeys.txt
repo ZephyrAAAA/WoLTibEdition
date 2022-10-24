@@ -21,6 +21,7 @@ Button/Hotkey/MedivacLoadNearby=L
 Button/Hotkey/NovaHeal=E
 Button/Hotkey/NukeCalldown8=
 Button/Hotkey/PauseQueue=Escape
+Button/Hotkey/PowerStructure=D
 Button/Hotkey/PsiDisruptor3=
 Button/Hotkey/PsiDisruptor4=
 Button/Hotkey/PsiDisruptor5=

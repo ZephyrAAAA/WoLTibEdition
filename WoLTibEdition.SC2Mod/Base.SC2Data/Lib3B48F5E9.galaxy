@@ -948,7 +948,7 @@ bool lib3B48F5E9_gt_FusionCore_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
-        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 9))) {
+        if (!((((libCamp_gf_CurrentMap() != libCamp_ge_MapID_MapTZeratul01) && (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 9)) || ((libCamp_gf_LastMap() == libCamp_ge_MapID_MapTZeratul01) && (libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 10))))) {
             return false;
         }
     }
