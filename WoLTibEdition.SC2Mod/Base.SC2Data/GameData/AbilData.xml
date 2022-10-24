@@ -753,6 +753,7 @@
     <CAbilEffectInstant id="SendWave">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
         <Flags index="Transient" value="1"/>
         <Cost>
             <Charge>
