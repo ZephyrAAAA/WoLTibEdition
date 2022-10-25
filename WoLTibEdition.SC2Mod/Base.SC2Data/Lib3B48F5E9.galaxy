@@ -485,13 +485,13 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         else {
         }
     }
-    Wait(lp_upgradeInitialTimeDelay, c_timeGame);
+    Wait(lp_upgradeInitialTimeDelay, c_timeAI);
     while (true) {
         if (((lv_currentUpgradeLevel >= 2) || (lv_currentUpgradeLevel >= lv_maxUpgradeLevel)) && (lv_currentUpgrades >= 6)) {
             break;
         }
         else {
-            Wait(lv_upgradeDelayTimer, c_timeGame);
+            Wait(lv_upgradeDelayTimer, c_timeAI);
             if ((lp_airAtAll == true)) {
                 if ((lp_armourWithAttack == true)) {
                     auto0013A39A_g = lp_enemyPlayers;
@@ -515,7 +515,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         TechTreeUpgradeAddLevel(autoA4759C5D_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         lv_currentUpgrades += 1;
                     }
-                    Wait(lv_upgradeDelayTimer, c_timeGame);
+                    Wait(lv_upgradeDelayTimer, c_timeAI);
                     auto3951E84F_g = lp_enemyPlayers;
                     auto3951E84F_var = -1;
                     while (true) {
@@ -569,7 +569,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                             TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                     }
-                    Wait(lv_upgradeDelayTimer, c_timeGame);
+                    Wait(lv_upgradeDelayTimer, c_timeAI);
                     autoA0AC99DB_g = lp_enemyPlayers;
                     autoA0AC99DB_var = -1;
                     while (true) {
@@ -583,7 +583,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         }
                     }
                 }
-                Wait(lv_upgradeDelayTimer, c_timeGame);
+                Wait(lv_upgradeDelayTimer, c_timeAI);
                 if ((lp_armourWithAttack == true)) {
                     autoD4E41929_g = lp_enemyPlayers;
                     autoD4E41929_var = -1;
@@ -627,7 +627,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                             TechTreeUpgradeAddLevel(auto9890C451_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                     }
-                    Wait(lv_upgradeDelayTimer, c_timeGame);
+                    Wait(lv_upgradeDelayTimer, c_timeAI);
                     auto4992AF7F_g = lp_enemyPlayers;
                     auto4992AF7F_var = -1;
                     while (true) {
@@ -642,7 +642,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                     }
                 }
             }
-            Wait(lv_upgradeDelayTimer, c_timeGame);
+            Wait(lv_upgradeDelayTimer, c_timeAI);
             autoEA3719EB_g = lp_enemyPlayers;
             autoEA3719EB_var = -1;
             while (true) {
