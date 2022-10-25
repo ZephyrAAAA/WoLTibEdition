@@ -18,6 +18,7 @@ Changed reaper button for changing speed.
 Crane now has a cancel button
 Fixed addons being too good for the building they're on.
 Topbar no longer cuts off
+*All the tips we edit now have an orange title
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -32,6 +33,7 @@ Added a tip about Build Radius
 Fixed SCV and Supply Depot tips
 Fixed the rebels sending out scouting parties
 Rescue Rebels objective now says it gives 30k credits
+Added a basebuilding tutorial
 *Added a stone tutorial about expanding to the rebel base
 
 Zero Hour:
@@ -86,9 +88,11 @@ Breakout:
 *Consumption now says it heals
 *Prison Block bonus objectives now say they give 37.5k
 Send Wave starts autocast not
-*Ghosts no longer have energy.
+Ghosts no longer have energy.
 
 Ghost of a Chance:
+Nova heals better
+Vikings are present on platform 2
 *Spectre bonus objective now says it gives 7.5k per spectre
 
 Haven:
@@ -105,3 +109,4 @@ Disabled Engibay requirements
 
 In Utter Darkness:
 There's now a timer for the next reinforcement wave.
+"Die Now" button no longer persists
