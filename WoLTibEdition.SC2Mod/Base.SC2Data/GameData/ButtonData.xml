@@ -480,7 +480,6 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     </CButton>
     <CButton id="PowerStructure">
         <Icon value="Assets\Textures\btn-upgrade-artanis-pylonpower.dds"/>
-        <HotkeyAlias value="CommanderTraitArtanisSOAProjectPowerField"/>
         <DefaultButtonLayout Row="1"/>
     </CButton>
     <CButton id="DeathRecall">

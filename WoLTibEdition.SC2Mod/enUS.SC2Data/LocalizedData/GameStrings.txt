@@ -1573,6 +1573,7 @@ Weapon/Name/HailstormLauncher=Hailstorm Launcher
 Weapon/Name/HailstormLauncherMerc=Hailstorm Launcher
 Weapon/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Weapon/Name/HammerSecuritiesSquad@2=Hailstorm Launcher
+Weapon/Name/HighTemplarAttackDummy=High Templar Attack Dummy
 Weapon/Name/LanzerTorpedoesGround=Lanzer Torpedoes
 Weapon/Name/MarauderSquad=Marauder Squad
 Weapon/Name/MarauderSquad@2=Hailstorm Launcher

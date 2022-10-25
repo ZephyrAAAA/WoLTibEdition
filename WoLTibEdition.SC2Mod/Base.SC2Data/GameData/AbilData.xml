@@ -591,6 +591,9 @@
     <CAbilMorph id="SiegeMode">
         <AbilLinkDisableArray value="attack"/>
     </CAbilMorph>
+    <CAbilEffectInstant id="Stimpack">
+        <CmdButtonArray index="Execute" State="Available"/>
+    </CAbilEffectInstant>
     <CAbilEffectTarget id="TacticalMissileStrike">
         <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
         <Effect index="0" value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
@@ -842,7 +845,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
             <Resource index="Vespene" value="1500"/>
-            <Button DefaultButtonFace="Stone" State="Restricted">
+            <Button DefaultButtonFace="Stone" Requirements="JumboBunkerNotResearched">
                 <Flags index="ToSelection" value="1"/>
             </Button>
             <Unit value="Stone"/>
@@ -1334,7 +1337,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SupplyDepot" State="Restricted" Requirements="CanBuildSupplyDepot">
+            <Button DefaultButtonFace="SupplyDepot" Requirements="CanBuildSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1347,7 +1350,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Refinery" State="Restricted" Requirements="CanBuildRefinery">
+            <Button DefaultButtonFace="Refinery" Requirements="CanBuildRefinery">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1360,7 +1363,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="HaveSupplyDepot">
+            <Button DefaultButtonFace="Barracks" Requirements="HaveSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1373,7 +1376,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="HaveRefandSupplyDepot">
+            <Button DefaultButtonFace="EngineeringBay" Requirements="HaveRefandSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1437,7 +1440,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HaveRefandSupplyDepot">
+            <Button DefaultButtonFace="Factory" Requirements="HaveRefandSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1566,7 +1569,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SupplyDepot" State="Restricted" Requirements="HasBuiltSupplyDepot">
+            <Button DefaultButtonFace="SupplyDepot" Requirements="HasBuiltSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1578,7 +1581,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Refinery" State="Restricted" Requirements="HasBuiltRefinery">
+            <Button DefaultButtonFace="Refinery" Requirements="HasBuiltRefinery">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1590,7 +1593,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Barracks" State="Restricted" Requirements="HasBuiltBarracks">
+            <Button DefaultButtonFace="Barracks" Requirements="HasBuiltBarracks">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1602,7 +1605,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="EngineeringBay" State="Restricted" Requirements="HasBuiltEngineeringBay">
+            <Button DefaultButtonFace="EngineeringBay" Requirements="HasBuiltEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1613,7 +1616,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="HasBuiltBunker">
+            <Button DefaultButtonFace="Bunker" Requirements="HasBuiltBunker">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1625,7 +1628,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="HasBuiltMissileTurret">
+            <Button DefaultButtonFace="MissileTurret" Requirements="HasBuiltMissileTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1637,7 +1640,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="HasBuiltSensorTower">
+            <Button DefaultButtonFace="SensorTower" Requirements="HasBuiltSensorTower">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1649,7 +1652,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HasBuiltGhostAcademy">
+            <Button DefaultButtonFace="GhostAcademy" Requirements="HasBuiltGhostAcademy">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1661,7 +1664,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Factory" State="Restricted" Requirements="HasBuiltFactory">
+            <Button DefaultButtonFace="Factory" Requirements="HasBuiltFactory">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1673,7 +1676,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HasBuiltArmory">
+            <Button DefaultButtonFace="Armory" Requirements="HasBuiltArmory">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1685,7 +1688,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HasBuiltStarport">
+            <Button DefaultButtonFace="Starport" Requirements="HasBuiltStarport">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1697,7 +1700,7 @@
                 <Link value="Abil/CCBuild"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HasBuiltFusionCore">
+            <Button DefaultButtonFace="FusionCore" Requirements="HasBuiltFusionCore">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -2094,6 +2097,7 @@
             <Charge Link="Abil/MedivacStim"/>
             <Cooldown Link="Abil/MedivacStim"/>
         </Cost>
+        <CmdButtonArray index="Execute" State="Available"/>
     </CAbilEffectInstant>
     <CAbilArmMagazine id="MedicSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>

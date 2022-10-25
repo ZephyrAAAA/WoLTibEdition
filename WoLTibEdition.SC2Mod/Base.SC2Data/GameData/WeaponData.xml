@@ -139,6 +139,10 @@
         <Period value="0.2"/>
         <AttackType value="Magic"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="BroodlingEscort">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="BroodlingStrike">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
@@ -424,6 +428,13 @@
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HighTemplarAttackDummy">
+        <EditorCategories value=""/>
+        <Options index="Hidden" value="1"/>
+        <TargetFilters value="Ground,Visible;Stasis,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Effect value=""/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridC">
         <Tip value="Weapon/Tip/Rocket"/>

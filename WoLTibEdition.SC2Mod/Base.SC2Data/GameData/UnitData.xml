@@ -3058,7 +3058,6 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
-        <AbilArray Link="HighTemplarAttackDummy"/>
         <AbilArray Link="attack"/>
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="Rally" AbilCmd="ProgressRally,Rally1" Row="2"/>
@@ -3067,6 +3066,7 @@
             <LayoutButtons index="8" Face="Feedback" AbilCmd="Feedback,Execute" Column="0"/>
             <LayoutButtons index="9" removed="1"/>
         </CardLayouts>
+        <WeaponArray Link="HighTemplarAttackDummy"/>
     </CUnit>
     <CUnit id="HighTemplarACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6271,7 +6271,7 @@
         <WeaponArray Link="MarineSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarineSquad,Ammo1" Row="1" Column="0"/>
-            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
         <LifeStart value="270"/>
@@ -6654,8 +6654,8 @@
         <AbilArray Link="que1Passive"/>
         <WeaponArray Link="WarPigSquad"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,0" Row="1" Column="0"/>
-            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
         <SelectAlias value="MarineSquad"/>
@@ -6670,6 +6670,7 @@
         <Race value="Prot"/>
         <FlagArray index="Turnable" value="0"/>
         <FlagArray index="Movable" value="0"/>
+        <FlagArray index="Untargetable" value="1"/>
         <FlagArray index="Hero" value="1"/>
         <FlagArray index="Undetectable" value="1"/>
         <FlagArray index="KillCredit" value="0"/>

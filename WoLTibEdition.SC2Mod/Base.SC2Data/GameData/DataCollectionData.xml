@@ -537,6 +537,7 @@
     <CDataCollectionUnit id="Ghost">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Marauder">
         <EditorCategories value="DataGroup:Unit"/>
