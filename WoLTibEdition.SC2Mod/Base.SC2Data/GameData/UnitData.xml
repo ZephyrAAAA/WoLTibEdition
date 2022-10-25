@@ -6271,7 +6271,7 @@
         <WeaponArray Link="MarineSquad"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarineSquad,Ammo1" Row="1" Column="0"/>
-            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
         <LifeStart value="270"/>
@@ -6654,8 +6654,8 @@
         <AbilArray Link="que1Passive"/>
         <WeaponArray Link="WarPigSquad"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,0" Row="1" Column="0"/>
-            <LayoutButtons Face="StimRedirect" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
         <SelectAlias value="MarineSquad"/>
