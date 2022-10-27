@@ -1928,6 +1928,7 @@
         <EditorCategories value=""/>
         <Flags index="Channeled" value="1"/>
         <PeriodicValidator value="TargetLifeNotFull"/>
+        <WhichLocation Value="TargetUnit"/>
     </CEffectCreatePersistent>
     <CEffectLaunchMissile id="ConcussiveGrenadesLM">
         <EditorCategories value="Race:Terran"/>
