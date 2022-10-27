@@ -51,8 +51,8 @@ The protoss no longer warp in extra stalkers in the bottom base
 *Fixed zerg attack waves suddenly getting weaker
 
 Redstone:
-*Tosh's boys can now be rescued by air units.
-*Brutalisk now tries to escape his toasty fate
+Tosh's boys can now be rescued by air units.
+Brutalisk now tries to escape his toasty fate
 
 Trains:
 *You no longer start with a CC, instead having a Crane.
@@ -71,8 +71,8 @@ Relocated the first relic to near the 2 east altars, so it's not so immediate th
 A Sinister Turn:
 *Made it more obvious how the mission works
 *Void prison now says it only affects heroic for 4s
-*Fixed spastic detectors
-*Disabled sentry shield restore, so they don't detect zeratul when somehting is damaged.
+Fixed spastic detectors
+Disabled sentry shield restore, so they don't detect zeratul when somehting is damaged.
 Plasma blast is slower, so it's easier to dodge
 
 Cutthroat:
