@@ -353,7 +353,7 @@ Button/Tooltip/DeployLaserDrill6=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill7=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill8=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
-Button/Tooltip/Depower=Depowers selected building, freeing power for other buildings.
+Button/Tooltip/Depower=Switches power state of the selected building.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage. 
 Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
@@ -476,7 +476,7 @@ Button/Tooltip/ScannerSweepTopbar6=Reveals an area of the map, detecting cloaked
 Button/Tooltip/ScannerSweepTopbar7=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar8=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
-Button/Tooltip/Sell=Sells selected building for a refund
+Button/Tooltip/Sell=Sells selected building for a partial refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.

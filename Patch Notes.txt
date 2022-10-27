@@ -10,7 +10,8 @@ Squads no longer get seconds from vanadium.
 *Crane now has a submenu for structures, to match the CC
 CC now has higher priority than crane
 Changed reaper button for changing speed.
-*Power button now says it is used to switch powered state, not just to depower.
+Power button now says it is used to switch powered state, not just to depower.
+Sell button is now less ambiguous about how much you get back.
 *Zeratul's power ability has a hotkey now
 *Fixed hotkey conflict with SCV and Siege Tank
 *Fixed hotkey conflict with Starport and Supply Depot
@@ -36,7 +37,7 @@ Fixed SCV and Supply Depot tips
 Fixed the rebels sending out scouting parties
 Rescue Rebels objective now says it gives 30k credits
 Added a basebuilding tutorial
-*Added a stone tutorial about expanding to the rebel base
+Added a stone tutorial about expanding to the rebel base
 
 Zero Hour:
 Fixed bonuses not showing up
@@ -45,19 +46,18 @@ Relocated starting depots so they aren't out of build radius
 *Corruptors no longer have corruption
 
 Evacuation:
-*Fixed the rear nydus not sticking around like it should
+Fixed the rear nydus not sticking around like it should
 
 Smash and Grab:
 If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
 The protoss no longer warp in extra stalkers in the bottom base
 *Fixed zerg attack waves suddenly getting weaker
+*Taught the protoss how to merge archons
+*The protoss now use their own production, instead of the Super Warp Gate, for attack waves
 
 Redstone:
 Tosh's boys can now be rescued by air units.
 Brutalisk now tries to escape his toasty fate
-
-Trains:
-*You no longer start with a CC, instead having a Crane.
 
 Bel'shir:
 *Taking an area before Nyon shittalks you now means he doesn't immediately secure it.
@@ -103,6 +103,14 @@ Haven:
 
 Haven's Fall:
 *Looked at settlement markers not being removed.
+
+Safe Haven:
+The protoss no longer attempt to rebuild bases after they've been completely destroyed
+Second and third bases are much stronger, and less susceptible to cliff abuse
+Preventing the protoss from rebuilding and killing the counterattack no longer gives armoury upgrades.
+Counterattacks now scale less harshly with how many terror fleets you've killed
+There's now some small defensive outposts on the map
+*Counterattacks are now scaled to how much of the base you cleared out
 
 Supernova:
 Fixed poor johnny being spawned at the wrong time
