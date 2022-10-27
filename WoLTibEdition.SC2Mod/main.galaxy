@@ -270,6 +270,7 @@ bool Gather_Func (bool testConds, bool runActions) {
 	}
 	if (UnitGetPropertyInt(gatherUnit, c_unitPropCarriedMinerals, true) == 0) {
 		UnitBehaviorRemove(gatherUnit, "CarryMineralFieldMinerals", 1);
+		UnitBehaviorRemove(gatherUnit, "CarryHighYieldMineralFieldMinerals", 1);
 	}
 	if (OrderGetAbilityCommand(UnitOrder(gatherUnit, 0)) == AbilityCommand("SCVHarvest", 0) && OrderGetTargetUnit(UnitOrder(gatherUnit, 0)) == refinery) {
 		UnitIssueOrder(gatherUnit, Order(AbilityCommand("stop", 0)), c_orderQueueReplace);
@@ -288,8 +289,7 @@ bool Gather_Func (bool testConds, bool runActions) {
 				} 
 			}
 			else {
-				lv_order = OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("RefineryBounce", c_playerAny, RegionEntireMap(), UnitFilter(0,0,0,0), 0), true));
-				break;
+				lv_order = OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("RefineryBounce", UnitGetOwner(gatherUnit), RegionEntireMap(), UnitFilter(0,0,0,0), 0), true));
 			}
 			UnitIssueOrder(gatherUnit, lv_order, c_orderQueueAddToEnd);
 		}
