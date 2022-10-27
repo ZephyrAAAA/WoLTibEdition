@@ -1928,6 +1928,10 @@
         <EditorCategories value=""/>
         <Flags index="Channeled" value="1"/>
         <PeriodicValidator value="TargetLifeNotFull"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SquadMainAttack"/>
+        <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
     <CEffectLaunchMissile id="ConcussiveGrenadesLM">
         <EditorCategories value="Race:Terran"/>
