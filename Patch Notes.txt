@@ -76,9 +76,9 @@ Disabled sentry shield restore, so they don't detect zeratul when somehting is d
 Plasma blast is slower, so it's easier to dodge
 
 Cutthroat:
-*Fixed Orlan not mining.
-*Orlan is no longer a pushover
-*Orlan's Ravens are no longer on break.
+Fixed Orlan not mining.
+Orlan is no longer a pushover
+Orlan's Ravens are no longer on break.
 
 Engine of Destruction:
 *Loki bonus now says it gives credits

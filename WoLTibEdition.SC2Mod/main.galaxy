@@ -290,6 +290,8 @@ bool Gather_Func (bool testConds, bool runActions) {
 			}
 			else {
 				lv_order = OrderTargetingUnit(AbilityCommand("SCVHarvest", 0), AIGetClosestUnit(gatherUnit, UnitGroup("RefineryBounce", UnitGetOwner(gatherUnit), RegionEntireMap(), UnitFilter(0,0,0,0), 0), true));
+				UnitIssueOrder(gatherUnit, lv_order, c_orderQueueAddToEnd);
+				break;
 			}
 			UnitIssueOrder(gatherUnit, lv_order, c_orderQueueAddToEnd);
 		}
