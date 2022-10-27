@@ -19,6 +19,8 @@ Crane now has a cancel button
 Fixed addons being too good for the building they're on.
 Topbar no longer cuts off
 *All the tips we edit now have an orange title
+Firebats now require an engineering bay.
+Medics and Reapers require a Shadow Ops.
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -76,7 +78,7 @@ A Sinister Turn:
 Plasma blast is slower, so it's easier to dodge
 
 Cutthroat:
-*Fixed Orlan not mining.
+Fixed Orlan not mining.
 *Orlan is no longer a pushover
 *Orlan's Ravens are no longer on break.
 
