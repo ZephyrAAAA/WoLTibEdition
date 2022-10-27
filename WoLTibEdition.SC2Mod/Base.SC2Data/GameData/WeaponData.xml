@@ -113,6 +113,10 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="AcidSpines">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="ArcliteShockCannon">
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
@@ -947,6 +951,10 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Talons">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TaurenSpaceMarineGaussRifle"/>
     <CWeaponLegacy id="ThermalLances">
