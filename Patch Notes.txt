@@ -38,12 +38,14 @@ Fixed the rebels sending out scouting parties
 Rescue Rebels objective now says it gives 30k credits
 Added a basebuilding tutorial
 Added a stone tutorial about expanding to the rebel base
+You now start with a Shadow Ops
 
 Zero Hour:
 Fixed bonuses not showing up
 Relocated starting depots so they aren't out of build radius
 *Rescue Rebels objective now says it gives 30k credits
 *Corruptors no longer have corruption
+You now start with a Shadow Ops
 
 Evacuation:
 Fixed the rear nydus not sticking around like it should
@@ -102,7 +104,7 @@ Haven:
 *There are now bonus objectives tracking how many settlements you've saved, and that you get 15k credits for each
 
 Haven's Fall:
-*Looked at settlement markers not being removed.
+Fixed settlement markers not being removed.
 
 Safe Haven:
 The protoss no longer attempt to rebuild bases after they've been completely destroyed
@@ -110,6 +112,7 @@ Second and third bases are much stronger, and less susceptible to cliff abuse
 Preventing the protoss from rebuilding and killing the counterattack no longer gives armoury upgrades.
 Counterattacks now scale less harshly with how many terror fleets you've killed
 There's now some small defensive outposts on the map
+*The Purifier has been buffed significantly
 *Counterattacks are now scaled to how much of the base you cleared out
 
 Supernova:
