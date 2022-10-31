@@ -2237,17 +2237,7 @@
         <Aliases value="_Geyser"/>
         <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>
         <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap VespeneGeyserHigh"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="SetMinimapVisibility"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="SetMinimapVisibility 1"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="AnimPlay CoverStart Cover,Start 0 0.000000 0.300000 30.200001 AsDuration"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostFinish" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="TimerKill GeyserHostFinish"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear CoverStart"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear Cover"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupRemove B"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupApply D"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupRemove D"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupApply B"/>
+        <On Terms="Effect.TibNodeModelChange.Start" Send="ModelSwap RichVespeneGeyser"/>
         <Model value="VespeneGeyser"/>
         <Scale value="0.800000"/>
         <BuildModel value="VespeneGeyser"/>
@@ -2285,17 +2275,7 @@
         <Aliases value="_Geyser"/>
         <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>
         <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap VespeneGeyserHigh"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="SetMinimapVisibility"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="SetMinimapVisibility 1"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="AnimPlay CoverStart Cover,Start 0 0.000000 0.300000 30.200001 AsDuration"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostFinish" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="TimerKill GeyserHostFinish"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear CoverStart"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear Cover"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupRemove B"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupApply D"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupRemove D"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupApply B"/>
+        <On Terms="Effect.TibNodeModelChange.Start" Send="ModelSwap RichVespeneGeyser"/>
         <Model value="VespeneGeyser"/>
         <Scale value="0.800000"/>
         <BuildModel value="VespeneGeyser"/>
@@ -2333,17 +2313,7 @@
         <Aliases value="_Geyser"/>
         <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap VespeneGeyserHigh"/>
         <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap VespeneGeyserHigh"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="SetMinimapVisibility"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="SetMinimapVisibility 1"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostStart" Send="AnimPlay CoverStart Cover,Start 0 0.000000 0.300000 30.200001 AsDuration"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostFinish" Send="AnimPlay Cover Cover PlayForever 0.000000 0.000000"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="TimerKill GeyserHostFinish"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear CoverStart"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.HostClear" Send="AnimClear Cover"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupRemove B"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Deplete" Send="AnimGroupApply D"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupRemove D"/>
-        <On Terms="Behavior.RawVespeneGeyserGas.Restore" Send="AnimGroupApply B"/>
+        <On Terms="Effect.TibNodeModelChange.Start" Send="ModelSwap RichVespeneGeyser"/>
         <Model value="VespeneGeyser"/>
         <Scale value="0.800000"/>
         <BuildModel value="VespeneGeyser"/>
