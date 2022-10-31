@@ -20,10 +20,11 @@ Crane now has a cancel button
 Fixed addons being too good for the building they're on.
 Topbar no longer cuts off
 *All the tips we edit now have an orange title
-Firebats now require an engineering bay.
-Medics and Reapers require a Shadow Ops.
+*Firebats now require an engineering bay.
+*Medics and Reapers require a Shadow Ops.
 The help menu now helps
 Replaced the Vespene Geyser and Rich Vespene Geyser help entries with Node entries.
+Stacked nodes are now Rich, to signify having greater regen.
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -71,10 +72,9 @@ Trains:
 
 Bel'shir:
 *Taking an area before Nyon shittalks you now means he doesn't immediately secure it.
-*Refactored bad code
-*Attacking an area now gives some time before the protoss will warp in replacement units.
-*The protoss send a counterattack at mox once every 2 minutes per position
-*Matt now says that the protoss are mobilizing before a counterattack. The area to be attacked also gets pinged.
+Refactored bad code
+Attacking an area now gives 60s before the protoss will do anything
+Matt now says that the protoss are mobilizing 30s before a counterattack. The area to be attacked also gets pinged.
 The protoss no longer warp in extra warp prisms.
 Counterattacks are no longer tied to killing warp prisms specifically
 Counterattack strength is now tied to how much of the area attacked was cleared out.
