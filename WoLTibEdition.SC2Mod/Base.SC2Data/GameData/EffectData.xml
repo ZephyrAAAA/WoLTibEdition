@@ -2291,6 +2291,8 @@
         <PeriodicPeriodArray value="0.0625"/>
         <ValidatorArray value="TibNodeNonStarter"/>
         <PeriodicValidator value="TibNodeNonStarter"/>
+        <InitialDelay value="0.0625"/>
+        <InitialEffect value="TibNodeModelChangeSearch"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeMediumGrow">
         <EditorCategories value=""/>
@@ -2471,7 +2473,21 @@
         <PeriodicPeriodArray value="0.0625"/>
         <ValidatorArray value="TibNodeNonStarter"/>
         <PeriodicValidator value="TibNodeNonStarter"/>
+        <InitialDelay value="0.0625"/>
+        <InitialEffect value="TibNodeModelChangeSearch"/>
     </CEffectCreatePersistent>
+    <CEffectSet id="TibNodeModelChange">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="TibNodeModelChangeSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <ExcludeArray/>
+        <SearchFilters value="Structure,RawResource;-"/>
+        <AreaArray Radius="0.1" Effect="TibNodeModelChange"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFlags index="OffsetAreaByAngle" value="0"/>
+    </CEffectEnumArea>
     <CEffectCreatePersistent id="TibNodeSmallGrow">
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnitOrPoint"/>
@@ -2547,6 +2563,8 @@
         <PeriodicPeriodArray value="0.0625"/>
         <ValidatorArray value="TibNodeNonStarter"/>
         <PeriodicValidator value="TibNodeNonStarter"/>
+        <InitialDelay value="0.0625"/>
+        <InitialEffect value="TibNodeModelChangeSearch"/>
     </CEffectCreatePersistent>
     <CEffectRemoveBehavior id="BuildingRepairRB">
         <BehaviorLink value="BuildingRepair"/>
