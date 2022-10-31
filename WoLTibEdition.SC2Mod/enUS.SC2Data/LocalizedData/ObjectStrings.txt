@@ -936,6 +936,7 @@ Sound/Name/Stone_What=Stone_What
 Sound/Name/Stone_Yes=Stone_Yes
 Sound/Name/TRaynor02Raynor00037Mod=TRaynor02Raynor00037Mod
 Sound/Name/TTosh01SwannBruta=TTosh01SwannBruta
+Sound/Name/TTosh01SwannBruta2=TTosh02MattMobilizing
 Sound/Name/Tosh_Explosives=Tosh_Explosives
 Tactical/Name/InfestorFungal=Infestor Fungal
 Tactical/Name/Karass=Karass

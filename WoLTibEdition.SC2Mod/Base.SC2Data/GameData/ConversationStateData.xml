@@ -248,7 +248,9 @@
             <InfoValue Id="Item Count" Value="1"/>
         </Indices>
     </CConversationState>
-    <CConversationState id="StoryTips"/>
+    <CConversationState id="StoryTips">
+        <Indices index="34" Color="255,0,0,0"/>
+    </CConversationState>
     <CConversationState id="Tech">
         <Indices index="0" ImagePath="Assets\Textures\btn-techupgrade-terran-shriketurret.dds">
             <InfoUpgrade index="0" Upgrade="ShrikeTurret"/>

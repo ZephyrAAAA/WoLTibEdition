@@ -22,6 +22,8 @@ Topbar no longer cuts off
 *All the tips we edit now have an orange title
 Firebats now require an engineering bay.
 Medics and Reapers require a Shadow Ops.
+The help menu now helps
+Replaced the Vespene Geyser and Rich Vespene Geyser help entries with Node entries.
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -36,7 +38,7 @@ Added a tip about Build Radius
 Fixed SCV and Supply Depot tips
 Fixed the rebels sending out scouting parties
 Rescue Rebels objective now says it gives 30k credits
-Added a basebuilding tutorial
+Added a basebuilding tutorial, including the topbar abilities
 Added a stone tutorial about expanding to the rebel base
 You now start with a Shadow Ops
 
@@ -63,6 +65,10 @@ Redstone:
 Tosh's boys can now be rescued by air units.
 Brutalisk now tries to escape his toasty fate
 
+Trains:
+*Kill Teams are weaker, and stay dead for longer.
+*Matt mentions that killing the kill team will only buy you a little time before sending out another.
+
 Bel'shir:
 *Taking an area before Nyon shittalks you now means he doesn't immediately secure it.
 *Refactored bad code
@@ -87,7 +93,7 @@ Orlan is no longer a pushover
 Orlan's Ravens are no longer on break.
 
 Engine of Destruction:
-*Loki bonus now says it gives credits
+*Loki bonus now says it gives 50k credits
 *Wraiths start cloaked
 
 Breakout:

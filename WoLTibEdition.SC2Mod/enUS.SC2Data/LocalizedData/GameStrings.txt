@@ -613,7 +613,9 @@ ConversationState/LabResearch/ResearchZ5_1/Info/Description=<s val="ResearchDesc
 ConversationState/LabResearch/ResearchZ5_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Hive Mind Emulator</s><n/><s val="TooltipDescription_Zerg">Topbar Power. Mind Controls zerg units in a medium area.</s>
 ConversationState/LabResearch/ResearchZ5_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Confuses zerg units in a 9 radius area for 120s.<n/>- Costs 8000<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. <n/>- Available from the Fusion Core.<n/>- Affected units will attack the nearest unit.<n/>- 7.5 minute cooldown.</s><n/><n/><s val="ResearchDescription_Zerg">Studies conducted by the United Earth Directorate have shown that concentrated doses of sigma radiation can confuse Zerg identification of friend and foe. <n/></s>
 ConversationState/LabResearch/ResearchZ5_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Psi Disrupter</s><n/><s val="TooltipDescription_Zerg">Topbar Power. Confuses zerg units in a large area.</s>
+ConversationState/StoryTips/Raynor02_SCV=<c val="FF8000">SCV</c>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
+ConversationState/StoryTips/Raynor02_Supply=<c val="FF8000">Supply Depot</c>
 ConversationState/StoryTips/Raynor02_Supply/Info/Description=In order to keep your base fully powered, you must have the necessary power. To increase your power, order a <c val="FFFF00">Command Center</c> or <c val="FFFF00">Crane</c> to build a <c val="FFFF00">Supply Depot</c>.
 ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
@@ -1471,6 +1473,10 @@ Skin/Name/PsiDisruptor8=PsiDisruptor8
 Skin/Name/PsiDisruptor9=PsiDisruptor9
 StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
+UI/HelpGameMechanic_RichVespeneGeysers_Description=<ul indent="2" text="•"><li>Rich Resource Nodes generate new Mineral Veins faster than normal resource nodes.</li><li>The speed is a whole number multiple of a normal Node.</li></ul>
+UI/HelpGameMechanic_RichVespeneGeysers_Name=Rich Resource Nodes
+UI/HelpGameMechanic_VespeneGeysers_Description=<ul indent="2" text="•"><li>Resource Nodes occasionally spawn a new Mineral Vein in a radius around them. They come in 3 sizes, with larger sizes regenerating faster.</li></ul>
+UI/HelpGameMechanic_VespeneGeysers_Name=Resource Nodes
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
 Unit/InfoText/PalletGas=Use any ground unit to collect 2000 minerals.

@@ -1,3 +1,4 @@
 ﻿Conversation//Line=
 Conversation//Line00037Mod=While we're at it, extra SCVs will help us harvest minerals faster. Train 'em up at the Factory
-Conversation//LineRoastBruta=Roast 'em good, cowboy. *Inhales,* Extra crispy.
+Conversation//LineRoastBruta=The Protoss are mobilizing sir.
+ConversationState/Characters/CharSwann=Horner

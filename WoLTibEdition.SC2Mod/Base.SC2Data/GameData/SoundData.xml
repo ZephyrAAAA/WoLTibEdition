@@ -164,6 +164,15 @@
         <DupeHistoryCount value="3"/>
         <Pitch value="6.000000,6.100000"/>
     </CSound>
+    <CSound id="TTosh01SwannBruta2" parent="Campaign" Portrait="HornerPortrait" Subtitle="TTosh02" Speaker="CharHorner" Line="HornerMobilizing">
+        <AssetArray index="0">
+            <File value="Assets\sfx\ProtossMobilizing.ogg"/>
+            <FacialAnim value="TTosh01SwannBruta"/>
+            <PortraitModel value="HornerPortrait"/>
+            <Speaker value="ConversationState/Characters/CharSwann"/>
+            <Subtitle value="Conversation//LineRoastBruta"/>
+        </AssetArray>
+    </CSound>
     <CSound id="Tosh_Explosives" parent="TerranAck">
         <AssetArray File="Assets\sfx\Tosh_Explosives.ogg" FacialGroup=""/>
     </CSound>
