@@ -248,6 +248,7 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     <CButton id="HyperflightRotors">
         <Icon value="Assets\Textures\btn-upgrade-terran-hyperflightrotors.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-hyperflightrotors.dds"/>
+        <DefaultButtonLayout Row="1"/>
     </CButton>
     <CButton id="LongRangeMassRecall">
         <Icon value="Assets\Textures\btn-ability-spearofadun-massrecall.dds"/>
@@ -461,12 +462,13 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     <CButton id="ResearchImprovedPlasmaShields">
         <Icon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-protoss-shieldslevel3.dds"/>
-        <DefaultButtonLayout Row="1"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+        <HotkeyAlias value="ProtossShieldsLevel1"/>
     </CButton>
     <CButton id="ResearchImprovedRailguns">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel2.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionweaponslevel2.dds"/>
-        <DefaultButtonLayout Column="1"/>
+        <DefaultButtonLayout Column="2"/>
     </CButton>
     <CButton id="SendWave">
         <Icon value="Assets\Textures\inspiration_coop.dds"/>
@@ -492,6 +494,7 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-techupgrade-terran-multilocktargetingsystem.dds"/>
         <EditorCategories value="Race:Terran"/>
         <TintRacially value="1"/>
+        <DefaultButtonLayout Column="2"/>
     </CButton>
     <CButton id="BuildDevastatorTurret">
         <Icon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
@@ -538,32 +541,32 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <Icon value="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-infernalpreigniter.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Column="3"/>
     </CButton>
     <CButton id="VehicleUltraCapacitors">
         <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="InfantryUltraCapacitors"/>
-        <DefaultButtonLayout Row="1"/>
     </CButton>
     <CButton id="InfantryVanadiumPlating">
         <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <EditorCategories value="Race:Terran"/>
+        <DefaultButtonLayout Column="1"/>
     </CButton>
     <CButton id="StarshipUltraCapacitors">
         <Icon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-ultracapacitors.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="InfantryUltraCapacitors"/>
-        <DefaultButtonLayout Row="1"/>
     </CButton>
     <CButton id="VehicleVanadiumPlating">
         <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <AlertIcon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="InfantryVanadiumPlating"/>
-        <DefaultButtonLayout Row="1" Column="1"/>
+        <DefaultButtonLayout Column="1"/>
     </CButton>
     <CButton id="PauseQueue">
         <Icon value="EditorData\Images\CutSceneEditor\Playhead\Control_Pause.tga"/>
@@ -586,7 +589,7 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
         <EditorCategories value="Race:Terran"/>
         <HotkeyAlias value="InfantryVanadiumPlating"/>
-        <DefaultButtonLayout Row="1" Column="1"/>
+        <DefaultButtonLayout Column="1"/>
     </CButton>
     <CButton id="DeployLaserDrill3">
         <Icon value="Assets\Textures\btn-tips-laserdrillcontrol.dds"/>
