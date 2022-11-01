@@ -1544,6 +1544,11 @@
     <CEffectDamage id="PurifierBeamDamage">
         <Amount value="16"/>
     </CEffectDamage>
+    <CEffectEnumArea id="PurifierBeamSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="4" Radius="3" Effect="PurifierBeamSet"/>
+    </CEffectEnumArea>
     <CEffectDamage id="Ram">
         <Amount value="80"/>
     </CEffectDamage>

@@ -1147,16 +1147,10 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Research1" Time="30" Upgrade="HyperflightRotors">
             <Resource index="Vespene" value="1000"/>
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
             <Button DefaultButtonFace="HyperflightRotors" State="Restricted" Requirements="LearnHyperflightRotors">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
-        </InfoArray>
-        <InfoArray index="Research2">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
         </InfoArray>
         <InfoArray index="Research3" Time="60" Upgrade="ImprovedRailguns">
             <Resource index="Vespene" value="2000"/>
@@ -1181,14 +1175,14 @@
         </InfoArray>
         <InfoArray index="Research6" Time="90" Upgrade="TerranShipUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="StarshipUltraCapacitors" State="Restricted" Requirements="LearnStarshipUltraCaps">
+            <Button DefaultButtonFace="StarshipUltraCapacitors" Requirements="LearnStarshipUltraCaps">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Research7" Time="90" Upgrade="TerranShipVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="StarshipVanadiumPlating" State="Restricted" Requirements="LearnStarshipVanadium">
+            <Button DefaultButtonFace="StarshipVanadiumPlating" Requirements="LearnStarshipVanadium">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -1807,14 +1801,14 @@
         </InfoArray>
         <InfoArray index="Research3" Time="90" Upgrade="TerranVehicleUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="VehicleUltraCapacitors" State="Restricted" Requirements="LearnVehicleUltraCaps">
+            <Button DefaultButtonFace="VehicleUltraCapacitors" Requirements="LearnVehicleUltraCaps">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Research4" Time="90" Upgrade="TerranVehicleVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="VehicleVanadiumPlating" State="Restricted" Requirements="LearnVehicleVanadium">
+            <Button DefaultButtonFace="VehicleVanadiumPlating" Requirements="LearnVehicleVanadium">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -1825,10 +1819,6 @@
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
-        </InfoArray>
-        <InfoArray index="Research6">
-            <Charge Link="Abil/##id##"/>
-            <Cooldown Link="Abil/##id##"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilMorphPlacement id="Factory2Land" parent="TerranBuildingLand" unit="Factory">
@@ -1939,7 +1929,7 @@
         </InfoArray>
         <InfoArray index="Research5" Time="90" Upgrade="TerranInfantryVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium">
+            <Button DefaultButtonFace="InfantryVanadiumPlating" Requirements="LearnInfantryVanadium">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>

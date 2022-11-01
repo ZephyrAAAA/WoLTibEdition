@@ -2141,8 +2141,8 @@
     </CUnit>
     <CUnit id="DevilDog">
         <ArmorType value="Normal"/>
-        <LifeStart value="240"/>
-        <LifeMax value="240"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2564,8 +2564,8 @@
     </CUnit>
     <CUnit id="Firebat">
         <ArmorType value="Normal"/>
-        <LifeStart value="150"/>
-        <LifeMax value="150"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
         <LifeArmor value="0"/>
         <Food value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2578,8 +2578,8 @@
     </CUnit>
     <CUnit id="DevilDogSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <LifeStart value="960"/>
-        <LifeMax value="960"/>
+        <LifeStart value="800"/>
+        <LifeMax value="800"/>
         <Speed value="2.25"/>
         <AbilArray index="3" Link="DevilDogSquad"/>
         <WeaponArray Link="DevilDogSquad"/>
@@ -3590,8 +3590,8 @@
     </CUnit>
     <CUnit id="FirebatSquad" parent="BaseSquad">
         <Race value="Terr"/>
-        <LifeStart value="600"/>
-        <LifeMax value="600"/>
+        <LifeStart value="500"/>
+        <LifeMax value="500"/>
         <Speed value="2.25"/>
         <AbilArray index="3" Link="FirebatSquad"/>
         <WeaponArray Link="FirebatSquad"/>
@@ -4630,6 +4630,11 @@
         <FogVisibility value="Visible"/>
         <ArmorType value="Fort"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <AbilArray Link="MassRecall"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="10" AbilCmd="255,255"/>
+            <LayoutButtons Face="MassRecall" Type="AbilCmd" AbilCmd="MassRecall,Execute" Row="2" Column="2"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="PurifierBlastMarkUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

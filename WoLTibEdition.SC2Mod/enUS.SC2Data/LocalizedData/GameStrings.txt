@@ -928,6 +928,7 @@ Effect/Name/PerditionTurretPlace=PerditionTurretPlace
 Effect/Name/PowerStructure=Power Structure
 Effect/Name/PowerStructureAB=Power Structure
 Effect/Name/PowerStructureRB=Power Structure
+Effect/Name/PurifierBeamSearch=Purifier Beam
 Effect/Name/RailgunLaunch=Railgun Launch
 Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
