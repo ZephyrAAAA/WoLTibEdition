@@ -615,7 +615,9 @@ ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val
 ConversationState/StoryTips/Raynor02_Supply=<c val="FF8000">Supply Depot</c>
 ConversationState/StoryTips/Raynor02_Supply/Info/Description=In order to keep your base fully powered, you must have the necessary power. To increase your power, order a <c val="FFFF00">Command Center</c> or <c val="FFFF00">Crane</c> to build a <c val="FFFF00">Supply Depot</c>.
 ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
+ConversationState/StoryTips/Raynor03_Bunker=<c val="FF8000">Bunker</c>
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
+ConversationState/StoryTips/Raynor03_EngineeringBay=<c val="FF8000">Engineering Bay</c>
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
 ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
 ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods

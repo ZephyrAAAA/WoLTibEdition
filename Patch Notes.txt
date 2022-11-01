@@ -54,7 +54,10 @@ Relocated starting depots so they aren't out of build radius
 Rescue Rebels objective now says it gives 30k credits
 *Corruptors no longer have corruption
 You now start with a Shadow Ops
-*Toned down waves to compensate for stronger upgrades
+You no longer start with 2 barracks
+Greatly increased money regen in main fields
+Armoury upgrades are now given by rescuing any 2 of the rebel groups, not group 1 and 2 specifically.
+Mutas now go around rebel groups instead of murdering them right away.
 
 Evacuation:
 Fixed the rear nydus not sticking around like it should
@@ -71,6 +74,9 @@ The bottom base now has 5 gates
 Redstone:
 Tosh's boys can now be rescued by air units.
 Brutalisk now tries to escape his toasty fate
+
+Outbreak:
+Removed the sensor tower tip.
 
 Trains:
 *Kill Teams are weaker, and stay dead for longer.
@@ -126,7 +132,7 @@ Second and third bases are much stronger, and less susceptible to cliff abuse
 Preventing the protoss from rebuilding and killing the counterattack no longer gives armoury upgrades.
 Counterattacks now scale less harshly with how many terror fleets you've killed
 There's now some small defensive outposts on the map
-*The Purifier has been buffed significantly
+The Purifier has been buffed significantly
 *Counterattacks are now scaled to how much of the base you cleared out
 
 Supernova:
