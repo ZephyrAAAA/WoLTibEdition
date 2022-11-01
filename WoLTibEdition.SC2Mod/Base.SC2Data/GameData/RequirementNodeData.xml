@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CRequirementAnd id="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
+        <OperandArray value="Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>
+    </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheatCountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
         <OperandArray value="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat"/>
@@ -16,18 +22,11 @@
         <OperandArray value="CountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndCountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
-        <OperandArray value="CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
-        <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
-        <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
-        <OperandArray value="Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>
-    </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
         <OperandArray value="CountUnitFactoryTechLabCompleteOnlyAtUnit2589852481TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndNotCountUpgradeImprovedPlasmaShieldsQueuedOrBetterCountUpgradeTechReactorCompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="NotCountUpgradeImprovedPlasmaShieldsQueuedOrBetter"/>
         <OperandArray value="CountUpgradeTechReactorCompleteOnly"/>
     </CRequirementAnd>
@@ -73,6 +72,9 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat">
         <Count Link="Alias_Factory" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_FusionCoreCompleteOnly3089280483TechTreeCheat">
+        <Count Link="Alias_FusionCore" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_GhostQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -131,12 +133,10 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeImprovedPlasmaShieldsCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ImprovedPlasmaShields" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeImprovedPlasmaShieldsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="ImprovedPlasmaShields" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeImprovedRailgunsQueuedOrBetter">
@@ -351,7 +351,6 @@
         <OperandArray index="0" value="CountUpgradeHyperflightRotorsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeImprovedPlasmaShieldsQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeImprovedPlasmaShieldsQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeImprovedRailgunsQueuedOrBetter">

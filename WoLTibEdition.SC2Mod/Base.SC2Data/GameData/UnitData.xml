@@ -631,7 +631,6 @@
         <AbilArray Link="CCQueue"/>
         <AbilArray Link="Barracks2Train"/>
         <AbilArray Link="Rally"/>
-        <AbilArray Link="Barracks2AddOns"/>
         <AbilArray Link="Barracks2LiftOff"/>
         <AbilArray Link="PauseResumeQueue"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
@@ -648,10 +647,9 @@
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Barracks2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="TechLabBarracks" Type="AbilCmd" AbilCmd="Barracks2AddOns,Build1" Row="2" Column="0"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCQueue,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Barracks2AddOns,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Barracks2AddOns,255" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
             <LayoutButtons Face="Medic" Type="AbilCmd" AbilCmd="Barracks2Train,Train5" Row="1" Column="0"/>
@@ -715,7 +713,6 @@
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="Barracks2Land"/>
-        <AbilArray Link="Barracks2AddOns"/>
         <AbilArray Link="move"/>
         <AbilArray Link="stop"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
@@ -723,7 +720,6 @@
         <BehaviorArray Link="PowerCheck"/>
         <CardLayouts>
             <LayoutButtons Face="Land" Type="AbilCmd" AbilCmd="Barracks2Land,Execute" Row="2" Column="3"/>
-            <LayoutButtons Face="TechLabBarracks" Type="AbilCmd" AbilCmd="Barracks2AddOns,Build1" Row="2" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
@@ -759,17 +755,17 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray index="2" Link="BarracksTechLabMorph"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
+        <AbilArray index="7" removed="1"/>
         <CardLayouts index="0">
-            <LayoutButtons index="0" Face="PauseQueue" AbilCmd="PauseResumeQueue,On"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Addon,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="InfantryUltraCapacitors" Type="AbilCmd" AbilCmd="BarracksTechLabResearch,Research4" Row="1" Column="0"/>
-            <LayoutButtons Face="InfantryVanadiumPlating" Type="AbilCmd" AbilCmd="BarracksTechLabResearch,Research5" Row="1" Column="1"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons index="0" AbilCmd="que5LongBlend,CancelLast"/>
+            <LayoutButtons index="2" removed="1"/>
+            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="4" removed="1"/>
+            <LayoutButtons index="5" removed="1"/>
         </CardLayouts>
-        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
-        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
-        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
     </CUnit>
     <CUnit id="BarracksTechReactor">
         <ArmorType value="Hero"/>
@@ -2417,7 +2413,6 @@
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="CCQueue"/>
         <AbilArray Link="Factory2Train"/>
-        <AbilArray Link="Factory2AddOns"/>
         <AbilArray Link="RallyHatchery"/>
         <AbilArray Link="Factory2LiftOff"/>
         <AbilArray Link="PauseResumeQueue"/>
@@ -2436,10 +2431,9 @@
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Factory2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="TechLabFactory" Type="AbilCmd" AbilCmd="Factory2AddOns,Build1" Row="2" Column="0"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCQueue,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Factory2AddOns,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Factory2AddOns,255" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
             <LayoutButtons Face="SCV" Type="AbilCmd" AbilCmd="Factory2Train,Train1" Row="1" Column="3"/>
@@ -2506,7 +2500,6 @@
         <CostResource index="Minerals" value="500"/>
         <RepairTime value="60"/>
         <AttackTargetPriority value="11"/>
-        <AbilArray Link="Factory2AddOns"/>
         <AbilArray Link="Factory2Land"/>
         <AbilArray Link="move"/>
         <AbilArray Link="stop"/>
@@ -2515,7 +2508,6 @@
         <BehaviorArray Link="PowerCheck"/>
         <CardLayouts>
             <LayoutButtons Face="Land" Type="AbilCmd" AbilCmd="Factory2Land,Execute" Row="2" Column="3"/>
-            <LayoutButtons Face="BuildTechLabFactory" Type="AbilCmd" AbilCmd="Factory2AddOns,Build1" Row="2" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
@@ -2550,15 +2542,15 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray index="3" Link="FactoryTechLabMorph"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
         <CardLayouts index="0">
-            <LayoutButtons index="0" Face="PauseQueue" AbilCmd="PauseResumeQueue,On"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Addon,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons index="0" AbilCmd="que5LongBlend,CancelLast"/>
+            <LayoutButtons index="2" removed="1"/>
+            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="4" removed="1"/>
         </CardLayouts>
-        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
-        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
-        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
     </CUnit>
     <CUnit id="FactoryTechReactor">
         <ArmorType value="Hero"/>
@@ -5630,7 +5622,6 @@
         <AbilArray Link="BuildInProgress"/>
         <AbilArray Link="CCQueue"/>
         <AbilArray Link="Starport2Train"/>
-        <AbilArray Link="Starport2AddOns"/>
         <AbilArray Link="Rally"/>
         <AbilArray Link="Starport2LiftOff"/>
         <AbilArray Link="PauseResumeQueue"/>
@@ -5649,13 +5640,12 @@
             <LayoutButtons Face="Banshee" Type="AbilCmd" AbilCmd="Starport2Train,Train2" Row="0" Column="3"/>
             <LayoutButtons Face="Battlecruiser" Type="AbilCmd" AbilCmd="Starport2Train,Train4" Row="0" Column="4"/>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
-            <LayoutButtons Face="TechLabStarport" Type="AbilCmd" AbilCmd="Starport2AddOns,Build1" Row="2" Column="0"/>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Starport2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCQueue,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Starport2AddOns,Halt" Row="2" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="Starport2AddOns,255" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="Starport2Train,Train5" Row="1" Column="3"/>
             <LayoutButtons Face="Wraith" Type="AbilCmd" AbilCmd="Starport2Train,Train8" Row="1" Column="0"/>
@@ -5720,7 +5710,6 @@
         <CostResource index="Minerals" value="250"/>
         <RepairTime value="50"/>
         <AttackTargetPriority value="11"/>
-        <AbilArray Link="Starport2AddOns"/>
         <AbilArray Link="Starport2Land"/>
         <AbilArray Link="move"/>
         <AbilArray Link="stop"/>
@@ -5729,7 +5718,6 @@
         <BehaviorArray Link="PowerCheck"/>
         <CardLayouts>
             <LayoutButtons Face="Land" Type="AbilCmd" AbilCmd="Starport2Land,Execute" Row="2" Column="3"/>
-            <LayoutButtons Face="BuildTechLabStarport" Type="AbilCmd" AbilCmd="Starport2AddOns,Build1" Row="2" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
@@ -5764,15 +5752,18 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray index="4" Link="StarportTechLabMorph"/>
+        <AbilArray index="5" removed="1"/>
+        <AbilArray index="6" removed="1"/>
         <CardLayouts index="0">
-            <LayoutButtons index="0" Face="PauseQueue" AbilCmd="PauseResumeQueue,On"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Addon,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons index="0" AbilCmd="que5LongBlend,CancelLast"/>
+            <LayoutButtons index="2" removed="1"/>
+            <LayoutButtons index="3" removed="1"/>
+            <LayoutButtons index="4" removed="1"/>
+            <LayoutButtons index="5" removed="1"/>
+            <LayoutButtons index="6" removed="1"/>
+            <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
-        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
-        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
-        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
     </CUnit>
     <CUnit id="StarportTechReactor">
         <ArmorType value="Hero"/>
@@ -6110,13 +6101,11 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="TechLab">
-        <AddedOnArray UnitLink="Barracks2" BehaviorLink="BarracksTechLab"/>
-        <AddedOnArray UnitLink="Factory2" BehaviorLink="FactoryTechLab"/>
-        <AddedOnArray UnitLink="Starport2" BehaviorLink="StarportTechLab"/>
         <ArmorType value="Hero"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray index="5" removed="1"/>
     </CUnit>
     <CUnit id="TechReactor">
         <ArmorType value="Hero"/>

@@ -616,16 +616,6 @@
         </CmdButtonArray>
         <Arc value="360"/>
     </CAbilEffectTarget>
-    <CAbilResearch id="BarracksTechLabResearch">
-        <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
-            <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="InfantryUltraCapacitors" State="Restricted" Requirements="LearnInfantryUltraCaps"/>
-        </InfoArray>
-        <InfoArray index="Research5" Time="90" Upgrade="TerranInfantryVanadiumPlating">
-            <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium"/>
-        </InfoArray>
-    </CAbilResearch>
     <CAbilBehavior id="BioMode">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <CmdButtonArray index="On" DefaultButtonFace="Charge"/>
@@ -789,29 +779,6 @@
         <CastIntroTime index="0" value="0.1"/>
         <TargetFilters index="0" value="Visible;Self,Structure,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
     </CAbilEffectTarget>
-    <CAbilResearch id="StarportTechLabResearch">
-        <InfoArray index="Research2" Time="30" Upgrade="HyperflightRotors">
-            <Resource index="Vespene" value="1000"/>
-            <Button DefaultButtonFace="HyperflightRotors" Requirements="LearnHyperflightRotors">
-                <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
-            </Button>
-        </InfoArray>
-        <InfoArray index="Research9" Time="90" Upgrade="TerranShipUltraCapacitors">
-            <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="StarshipUltraCapacitors" Requirements="LearnStarshipUltraCaps">
-                <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
-            </Button>
-        </InfoArray>
-        <InfoArray index="Research10" Time="90" Upgrade="TerranShipVanadiumPlating">
-            <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="StarshipVanadiumPlating" Requirements="LearnStarshipVanadium">
-                <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
-            </Button>
-        </InfoArray>
-    </CAbilResearch>
     <CAbilEffectTarget id="TacNukeStrikeTopbar">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
         <Effect index="0" value="NukePersistentTopbar"/>
@@ -863,22 +830,6 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectInstant>
-    <CAbilResearch id="FactoryTechLabResearch">
-        <InfoArray index="Research5" Time="90" Upgrade="TerranVehicleUltraCapacitors">
-            <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="VehicleUltraCapacitors" Requirements="LearnVehicleUltraCaps">
-                <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
-            </Button>
-        </InfoArray>
-        <InfoArray index="Research6" Time="90" Upgrade="TerranVehicleVanadiumPlating">
-            <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="VehicleVanadiumPlating" Requirements="LearnVehicleVanadium">
-                <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
-            </Button>
-        </InfoArray>
-    </CAbilResearch>
     <CAbilArmMagazine id="DevilDogSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCastOffOwnerLeave" value="0"/>
@@ -1194,19 +1145,18 @@
     </CAbilArmMagazine>
     <CAbilResearch id="Armory2Research">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <InfoArray index="Research1" Time="60" Upgrade="HellionCampaignInfernalPreIgniter">
-            <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="ResearchThermiteFilaments" Requirements="LearnThermiteFilamints">
+        <InfoArray index="Research1" Time="30" Upgrade="HyperflightRotors">
+            <Resource index="Vespene" value="1000"/>
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+            <Button DefaultButtonFace="HyperflightRotors" State="Restricted" Requirements="LearnHyperflightRotors">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Research2" Time="60" Upgrade="EnhancedExplosives">
-            <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="ResearchEnhancedExplosives" Requirements="LearnEnhancedExplosives">
-                <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
-            </Button>
+        <InfoArray index="Research2">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
         </InfoArray>
         <InfoArray index="Research3" Time="60" Upgrade="ImprovedRailguns">
             <Resource index="Vespene" value="2000"/>
@@ -1229,26 +1179,21 @@
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
+        <InfoArray index="Research6" Time="90" Upgrade="TerranShipUltraCapacitors">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="StarshipUltraCapacitors" State="Restricted" Requirements="LearnStarshipUltraCaps">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research7" Time="90" Upgrade="TerranShipVanadiumPlating">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="StarshipVanadiumPlating" State="Restricted" Requirements="LearnStarshipVanadium">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
     </CAbilResearch>
-    <CAbilBuild id="Barracks2AddOns" parent="TerranAddOns">
-        <Name value="Abil/Name/Barracks2AddOns"/>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <BuildMorphAbil value="Barracks2LiftOff"/>
-        <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="BarracksTechLab" Time="2">
-            <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="BuildTechLabBarracks" Requirements="MonoTrackDestroyed"/>
-        </InfoArray>
-        <InfoArray index="Build2" Unit="BarracksReactor" Time="50">
-            <Button Requirements="MonoTrackDestroyed"/>
-        </InfoArray>
-        <InfoArray index="Build3" Unit="BarracksTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactorAI" Requirements="MonoTrackBend90"/>
-        </InfoArray>
-        <InfoArray index="Build4" Unit="BarracksTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactor" Requirements="CharCrystalLarge"/>
-        </InfoArray>
-    </CAbilBuild>
     <CAbilMorphPlacement id="Barracks2Land" parent="TerranBuildingLand" unit="Barracks">
         <Name value="Abil/Name/Barracks2Land"/>
         <InfoArray index="0" Unit="Barracks2" CollideRange="0">
@@ -1271,7 +1216,7 @@
         </InfoArray>
         <InfoArray index="Train2" Time="8">
             <Resource index="Vespene" value="800"/>
-            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveShadowOps"/>
             <Unit value="ReaperSquad"/>
         </InfoArray>
         <InfoArray index="Train3" Time="20">
@@ -1281,17 +1226,18 @@
         </InfoArray>
         <InfoArray index="Train4" Time="8">
             <Resource index="Vespene" value="800"/>
-            <Button DefaultButtonFace="Marauder" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Marauder" State="Restricted"/>
             <Unit value="MarauderSquad"/>
         </InfoArray>
         <InfoArray index="Train5" Time="6">
             <Resource index="Vespene" value="600"/>
-            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Display index="Custom" value="1"/>
+            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveShadowOps"/>
             <Unit value="MedicSquad"/>
         </InfoArray>
         <InfoArray index="Train6" Time="12">
             <Resource index="Vespene" value="1200"/>
-            <Button DefaultButtonFace="FlameMech" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="FlameMech" State="Restricted" Requirements="HaveEngineeringBay"/>
             <Unit value="FirebatSquad"/>
         </InfoArray>
         <InfoArray index="Train7" Time="20">
@@ -1859,33 +1805,32 @@
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="UpgradeBuildingArmorLevel1" State="Restricted" Requirements="LearnTerranBuildingArmor"/>
         </InfoArray>
-        <InfoArray index="Research6" Time="110" Upgrade="NeosteelFrame">
-            <Resource index="Minerals" value="100"/>
-            <Resource index="Vespene" value="100"/>
-            <Button DefaultButtonFace="ResearchNeosteelFrame" State="Restricted" Requirements="LearnNeosteelFrame">
-                <Flags index="ShowInGlossary" value="1"/>
+        <InfoArray index="Research3" Time="90" Upgrade="TerranVehicleUltraCapacitors">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="VehicleUltraCapacitors" State="Restricted" Requirements="LearnVehicleUltraCaps">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
+        <InfoArray index="Research4" Time="90" Upgrade="TerranVehicleVanadiumPlating">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="VehicleVanadiumPlating" State="Restricted" Requirements="LearnVehicleVanadium">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research5" Time="60" Upgrade="EnhancedExplosives">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchEnhancedExplosives" Requirements="LearnEnhancedExplosives">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research6">
+            <Charge Link="Abil/##id##"/>
+            <Cooldown Link="Abil/##id##"/>
+        </InfoArray>
     </CAbilResearch>
-    <CAbilBuild id="Factory2AddOns" parent="TerranAddOns">
-        <Name value="Abil/Name/Factory2AddOns"/>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <BuildMorphAbil value="Factory2LiftOff"/>
-        <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="FactoryTechLab" Time="2">
-            <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="BuildTechLabFactory" Requirements="MonoTrackDestroyed"/>
-        </InfoArray>
-        <InfoArray index="Build2" Unit="FactoryReactor" Time="50">
-            <Button Requirements="MonoTrackDestroyed"/>
-        </InfoArray>
-        <InfoArray index="Build3" Unit="FactoryTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactorAI" Requirements="MonoTrackBend90"/>
-        </InfoArray>
-        <InfoArray index="Build4" Unit="FactoryTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactor" Requirements="CharCrystalLarge"/>
-        </InfoArray>
-    </CAbilBuild>
     <CAbilMorphPlacement id="Factory2Land" parent="TerranBuildingLand" unit="Factory">
         <Name value="Abil/Name/Factory2Land"/>
         <InfoArray index="0" Unit="Factory2" CollideRange="0">
@@ -1911,11 +1856,11 @@
         </InfoArray>
         <InfoArray index="Train2" Time="25">
             <Resource index="Vespene" value="2500"/>
-            <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="SiegeTank"/>
         </InfoArray>
         <InfoArray index="Train5" Time="60">
-            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmoryAndAttachedTechLab"/>
+            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="Thor"/>
         </InfoArray>
         <InfoArray index="Train6" Time="8">
@@ -1925,12 +1870,13 @@
         </InfoArray>
         <InfoArray index="Train7" Time="12">
             <Resource index="Vespene" value="1200"/>
-            <Button DefaultButtonFace="Goliath" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Goliath" State="Restricted" Requirements="HaveEngineeringBay"/>
             <Unit value="Goliath"/>
         </InfoArray>
         <InfoArray index="Train8" Time="14">
             <Resource index="Vespene" value="1400"/>
-            <Button DefaultButtonFace="Diamondback" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Display index="Custom" value="1"/>
+            <Button DefaultButtonFace="Diamondback" State="Restricted" Requirements="HaveEngineeringBay"/>
             <Unit value="Diamondback"/>
         </InfoArray>
         <InfoArray index="Train9" Time="9">
@@ -1940,7 +1886,7 @@
         </InfoArray>
         <InfoArray index="Train10" Time="14">
             <Resource index="Vespene" value="1400"/>
-            <Button DefaultButtonFace="Predator" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Predator" State="Restricted" Requirements="HaveEngineeringBay"/>
             <Unit value="Predator"/>
         </InfoArray>
     </CAbilTrain>
@@ -1980,6 +1926,27 @@
         <InfoArray index="Research3" Time="60" Upgrade="HailstormLaunchers">
             <Resource index="Vespene" value="2500"/>
             <Button DefaultButtonFace="HailstormLaunchers" Requirements="LearnHailstormLaunchers">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="InfantryUltraCapacitors" Requirements="LearnInfantryUltraCaps">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research5" Time="90" Upgrade="TerranInfantryVanadiumPlating">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="InfantryVanadiumPlating" State="Restricted" Requirements="LearnInfantryVanadium">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research6" Time="60" Upgrade="HellionCampaignInfernalPreIgniter">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchThermiteFilaments" State="Restricted" Requirements="LearnThermiteFilamints">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -2097,7 +2064,6 @@
             <Charge Link="Abil/MedivacStim"/>
             <Cooldown Link="Abil/MedivacStim"/>
         </Cost>
-        <CmdButtonArray index="Execute" State="Available"/>
     </CAbilEffectInstant>
     <CAbilArmMagazine id="MedicSquad">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -2206,25 +2172,6 @@
         <LoadCargoEffect value="AirTransportLoadIterate"/>
         <UnloadCargoEffect value="AirTransportUnloadIterate"/>
     </CAbilTransport>
-    <CAbilBuild id="Starport2AddOns" parent="TerranAddOns">
-        <Name value="Abil/Name/Starport2AddOns"/>
-        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
-        <BuildMorphAbil value="Starport2LiftOff"/>
-        <FlagArray index="IgnoreUnitCost" value="1"/>
-        <InfoArray index="Build1" Unit="StarportTechLab" Time="2">
-            <Resource index="Vespene" value="200"/>
-            <Button DefaultButtonFace="BuildTechLabStarport" Requirements="MonoTrackDestroyed"/>
-        </InfoArray>
-        <InfoArray index="Build2" Unit="StarportReactor" Time="50">
-            <Button Requirements="MonoTrackDestroyed"/>
-        </InfoArray>
-        <InfoArray index="Build3" Unit="StarportTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactorAI" Requirements="MonoTrackBend90"/>
-        </InfoArray>
-        <InfoArray index="Build4" Unit="StarportTechReactor" Time="50" AddOnParentCmdPriority="-1">
-            <Button DefaultButtonFace="TechReactor" Requirements="CharCrystalLarge"/>
-        </InfoArray>
-    </CAbilBuild>
     <CAbilMorphPlacement id="Starport2Land" parent="TerranBuildingLand" unit="Starport">
         <Name value="Abil/Name/Starport2Land"/>
         <InfoArray index="0" Unit="Starport2" CollideRange="0">
@@ -2247,16 +2194,16 @@
         </InfoArray>
         <InfoArray index="Train2" Time="24">
             <Resource index="Vespene" value="2400"/>
-            <Button DefaultButtonFace="Banshee" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Banshee" State="Restricted"/>
             <Unit value="Banshee"/>
         </InfoArray>
         <InfoArray index="Train3" Time="25">
             <Resource index="Vespene" value="2500"/>
-            <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="Raven"/>
         </InfoArray>
         <InfoArray index="Train4" Time="110">
-            <Button DefaultButtonFace="Battlecruiser" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
+            <Button DefaultButtonFace="Battlecruiser" State="Restricted" Requirements="HaveFusionCore"/>
             <Unit value="Battlecruiser"/>
         </InfoArray>
         <InfoArray index="Train5" Time="15">
@@ -2266,17 +2213,18 @@
         </InfoArray>
         <InfoArray index="Train6" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveAttachedStarportTechLabAndFusionCore"/>
+            <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="Hercules"/>
         </InfoArray>
         <InfoArray index="Train7" Time="25">
             <Resource index="Vespene" value="2500"/>
-            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="JumboBunkerNotResearched"/>
+            <Display index="Custom" value="1"/>
+            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="ScienceVessel"/>
         </InfoArray>
         <InfoArray index="Train8" Time="15">
             <Resource index="Vespene" value="1500"/>
-            <Button DefaultButtonFace="Wraith" State="Restricted" Requirements="HaveAttachedTechLab"/>
+            <Button DefaultButtonFace="Wraith" State="Restricted"/>
             <Unit value="Wraith"/>
         </InfoArray>
         <InfoArray index="Train9" Time="35">

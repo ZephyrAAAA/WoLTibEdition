@@ -27,6 +27,7 @@ Button/Hotkey/PsiDisruptor4=
 Button/Hotkey/PsiDisruptor5=
 Button/Hotkey/RavenRepairDrone=R
 Button/Hotkey/RavenScramblerMissile=C
+Button/Hotkey/ResearchImprovedPlasmaShields=S
 Button/Hotkey/ResearchImprovedRailguns=R
 Button/Hotkey/ResearchThermiteFilaments=T
 Button/Hotkey/ResetRally=E
