@@ -4630,6 +4630,11 @@
         <FogVisibility value="Visible"/>
         <ArmorType value="Fort"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <AbilArray Link="MassRecall"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="10" AbilCmd="255,255"/>
+            <LayoutButtons Face="MassRecall" Type="AbilCmd" AbilCmd="MassRecall,Execute" Row="2" Column="2"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="PurifierBlastMarkUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

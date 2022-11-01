@@ -666,6 +666,10 @@
         <Backswing value="0.75"/>
         <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="MothershipBeam">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -834,6 +838,7 @@
     <CWeaponLegacy id="PurifierWeapon">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+        <Effect value="PurifierBeamSearch"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
         <AttackType value="Magic"/>
