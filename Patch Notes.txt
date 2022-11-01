@@ -19,12 +19,15 @@ Fixed hotkey conflict with Starport and Supply Depot
 Crane now has a cancel button
 Fixed addons being too good for the building they're on.
 Topbar no longer cuts off
-*All the tips we edit now have an orange title
-*Firebats now require an engineering bay.
-*Medics and Reapers require a Shadow Ops.
+All the tips we edit now have an orange title
+Firebats now require an engineering bay.
+Medics and Reapers require a Shadow Ops.
 The help menu now helps
 Replaced the Vespene Geyser and Rich Vespene Geyser help entries with Node entries.
 Stacked nodes are now Rich, to signify having greater regen.
+Removed Tech labs. All upgrades and requirements are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport).
+Blue Flame is now on the Shadow Ops.
+Improved Explosives upgrade is now on the Ebay.
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -49,6 +52,7 @@ Relocated starting depots so they aren't out of build radius
 Rescue Rebels objective now says it gives 30k credits
 *Corruptors no longer have corruption
 You now start with a Shadow Ops
+*Toned down waves to compensate for stronger upgrades
 
 Evacuation:
 Fixed the rear nydus not sticking around like it should
