@@ -28,6 +28,8 @@ Stacked nodes are now Rich, to signify having greater regen.
 Removed Tech labs. All upgrades and requirements are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport).
 Blue Flame is now on the Shadow Ops.
 Improved Explosives upgrade is now on the Ebay.
+Firebat has less health now.
+*Medic Tech Lab upgrade now does
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
