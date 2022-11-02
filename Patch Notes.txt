@@ -61,6 +61,7 @@ Mutas now go around rebel groups instead of murdering them right away.
 
 Evacuation:
 Fixed the rear nydus not sticking around like it should
+You now start with an Engineering Bay so you can build firebats
 
 Smash and Grab:
 If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
@@ -77,6 +78,7 @@ Brutalisk now tries to escape his toasty fate
 
 Outbreak:
 Removed the sensor tower tip.
+You no longer start with 2 barracks
 
 Trains:
 *Kill Teams are weaker, and stay dead for longer.
