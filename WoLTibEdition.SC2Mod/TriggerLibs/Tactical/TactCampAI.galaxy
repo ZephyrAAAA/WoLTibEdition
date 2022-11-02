@@ -953,3 +953,49 @@ void AIThinkGhostNew (int player, unit aiUnit, unitgroup scanGroup) {
 		return;
 	}
 }
+
+void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
+	marker mark;
+	order ord;
+	point loc;
+	if (AbilityCommandGetAbility(OrderGetAbilityCommand(UnitOrder(aiUnit, 0))) != "attack" && UnitOrderCount(aiUnit) != 0){
+		return;
+	}
+	
+	if (UnitAbilityCheck(aiUnit, "UnburrowAtPoint", true)){
+		ord = AICreateOrder(player, "UnburrowAtPoint", 0);
+		//mark = "Abil/UnburrowAtPoint/AI";
+		loc = AIBestTargetPoint(
+			AIEffectGroup(player, "UnburrowDamage", scanGroup),
+			2, // min hits
+			60, // damage base
+			2.0, // min score
+			AIEffectFixed(player, "UnburrowDamage", c_fieldAreaRadius0)+2.625,
+			UnitGetPosition(aiUnit),
+			9,
+			c_unitAttributeNone
+		);
+	}
+	else if (UnitAbilityCheck(aiUnit, "FungalGrowthBrutalisk", true)) {
+		ord = AICreateOrder(player, "FungalGrowthBrutalisk", 0);
+		//mark = "Abil/FungalGrowthBrutalisk/AI";
+		loc = AIBestTargetPoint(
+			AIEffectGroup(player, "FungalGrowthSearch", scanGroup),
+			5, // min hits
+			30, // damage base
+			3.0, // min score
+			AIEffectFixed(player, "FungalGrowthSearch", c_fieldAreaRadius0),
+			UnitGetPosition(aiUnit),
+			AIAbilityFixed(player, "FungalGrowthBrutalisk", c_fieldRange0),
+			c_unitAttributeNone
+		);
+	}
+	if (loc != null && UnitOrderIsValid(aiUnit, ord)) {
+		OrderSetTargetPoint(ord, loc);
+		AICast(aiUnit, ord, c_noMarker, c_castHold);
+	}
+	else if (UnitAbilityExists(aiUnit, "BurrowBrutalisk")) {
+		ord = AICreateOrder(player, "BurrowBrutalisk", 0);
+		AICast(aiUnit, ord, c_noMarker, c_castHold);
+	}
+}

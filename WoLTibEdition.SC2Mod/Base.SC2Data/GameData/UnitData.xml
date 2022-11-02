@@ -902,8 +902,10 @@
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <AbilArray Link="BurrowBrutalisk"/>
+        <AbilArray Link="FungalGrowthBrutalisk"/>
         <CardLayouts index="0">
             <LayoutButtons Face="BurrowDown" Type="AbilCmd" AbilCmd="BurrowBrutalisk,Execute" Row="2" Column="4"/>
+            <LayoutButtons Face="FungalGrowth" Type="AbilCmd" AbilCmd="FungalGrowthBrutalisk,Execute" Row="2" Column="0"/>
         </CardLayouts>
     </CUnit>
     <CUnit id="BrutaliskACGluescreenDummy">
