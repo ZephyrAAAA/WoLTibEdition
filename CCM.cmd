@@ -11,21 +11,21 @@ cd /d %~dp0
 for /f "delims=" %%i in ('dir /b /a:d ^| find "SC2Map"') do (
 	cd /d "C:\Program Files (x86)\StarCraft II\Maps\Campaign"
 	if exist %%i\ (
-		rmdir /s /q "%%i"
+		rmdir "%%i"
 	) else if exist %%i (
-		del /q "%%i"
+		del "%%i"
 	)
 	mklink /d "%%i" "%~dp0\%%i"
 )
 cd /d %~dp0
-for /f "delims=" %%i in ('dir /b /a:-d ^| find "SC2Mod"') do (
-	cd /d "C:\Program Files (x86)\StarCraft II\Mods"
-	rmdir /s /q "%%i"
-	mklink "%%i" "%~dp0\%%i"
-)
 for /f "delims=" %%i in ('dir /b /a:d ^| find "SC2Mod"') do (
 	cd /d "C:\Program Files (x86)\StarCraft II\Mods"
-	del /q "%%i"
+	rmdir "%%i"
+	mklink "%%i" "%~dp0\%%i"
+)
+for /f "delims=" %%i in ('dir /b /a:-d ^| find "SC2Mod"') do (
+	cd /d "C:\Program Files (x86)\StarCraft II\Mods"
+	del "%%i"
 	mklink /d "%%i" "%~dp0\%%i"
 )
 cd /d %~dp0\tstory01.SC2Map\Base.SC2Data\GameData
