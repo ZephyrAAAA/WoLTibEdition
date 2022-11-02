@@ -106,7 +106,7 @@
         <FinishTime value="0"/>
         <CursorEffect value="EMPSearchSpectre"/>
         <AINotifyEffect value="EMPLaunchMissile"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="EMPSpectre" State="Restricted">
+        <CmdButtonArray index="Execute" DefaultButtonFace="EMPSpectre">
             <Flags index="ShowInGlossary" value="0"/>
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
