@@ -881,7 +881,7 @@
         <On Terms="ActorCreation" Send="SetOpacity"/>
         <On Terms="Behavior.MercGroundDrop.On" Send="Create DevilDogDropModel"/>
         <Model value="SiegeTank"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <BuildModel value="SiegeTank"/>
         <PlacementModel value="SiegeTank"/>
         <PortraitModel value="FirebatMercenaryPortrait"/>
@@ -1212,7 +1212,7 @@
         <GroupSoundArray index="Attack" value="Marine_GroupAttack"/>
         <GroupSoundArray index="Board" value="Marine_GroupBoard"/>
         <HighlightTooltip value="Unit/Name/MarauderSquad"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <StatusBarOn index="Life" value="1"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Marauder_Attack"/>
     </CActorUnit>
@@ -1236,7 +1236,7 @@
         <BarWidth value="60"/>
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/FirebatSquad"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <StatusBarOn index="Life" value="1"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Firebat_Attack"/>
     </CActorUnit>
@@ -1250,7 +1250,7 @@
         <On Terms="ActorCreation" Send="SetOpacity"/>
         <On Terms="Behavior.MercGroundDrop.On" Send="Create HammerSecurityDropModel"/>
         <Model value="SiegeTank"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <BuildModel value="SiegeTank"/>
         <PlacementModel value="SiegeTank"/>
         <PortraitModel value="MarauderMercenaryPortrait"/>
@@ -1347,7 +1347,7 @@
         <BarOffset value="100"/>
         <BarWidth value="60"/>
         <HighlightTooltip value="Unit/Name/MarineSquad"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <StatusBarOn index="Life" value="1"/>
     </CActorUnit>
     <CActorUnit id="MedicSquad" parent="Medic" unitName="MedicSquad">
@@ -1374,7 +1374,7 @@
         <BarWidth value="60"/>
         <GlossaryAnim value="Spell"/>
         <HighlightTooltip value="Unit/Name/MedicSquad"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <StatusBarOn index="Life" value="1"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Medic_Attack"/>
     </CActorUnit>
@@ -1783,7 +1783,7 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Terran-Reaper.dds"/>
         </Wireframe>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <StatusBarOn index="Life" value="1"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Reaper_Attack"/>
     </CActorUnit>
@@ -2470,7 +2470,7 @@
         <On Terms="ActorCreation" Send="SetOpacity"/>
         <On Terms="Behavior.MercGroundDrop.On" Send="Create WarPigDropModel"/>
         <Model value="SiegeTank"/>
-        <Scale value="1.500000,1.500000,0.750000"/>
+        <Scale value="1.500000,1.500000,0.500000"/>
         <BuildModel value="SiegeTank"/>
         <PlacementModel value="SiegeTank"/>
         <PortraitModel value="MarineMercenaryPortrait"/>

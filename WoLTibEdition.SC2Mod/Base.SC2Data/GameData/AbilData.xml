@@ -159,7 +159,7 @@
     <CAbilEffectTarget id="FungalGrowthBrutalisk">
         <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
         <DataCollection value="FungalGrowth"/>
-        <Effect index="0" value="FungalGrowthDelay"/>
+        <Effect index="0" value="FungalGrowthSearch"/>
         <Cost>
             <Vital index="Energy" value="50"/>
             <Cooldown Link="Abil/Leech" Location="Unit" TimeUse="5"/>
@@ -168,6 +168,8 @@
         <CursorEffect value="FungalGrowthSearch"/>
         <AINotifyEffect value="FungalGrowth"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="FungalGrowth"/>
+        <PrepEffect value="FungalGrowthDelay"/>
+        <CastIntroTime value="3"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="GhostCloak">
         <Cost index="0">
@@ -2438,27 +2440,44 @@
     </CAbilEffectTarget>
     <CAbilEffectTarget id="heal">
         <TargetSorts>
-            <SortArray index="1" value="TSLifeFraction"/>
-            <SortArray index="2" value="TSDistance"/>
+            <SortArray index="1" value="TSMarker"/>
+            <SortArray value="TSDistance"/>
         </TargetSorts>
         <AutoCastRange value="3"/>
-        <AcquireAttackers value="0"/>
         <FollowRange value="1"/>
     </CAbilEffectTarget>
-    <CAbilEffectTarget id="MedicSquadAcquire" parent="heal">
-        <Name value="Abil/Name/MedicSquadAcquire"/>
-        <DataCollection value="MedicSquadAcquire"/>
-        <Effect index="0" value="MedicSquadAcquire"/>
-        <SmartValidatorArray index="0" value="NotWarpingIn"/>
-        <SmartValidatorArray index="1" removed="1"/>
+    <CAbilEffectTarget id="MedicSquadAcquire">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
+        <Flags index="ReExecutable" value="1"/>
+        <Flags index="PassengerAcquirePassengers" value="1"/>
+        <InterruptCost>
+            <Charge Link="Abil/heal"/>
+            <Cooldown Link="Abil/heal"/>
+        </InterruptCost>
+        <TargetFilters value="Ground,Biological,Visible;Self,Enemy,Air,Structure,Missile,UnderConstruction,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestCount="1">
+            <SortArray value="TSMarker"/>
+            <SortArray value="TSAlliancePassive"/>
+            <SortArray value="TSLifeFraction"/>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <Range value="1"/>
+        <SmartValidatorArray value="NotWarpingIn"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Neutral,Enemy"/>
         <AutoCastRange value="6"/>
-        <AutoCastValidatorArray index="0" value="NotWarpingIn"/>
-        <AutoCastValidatorArray index="1" value="IsNotMedic"/>
-        <Marker Link="Abil/MedicSquadAcquire"/>
-        <AINotifyEffect value="MedicSquadAcquire"/>
-        <Range index="0" value="1"/>
+        <AutoCastValidatorArray value="NotWarpingIn"/>
+        <AutoCastValidatorArray value="IsNotMedic"/>
+        <UseMarkerArray index="Approach" value="0"/>
+        <UseMarkerArray index="Prep" value="0"/>
+        <DefaultError value="RequiresHealTarget"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MedicHeal"/>
         <AcquireAttackers value="1"/>
-        <Flags index="Smart" value="0"/>
+        <FollowRange value="1"/>
     </CAbilEffectTarget>
     <CAbilQueue id="que1Passive">
         <EditorCategories value="AbilityorEffectType:Units"/>

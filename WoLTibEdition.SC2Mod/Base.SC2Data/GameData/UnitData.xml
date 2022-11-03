@@ -5494,7 +5494,8 @@
         <Food value="0"/>
         <TechAliasArray value="Alias_Ghost"/>
         <WeaponArray Link="ExplosiveCharges"/>
-        <TurningRate value="2879.8242"/>
+        <StationaryTurningRate value="2879.8242"/>
+        <SubgroupPriority value="18"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

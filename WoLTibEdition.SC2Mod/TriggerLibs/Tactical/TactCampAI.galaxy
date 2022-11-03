@@ -967,9 +967,9 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 		//mark = "Abil/UnburrowAtPoint/AI";
 		loc = AIBestTargetPoint(
 			AIEffectGroup(player, "UnburrowDamage", scanGroup),
-			2, // min hits
-			60, // damage base
-			2.0, // min score
+			1, // min hits
+			1, // damage base
+			1.0, // min score
 			AIEffectFixed(player, "UnburrowDamage", c_fieldAreaRadius0)+2.625,
 			UnitGetPosition(aiUnit),
 			9,
@@ -994,7 +994,7 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 		OrderSetTargetPoint(ord, loc);
 		AICast(aiUnit, ord, c_noMarker, c_castHold);
 	}
-	else if (UnitAbilityExists(aiUnit, "BurrowBrutalisk")) {
+	else if (UnitAbilityExists(aiUnit, "BurrowBrutalisk") && UnitGetChargeUsed(aiUnit, "Brutalisk") == 2) {
 		ord = AICreateOrder(player, "BurrowBrutalisk", 0);
 		AICast(aiUnit, ord, c_noMarker, c_castHold);
 	}

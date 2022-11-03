@@ -706,9 +706,7 @@
     <CEffectCreatePersistent id="FungalGrowthDelay">
         <EditorCategories value=""/>
         <OffsetVectorStartLocation Value="TargetPoint"/>
-        <Flags index="Channeled" value="1"/>
         <PeriodCount value="1"/>
-        <PeriodicEffectArray value="FungalGrowthInitialSet"/>
         <PeriodicPeriodArray value="3"/>
     </CEffectCreatePersistent>
     <CEffectSet id="FungalGrowthInitialSet">
@@ -1924,7 +1922,6 @@
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
     <CEffectCreatePersistent id="MedicSquadAcquire">
-        <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="NotWarpingIn"/>
         <ValidatorArray value="HiddenCompareAB"/>
         <ValidatorArray value="HiddenCompareBA"/>
@@ -2690,6 +2687,20 @@
     <CEffectDamage id="VultureU">
         <AttributeBonus index="Light" value="0"/>
         <Amount value="25"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarbotALeft">
+        <Amount value="22"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarbotARight">
+        <Amount value="22"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarbotBDamage">
+        <AttributeBonus index="Armored" value="0"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="WarbotC">
+        <AttributeBonus index="Biological" value="0"/>
+        <Amount value="60"/>
     </CEffectDamage>
     <CEffectDamage id="WarpBlades">
         <Amount value="80"/>

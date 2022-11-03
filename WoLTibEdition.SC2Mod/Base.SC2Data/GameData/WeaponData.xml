@@ -1060,6 +1060,18 @@
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="WarbotA">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarbotB">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <AttackType value="Magic"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WarbotC">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="WarpBlades">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
