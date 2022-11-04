@@ -7,7 +7,6 @@ Biosteel now says numbers
 Gave the Pause Queue and Resume Queue buttons a tooltip.
 Fixed build radius not fully disappearing.
 Squads no longer get seconds from vanadium.
-*Crane now has a submenu for structures, to match the CC
 CC now has higher priority than crane
 Changed reaper button for changing speed.
 Power button now says it is used to switch powered state, not just to depower.
@@ -30,6 +29,7 @@ Blue Flame is now on the Shadow Ops.
 Improved Explosives upgrade is now on the Ebay.
 Firebat has less health now.
 *Medic Tech Lab upgrade now does
+*Crane now has a submenu for structures, to match the CC
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
@@ -95,7 +95,7 @@ Relocated the first relic to near the 2 east altars, so it's not so immediate th
 
 A Sinister Turn:
 *Made it more obvious how the mission works
-*Void prison now says it only affects heroic for 4s
+Void prison now says it only affects heroic for 4s
 Fixed spastic detectors
 Disabled sentry shield restore, so they don't detect zeratul when somehting is damaged.
 Plasma blast is slower, so it's easier to dodge
@@ -110,7 +110,7 @@ Loki bonus now says it gives 50k credits
 *Wraiths start cloaked
 
 Breakout:
-*Consumption now says it heals
+Consumption now says it heals
 Prison Block bonus objectives now say they give 37.5k
 Send Wave starts autocast not
 Ghosts no longer have energy.

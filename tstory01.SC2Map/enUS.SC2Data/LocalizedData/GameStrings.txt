@@ -335,6 +335,7 @@ Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- Supply Depot<n/>- Refinery<n/>- Crane<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Repair<n/>- Depower<n/>- Sell Structure
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
+Button/Tooltip/Consumption=Drains half the life from a friendly biological unit and gives Tosh 2 energy and 2 life for each point of life drained.
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
 Button/Tooltip/Decal_Terran_0047_01=Support structure. Used to construct buildings.
 Button/Tooltip/DefensiveMatrix=Surrounds the unit with a shield that can absorb <d ref="Behavior,DefensiveMatrix,Modification.VitalMaxArray[1]"/> damage. Lasts <d ref="Behavior,DefensiveMatrix,Duration"/> seconds.
@@ -537,6 +538,7 @@ Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
+Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/ZergHypervirus11=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/ZergHypervirus12=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -550,6 +552,8 @@ Button/Tooltip/ZergHypervirus7=Makes targeted units hostile to all players indef
 Button/Tooltip/ZergHypervirus8=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/ZergHypervirus9=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Conversation/LabFidgetsArtifact/Group00001=1st Artifact conversation without Hanson
+ConversationState/ABChoice/ABChoiceHanson03A/Info/Rewards=<s val="ABChoiceResearchPoints_Zerg">+3 Zerg research</s><n/><n/>Zerg Virus support power.
+ConversationState/ABChoice/ABChoiceHanson03B/Info/Rewards=<s val="ABChoiceResearchPoints_Protoss">+3 Protoss research</s><n/><n/>Purification Fleet support power.
 ConversationState/ABChoice/ABChoiceTosh03A/Info/Tooltip=<s val="TooltipTitle_Tech">Spectre</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Ultrasonic Pulse and EMP abilities. Has Veterancy.</s>
 ConversationState/ABChoice/ABChoiceTosh03B/Info/Tooltip=<s val="TooltipTitle_Tech">Ghost</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Snipe and Feedback abilities. Has Veterancy.</s>
 ConversationState/ABChoiceRewards/ABChoiceRewardsGhost1/Info/Tooltip=<s val="TooltipTitle_Tech">Snipe</s><n/><s val="TooltipDescription_Tech">Snipes a non-structure enemy unit, dealing 170 damage (Affected by armour).</s>
