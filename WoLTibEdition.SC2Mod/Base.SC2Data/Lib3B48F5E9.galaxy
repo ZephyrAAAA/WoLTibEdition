@@ -656,6 +656,54 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     return true;
 }
 
+void lib3B48F5E9_gf_Taldarimify (playergroup lp_players) {
+    // Variable Declarations
+    int lv_player;
+
+    // Automatic Variable Declarations
+    playergroup auto9451F864_g;
+
+    // Variable Initialization
+
+    // Implementation
+    auto9451F864_g = lp_players;
+    lv_player = -1;
+    while (true) {
+        lv_player = PlayerGroupNextPlayer(auto9451F864_g, lv_player);
+        if (lv_player < 0) { break; }
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ColossusTal", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "NexusForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "GatewayForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "DarkShrineForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "FleetBeaconForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "StargateForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "TwilightCouncilForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "RoboticsBayForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "RoboticsFacilityForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "AssimilatorForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "TemplarArchiveForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "CyberneticsCoreForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ShieldBatteryForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "PhotonCannonForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ForgeForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "PylonForged", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ZealotTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "WarpPrismTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "VoidRayTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "StalkerTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "SentryTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ProbeTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "PhoenixTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ObserverTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "MothershipTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "ImmortalTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "HighTemplarTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "DarkTemplarTaldarim", true);
+        libNtve_gf_PlayerApplySkinReplacingExistingUnit(lv_player, "CarrierTaldarim", true);
+        PlayerSetColorIndex(lv_player, 1, true);
+    }
+}
+
 trigger auto_lib3B48F5E9_gf_NewModTips_Trigger = null;
 
 void lib3B48F5E9_gf_NewModTips () {

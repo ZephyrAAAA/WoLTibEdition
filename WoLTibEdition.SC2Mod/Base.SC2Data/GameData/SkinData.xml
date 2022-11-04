@@ -128,42 +128,46 @@ Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2
     <CSkin id="DeployLaserDrill14">
         <ReplacementArray Catalog="Button" From="DeployLaserDrill6" To="DeployLaserDrill14"/>
     </CSkin>
-	<CSkin id="PsiDisruptor3">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor3"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor4">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor4"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor5">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor5"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor6">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor6"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor7">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor7"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor8">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor8"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor9">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor9"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor10">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor10"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor11">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor11"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor12">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor12"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor13">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor13"/>
-	</CSkin>
-	<CSkin id="PsiDisruptor14">
-		<ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor14"/>
-	</CSkin>
+    <CSkin id="PhoenixTaldarim">
+        <ReplacementArray Catalog="Model" From="Scout" To="TaldarimScout"/>
+        <ReplacementArray Catalog="Model" From="ScoutDeath" To="TaldarimScoutDeath"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor3">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor3"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor4">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor4"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor5">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor5"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor6">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor6"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor7">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor7"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor8">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor8"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor9">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor9"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor10">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor10"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor11">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor11"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor12">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor12"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor13">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor13"/>
+    </CSkin>
+    <CSkin id="PsiDisruptor14">
+        <ReplacementArray Catalog="Button" From="PsiDisruptor3" To="PsiDisruptor14"/>
+    </CSkin>
     <CSkin id="TacticalMissileStrike3">
         <ReplacementArray Catalog="Button" From="TacticalMissileStrike9" To="TacticalMissileStrike3"/>
     </CSkin>
@@ -344,112 +348,112 @@ Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2
     <CSkin id="HiveMindEmulator14">
         <ReplacementArray Catalog="Button" From="HiveMindEmulator3" To="HiveMindEmulator14"/>
     </CSkin>
-	<CSkin id="StarshipMercenaries3">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries3"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries4">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries4"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries5">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries5"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries6">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries6"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries7">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries7"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries8">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries8"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries9">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries9"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries10">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries10"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries11">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries11"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries12">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries12"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries13">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries13"/>
-	</CSkin>
-	<CSkin id="StarshipMercenaries14">
-		<ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries14"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus3">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus3"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus4">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus4"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus5">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus5"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus6">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus6"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus7">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus7"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus8">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus8"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus9">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus9"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus10">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus10"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus11">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus11"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus12">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus12"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus13">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus13"/>
-	</CSkin>
-	<CSkin id="ZergHypervirus14">
-		<ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus14"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada3">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada3"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada4">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada4"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada5">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada5"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada6">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada6"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada7">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada7"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada8">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada8"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada9">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada9"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada10">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada10"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada11">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada11"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada12">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada12"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada13">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada13"/>
-	</CSkin>
-	<CSkin id="CallInGoldenArmada14">
-		<ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada14"/>
-	</CSkin>
+    <CSkin id="StarshipMercenaries3">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries3"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries4">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries4"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries5">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries5"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries6">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries6"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries7">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries7"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries8">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries8"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries9">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries9"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries10">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries10"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries11">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries11"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries12">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries12"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries13">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries13"/>
+    </CSkin>
+    <CSkin id="StarshipMercenaries14">
+        <ReplacementArray Catalog="Button" From="StarshipMercenaries3" To="StarshipMercenaries14"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus3">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus3"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus4">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus4"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus5">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus5"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus6">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus6"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus7">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus7"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus8">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus8"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus9">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus9"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus10">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus10"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus11">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus11"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus12">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus12"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus13">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus13"/>
+    </CSkin>
+    <CSkin id="ZergHypervirus14">
+        <ReplacementArray Catalog="Button" From="ZergHypervirus3" To="ZergHypervirus14"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada3">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada3"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada4">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada4"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada5">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada5"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada6">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada6"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada7">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada7"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada8">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada8"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada9">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada9"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada10">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada10"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada11">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada11"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada12">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada12"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada13">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada13"/>
+    </CSkin>
+    <CSkin id="CallInGoldenArmada14">
+        <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada14"/>
+    </CSkin>
 </Catalog>
