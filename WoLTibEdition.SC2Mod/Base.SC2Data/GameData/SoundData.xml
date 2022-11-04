@@ -140,6 +140,15 @@
         <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2270.ogg" FacialGroup=""/>
         <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2279.ogg" FacialGroup=""/>
     </CSound>
+    <CSound id="THorner01HornerKillTeams" parent="Campaign" Portrait="HornerPortrait" Subtitle="THorner01" Speaker="CharHorner" Line="KillTeams">
+        <AssetArray index="0">
+            <File value="Assets\sfx\KillTeamsReturn.ogg"/>
+            <FacialAnim value="THorner01Horner00001"/>
+            <PortraitModel value="HornerPortrait"/>
+            <Speaker value="ConversationState/Characters/CharHorner"/>
+            <Subtitle value="Conversation/THorner01/LineKillTeams"/>
+        </AssetArray>
+    </CSound>
     <CSound id="TRaynor02Raynor00037Mod" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="TRaynor02" Speaker="CharRaynor" Line="00037Mod">
         <AssetArray index="0">
             <File value="Assets\sfx\TrainSCV.ogg"/>

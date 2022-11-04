@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CAbilAttack default="1">
+        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
+    </CAbilAttack>
     <CAbilEffectTarget id="330mmBarrageCannons">
         <Cost index="0">
             <Vital index="Energy" value="0"/>
@@ -24,6 +27,12 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilAttack id="AttackAllowsInvulnerable">
+        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
+    </CAbilAttack>
+    <CAbilAttack id="AttackWarpPrism">
+        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
+    </CAbilAttack>
     <CAbilEffectTarget id="AutoHarvest">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="AutoHarvestCP"/>
@@ -39,6 +48,9 @@
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
     </CAbilEffectTarget>
+    <CAbilAttack id="BunkerAttack">
+        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
+    </CAbilAttack>
     <CAbilMorph id="BurrowBrutalisk">
         <AbilSetId value="BrwD"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -2438,6 +2450,9 @@
         <UninterruptibleArray index="Finish" value="1"/>
         <TargetFilters value="Visible;Player,Ally,Neutral"/>
     </CAbilEffectTarget>
+    <CAbilAttack id="attack">
+        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
+    </CAbilAttack>
     <CAbilEffectTarget id="heal">
         <TargetSorts>
             <SortArray index="1" value="TSMarker"/>
@@ -2479,6 +2494,10 @@
         <AcquireAttackers value="1"/>
         <FollowRange value="1"/>
     </CAbilEffectTarget>
+    <CAbilMove id="move">
+        <FollowFilters value="-;RawResource,HarvestableResource"/>
+        <MoveFilters value="-;RawResource,HarvestableResource"/>
+    </CAbilMove>
     <CAbilQueue id="que1Passive">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <QueueSize value="1"/>

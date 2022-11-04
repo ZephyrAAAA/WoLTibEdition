@@ -3177,6 +3177,9 @@
         <ShieldsMax value="200"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <BehaviorArray index="0" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" removed="1"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="ImmortalACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6668,6 +6671,8 @@
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Large"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="WarpConduit">
         <Race value="Prot"/>

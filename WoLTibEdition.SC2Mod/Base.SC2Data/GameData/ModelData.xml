@@ -376,6 +376,26 @@
             <Adaptions TriggerOnSubstring="_Diffuse" Slot="generic01"/>
         </TextureDeclares>
     </CModel>
+    <CModel id="TaldarimScoutDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Scout_Taldarim_Death\Scout_Taldarim_Death.m3"/>
+        <LowQualityModel value="ProtossMediumUnitDeathLow"/>
+        <Lighting value="ScoutDeath"/>
+        <Occlusion value="Show"/>
+        <Radius value="0.750000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+    </CModel>
+    <CModel id="TaldarimScout" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Scout_Taldarim\Scout_Taldarim.m3"/>
+        <Lighting value="Scout"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow05"/>
+        <Radius value="0.750000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <TechPurchaseCamera value="Star2CameraLow05"/>
+        <UnitGlossaryCamera value="Star2CameraLow05"/>
+    </CModel>
     <CModel id="Sentry_HealingBeam" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Protoss\Sentry_HealingBeam\Sentry_HealingBeam.m3"/>
         <EditorCategories value="Race:Protoss"/>

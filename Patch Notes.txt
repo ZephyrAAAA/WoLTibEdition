@@ -15,7 +15,7 @@ Sell button is now less ambiguous about how much you get back.
 Zeratul's power ability has a hotkey now
 Fixed hotkey conflict with SCV and Siege Tank
 Fixed hotkey conflict with Starport and Supply Depot
-*Immortal no longer has the hardened shield button
+Immortal no longer has the hardened shield button
 Crane now has a cancel button
 Fixed addons being too good for the building they're on.
 Topbar no longer cuts off
@@ -81,8 +81,8 @@ Removed the sensor tower tip.
 You no longer start with 2 barracks
 
 Trains:
-*Kill Teams are weaker, and stay dead for longer.
-*Matt mentions that killing the kill team will only buy you a little time before sending out another.
+Kill Teams are weaker, and stay dead for longer.
+Matt mentions that killing the kill team will only buy you a little time before sending out another.
 
 Bel'shir:
 Refactored bad code
