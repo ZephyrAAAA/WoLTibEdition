@@ -25,7 +25,7 @@ Medics and Reapers require a Shadow Ops.
 The help menu now helps
 Replaced the Vespene Geyser and Rich Vespene Geyser help entries with Node entries.
 Stacked nodes are now Rich, to signify having greater regen.
-Removed Tech labs. All upgrades and requirements are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport).
+Removed Tech labs. All upgrades and requirements are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport). Missions still have the required tech to make the new unit.
 Blue Flame is now on the Shadow Ops.
 Improved Explosives upgrade is now on the Ebay.
 Firebat has less health now.
