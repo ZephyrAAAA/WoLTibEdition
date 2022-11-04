@@ -184,6 +184,12 @@
         <HostSiteOps Ops="SOpTargetPoint"/>
         <Model value="ZergAOECursorSplat"/>
     </CActorModel>
+    <!--                                                                                         -->
+    <!-- Ghost ................................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Ghost">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Ghost_Attack"/>
+    </CActorUnit>
     <CActorAction id="GhostEMPAttack2" parent="GenericAttack" effectImpact="EMPSearchSpectre" effectLaunch="EMPLaunchMissileSpectre">
         <On Terms="Effect.EMPDamage.Start; At Caster" Send="ActionDamage"/>
         <LaunchAssets Sound="Ghost_EMPAttackLaunch"/>
@@ -294,6 +300,12 @@
         <On Terms="Behavior.ZergHypervirus.Off" Send="AnimBracketStop BSD"/>
         <On Terms="Behavior.ZergHypervirus.Off; ValidateUnit SourceNotDead" Target="::Main" Send="SetSoundSuffix"/>
     </CActorModel>
+    <!--                                                                                         -->
+    <!-- Nova .................................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Nova">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Nova_Attack"/>
+    </CActorUnit>
     <CActorTurret id="PhoenixTurret">
         <On Terms="TurretEnable.Phoenix" Send="Create"/>
     </CActorTurret>
@@ -1999,6 +2011,7 @@
     <CActorUnit id="SpecterUnit">
         <On Terms="Abil.EMPSpectre.SourceCastStart" Send="AnimPlay Attack Attack 0 0.000000"/>
         <On Terms="Abil.EMPSpectre.SourceCastStart" Send="AnimSetTimeScale Attack 2.500000"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Spectre_Attack"/>
     </CActorUnit>
     <CActorSound id="Spell_CombatDrugs_Launch" parent="SoundOneShot">
         <On Terms="Behavior.ReaperRegen.On" Send="Create"/>

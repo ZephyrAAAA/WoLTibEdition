@@ -783,6 +783,12 @@ Model=MedicHealModel
 id=FactoryLand
 Actor=CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,TerrainMgr
 Sound=Factory_Land
+id=Ghost
+path=Assets\Textures\.dds
+asset=Wireframe-Terran-##id##,btn-unit-terran-ghost,btn-upgrade-protoss-shieldslevel0,btn-upgrade-terran-infantryarmorlevel0,ui_ingame_workercount_bg
+Actor=CliffLocalSelection,CliffLocalSelectionObserver,CliffPreSelection,CliffPreSelectionObserver,CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,DeadAnimationMacro,EditorSelection,FlyerHelperSplat,FlyerShadow,##id##_HoldFire_Sound,##id##_WeaponsFree_Sound,GroundLocalFlashingSelection,GroundLocalSelection,GroundLocalSelectionObserver,GroundPreSelection,GroundPreSelectionObserver,GroundShadow,GroundSyncFlashingSelection,GroundSyncSelection,ModelPretargetGround,PlaceholderModel,PlacementModel,PortraitActor,PrimaryGroundSyncSelectionObserver,SecondaryGroundSyncSelectionObserver,Snapshot,SoundEmitter,TerrainMgr,UnitDeathModel,UnitDeathModelUnscaled,UnitDeathSound,UnitDeathVoice,UnitFootprint,UnitSound,UnloadDropAnim
+Model=##id##,##id##Death,##id##DeathAcid,##id##DeathBlast,##id##DeathEviscerate,##id##DeathFire,##id##Portrait,Invisible,ProtossSmallUnitDeathLow,TerranSmallBiologicalUnitDeathLow,TerranSmallUnitDeathLow,ZergSmallUnitDeathLow
+Sound=##id##_Ambience,##id##_Attack,##id##_CloakOnVO,##id##_EmpVO,##id##_Help,##id##_NuclearStrikeVO,##id##_Pissed,##id##_Ready,##id##_What,##id##_Yes
 id=nukeCursorSplat
 Actor=CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,CursorRegion,TerrainMgr
 Model
@@ -924,6 +930,12 @@ Model
 id=HybridBlinkIn
 Actor=CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,TerrainMgr
 Model
+id=Nova
+path=Assets\Textures\.dds
+asset=BTN-Unit-Terran-##id##,Wireframe-Terran-##id##,btn-upgrade-protoss-shieldslevel0,btn-upgrade-terran-infantryarmorlevel0,ui-heroicon-nova,ui_ingame_workercount_bg
+Actor=CliffLocalSelection,CliffLocalSelectionObserver,CliffPreSelection,CliffPreSelectionObserver,CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,DeadAnimationMacro,EditorSelection,FlyerHelperSplat,FlyerShadow,GroundLocalFlashingSelection,GroundLocalSelection,GroundLocalSelectionObserver,GroundPreSelection,GroundPreSelectionObserver,GroundShadow,GroundSyncFlashingSelection,GroundSyncSelection,ModelPretargetGround,PlaceholderModel,PlacementModel,PortraitActor,PrimaryGroundSyncSelectionObserver,SecondaryGroundSyncSelectionObserver,Snapshot,SoundEmitter,TerrainMgr,UnitDeathModel,UnitDeathModelUnscaled,UnitDeathSound,UnitDeathVoice,UnitFootprint,UnitSound
+Model=Invisible,##id##,##id##Death,##id##Portrait,ProtossSmallUnitDeathLow,TerranSmallUnitDeathLow,ZergSmallUnitDeathLow
+Sound=##id##_Ambience,##id##_Attack,##id##_Help,##id##_Pissed,##id##_Ready,##id##_What,##id##_Yes
 id=Odin
 path=Assets\Textures\.dds
 asset=BTN-Unit-Terran-##id##,Wireframe-Terran-##id##,btn-upgrade-protoss-shieldslevel0,btn-upgrade-terran-vehicleplatinglevel0,ui_ingame_workercount_bg
