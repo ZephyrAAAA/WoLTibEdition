@@ -28,6 +28,8 @@ Removed Tech labs. All upgrades and requirements are now on the Spec Ops(Barrack
 Blue Flame is now on the Shadow Ops.
 Improved Explosives upgrade is now on the Ebay.
 Firebat has less health now.
+Tal'Darim now use the correct skin.
+Fields no longer block clicking in them with the various move commands.
 *Medic Tech Lab upgrade now does
 *Crane now has a submenu for structures, to match the CC
 
