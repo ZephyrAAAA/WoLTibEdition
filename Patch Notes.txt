@@ -33,7 +33,6 @@ Fields no longer block clicking in them with the various move commands.
 Power Fields should no longer show up if they're not yours.
 Added Neutral structures (Silo and Spike) that medics can garrison to gain control.
 Medic Tech Lab upgrade now increases bonus from neutral structures.
-*Crane now has a submenu for structures, to match the CC
 
 
 Liberation Day:
@@ -105,7 +104,6 @@ Counterattack strength is now tied to how much of the area attacked was cleared 
 Relocated the first relic to near the 2 east altars, so it's not so immediate that you get it.
 
 A Sinister Turn:
-*Made it more obvious how the mission works
 Void prison now says it only affects heroic for 4s
 Fixed spastic detectors
 Disabled sentry shield restore, so they don't detect zeratul when somehting is damaged.
@@ -118,7 +116,6 @@ Orlan's Ravens are no longer on break.
 
 Engine of Destruction:
 Loki bonus now says it gives 50k credits
-*Wraiths start cloaked
 
 Breakout:
 Consumption now says it heals
@@ -132,7 +129,7 @@ Vikings are present on platform 2
 Spectre bonus objective now says it gives 7.5k per spectre
 
 Haven:
-*The split now mentions you get a once per mission support power
+The split now mentions you get a support power
 There are now bonus objectives tracking how many settlements you've saved, and that you get 15k credits for each
 
 Haven's Fall:
