@@ -93,6 +93,9 @@ You no longer start with 2 barracks
 Trains:
 Kill Teams are weaker, and stay dead for longer.
 Matt mentions that killing the kill team will only buy you a little time before sending out another.
+You now start with a crane.
+The expansion now has a Silo
+Removed 3k of pickups to make up for the silo
 
 Bel'shir:
 Refactored bad code
