@@ -32,7 +32,7 @@ Tal'Darim now use the correct skin.
 Fields no longer block clicking in them with the various move commands.
 Power Fields should no longer show up if they're not yours.
 Added Neutral structures (Silo and Spike) that medics can garrison to gain control.
--Medic Tech Lab upgrade now increases bonus from neutral structures.
+Medic Tech Lab upgrade now increases bonus from neutral structures.
 *Crane now has a submenu for structures, to match the CC
 
 
