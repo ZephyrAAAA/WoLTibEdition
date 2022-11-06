@@ -86,6 +86,15 @@
     <CValidatorUnitType id="IsMedicSquad">
         <Value value="MedicSquad"/>
     </CValidatorUnitType>
+    <CValidatorPlayerCompareType id="IsPlayer">
+        <WhichPlayer Value="Source"/>
+        <Value value="User"/>
+    </CValidatorPlayerCompareType>
+    <CValidatorPlayerCompareType id="IsNotPlayer">
+        <WhichPlayer Value="Source"/>
+        <Compare value="NE"/>
+        <Value value="User"/>
+    </CValidatorPlayerCompareType>
     <CValidatorUnitFilters id="IsPsionic">
         <Filters value="Psionic;-"/>
     </CValidatorUnitFilters>

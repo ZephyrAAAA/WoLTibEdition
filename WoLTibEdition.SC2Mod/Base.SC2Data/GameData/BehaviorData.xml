@@ -168,6 +168,15 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DisablePower">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsNotPlayer"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="BuildRadiusLarge"/>
+            <BehaviorLinkDisableArray value="BuildRadiusSmall"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="FakeWarpIn">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="5"/>
