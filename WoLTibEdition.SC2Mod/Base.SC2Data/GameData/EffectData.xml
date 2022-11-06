@@ -194,6 +194,19 @@
         <AttributeBonus index="Light" value="0"/>
         <Amount value="500"/>
     </CEffectDamage>
+    <CEffectModifyUnit id="CaptureStructure">
+        <TransferUnit Value="Target"/>
+        <ImpactUnit Value="Caster"/>
+        <ModifyFlags index="Owner" value="1"/>
+        <ModifyOwnerPlayer Value="Target"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="CaptureStructureKill">
+        <ModifyFlags index="Remove" value="1"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="CaptureStructureSet">
+        <EffectArray value="CaptureStructure"/>
+        <EffectArray value="CaptureStructureKill"/>
+    </CEffectSet>
     <CEffectCreatePersistent id="CollapsibleRockTowerCPFinalPurifier02">
         <EditorCategories value=""/>
         <Marker Link="Effect/CollapsibleRockTowerCPPurifier02"/>
@@ -1149,6 +1162,18 @@
         <Amount value="60"/>
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectModifyPlayer id="MineralSiloInitial">
+        <WhichPlayer Value="Source"/>
+        <Resources index="Minerals" value="5000"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="MineralSpikeInitial">
+        <WhichPlayer Value="Source"/>
+        <Resources index="Minerals" value="500"/>
+    </CEffectModifyPlayer>
+    <CEffectModifyPlayer id="MineralSpikePeriodic">
+        <WhichPlayer Value="Source"/>
+        <Resources index="Minerals" value="10"/>
+    </CEffectModifyPlayer>
     <CEffectCreatePersistent id="MohandarChargeInitial">
         <PeriodicPeriodArray index="0" value="0"/>
     </CEffectCreatePersistent>

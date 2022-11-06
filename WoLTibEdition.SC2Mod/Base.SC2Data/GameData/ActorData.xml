@@ -272,6 +272,120 @@
         <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Medivac_Attack"/>
     </CActorUnit>
+    <CActorUnit id="MineralSilo" parent="GenericUnitStandard" unitName="MineralSilo">
+        <Aliases value="_UnitHuge"/>
+        <HostSiteOps Ops="SOpBankerUnitBuilding"/>
+        <Model value="Biodome"/>
+        <Scale value="0.750000"/>
+        <ModelFlags index="OutlineOccluder" value="1"/>
+        <BuildModel value="Biodome"/>
+        <DeathArray index="Normal" ModelLink="BioDomeDeath1" SoundLink="ColonistBiodome_Explode" VoiceLink="BiodomeDeathVoice"/>
+        <DeathActorModel value="ColonyInfestationBuildingDeath"/>
+        <DeathActorModelLow value="UnitDeathModel"/>
+        <PlacementModel value="Biodome"/>
+        <PortraitModel value="AdjutantPortrait"/>
+        <BarOffset value="155"/>
+        <BarWidth value="160"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-terran-biodome00.dds"/>
+        </GroupIcon>
+        <GroupIconVariations Number="0">
+            <Image value="Assets\Textures\Wireframe-terran-biodome00.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="1">
+            <Image value="Assets\Textures\Wireframe-terran-biodome01.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="2">
+            <Image value="Assets\Textures\Wireframe-terran-biodome02.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="3">
+            <Image value="Assets\Textures\Wireframe-terran-biodome03.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="4">
+            <Image value="Assets\Textures\Wireframe-terran-biodome04.dds"/>
+        </GroupIconVariations>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <NameOffset value="110"/>
+        <UnitIcon value="Assets\Textures\Wireframe-terran-biodome00.dds"/>
+        <WireframeVariations Number="0">
+            <Image value="Assets\Textures\Wireframe-terran-biodome00.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="1">
+            <Image value="Assets\Textures\Wireframe-terran-biodome01.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="2">
+            <Image value="Assets\Textures\Wireframe-terran-biodome02.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="3">
+            <Image value="Assets\Textures\Wireframe-terran-biodome03.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="4">
+            <Image value="Assets\Textures\Wireframe-terran-biodome04.dds"/>
+        </WireframeVariations>
+    </CActorUnit>
+    <CActorUnit id="MineralSpike" parent="GenericUnitStandard" unitName="MineralSpike">
+        <Aliases value="_UnitLarge"/>
+        <HostSiteOps Ops="SOpBankerUnitBuilding"/>
+        <Model value="Hut"/>
+        <ModelFlags index="OutlineOccluder" value="1"/>
+        <BuildModel value="Hut"/>
+        <DeathActorModel value="ColonyInfestationBuildingDeath"/>
+        <DeathActorModelLow value="UnitDeathModel"/>
+        <PlacementModel value="Hut"/>
+        <PortraitModel value="AdjutantPortrait"/>
+        <BarOffset value="155"/>
+        <BarWidth value="160"/>
+        <GroupIconVariations Number="0">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut00.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="1">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut01.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="2">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut02.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="3">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut03.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="4">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut04.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="5">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut05.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="6">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut06.dds"/>
+        </GroupIconVariations>
+        <GroupIconVariations Number="7">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut07.dds"/>
+        </GroupIconVariations>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <NameOffset value="110"/>
+        <WireframeVariations Number="0">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut00.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="1">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut01.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="2">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut02.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="3">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut03.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="4">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut04.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="5">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut05.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="6">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut06.dds"/>
+        </WireframeVariations>
+        <WireframeVariations Number="7">
+            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut07.dds"/>
+        </WireframeVariations>
+    </CActorUnit>
     <!-- <CActorModel id="NeuralParasiteEgg" parent="ModelAddition">-->
     <!--        <HostSiteOps Ops="SOpAttachHead"/>-->
     <!--        <On Terms="Effect.NeuralParasitePersistent.Start; At Target" Send="Create"/>-->

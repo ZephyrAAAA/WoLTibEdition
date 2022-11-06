@@ -69,6 +69,43 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit default="1" id="NeutralCapturable">
+        <Name value="Unit/Name/NeutralCapturable"/>
+        <Description value="Button/Tooltip/NeutralCapturable"/>
+        <DeathRevealRadius value="3"/>
+        <Facing value="315"/>
+        <FlagArray index="Turnable" value="0"/>
+        <FlagArray index="PreventDestroy" value="1"/>
+        <FlagArray index="PenaltyRevealed" value="1"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="TownAlert" value="1"/>
+        <FlagArray index="NoPortraitTalk" value="1"/>
+        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
+        <FogVisibility value="Snapshot"/>
+        <PlaneArray index="Ground" value="1"/>
+        <Collide index="Burrow" value="1"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="RoachBurrow" value="1"/>
+        <Collide index="ForceField" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Mechanical" value="1"/>
+        <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <Sight value="9"/>
+        <AttackTargetPriority value="11"/>
+        <AbilArray Link="NeutralCapturable"/>
+        <EditorCategories value="ObjectType:Structure"/>
+        <TacticalAI value="NeutralCapturable"/>
+        <AIEvaluateAlias value="NeutralCapturable"/>
+        <ReviveInfoBase>
+            <Charge Link="NeutralCapturable/Revive"/>
+            <Cooldown Link="NeutralCapturable/Revive"/>
+        </ReviveInfoBase>
+    </CUnit>
     <CUnit default="1" id="PATHINGBLOCKER">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3958,6 +3995,22 @@
     <CUnit id="MutaliskEgg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+    </CUnit>
+    <CUnit id="MineralSilo" parent="NeutralCapturable">
+        <Name value="Unit/Name/MineralSilo"/>
+        <Description value="Button/Tooltip/MineralSilo"/>
+        <BehaviorArray Link="SiloInitial"/>
+        <BehaviorArray Link="BuildRadiusSmall"/>
+        <Footprint value="Footprint3x3ContourIgnoreCreep"/>
+        <PlacementFootprint value="Footprint3x3ContourIgnoreCreep"/>
+    </CUnit>
+    <CUnit id="MineralSpike" parent="NeutralCapturable">
+        <Name value="Unit/Name/MineralSpike"/>
+        <Description value="Button/Tooltip/MineralSpike"/>
+        <BehaviorArray Link="SpikeInitial"/>
+        <BehaviorArray Link="SpikePeriodic"/>
+        <Footprint value="Footprint2x2IgnoreCreepContour"/>
+        <PlacementFootprint value="Footprint2x2IgnoreCreepContour"/>
     </CUnit>
     <CUnit id="NewFolsomPrisonEntrance">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
