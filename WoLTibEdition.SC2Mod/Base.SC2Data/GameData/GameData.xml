@@ -53,6 +53,7 @@
         <TriggerLibs Id="3B48F5E9"/>
         <VeterancySearchRadius value="0"/>
         <DamageMinimum value="0"/>
+        <CreepDecayTime value="0.75"/>
         <!-- Test Builds -->
         <!-- <AIBuilds index="200">
             <AttributeId value="B200"/>
