@@ -801,6 +801,7 @@ Effect/Name/AirTransportUnloadIterate=Air Transport Unload Iterate
 Effect/Name/AirTransportUnloadSquad=Air Transport Unload Squad
 Effect/Name/AstralProjection=Astral Projection
 Effect/Name/AstralProjectionCU=Astral Projection
+Effect/Name/AttackSelf=Attack Self
 Effect/Name/AutoHarvestCP=Auto Harvest
 Effect/Name/AutoHarvestTib=Auto Harvest Tib
 Effect/Name/BansheeAirstrikeDamage=Banshee Airstrike Damage
