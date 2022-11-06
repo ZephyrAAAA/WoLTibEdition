@@ -168,6 +168,15 @@
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="DisablePower">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsNotPlayer"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="BuildRadiusLarge"/>
+            <BehaviorLinkDisableArray value="BuildRadiusSmall"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="FakeWarpIn">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="5"/>
@@ -482,8 +491,26 @@
             <AttackType index="None" value="0"/>
         </DamageResponse>
     </CBehaviorBuff>
+    <CBehaviorBuff id="SiloInitial">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="PlayerIsNotNeutral"/>
+        <FinalEffect value="MineralSiloInitial"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeInitial">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="PlayerIsNotNeutral"/>
+        <FinalEffect value="MineralSpikeInitial"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Slow">
         <Modification MoveSpeedMultiplier="0.667"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikePeriodic">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="MineralSpikePeriodic"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadBunkerUnload">
         <EditorCategories value="AbilityorEffectType:Units"/>

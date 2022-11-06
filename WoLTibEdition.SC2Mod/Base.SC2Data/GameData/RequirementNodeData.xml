@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CRequirementAnd id="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
         <OperandArray value="Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>

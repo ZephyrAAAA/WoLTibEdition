@@ -83,6 +83,18 @@
         <CombineArray value="TargetIsMechanical"/>
         <CombineArray value="IsPsionic"/>
     </CValidatorCombine>
+    <CValidatorUnitType id="IsMedicSquad">
+        <Value value="MedicSquad"/>
+    </CValidatorUnitType>
+    <CValidatorPlayerCompareType id="IsPlayer">
+        <WhichPlayer Value="Source"/>
+        <Value value="User"/>
+    </CValidatorPlayerCompareType>
+    <CValidatorPlayerCompareType id="IsNotPlayer">
+        <WhichPlayer Value="Source"/>
+        <Compare value="NE"/>
+        <Value value="User"/>
+    </CValidatorPlayerCompareType>
     <CValidatorUnitFilters id="IsPsionic">
         <Filters value="Psionic;-"/>
     </CValidatorUnitFilters>
@@ -149,6 +161,10 @@
     <CValidatorUnitCompareBehaviorCount id="NotSupercloaked">
         <Behavior value="HideInTheShadows"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerCompareType id="PlayerIsNotNeutral">
+        <WhichPlayer Value="Source"/>
+        <Value value="Neutral"/>
+    </CValidatorPlayerCompareType>
     <CValidatorUnitCompareBehaviorCount id="PsiStormTestBuffKarass">
         <Behavior value="KarassPsiStorm"/>
     </CValidatorUnitCompareBehaviorCount>

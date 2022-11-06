@@ -425,6 +425,17 @@
         <AutoCastRange value="9"/>
         <FollowRange value="2"/>
     </CAbilEffectTarget>
+    <CAbilTransport id="NeutralCapturable">
+        <Flags index="CargoDeath" value="1"/>
+        <Flags index="ShowCargoSize" value="0"/>
+        <Flags index="ShowStatus" value="0"/>
+        <MaxCargoCount value="1"/>
+        <MaxCargoSize value="4"/>
+        <TotalCargoSpace value="4"/>
+        <LoadCargoEffect value="CaptureStructureSet"/>
+        <TargetFilters value="-;Player,Ally,Buried,Dead,Hidden"/>
+        <LoadValidatorArray value="IsMedicSquad"/>
+    </CAbilTransport>
     <CAbilEffectInstant id="NovaHeal">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
