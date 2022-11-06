@@ -262,6 +262,7 @@
         <Indices index="10">
             <InfoValue index="0" Value="70000"/>
         </Indices>
+        <Indices index="11" ImagePath="Assets\Textures\btn-techupgrade-terran-automatedselfrepair.dds"/>
         <Indices index="17" ImagePath="Assets\Textures\btn-upgrade-terran-reapercombatdrugs.dds"/>
         <Indices index="19">
             <InfoUpgrade index="0" Upgrade="HydraulicStabilizers"/>
