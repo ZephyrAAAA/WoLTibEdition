@@ -65,6 +65,7 @@ Greatly increased money regen in main fields
 Armoury upgrades are now given by rescuing any 2 of the rebel groups, not group 1 and 2 specifically.
 Mutas now go around rebel groups instead of murdering them right away.
 Now has a Spike on the low ground.
+Replaced the lowground field and refinery with 2 spikes
 Replaced the field overlooking the second rebel group with a silo
 You start with a medic squad next to the spike.
 Added a tutorial about the spike
