@@ -199,6 +199,12 @@
         <Value value="1"/>
         <Behavior value="Irradiate"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TacticalBansheeCloakOff">
+        <CombineArray index="0" value="ExpertOrNotCampaign"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TacticalBansheeCloakOn">
+        <CombineArray index="0" value="ExpertOrNotCampaign"/>
+    </CValidatorCombine>
     <!--    -->
     <!--    BattleCruiser Defensive Matrix-->
     <!--    -->
