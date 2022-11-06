@@ -326,65 +326,24 @@
     <CActorUnit id="MineralSpike" parent="GenericUnitStandard" unitName="MineralSpike">
         <Aliases value="_UnitLarge"/>
         <HostSiteOps Ops="SOpBankerUnitBuilding"/>
-        <Model value="Hut"/>
+        <Model value="JoriumStockpile"/>
         <ModelFlags index="OutlineOccluder" value="1"/>
-        <BuildModel value="Hut"/>
-        <DeathActorModel value="ColonyInfestationBuildingDeath"/>
-        <DeathActorModelLow value="UnitDeathModel"/>
-        <PlacementModel value="Hut"/>
+        <BuildModel value="JoriumStockpile"/>
+        <PlacementModel value="JoriumStockpile"/>
         <PortraitModel value="AdjutantPortrait"/>
         <BarOffset value="155"/>
         <BarWidth value="160"/>
-        <GroupIconVariations Number="0">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut00.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="1">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut01.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="2">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut02.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="3">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut03.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="4">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut04.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="5">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut05.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="6">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut06.dds"/>
-        </GroupIconVariations>
-        <GroupIconVariations Number="7">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut07.dds"/>
-        </GroupIconVariations>
         <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
         <NameOffset value="110"/>
-        <WireframeVariations Number="0">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut00.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="1">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut01.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="2">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut02.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="3">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut03.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="4">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut04.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="5">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut05.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="6">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut06.dds"/>
-        </WireframeVariations>
-        <WireframeVariations Number="7">
-            <Image value="Assets\Textures\Wireframe-Terran-ColonistHut07.dds"/>
-        </WireframeVariations>
+        <Scale value="0.500000"/>
+        <DeathArray index="Normal" ModelLink="JoriumStockpileDeath" SoundLink="JoriumStockpile_Explode" VoiceLink="JoriumStockpileDeathVoice"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-terran-joriumstockpile.dds"/>
+        </GroupIcon>
+        <UnitIcon value="Assets\Textures\BTN-Building-Terran-MineralStorageDepot.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-terran-joriumstockpile.dds"/>
+        </Wireframe>
     </CActorUnit>
     <!-- <CActorModel id="NeuralParasiteEgg" parent="ModelAddition">-->
     <!--        <HostSiteOps Ops="SOpAttachHead"/>-->
