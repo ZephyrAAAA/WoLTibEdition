@@ -3621,6 +3621,8 @@
         <BehaviorArray Link="MaarPassiveSpeed"/>
         <Attributes index="Heroic" value="1"/>
         <TacticalAIThink value="AIThinkMaar"/>
+        <ArmorType value="Large"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
     </CUnit>
     <CUnit id="MaarWarpInUnit">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
