@@ -105,6 +105,7 @@
             <Charge Link="NeutralCapturable/Revive"/>
             <Cooldown Link="NeutralCapturable/Revive"/>
         </ReviveInfoBase>
+        <EditorFlags index="NeutralDefault" value="1"/>
     </CUnit>
     <CUnit default="1" id="PATHINGBLOCKER">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

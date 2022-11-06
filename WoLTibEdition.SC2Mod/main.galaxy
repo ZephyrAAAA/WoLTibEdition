@@ -741,6 +741,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	} else {
 		AddTopbars();
 	}
+	TechTreeUpgradeAddLevel(0, "AdvancedMedicTraining", TechTreeUpgradeCount(1, "AdvancedMedicTraining", c_techCountCompleteOnly));
 	PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperSetTo, 3000);
 	PlayerModifyPropertyInt(1, c_playerPropCustom, c_playerPropOperSetTo, 2000000);
 	PlayerModifyPropertyInt(1, c_playerPropVespene, c_playerPropOperSetTo, 2000000);
