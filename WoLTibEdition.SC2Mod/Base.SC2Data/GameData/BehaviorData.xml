@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CBehaviorBuff id="BanelingExplode">
+        <Modification>
+            <DeathResponse Chance="0" Effect=""/>
+        </Modification>
+        <DamageResponse Fatal="1" Handled="AttackSelf" ModifyFraction="0">
+            <ExcludeEffectInChainArray value="VolatileBurstFriendlyUnitDamage"/>
+            <Chance value="1"/>
+        </DamageResponse>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BioMode">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

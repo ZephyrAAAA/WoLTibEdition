@@ -124,6 +124,9 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilEffectInstant id="Explode">
+        <Effect index="0" value="AttackSelf"/>
+    </CAbilEffectInstant>
     <CAbilAugment id="ExplosiveCharges">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>

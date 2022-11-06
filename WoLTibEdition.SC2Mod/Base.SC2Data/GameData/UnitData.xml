@@ -600,6 +600,10 @@
     <CUnit id="BanelingBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Small"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <AbilArray Link="attack"/>
+        <WeaponArray Link="VolatileBurst"/>
     </CUnit>
     <CUnit id="BanelingCocoon">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

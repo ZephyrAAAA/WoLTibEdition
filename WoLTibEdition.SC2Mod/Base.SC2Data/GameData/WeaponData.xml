@@ -1023,6 +1023,7 @@
     <CWeaponLegacy id="VolatileBurst">
         <AttackType value="Pierce"/>
         <Tip value="Weapon/Tip/Grenade"/>
+        <AcquireFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CWeaponLegacy>
     <!--                                                                                         -->
     <!--                                                                                         -->
@@ -1031,6 +1032,7 @@
     <!--                                                                                         -->
     <CWeaponLegacy id="VolatileBurstDummy">
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Vulture">
         <Tip value="Weapon/Tip/Rocket"/>

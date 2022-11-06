@@ -97,6 +97,14 @@
         <SpawnEffect value="AstralProjection"/>
         <SpawnUnit value="Zeratul"/>
     </CEffectCreateUnit>
+    <CEffectIssueOrder id="AttackSelf">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <AbilCmdIndex value="2"/>
+        <Player Value="Source"/>
+        <Target Value="CasterPoint"/>
+    </CEffectIssueOrder>
     <CEffectCreatePersistent id="AutoHarvestCP">
         <ValidatorArray value="HaveAutoHarvester"/>
         <EditorCategories value=""/>

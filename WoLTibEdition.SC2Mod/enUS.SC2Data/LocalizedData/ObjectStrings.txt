@@ -610,6 +610,7 @@ DataCollection/EditorSuffix/VikingAssault=(Assault)
 DataCollection/EditorSuffix/VikingFighter=(Fighter)
 Effect/EditorPrefix/AstralProjection=Zeratul -
 Effect/EditorPrefix/AstralProjectionCU=Zeratul -
+Effect/EditorPrefix/AttackSelf=Baneling -
 Effect/EditorPrefix/AutoHarvestCP=Automated Refinery -
 Effect/EditorPrefix/AutoHarvestTib=Automated Refinery -
 Effect/EditorPrefix/BuildingRepair=C&C -
