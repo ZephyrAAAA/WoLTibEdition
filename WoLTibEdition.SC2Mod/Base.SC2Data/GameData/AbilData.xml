@@ -536,6 +536,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="RepairDroneReleaseCreateUnit"/>
         <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="1"/>
         <Cost>
             <Vital index="Energy" value="50"/>
         </Cost>
