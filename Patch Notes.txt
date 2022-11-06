@@ -32,13 +32,15 @@ Tal'Darim now use the correct skin.
 Fields no longer block clicking in them with the various move commands.
 Power Fields should no longer show up if they're not yours.
 Added Neutral structures (Silo and Spike) that medics can garrison to gain control.
-*Medic Tech Lab upgrade now increases bonus from neutral structures.
+-Medic Tech Lab upgrade now increases bonus from neutral structures.
 *Crane now has a submenu for structures, to match the CC
+
 
 Liberation Day:
 Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
 Holoboard objective now says it gives credits
 The big message now says that tips Edited by CNC edition are Orange.
+Added a damage types tutorial
 
 Outlaws:
 Removed ability to build engineering bay or crane
@@ -62,6 +64,10 @@ You no longer start with 2 barracks
 Greatly increased money regen in main fields
 Armoury upgrades are now given by rescuing any 2 of the rebel groups, not group 1 and 2 specifically.
 Mutas now go around rebel groups instead of murdering them right away.
+Now has a Spike on the low ground.
+Replaced the field overlooking the second rebel group with a silo
+You start with a medic squad next to the spike.
+Added a tutorial about the spike
 
 Evacuation:
 Fixed the rear nydus not sticking around like it should
