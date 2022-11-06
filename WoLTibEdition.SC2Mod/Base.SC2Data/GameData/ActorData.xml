@@ -162,6 +162,18 @@
         <Sound value="Obelisk_ArgusLinkLaunch"/>
     </CActorSound>
     <CActorRange id="FeedbackRange2" parent="RangeAbil" abil="FeedbackGhost"/>
+    <CActorModel id="FloatingTextMineralSilo" parent="FloatingTextActorDefault" effectPickup="PickupMinerals100" actorCreate="PickupMinerals100Text">
+        <On index="0" Terms="Effect.MineralSiloInitial.Start" Send="Create"/>
+        <On index="1" Terms="ActorCreation" Send="Create PickupSiloInitialText"/>
+    </CActorModel>
+    <CActorModel id="FloatingTextMineralSpikeInit" parent="FloatingTextActorDefault" effectPickup="PickupMinerals100" actorCreate="PickupMinerals100Text">
+        <On index="0" Terms="Effect.MineralSpikeInitial.Start" Send="Create"/>
+        <On index="1" Terms="ActorCreation" Send="Create PickupSpikeInitialText"/>
+    </CActorModel>
+    <CActorModel id="FloatingTextMineralSpikePeriod" parent="FloatingTextActorDefault" effectPickup="PickupMinerals100" actorCreate="PickupMinerals100Text">
+        <On index="0" Terms="Effect.MineralSpikePeriodic.Start" Send="Create"/>
+        <On index="1" Terms="ActorCreation" Send="Create PickupSpikePeriodText"/>
+    </CActorModel>
     <CActorModel id="FungalGrowthDelayWarning" parent="ModelAddition" abil="FungalGrowth">
         <Flags index="SuppressSaveLoad" value="1"/>
         <Inherits index="BaseModelScale" value="0"/>
@@ -382,6 +394,26 @@
     <CActorTurret id="PhoenixTurret">
         <On Terms="TurretEnable.Phoenix" Send="Create"/>
     </CActorTurret>
+    <CActorText id="PickupSiloInitialText" parent="PickupTextDefault">
+        <On index="3" Terms="TimerExpired; TimerName StartMover" Send="Create PickupTextMoverCapturables"/>
+    </CActorText>
+    <CActorText id="PickupSpikeInitialText" parent="PickupTextDefault">
+        <On index="3" Terms="TimerExpired; TimerName StartMover" Send="Create PickupTextMoverCapturables"/>
+    </CActorText>
+    <CActorText id="PickupSpikePeriodText" parent="PickupTextDefault">
+        <On index="3" Terms="TimerExpired; TimerName StartMover" Send="Create PickupTextMoverCapturables"/>
+    </CActorText>
+    <CActorSiteMover id="PickupTextMoverCapturables">
+        <On Terms="ActorCreation" Target="::Creator" Send="RefSetFromMsg ::Host ::Sender"/>
+        <On Terms="ActorCreation" Send="MoverSetDestinationH 3.000000"/>
+        <On Terms="ActorCreation" Send="MoverMove"/>
+        <On Terms="ActorCreation" Send="TimerSet 2.000000 Die"/>
+        <On Terms="TimerExpired; TimerName Die" Send="Destroy"/>
+        <Acceleration value="5.000000"/>
+        <Deceleration value="1.000000"/>
+        <Speed value="0.500000"/>
+        <SpeedMax value="0.500000"/>
+    </CActorSiteMover>
     <CActorSplat id="PsiDisruptorCursorSplat" parent="TerranCursorSplat" abil="PsiDisruptor">
         <EditorCategories value=""/>
     </CActorSplat>

@@ -434,6 +434,9 @@ Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and rec
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupSiloInitialText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSiloInitial,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupSpikeInitialText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSpikeInitial,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupSpikePeriodText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSpikePeriodic,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/PsiDisruptor10=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.

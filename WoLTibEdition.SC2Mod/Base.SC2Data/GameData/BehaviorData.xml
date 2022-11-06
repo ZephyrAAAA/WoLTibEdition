@@ -518,8 +518,9 @@
     <CBehaviorBuff id="SpikePeriodic">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="1"/>
+        <Period value="2"/>
         <PeriodicEffect value="MineralSpikePeriodic"/>
+        <DisableValidatorArray value="IsPlayer"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SquadBunkerUnload">
         <EditorCategories value="AbilityorEffectType:Units"/>

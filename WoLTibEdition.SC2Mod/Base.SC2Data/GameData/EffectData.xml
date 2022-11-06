@@ -1180,7 +1180,7 @@
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="MineralSpikePeriodic">
         <WhichPlayer Value="Source"/>
-        <Resources index="Minerals" value="10"/>
+        <Resources index="Minerals" value="20"/>
     </CEffectModifyPlayer>
     <CEffectCreatePersistent id="MohandarChargeInitial">
         <PeriodicPeriodArray index="0" value="0"/>
