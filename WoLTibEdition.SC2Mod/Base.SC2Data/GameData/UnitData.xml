@@ -6277,6 +6277,8 @@
         </CardLayouts>
         <TacticalAIThink value=""/>
         <AlliedPushPriority value="1"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

@@ -972,6 +972,7 @@ Sound/Name/NukeBig_Mengsk_Explode=NukeBig_Mengsk_Explode
 Sound/Name/NukeSmall_Mengsk_Explode=NukeSmall_Mengsk_Explode
 Sound/Name/RailGun_Impact=RailGun_Impact
 Sound/Name/RailGun_Launch=RailGun_Launch
+Sound/Name/SkyTank_BarrageMissile_Impact=SkyTank_BarrageMissile_Impact
 Sound/Name/Spell_CombatDrugs_Launch=Spell_CombatDrugs_Launch
 Sound/Name/Stone_Help=Stone_Help
 Sound/Name/Stone_Movement=Stone_Movement
