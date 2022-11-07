@@ -6258,7 +6258,7 @@
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
-        <AbilArray index="3" Link="ThorWreckage"/>
+        <AbilArray index="3" Link="Theft"/>
         <AbilArray index="4" Link="330mmBarrageCannons"/>
         <AbilArray index="5" removed="1"/>
         <CardLayouts index="0">
@@ -6273,10 +6273,14 @@
                 <Row value="1"/>
                 <Column value="0"/>
             </LayoutButtons>
-            <LayoutButtons index="9" removed="1"/>
+            <LayoutButtons index="9" Type="AbilCmd" AbilCmd="Theft,Execute" Requirements="" Row="2" Column="1"/>
         </CardLayouts>
         <TacticalAIThink value=""/>
         <AlliedPushPriority value="1"/>
+        <LifeArmorTip value="Unit/Tip/Heavy"/>
+        <Food value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

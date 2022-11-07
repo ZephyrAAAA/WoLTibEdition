@@ -343,6 +343,20 @@
         <Range value="7"/>
         <Effect value="DiamondbackCP"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ThorDiamondback">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Cannon"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="DiamondbackBeam"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="7"/>
+        <Period value="2"/>
+        <AttackType value="Magic"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="DiamondbackCP"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
@@ -451,6 +465,28 @@
     <CWeaponLegacy id="HybridE">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ThorInfernalFlameThrower">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
+        <DisplayEffect value="InfernalFlameThrower"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Arc value="360"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <Period value="0.5"/>
+        <AttackType value="Pierce"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="InfernalFlameThrowerCP"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponStrafe id="InterceptorBeam">
         <AttackType value="Magic"/>
@@ -973,6 +1009,7 @@
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
         <Period value="1.28"/>
+        <Options index="LinkedCooldown" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">
         <AttackType value="Pierce"/>

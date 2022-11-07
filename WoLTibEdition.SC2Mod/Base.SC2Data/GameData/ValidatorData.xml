@@ -98,6 +98,15 @@
     <CValidatorUnitFilters id="IsPsionic">
         <Filters value="Psionic;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitType id="IsDiamondback">
+        <Value value="Diamondback"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsPredator">
+        <Value value="Predator"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsStone">
+        <Value value="Stone"/>
+    </CValidatorUnitType>
     <CValidatorUnitCompareBehaviorCount id="NotDefensiveMatrixd">
         <ResultFailed value="Error,Error/DefensiveMatrix"/>
         <Behavior value="DefensiveMatrix"/>

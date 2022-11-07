@@ -620,6 +620,43 @@
         </Modification>
         <Duration value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ThorFlamethrower">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponArray Link="ThorInfernalFlameThrower" Turret="Hellion"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ThorRadar">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <Detect value="11"/>
+            <DetectFilters value="-;Missile"/>
+            <Radar value="20"/>
+            <RadarFilters value="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ThorRailgun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponArray Link="ThorDiamondback"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ThorSplashDummy">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ThorShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <EnergyDamageRatioBonus value="1"/>
+            <VitalMaxArray index="Energy" value="60"/>
+            <VitalRegenArray index="Energy" value="0.5625"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="TibNodeLarge">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

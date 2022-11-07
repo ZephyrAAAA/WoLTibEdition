@@ -837,6 +837,13 @@
             </Button>
         </InfoArray>
     </CAbilResearch>
+    <CAbilEffectTarget id="Theft">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ThorTheftSwitch"/>
+        <Range value="0.1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ImmortalityProtocol"/>
+    </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
@@ -1878,7 +1885,8 @@
             <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="SiegeTank"/>
         </InfoArray>
-        <InfoArray index="Train5" Time="60">
+        <InfoArray index="Train5" Time="35">
+            <Resource index="Vespene" value="3500"/>
             <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="Thor"/>
         </InfoArray>

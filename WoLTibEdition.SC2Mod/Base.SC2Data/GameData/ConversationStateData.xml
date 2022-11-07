@@ -191,6 +191,10 @@
             <InfoValue Id="Credits Per Item"/>
             <InfoValue Id="Item Count"/>
         </Indices>
+        <Indices index="46">
+            <InfoValue index="0" Value="20000"/>
+            <InfoValue index="1" Value="3"/>
+        </Indices>
         <Indices index="51">
             <InfoValue Id="Credits Per Item" Value="30000"/>
             <InfoValue Id="Item Count" Value="1"/>
