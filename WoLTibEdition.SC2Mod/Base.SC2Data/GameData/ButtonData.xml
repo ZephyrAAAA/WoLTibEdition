@@ -133,6 +133,14 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
+    <CButton id="RallySCV">
+        <Icon value="Assets\Textures\btn-ability-terran-setworkerrallypoint.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="RallyEgg"/>
+        <Universal value="1"/>
+    </CButton>
     <CButton id="RavenRepairDrone">
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-defensivedrone.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-defensivedrone.dds"/>

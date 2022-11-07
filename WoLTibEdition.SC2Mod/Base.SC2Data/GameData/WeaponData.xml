@@ -843,7 +843,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ConcussiveGrenades">
         <EditorCategories value="Race:Terran"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-hisecautotracking.dds"/>
         <DisplayEffect value="ConcussiveGrenadesU"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="7"/>

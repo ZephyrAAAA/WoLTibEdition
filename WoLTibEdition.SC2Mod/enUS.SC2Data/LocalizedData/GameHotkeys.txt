@@ -26,6 +26,7 @@ Button/Hotkey/PowerStructure=D
 Button/Hotkey/PsiDisruptor3=
 Button/Hotkey/PsiDisruptor4=
 Button/Hotkey/PsiDisruptor5=
+Button/Hotkey/RallySCV=G
 Button/Hotkey/RavenRepairDrone=R
 Button/Hotkey/RavenScramblerMissile=C
 Button/Hotkey/ResearchImprovedPlasmaShields=S

@@ -224,6 +224,7 @@ Button/Name/PsiDisruptor6=Psi Disruptor
 Button/Name/PsiDisruptor7=Psi Disruptor
 Button/Name/PsiDisruptor8=Psi Disruptor
 Button/Name/PsiDisruptor9=Psi Disruptor
+Button/Name/RallySCV=Set Worker Rally Point
 Button/Name/RavenRepairDrone=Repair Drone
 Button/Name/RavenScramblerMissile=Interference Matrix
 Button/Name/RepairOrder=Repair
@@ -454,6 +455,7 @@ Button/Tooltip/PsiDisruptor6=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/PsiDisruptor7=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/RallySCV=Sends constructed worker units to the designated point. Workers rallied to Mineral Fields will begin gathering automatically.
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay

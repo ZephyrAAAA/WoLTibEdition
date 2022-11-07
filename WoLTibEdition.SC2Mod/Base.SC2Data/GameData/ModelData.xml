@@ -266,6 +266,12 @@
         <ScaleMax value="1.000000,3.750000,1.000000"/>
         <ScaleMin value="1.000000,3.750000,1.000000"/>
     </CModel>
+    <CModel id="KelMorianGrenadeTurretPlacement" parent="Placement" Race="Terran">
+        <Model value="Assets\Buildings\Terran\GrenadeTurretPlacement\GrenadeTurretPlacement.m3"/>
+        <LowQualityModel value="KelMorianGrenadeTurret"/>
+        <SelectionRadius value="0.625000"/>
+        <ShadowRadius value="0.625000"/>
+    </CModel>
     <CModel id="LowPower" parent="Glaze">
         <Model value="Assets\Effects\Glaze\Glaze_Corrupted_TangentSpace\Glaze_Corrupted_TangentSpace.m3"/>
         <EditorCategories value=""/>
