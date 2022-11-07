@@ -1159,6 +1159,12 @@
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
     </CActorRange>
+    <CActorRange id="ThorRadar">
+        <On Terms="Behavior.ThorRadar.On" Send="Create"/>
+        <On Terms="Behavior.ThorRadar.Off" Send="Destroy"/>
+        <Range value="20.000000"/>
+        <RangeFlags index="Minimap" value="1"/>
+    </CActorRange>
     <!--                                                                                         -->
     <!-- Science Vessel ........................................................................ -->
     <!--                                                                                         -->
@@ -1194,6 +1200,16 @@
     </CActorEventMacro>
     <CActorUnit id="Thor">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,255,128,64"/>
+            <ColorArray value="255,255,128,64"/>
+        </StatusColors>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,255,128,64"/>
+        </StatusColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,255,128,64"/>
+        </VitalColors>
     </CActorUnit>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>

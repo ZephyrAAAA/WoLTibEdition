@@ -2209,6 +2209,47 @@
         <ImpactEffect value="TempestDamageFleet"/>
         <AmmoUnit value="TempestWeapon"/>
     </CEffectLaunchMissile>
+    <CEffectDamage id="ThorTheftKill">
+        <EditorCategories value=""/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ThorTheftStone">
+        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorRadar"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ThorTheftPredator">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorShield"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ThorTheftSiegeTank">
+        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorSplashDummy"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ThorTheftHellion">
+        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorFlamethrower"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ThorTheftDiamondback">
+        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorRailgun"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="ThorTheftSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="IsDiamondback" Effect="ThorTheftDiamondback"/>
+        <CaseArray Validator="IsHellion" Effect="ThorTheftHellion"/>
+        <CaseArray Validator="IsPredator" Effect="ThorTheftPredator"/>
+        <CaseArray Validator="IsSiegeTank" Effect="ThorTheftSiegeTank"/>
+        <CaseArray Validator="IsStone" Effect="ThorTheftStone"/>
+    </CEffectSwitch>
     <CEffectDamage id="ThorsHammerDamage">
         <Amount value="30"/>
     </CEffectDamage>
