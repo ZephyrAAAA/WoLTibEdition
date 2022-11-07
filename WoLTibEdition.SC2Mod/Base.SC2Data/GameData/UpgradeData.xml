@@ -2128,6 +2128,7 @@
         <EffectArray Reference="Weapon,PerditionTurretFlamethrower,RateMultiplier" Value="0.15"/>
         <EffectArray Reference="Weapon,PerditionTurretFlamethrower,Range" Value="1"/>
         <EffectArray Reference="Effect,PerditionTurretFlameThrowerCreatePersistent,PeriodCount" Value="4"/>
+        <EffectArray Reference="Abil,PerditionTurretUnburrow,AutoCastRange" Value="1"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HydraulicStabilizers">
