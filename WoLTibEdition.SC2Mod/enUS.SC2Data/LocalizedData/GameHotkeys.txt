@@ -7,6 +7,7 @@ Button/Hotkey/EMPSpectre=E
 Button/Hotkey/FeedbackGhost=F
 Button/Hotkey/Goliath=T
 Button/Hotkey/GravityRift=G
+Button/Hotkey/HideInTheShadows=H
 Button/Hotkey/HiveMindEmulator3=
 Button/Hotkey/HiveMindEmulator4=
 Button/Hotkey/HiveMindEmulator5=
