@@ -6279,6 +6279,8 @@
         <AlliedPushPriority value="1"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
