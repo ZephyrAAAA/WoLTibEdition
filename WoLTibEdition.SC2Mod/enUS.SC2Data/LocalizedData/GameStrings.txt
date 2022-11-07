@@ -413,6 +413,8 @@ Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
+Button/Tooltip/MineralSilo=Provides build radius while controlled.<n/><n/>Grants a large one-time mineral payout on capture.
+Button/Tooltip/MineralSpike=Provides a steady income while controlled.<n/><n/>Grants a small one-time mineral payout on capture.
 Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NanoRepair=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals <d ref="Effect,NanoRepair,RechargeVitalRate"/> life per second for <d ref="Effect,NanoRepair,RechargeVitalRate*Effect,NanoRepair,DrainVitalCostFactor"/> energy.</c><n/><c val="#ColorAttackInfo">Up to 3 Science Vessels can heal the same target</c>
