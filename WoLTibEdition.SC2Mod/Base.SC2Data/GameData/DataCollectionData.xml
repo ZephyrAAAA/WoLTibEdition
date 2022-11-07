@@ -148,7 +148,7 @@
         <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
         <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
-    </CDataCollectionUnit>
+    </CDataCollectionUnit>	
     <CDataCollectionUnit id="FusionCore">
         <DataRecord Entry="Abil,FusionCoreResearch"/>
         <DataRecord Entry="Actor,FusionCore"/>
@@ -401,6 +401,7 @@
         <DataRecord Entry="Actor,Stone"/>
         <TechInfoUpgradeUsed value="TerranVehicleVanadiumPlating"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot">
         <DataRecord Entry="Unit,SupplyDepotLowered"/>
@@ -552,6 +553,7 @@
     <CDataCollectionUnit id="Firebat">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Spectre">
         <EditorCategories value="DataGroup:Unit"/>
@@ -576,14 +578,17 @@
     <CDataCollectionUnit id="Hellion">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Goliath">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Diamondback">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Vulture">
         <EditorCategories value="DataGroup:Unit"/>
@@ -603,6 +608,7 @@
     <CDataCollectionUnit id="Banshee">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Raven">
         <EditorCategories value="DataGroup:Unit"/>
@@ -612,6 +618,7 @@
     <CDataCollectionUnit id="Battlecruiser">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Hercules">
         <EditorCategories value="DataGroup:Unit"/>
@@ -631,18 +638,22 @@
     <CDataCollectionUnit id="DevilDog">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="DuskWing">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="HammerSecurity">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="HelsAngelAssault">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="HelsAngelFighter">
         <EditorCategories value="DataGroup:Unit"/>
@@ -652,6 +663,7 @@
     <CDataCollectionUnit id="DukesRevenge">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SiegeBreakerSieged">
         <EditorCategories value="DataGroup:Unit"/>
