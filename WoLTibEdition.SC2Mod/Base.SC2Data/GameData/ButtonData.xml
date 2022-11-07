@@ -361,6 +361,8 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <TintRacially value="1"/>
         <Universal value="1"/>
         <DefaultButtonLayout Row="2" Column="1"/>
+        <Hotkey value="Button/Hotkey/Repair"/>
+        <HotkeyAlias value="Repair"/>
     </CButton>
     <CButton id="ResearchHighEnergyCapacitors">
         <Icon value="Assets\Textures\btn-upgrade-swann-improvedburstlaser.dds"/>
