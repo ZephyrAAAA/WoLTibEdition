@@ -2214,11 +2214,8 @@
         <EditorCategories value=""/>
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
-    <CEffectSet id="ThorTheftSet">
-        <EditorCategories value=""/>
-    </CEffectSet>
     <CEffectApplyBehavior id="ThorTheftStone">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoStone"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorRadar"/>
@@ -2227,21 +2224,22 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorShield"/>
+        <ValidatorArray index="0" value="ThorTheftNoPredator"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftSiegeTank">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoTank"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorSplashDummy"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftHellion">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoHellion"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorFlamethrower"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftDiamondback">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoDiamondback"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorRailgun"/>

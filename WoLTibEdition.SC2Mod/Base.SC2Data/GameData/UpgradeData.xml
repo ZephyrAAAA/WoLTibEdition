@@ -2085,6 +2085,8 @@
         <EffectArray Reference="Weapon,Predator,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,OdinAntiAir,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,Odin,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,ThorInfernalFlameThrower,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,ThorDiamondback,RateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <AffectedUnitArray value="Odin"/>

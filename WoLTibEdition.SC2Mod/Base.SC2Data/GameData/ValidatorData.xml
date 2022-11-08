@@ -244,6 +244,26 @@
         <Value value="1"/>
         <Behavior value="ThorSplashDummy"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoHellion">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorFlamethrower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoPredator">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorShield"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoStone">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorRadar"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoTank">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorSplashDummy"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoDiamondback">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorRailgun"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareDamageDealtTime id="ToshHasFired">
         <Compare value="GE"/>
         <Value value="10"/>

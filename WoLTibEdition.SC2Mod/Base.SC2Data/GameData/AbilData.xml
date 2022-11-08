@@ -842,9 +842,9 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ThorTheftSwitch"/>
         <Range value="0.1"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="ImmortalityProtocol"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ImmortalityProtocol" Requirements="UseImmortailityProtocol"/>
         <PrepEffect value="ThorTheftKill"/>
-        <PrepTime value="1"/>
+        <PrepTime value="2"/>
         <PauseableArray index="Prep" value="0"/>
         <UninterruptibleArray index="Prep" value="1"/>
     </CAbilEffectTarget>
