@@ -1389,7 +1389,7 @@
         <InitialEffect value="DiamondbackBeam"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="DiamondbackPierce"/>
-        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
     <CEffectEnumArea id="DiamondbackPierce">
         <ValidatorArray value="TriLithiumPurchased"/>
