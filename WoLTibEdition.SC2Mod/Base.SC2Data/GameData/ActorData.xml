@@ -114,6 +114,21 @@
     <CActorUnit id="Diamondback">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Diamondback_Attack"/>
     </CActorUnit>
+    <CActorAction id="DiamondbackAttack">
+        <On index="0" Terms="Effect.DiamondbackCP.Stop; FromEffectTreeDescendant"/>
+        <On index="5" Terms="Effect.DiamondbackCP.Start; At Caster"/>
+    </CActorAction>
+    <CActorAction id="DiamondbackAttackPierce" parent="GenericAttack" effectAttack="DiamondbackBeam">
+        <On index="5" Terms="Effect.DiamondbackPierce.Start; At Target" Send="Create"/>
+        <LaunchAttachQuery Methods=""/>
+        <LaunchAssets Model="DiamondbackAttackLaunch" Sound="Diamondback_AttackImpact"/>
+        <Beam value="DiamondbackAttackBeam"/>
+        <Missile value="DiamondbackAttackMissile"/>
+        <ImpactMap index="None" Model="DiamondbackAttackImpact" Sound="DiamondbackAttackImpact" ModelReaction="DiamondbackAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="DiamondbackAttackImpactShield" ModelReaction="DiamondbackAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="DiamondbackAttackDamage" Sound="DiamondbackAttackDamage" ModelReaction="DiamondbackAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="DiamondbackAttackDamageShield" ModelReaction="DiamondbackAttackDamageReactionShield"/>
+    </CActorAction>
     <!--                                                                                         -->
     <!-- Duke's Revenge ........................................................................ -->
     <!--                                                                                         -->
@@ -1170,6 +1185,35 @@
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
     </CActorRange>
+    <CActorSiteOpRotationExplicit id="SOpPointDownWorld">
+        <Forward value="0.000000,0.000000,-1.000000"/>
+    </CActorSiteOpRotationExplicit>
+    <CActorUnit id="Thor">
+        <On index="78" Terms="WeaponStop.ThorsHammer.AttackStop"/>
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,255,128,64"/>
+        </StatusColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,255,128,64"/>
+        </VitalColors>
+    </CActorUnit>
+    <CActorModel id="ThorFlamethrower" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorFlamethrower.On" Send="Create"/>
+        <On Terms="Behavior.ThorFlamethrower.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHead SOpPointUp1ByDot25 SOpMoveDownBy1 SOpMoveDownByDot15 SOpMoveByDot75"/>
+        <Model value="Flamethrower"/>
+        <Scale value="2.000000"/>
+    </CActorModel>
+    <CActorModel id="ThorShield" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorShield.On" Send="Create"/>
+        <On Terms="Behavior.ThorShield.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHead SOpMoveDownBy1 SOpMoveBackByDot25 SOpPointUpWorld"/>
+        <Model value="Shield"/>
+        <Scale value="4.000000"/>
+    </CActorModel>
     <CActorRange id="ThorRadar">
         <On Terms="Behavior.ThorRadar.On" Send="Create"/>
         <On Terms="Behavior.ThorRadar.Off" Send="Destroy"/>
@@ -1209,19 +1253,6 @@
     <CActorEventMacro id="TerranAttachmentAnims">
         <On index="4" Send="AnimGroupApply Attached Attached,Start Attached,End"/>
     </CActorEventMacro>
-    <CActorUnit id="Thor">
-        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,255,128,64"/>
-            <ColorArray value="255,255,128,64"/>
-        </StatusColors>
-        <StatusColors index="Energy">
-            <ColorArray index="0" value="255,255,128,64"/>
-        </StatusColors>
-        <VitalColors index="Energy">
-            <ColorArray value="255,255,128,64"/>
-        </VitalColors>
-    </CActorUnit>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
@@ -1840,10 +1871,6 @@
     <!-- Predator .............................................................................. -->
     <!--                                                                                         -->
     <CActorUnit id="Predator">
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,255,128,64"/>
-            <ColorArray value="255,255,128,64"/>
-        </StatusColors>
         <StatusColors index="Energy">
             <ColorArray index="0" value="255,255,128,64"/>
         </StatusColors>

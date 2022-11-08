@@ -266,6 +266,13 @@
         <ScaleMax value="1.000000,3.750000,1.000000"/>
         <ScaleMin value="1.000000,3.750000,1.000000"/>
     </CModel>
+    <CModel id="Flamethrower">
+        <Model value="Assets\Models\Flamethrower.m3"/>
+    </CModel>
+    <CModel id="Shield">
+        <Model value="Assets\Models\Shield.m3"/>
+        <Lighting value="Flamethrower"/>
+    </CModel>
     <CModel id="KelMorianGrenadeTurretPlacement" parent="Placement" Race="Terran">
         <Model value="Assets\Buildings\Terran\GrenadeTurretPlacement\GrenadeTurretPlacement.m3"/>
         <LowQualityModel value="KelMorianGrenadeTurret"/>
@@ -381,6 +388,10 @@
         <TextureDeclares Prefix="collapsiblerocktowerflat_">
             <Adaptions TriggerOnSubstring="_Diffuse" Slot="generic01"/>
         </TextureDeclares>
+    </CModel>
+    <CModel id="TankGun">
+        <Model value="Assets\Models\TankGun.m3"/>
+        <Lighting value="Flamethrower"/>
     </CModel>
     <CModel id="TaldarimScoutDeath" parent="UnitDeath" Race="Protoss">
         <Model value="Assets\Units\Protoss\Scout_Taldarim_Death\Scout_Taldarim_Death.m3"/>

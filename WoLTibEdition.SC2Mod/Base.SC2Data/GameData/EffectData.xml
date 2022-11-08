@@ -1397,9 +1397,9 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray>
-            <Arc value="14.9963"/>
+            <Arc value="19.995"/>
             <MaxCount value="1"/>
-            <Radius value="1"/>
+            <Radius value="1.5"/>
             <Effect value="DiamondbackBeam"/>
         </AreaArray>
     </CEffectEnumArea>
@@ -2214,6 +2214,9 @@
         <EditorCategories value=""/>
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
+    <CEffectSet id="ThorTheftSet">
+        <EditorCategories value=""/>
+    </CEffectSet>
     <CEffectApplyBehavior id="ThorTheftStone">
         <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
         <EditorCategories value=""/>
@@ -2253,6 +2256,11 @@
     </CEffectSwitch>
     <CEffectDamage id="ThorsHammerDamage">
         <Amount value="30"/>
+        <AreaArray Radius="0.5" Fraction="1" Validator="ThorHasSplash"/>
+        <AreaArray Radius="0.8" Fraction="0.75" Validator="ThorHasSplash"/>
+        <AreaArray Radius="1.25" Fraction="0.375" Validator="ThorHasSplash"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>

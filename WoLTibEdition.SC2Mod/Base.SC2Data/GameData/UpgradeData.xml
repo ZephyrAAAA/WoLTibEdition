@@ -366,7 +366,7 @@
     </CUpgrade>
     <CUpgrade id="OcularImplants">
         <EffectArray index="0" Reference="Unit,Predator,EnergyDamageRatio" Value="1"/>
-        <EffectArray index="1" removed="1"/>
+        <EffectArray index="1" Reference="Behavior,ThorShield,Modification.EnergyDamageRatioBonus" Value="1"/>
         <EffectArray index="2" removed="1"/>
     </CUpgrade>
     <CUpgrade id="OrbitalStrike">

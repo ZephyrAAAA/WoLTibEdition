@@ -239,6 +239,11 @@
     <CValidatorUnitFilters id="TargetIsMechanical">
         <Filters value="Mechanical;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="ThorHasSplash">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="ThorSplashDummy"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareDamageDealtTime id="ToshHasFired">
         <Compare value="GE"/>
         <Value value="10"/>

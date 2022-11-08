@@ -843,6 +843,10 @@
         <Effect index="0" value="ThorTheftSwitch"/>
         <Range value="0.1"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="ImmortalityProtocol"/>
+        <PrepEffect value="ThorTheftKill"/>
+        <PrepTime value="1"/>
+        <PauseableArray index="Prep" value="0"/>
+        <UninterruptibleArray index="Prep" value="1"/>
     </CAbilEffectTarget>
     <CAbilTrain id="TrainStone">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>

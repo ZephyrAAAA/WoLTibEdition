@@ -654,7 +654,7 @@
         <Modification>
             <EnergyDamageRatioBonus value="1"/>
             <VitalMaxArray index="Energy" value="60"/>
-            <VitalRegenArray index="Energy" value="0.5625"/>
+            <VitalRegenArray index="Energy" value="1.125"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="TibNodeLarge">
