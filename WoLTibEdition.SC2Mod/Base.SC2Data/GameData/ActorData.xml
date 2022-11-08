@@ -114,6 +114,21 @@
     <CActorUnit id="Diamondback">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Diamondback_Attack"/>
     </CActorUnit>
+    <CActorAction id="DiamondbackAttack">
+        <On index="0" Terms="Effect.DiamondbackCP.Stop; FromEffectTreeDescendant"/>
+        <On index="5" Terms="Effect.DiamondbackCP.Start; At Caster"/>
+    </CActorAction>
+    <CActorAction id="DiamondbackAttackPierce" parent="GenericAttack" effectAttack="DiamondbackBeam">
+        <On index="5" Terms="Effect.DiamondbackPierce.Start; At Target" Send="Create"/>
+        <LaunchAttachQuery Methods=""/>
+        <LaunchAssets Model="DiamondbackAttackLaunch" Sound="Diamondback_AttackImpact"/>
+        <Beam value="DiamondbackAttackBeam"/>
+        <Missile value="DiamondbackAttackMissile"/>
+        <ImpactMap index="None" Model="DiamondbackAttackImpact" Sound="DiamondbackAttackImpact" ModelReaction="DiamondbackAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="DiamondbackAttackImpactShield" ModelReaction="DiamondbackAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="DiamondbackAttackDamage" Sound="DiamondbackAttackDamage" ModelReaction="DiamondbackAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="DiamondbackAttackDamageShield" ModelReaction="DiamondbackAttackDamageReactionShield"/>
+    </CActorAction>
     <!--                                                                                         -->
     <!-- Duke's Revenge ........................................................................ -->
     <!--                                                                                         -->
@@ -887,17 +902,17 @@
         <ModelFlags index="AutomateGlobalLoops" value="1"/>
     </CActorModel>
     <CActorUnit id="DevastationTurret" parent="TerranBuildingEx" unitName="DevastationTurret">
-        <Aliases value="_UnitHuge"/>
+        <Aliases value="_UnitMedium"/>
         <On index="69" Terms="UnitConstruction.DevastationTurret.Start" Send="Create MissileTurretBuild"/>
         <On Terms="Signal.*.test" Send="Create TurretUnitDeathModel"/>
         <On Terms="Signal.*.test" Send="SetOpacity"/>
         <CreepHeightClass value="Small"/>
         <BuildModel value="MissileTurretBuild"/>
-        <DeathArray index="Normal" ModelLink="MissileTurretDeath"/>
+        <DeathArray index="Normal" ModelLink="TerranBuildingDeath" SoundLink="Swann_FlamingBettyExplode" VoiceLink="KelMorianGrenadeTurretDeathVoice"/>
         <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MissileTurret_Explode"/>
         <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
         <DeathCustoms ModelLink="MissileTurretTitaniumHousingDeath" Name="Upgrade"/>
-        <PlacementModel value="DevastationTurret"/>
+        <PlacementModel value="KelMorianGrenadeTurretPlacement"/>
         <PlacementSound value="Terran_BuildingPlacementSmall"/>
         <PlacementActorModel value="MissileTurretSkinnablePlacementModel"/>
         <PortraitModel value="MissileTurretPortrait"/>
@@ -906,12 +921,23 @@
             <Image value="Assets\Textures\wireframe-terran-autoturret.dds"/>
         </GroupIcon>
         <HeroIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
-        <SoundArray index="Ready" value="MissileTurret_Ready"/>
-        <SoundArray index="What" value="MissileTurret_What"/>
+        <SoundArray index="Birth" value="Raven_AutoTurretBirth"/>
+        <SoundArray index="Ready" value="Raven_AutoTurretReady"/>
+        <SoundArray index="Help" value="KelMorianGrenadeTurret_Help"/>
+        <SoundArray index="What" value="Raven_AutoTurretWhat"/>
+        <SoundArray index="Yes" value="KelMorianGrenadeTurret_Yes"/>
+        <SoundArray index="Attack" value="KelMorianGrenadeTurret_Attack"/>
+        <SoundArray index="Pissed" value="KelMorianGrenadeTurret_Pissed"/>
+        <SoundArray index="Movement" value="KelMorianGrenadeTurret_Movement"/>
+        <SoundArray index="Turning" value="KelMorianGrenadeTurret_Turning"/>
+        <SoundArray index="Board" value="KelMorianGrenadeTurret_Board"/>
+        <SoundArray index="Click" value="KelMorianGrenadeTurret_Click"/>
+        <SoundArray index="ClickError" value="KelMorianGrenadeTurret_ClickError"/>
+        <SoundArray index="Highlight" value="KelMorianGrenadeTurret_Highlight"/>
         <UnitFlags index="ShowBlobShadow" value="0"/>
         <UnitIcon value="Assets\Textures\btn-tips-flamingbetty.dds"/>
         <Wireframe>
-            <Image value="Assets\Textures\Wireframe-Terran-MissileTurret.dds"/>
+            <Image value="Assets\Textures\wireframe-terran-grenadeturret.dds"/>
         </Wireframe>
     </CActorUnit>
     <CActorAction id="DevastationTurretAttack" parent="MarauderAttack" effectImpact="ConcussiveGrenadesU" effectLaunch="ConcussiveGrenadesLM">
@@ -1159,6 +1185,38 @@
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
     </CActorRange>
+    <CActorSiteOpRotationExplicit id="SOpPointDownWorld">
+        <Forward value="0.000000,0.000000,-1.000000"/>
+    </CActorSiteOpRotationExplicit>
+    <CActorUnit id="Thor">
+        <On index="78" Terms="WeaponStop.ThorsHammer.AttackStop"/>
+        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,255,128,64"/>
+        </StatusColors>
+        <VitalColors index="Energy">
+            <ColorArray value="255,255,128,64"/>
+        </VitalColors>
+    </CActorUnit>
+    <CActorModel id="ThorFlamethrower" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorFlamethrower.On" Send="Create"/>
+        <On Terms="Behavior.ThorFlamethrower.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHead SOpPointUp1ByDot25 SOpMoveDownBy1 SOpMoveDownByDot15 SOpMoveByDot75"/>
+        <Model value="Flamethrower"/>
+        <Scale value="2.000000"/>
+    </CActorModel>
+    <CActorModel id="ThorShield" parent="ModelAddition">
+        <Inherits index="CastShadows" value="0"/>
+        <AcceptedHostedPropTransfers index="CastShadows" value="0"/>
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorShield.On" Send="Create"/>
+        <On Terms="Behavior.ThorShield.Off" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetCastShadows"/>
+        <HostSiteOps Ops="SOpAttachHead SOpMoveDownBy1 SOpMoveBackByDot25 SOpPointUpWorld"/>
+        <Model value="Shield"/>
+        <Scale value="4.000000"/>
+    </CActorModel>
     <CActorRange id="ThorRadar">
         <On Terms="Behavior.ThorRadar.On" Send="Create"/>
         <On Terms="Behavior.ThorRadar.Off" Send="Destroy"/>
@@ -1198,19 +1256,13 @@
     <CActorEventMacro id="TerranAttachmentAnims">
         <On index="4" Send="AnimGroupApply Attached Attached,Start Attached,End"/>
     </CActorEventMacro>
-    <CActorUnit id="Thor">
-        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,255,128,64"/>
-            <ColorArray value="255,255,128,64"/>
-        </StatusColors>
-        <StatusColors index="Energy">
-            <ColorArray index="0" value="255,255,128,64"/>
-        </StatusColors>
-        <VitalColors index="Energy">
-            <ColorArray value="255,255,128,64"/>
-        </VitalColors>
-    </CActorUnit>
+    <CActorModel id="ThorRadarModel" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorRadar.On" Send="Create"/>
+        <On Terms="Behavior.ThorRadar.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHead SOpMoveDownByDot75 SOpMoveBackByDot75"/>
+        <Model value="SensorTower"/>
+    </CActorModel>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
@@ -1829,10 +1881,6 @@
     <!-- Predator .............................................................................. -->
     <!--                                                                                         -->
     <CActorUnit id="Predator">
-        <StatusColors index="Shields">
-            <ColorArray index="0" value="255,255,128,64"/>
-            <ColorArray value="255,255,128,64"/>
-        </StatusColors>
         <StatusColors index="Energy">
             <ColorArray index="0" value="255,255,128,64"/>
         </StatusColors>

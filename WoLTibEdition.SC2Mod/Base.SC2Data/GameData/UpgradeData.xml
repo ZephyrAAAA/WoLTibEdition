@@ -366,7 +366,7 @@
     </CUpgrade>
     <CUpgrade id="OcularImplants">
         <EffectArray index="0" Reference="Unit,Predator,EnergyDamageRatio" Value="1"/>
-        <EffectArray index="1" removed="1"/>
+        <EffectArray index="1" Reference="Behavior,ThorShield,Modification.EnergyDamageRatioBonus" Value="1"/>
         <EffectArray index="2" removed="1"/>
     </CUpgrade>
     <CUpgrade id="OrbitalStrike">
@@ -2085,6 +2085,8 @@
         <EffectArray Reference="Weapon,Predator,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,OdinAntiAir,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,Odin,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,ThorInfernalFlameThrower,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Weapon,ThorDiamondback,RateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <AffectedUnitArray value="Odin"/>
@@ -2128,6 +2130,7 @@
         <EffectArray Reference="Weapon,PerditionTurretFlamethrower,RateMultiplier" Value="0.15"/>
         <EffectArray Reference="Weapon,PerditionTurretFlamethrower,Range" Value="1"/>
         <EffectArray Reference="Effect,PerditionTurretFlameThrowerCreatePersistent,PeriodCount" Value="4"/>
+        <EffectArray Reference="Abil,PerditionTurretUnburrow,AutoCastRange" Value="1"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
     <CUpgrade id="HydraulicStabilizers">

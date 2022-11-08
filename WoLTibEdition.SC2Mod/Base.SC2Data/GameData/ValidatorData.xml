@@ -239,6 +239,36 @@
     <CValidatorUnitFilters id="TargetIsMechanical">
         <Filters value="Mechanical;-"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="ThorHasSplash">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="ThorSplashDummy"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoHellion">
+        <ResultFailed value="Error,Error/ThorTheftNoHellion"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorFlamethrower"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoPredator">
+        <ResultFailed value="Error,Error/ThorTheftNoPredator"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorShield"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoStone">
+        <ResultFailed value="Error,Error/ThorTheftNoStone"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorRadar"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoSiegeTank">
+        <ResultFailed value="Error,Error/ThorTheftNoSiegeTank"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorSplashDummy"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="ThorTheftNoDiamondback">
+        <ResultFailed value="Error,Error/ThorTheftNoDiamondback"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ThorRailgun"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareDamageDealtTime id="ToshHasFired">
         <Compare value="GE"/>
         <Value value="10"/>

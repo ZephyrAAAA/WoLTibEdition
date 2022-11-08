@@ -1389,7 +1389,7 @@
         <InitialEffect value="DiamondbackBeam"/>
         <PeriodCount value="1"/>
         <PeriodicEffectArray value="DiamondbackPierce"/>
-        <PeriodicPeriodArray value="0.0625"/>
+        <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
     <CEffectEnumArea id="DiamondbackPierce">
         <ValidatorArray value="TriLithiumPurchased"/>
@@ -1397,9 +1397,9 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray>
-            <Arc value="14.9963"/>
+            <Arc value="19.995"/>
             <MaxCount value="1"/>
-            <Radius value="1"/>
+            <Radius value="1.5"/>
             <Effect value="DiamondbackBeam"/>
         </AreaArray>
     </CEffectEnumArea>
@@ -1638,6 +1638,7 @@
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="IsNotConstructing"/>
         <Flags index="Channeled" value="0"/>
+        <Flags index="ContinueWhenFull" value="1"/>
         <DrainResourceCostFactor index="Minerals" value="1"/>
         <RechargeVitalRate value="1"/>
         <TimeFactor value="1"/>
@@ -1961,10 +1962,10 @@
         <ValidatorArray value="NotVortexd"/>
         <ValidatorArray value="TargetLifeNotFull"/>
         <EditorCategories value=""/>
-        <Flags index="Channeled" value="1"/>
-        <PeriodicValidator value="TargetLifeNotFull"/>
         <WhichLocation Value="TargetUnit"/>
+        <Flags index="Channeled" value="1"/>
         <PeriodCount value="1"/>
+        <PeriodicValidator value="TargetLifeNotFull"/>
         <PeriodicEffectArray value="SquadMainAttack"/>
         <PeriodicPeriodArray value="0.125"/>
     </CEffectCreatePersistent>
@@ -2214,7 +2215,7 @@
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="ThorTheftStone">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoStone"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorRadar"/>
@@ -2223,21 +2224,22 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorShield"/>
+        <ValidatorArray index="0" value="ThorTheftNoPredator"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftSiegeTank">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoSiegeTank"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorSplashDummy"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftHellion">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoHellion"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorFlamethrower"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftDiamondback">
-        <ValidatorArray index="0" value="ThorTheftPredatorTargetFilters"/>
+        <ValidatorArray index="0" value="ThorTheftNoDiamondback"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorRailgun"/>
@@ -2252,6 +2254,11 @@
     </CEffectSwitch>
     <CEffectDamage id="ThorsHammerDamage">
         <Amount value="30"/>
+        <AreaArray Radius="0.5" Fraction="1" Validator="ThorHasSplash"/>
+        <AreaArray Radius="0.8" Fraction="0.75" Validator="ThorHasSplash"/>
+        <AreaArray Radius="1.25" Fraction="0.375" Validator="ThorHasSplash"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectCreateUnit id="TibNodeLarge">
         <EditorCategories value=""/>
