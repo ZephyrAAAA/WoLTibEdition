@@ -1057,6 +1057,12 @@ Effect/Name/ZergHypervirus=Zerg Hypervirus
 Effect/Name/ZergHypervirusSearch=Zerg Hypervirus
 Error/DefensiveMatrix=Already Has Defensive Matrix
 Error/MustTargetMechanicalorPsionic=Must Target Mechanical Or Psionic
+Error/ThorTheftNoDiamondback=Already have Diamondback parts
+Error/ThorTheftNoHellion=Already have Hellion parts
+Error/ThorTheftNoPredator=Already have Predator parts
+Error/ThorTheftNoSiegeTank=Already have Siege Tank parts
+Error/ThorTheftNoStone=Already have Stone parts
+Error/ThorTheftNoTank=
 LoadingScreen/TextBody=<s val="LoadingScreenTitleMarSara">Mar Sara</s><n/><n/><s val="LoadingScreenBody">Fringe World, Dominion Space <n/>Koprulu Sector<n/><n/>Recolonized 2502</s>
 LoadingScreen/Tip=<sp/>
 MapInfo/Player00/Name=Neutral

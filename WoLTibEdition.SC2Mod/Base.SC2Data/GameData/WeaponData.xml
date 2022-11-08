@@ -361,7 +361,6 @@
         <Backswing value="0"/>
         <Effect value="DiamondbackCP"/>
         <AcquirePrioritization value="ByAngle"/>
-        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>

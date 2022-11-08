@@ -1207,9 +1207,12 @@
         <Scale value="2.000000"/>
     </CActorModel>
     <CActorModel id="ThorShield" parent="ModelAddition">
+        <Inherits index="CastShadows" value="0"/>
+        <AcceptedHostedPropTransfers index="CastShadows" value="0"/>
         <EditorCategories value=""/>
         <On Terms="Behavior.ThorShield.On" Send="Create"/>
         <On Terms="Behavior.ThorShield.Off" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetCastShadows"/>
         <HostSiteOps Ops="SOpAttachHead SOpMoveDownBy1 SOpMoveBackByDot25 SOpPointUpWorld"/>
         <Model value="Shield"/>
         <Scale value="4.000000"/>
@@ -1253,6 +1256,13 @@
     <CActorEventMacro id="TerranAttachmentAnims">
         <On index="4" Send="AnimGroupApply Attached Attached,Start Attached,End"/>
     </CActorEventMacro>
+    <CActorModel id="ThorRadarModel" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorRadar.On" Send="Create"/>
+        <On Terms="Behavior.ThorRadar.Off" Send="Destroy"/>
+        <HostSiteOps Ops="SOpAttachHead SOpMoveDownByDot75 SOpMoveBackByDot75"/>
+        <Model value="SensorTower"/>
+    </CActorModel>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>

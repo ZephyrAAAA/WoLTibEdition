@@ -2227,7 +2227,7 @@
         <ValidatorArray index="0" value="ThorTheftNoPredator"/>
     </CEffectApplyBehavior>
     <CEffectApplyBehavior id="ThorTheftSiegeTank">
-        <ValidatorArray index="0" value="ThorTheftNoTank"/>
+        <ValidatorArray index="0" value="ThorTheftNoSiegeTank"/>
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
         <Behavior value="ThorSplashDummy"/>
