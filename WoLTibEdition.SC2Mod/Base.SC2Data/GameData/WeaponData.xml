@@ -346,6 +346,10 @@
     <CWeaponLegacy id="ThorDiamondback">
         <EditorCategories value="Race:Terran"/>
         <Tip value="Weapon/Tip/Cannon"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <Options index="OnlyFireWhileInAttackOrder" value="0"/>
+        <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <Options index="ContinuousScan" value="1"/>
         <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-vehicleweaponslevel0.dds"/>
         <DisplayEffect value="DiamondbackBeam"/>
@@ -357,6 +361,7 @@
         <Backswing value="0"/>
         <Effect value="DiamondbackCP"/>
         <AcquirePrioritization value="ByAngle"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
