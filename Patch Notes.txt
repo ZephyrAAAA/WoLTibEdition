@@ -34,124 +34,20 @@ Power Fields should no longer show up if they're not yours.
 Added Neutral structures (Silo and Spike) that medics can garrison to gain control.
 Medic Tech Lab upgrade now increases bonus from neutral structures.
 
+Worker rally on the factory and reset rally on the refinery now use an icon made by Orcawarrior2
 
 Liberation Day:
-Extra marines no longer drop right on top of the dead holoboards, picking up the restore charge.
-Holoboard objective now says it gives credits
-The big message now says that tips Edited by CNC edition are Orange.
-Added a damage types tutorial
+Fixed the restore charge
+Fixed tutorial text not appearing.
 
 Outlaws:
-Removed ability to build engineering bay or crane
-Moved the barracks so it can build a tech lab without lifting off
-Enemy structures (except the bunkers) have half health.
-Added a tip about Build Radius
-Fixed SCV and Supply Depot tips
-Fixed the rebels sending out scouting parties
-Rescue Rebels objective now says it gives 30k credits
-Added a basebuilding tutorial, including the topbar abilities
-Added a stone tutorial about expanding to the rebel base
-You now start with a Shadow Ops
+Made the Skip Tutorial button work all the time
+The neutral base can now be taken if you skip the tutorial
+Suprise drop medivac is now invulnerable until it unloads.
+Building supply depots is now deactivated after you build the first one in the tutorial, then reactivated for the Low Power tutorial
+Removed the tech lab tip
+Marine highlight now goes away when you train one
+Removed the tech lab from the rebel base
 
 Zero Hour:
-Fixed bonuses not showing up
-Relocated starting depots so they aren't out of build radius
-Rescue Rebels objective now says it gives 30k credits
-Corruptors no longer have corruption
-You now start with a Shadow Ops
-You no longer start with 2 barracks
-Greatly increased money regen in main fields
-Armoury upgrades are now given by rescuing any 2 of the rebel groups, not group 1 and 2 specifically.
-Mutas now go around rebel groups instead of murdering them right away.
-Now has a Spike on the low ground.
-Replaced the lowground field and refinery with 2 spikes
-Replaced the field overlooking the second rebel group with a silo
-You start with a medic squad next to the spike.
-Added a tutorial about the spike
-
-Evacuation:
-Fixed the rear nydus not sticking around like it should
-You now start with an Engineering Bay so you can build firebats
-
-Smash and Grab:
-If the zerg are further than they should be, the protoss start sending 2 HT with each attack wave.
-The protoss no longer warp in extra stalkers in the bottom base
-Buffed ling-only zerg waves
-Taught the protoss how to merge archons
-The south protoss base has a second HT
-The protoss now use their own production, instead of the Super Warp Gate, for attack waves
-The bottom base now has 5 gates
-
-Redstone:
-Tosh's boys can now be rescued by air units.
-Brutalisk now tries to escape his toasty fate
-
-Outbreak:
-Removed the sensor tower tip.
-You no longer start with 2 barracks
-
-Trains:
-Kill Teams are weaker, and stay dead for longer.
-Matt mentions that killing the kill team will only buy you a little time before sending out another.
-You now start with a crane.
-The expansion now has a Silo
-Removed 3k of pickups to make up for the silo
-
-Bel'shir:
-Refactored bad code
-Attacking an area now gives 60s before the protoss will do anything
-Matt now says that the protoss are mobilizing 30s before a counterattack. The area to be attacked also gets pinged.
-The protoss no longer warp in extra warp prisms.
-Counterattacks are no longer tied to killing warp prisms specifically
-Counterattack strength is now tied to how much of the area attacked was cleared out.
-Relocated the first relic to near the 2 east altars, so it's not so immediate that you get it.
-First relic is now between the 2 nexus bases.
-
-A Sinister Turn:
-Void prison now says it only affects heroic for 4s
-Fixed spastic detectors
-Disabled sentry shield restore, so they don't detect zeratul when somehting is damaged.
-Plasma blast is slower, so it's easier to dodge
-
-Cutthroat:
-Fixed Orlan not mining.
-Orlan is no longer a pushover
-Orlan's Ravens are no longer on break.
-
-Engine of Destruction:
-Loki bonus now says it gives 50k credits
-
-Breakout:
-Consumption now says it heals
-Prison Block bonus objectives now say they give 37.5k
-Send Wave starts autocast not
-Ghosts no longer have energy.
-
-Ghost of a Chance:
-Nova heals better
-Vikings are present on platform 2
-Spectre bonus objective now says it gives 7.5k per spectre
-
-Haven:
-The split now mentions you get a support power
-There are now bonus objectives tracking how many settlements you've saved, and that you get 15k credits for each
-
-Haven's Fall:
-Fixed settlement markers not being removed.
-
-Safe Haven:
-The protoss no longer attempt to rebuild bases after they've been completely destroyed
-Second and third bases are much stronger, and less susceptible to cliff abuse
-Preventing the protoss from rebuilding and killing the counterattack no longer gives armoury upgrades.
-Counterattacks now scale less harshly with how many terror fleets you've killed
-There's now some small defensive outposts on the map
-The Purifier has been buffed significantly
-
-Supernova:
-Fixed poor johnny being spawned at the wrong time
-Disabled supply depot requirements
-Disabled Engibay requirements
-
-In Utter Darkness:
-There's now a timer for the next reinforcement wave.
-"Die Now" button no longer persists
+Improved timing on the Neutral Structures tutorial.
