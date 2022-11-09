@@ -857,6 +857,7 @@ Effect/Name/DetectorCone9Reveal=DetectorCone9Reveal
 Effect/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
 Effect/Name/DevastatorTurretPlace=DevastatorTurretPlace
 Effect/Name/DiamondbackCP=Eviscerator
+Effect/Name/DiamondbackCPThor=Eviscerator
 Effect/Name/DiamondbackPierce=Eviscerator
 Effect/Name/DropDevilDogs=Drop Devil Dogs
 Effect/Name/DropDuskwings=Drop Duskwings

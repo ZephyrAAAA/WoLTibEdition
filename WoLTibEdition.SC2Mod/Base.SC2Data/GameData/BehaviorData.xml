@@ -625,6 +625,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>
             <WeaponArray Link="ThorInfernalFlameThrower" Turret="Hellion"/>
+            <TurretEnableArray value="Hellion"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ThorRadar">

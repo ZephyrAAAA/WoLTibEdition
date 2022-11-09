@@ -374,6 +374,14 @@
         <AreaArray Arc="59.9963" Radius="9" Effect="DetectorCone9AB"/>
         <SearchFlags index="CenterAtLaunch" value="1"/>
     </CEffectEnumArea>
+    <CEffectCreatePersistent id="DiamondbackCPThor">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <InitialEffect value="DiamondbackBeam"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="DiamondbackPierce"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
     <CEffectCreateUnit id="DropJackson">
         <ValidatorArray value="HasJackson"/>
         <EditorCategories value=""/>

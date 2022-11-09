@@ -117,6 +117,7 @@
     <CActorAction id="DiamondbackAttack">
         <On index="0" Terms="Effect.DiamondbackCP.Stop; FromEffectTreeDescendant"/>
         <On index="5" Terms="Effect.DiamondbackCP.Start; At Caster"/>
+        <LaunchSite value="ThorRailgunSite"/>
     </CActorAction>
     <CActorAction id="DiamondbackAttackPierce" parent="GenericAttack" effectAttack="DiamondbackBeam">
         <On index="5" Terms="Effect.DiamondbackPierce.Start; At Target" Send="Create"/>
@@ -264,6 +265,10 @@
     <CActorUnit id="Hellion">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Hellion_Attack"/>
     </CActorUnit>
+    <CActorAction id="HellionAttack">
+        <LaunchSite value="ThorFlamethrowerSite"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+    </CActorAction>
     <CActorBeamSimple id="HiveMindEmulatorBeam">
         <HostLaunch Subject="::global.HMESource" Scope="Implicit"/>
         <HostLaunchSiteOps Ops=""/>
@@ -1188,6 +1193,11 @@
     <CActorSiteOpRotationExplicit id="SOpPointDownWorld">
         <Forward value="0.000000,0.000000,-1.000000"/>
     </CActorSiteOpRotationExplicit>
+    <CActorEventMacro id="SquadUnitShrink">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.SquadUnit.On" Send="SetScale 0.750000"/>
+        <On Terms="Behavior.SquadUnit.Off" Send="SetScale"/>
+    </CActorEventMacro>
     <CActorUnit id="Thor">
         <On index="78" Terms="WeaponStop.ThorsHammer.AttackStop"/>
         <On Terms="Abil.Theft.SourcePrepStart" Send="AnimBracketStart Spell {} Stand,Victory,00 {} ContentPlayOnce 2.000000 AsDuration"/>
@@ -1206,15 +1216,36 @@
         <HostSiteOps Ops="SOpAttachHead SOpPointUp1ByDot25 SOpMoveDownBy1 SOpMoveDownByDot15 SOpMoveByDot75"/>
         <Model value="Flamethrower"/>
         <Scale value="2.000000"/>
+        <HostedAttaches Name="Flamethrower">
+            <AttachQuery Methods="AMFilterWeapon"/>
+        </HostedAttaches>
     </CActorModel>
+    <CActorSite id="ThorFlamethrowerSite">
+        <EditorCategories value=""/>
+        <On Terms="ActorCreation.ThorFlamethrower" Send="Create"/>
+        <On Terms="ActorDestruction.ThorFlamethrower" Send="Destroy"/>
+        <Host Subject="ThorFlamethrower"/>
+        <HostSiteOps Ops="SOpAttachWeapon01"/>
+    </CActorSite>
+    <CActorSite id="ThorRailgunSite">
+        <EditorCategories value=""/>
+        <On Terms="ActorCreation.ThorRailgun" Send="Create"/>
+        <On Terms="ActorDestruction.ThorRailgun" Send="Destroy"/>
+        <Host Subject="ThorRailgun"/>
+        <HostSiteOps Ops="SOpAttachWeapon02"/>
+    </CActorSite>
     <CActorModel id="ThorRailgun" parent="ModelAddition">
         <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth {} Death"/>
         <On Terms="Behavior.ThorRailgun.On" Send="Create"/>
         <On Terms="Behavior.ThorRailgun.Off" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SetCastShadows"/>
-        <HostSiteOps Ops="SOpAttachHead SOpMoveUpByDot25 SOpMoveUpByDot1 SOpPointUp1ByDot25"/>
+        <HostSiteOps Ops="SOpAttachHead SOpMoveDownByDot5 SOpMoveByDot3"/>
         <Model value="Railgun"/>
         <Scale value="2.000000"/>
+        <HostedAttaches Name="Railgun">
+            <AttachQuery Methods="AMFilterWeapon"/>
+        </HostedAttaches>
     </CActorModel>
     <CActorModel id="ThorShield" parent="ModelAddition">
         <Inherits index="CastShadows" value="0"/>

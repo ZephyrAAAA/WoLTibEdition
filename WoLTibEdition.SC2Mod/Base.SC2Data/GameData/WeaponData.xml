@@ -357,7 +357,6 @@
         <Range value="7"/>
         <Period value="2"/>
         <AttackType value="Magic"/>
-        <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="DiamondbackCP"/>
         <AcquirePrioritization value="ByAngle"/>
@@ -488,7 +487,7 @@
         </Marker>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
-        <DamagePoint value="0"/>
+        <DamagePoint value="0.25"/>
         <Backswing value="0"/>
         <Effect value="InfernalFlameThrowerCP"/>
         <AllowedMovement value="Moving"/>
