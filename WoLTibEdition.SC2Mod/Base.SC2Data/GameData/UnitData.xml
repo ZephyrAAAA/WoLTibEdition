@@ -4122,6 +4122,7 @@
         <WeaponArray index="0" Link="Odin"/>
         <WeaponArray index="1" Link="OdinAntiAir"/>
         <Attributes index="Heroic" value="1"/>
+        <AlliedPushPriority value="2"/>
     </CUnit>
     <CUnit id="OdinBuild">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6254,7 +6255,8 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <Radius value="1"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
+        <BehaviorArray index="1" removed="1"/>
         <EnergyStart value="0"/>
         <EnergyMax value="0"/>
         <EnergyRegenRate value="0"/>
