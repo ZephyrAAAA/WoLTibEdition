@@ -6267,15 +6267,8 @@
             <LayoutButtons index="5" Face="330mmBarrageCannons" AbilCmd="330mmBarrageCannons,Execute"/>
             <LayoutButtons index="6" Face="Cancel" AbilCmd="250mmStrikeCannons,Cancel" Column="4"/>
             <LayoutButtons index="7" AbilCmd="330mmBarrageCannons,Cancel"/>
-            <LayoutButtons index="8">
-                <Face value="ImmortalityProtocol"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseImmortailityProtocol"/>
-                <Row value="1"/>
-                <Column value="0"/>
-            </LayoutButtons>
-            <LayoutButtons index="9" Type="AbilCmd" AbilCmd="Theft,Execute" Requirements="" Row="2" Column="1"/>
+            <LayoutButtons index="8" Face="ImmortalityProtocol" AbilCmd="Theft,Execute" Column="1"/>
+            <LayoutButtons index="9" removed="1"/>
         </CardLayouts>
         <TacticalAIThink value=""/>
         <AlliedPushPriority value="1"/>
