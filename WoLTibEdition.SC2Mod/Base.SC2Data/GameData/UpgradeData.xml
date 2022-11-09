@@ -364,6 +364,10 @@
     <CUpgrade id="MedivacRapidDeployment">
         <AffectedUnitArray value="Medivac"/>
     </CUpgrade>
+    <CUpgrade id="NeoSteelFrame">
+        <EffectArray index="0" Value="4"/>
+        <EffectArray index="1" Value="4"/>
+    </CUpgrade>
     <CUpgrade id="OcularImplants">
         <EffectArray index="0" Reference="Unit,Predator,EnergyDamageRatio" Value="1"/>
         <EffectArray index="1" Reference="Behavior,ThorShield,Modification.EnergyDamageRatioBonus" Value="1"/>

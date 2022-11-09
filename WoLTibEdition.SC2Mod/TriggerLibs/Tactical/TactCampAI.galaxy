@@ -804,6 +804,21 @@ void AIThinkMaar (int player, unit aiUnit, unitgroup scanGroup) {
 	}
 }
 
+void AIThinkPlanetary(int player, unit aiUnit, unitgroup scanGroup) {
+    // also used for planetary fortress
+    order ord;
+
+    if (CargoDefend(player, aiUnit, scanGroup, 8, 10, c_nullString, c_AB_BunkerChange))
+    {
+        return;
+    }
+
+    // rally
+    if (AIEvalTacticalData(aiUnit, null)) {
+        return;
+    }
+}
+
 //--------------------------------------------------------------------------------------------------
 //  *** GHOST ***
 //--------------------------------------------------------------------------------------------------
