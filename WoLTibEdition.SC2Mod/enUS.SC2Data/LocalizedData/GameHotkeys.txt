@@ -40,6 +40,7 @@ Button/Hotkey/StarshipUltraCapacitors=C
 Button/Hotkey/StarshipVanadiumPlating=V
 Button/Hotkey/Stone=S
 Button/Hotkey/SupplyDepot=D
+Button/Hotkey/TakeParts=T
 Button/Hotkey/TakeTheDrill=Q
 Button/Hotkey/VehicleUltraCapacitors=C
 Button/Hotkey/VehicleVanadiumPlating=V
