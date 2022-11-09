@@ -1190,6 +1190,7 @@
     </CActorSiteOpRotationExplicit>
     <CActorUnit id="Thor">
         <On index="78" Terms="WeaponStop.ThorsHammer.AttackStop"/>
+        <On Terms="Abil.Theft.SourcePrepStart" Send="AnimBracketStart Spell {} Stand,Victory,00 {} ContentPlayOnce 2.000000 AsDuration"/>
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
         <StatusColors index="Energy">
             <ColorArray index="0" value="255,255,128,64"/>
@@ -1204,6 +1205,15 @@
         <On Terms="Behavior.ThorFlamethrower.Off" Send="Destroy"/>
         <HostSiteOps Ops="SOpAttachHead SOpPointUp1ByDot25 SOpMoveDownBy1 SOpMoveDownByDot15 SOpMoveByDot75"/>
         <Model value="Flamethrower"/>
+        <Scale value="2.000000"/>
+    </CActorModel>
+    <CActorModel id="ThorRailgun" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On Terms="Behavior.ThorRailgun.On" Send="Create"/>
+        <On Terms="Behavior.ThorRailgun.Off" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetCastShadows"/>
+        <HostSiteOps Ops="SOpAttachHead SOpMoveUpByDot25 SOpMoveUpByDot1 SOpPointUp1ByDot25"/>
+        <Model value="Railgun"/>
         <Scale value="2.000000"/>
     </CActorModel>
     <CActorModel id="ThorShield" parent="ModelAddition">

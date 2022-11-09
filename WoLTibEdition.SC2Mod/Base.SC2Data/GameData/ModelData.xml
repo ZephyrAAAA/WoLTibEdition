@@ -556,6 +556,10 @@
     <CModel id="SuperCloak" parent="RacePersistentSpellFX" Race="Zerg">
         <Model value="Assets\COOP\Zeratul\Effects\SuperCloak_Zeratul_COOP\SuperCloak_Zeratul_COOP.m3"/>
     </CModel>
+    <CModel id="Railgun">
+        <Model value="Assets\Models\Railgun.m3"/>
+        <Lighting value="Flamethrower"/>
+    </CModel>
     <CModel id="VikingFighterDeathRagdoll2" parent="VikingFighterDeathRagdollBase">
         <Model value="Assets\COOP\Mengsk\Units\Viking_Mengsk_COOP_Fighter_DeathRagdoll\Viking_Mengsk_COOP_Fighter_DeathRagdoll.m3"/>
         <Events>
