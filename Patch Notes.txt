@@ -1,39 +1,7 @@
-Diamondback Shaped Hull now says in various places that it takes 25% less damage from Cannon.
-Raynor now actually complains about a headache if you try to do 2 Zeratul Missions in a row
-Raven and Vessel text updated
-Fixed vehicle mercs topbar not being affected by Topbar Efficiency.
-Omegalisks now have a damage and armour type.
-Biosteel now says numbers
-Gave the Pause Queue and Resume Queue buttons a tooltip.
-Fixed build radius not fully disappearing.
-Squads no longer get seconds from vanadium.
-CC now has higher priority than crane
-Changed reaper button for changing speed.
-Power button now says it is used to switch powered state, not just to depower.
-Sell button is now less ambiguous about how much you get back.
-Zeratul's power ability has a hotkey now
-Fixed hotkey conflict with SCV and Siege Tank
-Fixed hotkey conflict with Starport and Supply Depot
-Immortal no longer has the hardened shield button
-Crane now has a cancel button
-Fixed addons being too good for the building they're on.
-Topbar no longer cuts off
-All the tips we edit now have an orange title
-Firebats now require an engineering bay.
-Medics and Reapers require a Shadow Ops.
-The help menu now helps
-Replaced the Vespene Geyser and Rich Vespene Geyser help entries with Node entries.
-Stacked nodes are now Rich, to signify having greater regen.
-Removed Tech labs. All upgrades and requirements are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport). Missions still have the required tech to make the new unit.
-Blue Flame is now on the Shadow Ops.
-Improved Explosives upgrade is now on the Ebay.
-Firebat has less health now.
-Tal'Darim now use the correct skin.
-Fields no longer block clicking in them with the various move commands.
-Power Fields should no longer show up if they're not yours.
-Added Neutral structures (Silo and Spike) that medics can garrison to gain control.
-Medic Tech Lab upgrade now increases bonus from neutral structures.
-
+Factory Repair now has a hotkey
+Devastation turret now uses the correct wirefram
+Hi-sec now affects perdition unburrow range
+Thor now has the ability to commandeer equipment from other vehicles.
 Worker rally on the factory and reset rally on the refinery now use an icon made by Orcawarrior2
 
 Liberation Day:
