@@ -313,6 +313,7 @@ Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">En
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
+Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
 Button/Tooltip/BrutaliskBurrowed=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
 Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrades.
@@ -871,6 +872,7 @@ Effect/Name/DropSiegeBreakers=Drop Siege Breakers
 Effect/Name/DropSpartanCompany=Drop Spartan Company
 Effect/Name/DropWarPigs=Drop War Pigs
 Effect/Name/DummyEffect=Dummy Effect
+Effect/Name/DutchPlaceTurretSet=Place Turret (Set)
 Effect/Name/EMPDamageSpectre=EMP
 Effect/Name/EMPLaunchMissileSpectre=EMP
 Effect/Name/EMPSearchSpectre=EMP
@@ -962,6 +964,7 @@ Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
 Effect/Name/RavenScramblerDummy=RavenScramblerDummy
 Effect/Name/RavenScramblerSwitchInitial=RavenScramblerSwitchInitial
+Effect/Name/RaynorSnipeOrderWrapper=Raynor Snipe (Order Wrapper)
 Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
 Effect/Name/RemovePrecursorMercIterate=Remove Precursor Merc Iterate
@@ -1014,6 +1017,7 @@ Effect/Name/StealthTurnRight=Stealth Turn Right
 Effect/Name/SupercloakUnreveal=Supercloak Unreveal
 Effect/Name/SupplyDepotBuilt=Supply Depot Built
 Effect/Name/SupplyDepotPlace=Supply Depot Place
+Effect/Name/TValerian2aAttackPoint=TValerian2a Attack Point
 Effect/Name/TempestDamageFleet=Tempest Damage
 Effect/Name/TempestLaunchMissileFleet=Tempest Launch Missile
 Effect/Name/ThorTheftDiamondback=Thor Theft
@@ -1613,6 +1617,7 @@ Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
 Weapon/Name/ATALaserBattery2=ATA Laser Battery
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery
+Weapon/Name/CommandoSnipe=Commando Snipe
 Weapon/Name/ConcussiveGrenades=Concussive Grenades
 Weapon/Name/DRBattlecruiserA2=ATA Laser Battery
 Weapon/Name/DRBattlecruiserG2=ATS Laser Battery
@@ -1635,6 +1640,7 @@ Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
 Weapon/Name/ThorDiamondback=Eviscerator Rail Gun
 Weapon/Name/ThorInfernalFlameThrower=Infernal Flamethrower
+Weapon/Name/TossGrenade=Toss Grenade
 Weapon/Name/WarPigSquad=War Pig Squad
 Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry

@@ -175,6 +175,48 @@
     <CWeaponLegacy id="ColonistTransport">
         <AttackType value="Normal"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="CommandoRifle">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <TargetFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CommandoSnipe">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="CommandoRifle"/>
+        <TargetFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <Range value="12"/>
+        <Period value="0"/>
+        <AttackType value="Siege"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="RaynorSnipeCreatePersistent"/>
+        <LegacyOptions index="Uninterruptible" value="1"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TossGrenade">
+        <EditorCategories value="Race:Terran"/>
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <DisplayEffect value="CommandoRifle"/>
+        <TargetFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <Range value="7"/>
+        <Period value="0"/>
+        <AttackType value="Pierce"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+        <Effect value="BonesTossGrenadeLaunchMissile"/>
+        <LegacyOptions index="Uninterruptible" value="1"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0"/>
+        <UninterruptibleDuration value="0"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Siege"/>
         <Tip value="Weapon/Tip/Rocket"/>
@@ -342,6 +384,19 @@
         <AttackType value="Magic"/>
         <Range value="7"/>
         <Effect value="DiamondbackCP"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DutchConcussiveGrenade">
+        <Tip value="Weapon/Tip/Cannon"/>
+        <DisplayAttackCount value="0"/>
+        <MinimumRange value="0"/>
+        <Period value="1"/>
+        <AttackType value="Magic"/>
+        <Effect value="DutchConcussiveGrenadeLaunchMissile"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DutchTurretFlameThrower">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Period value="0.5"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThorDiamondback">
         <EditorCategories value="Race:Terran"/>
@@ -1044,6 +1099,10 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
         <!--         <Effect value="TychusChaingun"/> -->
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TychusCommandoChaingun">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="UrunEnergyBeam">
         <Tip value="Weapon/Tip/Rocket"/>
