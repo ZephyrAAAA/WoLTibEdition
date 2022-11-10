@@ -157,9 +157,18 @@
         <PeriodicValidator value="CasterNotInCombat"/>
         <RechargeVitalFraction value="0.0156"/>
     </CEffectCreateHealer>
+    <CEffectCreateHealer id="BonesHeal">
+        <DrainVitalCostFactor value="0.4"/>
+        <RechargeVitalRate value="25"/>
+    </CEffectCreateHealer>
     <CEffectDamage id="BonesTossGrenadeDamage">
         <ArmorReduction value="1"/>
+        <Amount value="300"/>
+        <SearchFilters value="-;Self,Player,Ally,Air,Missile,Stasis,Dead,Invulnerable"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="BonesTossGrenadeDelay">
+        <FinalEffect value="TValerian2aAttackPoint"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="BrutalizeDamage">
         <ArmorReduction value="1"/>
         <Kind value="Splash"/>
@@ -247,6 +256,10 @@
         <SpawnUnit value="DestructibleRock6x6"/>
         <SpawnRange value="0"/>
     </CEffectCreateUnit>
+    <CEffectDamage id="CommandoRifle">
+        <ImpactLocation Value="TargetUnit"/>
+        <Amount value="40"/>
+    </CEffectDamage>
     <CEffectDamage id="ConsumeDNADamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
@@ -410,6 +423,23 @@
     </CEffectDamage>
     <CEffectDamage id="DuskWingScreecherMissilesCarpetBombDamage">
         <Amount value="24"/>
+    </CEffectDamage>
+    <CEffectDamage id="DutchConcussiveGrenadeDamage">
+        <Amount value="40"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="DutchPlaceTurretCreateUnit">
+        <SpawnEffect value="DutchPlaceTurretSet"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="DutchPlaceTurretSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DutchPlaceTurretTimedLife"/>
+        <EffectArray value="KillsToCaster"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="DutchTurretFlameThrowerCreatePersistent">
+        <PeriodicPeriodArray index="0" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="DutchTurretFlameThrowerDamage">
+        <Amount value="20"/>
     </CEffectDamage>
     <CEffectDamage id="EMPDamageSpectre">
         <EditorCategories value=""/>
@@ -1610,9 +1640,19 @@
         <CaseArray Validator="IsDead" Effect="RavenScramblerDummy"/>
         <CaseDefault value="RavenScramblerMissileLM"/>
     </CEffectSwitch>
+    <CEffectCreatePersistent id="RaynorSnipeCreatePersistent">
+        <ValidatorArray index="0" removed="1"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="RaynorSnipeOrderWrapper">
+        <EditorCategories value="Race:Terran"/>
+        <FinalEffect value="TValerian2aAttackPoint"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="RaynorSnipeDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectEnumArea id="RaynorSnipeSearch">
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectEnumMagazine id="RemovePrecursorMercIterate">
         <EditorCategories value=""/>
         <EffectExternal value="RemovePrecursorMerc"/>
@@ -2195,6 +2235,18 @@
         <EditorCategories value=""/>
         <BehaviorLink value="DetectorConeReveal"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="SwannMelee">
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectIssueOrder id="TValerian2aAttackPoint">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <AbilCmdIndex value="2"/>
+        <CmdFlags index="AttackOnce" value="1"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetPoint"/>
+    </CEffectIssueOrder>
     <CEffectDamage id="TempestDamageFleet">
         <EditorCategories value="Race:Protoss"/>
         <ResponseFlags index="Acquire" value="1"/>
@@ -2671,6 +2723,10 @@
     </CEffectDamage>
     <CEffectDamage id="TwinIbiksCannon">
         <Amount value="80"/>
+    </CEffectDamage>
+    <CEffectDamage id="TychusCommandoAttackDamage">
+        <ImpactLocation Value="TargetUnit"/>
+        <Amount value="7"/>
     </CEffectDamage>
     <CEffectDamage id="TychusSpectreUltrasonicDamageLv1">
         <EditorCategories value="Race:Terran"/>

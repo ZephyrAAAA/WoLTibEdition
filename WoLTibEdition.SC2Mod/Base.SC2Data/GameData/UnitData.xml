@@ -2640,6 +2640,9 @@
     <CUnit id="FlamingBetty">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Structure" value="1"/>
+        <ArmorType value="Hero"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="FlamingBettyACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4835,6 +4838,17 @@
     <CUnit id="RaynorCommando">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <WeaponArray index="0" Link="CommandoSnipe"/>
+        <WeaponArray Link="CommandoRifle"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Row="1" Column="0"/>
+            <LayoutButtons Face="TossGrenadeTychus" Type="AbilCmd" AbilCmd="BonesTossGrenade,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="DutchPlaceTurret" Type="AbilCmd" AbilCmd="DutchPlaceTurret,Execute" Row="2" Column="2"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="Reactor">
         <ArmorType value="Hero"/>
@@ -5864,6 +5878,10 @@
     <CUnit id="Stetmann">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="Stone">
         <DeathRevealRadius value="3"/>
@@ -6121,6 +6139,11 @@
     <CUnit id="Swann">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <WeaponArray index="1" removed="1"/>
     </CUnit>
     <CUnit id="SwarmHostACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6533,6 +6556,12 @@
     <CUnit id="TychusCommando">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Normal"/>
+        <LifeStart value="300"/>
+        <LifeMax value="300"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <WeaponArray index="0" Link="TossGrenade"/>
+        <WeaponArray Link="TychusCommandoChaingun"/>
     </CUnit>
     <CUnit id="TychusEjectMissile">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

@@ -48,6 +48,15 @@
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
         <AutoCastRange value="4"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="BonesTossGrenade">
+        <PreEffectBehavior Behavior="TychusCommandoGrenading" Count="1" Duration="0.5">
+            <Flags index="UseDuration" value="1"/>
+        </PreEffectBehavior>
+        <CastOutroTime index="0" value="0"/>
+        <CmdButtonArray index="Execute">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilAttack id="BunkerAttack">
         <SupportedFilters value="-;Self,Invulnerable,Outer"/>
     </CAbilAttack>
@@ -99,6 +108,11 @@
         </Cost>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="NoDeceleration" value="1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="DutchPlaceTurret">
+        <CmdButtonArray index="Execute">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="EMPSpectre">
         <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
@@ -532,6 +546,18 @@
         <DefaultError value="MustTargetUnit,Error/MustTargetMechanicalorPsionic"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="RavenScramblerMissile"/>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="RaynorSnipe">
+        <Effect index="0" value="RaynorSnipeOrderWrapper"/>
+        <PreEffectBehavior Behavior="RaynorCommandoSniping" Count="1" Duration="0.25">
+            <Flags index="UseDuration" value="1"/>
+        </PreEffectBehavior>
+        <Flags index="RequireTargetVision" value="0"/>
+        <CastIntroTime index="0" value="0.575"/>
+        <FinishTime index="0" value="0"/>
+        <CmdButtonArray index="Execute">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="RepairDrone">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="RepairDroneReleaseCreateUnit"/>
@@ -655,6 +681,7 @@
     </CAbilBehavior>
     <CAbilEffectTarget id="BonesHeal">
         <Marker Link="Abil/BonesHeal"/>
+        <FollowRange value="2"/>
     </CAbilEffectTarget>
     <CAbilQueue id="CCMCVQueue">
         <EditorCategories value="AbilityorEffectType:Units"/>

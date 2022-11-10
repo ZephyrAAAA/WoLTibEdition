@@ -87,6 +87,12 @@
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Battlecruiser_Attack"/>
     </CActorUnit>
     <!--                                                                                         -->
+    <!-- Stetmann .............................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Bones">
+        <AbilSoundArray AbilCmd="move,AcquireMove" Sound="Stetmann_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
     <!-- Brutalisk ............................................................................. -->
     <!--                                                                                         -->
     <CActorUnit id="Brutalisk">
@@ -141,6 +147,12 @@
     <!--                                                                                         -->
     <CActorUnit id="DuskWingBanshee">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Banshee_Attack"/>
+    </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Swann ................................................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Dutch">
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Swann_Attack"/>
     </CActorUnit>
     <CActorSplat id="EMPCursorSplat2" parent="TerranCursorSplat" abil="EMPSpectre"/>
     <CActorRange id="EMPRange2" parent="RangeAbil" abil="EMPSpectre"/>
@@ -1304,6 +1316,13 @@
         <HostSiteOps Ops="SOpAttachHead SOpMoveDownByDot75 SOpMoveBackByDot75"/>
         <Model value="SensorTower"/>
     </CActorModel>
+    <!--                                                                                         -->
+    <!-- Tychus Commando ....................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="TychusCommando">
+        <On index="65" Terms="WeaponStart.TychusCommandoChaingun.AttackStart"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Tychus_Attack"/>
+    </CActorUnit>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
@@ -1835,6 +1854,7 @@
     <!--                                                                                         -->
     <CActorUnit id="RaynorCommando">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Raynor_Attack"/>
+        <On index="65" Terms="WeaponStart.CommandoRifle.AttackStart" Send="AnimBracketStart Attack Spell {} {} 0 1.550000 AsDuration"/>
     </CActorUnit>
     <!--                                                                                         -->
     <!--                                                                                         -->
