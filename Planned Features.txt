@@ -355,23 +355,26 @@ In Utter Darkness:
 
 Media Blitz:
 -Can no longer be done right after Engine of Destruction
-More resources
-Killing each ghost academy gives 20k credits
-Added a ghost academy near the secret lab
-Move the close expansion to protect the lab better
-Anti-light base is now an infantry base
-Vehicle base now has vultures.
+-Killing each ghost academy gives 20k credits
+-Added a ghost academy near the secret lab
+-Added a base to protect the lab
 Bases now have more units after the sneak attack
-Sneak attack shorter
+-Sneak attack shorter
+More resources
+Anti-light base is now an infantry base
+Vehicle base now has vultures and hellions.
 
 Piercing the Shroud:
 -Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
 -Collecting the plasma weapon improves damage of Yamato Strike
 -If you have the Ghost/Spectre unlocked, you get one instead of marines.
+-Significantly more/stronger defenders.
+-Brutalisk is no longer so binary in whether it kills you or not
 
 Maw of the Void:
 -Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
 -Convert to an open-ended macro mission
+-Added an objective to kill all Nexi and Production Structures, as well as the Mothership.
 
 Gates of Hell:
 -Zerg attacks are now scaled to how much of the map you control
@@ -385,12 +388,19 @@ Gates of Hell:
 -There are more spore cannons around the map.
 
 Belly of the Beast:
+-Tychus, Swann, and Raynor have been buffed to 300 HP.
+-Stetmann has been buffed to 200 HP.
+-Tychus does 7 Rifle damage at 0.2 attack speed. Tychus' grenade does Concussive.
+-Raynor does 40 Rocket damage at 1.5 attack speed. Raynor's Snipe does Rocket Damage.
+-Swann does 40 Cannon damage at 1 attack speed.
 -The Heroes now have a combined Command Card
 -Stettman no longer blocks medic healing
 -Tychus' and Raynor's abilities are no longer blocked by fog of war
 -Swann now gets betty's kills
--Betty now fires continuously
--Swann isn't bad
+-Betty now fires continuously, and does Concussive damage with 40 DPS
+-Swann shoots faster, and does more damage.
+-The first holdout sends more stuff
+-All Rescuable units are now mercs
 
 Shatter the Sky:
 -Tower health increased to 5000
