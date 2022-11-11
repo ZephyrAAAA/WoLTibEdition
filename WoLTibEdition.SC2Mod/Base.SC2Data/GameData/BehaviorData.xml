@@ -282,6 +282,12 @@
         <Modification MoveSpeedMaximum="1.5"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ZergChaserSpeed">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="UnitRadard"/>
+        <Modification MoveSpeedMultiplier="10"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MechEMP">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="1"/>
@@ -503,7 +509,6 @@
     <CBehaviorBuff id="ShapedHull">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Requirements value="UseShapedHull"/>
         <DamageResponse ModifyFraction="0.75">
             <Chance value="1"/>
             <AttackType index="Spell" value="0"/>

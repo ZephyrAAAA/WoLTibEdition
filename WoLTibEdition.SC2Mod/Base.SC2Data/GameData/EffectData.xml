@@ -165,6 +165,7 @@
         <ArmorReduction value="1"/>
         <Amount value="300"/>
         <SearchFilters value="-;Self,Player,Ally,Air,Missile,Stasis,Dead,Invulnerable"/>
+        <SearchFlags index="SameCliff" value="0"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="BonesTossGrenadeDelay">
         <FinalEffect value="TValerian2aAttackPoint"/>
