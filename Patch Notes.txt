@@ -3,6 +3,18 @@ Devastation turret now uses the correct wirefram
 Hi-sec now affects perdition unburrow range
 Thor now has the ability to commandeer equipment from other vehicles.
 Worker rally on the factory and reset rally on the refinery now use an icon made by Orcawarrior2
+*Help screen nodes mention SCV micro.
+*Reworded Expanded Hold and Orbital Supply Drop.
+*Stim no longer says it increases movement speed
+*All "you got an upgrade" text now stands out more
+*Devastation turret is now called the correct name
+*Bunkers are no longer fortified
+*Hailstorm now has a hotkey
+*Updated Ebay tooltip text
+*Updated Shadow Ops tooltip text
+*Updated Armoury tooltip text
+*Updated Fusion Core tooltip text
+*Updated Medic Upgrade tooltip
 
 Liberation Day:
 Fixed the restore charge
@@ -19,3 +31,43 @@ Removed the tech lab from the rebel base
 
 Zero Hour:
 Improved timing on the Neutral Structures tutorial.
+*Added a message about fields being more efficient if you let them regen
+
+Evacuation:
+*Fixed Ebay not transferring.
+*Neutral Structures
+
+Bel'shir:
+*Reduced the tech difference between Node Defenders and Terrazine waves.
+*Looked at counterattack taking weird paths
+
+Outbreak:
+*Added a second starting SCV
+*More infested, especially abberations
+*Buffed abberation damage
+
+Morbius Factor:
+*Neutral Structures
+
+Media Blitz:
+Can no longer be done right after Engine of Destruction
+Killing each ghost academy gives 20k credits
+Added a ghost academy near the secret lab
+Added a base to protect the lab
+Sneak attack shorter
+*Bases now have more units after the sneak attack
+*More resources. All resources are in neutral structures, except your starting field
+*Anti-light base is now an infantry base
+*Vehicle base now has vultures and hellions.
+
+Piercing the Shroud:
+Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
+Collecting the plasma weapon improves damage of Yamato Strike
+If you have the Ghost/Spectre unlocked, you get one instead of marines.
+Significantly more/stronger defenders.
+Brutalisk is no longer so binary in whether it kills you or not
+
+Maw of the Void:
+*Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
+*Convert to an open-ended macro mission
+*Added an objective to kill all Nexi and Production Structures, as well as the Mothership.

@@ -50,6 +50,7 @@ Abil/Name/MarauderSquad=Marauder Squad
 Abil/Name/MarineSquad=Marine Squad
 Abil/Name/MedicSquad=Medic Squad
 Abil/Name/MedicSquadAcquire=Medic Squad Acquire
+Abil/Name/NeutralCapturable=Neutral Capturable
 Abil/Name/NovaHeal=Heal
 Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
@@ -79,6 +80,7 @@ Abil/Name/SupplyDepot2Raise=Raise
 Abil/Name/TacNukeStrikeTopbar=Nuclear Strike
 Abil/Name/TacticalMissileStrike=Tactical Missile Strike
 Abil/Name/TakeTheDrill=Take The Drill
+Abil/Name/Theft=Theft
 Abil/Name/TrainStone=Train Stone
 Abil/Name/UnburrowAtPoint=Unburrow At Point
 Abil/Name/UnburrowBrutalisk=Unburrow (Brutalisk)
@@ -222,6 +224,7 @@ Button/Name/PsiDisruptor6=Psi Disruptor
 Button/Name/PsiDisruptor7=Psi Disruptor
 Button/Name/PsiDisruptor8=Psi Disruptor
 Button/Name/PsiDisruptor9=Psi Disruptor
+Button/Name/RallySCV=Set Worker Rally Point
 Button/Name/RavenRepairDrone=Repair Drone
 Button/Name/RavenScramblerMissile=Interference Matrix
 Button/Name/RepairOrder=Repair
@@ -273,6 +276,7 @@ Button/Name/TacticalMissileStrike6=Tactical Missile Strike
 Button/Name/TacticalMissileStrike7=Tactical Missile Strike
 Button/Name/TacticalMissileStrike8=Tactical Missile Strike
 Button/Name/TacticalMissileStrike9=Tactical Missile Strike
+Button/Name/TakeParts=Take Parts
 Button/Name/TakeTheDrill=Take The Drill
 Button/Name/VehicleMercenaries10=Vehicle Mercenaries
 Button/Name/VehicleMercenaries11=Vehicle Mercenaries
@@ -309,6 +313,7 @@ Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">En
 Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
+Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
 Button/Tooltip/BrutaliskBurrowed=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
 Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrades.
@@ -412,6 +417,8 @@ Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
+Button/Tooltip/MineralSilo=Provides build radius while controlled.<n/><n/>Grants a large one-time mineral payout on capture.
+Button/Tooltip/MineralSpike=Provides a steady income while controlled.<n/><n/>Grants a small one-time mineral payout on capture.
 Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NanoRepair=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals <d ref="Effect,NanoRepair,RechargeVitalRate"/> life per second for <d ref="Effect,NanoRepair,RechargeVitalRate*Effect,NanoRepair,DrainVitalCostFactor"/> energy.</c><n/><c val="#ColorAttackInfo">Up to 3 Science Vessels can heal the same target</c>
@@ -433,6 +440,9 @@ Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and rec
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupSiloInitialText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSiloInitial,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupSpikeInitialText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSpikeInitial,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
+Button/Tooltip/PickupSpikePeriodText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSpikePeriodic,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PlanetaryFortress2=Primary structure. Used to train SCVs and receive gathered resources. Has exceptional combat capabilities that are extremely potent against swarms of small units.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/PowerStructure=Powers target structure temporarily.<n/><c val="FFBF00">10 second casting time.</c>
 Button/Tooltip/PsiDisruptor10=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
@@ -447,6 +457,7 @@ Button/Tooltip/PsiDisruptor6=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/PsiDisruptor7=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
+Button/Tooltip/RallySCV=Sends constructed worker units to the designated point. Workers rallied to Mineral Fields will begin gathering automatically.
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
@@ -512,6 +523,7 @@ Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target locatio
 Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TakeParts=Takes parts from targeted unit to improve the thor.
 Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
 Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
 Button/Tooltip/TechLabFactory=Enables additional units. Researches upgrades.
@@ -690,6 +702,9 @@ ConversationState/Tech/Tech_Hellion_1/Info/Tooltip=<s val="TooltipTitle_Tech">Hy
 ConversationState/Tech/Tech_Hellion_2=Hydraulic Stabilizers
 ConversationState/Tech/Tech_Marine_1/Info/Description=<s val="TechSummary">- Grants the Stimpack ability.</s><n/><s val="TechSummary">- Effect: Marine takes 10 damage, fires 50% faster.<n/>- Duration: 15 seconds.</s><n/><n/><s val="TechDescription">Stimpacks provide a temporary boost to the Marine's attack speed by dosing him with a mix of adrenaline, endorphins, and aggression enhancers. <n/><n/>This frenzied burst does come at the expense of the Marine's health. Medical treatment is highly advisable after multiple uses. </s>
 ConversationState/Tech/Tech_Marine_1/Info/Tooltip=<s val="TooltipTitle_Tech">Stimpacks</s><n/><s val="TooltipDescription_Tech">Grants the Stimpack ability. Marine takes 10 damage, then fires 50% faster for 15 seconds.</s>
+ConversationState/Tech/Tech_Medic_1/Info/Description=<s val="TechSummary">- Medics now increase the monetary benefit of capturing neutral structures by 25%.</s><n/><n/><s val="TechDescription">We found out that medics had time for night classes</s>
+ConversationState/Tech/Tech_Medic_1/Info/Tooltip=<s val="TooltipTitle_Tech">Advanced Medic Training</s><n/><s val="TooltipDescription_Tech">Increases the money income of neutral structures by 25%.</s>
+ConversationState/Tech/Tech_Medic_2=Advanced Medic Training
 ConversationState/Tech/Tech_Medic_2/Info/Description=<s val="TechSummary">- Medics use 33% less energy per heal.</s><n/><n/><s val="TechDescription">The Stabilizer Medpack is a new generation of medical Nanobot that heals targets more efficiently. Show your Marines that you truly care by outfitting your Medics with Stabilizer Medpacks today!</s>
 ConversationState/Tech/Tech_Medic_2/Info/Tooltip=<s val="TooltipTitle_Tech">Stabilizer Medpacks</s><n/><s val="TooltipDescription_Tech">Medics heal targets more efficiently.</s>
 ConversationState/Tech/Tech_Medivac_2/Info/Description=<s val="TechSummary">- Medivacs deploy loaded troops almost instantly.<n/>- Infantry in medivacs can fire out of it.</s><n/><n/><s val="TechDescription">Dropping troops onto a hostile battlefield is always dangerous, but a slow drop can be lethal. Bellerephon has made this problem a thing of the past by developing a new gravity tube that can be used to either launch ordinance from loaded troops, or deploy the Medivac's contents almost instantly.</s>
@@ -798,6 +813,7 @@ Effect/Name/AirTransportUnloadIterate=Air Transport Unload Iterate
 Effect/Name/AirTransportUnloadSquad=Air Transport Unload Squad
 Effect/Name/AstralProjection=Astral Projection
 Effect/Name/AstralProjectionCU=Astral Projection
+Effect/Name/AttackSelf=Attack Self
 Effect/Name/AutoHarvestCP=Auto Harvest
 Effect/Name/AutoHarvestTib=Auto Harvest Tib
 Effect/Name/BansheeAirstrikeDamage=Banshee Airstrike Damage
@@ -814,6 +830,9 @@ Effect/Name/BunkerLoadIterate2=Bunker Load Iterate2
 Effect/Name/BunkerLoadSquad=Bunker Load Squad
 Effect/Name/BunkerUnloadIterate=Bunker Unload Iterate
 Effect/Name/BunkerUnloadSquad2=Bunker Unload Squad
+Effect/Name/CaptureStructure=Capture Structure
+Effect/Name/CaptureStructureKill=Capture Structure
+Effect/Name/CaptureStructureSet=Capture Structure
 Effect/Name/CollapsibleRockTowerCPFinalPurifier02=Collapsible Rock Tower CPFinal
 Effect/Name/CollapsibleRockTowerCPPurifier02=Collapsible Rock Tower CP
 Effect/Name/CollapsibleRockTowerCreateDebrisPurifier02=Collapsible Rock Tower Create Debris
@@ -841,6 +860,7 @@ Effect/Name/DetectorCone9Reveal=DetectorCone9Reveal
 Effect/Name/DevastatorTurretBuilt=DevastatorTurretBuilt
 Effect/Name/DevastatorTurretPlace=DevastatorTurretPlace
 Effect/Name/DiamondbackCP=Eviscerator
+Effect/Name/DiamondbackCPThor=Eviscerator
 Effect/Name/DiamondbackPierce=Eviscerator
 Effect/Name/DropDevilDogs=Drop Devil Dogs
 Effect/Name/DropDuskwings=Drop Duskwings
@@ -852,6 +872,7 @@ Effect/Name/DropSiegeBreakers=Drop Siege Breakers
 Effect/Name/DropSpartanCompany=Drop Spartan Company
 Effect/Name/DropWarPigs=Drop War Pigs
 Effect/Name/DummyEffect=Dummy Effect
+Effect/Name/DutchPlaceTurretSet=Place Turret (Set)
 Effect/Name/EMPDamageSpectre=EMP
 Effect/Name/EMPLaunchMissileSpectre=EMP
 Effect/Name/EMPSearchSpectre=EMP
@@ -918,6 +939,9 @@ Effect/Name/MedivacHealLoopSet=Heal Loop
 Effect/Name/MedivacHealLoopTransport=Heal Loop
 Effect/Name/MedivacLoadSet=Load
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
+Effect/Name/MineralSiloInitial=Mineral Silo Initial
+Effect/Name/MineralSpikeInitial=Mineral Spike Initial
+Effect/Name/MineralSpikePeriodic=Mineral Spike Periodic
 Effect/Name/NovaHeal=Heal
 Effect/Name/NovaHeal2=Heal
 Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
@@ -940,6 +964,7 @@ Effect/Name/RallyCopy=Rally Copy
 Effect/Name/RallyIterate=Rally Iterate
 Effect/Name/RavenScramblerDummy=RavenScramblerDummy
 Effect/Name/RavenScramblerSwitchInitial=RavenScramblerSwitchInitial
+Effect/Name/RaynorSnipeOrderWrapper=Raynor Snipe (Order Wrapper)
 Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
 Effect/Name/RemovePrecursorMercIterate=Remove Precursor Merc Iterate
@@ -992,8 +1017,16 @@ Effect/Name/StealthTurnRight=Stealth Turn Right
 Effect/Name/SupercloakUnreveal=Supercloak Unreveal
 Effect/Name/SupplyDepotBuilt=Supply Depot Built
 Effect/Name/SupplyDepotPlace=Supply Depot Place
+Effect/Name/TValerian2aAttackPoint=TValerian2a Attack Point
 Effect/Name/TempestDamageFleet=Tempest Damage
 Effect/Name/TempestLaunchMissileFleet=Tempest Launch Missile
+Effect/Name/ThorTheftDiamondback=Thor Theft
+Effect/Name/ThorTheftHellion=Thor Theft
+Effect/Name/ThorTheftKill=Thor Theft
+Effect/Name/ThorTheftPredator=Thor Theft
+Effect/Name/ThorTheftSiegeTank=Thor Theft
+Effect/Name/ThorTheftStone=Thor Theft
+Effect/Name/ThorTheftSwitch=Thor Theft
 Effect/Name/TibGrow=Tib Grow
 Effect/Name/TibNodeLarge=Tib Node Large
 Effect/Name/TibNodeLargeGrow=Tib Node Large Grow
@@ -1031,6 +1064,12 @@ Effect/Name/ZergHypervirus=Zerg Hypervirus
 Effect/Name/ZergHypervirusSearch=Zerg Hypervirus
 Error/DefensiveMatrix=Already Has Defensive Matrix
 Error/MustTargetMechanicalorPsionic=Must Target Mechanical Or Psionic
+Error/ThorTheftNoDiamondback=Already have Diamondback parts
+Error/ThorTheftNoHellion=Already have Hellion parts
+Error/ThorTheftNoPredator=Already have Predator parts
+Error/ThorTheftNoSiegeTank=Already have Siege Tank parts
+Error/ThorTheftNoStone=Already have Stone parts
+Error/ThorTheftNoTank=
 LoadingScreen/TextBody=<s val="LoadingScreenTitleMarSara">Mar Sara</s><n/><n/><s val="LoadingScreenBody">Fringe World, Dominion Space <n/>Koprulu Sector<n/><n/>Recolonized 2502</s>
 LoadingScreen/Tip=<sp/>
 MapInfo/Player00/Name=Neutral
@@ -1516,6 +1555,8 @@ Unit/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Unit/Name/MarauderSquad=Marauder Squad
 Unit/Name/MarineSquad=Marine Squad
 Unit/Name/MedicSquad=Medic Squad
+Unit/Name/MineralSilo=Mineral Silo
+Unit/Name/MineralSpike=Mineral Spike
 Unit/Name/MissileTurret2=Missile Turret
 Unit/Name/OrbitalCommand2=Orbital Command
 Unit/Name/OrbitalCommandFlying2=Orbital Command
@@ -1576,6 +1617,7 @@ Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
 Weapon/Name/ATALaserBattery2=ATA Laser Battery
 Weapon/Name/ATSLaserBattery2=ATS Laser Battery
+Weapon/Name/CommandoSnipe=Commando Snipe
 Weapon/Name/ConcussiveGrenades=Concussive Grenades
 Weapon/Name/DRBattlecruiserA2=ATA Laser Battery
 Weapon/Name/DRBattlecruiserG2=ATS Laser Battery
@@ -1596,6 +1638,9 @@ Weapon/Name/MedivacFakeWeapon=Medivac Fake Weapon
 Weapon/Name/PredatorShields=Predator Shields
 Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
+Weapon/Name/ThorDiamondback=Eviscerator Rail Gun
+Weapon/Name/ThorInfernalFlameThrower=Infernal Flamethrower
+Weapon/Name/TossGrenade=Toss Grenade
 Weapon/Name/WarPigSquad=War Pig Squad
 Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
