@@ -1737,18 +1737,21 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="0"/>
+        <AttackTargetPriority value="10"/>
     </CUnit>
     <CUnit id="CreepTumorBurrowed">
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="0"/>
+        <AttackTargetPriority value="10"/>
     </CUnit>
     <CUnit id="CreepTumorQueen">
         <ArmorType value="Hero"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="0"/>
+        <AttackTargetPriority value="10"/>
     </CUnit>
     <CUnit id="CreeperHostACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6320,8 +6323,8 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="BioSpeed" Type="AbilCmd" AbilCmd="BioMode,On" Row="1" Column="1"/>
-            <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="1"/>
             <LayoutButtons Face="CombatDrugs" Type="Passive" Row="2" Column="2"/>
+            <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="2"/>
         </CardLayouts>
         <LifeStart value="240"/>
         <LifeMax value="240"/>
