@@ -1084,31 +1084,9 @@
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
-            <LayoutButtons Face="ShrikeTurret" Type="Passive" Requirements="ShrikeTurretResearched" Row="1" Column="2"/>
-            <LayoutButtons>
-                <Face value="FortifiedBunker"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="Decal"/>
-                <Row value="1"/>
-                <Column value="2"/>
-            </LayoutButtons>
-            <LayoutButtons>
-                <Face value="NeoSteelFrame"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseNeoSteelFrame"/>
-                <Row value="1"/>
-                <Column value="1"/>
-            </LayoutButtons>
-            <LayoutButtons>
-                <Face value="ProjectileAccelerators"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseProjectileAccelerators"/>
-                <Row value="1"/>
-                <Column value="0"/>
-            </LayoutButtons>
+            <LayoutButtons Face="NeoSteelFrame" Type="Passive" AbilCmd="255,255" Row="1" Column="2"/>
+            <LayoutButtons Face="ShrikeTurret" Type="Passive" Row="1" Column="1"/>
+            <LayoutButtons Face="ProjectileAccelerators" Type="Passive" AbilCmd="255,255" Row="1" Column="0"/>
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>
@@ -2148,22 +2126,8 @@
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
-            <LayoutButtons>
-                <Face value="ReinforcedSuperstructure"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseReinforcedSuperstructure"/>
-                <Row value="2"/>
-                <Column value="0"/>
-            </LayoutButtons>
-            <LayoutButtons>
-                <Face value="HellstormMissileBatteries"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseHailstormMissilePods"/>
-                <Row value="2"/>
-                <Column value="1"/>
-            </LayoutButtons>
+            <LayoutButtons Face="ReinforcedSuperstructure" Type="Passive" AbilCmd="255,255" Row="2" Column="0"/>
+            <LayoutButtons Face="HellstormMissileBatteries" Type="Passive" AbilCmd="255,255" Row="2" Column="1"/>
         </CardLayouts>
         <Radius value="0.75"/>
         <SeparationRadius value="0.75"/>
@@ -2788,22 +2752,8 @@
         <EnergyRegenRate value="0"/>
         <CardLayouts index="0">
             <LayoutButtons index="8" Face="WeaponsFree" AbilCmd="GhostWeaponsFree,Execute" Row="1"/>
-            <LayoutButtons index="9">
-                <Face value="OcularImplants"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseGhostOcularImplants"/>
-                <Row value="1"/>
-                <Column value="0"/>
-            </LayoutButtons>
-            <LayoutButtons index="10">
-                <Face value="CriusSuit"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseGhostCriusSuit"/>
-                <Row value="1"/>
-                <Column value="1"/>
-            </LayoutButtons>
+            <LayoutButtons index="9" Face="OcularImplants" Type="Passive" AbilCmd="255,255" Row="1" Column="0"/>
+            <LayoutButtons index="10" Face="CriusSuit" Type="Passive" AbilCmd="255,255" Row="1" Column="1"/>
             <LayoutButtons index="11" removed="1"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
@@ -3796,15 +3746,8 @@
         <CardLayouts index="0">
             <LayoutButtons index="5" Face="Heal" AbilCmd="MedivacHeal,Execute" Row="2" Column="0"/>
             <LayoutButtons index="6" Face="MedivacUnloadAll" AbilCmd="MedivacTransport,UnloadAt" Row="2" Column="3"/>
-            <LayoutButtons index="7" Face="RapidDeploymentTubes" Type="Passive" AbilCmd="" Requirements="RapidDeploymentResearched" Row="1"/>
-            <LayoutButtons index="8">
-                <Face value="AdvancedHealingAI"/>
-                <Type value="Passive"/>
-                <AbilCmd value=""/>
-                <Requirements value="AdvancedHealingAIPurchased"/>
-                <Row value="1"/>
-                <Column value="1"/>
-            </LayoutButtons>
+            <LayoutButtons index="7" Face="RapidDeploymentTubes" Type="Passive" AbilCmd="" Row="1"/>
+            <LayoutButtons index="8" Face="AdvancedHealingAI" Type="Passive" AbilCmd="" Row="1" Column="1"/>
             <LayoutButtons index="9" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons index="10" Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="1"/>
             <LayoutButtons index="11" removed="1"/>
@@ -3925,22 +3868,8 @@
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="AttackBuilding" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
-            <LayoutButtons>
-                <Face value="ReinforcedSuperstructure"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseReinforcedSuperstructure"/>
-                <Row value="2"/>
-                <Column value="0"/>
-            </LayoutButtons>
-            <LayoutButtons>
-                <Face value="HellstormMissileBatteries"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseHailstormMissilePods"/>
-                <Row value="2"/>
-                <Column value="1"/>
-            </LayoutButtons>
+            <LayoutButtons Face="ReinforcedSuperstructure" Type="Passive" AbilCmd="255,255" Row="2" Column="0"/>
+            <LayoutButtons Face="HellstormMissileBatteries" Type="Passive" AbilCmd="255,255" Row="2" Column="1"/>
         </CardLayouts>
         <Radius value="0.75"/>
         <SeparationRadius value="0.75"/>
@@ -5573,7 +5502,7 @@
             <LayoutButtons index="5" Face="Cancel" AbilCmd="SpectreNuke,Cancel" Column="4"/>
             <LayoutButtons index="6" Face="SpectreHoldFire" AbilCmd="SpectreHoldFire,Execute" Row="1" Column="2"/>
             <LayoutButtons index="7" Face="SpectreWeaponsFree" AbilCmd="SpectreWeaponsFree,Execute" Row="1" Column="3"/>
-            <LayoutButtons index="8" Face="NyxClassCloakingModule" Type="Passive" AbilCmd="255,255" Requirements="UseSpectreNyxSuit" Column="1"/>
+            <LayoutButtons index="8" Face="NyxClassCloakingModule" Type="Passive" AbilCmd="255,255" Column="1"/>
             <LayoutButtons index="9" Face="UltrasonicPulse" AbilCmd="UltrasonicPulse,Execute" Row="2" Column="0"/>
             <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
@@ -6392,7 +6321,7 @@
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="BioSpeed" Type="AbilCmd" AbilCmd="BioMode,On" Row="1" Column="1"/>
             <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="1"/>
-            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="2" Column="2"/>
+            <LayoutButtons Face="CombatDrugs" Type="Passive" Row="2" Column="2"/>
         </CardLayouts>
         <LifeStart value="240"/>
         <LifeMax value="240"/>
