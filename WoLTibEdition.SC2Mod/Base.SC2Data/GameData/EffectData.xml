@@ -258,7 +258,7 @@
     </CEffectCreateUnit>
     <CEffectDamage id="CommandoRifle">
         <ImpactLocation Value="TargetUnit"/>
-        <Amount value="40"/>
+        <Amount value="70"/>
     </CEffectDamage>
     <CEffectDamage id="ConsumeDNADamage">
         <ArmorReduction value="1"/>
