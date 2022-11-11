@@ -34,11 +34,9 @@
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDevilDogs">
         <Find value="1"/>
-        <Value value="MercPHTrainFirebat"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDuskWings">
         <Find value="1"/>
-        <Value value="MercPHTrainBanshee"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasImprovedPlasmaShields">
         <Find value="1"/>
@@ -47,31 +45,24 @@
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasJackson">
         <Find value="1"/>
-        <Value value="MercPHTrainBattleCruiser"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasPlasmaShields">
         <Find value="1"/>
-        <Value value="UseTechReactor"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasSiegeBreakers">
         <Find value="1"/>
-        <Value value="MercPHTrainSiegeTank"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasSpartanCompany">
         <Find value="1"/>
-        <Value value="MercPHTrainGoliath"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasHammerSecurities">
         <Find value="1"/>
-        <Value value="MercPHTrainMarauder"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasHelsAngels">
         <Find value="1"/>
-        <Value value="MercPHTrainViking"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasWarPigs">
         <Find value="1"/>
-        <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
     <CValidatorLocationCompareRange id="IrradiateDistanceCheck">
         <Compare value="LT"/>
@@ -111,9 +102,7 @@
         <ResultFailed value="Error,Error/DefensiveMatrix"/>
         <Behavior value="DefensiveMatrix"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorPlayerRequirement id="NotHaveAutoHarvester">
-        <Value value="AutoHarvesterResearched"/>
-    </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="NotHaveAutoHarvester"/>
     <CValidatorLocationCompareRange id="InfestedCreepTooClose">
         <WhichLocation Effect="CreepSpreadInfestedSet" Value="TargetUnit"/>
         <Compare value="LE"/>
@@ -183,7 +172,6 @@
     <CValidatorPlayerRequirement id="AdvancedHealingAIPurchased">
         <WhichPlayer Value="Source"/>
         <Find value="1"/>
-        <Value value="AdvancedHealingAIPurchased"/>
     </CValidatorPlayerRequirement>
     <CValidatorLocationCompareRange id="SeekerMissileMaxLaunchRange">
         <WhichLocation Effect="SeekerMissileLaunchMissile"/>
@@ -282,7 +270,6 @@
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasHellstormMissilePods">
         <Find value="1"/>
-        <Value value="UseHailstormMissilePods"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerCompareResource id="HasRepairMoney">
         <Compare value="GT"/>
@@ -327,9 +314,13 @@
     <CValidatorUnitCompareBehaviorCount id="UnitNotInBunker">
         <Behavior value="BunkerWeaponRangeBonus"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitDetected id="UnitRadard">
+        <WhichUnit Value="Caster"/>
+        <Detected value="1"/>
+        <Flags index="Radar" value="1"/>
+    </CValidatorUnitDetected>
     <CValidatorPlayerRequirement id="UseMechEMP">
         <Find value="1"/>
-        <Value value="UseNanoConstructor"/>
     </CValidatorPlayerRequirement>
     <CValidatorLocationEnumArea id="ZeratulNear">
         <WhichLocation Value="CasterUnit"/>

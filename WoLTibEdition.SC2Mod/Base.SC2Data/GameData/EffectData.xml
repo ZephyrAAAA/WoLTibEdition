@@ -165,6 +165,7 @@
         <ArmorReduction value="1"/>
         <Amount value="300"/>
         <SearchFilters value="-;Self,Player,Ally,Air,Missile,Stasis,Dead,Invulnerable"/>
+        <SearchFlags index="SameCliff" value="0"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="BonesTossGrenadeDelay">
         <FinalEffect value="TValerian2aAttackPoint"/>
@@ -258,7 +259,7 @@
     </CEffectCreateUnit>
     <CEffectDamage id="CommandoRifle">
         <ImpactLocation Value="TargetUnit"/>
-        <Amount value="40"/>
+        <Amount value="70"/>
     </CEffectDamage>
     <CEffectDamage id="ConsumeDNADamage">
         <ArmorReduction value="1"/>
