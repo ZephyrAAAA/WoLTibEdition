@@ -849,7 +849,7 @@
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
     <CEffectDamage id="InfestedAbomination">
-        <Amount value="30"/>
+        <Amount value="40"/>
     </CEffectDamage>
     <CEffectCreep id="InfiniteCreep">
         <EditorCategories value=""/>
