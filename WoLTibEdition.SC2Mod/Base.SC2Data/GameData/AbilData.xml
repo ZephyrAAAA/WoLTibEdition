@@ -465,6 +465,10 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <Effect index="0" value="NovaHeal2"/>
+        <PrepTime value="5"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="NovaHeal"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="NovaSnipe">
         <CastIntroTime index="0" value="0.1"/>

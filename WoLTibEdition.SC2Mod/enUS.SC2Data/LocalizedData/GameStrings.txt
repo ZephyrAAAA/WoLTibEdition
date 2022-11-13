@@ -944,6 +944,7 @@ Effect/Name/MineralSpikeInitial=Mineral Spike Initial
 Effect/Name/MineralSpikePeriodic=Mineral Spike Periodic
 Effect/Name/NovaHeal=Heal
 Effect/Name/NovaHeal2=Heal
+Effect/Name/NovaHealTimer=Heal
 Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
 Effect/Name/NuclearAnnihilationMengskBigNukeDropDelayCP=NuclearAnnihilationMengskBigNukeDropDelayCP
 Effect/Name/NuclearAnnihilationMengskDamage=NuclearAnnihilationMengskBigNukeDamage
