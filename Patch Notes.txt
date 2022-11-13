@@ -19,17 +19,18 @@ Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over ot
 Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
 *Added a cheat code to make the Drill full power.
-*Fixed Tank/Thor hotkey conflict.
+Fixed Tank/Thor hotkey conflict.
 *Fixed Crane/Fusion Core hotkey conflict.
 Fixed repair being shy about fully fixing things
-*Fixed Perdition saying it gives power
+Fixed Perdition saying it gives power
 Ghosts and Spectres now have a passive explaining the veterancy
 Reworded Ultrasonic pulse
-*Fixed raven ability hotkeys
+Fixed raven ability hotkeys
 *Fixed Ghost ability hotkeys
 Commando (Including Tosh and Nova) Explosive anti-structure attack now describes what it does
 *Autoref now has a range indicator
 *Sentry Shield Restore now has a hotkey
+Buffed Abberation Damage
 
 Liberation Day:
 Fixed the restore charge
@@ -65,34 +66,42 @@ A Sinister Turn:
 *Added messages to help explain the mission
 *Removed structures in the starting area
 
+Cutthroat:
+Orlan has fortified his position
+*Neutral Structures?
+
 Outbreak:
 *Added a second starting SCV
 *More infested, especially abberations
-*Buffed abberation damage
 
 Morbius Factor:
 *Neutral Structures
 
 Breakout:
-*Dusk Wings no longer cloak
+Dusk Wings no longer cloak
 Tosh now has a passive explaining the veterancy
 Sandbags now have 50hp, and are damaged by mindblast
 
 Ghost of a Chance:
 Nova now has a passive explaining the veterancy
-*Nova now has a timer bar for healing herself
+Nova now has a timer bar for healing herself
 
 The Dig:
-*Mentioned somewhere that you shouldn't sell the drill
-*Fixed Armoury not transferring.
-*Removed the second refinery, start with a second SCV instead.
-*Fixed the drill being unable to target bonuses
+Mentioned somewhere that you shouldn't sell the drill
+Fixed Armoury not transferring.
+Removed the second refinery, start with a second SCV instead.
+Fixed the drill being unable to target bonuses
+*Neutral Structures
+
+Echoes of the Future:
+Better text
 
 Safe Haven:
 *Terror fleets no longer get weaker over time
 
 In Utter Darkness:
 *Fixed carrier interceptors costing minerals
+Fixed wave inconsistency
 
 Media Blitz:
 Can no longer be done right after Engine of Destruction
@@ -100,10 +109,12 @@ Killing each ghost academy gives 20k credits
 Added a ghost academy near the secret lab
 Added a base to protect the lab
 Sneak attack shorter
-*Bases now have more units after the sneak attack
-*More resources. All resources are in neutral structures, except your starting field
-*Anti-light base is now an infantry base
-*Vehicle base now has vultures and hellions.
+Bases now have more units after the sneak attack
+More resources. All resources are in neutral structures, except your starting field
+Anti-light base is now an infantry base
+Vehicle base now has vultures and hellions.
+Each base is rebuilt unti its tower is taken.
+*The dominion sends convoys to reinforce and rebuild a base if it is destroyed, but the tower isn't taken.
 
 Piercing the Shroud:
 Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
