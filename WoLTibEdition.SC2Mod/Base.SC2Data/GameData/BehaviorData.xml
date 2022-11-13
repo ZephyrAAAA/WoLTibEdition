@@ -438,6 +438,10 @@
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RavenScramblerMissile">
         <Alignment value="Negative"/>

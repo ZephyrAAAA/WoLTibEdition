@@ -41,6 +41,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="PerditionTurretBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPsiSightCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="PsiSight" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="SupplyDepotBuilt" State="CompleteOnlyAtUnit"/>

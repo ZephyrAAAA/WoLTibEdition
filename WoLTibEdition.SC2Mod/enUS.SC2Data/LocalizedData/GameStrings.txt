@@ -153,6 +153,7 @@ Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
+Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
@@ -367,6 +368,7 @@ Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enab
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
 Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns

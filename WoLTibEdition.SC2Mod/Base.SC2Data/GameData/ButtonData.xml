@@ -87,6 +87,10 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="EMP"/>
         <DefaultButtonLayout Row="2" Column="1"/>
     </CButton>
+    <CButton id="ForgottenParaphernalia">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+    </CButton>
     <CButton id="GravityRift">
         <Icon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
         <AlertIcon value="Assets\Textures\BTN-Ability-Protoss-Blackhole-color.dds"/>
