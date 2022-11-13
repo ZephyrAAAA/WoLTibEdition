@@ -1525,7 +1525,7 @@
         </InfoArray>
         <InfoArray index="Specialize15" Time="15" Effect="PerditionTurretBuilt">
             <Resource index="Vespene" value="1500"/>
-            <Resource index="Custom" value="-12"/>
+            <Resource index="Custom" value="12"/>
             <Display index="Custom" value="1"/>
             <Charge>
                 <CountMax value="1"/>
@@ -1743,7 +1743,7 @@
             </Button>
         </InfoArray>
         <InfoArray index="Build15" Unit="PerditionTurret" Time="3">
-            <Resource index="Custom" value="-12"/>
+            <Resource index="Custom" value="12"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>
