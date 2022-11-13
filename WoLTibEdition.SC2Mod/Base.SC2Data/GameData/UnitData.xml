@@ -4776,8 +4776,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Normal"/>
-        <LifeStart value="300"/>
-        <LifeMax value="300"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <WeaponArray index="0" Link="CommandoSnipe"/>
         <WeaponArray Link="CommandoRifle"/>
@@ -6077,8 +6077,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Normal"/>
-        <LifeStart value="300"/>
-        <LifeMax value="300"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <WeaponArray index="1" removed="1"/>
     </CUnit>
@@ -6494,8 +6494,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Normal"/>
-        <LifeStart value="300"/>
-        <LifeMax value="300"/>
+        <LifeStart value="250"/>
+        <LifeMax value="250"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <WeaponArray index="0" Link="TossGrenade"/>
         <WeaponArray Link="TychusCommandoChaingun"/>
