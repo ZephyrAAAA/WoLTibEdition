@@ -3285,6 +3285,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Small"/>
         <SpeedMultiplierCreep value="2"/>
+        <Collide index="Burrow" value="1"/>
     </CUnit>
     <CUnit id="InfestedCocoon">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4671,10 +4672,14 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="QueenBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Medium"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="QueenCoopACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
