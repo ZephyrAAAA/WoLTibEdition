@@ -533,7 +533,7 @@ Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene G
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
-Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage in an area over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> Seconds
+Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> seconds to enemy units in the targeted area.
 Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 20% damage resist.
 Button/Tooltip/VehicleMercenaries10=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleMercenaries11=Calls down all purchased vehicle mercenaries at the target location
