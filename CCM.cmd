@@ -4,7 +4,11 @@ if %errorlevel%==2 powershell -noprofile -command "&{ start-process '%~f0' -verb
 cd /d %~dp0
 for /f "delims=" %%i in ('dir /b /a:-d ^| find "SC2Map"') do (
 	cd /d "C:\Program Files (x86)\StarCraft II\Maps\Campaign"
-	del /q "%%i"
+	if exist %%i\ (
+		rmdir "%%i"
+	) else if exist %%i (
+		del /q "%%i"
+	)
 	mklink "%%i" "%~dp0\%%i"
 )
 cd /d %~dp0

@@ -282,6 +282,16 @@
         <Modification MoveSpeedMaximum="1.5"/>
         <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="NovaHeal">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <BuffFlags index="Channeling" value="1"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ZergChaserSpeed">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -428,6 +438,10 @@
     <CBehaviorBuff id="QueuePaused">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RavenScramblerMissile">
         <Alignment value="Negative"/>

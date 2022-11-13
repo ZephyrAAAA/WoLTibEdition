@@ -47,7 +47,7 @@
 	   <Frame type="InfoPanel" Name="InfoPanel">
 		  <Frame type="Frame" name="InfoPaneUnit">
 			 <Frame type="ProgressBar" name="ExperienceBar">
-				<Anchor side="Top" relative="$parent/NameLabel" pos="Max" offset="2" />
+				<Anchor side="Top" relative="$parent/NameLabel" pos="Max" offset="-2" />
 				<Anchor side="Left" relative="$parent/NameLabel" pos="Mid" offset="0" />
 				<Anchor side="Right" relative="$parent/NameLabel" pos="Mid" offset="0" />
 				<Texture val="@@@UI/ProgressQueueLarge" />

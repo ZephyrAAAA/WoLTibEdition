@@ -321,6 +321,8 @@
     </CValidatorUnitDetected>
     <CValidatorPlayerRequirement id="UseMechEMP">
         <Find value="1"/>
+        <WhichPlayer Value="Source"/>
+        <Value value="UseNanoConstructor"/>
     </CValidatorPlayerRequirement>
     <CValidatorLocationEnumArea id="ZeratulNear">
         <WhichLocation Value="CasterUnit"/>

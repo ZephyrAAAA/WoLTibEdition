@@ -849,7 +849,7 @@
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
     <CEffectDamage id="InfestedAbomination">
-        <Amount value="30"/>
+        <Amount value="40"/>
     </CEffectDamage>
     <CEffectCreep id="InfiniteCreep">
         <EditorCategories value=""/>
@@ -1209,6 +1209,9 @@
         <Amount value="60"/>
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectEnumArea id="MindBlastSearch">
+        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectModifyPlayer id="MineralSiloInitial">
         <WhichPlayer Value="Source"/>
         <Resources index="Minerals" value="5000"/>
@@ -1250,12 +1253,17 @@
         <DrainVital value="Energy"/>
         <RechargeVitalRate value="0.1015"/>
         <FinalEffect value="NovaHeal2"/>
+        <InitialEffect value="NovaHealTimer"/>
     </CEffectCreateHealer>
     <CEffectCreateHealer id="NovaHeal2">
         <EditorCategories value=""/>
         <DrainVital value="Energy"/>
         <RechargeVitalFraction value="0.5"/>
     </CEffectCreateHealer>
+    <CEffectApplyBehavior id="NovaHealTimer">
+        <EditorCategories value=""/>
+        <Behavior value="NovaHeal"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="NovaSnipe">
         <ArmorReduction value="1"/>
         <Amount value="170"/>

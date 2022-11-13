@@ -27,9 +27,6 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
-    <CAbilAttack id="AttackAllowsInvulnerable">
-        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
-    </CAbilAttack>
     <CAbilAttack id="AttackWarpPrism">
         <SupportedFilters value="-;Self,Invulnerable,Outer"/>
     </CAbilAttack>
@@ -109,6 +106,9 @@
         <Flags index="AllowMovement" value="1"/>
         <Flags index="NoDeceleration" value="1"/>
     </CAbilEffectTarget>
+    <CAbilBehavior id="DuskWingBansheeCloakingField">
+        <CmdButtonArray index="On" Requirements="UseCloakingField"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="DutchPlaceTurret">
         <CmdButtonArray index="Execute">
             <Flags index="ToSelection" value="1"/>
@@ -462,6 +462,10 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <Effect index="0" value="NovaHeal2"/>
+        <PrepTime value="5"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="NovaHeal"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="NovaSnipe">
         <CastIntroTime index="0" value="0.1"/>
@@ -1521,7 +1525,7 @@
         </InfoArray>
         <InfoArray index="Specialize15" Time="15" Effect="PerditionTurretBuilt">
             <Resource index="Vespene" value="1500"/>
-            <Resource index="Custom" value="-12"/>
+            <Resource index="Custom" value="12"/>
             <Display index="Custom" value="1"/>
             <Charge>
                 <CountMax value="1"/>
@@ -1739,7 +1743,7 @@
             </Button>
         </InfoArray>
         <InfoArray index="Build15" Unit="PerditionTurret" Time="3">
-            <Resource index="Custom" value="-12"/>
+            <Resource index="Custom" value="12"/>
             <Charge>
                 <CountMax value="1"/>
                 <CountUse value="1"/>

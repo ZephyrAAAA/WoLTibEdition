@@ -84,6 +84,9 @@
     <CRequirement id="HasBuiltFusionCore">
         <NodeArray index="Show" Link="EqCountBehaviorFusionCoreBuiltCompleteOnly1"/>
     </CRequirement>
+    <CRequirement id="HasForgottenParaphernalia">
+        <NodeArray index="Show" Link="CountBehaviorPsiSightCompleteOnlyAtUnit"/>
+    </CRequirement>
     <CRequirement id="HasHailstormLaunchers">
         <NodeArray index="Use" Link="CountUpgradeHailstormLaunchersCompleteOnly"/>
     </CRequirement>

@@ -153,6 +153,7 @@ Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
+Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
 Button/Name/HideInTheShadows=Hide In The Shadows
@@ -292,6 +293,7 @@ Button/Name/VehicleMercenaries8=Vehicle Mercenaries
 Button/Name/VehicleMercenaries9=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
+Button/Name/Veterancy=Veterancy
 Button/Name/VoidSentryShieldRepair=Shield Recharge
 Button/Name/ZergHypervirus10=Zerg Hypervirus
 Button/Name/ZergHypervirus11=Zerg Hypervirus
@@ -366,6 +368,7 @@ Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enab
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
 Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Ghosts at the Barracks (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
@@ -460,6 +463,7 @@ Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/RallySCV=Sends constructed worker units to the designated point. Workers rallied to Mineral Fields will begin gathering automatically.
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
+Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing <d ref="Effect,RaynorSnipeDamage,Amount"/> Rocket damage.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
@@ -532,8 +536,9 @@ Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
+Button/Tooltip/TossGrenadeTychus=Tosses a grenade that explodes for <d ref="Effect,BonesTossGrenadeDamage,Amount"/> Concussive damage in a small radius. <n/><n/><c val="ffff8a">Does not harm friendly units.</c>
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
-Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage in an area over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> Seconds
+Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> seconds to enemy units in the targeted area.
 Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 20% damage resist.
 Button/Tooltip/VehicleMercenaries10=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleMercenaries11=Calls down all purchased vehicle mercenaries at the target location
@@ -549,6 +554,7 @@ Button/Tooltip/VehicleMercenaries8=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
+Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -944,6 +950,7 @@ Effect/Name/MineralSpikeInitial=Mineral Spike Initial
 Effect/Name/MineralSpikePeriodic=Mineral Spike Periodic
 Effect/Name/NovaHeal=Heal
 Effect/Name/NovaHeal2=Heal
+Effect/Name/NovaHealTimer=Heal
 Effect/Name/NuclearAnnihilationMengskBigNukeDamageSearch=NuclearAnnihilationMengskBigNukeDamageSearch
 Effect/Name/NuclearAnnihilationMengskBigNukeDropDelayCP=NuclearAnnihilationMengskBigNukeDropDelayCP
 Effect/Name/NuclearAnnihilationMengskDamage=NuclearAnnihilationMengskBigNukeDamage
@@ -1644,6 +1651,7 @@ Weapon/Name/TossGrenade=Toss Grenade
 Weapon/Name/WarPigSquad=War Pig Squad
 Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
+Weapon/Tip/ExplosiveCharges=Can only be used against structures.<n/>Instantly destroys the target.
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
