@@ -461,6 +461,7 @@ Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/RallySCV=Sends constructed worker units to the designated point. Workers rallied to Mineral Fields will begin gathering automatically.
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
+Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing <d ref="Effect,RaynorSnipeDamage,Amount"/> Rocket damage.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
@@ -533,6 +534,7 @@ Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Ge
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
+Button/Tooltip/TossGrenadeTychus=Tosses a grenade that explodes for <d ref="Effect,BonesTossGrenadeDamage,Amount"/> Concussive damage in a small radius. <n/><n/><c val="ffff8a">Does not harm friendly units.</c>
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
 Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> seconds to enemy units in the targeted area.
 Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 20% damage resist.

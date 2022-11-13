@@ -1087,6 +1087,7 @@
             <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="2" Column="1"/>
             <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="2" Column="2"/>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageBunker,On" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
@@ -4933,7 +4934,7 @@
         <AbilArray Link="stop"/>
         <BehaviorArray Link="RefineryBounce"/>
         <CardLayouts>
-            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="RefineryBounce,Execute" Row="0" Column="0"/>
+            <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="RefineryBounce,Execute" Row="1" Column="0"/>
             <LayoutButtons Face="Gather" Type="AbilCmd" AbilCmd="ProbeHarvest,Gather" Row="1" Column="0"/>
         </CardLayouts>
         <Radius value="1.625"/>
