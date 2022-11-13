@@ -8,13 +8,28 @@ Worker rally on the factory and reset rally on the refinery now use an icon made
 *Stim no longer says it increases movement speed
 *All "you got an upgrade" text now stands out more
 *Devastation turret is now called the correct name
-*Bunkers are no longer fortified
-*Hailstorm now has a hotkey
+Bunkers are no longer fortified
+Hailstorm now has a hotkey
 *Updated Ebay tooltip text
 *Updated Shadow Ops tooltip text
 *Updated Armoury tooltip text
 *Updated Fusion Core tooltip text
 *Updated Medic Upgrade tooltip
+Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over other targets.
+Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
+Removed the weapon from SCVs
+*Added a cheat code to make the Drill full power.
+*Fixed Tank/Thor hotkey conflict.
+*Fixed Crane/Fusion Core hotkey conflict.
+Fixed repair being shy about fully fixing things
+*Fixed Perdition saying it gives power
+Ghosts and Spectres now have a passive explaining the veterancy
+Reworded Ultrasonic pulse
+*Fixed raven ability hotkeys
+*Fixed Ghost ability hotkeys
+Commando (Including Tosh and Nova) Explosive anti-structure attack now describes what it does
+*Autoref now has a range indicator
+*Sentry Shield Restore now has a hotkey
 
 Liberation Day:
 Fixed the restore charge
@@ -39,7 +54,16 @@ Evacuation:
 
 Bel'shir:
 *Reduced the tech difference between Node Defenders and Terrazine waves.
-*Looked at counterattack taking weird paths
+*Looked at reclaimation waves taking weird paths
+*Waves only ping the area if the player has structures there.
+
+A Sinister Turn:
+*Adjusted timing of autosaves
+*Added something to notify about upgrades
+*Detection radii of cannons are now always visible
+*Gave zertaul shadow ability a default hotkey
+*Added messages to help explain the mission
+*Removed structures in the starting area
 
 Outbreak:
 *Added a second starting SCV
@@ -48,6 +72,27 @@ Outbreak:
 
 Morbius Factor:
 *Neutral Structures
+
+Breakout:
+*Dusk Wings no longer cloak
+Tosh now has a passive explaining the veterancy
+Sandbags now have 50hp, and are damaged by mindblast
+
+Ghost of a Chance:
+Nova now has a passive explaining the veterancy
+*Nova now has a timer bar for healing herself
+
+The Dig:
+*Mentioned somewhere that you shouldn't sell the drill
+*Fixed Armoury not transferring.
+*Removed the second refinery, start with a second SCV instead.
+*Fixed the drill being unable to target bonuses
+
+Safe Haven:
+*Terror fleets no longer get weaker over time
+
+In Utter Darkness:
+*Fixed carrier interceptors costing minerals
 
 Media Blitz:
 Can no longer be done right after Engine of Destruction
