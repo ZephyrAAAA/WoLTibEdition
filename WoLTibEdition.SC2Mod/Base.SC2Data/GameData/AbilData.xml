@@ -109,6 +109,9 @@
         <Flags index="AllowMovement" value="1"/>
         <Flags index="NoDeceleration" value="1"/>
     </CAbilEffectTarget>
+    <CAbilBehavior id="DuskWingBansheeCloakingField">
+        <CmdButtonArray index="On" Requirements="UseCloakingField"/>
+    </CAbilBehavior>
     <CAbilEffectTarget id="DutchPlaceTurret">
         <CmdButtonArray index="Execute">
             <Flags index="ToSelection" value="1"/>

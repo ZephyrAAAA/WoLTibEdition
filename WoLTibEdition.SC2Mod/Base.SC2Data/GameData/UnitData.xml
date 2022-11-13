@@ -5029,6 +5029,18 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
+        <AbilArray index="1" Link="move"/>
+        <AbilArray index="2" Link="Repair"/>
+        <AbilArray index="3" Link="SCVHarvest"/>
+        <AbilArray index="4" Link="TerranBuild"/>
+        <AbilArray index="5" Link="GatherSpecialObject"/>
+        <AbilArray index="6" Link="CancelTerrazineHarvest"/>
+        <AbilArray index="7" Link="TerranBuildDrop"/>
+        <AbilArray index="8" removed="1"/>
+        <WeaponArray index="0" removed="1"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="SCV2">
         <DeathRevealRadius value="3"/>
@@ -5065,15 +5077,14 @@
         <DamageTakenXP value="1"/>
         <KillXP value="10"/>
         <AbilArray Link="stop"/>
-        <AbilArray Link="attack"/>
         <AbilArray Link="move"/>
         <AbilArray Link="SCVHarvest"/>
-        <WeaponArray Link="FusionCutter"/>
         <CardLayouts>
             <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="AttackWorker" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="GatherTerr" Type="AbilCmd" AbilCmd="SCVHarvest,Gather" Row="1" Column="0"/>
             <LayoutButtons Face="ReturnCargo" Type="AbilCmd" AbilCmd="SCVHarvest,Return" Row="1" Column="1"/>
