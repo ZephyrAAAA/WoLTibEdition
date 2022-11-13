@@ -1209,6 +1209,9 @@
         <Amount value="60"/>
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectEnumArea id="MindBlastSearch">
+        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectModifyPlayer id="MineralSiloInitial">
         <WhichPlayer Value="Source"/>
         <Resources index="Minerals" value="5000"/>

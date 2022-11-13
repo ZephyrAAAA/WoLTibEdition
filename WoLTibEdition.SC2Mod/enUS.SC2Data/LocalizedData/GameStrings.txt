@@ -1644,6 +1644,7 @@ Weapon/Name/TossGrenade=Toss Grenade
 Weapon/Name/WarPigSquad=War Pig Squad
 Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
+Weapon/Tip/ExplosiveCharges=Can only be used against structures.<n/>Instantly destroys the target.
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry<n/>Moderate against light vehicles<n/>Bad against heavy vehicles
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.

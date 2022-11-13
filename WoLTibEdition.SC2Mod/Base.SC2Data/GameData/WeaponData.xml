@@ -427,7 +427,7 @@
         <EditorCategories value=""/>
         <Options index="Melee" value="1"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
-        <TargetFilters value="Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Structure,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="0.1"/>
         <Period value="0.75"/>
         <Effect value="ExplosiveChargesDelay"/>
