@@ -2764,7 +2764,7 @@
             <LayoutButtons index="8" Face="WeaponsFree" AbilCmd="GhostWeaponsFree,Execute" Row="1"/>
             <LayoutButtons index="9" Face="OcularImplants" Type="Passive" AbilCmd="255,255" Row="1" Column="0"/>
             <LayoutButtons index="10" Face="CriusSuit" Type="Passive" AbilCmd="255,255" Row="1" Column="1"/>
-            <LayoutButtons index="11" removed="1"/>
+            <LayoutButtons index="11" Face="Veterancy" Type="Passive" AbilCmd="" Row="1" Column="4"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
             <LayoutButtons index="14" removed="1"/>
@@ -4001,6 +4001,9 @@
         <EnergyRegenRate value="2"/>
         <WeaponArray Link="ExplosiveCharges"/>
         <TurningRate value="2879.8242"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="Veterancy" Type="Passive" Row="1" Column="4"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="Nuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5531,7 +5534,7 @@
             <LayoutButtons index="7" Face="SpectreWeaponsFree" AbilCmd="SpectreWeaponsFree,Execute" Row="1" Column="3"/>
             <LayoutButtons index="8" Face="NyxClassCloakingModule" Type="Passive" AbilCmd="255,255" Column="1"/>
             <LayoutButtons index="9" Face="UltrasonicPulse" AbilCmd="UltrasonicPulse,Execute" Row="2" Column="0"/>
-            <LayoutButtons index="10" removed="1"/>
+            <LayoutButtons index="10" Face="Veterancy" AbilCmd="" Requirements="" Column="4"/>
             <LayoutButtons index="11" removed="1"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
@@ -6463,6 +6466,7 @@
             <LayoutButtons index="7" Face="HeroNukeCalldown" AbilCmd="HeroNuclearStrike,Execute" Column="3"/>
             <LayoutButtons index="8" Face="Obliterate" AbilCmd="Obliterate,Execute" Row="1" Column="0"/>
             <LayoutButtons index="9" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Veterancy" Type="Passive" Row="1" Column="4"/>
         </CardLayouts>
         <WeaponArray Link="ExplosiveCharges"/>
         <TurningRate value="2879.8242"/>
