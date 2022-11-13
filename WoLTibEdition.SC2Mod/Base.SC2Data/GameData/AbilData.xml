@@ -27,9 +27,6 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
-    <CAbilAttack id="AttackAllowsInvulnerable">
-        <SupportedFilters value="-;Self,Invulnerable,Outer"/>
-    </CAbilAttack>
     <CAbilAttack id="AttackWarpPrism">
         <SupportedFilters value="-;Self,Invulnerable,Outer"/>
     </CAbilAttack>
