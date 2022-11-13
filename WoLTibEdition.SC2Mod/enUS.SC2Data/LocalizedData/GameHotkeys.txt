@@ -5,7 +5,6 @@ Button/Hotkey/DeathRecall=R
 Button/Hotkey/Decal_Terran_0047_01=C
 Button/Hotkey/EMPSpectre=E
 Button/Hotkey/FeedbackGhost=F
-Button/Hotkey/Goliath=T
 Button/Hotkey/GravityRift=G
 Button/Hotkey/HailstormLaunchers=H
 Button/Hotkey/HideInTheShadows=H
