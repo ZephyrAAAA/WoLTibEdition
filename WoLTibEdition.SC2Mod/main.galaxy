@@ -388,7 +388,10 @@ bool Building_Func (bool testConds, bool runActions) {
 		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
 			return false;
 		}
-		if (UnitHasBehavior(buildingUnit, "SupplyDepotStartingUpgrade")) {
+		if (UnitHasBehavior(EventUnit(), "SupplyDepotStartingUpgrade")) {
+			return false;
+		}
+		if (PlayerType(UnitGetOwner(EventUnit())) == c_playerTypeComputer) {
 			return false;
 		}
 	}
@@ -523,7 +526,7 @@ bool Techlab_Func (bool testConds, bool runActions) {
 
 void Techlab_Init () {
 	techlab = TriggerCreate("Techlab_Func");
-	TriggerAddEventUnitConstructProgress(techlab, null, c_unitProgressStageStart);
+	//TriggerAddEventUnitConstructProgress(techlab, null, c_unitProgressStageStart);
 }
 
 bool Research_Func (bool testConds, bool runActions) {
