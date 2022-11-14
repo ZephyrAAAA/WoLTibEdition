@@ -1851,13 +1851,27 @@
         <PeriodCount value="1"/>
         <PeriodicValidator value="NotInLastMotionPhase"/>
         <PeriodicPeriodArray value="5.0625"/>
+        <InitialEffect value="SeekerMissileLaunchTintCP"/>
     </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="SeekerMissileApplyBehavior">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Effect="SeekerMissileLaunchMissile"/>
+        <Behavior value="SeekerMissile"/>
+    </CEffectApplyBehavior>
     <CEffectDamage id="SeekerMissileDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
     <CEffectLaunchMissile id="SeekerMissileLaunchMissile">
         <LaunchEffect value="SeekerDistanceCheck"/>
     </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="SeekerMissileLaunchTintCP">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="SourceUnit"/>
+        <PeriodCount value="250"/>
+        <PeriodicValidator value="SourceNotDead"/>
+        <PeriodicEffectArray value="SeekerMissileApplyBehavior"/>
+        <PeriodicPeriodArray value="0.1"/>
+    </CEffectCreatePersistent>
     <CEffectCreateHealer id="ShieldRestore">
         <ValidatorArray value="NotHidden"/>
         <ValidatorArray value="NotWarpingIn"/>

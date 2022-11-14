@@ -1205,6 +1205,25 @@
     <CActorSiteOpRotationExplicit id="SOpPointDownWorld">
         <Forward value="0.000000,0.000000,-1.000000"/>
     </CActorSiteOpRotationExplicit>
+    <CActorSimple id="SeekerMissileTint">
+        <Aliases value="_AngryTinter"/>
+        <Remove Terms="Effect.SeekerMissileLaunchMissile.Start; At Target" Send="Create"/>
+        <Remove Terms="ActorCreation" Send="TimerSet 0.500000 SeekerTintInitialTimer"/>
+        <Remove Terms="TimerExpired; TimerName SeekerTintInitialTimer" Target="_Unit" Send="SetTintColor 255,50,50 0.500000 OneShot SeekerTarget"/>
+        <Remove Terms="TimerExpired; TimerName SeekerTintInitialTimer" Send="TimerSet 2.000000 SeekerTintDuration"/>
+        <Remove Terms="TimerExpired; TimerName SeekerTintDuration" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
+        <Remove Terms="TimerExpired; TimerName SeekerTintDuration" Send="Destroy"/>
+        <On Terms="Effect.SeekerMissileLaunchMissile.Start; At Target" Send="Create"/>
+        <On Terms="ActorCreation" Send="TimerSet 0.500000 SeekerTintInitialTimer"/>
+        <On Terms="TimerExpired; TimerName SeekerTintInitialTimer" Target="_Unit" Send="SetTintColor 255,50,50 0.500000 OneShot SeekerTarget"/>
+        <On Terms="TimerExpired; TimerName SeekerTintInitialTimer" Send="TimerSet 2.000000 SeekerTintDuration"/>
+        <On Terms="TimerExpired; TimerName SeekerTintDuration" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
+        <On Terms="TimerExpired; TimerName SeekerTintDuration" Send="Destroy"/>
+        <On Terms="Behavior.SeekerMissile.On" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 255,50,50 0.500000 OneShot SeekerTarget"/>
+        <On Terms="Behavior.SeekerMissile.Off" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
+        <On Terms="Behavior.SeekerMissile.Off" Send="Destroy"/>
+    </CActorSimple>
     <CActorEventMacro id="SquadUnitShrink">
         <EditorCategories value=""/>
         <On Terms="Behavior.SquadUnit.On" Send="SetScale 0.750000"/>

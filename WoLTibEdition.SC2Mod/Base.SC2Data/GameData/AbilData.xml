@@ -657,42 +657,61 @@
         <Flags index="IgnoreUnitCost" value="1"/>
         <InfoArray index="Train1">
             <Resource index="Minerals" value="0"/>
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge>
+                <CountMax value="4"/>
+                <CountStart value="4"/>
+                <Location value="Unit"/>
+                <TimeUse value="15"/>
+            </Charge>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
+            <Unit index="2" removed="1"/>
+            <Unit index="3" removed="1"/>
         </InfoArray>
         <InfoArray index="Train2">
             <Resource index="Minerals" value="0"/>
             <Resource index="Vespene" value="0"/>
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
-            <Button Requirements="JumboBunkerNotResearched"/>
+            <Charge Location="Unit" TimeUse="30"/>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
         </InfoArray>
         <InfoArray index="Train3">
             <Resource index="Vespene" value="0"/>
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge Location="Unit" TimeUse="30"/>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
         </InfoArray>
         <InfoArray index="Train4">
             <Resource index="Vespene" value="0"/>
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge Location="Unit" TimeUse="30"/>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
         </InfoArray>
         <InfoArray index="Train5">
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge Location="Unit" TimeUse="30"/>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
         </InfoArray>
         <InfoArray index="Train6">
             <Resource index="Minerals" value="0"/>
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge>
+                <CountMax value="3"/>
+                <CountStart value="3"/>
+                <Location value="Unit"/>
+                <TimeUse value="20"/>
+            </Charge>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
+            <Unit index="2" removed="1"/>
         </InfoArray>
         <InfoArray index="Train7">
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge Location="Unit" TimeUse="20"/>
+            <Cooldown TimeStart="0" TimeUse="0"/>
+            <Unit index="1" removed="1"/>
         </InfoArray>
         <InfoArray index="Train8">
-            <Charge CountMax="0" CountStart="0" CountUse="0"/>
-            <Cooldown TimeStart="0" TimeUse="60"/>
+            <Charge Location="Unit" TimeUse="60"/>
+            <Cooldown TimeStart="0" TimeUse="0"/>
         </InfoArray>
     </CAbilTrain>
     <CAbilEffectTarget id="TacticalMissileStrike">
