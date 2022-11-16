@@ -31,6 +31,8 @@ Commando (Including Tosh and Nova) Explosive anti-structure attack now describes
 *Autoref now has a range indicator
 *Sentry Shield Restore now has a hotkey
 Buffed Abberation Damage
+AI no longer puts ghosts in bunkers
+Seeker missiles now turn their target red.
 
 Liberation Day:
 Fixed the restore charge
@@ -126,4 +128,4 @@ Brutalisk is no longer so binary in whether it kills you or not
 Maw of the Void:
 *Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
 *Convert to an open-ended macro mission
-*Added an objective to kill all Nexi and Production Structures, as well as the Mothership.
+*Added an objective to kill all Nexi and the Mothership.
