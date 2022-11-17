@@ -33,6 +33,7 @@ Commando (Including Tosh and Nova) Explosive anti-structure attack now describes
 Buffed Abberation Damage
 AI no longer puts ghosts in bunkers
 Seeker missiles now turn their target red.
+*Concussive damage now deals less to air units
 
 Liberation Day:
 Fixed the restore charge
@@ -108,6 +109,7 @@ Fixed wave inconsistency
 Media Blitz:
 Can no longer be done right after Engine of Destruction
 Killing each ghost academy gives 20k credits
+Killing ghost academy 1 and 2 gives Thor armoury upgrades
 Added a ghost academy near the secret lab
 Added a base to protect the lab
 Sneak attack shorter
@@ -128,4 +130,7 @@ Brutalisk is no longer so binary in whether it kills you or not
 Maw of the Void:
 *Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
 *Convert to an open-ended macro mission
-*Added an objective to kill all Nexi and the Mothership.
+*Added an objective to kill the Mothership.
+*The vault is now invicible, and is no longer an objective.
+*Added an objective for the protoss must have less than 10 structures on the map.
+Rescuing DT groups 2 and 3 gives BC armoury upgrades.

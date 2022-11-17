@@ -251,8 +251,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 4)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ReaperU238Rounds", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ClusterBomb", 1);
-                TechTreeUpgradeAddLevel(auto57E77ED7_var, "TriLithiumPowerCells", 1);
-                TechTreeUpgradeAddLevel(auto57E77ED7_var, "ShapedHull", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "CerberusMines", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "NanoConstructor", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 5)) {
@@ -265,14 +265,13 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 6)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "TriLithiumPowerCells", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "ShapedHull", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "SiegeTankShapedBlast", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MaelstromRounds", 1);
-                TechTreeUpgradeAddLevel(auto57E77ED7_var, "CerberusMines", 1);
-                TechTreeUpgradeAddLevel(auto57E77ED7_var, "NanoConstructor", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 7)) {
-                TechTreeUpgradeAddLevel(auto57E77ED7_var, "Predator", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "CloakDistortionField", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "DynamicPowerRouting", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "FireSuppressionSystems", 1);
@@ -280,38 +279,26 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 8)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "Predator", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "MedivacRapidDeployment", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "AdvancedHealingAI", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "ClusterWarheads", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "CrossSpectrumDampeners", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "AresClassWeaponsSystemViking", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "HALORockets", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 10)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "MechanicalRebirth", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "330mmBarrageCannons", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "DefensiveMatrix", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "HurricaneMissiles", 1);
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 11)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 12)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 13)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 14)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 15)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 16)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 17)) {
-            }
-
-            if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 18)) {
             }
 
         }
