@@ -2328,7 +2328,8 @@
             <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveArmory"/>
             <Unit value="Raven"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="110">
+        <InfoArray index="Train4" Time="50">
+            <Resource index="Minerals" value="5000"/>
             <Button DefaultButtonFace="Battlecruiser" State="Restricted" Requirements="HaveFusionCore"/>
             <Unit value="Battlecruiser"/>
         </InfoArray>
