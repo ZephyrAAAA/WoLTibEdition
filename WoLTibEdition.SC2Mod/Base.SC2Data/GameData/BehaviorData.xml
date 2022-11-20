@@ -674,7 +674,7 @@
         <Modification>
             <Detect value="11"/>
             <DetectFilters value="-;Missile"/>
-            <Radar value="20"/>
+            <Radar value="30"/>
             <RadarFilters value="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked"/>
         </Modification>
     </CBehaviorBuff>

@@ -389,6 +389,7 @@
             <LayoutButtons index="6" Face="PermanentlyCloaked" Type="Passive" AbilCmd="" Column="0"/>
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
+        <Food value="0"/>
     </CUnit>
     <CUnit id="DestructibleSandbags">
         <ArmorType value="Hero"/>
@@ -6129,6 +6130,9 @@
     <CUnit id="TalDarimMothership">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="TalDarimPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
