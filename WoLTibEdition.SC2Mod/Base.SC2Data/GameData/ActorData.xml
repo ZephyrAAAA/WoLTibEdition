@@ -1232,7 +1232,7 @@
     <CActorUnit id="Thor">
         <On index="78" Terms="WeaponStop.ThorsHammer.AttackStop"/>
         <On Terms="Abil.Theft.SourcePrepStart" Send="AnimBracketStart Spell {} Stand,Victory,00 {} ContentPlayOnce 2.000000 AsDuration"/>
-        <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Thor_Attack"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="Thor_Attack"/>
         <StatusColors index="Energy">
             <ColorArray index="0" value="255,255,128,64"/>
         </StatusColors>
@@ -1775,6 +1775,7 @@
     <!--                                                                                         -->
     <CActorUnit id="Odin">
         <On index="79" Send="AnimPlay MorphEnd Morph,End 0 -1.000000 -1.000000 3.660000 AsTimeScale"/>
+        <AbilSoundArray AbilCmd="attack,Execute" Sound="TychusOdin_Attack"/>
     </CActorUnit>
     <CActorUnit id="OrbitalCommand2" parent="TerranBuildingFlyerEx" unitName="OrbitalCommand2">
         <Macros value="MacroTownhallDeco_Terran"/>
