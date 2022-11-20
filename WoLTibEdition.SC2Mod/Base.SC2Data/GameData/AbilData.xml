@@ -11,6 +11,7 @@
         <CastIntroTime index="0" value="1"/>
         <FinishTime index="0" value="1"/>
         <CmdButtonArray index="Execute" Requirements=""/>
+        <Range index="0" value="9"/>
     </CAbilEffectTarget>
     <CAbilMorph id="AssaultMode">
         <Flags index="WaitUntilStopped" value="0"/>
