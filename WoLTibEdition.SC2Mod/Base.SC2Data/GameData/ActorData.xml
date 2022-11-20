@@ -1292,7 +1292,7 @@
     <CActorRange id="ThorRadar">
         <On Terms="Behavior.ThorRadar.On" Send="Create"/>
         <On Terms="Behavior.ThorRadar.Off" Send="Destroy"/>
-        <Range value="20.000000"/>
+        <Range value="30.000000"/>
         <RangeFlags index="Minimap" value="1"/>
     </CActorRange>
     <!--                                                                                         -->
