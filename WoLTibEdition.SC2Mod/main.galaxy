@@ -737,6 +737,9 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		if (currentLoop == null) { break; }
 		buildingSwap(currentLoop);
 	}
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Laser_Drill") > 0);
+	TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 6)) > 0);
+	TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 7)) > 0);
 	if (noTopBar) {
 		DialogControlSetVisible(topbarCastingPanel, PlayerGroupAll(), false);
 		DialogControlSetVisible(topbarPanel, PlayerGroupAll(), false);
@@ -810,9 +813,6 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	if (TechTreeUpgradeCount(1, "MicroFiltering", c_techCountCompleteOnly) > 0) {
 		rate += 116;
 	}
-	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Laser_Drill") > 0);
-	TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 6)) > 0);
-	TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 7)) > 0);
 	ConversationDataStateSetValue("StoryState|AchievementDisabled", 1);
 	AchievementsDisable(1); //one of these should work
 	return true;
