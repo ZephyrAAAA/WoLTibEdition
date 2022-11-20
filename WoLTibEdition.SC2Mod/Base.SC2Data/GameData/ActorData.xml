@@ -281,6 +281,10 @@
         <LaunchSite value="ThorFlamethrowerSite"/>
         <LaunchAttachQuery Methods="AMFilterWeapon"/>
     </CActorAction>
+    <CActorAction id="HellionUpgradedAttack">
+        <LaunchSite value="ThorFlamethrowerSite"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon"/>
+    </CActorAction>
     <CActorBeamSimple id="HiveMindEmulatorBeam">
         <HostLaunch Subject="::global.HMESource" Scope="Implicit"/>
         <HostLaunchSiteOps Ops=""/>
