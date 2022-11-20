@@ -2266,6 +2266,7 @@
         <WhichUnit Value="Caster"/>
         <Abil value="attack"/>
         <AbilCmdIndex value="2"/>
+        <CmdFlags index="Preempt" value="1"/>
         <CmdFlags index="AttackOnce" value="1"/>
         <Player Value="Caster"/>
         <Target Value="TargetPoint"/>
