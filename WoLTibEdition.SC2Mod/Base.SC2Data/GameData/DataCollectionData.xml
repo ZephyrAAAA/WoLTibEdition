@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CDataCollectionUnit default="1" id="PlasmaShieldBase">
+        <Name value="DataCollection/Name/PlasmaShieldBase"/>
+        <EditorCategories value="DataGroup:Unit"/>
+        <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Armory">
         <DataRecord Entry="Abil,ArmoryResearch"/>
         <DataRecord Entry="Actor,Armory"/>
@@ -148,7 +154,7 @@
         <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
         <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
-    </CDataCollectionUnit>	
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore">
         <DataRecord Entry="Abil,FusionCoreResearch"/>
         <DataRecord Entry="Actor,FusionCore"/>
@@ -291,6 +297,9 @@
         <Button value="MissileTurret"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Nova" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Nova"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Odin">
         <EditorCategories value="DataGroup:Unit"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
@@ -333,6 +342,12 @@
         <DataRecord Entry="Skin,PsiDisruptor14"/>
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Raynor" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Raynor"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="RaynorCommando" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/RaynorCommando"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ReaperSquad">
         <DataRecord Entry="Abil,ReaperSquad"/>
@@ -396,6 +411,9 @@
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Stetmann" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Stetmann"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Stone">
         <DataRecord Entry="Unit,Stone"/>
         <DataRecord Entry="Actor,Stone"/>
@@ -426,6 +444,9 @@
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot2Lowered">
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Swann" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Swann"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TacNukeStrikeTopbar">
         <EditorCategories value="DataGroup:Ability"/>
@@ -487,6 +508,12 @@
         <DataRecord Entry="Unit,Bunker"/>
         <DataRecord Entry="Actor,Bunker"/>
         <DataRecord Entry="Actor,BunkerSplat"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Tosh" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Tosh"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="TychusCommando" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/TychusCommando"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ZergHypervirus">
         <EditorCategories value="DataGroup:Ability"/>
