@@ -1304,35 +1304,19 @@
         <PeriodicEffectArray value="NuclearAnnihilationMengskSmallNukeDamageSearch"/>
         <PeriodicPeriodArray value="1.2"/>
     </CEffectCreatePersistent>
+    <CEffectRandomPointInCircle id="NuclearAnnihilationMengskSmallNukeDropOffset">
+        <EditorCategories value="Race:Terran"/>
+        <WhichLocation Value="TargetPoint"/>
+        <Effect value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
+        <Radius value="7.5"/>
+    </CEffectRandomPointInCircle>
     <CEffectCreatePersistent id="NuclearAnnihilationMengskSmallNukeDummyCP">
         <EditorCategories value=""/>
-        <Flags index="RandomOffset" value="1"/>
         <InitialEffect value="NuclearAnnihilationMengskBigNukeDropDelayCP"/>
         <PeriodCount value="40"/>
-        <PeriodicEffectArray value="NuclearAnnihilationMengskSmallNukeDropDelayCP"/>
-        <PeriodicOffsetArray value="0,0,0"/>
-        <PeriodicOffsetArray value="2.5,0,0"/>
-        <PeriodicOffsetArray value="0,5,0"/>
-        <PeriodicOffsetArray value="7.5,0,0"/>
-        <PeriodicOffsetArray value="-1.25,2.165,0"/>
-        <PeriodicOffsetArray value="-1.25,-2.165,0"/>
-        <PeriodicOffsetArray value="4.33,-2.5,0"/>
-        <PeriodicOffsetArray value="-4.33,2.5,0"/>
-        <PeriodicOffsetArray value="0,-5,0"/>
-        <PeriodicOffsetArray value="4.33,2.5,0"/>
-        <PeriodicOffsetArray value="-4.33,-2.5,0"/>
-        <PeriodicOffsetArray value="-6.068,4.408,0"/>
-        <PeriodicOffsetArray value="-2.318,7.133,0"/>
-        <PeriodicOffsetArray value="2.318,-7.133,0"/>
-        <PeriodicOffsetArray value="-6.068,-4.408,0"/>
-        <PeriodicOffsetArray value="-7.5,0,0"/>
-        <PeriodicOffsetArray value="6.068,-4.408,0"/>
-        <PeriodicOffsetArray value="2.318,7.133,0"/>
-        <PeriodicOffsetArray value="-2.318,-7.133,0"/>
-        <PeriodicOffsetArray value="6.068,4.408,0"/>
+        <PeriodicEffectArray value="NuclearAnnihilationMengskSmallNukeDropOffset"/>
         <PeriodicPeriodArray value="0.125"/>
         <RevealRadius value="7.5"/>
-        <OffsetRandMode value="Shuffle"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="NukeDamage">
         <ArmorReduction value="1"/>

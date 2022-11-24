@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CDataCollectionUnit default="1" id="PlasmaShieldBase">
+        <Name value="DataCollection/Name/PlasmaShieldBase"/>
+        <EditorCategories value="DataGroup:Unit"/>
+        <TechInfoUpgradeUsed value="TechReactor"/>
+        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Armory">
         <DataRecord Entry="Abil,ArmoryResearch"/>
         <DataRecord Entry="Actor,Armory"/>
@@ -148,7 +154,7 @@
         <TechInfoUpgradeUsed value="TerranInfantryVanadiumPlating"/>
         <TechInfoUpgradeUsed value="TechReactor"/>
         <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
-    </CDataCollectionUnit>	
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="FusionCore">
         <DataRecord Entry="Abil,FusionCoreResearch"/>
         <DataRecord Entry="Actor,FusionCore"/>
@@ -291,10 +297,11 @@
         <Button value="MissileTurret"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Odin">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Nova" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Nova"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Odin" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Odin"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="PlanetaryFortress2">
         <DataRecord Entry="Actor,PlanetaryFortress2"/>
@@ -333,6 +340,12 @@
         <DataRecord Entry="Skin,PsiDisruptor14"/>
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Raynor" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Raynor"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="RaynorCommando" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/RaynorCommando"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="ReaperSquad">
         <DataRecord Entry="Abil,ReaperSquad"/>
@@ -396,6 +409,9 @@
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Stetmann" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Stetmann"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="Stone">
         <DataRecord Entry="Unit,Stone"/>
         <DataRecord Entry="Actor,Stone"/>
@@ -426,6 +442,9 @@
     </CDataCollectionUnit>
     <CDataCollectionUnit id="SupplyDepot2Lowered">
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="Swann" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Swann"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="TacNukeStrikeTopbar">
         <EditorCategories value="DataGroup:Ability"/>
@@ -488,6 +507,12 @@
         <DataRecord Entry="Actor,Bunker"/>
         <DataRecord Entry="Actor,BunkerSplat"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="Tosh" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Tosh"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="TychusCommando" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/TychusCommando"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="ZergHypervirus">
         <EditorCategories value="DataGroup:Ability"/>
         <DataRecord Entry="Abil,ZergHypervirus"/>
@@ -505,15 +530,11 @@
         <DataRecord Entry="Actor,VespeneGeyserSplat"/>
         <DataRecord Entry="Unit,VespeneGeyser"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="VikingAssault">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="VikingAssault" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/VikingAssault"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="VikingFighter">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="VikingFighter" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/VikingFighter"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="WarPigSquad">
         <DataRecord Entry="Abil,WarPigSquad"/>
@@ -525,164 +546,100 @@
         <TechInfoUpgradeUsed value="TechReactor"/>
         <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Marine">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Marine" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Marine"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Reaper">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Reaper" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Reaper"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Ghost">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Ghost" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Ghost"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Marauder">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Marauder" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Marauder"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Medic">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Medic" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Medic"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Firebat">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Firebat" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Firebat"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Spectre">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Spectre" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Spectre"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="SiegeTank">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="SiegeTank" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/SiegeTank"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="SiegeTankSieged">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="SiegeTankSieged" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/SiegeTankSieged"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Thor">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Thor" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Thor"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Hellion">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Hellion" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Hellion"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Goliath">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Goliath" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Goliath"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Diamondback">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Diamondback" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Diamondback"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Vulture">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Vulture" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Vulture"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Predator">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Predator" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Predator"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Medivac">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Medivac" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Medivac"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Banshee">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Banshee" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Banshee"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Raven">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Raven" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Raven"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Battlecruiser">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Battlecruiser" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Battlecruiser"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Hercules">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Hercules" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Hercules"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="ScienceVessel">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="ScienceVessel" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/ScienceVessel"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="Wraith">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="Wraith" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/Wraith"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="DevilDog">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="DevilDog" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/DevilDog"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="DuskWing">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="DuskWing" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/DuskWing"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="HammerSecurity">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="HammerSecurity" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/HammerSecurity"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="HelsAngelAssault">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="HelsAngelAssault" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/HelsAngelAssault"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="HelsAngelFighter">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="HelsAngelFighter" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/HelsAngelFighter"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="DukesRevenge">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="DukesRevenge" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/DukesRevenge"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="SiegeBreakerSieged">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="SiegeBreakerSieged" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/SiegeBreakerSieged"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="SiegeBreaker">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="SiegeBreaker" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/SiegeBreaker"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="SpartanCompany">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="SpartanCompany" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/SpartanCompany"/>
     </CDataCollectionUnit>
-    <CDataCollectionUnit id="WarPig">
-        <EditorCategories value="DataGroup:Unit"/>
-        <TechInfoUpgradeUsed value="TechReactor"/>
-        <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
+    <CDataCollectionUnit id="WarPig" parent="PlasmaShieldBase">
+        <Name value="DataCollection/Name/WarPig"/>
     </CDataCollectionUnit>
 </Catalog>
