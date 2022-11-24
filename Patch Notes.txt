@@ -35,6 +35,8 @@ Buffed Abberation Damage
 AI no longer puts ghosts in bunkers
 Seeker missiles now turn their target red.
 *Concussive damage now deals less to air units
+Thor starts with 330mm barrage, and barrage range is increased to 9
+*Added the Scanner Pack upgrade, that gives Reapers short-range detection.
 
 Liberation Day:
 Fixed the restore charge
