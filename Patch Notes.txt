@@ -37,6 +37,7 @@ Seeker missiles now turn their target red.
 *Concussive damage now deals less to air units
 Thor starts with 330mm barrage, and barrage range is increased to 9
 *Added the Scanner Pack upgrade, that gives Reapers short-range detection.
+*Defensive Matrix now says what it does
 
 Liberation Day:
 Fixed the restore charge
@@ -53,10 +54,10 @@ Removed the tech lab from the rebel base
 
 Zero Hour:
 Improved timing on the Neutral Structures tutorial.
-*Added a message about fields being more efficient if you let them regen
+Added a message about fields being more efficient if you let them regen
 
 Evacuation:
-*Fixed Ebay not transferring.
+Fixed Ebay not transferring.
 *Neutral Structures
 
 Bel'shir:
@@ -77,11 +78,12 @@ Orlan has fortified his position
 *Neutral Structures?
 
 Outbreak:
-*Added a second starting SCV
-*More infested, especially abberations
+Added a second starting SCV
+Doubled normal infested, tripled abberations (Except the first night)
 
 Morbius Factor:
-*Neutral Structures
+Replaced the low ground field with a silo and a spike.
+Replaced the expansion with a silo and 2 spikes
 
 Breakout:
 Dusk Wings no longer cloak
@@ -103,7 +105,10 @@ Echoes of the Future:
 Better text
 
 Safe Haven:
-*Terror fleets no longer get weaker over time
+Terror fleets no longer get weaker over time
+
+Engine of Destruction:
+*Wraiths no longer start out injured
 
 In Utter Darkness:
 *Fixed carrier interceptors costing minerals
@@ -134,11 +139,11 @@ Brutalisk is no longer so binary in whether it kills you or not
 Maw of the Void:
 *Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
 *Convert to an open-ended macro mission
-*Added an objective to kill the Mothership.
-*The vault is now invicible, and is no longer an objective.
-*Added an objective for the protoss must have less than 10 structures on the map.
+Added an objective to kill the Mothership.
+The vault is now invicible, and is no longer an objective.
+Added an objective for the protoss must have less than 10 structures on the map.
 Rescuing DT groups 2 and 3 gives BC armoury upgrades.
 Horner no longer says resources are scarce
 *Shields from the research lab doesn't block rip field damage until you get the shield upgrade on the armoury.
 There is now 3 strong bases you need to fight through.
-*The Protoss send large attack waves. Sometimes a combined wave, sometimes separately.
+*The Protoss send large attack waves.
