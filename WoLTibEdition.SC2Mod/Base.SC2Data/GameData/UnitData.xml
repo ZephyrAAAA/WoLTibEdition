@@ -3251,6 +3251,13 @@
         <ArmorType value="Large"/>
         <LifeArmor value="0"/>
         <SpeedMultiplierCreep value="1.3"/>
+        <Collide index="Ground" value="0"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Small" value="0"/>
+        <Attributes index="Light" value="0"/>
+        <Attributes index="Armored" value="1"/>
+        <Attributes index="Massive" value="1"/>
+        <InnerRadius value="0.75"/>
     </CUnit>
     <CUnit id="InfestedAbominationBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
