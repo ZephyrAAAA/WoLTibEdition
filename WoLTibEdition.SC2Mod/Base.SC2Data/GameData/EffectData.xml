@@ -848,6 +848,9 @@
         <Amount value="400"/>
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
+    <CEffectEnumArea id="InfernalFlameThrowerE">
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectDamage id="InfestedAbomination">
         <Amount value="40"/>
     </CEffectDamage>
@@ -1342,11 +1345,13 @@
         <AttributeBonus index="Structure" value="0"/>
         <AttributeFactor index="Structure" value="1"/>
         <Amount value="60"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="OdinDamageRight">
         <AttributeBonus index="Structure" value="0"/>
         <AttributeFactor index="Structure" value="1"/>
         <Amount value="60"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
     <CEffectDamage id="OmegaStormDamage">
         <ArmorReduction value="1"/>
@@ -1491,6 +1496,7 @@
     <CEffectEnumArea id="FirebatE">
         <IncludeArray Effect="FirebatSet" Value="Target"/>
         <AreaArray index="0" Effect="FirebatUFull"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
     <CEffectSet id="FirebatSet">
         <EffectArray index="1" value="FirebatE"/>
@@ -1553,7 +1559,7 @@
     </CEffectSet>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
-        <Amount value="9"/>
+        <Amount value="15"/>
     </CEffectDamage>
     <CEffectEnumMagazine id="MakePrecursorMercIterate">
         <EditorCategories value=""/>

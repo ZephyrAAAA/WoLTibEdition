@@ -1346,6 +1346,13 @@
         <On index="65" Terms="WeaponStart.TychusCommandoChaingun.AttackStart"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Tychus_Attack"/>
     </CActorUnit>
+    <!--                                                                                         -->
+    <!-- Phoenix Hero (Urun) ................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="Urun">
+        <On index="64" removed="1"/>
+        <On index="65" removed="1"/>
+    </CActorUnit>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
