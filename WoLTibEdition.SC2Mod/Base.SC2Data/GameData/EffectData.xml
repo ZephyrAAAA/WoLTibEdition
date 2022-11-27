@@ -848,6 +848,9 @@
         <Amount value="400"/>
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
+    <CEffectEnumArea id="InfernalFlameThrowerE">
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
     <CEffectDamage id="InfestedAbomination">
         <Amount value="40"/>
     </CEffectDamage>
@@ -1493,6 +1496,7 @@
     <CEffectEnumArea id="FirebatE">
         <IncludeArray Effect="FirebatSet" Value="Target"/>
         <AreaArray index="0" Effect="FirebatUFull"/>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
     <CEffectSet id="FirebatSet">
         <EffectArray index="1" value="FirebatE"/>
