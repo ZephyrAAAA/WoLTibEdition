@@ -42,6 +42,7 @@ Thor starts with 330mm barrage, and barrage range is increased to 9
 Abberations now walk over smaller units
 *Twin-linked flamethrower no longer lies about what it does
 Hellion damage buffed to 30dps from 18 dps. Cost changes from 800 to 1200.
+Firebats and hellions no longer damange neutrals in their AOE area.
 
 Liberation Day:
 Fixed the restore charge
@@ -71,7 +72,7 @@ Bel'shir:
 A Sinister Turn:
 *Adjusted timing of autosaves
 *Added something to notify about upgrades
-*Detection radii of cannons are now always visible
+Detection radii of cannons are now always visible
 *Gave zertaul shadow ability a default hotkey
 *Added messages to help explain the mission
 *Removed structures in the starting area
@@ -120,6 +121,7 @@ Supernova:
 In Utter Darkness:
 *Fixed carrier interceptors costing minerals
 Fixed wave inconsistency
+Urun no longer becomes blue when using graviton beam
 
 Media Blitz:
 Can no longer be done right after Engine of Destruction
