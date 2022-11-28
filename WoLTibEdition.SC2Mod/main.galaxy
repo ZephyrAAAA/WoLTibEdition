@@ -216,6 +216,12 @@ void RemoveTopbars () {
 		RemoveTopbarAbil("ZergHypervirus");
 		RemoveTopbarAbil("CallInGoldenArmada");
 	}
+	if (!TechTreeAbilityIsAllowed(1, AbilityCommand("ZergHypervirus", 0))) {
+		RemoveTopbarAbil("ZergHypervirus");
+	}
+	if (!TechTreeAbilityIsAllowed(1, AbilityCommand("CallInGoldenArmada", 0))) {
+		RemoveTopbarAbil("CallInGoldenArmada");
+	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("ScannerSweepTopbar");
 	}
