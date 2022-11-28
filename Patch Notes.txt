@@ -27,17 +27,17 @@ Fixed Perdition saying it gives power
 Ghosts and Spectres now have a passive explaining the veterancy
 Reworded Ultrasonic pulse
 Fixed raven ability hotkeys
-*Fixed Ghost ability hotkeys
+Fixed Ghost ability hotkeys
 Commando (Including Tosh and Nova) Explosive anti-structure attack now describes what it does
-*Commando Explosive anti-structure attack now does 500 damage instead of infinity.
+Commando Explosive anti-structure attack now does 500 damage instead of infinity.
 *Autoref now has a range indicator
 *Sentry Shield Restore now has a hotkey
 Buffed Abberation Damage
 AI no longer puts ghosts in bunkers
 Seeker missiles now turn their target red.
-*Concussive damage now deals less to air units
+Concussive damage now deals less to air units
 Thor starts with 330mm barrage, and barrage range is increased to 9
-*Added the Scanner Pack upgrade, that gives Reapers short-range detection.
+Added the Scanner Pack upgrade, that gives Reapers short-range detection.
 *Defensive Matrix now says what it does
 Abberations now walk over smaller units
 *Twin-linked flamethrower no longer lies about what it does
@@ -73,9 +73,9 @@ A Sinister Turn:
 *Adjusted timing of autosaves
 *Added something to notify about upgrades
 Detection radii of cannons are now always visible
-*Gave zertaul shadow ability a default hotkey
-*Added messages to help explain the mission
-*Removed structures in the starting area
+Gave zertaul shadow ability a default hotkey
+Added messages to help explain the mission
+Removed structures in the starting area
 
 Cutthroat:
 Orlan has fortified his position
@@ -119,7 +119,7 @@ Supernova:
 *Fixed topbar appearing during the no-build segment
 
 In Utter Darkness:
-*Fixed carrier interceptors costing minerals
+Fixed carrier interceptors costing minerals
 Fixed wave inconsistency
 Urun no longer becomes blue when using graviton beam
 

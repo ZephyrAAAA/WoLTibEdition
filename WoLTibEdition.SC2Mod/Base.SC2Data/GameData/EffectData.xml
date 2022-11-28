@@ -479,8 +479,7 @@
     <CEffectDamage id="ExplosiveCharges">
         <EditorCategories value=""/>
         <ImpactLocation Value="TargetUnit"/>
-        <VitalFractionCurrent index="Life" value="1"/>
-        <VitalFractionCurrent index="Shields" value="1"/>
+        <Amount value="500"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="ExplosiveChargesDelay">
         <EditorCategories value=""/>

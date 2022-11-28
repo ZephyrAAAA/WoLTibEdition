@@ -234,6 +234,7 @@ Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
 Button/Name/ResearchImprovedPlasmaShields=Research Improved Plasma Shields
 Button/Name/ResearchImprovedRailguns=Research Improved Railguns
+Button/Name/ResearchScannerPacks=Research Scanner Packs
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
@@ -474,6 +475,7 @@ Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to 
 Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
 Button/Tooltip/ResearchImprovedPlasmaShields=Increases shield resist to 20%, and allows repair drones to restore shields
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
+Button/Tooltip/ResearchScannerPacks=Increases reaper sight range from 9 to 11, and allows them to detect in a small radius
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -1618,6 +1620,7 @@ Upgrade/Name/OcularImplants=Reinforced Barrier
 Upgrade/Name/PermanentCloakGhost=Field Projectors
 Upgrade/Name/PermanentCloakSpectre=Miniature Drop Pods
 Upgrade/Name/Predator=Commando Suit
+Upgrade/Name/ReaperScannerPack=Reaper Scanner Pack
 Upgrade/Name/TakeTheDrill=Take The Drill
 Upgrade/Name/TechReactor=Plasma Shields
 Upgrade/Name/TerranInfantryUltraCapacitors=Terran Infantry Ultra Capacitors

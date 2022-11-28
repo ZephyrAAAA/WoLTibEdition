@@ -154,6 +154,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-upgrade-terran-interferencematrix.dds"/>
         <EditorCategories value="Race:Terran"/>
     </CButton>
+    <CButton id="ResearchScannerPacks">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
     <CButton id="TakeParts">
         <Icon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
         <AlertIcon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
