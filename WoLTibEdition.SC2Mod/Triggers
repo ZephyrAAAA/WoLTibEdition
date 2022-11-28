@@ -8207,7 +8207,7 @@
         </Element>
         <Element Type="Param" Id="6ECA9FC4">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="7E5035EE"/>
-            <Value>TerranInfantryVanadiumPlating</Value>
+            <Value>ReaperScannerPack</Value>
             <ValueType Type="gamelink"/>
             <ValueGameType Type="Upgrade"/>
         </Element>
