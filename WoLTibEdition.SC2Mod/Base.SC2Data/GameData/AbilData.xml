@@ -108,7 +108,7 @@
         <Flags index="NoDeceleration" value="1"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="DuskWingBansheeCloakingField">
-        <CmdButtonArray index="On" Requirements="UseCloakingField"/>
+        <CmdButtonArray index="On" Requirements="Barracks2Land"/>
     </CAbilBehavior>
     <CAbilEffectTarget id="DutchPlaceTurret">
         <CmdButtonArray index="Execute">
@@ -293,7 +293,7 @@
                 <Link value="Stalker"/>
                 <Location value="Player"/>
             </Charge>
-            <Button DefaultButtonFace="Stalker" Requirements="JumboBunkerNotResearched"/>
+            <Button DefaultButtonFace="Stalker" Requirements="ReaperSquad"/>
             <Flags index="AutoCast" value="1"/>
         </InfoArray>
         <InfoArray index="Specialize3" Effect="CCLoadDummy">
@@ -992,7 +992,7 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <InfoArray index="Train1" Time="15">
             <Resource index="Vespene" value="1500"/>
-            <Button DefaultButtonFace="Stone" Requirements="JumboBunkerNotResearched">
+            <Button DefaultButtonFace="Stone" Requirements="ReaperSquad">
                 <Flags index="ToSelection" value="1"/>
             </Button>
             <Unit value="Stone"/>
@@ -1319,7 +1319,7 @@
         <Launch value="ReleaseAtSource"/>
         <Flags index="BestUnit" value="1"/>
         <InfoArray index="Ammo1" Time="60" Unit="Nuke">
-            <Button DefaultButtonFace="NukeArm" Requirements="TrainNuke"/>
+            <Button DefaultButtonFace="NukeArm" Requirements="CanBuildSupplyDepot"/>
         </InfoArray>
         <CalldownEffect value="Nuke"/>
     </CAbilArmMagazine>
@@ -1385,12 +1385,12 @@
         <Range value="5"/>
         <InfoArray index="Train1" Time="4">
             <Resource index="Vespene" value="400"/>
-            <Button DefaultButtonFace="Marine" State="Restricted" Requirements="JumboBunkerNotResearched"/>
+            <Button DefaultButtonFace="Marine" State="Restricted" Requirements="ReaperSquad"/>
             <Unit value="MarineSquad"/>
         </InfoArray>
         <InfoArray index="Train2" Time="8">
             <Resource index="Vespene" value="800"/>
-            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveShadowOps"/>
+            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="PlanetaryFortress2"/>
             <Unit value="ReaperSquad"/>
         </InfoArray>
         <InfoArray index="Train3" Time="20">
@@ -1406,7 +1406,7 @@
         <InfoArray index="Train5" Time="6">
             <Resource index="Vespene" value="600"/>
             <Display index="Custom" value="1"/>
-            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveShadowOps"/>
+            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="PlanetaryFortress2"/>
             <Unit value="MedicSquad"/>
         </InfoArray>
         <InfoArray index="Train6" Time="12">
@@ -1599,7 +1599,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HaveArmory">
+            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="SupplyDepot2Lower">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -2026,12 +2026,12 @@
         </InfoArray>
         <InfoArray index="Train2" Time="25">
             <Resource index="Vespene" value="2500"/>
-            <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="HaveArmory"/>
+            <Button DefaultButtonFace="SiegeTank" State="Restricted" Requirements="SupplyDepot2Lower"/>
             <Unit value="SiegeTank"/>
         </InfoArray>
         <InfoArray index="Train5" Time="35">
             <Resource index="Vespene" value="3500"/>
-            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="HaveArmory"/>
+            <Button DefaultButtonFace="Thor" State="Restricted" Requirements="SupplyDepot2Lower"/>
             <Unit value="Thor"/>
         </InfoArray>
         <InfoArray index="Train6" Time="12">
@@ -2052,7 +2052,7 @@
         </InfoArray>
         <InfoArray index="Train9" Time="9">
             <Resource index="Vespene" value="900"/>
-            <Button DefaultButtonFace="Vulture" State="Restricted" Requirements="JumboBunkerNotResearched"/>
+            <Button DefaultButtonFace="Vulture" State="Restricted" Requirements="ReaperSquad"/>
             <Unit value="Vulture"/>
         </InfoArray>
         <InfoArray index="Train10" Time="14">
@@ -2066,14 +2066,14 @@
         <InfoArray index="Research1" Time="60" Upgrade="BattlecruiserEnableSpecializations">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
-            <Button DefaultButtonFace="ResearchBattlecruiserSpecializations" State="Restricted" Requirements="LearnBattlecruiserSpecializations">
+            <Button DefaultButtonFace="ResearchBattlecruiserSpecializations" State="Restricted" Requirements="InfantryVanadiumPlating">
                 <Flags index="ShowInGlossary" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Research2" Time="80" Upgrade="BattlecruiserBehemothReactor">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
-            <Button DefaultButtonFace="ResearchBattlecruiserEnergyUpgrade" State="Restricted" Requirements="LearnBattlecruiserEnergyUpgrade">
+            <Button DefaultButtonFace="ResearchBattlecruiserEnergyUpgrade" State="Restricted" Requirements="LearnInfantryVanadium">
                 <Flags index="ShowInGlossary" value="1"/>
             </Button>
         </InfoArray>
@@ -2118,6 +2118,13 @@
         <InfoArray index="Research6" Time="60" Upgrade="HellionCampaignInfernalPreIgniter">
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="ResearchThermiteFilaments" State="Restricted" Requirements="LearnThermiteFilamints">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research7" Time="30" Upgrade="ReaperScannerPack">
+            <Resource index="Vespene" value="1000"/>
+            <Button DefaultButtonFace="ResearchScannerPacks" State="Restricted" Requirements="LearnReaperScannerPack">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -2370,7 +2377,7 @@
         </InfoArray>
         <InfoArray index="Train3" Time="25">
             <Resource index="Vespene" value="2500"/>
-            <Button DefaultButtonFace="Raven" State="Restricted" Requirements="HaveArmory"/>
+            <Button DefaultButtonFace="Raven" State="Restricted" Requirements="SupplyDepot2Lower"/>
             <Unit value="Raven"/>
         </InfoArray>
         <InfoArray index="Train4" Time="50">
@@ -2385,13 +2392,13 @@
         </InfoArray>
         <InfoArray index="Train6" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="HaveArmory"/>
+            <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="SupplyDepot2Lower"/>
             <Unit value="Hercules"/>
         </InfoArray>
         <InfoArray index="Train7" Time="25">
             <Resource index="Vespene" value="2500"/>
             <Display index="Custom" value="1"/>
-            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="HaveArmory"/>
+            <Button DefaultButtonFace="BuildScienceVessel" State="Restricted" Requirements="SupplyDepot2Lower"/>
             <Unit value="ScienceVessel"/>
         </InfoArray>
         <InfoArray index="Train8" Time="15">

@@ -206,4 +206,10 @@
     <CRequirement id="DoesnothaveLaserDrill">
         <NodeArray index="Use" Link="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="UseReaperScannerPack">
+        <NodeArray index="Show" Link="CountUpgradeReaperScannerPackCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="LearnReaperScannerPack">
+        <NodeArray index="Show" Link="NotCountUpgradeReaperScannerPackQueuedOrBetter"/>
+    </CRequirement>
 </Catalog>

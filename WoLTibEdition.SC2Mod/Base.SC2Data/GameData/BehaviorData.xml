@@ -292,6 +292,14 @@
         <BuffFlags index="Channeling" value="1"/>
         <Duration value="5"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ReaperScannerPack">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="HaveReaperScannerPack"/>
+        <Modification SightBonus="2" Detect="5" DetectFilters="-;Missile"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="SeekerMissile">
         <Alignment value="Negative"/>
         <InfoIcon value="Assets\Textures\btn-ability-terran-huntermissile-color.dds"/>

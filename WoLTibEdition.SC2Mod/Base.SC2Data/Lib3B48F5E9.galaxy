@@ -472,14 +472,18 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         else {
         }
     }
+    lv_currentUpgradeLevel = lp_initialUpgradeLevel;
     Wait(lp_upgradeInitialTimeDelay, c_timeAI);
     while (true) {
         if (((lv_currentUpgradeLevel >= 2) || (lv_currentUpgradeLevel >= lv_maxUpgradeLevel)) && (lv_currentUpgrades >= 6)) {
             break;
         }
         else {
-            Wait(lv_upgradeDelayTimer, c_timeAI);
-            if ((lp_airAtAll == true)) {
+            if ((lv_currentUpgrades >= 6)) {
+                lv_currentUpgrades = 5;
+            }
+
+            if ((lp_airAtAll == false)) {
                 if ((lp_armourWithAttack == true)) {
                     auto0013A39A_g = lp_enemyPlayers;
                     auto0013A39A_var = -1;
@@ -489,8 +493,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         TechTreeUpgradeAddLevel(auto0013A39A_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
                         TechTreeUpgradeAddLevel(auto0013A39A_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         TechTreeUpgradeAddLevel(auto0013A39A_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
-                        lv_currentUpgrades += 1;
                     }
+                    lv_currentUpgrades += 1;
                 }
                 else {
                     autoA4759C5D_g = lp_enemyPlayers;
@@ -500,8 +504,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         if (autoA4759C5D_var < 0) { break; }
                         TechTreeUpgradeAddLevel(autoA4759C5D_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
                         TechTreeUpgradeAddLevel(autoA4759C5D_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
-                        lv_currentUpgrades += 1;
                     }
+                    lv_currentUpgrades += 1;
                     Wait(lv_upgradeDelayTimer, c_timeAI);
                     auto3951E84F_g = lp_enemyPlayers;
                     auto3951E84F_var = -1;
@@ -520,7 +524,6 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         auto5CFBA425_var = PlayerGroupNextPlayer(auto5CFBA425_g, auto5CFBA425_var);
                         if (auto5CFBA425_var < 0) { break; }
                         TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
-                        lv_currentUpgrades += 1;
                         if ((lp_airFirst == false)) {
                             TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
@@ -528,6 +531,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                             TechTreeUpgradeAddLevel(auto5CFBA425_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                     }
+                    lv_currentUpgrades += 1;
                     auto6F24484E_g = lp_enemyPlayers;
                     auto6F24484E_var = -1;
                     while (true) {
@@ -548,7 +552,6 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         autoCF4BA73B_var = PlayerGroupNextPlayer(autoCF4BA73B_g, autoCF4BA73B_var);
                         if (autoCF4BA73B_var < 0) { break; }
                         TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
-                        lv_currentUpgrades += 1;
                         if ((lp_airFirst == false)) {
                             TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
@@ -556,6 +559,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                             TechTreeUpgradeAddLevel(autoCF4BA73B_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                     }
+                    lv_currentUpgrades += 1;
                     Wait(lv_upgradeDelayTimer, c_timeAI);
                     autoA0AC99DB_g = lp_enemyPlayers;
                     autoA0AC99DB_var = -1;
@@ -578,7 +582,6 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         autoD4E41929_var = PlayerGroupNextPlayer(autoD4E41929_g, autoD4E41929_var);
                         if (autoD4E41929_var < 0) { break; }
                         TechTreeUpgradeAddLevel(autoD4E41929_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
-                        lv_currentUpgrades += 1;
                         if ((lp_airFirst == false)) {
                             TechTreeUpgradeAddLevel(autoD4E41929_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
@@ -586,6 +589,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                             TechTreeUpgradeAddLevel(autoD4E41929_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                     }
+                    lv_currentUpgrades += 1;
                     auto8D1DCEC3_g = lp_enemyPlayers;
                     auto8D1DCEC3_var = -1;
                     while (true) {
@@ -606,7 +610,6 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         auto9890C451_var = PlayerGroupNextPlayer(auto9890C451_g, auto9890C451_var);
                         if (auto9890C451_var < 0) { break; }
                         TechTreeUpgradeAddLevel(auto9890C451_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
-                        lv_currentUpgrades += 1;
                         if ((lp_airFirst == false)) {
                             TechTreeUpgradeAddLevel(auto9890C451_var, lv_attackUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
@@ -614,6 +617,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                             TechTreeUpgradeAddLevel(auto9890C451_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                     }
+                    lv_currentUpgrades += 1;
                     Wait(lv_upgradeDelayTimer, c_timeAI);
                     auto4992AF7F_g = lp_enemyPlayers;
                     auto4992AF7F_var = -1;
@@ -781,7 +785,7 @@ bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
         libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
     }
     else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel2") {
-        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
+        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "ReaperScannerPack", 1);
     }
     else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel3") {
         libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);

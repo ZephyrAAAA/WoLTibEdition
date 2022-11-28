@@ -64,6 +64,11 @@
     <CValidatorPlayerRequirement id="HasWarPigs">
         <Find value="1"/>
     </CValidatorPlayerRequirement>
+    <CValidatorPlayerRequirement id="HaveReaperScannerPack">
+        <WhichPlayer Value="Source"/>
+        <Find value="1"/>
+        <Value value="UseReaperScannerPack"/>
+    </CValidatorPlayerRequirement>
     <CValidatorLocationCompareRange id="IrradiateDistanceCheck">
         <Compare value="LT"/>
         <Range value="2"/>

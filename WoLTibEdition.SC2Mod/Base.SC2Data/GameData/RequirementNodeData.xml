@@ -43,7 +43,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorPsiSightCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="PsiSight" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorSupplyDepotBuiltCompleteOnly">
@@ -150,6 +149,16 @@
     <CRequirementCountUpgrade id="CountUpgradeLowPowerCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="LowPower" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeReaperScannerPackCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ReaperScannerPack" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeReaperScannerPackQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="ReaperScannerPack" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeRegenerativeBioSteelCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
@@ -362,6 +371,10 @@
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeLowPowerCompleteOnly">
         <OperandArray index="0" value="CountUpgradeLowPowerCompleteOnly"/>
+    </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeReaperScannerPackQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeReaperScannerPackQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTakeTheDrillQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeTakeTheDrillQueuedOrBetter"/>
