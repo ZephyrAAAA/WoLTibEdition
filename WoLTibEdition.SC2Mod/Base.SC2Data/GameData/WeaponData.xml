@@ -22,6 +22,7 @@
             <MismatchFlags index="Id" value="1"/>
         </Marker>
         <Backswing value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATALaserBattery2">
         <EditorCategories value="Race:Terran"/>
@@ -71,6 +72,7 @@
             <MismatchFlags index="Id" value="1"/>
         </Marker>
         <Backswing value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ATSLaserBattery2">
         <EditorCategories value="Race:Terran"/>
@@ -124,6 +126,7 @@
     <CWeaponLegacy id="ArmageddonCannons">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ArtanisBeam">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -142,6 +145,7 @@
         <Tip value="Weapon/Tip/Cannon"/>
         <Period value="0.2"/>
         <AttackType value="Magic"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BroodlingEscort">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -239,6 +243,7 @@
         </Marker>
         <AllowedMovement value="Moving"/>
         <Backswing value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserA2">
         <EditorCategories value="Race:Terran"/>
@@ -300,6 +305,7 @@
         </Marker>
         <AllowedMovement value="Moving"/>
         <Backswing value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserG2">
         <EditorCategories value="Race:Terran"/>
@@ -1187,6 +1193,7 @@
         <Options index="LinkedCooldown" value="0"/>
         <Arc value="29.9926"/>
         <Backswing value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithG">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -1197,6 +1204,7 @@
         <Options index="LinkedCooldown" value="0"/>
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Backswing value="0"/>
+        <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewAssault">
         <Tip value="Weapon/Tip/Rifle"/>
