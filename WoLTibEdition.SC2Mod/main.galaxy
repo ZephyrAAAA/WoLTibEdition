@@ -148,8 +148,10 @@ void RemoveTopbarAbil(string abil) {
 	lv_i += 1;
 	for (; topbarAbils[lv_i] != null; lv_i += 1) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
+		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), false);
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
+		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), true);
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
 		topbarAbils[lv_i] = null;

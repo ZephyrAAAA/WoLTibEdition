@@ -141,6 +141,9 @@
     <CEffectDamage id="BarrageDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="BarragePersistent">
+        <PeriodicPeriodArray index="0" value="0.2"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="BattlecruiserLokiU">
         <Amount value="15"/>
     </CEffectDamage>
