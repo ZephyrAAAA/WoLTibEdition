@@ -6141,6 +6141,7 @@
         <ArmorType value="Fort"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <Attributes index="Heroic" value="1"/>
     </CUnit>
     <CUnit id="TalDarimPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

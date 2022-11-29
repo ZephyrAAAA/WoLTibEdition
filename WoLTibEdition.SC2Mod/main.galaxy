@@ -124,6 +124,7 @@ void AddTopbarAbil(string abil) {
 
 void RemoveTopbarAbil(string abil) {
 	int lv_i;
+	int lv_x;
 	if (!UnitAbilityExists(topbarUnit, abil)) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, does not have: " +abil));
 		//return;
@@ -146,12 +147,20 @@ void RemoveTopbarAbil(string abil) {
 	UnitAbilityRemove(topbarUnit, abil);
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
 	lv_i += 1;
+	for (lv_x = lv_i; topbarAbils[lv_x] != null; lv_x += 1) {
+		UnitAbilityRemove(topbarUnit, topbarAbils[lv_x]);
+		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_x], 0), false);
+		PlayerApplySkin(1, topbarAbils[lv_x]+IntToString(lv_x+3), false);
+	}
+	Wait(0.125, c_timeGame);
 	for (; topbarAbils[lv_i] != null; lv_i += 1) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
-		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), false);
-		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
+//		UnitAbilityRemove(topbarUnit, topbarAbils[lv_i]);
+//		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), false);
+//		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
 		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), true);
+		UnitAbilityAdd(topbarUnit, topbarAbils[lv_i]);
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
 		topbarAbils[lv_i] = null;

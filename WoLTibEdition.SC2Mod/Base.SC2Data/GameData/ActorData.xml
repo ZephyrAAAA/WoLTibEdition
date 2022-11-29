@@ -1340,6 +1340,13 @@
         <Model value="SensorTower"/>
     </CActorModel>
     <!--                                                                                         -->
+    <!-- Tychus05 Hero Mothership .............................................................. -->
+    <!--                                                                                         -->
+    <CActorUnit id="Tychus05HeroMothership">
+        <Model value="Mothership"/>
+        <Scale value="1.250000"/>
+    </CActorUnit>
+    <!--                                                                                         -->
     <!-- Tychus Commando ....................................................................... -->
     <!--                                                                                         -->
     <CActorUnit id="TychusCommando">
