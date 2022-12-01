@@ -534,13 +534,13 @@ Tri-lithium-> Railgun Piercing
 
 Ares Class-> Health
 
-Barrage Area-> Improved Actuators- Thor speedy boi
+Barrage Area-> Improved Actuators- Thor speedy boi, ~20% faster
 
-Immortality Protocol-> Self-Improvement Protocol- Thors can now grab parts from other units to buff themselves. Hellion Flamethrower, Diamondback Railgun, Predator Energy Shield, Siege tank to get AOE on normal attack, Stone to get detection
+Immortality Protocol-> Self-Improvement Protocol- Thors can now grab parts from other units to buff themselves. Hellion Flamethrower, Diamondback Railgun, Predator Energy Shield, Siege tank to get AOE on normal attack, Stone to get detection and a radar
 
-Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, that have a preference for targeting different units.
+Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, increasing DPS by 50%
 
-Defensive Matrix- Also heals 200
+Defensive Matrix- Autocastable, Heals 200, absorbs 300 damage instead of giving a 300 point shield.
 
 Medivac Rapid Deployment-> Medivac Bunker- infantry can fire out of the medivac, the medivac drops faster, and has a larger pickup range. Units inside can use stim
 

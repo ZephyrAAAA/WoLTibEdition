@@ -43,6 +43,13 @@ Abberations now walk over smaller units
 *Twin-linked flamethrower no longer lies about what it does
 Hellion damage buffed to 30dps from 18 dps. Cost changes from 800 to 1200.
 Firebats and hellions no longer damange neutrals in their AOE area.
+Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Removal of energy bar. Tech requirement move from Fusion Core to Armoury.
+Thor- Reduce damage by 33%, Barrage no longer stuns, Barrage starts area
+Barrage Area-> Improved Actuators- Thor speedy boi, ~20% faster
+Immortality Protocol-> Self-Improvement Protocol- Thors can now grab parts from other units to buff themselves. Hellion Flamethrower, Diamondback Railgun, Predator Energy Shield, Siege tank to get AOE on normal attack, Stone to get detection and a radar
+*Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, increasing DPS by 50%
+Defensive Matrix- Autocastable, Heals 200, absorbs 300 damage instead of giving a 300 point shield.
+Improved Engines- Battlecruisers move faster [Armoury]
 
 Liberation Day:
 Fixed the restore charge
@@ -79,11 +86,13 @@ Removed structures in the starting area
 
 Cutthroat:
 Orlan has fortified his position
-*Neutral Structures?
+*There is now a spike at each of Orlan's bases, instead of a field. Orlan gets these spikes over time, you can take them from him.
 
 Outbreak:
 Added a second starting SCV
 Doubled infested
+*Infested structures are now bunkers. How many infested marines they hold is based on difficulty, 1/1/2/3
+*Added a Silo to the expansion.
 
 Morbius Factor:
 Replaced the low ground field with a silo and a spike.
@@ -149,11 +158,13 @@ Brutalisk is no longer so binary in whether it kills you or not
 
 Maw of the Void:
 *Rescuing all the DTs gives a single use per mission Support Power to call down 10 DTs on the fusion core
+*Shields from the research lab doesn't block rip field damage until you get the shield upgrade on the armoury.
 Added an objective to kill the Mothership.
 The vault is now invicible, and is no longer an objective.
 Added an objective for the protoss must have less than 10 structures on the map.
 Rescuing DT groups 2 and 3 gives BC armoury upgrades.
 Horner no longer says resources are scarce
-*Shields from the research lab doesn't block rip field damage until you get the shield upgrade on the armoury.
 There is now 3 strong bases you need to fight through.
 The Protoss send large attack waves.
+*Area around mom is no longer always visible. Mom herself still is though.
+*Rip fields are now slow fields
