@@ -4829,6 +4829,7 @@
         <LifeStart value="60"/>
         <LifeMax value="60"/>
         <AlliedPushPriority value="-1"/>
+        <CargoSize value="1"/>
     </CUnit>
     <CUnit id="ReaperPlacement">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
