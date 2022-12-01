@@ -311,6 +311,8 @@
         <EffectArray Operation="Multiply" Reference="Effect,OdinDamage,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserAU,Amount" Value="1.5"/>
         <EffectArray Operation="Multiply" Reference="Effect,DRBattlecruiserGU,Amount" Value="1.5"/>
+        <EffectArray Reference="Effect,YamatoCPU,PeriodCount" Value="5"/>
+        <EffectArray Reference="Effect,LokiYamatoCPU,PeriodCount" Value="5"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
     </CUpgrade>
@@ -2094,6 +2096,8 @@
         <EffectArray Reference="Weapon,Odin,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,ThorInfernalFlameThrower,RateMultiplier" Value="0.2"/>
         <EffectArray Reference="Weapon,ThorDiamondback,RateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Effect,330mmBarrageCannonsPersistent,PeriodicEffectRateMultiplier" Value="0.2"/>
+        <EffectArray Reference="Effect,BarragePersistent,PeriodicEffectRateMultiplier" Value="0.2"/>
         <EffectArrayTemplate Reference="Weapon,^ParamId^,RateMultiplier" Value="0.2"/>
         <EditorCategories value="Race:Terran,UpgradeType:AttackBonus"/>
         <AffectedUnitArray value="Odin"/>

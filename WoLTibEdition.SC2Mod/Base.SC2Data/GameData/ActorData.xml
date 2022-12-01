@@ -86,6 +86,10 @@
     <CActorUnit id="Battlecruiser">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Battlecruiser_Attack"/>
     </CActorUnit>
+    <CActorAction id="BattlecruiserYamatoAttack" effectImpact="YamatoCPU">
+        <On index="1" Terms="Effect.YamatoCPU.Start; FromEffectTreeDescendant"/>
+        <On index="2" Terms="Effect.YamatoCPU.Stop; FromEffectTreeDescendant"/>
+    </CActorAction>
     <!--                                                                                         -->
     <!-- Stetmann .............................................................................. -->
     <!--                                                                                         -->

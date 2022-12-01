@@ -621,7 +621,7 @@
     <CAbilEffectTarget id="ScienceVesselDefensiveMatrix">
         <Alignment value="Positive"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Effect index="0" value="DefensiveMatrixSetVessel"/>
+        <Effect index="0" value="DefensiveMatrixApplyBehavior"/>
         <Flags index="AllowMovement" value="1"/>
         <Flags index="NoDeceleration" value="1"/>
         <Flags index="RequireTargetVision" value="0"/>

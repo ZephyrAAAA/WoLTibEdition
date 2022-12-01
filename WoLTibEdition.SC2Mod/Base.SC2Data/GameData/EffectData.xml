@@ -337,7 +337,10 @@
         <RechargeVitalRate value="10"/>
     </CEffectCreateHealer>
     <CEffectSet id="DefensiveMatrixSet">
-        <EffectArray value="DefensiveMatrixRepair"/>
+        <EffectArray index="0" value="DefensiveMatrixApplyBehavior"/>
+        <EffectArray index="1" value="DefensiveMatrixRepair"/>
+        <EffectArray index="2" removed="1"/>
+        <EffectArray index="3" removed="1"/>
     </CEffectSet>
     <CEffectSet id="DefensiveMatrixSetVessel">
         <ValidatorArray value="NotDefensiveMatrixd"/>
@@ -1099,8 +1102,12 @@
     <CEffectCreatePersistent id="LokiHurricaneMissileDamagePersistent">
         <Flags index="Channeled" value="0"/>
     </CEffectCreatePersistent>
+    <CEffectLaunchMissile id="LokiYamato">
+        <ImpactEffect value="LokiYamatoCPU"/>
+    </CEffectLaunchMissile>
     <CEffectDamage id="LokiYamatoU">
         <ArmorReduction value="1"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectApplyBehavior id="MechEMP">
         <ValidatorArray index="0" value="UseMechEMP"/>
@@ -2905,13 +2912,36 @@
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
+    <CEffectLaunchMissile id="Yamato">
+        <ImpactEffect value="YamatoCPU"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="YamatoCPU">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="YamatoU"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LokiYamatoCPU">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="LokiYamatoU"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="YamatoGunTopbarCPU">
+        <EditorCategories value=""/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="YamatoGunTopbarDamage"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
     <CEffectDamage id="YamatoGunTopbarDamage">
         <EditorCategories value="Race:Terran"/>
         <ResponseFlags index="Flee" value="1"/>
-        <LaunchLocation Effect="YamatoGunTopbarOffset" Value="TargetPoint"/>
+        <LaunchLocation Value="TargetPoint"/>
         <Visibility value="Visible"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="400"/>
+        <Amount value="40"/>
         <Death value="Blast"/>
         <AreaArray Radius="3" Fraction="1"/>
         <ExcludeArray Value="Target"/>
@@ -2926,7 +2956,7 @@
         <LaunchLocation Value="TargetPoint"/>
         <ImpactLocation Value="TargetPoint"/>
         <LaunchOffset value="0,1,20"/>
-        <ImpactEffect value="YamatoGunTopbarDamage"/>
+        <ImpactEffect value="YamatoGunTopbarCPU"/>
         <AmmoUnit value="HyperionYamatoSpecialWeapon"/>
     </CEffectLaunchMissile>
     <CEffectCreatePersistent id="YamatoGunTopbarPersistent">
@@ -2939,6 +2969,7 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="YamatoU">
         <ArmorReduction value="1"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectDamage id="Zeratul">
         <AttributeBonus index="Armored" value="0"/>
