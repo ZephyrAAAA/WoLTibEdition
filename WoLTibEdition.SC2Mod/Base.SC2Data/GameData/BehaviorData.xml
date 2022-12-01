@@ -110,7 +110,7 @@
         <Modification>
             <VitalMaxArray index="Shields" value="0"/>
         </Modification>
-        <DamageResponse ModifyFraction="0" ModifyLimit="200">
+        <DamageResponse ModifyFraction="0" ModifyLimit="300">
             <Chance value="1"/>
         </DamageResponse>
     </CBehaviorBuff>
