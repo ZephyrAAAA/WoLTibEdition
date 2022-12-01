@@ -6141,6 +6141,7 @@
         <ArmorType value="Fort"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <FogVisibility value="Visible"/>
         <Attributes index="Heroic" value="1"/>
     </CUnit>
     <CUnit id="TalDarimPrison">
