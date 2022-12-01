@@ -48,7 +48,7 @@
             <MatchFlags index="CasterUnit" value="1"/>
             <MismatchFlags index="Id" value="1"/>
         </Marker>
-        <Period value="0.225"/>
+        <Period value="0.3374"/>
         <Effect value="ATALaserBatteryLM"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
@@ -98,7 +98,7 @@
             <MatchFlags index="CasterUnit" value="1"/>
             <MismatchFlags index="Id" value="1"/>
         </Marker>
-        <Period value="0.225"/>
+        <Period value="0.3374"/>
         <Effect value="ATSLaserBatteryLM"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
@@ -270,7 +270,7 @@
             <MatchFlags index="CasterUnit" value="1"/>
             <MismatchFlags index="Id" value="1"/>
         </Marker>
-        <Period value="0.225"/>
+        <Period value="0.3374"/>
         <AttackType value="Magic"/>
         <Effect value="DRBattlecruiserALM"/>
         <AllowedMovement value="Moving"/>
@@ -333,7 +333,7 @@
             <MatchFlags index="CasterUnit" value="1"/>
             <MismatchFlags index="Id" value="1"/>
         </Marker>
-        <Period value="0.225"/>
+        <Period value="0.3374"/>
         <AttackType value="Magic"/>
         <Backswing value="0"/>
         <Effect value="DRBattlecruiserGLM"/>
