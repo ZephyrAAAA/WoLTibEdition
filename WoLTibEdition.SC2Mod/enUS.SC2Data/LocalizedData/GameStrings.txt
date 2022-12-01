@@ -347,7 +347,7 @@ Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and re
 Button/Tooltip/Consumption=Drains half the life from a friendly biological unit and gives Tosh 2 energy and 2 life for each point of life drained.
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
 Button/Tooltip/Decal_Terran_0047_01=Support structure. Used to construct buildings.
-Button/Tooltip/DefensiveMatrix=Surrounds the unit with a shield that can absorb <d ref="Behavior,DefensiveMatrix,Modification.VitalMaxArray[1]"/> damage. Lasts <d ref="Behavior,DefensiveMatrix,Duration"/> seconds.
+Button/Tooltip/DefensiveMatrix=Surrounds the unit with a shield that can absorb <d ref="Behavior,DefensiveMatrix,DamageResponse.ModifyLimit"/> damage. Lasts <d ref="Behavior,DefensiveMatrix,Duration"/> seconds.
 Button/Tooltip/DeployLaserDrill10=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill11=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill12=Deploys the laser drill.
@@ -393,18 +393,18 @@ Button/Tooltip/HiveMindEmulator7=Converts targeted Zerg units to player control 
 Button/Tooltip/HiveMindEmulator8=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HiveMindEmulator9=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HyperflightRotors=Increases <c val="ffff8a">Banshee</c> speed to 3.75 (same as Wraith)
-Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato12=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato13=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato14=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato3=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato4=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato5=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato6=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato7=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato8=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
-Button/Tooltip/HyperionYamato9=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount"/> damage.
+Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato12=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato13=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato14=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato3=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato4=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato5=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato6=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato7=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato8=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/HyperionYamato9=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
 Button/Tooltip/InfantryMercenaries10=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries11=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries12=Calls down all purchased infantry mercenaries at the target location
@@ -472,7 +472,7 @@ Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of
 Button/Tooltip/RepairOrder=Orders repair drones to heal the target
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, <c val="FFFF8A">Marauder</c> rockets, and <c val="FFFF8A">Planetary Fortress</c> by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
-Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
+Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Yamato Cannon</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
 Button/Tooltip/ResearchImprovedPlasmaShields=Increases shield resist to 20%, and allows repair drones to restore shields
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
 Button/Tooltip/ResearchScannerPacks=Increases reaper sight range from 9 to 11, and allows them to detect in a small radius
@@ -559,6 +559,7 @@ Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
+Button/Tooltip/YamatoGun=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoCPU,PeriodCount*Effect,YamatoU,Amount"/> damage.
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/ZergHypervirus11=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -938,6 +939,7 @@ Effect/Name/IrradiatePeriodicSet=Irradiate Periodic Set
 Effect/Name/LanzerTorpedoesDamageG=Halo Rockets (Damage2)
 Effect/Name/LanzerTorpedoesG=Halo Rockets (Persistent2)
 Effect/Name/LanzerTorpedoesLMG=Halo Rockets (Launch Missile2)
+Effect/Name/LokiYamatoCPU=Yamato Cannon
 Effect/Name/MakePrecursorMercIterate=Make Precursor Merc Iterate
 Effect/Name/MarineSquadStim=Marine Squad Stim
 Effect/Name/MarineSquadStimIterate=Marine Squad Stim Iterate
@@ -1076,6 +1078,8 @@ Effect/Name/VultureLeft=Fragmentation Grenade (Missile, left)
 Effect/Name/WreckingCrewFighterG=Halo Rockets (Persistent2)
 Effect/Name/WreckingCrewFighterLMG=Halo Rockets
 Effect/Name/WreckingCrewFighterUG=Halo Rockets (Damage2)
+Effect/Name/YamatoCPU=Yamato Cannon
+Effect/Name/YamatoGunTopbarCPU=Yamato Gun Topbar
 Effect/Name/YamatoGunTopbarDamage=Yamato Gun
 Effect/Name/YamatoGunTopbarLaunchMissile=Yamato Gun
 Effect/Name/YamatoGunTopbarPersistent=Yamato Gun
