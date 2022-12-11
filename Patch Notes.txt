@@ -3,9 +3,9 @@ Devastation turret now uses the correct wirefram
 Hi-sec now affects perdition unburrow range
 Thor now has the ability to commandeer equipment from other vehicles.
 Worker rally on the factory and reset rally on the refinery now use an icon made by Orcawarrior2
-*Help screen nodes mention SCV micro.
-*Reworded Expanded Hold and Orbital Supply Drop.
-*Stim no longer says it increases movement speed
+Help screen nodes mention SCV micro.
+Reworded Expanded Hold and Orbital Supply Drop.
+Stim no longer says it increases movement speed
 *All "you got an upgrade" text now stands out more
 *Devastation turret is now called the correct name
 Bunkers are no longer fortified
@@ -48,7 +48,7 @@ Battlecruiser- Can fire on the move. Can fire at both air and ground targets sim
 Thor- Reduce damage by 33%, fire 33% faster, Barrage no longer stuns, Barrage starts area
 Barrage Area-> Improved Actuators- Thor speedy boi, ~20% faster
 Immortality Protocol-> Self-Improvement Protocol- Thors can now grab parts from other units to buff themselves. Hellion Flamethrower, Diamondback Railgun, Predator Energy Shield, Siege tank to get AOE on normal attack, Stone to get detection and a radar
-*Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, increasing DPS by 50%
+Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, increasing DPS by 50%
 Defensive Matrix- Autocastable, Heals 200, absorbs 300 damage instead of giving a 300 point shield.
 Improved Engines- Battlecruisers move faster [Armoury]
 Reapers now take 1 slot instead of 2 (This only applies to the AI, because they don't use squads)
@@ -74,9 +74,9 @@ Evacuation:
 Fixed Ebay not transferring.
 
 Bel'shir:
-*Reduced the tech difference between Node Defenders and Terrazine waves.
-*Looked at reclaimation waves taking weird paths
-*Waves only ping the area if the player has structures there.
+*Terrazine sealing and counter waves are now stronger.
+*Node defenders only get HT at the bases, not at every field.
+Waves only ping the area if the player has structures there.
 
 A Sinister Turn:
 *Adjusted timing of autosaves
