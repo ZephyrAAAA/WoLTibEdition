@@ -148,8 +148,9 @@ Each base is rebuilt unti its tower is taken.
 The dominion sends convoys to reinforce and rebuild a base if it is destroyed, but the tower isn't taken.
 The flavoured escort for the convoys now attacks the player after it arrives. The rest of the convoy leaves the map through the nearest entrance.
 Convoys are sent when the base has no SCVs, no CC, and none of the relevant production structure
+Taking a tower stops the dominion from sending more convoys to rebuild that base. Exising convoys continue as normal.
 The dominion figured out how to import tech reactors from Trains
-*Tower defense waves are now randomized and stronger.
+Tower defense waves are now randomized and stronger.
 
 Piercing the Shroud:
 Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
