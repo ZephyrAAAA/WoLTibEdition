@@ -74,8 +74,9 @@ Evacuation:
 Fixed Ebay not transferring.
 
 Bel'shir:
-*Terrazine sealing and counter waves are now stronger.
-*Node defenders only get HT at the bases, not at every field.
+Terrazine sealing waves now always send at least 1 colossus or HT, based on difficulty and Threat Level.
+Terrazine counter waves are now stronger.
+Node defenders only get HT at the 3 bases in the middle of the map, not at every field.
 Waves only ping the area if the player has structures there.
 
 A Sinister Turn:
