@@ -7,14 +7,14 @@ Help screen nodes mention SCV micro.
 Reworded Expanded Hold and Orbital Supply Drop.
 Stim no longer says it increases movement speed
 *All "you got an upgrade" text now stands out more
-*Devastation turret is now called the correct name
+Devastation turret is now called the correct name
 Bunkers are no longer fortified
 Hailstorm now has a hotkey
-*Updated Ebay tooltip text
-*Updated Shadow Ops tooltip text
-*Updated Armoury tooltip text
-*Updated Fusion Core tooltip text
-*Updated Medic Upgrade tooltip
+Updated Ebay tooltip text
+Updated Shadow Ops tooltip text
+Updated Armoury tooltip text
+Updated Fusion Core tooltip text
+Updated Medic Upgrade tooltip
 Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over other targets.
 Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
@@ -94,7 +94,7 @@ Orlan has fortified his position
 Outbreak:
 Added a second starting SCV
 Doubled infested
-*Infested structures are now bunkers. How many infested marines they hold is based on difficulty, 1/1/2/3
+Infested structures are now bunkers. How many infested marines they hold is based on difficulty, 1/1/2/3
 Added a Silo to the expansion.
 
 Morbius Factor:
