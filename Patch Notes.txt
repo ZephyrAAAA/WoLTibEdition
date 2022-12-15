@@ -38,10 +38,10 @@ Seeker missiles now turn their target red.
 Concussive damage now deals less to air units
 Thor starts with 330mm barrage, and barrage range is increased to 9
 Added the Scanner Pack upgrade, that gives Reapers short-range detection.
-*Defensive Matrix now says what it does
+Defensive Matrix now says what it does
 Abberations now walk over smaller units
-*Twin-linked flamethrower no longer lies about what it does
-*Twin-linked flamethrower buffed
+Twin-linked flamethrower no longer lies about what it does
+Twin-linked flamethrower buffed
 Hellion damage buffed to 30dps from 18 dps. Cost changes from 800 to 1200.
 Firebats and hellions no longer damange neutrals in their AOE area.
 Battlecruiser- Can fire on the move. Can fire at both air and ground targets simultaneously. Removal of energy bar. Tech requirement move from Fusion Core to Armoury.
