@@ -853,6 +853,14 @@
         <Amount value="400"/>
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="InfernalFlameThrowerCP">
+        <PeriodicOffsetArray value="0,-6.25,0"/>
+        <PeriodicOffsetArray value="0,-6.5,0"/>
+        <PeriodicOffsetArray value="0,-6.75,0"/>
+        <PeriodicOffsetArray value="0,-7,0"/>
+        <PeriodicOffsetArray value="0,-7.25,0"/>
+        <PeriodicOffsetArray value="0,-7.5,0"/>
+    </CEffectCreatePersistent>
     <CEffectEnumArea id="InfernalFlameThrowerE">
         <SearchFilters value="Ground;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
