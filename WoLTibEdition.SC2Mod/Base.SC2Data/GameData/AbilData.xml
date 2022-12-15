@@ -1390,7 +1390,7 @@
         </InfoArray>
         <InfoArray index="Train2" Time="8">
             <Resource index="Vespene" value="800"/>
-            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="PlanetaryFortress2"/>
+            <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveShadowOps"/>
             <Unit value="ReaperSquad"/>
         </InfoArray>
         <InfoArray index="Train3" Time="20">
@@ -1406,7 +1406,7 @@
         <InfoArray index="Train5" Time="6">
             <Resource index="Vespene" value="600"/>
             <Display index="Custom" value="1"/>
-            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="PlanetaryFortress2"/>
+            <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveShadowOps"/>
             <Unit value="MedicSquad"/>
         </InfoArray>
         <InfoArray index="Train6" Time="12">
