@@ -285,6 +285,10 @@
         <LaunchSite value="ThorFlamethrowerSite"/>
         <LaunchAttachQuery Methods="AMFilterWeapon"/>
     </CActorAction>
+    <!--                                                                                         -->
+    <!-- Hellion ................................................................... -->
+    <!--                                                                                         -->
+    <CActorBeamSimple id="HellionAttackBeam"/>
     <CActorAction id="HellionUpgradedAttack">
         <LaunchSite value="ThorFlamethrowerSite"/>
         <LaunchAttachQuery Methods="AMFilterWeapon"/>

@@ -2716,6 +2716,11 @@
     <CUpgrade id="TriLithiumPowerCells">
         <EffectArray index="0" removed="1"/>
     </CUpgrade>
+    <CUpgrade id="TwinLinkedFlameThrowers">
+        <EffectArray Reference="Effect,InfernalFlameThrowerCP,PeriodCount" Value="6"/>
+        <EffectArray Reference="Weapon,InfernalFlameThrower,Range" Value="0.5"/>
+        <EffectArray Reference="Weapon,ThorInfernalFlameThrower,Range" Value="0.5"/>
+    </CUpgrade>
     <CUpgrade id="UltrasonicPulse">
         <EffectArray Reference="Unit,Hercules,Speed" Value="0.824200"/>
         <EffectArray Reference="Unit,Hercules,Acceleration" Value="0.687500"/>
