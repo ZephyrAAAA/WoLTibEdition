@@ -721,7 +721,6 @@ bool auto_lib3B48F5E9_gf_NewModTips_TriggerFunc (bool testConds, bool runActions
 bool lib3B48F5E9_gt_CommandoEXP_Func (bool testConds, bool runActions) {
     // Variable Declarations
     fixed lv_xP;
-    bool lv_eweytbppcwrxyebk;
 
     // Automatic Variable Declarations
     // Variable Initialization
@@ -753,7 +752,6 @@ bool lib3B48F5E9_gt_CommandoEXP_Func (bool testConds, bool runActions) {
     }
 
     UnitXPAddXP(EventUnitDamageSourceUnit(), "Veterancy", lv_xP);
-    lv_eweytbppcwrxyebk = AICombatDiffFlagTieBreakHealers(0, c_combatFlagEnable);
     return true;
 }
 

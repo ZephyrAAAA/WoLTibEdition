@@ -1235,14 +1235,17 @@
     <CEffectModifyPlayer id="MineralSiloInitial">
         <WhichPlayer Value="Source"/>
         <Resources index="Minerals" value="5000"/>
+        <ResourcesCollected index="Minerals" value="5000"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="MineralSpikeInitial">
         <WhichPlayer Value="Source"/>
         <Resources index="Minerals" value="500"/>
+        <ResourcesCollected index="Minerals" value="500"/>
     </CEffectModifyPlayer>
     <CEffectModifyPlayer id="MineralSpikePeriodic">
         <WhichPlayer Value="Source"/>
         <Resources index="Minerals" value="20"/>
+        <ResourcesCollected index="Minerals" value="20"/>
     </CEffectModifyPlayer>
     <CEffectCreatePersistent id="MohandarChargeInitial">
         <PeriodicPeriodArray index="0" value="0"/>

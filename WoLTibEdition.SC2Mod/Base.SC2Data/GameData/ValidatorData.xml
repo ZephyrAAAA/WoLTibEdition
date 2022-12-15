@@ -84,7 +84,8 @@
     </CValidatorUnitType>
     <CValidatorPlayerCompareType id="IsPlayer">
         <WhichPlayer Value="Source"/>
-        <Value value="User"/>
+        <Value value="Neutral"/>
+        <Compare value="NE"/>
     </CValidatorPlayerCompareType>
     <CValidatorPlayerCompareType id="IsNotPlayer">
         <WhichPlayer Value="Source"/>
