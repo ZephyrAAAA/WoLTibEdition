@@ -8,6 +8,7 @@ unitgroup lib3B48F5E9_gv_fleetGroup;
 
 // Function Declarations
 void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, fixed lp_upgradeTimeScalar, fixed lp_upgradeTime, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airAtAll, bool lp_airFirst, bool lp_armourWithAttack);
+void lib3B48F5E9_gf_CNCUpgradeText (string lp_upgrade, string lp_upgradeName, string lp_upgradeEffect);
 void lib3B48F5E9_gf_Taldarimify (playergroup lp_players);
 void lib3B48F5E9_gf_NewModTips ();
 

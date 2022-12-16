@@ -374,7 +374,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     }
     else {
         UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_BF307B53"));
-
+        return true;
     }
     lv_currentUpgradeLevel = (lp_initialUpgradeLevel-1);
     if ((lv_currentUpgradeLevel < 0)) {
@@ -476,7 +476,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     Wait(lp_upgradeInitialTimeDelay, c_timeAI);
     while (true) {
         if (((lv_currentUpgradeLevel >= 2) || (lv_currentUpgradeLevel >= lv_maxUpgradeLevel)) && (lv_currentUpgrades >= 6)) {
-            break;
+            return true;
         }
         else {
             if ((lv_currentUpgrades >= 6)) {
@@ -645,6 +645,14 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         }
     }
     return true;
+}
+
+void lib3B48F5E9_gf_CNCUpgradeText (string lp_upgrade, string lp_upgradeName, string lp_upgradeEffect) {
+    // Automatic Variable Declarations
+    // Implementation
+    TechTreeUpgradeAddLevel(1, lp_upgrade, 1);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/lib_3B48F5E9_252F3620") + StringToText(lp_upgradeName) + StringToText(lp_upgradeEffect)));
+    SoundPlayForPlayer(SoundLink("TUINewRoomActorOnline", 0), c_maxPlayers, PlayerGroupAll(), 100.0, 0.0);
 }
 
 void lib3B48F5E9_gf_Taldarimify (playergroup lp_players) {
