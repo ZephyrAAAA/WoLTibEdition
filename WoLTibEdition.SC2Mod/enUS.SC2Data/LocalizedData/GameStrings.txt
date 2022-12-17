@@ -1489,7 +1489,7 @@ Param/Value/FEDA652A=Big Tuna
 Param/Value/FEDED7E3=Protoss Research Points = 
 Param/Value/FFFD0315=Bridge
 Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
-Param/Value/lib_3B48F5E9_6C689267=CNC Edition has new or edited tips in this mission
+Param/Value/lib_3B48F5E9_6C689267=CNC Edition has <c val="FF0000">new </c>or <c val="FF8040">edited </c>tips in this mission
 Param/Value/lib_3B48F5E9_7101F21A=The Predator and Shadow Ops have been unlocked.
 Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)

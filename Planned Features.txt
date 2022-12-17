@@ -46,8 +46,6 @@ You start with 3 protoss research now.
 
 Implemented a topbar of Support Powers.
 
-You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
-
 Ghosts/Spectres have been reworked to be a unique Commando unit. Ghosts are better at taking down single targets, Spectres are better at Crowd Control. 
 
 Bonus Objectives now generally give something good in-mission.
@@ -56,7 +54,9 @@ Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, 
 
 Reactor Addon has been removed, because of issues with double queues.
 
-Bio units now say an attack line when you tell them to a-move.
+Removed Tech labs. All upgrades are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport). Requirements are in various places. Missions still have the required tech to make the new unit.
+
+All units now say an attack line when you tell them to a-move.
 
 All mercs are now unlocked from the start
 
@@ -68,11 +68,21 @@ Rebalancing of Armoury Upgrade Costs. With the extra money, you can buy everythi
 
 Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
 
+You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char.
+
 Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
 
 Nodes are now always visible.
 
 Veins are now visible on the minimap.
+
+New tips we add have their title coloured Red. Tips we edit are coloured Orange.
+
+Tal'Darim enemies now use the correct Versus skin. There is no mechanical change.
+
+Neutral Structures that can be taken over by Medic Squads to give bonuses.
+
+We use a unified upgrade system, where missions you do later allows the enemy to get better upgrades.
 
 
 MISSION SPECIFIC CHANGES:
@@ -93,7 +103,7 @@ Liberation Day:
 -Killing a holoboard drops a restoration charge that heals all your units, and restores any lost squad members.
 -Killing all 6 holoboards gives the Infantry Ultra Capacitors upgrade (+20% infantry attack speed), and you get a message saying this.
 -Added a tip about squads
--Added a tip about the existence of Armour and Damage Types
+-Added a tip and short tutorial about the existence of Armour and Damage Types
 -Each Holoboard now gives 5k credits
 
 The Outlaws:
@@ -104,14 +114,16 @@ The Outlaws:
 -Added a second Bunker of Death on Brutal
 -Bunker of Death has been moved slightly
 -The Dominion now starts with Blue Flame
+-Enemy structures (Except the bunkers) have half health, to make the mission less of a slog after you've won. 
 -Removed one of the supply depots at the rebel base
 -Added a highlight when you build a tech lab, and text for what it does.
 -Added tips about Selling, Power, and Repair
 -Added a tip about refineries and resource gathering
--Edited the Tech Lab tip to mention upgrades
+-Removed the Tech Lab tip
 -Disabled the Vespene tip
 -Fixed the SCV tip for this mod
 -Added a tip about Refinery Rally.
+-Made a tutorial for the mod.
 -Removed the trigger to give you an SCV if you've been supply blocked for a bit
 -Infantry Ultra Capacitors are available to research on the Barracks tech lab
 -Attack waves now have somewhat randomized timing and composition.
@@ -119,7 +131,9 @@ The Outlaws:
 
 Zero Hour:
 -Added 2 Sensor Towers to give build radius on the low ground
--A Resource node is on the low ground, and you start with a refinery there, encouraging holding the low ground
+-2 Mineral Spikes have been placed on the low ground, encouraging holding the low ground
+-There is a Silo across the canyon to the west.
+-There is a short tutorial about neutral structures
 -A resource node has been placed on the other side of the east bridge
 -1 additional resource pallet placed in the town
 -Reworked how, when, and what attack waves do things to apply more constant and stronger pressure that scales with time
@@ -296,6 +310,7 @@ Breakout:
 -Added an autosave after each bonus objective.
 -Added an autosave after clearing the entrance to the main base.
 -Ghosts are easier on lower difficulties.
+-Prison Block bonus objectives now gives 37.5k
 
 Ghost of a Chance:
 -Nova has 500 health
@@ -306,11 +321,17 @@ Ghost of a Chance:
 -Nova has an Anti-structure attack that deals 100% of the target's health.
 -Nova has an XP bar
 -Nova now has a heal ability that has 50 base energy cost, and heals 10 HP/s for 20 energy
+-Spectre bonus objective now gives 7.5k per spectre
 
 The Moebius Factor:
 -Stranded mercs are no longer just war pigs and spartans (Except for that one pair of hamsec)
 -Killing the brutalisk unlocks the first medivac upgrade.
 -Killing the second datacore unlocks the second medivac upgrade.
+-Your camera is no longer stolen on Hard and Brutal when Narud tells you about giving you his medivacs
+-Removed free vision of the datacores
+-Removed free vision from Kerrigan
+-The expansion is now some neutral structures.
+-There are some neutral structures on th low ground of your island
 
 Engine of Destruction:
 -Can no longer be done right after Cutthroat
@@ -386,6 +407,7 @@ Gates of Hell:
 -Each Spore Cannon killed grants an additional drop pod wave
 -The default number of drop pod waves has been reduced.
 -There are more spore cannons around the map.
+-You now have a Fusion Reactor in your base that provides 200 power, instead of any off-map power. If you keep it alive, you get it on All-In.
 
 Belly of the Beast:
 -Tychus, Swann, and Raynor have been buffed to 250 HP.
@@ -409,6 +431,7 @@ Shatter the Sky:
 
 All-in:
 -Omegalisks are now sent in the ground version
+-You get the Fusion Reactor from Gates, if it survived.
 
 
 UNIT CHANGES:
@@ -472,7 +495,7 @@ Void Ray- Imported the HOTS version
 
 Immortals- Hardened Shield removed, shield health doubled
 
-Sentry- Guardian Shield now gives 30% damage resist
+Sentry- Guardian Shield now gives 30% damage resist, Has Shield Restore
 
 Nexus- Now 1000/1000, like in later versions
 
@@ -531,6 +554,8 @@ Phobos-> Advanced Machinery- Attack speed and transform speed
 Ripwave missiles-> Turret Missile Pods- Vikings can now use their missiles against ground targets in walker mode.
 
 Tri-lithium-> Railgun Piercing
+
+Shaped Hull- Also increases damage resistance to Cannon.
 
 Ares Class-> Health
 
