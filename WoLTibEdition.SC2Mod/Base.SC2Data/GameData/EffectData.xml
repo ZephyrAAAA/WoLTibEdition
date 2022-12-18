@@ -1149,8 +1149,9 @@
             <MismatchFlags index="Id" value="1"/>
         </Marker>
         <Flags index="Channeled" value="0"/>
+        <Flags index="Channeling" value="1"/>
         <PeriodCount value="1"/>
-        <PeriodicPeriod value="0.25"/>
+        <PeriodicPeriod value="0.33"/>
         <DrainVital value="Energy"/>
         <DrainVitalCostFactor value="0.375"/>
         <RechargeVitalRate value="8"/>
@@ -1177,8 +1178,8 @@
     <CEffectCreateHealer id="MedivacHeal">
         <DrainVitalCostFactor value="0.375"/>
         <RechargeVitalRate value="8"/>
-        <PeriodicEffect value="MedivacDoubleHealDelay"/>
-        <PeriodicPeriod value="0.25"/>
+        <PeriodicEffect value="MedivacDoubleHealSearch"/>
+        <PeriodicPeriod value="0.33"/>
         <Marker>
             <MatchFlags index="Link" value="1"/>
             <MismatchFlags index="Id" value="1"/>

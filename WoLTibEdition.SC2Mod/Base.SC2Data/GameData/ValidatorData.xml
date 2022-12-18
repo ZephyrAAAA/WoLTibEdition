@@ -178,6 +178,7 @@
     <CValidatorPlayerRequirement id="AdvancedHealingAIPurchased">
         <WhichPlayer Value="Source"/>
         <Find value="1"/>
+        <Value value="AdvancedHealingAIPurchased"/>
     </CValidatorPlayerRequirement>
     <CValidatorLocationCompareRange id="SeekerMissileMaxLaunchRange">
         <WhichLocation Effect="SeekerMissileLaunchMissile"/>
