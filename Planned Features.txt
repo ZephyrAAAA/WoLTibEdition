@@ -4,9 +4,9 @@ Also includes rebalancing missions, units, and upgrades to make them better, mor
 
 
 
-There is now only 1 resource. Most resource fields regrow over time.
+There is now only 1 resource.
 
-Each mission has been looked over, most mineral fields and all vespene geysers have been removed. All vespene resource pickups have been replaced with mineral pickups or removed. Mineral Pickups now give 1000. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
+Each mission has been looked over, mineral fields and vespene geysers have been removed. Resource nodes have been placed in various locations throughout the map, to encourage holding and defending more of it.
 
 Build radius is now a thing. Buildings must have their center within the radius. Sensor towers provide build radius, and are buildable from a truck from the Command Center.
 
@@ -34,15 +34,11 @@ Terran Infantry now use a Squad system, where each Squad unit has multiple membe
 
 Flat armour has been removed in favour of damage types, so units do damage based on what they are hitting.
 
-Terrans, starting at Zero Hour, now have access to the Devastation Turret, an anti-armour defensive weapon.
+Starting at Zero Hour, you now have access to the Devastation Turret, an anti-armour defensive weapon.
 
 Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought. They are unlocked in-mission by building a Spec Ops
 
-Missions have had their attack wave timings offset by a variable amount of time, compared to standard WOL.
-
 You start with 3 protoss research now.
-
-*Units now have Veterancy, gaining up to 3 levels as they kill things. Level 1 and 2 give 10% health and damage each. Level 3 gives an additional 30% health, double attack speed, and health regen.
 
 Implemented a topbar of Support Powers.
 
@@ -62,9 +58,13 @@ All mercs are now unlocked from the start
 
 Progression messages when you return to the Hyperion, and when you start a mission, notifying you of having unlocked the Spec Ops, Predator, Armoury, Hercules, and Fusion Core.
 
-Research bonus objectives now give 10000 credits
+Research bonus objectives now give 10000 credits for each research collected.
+
+Artifact missions give a lot more credits.
 
 Rebalancing of Armoury Upgrade Costs. With the extra money, you can buy everything.
+
+Most missions can no longer be done immediately after the previous mission in the chain.
 
 Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
 
@@ -72,9 +72,9 @@ You can no longer do all the Zeratul Missions at once. After you've done one, yo
 
 Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
 
-Nodes are now always visible.
+Nodes are always visible.
 
-Veins are now visible on the minimap.
+Veins are visible on the minimap.
 
 New tips we add have their title coloured Red. Tips we edit are coloured Orange.
 
