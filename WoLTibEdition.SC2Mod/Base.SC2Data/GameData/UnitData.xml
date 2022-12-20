@@ -2737,6 +2737,10 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <Food value="250"/>
+        <TechTreeUnlockedUnitArray index="0" removed="1"/>
     </CUnit>
     <CUnit id="Gateway">
         <ArmorType value="Hero"/>
