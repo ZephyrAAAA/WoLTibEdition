@@ -401,13 +401,13 @@ Gates of Hell:
 -Zerg attacks are now scaled to how much of the map you control
 -The zerg now give basically constant pressure, with strong attack waves sometimes
 -Increased the number of defenders in each base
--Killing the other 2 zerg bases reduces the pressure on you. They also have a lot of money.
+-Killing the other 3 zerg bases reduces the pressure on you. They also have a lot of money.
 -Nyduses now spawn all around the map, making zerg attack waves stronger
 -There's a *lot* of fields present around the map, giving a reason to try holding area.
 -Each Spore Cannon killed grants an additional drop pod wave
 -The default number of drop pod waves has been reduced.
 -There are more spore cannons around the map.
--You now have a Fusion Reactor in your base that provides 200 power, instead of any off-map power. If you keep it alive, you get it on All-In.
+-You now have a Fusion Reactor in your base that provides 250 power, instead of any off-map power. If you keep it alive, you get it on All-In.
 
 Belly of the Beast:
 -Tychus, Swann, and Raynor have been buffed to 250 HP.

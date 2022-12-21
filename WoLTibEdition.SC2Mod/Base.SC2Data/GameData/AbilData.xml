@@ -2380,8 +2380,8 @@
             <Button DefaultButtonFace="Raven" State="Restricted" Requirements="SupplyDepot2Lower"/>
             <Unit value="Raven"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="50">
-            <Resource index="Vespene" value="5000"/>
+        <InfoArray index="Train4" Time="60">
+            <Resource index="Vespene" value="6000"/>
             <Button DefaultButtonFace="Battlecruiser" State="Restricted" Requirements="HaveFusionCore"/>
             <Unit value="Battlecruiser"/>
         </InfoArray>
