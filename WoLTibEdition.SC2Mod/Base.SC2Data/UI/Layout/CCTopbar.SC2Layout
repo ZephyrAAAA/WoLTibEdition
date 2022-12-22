@@ -142,14 +142,14 @@
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton13" template="CCTopbar/CCCommandButtonTemplate">
-            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Top" relative="$parent/CommandButton12" pos="Min" offset="0"/>
             <Anchor side="Left" relative="$parent/CommandButton12" pos="Max" offset="1"/>
             <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
             <TooltipFrame val="CCCommandTooltip"/>
         </Frame>
 
         <Frame type="CommandButton" name="CommandButton14" template="CCTopbar/CCCommandButtonTemplate">
-            <Anchor side="Top" relative="$parent/CommandButton00" pos="Min" offset="0"/>
+            <Anchor side="Top" relative="$parent/CommandButton12" pos="Min" offset="0"/>
             <Anchor side="Left" relative="$parent/CommandButton13" pos="Max" offset="1"/>
             <Anchor side="Right" relative="$this" pos="Min" offset="0"/>
             <TooltipFrame val="CCCommandTooltip"/>

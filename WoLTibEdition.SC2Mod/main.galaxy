@@ -184,6 +184,7 @@ void AddTopbars () {
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {
 		AddTopbarAbil("HyperionYamato");
+		AddTopbarAbil("ChronoDevice");
 		if (TechTreeUpgradeCount(1, "HiveMindEmulator", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("HiveMindEmulator");
 		}

@@ -2213,8 +2213,10 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmor value="0"/>
         <AbilArray index="1" Link="attack"/>
+        <AbilArray Link="BuildinProgressNonCancellable"/>
         <CardLayouts index="0">
             <LayoutButtons index="0" Face="Attack" AbilCmd="attack,Execute"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
         </CardLayouts>
         <Food value="-200"/>
         <CostResource index="Minerals" value="5000"/>

@@ -164,6 +164,66 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
         <DefaultButtonLayout Row="2" Column="1"/>
     </CButton>
+    <CButton id="ChronoDevice3">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="ChronoDevice4">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="ChronoDevice5">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="ChronoDevice6">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="ChronoDevice7">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="ChronoDevice8">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="ChronoDevice9">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="ChronoDevice10">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="ChronoDevice11">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="ChronoDevice12">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="ChronoDevice13">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="ChronoDevice14">
+        <Icon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-chronoriftdevice.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
     <CButton id="Veterancy">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
