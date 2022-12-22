@@ -882,8 +882,8 @@ bool INI_Func (bool testConds, bool runActions) {
 	rate = 117;
 	spendrate = 100;
 	//PlayerSetState(1, c_playerStateFormationMove, true);
-	BankLoad("TCampaign", 1);
-	ConversationDataLoadStateValues("CCEditionPermanence", BankLastCreated(), "CCEditionPermanence");
+	//BankLoad("TCampaign", 1);
+	//ConversationDataLoadStateValues("CCEditionPermanence", BankLastCreated(), "CCEditionPermanence");
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
 	return true;
 }
