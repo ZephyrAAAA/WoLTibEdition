@@ -492,4 +492,40 @@ Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2
 	<CSkin id="ChronoDevice14">
 		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice14"/>
 	</CSkin>
+	<CSkin id="CallDarkTemplar3">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar3"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar4">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar4"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar5">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar5"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar6">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar6"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar7">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar7"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar8">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar8"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar9">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar9"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar10">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar10"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar11">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar11"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar12">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar12"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar13">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar13"/>
+	</CSkin>
+	<CSkin id="CallDarkTemplar14">
+		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar14"/>
+	</CSkin>
 </Catalog>

@@ -234,6 +234,66 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <DefaultButtonLayout Column="3"/>
         <Hotkey value="Button/Hotkey/ZergHypervirus10"/>
     </CButton>
+    <CButton id="CallDarkTemplar3">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="CallDarkTemplar4">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Column="4"/>
+    </CButton>
+    <CButton id="CallDarkTemplar5">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="1"/>
+    </CButton>
+    <CButton id="CallDarkTemplar6">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="1" Column="1"/>
+    </CButton>
+    <CButton id="CallDarkTemplar7">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="1" Column="2"/>
+    </CButton>
+    <CButton id="CallDarkTemplar8">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="1" Column="3"/>
+    </CButton>
+    <CButton id="CallDarkTemplar9">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="1" Column="4"/>
+    </CButton>
+    <CButton id="CallDarkTemplar10">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
+    <CButton id="CallDarkTemplar11">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="2" Column="1"/>
+    </CButton>
+    <CButton id="CallDarkTemplar12">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="2" Column="2"/>
+    </CButton>
+    <CButton id="CallDarkTemplar13">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="2" Column="3"/>
+    </CButton>
+    <CButton id="CallDarkTemplar14">
+        <Icon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-vorazun-summonshadowguard.dds"/>
+        <DefaultButtonLayout Row="2" Column="4"/>
+    </CButton>
     <CButton id="ZergHypervirus4">
         <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>

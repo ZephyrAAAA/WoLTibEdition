@@ -147,13 +147,13 @@ void RemoveTopbarAbil(string abil) {
 	UnitAbilityRemove(topbarUnit, abil);
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
 	lv_i += 1;
-	for (lv_x = lv_i; topbarAbils[lv_x] != null; lv_x += 1) {
+	for (lv_x = lv_i; lv_x < 12 && topbarAbils[lv_x] != null; lv_x += 1) {
 		UnitAbilityRemove(topbarUnit, topbarAbils[lv_x]);
 		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_x], 0), false);
 		PlayerApplySkin(1, topbarAbils[lv_x]+IntToString(lv_x+3), false);
 	}
 	Wait(0.125, c_timeGame);
-	for (; topbarAbils[lv_i] != null; lv_i += 1) {
+	for (; lv_i < 12 && topbarAbils[lv_i] != null; lv_i += 1) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 //		UnitAbilityRemove(topbarUnit, topbarAbils[lv_i]);
 //		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), false);
@@ -202,6 +202,9 @@ void AddTopbars () {
 		if (TechTreeAbilityIsAllowed(1, AbilityCommand("ChronoDevice", 0))) {
 			AddTopbarAbil("ChronoDevice");
 		}
+		if (TechTreeAbilityIsAllowed(1, AbilityCommand("CallDarkTemplar", 0))) {
+			AddTopbarAbil("CallDarkTemplar");
+		}
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {
 		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
@@ -229,6 +232,8 @@ void RemoveTopbars () {
 		RemoveTopbarAbil("PsiDisruptor");
 		RemoveTopbarAbil("ZergHypervirus");
 		RemoveTopbarAbil("CallInGoldenArmada");
+		RemoveTopbarAbil("ChronoDevice");
+		RemoveTopbarAbil("CallDarkTemplar");
 	}
 	if (!TechTreeAbilityIsAllowed(1, AbilityCommand("ZergHypervirus", 0))) {
 		RemoveTopbarAbil("ZergHypervirus");
