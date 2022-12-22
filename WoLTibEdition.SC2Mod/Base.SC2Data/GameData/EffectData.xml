@@ -1673,6 +1673,12 @@
     <CEffectEnumArea id="RaynorSnipeSearch">
         <SearchFilters value="Ground;Self,Player,Ally,Missile,Invulnerable"/>
     </CEffectEnumArea>
+    <CEffectEnumArea id="RaynorTimeBombMissileSearchArea">
+        <AreaArray index="0" Radius="5"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="RaynorTimeBombUnitSearchArea">
+        <AreaArray index="0" Radius="5"/>
+    </CEffectEnumArea>
     <CEffectEnumMagazine id="RemovePrecursorMercIterate">
         <EditorCategories value=""/>
         <EffectExternal value="RemovePrecursorMerc"/>

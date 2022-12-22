@@ -456,4 +456,40 @@ Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2
     <CSkin id="CallInGoldenArmada14">
         <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada14"/>
     </CSkin>
+	<CSkin id="ChronoDevice3">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice3"/>
+	</CSkin>
+	<CSkin id="ChronoDevice4">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice4"/>
+	</CSkin>
+	<CSkin id="ChronoDevice5">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice5"/>
+	</CSkin>
+	<CSkin id="ChronoDevice6">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice6"/>
+	</CSkin>
+	<CSkin id="ChronoDevice7">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice7"/>
+	</CSkin>
+	<CSkin id="ChronoDevice8">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice8"/>
+	</CSkin>
+	<CSkin id="ChronoDevice9">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice9"/>
+	</CSkin>
+	<CSkin id="ChronoDevice10">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice10"/>
+	</CSkin>
+	<CSkin id="ChronoDevice11">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice11"/>
+	</CSkin>
+	<CSkin id="ChronoDevice12">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice12"/>
+	</CSkin>
+	<CSkin id="ChronoDevice13">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice13"/>
+	</CSkin>
+	<CSkin id="ChronoDevice14">
+		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice14"/>
+	</CSkin>
 </Catalog>

@@ -262,6 +262,125 @@
         <EditorCategories value=""/>
         <SelectionLayer value="2"/>
     </CModel>
+    <CModel id="DrakkenLaserDrill">
+        <Model value="Assets\Buildings\Neutral\LaserDrill_Coop\LaserDrill_Coop.m3"/>
+        <Events index="0">
+            <Anim value="Birth,00"/>
+            <Name value="Terran_BuildingLand"/>
+            <Time value="0.172000"/>
+            <Payload value="Terran_BuildingLand"/>
+        </Events>
+        <Events index="1">
+            <Anim value="Birth,00"/>
+            <Name value="Uni_LandingThud_MetalLarge"/>
+            <Time value="3.135000"/>
+            <Payload value="Uni_LandingThud_MetalLarge"/>
+        </Events>
+        <Events index="2">
+            <Anim value="Build,00"/>
+            <Name value="LaserDrillConstruction_Sparks"/>
+            <Time value="0.010000"/>
+            <Payload value="LaserDrillConstruction_Sparks"/>
+        </Events>
+        <Events>
+            <Anim value="Build,00"/>
+            <Name value="LaserDrillConstruction_Sparks"/>
+            <Type value="Sound"/>
+            <Time value="0.840000"/>
+            <Payload value="LaserDrillConstruction_Sparks"/>
+        </Events>
+        <Events>
+            <Anim value="Build,00"/>
+            <Name value="LaserDrillConstruction_Sparks"/>
+            <Type value="Sound"/>
+            <Time value="1.649000"/>
+            <Payload value="LaserDrillConstruction_Sparks"/>
+        </Events>
+        <Events>
+            <Anim value="Build,00"/>
+            <Name value="LaserDrillConstruction_Sparks"/>
+            <Type value="Sound"/>
+            <Time value="2.469000"/>
+            <Payload value="LaserDrillConstruction_Sparks"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="LaserDrill_StandWorkStart2"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="LaserDrill_StandWorkStart2"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Pylon_Containment_Unit_Metal_Hits"/>
+            <Type value="Sound"/>
+            <Time value="0.446000"/>
+            <Payload value="Pylon_Containment_Unit_Metal_Hits"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Pylon_Containment_Unit_Metal_Hits"/>
+            <Type value="Sound"/>
+            <Time value="0.686000"/>
+            <Payload value="Pylon_Containment_Unit_Metal_Hits"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Pylon_Containment_Unit_Metal_Hits"/>
+            <Type value="Sound"/>
+            <Time value="0.899000"/>
+            <Payload value="Pylon_Containment_Unit_Metal_Hits"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="Korhal_Metal_VentDoor_SteamChuf"/>
+            <Type value="Sound"/>
+            <Time value="0.048000"/>
+            <Payload value="Korhal_Metal_VentDoor_SteamChuf"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,Start,00"/>
+            <Name value="LaserDrill_StandWorkStart0"/>
+            <Type value="Sound"/>
+            <Time value="2.000000"/>
+            <Payload value="LaserDrill_StandWorkStart0"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="LaserDrill_StandWorkStart1"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="LaserDrill_StandWorkStart1"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="Pylon_Containment_Unit_Metal_Hits"/>
+            <Type value="Sound"/>
+            <Time value="1.578000"/>
+            <Payload value="Pylon_Containment_Unit_Metal_Hits"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="Pylon_Containment_Unit_Metal_Hits"/>
+            <Type value="Sound"/>
+            <Time value="2.004000"/>
+            <Payload value="Pylon_Containment_Unit_Metal_Hits"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="Pylon_Containment_Unit_Metal_Hits"/>
+            <Type value="Sound"/>
+            <Time value="2.299000"/>
+            <Payload value="Pylon_Containment_Unit_Metal_Hits"/>
+        </Events>
+        <Events>
+            <Anim value="Stand,Work,End,00"/>
+            <Name value="Korhal_Metal_VentDoor_SteamChuf"/>
+            <Type value="Sound"/>
+            <Time value="1.091000"/>
+            <Payload value="Korhal_Metal_VentDoor_SteamChuf"/>
+        </Events>
+    </CModel>
     <CModel id="FirebatAttackLaunch">
         <ScaleMax value="1.000000,3.750000,1.000000"/>
         <ScaleMin value="1.000000,3.750000,1.000000"/>

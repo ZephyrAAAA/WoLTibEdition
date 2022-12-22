@@ -55,6 +55,12 @@
         <Button value=""/>
         <TechInfoUpgradeUsed value="OrbitalStrike"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="ChronoDevice">
+        <EditorCategories value="DataGroup:Ability"/>
+        <DataRecord Entry="Abil,ChronoDevice"/>
+        <Button value=""/>
+        <TechInfoUpgradeUsed value="OrbitalStrike"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="CommandCenter">
         <DataRecord Entry="Abil,CommandCenterLand"/>
         <DataRecord Entry="Abil,CommandCenterLiftOff"/>

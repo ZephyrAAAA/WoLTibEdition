@@ -139,6 +139,9 @@
         <EffectArray Operation="Set" Reference="Unit,Refinery2,CostResource[Minerals]" Value="375"/>
         <AffectedUnitArray value="Refinery2"/>
     </CUpgrade>
+    <CUpgrade id="CastanarYamato">
+        <EffectArray Reference="Effect,YamatoGunTopbarCPU,PeriodCount" Value="10"/>
+    </CUpgrade>
     <CUpgrade id="CellularReactors">
         <EffectArray index="1" Reference="Unit,Medic,EnergyStart"/>
         <EffectArray index="2" Reference="Unit,Medivac,EnergyStart"/>

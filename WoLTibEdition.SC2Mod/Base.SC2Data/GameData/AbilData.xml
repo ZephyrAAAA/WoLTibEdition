@@ -86,6 +86,22 @@
             <Flags index="AutoBuildOn" value="1"/>
         </InfoArray>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="ChronoDevice">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="RaynorTimeBombCreatePersistent"/>
+        <Cost>
+            <Resource index="Minerals" value="3000"/>
+            <Cooldown Location="Global" TimeUse="300"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="RaynorTimeBombUnitSearchArea"/>
+        <AINotifyEffect value="ZergHypervirus"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ChronoDevice3">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilEffectInstant id="DefensiveMatrix">
         <Cost index="0">
             <Vital index="Energy" value="0"/>
@@ -1119,7 +1135,7 @@
         <FlagArray index="IgnoreUnitCost" value="1"/>
         <FlagArray index="PeonDisableCollision" value="1"/>
         <FlagArray index="PeonMaintained" value="0"/>
-        <InfoArray index="Build1" Unit="DrakkenLaserDrill" Time="3">
+        <InfoArray index="Build1" Unit="DrakkenLaserDrill" Time="5">
             <Resource index="Minerals" value="20000"/>
             <Resource index="Custom" value="200"/>
             <Button DefaultButtonFace="DeployLaserDrill6" Requirements="DoesnothaveLaserDrill">
