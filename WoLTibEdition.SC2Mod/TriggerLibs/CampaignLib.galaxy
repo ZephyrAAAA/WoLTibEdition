@@ -9027,6 +9027,7 @@ void libCamp_gf_TS_LoadTransitionVars (bank lp_sourceBank, bool lp_simulation) {
     ConversationDataLoadStateValues("Hotspots", lp_sourceBank, lv__SectionName);
     lv__SectionName = libCamp_gf_TS_BankSectionName("ArcadeGame");
     ConversationDataLoadStateValues("ArcadeGameVariables", lp_sourceBank, lv__SectionName);
+    ConversationDataLoadStateValues("CCEditionPermanence", lp_sourceBank, "CCEditionPermanence");
     lv__SectionName = libCamp_gf_TS_BankSectionName("DebugTechCheatOption");
     libCamp_gv_tSX_DebugTechCheatOption = libCamp_gf_TS_DebugConvertIntegerToTechCheatOption(libCamp_gf_TS_LoadTransitionVarInteger(lp_sourceBank, lv__SectionName, "0", 0));
     TriggerDebugOutput(1, StringExternal("Param/Value/lib_Camp_B621076E"), false);
@@ -9362,6 +9363,7 @@ void libCamp_gf_TS_SaveTransitionVars (bank lp_targetBank, bool lp_nextIsSimulat
         lv__SectionName = libCamp_gf_TS_BankSectionName("ArcadeGame");
         ConversationDataSaveStateValues("ArcadeGameVariables", lp_targetBank, lv__SectionName);
     }
+	ConversationDataSaveStateValues("CCEditionPermanence", lp_targetBank, "CCEditionPermanence");
 
     lv__SectionName = libCamp_gf_TS_BankSectionName("DebugTechCheatOption");
     libCamp_gf_TS_SaveTransitionVarInteger(lp_targetBank, lv__SectionName, "0", (libCamp_gv_tSX_DebugTechCheatOption), 0);
