@@ -398,16 +398,17 @@ Maw of the Void:
 -Added an objective to kill all Nexi and Production Structures, as well as the Mothership.
 
 Gates of Hell:
--Zerg attacks are now scaled to how much of the map you control
--The zerg now give basically constant pressure, with strong attack waves sometimes
--Increased the number of defenders in each base
--Killing the other 3 zerg bases reduces the pressure on you. They also have a lot of money.
+-*Zerg attacks are now scaled to how much of the map you control
+-*The zerg now give basically constant pressure, with strong attack waves sometimes
+-*Increased the number of defenders in each base
+-*Killing the other 3 zerg bases reduces the pressure on you. They also have a lot of money.
 -Nyduses now spawn all around the map, making zerg attack waves stronger
 -There's a *lot* of fields present around the map, giving a reason to try holding area.
--Each Spore Cannon killed grants an additional drop pod wave
--The default number of drop pod waves has been reduced.
--There are more spore cannons around the map.
+-*Each Spore Cannon killed grants an additional drop pod wave
+-*The default number of drop pod waves has been reduced.
+-*There are more spore cannons around the map.
 -You now have a Fusion Reactor in your base that provides 250 power, instead of any off-map power. If you keep it alive, you get it on All-In.
+-The map now gets fully creeped over time, except for your base area.
 
 Belly of the Beast:
 -Tychus, Swann, and Raynor have been buffed to 250 HP.
@@ -426,19 +427,21 @@ Belly of the Beast:
 
 Shatter the Sky:
 -Tower health increased to 5000
--Coolant towers heal 500hp/s while creeped
--Leviathan now patrols bases
+-Leviathan has 10x the health
+-*Leviathan now patrols bases
+-No more free vision of the leviathan
+-No more free vision of the Coolant Towers
 
 All-in:
--Omegalisks are now sent in the ground version
--You get the Fusion Reactor from Gates, if it survived.
+-*Omegalisks are now sent in the ground version
+-*You get the Fusion Reactor from Gates, if it survived.
 
 
 UNIT CHANGES:
 
 Command Center- Can no longer load SCVs
 
-Factory/Starport- Hosts 3 repair drones that heal 10+2%/s, to both health and shields
+Factory/Starport- Hosts 3 repair drones that heal 10+2%/s, to health, and shields after the shield upgrade is researched.
 
 Fusion Core- yamato strike support power, all mission-unlocked support powers
 
@@ -476,7 +479,7 @@ Hercules- Tech requirement move from Fusion Core to Armoury. Comparitively Cheap
 
 Medivac- Heals units inside it at 8hp/3e/s, heals with beams for 8hp/3e/s. Medivacs no longer cancel orders when it heals something
 
-Kerrigan- Massive units are now immune to Implosion, More Health, no armour type
+Kerrigan- Massive units are now immune to Implosion, Implosion is no longer locked to mechanical, More Health, no armour type
 
 Ghost-Cloak is gone, Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
 

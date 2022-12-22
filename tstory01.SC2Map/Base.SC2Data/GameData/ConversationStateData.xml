@@ -15,6 +15,7 @@
         <Indices Id="Laser_Drill" Name="ConversationState/CCEditionPermanence/Laser_Drill">
             <InfoAbilCmd Id="AC1" Abil="DeployLaserDrill"/>
         </Indices>
+        <Indices Id="Fusion_Reactor" Name="ConversationState/CCEditionPermanence/Fusion_Reactor"/>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>
