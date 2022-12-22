@@ -184,7 +184,6 @@ void AddTopbars () {
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {
 		AddTopbarAbil("HyperionYamato");
-		AddTopbarAbil("ChronoDevice");
 		if (TechTreeUpgradeCount(1, "HiveMindEmulator", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("HiveMindEmulator");
 		}
@@ -199,6 +198,9 @@ void AddTopbars () {
 		}
 		if (TechTreeAbilityIsAllowed(1, AbilityCommand("CallInGoldenArmada", 0))) {
 			AddTopbarAbil("CallInGoldenArmada");
+		}
+		if (TechTreeAbilityIsAllowed(1, AbilityCommand("ChronoDevice", 0))) {
+			AddTopbarAbil("ChronoDevice");
 		}
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_EngineeringBay", c_techCountCompleteOnly) > 0) {
@@ -756,6 +758,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 		buildingSwap(currentLoop);
 	}
 	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Laser_Drill") > 0);
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Chrono_Device", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Chrono_Device") > 0);
+	TechTreeUpgradeAddLevel(1, ConversationDataStateUpgrade("CCEditionPermanence|Improved_Yamato", ("Upgrade1")), ConversationDataStateGetValue("CCEditionPermanence|Improved_Yamato"));
 	TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 6)) > 0);
 	TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 7)) > 0);
 	if (noTopBar) {
