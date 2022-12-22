@@ -188,6 +188,22 @@
             <Borders value="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
         </Shape>
     </CFootprint>
+    <CFootprint id="FootprintFusionReactor">
+        <Layers index="Check">
+            <Rows index="0" value="xxxx"/>
+            <Rows index="1" value="xxxx"/>
+            <Rows index="2" value="xxxx"/>
+            <Rows index="3" value="xxxx"/>
+        </Layers>
+        <Layers index="Place">
+            <Rows index="0" value="xxxx"/>
+            <Rows index="1" value="xxxx"/>
+            <Rows index="2" value="xxxx"/>
+            <Rows index="3" value="xxxx"/>
+        </Layers>
+        <Layers index="Pathing" removed="1"/>
+        <Shape Borders="0,4,2;1,0,2;2,3,2;3,7,2;4,5,2;5,2,2;6,1,2;7,6,2"/>
+    </CFootprint>
     <CFootprint id="Virophage">
         <Layers index="Check" Area="-1,-1,2,2">
             <Sets index="0">
