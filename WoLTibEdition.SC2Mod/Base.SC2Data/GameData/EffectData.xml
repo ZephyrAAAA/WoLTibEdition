@@ -1808,6 +1808,15 @@
     <CEffectEnumArea id="RetributionFieldSearch">
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectEnumArea>
+    <CEffectApplyBehavior id="RipFieldApplySlow">
+        <ValidatorArray value="RipField"/>
+        <EditorCategories value=""/>
+        <Behavior value="RipFieldSlow"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="RipFieldSearch">
+        <EditorCategories value=""/>
+        <AreaArray Radius="40" Effect="RipFieldApplySlow"/>
+    </CEffectEnumArea>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>

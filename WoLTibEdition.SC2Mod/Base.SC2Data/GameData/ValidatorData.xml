@@ -180,6 +180,11 @@
         <Find value="1"/>
         <Value value="AdvancedHealingAIPurchased"/>
     </CValidatorPlayerRequirement>
+    <CValidatorCombine id="RipField">
+        <CombineArray value="IsProtoss"/>
+        <CombineArray value="ShieldGZero"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
     <CValidatorLocationCompareRange id="SeekerMissileMaxLaunchRange">
         <WhichLocation Effect="SeekerMissileLaunchMissile"/>
         <Compare value="GE"/>
