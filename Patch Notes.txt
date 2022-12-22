@@ -20,6 +20,8 @@ Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
 *Added a cheat code to make the Drill full power.
 *The drill now has a proper deploy animation
+*The drill now has a stop command.
+*The drill remains no longer stay forever
 Fixed Tank/Thor hotkey conflict.
 Fixed Crane/Fusion Core hotkey conflict.
 Fixed high energy capacitor, hailstorm launcher, and enhanced explosives having no default hotkey
