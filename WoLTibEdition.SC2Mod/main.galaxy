@@ -814,7 +814,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
     TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 4), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 3)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 6)));
     TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 2), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 7)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 6)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 4)));
     TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 3), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 7)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 5)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 3)));
-    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 3)));
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 1)));
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 1), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 3)));
     TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 6), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", 1)));
 	for (lv_i = 0; lv_i < 9; lv_i += 1) {
 		TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", lv_i), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksTrain", lv_i)));
