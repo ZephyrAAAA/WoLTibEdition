@@ -101,6 +101,10 @@
         <NodeArray index="Use" Link="CountUnitAlias_FusionCoreCompleteOnly3089280483TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="IsPlayer"/>
+    <CRequirement id="LearnBattlecruiserTitanEngines">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotCountUpgradeTitanEnginesQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="LearnEnhancedExplosives">
         <NodeArray index="Show" Link="NotCountUpgradeEnhancedExplosivesQueuedOrBetter"/>
     </CRequirement>

@@ -263,6 +263,7 @@ Button/Name/ResearchImprovedPlasmaShields=Research Improved Plasma Shields
 Button/Name/ResearchImprovedRailguns=Research Improved Railguns
 Button/Name/ResearchScannerPacks=Research Scanner Packs
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
+Button/Name/ResearchTitanEngines=Research Titan Engines
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
 Button/Name/ScannerSweepTopbar10=Scanner Sweep
@@ -529,6 +530,7 @@ Button/Tooltip/ResearchImprovedPlasmaShields=Increases shield resist to 20%, and
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
 Button/Tooltip/ResearchScannerPacks=Increases reaper sight range from 9 to 11, and allows them to detect in a small radius
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
+Button/Tooltip/ResearchTitanEngines=Increases <c val="ffff8a">Battlecruiser</c> speed by 20%, to 2.25
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -1712,6 +1714,7 @@ Upgrade/Name/TerranVehicleArmorsVanadiumPlating2=Terran Vehicle Armor Vanadium P
 Upgrade/Name/TerranVehicleUltraCapacitors=Terran Vehicle Ultra-Capacitors
 Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
 Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
+Upgrade/Name/TitanEngines=Titan Engines
 Upgrade/Name/TitanSteel=Titan Steel
 Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges

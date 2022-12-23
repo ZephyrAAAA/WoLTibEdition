@@ -19,8 +19,8 @@ Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over ot
 Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
 *Added a cheat code to make the Drill full power.
-*The drill now has a proper deploy animation
-*The drill now has a stop command.
+The drill now has a proper deploy animation
+The drill now has a stop command.
 *The drill remains no longer stay forever
 Fixed Tank/Thor hotkey conflict.
 Fixed Crane/Fusion Core hotkey conflict.
@@ -166,8 +166,8 @@ The dominion figured out how to import tech reactors from Trains
 Tower defense waves are now randomized and stronger.
 
 Piercing the Shroud:
-*Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
-*Collecting the plasma weapon improves damage of Yamato Strike
+Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
+Collecting the plasma weapon improves damage of Yamato Strike
 If you have the Ghost/Spectre unlocked, you get one instead of marines.
 Significantly more/stronger defenders.
 Brutalisk is no longer so binary in whether it kills you or not
@@ -182,4 +182,4 @@ Horner no longer says resources are scarce
 There is now 3 strong bases you need to fight through.
 The Protoss send large attack waves.
 Area around mom is no longer always visible. Mom herself still is though.
-*Rip fields are now slow fields
+Rip fields are now slow fields

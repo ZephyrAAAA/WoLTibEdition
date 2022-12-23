@@ -1379,6 +1379,13 @@
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
+        <InfoArray index="Research2" Time="60" Upgrade="TitanEngines">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchTitanEngines" State="Restricted" Requirements="LearnBattlecruiserTitanEngines">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
         <InfoArray index="Research3" Time="60" Upgrade="ImprovedRailguns">
             <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="ResearchImprovedRailguns" Requirements="LearnImprovedRailguns">
