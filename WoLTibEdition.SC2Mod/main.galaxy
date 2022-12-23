@@ -147,21 +147,21 @@ void RemoveTopbarAbil(string abil) {
 	UnitAbilityRemove(topbarUnit, abil);
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
 	lv_i += 1;
+	UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("start: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 	for (lv_x = lv_i; lv_x < 12 && topbarAbils[lv_x] != null; lv_x += 1) {
 		UnitAbilityRemove(topbarUnit, topbarAbils[lv_x]);
 		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_x], 0), false);
 		PlayerApplySkin(1, topbarAbils[lv_x]+IntToString(lv_x+3), false);
 	}
-	Wait(0.125, c_timeGame);
+	//Wait(0.125, c_timeGame);
 	for (; lv_i < 12 && topbarAbils[lv_i] != null; lv_i += 1) {
-		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Current: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 //		UnitAbilityRemove(topbarUnit, topbarAbils[lv_i]);
 //		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), false);
 //		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+3), false);
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
 		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), true);
 		UnitAbilityAdd(topbarUnit, topbarAbils[lv_i]);
-		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
+		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
 		topbarAbils[lv_i] = null;
 	}
@@ -764,6 +764,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	}
 	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Laser_Drill") > 0);
 	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Chrono_Device", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Chrono_Device") > 0);
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Dark_Templar", ("AC1")), ConversationDataStateGetValue("CCEditionPermanence|Dark_Templar") > 0);
 	TechTreeUpgradeAddLevel(1, ConversationDataStateUpgrade("CCEditionPermanence|Improved_Yamato", ("Upgrade1")), ConversationDataStateGetValue("CCEditionPermanence|Improved_Yamato"));
 	TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 6)) > 0);
 	TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), ConversationDataStateGetValue(ConversationDataStateIndex("MissionCompleted", 7)) > 0);

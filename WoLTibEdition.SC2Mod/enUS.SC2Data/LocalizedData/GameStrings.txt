@@ -638,6 +638,7 @@ ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre1/Info/Tooltip=<s val="T
 ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre3/Info/Tooltip=<s val="TooltipTitle_Tech">EMP</s><n/><s val="TooltipDescription_Tech">Does 100 damage to shields (Affected by armour), and depletes the energy of all targets, dealing 1 damage per energy.</s>
 ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 ConversationState/CCEditionPermanence/Chrono_Device=Chrono Device
+ConversationState/CCEditionPermanence/Dark_Templar=Dark Templar
 ConversationState/CCEditionPermanence/Fusion_Reactor=Fusion Reactor
 ConversationState/CCEditionPermanence/Improved_Yamato=Improved Yamato
 ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
