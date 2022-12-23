@@ -19,8 +19,8 @@ Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over ot
 Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
 *Added a cheat code to make the Drill full power.
-*The drill now has a proper deploy animation
-*The drill now has a stop command.
+The drill now has a proper deploy animation
+The drill now has a stop command.
 *The drill remains no longer stay forever
 Fixed Tank/Thor hotkey conflict.
 Fixed Crane/Fusion Core hotkey conflict.
@@ -33,7 +33,7 @@ Fixed raven ability hotkeys
 Fixed Ghost ability hotkeys
 Commando (Including Tosh and Nova) Explosive anti-structure attack now describes what it does
 Commando Explosive anti-structure attack now does 500 damage instead of infinity.
-*Autoref now has a range indicator
+Autoref now has a range indicator
 Sentry Shield Restore now has a hotkey
 Buffed Abberation Damage
 AI no longer puts ghosts in bunkers
@@ -53,7 +53,7 @@ Barrage Area-> Improved Actuators- Thor speedy boi, ~20% faster
 Immortality Protocol-> Self-Improvement Protocol- Thors can now grab parts from other units to buff themselves. Hellion Flamethrower, Diamondback Railgun, Predator Energy Shield, Siege tank to get AOE on normal attack, Stone to get detection and a radar
 Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batteries, increasing DPS by 50%
 Defensive Matrix- Autocastable, Heals 200, absorbs 300 damage instead of giving a 300 point shield.
-*Improved Engines- Battlecruisers move faster [Armoury]
+Improved Engines- Battlecruisers move faster [Armoury]
 Reapers now take 1 slot instead of 2 (This only applies to the AI, because they don't use squads)
 
 Liberation Day:
@@ -166,8 +166,8 @@ The dominion figured out how to import tech reactors from Trains
 Tower defense waves are now randomized and stronger.
 
 Piercing the Shroud:
-*Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
-*Collecting the plasma weapon improves damage of Yamato Strike
+Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
+Collecting the plasma weapon improves damage of Yamato Strike
 If you have the Ghost/Spectre unlocked, you get one instead of marines.
 Significantly more/stronger defenders.
 Brutalisk is no longer so binary in whether it kills you or not
@@ -182,4 +182,4 @@ Horner no longer says resources are scarce
 There is now 3 strong bases you need to fight through.
 The Protoss send large attack waves.
 Area around mom is no longer always visible. Mom herself still is though.
-*Rip fields are now slow fields
+Rip fields are now slow fields

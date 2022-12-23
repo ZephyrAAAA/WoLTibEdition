@@ -49,6 +49,12 @@
         <TechInfoUnit value="BunkerSQ"/>
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="CallDarkTemplar">
+        <EditorCategories value="DataGroup:Ability"/>
+        <DataRecord Entry="Abil,CallDarkTemplar"/>
+        <Button value=""/>
+        <TechInfoUpgradeUsed value="OrbitalStrike"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="CallInGoldenArmada">
         <EditorCategories value="DataGroup:Ability"/>
         <DataRecord Entry="Abil,CallInGoldenArmada"/>

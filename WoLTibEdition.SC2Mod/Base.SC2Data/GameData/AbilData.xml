@@ -515,7 +515,12 @@
                 <Link value="Abil/FleetActivate"/>
                 <Location value="Player"/>
             </Charge>
-            <Cooldown Link="Abil/FleetActivate" TimeStart="300" TimeUse="0.25"/>
+            <Cooldown>
+                <Link value="Abil/FleetActivate"/>
+                <Location value="Unit"/>
+                <TimeStart value="300"/>
+                <TimeUse value="0.25"/>
+            </Cooldown>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
@@ -1189,13 +1194,39 @@
     <CAbilMorph id="Unsiege">
         <AbilLinkDisableArray value="attack"/>
     </CAbilMorph>
+    <CAbilEffectTarget id="CallDarkTemplar">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SpawnDarkTemplar"/>
+        <Cost>
+            <Resource index="Minerals" value="7000"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="300"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="SpawnDarkTemplar"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CallDarkTemplar3">
+            <Flags index="UseDefaultButton" value="1"/>
+            <Flags index="CreateDefaultButton" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ZergHypervirus">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ZergHypervirusSearch"/>
         <Cost>
             <Resource index="Minerals" value="10000"/>
-            <Charge CountMax="1" CountStart="1" CountUse="1"/>
-            <Cooldown Location="Global" TimeStart="300" TimeUse="450"/>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeStart="300" TimeUse="450"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
@@ -1344,6 +1375,13 @@
         <InfoArray index="Research1" Time="30" Upgrade="HyperflightRotors">
             <Resource index="Vespene" value="1000"/>
             <Button DefaultButtonFace="HyperflightRotors" State="Restricted" Requirements="LearnHyperflightRotors">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Research2" Time="60" Upgrade="TitanEngines">
+            <Resource index="Vespene" value="2000"/>
+            <Button DefaultButtonFace="ResearchTitanEngines" State="Restricted" Requirements="LearnBattlecruiserTitanEngines">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>

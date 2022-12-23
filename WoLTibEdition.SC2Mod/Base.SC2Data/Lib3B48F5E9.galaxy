@@ -1218,6 +1218,7 @@ bool lib3B48F5E9_gt_DebugTopbar_Func (bool testConds, bool runActions) {
     libNtve_gf_SetUpgradeLevelForPlayer(1, "HireSpartanCompanyPH", 1);
     libNtve_gf_SetUpgradeLevelForPlayer(1, "HireKelmorianMinersPH", 1);
     TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("ChronoDevice", 0), true);
     TechTreeAbilityAllow(1, AbilityCommand("DeployLaserDrill", 0), true);
     if ((TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountQueuedOrBetter) == 0)) {
         libNtve_gf_CreateUnitsWithDefaultFacing(1, "GhostAcademy2", 0, 1, PlayerStartLocation(1));

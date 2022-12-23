@@ -22,6 +22,9 @@
             <InfoUpgrade Id="Upgrade1" Upgrade="CastanarYamato"/>
         </Indices>
         <Indices Id="Fusion_Reactor" Name="ConversationState/CCEditionPermanence/Fusion_Reactor"/>
+        <Indices Id="Dark_Templar" Name="ConversationState/CCEditionPermanence/Dark_Templar">
+            <InfoAbilCmd Id="AC1" Abil="CallDarkTemplar"/>
+        </Indices>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>

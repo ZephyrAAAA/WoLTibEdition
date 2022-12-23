@@ -42,6 +42,7 @@ Button/Hotkey/ResearchImprovedPlasmaShields=S
 Button/Hotkey/ResearchImprovedRailguns=R
 Button/Hotkey/ResearchScannerPacks=S
 Button/Hotkey/ResearchThermiteFilaments=T
+Button/Hotkey/ResearchTitanEngines=T
 Button/Hotkey/ResetRally=E
 Button/Hotkey/ResumeQueue=U
 Button/Hotkey/SCV=C

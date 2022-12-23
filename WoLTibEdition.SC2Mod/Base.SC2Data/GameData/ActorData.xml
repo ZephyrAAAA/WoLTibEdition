@@ -48,6 +48,15 @@
     <CActorSplat id="Armory2Splat" parent="GenericUnitSplat" unitName="Armory2">
         <Model value="ArmorySplat"/>
     </CActorSplat>
+    <CActorRange id="AutorefineryRange">
+        <EditorCategories value=""/>
+        <Abil Link="AutoHarvest"/>
+        <Range value="4.000000"/>
+        <On Terms="SelectionLocalUpdate.Refinery2.Start; ValidateUnit HaveAutoHarvester" Send="Create"/>
+        <On Terms="SelectionLocalUpdate.Refinery2.StartEditorGround; ValidateUnit HaveAutoHarvester" Send="Create"/>
+        <On Terms="SelectionLocalUpdate.Refinery2.StartEditorFlyer; ValidateUnit HaveAutoHarvester" Send="Create"/>
+        <On Terms="SelectionLocalUpdate.Refinery2.Stop" Send="Destroy"/>
+    </CActorRange>
     <CActorUnit id="Banshee">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Banshee_Attack"/>
     </CActorUnit>
@@ -1226,6 +1235,12 @@
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
     </CActorRange>
+    <!--                                                                                         -->
+    <!--      Placement model additions                                                          -->
+    <!--                                                                                         -->
+    <CActorModel id="RefineryPlacementModel">
+        <On Terms="ActorCreation; ModelName RefineryPlacement; ValidatePlayer HaveAutoHarvester" Send="Create AutorefineryRange"/>
+    </CActorModel>
     <CActorSiteOpRotationExplicit id="SOpPointDownWorld">
         <Forward value="0.000000,0.000000,-1.000000"/>
     </CActorSiteOpRotationExplicit>
@@ -1442,7 +1457,7 @@
     <CActorSplat id="HiveMindEmulatorCursorSplat" parent="TerranCursorSplat" abil="HiveMindEmulator">
         <EditorCategories value=""/>
     </CActorSplat>
-    <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarDamage" effectLaunch="YamatoGunTopbarLaunchMissile">
+    <CActorAction id="HyperionYamatoTopbarAttack" parent="GenericAttack" effectImpact="YamatoGunTopbarCPU" effectLaunch="YamatoGunTopbarLaunchMissile">
         <On index="6" Terms="Effect.YamatoGunTopbarLaunchMissile.Start; At Effect" Send="Create"/>
         <LaunchAttachQuery Methods=""/>
         <LaunchAssets Model="HyperionYamatoSpecialAttackLaunch" Sound=""/>
@@ -2129,6 +2144,7 @@
         <Wireframe>
             <Image value="Assets\Textures\Wireframe-Terran-Refinery.dds"/>
         </Wireframe>
+        <PlacementActorModel value="RefineryPlacementModel"/>
     </CActorUnit>
     <CActorSplat id="RefinerySplat2" parent="GenericUnitSplat" unitName="Refinery2">
         <Model value="RefinerySplat"/>

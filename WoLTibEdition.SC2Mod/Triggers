@@ -12280,6 +12280,7 @@
             <Action Type="FunctionCall" Library="3B48F5E9" Id="BC541A69"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="5336DA74"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="995E4300"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="C372A151"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="64D3E87E"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="1AF8EA6F"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="8AEAF602"/>
@@ -12566,6 +12567,26 @@
         <Element Type="Param" Id="549EB63F">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="9B01128C"/>
             <Value>CallInGoldenArmada</Value>
+            <ValueType Type="abilcmd"/>
+        </Element>
+        <Element Type="FunctionCall" Id="C372A151">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="0F7C3248"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="23C68340"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="007C4CE3"/>
+            <Parameter Type="Param" Library="3B48F5E9" Id="CE1D8CE3"/>
+        </Element>
+        <Element Type="Param" Id="23C68340">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="BFF56EB0"/>
+            <Value>1</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="007C4CE3">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="09B7BAEA"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000106"/>
+        </Element>
+        <Element Type="Param" Id="CE1D8CE3">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="9B01128C"/>
+            <Value>ChronoDevice</Value>
             <ValueType Type="abilcmd"/>
         </Element>
         <Element Type="FunctionCall" Id="64D3E87E">

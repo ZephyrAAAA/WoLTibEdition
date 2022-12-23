@@ -1953,6 +1953,12 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="22"/>
     </CEffectDamage>
+    <CEffectCreateUnit id="SpawnDarkTemplar">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="DarkTemplar"/>
+        <SpawnCount value="10"/>
+    </CEffectCreateUnit>
     <CEffectDamage id="SpecterU">
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="500"/>

@@ -19,6 +19,7 @@ Abil/Name/CCPlaceBuilding=C&C Place Building
 Abil/Name/CCQueue=C&CQueue
 Abil/Name/CCRepair=C&C Repair
 Abil/Name/CCSell=C&C Sell
+Abil/Name/CallDarkTemplar=Call Dark Templar
 Abil/Name/CallInGoldenArmada=Call In Golden Armada
 Abil/Name/ChronoDevice=Chrono Device
 Abil/Name/CommandCenter2Land=Land (Command Center)
@@ -127,6 +128,18 @@ Button/Name/AstralProjection=Astral Projection
 Button/Name/BioSpeed=Bio Speed
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
 Button/Name/BuildingRepair=Building Repair
+Button/Name/CallDarkTemplar10=Call Dark Templar
+Button/Name/CallDarkTemplar11=Call Dark Templar
+Button/Name/CallDarkTemplar12=Call Dark Templar
+Button/Name/CallDarkTemplar13=Call Dark Templar
+Button/Name/CallDarkTemplar14=Call Dark Templar
+Button/Name/CallDarkTemplar3=Call Dark Templar
+Button/Name/CallDarkTemplar4=Call Dark Templar
+Button/Name/CallDarkTemplar5=Call Dark Templar
+Button/Name/CallDarkTemplar6=Call Dark Templar
+Button/Name/CallDarkTemplar7=Call Dark Templar
+Button/Name/CallDarkTemplar8=Call Dark Templar
+Button/Name/CallDarkTemplar9=Call Dark Templar
 Button/Name/CallInGoldenArmada10=Call In Golden Armada
 Button/Name/CallInGoldenArmada11=Call In Golden Armada
 Button/Name/CallInGoldenArmada12=Call In Golden Armada
@@ -250,6 +263,7 @@ Button/Name/ResearchImprovedPlasmaShields=Research Improved Plasma Shields
 Button/Name/ResearchImprovedRailguns=Research Improved Railguns
 Button/Name/ResearchScannerPacks=Research Scanner Packs
 Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
+Button/Name/ResearchTitanEngines=Research Titan Engines
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
 Button/Name/ScannerSweepTopbar10=Scanner Sweep
@@ -341,6 +355,18 @@ Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of 
 Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/CallDarkTemplar10=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar11=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar12=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar13=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar14=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar3=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar4=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar5=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar6=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar7=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar8=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar9=Spawns 10 dark templar at the target location.
 Button/Tooltip/CallInGoldenArmada10=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada11=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada12=Calls in a portion of the golden armada to strafe across target area.
@@ -504,6 +530,7 @@ Button/Tooltip/ResearchImprovedPlasmaShields=Increases shield resist to 20%, and
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
 Button/Tooltip/ResearchScannerPacks=Increases reaper sight range from 9 to 11, and allows them to detect in a small radius
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
+Button/Tooltip/ResearchTitanEngines=Increases <c val="ffff8a">Battlecruiser</c> speed by 20%, to 2.25
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -613,6 +640,7 @@ ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre1/Info/Tooltip=<s val="T
 ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre3/Info/Tooltip=<s val="TooltipTitle_Tech">EMP</s><n/><s val="TooltipDescription_Tech">Does 100 damage to shields (Affected by armour), and depletes the energy of all targets, dealing 1 damage per energy.</s>
 ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 ConversationState/CCEditionPermanence/Chrono_Device=Chrono Device
+ConversationState/CCEditionPermanence/Dark_Templar=Dark Templar
 ConversationState/CCEditionPermanence/Fusion_Reactor=Fusion Reactor
 ConversationState/CCEditionPermanence/Improved_Yamato=Improved Yamato
 ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
@@ -795,6 +823,7 @@ DataCollection/Name/Barracks=Barracks
 DataCollection/Name/Barracks2=Barracks Copy
 DataCollection/Name/Bunker=Bunker
 DataCollection/Name/Bunker2=Bunker Copy
+DataCollection/Name/CallDarkTemplar=Call Dark Templar
 DataCollection/Name/CallInGoldenArmada=Call In Golden Armada
 DataCollection/Name/ChronoDevice=Chrono Device
 DataCollection/Name/CommandCenter=Command Center
@@ -1048,6 +1077,7 @@ Effect/Name/SeekerSuicide=Seeker Suicide
 Effect/Name/ShieldRestore=Shield Restore
 Effect/Name/ShieldRestoreSecondary=Shield Restore
 Effect/Name/ShrikeTurretCP=Shrike Turret
+Effect/Name/SpawnDarkTemplar=Spawn Dark Templar
 Effect/Name/SquadAttack=Squad Attack
 Effect/Name/SquadAttackAB=Squad Attack AB
 Effect/Name/SquadAttackIterate=Squad Attack Iterate
@@ -1684,6 +1714,7 @@ Upgrade/Name/TerranVehicleArmorsVanadiumPlating2=Terran Vehicle Armor Vanadium P
 Upgrade/Name/TerranVehicleUltraCapacitors=Terran Vehicle Ultra-Capacitors
 Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
 Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
+Upgrade/Name/TitanEngines=Titan Engines
 Upgrade/Name/TitanSteel=Titan Steel
 Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
