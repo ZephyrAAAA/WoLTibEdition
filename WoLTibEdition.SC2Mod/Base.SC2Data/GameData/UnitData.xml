@@ -3556,6 +3556,10 @@
     <CUnit id="Leviathan">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <FogVisibility value="Visible"/>
+        <ArmorType value="Fort"/>
+        <LifeArmor value="0"/>
+        <LifeArmorTip value="Unit/Tip/HeavyAir"/>
     </CUnit>
     <CUnit id="LeviathanACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
