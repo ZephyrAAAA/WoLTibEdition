@@ -411,6 +411,7 @@ Gates of Hell:
 -The map now gets fully creeped over time, except for your base area.
 -No more screen stealing on hard and brutal
 -*Gathering a large army is now based on health. You need 10k health
+-The zerg start with max upgrades
 
 Belly of the Beast:
 -Tychus, Swann, and Raynor have been buffed to 250 HP.
@@ -435,11 +436,12 @@ Shatter the Sky:
 -No more free vision of the Coolant Towers
 -Blowing up platforms gives much less money
 -Corruptors and Brood Lords hang around in their appropriate base, plus other places.
+-The zerg start with max upgrades
 
 All-in:
 -*Omegalisks are now sent in the ground version
--*You get the Fusion Reactor from Gates, if it survived.
-
+-You get the Fusion Reactor from Gates, if it survived.
+-The zerg start with max upgrades
 
 UNIT CHANGES:
 
