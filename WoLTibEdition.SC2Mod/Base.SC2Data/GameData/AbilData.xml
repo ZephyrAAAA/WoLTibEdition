@@ -405,6 +405,12 @@
         </InfoArray>
         <Alert value=""/>
     </CAbilSpecialize>
+    <CAbilEffectTarget id="Implosion">
+        <Cost index="0">
+            <Vital index="Energy" value="150"/>
+        </Cost>
+        <TargetFilters index="0" value="Mechanical,Visible;Player,Ally,Neutral,Massive,Structure,Worker,Invulnerable"/>
+    </CAbilEffectTarget>
     <CAbilTransport id="InfestableHutTransport">
         <UnloadPeriod value="2"/>
     </CAbilTransport>
