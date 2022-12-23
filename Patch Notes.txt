@@ -33,7 +33,7 @@ Fixed raven ability hotkeys
 Fixed Ghost ability hotkeys
 Commando (Including Tosh and Nova) Explosive anti-structure attack now describes what it does
 Commando Explosive anti-structure attack now does 500 damage instead of infinity.
-*Autoref now has a range indicator
+Autoref now has a range indicator
 Sentry Shield Restore now has a hotkey
 Buffed Abberation Damage
 AI no longer puts ghosts in bunkers

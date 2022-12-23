@@ -103,6 +103,7 @@ Actor/Name/AirTargeter=Air Targeter
 Actor/Name/AirTransport=Air Transport 
 Actor/Name/Armory2=Armory
 Actor/Name/Armory2Splat=Armory Splat
+Actor/Name/AutorefineryRange=Autorefinery Range
 Actor/Name/Barracks2=Barracks
 Actor/Name/BuildRadius=Build Radius
 Actor/Name/BuildRadius2=Build Radius 2
