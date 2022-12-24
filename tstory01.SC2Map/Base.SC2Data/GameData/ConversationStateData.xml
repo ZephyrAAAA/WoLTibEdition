@@ -15,7 +15,16 @@
         <Indices Id="Laser_Drill" Name="ConversationState/CCEditionPermanence/Laser_Drill">
             <InfoAbilCmd Id="AC1" Abil="DeployLaserDrill"/>
         </Indices>
+        <Indices Id="Chrono_Device" Name="ConversationState/CCEditionPermanence/Chrono_Device">
+            <InfoAbilCmd Id="AC1" Abil="ChronoDevice"/>
+        </Indices>
+        <Indices Id="Improved_Yamato" Name="ConversationState/CCEditionPermanence/Improved_Yamato">
+            <InfoUpgrade Id="Upgrade1" Upgrade="CastanarYamato"/>
+        </Indices>
         <Indices Id="Fusion_Reactor" Name="ConversationState/CCEditionPermanence/Fusion_Reactor"/>
+        <Indices Id="Dark_Templar" Name="ConversationState/CCEditionPermanence/Dark_Templar">
+            <InfoAbilCmd Id="AC1" Abil="CallDarkTemplar"/>
+        </Indices>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>
