@@ -318,6 +318,15 @@
         <Duration value="0.2"/>
         <AINotifyEffect value="SeekerMissileDamage"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="TriggerHide">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="SuppressRequirements" value="1"/>
+            <StateFlags index="SuppressTech" value="1"/>
+            <BehaviorLinkDisableArray value="BuildRadiusLarge"/>
+            <BehaviorLinkDisableArray value="BuildRadiusSmall"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ZergChaserSpeed">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

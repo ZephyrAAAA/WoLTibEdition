@@ -1659,7 +1659,7 @@
                 <HideCount value="1"/>
                 <Location value="Unit"/>
             </Charge>
-            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="SupplyDepot2Lower">
+            <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HaveArmory">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
