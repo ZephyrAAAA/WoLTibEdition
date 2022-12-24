@@ -749,6 +749,11 @@ ConversationState/Tech/Tech2_Vulture_1=Cerberus Mine
 ConversationState/Tech/Tech2_Vulture_2=Replenishable Magazine
 ConversationState/Tech/Tech2_Wraith_1=Tomahawk Power Cells
 ConversationState/Tech/Tech2_Wraith_2=Displacement Field
+ConversationState/Tech/Tech_Battlecruiser_1=ATX Laser Batteries
+ConversationState/Tech/Tech_Battlecruiser_1/Info/Description=<s val="TechSummary">- Grants extra weapons with half the fire rate.</s><n/><s val="TechSummary">- DPS is increased by 50%.</s><n/><n/><s val="TechDescription">Laser Batteries are fearsome weapons across wide stretches of space, which is why we're mounting more.</s>
+ConversationState/Tech/Tech_Battlecruiser_1/Info/Tooltip=<s val="TooltipTitle_Tech">ATX Laser Batteries</s><n/><s val="TooltipDescription_Tech">Mounts extra weapons to increase DPS by 50%.</s>
+ConversationState/Tech/Tech_Battlecruiser_2/Info/Description=<s val="TechSummary">- Grants the Defensive Matrix ability.</s><n/><s val="TechSummary">- Effect: Absorbs 300 damage.</n>- Heals the Battlecruiser for 200 over 10s.</s><n/><n/><s val="TechDescription">The Defensive Matrix is a temporary deflection field that helped save countless assets from a premature death during the original Brood War. Now the minds at LarsCorp have adapted this technological marvel to protect the massive hull of the Minotaur-class Battlecruiser. </s>
+ConversationState/Tech/Tech_Battlecruiser_2/Info/Tooltip=<s val="TooltipTitle_Tech">Defensive Matrix</s><n/><s val="TooltipDescription_Tech">Grants the Defensive Matrix ability. Erects a temporary shield that absorbs 300 damage and heals 200.</s>
 ConversationState/Tech/Tech_Bunker_1=Shrike Turret
 ConversationState/Tech/Tech_Bunker_1/Info/Description=<s val="TechSummary">- Bunkers gain an automated Shrike Turret<n/><n/><s val="TechDescription">Placing an automated turret on top of bunkers allows them to provide more than just protection to the infantry inside, able to provide additional Rifle firepower.</s>
 ConversationState/Tech/Tech_Bunker_1/Info/Tooltip=<s val="TooltipTitle_Tech">Shrike Turret</s><n/><s val="TooltipDescription_Tech">Gives the bunker an automated turret.</s>

@@ -303,11 +303,11 @@
         </Indices>
         <Indices index="32" ImagePath="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
         <Indices index="33" ImagePath="Assets\Textures\btn-unit-terran-popupturret.dds"/>
-        <Indices index="36">
-            <InfoValue index="0" Value="90000"/>
+        <Indices index="36" ImagePath="Assets\Textures\btn-ability-hornerhan-battlecruiser-laser.dds">
+            <InfoValue index="0" Value="120000"/>
         </Indices>
         <Indices index="37">
-            <InfoValue index="0" Value="100000"/>
+            <InfoValue index="0" Value="70000"/>
         </Indices>
         <Indices index="38" ImagePath="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds">
             <InfoValue index="0" Value="60000"/>
