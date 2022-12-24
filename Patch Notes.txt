@@ -18,10 +18,13 @@ Updated Medic Upgrade tooltip
 Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over other targets.
 Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
+*Added a cheat code to unlock the DT support power.
+*Added a cheat code to unlock the drill support power.
 *Added a cheat code to make the Drill full power.
 The drill now has a proper deploy animation
 The drill now has a stop command.
 *The drill remains no longer stay forever
+*Neutral structure remains no longer stay forever
 Fixed Tank/Thor hotkey conflict.
 Fixed Crane/Fusion Core hotkey conflict.
 Fixed high energy capacitor, hailstorm launcher, and enhanced explosives having no default hotkey
@@ -55,6 +58,7 @@ Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batt
 Defensive Matrix- Autocastable, Heals 200, absorbs 300 damage instead of giving a 300 point shield.
 Improved Engines- Battlecruisers move faster [Armoury]
 Reapers now take 1 slot instead of 2 (This only applies to the AI, because they don't use squads)
+*Topbar repair no longer works off the repair time of the unit, instead being a flat 10hp/s plus 0.5%
 
 Liberation Day:
 Fixed the restore charge
@@ -164,6 +168,7 @@ Convoys are sent when the base has no SCVs, no CC, and none of the relevant prod
 Taking a tower stops the dominion from sending more convoys to rebuild that base. Exising convoys continue as normal.
 The dominion figured out how to import tech reactors from Trains
 Tower defense waves are now randomized and stronger.
+*There is now an autosave when you clear out each base.
 
 Piercing the Shroud:
 Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
@@ -179,7 +184,8 @@ Momma no longer has vortex
 Momma restores all shields when retreating
 The vault is now invicible, and is no longer an objective.
 Added an objective for the protoss must have less than 10 structures on the map.
-Rescuing DT groups 2 and 3 gives BC armoury upgrades.
+*Rescuing DT groups 2 and 3 gives BC armoury upgrades.
+*The rescued DTs have max upgrades.
 Horner no longer says resources are scarce
 There is now 3 strong bases you need to fight through.
 The Protoss send large attack waves.

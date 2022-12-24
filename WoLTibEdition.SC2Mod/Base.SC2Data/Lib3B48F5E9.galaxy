@@ -396,7 +396,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     while (true) {
         autoA7838E67_var = PlayerGroupNextPlayer(autoA7838E67_g, autoA7838E67_var);
         if (autoA7838E67_var < 0) { break; }
-        autoC11D4559_val = lp_initialUpgradeLevel;
+        autoC11D4559_val = lv_currentUpgradeLevel;
         if (autoC11D4559_val == 1) {
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
