@@ -115,6 +115,7 @@ Behavior/Name/SquadUnit=Squad Unit
 Behavior/Name/SquadVeterancy1=Squad Veterancy1
 Behavior/Name/SquadVeterancy2=Squad Veterancy2
 Behavior/Name/SupplyDepotStartingUpgrade=Supply Depot Starting Upgrade
+Behavior/Name/TriggerHide=Trigger Hide
 Behavior/Name/Veterancy=Veterancy
 Behavior/Name/ZeratulHoldFire=Hold Fire
 Behavior/Name/ZergHypervirus=Zerg Hypervirus
