@@ -412,6 +412,11 @@ Gates of Hell:
 -No more screen stealing on hard and brutal
 -*Gathering a large army is now based on health. You need 10k health
 -The zerg start with max upgrades
+-*Droppods are now mercs
+-*Warfield has mercs to protect himself
+-*No more free vision of random ares of the map
+-*No more free vision of droppods
+-*No more free vision of Warfield
 
 Belly of the Beast:
 -Tychus, Swann, and Raynor have been buffed to 250 HP.
@@ -437,6 +442,7 @@ Shatter the Sky:
 -Blowing up platforms gives much less money
 -Corruptors and Brood Lords hang around in their appropriate base, plus other places.
 -The zerg start with max upgrades
+-*No more free vision of the platforms after they blow up
 
 All-in:
 -*Omegalisks are now sent in the ground version
