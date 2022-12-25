@@ -142,8 +142,8 @@ Engine of Destruction:
 Wraiths no longer start out injured
 
 Supernova:
-*Fixed build radius appearing before you clear out the base area
-*Fixed topbar appearing during the no-build segment
+Fixed build radius appearing before you clear out the base area
+Fixed topbar appearing during the no-build segment
 
 In Utter Darkness:
 Fixed carrier interceptors costing minerals
@@ -168,7 +168,7 @@ Convoys are sent when the base has no SCVs, no CC, and none of the relevant prod
 Taking a tower stops the dominion from sending more convoys to rebuild that base. Exising convoys continue as normal.
 The dominion figured out how to import tech reactors from Trains
 Tower defense waves are now randomized and stronger.
-*There is now an autosave when you clear out each base.
+There is now an autosave when you clear out each base.
 
 Piercing the Shroud:
 Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
@@ -184,8 +184,8 @@ Momma no longer has vortex
 Momma restores all shields when retreating
 The vault is now invicible, and is no longer an objective.
 Added an objective for the protoss must have less than 10 structures on the map.
-*Rescuing DT groups 2 and 3 gives BC armoury upgrades.
-*The rescued DTs have max upgrades.
+Rescuing DT groups 2 and 3 gives BC armoury upgrades.
+The rescued DTs have max upgrades.
 Horner no longer says resources are scarce
 There is now 3 strong bases you need to fight through.
 The Protoss send large attack waves.
