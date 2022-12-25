@@ -396,7 +396,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     while (true) {
         autoA7838E67_var = PlayerGroupNextPlayer(autoA7838E67_g, autoA7838E67_var);
         if (autoA7838E67_var < 0) { break; }
-        autoC11D4559_val = lv_currentUpgradeLevel;
+        autoC11D4559_val = lp_initialUpgradeLevel;
         if (autoC11D4559_val == 1) {
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
@@ -923,6 +923,96 @@ void lib3B48F5E9_gt_SquadShields_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Full Power Drill
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_FullPowerDrill_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lib3B48F5E9_gf_CNCUpgradeText("DrillFullPower", "THE POWER OF THE SUN", "(The laser drill does the full 330 DPS for this mission)");
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_FullPowerDrill_Init () {
+    lib3B48F5E9_gt_FullPowerDrill = TriggerCreate("lib3B48F5E9_gt_FullPowerDrill_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_FullPowerDrill, c_playerAny, "THEPOWEROFTHESUN", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Grant Laser Drill Topbar
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_GrantLaserDrillTopbar_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/lib_3B48F5E9_27992306") + StringExternal("Param/Value/lib_3B48F5E9_2865F866")));
+    ConversationDataStateSetValue("CCEditionPermanence|Laser_Drill", 1);
+    TechTreeAbilityAllow(1, AbilityCommand("DeployLaserDrill", 0), true);
+    RefreshTopbar();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_GrantLaserDrillTopbar_Init () {
+    lib3B48F5E9_gt_GrantLaserDrillTopbar = TriggerCreate("lib3B48F5E9_gt_GrantLaserDrillTopbar_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_GrantLaserDrillTopbar, c_playerAny, "callinthebigguns", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Grant DT Topbar
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_GrantDTTopbar_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (StringExternal("Param/Value/lib_3B48F5E9_76BEF993") + StringExternal("Param/Value/lib_3B48F5E9_4E0AFB59")));
+    ConversationDataStateSetValue("CCEditionPermanence|Dark_Templar", 1);
+    TechTreeAbilityAllow(1, AbilityCommand("CallDarkTemplar", 0), true);
+    RefreshTopbar();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_GrantDTTopbar_Init () {
+    lib3B48F5E9_gt_GrantDTTopbar = TriggerCreate("lib3B48F5E9_gt_GrantDTTopbar_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_GrantDTTopbar, c_playerAny, "shadowfurries", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlimited Topbar charges
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlimitedTopbarcharges_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lib3B48F5E9_gf_CNCUpgradeText("TopbarUnlimited", "Unlimited Topbar", "(All topbar abilities are no longer limited by charges)");
+    TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CallDarkTemplar", 0), true);
+    RefreshTopbar();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlimitedTopbarcharges_Init () {
+    lib3B48F5E9_gt_UnlimitedTopbarcharges = TriggerCreate("lib3B48F5E9_gt_UnlimitedTopbarcharges_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlimitedTopbarcharges, c_playerAny, "exterminatus", true);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Predator/Ghost Academy
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) {
@@ -1164,7 +1254,10 @@ bool lib3B48F5E9_gt_FleetAbilityCost_Func (bool testConds, bool runActions) {
 
     PlayerModifyPropertyInt(EventPlayer(), c_playerPropMinerals, c_playerPropOperSubtract, CatalogFieldValueGetAsInt(c_gameCatalogAbil, "CallInGoldenArmada", "Cost[" + IntToString(0) + "].Resource[" + IntToString(0) + "]", EventPlayer()));
     PlayerAddChargeUsed(EventPlayer(), CatalogFieldValueGet(c_gameCatalogAbil, "CallInGoldenArmada", "Cost[" + IntToString(0) + "].Charge.Link", EventPlayer()), 1.0);
-    TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), false);
+    if ((TechTreeUpgradeCount(1, "TopbarUnlimited", c_techCountCompleteOnly) != 1)) {
+        TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), false);
+    }
+
     RefreshTopbar();
     return true;
 }
@@ -1180,6 +1273,13 @@ void lib3B48F5E9_gt_FleetAbilityCost_Init () {
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_ZerghyperRemove_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TechTreeUpgradeCount(1, "TopbarUnlimited", c_techCountCompleteOnly) != 1))) {
+            return false;
+        }
+    }
+
     // Actions
     if (!runActions) {
         return true;
@@ -1194,6 +1294,34 @@ bool lib3B48F5E9_gt_ZerghyperRemove_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_ZerghyperRemove_Init () {
     lib3B48F5E9_gt_ZerghyperRemove = TriggerCreate("lib3B48F5E9_gt_ZerghyperRemove_Func");
     TriggerAddEventUnitAbility(lib3B48F5E9_gt_ZerghyperRemove, null, AbilityCommand("ZergHypervirus", 0), c_abilEffectStageFinish, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: DT Remove
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_DTRemove_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TechTreeUpgradeCount(1, "TopbarUnlimited", c_techCountCompleteOnly) != 1))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TechTreeAbilityAllow(1, AbilityCommand("CallDarkTemplar", 0), false);
+    RefreshTopbar();
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_DTRemove_Init () {
+    lib3B48F5E9_gt_DTRemove = TriggerCreate("lib3B48F5E9_gt_DTRemove_Func");
+    TriggerAddEventUnitAbility(lib3B48F5E9_gt_DTRemove, null, AbilityCommand("CallDarkTemplar", 0), c_abilEffectStageFinish, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1251,6 +1379,10 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_TerranUpgradeSwap_Init();
     lib3B48F5E9_gt_SquadHealth_Init();
     lib3B48F5E9_gt_SquadShields_Init();
+    lib3B48F5E9_gt_FullPowerDrill_Init();
+    lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
+    lib3B48F5E9_gt_GrantDTTopbar_Init();
+    lib3B48F5E9_gt_UnlimitedTopbarcharges_Init();
     lib3B48F5E9_gt_PredatorGhostAcademy_Init();
     lib3B48F5E9_gt_ArmoryHercules_Init();
     lib3B48F5E9_gt_FusionCore_Init();
@@ -1262,6 +1394,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_FleetAbilitySwap_Init();
     lib3B48F5E9_gt_FleetAbilityCost_Init();
     lib3B48F5E9_gt_ZerghyperRemove_Init();
+    lib3B48F5E9_gt_DTRemove_Init();
     lib3B48F5E9_gt_DebugTopbar_Init();
 }
 

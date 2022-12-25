@@ -17,6 +17,10 @@ trigger lib3B48F5E9_gt_CommandoEXP;
 trigger lib3B48F5E9_gt_TerranUpgradeSwap;
 trigger lib3B48F5E9_gt_SquadHealth;
 trigger lib3B48F5E9_gt_SquadShields;
+trigger lib3B48F5E9_gt_FullPowerDrill;
+trigger lib3B48F5E9_gt_GrantLaserDrillTopbar;
+trigger lib3B48F5E9_gt_GrantDTTopbar;
+trigger lib3B48F5E9_gt_UnlimitedTopbarcharges;
 trigger lib3B48F5E9_gt_PredatorGhostAcademy;
 trigger lib3B48F5E9_gt_ArmoryHercules;
 trigger lib3B48F5E9_gt_FusionCore;
@@ -28,6 +32,7 @@ trigger lib3B48F5E9_gt_UnhighlightFusionCore;
 trigger lib3B48F5E9_gt_FleetAbilitySwap;
 trigger lib3B48F5E9_gt_FleetAbilityCost;
 trigger lib3B48F5E9_gt_ZerghyperRemove;
+trigger lib3B48F5E9_gt_DTRemove;
 trigger lib3B48F5E9_gt_DebugTopbar;
 
 // Library Initialization

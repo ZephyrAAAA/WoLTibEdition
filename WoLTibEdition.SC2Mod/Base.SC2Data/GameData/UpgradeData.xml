@@ -249,6 +249,9 @@
         <AffectedUnitArray value="CommandCenter2"/>
         <AffectedUnitArray value="CommandCenterFlying"/>
     </CUpgrade>
+    <CUpgrade id="DrillFullPower">
+        <EffectArray Operation="Set" Reference="Effect,LaserDrillTripodDamage,Amount" Value="33"/>
+    </CUpgrade>
     <CUpgrade id="DualFusionWelders">
         <EffectArray index="0" Value="1.5"/>
         <EffectArray Operation="Divide" Reference="Effect,BuildingRepair,TimeFactor" Value="1.5"/>
@@ -2720,6 +2723,13 @@
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Predator,LifeStart" Value="0.25"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Unit,Predator,LifeMax" Value="0.25"/>
         <EditorCategories value="Race:Terran,UpgradeType:Talents"/>
+    </CUpgrade>
+    <CUpgrade id="TopbarUnlimited">
+        <EffectArray Operation="Set" Reference="Abil,CallDarkTemplar,Cost[0].Charge.CountUse" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,CallInGoldenArmada,Cost[0].Charge.CountUse" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,ZergHypervirus,Cost[0].Charge.CountUse" Value="0"/>
+        <EffectArray Operation="Set" Reference="Abil,DeployLaserDrill,InfoArray[Build1].Button.Requirements"/>
+        <EffectArray Operation="Set" Reference="Abil,TacticalMissileStrike,Cost[0].Charge.CountUse" Value="0"/>
     </CUpgrade>
     <CUpgrade id="TriLithiumPowerCells">
         <EffectArray index="0" removed="1"/>

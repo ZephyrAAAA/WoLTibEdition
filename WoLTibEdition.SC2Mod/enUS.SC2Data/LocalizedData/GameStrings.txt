@@ -1566,8 +1566,12 @@ Param/Value/FEDA652A=Big Tuna
 Param/Value/FEDED7E3=Protoss Research Points = 
 Param/Value/FFFD0315=Bridge
 Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
+Param/Value/lib_3B48F5E9_27992306=<c val="FF00FF">Topbar Granted: </c>
+Param/Value/lib_3B48F5E9_2865F866=Laser Drill
+Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
 Param/Value/lib_3B48F5E9_6C689267=CNC Edition has <c val="FF0000">new </c>or <c val="FF8040">edited </c>tips in this mission
 Param/Value/lib_3B48F5E9_7101F21A=The Predator and Shadow Ops have been unlocked.
+Param/Value/lib_3B48F5E9_76BEF993=<c val="FF00FF">Topbar Granted: </c>
 Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
@@ -1694,6 +1698,7 @@ Upgrade/Name/330mmBarrageCannons=Thor Speed
 Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
 Upgrade/Name/AresClassWeaponsSystemViking=Improved Mechanics
 Upgrade/Name/CastanarYamato=Castanar Yamato
+Upgrade/Name/DrillFullPower=Drill Full Power
 Upgrade/Name/EnhancedExplosives=Enhanced Explosives
 Upgrade/Name/HALORockets=Turreted Missile Pods
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
@@ -1722,6 +1727,7 @@ Upgrade/Name/TerranVehicleVanadiumPlating=Terran Vehicle Vanadium Plating
 Upgrade/Name/TerranVehicleWeaponsUltraCapacitors2=Terran Vehicle Weapons Ultra-Capacitors Copy
 Upgrade/Name/TitanEngines=Titan Engines
 Upgrade/Name/TitanSteel=Titan Steel
+Upgrade/Name/TopbarUnlimited=Topbar Unlimited
 Upgrade/Name/UltrasonicPulse=Behemoth Engines
 Upgrade/Name/ZeratulDeathRecallCharges=ZeratulDeathRecallCharges
 Weapon/Name/ATALaserBattery2=ATA Laser Battery
