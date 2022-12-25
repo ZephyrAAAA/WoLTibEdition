@@ -18,9 +18,10 @@ Updated Medic Upgrade tooltip
 Lowered Creep Tumour priority, so reapers don't shoot them ineffectually over other targets.
 Fixed the location of the XP bar for Ghosts, Spectres, Nova, and Tosh.
 Removed the weapon from SCVs
-*Added a cheat code to unlock the DT support power.
-*Added a cheat code to unlock the drill support power.
-*Added a cheat code to make the Drill full power.
+Added a cheat code to remove charge use from topbar powers.
+Added a cheat code to unlock the DT support power.
+Added a cheat code to unlock the drill support power.
+Added a cheat code to make the Drill full power.
 The drill now has a proper deploy animation
 The drill now has a stop command.
 *The drill remains no longer stay forever
@@ -58,7 +59,7 @@ Missile Pods-> ATX Laser Batteries- Gives the BC an additional set of laser batt
 Defensive Matrix- Autocastable, Heals 200, absorbs 300 damage instead of giving a 300 point shield.
 Improved Engines- Battlecruisers move faster [Armoury]
 Reapers now take 1 slot instead of 2 (This only applies to the AI, because they don't use squads)
-*Topbar repair no longer works off the repair time of the unit, instead being a flat 10hp/s plus 0.5%
+Topbar repair no longer works off the repair time of the unit, instead being a flat 10hp/s plus 0.5%
 
 Liberation Day:
 Fixed the restore charge
