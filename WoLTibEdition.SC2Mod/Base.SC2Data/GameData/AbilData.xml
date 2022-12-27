@@ -1220,6 +1220,7 @@
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
+        <PrepEffect value="SpawnDarkTemplarUpgrades"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="ZergHypervirus">
         <EditorCategories value="AbilityorEffectType:Units"/>
