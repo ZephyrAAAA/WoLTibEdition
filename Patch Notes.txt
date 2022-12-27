@@ -90,8 +90,8 @@ Node defenders only get HT at the 3 bases in the middle of the map, not at every
 Waves only ping the area if the player has structures there.
 
 A Sinister Turn:
-*Adjusted timing of autosaves
-*Added something to notify about upgrades
+Adjusted timing of autosaves
+Added something to notify about upgrades
 Detection radii of cannons are now always visible
 Gave zertaul shadow ability a default hotkey
 Added messages to help explain the mission
