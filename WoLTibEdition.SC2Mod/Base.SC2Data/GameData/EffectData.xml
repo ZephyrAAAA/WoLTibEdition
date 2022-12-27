@@ -2831,6 +2831,19 @@
         <ImpactLocation Value="SourceUnit"/>
         <Flags index="Kill" value="1"/>
     </CEffectDamage>
+    <CEffectModifyPlayer id="SpawnDarkTemplarUpgrades">
+        <EditorCategories value=""/>
+        <WhichPlayer Value="Source"/>
+        <Upgrades Upgrade="ProtossGroundArmorsLevel1" Count="1"/>
+        <Upgrades Upgrade="ProtossGroundArmorsLevel2" Count="1"/>
+        <Upgrades Upgrade="ProtossGroundArmorsLevel3" Count="1"/>
+        <Upgrades Upgrade="ProtossGroundWeaponsLevel1" Count="1"/>
+        <Upgrades Upgrade="ProtossGroundWeaponsLevel2" Count="1"/>
+        <Upgrades Upgrade="ProtossGroundWeaponsLevel3" Count="1"/>
+        <Upgrades Upgrade="ProtossShieldsLevel1" Count="1"/>
+        <Upgrades Upgrade="ProtossShieldsLevel2" Count="1"/>
+        <Upgrades Upgrade="ProtossShieldsLevel3" Count="1"/>
+    </CEffectModifyPlayer>
     <CEffectDamage id="Val03PsiBlastDamage">
         <AttributeBonus index="Structure" value="0"/>
         <Amount value="150"/>

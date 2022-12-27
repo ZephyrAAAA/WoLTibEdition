@@ -1084,6 +1084,7 @@ Effect/Name/ShieldRestore=Shield Restore
 Effect/Name/ShieldRestoreSecondary=Shield Restore
 Effect/Name/ShrikeTurretCP=Shrike Turret
 Effect/Name/SpawnDarkTemplar=Spawn Dark Templar
+Effect/Name/SpawnDarkTemplarUpgrades=Spawn Dark Templar
 Effect/Name/SquadAttack=Squad Attack
 Effect/Name/SquadAttackAB=Squad Attack AB
 Effect/Name/SquadAttackIterate=Squad Attack Iterate
