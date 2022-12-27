@@ -1957,7 +1957,7 @@
         <EditorCategories value=""/>
         <WhichLocation Value="TargetPoint"/>
         <SpawnUnit value="DarkTemplar"/>
-        <SpawnCount value="10"/>
+        <SpawnCount value="16"/>
     </CEffectCreateUnit>
     <CEffectDamage id="SpecterU">
         <AttributeBonus index="Armored" value="0"/>
