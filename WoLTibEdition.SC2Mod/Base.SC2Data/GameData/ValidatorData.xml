@@ -34,9 +34,11 @@
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDevilDogs">
         <Find value="1"/>
+        <Value value="MercPHTrainFirebat"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasDuskWings">
         <Find value="1"/>
+        <Value value="MercPHTrainBanshee"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasImprovedPlasmaShields">
         <Find value="1"/>
@@ -45,24 +47,30 @@
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasJackson">
         <Find value="1"/>
+        <Value value="MercPHTrainBattleCruiser"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasPlasmaShields">
         <Find value="1"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasSiegeBreakers">
         <Find value="1"/>
+        <Value value="MercPHTrainSiegeTank"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasSpartanCompany">
         <Find value="1"/>
+        <Value value="MercPHTrainGoliath"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasHammerSecurities">
         <Find value="1"/>
+        <Value value="MercPHTrainMarauder"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasHelsAngels">
         <Find value="1"/>
+        <Value value="MercPHTrainViking"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasWarPigs">
         <Find value="1"/>
+        <Value value="MercPHTrainMarine"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HaveReaperScannerPack">
         <WhichPlayer Value="Source"/>

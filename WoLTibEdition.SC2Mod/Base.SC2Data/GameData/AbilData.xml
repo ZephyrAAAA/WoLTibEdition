@@ -124,7 +124,7 @@
         <Flags index="NoDeceleration" value="1"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="DuskWingBansheeCloakingField">
-        <CmdButtonArray index="On" Requirements="Barracks2Land"/>
+        <CmdButtonArray index="On" Requirements="UseCloakingField"/>
     </CAbilBehavior>
     <CAbilEffectTarget id="DutchPlaceTurret">
         <CmdButtonArray index="Execute">

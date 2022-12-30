@@ -635,8 +635,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <BehaviorArray index="0" Link="DistortionBlasters"/>
-        <BehaviorArray index="1" Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
+        <BehaviorArray index="1" removed="1"/>
         <Food value="0"/>
     </CUnit>
     <CUnit id="BansheeACGluescreenDummy">
@@ -2291,6 +2291,8 @@
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
         <TacticalAI value="BattlecruiserDefensiveMatrix"/>
+        <SubgroupPriority value="16"/>
+        <HotkeyAlias value="Battlecruiser"/>
     </CUnit>
     <CUnit id="DumpTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2303,6 +2305,7 @@
         <LifeArmorTip value="Unit/Tip/Air"/>
         <Food value="0"/>
         <BehaviorArray index="0" Link="Biosteel"/>
+        <SubgroupPriority value="11"/>
     </CUnit>
     <CUnit id="Egg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5508,7 +5511,10 @@
         <LifeArmor value="0"/>
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Heavy"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
+        <BehaviorArray index="1" removed="1"/>
+        <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SiegeTankACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5526,7 +5532,8 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <CargoSize value="4"/>
-        <BehaviorArray Link="Biosteel"/>
+        <BehaviorArray index="0" Link="Biosteel"/>
+        <BehaviorArray index="1" removed="1"/>
     </CUnit>
     <CUnit id="SiegeTankSkinPreview">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6433,7 +6440,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="ReaperSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="BioSpeed" Type="AbilCmd" AbilCmd="BioMode,On" Row="1" Column="1"/>
-            <LayoutButtons Face="CombatDrugs" Type="Passive" Row="2" Column="2"/>
+            <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="2" Column="2"/>
             <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="2"/>
         </CardLayouts>
         <LifeStart value="240"/>
