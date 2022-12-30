@@ -1,7 +1,12 @@
 *Pause and Resume buttons have a tooltip now
 *The barracks now correctly refers to unlocking the shadow ops
 *Shadow Ops is now unlocked from the start.
-*Raynor's fun that is clearly not the same as the marine's is now named differently.
+*Raynor's gun that is clearly not the same as the marine's is now named differently.
+*Medivacs no borked
+*Jackson reigns in his horses
+*Interference matrix cost upped to 50 energy, lasts much shorter on heroic.
+*Subgroup priority is no longer wonky
+*Merc units now share a command card with the normal variants
 
 Liberation Day:
 *The bonus objective no longer teases you with money
@@ -33,3 +38,16 @@ Outbreak:
 
 The Dig:
 *Added a custom loss message for selling the drill.
+*The spike can no longer be claimed until you have the base
+
+Bel'shir:
+*Removed the counterattack system.
+*The protoss now deploy small groups of 3-5 units throughout the map, and they make more of these groups as time goes on.
+
+In Utter Darkness:
+*DT Button no longer lies about archons
+*Sentry button is now accurate to the unit
+*Carrier and Colossus no longer share a hotkey.
+
+Engine of Destruction:
+*Loki objective now says it gives credits
