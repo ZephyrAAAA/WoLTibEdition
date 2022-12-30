@@ -81,7 +81,7 @@
         <FlagArray index="TownAlert" value="1"/>
         <FlagArray index="NoPortraitTalk" value="1"/>
         <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <FogVisibility value="Snapshot"/>
+        <FogVisibility value="Dimmed"/>
         <PlaneArray index="Ground" value="1"/>
         <Collide index="Burrow" value="1"/>
         <Collide index="Ground" value="1"/>
