@@ -161,7 +161,7 @@ void RemoveTopbarAbil(string abil) {
 		PlayerApplySkin(1, topbarAbils[lv_i]+IntToString(lv_i+2), true);
 		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_i], 0), true);
 		UnitAbilityAdd(topbarUnit, topbarAbils[lv_i]);
-		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
+//		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("New: " +topbarAbils[lv_i]+IntToString(lv_i+2)));
 		topbarAbils[lv_i - 1] = topbarAbils[lv_i];
 		topbarAbils[lv_i] = null;
 	}

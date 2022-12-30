@@ -1178,7 +1178,7 @@
     <CEffectCreateHealer id="MedivacHeal">
         <DrainVitalCostFactor value="0.375"/>
         <RechargeVitalRate value="8"/>
-        <PeriodicEffect value="MedivacDoubleHealSearch"/>
+        <PeriodicEffect value="MedivacDoubleHealDelay"/>
         <PeriodicPeriod value="0.33"/>
         <Marker>
             <MatchFlags index="Link" value="1"/>
