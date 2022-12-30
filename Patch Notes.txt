@@ -2,11 +2,13 @@
 *The barracks now correctly refers to unlocking the shadow ops
 *Shadow Ops is now unlocked from the start.
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
-*Medivacs no borked
+Medivacs no borked
 *Jackson reigns in his horses
 *Interference matrix cost upped to 50 energy, lasts much shorter on heroic.
 *Subgroup priority is no longer wonky
 *Merc units now share a command card with the normal variants
+Neutral structures are now capturable in Fog of War.
+Removed debug messages.
 
 Liberation Day:
 *The bonus objective no longer teases you with money
@@ -51,3 +53,6 @@ In Utter Darkness:
 
 Engine of Destruction:
 *Loki objective now says it gives credits
+
+Supernova:
+*Added a tip with details about what unlocks are free.
