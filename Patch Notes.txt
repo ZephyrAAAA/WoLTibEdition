@@ -5,17 +5,25 @@
 Medivacs no borked
 *Jackson reigns in his horses
 *Interference matrix cost upped to 50 energy, lasts much shorter on heroic.
-*Subgroup priority is no longer wonky
-*Merc units now share a command card with the normal variants
+*Defensive matrix is now ovoid
+Merc subgroup priority is no longer wonky
 Neutral structures are now capturable in Fog of War.
 Removed debug messages.
+Reapers now get the drugs button when they should
+Zeratul's hotkeys no longer overlap
+*Tactical missile buffed to 200 damage.
+*Nuke damage buffed to 400 + 600 vs structures
+*DT topbar no longer lies about how many it spawns
+*Chrono Topbar now works on air units.
+*Thor theft has a proper tooltip now
+*Flying buildings no longer put away their armour
 
 Liberation Day:
 *The bonus objective no longer teases you with money
 *Coloured the ultracap tip
 
 Outlaws:
-*Adjusted when the Directive tex for tutorial objectives disappears.
+*Adjusted when the Directive text for tutorial objectives disappears.
 *Fixed the depower tutorial not completing after you've built more power, regardless of depowering the barracks or not.
 *Ultracaps is now disabled until the tutorial tells you to do it
 *Added a custom loss message for selling your CC
@@ -30,8 +38,8 @@ Zero Hour:
 *Rescued units are no longer wounded.
 
 Evacuation:
-*The nydus worm ping now stays until the worm is dead
-*Replaced starting field with spikes. Some you start with, some you don't.
+The nydus worm ping now stays until the worm is dead
+Replaced starting field with spikes. Some you start with, some you don't.
 
 Outbreak:
 *Bunkered marines are based on the existing system that scales attack waves now
@@ -56,3 +64,14 @@ Engine of Destruction:
 
 Supernova:
 *Added a tip with details about what unlocks are free.
+
+Breakout:
+Dusk Wings acually don't cloak now, pinkie promise
+
+Media Blitz:
+*The convoy tip now says what happens if you complete a tower while a convoy is on the way
+*Some BCs are replaced by banshees in tower defense waves
+
+Maw of the Void:
+*Removed most of the bully units in each base.
+*Each base now produces defense groups much faster, and starts with some based on difficulty.
