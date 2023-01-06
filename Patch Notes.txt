@@ -43,9 +43,10 @@ The nydus worm ping now stays until the worm is dead
 Replaced starting field with spikes. Some you start with, some you don't.
 
 Outbreak:
-*Bunkered marines are now based on the existing system that scales attack waves
-*Messed around to reduce how much the 3 fields regrow
-*Reduced infested building health a bit.
+Bunkered marines are now based on the existing system that scales attack waves
+Each building gains 1 marine per night, after you've cleared enough. Or after at least 2 nights have passed.
+Messed around to reduce how much the 3 fields regrow
+Reduced infested building health a bit.
 
 The Dig:
 *Added a custom loss message for selling the drill.
@@ -61,7 +62,7 @@ In Utter Darkness:
 *Carrier and Colossus no longer share a hotkey.
 
 Engine of Destruction:
-*Loki objective now says it gives credits
+Loki objective now says it gives credits
 
 Supernova:
 *Added a tip with details about what unlocks are free.
@@ -72,6 +73,7 @@ Dusk Wings acually don't cloak now, pinkie promise
 Media Blitz:
 *The convoy tip now says what happens if you complete a tower while a convoy is on the way
 *Some BCs are replaced by banshees in tower defense waves
+*Warfield now unleashes the predators
 
 Maw of the Void:
 *Removed most of the bully units in each base.
