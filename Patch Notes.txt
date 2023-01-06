@@ -43,7 +43,7 @@ The nydus worm ping now stays until the worm is dead
 Replaced starting field with spikes. Some you start with, some you don't.
 
 Outbreak:
-*Bunkered marines are based on the existing system that scales attack waves now
+*Bunkered marines are now based on the existing system that scales attack waves
 *Messed around to reduce how much the 3 fields regrow
 *Reduced infested building health a bit.
 
