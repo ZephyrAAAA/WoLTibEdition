@@ -19,8 +19,9 @@ Zeratul's hotkeys no longer overlap
 *Flying buildings no longer put away their armour
 
 Liberation Day:
-*The bonus objective no longer teases you with money
-*Coloured the ultracap tip
+The bonus objective no longer teases you with money
+Removed the ultracap tip
+Fixed the vehicle size reference for the viking.
 
 Outlaws:
 *Adjusted when the Directive text for tutorial objectives disappears.
