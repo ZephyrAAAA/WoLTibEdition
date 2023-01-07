@@ -13,8 +13,8 @@ Reapers now get the drugs button when they should
 Zeratul's hotkeys no longer overlap
 Tactical missile buffed to 200 damage.
 Nuke damage buffed to 400 + 600 vs structures
-*DT topbar no longer lies about how many it spawns
-*Chrono Topbar now works on air units.
+DT topbar no longer lies about how many it spawns
+Chrono Topbar now works on air units.
 *Thor theft has a proper tooltip now
 Flying buildings no longer put away their armour
 

@@ -1686,6 +1686,7 @@
     </CEffectEnumArea>
     <CEffectEnumArea id="RaynorTimeBombUnitSearchArea">
         <AreaArray index="0" Radius="5"/>
+        <SearchFilters value="-;Player,Destructible,Stasis,Dead,Invulnerable"/>
     </CEffectEnumArea>
     <CEffectEnumMagazine id="RemovePrecursorMercIterate">
         <EditorCategories value=""/>
