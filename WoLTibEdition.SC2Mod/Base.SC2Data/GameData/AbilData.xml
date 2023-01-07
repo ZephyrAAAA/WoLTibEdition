@@ -565,7 +565,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Flags index="ChannelingMinimum" value="0"/>
         <Cost>
-            <Vital index="Energy" value="40"/>
+            <Vital index="Energy" value="50"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Invulnerable"/>
         <Range value="9"/>

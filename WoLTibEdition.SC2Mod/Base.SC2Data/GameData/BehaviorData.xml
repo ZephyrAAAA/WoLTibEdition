@@ -498,6 +498,10 @@
             <StateFlags index="SuppressCloak" value="1"/>
             <BehaviorLinkDisableArray value="ImmortalBarrierSupressed"/>
         </Modification>
+        <DurationOverride>
+            <Duration value="3"/>
+            <ValidatorArray value="IsHeroic"/>
+        </DurationOverride>
     </CBehaviorBuff>
     <CBehaviorBuff id="RaynorCommandoSniping">
         <InfoFlags index="Hidden" value="1"/>
