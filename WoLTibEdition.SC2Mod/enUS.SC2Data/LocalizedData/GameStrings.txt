@@ -356,18 +356,18 @@ Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of 
 Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
-Button/Tooltip/CallDarkTemplar10=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar11=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar12=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar13=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar14=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar3=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar4=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar5=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar6=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar7=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar8=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar9=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar10=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar11=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar12=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar13=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar14=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar3=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar4=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar5=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar6=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar7=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar8=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar9=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
 Button/Tooltip/CallInGoldenArmada10=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada11=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada12=Calls in a portion of the golden armada to strafe across target area.
