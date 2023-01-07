@@ -2308,6 +2308,8 @@
         <EffectArray Reference="Unit,MercenaryFortress,LifeArmor" Value="2"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmor" Value="{1+DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
         <EffectArrayTemplate Reference="Unit,^ParamId^,LifeArmorLevel" Value="1"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^Flying,LifeArmor" Value="{1+DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"/>
+        <EffectArrayTemplate Reference="Unit,^ParamId^Flying,LifeArmorLevel" Value="1"/>
         <BonusResourcePerLevel index="Minerals" value="2000"/>
         <AffectedUnitArray value="Bunker2"/>
         <AffectedUnitArray value="BunkerSQ"/>
