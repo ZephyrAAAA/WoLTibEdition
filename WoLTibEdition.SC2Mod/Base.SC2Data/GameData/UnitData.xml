@@ -2138,7 +2138,7 @@
         <LifeStart value="300"/>
         <LifeMax value="300"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
-        <Sight value="11"/>
+        <Sight value="9"/>
         <Food value="-8"/>
         <CostCategory value="Technology"/>
         <CostResource index="Minerals" value="300"/>
