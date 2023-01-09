@@ -1054,7 +1054,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -1099,7 +1101,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2208,7 +2212,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2236,7 +2242,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2266,7 +2274,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2321,7 +2331,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2388,7 +2400,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2634,7 +2648,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
