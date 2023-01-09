@@ -398,6 +398,7 @@ Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/Consumption=Drains half the life from a friendly biological unit and gives Tosh 2 energy and 2 life for each point of life drained.
+Button/Tooltip/DarkTemplar=Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
 Button/Tooltip/Decal_Terran_0047_01=Support structure. Used to construct buildings.
 Button/Tooltip/DefensiveMatrix=Surrounds the unit with a shield that can absorb <d ref="Behavior,DefensiveMatrix,DamageResponse.ModifyLimit"/> damage. Lasts <d ref="Behavior,DefensiveMatrix,Duration"/> seconds.
@@ -550,6 +551,7 @@ Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked
 Button/Tooltip/Sell=Sells selected building for a partial refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
+Button/Tooltip/Sentry=Energy-manipulator unit. Can use Force Field, Guardian Shield, and Shield Restore.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Command Center
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
