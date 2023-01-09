@@ -120,6 +120,9 @@
     <!-- Defensive Matrix Special Ability                                                        -->
     <CActorModel id="DefensiveMatrixModel">
         <HostSiteOps Ops="SOpAttachCenter"/>
+        <On Terms="ActorCreation; ValidateUnit IsBattlecruiser" Send="SetScale 1.200000,1.500000,1.000000"/>
+        <On Terms="ActorCreation; ValidateUnit IsThor" Send="SetScale 1.400000,1.200000,1.200000"/>
+        <AutoScaleFactor value="1.500000"/>
     </CActorModel>
     <!--                                                                                         -->
     <!-- Devil Dog ............................................................................. -->
