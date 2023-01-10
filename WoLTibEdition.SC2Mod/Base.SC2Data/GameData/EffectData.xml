@@ -1283,6 +1283,7 @@
         <EditorCategories value=""/>
         <DrainVital value="Energy"/>
         <RechargeVitalFraction value="0.5"/>
+        <Flags index="Channeled" value="0"/>
     </CEffectCreateHealer>
     <CEffectApplyBehavior id="NovaHealTimer">
         <EditorCategories value=""/>
