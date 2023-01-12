@@ -584,17 +584,17 @@
         <EffectArray index="47" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossAirWeaponsLevel1">
-        <EffectArray index="1" Operation="Set" Reference="Weapon,IonCannons,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
-        <EffectArray index="2" Reference="Weapon,ScoutGround,Level"/>
-        <EffectArray index="3" Operation="Multiply" Reference="Effect,ScoutGround,Amount" Value="2"/>
-        <EffectArray index="4" Reference="Weapon,ScoutAir,Level"/>
-        <EffectArray index="5" Operation="Multiply" Reference="Effect,ScoutAirU,Amount" Value="1.5"/>
-        <EffectArray index="6" Reference="Weapon,UrunEnergyBeam,Level" Value="1"/>
-        <EffectArray index="7" Operation="Set" Reference="Weapon,ScoutGround,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,ScoutAir,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,UrunEnergyBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds"/>
-        <EffectArray index="10" Reference="Weapon,IonCannons,RateMultiplier" Value="0.5"/>
-        <EffectArray index="11" Reference="Weapon,UrunEnergyBeam,RateMultiplier" Value="0.5"/>
+        <EffectArray index="1" Reference="Weapon,ScoutGround,Level"/>
+        <EffectArray index="2" Operation="Multiply" Reference="Effect,ScoutGround,Amount" Value="2"/>
+        <EffectArray index="3" Reference="Weapon,ScoutAir,Level"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,ScoutAirU,Amount" Value="1.5"/>
+        <EffectArray index="5" Reference="Weapon,UrunEnergyBeam,Level" Value="1"/>
+        <EffectArray index="6" Reference="Weapon,IonCannons,RateMultiplier" Value="0.5"/>
+        <EffectArray index="7" Reference="Weapon,UrunEnergyBeam,RateMultiplier" Value="0.5"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
         <EffectArray index="14" removed="1"/>
@@ -638,21 +638,21 @@
         <EffectArray index="5" Reference="Weapon,InterceptorBeam,Level" Value="1"/>
         <EffectArray index="6" Operation="Multiply" Reference="Effect,InterceptorBeamDamage,Amount" Value="1.3"/>
         <EffectArray index="7" Reference="Weapon,InterceptorsDummy,Level" Value="1"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,PrismaticBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,InterceptorBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds"/>
-        <EffectArray index="10" Reference="Weapon,MohandarPrismaticBeam,Level"/>
-        <EffectArray index="11" Operation="Multiply" Reference="Effect,MohandarMUx1,Amount" Value="1.4"/>
-        <EffectArray index="12" Operation="Multiply" Reference="Effect,MohandarMUx2,Amount" Value="1.4"/>
-        <EffectArray index="13" Operation="Multiply" Reference="Effect,MohandarMUx3,Amount" Value="1.4"/>
-        <EffectArray index="14" Operation="Add" Reference="Weapon,SelendisInterceptorBeam,Level" Value="1"/>
-        <EffectArray index="15" Operation="Multiply" Reference="Effect,SelendisInterceptorU,Amount" Value="1.3"/>
-        <EffectArray index="16" Operation="Add" Reference="Weapon,SelendisInterceptor,Level" Value="1"/>
-        <EffectArray index="17" Reference="Weapon,MohandarPrismaticBeam,Icon"/>
-        <EffectArray index="18" Operation="Set" Reference="Weapon,SelendisInterceptorBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds"/>
-        <EffectArray index="19" Operation="Set" Reference="Effect,PrismaticBeamChargeEffect01,PeriodCount" Value="3"/>
-        <EffectArray index="20" Operation="Set" Reference="Effect,PrismaticBeamChargeEffect02,PeriodCount" Value="3"/>
-        <EffectArray index="21" Operation="Set" Reference="Effect,MohandarChargeEffect01,PeriodCount"/>
-        <EffectArray index="22" Operation="Set" Reference="Effect,MohandarChargeEffect02,PeriodCount"/>
+        <EffectArray index="8" Reference="Weapon,MohandarPrismaticBeam,Level"/>
+        <EffectArray index="9" Operation="Multiply" Reference="Effect,MohandarMUx1,Amount" Value="1.4"/>
+        <EffectArray index="10" Operation="Multiply" Reference="Effect,MohandarMUx2,Amount" Value="1.4"/>
+        <EffectArray index="11" Operation="Multiply" Reference="Effect,MohandarMUx3,Amount" Value="1.4"/>
+        <EffectArray index="12" Reference="Weapon,SelendisInterceptorBeam,Level"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Effect,SelendisInterceptorU,Amount" Value="1.3"/>
+        <EffectArray index="14" Operation="Add" Reference="Weapon,SelendisInterceptor,Level" Value="1"/>
+        <EffectArray index="15" Reference="Effect,PrismaticBeamChargeEffect01,PeriodCount" Value="3"/>
+        <EffectArray index="16" Reference="Effect,PrismaticBeamChargeEffect02,PeriodCount" Value="3"/>
+        <EffectArray index="17" Reference="Effect,MohandarChargeEffect01,PeriodCount" Value="1"/>
+        <EffectArray index="18" Operation="Set" Reference="Effect,MohandarChargeEffect02,PeriodCount" Value="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
         <EffectArray index="23" removed="1"/>
         <EffectArray index="24" removed="1"/>
         <EffectArray index="25" removed="1"/>
@@ -683,31 +683,31 @@
         <EffectArray index="4" Reference="Weapon,InterceptorsDummy,Level"/>
         <EffectArray index="5" Reference="Weapon,MothershipBeam,Level" Value="1"/>
         <EffectArray index="6" Operation="Multiply" Reference="Effect,MothershipBeamDamage,Amount" Value="1.5"/>
-        <EffectArray index="7" Operation="Set" Reference="Weapon,IonCannons,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,InterceptorBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,MothershipBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="10" Operation="Multiply" Reference="Effect,Tychus05HeroMothershipBeamDamage,Amount" Value="1.5"/>
-        <EffectArray index="11" Reference="Weapon,Tychus05HeroMothershipBeam,Level"/>
-        <EffectArray index="12" Operation="Multiply" Reference="Effect,PurifierBeamDamage,Amount" Value="1.25"/>
-        <EffectArray index="13" Reference="Weapon,PurifierWeapon,Level" Value="1"/>
-        <EffectArray index="14" Operation="Add" Reference="Weapon,ScoutAir,Level" Value="1"/>
-        <EffectArray index="15" Operation="Add" Reference="Weapon,UrunEnergyBeam,Level" Value="1"/>
-        <EffectArray index="16" Operation="Multiply" Reference="Effect,UrunEnergyBeamDamage,Amount" Value="1.25"/>
-        <EffectArray index="17" Operation="Add" Reference="Weapon,ArtanisBeam,Level" Value="1"/>
-        <EffectArray index="18" Operation="Multiply" Reference="Effect,ArtanisBeamDamage,Amount" Value="1.5"/>
-        <EffectArray index="19" Reference="Weapon,SelendisInterceptorBeam,Level"/>
-        <EffectArray index="20" Reference="Weapon,SelendisInterceptor,Level" Value="1"/>
-        <EffectArray index="21" Operation="Set" Reference="Weapon,Tychus05HeroMothershipBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="22" Operation="Set" Reference="Weapon,PurifierWeapon,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="23" Operation="Set" Reference="Weapon,ScoutAir,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="24" Operation="Set" Reference="Weapon,UrunEnergyBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="25" Operation="Set" Reference="Weapon,ArtanisBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="26" Operation="Set" Reference="Weapon,SelendisInterceptorBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds"/>
-        <EffectArray index="27" Reference="Weapon,InterceptorBeam,RateMultiplier" Value="0.5"/>
-        <EffectArray index="28" Reference="Weapon,InterceptorsDummy,RateMultiplier" Value="0.5"/>
-        <EffectArray index="29" Reference="Weapon,SelendisInterceptorBeam,RateMultiplier" Value="0.5"/>
-        <EffectArray index="30" Reference="Weapon,SelendisInterceptor,RateMultiplier" Value="0.5"/>
-        <EffectArray index="31" Reference="Weapon,ScoutAir,RateMultiplier" Value="0.25"/>
+        <EffectArray index="7" Operation="Multiply" Reference="Effect,Tychus05HeroMothershipBeamDamage,Amount" Value="1.5"/>
+        <EffectArray index="8" Reference="Weapon,Tychus05HeroMothershipBeam,Level"/>
+        <EffectArray index="9" Operation="Multiply" Reference="Effect,PurifierBeamDamage,Amount" Value="1.25"/>
+        <EffectArray index="10" Reference="Weapon,PurifierWeapon,Level"/>
+        <EffectArray index="11" Reference="Weapon,ScoutAir,Level"/>
+        <EffectArray index="12" Reference="Weapon,UrunEnergyBeam,Level"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Effect,UrunEnergyBeamDamage,Amount" Value="1.25"/>
+        <EffectArray index="14" Operation="Add" Reference="Weapon,ArtanisBeam,Level" Value="1"/>
+        <EffectArray index="15" Operation="Multiply" Reference="Effect,ArtanisBeamDamage,Amount" Value="1.5"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,SelendisInterceptorBeam,Level" Value="1"/>
+        <EffectArray index="17" Operation="Add" Reference="Weapon,SelendisInterceptor,Level" Value="1"/>
+        <EffectArray index="18" Reference="Weapon,InterceptorBeam,RateMultiplier" Value="0.5"/>
+        <EffectArray index="19" Reference="Weapon,InterceptorsDummy,RateMultiplier" Value="0.5"/>
+        <EffectArray index="20" Reference="Weapon,SelendisInterceptorBeam,RateMultiplier" Value="0.5"/>
+        <EffectArray index="21" Reference="Weapon,SelendisInterceptor,RateMultiplier" Value="0.5"/>
+        <EffectArray index="22" Reference="Weapon,ScoutAir,RateMultiplier" Value="0.25"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
+        <EffectArray index="31" removed="1"/>
         <EffectArray index="32" removed="1"/>
         <EffectArray index="33" removed="1"/>
         <EffectArray index="34" removed="1"/>
@@ -828,19 +828,19 @@
         <EffectArray index="32" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossGroundWeaponsLevel1">
-        <EffectArray index="0" Operation="Set" Reference="Weapon,DisruptionBeam,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
-        <EffectArray index="1" Operation="Multiply" Reference="Effect,DisruptionBeamDamage,Amount" Value="1.2"/>
-        <EffectArray index="2" Reference="Weapon,ParticleDisruptors,Level"/>
-        <EffectArray index="3" Operation="Multiply" Reference="Effect,ParticleDisruptorsU,Amount" Value="1.5"/>
-        <EffectArray index="4" Reference="Weapon,PsionicShockwave,Level"/>
-        <EffectArray index="5" Operation="Multiply" Reference="Effect,PsionicShockwaveDamage,Amount" Value="1.3"/>
-        <EffectArray index="6" Operation="Set" Reference="Weapon,ParticleDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Weapon,PsionicShockwave,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
-        <EffectArray index="8" Reference="Weapon,Zeratul,Level" Value="1"/>
-        <EffectArray index="9" Operation="Multiply" Reference="Effect,Zeratul,Amount" Value="1.3"/>
-        <EffectArray index="10" Reference="Effect,PsiDischargeDamage,Amount" Value="2"/>
-        <EffectArray index="11" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel1.dds"/>
-        <EffectArray index="12" Reference="Weapon,DisruptionBeam,Level" Value="1"/>
+        <EffectArray index="0" Operation="Multiply" Reference="Effect,DisruptionBeamDamage,Amount" Value="1.2"/>
+        <EffectArray index="1" Reference="Weapon,ParticleDisruptors,Level"/>
+        <EffectArray index="2" Operation="Multiply" Reference="Effect,ParticleDisruptorsU,Amount" Value="1.5"/>
+        <EffectArray index="3" Reference="Weapon,PsionicShockwave,Level"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,PsionicShockwaveDamage,Amount" Value="1.3"/>
+        <EffectArray index="5" Reference="Weapon,Zeratul,Level" Value="1"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,Zeratul,Amount" Value="1.3"/>
+        <EffectArray index="7" Reference="Effect,PsiDischargeDamage,Amount"/>
+        <EffectArray index="8" Reference="Weapon,DisruptionBeam,Level" Value="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
         <EffectArray index="14" removed="1"/>
         <EffectArray index="15" removed="1"/>
@@ -864,12 +864,12 @@
         <EffectArray index="3" Operation="Multiply" Reference="Effect,PhaseDisruptors,Amount" Value="1.3"/>
         <EffectArray index="4" Reference="Weapon,ThermalLances,Level"/>
         <EffectArray index="5" Operation="Multiply" Reference="Effect,ThermalLancesMU,Amount" Value="1.2"/>
-        <EffectArray index="6" Operation="Set" Reference="Weapon,PsiBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Weapon,PhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,ThermalLances,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
-        <EffectArray index="9" Reference="Weapon,Zeratul,Level"/>
-        <EffectArray index="10" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="1"/>
-        <EffectArray index="11" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel2.dds"/>
+        <EffectArray index="6" Reference="Weapon,Zeratul,Level"/>
+        <EffectArray index="7" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
         <EffectArray index="14" removed="1"/>
@@ -896,13 +896,13 @@
         <EffectArray index="5" Reference="Weapon,WarpBlades,Level" Value="1"/>
         <EffectArray index="6" Operation="Multiply" Reference="Effect,WarpBlades,Amount" Value="1.3"/>
         <EffectArray index="7" Reference="Effect,PsiBlades,AttributeFactor[Structure]" Value="0.5"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,PsiBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,ParticleDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
-        <EffectArray index="10" Operation="Set" Reference="Weapon,PhaseDisruptors,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
-        <EffectArray index="11" Operation="Set" Reference="Weapon,WarpBlades,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
-        <EffectArray index="12" Reference="Weapon,Zeratul,Level" Value="1"/>
-        <EffectArray index="13" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="2"/>
-        <EffectArray index="14" Operation="Set" Reference="Weapon,Zeratul,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
+        <EffectArray index="8" Reference="Weapon,Zeratul,Level" Value="1"/>
+        <EffectArray index="9" Reference="Effect,Zeratul,AttributeFactor[Structure]" Value="2"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
         <EffectArray index="15" removed="1"/>
         <EffectArray index="16" removed="1"/>
         <EffectArray index="17" removed="1"/>
@@ -2850,8 +2850,8 @@
         <EffectArray index="2" Reference="Effect,GlaiveWurmU3,Amount" Value="8"/>
         <EffectArray index="3" Reference="Weapon,ParasiteSpore,Level" Value="1"/>
         <EffectArray index="4" Operation="Multiply" Reference="Effect,ParasiteSporeDamage,Amount" Value="1.5"/>
-        <EffectArray index="5" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
-        <EffectArray index="6" Operation="Set" Reference="Weapon,ParasiteSpore,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level1.dds"/>
+        <EffectArray index="5" removed="1"/>
+        <EffectArray index="6" removed="1"/>
         <EffectArray index="7" removed="1"/>
         <EffectArray index="8" removed="1"/>
         <EffectArray index="9" removed="1"/>
@@ -2873,10 +2873,10 @@
         <EffectArray index="3" Reference="Effect,GlaiveWurmU3,AttributeFactor[Structure]" Value="1"/>
         <EffectArray index="5" Operation="Multiply" Value="1.3"/>
         <EffectArray index="6" Operation="Multiply" Value="1.3"/>
-        <EffectArray index="7" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,BroodlingStrike,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level2.dds"/>
-        <EffectArray index="9" Reference="Weapon,Suicide,Level"/>
-        <EffectArray index="10" Operation="Multiply" Reference="Effect,SuicideDamage,Amount" Value="1.3"/>
+        <EffectArray index="7" Reference="Weapon,Suicide,Level"/>
+        <EffectArray index="8" Operation="Multiply" Reference="Effect,SuicideDamage,Amount" Value="1.3"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
         <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
@@ -2892,13 +2892,13 @@
         <EffectArray index="1" Operation="Multiply" Value="1.5"/>
         <EffectArray index="2" Operation="Multiply" Value="1.5"/>
         <EffectArray index="3" Operation="Multiply" Value="1.5"/>
-        <EffectArray index="4" Operation="Set" Reference="Weapon,GlaiveWurm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
-        <EffectArray index="5" Operation="Multiply" Reference="Effect,LeviathanAirAttackDamage,Amount" Value="1.4"/>
-        <EffectArray index="6" Reference="Weapon,ScourgeSwarm,Level" Value="1"/>
-        <EffectArray index="7" Operation="Multiply" Reference="Effect,LeviathanGroundAttackDamage,Amount" Value="1.4"/>
-        <EffectArray index="8" Reference="Weapon,Tentacles,Level"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,ScourgeSwarm,Icon" Value="Assets\Textures\btn-upgrade-zerg-airattacks-level3.dds"/>
-        <EffectArray index="10" Reference="Weapon,Tentacles,Icon"/>
+        <EffectArray index="4" Operation="Multiply" Reference="Effect,LeviathanAirAttackDamage,Amount" Value="1.4"/>
+        <EffectArray index="5" Reference="Weapon,ScourgeSwarm,Level" Value="1"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,LeviathanGroundAttackDamage,Amount" Value="1.4"/>
+        <EffectArray index="7" Reference="Weapon,Tentacles,Level"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
         <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
@@ -3293,31 +3293,31 @@
         <EffectArray index="3" Operation="Multiply" Reference="Effect,NeedleClaws,Amount"/>
         <EffectArray index="4" Reference="Weapon,NeedleClaws,Level"/>
         <EffectArray index="5" Reference="Weapon,VolatileBurstDummy,Level" Value="1"/>
-        <EffectArray index="6" Operation="Set" Reference="Weapon,Claws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Weapon,NeedleClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,KaiserBlades,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,Ram,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="10" Operation="Multiply" Reference="Effect,InfestedAbomination,Amount" Value="1.5"/>
-        <EffectArray index="11" Reference="Weapon,InfestedAbomination,Level" Value="1"/>
-        <EffectArray index="12" Reference="Weapon,InfestedClaws,Level"/>
-        <EffectArray index="13" Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
-        <EffectArray index="14" Reference="Weapon,Omegalisk,Level" Value="1"/>
-        <EffectArray index="15" Operation="Multiply" Reference="Effect,Swarmling,Amount" Value="2"/>
-        <EffectArray index="16" Operation="Add" Reference="Weapon,Swarmling,Level" Value="1"/>
-        <EffectArray index="17" Operation="Multiply" Reference="Effect,Val03RazorTalonsDamage,Amount" Value="1.3"/>
-        <EffectArray index="18" Operation="Add" Reference="Weapon,Val03RazorTalons,Level" Value="1"/>
-        <EffectArray index="19" Operation="Multiply" Reference="Effect,ShockDDamage,Amount" Value="1.3"/>
-        <EffectArray index="20" Reference="Weapon,HybridD,Level"/>
-        <EffectArray index="21" Operation="Multiply" Reference="Effect,ShockEDamage,Amount" Value="1.3"/>
-        <EffectArray index="22" Reference="Weapon,HybridE,Level"/>
-        <EffectArray index="23" Operation="Set" Reference="Weapon,InfestedAbomination,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="24" Operation="Set" Reference="Weapon,InfestedClaws,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="25" Operation="Set" Reference="Weapon,OmegaliskHeadAttack,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="26" Operation="Set" Reference="Weapon,Omegalisk,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="27" Operation="Set" Reference="Weapon,Swarmling,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="28" Operation="Set" Reference="Weapon,Val03RazorTalons,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
-        <EffectArray index="29" Operation="Set" Reference="Weapon,HybridD,Icon" Value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
-        <EffectArray index="30" Operation="Set" Reference="Weapon,HybridE,Icon" Value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level3.dds"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Effect,InfestedAbomination,Amount" Value="1.5"/>
+        <EffectArray index="7" Reference="Weapon,InfestedAbomination,Level"/>
+        <EffectArray index="8" Reference="Weapon,InfestedClaws,Level" Value="1"/>
+        <EffectArray index="9" Reference="Weapon,OmegaliskHeadAttack,Level" Value="1"/>
+        <EffectArray index="10" Reference="Weapon,Omegalisk,Level" Value="1"/>
+        <EffectArray index="11" Operation="Multiply" Reference="Effect,Swarmling,Amount" Value="2"/>
+        <EffectArray index="12" Reference="Weapon,Swarmling,Level"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Effect,Val03RazorTalonsDamage,Amount" Value="1.3"/>
+        <EffectArray index="14" Reference="Weapon,Val03RazorTalons,Level" Value="1"/>
+        <EffectArray index="15" Operation="Multiply" Reference="Effect,ShockDDamage,Amount" Value="1.3"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,HybridD,Level" Value="1"/>
+        <EffectArray index="17" Operation="Multiply" Reference="Effect,ShockEDamage,Amount" Value="1.3"/>
+        <EffectArray index="18" Operation="Add" Reference="Weapon,HybridE,Level" Value="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
+        <EffectArray index="26" removed="1"/>
+        <EffectArray index="27" removed="1"/>
+        <EffectArray index="28" removed="1"/>
+        <EffectArray index="29" removed="1"/>
+        <EffectArray index="30" removed="1"/>
         <EffectArray index="31" removed="1"/>
         <EffectArray index="32" removed="1"/>
         <EffectArray index="33" removed="1"/>
@@ -3403,24 +3403,24 @@
         <EffectArray index="5" Reference="Weapon,AcidSaliva,RateMultiplier" Value="0.5"/>
         <EffectArray index="6" Reference="Weapon,AcidSpines,Level" Value="1"/>
         <EffectArray index="7" Reference="Weapon,InfestedGuassRifle,Level"/>
-        <EffectArray index="8" Operation="Set" Reference="Weapon,NeedleSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Weapon,Talons,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="10" Operation="Set" Reference="Weapon,AcidSaliva,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="11" Operation="Set" Reference="Weapon,AcidSpines,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="12" Reference="Weapon,InfestedGuassRifle,Icon"/>
-        <EffectArray index="13" Operation="Add" Reference="Weapon,InfestedTerranCampaign,Level" Value="1"/>
-        <EffectArray index="14" Operation="Add" Reference="Weapon,HunterKiller,RateMultiplier" Value="0.2"/>
-        <EffectArray index="15" Operation="Add" Reference="Weapon,HunterKillerMelee,RateMultiplier" Value="0.2"/>
-        <EffectArray index="16" Operation="Add" Reference="Weapon,HunterKiller,Level" Value="1"/>
-        <EffectArray index="17" Reference="Weapon,Lurker,Level" Value="1"/>
-        <EffectArray index="18" Operation="Multiply" Reference="Effect,Val03PsiBlastDamage,Amount" Value="1.3"/>
-        <EffectArray index="19" Reference="Weapon,Val03QueenOfBladesPsiBlast,Level" Value="1"/>
-        <EffectArray index="20" Operation="Set" Reference="Weapon,InfestedTerranCampaign,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="21" Operation="Set" Reference="Weapon,HunterKiller,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="22" Operation="Set" Reference="Weapon,Lurker,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="23" Operation="Set" Reference="Weapon,Val03QueenOfBladesPsiBlast,Icon" Value="Assets\Textures\btn-upgrade-zerg-missileattacks-level3.dds"/>
-        <EffectArray index="24" Reference="Weapon,NeedleSpines,RateMultiplier" Value="0.2"/>
-        <EffectArray index="25" Reference="Weapon,RoachMelee,RateMultiplier" Value="0.5"/>
+        <EffectArray index="8" Reference="Weapon,InfestedTerranCampaign,Level"/>
+        <EffectArray index="9" Reference="Weapon,HunterKiller,RateMultiplier" Value="0.2"/>
+        <EffectArray index="10" Reference="Weapon,HunterKillerMelee,RateMultiplier" Value="0.2"/>
+        <EffectArray index="11" Reference="Weapon,HunterKiller,Level"/>
+        <EffectArray index="12" Operation="Add" Reference="Weapon,Lurker,Level" Value="1"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Effect,Val03PsiBlastDamage,Amount" Value="1.3"/>
+        <EffectArray index="14" Operation="Add" Reference="Weapon,Val03QueenOfBladesPsiBlast,Level" Value="1"/>
+        <EffectArray index="15" Operation="Add" Reference="Weapon,NeedleSpines,RateMultiplier" Value="0.2"/>
+        <EffectArray index="16" Operation="Add" Reference="Weapon,RoachMelee,RateMultiplier" Value="0.5"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
+        <EffectArray index="20" removed="1"/>
+        <EffectArray index="21" removed="1"/>
+        <EffectArray index="22" removed="1"/>
+        <EffectArray index="23" removed="1"/>
+        <EffectArray index="24" removed="1"/>
+        <EffectArray index="25" removed="1"/>
         <EffectArray index="26" removed="1"/>
         <EffectArray index="27" removed="1"/>
         <EffectArray index="28" removed="1"/>
