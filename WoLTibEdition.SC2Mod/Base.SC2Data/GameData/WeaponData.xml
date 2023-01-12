@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+rocket:Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds
+rifle:Assets\Textures\longrange_coop.dds
+sniper:Assets\Textures\btn-ability-terran-snipe-color.dds
+conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
+-->
 <Catalog>
     <CWeaponLegacy id="90mmCannons">
         <AttackType value="Magic"/>
@@ -114,13 +120,16 @@
     <CWeaponLegacy id="AcidSpew">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSpines">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ArcliteShockCannon">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ArmageddonCannons">
@@ -131,12 +140,15 @@
     <CWeaponLegacy id="ArtanisBeam">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BacklashRockets">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BattleCruiserLoki">
@@ -157,12 +169,14 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <DamagePoint value="0.2"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="C10CanisterRifle">
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
+		<Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <Backswing value="0.125"/>
         <Tip value="Weapon/Tip/Sniper"/>
         <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -174,15 +188,18 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="Claws">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ColonistTransport">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CommandoRifle">
         <Tip value="Weapon/Tip/Rocket"/>
         <TargetFilters value="-;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CommandoSnipe">
         <EditorCategories value="Race:Terran"/>
@@ -195,6 +212,7 @@
         <Range value="12"/>
         <Period value="0"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="RaynorSnipeCreatePersistent"/>
@@ -213,6 +231,7 @@
         <Range value="7"/>
         <Period value="0"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="BonesTossGrenadeLaunchMissile"/>
@@ -223,10 +242,12 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="CrucioShockCannon">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="D8Charge">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Options index="Melee" value="1"/>
         <Range value="1"/>
         <AllowedMovement value="Moving"/>
@@ -382,6 +403,7 @@
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
@@ -403,6 +425,7 @@
         <Tip value="Weapon/Tip/Grenade"/>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThorDiamondback">
         <EditorCategories value="Race:Terran"/>
@@ -424,10 +447,12 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DuskWingBanshee">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ExplosiveCharges">
         <EditorCategories value=""/>
@@ -442,12 +467,14 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Firebat">
         <Range value="4"/>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <DamagePoint value="0"/>
         <Tip value="Weapon/Tip/Grenade"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
@@ -462,6 +489,7 @@
         <Range value="4"/>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -474,12 +502,14 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA">
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="9"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Cost>
@@ -490,11 +520,13 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="9"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathG">
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Cost>
@@ -505,12 +537,14 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle">
         <Tip value="Weapon/Tip/Rifle"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HighTemplarAttackDummy">
         <EditorCategories value=""/>
@@ -522,14 +556,17 @@
     <CWeaponLegacy id="HybridC">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridD">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HybridE">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ThorInfernalFlameThrower">
         <EditorCategories value="Race:Terran"/>
@@ -548,6 +585,7 @@
         </Marker>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <DamagePoint value="0.25"/>
         <Backswing value="0"/>
         <Effect value="InfernalFlameThrowerCP"/>
@@ -570,12 +608,14 @@
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Range value="5"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <AllowedMovement value="Moving"/>
         <MinScanRange value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="JavelinMissileLaunchers">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoesGround">
         <EditorCategories value="Race:Terran"/>
@@ -590,6 +630,7 @@
         <Arc value="5.625"/>
         <Period value="1"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Backswing value="0"/>
         <Effect value="LanzerTorpedoesG"/>
         <DamagePoint value="0.0834"/>
@@ -611,6 +652,7 @@
         <Range value="6"/>
         <Period value="1.5"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -632,6 +674,7 @@
         <Range value="6"/>
         <Period value="1"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -653,12 +696,14 @@
         <Range value="6"/>
         <Period value="1"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="HailstormLauncherLMMerc"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HailstormMissilePods">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HammerSecurity">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -667,12 +712,15 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ImpalerTentacle">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfernalFlameThrower">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Period value="0.5"/>
         <Tip value="Weapon/Tip/Grenade"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
@@ -681,19 +729,24 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedAbomination">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedClaws">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedGuassRifle">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedTerranCampaign">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Effect value="KaiserBladesDamage"/>
         <AcquireTargetSorts RequestCount="5">
             <SortArray value="TSDistance"/>
@@ -701,12 +754,14 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LanzerTorpedoes">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="7"/>
         <Period value="1"/>
@@ -714,6 +769,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="LongboltMissile">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HammerSecuritiesSquad">
@@ -744,6 +800,7 @@
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="0.05"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -770,15 +827,18 @@
     <CWeaponLegacy id="MothershipBeam">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleClaws">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Nova">
         <Tip value="Weapon/Tip/Sniper"/>
         <TargetFilters value="Visible;Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
+		<Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <Backswing value="0.125"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -792,13 +852,16 @@
     <CWeaponLegacy id="OdinAntiAir">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Omegalisk">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
+		<Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <Period value="1"/>
         <Backswing value="0.6"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
@@ -806,16 +869,19 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParticleDisruptors">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PerditionTurretFlamethrower">
         <Tip value="Weapon/Tip/Grenade"/>
         <Period value="0.5"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Range value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PhaseDisruptors">
@@ -826,11 +892,13 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PhotonCannon">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Predator">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PredatorShields">
         <EditorCategories value=""/>
@@ -842,10 +910,12 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="PsiBlades">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PsionicShockwave">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PunisherGrenades">
@@ -904,6 +974,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ConcussiveGrenades">
@@ -932,6 +1003,7 @@
         <Range value="6"/>
         <Period value="1.5"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="HailstormLauncherLM"/>
@@ -939,6 +1011,7 @@
     <CWeaponLegacy id="PurifierWeapon">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Effect value="PurifierBeamSearch"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
@@ -983,12 +1056,15 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ScoutAir">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ScoutGround">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Selendis">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -1006,6 +1082,7 @@
     <CWeaponLegacy id="ShrikeTurret">
         <DisplayAttackCount value="2"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Effect value="ShrikeTurretCP"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
@@ -1019,6 +1096,7 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="9"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
@@ -1026,11 +1104,13 @@
         <Tip value="Weapon/Tip/Rocket"/>
         <Range value="9"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SpartanCompanyG">
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
@@ -1038,6 +1118,7 @@
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Specter">
         <Tip value="Weapon/Tip/Sniper"/>
@@ -1045,6 +1126,7 @@
         <Range value="7"/>
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
+		<Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <Backswing value="0.125"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -1053,18 +1135,22 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealot">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="StoneZealotEyeBlast">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Talons">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TaurenSpaceMarineGaussRifle"/>
     <CWeaponLegacy id="ThermalLances">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Period value="1.65"/>
@@ -1078,6 +1164,7 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="ThrowMolotov">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Tosh">
         <Tip value="Weapon/Tip/Sniper"/>
@@ -1086,6 +1173,7 @@
         <Range value="7"/>
         <Period value="0.4"/>
         <AttackType value="Chaos"/>
+		<Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
         <Backswing value="0.125"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -1094,40 +1182,48 @@
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinIbiksCannon">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TychusChaingun">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <!--         <Effect value="TychusChaingun"/> -->
     </CWeaponLegacy>
     <CWeaponLegacy id="TychusCommandoChaingun">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="UrunEnergyBeam">
         <Tip value="Weapon/Tip/Rocket"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <AllowedMovement value="Moving"/>
         <MinScanRange value="5"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Val03QueenOfBladesPsiBlast">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Val03RazorTalons">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VolatileBurst">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Tip value="Weapon/Tip/Grenade"/>
         <AcquireFilters value="Ground,Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CWeaponLegacy>
@@ -1138,17 +1234,20 @@
     <!--                                                                                         -->
     <CWeaponLegacy id="VolatileBurstDummy">
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Vulture">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Period value="2.5"/>
         <Effect value="FragmentationGrenadeCP"/>
         <DisplayAttackCount value="2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VultureSpiderMines">
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarPigSquad">
         <EditorCategories value=""/>
@@ -1158,6 +1257,7 @@
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="0.8608"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -1171,6 +1271,7 @@
     <CWeaponLegacy id="WarbotA">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarbotB">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -1179,15 +1280,18 @@
     <CWeaponLegacy id="WarbotC">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarpBlades">
         <Tip value="Weapon/Tip/Grenade"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WraithA">
         <Tip value="Weapon/Tip/Rocket"/>
         <Period value="3.75"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Options index="LinkedCooldown" value="0"/>
@@ -1209,11 +1313,13 @@
     <CWeaponLegacy id="WreckingCrewAssault">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
+		<Icon value="Assets\Textures\longrange_coop.dds"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewFighter">
         <Tip value="Weapon/Tip/Rocket"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Range value="7"/>
         <Period value="1"/>
     </CWeaponLegacy>
@@ -1230,6 +1336,7 @@
         <Arc value="5.625"/>
         <Period value="1"/>
         <AttackType value="Siege"/>
+		<Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Backswing value="0"/>
         <Effect value="WreckingCrewFighterG"/>
     </CWeaponLegacy>
@@ -1237,6 +1344,7 @@
         <Tip value="Weapon/Tip/Grenade"/>
         <Period value="1"/>
         <AttackType value="Pierce"/>
+		<Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <Backswing value="0.6"/>
     </CWeaponLegacy>
 </Catalog>
