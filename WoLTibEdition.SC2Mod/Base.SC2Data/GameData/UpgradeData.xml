@@ -444,16 +444,16 @@
     <CUpgrade id="ProtossAirArmorsLevel1">
         <EffectArray index="8" Reference="Unit,Interceptor,LifeArmorLevel"/>
         <EffectArray index="9" Reference="Unit,Interceptor,LifeArmor"/>
-        <EffectArray index="10" Operation="Set" Reference="Actor,Observer,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds"/>
-        <EffectArray index="11" Operation="Set" Reference="Actor,Phoenix,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds"/>
-        <EffectArray index="12" Operation="Set" Reference="Actor,WarpPrism,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds"/>
-        <EffectArray index="13" Operation="Set" Reference="Actor,WarpPrismPhasing,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel1.dds"/>
-        <EffectArray index="14" Reference="Unit,Scout,LifeArmor" Value="1.000000"/>
-        <EffectArray index="15" Reference="Unit,Scout,LifeArmorLevel" Value="1"/>
-        <EffectArray index="16" Operation="Add" Reference="Unit,Urun,LifeArmor" Value="1.000000"/>
-        <EffectArray index="17" Operation="Add" Reference="Unit,Urun,LifeArmorLevel" Value="1"/>
-        <EffectArray index="18" Reference="Actor,Scout,LifeArmorIcon"/>
-        <EffectArray index="19" Reference="Actor,Urun,LifeArmorIcon"/>
+        <EffectArray index="10" Reference="Unit,Scout,LifeArmor" Value="1.000000"/>
+        <EffectArray index="11" Reference="Unit,Scout,LifeArmorLevel"/>
+        <EffectArray index="12" Reference="Unit,Urun,LifeArmor" Value="1.000000"/>
+        <EffectArray index="13" Reference="Unit,Urun,LifeArmorLevel"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
         <EffectArray index="20" removed="1"/>
         <EffectArray index="21" removed="1"/>
         <EffectArray index="22" removed="1"/>
@@ -488,22 +488,22 @@
         <EffectArray index="1" Reference="Unit,VoidRay,LifeArmor"/>
         <EffectArray index="2" Reference="Unit,Mothership,LifeArmorLevel"/>
         <EffectArray index="3" Reference="Unit,Mothership,LifeArmor" Value="1.000000"/>
-        <EffectArray index="4" Operation="Set" Reference="Actor,VoidRay,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel2.dds"/>
-        <EffectArray index="5" Operation="Set" Reference="Actor,Mothership,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel2.dds"/>
-        <EffectArray index="6" Reference="Unit,TalDarimMothership,LifeArmor" Value="1.000000"/>
-        <EffectArray index="7" Reference="Unit,TalDarimMothership,LifeArmorLevel"/>
-        <EffectArray index="8" Reference="Unit,Purifier,LifeArmor" Value="1.000000"/>
-        <EffectArray index="9" Reference="Unit,Purifier,LifeArmorLevel"/>
-        <EffectArray index="10" Reference="Unit,Scout,LifeArmor" Value="1.000000"/>
-        <EffectArray index="11" Reference="Unit,Scout,LifeArmorLevel"/>
-        <EffectArray index="12" Reference="Unit,Mohandar,LifeArmor" Value="1.000000"/>
-        <EffectArray index="13" Reference="Unit,Mohandar,LifeArmorLevel"/>
-        <EffectArray index="14" Reference="Unit,Artanis,LifeArmor" Value="1.000000"/>
-        <EffectArray index="15" Reference="Unit,Artanis,LifeArmorLevel" Value="1"/>
-        <EffectArray index="16" Reference="Actor,Tychus05HeroMothership,LifeArmorIcon"/>
-        <EffectArray index="17" Reference="Actor,Purifier,LifeArmorIcon"/>
-        <EffectArray index="18" Reference="Actor,Mohandar,LifeArmorIcon"/>
-        <EffectArray index="19" Reference="Actor,Artanis,LifeArmorIcon"/>
+        <EffectArray index="4" Reference="Unit,TalDarimMothership,LifeArmor" Value="1.000000"/>
+        <EffectArray index="5" Reference="Unit,TalDarimMothership,LifeArmorLevel"/>
+        <EffectArray index="6" Reference="Unit,Purifier,LifeArmor" Value="1.000000"/>
+        <EffectArray index="7" Reference="Unit,Purifier,LifeArmorLevel"/>
+        <EffectArray index="8" Reference="Unit,Scout,LifeArmor" Value="1.000000"/>
+        <EffectArray index="9" Reference="Unit,Scout,LifeArmorLevel"/>
+        <EffectArray index="10" Reference="Unit,Mohandar,LifeArmor" Value="1.000000"/>
+        <EffectArray index="11" Reference="Unit,Mohandar,LifeArmorLevel"/>
+        <EffectArray index="12" Reference="Unit,Artanis,LifeArmor" Value="1.000000"/>
+        <EffectArray index="13" Reference="Unit,Artanis,LifeArmorLevel"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
         <EffectArray index="20" removed="1"/>
         <EffectArray index="21" removed="1"/>
         <EffectArray index="22" removed="1"/>
@@ -540,20 +540,20 @@
         <EffectArray index="3" Reference="Unit,Carrier,LifeArmor"/>
         <EffectArray index="4" Reference="Unit,Interceptor,LifeArmorLevel"/>
         <EffectArray index="5" Reference="Unit,Interceptor,LifeArmor"/>
-        <EffectArray index="6" Operation="Set" Reference="Actor,Phoenix,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Actor,Carrier,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Actor,Interceptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds"/>
-        <EffectArray index="9" Operation="Multiply" Reference="Unit,Urun,LifeMax" Value="1.25"/>
-        <EffectArray index="10" Reference="Unit,Urun,LifeArmorLevel"/>
-        <EffectArray index="11" Reference="Unit,Selendis,LifeArmor" Value="1.000000"/>
-        <EffectArray index="12" Reference="Unit,Selendis,LifeArmorLevel"/>
-        <EffectArray index="13" Reference="Unit,SelendisInterceptor,LifeArmor" Value="1.000000"/>
-        <EffectArray index="14" Reference="Unit,SelendisInterceptor,LifeArmorLevel"/>
-        <EffectArray index="15" Operation="Set" Reference="Actor,Urun,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-airarmorlevel3.dds"/>
-        <EffectArray index="16" Reference="Actor,Selendis,LifeArmorIcon"/>
-        <EffectArray index="17" Reference="Actor,SelendisInterceptor,LifeArmorIcon"/>
-        <EffectArray index="18" Operation="Multiply" Reference="Unit,Phoenix,LifeStart" Value="1.25"/>
-        <EffectArray index="19" Operation="Multiply" Reference="Unit,Urun,LifeStart" Value="1.25"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Unit,Urun,LifeMax" Value="1.25"/>
+        <EffectArray index="7" Reference="Unit,Urun,LifeArmorLevel"/>
+        <EffectArray index="8" Reference="Unit,Selendis,LifeArmor" Value="1.000000"/>
+        <EffectArray index="9" Reference="Unit,Selendis,LifeArmorLevel"/>
+        <EffectArray index="10" Reference="Unit,SelendisInterceptor,LifeArmor" Value="1.000000"/>
+        <EffectArray index="11" Reference="Unit,SelendisInterceptor,LifeArmorLevel"/>
+        <EffectArray index="12" Operation="Multiply" Reference="Unit,Phoenix,LifeStart" Value="1.25"/>
+        <EffectArray index="13" Operation="Multiply" Reference="Unit,Urun,LifeStart" Value="1.25"/>
+        <EffectArray index="14" removed="1"/>
+        <EffectArray index="15" removed="1"/>
+        <EffectArray index="16" removed="1"/>
+        <EffectArray index="17" removed="1"/>
+        <EffectArray index="18" removed="1"/>
+        <EffectArray index="19" removed="1"/>
         <EffectArray index="20" removed="1"/>
         <EffectArray index="21" removed="1"/>
         <EffectArray index="22" removed="1"/>
@@ -729,15 +729,15 @@
         <EffectArray index="3" Reference="Unit,Immortal,LifeArmor" Value="1.000000"/>
         <EffectArray index="4" Reference="Unit,Colossus,LifeArmorLevel"/>
         <EffectArray index="5" Reference="Unit,Colossus,LifeArmor" Value="1"/>
-        <EffectArray index="6" Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Actor,HighTemplar,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
-        <EffectArray index="8" Reference="Unit,Zeratul,LifeArmor" Value="1.000000"/>
-        <EffectArray index="9" Reference="Unit,Zeratul,LifeArmorLevel" Value="1"/>
-        <EffectArray index="10" Reference="Unit,Karass,LifeArmor" Value="1.000000"/>
-        <EffectArray index="11" Reference="Unit,Karass,LifeArmorLevel"/>
-        <EffectArray index="12" Operation="Set" Reference="Actor,Zeratul,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
-        <EffectArray index="13" Operation="Set" Reference="Actor,Karass,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
-        <EffectArray index="14" Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel1.dds"/>
+        <EffectArray index="6" Reference="Unit,Zeratul,LifeArmor" Value="1.000000"/>
+        <EffectArray index="7" Reference="Unit,Zeratul,LifeArmorLevel"/>
+        <EffectArray index="8" Reference="Unit,Karass,LifeArmor" Value="1.000000"/>
+        <EffectArray index="9" Reference="Unit,Karass,LifeArmorLevel" Value="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
+        <EffectArray index="12" removed="1"/>
+        <EffectArray index="13" removed="1"/>
+        <EffectArray index="14" removed="1"/>
         <EffectArray index="15" removed="1"/>
         <EffectArray index="16" removed="1"/>
         <EffectArray index="17" removed="1"/>
@@ -764,10 +764,10 @@
         <EffectArray index="3" Reference="Unit,Stalker,LifeArmor"/>
         <EffectArray index="4" Reference="Unit,Immortal,LifeArmorLevel"/>
         <EffectArray index="5" Reference="Unit,Immortal,LifeArmor" Value="2"/>
-        <EffectArray index="6" Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Actor,Zeratul,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel2.dds"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
         <EffectArray index="10" removed="1"/>
         <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
@@ -799,12 +799,12 @@
         <EffectArray index="3" Operation="Multiply" Reference="Unit,Stalker,LifeMax" Value="1.4"/>
         <EffectArray index="4" Reference="Unit,Immortal,LifeArmorLevel"/>
         <EffectArray index="5" Operation="Multiply" Reference="Unit,Immortal,LifeMax" Value="1.4"/>
-        <EffectArray index="6" Operation="Set" Reference="Actor,Zealot,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Actor,Stalker,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Actor,Immortal,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-protoss-groundarmorlevel3.dds"/>
-        <EffectArray index="9" Operation="Multiply" Reference="Unit,Immortal,LifeStart" Value="1.4"/>
-        <EffectArray index="10" Operation="Multiply" Reference="Unit,Stalker,LifeStart" Value="1.4"/>
-        <EffectArray index="11" Operation="Multiply" Reference="Unit,Zealot,LifeStart" Value="1.4"/>
+        <EffectArray index="6" Operation="Multiply" Reference="Unit,Immortal,LifeStart" Value="1.4"/>
+        <EffectArray index="7" Operation="Multiply" Reference="Unit,Stalker,LifeStart" Value="1.4"/>
+        <EffectArray index="8" Operation="Multiply" Reference="Unit,Zealot,LifeStart" Value="1.4"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
         <EffectArray index="14" removed="1"/>
@@ -951,19 +951,70 @@
         <EffectArray index="59" Value="1.33"/>
         <EffectArray index="61" Value="1.33"/>
         <EffectArray index="63" Value="1.33"/>
-        <EffectArray index="96" Value="1.33"/>
-        <EffectArray index="98" Value="1.33"/>
-        <EffectArray index="100" Value="1.33"/>
-        <EffectArray index="102" Value="1.33"/>
-        <EffectArray index="104" Value="1.33"/>
-        <EffectArray index="106" Value="1.33"/>
-        <EffectArray index="108" Value="1.33"/>
-        <EffectArray index="110" Value="1.33"/>
-        <EffectArray index="113" Value="1.33"/>
-        <EffectArray index="114" Value="1.33"/>
-        <EffectArray index="117" Value="1.33"/>
-        <EffectArray index="119" Value="1.33"/>
-        <EffectArray index="121" Value="1.33"/>
+        <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="1.33"/>
+        <EffectArray index="65" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="1.33"/>
+        <EffectArray index="67" Operation="Add" Reference="Unit,Purifier,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="68" Operation="Add" Reference="Unit,Scout,ShieldArmor" Value="1.33"/>
+        <EffectArray index="69" Operation="Add" Reference="Unit,Scout,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="70" Operation="Add" Reference="Unit,Zeratul,ShieldArmor" Value="1.33"/>
+        <EffectArray index="71" Operation="Add" Reference="Unit,Zeratul,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="72" Operation="Add" Reference="Unit,Urun,ShieldArmor" Value="1.33"/>
+        <EffectArray index="73" Operation="Add" Reference="Unit,Urun,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="74" Operation="Add" Reference="Unit,Mohandar,ShieldArmor" Value="1.33"/>
+        <EffectArray index="75" Operation="Add" Reference="Unit,Mohandar,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="76" Operation="Add" Reference="Unit,Selendis,ShieldArmor" Value="1.33"/>
+        <EffectArray index="77" Operation="Add" Reference="Unit,Selendis,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="78" Operation="Add" Reference="Unit,Artanis,ShieldArmor" Value="1.33"/>
+        <EffectArray index="79" Operation="Add" Reference="Unit,Artanis,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="80" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="81" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmor" Value="1.33"/>
+        <EffectArray index="82" Operation="Add" Reference="Unit,Karass,ShieldArmor" Value="1.33"/>
+        <EffectArray index="83" Operation="Add" Reference="Unit,Karass,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="84" Operation="Add" Reference="Unit,Obelisk,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="85" Operation="Add" Reference="Unit,Obelisk,ShieldArmor" Value="1.33"/>
+        <EffectArray index="86" Operation="Add" Reference="Unit,HybridReaver,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="87" Operation="Add" Reference="Unit,HybridReaver,ShieldArmor" Value="1.33"/>
+        <EffectArray index="88" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="89" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmor" Value="1.33"/>
+        <EffectArray index="90" removed="1"/>
+        <EffectArray index="91" removed="1"/>
+        <EffectArray index="92" removed="1"/>
+        <EffectArray index="93" removed="1"/>
+        <EffectArray index="94" removed="1"/>
+        <EffectArray index="95" removed="1"/>
+        <EffectArray index="96" removed="1"/>
+        <EffectArray index="97" removed="1"/>
+        <EffectArray index="98" removed="1"/>
+        <EffectArray index="99" removed="1"/>
+        <EffectArray index="100" removed="1"/>
+        <EffectArray index="101" removed="1"/>
+        <EffectArray index="102" removed="1"/>
+        <EffectArray index="103" removed="1"/>
+        <EffectArray index="104" removed="1"/>
+        <EffectArray index="105" removed="1"/>
+        <EffectArray index="106" removed="1"/>
+        <EffectArray index="107" removed="1"/>
+        <EffectArray index="108" removed="1"/>
+        <EffectArray index="109" removed="1"/>
+        <EffectArray index="110" removed="1"/>
+        <EffectArray index="111" removed="1"/>
+        <EffectArray index="112" removed="1"/>
+        <EffectArray index="113" removed="1"/>
+        <EffectArray index="114" removed="1"/>
+        <EffectArray index="115" removed="1"/>
+        <EffectArray index="116" removed="1"/>
+        <EffectArray index="117" removed="1"/>
+        <EffectArray index="118" removed="1"/>
+        <EffectArray index="119" removed="1"/>
+        <EffectArray index="120" removed="1"/>
+        <EffectArray index="121" removed="1"/>
+        <EffectArray index="122" removed="1"/>
+        <EffectArray index="123" removed="1"/>
+        <EffectArray index="124" removed="1"/>
+        <EffectArray index="125" removed="1"/>
+        <EffectArray index="126" removed="1"/>
+        <EffectArray index="127" removed="1"/>
         <EffectArray index="128" removed="1"/>
         <EffectArray index="129" removed="1"/>
         <EffectArray index="130" removed="1"/>
@@ -2196,19 +2247,70 @@
         <EffectArray index="59" Value="2.667"/>
         <EffectArray index="61" Value="2.667"/>
         <EffectArray index="63" Value="2.667"/>
-        <EffectArray index="96" Value="2.667"/>
-        <EffectArray index="98" Value="2.667"/>
-        <EffectArray index="100" Value="2.667"/>
-        <EffectArray index="102" Value="2.667"/>
-        <EffectArray index="104" Value="2.667"/>
-        <EffectArray index="106" Value="2.667"/>
-        <EffectArray index="108" Value="2.667"/>
-        <EffectArray index="110" Value="2.667"/>
-        <EffectArray index="113" Value="2.667"/>
-        <EffectArray index="114" Value="2.667"/>
-        <EffectArray index="117" Value="2.667"/>
-        <EffectArray index="119" Value="2.667"/>
-        <EffectArray index="121" Value="2.667"/>
+        <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="2.667"/>
+        <EffectArray index="65" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="2.667"/>
+        <EffectArray index="67" Operation="Add" Reference="Unit,Purifier,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="68" Operation="Add" Reference="Unit,Scout,ShieldArmor" Value="2.667"/>
+        <EffectArray index="69" Operation="Add" Reference="Unit,Scout,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="70" Operation="Add" Reference="Unit,Zeratul,ShieldArmor" Value="2.667"/>
+        <EffectArray index="71" Operation="Add" Reference="Unit,Zeratul,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="72" Operation="Add" Reference="Unit,Urun,ShieldArmor" Value="2.667"/>
+        <EffectArray index="73" Operation="Add" Reference="Unit,Urun,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="74" Operation="Add" Reference="Unit,Mohandar,ShieldArmor" Value="2.667"/>
+        <EffectArray index="75" Operation="Add" Reference="Unit,Mohandar,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="76" Operation="Add" Reference="Unit,Selendis,ShieldArmor" Value="2.667"/>
+        <EffectArray index="77" Operation="Add" Reference="Unit,Selendis,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="78" Operation="Add" Reference="Unit,Artanis,ShieldArmor" Value="2.667"/>
+        <EffectArray index="79" Operation="Add" Reference="Unit,Artanis,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="80" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="81" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmor" Value="2.667"/>
+        <EffectArray index="82" Operation="Add" Reference="Unit,Karass,ShieldArmor" Value="2.667"/>
+        <EffectArray index="83" Operation="Add" Reference="Unit,Karass,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="84" Operation="Add" Reference="Unit,Obelisk,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="85" Operation="Add" Reference="Unit,Obelisk,ShieldArmor" Value="2.667"/>
+        <EffectArray index="86" Operation="Add" Reference="Unit,HybridReaver,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="87" Operation="Add" Reference="Unit,HybridReaver,ShieldArmor" Value="2.667"/>
+        <EffectArray index="88" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmorLevel" Value="1"/>
+        <EffectArray index="89" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmor" Value="2.667"/>
+        <EffectArray index="90" removed="1"/>
+        <EffectArray index="91" removed="1"/>
+        <EffectArray index="92" removed="1"/>
+        <EffectArray index="93" removed="1"/>
+        <EffectArray index="94" removed="1"/>
+        <EffectArray index="95" removed="1"/>
+        <EffectArray index="96" removed="1"/>
+        <EffectArray index="97" removed="1"/>
+        <EffectArray index="98" removed="1"/>
+        <EffectArray index="99" removed="1"/>
+        <EffectArray index="100" removed="1"/>
+        <EffectArray index="101" removed="1"/>
+        <EffectArray index="102" removed="1"/>
+        <EffectArray index="103" removed="1"/>
+        <EffectArray index="104" removed="1"/>
+        <EffectArray index="105" removed="1"/>
+        <EffectArray index="106" removed="1"/>
+        <EffectArray index="107" removed="1"/>
+        <EffectArray index="108" removed="1"/>
+        <EffectArray index="109" removed="1"/>
+        <EffectArray index="110" removed="1"/>
+        <EffectArray index="111" removed="1"/>
+        <EffectArray index="112" removed="1"/>
+        <EffectArray index="113" removed="1"/>
+        <EffectArray index="114" removed="1"/>
+        <EffectArray index="115" removed="1"/>
+        <EffectArray index="116" removed="1"/>
+        <EffectArray index="117" removed="1"/>
+        <EffectArray index="118" removed="1"/>
+        <EffectArray index="119" removed="1"/>
+        <EffectArray index="120" removed="1"/>
+        <EffectArray index="121" removed="1"/>
+        <EffectArray index="122" removed="1"/>
+        <EffectArray index="123" removed="1"/>
+        <EffectArray index="124" removed="1"/>
+        <EffectArray index="125" removed="1"/>
+        <EffectArray index="126" removed="1"/>
+        <EffectArray index="127" removed="1"/>
         <EffectArray index="128" removed="1"/>
         <EffectArray index="129" removed="1"/>
         <EffectArray index="130" removed="1"/>
@@ -2758,10 +2860,10 @@
         <EffectArray index="5" Reference="Unit,BroodLord,LifeArmor"/>
         <EffectArray index="6" Reference="Unit,BroodLordCocoon,LifeArmorLevel"/>
         <EffectArray index="7" Reference="Unit,BroodLordCocoon,LifeArmor"/>
-        <EffectArray index="8" Operation="Set" Reference="Actor,Mutalisk,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Actor,Corruptor,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
-        <EffectArray index="10" Operation="Set" Reference="Actor,BroodLord,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
-        <EffectArray index="11" Operation="Set" Reference="Actor,BroodLordCocoon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level1.dds"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
         <EffectArray index="14" removed="1"/>
@@ -2788,12 +2890,12 @@
         <EffectArray index="3" Reference="Unit,Overseer,LifeArmor"/>
         <EffectArray index="4" Reference="Unit,OverlordCocoon,LifeArmorLevel"/>
         <EffectArray index="5" Reference="Unit,OverlordCocoon,LifeArmor"/>
-        <EffectArray index="6" Operation="Set" Reference="Actor,Overlord,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
-        <EffectArray index="7" Operation="Set" Reference="Actor,Overseer,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
-        <EffectArray index="8" Operation="Set" Reference="Actor,OverlordCocoon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
-        <EffectArray index="9" Operation="Set" Reference="Actor,Scourge,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level2.dds"/>
-        <EffectArray index="10" Reference="Unit,Scourge,LifeArmor"/>
-        <EffectArray index="11" Reference="Unit,Scourge,LifeArmorLevel"/>
+        <EffectArray index="6" Reference="Unit,Scourge,LifeArmor"/>
+        <EffectArray index="7" Reference="Unit,Scourge,LifeArmorLevel"/>
+        <EffectArray index="8" removed="1"/>
+        <EffectArray index="9" removed="1"/>
+        <EffectArray index="10" removed="1"/>
+        <EffectArray index="11" removed="1"/>
         <EffectArray index="12" removed="1"/>
         <EffectArray index="13" removed="1"/>
         <EffectArray index="14" removed="1"/>
@@ -2818,11 +2920,11 @@
         <EffectArray index="1" Reference="Unit,BroodLord,LifeArmor"/>
         <EffectArray index="2" Reference="Unit,BroodLordCocoon,LifeArmorLevel"/>
         <EffectArray index="3" Reference="Unit,BroodLordCocoon,LifeArmor"/>
-        <EffectArray index="4" Operation="Set" Reference="Actor,BroodLord,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
-        <EffectArray index="5" Operation="Set" Reference="Actor,BroodLordCocoon,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
-        <EffectArray index="6" Reference="Unit,Leviathan,LifeArmor" Value="1.000000"/>
-        <EffectArray index="7" Reference="Unit,Leviathan,LifeArmorLevel"/>
-        <EffectArray index="8" Operation="Set" Reference="Actor,Leviathan,LifeArmorIcon" Value="Assets\Textures\btn-upgrade-zerg-flyercarapace-level3.dds"/>
+        <EffectArray index="4" Reference="Unit,Leviathan,LifeArmor" Value="1.000000"/>
+        <EffectArray index="5" Reference="Unit,Leviathan,LifeArmorLevel"/>
+        <EffectArray index="6" removed="1"/>
+        <EffectArray index="7" removed="1"/>
+        <EffectArray index="8" removed="1"/>
         <EffectArray index="9" removed="1"/>
         <EffectArray index="10" removed="1"/>
         <EffectArray index="11" removed="1"/>
