@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 rocket:Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds
-rifle:Assets\Textures\longrange_coop.dds
+rifle:Assets\Textures\talent-tychus-level12-ultimategear1.dds
 sniper:Assets\Textures\btn-ability-terran-snipe-color.dds
 conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
+cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
 -->
 <Catalog>
     <CWeaponLegacy id="90mmCannons">
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -21,6 +23,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <Marker Duration="0.225">
             <MatchFlags index="Link" value="1"/>
@@ -40,7 +43,6 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Options index="LinkedCooldown" value="0"/>
         <Options index="IgnoreThreat" value="1"/>
         <Options index="IgnoreAttackPriority" value="1"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <DisplayEffect value="ATALaserBatteryU"/>
         <TargetFilters value="Air,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquireTargetSorts RequestCount="1">
@@ -59,6 +61,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <MinimumRange value="6"/>
         <Backswing value="0"/>
@@ -71,6 +74,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RandomDelayMin value="-0.125"/>
         <RandomDelayMax value="0.125"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <Marker Duration="0.225" Link="Weapon/ATALaserBattery">
             <MatchFlags index="Link" value="1"/>
@@ -90,7 +94,6 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Options index="LinkedCooldown" value="0"/>
         <Options index="IgnoreThreat" value="1"/>
         <Options index="IgnoreAttackPriority" value="1"/>
-        <Icon value="Assets\Textures\btn-upgrade-terran-shipweaponslevel0.dds"/>
         <DisplayEffect value="ATSLaserBatteryU"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AcquireTargetSorts RequestCount="1">
@@ -109,12 +112,14 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <MinimumRange value="6"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSaliva">
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="AcidSpew">
@@ -135,6 +140,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="ArmageddonCannons">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ArtanisBeam">
@@ -144,7 +150,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BacklashRockets">
         <AttackType value="Siege"/>
@@ -157,15 +163,18 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Tip value="Weapon/Tip/Cannon"/>
         <Period value="0.2"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <LegacyOptions index="NoDeceleration" value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BroodlingEscort">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BroodlingStrike">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Brutalize">
         <AttackType value="Pierce"/>
@@ -193,7 +202,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="ColonistTransport">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="CommandoRifle">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -257,6 +266,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RandomDelayMax value="0.125"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Marker Duration="0.225" Link="Weapon/DRCannonsA">
             <MatchFlags index="Link" value="1"/>
             <MatchFlags index="CasterUnit" value="1"/>
@@ -293,6 +303,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         </Marker>
         <Period value="0.3374"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Effect value="DRBattlecruiserALM"/>
         <AllowedMovement value="Moving"/>
         <RandomDelayMin value="-0.125"/>
@@ -303,6 +314,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RandomDelayMin value="-0.125"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Marker Duration="0.225"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
@@ -310,6 +322,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RandomDelayMin value="-0.125"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Marker Duration="0.225"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
@@ -318,6 +331,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RandomDelayMax value="0.125"/>
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Options index="LinkedCooldown" value="0"/>
         <Marker Duration="0.225" Link="Weapon/DRCannonsG">
             <MatchFlags index="Link" value="1"/>
@@ -356,6 +370,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         </Marker>
         <Period value="0.3374"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Backswing value="0"/>
         <Effect value="DRBattlecruiserGLM"/>
         <AllowedMovement value="Moving"/>
@@ -364,6 +379,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="DRCannonsA">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Options index="Hidden" value="0"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -382,6 +398,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="DRCannonsG">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Options index="Hidden" value="0"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -410,6 +427,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="Diamondback">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Range value="7"/>
         <Effect value="DiamondbackCP"/>
     </CWeaponLegacy>
@@ -419,6 +437,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <MinimumRange value="0"/>
         <Period value="1"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Effect value="DutchConcussiveGrenadeLaunchMissile"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DutchTurretFlameThrower">
@@ -441,13 +460,14 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Range value="7"/>
         <Period value="2"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Backswing value="0"/>
         <Effect value="DiamondbackCP"/>
         <AcquirePrioritization value="ByAngle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DuskWingBanshee">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -502,7 +522,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="GlaiveWurm">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GoliathA">
@@ -526,7 +546,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Cost>
@@ -537,14 +557,14 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="GuassRifle">
         <Tip value="Weapon/Tip/Rifle"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HighTemplarAttackDummy">
         <EditorCategories value=""/>
@@ -593,14 +613,17 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponStrafe id="InterceptorBeam">
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponStrafe>
     <CWeaponLegacy id="InterceptorLaunch">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InterceptorsDummy">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="IonCannons">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -708,6 +731,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="HammerSecurity">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HydraliskMelee">
@@ -733,15 +757,15 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedClaws">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedGuassRifle">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedTerranCampaign">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="KaiserBlades">
         <Tip value="Weapon/Tip/Grenade"/>
@@ -754,7 +778,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="KelmorianMinerGaussRifle">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -781,6 +805,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Range value="6"/>
         <Period value="1"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -800,7 +825,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="0.05"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -821,6 +846,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <RangeSlop value="2"/>
         <Period value="0.6"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Backswing value="0.75"/>
         <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
@@ -848,6 +874,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="Odin">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="OdinAntiAir">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -887,6 +914,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="PhaseDisruptors">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
@@ -898,13 +926,14 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="Predator">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PredatorShields">
         <EditorCategories value=""/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PrismaticBeam">
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Range value="6"/>
         <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
@@ -921,6 +950,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="PunisherGrenades">
         <Period value="1"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
@@ -974,7 +1004,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="NeedleSpines">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ConcussiveGrenades">
@@ -985,6 +1015,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Range value="7"/>
         <Period value="1"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="ConcussiveGrenadesLM"/>
@@ -1016,6 +1047,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="RaynorGaussRifle">
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Period value="1"/>
         <Effect value="RailgunLaunch"/>
         <DamagePoint value="0.1"/>
@@ -1064,30 +1096,34 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="ScoutGround">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Selendis">
         <Tip value="Weapon/Tip/Cannon"/>
         <Period value="0.125"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SelendisInterceptor">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponStrafe id="SelendisInterceptorBeam">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponStrafe>
     <CWeaponLegacy id="ShrikeTurret">
         <DisplayAttackCount value="2"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Effect value="ShrikeTurretCP"/>
         <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="SiegeBreaker">
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
         <Tip value="Weapon/Tip/Cannon"/>
@@ -1110,7 +1146,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
     </CWeaponLegacy>
@@ -1118,7 +1154,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <Tip value="Weapon/Tip/Rifle"/>
         <Range value="7"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Specter">
         <Tip value="Weapon/Tip/Sniper"/>
@@ -1159,6 +1195,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="ThorsHammer">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Period value="1.28"/>
         <Options index="LinkedCooldown" value="0"/>
     </CWeaponLegacy>
@@ -1182,7 +1219,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="TwinGatlingCannon">
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Tip value="Weapon/Tip/Rifle"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
@@ -1194,13 +1231,13 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="TychusChaingun">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <!--         <Effect value="TychusChaingun"/> -->
     </CWeaponLegacy>
     <CWeaponLegacy id="TychusCommandoChaingun">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="UrunEnergyBeam">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -1257,7 +1294,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
         <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Period value="0.8608"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <DamagePoint value="0"/>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
@@ -1276,6 +1313,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="WarbotB">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarbotC">
         <Tip value="Weapon/Tip/Grenade"/>
@@ -1302,6 +1340,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="WraithG">
         <Tip value="Weapon/Tip/Cannon"/>
         <AttackType value="Magic"/>
+		<Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
         <Period value="3.75"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
@@ -1313,7 +1352,7 @@ conc:Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds
     <CWeaponLegacy id="WreckingCrewAssault">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
-		<Icon value="Assets\Textures\longrange_coop.dds"/>
+		<Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
         <Backswing value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WreckingCrewFighter">
