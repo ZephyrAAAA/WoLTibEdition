@@ -152,6 +152,11 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <AttackType value="Normal"/>
         <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="BabyUltralisk">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="BacklashRockets">
         <AttackType value="Siege"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
@@ -227,6 +232,10 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <LegacyOptions index="Uninterruptible" value="1"/>
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="OmegaliskHeadAttack">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Ram">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
