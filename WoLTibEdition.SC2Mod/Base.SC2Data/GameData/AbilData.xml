@@ -86,6 +86,19 @@
             <Flags index="AutoBuildOn" value="1"/>
         </InfoArray>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="CausticSpray">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CausticSprayBasePersistent"/>
+        <Flags index="DeferCooldown" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="45"/>
+        </Cost>
+        <TargetFilters value="Structure,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="2"/>
+        <TrackingArc value="0.9997"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CausticSpray"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ChronoDevice">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="RaynorTimeBombCreatePersistent"/>

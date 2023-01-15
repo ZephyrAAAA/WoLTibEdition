@@ -200,6 +200,7 @@
         <FlagArray index="PreventDestroy" value="1"/>
         <FlagArray index="UseLineOfSight" value="1"/>
         <FlagArray index="ArmySelect" value="1"/>
+        <Collide index="Structure" value="1"/>
         <Collide index="Burrow3" value="1"/>
         <Attributes index="Biological" value="1"/>
         <Acceleration value="1000"/>
@@ -351,6 +352,9 @@
             <ChanceArray index="Anim" value="50"/>
             <ChanceArray index="Idle" value="50"/>
         </Fidget>
+    </CUnit>
+    <CUnit id="CausticSprayMissile" parent="MISSILE_INVULNERABLE">
+        <Race value="Zerg"/>
     </CUnit>
     <CUnit id="CreepTumorInfested">
         <Race value="Zerg"/>
@@ -947,6 +951,7 @@
         <ArmorType value="Small"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AttackTargetPriority value="19"/>
     </CUnit>
     <CUnit id="BroodlingEscort">
         <ArmorType value="Small"/>
@@ -1643,6 +1648,13 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <EnergyStart value="0"/>
+        <EnergyMax value="0"/>
+        <EnergyRegenRate value="0"/>
+        <AbilArray index="0" Link="CausticSpray"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="CausticSpray" AbilCmd="CausticSpray,Execute"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="CorruptorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3524,8 +3536,8 @@
     <CUnit id="KerriganChar">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <LifeStart value="10000"/>
-        <LifeMax value="10000"/>
+        <LifeStart value="50000"/>
+        <LifeMax value="50000"/>
         <BehaviorArray index="1" Link="TValerian03QueenOfBladesDontDie"/>
         <BehaviorArray index="2" Link="Detector10"/>
         <BehaviorArray index="3" Link="CommandoSniperResist"/>
@@ -3534,8 +3546,8 @@
     <CUnit id="KerriganCharBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <LifeStart value="10000"/>
-        <LifeMax value="10000"/>
+        <LifeStart value="50000"/>
+        <LifeMax value="50000"/>
         <BehaviorArray index="1" Link="TValerian03QueenOfBladesDontDie"/>
         <BehaviorArray index="2" Link="Detector10"/>
         <BehaviorArray index="3" Link="CommandoSniperResist"/>

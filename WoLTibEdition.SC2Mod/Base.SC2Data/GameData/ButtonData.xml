@@ -75,6 +75,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-top-hornerhan-fleetcalldown.dds"/>
         <DefaultButtonLayout Row="2" Column="4"/>
     </CButton>
+    <CButton id="CausticSpray">
+        <Icon value="Assets\Textures\btn-ability-zerg-causticspray.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-causticspray.dds"/>
+        <EditorCategories value="Race:Zerg"/>
+    </CButton>
     <CButton id="Decal_Terran_0047_01">
         <Tooltip value="Button/Tooltip/Decal_Terran_0047_01"/>
         <AlertTooltip value="Button/Tooltip/Decal_Terran_0047_01"/>

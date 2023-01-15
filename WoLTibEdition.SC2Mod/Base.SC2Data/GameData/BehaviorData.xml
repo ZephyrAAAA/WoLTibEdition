@@ -14,6 +14,14 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification MoveSpeedMaximum="2.25"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="BioStasis">
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="0"/>
+            <ModifyFlags index="SuppressMoving" value="0"/>
+            <ModifyFlags index="SuppressTurning" value="0"/>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="Biosteel">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

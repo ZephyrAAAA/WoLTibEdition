@@ -117,6 +117,66 @@
         <On Terms="UnitBirth.BrutaliskBurrowed" Send="Create"/>
         <On Terms="UnitBirth.BrutaliskBurrowed" Send="AnimBracketStart Burrow Burrow IGNORE Unburrow ClosingFull,OpeningPlayForever,Instant"/>
     </CActorUnit>
+    <CActorAction id="CausticSprayDummyAttack" parent="GenericAttackBase">
+        <On Terms="Effect.CausticSprayBasePersistent.Start; At Caster" Send="Create"/>
+        <On Terms="Effect.CausticSprayDummy.Start; FromEffectTreeDescendant" Send="ActionDamage"/>
+        <On Terms="Effect.CausticSprayBasePersistent.Stop; At Caster; FromEffectTreeDescendant" Send="Destroy WhenReady"/>
+        <LaunchAttachQuery Methods="Weapon"/>
+        <ImpactSiteOps Ops="SOpAttachHarness SOpAttachVolumeNoVizEnhance SOpForwardLaunchGuide"/>
+        <ShieldFlashType value="None"/>
+        <ActionFlags index="AlignedImpactsAndDamages" value="1"/>
+        <ActionFlags index="ImpactMonitorsTeleports" value="1"/>
+        <ActionFlags index="LaunchForceSite" value="1"/>
+        <Lifetime value="-1.000000"/>
+    </CActorAction>
+    <CActorBeamSimple id="CausticSprayDummyAttackBeam" parent="BeamSimpleAnimationStyleContinuous">
+        <Macros value="ActionTargetTeleportDestroy"/>
+        <Supporter Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="Effect.CausticSprayBasePersistent.Stop; At Effect" Send="TimerSet 0.125000 DelayDestroy"/>
+        <On Terms="TimerExpired; TimerName DelayDestroy" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SetVisibility"/>
+        <Host Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <Model value="VoidRayAttackBeam"/>
+    </CActorBeamSimple>
+    <CActorAction id="CausticSprayLevel1" parent="GenericAttack" effectImpact="CausticLevel1Damage" effectLaunch="CausticSprayLevel1LaunchMissile">
+        <LaunchAttachQuery Methods="Weapon"/>
+        <Missile value="CausticSprayMissile"/>
+        <HostImpactSource Subject="CausticSprayDummyAttack" ReachAcrossEffectTrees="1"/>
+        <ImpactMap index="None" Model="CausticSprayImpact"/>
+        <AcquisitionYawHalfArc value="2.000000"/>
+        <AcquisitionPitchHalfArc value="2.000000"/>
+        <AccuracyHalfArc value="0.000000"/>
+    </CActorAction>
+    <CActorAction id="CausticSprayLevel2" parent="GenericAttack" effectImpact="CausticLevel2Damage" effectLaunch="CausticSprayLevel2LaunchMissile">
+        <LaunchAttachQuery Methods="Weapon"/>
+        <Missile value="CausticSprayMissile"/>
+        <HostImpactSource Subject="CausticSprayDummyAttack" ReachAcrossEffectTrees="1"/>
+        <ImpactMap index="None" Model="CausticSprayImpact"/>
+        <AcquisitionYawHalfArc value="2.000000"/>
+        <AcquisitionPitchHalfArc value="2.000000"/>
+        <AccuracyHalfArc value="0.000000"/>
+    </CActorAction>
+    <CActorMissile id="CausticSprayMissile" parent="GenericAttackMissile" unitName="CausticSprayMissile">
+        <Model value="CausticSprayWeapon"/>
+    </CActorMissile>
+    <CActorRange id="CausticSprayRange" parent="RangeAbil" abil="CausticSpray">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+    </CActorRange>
+    <CActorSound id="Corruptor_CausticSpray2Loop_ActorSound" parent="SoundContinuous">
+        <On Terms="Abil.CausticSpray.SourceChannelStart" Send="Create"/>
+        <On Terms="Abil.CausticSpray.SourceChannelStop" Send="Destroy"/>
+        <Sound value="Corruptor_CausticSpray2_Loop"/>
+    </CActorSound>
+    <CActorSound id="Corruptor_CausticSprayLaunch_ActorSound" parent="SoundOneShot">
+        <On Terms="Abil.CausticSpray.SourceChannelStart" Send="Create"/>
+        <Sound value="Corruptor_CausticSpray_Launch"/>
+    </CActorSound>
+    <CActorSound id="Corruptor_CausticSprayLoop_ActorSound" parent="SoundContinuous">
+        <On Terms="Abil.CausticSpray.SourceChannelStart" Send="Create"/>
+        <On Terms="Abil.CausticSpray.SourceChannelStop" Send="Destroy"/>
+        <Sound value="Corruptor_CausticSpray_Loop"/>
+    </CActorSound>
     <!-- Defensive Matrix Special Ability                                                        -->
     <CActorModel id="DefensiveMatrixModel">
         <HostSiteOps Ops="SOpAttachCenter"/>

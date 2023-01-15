@@ -245,6 +245,16 @@
         <ScaleMax value="2.250000,2.250000,2.250000"/>
         <ScaleMin value="2.250000,2.250000,2.250000"/>
     </CModel>
+    <CModel id="CausticSprayImpact2" parent="ImpactFX">
+        <Model value="Assets\Effects\Zerg\CausticSpray_Missile_Impact\CausticSpray_Missile_Impact.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Lighting value="CausticSprayImpact"/>
+    </CModel>
+    <CModel id="CausticSprayWeapon2" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\CausticSpray_Missile\CausticSpray_Missile.m3"/>
+        <EditorCategories value="Race:Zerg"/>
+        <Lighting value="CausticSprayWeapon"/>
+    </CModel>
     <CModel id="ConstructionCrane">
         <SelectionLayer value="2"/>
         <SelectionRadius value="2.150300"/>

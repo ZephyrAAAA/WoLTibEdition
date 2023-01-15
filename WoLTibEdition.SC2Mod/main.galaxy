@@ -116,7 +116,7 @@ void AddTopbarAbil(string abil) {
 	if (lv_i > 11) {
 		return;
 	}
-	//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Adding: " +abil+IntToString(lv_i+3)));
+	// UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Adding: " +abil+IntToString(lv_i+3)));
 	UnitAbilityAdd(topbarUnit, abil);
 	topbarAbils[lv_i] = abil;
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), true);
@@ -125,10 +125,10 @@ void AddTopbarAbil(string abil) {
 void RemoveTopbarAbil(string abil) {
 	int lv_i;
 	int lv_x;
-	if (!UnitAbilityExists(topbarUnit, abil)) {
-		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, does not have: " +abil));
-		//return;
-	}
+	// if (!UnitAbilityExists(topbarUnit, abil)) {
+		// UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("exiting, does not have: " +abil));
+		// return;
+	// }
 	for (lv_i = 0; topbarAbils[lv_i] != abil; lv_i += 1) {
 		if (lv_i == 11) {
 			UnitAbilityAdd(topbarUnit, abil);
@@ -147,7 +147,7 @@ void RemoveTopbarAbil(string abil) {
 	UnitAbilityRemove(topbarUnit, abil);
 	PlayerApplySkin(1, abil+IntToString(lv_i+3), false);
 	lv_i += 1;
-	UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("start: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
+	// UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("start: " +topbarAbils[lv_i]+IntToString(lv_i+3)));
 	for (lv_x = lv_i; lv_x < 12 && topbarAbils[lv_x] != null; lv_x += 1) {
 		UnitAbilityRemove(topbarUnit, topbarAbils[lv_x]);
 		TechTreeAbilityAllow(1, AbilityCommand(topbarAbils[lv_x], 0), false);
@@ -860,6 +860,11 @@ bool INI_Func (bool testConds, bool runActions) {
 	
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
 	topbarUnit = UnitLastCreated();
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Laser_Drill", ("AC1")), false);
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Chrono_Device", ("AC1")), false);
+	TechTreeAbilityAllow(1, ConversationDataStateAbilCmd("CCEditionPermanence|Dark_Templar", ("AC1")), false);
+	TechTreeAbilityAllow(1, AbilityCommand("ZergHypervirus", 0), false);
+	TechTreeAbilityAllow(1, AbilityCommand("CallInGoldenArmada", 0), false);
 	DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/FullscreenUpperContainer/CCGlobalCastingPanel");
 	topbarCastingPanel = DialogControlLastCreated();
 	DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
