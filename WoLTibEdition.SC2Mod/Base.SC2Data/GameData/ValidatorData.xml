@@ -21,6 +21,12 @@
         <WhichUnit Value="Caster"/>
         <Filters value="-;Stunned"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="CausticSprayTargetFilters">
+        <Filters value="Structure,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitOrderQueue id="ChannelingCausticSpray">
+        <AbilLink value="CausticSpray"/>
+    </CValidatorUnitOrderQueue>
     <CValidatorCombine id="DefensiveMatrixHostileCheckLT75%">
         <CombineArray index="1" value="CasterInCombat"/>
     </CValidatorCombine>
@@ -112,6 +118,11 @@
     <CValidatorUnitType id="IsStone">
         <Value value="Stone"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="NotChannelingCausticSpray">
+        <ResultFailed value="CantQueueThatOrder"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ChannelingCausticSpray"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="NotDefensiveMatrixd">
         <ResultFailed value="Error,Error/DefensiveMatrix"/>
         <Behavior value="DefensiveMatrix"/>
