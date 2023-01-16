@@ -1,22 +1,22 @@
 *Pause and Resume buttons have a tooltip now
 *The barracks now correctly refers to unlocking the shadow ops
-*Shadow Ops is now unlocked from the start.
+Shadow Ops is now unlocked from the start.
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
 Medivacs no borked
-*Jackson reigns in his horses
-*Interference matrix cost upped to 50 energy, lasts much shorter on heroic.
-*Defensive matrix is now ovoid
+Jackson reigns in his horses
+Interference matrix cost upped to 50 energy, lasts much shorter on heroic.
+Defensive matrix is now ovoid
 Merc subgroup priority is no longer wonky
 Neutral structures are now capturable in Fog of War.
 Removed debug messages.
 Reapers now get the drugs button when they should
 Zeratul's hotkeys no longer overlap
-*Tactical missile buffed to 200 damage.
-*Nuke damage buffed to 400 + 600 vs structures
-*DT topbar no longer lies about how many it spawns
-*Chrono Topbar now works on air units.
+Tactical missile buffed to 200 damage.
+Nuke damage buffed to 400 + 600 vs structures
+DT topbar no longer lies about how many it spawns
+Chrono Topbar now works on air units.
 *Thor theft has a proper tooltip now
-*Flying buildings no longer put away their armour
+Flying buildings no longer put away their armour
 
 Liberation Day:
 The bonus objective no longer teases you with money
@@ -57,9 +57,9 @@ Bel'shir:
 *The protoss now deploy small groups of 3-5 units throughout the map, and they make more of these groups as time goes on.
 
 In Utter Darkness:
-*DT Button no longer lies about archons
-*Sentry button is now accurate to the unit
-*Carrier and Colossus no longer share a hotkey.
+DT Button no longer lies about archons
+Sentry button is now accurate to the unit
+Carrier and Colossus no longer share a hotkey.
 
 Engine of Destruction:
 Loki objective now says it gives credits

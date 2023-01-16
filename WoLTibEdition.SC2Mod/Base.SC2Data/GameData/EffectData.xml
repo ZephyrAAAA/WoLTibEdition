@@ -228,6 +228,85 @@
         <EffectArray value="CaptureStructure"/>
         <EffectArray value="CaptureStructureKill"/>
     </CEffectSet>
+    <CEffectDamage id="CausticLevel1Damage">
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="1"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="CausticLevel2Damage">
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="CausticSprayBasePersistent">
+        <ValidatorArray value="NotChannelingCausticSpray"/>
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="CausticSprayLevel1PersistentSet"/>
+        <PeriodicValidator value="CausticSprayTargetFilters"/>
+        <PeriodicEffectArray value="CausticSprayDummy"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="CausticSprayDummy" parent="DU_WEAP_MISSILE"/>
+    <CEffectLaunchMissile id="CausticSprayLevel1LaunchMissile">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="CausticLevel1Damage"/>
+        <Flags index="Channeled" value="1"/>
+        <AmmoUnit value="CausticSprayMissile"/>
+        <Movers Link="MissileDefault" IfRangeLTE="3"/>
+        <Movers Link="CausticSprayMissileClose" IfRangeLTE="5"/>
+        <Movers Link="CausticSprayMissile" IfRangeLTE="-1"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="CausticSprayLevel1Persistent">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <FinalEffect value="CausticSprayLevel2Persistent"/>
+        <PeriodCount value="30"/>
+        <PeriodicValidator value="CausticSprayTargetFilters"/>
+        <PeriodicEffectArray value="CausticSprayLevel1LaunchMissile"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="CausticSprayLevel1PersistentSet">
+        <EffectArray value="CausticSprayDummy"/>
+        <EffectArray value="CausticSprayLevel1Persistent"/>
+        <EffectArray value="ChannelingCausticSprayAB"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="CausticSprayLevel2LaunchMissile">
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="CausticLevel2Damage"/>
+        <Flags index="Channeled" value="1"/>
+        <AmmoUnit value="CausticSprayMissile"/>
+        <Movers Link="MissileDefault" IfRangeLTE="3"/>
+        <Movers Link="CausticSprayMissileClose" IfRangeLTE="5"/>
+        <Movers Link="CausticSprayMissile" IfRangeLTE="-1"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="CausticSprayLevel2Persistent">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <PeriodicValidator value="CausticSprayTargetFilters"/>
+        <PeriodicEffectArray value="CausticSprayLevel2LaunchMissile"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="ChannelingCausticSprayAB">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ChannelingCausticSpray"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ChannelingCausticSprayRB">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ChannelingCausticSpray"/>
+    </CEffectRemoveBehavior>
     <CEffectCreatePersistent id="CollapsibleRockTowerCPFinalPurifier02">
         <EditorCategories value=""/>
         <Marker Link="Effect/CollapsibleRockTowerCPPurifier02"/>
@@ -1283,6 +1362,7 @@
         <EditorCategories value=""/>
         <DrainVital value="Energy"/>
         <RechargeVitalFraction value="0.5"/>
+        <Flags index="Channeled" value="0"/>
     </CEffectCreateHealer>
     <CEffectApplyBehavior id="NovaHealTimer">
         <EditorCategories value=""/>
@@ -1316,7 +1396,7 @@
         <EditorCategories value="Race:Zerg"/>
         <AttributeBonus index="Structure" value="100"/>
         <Kind value="Splash"/>
-        <Amount value="150"/>
+        <Amount value="200"/>
     </CEffectDamage>
     <CEffectEnumArea id="NuclearAnnihilationMengskSmallNukeDamageSearch">
         <SearchFilters value="-;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
@@ -1344,7 +1424,15 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="NukeDamage">
         <ArmorReduction value="1"/>
+        <AttributeBonus index="Structure" value="60"/>
+        <Amount value="40"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="NukeDetonate">
+        <InitialEffect value=""/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="NukeDamage"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
     <CEffectCreatePersistent id="NukePersistentTopbar">
         <EditorCategories value="Race:Terran"/>
         <Alert value="CalldownLaunchObserver"/>
@@ -1678,6 +1766,7 @@
     </CEffectEnumArea>
     <CEffectEnumArea id="RaynorTimeBombUnitSearchArea">
         <AreaArray index="0" Radius="5"/>
+        <SearchFilters value="-;Player,Destructible,Stasis,Dead,Invulnerable"/>
     </CEffectEnumArea>
     <CEffectEnumMagazine id="RemovePrecursorMercIterate">
         <EditorCategories value=""/>
@@ -2455,11 +2544,13 @@
         <PeriodicOffsetArray value="1,1,0"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeLargeStarter2">
+        <ValidatorArray value="TibNodeNonStarter"/>
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnitOrPoint"/>
         <Flags index="RandomOffset" value="1"/>
         <InitialEffect value="TibNodeLargeStarter22"/>
         <PeriodCount value="80"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
         <PeriodicEffectArray value="TibNodeLarge"/>
         <PeriodicOffsetArray value="-1,0,0"/>
         <PeriodicOffsetArray value="0,-1,0"/>
@@ -2470,14 +2561,16 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
-        <ValidatorArray value="TibNodeNonStarter"/>
-        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeLargeStarter22">
+        <ValidatorArray value="TibNodeNonStarter"/>
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnitOrPoint"/>
         <Flags index="RandomOffset" value="1"/>
+        <InitialDelay value="0.0625"/>
+        <InitialEffect value="TibNodeModelChangeSearch"/>
         <PeriodCount value="80"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
         <PeriodicEffectArray value="TibNodeLarge"/>
         <PeriodicOffsetArray value="-1,0,0"/>
         <PeriodicOffsetArray value="0,-1,0"/>
@@ -2488,10 +2581,6 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
-        <ValidatorArray value="TibNodeNonStarter"/>
-        <PeriodicValidator value="TibNodeNonStarter"/>
-        <InitialDelay value="0.0625"/>
-        <InitialEffect value="TibNodeModelChangeSearch"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="TibNodeMediumGrow">
         <EditorCategories value=""/>
@@ -2628,12 +2717,14 @@
         <Resources value="140"/>
     </CEffectModifyUnit>
     <CEffectCreatePersistent id="TibNodeLargeStarter">
+        <ValidatorArray value="TibNodeNonStarter"/>
         <EditorCategories value=""/>
         <WhichLocation Value="OriginUnitOrPoint"/>
         <Flags index="RandomOffset" value="1"/>
         <InitialEffect value="TibNodeLargeStarter2"/>
         <FinalEffect value="TibNodeLargeSearch"/>
         <PeriodCount value="80"/>
+        <PeriodicValidator value="TibNodeNonStarter"/>
         <PeriodicEffectArray value="TibNodeLarge"/>
         <PeriodicOffsetArray value="-1,0,0"/>
         <PeriodicOffsetArray value="0,-1,0"/>
@@ -2644,8 +2735,6 @@
         <PeriodicOffsetArray value="1,-1,0"/>
         <PeriodicOffsetArray value="1,1,0"/>
         <PeriodicPeriodArray value="0.0625"/>
-        <ValidatorArray value="TibNodeNonStarter"/>
-        <PeriodicValidator value="TibNodeNonStarter"/>
     </CEffectCreatePersistent>
     <CEffectCreateUnit id="TibNodeMedium">
         <EditorCategories value=""/>

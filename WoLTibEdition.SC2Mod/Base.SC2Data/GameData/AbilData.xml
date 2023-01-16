@@ -86,6 +86,19 @@
             <Flags index="AutoBuildOn" value="1"/>
         </InfoArray>
     </CAbilArmMagazine>
+    <CAbilEffectTarget id="CausticSpray">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CausticSprayBasePersistent"/>
+        <Flags index="DeferCooldown" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="45"/>
+        </Cost>
+        <TargetFilters value="Structure,Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="2"/>
+        <TrackingArc value="0.9997"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CausticSpray"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ChronoDevice">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="RaynorTimeBombCreatePersistent"/>
@@ -565,7 +578,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Flags index="ChannelingMinimum" value="0"/>
         <Cost>
-            <Vital index="Energy" value="40"/>
+            <Vital index="Energy" value="50"/>
         </Cost>
         <TargetFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Invulnerable"/>
         <Range value="9"/>
@@ -1054,7 +1067,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -1099,7 +1114,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2208,7 +2225,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2236,7 +2255,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2266,7 +2287,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2321,7 +2344,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2388,7 +2413,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>
@@ -2634,7 +2661,9 @@
                 <Location value="Unit"/>
             </Charge>
             <Cooldown Link="Abil/##id##"/>
-            <Button DefaultButtonFace="Marine"/>
+            <Button DefaultButtonFace="Marine">
+                <Flags index="IgnoreUser" value="1"/>
+            </Button>
             <Flags index="AutoBuild" value="1"/>
             <Flags index="AutoBuildOn" value="1"/>
             <Flags index="External" value="1"/>

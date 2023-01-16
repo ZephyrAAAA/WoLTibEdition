@@ -41,7 +41,6 @@
         <TechInfoUpgradeUsed value="TerranBuildingArmor"/>
     </CDataCollectionUnit>
     <CDataCollectionUnit id="Bunker2">
-        <EditorCategories value=""/>
         <DataRecord Entry="Unit,Bunker2"/>
         <DataRecord Entry="Actor,Bunker2"/>
         <DataRecord Entry="Actor,Bunker2Splat"/>
