@@ -50,11 +50,11 @@ Reduced infested building health a bit.
 
 The Dig:
 *Added a custom loss message for selling the drill.
-*The spike can no longer be claimed until you have the base
+The spike can no longer be claimed until you have the base
 
 Bel'shir:
-*Removed the counterattack system.
-*The protoss now deploy small groups of 3-5 units throughout the map, and they make more of these groups as time goes on.
+Removed the counterattack system.
+The protoss now deploy small groups of units throughout the map.
 
 In Utter Darkness:
 DT Button no longer lies about archons
