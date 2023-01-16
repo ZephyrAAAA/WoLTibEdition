@@ -783,7 +783,7 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	TechTreeAbilityAllow(1, AbilityCommand("MakeVultureSpiderMines", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("330mmBarrageCannons", 0), true);
 	//TechTreeAbilityAllow(1, AbilityCommand("EMPSpectre", 0), true);
-	// TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 7), ConversationDataStateGetValue("MissionCompletedCount") >= 3);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 7), ConversationDataStateGetValue("MissionCompletedCount") >= 2);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 7), ConversationDataStateGetValue("MissionCompletedCount") >= 3);
     TechTreeAbilityAllow(1, AbilityCommand("Barracks2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksAddOns", 0)));
     TechTreeAbilityAllow(1, AbilityCommand("Factory2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 5)) || ConversationDataStateGetValue("MissionCompletedCount") >= 3); //hellion
