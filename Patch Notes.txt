@@ -74,6 +74,7 @@ Media Blitz:
 *The convoy tip now says what happens if you complete a tower while a convoy is on the way
 *Some BCs are replaced by banshees in tower defense waves
 *Warfield now unleashes the predators
+*Fixed the ghost academy bonus not counting if you've killed one in the sneak attack
 
 Maw of the Void:
 Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
