@@ -25,6 +25,7 @@ Smash and Grab:
 *Tychus is the artifact, and complains about his rescue taking too long
 
 The Dig:
+*Added a custom loss message for selling the drill.
 *Tychus is the artifact
 
 The Moebius Factor:
@@ -79,6 +80,7 @@ Gates of Hell:
 
 Belly of the Beast:
 *Tychus is now riding fenix, and comments on it
+*Stetmann now says he will eat the queen
 
 Shatter the Sky:
 *Tychus says that hit the spot every time a platform blows

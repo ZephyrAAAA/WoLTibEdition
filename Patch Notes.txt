@@ -49,7 +49,6 @@ Messed around to reduce how much the 3 fields regrow
 Reduced infested building health a bit.
 
 The Dig:
-*Added a custom loss message for selling the drill.
 The spike can no longer be claimed until you have the base
 
 Bel'shir:
@@ -77,5 +76,6 @@ Media Blitz:
 *Fixed the ghost academy bonus not counting if you've killed one in the sneak attack
 
 Maw of the Void:
+Mommaship now has about 60% less health
 Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
 Each base now produces defense groups much faster, and starts with some based on difficulty.

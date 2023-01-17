@@ -21,6 +21,7 @@ Abil/Name/CCRepair=C&C Repair
 Abil/Name/CCSell=C&C Sell
 Abil/Name/CallDarkTemplar=Call Dark Templar
 Abil/Name/CallInGoldenArmada=Call In Golden Armada
+Abil/Name/CausticSpray=Caustic Spray
 Abil/Name/ChronoDevice=Chrono Device
 Abil/Name/CommandCenter2Land=Land (Command Center)
 Abil/Name/CommandCenter2LiftOff=Lift Off (Command Center)
@@ -153,6 +154,7 @@ Button/Name/CallInGoldenArmada6=Call In Golden Armada
 Button/Name/CallInGoldenArmada7=Call In Golden Armada
 Button/Name/CallInGoldenArmada8=Call In Golden Armada
 Button/Name/CallInGoldenArmada9=Call In Golden Armada
+Button/Name/CausticSpray=Caustic Spray
 Button/Name/ChronoDevice10=Chrono Device
 Button/Name/ChronoDevice11=Chrono Device
 Button/Name/ChronoDevice12=Chrono Device
@@ -356,18 +358,18 @@ Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of 
 Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
 Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
-Button/Tooltip/CallDarkTemplar10=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar11=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar12=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar13=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar14=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar3=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar4=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar5=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar6=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar7=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar8=Spawns 10 dark templar at the target location.
-Button/Tooltip/CallDarkTemplar9=Spawns 10 dark templar at the target location.
+Button/Tooltip/CallDarkTemplar10=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar11=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar12=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar13=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar14=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar3=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar4=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar5=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar6=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar7=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar8=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
+Button/Tooltip/CallDarkTemplar9=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
 Button/Tooltip/CallInGoldenArmada10=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada11=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada12=Calls in a portion of the golden armada to strafe across target area.
@@ -398,6 +400,7 @@ Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can
 Button/Tooltip/CommandCenter2=Primary structure. Used to train SCVs and receive gathered resources. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
 Button/Tooltip/Consumption=Drains half the life from a friendly biological unit and gives Tosh 2 energy and 2 life for each point of life drained.
+Button/Tooltip/DarkTemplar=Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
 Button/Tooltip/Decal_Terran_0047_01=Support structure. Used to construct buildings.
 Button/Tooltip/DefensiveMatrix=Surrounds the unit with a shield that can absorb <d ref="Behavior,DefensiveMatrix,DamageResponse.ModifyLimit"/> damage. Lasts <d ref="Behavior,DefensiveMatrix,Duration"/> seconds.
@@ -483,18 +486,18 @@ Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c v
 Button/Tooltip/NanoRepair=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals <d ref="Effect,NanoRepair,RechargeVitalRate"/> life per second for <d ref="Effect,NanoRepair,RechargeVitalRate*Effect,NanoRepair,DrainVitalCostFactor"/> energy.</c><n/><c val="#ColorAttackInfo">Up to 3 Science Vessels can heal the same target</c>
 Button/Tooltip/NovaHeal=Heals Nova.<n/><n/><c val="f078ff">Fully heals after a 5 second channel time.</c>
 Button/Tooltip/NovaSnipe=Fires a psi-charged bullet, dealing <d ref="Effect,NovaSnipe,Amount"/> damage.
-Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown11=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown12=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown13=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown14=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown3=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown4=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown5=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown6=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown7=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
-Button/Tooltip/NukeCalldown9=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to 300 (+200 vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown11=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown12=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown13=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown14=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown3=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown4=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown5=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown6=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown7=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
+Button/Tooltip/NukeCalldown9=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
 Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
@@ -550,6 +553,7 @@ Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked
 Button/Tooltip/Sell=Sells selected building for a partial refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
+Button/Tooltip/Sentry=Energy-manipulator unit. Can use Force Field, Guardian Shield, and Shield Restore.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Command Center
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
@@ -928,6 +932,14 @@ Effect/Name/BunkerUnloadSquad2=Bunker Unload Squad
 Effect/Name/CaptureStructure=Capture Structure
 Effect/Name/CaptureStructureKill=Capture Structure
 Effect/Name/CaptureStructureSet=Capture Structure
+Effect/Name/CausticLevel1Damage=Caustic Level 1 Damage
+Effect/Name/CausticLevel2Damage=Caustic Level 2 Damage
+Effect/Name/CausticSprayLevel1LaunchMissile=Caustic Spray Level 1 Launch Missile
+Effect/Name/CausticSprayLevel1Persistent=Caustic Spray Level 1 Persistent
+Effect/Name/CausticSprayLevel2LaunchMissile=Caustic Spray Level 2 Launch Missile
+Effect/Name/CausticSprayLevel2Persistent=Caustic Spray Level 2 Persistent
+Effect/Name/ChannelingCausticSprayAB=Channeling Caustic Spray AB
+Effect/Name/ChannelingCausticSprayRB=Channeling Caustic Spray RB
 Effect/Name/CollapsibleRockTowerCPFinalPurifier02=Collapsible Rock Tower CPFinal
 Effect/Name/CollapsibleRockTowerCPPurifier02=Collapsible Rock Tower CP
 Effect/Name/CollapsibleRockTowerCreateDebrisPurifier02=Collapsible Rock Tower Create Debris
@@ -1651,6 +1663,7 @@ Unit/Name/Bunker2=Bunker
 Unit/Name/BunkerSQ=Bunker
 Unit/Name/CCRepairDrone=Repair Drone
 Unit/Name/CCTopbar=C&C Topbar
+Unit/Name/CausticSprayMissile=Caustic Spray Missile
 Unit/Name/CollapsibleRockTowerPurifier02=Rock Tower
 Unit/Name/CommandCenter2=Command Center
 Unit/Name/Crane=Crane
