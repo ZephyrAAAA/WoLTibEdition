@@ -1,7 +1,4 @@
-*Pause and Resume buttons have a tooltip now
-*The barracks now correctly refers to unlocking the shadow ops
 Shadow Ops is now unlocked from the start.
-*Raynor's gun that is clearly not the same as the marine's is now named differently.
 Medivacs no borked
 Jackson reigns in his horses
 Interference matrix cost upped to 50 energy, lasts much shorter on heroic.
@@ -15,8 +12,11 @@ Tactical missile buffed to 200 damage.
 Nuke damage buffed to 400 + 600 vs structures
 DT topbar no longer lies about how many it spawns
 Chrono Topbar now works on air units.
-*Thor theft has a proper tooltip now
 Flying buildings no longer put away their armour
+*Thor theft has a proper tooltip now
+*Pause and Resume buttons have a tooltip now
+*The barracks now correctly refers to unlocking the shadow ops
+*Raynor's gun that is clearly not the same as the marine's is now named differently.
 
 Liberation Day:
 The bonus objective no longer teases you with money
@@ -59,6 +59,8 @@ In Utter Darkness:
 DT Button no longer lies about archons
 Sentry button is now accurate to the unit
 Carrier and Colossus no longer share a hotkey.
+*Repair drones are now carrier repair drones.
+*Warp Conduit is now the first hero
 
 Engine of Destruction:
 Loki objective now says it gives credits
