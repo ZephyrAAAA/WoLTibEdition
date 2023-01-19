@@ -578,18 +578,18 @@ Button/Tooltip/SupplyDepot=Provides power.<n/>Power allows buildings to work cor
 Button/Tooltip/SupplyDepot2=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 Button/Tooltip/SupplyDrop=Drops additional supplies, permanently increasing the power output of the target Supply Depot by <d ref="Behavior,SupplyDrop,Modification.Food"/>.
-Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike13=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike14=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike3=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike4=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike5=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike13=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike14=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike3=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike4=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike5=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TakeParts=Takes parts from targeted unit to improve the thor.
 Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
 Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
