@@ -1455,13 +1455,33 @@
         <On index="65" Terms="WeaponStart.TychusCommandoChaingun.AttackStart"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Tychus_Attack"/>
     </CActorUnit>
+    <CActorAction id="UrunAttackLeft">
+        <LaunchSite value="UrunSite"/>
+    </CActorAction>
+    <CActorAction id="UrunAttackRight">
+        <LaunchSite value="UrunSite"/>
+    </CActorAction>
+    <CActorSite id="UrunSite">
+        <EditorCategories value=""/>
+        <On Terms="ActorCreation.UrunModelAttachment" Send="Create"/>
+        <On Terms="ActorDestruction.UrunModelAttachment" Send="Destroy"/>
+        <Host Subject="UrunModelAttachment"/>
+        <HostSiteOps Ops="SOpAttachWeapon01"/>
+    </CActorSite>
     <!--                                                                                         -->
     <!-- Phoenix Hero (Urun) ................................................................... -->
     <!--                                                                                         -->
     <CActorUnit id="Urun">
-        <On index="64" removed="1"/>
-        <On index="65" removed="1"/>
+        <On index="64" Terms="ActorCreation" Send="SetOpacity"/>
+        <On index="65" Terms="ActorCreation" Send="Create UrunModelAttachment"/>
+        <Model value="Phoenix"/>
     </CActorUnit>
+    <CActorModel id="UrunModelAttachment" parent="ModelAddition">
+        <Inherits index="Opacity" value="0"/>
+        <EditorCategories value=""/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="Urun"/>
+    </CActorModel>
     <CActorUnit id="VikingAssault">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
