@@ -245,6 +245,17 @@
         <ScaleMax value="2.250000,2.250000,2.250000"/>
         <ScaleMin value="2.250000,2.250000,2.250000"/>
     </CModel>
+    <CModel id="CarrierRepairDrone" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Carrier_RepairDrone\Carrier_RepairDrone.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraLow05"/>
+        <SquibTypeDefault value="Metal"/>
+        <TechPurchaseCamera value="Star2CameraLow05"/>
+        <UnitGlossaryCamera value="Star2CameraLow05"/>
+    </CModel>
+    <CModel id="CarrierRepairDroneDeath" parent="UnitDeath" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Carrier_RepairDrone_Death\Carrier_RepairDrone_Death.m3"/>
+    </CModel>
     <CModel id="CausticSprayImpact2" parent="ImpactFX">
         <Model value="Assets\Effects\Zerg\CausticSpray_Missile_Impact\CausticSpray_Missile_Impact.m3"/>
         <EditorCategories value="Race:Zerg"/>
