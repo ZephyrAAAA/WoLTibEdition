@@ -79,5 +79,10 @@ Media Blitz:
 
 Maw of the Void:
 Mommaship now has about 60% less health
+Mommaship now has less health than shields, like she should.
+*Mommaship now hijacks one attack wave each loop to come attack you. She warps home after her shields are gone.
+*Mommaship now gains an ability or stats each momma attack wave.
+*Attack waves are now sent slightly more often after a base is killed, freeing up it's slot.
+*Attack waves now scale with time rather than killing bases.
 Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
 Each base now produces defense groups much faster, and starts with some based on difficulty.
