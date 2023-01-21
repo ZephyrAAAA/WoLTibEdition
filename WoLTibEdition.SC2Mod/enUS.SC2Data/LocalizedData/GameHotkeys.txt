@@ -47,6 +47,7 @@ Button/Hotkey/ResearchTitanEngines=T
 Button/Hotkey/ResetRally=E
 Button/Hotkey/ResumeQueue=U
 Button/Hotkey/SCV=C
+Button/Hotkey/SOAMothershipLineAttack=R
 Button/Hotkey/Scan=S
 Button/Hotkey/ScannerSweepTopbar7=
 Button/Hotkey/SendWave=W

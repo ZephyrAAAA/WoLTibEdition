@@ -69,6 +69,7 @@ Abil/Name/RepairDroneHeal=Repair
 Abil/Name/RepairDroneRestore=Shield Restore
 Abil/Name/RepairMechOrder=Repair
 Abil/Name/ResetRally=Reset Rally
+Abil/Name/SOAMothershipLineAttack=SOA Mothership Line Attack
 Abil/Name/ScannerSweepTopbar=Scanner Sweep
 Abil/Name/ScienceVesselDefensiveMatrix=Defensive Matrix
 Abil/Name/SendWave=Send Wave
@@ -269,6 +270,7 @@ Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResearchTitanEngines=Research Titan Engines
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
+Button/Name/SOAMothershipLineAttack=Thermal Lance
 Button/Name/ScannerSweepTopbar10=Scanner Sweep
 Button/Name/ScannerSweepTopbar11=Scanner Sweep
 Button/Name/ScannerSweepTopbar12=Scanner Sweep
@@ -538,6 +540,7 @@ Button/Tooltip/ResearchTitanEngines=Increases <c val="ffff8a">Battlecruiser</c> 
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/SOAMothershipLineAttack=Deals <d ref="Effect,SOAMothershipLineAttackDamage,Amount"/> damage to all enemies in a straight line up to 10 range away.
 Button/Tooltip/ScannerSweepTopbar10=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar11=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar12=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
@@ -1085,6 +1088,12 @@ Effect/Name/ResetRally=Reset Rally
 Effect/Name/RipFieldApplySlow=Rip Field
 Effect/Name/RipFieldSearch=Rip Field
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
+Effect/Name/SOAMothershipLineAttackCasterImpactDummy=SOAMothership Line Attack Caster Impact Dummy
+Effect/Name/SOAMothershipLineAttackCasterLM=SOAMothership Line Attack Caster 
+Effect/Name/SOAMothershipLineAttackDamage=SOAMothership Line Attack Damage
+Effect/Name/SOAMothershipLineAttackInitialCP=SOAMothership Line Attack Initial 
+Effect/Name/SOAMothershipLineAttackScanCP=SOAMothership Line Attack Scan 
+Effect/Name/SOAMothershipLineAttackSearch=SOAMothership Line Attack Search
 Effect/Name/ScoutAirFleet=Scout Air
 Effect/Name/ScoutAirLMLeftFleet=Scout Air LM Left
 Effect/Name/ScoutAirLMRightFleet=Scout Air LM Right
@@ -1690,6 +1699,7 @@ Unit/Name/ReaperSquad=Reaper Squad
 Unit/Name/Refinery2=Refinery
 Unit/Name/RefineryBounce=Refinery Bounce
 Unit/Name/SCV2=SCV
+Unit/Name/SOAMothershipLineAttackWeapon=SOA Mothership Line Attack Weapon
 Unit/Name/SensorTower2=Sensor Tower
 Unit/Name/Starport2=Starport
 Unit/Name/Stone=Stone

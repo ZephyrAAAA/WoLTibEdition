@@ -1304,6 +1304,32 @@
     <CActorModel id="RefineryPlacementModel">
         <On Terms="ActorCreation; ModelName RefineryPlacement; ValidatePlayer HaveAutoHarvester" Send="Create AutorefineryRange"/>
     </CActorModel>
+    <CActorAction id="SOAMothershipLineAttack" parent="GenericAttack" effectImpact="SOAMothershipLineAttackCasterImpactDummy" effectLaunch="SOAMothershipLineAttackCasterLM">
+        <LaunchSiteOps Ops="SOpCasterPoint SOpShadow"/>
+        <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow"/>
+    </CActorAction>
+    <CActorQuad id="SOAMothershipLineAttackGuide" parent="ZergGuideVisualQuadDown" abil="SOAMothershipLineAttack">
+        <LaunchActor value="ProtossGuideVisualQuadRedLaunch"/>
+        <CenterActor value="ProtossGuideVisualQuadRedCenter"/>
+        <ImpactActor value="ProtossGuideVisualQuadRedImpact"/>
+        <Height value="11.000000"/>
+        <Width value="2.000000"/>
+        <Decoration Actor="ProtossGuideVisualQuadRedDecoration" SpawnInterval="0.500000" TravelSpeed="10.000000">
+            <Flags index="UseLaunchActorScale" value="1"/>
+        </Decoration>
+    </CActorQuad>
+    <CActorMissile id="SOAMothershipLineAttackMissile" parent="GenericAttackMissile" unitName="SOAMothershipLineAttackWeapon">
+        <On Terms="ActorCreation" Send="Create SOAMothershipLineAttackMissileBeam"/>
+        <On Terms="ActorDestruction" Target="SOAMothershipLineAttackMissileBeam" Send="Destroy"/>
+    </CActorMissile>
+    <CActorBeamSimple id="SOAMothershipLineAttackMissileBeam" parent="BeamSimpleAnimationStyleContinuous">
+        <On Terms="ActorCreation" Send="Create VoidMothership_ThermalLance_AttackLaunchSound"/>
+        <On Terms="ActorDestruction" Send="Create VoidMothership_ThermalLance_BeamDeathSound"/>
+        <HostLaunch Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <HostLaunchSiteOps Ops="SOpAttachCenter"/>
+        <HostImpact Subject="_Missile"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
     <CActorSiteOpRotationExplicit id="SOpPointDownWorld">
         <Forward value="0.000000,0.000000,-1.000000"/>
     </CActorSiteOpRotationExplicit>

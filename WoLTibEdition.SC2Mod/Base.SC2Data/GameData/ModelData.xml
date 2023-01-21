@@ -409,6 +409,13 @@
     <CModel id="Flamethrower">
         <Model value="Assets\Models\Flamethrower.m3"/>
     </CModel>
+    <CModel id="SOAMothershipLineAttackMissileBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\Mothership_Taldarim_Thermal_Lance_Beam\Mothership_Taldarim_Thermal_Lance_Beam.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="SOAMothershipLineAttackWeapon" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\Mothership_Taldarim_Thermal_Lance_Beam_Impact\Mothership_Taldarim_Thermal_Lance_Beam_Impact.m3"/>
+    </CModel>
     <CModel id="Shield">
         <Model value="Assets\Models\Shield.m3"/>
         <Lighting value="Flamethrower"/>

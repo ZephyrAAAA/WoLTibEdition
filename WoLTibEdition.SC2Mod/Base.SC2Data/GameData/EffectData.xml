@@ -1912,6 +1912,48 @@
         <EditorCategories value=""/>
         <AreaArray Radius="40" Effect="RipFieldApplySlow"/>
     </CEffectEnumArea>
+    <CEffectSet id="SOAMothershipLineAttackCasterImpactDummy"/>
+    <CEffectLaunchMissile id="SOAMothershipLineAttackCasterLM">
+        <ValidatorArray index="0" value="CasterNotDead"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <LaunchEffect value="SOAMothershipLineAttackScanCP"/>
+        <ImpactEffect value="SOAMothershipLineAttackCasterImpactDummy"/>
+        <Flags index="2D" value="1"/>
+        <AmmoUnit value="SOAMothershipLineAttackWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="SOAMothershipLineAttackDamage">
+        <ValidatorArray value="noMarkers"/>
+        <EditorCategories value="Race:Protoss"/>
+        <Flags index="Notification" value="1"/>
+        <Amount value="200"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="SOAMothershipLineAttackInitialCP">
+        <WhichLocation Value="CasterPoint"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="SOAMothershipLineAttackCasterLM"/>
+        <PeriodicOffsetArray value="0,-10,0"/>
+        <PeriodicPeriodArray value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="SOAMothershipLineAttackScanCP">
+        <EditorCategories value="Race:Protoss"/>
+        <Marker>
+            <MatchFlags index="Id" value="1"/>
+        </Marker>
+        <WhichLocation Value="SourceUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="SOAMothershipLineAttackSearch"/>
+        <PeriodicPeriodArray value="0.0625"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="SOAMothershipLineAttackSearch">
+        <EditorCategories value="Race:Protoss"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="SOAMothershipLineAttackDamage"/>
+        <RevealerParams Duration="1" ShapeExpansion="0.5">
+            <RevealFlags index="Unfog" value="1"/>
+        </RevealerParams>
+    </CEffectEnumArea>
     <CEffectModifyUnit id="SalvageShared">
         <SalvageFactor>
             <Resource index="Minerals" value="-2"/>

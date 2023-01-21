@@ -658,6 +658,17 @@
         </Cost>
         <BehaviorArray index="0" value="SpectreCloakingFree"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="SOAMothershipLineAttack">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="SOAMothershipLineAttackInitialCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SOAMothershipLineAttack"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ScienceVesselDefensiveMatrix">
         <Alignment value="Positive"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
