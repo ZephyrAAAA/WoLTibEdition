@@ -6245,6 +6245,8 @@
             <LayoutButtons index="7" Face="FenixDragoonAirBomb" AbilCmd="FenixDragoonAirBomb,Execute" Column="2"/>
             <LayoutButtons Face="SOAMothershipLineAttack" Type="AbilCmd" AbilCmd="SOAMothershipLineAttack,Execute" Row="2" Column="1"/>
         </CardLayouts>
+        <EnergyMax value="300"/>
+        <TacticalAIThink value="AIThinkMum"/>
     </CUnit>
     <CUnit id="TalDarimPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

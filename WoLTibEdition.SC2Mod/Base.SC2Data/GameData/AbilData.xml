@@ -207,7 +207,7 @@
         <Effect index="0" value="FenixDragoonAirBombCP"/>
         <Cost>
             <Vital index="Energy" value="50"/>
-            <Cooldown Location="Unit" TimeUse="6"/>
+            <Cooldown Location="Unit" TimeUse="5"/>
         </Cost>
         <TargetFilters value="Air;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="11"/>
@@ -676,8 +676,9 @@
         <Flags index="AllowMovement" value="1"/>
         <Cost>
             <Vital index="Energy" value="50"/>
+            <Cooldown TimeUse="5"/>
         </Cost>
-        <Range value="500"/>
+        <Range value="9"/>
         <Arc value="360"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="SOAMothershipLineAttack"/>
     </CAbilEffectTarget>

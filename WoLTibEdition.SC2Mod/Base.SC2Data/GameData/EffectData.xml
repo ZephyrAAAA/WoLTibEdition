@@ -623,7 +623,7 @@
         <Marker Link="Effect/FenixDragoonAirBombDamage"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <Amount value="100"/>
+        <Amount value="150"/>
         <Death value="Blast"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="-;Player,Ally"/>
@@ -1944,7 +1944,7 @@
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value="Race:Protoss"/>
         <Flags index="Notification" value="1"/>
-        <Amount value="200"/>
+        <Amount value="150"/>
         <Death value="Fire"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="SOAMothershipLineAttackInitialCP">
