@@ -35,6 +35,7 @@ Abil/Name/Factory2Land=Land
 Abil/Name/Factory2LiftOff=Lift Off
 Abil/Name/Factory2Train=Train (Factory)
 Abil/Name/FeedbackGhost=Feedback
+Abil/Name/FenixDragoonAirBomb=Solarite Flare
 Abil/Name/FirebatSquad=Firebat Squad
 Abil/Name/FleetActivate=Fleet Activate
 Abil/Name/FungalGrowthBrutalisk=Fungal Growth
@@ -69,6 +70,7 @@ Abil/Name/RepairDroneHeal=Repair
 Abil/Name/RepairDroneRestore=Shield Restore
 Abil/Name/RepairMechOrder=Repair
 Abil/Name/ResetRally=Reset Rally
+Abil/Name/SOAMothershipLineAttack=SOA Mothership Line Attack
 Abil/Name/ScannerSweepTopbar=Scanner Sweep
 Abil/Name/ScienceVesselDefensiveMatrix=Defensive Matrix
 Abil/Name/SendWave=Send Wave
@@ -184,6 +186,7 @@ Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
+Button/Name/FenixDragoonAirBomb=Solarite Flare
 Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
@@ -269,6 +272,7 @@ Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResearchTitanEngines=Research Titan Engines
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
+Button/Name/SOAMothershipLineAttack=Thermal Lance
 Button/Name/ScannerSweepTopbar10=Scanner Sweep
 Button/Name/ScannerSweepTopbar11=Scanner Sweep
 Button/Name/ScannerSweepTopbar12=Scanner Sweep
@@ -426,6 +430,7 @@ Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enab
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
@@ -538,6 +543,7 @@ Button/Tooltip/ResearchTitanEngines=Increases <c val="ffff8a">Battlecruiser</c> 
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/SOAMothershipLineAttack=Deals <d ref="Effect,SOAMothershipLineAttackDamage,Amount"/> damage to all enemies in a straight line up to 10 range away.
 Button/Tooltip/ScannerSweepTopbar10=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar11=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar12=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
@@ -990,6 +996,7 @@ Effect/Name/FeedbackGhost=Feedback
 Effect/Name/FeedbackGhostDamage=Feedback
 Effect/Name/FeedbackSetGhost=Feedback
 Effect/Name/FeedbackSpectre=Feedback
+Effect/Name/FenixDragoonAirBombCP=FenixDragoonAirBombCP
 Effect/Name/FleetDummySearch=Fleet Dummy Search
 Effect/Name/FleetMovePhoenix=Fleet Move Phoenix
 Effect/Name/FleetMoveScout=Fleet Move Scout
@@ -1085,6 +1092,12 @@ Effect/Name/ResetRally=Reset Rally
 Effect/Name/RipFieldApplySlow=Rip Field
 Effect/Name/RipFieldSearch=Rip Field
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
+Effect/Name/SOAMothershipLineAttackCasterImpactDummy=SOAMothership Line Attack Caster Impact Dummy
+Effect/Name/SOAMothershipLineAttackCasterLM=SOAMothership Line Attack Caster 
+Effect/Name/SOAMothershipLineAttackDamage=SOAMothership Line Attack Damage
+Effect/Name/SOAMothershipLineAttackInitialCP=SOAMothership Line Attack Initial 
+Effect/Name/SOAMothershipLineAttackScanCP=SOAMothership Line Attack Scan 
+Effect/Name/SOAMothershipLineAttackSearch=SOAMothership Line Attack Search
 Effect/Name/ScoutAirFleet=Scout Air
 Effect/Name/ScoutAirLMLeftFleet=Scout Air LM Left
 Effect/Name/ScoutAirLMRightFleet=Scout Air LM Right
@@ -1160,6 +1173,7 @@ Effect/Name/TibNodeSmall=Tib Node Small
 Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
 Effect/Name/TibNodeSmallSearch=Tib Node Small Search
 Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
+Effect/Name/Tychus05HeroMothershipSecondarySearch=Mothership Secondary Weapon (Search)
 Effect/Name/TychusSpectreUltrasonicDamageLv1=TychusSpectreUltrasonicDamageLv1
 Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
 Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1
@@ -1690,6 +1704,7 @@ Unit/Name/ReaperSquad=Reaper Squad
 Unit/Name/Refinery2=Refinery
 Unit/Name/RefineryBounce=Refinery Bounce
 Unit/Name/SCV2=SCV
+Unit/Name/SOAMothershipLineAttackWeapon=SOA Mothership Line Attack Weapon
 Unit/Name/SensorTower2=Sensor Tower
 Unit/Name/Starport2=Starport
 Unit/Name/Stone=Stone

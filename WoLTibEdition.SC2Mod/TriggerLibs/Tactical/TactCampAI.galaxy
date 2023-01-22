@@ -991,7 +991,7 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 			c_unitAttributeNone
 		);
 	}
-	else if (UnitAbilityCheck(aiUnit, "FungalGrowthBrutalisk", true)) {
+	if (UnitAbilityCheck(aiUnit, "FungalGrowthBrutalisk", true)) {
 		ord = AICreateOrder(player, "FungalGrowthBrutalisk", 0);
 		//mark = "Abil/FungalGrowthBrutalisk/AI";
 		loc = AIBestTargetPoint(
@@ -1005,12 +1005,54 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 			c_unitAttributeNone
 		);
 	}
-	if (loc != null && UnitOrderIsValid(aiUnit, ord)) {
-		OrderSetTargetPoint(ord, loc);
-		AICast(aiUnit, ord, c_noMarker, c_castHold);
-	}
 	else if (UnitAbilityExists(aiUnit, "BurrowBrutalisk") && UnitGetChargeUsed(aiUnit, "Brutalisk") == 2) {
 		ord = AICreateOrder(player, "BurrowBrutalisk", 0);
 		AICast(aiUnit, ord, c_noMarker, c_castHold);
+	}
+}
+
+void AIThinkMum (int player, unit aiUnit, unitgroup scanGroup) {
+	marker mark;
+	order ord;
+	point loc;
+	if (UnitAbilityCheck(aiUnit, "FenixDragoonAirBomb", true)){
+		ord = AICreateOrder(player, "FenixDragoonAirBomb", 0);
+		//mark = "Abil/UnburrowAtPoint/AI";
+		loc = AIBestTargetPoint(
+			AIEffectGroup(player, "FenixDragoonAirBombSearch", scanGroup),
+			4, // min hits
+			AIEffectInt(player, "FenixDragoonAirBombAirDamage", c_fieldAmount), // damage base
+			3.0, // min score
+			AIEffectFixed(player, "FenixDragoonAirBombSearch", c_fieldAreaRadius0),
+			UnitGetPosition(aiUnit),
+			AIAbilityFixed(player, "FenixDragoonAirBomb", c_fieldRange0),
+			c_unitAttributeNone
+		);
+		if (loc != null && UnitOrderIsValid(aiUnit, ord)) {
+			OrderSetTargetPoint(ord, loc);
+			AICast(aiUnit, ord, c_noMarker, c_castHold);
+			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: air bomb"));
+			return;
+		}
+	}
+	if (UnitAbilityCheck(aiUnit, "SOAMothershipLineAttack", true)){
+		ord = AICreateOrder(player, "SOAMothershipLineAttack", 0);
+		//mark = "Abil/UnburrowAtPoint/AI";
+		loc = AIBestTargetPoint(
+			AIEffectGroup(player, "SOAMothershipLineAttackSearch", scanGroup),
+			3, // min hits
+			AIEffectInt(player, "SOAMothershipLineAttackDamage", c_fieldAmount), // damage base
+			2.0, // min score
+			AIEffectFixed(player, "SOAMothershipLineAttackSearch", c_fieldAreaRadius0),
+			UnitGetPosition(aiUnit),
+			AIAbilityFixed(player, "SOAMothershipLineAttack", c_fieldRange0),
+			c_unitAttributeNone
+		);
+		if (loc != null && UnitOrderIsValid(aiUnit, ord)) {
+			OrderSetTargetPoint(ord, loc);
+			AICast(aiUnit, ord, c_noMarker, c_castHold);
+			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: laser"));
+			return;
+		}
 	}
 }

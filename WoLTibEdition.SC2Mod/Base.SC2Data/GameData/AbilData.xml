@@ -203,6 +203,18 @@
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilEffectTarget id="FenixDragoonAirBomb">
+        <Effect index="0" value="FenixDragoonAirBombCP"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown Location="Unit" TimeUse="5"/>
+        </Cost>
+        <TargetFilters value="Air;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="11"/>
+        <Arc value="360"/>
+        <CursorEffect value="FenixDragoonAirBombSearch"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FenixDragoonChargedBuster"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="FleetActivate">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="FleetMoveSet"/>
@@ -658,6 +670,18 @@
         </Cost>
         <BehaviorArray index="0" value="SpectreCloakingFree"/>
     </CAbilBehavior>
+    <CAbilEffectTarget id="SOAMothershipLineAttack">
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Effect index="0" value="SOAMothershipLineAttackInitialCP"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SOAMothershipLineAttack"/>
+    </CAbilEffectTarget>
     <CAbilEffectTarget id="ScienceVesselDefensiveMatrix">
         <Alignment value="Positive"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

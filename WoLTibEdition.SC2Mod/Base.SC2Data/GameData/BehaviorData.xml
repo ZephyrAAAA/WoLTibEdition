@@ -326,6 +326,11 @@
         <Duration value="0.2"/>
         <AINotifyEffect value="SeekerMissileDamage"/>
     </CBehaviorBuff>
+    <CBehaviorAttackModifier id="TaldarimMothershipDoubleWeapon">
+        <Chance value="1"/>
+        <AttackModifierFlags index="NeverMiss" value="1"/>
+        <MultishotSearchPattern value="Tychus05HeroMothershipSecondarySearch"/>
+    </CBehaviorAttackModifier>
     <CBehaviorBuff id="TriggerHide">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Modification>

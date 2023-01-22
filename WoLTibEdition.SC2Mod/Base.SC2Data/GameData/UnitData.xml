@@ -405,6 +405,10 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="FenixDragoonAirBombWeapon" parent="MISSILE_INVULNERABLE">
+        <Race value="Prot"/>
+        <EditorCategories value="ObjectType:Projectile,ObjectFamily:FactionPurifier"/>
+    </CUnit>
     <CUnit id="FleetTargeter">
         <FlagArray index="Unselectable" value="1"/>
         <FlagArray index="Untargetable" value="1"/>
@@ -5213,6 +5217,11 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="SOAMothershipLineAttackWeapon" parent="MISSILE_INVULNERABLE">
+        <Race value="Prot"/>
+        <Mover value="MissileDefault"/>
+        <EditorCategories value="ObjectFamily:Campaign,ObjectType:Projectile"/>
+    </CUnit>
     <CUnit id="SS_BackgroundSpace00">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6229,6 +6238,15 @@
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
         <FogVisibility value="Visible"/>
         <Attributes index="Heroic" value="1"/>
+        <AbilArray index="4" Link="SOAMothershipLineAttack"/>
+        <AbilArray Link="FenixDragoonAirBomb"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" Face="WormholeTransit" AbilCmd="WormholeTransit,Execute" Column="0"/>
+            <LayoutButtons index="7" Face="FenixDragoonAirBomb" AbilCmd="FenixDragoonAirBomb,Execute" Column="2"/>
+            <LayoutButtons Face="SOAMothershipLineAttack" Type="AbilCmd" AbilCmd="SOAMothershipLineAttack,Execute" Row="2" Column="1"/>
+        </CardLayouts>
+        <EnergyMax value="300"/>
+        <TacticalAIThink value="AIThinkMum"/>
     </CUnit>
     <CUnit id="TalDarimPrison">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
