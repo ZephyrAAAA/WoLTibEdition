@@ -1031,7 +1031,7 @@ void AIThinkMum (int player, unit aiUnit, unitgroup scanGroup) {
 		if (loc != null && UnitOrderIsValid(aiUnit, ord)) {
 			OrderSetTargetPoint(ord, loc);
 			AICast(aiUnit, ord, c_noMarker, c_castHold);
-			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: air bomb"));
+			// UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: air bomb"));
 			return;
 		}
 	}
@@ -1051,7 +1051,7 @@ void AIThinkMum (int player, unit aiUnit, unitgroup scanGroup) {
 		if (loc != null && UnitOrderIsValid(aiUnit, ord)) {
 			OrderSetTargetPoint(ord, loc);
 			AICast(aiUnit, ord, c_noMarker, c_castHold);
-			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: laser"));
+			// UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: laser"));
 			return;
 		}
 	}

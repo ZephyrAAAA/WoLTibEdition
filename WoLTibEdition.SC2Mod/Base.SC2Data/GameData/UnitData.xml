@@ -4015,6 +4015,8 @@
     <CUnit id="Monolith">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <AbilArray Link="RestoreShields"/>
+        <AbilArray Link="RestoreLife"/>
     </CUnit>
     <CUnit id="MultiKillObject">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

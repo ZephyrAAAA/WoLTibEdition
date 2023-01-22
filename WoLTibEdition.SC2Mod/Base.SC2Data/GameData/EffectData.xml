@@ -1916,6 +1916,33 @@
         <CaseArray Validator="IsSquad" Effect="CCLoadDummy"/>
         <CaseArray Effect="RescuePodsDamage"/>
     </CEffectSwitch>
+    <CEffectCreateHealer id="RestoreEnergySec">
+        <EditorCategories value=""/>
+        <Flags index="Channeled" value="0"/>
+        <Flags index="Channeling" value="1"/>
+        <Flags index="ContinueWhenFull" value="1"/>
+        <RechargeVital value="Energy"/>
+        <RechargeVitalRate value="20"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="RestoreLife">
+        <EditorCategories value=""/>
+        <RechargeVitalRate value="20"/>
+        <InitialEffect value="RestoreEnergySec"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="RestoreShields">
+        <EditorCategories value=""/>
+        <RechargeVital value="Shields"/>
+        <RechargeVitalRate value="20"/>
+        <InitialEffect value="RestoreLifeSec"/>
+    </CEffectCreateHealer>
+    <CEffectCreateHealer id="RestoreLifeSec">
+        <EditorCategories value=""/>
+        <Flags index="Channeled" value="0"/>
+        <Flags index="Channeling" value="1"/>
+        <Flags index="ContinueWhenFull" value="1"/>
+        <RechargeVitalRate value="20"/>
+        <InitialEffect value="RestoreEnergySec"/>
+    </CEffectCreateHealer>
     <CEffectDamage id="RetributionFieldDamage">
         <ArmorReduction value="1"/>
     </CEffectDamage>
