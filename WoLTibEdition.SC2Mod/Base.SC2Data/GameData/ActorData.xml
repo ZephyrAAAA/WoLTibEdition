@@ -1440,6 +1440,33 @@
         <On Terms="Behavior.SeekerMissile.Off" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
         <On Terms="Behavior.SeekerMissile.Off" Send="Destroy"/>
     </CActorSimple>
+    <CActorBeamSimple id="VoidPylonRestoreBeam" parent="BeamSimpleAnimationStyleContinuous">
+        <Inherits index="Visibility" value="1"/>
+        <On Terms="Effect.RestoreLife.TargetStart" Send="Create"/>
+        <On Terms="Effect.RestoreLife.TargetStop" Send="AnimBracketStop BSD"/>
+        <On Terms="Effect.RestoreShields.TargetStart" Send="Create"/>
+        <On Terms="Effect.RestoreShields.TargetStop" Send="AnimBracketStop BSD"/>
+        <HostForProps Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <Model value="Sentry_HealingBeam"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+        <HostLaunch Subject="_Unit" Scope="Caster" Actor="Find"/>
+        <HostLaunchSiteOps Ops="SOpAttachWeapon"/>
+        <HostImpact Subject="_Unit" Scope="Target" Actor="Find"/>
+        <HostImpactSiteOps Ops="SOpAttachCenter"/>
+    </CActorBeamSimple>
+    <CActorModel id="VoidPylonRestoreModel" parent="ModelAnimationStyleContinuous">
+        <On Terms="ActorCreation" Send="$Birth PlayForever"/>
+        <On Terms="Effect.RestoreLife.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.RestoreLife.TargetStart; At Target" Send="AnimBracketStop BSD"/>
+        <On Terms="Effect.RestoreShields.TargetStart; At Target" Send="Create"/>
+        <On Terms="Effect.RestoreShields.TargetStop; At Target" Send="AnimBracketStop BSD"/>
+        <On Terms="ActorOrphan" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="Create SentryShieldRepairSoundLoop"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="Sentry_HealingBeam_Impact"/>
+        <ModelFlags index="AutomateGlobalLoops" value="1"/>
+    </CActorModel>
     <CActorEventMacro id="SquadUnitShrink">
         <EditorCategories value=""/>
         <On Terms="Behavior.SquadUnit.On" Send="SetScale 0.750000"/>
