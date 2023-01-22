@@ -1226,6 +1226,11 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <AttackType value="Siege"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="Tychus05HeroMothershipBeam">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="TychusChaingun">
         <Tip value="Weapon/Tip/Rifle"/>
         <AttackType value="Normal"/>
