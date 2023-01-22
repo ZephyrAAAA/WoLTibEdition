@@ -6240,10 +6240,12 @@
         <Attributes index="Heroic" value="1"/>
         <AbilArray index="4" Link="SOAMothershipLineAttack"/>
         <AbilArray Link="FenixDragoonAirBomb"/>
+        <AbilArray Link="MassRecall"/>
         <CardLayouts index="0">
             <LayoutButtons index="6" Face="WormholeTransit" AbilCmd="WormholeTransit,Execute" Column="0"/>
             <LayoutButtons index="7" Face="FenixDragoonAirBomb" AbilCmd="FenixDragoonAirBomb,Execute" Column="2"/>
             <LayoutButtons Face="SOAMothershipLineAttack" Type="AbilCmd" AbilCmd="SOAMothershipLineAttack,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="MassRecall" Type="AbilCmd" AbilCmd="MassRecall,Execute" Row="2" Column="4"/>
         </CardLayouts>
         <EnergyMax value="300"/>
         <TacticalAIThink value="AIThinkMum"/>
