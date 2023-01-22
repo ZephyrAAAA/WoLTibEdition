@@ -4,6 +4,18 @@
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="LocalizedData\Sounds\TerranUnitVO\SCV\SCV_JobsFinished00.ogg" FacialGroup=""/>
     </CSound>
+    <CSound id="FenixDragoonAirBombMissileExplode" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\GrenadePulse_Explosion01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\GrenadePulse_Explosion02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\GrenadePulse_Explosion03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\GrenadePulse_Explosion04.wav" FacialGroup=""/>
+        <DupeHistoryCount value="5"/>
+        <DupeMaximumMethod value="Replace"/>
+        <DupeMuteCount value="6"/>
+        <Pitch value="-4.000000,-4.000000"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
     <CSound id="MengskCommander_NuclearAnnihilationUsed" parent="ACVO_Pings">
         <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed00.ogg" FacialGroup=""/>
         <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed01.ogg" FacialGroup=""/>

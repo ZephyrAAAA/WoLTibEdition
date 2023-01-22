@@ -618,6 +618,25 @@
         <EffectArray value="FeedbackGhost"/>
         <EffectArray value="FeedbackEnergyLoss"/>
     </CEffectSet>
+    <CEffectDamage id="FenixDragoonAirBombAirDamage">
+        <ValidatorArray value="noMarkers"/>
+        <Marker Link="Effect/FenixDragoonAirBombDamage"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <Amount value="100"/>
+        <Death value="Blast"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="FenixDragoonAirBombCP">
+        <EditorCategories value="Race:Protoss"/>
+        <ExpireDelay value="0.5"/>
+        <FinalEffect value="FenixDragoonAirBombSearch"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="FenixDragoonAirBombSearch">
+        <SearchFilters value="AirUnit;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="FenixDragoonAirBombAirDamage"/>
+    </CEffectEnumArea>
     <CEffectCreatePersistent id="FleetMovePhoenix">
         <EditorCategories value=""/>
         <WhichLocation Value="SourcePoint"/>

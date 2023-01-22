@@ -266,6 +266,58 @@
         <Sound value="Obelisk_ArgusLinkLaunch"/>
     </CActorSound>
     <CActorRange id="FeedbackRange2" parent="RangeAbil" abil="FeedbackGhost"/>
+    <CActorAction id="FenixDragoonAirBombAttack" parent="GenericAttack" effectImpact="FenixDragoonAirBombSearch" effectLaunch="FenixDragoonAirBombMissile">
+        <LaunchAttachQuery Methods="Weapon 1"/>
+        <LaunchAssets Sound="Battlecruiser_YamatoAttackLaunch"/>
+        <ImpactPointSiteOps Ops="SOpTargetPoint SOpShadow SOpMoveUpBy5"/>
+    </CActorAction>
+    <CActorSound id="FenixDragoonAirBombAttackLaunch_AS" parent="SoundOneShot">
+        <On Terms="Effect.FenixDragoonAirBombCP.Start" Send="Create"/>
+        <Sound value="ChargedBuster_AttackLaunch"/>
+    </CActorSound>
+    <CActorMissile id="FenixDragoonAirBombAttackMissile" parent="GenericAttackMissileWithDeathAnim" unitName="FenixDragoonAirBombWeapon">
+        <Model value="Dragoon_Purifier_Coop_AirBomb_Missile"/>
+        <DeathArray index="Normal" ModelLink="Dragoon_Purifier_Coop_AirBomb_Missile"/>
+    </CActorMissile>
+    <CActorSound id="FenixDragoonAirBombAttackMissileCharge_AS" parent="SoundOneShot">
+        <Sound value="Generic_Start_or_Select"/>
+    </CActorSound>
+    <CActorSplat id="FenixDragoonAirBombCursorSplat" parent="ProtossCursorSplat" abil="FenixDragoonAirBomb">
+        <Model value="FenixDragoonAirBombCursor"/>
+    </CActorSplat>
+    <CActorModel id="FenixDragoonAirBombMissileExplode" parent="ModelAnimationStyleOneShot">
+        <On Terms="Effect.FenixDragoonAirBombSearch.Start" Send="Create"/>
+        <HostSiteOps Ops="SOpTargetPoint SOpShadow SOpMoveUpBy5"/>
+        <Model value="Dragoon_Purifier_Coop_AirBomb"/>
+    </CActorModel>
+    <CActorSound id="FenixDragoonAirBombMissileExplode_AS" parent="SoundOneShot">
+        <On Terms="Effect.FenixDragoonAirBombSearch.Start" Send="Create"/>
+        <On Terms="ActorCreation" Send="RefSet ::global.FenixDragoonAirBombUnitImpactChargedLookAt ::Self"/>
+        <Sound value="FenixDragoonAirBombMissileExplode"/>
+        <Layers Sound="VoidShard_Death_PreImpact_Lfe" PitchSource="Actor">
+            <Chance value="100"/>
+            <Pitch value="0.000000,0.000000"/>
+            <PlayDelay value="0,0"/>
+            <Volume value="-2.000000,-2.000000"/>
+        </Layers>
+        <Layers Sound="Blast_SubLow_Distant">
+            <Chance value="100"/>
+            <Pitch value="0.000000,0.000000"/>
+            <PlayDelay value="0,0"/>
+            <Volume value="0.000000,0.000000"/>
+        </Layers>
+    </CActorSound>
+    <CActorRange id="FenixDragoonAirBombRange" parent="RangeAbil" abil="FenixDragoonAirBomb">
+        <Icon value="Assets\Textures\RadarIcon2.dds"/>
+    </CActorRange>
+    <CActorModel id="FenixDragoonAirBombUnitImpact" parent="ModelAnimationStyleOneShot">
+        <Inherits index="BaseModelScale" value="1"/>
+        <Inherits index="Scale" value="1"/>
+        <On Terms="Effect.FenixDragoonAirBombDamage.Start; At Target" Send="Create"/>
+        <HostSiteOps Ops="SOpAttachCenter"/>
+        <Model value="Dragoon_Purifier_Coop_AirBomb_Impact"/>
+        <AutoScaleFactor value="1.000000"/>
+    </CActorModel>
     <CActorModel id="FloatingTextMineralSilo" parent="FloatingTextActorDefault" effectPickup="PickupMinerals100" actorCreate="PickupMinerals100Text">
         <On index="0" Terms="Effect.MineralSiloInitial.Start" Send="Create"/>
         <On index="1" Terms="ActorCreation" Send="Create PickupSiloInitialText"/>

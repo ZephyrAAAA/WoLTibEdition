@@ -92,6 +92,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="EMP"/>
         <DefaultButtonLayout Row="2" Column="1"/>
     </CButton>
+    <CButton id="FenixDragoonAirBomb">
+        <TooltipAppender Validator="HaveChargeBuster" Text="Button/Tooltip/FenixDragoonAirBombCharged"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CButton>
     <CButton id="ForgottenParaphernalia">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>

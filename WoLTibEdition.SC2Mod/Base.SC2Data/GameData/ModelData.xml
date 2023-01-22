@@ -283,6 +283,21 @@
         <EditorCategories value=""/>
         <SelectionLayer value="2"/>
     </CModel>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb" parent="RaceImpactFX" Race="Protoss"/>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb_Beam" parent="RaceMissileFX" Race="Protoss">
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="SoundFollowContinuous"/>
+            <Type value="Sound"/>
+            <Time value="0.003000"/>
+            <Payload value="Dragoon_Purifier_Coop_AirBomb_Missile"/>
+        </Events>
+    </CModel>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb_Charged" parent="RaceImpactFX" Race="Protoss"/>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb_Impact" parent="RaceImpactFX" Race="Protoss"/>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb_Impact_Charged" parent="RaceImpactFX" Race="Protoss"/>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb_Missile" parent="RaceMissileFX" Race="Protoss"/>
+    <CModel id="Dragoon_Purifier_Coop_AirBomb_MissileA" parent="RaceMissileFX" Race="Protoss"/>
     <CModel id="DrakkenLaserDrill">
         <Model value="Assets\Buildings\Neutral\LaserDrill_Coop\LaserDrill_Coop.m3"/>
         <Events index="0">
@@ -401,6 +416,9 @@
             <Time value="1.091000"/>
             <Payload value="Korhal_Metal_VentDoor_SteamChuf"/>
         </Events>
+    </CModel>
+    <CModel id="FenixDragoonAirBombCursor" parent="UI">
+        <Model value="Assets\UI\Cursors\ProtossCursor_Purifier_Small\ProtossCursor_Purifier_Small.m3"/>
     </CModel>
     <CModel id="FirebatAttackLaunch">
         <ScaleMax value="1.000000,3.750000,1.000000"/>
