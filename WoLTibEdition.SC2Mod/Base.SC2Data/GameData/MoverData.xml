@@ -40,6 +40,15 @@
             <YawPitchRollAccel value="180"/>
         </MotionPhases>
     </CMoverMissile>
+    <CMoverMissile id="FenixDragoonAirBombWeapon">
+        <MotionPhases>
+            <Driver value="Ballistic"/>
+            <Acceleration value="-1"/>
+            <MinSpeed value="20"/>
+            <MaxSpeed value="20"/>
+            <Gravity value="70"/>
+        </MotionPhases>
+    </CMoverMissile>
     <CMoverMissile id="HunterSeekerMissile">
         <MotionPhases index="0">
             <Speed value="1"/>
