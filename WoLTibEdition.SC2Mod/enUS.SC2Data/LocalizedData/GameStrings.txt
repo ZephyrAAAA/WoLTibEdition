@@ -1173,6 +1173,7 @@ Effect/Name/TibNodeSmall=Tib Node Small
 Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
 Effect/Name/TibNodeSmallSearch=Tib Node Small Search
 Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
+Effect/Name/Tychus05HeroMothershipSecondarySearch=Mothership Secondary Weapon (Search)
 Effect/Name/TychusSpectreUltrasonicDamageLv1=TychusSpectreUltrasonicDamageLv1
 Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
 Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1

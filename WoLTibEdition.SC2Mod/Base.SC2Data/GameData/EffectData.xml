@@ -2930,6 +2930,18 @@
     <CEffectDamage id="TwinIbiksCannon">
         <Amount value="80"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="Tychus05HeroMothershipBeamPersistent">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="Tychus05HeroMothershipSecondaryBeamPersistent">
+        <Flags index="Channeled" value="0"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="Tychus05HeroMothershipSecondarySearch">
+        <EditorCategories value="Race:Protoss"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray MaxCount="1" Radius="2.5" Effect="Tychus05HeroMothershipBeamSet"/>
+    </CEffectEnumArea>
     <CEffectDamage id="TychusCommandoAttackDamage">
         <ImpactLocation Value="TargetUnit"/>
         <Amount value="7"/>
