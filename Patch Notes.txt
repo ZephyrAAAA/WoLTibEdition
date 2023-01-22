@@ -44,9 +44,10 @@ Replaced starting field with spikes. Some you start with, some you don't.
 
 Outbreak:
 Bunkered marines are now based on the existing system that scales attack waves
-Each building gains 1 marine per night, after you've cleared enough. Or after at least 2 nights have passed.
+Buildings gain marines based on clear speed and location.
 Messed around to reduce how much the 3 fields regrow
 Reduced infested building health a bit.
+You start with an extra SCV, the 2 extra scvs are placed near the outside fields so they start harvesting on their own.
 
 The Dig:
 The spike can no longer be claimed until you have the base
