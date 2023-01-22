@@ -1967,7 +1967,7 @@
     </CEffectCreatePersistent>
     <CEffectEnumArea id="SOAMothershipLineAttackSearch">
         <EditorCategories value="Race:Protoss"/>
-        <SearchFilters value="GroundUnit;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="Ground;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <AreaArray Radius="1" Effect="SOAMothershipLineAttackDamage"/>
         <RevealerParams Duration="1" ShapeExpansion="0.5">
             <RevealFlags index="Unfog" value="1"/>

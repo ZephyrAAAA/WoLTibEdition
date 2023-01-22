@@ -6238,7 +6238,7 @@
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
         <FogVisibility value="Visible"/>
         <Attributes index="Heroic" value="1"/>
-        <AbilArray Link="SOAMothershipLineAttack"/>
+        <AbilArray index="4" Link="SOAMothershipLineAttack"/>
         <AbilArray Link="FenixDragoonAirBomb"/>
         <CardLayouts index="0">
             <LayoutButtons index="6" Face="WormholeTransit" AbilCmd="WormholeTransit,Execute" Column="0"/>
