@@ -758,8 +758,8 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedClaws">
-        <AttackType value="Normal"/>
-        <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
+        <AttackType value="Pierce"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfestedGuassRifle">
         <AttackType value="Normal"/>
