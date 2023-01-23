@@ -55,7 +55,7 @@ The spike can no longer be claimed until you have the base
 Bel'shir:
 Removed the counterattack system.
 The protoss now deploy small groups of units throughout the map.
-*Goliath upgrade text is now more descriptive.
+Goliath upgrade text is now more descriptive.
 
 In Utter Darkness:
 DT Button no longer lies about archons
@@ -90,3 +90,5 @@ In the final battle with momma, she warps in reinforcements at the health thresh
 *Momma will recall units to protect her, if she's not in an attack wave.
 Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
 Each base now produces defense groups much faster, and starts with some based on difficulty.
+Fixed Johnny.
+You not longer rescue the nodes and veins in your base.
