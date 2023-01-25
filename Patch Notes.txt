@@ -92,3 +92,5 @@ Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
 Each base now produces defense groups much faster, and starts with some based on difficulty.
 Fixed Johnny.
 You not longer rescue the nodes and veins in your base.
+*Updated the mothership hover text
+*You now get max upgrades for your DTs
