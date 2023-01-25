@@ -669,22 +669,22 @@
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <TargetFilters value="Heroic;Ally,Neutral,Enemy"/>
-        <Range value="6"/>
+        <Range value="8"/>
         <Arc value="360"/>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
-        <AutoCastRange value="6"/>
+        <AutoCastRange value="8"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="RestoreShields">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="AutoCastOn" value="1"/>
         <TargetFilters value="Heroic;Ally,Neutral,Enemy"/>
-        <Range value="6"/>
+        <Range value="8"/>
         <Arc value="360"/>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
-        <AutoCastRange value="6"/>
+        <AutoCastRange value="8"/>
         <AcquirePriority value="4"/>
     </CAbilEffectTarget>
     <CAbilBehavior id="RogueGhostCloak">
