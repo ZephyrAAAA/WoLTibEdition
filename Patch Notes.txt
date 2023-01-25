@@ -28,7 +28,6 @@ Adjusted when the Directive text for tutorial objectives disappears.
 Fixed the depower tutorial not completing after you've built more power, regardless of depowering the barracks or not.
 Ultracaps is now disabled until the tutorial tells you to do it
 More obvious vespene pallet
-*Added a custom loss message for selling your CC
 
 Zero Hour:
 *The zerg bases are harder to take down now
@@ -87,7 +86,7 @@ Mommaship now hijacks one attack wave each loop to come attack you. She warps ho
 Attack waves are now sent slightly more often after a base is killed, freeing up it's slot.
 Attack waves now scale with time rather than killing bases.
 In the final battle with momma, she warps in reinforcements at the health thresholds, instead of teleporting back to the vault.
-*Momma will recall units to protect her, if she's not in an attack wave.
+Momma will recall units to protect her, if she's not in an attack wave.
 Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
 Each base now produces defense groups much faster, and starts with some based on difficulty.
 Fixed Johnny.
