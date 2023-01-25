@@ -93,4 +93,5 @@ Each base now produces defense groups much faster, and starts with some based on
 Fixed Johnny.
 You not longer rescue the nodes and veins in your base.
 *Updated the mothership hover text
-*You now get max upgrades for your DTs
+You now get max upgrades for your DTs
+Mom now spawns after 12 minutes, regardless of progress.
