@@ -14,8 +14,8 @@ DT topbar no longer lies about how many it spawns
 Chrono Topbar now works on air units.
 Flying buildings no longer put away their armour
 *Thor theft has a proper tooltip now
-*Pause and Resume buttons have a tooltip now
-*The barracks now correctly refers to unlocking the shadow ops
+Pause and Resume buttons have a tooltip now
+The barracks now correctly refers to unlocking the shadow ops
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
 
 Liberation Day:
@@ -35,7 +35,7 @@ Zero Hour:
 *The bonus objective no longer teases you with money
 *Fixed the Field Tip
 *Fixed the timing of the empty field ping.
-*Edited the Ebay tip
+Edited the Ebay tip
 *Rescued units are no longer wounded.
 
 Evacuation:
@@ -92,6 +92,6 @@ Removed all non-Zealot/Stalker/Scout/Warp Prism bully units in each base.
 Each base now produces defense groups much faster, and starts with some based on difficulty.
 Fixed Johnny.
 You not longer rescue the nodes and veins in your base.
-*Updated the mothership hover text
+Updated the mothership hover text
 You now get max upgrades for your DTs
 Mom now spawns after 12 minutes, regardless of progress.
