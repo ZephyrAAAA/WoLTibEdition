@@ -311,12 +311,12 @@
     <CBehaviorBuff id="RipField">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Period value="0.125"/>
+        <Period value="0.25"/>
         <PeriodicEffect value="RipFieldSearch"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="RipFieldSlow">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="0.25"/>
+        <Duration value="0.375"/>
         <Modification MoveSpeedMultiplier="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SeekerMissile">
