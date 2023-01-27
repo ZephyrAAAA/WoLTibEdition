@@ -1957,6 +1957,8 @@
     <CEffectEnumArea id="RipFieldSearch">
         <EditorCategories value=""/>
         <AreaArray Radius="40" Effect="RipFieldApplySlow"/>
+        <ExcludeArray/>
+        <SearchFilters value="-;Structure,Missile,Stasis,Hidden,Invulnerable"/>
     </CEffectEnumArea>
     <CEffectSet id="SOAMothershipLineAttackCasterImpactDummy"/>
     <CEffectLaunchMissile id="SOAMothershipLineAttackCasterLM">
