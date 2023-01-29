@@ -35,6 +35,7 @@ Abil/Name/Factory2Land=Land
 Abil/Name/Factory2LiftOff=Lift Off
 Abil/Name/Factory2Train=Train (Factory)
 Abil/Name/FeedbackGhost=Feedback
+Abil/Name/FenixDragoonAirBomb=Solarite Flare
 Abil/Name/FirebatSquad=Firebat Squad
 Abil/Name/FleetActivate=Fleet Activate
 Abil/Name/FungalGrowthBrutalisk=Fungal Growth
@@ -69,6 +70,9 @@ Abil/Name/RepairDroneHeal=Repair
 Abil/Name/RepairDroneRestore=Shield Restore
 Abil/Name/RepairMechOrder=Repair
 Abil/Name/ResetRally=Reset Rally
+Abil/Name/RestoreLife=Restore Life
+Abil/Name/RestoreShields=Restore Shields
+Abil/Name/SOAMothershipLineAttack=SOA Mothership Line Attack
 Abil/Name/ScannerSweepTopbar=Scanner Sweep
 Abil/Name/ScienceVesselDefensiveMatrix=Defensive Matrix
 Abil/Name/SendWave=Send Wave
@@ -184,6 +188,7 @@ Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
+Button/Name/FenixDragoonAirBomb=Solarite Flare
 Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
@@ -269,6 +274,7 @@ Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResearchTitanEngines=Research Titan Engines
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
+Button/Name/SOAMothershipLineAttack=Thermal Lance
 Button/Name/ScannerSweepTopbar10=Scanner Sweep
 Button/Name/ScannerSweepTopbar11=Scanner Sweep
 Button/Name/ScannerSweepTopbar12=Scanner Sweep
@@ -345,7 +351,7 @@ Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
 Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
 Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
-Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers from SCVs
+Button/Tooltip/Barracks2=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
 Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
@@ -420,12 +426,13 @@ Button/Tooltip/Depower=Switches power state of the selected building.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage. 
 Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
-Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armoury<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
+Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, Vehicles, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armoury<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
 Button/Tooltip/EngineeringBay2=Contains upgrades for Terran buildings, and enables the Supply Depot upgrade. Enables the construction of Terran defensive structures, and a prerequisite for the Armoury and Starport.
 Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Hellions
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
@@ -500,6 +507,7 @@ Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. N
 Button/Tooltip/NukeCalldown9=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
 Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
 Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
+Button/Tooltip/PauseQueue=Pauses the queue of this structure, and allows queued items to be safely cancelled.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PickupSiloInitialText=<s val="Kicker_Minerals">+<d ref="Effect,MineralSiloInitial,Resources[Minerals]" Player="1"/> </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
@@ -536,8 +544,10 @@ Button/Tooltip/ResearchScannerPacks=Increases reaper sight range from 9 to 11, a
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
 Button/Tooltip/ResearchTitanEngines=Increases <c val="ffff8a">Battlecruiser</c> speed by 20%, to 2.25
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
+Button/Tooltip/ResumeQueue=Resumes the queue of this structure.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
+Button/Tooltip/SOAMothershipLineAttack=Deals <d ref="Effect,SOAMothershipLineAttackDamage,Amount"/> damage to all enemies in a straight line up to 10 range away.
 Button/Tooltip/ScannerSweepTopbar10=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar11=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/ScannerSweepTopbar12=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
@@ -578,20 +588,21 @@ Button/Tooltip/SupplyDepot=Provides power.<n/>Power allows buildings to work cor
 Button/Tooltip/SupplyDepot2=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
 Button/Tooltip/SupplyDrop=Drops additional supplies, permanently increasing the power output of the target Supply Depot by <d ref="Behavior,SupplyDrop,Modification.Food"/>.
-Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike13=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike14=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike3=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike4=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike5=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
-Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing 150 (+100 vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike13=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike14=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike3=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike4=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike5=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
+Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TakeParts=Takes parts from targeted unit to improve the thor.
 Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
+Button/Tooltip/TalDarimMothership=Ultimate Protoss vessel. Can use Thermal Lance, Solarite Flare, Mass Recall, and Wormhole Transit. Cloaks nearby ground units and structures.  <n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
 Button/Tooltip/TechLabFactory=Enables additional units. Researches upgrades.
 Button/Tooltip/TechLabStarport=Enables additional units. Researches upgrades.
@@ -708,6 +719,7 @@ ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct 
 ConversationState/StoryTips/Raynor03_Bunker=<c val="FF8000">Bunker</c>
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
 ConversationState/StoryTips/Raynor03_EngineeringBay=<c val="FF8000">Engineering Bay</c>
+ConversationState/StoryTips/Raynor03_EngineeringBay/Info/Description=Upgrade structure -- You can increase your base defense's range and armor by purchasing upgrades at the <c val="FFFF00">Engineering Bay</c>. An Engineering Bay also allows you to construct <c val="FFFF00">Missile Turrets</c>.
 ConversationState/StoryTips/Tychus05_RipFields=<c val="FF8000">Rip-Fields</c>
 ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field,</c> units will be slowed by 50%. Protoss units have <c val="FFFF00">Shields</c> and are not affected.
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
@@ -990,6 +1002,7 @@ Effect/Name/FeedbackGhost=Feedback
 Effect/Name/FeedbackGhostDamage=Feedback
 Effect/Name/FeedbackSetGhost=Feedback
 Effect/Name/FeedbackSpectre=Feedback
+Effect/Name/FenixDragoonAirBombCP=FenixDragoonAirBombCP
 Effect/Name/FleetDummySearch=Fleet Dummy Search
 Effect/Name/FleetMovePhoenix=Fleet Move Phoenix
 Effect/Name/FleetMoveScout=Fleet Move Scout
@@ -1082,9 +1095,19 @@ Effect/Name/RepairDroneReleaseCreateUnit=Repair Drone Release
 Effect/Name/RepairDroneTimedLife=Repair Drone
 Effect/Name/RescuePodsSwitch=Rescue Pods Switch
 Effect/Name/ResetRally=Reset Rally
+Effect/Name/RestoreEnergySec=Restore Energy
+Effect/Name/RestoreLife=Restore Life
+Effect/Name/RestoreLifeSec=Restore Life
+Effect/Name/RestoreShields=Restore Shields
 Effect/Name/RipFieldApplySlow=Rip Field
 Effect/Name/RipFieldSearch=Rip Field
 Effect/Name/SCVHarvesterAWAY=SCV Harvester AWAY
+Effect/Name/SOAMothershipLineAttackCasterImpactDummy=SOAMothership Line Attack Caster Impact Dummy
+Effect/Name/SOAMothershipLineAttackCasterLM=SOAMothership Line Attack Caster 
+Effect/Name/SOAMothershipLineAttackDamage=SOAMothership Line Attack Damage
+Effect/Name/SOAMothershipLineAttackInitialCP=SOAMothership Line Attack Initial 
+Effect/Name/SOAMothershipLineAttackScanCP=SOAMothership Line Attack Scan 
+Effect/Name/SOAMothershipLineAttackSearch=SOAMothership Line Attack Search
 Effect/Name/ScoutAirFleet=Scout Air
 Effect/Name/ScoutAirLMLeftFleet=Scout Air LM Left
 Effect/Name/ScoutAirLMRightFleet=Scout Air LM Right
@@ -1160,6 +1183,7 @@ Effect/Name/TibNodeSmall=Tib Node Small
 Effect/Name/TibNodeSmallGrow=Tib Node Small Grow
 Effect/Name/TibNodeSmallSearch=Tib Node Small Search
 Effect/Name/TibNodeSmallStarter=Tib Node Small Starter
+Effect/Name/Tychus05HeroMothershipSecondarySearch=Mothership Secondary Weapon (Search)
 Effect/Name/TychusSpectreUltrasonicDamageLv1=TychusSpectreUltrasonicDamageLv1
 Effect/Name/TychusSpectreUltrasonicPulseCPLv1=TychusSpectreUltrasonicCPLv1
 Effect/Name/TychusSpectreUltrasonicSearchLv1=TychusSpectreUltrasonicSearchLv1
@@ -1690,6 +1714,7 @@ Unit/Name/ReaperSquad=Reaper Squad
 Unit/Name/Refinery2=Refinery
 Unit/Name/RefineryBounce=Refinery Bounce
 Unit/Name/SCV2=SCV
+Unit/Name/SOAMothershipLineAttackWeapon=SOA Mothership Line Attack Weapon
 Unit/Name/SensorTower2=Sensor Tower
 Unit/Name/Starport2=Starport
 Unit/Name/Stone=Stone

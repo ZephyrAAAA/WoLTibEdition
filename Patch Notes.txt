@@ -13,10 +13,11 @@ Nuke damage buffed to 400 + 600 vs structures
 DT topbar no longer lies about how many it spawns
 Chrono Topbar now works on air units.
 Flying buildings no longer put away their armour
-*Thor theft has a proper tooltip now
 Pause and Resume buttons have a tooltip now
 The barracks now correctly refers to unlocking the shadow ops
+*Thor theft has a proper tooltip now
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
+*The Golden Armada has been buffed.
 
 Liberation Day:
 The bonus objective no longer teases you with money
