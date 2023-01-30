@@ -18,6 +18,7 @@ The barracks now correctly refers to unlocking the shadow ops
 *Thor theft has a proper tooltip now
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
 *The Golden Armada has been buffed.
+*SCVs take up 2 cargo space now
 
 Liberation Day:
 The bonus objective no longer teases you with money
@@ -57,6 +58,10 @@ Bel'shir:
 Removed the counterattack system.
 The protoss now deploy small groups of units throughout the map.
 Goliath upgrade text is now more descriptive.
+
+Safe Haven:
+Each settlement now has a spike or 2
+
 
 In Utter Darkness:
 DT Button no longer lies about archons
