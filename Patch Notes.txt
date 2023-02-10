@@ -3,6 +3,15 @@
 *The Golden Armada has been buffed.
 *SCVs take up 2 cargo space now
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
+*Edited the cheat message to mention tiberium
+*Medics have a passive saying they can capture neutral structures
+*Sensor tower description is no longer vanilla
+
+Liberation Day:
+*The final area is now harder
+
+Evacuation:
+*Removed the merc compound
 
 Safe Haven:
 *Each settlement now has a spike or 2
