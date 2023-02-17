@@ -3,7 +3,9 @@
 *The Golden Armada has been buffed.
 *SCVs take up 2 cargo space now
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
-*Edited the cheat message to mention tiberium
+*Thor Armoury upgrades have the correct text now.
+*Wraith displacement field tooltip is now correct.
+
 *Medics have a passive saying they can capture neutral structures
 *Sensor tower description is no longer vanilla
 
@@ -12,6 +14,11 @@ Liberation Day:
 
 Evacuation:
 *Removed the merc compound
+
+Bel'shir:
+No longer freezes
+Removed probes from middle base, so they don't try to "harvest" the terrazine.
+Added a splash damage unit to the expansion. HT on hard and brutal, colossus on casual and normal.
 
 Safe Haven:
 *Each settlement now has a spike or 2
@@ -24,3 +31,56 @@ Media Blitz:
 *Some BCs are replaced by banshees in tower defense waves
 *Warfield now unleashes the predators
 *Fixed the ghost academy bonus not counting if you've killed one in the sneak attack
+
+Maw of the Void:
+Improved performance.
+
+Gates of Hell:
+Increased the number of defenders in each base
+The main zerg base towards warfield is absolutely bonkers. Use the money to send wave after wave of your own men to reach the preset kill limit.
+Killing the other 3 zerg bases reduces the pressure on you. They also have money.
+The zerg have 3 outposts, with a spore cannon and a nydus. These nyduses send waves at you.
+There's a *lot* of fields present around the map, giving a reason to try holding area.
+Each Spore Cannon killed grants an additional drop pod wave
+The default number of drop pod waves has been reduced.
+You now have a Fusion Reactor in your base that provides 250 power, instead of any off-map power. If you keep it alive, you get it on All-In.
+The map now gets fully creeped over time, except for your base area.
+No more screen stealing on hard and brutal
+You now need to get a CC, and don't start with one, instead of gathering an army.
+The zerg start with max upgrades
+*Droppods are now mercs
+Warfield has mercs to protect himself
+No more free vision of random areas of the map
+No more free vision of droppods
+No more free vision of Warfield
+
+Belly of the Beast:
+Tychus, Swann, and Raynor have been buffed to 250 HP.
+Stetmann has been buffed to 200 HP.
+Tychus does 7 Rifle damage at 0.2 attack speed. Tychus' grenade does Concussive.
+Raynor does 40 Rocket damage at 1.5 attack speed. Raynor's Snipe does Rocket Damage.
+Swann does 40 Cannon damage at 1 attack speed.
+The Heroes now have a combined Command Card
+Stettman no longer blocks medic healing
+Tychus' and Raynor's abilities are no longer blocked by fog of war
+Swann now gets betty's kills
+Betty now fires continuously, and does Concussive damage with 40 DPS
+Swann shoots faster, and does more damage.
+The first holdout sends more stuff
+All Rescuable units are now mercs
+
+Shatter the Sky:
+Tower health increased to 5000
+Leviathan has 10x the health
+Leviathan now patrols bases
+No more free vision of around the leviathan
+No more free vision of the Coolant Towers
+Blowing up platforms gives much less money
+Corruptors and Brood Lords hang around in their appropriate base, plus other places.
+The zerg start with max upgrades
+*No more free vision of the platforms after they blow up
+
+All-In:
+*Omegalisks are now sent in the ground version
+You get the Fusion Reactor from Gates, if it survived.
+The zerg start with max upgrades
