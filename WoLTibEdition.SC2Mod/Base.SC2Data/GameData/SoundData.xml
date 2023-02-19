@@ -4,6 +4,15 @@
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="LocalizedData\Sounds\TerranUnitVO\SCV\SCV_JobsFinished00.ogg" FacialGroup=""/>
     </CSound>
+    <CSound id="Eat" parent="Campaign" Portrait="SMStetmann" Subtitle="Eat" Speaker="CharStetmann">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Eat.ogg"/>
+            <FacialAnim value="ScienceObjectiveCalloutsStetmann00007"/>
+            <PortraitModel value="SMStetmann"/>
+            <Speaker value="ConversationState/Characters/CharStetmann"/>
+            <Subtitle value="Conversation/Eat/Line"/>
+        </AssetArray>
+    </CSound>
     <CSound id="FenixDragoonAirBombMissileExplode" parent="Combat">
         <EditorCategories value="Race:Protoss"/>
         <AssetArray File="Assets\Sounds\GrenadePulse_Explosion01.wav" FacialGroup=""/>
@@ -242,6 +251,15 @@
     </CSound>
     <CSound id="Tosh_Explosives" parent="TerranAck">
         <AssetArray File="Assets\sfx\Tosh_Explosives.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="UnleashThePredators" parent="Campaign" Portrait="WarfieldPortrait" Subtitle="UnleashThePredators" Speaker="CharWarfield" Line="">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\VO\zMission_Char03_GeneralWarfield_050.ogg"/>
+            <FacialAnim value="UnleashThePredatorsWarfield"/>
+            <PortraitModel value="WarfieldPortrait"/>
+            <Speaker value="ConversationState/Characters/CharWarfield"/>
+            <Subtitle value="Conversation/UnleashThePredators/Line"/>
+        </AssetArray>
     </CSound>
     <CSound id="VoidMothership_ThermalLance_AttackLaunch" parent="Spell">
         <EditorCategories value="Race:Protoss"/>
