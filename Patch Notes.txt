@@ -9,10 +9,10 @@
 *Sensor tower description is no longer vanilla
 
 Liberation Day:
-*The final area is now harder
+The final area is now harder
 
 Evacuation:
-*Removed the merc compound
+Removed the merc compound
 
 Bel'shir:
 No longer freezes
@@ -23,7 +23,7 @@ Safe Haven:
 *Each settlement now has a spike or 2
 
 Supernova:
-*Added a tip with details about what unlocks are free.
+Added a tip with details about what unlocks are free.
 
 Media Blitz:
 *The convoy tip now says what happens if you complete a tower while a convoy is on the way
