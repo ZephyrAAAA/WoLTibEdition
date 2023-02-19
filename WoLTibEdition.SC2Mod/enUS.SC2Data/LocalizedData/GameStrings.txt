@@ -758,8 +758,8 @@ ConversationState/Tech/Tech2_SiegeTank_1=Maelstrom Rounds
 ConversationState/Tech/Tech2_SiegeTank_2=Shaped Blast
 ConversationState/Tech/Tech2_Spectre_1=Psionic Lash
 ConversationState/Tech/Tech2_Spectre_2=Nyx-Class Cloaking Module
-ConversationState/Tech/Tech2_Thor_1=330mm Barrage Cannon
-ConversationState/Tech/Tech2_Thor_2=Immortality Protocol
+ConversationState/Tech/Tech2_Thor_1=Improved Actuators
+ConversationState/Tech/Tech2_Thor_2=Self-Improvement Protocol
 ConversationState/Tech/Tech2_Viking_1=Phobos-Class Weapons System
 ConversationState/Tech/Tech2_Viking_2=Ripwave Missiles
 ConversationState/Tech/Tech2_Vulture_1=Cerberus Mine
@@ -826,6 +826,12 @@ ConversationState/Tech/Tech_Spectre_1/Info/Tooltip=<s val="TooltipTitle_Tech">Be
 ConversationState/Tech/Tech_Spectre_2=Miniature Drop Pods
 ConversationState/Tech/Tech_Spectre_2/Info/Description=<s val="TechSummary">- Increases Hercules pickup range.</s><n/><s val="TechSummary">- Hercules drop units instantly</s><n/><s val="TechSummary">- Hercules emergency drop pods damage reduced to 10%</s><n/><n/><s val="TechDescription">Improving the design of drop pods used by the hercules can improve a variety of areas about the hercules' effectiveness as a transport, and can influence survival rates in case of total destruction.</s>
 ConversationState/Tech/Tech_Spectre_2/Info/Tooltip=<s val="TooltipTitle_Tech">Miniature Drop Pods</s><n/><s val="TooltipDescription_Tech">Improves Hercules Transportation.</s>
+ConversationState/Tech/Tech_Thor_1=Improved Actuators
+ConversationState/Tech/Tech_Thor_1/Info/Description=<s val="TechSummary">- Improved move speed.<n/>- Effect: Thor moves 20% faster.</s><n/><n/><s val="TechDescription">Thors are slow, so if we make them move faster, they should be more useful.</s>
+ConversationState/Tech/Tech_Thor_1/Info/Tooltip=<s val="TooltipTitle_Tech">Improved Actuators</s><n/><s val="TooltipDescription_Tech">Thor moves 20% faster.</s>
+ConversationState/Tech/Tech_Thor_2=Self-Improvement Protocol
+ConversationState/Tech/Tech_Thor_2/Info/Description=<s val="TechSummary">- Grants the Self-Improvement Protocol ability.</s><n/><s val="TechSummary">- Effect: Thors can upgrade themselves with equipment from other vehicles.</s><n/><s val="TechSummary">- The thor can pull equipment from: Hellion (Flamethrower), Diamondback (Railgun), Stone (Sensor Range), Siege Tank (AOE on primary Attack), Predator (Energy Shield).</s><n/><n/><s val="TechDescription">ATVX now offers an updated Thor model that can attach equipment to itself by salvaging them from other vehicles.</s>
+ConversationState/Tech/Tech_Thor_2/Info/Tooltip=<s val="TooltipTitle_Tech">Self-Improvement Protocol</s><n/><s val="TooltipDescription_Tech">Thors can upgrade themselves with equipment from other vehicles.</s>
 ConversationState/Tech/Tech_Viking_1=Improved Mechanics
 ConversationState/Tech/Tech_Viking_1/Info/Description=<s val="TechSummary">- Vikings transform 4x faster.</s><n/><s val="TechSummary">- Vikings fire 60% faster.</s><n/><n/><s val="TechDescription">Bellerephon offers an improved loadout for the Viking that adds an autoloader system for both weapons. An improved Improved hydraulics and actuator systems also allow faster transforming.</s>
 ConversationState/Tech/Tech_Viking_1/Info/Tooltip=<s val="TooltipTitle_Tech">Improved Mechanics</s><n/><s val="TooltipDescription_Tech">Transform 3x faster, +60% attack speed.</s>
@@ -838,7 +844,7 @@ ConversationState/Tech/Tech_Vulture_2/Info/Tooltip=<s val="TooltipTitle_Tech">EM
 ConversationState/Tech/Tech_Wraith_1/Info/Description=<s val="TechSummary">- Wraiths start with +100 energy.<n/>- Wraiths regenerate energy 50% faster,</s><n/><n/><s val="TechDescription">These improved power cells provide the Wraith with a larger up-front energy reserve, and better power management. This allows newly built Wraiths to instantly engage in missions with heavy cloaking requirements, rather than having to wait for the Reactor to build up a sufficient charge.</s>
 ConversationState/Tech/Tech_Wraith_1/Info/Tooltip=<s val="TooltipTitle_Tech">Tomahawk Power Cells</s><n/><s val="TooltipDescription_Tech">Wraiths start with +100 energy, and regen energy 50% faster.</s>
 ConversationState/Tech/Tech_Wraith_2/Info/Description=<s val="TechSummary">- Wraiths resist 40% of damage.</s><n/><n/><s val="TechDescription">ATVX has developed a Displacement Field that can radically alter the impact energy of incoming projectiles. Field tests have shown a roughly 40% reduction in impact energy imparted to the wraith.</s>
-ConversationState/Tech/Tech_Wraith_2/Info/Tooltip=<s val="TooltipTitle_Tech">Displacement Field</s><n/><s val="TooltipDescription_Tech">Wraiths evade 40% of incoming damage.</s>
+ConversationState/Tech/Tech_Wraith_2/Info/Tooltip=<s val="TooltipTitle_Tech">Displacement Field</s><n/><s val="TooltipDescription_Tech">Wraiths resist 40% of incoming damage.</s>
 DataCollection/Name/Armory=Armory
 DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks

@@ -1,10 +1,10 @@
 *Thor theft has a proper tooltip now
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
 *The Golden Armada has been buffed.
-*SCVs take up 2 cargo space now
+SCVs take up 2 cargo space now
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
-*Thor Armoury upgrades have the correct text now.
-*Wraith displacement field tooltip is now correct.
+Thor Armoury upgrades have the correct text now.
+Wraith displacement field tooltip is now correct.
 *Medics have a passive saying they can capture neutral structures
 *Sensor tower description is no longer vanilla
 

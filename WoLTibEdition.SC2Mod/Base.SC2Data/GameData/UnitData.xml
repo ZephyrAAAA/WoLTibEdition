@@ -5199,7 +5199,7 @@
         <Radius value="0.525"/>
         <SeparationRadius value="0.525"/>
         <InnerRadius value="0.375"/>
-        <CargoSize value="1"/>
+        <CargoSize value="2"/>
         <ScoreMake value="50"/>
         <ScoreKill value="50"/>
         <ScoreResult value="BuildOrder"/>
