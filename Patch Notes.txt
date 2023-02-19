@@ -5,7 +5,6 @@
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
 *Thor Armoury upgrades have the correct text now.
 *Wraith displacement field tooltip is now correct.
-
 *Medics have a passive saying they can capture neutral structures
 *Sensor tower description is no longer vanilla
 
@@ -48,11 +47,16 @@ The map now gets fully creeped over time, except for your base area.
 No more screen stealing on hard and brutal
 You now need to get a CC, and don't start with one, instead of gathering an army.
 The zerg start with max upgrades
-*Droppods are now mercs
+Droppods are now mercs
 Warfield has mercs to protect himself
 No more free vision of random areas of the map
 No more free vision of droppods
 No more free vision of Warfield
+*Added autosaves after each base killed, including the infested base.
+*Added autosaves after each of the outposts are killed.
+
+Char 2 Split:
+*Omegalisks are now listed as a Neutralized Unit
 
 Belly of the Beast:
 Tychus, Swann, and Raynor have been buffed to 250 HP.
