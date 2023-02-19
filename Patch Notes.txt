@@ -52,8 +52,10 @@ Warfield has mercs to protect himself
 No more free vision of random areas of the map
 No more free vision of droppods
 No more free vision of Warfield
-*Added autosaves after each base killed, including the infested base.
-*Added autosaves after each of the outposts are killed.
+Added autosaves after each base killed, including the infested base.
+Added autosaves after each of the outposts are killed.
+You now lose if warfield dies.
+You now lose if you have no buildings, instead of having no units.
 
 Char 2 Split:
 *Omegalisks are now listed as a Neutralized Unit
