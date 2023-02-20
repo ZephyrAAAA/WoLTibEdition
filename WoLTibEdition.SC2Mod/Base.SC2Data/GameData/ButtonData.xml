@@ -148,6 +148,7 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
+    <CButton id="NeutralStructurePassive"/>
     <CButton id="RallySCV">
         <Icon value="Assets\Textures\btn-ability-terran-setworkerrallypoint.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-zerg-setworkerrallypoint.dds"/>
