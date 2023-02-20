@@ -234,6 +234,7 @@ Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/LongRangeMassRecall=Long-Range Mass Recall
 Button/Name/MedivacLoadNearby=Load Nearby
+Button/Name/NeutralStructurePassive=Neutral Structure Passive
 Button/Name/NovaHeal=Heal
 Button/Name/NukeCalldown10=Tac Nuke Strike
 Button/Name/NukeCalldown11=Tac Nuke Strike
@@ -562,7 +563,7 @@ Button/Tooltip/ScannerSweepTopbar8=Reveals an area of the map, detecting cloaked
 Button/Tooltip/ScannerSweepTopbar9=Reveals an area of the map, detecting cloaked and burrowed units. Lasts <d time="12"/>.
 Button/Tooltip/Sell=Sells selected building for a partial refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
-Button/Tooltip/SensorTower2=Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
+Button/Tooltip/SensorTower2=Provides a large build radius.<n/><n/>Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Sentry=Energy-manipulator unit. Can use Force Field, Guardian Shield, and Shield Restore.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Command Center
@@ -600,7 +601,7 @@ Button/Tooltip/TacticalMissileStrike6=Fires a tactical missile at target locatio
 Button/Tooltip/TacticalMissileStrike7=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
-Button/Tooltip/TakeParts=Takes parts from targeted unit to improve the thor.
+Button/Tooltip/TakeParts=Takes parts from targeted unit to improve the thor.<n/><n/>-Hellion (Flamethrower)<n/>-Diamondback (Railgun)<n/>-Stone (Sensor Range)<n/>-Siege Tank (AOE on primary Attack)<n/>-Predator (Energy Shield)
 Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
 Button/Tooltip/TalDarimMothership=Ultimate Protoss vessel. Can use Thermal Lance, Solarite Flare, Mass Recall, and Wormhole Transit. Cloaks nearby ground units and structures.  <n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
