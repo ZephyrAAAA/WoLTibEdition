@@ -1,13 +1,14 @@
 Thor theft has a proper tooltip now
-*Raynor's gun that is clearly not the same as the marine's is now named differently.
-*The Golden Armada has been buffed.
 SCVs take up 2 cargo space now
-*The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
 Thor Armoury upgrades have the correct text now.
 Wraith displacement field tooltip is now correct.
-*Medics have a passive saying they can capture neutral structures
 Sensor tower description is no longer vanilla
 Topbar repair nerfed to 10 + 2%
+Fixed the upgrade function not respecting max upgrade level
+*Raynor's gun that is clearly not the same as the marine's is now named differently.
+*The Golden Armada has been buffed.
+*The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
+*Medics have a passive saying they can capture neutral structures
 
 Liberation Day:
 The final area is now harder
@@ -27,10 +28,10 @@ Supernova:
 Added a tip with details about what unlocks are free.
 
 Media Blitz:
-*The convoy tip now says what happens if you complete a tower while a convoy is on the way
-*Some BCs are replaced by banshees in tower defense waves
-*Warfield now unleashes the predators
-*Fixed the ghost academy bonus not counting if you've killed one in the sneak attack
+The convoy tip now says what happens if you complete a tower while a convoy is on the way
+Some BCs are replaced by banshees in tower defense waves
+Fixed the ghost academy bonus not counting if you've killed one in the sneak attack
+Warfield now unleashes the predators
 
 Maw of the Void:
 Improved performance.

@@ -475,7 +475,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     lv_currentUpgradeLevel = lp_initialUpgradeLevel;
     Wait(lp_upgradeInitialTimeDelay, c_timeAI);
     while (true) {
-        if (((lv_currentUpgradeLevel >= 2) || (lv_currentUpgradeLevel >= lv_maxUpgradeLevel)) && (lv_currentUpgrades >= 6)) {
+        if (((lv_currentUpgradeLevel >= lv_maxUpgradeLevel) || (lv_currentUpgradeLevel >= 3))) {
             return true;
         }
         else {
