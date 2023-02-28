@@ -1823,7 +1823,7 @@
         <Flags index="ContinueWhenFull" value="1"/>
         <DrainResourceCostFactor index="Minerals" value="1"/>
         <RechargeVitalRate value="10"/>
-        <RechargeVitalFraction value="0.0507"/>
+        <RechargeVitalFraction value="0.0195"/>
     </CEffectCreateHealer>
     <CEffectCreatePersistent id="P38ScytheGuassPistolBurst">
         <PeriodicPeriodArray index="1" value="0"/>
