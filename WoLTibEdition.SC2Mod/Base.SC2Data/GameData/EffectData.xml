@@ -2326,76 +2326,11 @@
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
     </CEffectApplyBehavior>
-    <CEffectApplyBehavior id="SquadTrackAB">
-        <EditorCategories value=""/>
-        <Behavior value="SquadTracker"/>
-    </CEffectApplyBehavior>
-    <CEffectDamage id="SquadTrackDamage">
-        <EditorCategories value=""/>
-        <ResponseFlags index="Acquire" value="1"/>
-        <ResponseFlags index="Flee" value="1"/>
-        <Flags index="Notification" value="1"/>
-        <Amount value="5"/>
-        <ExcludeArray Value="Target"/>
-        <SearchFlags index="CallForHelp" value="1"/>
-        <SearchFlags index="OffsetAreaByAngle" value="1"/>
-        <SearchFlags index="SameCliff" value="0"/>
-    </CEffectDamage>
-    <CEffectEnumTrackedUnits id="SquadTrackDistribute">
-        <EditorCategories value=""/>
-        <BehaviorLink value="SquadTracker"/>
-        <TrackerUnit Value="Source"/>
-        <Effect value="SquadTrackDamage"/>
-    </CEffectEnumTrackedUnits>
-    <CEffectAddTrackedUnit id="SquadTrackMain">
-        <EditorCategories value=""/>
-        <BehaviorLink value="SquadTracker"/>
-        <TrackerUnit Value="Target"/>
-    </CEffectAddTrackedUnit>
-    <CEffectCreatePersistent id="SquadTrackOrphan">
-        <EditorCategories value=""/>
-        <WhichLocation Value="SourceUnit"/>
-        <OffsetVectorEndLocation Value="SourceUnit"/>
-        <Flags index="OrphanParams" value="1"/>
-        <PeriodCount value="1"/>
-        <PeriodicEffectArray value="SquadTrackDistribute"/>
-        <PeriodicPeriodArray value="0"/>
-    </CEffectCreatePersistent>
-    <CEffectSet id="SquadTrackSet">
-        <EditorCategories value=""/>
-        <EffectArray value="SquadTrackAB"/>
-        <EffectArray value="SquadTrackMain"/>
-        <EffectArray value="SquadTrackUnit"/>
-    </CEffectSet>
-    <CEffectAddTrackedUnit id="SquadTrackUnit">
-        <EditorCategories value=""/>
-        <BehaviorLink value="SquadTracker"/>
-        <TrackerUnit Value="Target"/>
-        <TrackedUnit Value="Target"/>
-    </CEffectAddTrackedUnit>
     <CEffectTeleport id="SquadUnitTeleport">
         <ValidatorArray value="SquadTooFar"/>
         <PlacementAround Value="CasterUnit"/>
         <SourceLocation Value="TargetUnit"/>
     </CEffectTeleport>
-    <CEffectApplyBehavior id="SquadVeterancy1">
-        <EditorCategories value=""/>
-    </CEffectApplyBehavior>
-    <CEffectEnumMagazine id="SquadVeterancy1Iterate">
-        <EditorCategories value=""/>
-        <WhichUnit Value="Caster"/>
-        <EffectInternal value="SquadVeterancy1"/>
-        <EffectExternal value="SquadVeterancy1"/>
-    </CEffectEnumMagazine>
-    <CEffectEnumMagazine id="SquadVeterancy2Iterate">
-        <EditorCategories value=""/>
-        <WhichUnit Value="Caster"/>
-        <EffectInternal value="SquadVeterancy2"/>
-        <EffectExternal value="SquadVeterancy2"/>
-    </CEffectEnumMagazine>
-    <CEffectApplyBehavior id="SquadVeterancy2">
-        <EditorCategories value=""/>
-    </CEffectApplyBehavior>
     <CEffectSet id="StarshipMercSet">
         <EditorCategories value=""/>
         <EffectArray value="DropHelsAngels"/>

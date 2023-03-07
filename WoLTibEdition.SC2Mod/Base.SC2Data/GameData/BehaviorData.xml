@@ -633,30 +633,6 @@
             <AbilClassEnableArray index="CAbilArmMagazine" value="1"/>
         </Modification>
     </CBehaviorBuff>
-    <CBehaviorUnitTracker id="SquadTracker">
-        <BehaviorFlags index="Permanent" value="1"/>
-        <InfoFlags index="Hidden" value="1"/>
-        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
-        <MaxTrackedUnits value="2"/>
-    </CBehaviorUnitTracker>
-    <CBehaviorBuff id="SquadVeterancy1">
-        <EditorCategories value="AbilityorEffectType:Units"/>
-        <MaxStackCount value="2"/>
-        <Modification>
-            <DamageDealtFraction index="Spell" value="0.1"/>
-            <DamageDealtFraction index="Melee" value="0.1"/>
-            <DamageDealtFraction index="Ranged" value="0.1"/>
-            <DamageDealtFraction index="Splash" value="0.1"/>
-            <DamageDealtFraction index="NoProc" value="0.1"/>
-            <VitalMaxFractionArray index="Life" value="0.1"/>
-        </Modification>
-    </CBehaviorBuff>
-    <CBehaviorBuff id="SquadVeterancy2">
-        <Modification AttackSpeedMultiplier="2">
-            <VitalMaxFractionArray index="Life" value="0.3"/>
-            <VitalRegenArray index="Life" value="0.1992"/>
-        </Modification>
-    </CBehaviorBuff>
     <CBehaviorBuff id="StealthSpinLeft">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
