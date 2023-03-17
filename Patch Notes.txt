@@ -5,10 +5,8 @@ Wraith displacement field tooltip is now correct.
 Sensor tower description is no longer vanilla
 Topbar repair nerfed to 10 + 2%
 Fixed the upgrade function not respecting max upgrade level
-*Raynor's gun that is clearly not the same as the marine's is now named differently.
 The Golden Armada has been buffed.
 Medics have a passive saying they can capture neutral structures
-*The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
 
 Liberation Day:
 The final area is now harder
