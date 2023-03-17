@@ -6,9 +6,9 @@ Sensor tower description is no longer vanilla
 Topbar repair nerfed to 10 + 2%
 Fixed the upgrade function not respecting max upgrade level
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
-*The Golden Armada has been buffed.
+The Golden Armada has been buffed.
+Medics have a passive saying they can capture neutral structures
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
-*Medics have a passive saying they can capture neutral structures
 
 Liberation Day:
 The final area is now harder
@@ -63,9 +63,6 @@ You now lose if warfield dies.
 You now lose if you have no buildings, instead of having no units.
 Warfield has a Hold Position SCV behind each bunker, and 2 roaming SCVs now.
 
-Char 2 Split:
-*Omegalisks are now listed as a Neutralized Unit
-
 Belly of the Beast:
 Tychus, Swann, and Raynor have been buffed to 250 HP.
 Stetmann has been buffed to 200 HP.
@@ -93,6 +90,5 @@ The zerg start with max upgrades
 No more free vision of the platforms after they blow up
 
 All-In:
-*Omegalisks are now sent in the ground version
 You get the Fusion Reactor from Gates, if it survived.
 The zerg start with max upgrades

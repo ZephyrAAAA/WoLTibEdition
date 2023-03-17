@@ -3812,6 +3812,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="MedicCapturePassive" Type="Passive" Row="1" Column="1"/>
         </CardLayouts>
     </CUnit>
     <CUnit id="Medivac">

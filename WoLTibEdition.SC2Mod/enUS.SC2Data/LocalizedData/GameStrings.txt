@@ -231,6 +231,7 @@ Button/Name/InfantryMercenaries9=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/LongRangeMassRecall=Long-Range Mass Recall
+Button/Name/MedicCapturePassive=Neutral Capture
 Button/Name/MedivacLoadNearby=Load Nearby
 Button/Name/NeutralStructurePassive=Neutral Structure Passive
 Button/Name/NovaHeal=Heal
@@ -484,6 +485,7 @@ Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
+Button/Tooltip/MedicCapturePassive=Medics can capture neutral structures, and are consumed by the action.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MineralSilo=Provides build radius while controlled.<n/><n/>Grants a large one-time mineral payout on capture.
 Button/Tooltip/MineralSpike=Provides a steady income while controlled.<n/><n/>Grants a small one-time mineral payout on capture.
