@@ -38,15 +38,9 @@ Terrans, starting at Zero Hour, now have access to the Devastation Turret, an an
 
 Mercenaries are now a topbar power, with unlimited uses. Mercs are unified into 4 support powers, dropping Infantry, Vehicles, Starships, and Jackson, based on what you've bought. They are unlocked in-mission by building a Spec Ops
 
-You start with 3 protoss research now.
-
 Implemented a topbar of Support Powers.
 
-You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char. Raynor complains about a headache if you try to.
-
 Ghosts/Spectres have been reworked to be a unique Commando unit. Ghosts are better at taking down single targets, Spectres are better at Crowd Control. 
-
-Bonus Objectives now generally give something good in-mission.
 
 Shadow Ops is now unlocked after doing 3 missions, Armoury is unlocked after 6, Fusion Core is unlocked after 9.
 
@@ -54,21 +48,7 @@ Reactor Addon has been removed, because of issues with double queues.
 
 Removed Tech labs. All upgrades are now on the Spec Ops(Barracks), Ebay(Factory), and Armoury(Starport). Requirements are in various places. Missions still have the required tech to make the new unit.
 
-All units now say an attack line when you tell them to a-move.
-
-All mercs are now unlocked from the start
-
 Progression messages when you return to the Hyperion, and when you start a mission, notifying you of having unlocked the Spec Ops, Predator, Armoury, Hercules, and Fusion Core.
-
-Research bonus objectives now give 10000 credits for each research collected.
-
-Artifact missions give a lot more credits.
-
-Rebalancing of Armoury Upgrade Costs. With the extra money, you can buy everything.
-
-Most missions can no longer be done immediately after the previous mission in the chain.
-
-Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
 
 Sensor Towers, 2x2 structures, refineries, and bunkers can now be built on creep.
 
@@ -78,11 +58,7 @@ Veins are visible on the minimap.
 
 New tips we add have their title coloured Red. Tips we edit are coloured Orange.
 
-Tal'Darim enemies now use the correct Versus skin. There is no mechanical change.
-
 Neutral Structures that can be taken over by Medic Squads to give bonuses.
-
-We use a unified upgrade system, where missions you do later allows the enemy to get better upgrades.
 
 Structures now list other structures they unlock, Topbar powers they unlock, and Upgrades they can research.
 
@@ -377,6 +353,60 @@ Echoes of the Future:
 -Clearing zerg bases gives terran units
 -Touching the overmind gives upgrades
 -Zeratul now shuts up long enough for the cutscene to happen if you get to the nexus before he finishes talking about the observer.
+Gates of Hell:
+-Increased the number of defenders in each base
+-The main zerg base towards warfield is absolutely bonkers. Use the money to send wave after wave of your own men to reach the preset kill limit.
+-Killing the other 3 zerg bases reduces the pressure on you. They also have money.
+-The zerg have 3 outposts, with a spore cannon and a nydus. These nyduses send waves at you.
+-There's a *lot* of fields present around the map, giving a reason to try holding area.
+-Each Spore Cannon killed grants an additional drop pod wave
+-The default number of drop pod waves has been reduced.
+-You now have a Fusion Reactor in your base that provides 250 power, instead of any off-map power. If you keep it alive, you get it on All-In.
+-The map now gets fully creeped over time, except for your base area.
+-No more screen stealing on hard and brutal
+-You now need to get a CC, and don't start with one, instead of gathering an army.
+-The zerg start with max upgrades
+-Droppods are now mercs
+-Warfield has mercs to protect himself
+-No more free vision of random areas of the map
+-No more free vision of droppods
+-No more free vision of Warfield
+-Added autosaves after each base killed, including the infested base.
+-Added autosaves after each of the outposts are killed.
+-You now lose if warfield dies.
+-You now lose if you have no buildings, instead of having no units.
+-Warfield has a Hold Position SCV behind each bunker, and 2 roaming SCVs now.
+
+Belly of the Beast:
+-Tychus, Swann, and Raynor have been buffed to 250 HP.
+-Stetmann has been buffed to 200 HP.
+-Tychus does 7 Rifle damage at 0.2 attack speed. Tychus' grenade does Concussive.
+-Raynor does 40 Rocket damage at 1.5 attack speed. Raynor's Snipe does Rocket Damage.
+-Swann does 40 Cannon damage at 1 attack speed.
+-The Heroes now have a combined Command Card
+-Stettman no longer blocks medic healing
+-Tychus' and Raynor's abilities are no longer blocked by fog of war
+-Swann now gets betty's kills
+-Betty now fires continuously, and does Concussive damage with 40 DPS
+-Swann shoots faster, and does more damage.
+-The first holdout sends more stuff
+-All Rescuable units are now mercs
+
+Shatter the Sky:
+-Tower health increased to 5000
+-Leviathan has 10x the health
+-Leviathan now patrols bases
+-No more free vision of around the leviathan
+-No more free vision of the Coolant Towers
+-Blowing up platforms gives much less money
+-Corruptors and Brood Lords hang around in their appropriate base, plus other places.
+-The zerg start with max upgrades
+-No more free vision of the platforms after they blow up
+
+All-in:
+-*Omegalisks are now sent in the ground version
+-You get the Fusion Reactor from Gates, if it survived.
+-The zerg start with max upgrades
 
 UNIT CHANGES:
 
@@ -590,6 +620,29 @@ Improved Energy Weapons-Improves damage of Battlecruiser, Thor, Wraith [Armoury]
 MISC CHANGES:
 You now start with 3 protoss research as well
 
+You can no longer do all the Zeratul Missions at once. After you've done one, you must do another mission. This does not apply if your only available mission is Char. Raynor complains about a headache if you try to.
+
+Bonus Objectives now generally give something good in-mission.
+
+All units now say an attack line when you tell them to a-move.
+
+All mercs are now purchasable from the start.
+
+Research bonus objectives now give 10000 credits for each research collected.
+
+Artifact missions give a lot more credits.
+
+Rebalancing of Armoury Upgrade Costs. With the extra money, you can buy everything.
+
+Most missions can no longer be done immediately after the previous mission in the chain.
+
+Zeratul now shows up to give Raynor the headache crystal after mission 9, not specifically after The Dig.
+
+Tal'Darim enemies now use the correct Versus skin. There is no mechanical change.
+
+We use a unified upgrade system, where missions you do later allows the enemy to get better upgrades.
+
+
 SUPPORT POWERS:
 Structure Repair: Repairs any numer of structures anywhere on the map for 10+2%hp/s. Cost is the same as normal SCV repair.
 
@@ -597,30 +650,44 @@ Structure Power: Depowers/repowers target structure. Depowered structures don't 
 
 Structure Sell: Sells target structure for 50% of its build cost.
 
-Scanner Sweep: Scans an area for 500 minerals. It's scan. You know what it does.
+Scanner Sweep: Scans an area for 500 minerals. It's scan. You know what it does. Unlocked by the Orbital Command Armoury Upgrade. Available from the Engineering Bay.
 
-Tactical Missile:
+Tactical Missile: Launches a tactical missile at a location that does 200+100vs structure for 1500 minerals. Unlocked by the Orbital Command Armoury Upgrade. Available from the Shadow Ops.
 
-Nuclear Missile:
+Nuclear Missile: Launches a nuclear missile at a location that does 400+600vs structure for 3000 minerals. Unlocked by the Orbital Command Armoury Upgrade. Available from the Armoury.
 
-Yamato Strike:
+Yamato Strike: Strikes a location with the Hyperion's Yamato Cannon that does 400 damage with no falloff for 3000 minerals. Damage is upgraded by 50% by completing Piercing the Shroud with the plasma gun retrieved. Available from the Fusion Core.
 
-Infantry Mercenaries: Deploys all purchased Infantry Mercenaries for 2000 minerals.
+Infantry Mercenaries: Deploys all purchased Infantry Mercenaries for 2000 minerals. Available from the Shadow Ops.
 
-Vehicle Mercenaries: Deploys all purchased Vehicle Mercenaries for 4500 minerals.
+Vehicle Mercenaries: Deploys all purchased Vehicle Mercenaries for 4500 minerals. Available from the Shadow Ops.
 
-Starship Mercenaries: Deploys all purchased Starship Mercenaries for 6000 minerals.
+Starship Mercenaries: Deploys all purchased Starship Mercenaries for 6000 minerals. Available from the Shadow Ops.
 
-Purification Fleet: Deploy some of the Golden Armada to strafe an area for 10000 minerals. Unlocked by completing Haven's Fall. 1 charge.
+Purification Fleet: Deploy some of the Golden Armada to strafe an area for 10000 minerals. Unlocked by completing Haven's Fall. 1 charge. Available from the Fusion Core.
 
-Zerg Hypervirus: Deploy a zerg hypervirus developed by Ariel Hanson for 10000 minerals. Unlocked by completing Safe Haven. 1 charge. Causes all units in 7 radius to become hostile to everything.
+Zerg Hypervirus: Deploy a zerg hypervirus developed by Ariel Hanson for 10000 minerals. Unlocked by completing Safe Haven. 1 charge. Causes all units in 7 radius to become hostile to everything. Available from the Fusion Core.
 
-Chrono Device:
+Chrono Device: Deploy a chrono field to slow enemies for 3000 minerals. Unlocked by completing Piercing the Shroud with the chrono device retrieved. Available from the Fusion Core.
 
-Laser Drill:
+Laser Drill: Deploy a (weaker) laser drill for 10000 minerals. Unlocked by completing The Dig with the Take Drill upgrade researched on the drill. Available from the Fusion Core.
 
-Call Dark Templar: Deploy 16 Dark Templar for 7000 minerals. Unlocked by rescuing all Dark Templar on Maw of the Void. 1 charge.
+Call Dark Templar: Deploy 16 Dark Templar for 7000 minerals. Unlocked by rescuing all Dark Templar on Maw of the Void. 1 charge. Available from the Fusion Core.
 
-Hive Mind Emulator:
+Hive Mind Emulator: Mind controls all zerg units in a 4 radius for 60s for 8000 minerals. Unlocked by selecting the Lab Research. Available from the Fusion Core.
 
-Psi Disruptor:
+Psi Disruptor: Confuses all zerg units in a 9 radius for 120s for 8000 minerals. Unlocked by selecting the Lab Research. Available from the Fusion Core.
+
+
+CHEAT CODES:
+
+THEPOWEROFTHESUN - Makes the drill full power.
+
+callinthebigguns - Grants you a charge of Deploy Laser Drill
+
+shadowfurries - Grants you a charge of Deploy Dark Templar
+
+exterminatus - Removes the charge limit on any applicable topbar abilities.
+
+
+

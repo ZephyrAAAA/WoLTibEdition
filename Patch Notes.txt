@@ -1,7 +1,22 @@
 *Raynor's gun that is clearly not the same as the marine's is now named differently.
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
+*You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
+*Added a "Damage Types" section to the gameplay mechanics help section
+*Added a "Neutral Structures" section to the gameplay mechanics help section
+*Refineries can no longer accept deposits when depowered.
 
+Liberation Day:
+*Added some sort of record of text that appears, so you can still read it if you miss it.
 
+Outlaws:
+*Added some sort of record of text that appears, so you can still read it if you miss it.
+
+Zero Hour:
+*Added some sort of record of text that appears, so you can still read it if you miss it.
+*Fixed the build a crane popup
+
+Evacuation:
+*Fixed rear nydus
 
 All-In:
 *Omegalisks are now sent in the ground version
