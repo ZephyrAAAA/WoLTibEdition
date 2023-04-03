@@ -22,6 +22,9 @@
 *Added description to Low Power behaviour 
 *Added description to Depowered behaviour
 *Renamed building structures buttons
+*Included a repair breakdown on the factory and starport repair button
+*Made squad members no longer have a healthbar
+*Deploy button for CCs and Cranes is now on the main menu
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
@@ -36,6 +39,7 @@ Zero Hour:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
 *Fixed the build a crane popup
 *Fixed second bonus being murdered immediately
+*Removed corruptors
 
 Smash and Grab:
 *Took into account archon thiccness
