@@ -4,19 +4,78 @@
 *Added a "Damage Types" section to the gameplay mechanics help section
 *Added a "Neutral Structures" section to the gameplay mechanics help section
 *Refineries can no longer accept deposits when depowered.
+*Added a laser drill upgrade to increase its power.
+*Fixed Devastation Turret tooltip
+*Fixed Fusion Core tooltip
+*Fixed Goliath upgrade buttons
+*Fixed diamondback upgrade buttons
+*Fixed devastation turret having AOE by default.
+*Gave silos something to differentiate them.
+*Fixed the commando explosive charge tooltip
+*Sentry weapon now has tooltip
+*Spine Colony weapon now has tooltip
+*Spider Mines now have a damage type
+*Fixed Zeratul's void prison sometimes granting immortality.
+*Replaced the blue mineral icon with a green mineral icon
+*Replaced the supply depot icon with a power icon
+*Added a description for each squad
+*Added description to Low Power behaviour 
+*Added description to Depowered behaviour
+*Renamed building structures buttons
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
+*Removed bonus marines for killing holoboards
+*Weakened the final area
 
 Outlaws:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
+*Less tutorializing?
 
 Zero Hour:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
 *Fixed the build a crane popup
+*Fixed second bonus being murdered immediately
+
+Smash and Grab:
+*Took into account archon thiccness
 
 Evacuation:
+*Fixed early attack wave
 *Fixed rear nydus
+
+Redstone:
+*Edited the rich mineral field tip
+
+Outbreak:
+*Fixed abberations spawning in the bottom right base if you have stuff there.
+
+Trains:
+*Fixed Matt's subtitles about kill teams returning to match the line he actually says
+
+Cutthroat:
+*Mira has had her tech lab rights revoked.
+
+Morbius:
+*Removed free vision near first data core
+
+Haven's Fall:
+*Infinite creep is now mentioned somewhere.
+
+Safe Haven:
+*The protoss have been instructed on proper reinforcement procedures
+
+Breakout:
+*Raynor's units have proper weapon tooltips now
+
+Engine:
+*Fixed Johnny.
+
+A Sinister Turn:
+*Mentioned Zeratul's recall on killing a preserver.
+
+Media Blitz:
+*Fixed loading a save crashing the game.
 
 All-In:
 *Omegalisks are now sent in the ground version
