@@ -1528,6 +1528,20 @@
                 <Column value="1"/>
             </LayoutButtons>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="0"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="0" Column="0"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="0" Column="0"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="0" Column="0"/>/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="0"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="0"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="0" Column="0"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="0" Column="0"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="0" Column="1"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="0" Column="1"/>
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="0" Column="1"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="0" Column="1"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
@@ -1726,8 +1740,39 @@
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="CommandCenterTrain,Train1" Row="1" Column="3"/>
-            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="1" Column="3"/>
-            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCBuild,Specialize11" Row="1" Column="3"/>
+            <LayoutButtons>
+                <Face value="TerranBuild"/>
+                <Type value="Submenu"/>
+                <SubmenuCardId value="0002"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="0"/>
+            </LayoutButtons>
+            <LayoutButtons>
+                <Face value="TerranBuildAdvanced"/>
+                <Type value="Submenu"/>
+                <AbilCmd value="BuildInProgress,Cancel"/>
+                <SubmenuCardId value="0003"/>
+                <SubmenuIsSticky value="1"/>
+                <Row value="2"/>
+                <Column value="1"/>
+            </LayoutButtons>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="0"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="0" Column="0"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="0" Column="0"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="0" Column="0"/>/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="0"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="0"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="0" Column="0"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="0" Column="0"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="0" Column="1"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="0" Column="1"/>
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="0" Column="1"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="0" Column="1"/>
+        </CardLayouts>
+        <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCBuild,Specialize1" Row="0" Column="2"/>
             <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="1"/>
@@ -1742,19 +1787,13 @@
             <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCBuild,Specialize9" Row="0" Column="3"/>
             <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="4"/>
             <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCBuild,Specialize10" Row="0" Column="4"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="1" Column="3"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCBuild,Specialize11" Row="1" Column="3"/>
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="1" Column="4"/>
             <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCBuild,Specialize12" Row="1" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="CancelSubmenu" Row="2" Column="4"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
             <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCBuild,Specialize13" Row="0" Column="0"/>
-            <LayoutButtons>
-                <Face value="TerranBuildAdvanced"/>
-                <Type value="Submenu"/>
-                <AbilCmd value="BuildInProgress,Cancel"/>
-                <SubmenuCardId value="0003"/>
-                <SubmenuIsSticky value="1"/>
-                <Row value="2"/>
-                <Column value="1"/>
-            </LayoutButtons>
         </CardLayouts>
         <CardLayouts CardId="0003">
             <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="2" Column="3"/>
@@ -4540,8 +4579,8 @@
         <BehaviorArray Link="DisablePower"/>
         <WeaponArray Link="TwinIbiksCannon" Turret="PlanetaryFortress"/>
         <CardLayouts>
-            <LayoutButtons Face="StopRedirect" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="1"/>
-            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="StopRedirect" Type="AbilCmd" AbilCmd="StopRedirect,Execute" Row="0" Column="2"/>
+            <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="2"/>
             <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
@@ -4568,6 +4607,20 @@
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="1" Column="0"/>
             <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="1" Column="1"/>
+            <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="0"/>
+            <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="0"/>
+            <LayoutButtons Face="Barracks" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build3" Row="0" Column="0"/>
+            <LayoutButtons Face="EngineeringBay" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build4" Row="0" Column="0"/>
+            <LayoutButtons Face="GhostAcademy" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build8" Row="0" Column="0"/>/>
+            <LayoutButtons Face="Factory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build9" Row="0" Column="0"/>
+            <LayoutButtons Face="Armory" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build10" Row="0" Column="0"/>
+            <LayoutButtons Face="Starport" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build11" Row="0" Column="0"/>
+            <LayoutButtons Face="FusionCore" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build12" Row="0" Column="0"/>
+            <LayoutButtons Face="Decal_Terran_0047_01" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build13" Row="0" Column="0"/>
+            <LayoutButtons Face="BuildDevastatorTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build14" Row="0" Column="1"/>
+            <LayoutButtons Face="MissileTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build6" Row="0" Column="1"/>
+            <LayoutButtons Face="PerditionTurret" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build15" Row="0" Column="1"/>
+            <LayoutButtons Face="Bunker" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build5" Row="0" Column="1"/>
         </CardLayouts>
         <CardLayouts CardId="0002">
             <LayoutButtons Face="SupplyDepot" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build1" Row="0" Column="2"/>
