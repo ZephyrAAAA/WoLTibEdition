@@ -27,6 +27,7 @@
 *Included a repair breakdown on the factory and starport repair button
 *Made squad members no longer have a healthbar
 Deploy button for CCs and Cranes is now on the main menu
+*Thor barrage button no longer says it stuns
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
@@ -61,6 +62,7 @@ Reduced abberation count
 Abberations no longer show up so soon.
 The field in your base now starts full.
 Doubled the regen of the field in your base.
+The infested are no longer american.
 
 Trains:
 *Fixed Matt's subtitles about kill teams returning to match the line he actually says
@@ -83,12 +85,30 @@ Breakout:
 Engine:
 Fixed Johnny.
 
+Supernova:
+Fixed cloak bonus upgrade text.
+
+Maw:
+Killing the protoss structures is now complete when they have 10 remaining, instead of 0.
+Weakened mommaship waves
+Weakened attack waves.
+Increased how much destroying a base weakens attack waves
+Slowed down the deployment of new Bully Groups.
+The mothership no longer attacks immediately after spawning, instead waiting 2 minutes.
+The AI no longer replaces production or tech structures. They will still rebuild Nexi, pylons, and cannons, if they have probes.
+
 A Sinister Turn:
 *Mentioned Zeratul's recall on killing a preserver.
 
 Media Blitz:
 *Fixed loading a save crashing the game?
 *Made the bases only rebuild from convoys
+
+Gates:
+*Moved the mid cutscene to after you bring the CC back to your base?
+
+Belly:
+*Added stim to the unified command card
 
 All-In:
 *Omegalisks are now sent in the ground version
