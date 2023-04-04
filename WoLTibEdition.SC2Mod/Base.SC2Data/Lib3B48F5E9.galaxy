@@ -793,7 +793,6 @@ bool lib3B48F5E9_gt_TerranUpgradeSwap_Func (bool testConds, bool runActions) {
         libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
     }
     else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel2") {
-        libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "ReaperScannerPack", 1);
     }
     else if (autoAB0E8CEF_val == "TerranInfantryArmorsLevel3") {
         libNtve_gf_SetUpgradeLevelForPlayer(EventPlayer(), "TerranInfantryVanadiumPlating", 1);
