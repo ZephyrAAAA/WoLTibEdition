@@ -97,6 +97,10 @@
     <CBehaviorBuff id="CraneBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="DamageMarker">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -166,6 +170,10 @@
     <CBehaviorBuff id="DevastatorTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="AstralProjection">
         <InfoFlags index="Hidden" value="1"/>
@@ -418,6 +426,10 @@
     <CBehaviorBuff id="PerditionTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="DropOffStun">
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -775,50 +787,98 @@
     <CBehaviorBuff id="SupplyDepotBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="RefineryBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="BarracksBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="EngineeringBayBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="BunkerBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="MissileTurretBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SensorTowerBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="GhostAcademyBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="FactoryBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="ArmoryBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="StarportBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="FusionCoreBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="SupplyDrop">
         <Modification Food="10"/>

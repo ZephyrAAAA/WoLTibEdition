@@ -873,7 +873,8 @@
         <CmdButtonArray index="CancelLast">
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
-        <QueueSize value="2"/>
+        <QueueSize value="7"/>
+        <Flags index="Passive" value="1"/>
     </CAbilQueue>
     <CAbilArmMagazine id="CCMechanicalRepair">
         <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
@@ -1576,12 +1577,7 @@
         <InfoArray index="Specialize1" Time="7" Effect="SupplyDepotBuilt">
             <Resource index="Vespene" value="700"/>
             <Resource index="Custom" value="-20"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="SupplyDepot" Requirements="CanBuildSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1589,12 +1585,7 @@
         <InfoArray index="Specialize2" Time="25" Effect="RefineryBuilt">
             <Resource index="Vespene" value="2500"/>
             <Resource index="Custom" value="15"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Refinery" Requirements="CanBuildRefinery">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1602,12 +1593,7 @@
         <InfoArray index="Specialize3" Time="5" Effect="BarracksBuilt">
             <Resource index="Vespene" value="500"/>
             <Resource index="Custom" value="5"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Barracks" Requirements="HaveSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1615,24 +1601,14 @@
         <InfoArray index="Specialize4" Time="15" Effect="EngineeringBayBuilt">
             <Resource index="Vespene" value="1500"/>
             <Resource index="Custom" value="9"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="EngineeringBay" Requirements="HaveRefandSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Specialize5" Time="4" Effect="BunkerBuilt">
             <Resource index="Vespene" value="400"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Bunker" State="Restricted" Requirements="StaticDefBarracks">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1640,12 +1616,7 @@
         <InfoArray index="Specialize6" Time="8" Effect="MissileTurretBuilt">
             <Resource index="Vespene" value="800"/>
             <Resource index="Custom" value="7"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="MissileTurret" State="Restricted" Requirements="StaticDefEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1653,12 +1624,7 @@
         <InfoArray index="Specialize7" Time="10" Effect="SensorTowerBuilt">
             <Resource index="Vespene" value="1000"/>
             <Resource index="Custom" value="10"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="SensorTower" State="Restricted" Requirements="IsNotCrane">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1666,12 +1632,7 @@
         <InfoArray index="Specialize8" Time="10" Effect="GhostAcademyBuilt">
             <Resource index="Vespene" value="1000"/>
             <Resource index="Custom" value="7"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="GhostAcademy" State="Restricted" Requirements="HaveBarracks">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1679,12 +1640,7 @@
         <InfoArray index="Specialize9" Time="20" Effect="FactoryBuilt">
             <Resource index="Vespene" value="2000"/>
             <Resource index="Custom" value="7"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Factory" Requirements="HaveRefandSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1692,12 +1648,7 @@
         <InfoArray index="Specialize10" Time="40" Effect="ArmoryBuilt">
             <Resource index="Vespene" value="4000"/>
             <Resource index="Custom" value="12"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Armory" State="Restricted" Requirements="HaveEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1705,12 +1656,7 @@
         <InfoArray index="Specialize11" Time="10" Effect="StarportBuilt">
             <Resource index="Vespene" value="1000"/>
             <Resource index="Custom" value="8"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Starport" State="Restricted" Requirements="HaveEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1718,12 +1664,7 @@
         <InfoArray index="Specialize12" Time="30" Effect="FusionCoreBuilt">
             <Resource index="Vespene" value="3000"/>
             <Resource index="Custom" value="15"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="FusionCore" State="Restricted" Requirements="HaveArmory">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1731,12 +1672,7 @@
         <InfoArray index="Specialize13" Time="15" Effect="CraneBuilt">
             <Resource index="Vespene" value="1500"/>
             <Resource index="Custom" value="10"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="Decal_Terran_0047_01" Requirements="IsNotCrane">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1744,12 +1680,7 @@
         <InfoArray index="Specialize14" Time="12" Effect="DevastatorTurretBuilt">
             <Resource index="Vespene" value="1200"/>
             <Resource index="Custom" value="8"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="BuildDevastatorTurret" State="Restricted" Requirements="StaticDefBarracks">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1758,12 +1689,7 @@
             <Resource index="Vespene" value="1500"/>
             <Resource index="Custom" value="12"/>
             <Display index="Custom" value="1"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="-1"/>
-                <HideCount value="1"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge HideCount="1" Location="Unit"/>
             <Button DefaultButtonFace="PerditionTurret" Requirements="StaticDefEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
@@ -1808,209 +1734,134 @@
         <FlagArray index="PeonMaintained" value="0"/>
         <InfoArray index="Build1" Unit="SupplyDepot2" Time="3">
             <Resource index="Custom" value="-20"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="SupplyDepot" Requirements="HasBuiltSupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build2" Unit="Refinery2" Time="3">
             <Resource index="Custom" value="15"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Refinery" Requirements="HasBuiltRefinery">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build3" Unit="Barracks2" Time="3">
             <Resource index="Custom" value="5"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Barracks" Requirements="HasBuiltBarracks">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build4" Unit="EngineeringBay2" Time="3">
             <Resource index="Custom" value="9"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="EngineeringBay" Requirements="HasBuiltEngineeringBay">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build5" Unit="Bunker2" Time="3">
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Bunker" Requirements="HasBuiltBunker">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build6" Unit="MissileTurret2" Time="3">
             <Resource index="Custom" value="7"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="MissileTurret" Requirements="HasBuiltMissileTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build7" Unit="SensorTower2" Time="3">
             <Resource index="Custom" value="10"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="SensorTower" Requirements="HasBuiltSensorTower">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build8" Unit="GhostAcademy2" Time="3">
             <Resource index="Custom" value="7"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="GhostAcademy" Requirements="HasBuiltGhostAcademy">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build9" Unit="Factory2" Time="3">
             <Resource index="Custom" value="7"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Factory" Requirements="HasBuiltFactory">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build10" Unit="Armory2" Time="3">
             <Resource index="Custom" value="12"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Armory" Requirements="HasBuiltArmory">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build11" Unit="Starport2" Time="3">
             <Resource index="Custom" value="8"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Starport" Requirements="HasBuiltStarport">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build12" Unit="FusionCore2" Time="3">
             <Resource index="Custom" value="15"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="FusionCore" Requirements="HasBuiltFusionCore">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build13" Unit="Crane" Time="3">
             <Resource index="Custom" value="10"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="Decal_Terran_0047_01" Requirements="HasBuiltCrane">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build14" Unit="DevastationTurret" Time="3">
             <Resource index="Custom" value="8"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="BuildDevastatorTurret" Requirements="HasBuiltDevastatorTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build15" Unit="PerditionTurret" Time="3">
             <Resource index="Custom" value="12"/>
-            <Charge>
-                <CountMax value="1"/>
-                <CountUse value="1"/>
-                <Link value="Abil/CCBuild"/>
-                <Location value="Unit"/>
-            </Charge>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
             <Button DefaultButtonFace="PerditionTurret" Requirements="HasBuiltPerditionTurret">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build16">
-            <Charge Link="Abil/CCBuild"/>
+            <Charge CountMax="1" Link="Abil/CCBuild"/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build17">
-            <Charge Link="Abil/CCBuild"/>
+            <Charge CountMax="1" Link="Abil/CCBuild"/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build18">
-            <Charge Link="Abil/CCBuild"/>
+            <Charge CountMax="1" Link="Abil/CCBuild"/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build19">
-            <Charge Link="Abil/CCBuild"/>
+            <Charge CountMax="1" Link="Abil/CCBuild"/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Build20">
-            <Charge Link="Abil/CCBuild"/>
+            <Charge CountMax="1" Link="Abil/CCBuild"/>
             <Button>
                 <Flags index="ToSelection" value="1"/>
             </Button>
