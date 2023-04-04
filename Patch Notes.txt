@@ -6,6 +6,8 @@
 *Refineries can no longer accept deposits when depowered.
 *Added a laser drill upgrade to increase its power.
 *Fixed Devastation Turret tooltip
+*Fixed Ghost tooltip
+*Fixed Spectre tooltip
 *Fixed Fusion Core tooltip
 *Fixed Goliath upgrade buttons
 *Fixed diamondback upgrade buttons
@@ -24,7 +26,7 @@
 *Renamed building structures buttons
 *Included a repair breakdown on the factory and starport repair button
 *Made squad members no longer have a healthbar
-*Deploy button for CCs and Cranes is now on the main menu
+Deploy button for CCs and Cranes is now on the main menu
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
@@ -42,7 +44,7 @@ Zero Hour:
 *Removed corruptors
 
 Smash and Grab:
-*Took into account archon thiccness
+Took into account archon thiccness
 
 Evacuation:
 *Fixed early attack wave
@@ -58,10 +60,10 @@ Trains:
 *Fixed Matt's subtitles about kill teams returning to match the line he actually says
 
 Cutthroat:
-*Mira has had her tech lab rights revoked.
+Mira has had her tech lab rights revoked.
 
 Morbius:
-*Removed free vision near first data core
+Fixed free vision of the first data core
 
 Haven's Fall:
 *Infinite creep is now mentioned somewhere.
@@ -73,7 +75,7 @@ Breakout:
 *Raynor's units have proper weapon tooltips now
 
 Engine:
-*Fixed Johnny.
+Fixed Johnny.
 
 A Sinister Turn:
 *Mentioned Zeratul's recall on killing a preserver.
