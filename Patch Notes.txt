@@ -137,6 +137,7 @@ Belly:
 *Added stim to the unified command card
 *Chaser force no longer spawns while in a boss fight
 *Fixed War Pigs not having full hp
+*fixed squads being unable to leave
 
 All-In:
 *Omegalisks are now sent in the ground version
