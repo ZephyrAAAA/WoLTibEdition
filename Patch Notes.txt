@@ -39,6 +39,7 @@ Deploy button for CCs and Cranes is now on the main menu
 *Renamed supply depot to power plant
 *Zeratul now has the proper damage type icon
 *Fixed the char armoury
+*Nerfed the bonus speed zerg units get from creep
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
