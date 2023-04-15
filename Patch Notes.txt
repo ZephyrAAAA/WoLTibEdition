@@ -10,7 +10,7 @@
 *Fixed Spectre tooltip
 *Fixed Fusion Core tooltip
 *Fixed Goliath upgrade buttons
-*Fixed diamondback upgrade buttons
+*Fixed diamondback upgrade buttons, shaped hull typo
 *Fixed devastation turret having AOE by default.
 *Gave silos something to differentiate them.
 *Fixed the commando explosive charge tooltip
@@ -37,6 +37,8 @@ Deploy button for CCs and Cranes is now on the main menu
 *Devastation turret now gets a passive for Concussive.
 *Made Abberations Light Vehicle armour.
 *Renamed supply depot to power plant
+*Zeratul now has the proper damage type icon
+*Fixed the char armoury
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
@@ -74,6 +76,7 @@ The infested are no longer american.
 
 Trains:
 *Fixed Matt's subtitles about kill teams returning to match the line he actually says
+*Fixed bunkers not being populated.
 
 Bel'shir:
 *Fixed dead SCVs not counting
@@ -109,6 +112,12 @@ Slowed down the deployment of new Bully Groups.
 The mothership no longer attacks immediately after spawning, instead waiting 2 minutes.
 The AI no longer replaces production or tech structures. They will still rebuild Nexi, pylons, and cannons, if they have probes.
 
+Whispers of Doom:
+*Karass now has a damage type
+
+Ghost of a Chance:
+*Ultra now always continues on
+
 A Sinister Turn:
 *Mentioned Zeratul's recall on killing a preserver.
 *Added a visual for recall
@@ -126,6 +135,8 @@ Gates:
 
 Belly:
 *Added stim to the unified command card
+*Chaser force no longer spawns while in a boss fight
+*Fixed War Pigs not having full hp
 
 All-In:
 *Omegalisks are now sent in the ground version
