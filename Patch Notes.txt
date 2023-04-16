@@ -85,6 +85,10 @@ Bel'shir:
 
 Cutthroat:
 Mira has had her tech lab rights revoked.
+*dominion timer is now brought up
+*fixed mira's base being rescued incorrectly making some units sometimes not have full hp
+*reduced ravens?
+*reduced spider mines?
 
 Morbius:
 Fixed free vision of the first data core
@@ -94,6 +98,7 @@ Haven's Fall:
 
 Safe Haven:
 *The protoss have been instructed on proper reinforcement procedures
+*mothership may not fire when feedbacked?
 
 Breakout:
 *Raynor's units have proper weapon tooltips now
@@ -123,6 +128,8 @@ A Sinister Turn:
 *Mentioned Zeratul's recall on killing a preserver.
 *Added a visual for recall
 *Added a button to toggle no-slap mode
+*removed detection cones during end cinematic?
+*mention maar teleport and potentially plasma blast
 
 Media Blitz:
 *Fixed loading a save crashing the game?
