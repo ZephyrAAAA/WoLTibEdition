@@ -129,6 +129,10 @@ Media Blitz:
 *Made the bases only rebuild from convoys
 Fixed the timing of the convoy tip
 
+Piercing:
+The hybrid now chases you properly.
+The brutalisk no longer consults his Prima Strategy Guide.
+
 Gates:
 *Moved the mid cutscene to after you bring the CC back to your base?
 *Warfield dying is no longer a loss condition.
