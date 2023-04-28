@@ -66,7 +66,7 @@ First attack wave is later and weaker
 *Fixed rear nydus
 
 Redstone:
-*Edited the rich mineral field tip
+Edited the rich mineral field tip
 
 Outbreak:
 Reduced abberation count
@@ -80,8 +80,8 @@ Trains:
 *Fixed bunkers not being populated.
 
 Bel'shir:
-*Fixed dead SCVs not counting
-*Weakened the initial sealing escorts
+Fixed dead SCVs not counting
+Weakened the initial sealing escorts
 
 Cutthroat:
 Mira has had her tech lab rights revoked.
@@ -105,6 +105,7 @@ Breakout:
 
 Engine:
 Fixed Johnny.
+Removed all the medivacs from the first base
 
 Supernova:
 Fixed cloak bonus upgrade text.
@@ -141,8 +142,8 @@ The hybrid now chases you properly.
 The brutalisk no longer consults his Prima Strategy Guide.
 
 Gates:
-*Moved the mid cutscene to after you bring the CC back to your base?
-*Warfield dying is no longer a loss condition.
+Warfield dying is no longer a loss condition.
+*Moved the mid cutscene to after you bring the CC back to your base
 *Warfield's forces can now shoot
 
 Belly:
