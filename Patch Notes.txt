@@ -1,4 +1,4 @@
-*Raynor's gun that is clearly not the same as the marine's is now named differently.
+Raynor's gun that is clearly not the same as the marine's is now named differently.
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
 *You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
 *Added a "Damage Types" section to the gameplay mechanics help section
@@ -22,21 +22,25 @@
 *Fixed Zeratul's void prison sometimes granting immortality.
 *Replaced the blue mineral icon with a green mineral icon
 *Replaced the supply depot icon with a power icon
-*Added a description for each squad
-*Added description to Low Power behaviour 
-*Added description to Depowered behaviour
-*Renamed building structures buttons
-*Included a repair breakdown on the factory and starport repair button
+Added a description for each squad
+Renamed building structures buttons
+Renamed the Supply Depot to Power Plant
+Corrected the button text of the spectre and ghost
+Corrected the button text of the viking
+Corrected the button text of the medivac
+Corrected the button text of the raven and science vessel
+Added description to Low Power behaviour 
+Added description to Depowered behaviour
+Included a repair breakdown on the factory and starport repair button
 *Made squad members no longer have a healthbar
 Deploy button for CCs and Cranes is now on the main menu
-*Thor barrage button no longer says it stuns
+Thor barrage button no longer says it stuns
 *Raven repair drone can now be autocast
 *Deploying the drill is now 10k
 *Initial deploymnent of the drill is weaker, has an upgrade to make it stronger
 *Fixed Hellstorm button on Devastation turrets.
 *Devastation turret now gets a passive for Concussive.
 *Made Abberations Light Vehicle armour.
-*Renamed supply depot to power plant
 *Zeratul now has the proper damage type icon
 *Fixed the char armoury
 *Nerfed the bonus speed zerg units get from creep
@@ -92,6 +96,7 @@ Mira has had her tech lab rights revoked.
 
 Morbius:
 Fixed free vision of the first data core
+*Fixed Units Saved count.
 
 Haven's Fall:
 *Infinite creep is now mentioned somewhere.

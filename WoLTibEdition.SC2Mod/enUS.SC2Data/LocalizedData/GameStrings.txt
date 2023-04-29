@@ -109,7 +109,7 @@ Behavior/Name/InfiniteCreep=InfiniteCreep
 Behavior/Name/InsideMedivac=Inside Medivac
 Behavior/Name/IrradiateBranch=Irradiated
 Behavior/Name/MechEMP=Mech EMP
-Behavior/Name/PowerCheck=Power Check
+Behavior/Name/PowerCheck=Low Power
 Behavior/Name/PsiSight=Psi Sight
 Behavior/Name/RavenScramblerMissile=Interference Matrix
 Behavior/Name/RipFieldSlow=Rip Field
@@ -122,8 +122,10 @@ Behavior/Name/TriggerHide=Trigger Hide
 Behavior/Name/Veterancy=Veterancy
 Behavior/Name/ZeratulHoldFire=Hold Fire
 Behavior/Name/ZergHypervirus=Zerg Hypervirus
+Behavior/Tooltip/Depowered=This building is depowered, which stops it from working or using power.
 Behavior/Tooltip/GuardianShield=Incoming ranged damage reduced by 30%.
 Behavior/Tooltip/IrradiateBranch=Irradiated unit. All Biological units in or near the radiation field will take damage.
+Behavior/Tooltip/PowerCheck=Low power causes tech structures and defenses to be disabled entirely. Production structures work at half speed.
 Behavior/Tooltip/PsiDisruption=Unit will attack nearby units.
 Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
@@ -304,6 +306,7 @@ Button/Name/StarshipMercenaries9=Starship Mercenaries
 Button/Name/StarshipUltraCapacitors=Starship Ultra Capacitors
 Button/Name/StarshipVanadiumPlating=Starship Vanadium Plating
 Button/Name/Stone=Train Stone
+Button/Name/SupplyDepot=Build Power Plant
 Button/Name/TacticalMissileStrike10=Tactical Missile Strike
 Button/Name/TacticalMissileStrike11=Tactical Missile Strike
 Button/Name/TacticalMissileStrike12=Tactical Missile Strike
@@ -318,6 +321,8 @@ Button/Name/TacticalMissileStrike8=Tactical Missile Strike
 Button/Name/TacticalMissileStrike9=Tactical Missile Strike
 Button/Name/TakeParts=Take Parts
 Button/Name/TakeTheDrill=Take The Drill
+Button/Name/TerranBuild=Build Structure
+Button/Name/TerranBuildAdvanced=Build Defensive Structure
 Button/Name/VehicleMercenaries10=Vehicle Mercenaries
 Button/Name/VehicleMercenaries11=Vehicle Mercenaries
 Button/Name/VehicleMercenaries12=Vehicle Mercenaries
@@ -346,6 +351,7 @@ Button/Name/ZergHypervirus6=Zerg Hypervirus
 Button/Name/ZergHypervirus7=Zerg Hypervirus
 Button/Name/ZergHypervirus8=Zerg Hypervirus
 Button/Name/ZergHypervirus9=Zerg Hypervirus
+Button/Tooltip/330mmBarrageCannons=Deals <d ref="Effect,330mmBarrageCannonsPersistent,PeriodCount * Effect,330mmBarrageCannonsDamage,Amount"/> damage over <d ref="Effect,330mmBarrageCannonsPersistent,PeriodCount * Effect,330mmBarrageCannonsPersistent,PeriodicPeriodArray[0]"/> seconds in a larger area.
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/Armory2=Contains weapon and armor upgrades for Factory and Starport structures. <n/><n/><c val="ffff8a">Enables:</c><n/>- Thors at the Factory
@@ -357,6 +363,7 @@ Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
 Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
 Button/Tooltip/BrutaliskBurrowed=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/BuildDevastatorTurret=Defense Structure. Anti-armored turret
+Button/Tooltip/BuildScienceVessel=Aerial support unit. Can use Nano-Repair, Irradiate, Defensive Matrix, and Gravity Rift abilities.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/BuildTechLabBarracks=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildTechLabFactory=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildTechLabStarport=Enables additional units. Researches upgrades.
@@ -424,6 +431,7 @@ Button/Tooltip/DeployLaserDrill8=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
 Button/Tooltip/Depower=Switches power state of the selected building.
 Button/Tooltip/DevastationTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
+Button/Tooltip/DevilDogSquad=A squad of 4 Devil Dogs. Good against structures and infantry.
 Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage. 
 Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
 Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, Vehicles, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armoury<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
@@ -433,15 +441,18 @@ Button/Tooltip/Factory2=Vehicle-production facility. <n/><n/><c val="ffff8a">Ena
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
 Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
+Button/Tooltip/FirebatSquad=A squad of 4 Firebats. Good against structures and infantry.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionCore2=Contains Battlecruiser upgrades. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers at the Starport<n/>- Hercules at the Starport
 Button/Tooltip/FusionReactor=This Fusion Reactor provides a tremendous amount of power for base operations.
+Button/Tooltip/Ghost=Commando unit. Can use Snipe and Feedback. Armed with a rapid fire anti-infantry weapon, and high-powered anti-structure explosives.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Ghosts (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GhostAcademy2=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Ghosts (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GhostAcademySpectre=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Spectres (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GravityRift=Creates a gravity Vortex that slows units in the target area, and damages them for <d ref="Effect,GravityRiftDamage,Amount * Effect,GravityRiftCP,PeriodCount"/>. Lasts for <d ref="Effect,GravityRiftCP,PeriodCount * Effect,GravityRiftCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
+Button/Tooltip/HammerSecuritiesSquad=A squad of 2 Hammer Securities. Good against vehicles and buildings. Good against air with an upgrade.
 Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
 Button/Tooltip/HiveMindEmulator10=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -485,7 +496,11 @@ Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
+Button/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
+Button/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
 Button/Tooltip/MedicCapturePassive=Medics can capture neutral structures, and are consumed by the action.
+Button/Tooltip/MedicSquad=A squad of 3 Medics. Heals nearby infantry.
+Button/Tooltip/Medivac=Air transport. Heals nearby and loaded biological units.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MineralSilo=Provides build radius while controlled.<n/><n/>Grants a large one-time mineral payout on capture.
 Button/Tooltip/MineralSpike=Provides a steady income while controlled.<n/><n/>Grants a small one-time mineral payout on capture.
@@ -529,17 +544,19 @@ Button/Tooltip/PsiDisruptor7=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/RallySCV=Sends constructed worker units to the designated point. Workers rallied to Mineral Fields will begin gathering automatically.
+Button/Tooltip/Raven=Aerial support unit. Can use Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing <d ref="Effect,RaynorSnipeDamage,Amount"/> Rocket damage.
+Button/Tooltip/ReaperSquad=A squad of 4 Reapers. Good against infantry and structures, bad against anything else.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/Refinery2=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
-Button/Tooltip/RepairOrder=Orders repair drones to heal the target
+Button/Tooltip/RepairOrder=Orders repair drones to repair the target. Repairs works at a rate of 10+2%hp/s.
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, <c val="FFFF8A">Marauder</c> rockets, and <c val="FFFF8A">Planetary Fortress</c> by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
 Button/Tooltip/ResearchHighEnergyCapacitors=Increases the damage of the <c val="FFFF8A">Battlecruiser</c>, <c val="FFFF8A">Yamato Cannon</c>, <c val="FFFF8A">Thor</c> ground attack, and <c val="FFFF8A">Wraith</c> ground attack by 50%
-Button/Tooltip/ResearchImprovedPlasmaShields=Increases shield resist to 20%, and allows repair drones to restore shields
+Button/Tooltip/ResearchImprovedPlasmaShields=Increases shield resist to 20%, and allows repair drones to restore shields at the same rate as health.
 Button/Tooltip/ResearchImprovedRailguns=Increases <c val="FFFF8A">Goliath</c> and <c val="FFFF8A">Viking</c> ground damage by +50%, and <c val="FFFF8A">Diamondback</c> damage by +30%
 Button/Tooltip/ResearchScannerPacks=Increases reaper sight range from 9 to 11, and allows them to detect in a small radius
 Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="ffff8a">Hellions</c>, and <c val="ffff8a">Perdition turrets</c> gain +50% damage
@@ -566,6 +583,7 @@ Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Provides a large build radius.<n/><n/>Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Sentry=Energy-manipulator unit. Can use Force Field, Guardian Shield, and Shield Restore.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
+Button/Tooltip/Spectre=Commando unit. Can use Ultrasonic Pulse and EMP. Armed with a rapid fire anti-infantry weapon, and high-powered anti-structure explosives.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Command Center
 Button/Tooltip/Starport2=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Vikings<n/>- Medivacs
 Button/Tooltip/Starport2Flying=Starport must land to start unit production.
@@ -607,6 +625,8 @@ Button/Tooltip/TalDarimMothership=Ultimate Protoss vessel. Can use Thermal Lance
 Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
 Button/Tooltip/TechLabFactory=Enables additional units. Researches upgrades.
 Button/Tooltip/TechLabStarport=Enables additional units. Researches upgrades.
+Button/Tooltip/TerranBuild=A list of tech and production structures.
+Button/Tooltip/TerranBuildAdvanced=A list of defense structures.
 Button/Tooltip/TibNodeLarge=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
@@ -630,7 +650,9 @@ Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
+Button/Tooltip/VikingFighter=Durable support flyer. Loaded with rapid fire AOE air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
+Button/Tooltip/WarPigSquad=A squad of 6 War Pigs. Good against infantry.
 Button/Tooltip/YamatoGun=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoCPU,PeriodCount*Effect,YamatoU,Amount"/> damage.
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -1716,8 +1738,8 @@ Unit/Name/SOAMothershipLineAttackWeapon=SOA Mothership Line Attack Weapon
 Unit/Name/SensorTower2=Sensor Tower
 Unit/Name/Starport2=Starport
 Unit/Name/Stone=Stone
-Unit/Name/SupplyDepot2=Supply Depot
-Unit/Name/SupplyDepot2Lowered=Supply Depot
+Unit/Name/SupplyDepot2=Power Plant
+Unit/Name/SupplyDepot2Lowered=Power Plant
 Unit/Name/TempestWeapon=Tempest Weapon
 Unit/Name/TibNodeLarge=Vespene Geyser
 Unit/Name/TibNodeMedium=Vespene Geyser
@@ -1788,6 +1810,7 @@ Weapon/Name/MarineSquad=Marine Squad
 Weapon/Name/MedicSquad=MedicSquad
 Weapon/Name/MedivacFakeWeapon=Medivac Fake Weapon
 Weapon/Name/PredatorShields=Predator Shields
+Weapon/Name/RaynorGaussRifle=Gauss Cannon
 Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
 Weapon/Name/ThorDiamondback=Eviscerator Rail Gun
