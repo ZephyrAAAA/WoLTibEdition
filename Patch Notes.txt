@@ -111,6 +111,7 @@ Breakout:
 Engine:
 Fixed Johnny.
 Removed all the medivacs from the first base
+*Wraiths now come in cloaked
 
 Supernova:
 Fixed cloak bonus upgrade text.
