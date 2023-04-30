@@ -44,6 +44,7 @@ Thor barrage button no longer says it stuns
 *Zeratul now has the proper damage type icon
 *Fixed the char armoury
 *Nerfed the bonus speed zerg units get from creep
+*Protoss no longer get so much damage resist on shields.
 
 Liberation Day:
 *Added some sort of record of text that appears, so you can still read it if you miss it.
@@ -60,7 +61,6 @@ Zero Hour:
 Fixed the build a crane popup
 Fixed second bonus being murdered immediately
 Removed corruptors
-*Added an autosave after each jim line about waiting
 
 Smash and Grab:
 Took into account archon thiccness
@@ -80,8 +80,8 @@ Doubled the regen of the field in your base.
 The infested are no longer american.
 
 Trains:
-*Fixed Matt's subtitles about kill teams returning to match the line he actually says
-*Fixed bunkers not being populated.
+Fixed Matt's subtitles about kill teams returning to match the line he actually says
+Fixed bunkers not being populated.
 
 Bel'shir:
 Fixed dead SCVs not counting
@@ -96,7 +96,7 @@ Mira has had her tech lab rights revoked.
 
 Morbius:
 Fixed free vision of the first data core
-*Fixed Units Saved count.
+Fixed Units Saved count.
 
 Haven's Fall:
 *Infinite creep is now mentioned somewhere.
@@ -111,7 +111,7 @@ Breakout:
 Engine:
 Fixed Johnny.
 Removed all the medivacs from the first base
-*Wraiths now come in cloaked
+Wraiths now come in cloaked
 
 Supernova:
 Fixed cloak bonus upgrade text.
@@ -124,6 +124,7 @@ Increased how much destroying a base weakens attack waves
 Slowed down the deployment of new Bully Groups.
 The mothership no longer attacks immediately after spawning, instead waiting 2 minutes.
 The AI no longer replaces production or tech structures. They will still rebuild Nexi, pylons, and cannons, if they have probes.
+*Mom attacking is now announced.
 
 Whispers of Doom:
 *Karass now has a damage type
