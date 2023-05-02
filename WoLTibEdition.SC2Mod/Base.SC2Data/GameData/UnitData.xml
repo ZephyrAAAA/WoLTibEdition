@@ -4919,6 +4919,8 @@
         <LifeArmor value="1"/>
         <WeaponArray index="0" Link="RaynorGaussRifle"/>
         <BehaviorArray Link="CommandoSniperResist"/>
+        <ArmorType value="Normal"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="Raynor01">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4942,6 +4944,7 @@
             <LayoutButtons index="6" Row="1" Column="0"/>
             <LayoutButtons Face="TossGrenadeTychus" Type="AbilCmd" AbilCmd="BonesTossGrenade,Execute" Row="2" Column="1"/>
             <LayoutButtons Face="DutchPlaceTurret" Type="AbilCmd" AbilCmd="DutchPlaceTurret,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="3"/>
         </CardLayouts>
     </CUnit>
     <CUnit id="Reactor">

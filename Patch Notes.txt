@@ -147,6 +147,7 @@ Fixed the timing of the convoy tip
 Piercing:
 The hybrid now chases you properly.
 The brutalisk no longer consults his Prima Strategy Guide.
+fixed raynor not having an armor type
 
 Gates:
 Warfield dying is no longer a loss condition.
@@ -154,7 +155,7 @@ Warfield dying is no longer a loss condition.
 *Warfield's forces can now shoot
 
 Belly:
-*Added stim to the unified command card
+Added stim to the unified command card
 *Chaser force no longer spawns while in a boss fight
 *Fixed War Pigs not having full hp
 *fixed squads being unable to leave
