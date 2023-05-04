@@ -1686,6 +1686,8 @@ Skin/Name/PsiDisruptor8=PsiDisruptor8
 Skin/Name/PsiDisruptor9=PsiDisruptor9
 StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
+UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Fields are blue crystals which yield 5 minerals when harvested by workers.</li><li>Create two workers to gather from each Mineral Field.</li><li>MULEs will always generate income, even if you have three workers harvesting a Mineral Field.</li><li>Once a Mineral Field is depleted, it can no longer be harvested from.</li></ul>
+UI/HelpGameMechanic_RichMinerals_Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
 UI/HelpGameMechanic_RichVespeneGeysers_Description=<ul indent="2" text="•"><li>Rich Resource Nodes generate new Mineral Veins faster than normal resource nodes.</li><li>The speed is a whole number multiple of a normal Node.</li></ul>
 UI/HelpGameMechanic_RichVespeneGeysers_Name=Rich Resource Nodes
 UI/HelpGameMechanic_VespeneGeysers_Description=<ul indent="2" text="•"><li>Resource Nodes occasionally spawn a new Mineral Vein in a radius around them. They come in 3 sizes, with larger sizes regenerating faster.</li><li>When depleted, it is best to remove any SCVs harvesting from them to let them regrow their field a bit.</li></ul>

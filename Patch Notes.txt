@@ -6,8 +6,8 @@ Raynor's gun that is clearly not the same as the marine's is now named different
 *Refineries can no longer accept deposits when depowered.
 *Added a laser drill upgrade to increase its power.
 *Fixed Devastation Turret tooltip
-*Fixed Ghost tooltip
-*Fixed Spectre tooltip
+Fixed Ghost tooltip
+Fixed Spectre tooltip
 *Fixed Fusion Core tooltip
 *Fixed Goliath upgrade buttons
 *Fixed diamondback upgrade buttons, shaped hull typo
@@ -104,6 +104,7 @@ Haven's Fall:
 Safe Haven:
 *The protoss have been instructed on proper reinforcement procedures
 *mothership may not fire when feedbacked?
+*Zealots are less zealous
 
 Breakout:
 *Raynor's units have proper weapon tooltips now
