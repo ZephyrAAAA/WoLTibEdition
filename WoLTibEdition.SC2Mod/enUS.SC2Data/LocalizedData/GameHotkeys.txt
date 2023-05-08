@@ -59,6 +59,7 @@ Button/Hotkey/Stone=S
 Button/Hotkey/SupplyDepot=D
 Button/Hotkey/TakeParts=T
 Button/Hotkey/TakeTheDrill=Q
+Button/Hotkey/TakeTheDrill2=Q
 Button/Hotkey/TossGrenadeTychus=W
 Button/Hotkey/VehicleUltraCapacitors=C
 Button/Hotkey/VehicleVanadiumPlating=V

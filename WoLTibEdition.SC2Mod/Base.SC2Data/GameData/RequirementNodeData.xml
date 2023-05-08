@@ -110,6 +110,11 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="DrakkenLaserDrill" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradeDrillFullPower2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="DrillFullPower2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeEnhancedExplosivesQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="EnhancedExplosives" State="QueuedOrBetter"/>
@@ -192,7 +197,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTitanEnginesQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="TitanEngines" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementEq id="EqCountBehaviorCraneBuiltCompleteOnlyAtUnit1">
@@ -351,6 +355,10 @@
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeDrillFullPower2QueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeDrillFullPower2QueuedOrBetter"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeEnhancedExplosivesQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeEnhancedExplosivesQueuedOrBetter"/>
     </CRequirementNot>
@@ -400,7 +408,6 @@
         <OperandArray index="0" value="CountUpgradeTerranVehicleVanadiumPlatingQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTitanEnginesQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeTitanEnginesQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotOrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">

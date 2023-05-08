@@ -1050,6 +1050,17 @@
             </Button>
         </InfoArray>
     </CAbilResearch>
+    <CAbilResearch id="TakeTheDrill2">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DataCollection value="TakeTheDrill"/>
+        <InfoArray index="Research1" Time="300" Upgrade="DrillFullPower2">
+            <Resource index="Vespene" value="10000"/>
+            <Button DefaultButtonFace="TakeTheDrill" Requirements="HasNotTakenDrill2">
+                <Flags index="UseDefaultButton" value="1"/>
+                <Flags index="CreateDefaultButton" value="1"/>
+            </Button>
+        </InfoArray>
+    </CAbilResearch>
     <CAbilBuild id="TerranBuild">
         <InfoArray index="Build1">
             <Button Requirements=""/>
@@ -1212,7 +1223,7 @@
         <FlagArray index="PeonDisableCollision" value="1"/>
         <FlagArray index="PeonMaintained" value="0"/>
         <InfoArray index="Build1" Unit="DrakkenLaserDrill" Time="5">
-            <Resource index="Minerals" value="20000"/>
+            <Resource index="Minerals" value="10000"/>
             <Resource index="Custom" value="200"/>
             <Button DefaultButtonFace="DeployLaserDrill6" Requirements="DoesnothaveLaserDrill">
                 <Flags index="UseDefaultButton" value="1"/>

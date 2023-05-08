@@ -87,6 +87,7 @@ Abil/Name/SupplyDepot2Raise=Raise
 Abil/Name/TacNukeStrikeTopbar=Nuclear Strike
 Abil/Name/TacticalMissileStrike=Tactical Missile Strike
 Abil/Name/TakeTheDrill=Take The Drill
+Abil/Name/TakeTheDrill2=Upgrade The Drill
 Abil/Name/Theft=Theft
 Abil/Name/TrainStone=Train Stone
 Abil/Name/UnburrowAtPoint=Unburrow At Point
@@ -321,6 +322,7 @@ Button/Name/TacticalMissileStrike8=Tactical Missile Strike
 Button/Name/TacticalMissileStrike9=Tactical Missile Strike
 Button/Name/TakeParts=Take Parts
 Button/Name/TakeTheDrill=Take The Drill
+Button/Name/TakeTheDrill2=Upgrade The Drill
 Button/Name/TerranBuild=Build Structure
 Button/Name/TerranBuildAdvanced=Build Defensive Structure
 Button/Name/VehicleMercenaries10=Vehicle Mercenaries
@@ -621,6 +623,7 @@ Button/Tooltip/TacticalMissileStrike8=Fires a tactical missile at target locatio
 Button/Tooltip/TacticalMissileStrike9=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TakeParts=Takes parts from targeted unit to improve the thor.<n/><n/>-Hellion (Flamethrower)<n/>-Diamondback (Railgun)<n/>-Stone (Sensor Range)<n/>-Siege Tank (AOE on primary Attack)<n/>-Predator (Energy Shield)
 Button/Tooltip/TakeTheDrill=Setup the equipment to take the drill with you once you are done here.
+Button/Tooltip/TakeTheDrill2=Improve the drill's attack power.
 Button/Tooltip/TalDarimMothership=Ultimate Protoss vessel. Can use Thermal Lance, Solarite Flare, Mass Recall, and Wormhole Transit. Cloaks nearby ground units and structures.  <n/><n/><c val="ffff8a">Can attack ground and air units.</c>
 Button/Tooltip/TechLabBarracks=Enables additional units. Researches upgrades.
 Button/Tooltip/TechLabFactory=Enables additional units. Researches upgrades.
@@ -1629,10 +1632,13 @@ Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
 Param/Value/lib_3B48F5E9_6C689267=CNC Edition has <c val="FF0000">new </c>or <c val="FF8040">edited </c>tips in this mission
 Param/Value/lib_3B48F5E9_7101F21A=The Predator and Shadow Ops have been unlocked.
 Param/Value/lib_3B48F5E9_76BEF993=<c val="FF00FF">Topbar Granted: </c>
+Param/Value/lib_3B48F5E9_8A0968DC=<c val="FF0000">Damage/Armour Types</c>
 Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
 Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
+Param/Value/lib_3B48F5E9_C28CB494=<c val="FF0000">Damage/Armour Types</c>
+Param/Value/lib_3B48F5E9_E021664E=This mod uses a system of <c val="FFFF00">Armour </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armour has a tooltip stating what armour type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armour types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>
@@ -1686,6 +1692,8 @@ Skin/Name/PsiDisruptor8=PsiDisruptor8
 Skin/Name/PsiDisruptor9=PsiDisruptor9
 StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
+UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armour </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armour has a tooltip stating what armour type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armour types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
+UI/HelpGameMechanic_DamageTypes_Name=Damage Types
 UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Fields are blue crystals which yield 5 minerals when harvested by workers.</li><li>Create two workers to gather from each Mineral Field.</li><li>MULEs will always generate income, even if you have three workers harvesting a Mineral Field.</li><li>Once a Mineral Field is depleted, it can no longer be harvested from.</li></ul>
 UI/HelpGameMechanic_RichMinerals_Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
 UI/HelpGameMechanic_RichVespeneGeysers_Description=<ul indent="2" text="•"><li>Rich Resource Nodes generate new Mineral Veins faster than normal resource nodes.</li><li>The speed is a whole number multiple of a normal Node.</li></ul>
@@ -1760,6 +1768,7 @@ Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
 Upgrade/Name/AresClassWeaponsSystemViking=Improved Mechanics
 Upgrade/Name/CastanarYamato=Castanar Yamato
 Upgrade/Name/DrillFullPower=Drill Full Power
+Upgrade/Name/DrillFullPower2=Drill Increased Power
 Upgrade/Name/EnhancedExplosives=Enhanced Explosives
 Upgrade/Name/HALORockets=Turreted Missile Pods
 Upgrade/Name/HailstormLaunchers=Hailstorm Launchers
