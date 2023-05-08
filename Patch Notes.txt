@@ -7,15 +7,15 @@ Added a "Damage Types" section to the gameplay mechanics help section
 Added a laser drill upgrade to increase its power.
 Deploying the drill is now 10k
 Initial deploymnent of the drill is weaker, has an upgrade to make it stronger
-*Fixed Devastation Turret tooltip
+Fixed Devastation Turret tooltip
 Fixed Ghost tooltip
 Fixed Spectre tooltip
-*Fixed Fusion Core tooltip
+Fixed all the building tooltips
 *Fixed Goliath upgrade buttons
 *Fixed diamondback upgrade buttons, shaped hull typo
 *Fixed devastation turret having AOE by default.
 *Gave silos something to differentiate them.
-*Fixed the commando explosive charge tooltip
+Fixed the commando explosive charge tooltip
 *Sentry weapon now has tooltip
 *Scout weapon now has tooltip
 *Autoturret weapon now has tooltip
@@ -69,6 +69,7 @@ Took into account archon thiccness
 Evacuation:
 First attack wave is later and weaker
 *Fixed rear nydus
+Added devastation turrets to the colony fence
 
 Redstone:
 Edited the rich mineral field tip

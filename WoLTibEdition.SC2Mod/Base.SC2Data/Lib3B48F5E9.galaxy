@@ -163,7 +163,6 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     lv_assortedUpgrades6 = "";
 
     // Implementation
-    HelpPanelAddTip(PlayerGroupAll(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/lib_3B48F5E9_C28CB494"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/lib_3B48F5E9_E021664E"), StringExternal("Param/Value/lib_3B48F5E9_8A0968DC"), "Assets\\Textures\\btn-ability-terran-ignorearmor.dds");
     if ((lp_maxUpgradeLevel == 0)) {
         if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
             lv_maxUpgradeLevel = 3;

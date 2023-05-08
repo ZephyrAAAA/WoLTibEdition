@@ -523,6 +523,7 @@
         <SelectAlias value="Armory"/>
         <TechAliasArray value="Alias_Armory"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/Armory"/>
     </CUnit>
     <CUnit id="Artanis">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -745,6 +746,7 @@
         <TechTreeProducedUnitArray value="Spectre"/>
         <TechTreeProducedUnitArray value="Medic"/>
         <TechTreeProducedUnitArray value="Firebat"/>
+        <Description value="Button/Tooltip/Barracks"/>
     </CUnit>
     <CUnit id="Barracks2Flying">
         <Name value="Unit/Name/Barracks"/>
@@ -1596,6 +1598,7 @@
         <TechTreeProducedUnitArray value="PlanetaryFortress"/>
         <TechTreeProducedUnitArray value="OrbitalCommand"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/CommandCenter"/>
     </CUnit>
     <CUnit id="CommandCenter2Flying">
         <Name value="Unit/Name/CommandCenter"/>
@@ -2465,6 +2468,7 @@
         <SelectAlias value="EngineeringBay"/>
         <TechAliasArray value="Alias_EngineeringBay"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/EngineeringBay"/>
     </CUnit>
     <CUnit id="EvolutionChamber">
         <ArmorType value="Hero"/>
@@ -2589,6 +2593,7 @@
         <TechTreeProducedUnitArray value="Vulture"/>
         <TechTreeProducedUnitArray value="Diamondback"/>
         <TechTreeProducedUnitArray value="Goliath"/>
+        <Description value="Button/Tooltip/Factory"/>
     </CUnit>
     <CUnit id="Factory2Flying">
         <Name value="Unit/Name/Factory"/>
@@ -2828,14 +2833,15 @@
         <TechTreeUnlockedUnitArray value="Hercules"/>
         <TechAliasArray value="Alias_FusionCore"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/FusionCore"/>
     </CUnit>
     <CUnit id="FusionReactor">
         <ArmorType value="Hero"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-        <LifeStart value="1000"/>
-        <LifeMax value="1000"/>
         <Food value="250"/>
         <TechTreeUnlockedUnitArray index="0" removed="1"/>
     </CUnit>
@@ -2957,6 +2963,7 @@
         <TechTreeUnlockedUnitArray value="Ghost"/>
         <TechTreeUnlockedUnitArray value="Spectre"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/GhostAcademy"/>
     </CUnit>
     <CUnit id="GhostMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5062,6 +5069,7 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechAliasArray value="Alias_Refinery"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/Refinery"/>
     </CUnit>
     <CUnit id="RefineryBounce">
         <Facing value="315"/>
@@ -5903,6 +5911,7 @@
         <TechTreeProducedUnitArray value="ScienceVessel"/>
         <TechTreeProducedUnitArray value="Wraith"/>
         <TechTreeProducedUnitArray value="Hercules"/>
+        <Description value="Button/Tooltip/Starport"/>
     </CUnit>
     <CUnit id="Starport2Flying">
         <Name value="Unit/Name/Starport"/>
@@ -6192,6 +6201,7 @@
         <HotkeyAlias value="SupplyDepot"/>
         <SelectAlias value="SupplyDepot"/>
         <ArmorType value="Hero"/>
+        <Description value="Button/Tooltip/SupplyDepot"/>
     </CUnit>
     <CUnit id="SupplyDepot2Lowered">
         <DeathRevealRadius value="3"/>
