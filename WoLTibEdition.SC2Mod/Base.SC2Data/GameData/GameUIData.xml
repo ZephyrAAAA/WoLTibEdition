@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CGameUI id="Dflt">
-        <HelpGameMechanics index="1" Icon="Assets/Textures/btn-ability-terran-ignorearmor" Name="UI/HelpGameMechanic_DamageTypes_Name" Description="UI/HelpGameMechanic_DamageTypes_Description"/>
+        <HelpGameMechanics index="1" Icon="UI/HelpMenuDialogGameMechanics_DamageTypes" Name="UI/HelpGameMechanic_DamageTypes_Name" Description="UI/HelpGameMechanic_DamageTypes_Description"/>
     </CGameUI>
 </Catalog>

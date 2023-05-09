@@ -14,3 +14,4 @@ UI/ResourceIconNoBackground3=Assets\Textures\icon-supply-nobg.dds
 UI/ResourceIconNoBackground3_Prot=Assets\Textures\icon-supply-protoss_nobg.dds
 UI/ResourceIconNoBackground3_Terr=Assets\Textures\icon-supply-terran_nobg.dds
 UI/ResourceIconNoBackground3_Zerg=Assets\Textures\icon-supply-zerg_nobg.dds
+UI/HelpMenuDialogGameMechanics_DamageTypes=Assets\Textures\btn-ability-terran-ignorearmor.dds
