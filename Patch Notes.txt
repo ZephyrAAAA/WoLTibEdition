@@ -14,7 +14,6 @@ Fixed Spectre tooltip
 Fixed all the building tooltips
 *Fixed Goliath upgrade buttons
 *Fixed diamondback upgrade buttons, shaped hull typo
-*Fixed devastation turret having AOE by default.
 *Gave silos something to differentiate them.
 Fixed the commando explosive charge tooltip
 *Sentry weapon now has tooltip
@@ -22,9 +21,10 @@ Fixed the commando explosive charge tooltip
 *Autoturret weapon now has tooltip
 *Spine Colony weapon now has tooltip
 *Spider Mines now have a damage type
-*Fixed Zeratul's void prison sometimes granting immortality.
-*Replaced the blue mineral icon with a green mineral icon
-*Replaced the supply depot icon with a power icon
+*Fixed Zeratul's void prison sometimes granting immortality to banelings. Instead prisoned banelings don't deal damage when they die.
+Replaced the blue mineral icon with a green mineral icon
+Replaced the supply depot icon with a power icon
+Change dthe tooltip text of the power icon
 Added a description for each squad
 Renamed building structures buttons
 Renamed the Supply Depot to Power Plant
@@ -41,6 +41,7 @@ Thor barrage button no longer says it stuns
 *Raven repair drone can now be autocast
 *Fixed Hellstorm button on Devastation turrets.
 *Devastation turret now gets a passive for Concussive.
+*Fixed devastation turret having AOE by default.
 *Made Abberations Light Vehicle armour.
 *Zeratul now has the proper damage type icon
 *Fixed the char armoury
@@ -145,9 +146,10 @@ A Sinister Turn:
 *mention maar teleport and potentially plasma blast
 
 Media Blitz:
-*Fixed loading a save crashing the game?
-*Made the bases only rebuild from convoys
+Made the bases only rebuild from convoys
 Fixed the timing of the convoy tip
+The convoys now start with a weaker escort.
+*Fixed loading a save crashing the game?
 
 Piercing:
 The hybrid now chases you properly.
@@ -156,7 +158,6 @@ fixed raynor not having an armor type
 
 Gates:
 Warfield dying is no longer a loss condition.
-*Moved the mid cutscene to after you bring the CC back to your base
 *Warfield's forces can now shoot
 
 Belly:

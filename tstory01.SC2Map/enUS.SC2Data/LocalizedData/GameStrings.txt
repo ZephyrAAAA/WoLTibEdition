@@ -1702,6 +1702,7 @@ UI/HelpGameMechanic_VespeneGeysers_Description=<ul indent="2" text="•"><li>Res
 UI/HelpGameMechanic_VespeneGeysers_Name=Resource Nodes
 UI/ResourceName1=Vespene
 UI/ResourceName3=Custom
+UI/ResourceSupplyToolTip_Terr=Buildings use power to function. Build Power Plants to get more power.
 Unit/InfoText/PalletGas=Use any ground unit to collect 2000 minerals.
 Unit/InfoText/PalletMinerals=Use any ground unit to collect 1000 minerals.
 Unit/LifeArmorName/TerranBuildingPlating=Terran Building Plating
