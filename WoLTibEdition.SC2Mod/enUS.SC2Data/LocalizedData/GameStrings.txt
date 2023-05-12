@@ -813,7 +813,7 @@ ConversationState/Tech/Tech_Diamondback_1/Info/Tooltip=<s val="TooltipTitle_Tech
 ConversationState/Tech/Tech_Diamondback_2/Info/Description=<s val="TechSummary">- Diamondbacks gain +50 life.<n/>- Diamondbacks takes 25% less Cannon damage.</s><n/><n/><s val="TechDescription">Bellerephon now offers a Diamondback with a hull made from a single piece of shaped titanium. This newer model can absorb more punishment than the traditional Diamondback because the hull has no joints or rivets that can buckle.</s>
 ConversationState/Tech/Tech_Diamondback_2/Info/Tooltip=<s val="TooltipTitle_Tech">Shaped Hull</s><n/><s val="TooltipDescription_Tech">Diamondbacks gain +50 lifeand resistance to Cannon damage.</s>
 ConversationState/Tech/Tech_Ghost_1=Reinforced Barrier
-ConversationState/Tech/Tech_Ghost_1/Info/Description=<s val="TechSummary">- Predator energy barrier is absorbs twice as much damage</s><n/><n/><s val="TechDescription">Umojan shield projectors and shielding algorithms allow the shield to operate far more efficiently.
+ConversationState/Tech/Tech_Ghost_1/Info/Description=<s val="TechSummary">- Predator energy barrier absorbs twice as much damage</s><n/><n/><s val="TechDescription">Umojan shield projectors and shielding algorithms allow the shield to operate far more efficiently.
 ConversationState/Tech/Tech_Ghost_1/Info/Tooltip=<s val="TooltipTitle_Tech">Reinforced Barrier</s><n/><s val="TooltipDescription_Tech">Doubles Barrier effectiveness.</s>
 ConversationState/Tech/Tech_Ghost_2=Field Projectors
 ConversationState/Tech/Tech_Ghost_2/Info/Description=<s val="TechSummary">- Increases Retribution Field radius by +50%.</s><n/><n/><s val="TechDescription">Enhanced shockwave projectors made by Koprulu Pest Control greatly increases the effective radius of the predator's Retribution Field.</s>
@@ -1694,7 +1694,9 @@ StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
 UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armour </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armour has a tooltip stating what armour type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armour types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
 UI/HelpGameMechanic_DamageTypes_Name=Damage Types
-UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Fields are blue crystals which yield 5 minerals when harvested by workers.</li><li>Create two workers to gather from each Mineral Field.</li><li>MULEs will always generate income, even if you have three workers harvesting a Mineral Field.</li><li>Once a Mineral Field is depleted, it can no longer be harvested from.</li></ul>
+UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Veins are green crystals which yield 14 minerals per harvest, and do 10 harvests/s.</li><li>Once a Mineral Vein is depleted, it can no longer be harvested from, and will eventually be replaced by a nearby Node.</li></ul>
+UI/HelpGameMechanic_Power=Power
+UI/HelpGameMechanic_Power_Description=Buildings require Power to function. Low power causes Production buildings to work slower, while Tech and Defensive structures are disabled entirely.
 UI/HelpGameMechanic_RichMinerals_Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
 UI/HelpGameMechanic_RichVespeneGeysers_Description=<ul indent="2" text="•"><li>Rich Resource Nodes generate new Mineral Veins faster than normal resource nodes.</li><li>The speed is a whole number multiple of a normal Node.</li></ul>
 UI/HelpGameMechanic_RichVespeneGeysers_Name=Rich Resource Nodes

@@ -3,7 +3,7 @@ Raynor's gun that is clearly not the same as the marine's is now named different
 *You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
 Added a "Damage Types" section to the gameplay mechanics help section
 *Added a "Neutral Structures" section to the gameplay mechanics help section
-*Edited the minerals help menu entry
+Edited the minerals help menu entry
 *Refineries can no longer accept deposits when depowered.
 Added a laser drill upgrade to increase its power.
 Deploying the drill is now 10k
@@ -12,6 +12,7 @@ Fixed Devastation Turret tooltip
 Fixed Ghost tooltip
 Fixed Spectre tooltip
 Fixed all the building tooltips
+Fixed the Predator Reinforced Barrier lore text.
 *Fixed Goliath upgrade buttons
 *Fixed diamondback upgrade buttons, shaped hull typo
 *Gave silos something to differentiate them.
@@ -51,17 +52,15 @@ Our Ultracap and Vanadium upgrades now use an appropriate icon, instead of all b
 *Re-added the Merc Compound, moved merc topbar unlocks to the merc compound.
 
 Liberation Day:
-*Added some sort of record of text that appears, so you can still read it if you miss it.
 Removed bonus marines for killing holoboards
 Weakened the final area
 Fixed health charge doing weird things
 
 Outlaws:
-*Added some sort of record of text that appears, so you can still read it if you miss it.
+Added some sort of record of important text that appears, so you can still read it if you miss it.
 *Less tutorializing?
 
 Zero Hour:
-*Added some sort of record of text that appears, so you can still read it if you miss it.
 Fixed the build a crane popup
 Fixed second bonus being murdered immediately
 Removed corruptors
