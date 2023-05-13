@@ -1754,6 +1754,7 @@
     </CEffectRemoveBehavior>
     <CEffectDamage id="PsiDischargeDamage">
         <ArmorReduction value="1"/>
+        <Amount value="30"/>
     </CEffectDamage>
     <CEffectEnumArea id="PsiDisruptionSearchArea">
         <AreaArray index="0" Radius="9"/>

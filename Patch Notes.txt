@@ -1,6 +1,6 @@
 Raynor's gun that is clearly not the same as the marine's is now named differently.
 *The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
-*You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
+You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
 Added a "Damage Types" section to the gameplay mechanics help section
 *Added a "Neutral Structures" section to the gameplay mechanics help section
 Edited the minerals help menu entry
@@ -17,11 +17,11 @@ Fixed the Predator Reinforced Barrier lore text.
 *Fixed diamondback upgrade buttons, shaped hull typo
 *Gave silos something to differentiate them.
 Fixed the commando explosive charge tooltip
-*Sentry weapon now has tooltip
-*Scout weapon now has tooltip
-*Autoturret weapon now has tooltip
-*Spine Colony weapon now has tooltip
-*Spider Mines now have a damage type
+Sentry weapon now has tooltip
+Scout weapon now has tooltip
+Autoturret weapon now has tooltip
+Spine Colony weapon now has tooltip
+Spider Mines weapon now has tooltip
 *Fixed Zeratul's void prison sometimes granting immortality to banelings. Instead prisoned banelings don't deal damage when they die.
 Replaced the blue mineral icon with a green mineral icon
 Replaced the supply depot icon with a power icon
@@ -43,8 +43,7 @@ Thor barrage button no longer says it stuns
 *Fixed Hellstorm button on Devastation turrets.
 *Devastation turret now gets a passive for Concussive.
 *Fixed devastation turret having AOE by default.
-*Made Abberations Light Vehicle armour.
-*Zeratul now has the proper damage type icon
+Made Abberations Light Vehicle armour.
 *Fixed the char armoury
 *Nerfed the bonus speed zerg units get from creep
 *Protoss no longer get so much damage resist on shields.
@@ -132,7 +131,8 @@ The AI no longer replaces production or tech structures. They will still rebuild
 *Mom attacking is now announced.
 
 Whispers of Doom:
-*Karass now has a damage type
+Karass now has a damage type
+Zeratul now has the proper damage type icon
 
 Ghost of a Chance:
 *Ultra now always continues on

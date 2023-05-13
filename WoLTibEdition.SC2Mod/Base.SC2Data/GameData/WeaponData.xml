@@ -151,6 +151,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="AutoTurret">
         <AttackType value="Normal"/>
         <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="BabyUltralisk">
         <Tip value="Weapon/Tip/Grenade"/>
@@ -236,6 +237,11 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="OmegaliskHeadAttack">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <AttackType value="Pierce"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="PsiDischarge">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
+        <AttackType value="Siege"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Ram">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
@@ -476,6 +482,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="DisruptionBeam">
         <AttackType value="Normal"/>
         <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DuskWingBanshee">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -743,6 +750,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="ImpalerTentacle">
         <AttackType value="Pierce"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="InfernalFlameThrower">
         <AttackType value="Pierce"/>
@@ -1091,10 +1099,12 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="ScoutAir">
         <AttackType value="Siege"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ScoutGround">
         <AttackType value="Normal"/>
         <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
+        <Tip value="Weapon/Tip/Rifle"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Selendis">
         <Tip value="Weapon/Tip/Cannon"/>
@@ -1288,6 +1298,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="VultureSpiderMines">
         <AttackType value="Siege"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
+        <Tip value="Weapon/Tip/Rocket"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="WarPigSquad">
         <EditorCategories value=""/>
