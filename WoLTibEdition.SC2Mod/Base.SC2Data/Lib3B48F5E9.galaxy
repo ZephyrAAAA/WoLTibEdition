@@ -1030,7 +1030,6 @@ bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) 
 
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, StringExternal("Param/Value/lib_3B48F5E9_7101F21A"));
     UISetButtonFaceHighlighted(PlayerGroupAll(), "Predator", true);
-    UISetButtonFaceHighlighted(PlayerGroupAll(), "GhostAcademy", true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightPredator, true);
     TriggerEnable(lib3B48F5E9_gt_UnhighlightGhostAcademy, true);
     Wait(10.0, c_timeGame);
