@@ -25,7 +25,7 @@ Spider Mines weapon now has tooltip
 *Fixed Zeratul's void prison sometimes granting immortality to banelings. Instead prisoned banelings don't deal damage when they die.
 Replaced the blue mineral icon with a green mineral icon
 Replaced the supply depot icon with a power icon
-Change dthe tooltip text of the power icon
+Changed the tooltip text of the power icon
 Added a description for each squad
 Renamed building structures buttons
 Renamed the Supply Depot to Power Plant
