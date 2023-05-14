@@ -303,6 +303,7 @@
     </CValidatorPlayerRequirement>
     <CValidatorPlayerRequirement id="HasHellstormMissilePods">
         <Find value="1"/>
+        <Value value="HellstormMissilesResearched"/>
     </CValidatorPlayerRequirement>
     <CValidatorPlayerCompareResource id="HasRepairMoney">
         <Compare value="GT"/>

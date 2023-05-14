@@ -40,7 +40,7 @@
             <Cooldown TimeUse="0.5"/>
         </Cost>
         <TargetFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
-        <Range value="4"/>
+        <Range value="8"/>
         <Arc value="360"/>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
@@ -1492,14 +1492,14 @@
         </InfoArray>
         <InfoArray index="Research6" Time="90" Upgrade="TerranShipUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="TerranShipWeaponsUltraCapacitorsLevel2" Requirements="LearnStarshipUltraCaps">
+            <Button DefaultButtonFace="StarshipUltraCapacitors" Requirements="LearnStarshipUltraCaps">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Research7" Time="90" Upgrade="TerranShipVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="TerranShipPlatingVanadiumPlatingLevel2" Requirements="LearnStarshipVanadium">
+            <Button DefaultButtonFace="StarshipVanadiumPlating" Requirements="LearnStarshipVanadium">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -1968,14 +1968,14 @@
         </InfoArray>
         <InfoArray index="Research3" Time="90" Upgrade="TerranVehicleUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="TerranVehicleWeaponsUltraCapacitorsLevel2" Requirements="LearnVehicleUltraCaps">
+            <Button DefaultButtonFace="VehicleUltraCapacitors" Requirements="LearnVehicleUltraCaps">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Research4" Time="90" Upgrade="TerranVehicleVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="TerranVehiclePlatingVanadiumPlatingLevel2" Requirements="LearnVehicleVanadium">
+            <Button DefaultButtonFace="VehicleVanadiumPlating" Requirements="LearnVehicleVanadium">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
@@ -2090,14 +2090,14 @@
         </InfoArray>
         <InfoArray index="Research4" Time="90" Upgrade="TerranInfantryUltraCapacitors">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="TerranInfantryWeaponsUltraCapacitorsLevel2" Requirements="LearnInfantryUltraCaps">
+            <Button DefaultButtonFace="InfantryUltraCapacitors" Requirements="LearnInfantryUltraCaps">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
         <InfoArray index="Research5" Time="90" Upgrade="TerranInfantryVanadiumPlating">
             <Resource index="Vespene" value="3000"/>
-            <Button DefaultButtonFace="TerranInfantryArmorVanadiumPlatingLevel2" Requirements="LearnInfantryVanadium">
+            <Button DefaultButtonFace="InfantryVanadiumPlating" Requirements="LearnInfantryVanadium">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>

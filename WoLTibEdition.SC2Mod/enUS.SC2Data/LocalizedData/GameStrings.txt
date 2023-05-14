@@ -131,6 +131,7 @@ Behavior/Tooltip/PsiDisruption=Unit will attack nearby units.
 Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for sight.
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
+Button/Name/AresClassWeaponsSystem=Neosteel Plating
 Button/Name/AstralProjection=Astral Projection
 Button/Name/BioSpeed=Bio Speed
 Button/Name/BuildDevastatorTurret=Build Devastator Turret
@@ -361,6 +362,7 @@ Button/Name/ZergHypervirus8=Zerg Hypervirus
 Button/Name/ZergHypervirus9=Zerg Hypervirus
 Button/Tooltip/330mmBarrageCannons=Deals <d ref="Effect,330mmBarrageCannonsPersistent,PeriodCount * Effect,330mmBarrageCannonsDamage,Amount"/> damage over <d ref="Effect,330mmBarrageCannonsPersistent,PeriodCount * Effect,330mmBarrageCannonsPersistent,PeriodicPeriodArray[0]"/> seconds in a larger area.
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
+Button/Tooltip/AresClassWeaponsSystem=Increases HP by 50.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
 Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
@@ -583,6 +585,7 @@ Button/Tooltip/Sell=Sells selected building for a partial refund
 Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Provides a large build radius.<n/><n/>Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Sentry=Energy-manipulator unit. Can use Force Field, Guardian Shield, and Shield Restore.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
+Button/Tooltip/ShapedHull=Increases Diamondback life by 50. Reduces damage taken from Cannon-type by 25%.
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
 Button/Tooltip/Spectre=Commando unit. Can use Ultrasonic Pulse and EMP. Armed with a rapid fire anti-infantry weapon, and high-powered anti-structure explosives.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Command Center
@@ -638,6 +641,7 @@ Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene G
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 Button/Tooltip/TossGrenadeTychus=Tosses a grenade that explodes for <d ref="Effect,BonesTossGrenadeDamage,Amount"/> Concussive damage in a small radius. <n/><n/><c val="ffff8a">Does not harm friendly units.</c>
+Button/Tooltip/TriLithiumPowerCells=Diamondback attacks can pierce the target to hit units behind it.
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
 Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> seconds to enemy units in the targeted area.
 Button/Tooltip/UpgradeBuildingArmorLevel1=Gives <c val="ffff8a">structures</c> 20% damage resist.

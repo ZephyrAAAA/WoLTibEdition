@@ -2188,8 +2188,7 @@
     </CUpgrade>
     <CUpgrade id="HailstormMissilePods">
         <EffectArray Operation="Set" Reference="Effect,ConcussiveGrenadesU,AreaArray[0].Arc" Value="360.000000"/>
-        <EffectArray Operation="Set" Reference="Effect,ConcussiveGrenadesU,AreaArray[1].Arc" Value="360.000000"/>
-        <EffectArray Operation="Set" Reference="Effect,ConcussiveGrenadesU,AreaArray[2].Arc" Value="360.000000"/>
+        <EffectArray Operation="Set" Reference="Effect,ConcussiveGrenadesU,AreaArray[0].Radius" Value="0.4687"/>
     </CUpgrade>
     <CUpgrade id="HiSecAutoTracking">
         <EffectArray Reference="Weapon,ConcussiveGrenades,Range" Value="1"/>

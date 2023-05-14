@@ -1,5 +1,5 @@
 Raynor's gun that is clearly not the same as the marine's is now named differently.
-*The autoref is now built on nodes, providing steady income based on how many and what nodes, and also preventing normal regrowth.
+The autoref now has double the range (4->8)
 You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
 Added a "Damage Types" section to the gameplay mechanics help section
 *Added a "Neutral Structures" section to the gameplay mechanics help section
@@ -13,8 +13,8 @@ Fixed Ghost tooltip
 Fixed Spectre tooltip
 Fixed all the building tooltips
 Fixed the Predator Reinforced Barrier lore text.
-*Fixed Goliath upgrade buttons
-*Fixed diamondback upgrade buttons, shaped hull typo
+Fixed Goliath upgrade buttons
+Fixed diamondback upgrade buttons, shaped hull typo
 *Gave silos something to differentiate them.
 Fixed the commando explosive charge tooltip
 Sentry weapon now has tooltip
@@ -42,7 +42,7 @@ Thor barrage button no longer says it stuns
 *Raven repair drone can now be autocast
 *Fixed Hellstorm button on Devastation turrets.
 *Devastation turret now gets a passive for Concussive.
-*Fixed devastation turret having AOE by default.
+Fixed devastation turret having AOE by default.
 Made Abberations Light Vehicle armour.
 *Fixed the char armoury
 *Nerfed the bonus speed zerg units get from creep
@@ -66,14 +66,21 @@ Removed corruptors
 
 Smash and Grab:
 Took into account archon thiccness
+You now start with a merc compound if you have mercs.
+You no longer start with a shadow ops
 
 Evacuation:
 First attack wave is later and weaker
 Rear nydus no longer happens before matt mentions nyduses
 Added devastation turrets to the colony fence
+You now start with a merc compound if you have mercs.
+You no longer start with a shadow ops
+Added 2 autoturrets to the rear
 
 Redstone:
 Edited the rich mineral field tip
+You now start with a merc compound
+You no longer start with a shadow ops
 
 Outbreak:
 Reduced abberation count
