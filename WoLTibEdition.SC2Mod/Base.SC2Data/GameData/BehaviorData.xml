@@ -987,6 +987,7 @@
     <CBehaviorBuff id="ZeratulStun">
         <Modification>
             <StateFlags index="Stun" value="1"/>
+            <BehaviorLinkDisableArray value="BanelingExplode"/>
         </Modification>
         <DurationOverride>
             <Duration value="4"/>

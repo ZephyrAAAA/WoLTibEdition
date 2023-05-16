@@ -22,7 +22,7 @@ Scout weapon now has tooltip
 Autoturret weapon now has tooltip
 Spine Colony weapon now has tooltip
 Spider Mines weapon now has tooltip
-*Fixed Zeratul's void prison sometimes granting immortality to banelings. Instead prisoned banelings don't deal damage when they die.
+Fixed Zeratul's void prison sometimes granting immortality to banelings. Instead prisoned banelings don't deal damage when they die.
 Replaced the blue mineral icon with a green mineral icon
 Replaced the supply depot icon with a power icon
 Changed the tooltip text of the power icon
