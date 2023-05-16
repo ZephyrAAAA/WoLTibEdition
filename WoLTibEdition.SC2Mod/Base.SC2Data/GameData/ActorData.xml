@@ -484,6 +484,37 @@
         <On Terms="Upgrade.MedivacRapidDeployment" Send="ModelSwap MedivacUpgrade"/>
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Medivac_Attack"/>
     </CActorUnit>
+    <CActorUnit id="MercCompound2" parent="TerranBuilding" unitName="MercCompound2">
+        <Aliases value="_UnitHuge"/>
+        <Macros value="QueueAnim"/>
+        <On index="69" Terms="UnitConstruction.MercCompound2.Start" Send="Create MercCompoundBuild"/>
+        <On Terms="Behavior.ColonyInfestation.On" Send="Create InfestationMercCompound"/>
+        <Model value="MercCompound"/>
+        <CreepHeightClass value="Medium"/>
+        <BuildModel value="MercCompound"/>
+        <DeathArray index="Normal" ModelLink="MercCompoundDeath" SoundLink=""/>
+        <DeathArray index="UnderConstruction" ModelLink="TerranBuildingDeath" SoundLink="MercCompound_Explode"/>
+        <DeathActorModel value="ColonyInfestationBuildingDeath"/>
+        <PlacementModel value="MercCompoundPlacement"/>
+        <PlacementSound value="Terran_BuildingPlacement"/>
+        <PortraitModel value="AdjutantPortrait"/>
+        <BarOffset value="120"/>
+        <BarWidth value="135"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-terran-merccompound.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-building-terran-merccompound.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+        <NameOffset value="150"/>
+        <SoundArray index="Ready" value="MercCompound_What"/>
+        <SoundArray index="What" value="MercCompound_What"/>
+        <SoundArray index="Construction" value="Terran_ConstructionWhat"/>
+        <UnitFlags index="ShowBlobShadow" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-building-terran-merccompound.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-terran-merccompound.dds"/>
+        </Wireframe>
+    </CActorUnit>
     <CActorUnit id="MineralSilo" parent="GenericUnitStandard" unitName="MineralSilo">
         <Aliases value="_UnitHuge"/>
         <HostSiteOps Ops="SOpBankerUnitBuilding"/>

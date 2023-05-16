@@ -91,7 +91,8 @@ void buildingSwap (unit building) {
 	} else if (UnitGetType(building) == "SCV2") {
 		OrderWorkerToGather(building);
 	} else if (UnitGetType(building) == "MercCompound") {
-		UnitRemove(building);
+		libNtve_gf_ReplaceUnit(building, "MercCompound2", 1);
+		//UnitRemove(building);
 	}
 }
 
@@ -169,6 +170,11 @@ void RemoveTopbarAbil(string abil) {
 
 void AddTopbars () {
 	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) > 0) {
+		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
+			AddTopbarAbil("TacticalMissileStrike");
+		}
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_MercComp", c_techCountCompleteOnly) > 0) {
 		if (TechTreeUpgradeCount(1, "HireKelmorianMinersPH", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("InfantryMercenaries");
 		}
@@ -177,9 +183,6 @@ void AddTopbars () {
 		}
 		if (TechTreeUpgradeCount(1, "HireHelsAngelsPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireDuskWingPH", c_techCountCompleteOnly) > 0 || TechTreeUpgradeCount(1, "HireDukesRevenge", c_techCountCompleteOnly) > 0) {
 			AddTopbarAbil("StarshipMercenaries");
-		}
-		if (TechTreeUpgradeCount(1, "OrbitalRelay", c_techCountCompleteOnly) > 0) {
-			AddTopbarAbil("TacticalMissileStrike");
 		}
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) > 0) {

@@ -291,6 +291,15 @@
         <TechInfoUpgradeUsed value="TechReactor"/>
         <TechInfoUpgradeUsed value="ImprovedPlasmaShields"/>
     </CDataCollectionUnit>
+    <CDataCollectionUnit id="MercCompound">
+        <DataRecord Entry="Actor,MercCompound"/>
+        <DataRecord Entry="Unit,MercCompound"/>
+    </CDataCollectionUnit>
+    <CDataCollectionUnit id="MercCompound2">
+        <DataRecord Entry="Actor,MercCompound2"/>
+        <DataRecord Entry="Unit,MercCompound2"/>
+        <Button value="MercCompound"/>
+    </CDataCollectionUnit>
     <CDataCollectionUnit id="MineralField">
         <DataRecord Entry="Actor,MineralField"/>
         <DataRecord Entry="Actor,MineralFieldSplat"/>

@@ -1589,7 +1589,7 @@
             <Resource index="Vespene" value="700"/>
             <Resource index="Custom" value="-20"/>
             <Charge HideCount="1" Location="Unit"/>
-            <Button DefaultButtonFace="SupplyDepot" Requirements="CanBuildSupplyDepot">
+            <Button DefaultButtonFace="SupplyDepot">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1597,7 +1597,7 @@
             <Resource index="Vespene" value="2500"/>
             <Resource index="Custom" value="15"/>
             <Charge HideCount="1" Location="Unit"/>
-            <Button DefaultButtonFace="Refinery" Requirements="CanBuildRefinery">
+            <Button DefaultButtonFace="Refinery">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1705,9 +1705,12 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Specialize16">
-            <Charge HideCount="1"/>
-            <Button>
+        <InfoArray index="Specialize16" Time="10" Effect="MercCompBuilt">
+            <Resource index="Minerals" value="1000"/>
+            <Resource index="Custom" value="4"/>
+            <Display index="Custom" value="1"/>
+            <Charge HideCount="1" Location="Unit"/>
+            <Button DefaultButtonFace="MercCompound" State="Restricted" Requirements="HaveBarracks">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
@@ -1847,9 +1850,11 @@
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Build16">
-            <Charge CountMax="1" Link="Abil/CCBuild"/>
-            <Button>
+        <InfoArray index="Build16" Unit="MercCompound2" Time="3">
+            <Resource index="Custom" value="4"/>
+            <Display index="Custom" value="1"/>
+            <Charge CountMax="1" Link="Abil/CCBuild" Location="Unit"/>
+            <Button DefaultButtonFace="MercCompound" Requirements="HasBuiltMercComp">
                 <Flags index="ToSelection" value="1"/>
             </Button>
         </InfoArray>

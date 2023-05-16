@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CBehaviorBuff id="MercCompBuilt">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <RateMultiplierArray index="Progress" value="0.001"/>
+            <RateMultiplierArray index="Queueable" value="0.001"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BanelingExplode">
         <Modification>
             <DeathResponse Chance="0" Effect=""/>
