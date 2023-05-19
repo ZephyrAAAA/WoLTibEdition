@@ -223,10 +223,12 @@ void AddTopbars () {
 
 void RemoveTopbars () {
 	if (TechTreeUnitAliasCount(1, "Alias_ShadowOps", c_techCountCompleteOnly) == 0) {
+		RemoveTopbarAbil("TacticalMissileStrike");
+	}
+	if (TechTreeUnitAliasCount(1, "Alias_MercComp", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("InfantryMercenaries");
 		RemoveTopbarAbil("VehicleMercenaries");
 		RemoveTopbarAbil("StarshipMercenaries");
-		RemoveTopbarAbil("TacticalMissileStrike");
 	}
 	if (TechTreeUnitAliasCount(1, "Alias_FusionCore", c_techCountCompleteOnly) == 0) {
 		RemoveTopbarAbil("HyperionYamato");
@@ -788,6 +790,8 @@ bool TechUnlock_Func (bool textConds, bool runActions) {
 	//TechTreeAbilityAllow(1, AbilityCommand("EMPSpectre", 0), true);
 	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 7), ConversationDataStateGetValue("MissionCompletedCount") >= 2);
 	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 7), ConversationDataStateGetValue("MissionCompletedCount") >= 2);
+	TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 15), ConversationDataStateGetValue("MissionCompletedCount") >= 2);
+	TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 15), ConversationDataStateGetValue("MissionCompletedCount") >= 2);
     TechTreeAbilityAllow(1, AbilityCommand("Barracks2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("BarracksAddOns", 0)));
     TechTreeAbilityAllow(1, AbilityCommand("Factory2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("FactoryTrain", 5)) || ConversationDataStateGetValue("MissionCompletedCount") >= 3); //hellion
     TechTreeAbilityAllow(1, AbilityCommand("Starport2AddOns", 0), TechTreeAbilityIsAllowed(1, AbilityCommand("StarportAddOns", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 0)) || TechTreeAbilityIsAllowed(1, AbilityCommand("StarportTrain", 4)) || ConversationDataStateGetValue("MissionCompletedCount") >= 6);
