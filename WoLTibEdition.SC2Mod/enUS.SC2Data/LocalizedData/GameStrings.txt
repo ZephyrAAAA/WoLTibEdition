@@ -188,6 +188,7 @@ Button/Name/DeployLaserDrill7=Deploy Laser Drill
 Button/Name/DeployLaserDrill8=Deploy Laser Drill
 Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
+Button/Name/DevastationAOE=Devastation AOE
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
 Button/Name/FenixDragoonAirBomb=Solarite Flare
@@ -437,6 +438,7 @@ Button/Tooltip/DeployLaserDrill7=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill8=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
 Button/Tooltip/Depower=Switches power state of the selected building.
+Button/Tooltip/DevastationAOE=Attack does AOE in a small area.
 Button/Tooltip/DevastationTurret=Primary anti-armour defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/DevilDogSquad=A squad of 4 Devil Dogs. Good against structures and infantry.
 Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage. 
@@ -498,6 +500,7 @@ Button/Tooltip/InfantryMercenaries9=Calls down all purchased infantry mercenarie
 Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
+Button/Tooltip/JackhammerConcussionGrenade=Attack temporarily slows all units in target area.<n/><n/><c val="#ColorAttackInfo">Massive units are immune.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
 Button/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
@@ -556,6 +559,7 @@ Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Rou
 Button/Tooltip/ReaperSquad=A squad of 4 Reapers. Good against infantry and structures, bad against anything else.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ReinforcedSuperstructure=Increases Turret life by 75.
 Button/Tooltip/RepairOrder=Orders repair drones to repair the target. Repairs works at a rate of 10+2%hp/s.
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, <c val="FFFF8A">Marauder</c> rockets, and <c val="FFFF8A">Planetary Fortress</c> by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
@@ -1705,6 +1709,8 @@ Tip/PredatorShield=Uses energy to absorb damage
 UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armour </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armour has a tooltip stating what armour type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armour types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
 UI/HelpGameMechanic_DamageTypes_Name=Damage Types
 UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Veins are green crystals which yield 14 minerals per harvest, and do 10 harvests/s.</li><li>Once a Mineral Vein is depleted, it can no longer be harvested from, and will eventually be replaced by a nearby Node.</li></ul>
+UI/HelpGameMechanic_NeutralStructures_Description=Some maps have <c val="FFFF00">Neutral Structures </c>that can be captured to provide a bonus. These bonuses can be immediate, or over time while you own it.
+UI/HelpGameMechanic_NeutralStructures_Name=Neutral Structures
 UI/HelpGameMechanic_Power=Power
 UI/HelpGameMechanic_Power_Description=Buildings require Power to function. Low power causes Production buildings to work slower, while Tech and Defensive structures are disabled entirely.
 UI/HelpGameMechanic_RichMinerals_Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.

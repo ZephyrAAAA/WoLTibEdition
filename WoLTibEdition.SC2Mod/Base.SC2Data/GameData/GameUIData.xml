@@ -4,16 +4,22 @@
         <HelpGameMechanics index="0" Icon="UI/HelpMenuDialogGameMechanics_Power" Name="UI/HelpGameMechanic_Power" Description="UI/HelpGameMechanic_Power_Description"/>
         <HelpGameMechanics index="1" Icon="UI/HelpMenuDialogGameMechanics_Minerals" Name="UI/HelpGameMechanic_Minerals_Name" Description="UI/HelpGameMechanic_Minerals_Description"/>
         <HelpGameMechanics index="2" Icon="UI/HelpMenuDialogGameMechanics_DamageTypes" Name="UI/HelpGameMechanic_DamageTypes_Name" Description="UI/HelpGameMechanic_DamageTypes_Description"/>
-        <HelpGameMechanics index="3" Icon="UI/HelpMenuDialogGameMechanics_RichMinerals" Name="UI/HelpGameMechanic_RichMinerals_Name" Description="UI/HelpGameMechanic_RichMinerals_Description"/>
-        <HelpGameMechanics index="4" Icon="UI/HelpMenuDialogGameMechanics_Vespene" Name="UI/HelpGameMechanic_VespeneGeysers_Name" Description="UI/HelpGameMechanic_VespeneGeysers_Description"/>
-        <HelpGameMechanics index="5" Icon="UI/HelpMenuDialogGameMechanics_RichVespene" Name="UI/HelpGameMechanic_RichVespeneGeysers_Name" Description="UI/HelpGameMechanic_RichVespeneGeysers_Description"/>
-        <HelpGameMechanics index="6" Icon="UI/HelpMenuDialogGameMechanics_Bushes" Name="UI/HelpGameMechanic_LineOfSight_Name" Description="UI/HelpGameMechanic_LineOfSight_Description"/>
-        <HelpGameMechanics index="7" Icon="UI/HelpMenuDialogGameMechanics_Destructible" Name="UI/HelpGameMechanic_DestructibleRocks_Name" Description="UI/HelpGameMechanic_DestructibleRocks_Description"/>
-        <HelpGameMechanics index="8" Icon="UI/HelpMenuDialogGameMechanics_Collapsible" Name="UI/HelpGameMechanic_FallingRocks_Name" Description="UI/HelpGameMechanic_FallingRocks_Description"/>
-        <HelpGameMechanics index="9" Icon="UI/HelpMenuDialogGameMechanics_Xelnaga" Name="UI/HelpGameMechanic_XelNagaWatchTower_Name" Description="UI/HelpGameMechanic_XelNagaWatchTower_Description"/>
-        <HelpGameMechanics index="10" Icon="UI/HelpMenuDialogGameMechanics_Fog" Name="UI/HelpGameMechanic_FogOfWar_Name" Description="UI/HelpGameMechanic_FogOfWar_Description"/>
-        <HelpGameMechanics index="11" Icon="UI/HelpMenuDialogGameMechanics_HighGround" Name="UI/HelpGameMechanic_HighLowGround_Name" Description="UI/HelpGameMechanic_HighLowGround_Description"/>
-        <HelpGameMechanics index="12" Icon="UI/HelpMenuDialogGameMechanics_AccelerationZoneGenerators" Name="UI/HelpGameMechanic_AccelerationZoneGenerators_Name" Description="UI/HelpGameMechanic_AccelerationZoneGenerators_Description"/>
+        <HelpGameMechanics index="3" Icon="UI/HelpMenuDialogGameMechanics_NeutralStructures" Name="UI/HelpGameMechanic_NeutralStructures_Name" Description="UI/HelpGameMechanic_NeutralStructures_Description"/>
+        <HelpGameMechanics index="4" Icon="UI/HelpMenuDialogGameMechanics_RichMinerals" Name="UI/HelpGameMechanic_RichMinerals_Name" Description="UI/HelpGameMechanic_RichMinerals_Description"/>
+        <HelpGameMechanics index="5" Icon="UI/HelpMenuDialogGameMechanics_Vespene" Name="UI/HelpGameMechanic_VespeneGeysers_Name" Description="UI/HelpGameMechanic_VespeneGeysers_Description"/>
+        <HelpGameMechanics index="6" Icon="UI/HelpMenuDialogGameMechanics_RichVespene" Name="UI/HelpGameMechanic_RichVespeneGeysers_Name" Description="UI/HelpGameMechanic_RichVespeneGeysers_Description"/>
+        <HelpGameMechanics index="7" Icon="UI/HelpMenuDialogGameMechanics_Bushes" Name="UI/HelpGameMechanic_LineOfSight_Name" Description="UI/HelpGameMechanic_LineOfSight_Description"/>
+        <HelpGameMechanics index="8" Icon="UI/HelpMenuDialogGameMechanics_Destructible" Name="UI/HelpGameMechanic_DestructibleRocks_Name" Description="UI/HelpGameMechanic_DestructibleRocks_Description"/>
+        <HelpGameMechanics index="9" Icon="UI/HelpMenuDialogGameMechanics_Collapsible" Name="UI/HelpGameMechanic_FallingRocks_Name" Description="UI/HelpGameMechanic_FallingRocks_Description"/>
+        <HelpGameMechanics index="10" Icon="UI/HelpMenuDialogGameMechanics_Xelnaga" Name="UI/HelpGameMechanic_XelNagaWatchTower_Name" Description="UI/HelpGameMechanic_XelNagaWatchTower_Description"/>
+        <HelpGameMechanics index="11" Icon="UI/HelpMenuDialogGameMechanics_Fog" Name="UI/HelpGameMechanic_FogOfWar_Name" Description="UI/HelpGameMechanic_FogOfWar_Description"/>
+        <HelpGameMechanics index="12" Icon="UI/HelpMenuDialogGameMechanics_HighGround" Name="UI/HelpGameMechanic_HighLowGround_Name" Description="UI/HelpGameMechanic_HighLowGround_Description"/>
+        <HelpGameMechanics>
+            <Icon value="UI/HelpMenuDialogGameMechanics_AccelerationZoneGenerators"/>
+            <IconBackground value="UI/HelpMenuDialogGameMechanics_IconFrame"/>
+            <Name value="UI/HelpGameMechanic_AccelerationZoneGenerators_Name"/>
+            <Description value="UI/HelpGameMechanic_AccelerationZoneGenerators_Description"/>
+        </HelpGameMechanics>
         <HelpGameMechanics>
             <Icon value="UI/HelpMenuDialogGameMechanics_InhibitorZoneGenerators"/>
             <IconBackground value="UI/HelpMenuDialogGameMechanics_IconFrame"/>

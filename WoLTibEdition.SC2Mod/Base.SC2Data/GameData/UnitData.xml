@@ -2231,14 +2231,8 @@
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
-            <LayoutButtons>
-                <Face value="HellstormMissileBatteries"/>
-                <Type value="Passive"/>
-                <AbilCmd value="255,255"/>
-                <Requirements value="UseHailstormMissilePods"/>
-                <Row value="2"/>
-                <Column value="1"/>
-            </LayoutButtons>
+            <LayoutButtons Face="DevastationAOE" Type="Passive" Requirements="UseHailstormMissilePods" Row="2" Column="1"/>
+            <LayoutButtons Face="JackhammerConcussionGrenade" Type="Passive" Requirements="JackhammerConcussionGrenadesResearched" Row="2" Column="2"/>
         </CardLayouts>
         <Radius value="0.75"/>
         <SeparationRadius value="0.75"/>

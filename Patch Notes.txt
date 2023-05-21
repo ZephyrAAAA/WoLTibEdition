@@ -2,9 +2,8 @@ Raynor's gun that is clearly not the same as the marine's is now named different
 The autoref now has double the range (4->8)
 You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
 Added a "Damage Types" section to the gameplay mechanics help section
-*Added a "Neutral Structures" section to the gameplay mechanics help section
+Added a "Neutral Structures" section to the gameplay mechanics help section
 Edited the minerals help menu entry
-*Refineries can no longer accept deposits when depowered.
 Added a laser drill upgrade to increase its power.
 Deploying the drill is now 10k
 Initial deploymnent of the drill is weaker, has an upgrade to make it stronger
@@ -15,7 +14,6 @@ Fixed all the building tooltips
 Fixed the Predator Reinforced Barrier lore text.
 Fixed Goliath upgrade buttons
 Fixed diamondback upgrade buttons, shaped hull typo
-*Gave silos something to differentiate them.
 Fixed the commando explosive charge tooltip
 Sentry weapon now has tooltip
 Scout weapon now has tooltip
@@ -36,19 +34,24 @@ Corrected the button text of the raven and science vessel
 Added description to Low Power behaviour 
 Added description to Depowered behaviour
 Included a repair breakdown on the factory and starport repair button
-*Made squad members no longer have a healthbar
 Deploy button for CCs and Cranes is now on the main menu
 Thor barrage button no longer says it stuns
-*Raven repair drone can now be autocast
-*Fixed Hellstorm button on Devastation turrets.
-*Devastation turret now gets a passive for Concussive.
 Fixed devastation turret having AOE by default.
 Made Abberations Light Vehicle armour.
-*Fixed the char armoury
 Nerfed the bonus speed zerg units get from creep
-*Protoss no longer get so much damage resist on shields.
 Our Ultracap and Vanadium upgrades now use an appropriate icon, instead of all being the same.
 Re-added the Merc Compound, moved merc topbar unlocks to the merc compound.
+Fixed tooltip text of titanium housing.
+Fixed Hellstorm button on Devastation turrets.
+Devastation turret now gets a passive for Concussive.
+*Added squad icon for Reapers
+*Added squad icon for Firebats
+*Refineries can no longer accept deposits when depowered.
+*Gave silos something to differentiate them.
+*Made squad members no longer have a healthbar
+*Raven repair drone can now be autocast
+*Fixed the char armoury
+*Protoss no longer get so much damage resist on shields.
 
 Liberation Day:
 Removed bonus marines for killing holoboards
