@@ -1706,6 +1706,7 @@ Skin/Name/PsiDisruptor8=PsiDisruptor8
 Skin/Name/PsiDisruptor9=PsiDisruptor9
 StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
+UI/AchievementDisable=Achievements have been disabled due to <c val="00FF00">Tiberium</c> usage. To enable achievements again, start a new game or load a saved game.
 UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armour </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armour has a tooltip stating what armour type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armour types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
 UI/HelpGameMechanic_DamageTypes_Name=Damage Types
 UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Veins are green crystals which yield 14 minerals per harvest, and do 10 harvests/s.</li><li>Once a Mineral Vein is depleted, it can no longer be harvested from, and will eventually be replaced by a nearby Node.</li></ul>
