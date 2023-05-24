@@ -44,8 +44,8 @@ Re-added the Merc Compound, moved merc topbar unlocks to the merc compound.
 Fixed tooltip text of titanium housing.
 Fixed Hellstorm button on Devastation turrets.
 Devastation turret now gets a passive for Concussive.
-*Added squad icon for Reapers
-*Added squad icon for Firebats
+Added squad icon for Reapers
+Added squad icon for Firebats
 *Refineries can no longer accept deposits when depowered.
 *Gave silos something to differentiate them.
 *Made squad members no longer have a healthbar
@@ -137,8 +137,9 @@ Weakened attack waves.
 Increased how much destroying a base weakens attack waves
 Slowed down the deployment of new Bully Groups.
 The mothership no longer attacks immediately after spawning, instead waiting 2 minutes.
+Increased the time between momma attacks
 The AI no longer replaces production or tech structures. They will still rebuild Nexi, pylons, and cannons, if they have probes.
-*Mom attacking is now announced.
+Mom attacking is now announced.
 
 Whispers of Doom:
 Karass now has a damage type
