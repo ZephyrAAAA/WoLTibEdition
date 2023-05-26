@@ -229,6 +229,7 @@ Actor/Name/SentryShieldRepairSoundLoop=Sentry Shield Repair Sound Loop
 Actor/Name/SentryShieldRepairSoundStart=Sentry Shield Repair Sound Start
 Actor/Name/SentryShieldRepairSoundStop=Sentry Shield Repair Sound Stop
 Actor/Name/Spell_CombatDrugs_Launch=Spell_CombatDrugs_Launch
+Actor/Name/SquadUnitNoStatus=Squad Unit No Status
 Actor/Name/SquadUnitShrink=Squad Unit Shrink
 Actor/Name/Starport2=Starport
 Actor/Name/StetmannBlob=Stetmann Blob

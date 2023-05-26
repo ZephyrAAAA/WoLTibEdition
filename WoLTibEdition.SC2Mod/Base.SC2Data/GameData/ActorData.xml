@@ -1471,6 +1471,11 @@
         <On Terms="Behavior.SeekerMissile.Off" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
         <On Terms="Behavior.SeekerMissile.Off" Send="Destroy"/>
     </CActorSimple>
+    <CActorSimple id="SquadUnitNoStatus">
+        <On Terms="Behavior.SquadUnit.On" Send="Create"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetShowStatusBar 0 Life"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetShowStatusBar 0 Shields"/>
+    </CActorSimple>
     <CActorBeamSimple id="VoidPylonRestoreBeam" parent="BeamSimpleAnimationStyleContinuous">
         <Inherits index="Visibility" value="1"/>
         <On Terms="Effect.RestoreLife.TargetStart" Send="Create"/>
