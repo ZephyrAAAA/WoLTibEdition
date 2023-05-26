@@ -117,9 +117,16 @@
     <CValidatorUnitType id="IsPredator">
         <Value value="Predator"/>
     </CValidatorUnitType>
+    <CValidatorUnitType id="IsRepairDrone">
+        <Value value="CCRepairDrone"/>
+    </CValidatorUnitType>
     <CValidatorUnitType id="IsStone">
         <Value value="Stone"/>
     </CValidatorUnitType>
+    <CValidatorLocationEnumArea id="NoNearbyRepairDrones">
+        <AreaArray Radius="9" Validator="IsRepairDrone"/>
+        <Compare value="LE"/>
+    </CValidatorLocationEnumArea>
     <CValidatorUnitCompareBehaviorCount id="NotChannelingCausticSpray">
         <ResultFailed value="CantQueueThatOrder"/>
         <WhichUnit Value="Caster"/>

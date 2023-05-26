@@ -627,11 +627,18 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="RepairDroneReleaseCreateUnit"/>
         <Flags index="AllowMovement" value="1"/>
+        <Flags index="AutoCast" value="1"/>
         <Flags index="BestUnit" value="1"/>
         <Cost>
             <Vital index="Energy" value="50"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="RavenRepairDrone"/>
+        <AutoCastAcquireLevel value="Defensive"/>
+        <AutoCastFilters value="Visible;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="TargetIsMechanical"/>
+        <AutoCastValidatorArray value="TargetLifeNotFull"/>
+        <AutoCastValidatorArray value="NoNearbyRepairDrones"/>
     </CAbilEffectInstant>
     <CAbilEffectTarget id="RepairDroneRestore">
         <EditorCategories value="AbilityorEffectType:Units"/>
