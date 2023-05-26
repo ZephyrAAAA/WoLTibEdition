@@ -923,64 +923,64 @@
         <EffectArray index="28" removed="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossShieldsLevel2">
-        <EffectArray index="1" Value="1.33"/>
-        <EffectArray index="3" Value="1.33"/>
-        <EffectArray index="5" Value="1.33"/>
-        <EffectArray index="7" Value="1.33"/>
-        <EffectArray index="9" Value="1.33"/>
-        <EffectArray index="11" Value="1.33"/>
-        <EffectArray index="13" Value="1.33"/>
-        <EffectArray index="15" Value="1.33"/>
-        <EffectArray index="17" Value="1.33"/>
-        <EffectArray index="19" Value="1.33"/>
-        <EffectArray index="21" Value="1.33"/>
-        <EffectArray index="23" Value="1.33"/>
-        <EffectArray index="25" Value="1.33"/>
-        <EffectArray index="27" Value="1.33"/>
-        <EffectArray index="29" Value="1.33"/>
-        <EffectArray index="31" Value="1.33"/>
-        <EffectArray index="32" Value="1.33"/>
-        <EffectArray index="35" Value="1.33"/>
-        <EffectArray index="37" Value="1.33"/>
-        <EffectArray index="39" Value="1.33"/>
-        <EffectArray index="41" Value="1.33"/>
-        <EffectArray index="43" Value="1.33"/>
-        <EffectArray index="45" Value="1.33"/>
-        <EffectArray index="47" Value="1.33"/>
-        <EffectArray index="48" Value="1.33"/>
-        <EffectArray index="51" Value="1.33"/>
-        <EffectArray index="53" Value="1.33"/>
-        <EffectArray index="55" Value="1.33"/>
-        <EffectArray index="57" Value="1.33"/>
-        <EffectArray index="59" Value="1.33"/>
-        <EffectArray index="61" Value="1.33"/>
-        <EffectArray index="63" Value="1.33"/>
-        <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="1.33"/>
+        <EffectArray index="1" Value="0.715"/>
+        <EffectArray index="3" Value="0.715"/>
+        <EffectArray index="5" Value="0.715"/>
+        <EffectArray index="7" Value="0.715"/>
+        <EffectArray index="9" Value="0.715"/>
+        <EffectArray index="11" Value="0.715"/>
+        <EffectArray index="13" Value="0.715"/>
+        <EffectArray index="15" Value="0.715"/>
+        <EffectArray index="17" Value="0.715"/>
+        <EffectArray index="19" Value="0.715"/>
+        <EffectArray index="21" Value="0.715"/>
+        <EffectArray index="23" Value="0.715"/>
+        <EffectArray index="25" Value="0.715"/>
+        <EffectArray index="27" Value="0.715"/>
+        <EffectArray index="29" Value="0.715"/>
+        <EffectArray index="31" Value="0.715"/>
+        <EffectArray index="32" Value="0.715"/>
+        <EffectArray index="35" Value="0.715"/>
+        <EffectArray index="37" Value="0.715"/>
+        <EffectArray index="39" Value="0.715"/>
+        <EffectArray index="41" Value="0.715"/>
+        <EffectArray index="43" Value="0.715"/>
+        <EffectArray index="45" Value="0.715"/>
+        <EffectArray index="47" Value="0.715"/>
+        <EffectArray index="48" Value="0.715"/>
+        <EffectArray index="51" Value="0.715"/>
+        <EffectArray index="53" Value="0.715"/>
+        <EffectArray index="55" Value="0.715"/>
+        <EffectArray index="57" Value="0.715"/>
+        <EffectArray index="59" Value="0.715"/>
+        <EffectArray index="61" Value="0.715"/>
+        <EffectArray index="63" Value="0.715"/>
+        <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="0.715"/>
         <EffectArray index="65" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="1.33"/>
+        <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="0.715"/>
         <EffectArray index="67" Operation="Add" Reference="Unit,Purifier,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="68" Operation="Add" Reference="Unit,Scout,ShieldArmor" Value="1.33"/>
+        <EffectArray index="68" Operation="Add" Reference="Unit,Scout,ShieldArmor" Value="0.715"/>
         <EffectArray index="69" Operation="Add" Reference="Unit,Scout,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="70" Operation="Add" Reference="Unit,Zeratul,ShieldArmor" Value="1.33"/>
+        <EffectArray index="70" Operation="Add" Reference="Unit,Zeratul,ShieldArmor" Value="0.715"/>
         <EffectArray index="71" Operation="Add" Reference="Unit,Zeratul,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="72" Operation="Add" Reference="Unit,Urun,ShieldArmor" Value="1.33"/>
+        <EffectArray index="72" Operation="Add" Reference="Unit,Urun,ShieldArmor" Value="0.715"/>
         <EffectArray index="73" Operation="Add" Reference="Unit,Urun,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="74" Operation="Add" Reference="Unit,Mohandar,ShieldArmor" Value="1.33"/>
+        <EffectArray index="74" Operation="Add" Reference="Unit,Mohandar,ShieldArmor" Value="0.715"/>
         <EffectArray index="75" Operation="Add" Reference="Unit,Mohandar,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="76" Operation="Add" Reference="Unit,Selendis,ShieldArmor" Value="1.33"/>
+        <EffectArray index="76" Operation="Add" Reference="Unit,Selendis,ShieldArmor" Value="0.715"/>
         <EffectArray index="77" Operation="Add" Reference="Unit,Selendis,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="78" Operation="Add" Reference="Unit,Artanis,ShieldArmor" Value="1.33"/>
+        <EffectArray index="78" Operation="Add" Reference="Unit,Artanis,ShieldArmor" Value="0.715"/>
         <EffectArray index="79" Operation="Add" Reference="Unit,Artanis,ShieldArmorLevel" Value="1"/>
         <EffectArray index="80" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="81" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmor" Value="1.33"/>
-        <EffectArray index="82" Operation="Add" Reference="Unit,Karass,ShieldArmor" Value="1.33"/>
+        <EffectArray index="81" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmor" Value="0.715"/>
+        <EffectArray index="82" Operation="Add" Reference="Unit,Karass,ShieldArmor" Value="0.715"/>
         <EffectArray index="83" Operation="Add" Reference="Unit,Karass,ShieldArmorLevel" Value="1"/>
         <EffectArray index="84" Operation="Add" Reference="Unit,Obelisk,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="85" Operation="Add" Reference="Unit,Obelisk,ShieldArmor" Value="1.33"/>
+        <EffectArray index="85" Operation="Add" Reference="Unit,Obelisk,ShieldArmor" Value="0.715"/>
         <EffectArray index="86" Operation="Add" Reference="Unit,HybridReaver,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="87" Operation="Add" Reference="Unit,HybridReaver,ShieldArmor" Value="1.33"/>
+        <EffectArray index="87" Operation="Add" Reference="Unit,HybridReaver,ShieldArmor" Value="0.715"/>
         <EffectArray index="88" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="89" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmor" Value="1.33"/>
+        <EffectArray index="89" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmor" Value="0.715"/>
         <EffectArray index="90" removed="1"/>
         <EffectArray index="91" removed="1"/>
         <EffectArray index="92" removed="1"/>
@@ -2218,64 +2218,64 @@
         <EffectArray Reference="Weapon,ShrikeTurret,Range" Value="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossShieldsLevel1">
-        <EffectArray index="1" Value="2.667"/>
-        <EffectArray index="3" Value="2.667"/>
-        <EffectArray index="5" Value="2.667"/>
-        <EffectArray index="7" Value="2.667"/>
-        <EffectArray index="9" Value="2.667"/>
-        <EffectArray index="11" Value="2.667"/>
-        <EffectArray index="13" Value="2.667"/>
-        <EffectArray index="15" Value="2.667"/>
-        <EffectArray index="17" Value="2.667"/>
-        <EffectArray index="19" Value="2.667"/>
-        <EffectArray index="21" Value="2.667"/>
-        <EffectArray index="23" Value="2.667"/>
-        <EffectArray index="25" Value="2.667"/>
-        <EffectArray index="27" Value="2.667"/>
-        <EffectArray index="29" Value="2.667"/>
-        <EffectArray index="31" Value="2.667"/>
-        <EffectArray index="32" Value="2.667"/>
-        <EffectArray index="35" Value="2.667"/>
-        <EffectArray index="37" Value="2.667"/>
-        <EffectArray index="39" Value="2.667"/>
-        <EffectArray index="41" Value="2.667"/>
-        <EffectArray index="43" Value="2.667"/>
-        <EffectArray index="45" Value="2.667"/>
-        <EffectArray index="47" Value="2.667"/>
-        <EffectArray index="48" Value="2.667"/>
-        <EffectArray index="51" Value="2.667"/>
-        <EffectArray index="53" Value="2.667"/>
-        <EffectArray index="55" Value="2.667"/>
-        <EffectArray index="57" Value="2.667"/>
-        <EffectArray index="59" Value="2.667"/>
-        <EffectArray index="61" Value="2.667"/>
-        <EffectArray index="63" Value="2.667"/>
-        <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="2.667"/>
+        <EffectArray index="1" Value="1"/>
+        <EffectArray index="3" Value="1"/>
+        <EffectArray index="5" Value="1"/>
+        <EffectArray index="7" Value="1"/>
+        <EffectArray index="9" Value="1"/>
+        <EffectArray index="11" Value="1"/>
+        <EffectArray index="13" Value="1"/>
+        <EffectArray index="15" Value="1"/>
+        <EffectArray index="17" Value="1"/>
+        <EffectArray index="19" Value="1"/>
+        <EffectArray index="21" Value="1"/>
+        <EffectArray index="23" Value="1"/>
+        <EffectArray index="25" Value="1"/>
+        <EffectArray index="27" Value="1"/>
+        <EffectArray index="29" Value="1"/>
+        <EffectArray index="31" Value="1"/>
+        <EffectArray index="32" Value="1"/>
+        <EffectArray index="35" Value="1"/>
+        <EffectArray index="37" Value="1"/>
+        <EffectArray index="39" Value="1"/>
+        <EffectArray index="41" Value="1"/>
+        <EffectArray index="43" Value="1"/>
+        <EffectArray index="45" Value="1"/>
+        <EffectArray index="47" Value="1"/>
+        <EffectArray index="48" Value="1"/>
+        <EffectArray index="51" Value="1"/>
+        <EffectArray index="53" Value="1"/>
+        <EffectArray index="55" Value="1"/>
+        <EffectArray index="57" Value="1"/>
+        <EffectArray index="59" Value="1"/>
+        <EffectArray index="61" Value="1"/>
+        <EffectArray index="63" Value="1"/>
+        <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="1"/>
         <EffectArray index="65" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="2.667"/>
+        <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="1"/>
         <EffectArray index="67" Operation="Add" Reference="Unit,Purifier,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="68" Operation="Add" Reference="Unit,Scout,ShieldArmor" Value="2.667"/>
+        <EffectArray index="68" Operation="Add" Reference="Unit,Scout,ShieldArmor" Value="1"/>
         <EffectArray index="69" Operation="Add" Reference="Unit,Scout,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="70" Operation="Add" Reference="Unit,Zeratul,ShieldArmor" Value="2.667"/>
+        <EffectArray index="70" Operation="Add" Reference="Unit,Zeratul,ShieldArmor" Value="1"/>
         <EffectArray index="71" Operation="Add" Reference="Unit,Zeratul,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="72" Operation="Add" Reference="Unit,Urun,ShieldArmor" Value="2.667"/>
+        <EffectArray index="72" Operation="Add" Reference="Unit,Urun,ShieldArmor" Value="1"/>
         <EffectArray index="73" Operation="Add" Reference="Unit,Urun,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="74" Operation="Add" Reference="Unit,Mohandar,ShieldArmor" Value="2.667"/>
+        <EffectArray index="74" Operation="Add" Reference="Unit,Mohandar,ShieldArmor" Value="1"/>
         <EffectArray index="75" Operation="Add" Reference="Unit,Mohandar,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="76" Operation="Add" Reference="Unit,Selendis,ShieldArmor" Value="2.667"/>
+        <EffectArray index="76" Operation="Add" Reference="Unit,Selendis,ShieldArmor" Value="1"/>
         <EffectArray index="77" Operation="Add" Reference="Unit,Selendis,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="78" Operation="Add" Reference="Unit,Artanis,ShieldArmor" Value="2.667"/>
+        <EffectArray index="78" Operation="Add" Reference="Unit,Artanis,ShieldArmor" Value="1"/>
         <EffectArray index="79" Operation="Add" Reference="Unit,Artanis,ShieldArmorLevel" Value="1"/>
         <EffectArray index="80" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="81" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmor" Value="2.667"/>
-        <EffectArray index="82" Operation="Add" Reference="Unit,Karass,ShieldArmor" Value="2.667"/>
+        <EffectArray index="81" Operation="Add" Reference="Unit,SelendisInterceptor,ShieldArmor" Value="1"/>
+        <EffectArray index="82" Operation="Add" Reference="Unit,Karass,ShieldArmor" Value="1"/>
         <EffectArray index="83" Operation="Add" Reference="Unit,Karass,ShieldArmorLevel" Value="1"/>
         <EffectArray index="84" Operation="Add" Reference="Unit,Obelisk,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="85" Operation="Add" Reference="Unit,Obelisk,ShieldArmor" Value="2.667"/>
+        <EffectArray index="85" Operation="Add" Reference="Unit,Obelisk,ShieldArmor" Value="1"/>
         <EffectArray index="86" Operation="Add" Reference="Unit,HybridReaver,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="87" Operation="Add" Reference="Unit,HybridReaver,ShieldArmor" Value="2.667"/>
+        <EffectArray index="87" Operation="Add" Reference="Unit,HybridReaver,ShieldArmor" Value="1"/>
         <EffectArray index="88" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmorLevel" Value="1"/>
-        <EffectArray index="89" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmor" Value="2.667"/>
+        <EffectArray index="89" Operation="Add" Reference="Unit,HybridDestroyer,ShieldArmor" Value="1"/>
         <EffectArray index="90" removed="1"/>
         <EffectArray index="91" removed="1"/>
         <EffectArray index="92" removed="1"/>
