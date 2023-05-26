@@ -46,6 +46,8 @@ Fixed Hellstorm button on Devastation turrets.
 Devastation turret now gets a passive for Concussive.
 Added squad icon for Reapers
 Added squad icon for Firebats
+Corrected a typo in the Orbital Command armoury upgrade.
+Updated Contextual loading screen hints
 *Refineries can no longer accept deposits when depowered.
 *Gave silos something to differentiate them.
 *Made squad members no longer have a healthbar
@@ -60,7 +62,6 @@ Fixed health charge doing weird things
 
 Outlaws:
 Added some sort of record of important text that appears, so you can still read it if you miss it.
-*Less tutorializing?
 
 Zero Hour:
 Fixed the build a crane popup
@@ -116,7 +117,6 @@ Infinite creep is now mentioned in the Virophage Tip, and in a chat message
 
 Safe Haven:
 The protoss have been instructed on proper colony ship-killing procedures
-*mothership may not fire when feedbacked?
 *Fixed massive spamming of single unit types
 
 Breakout:
@@ -159,7 +159,6 @@ Media Blitz:
 Made the bases only rebuild from convoys
 Fixed the timing of the convoy tip
 The convoys now start with a weaker escort.
-*Fixed loading a save crashing the game?
 
 Piercing:
 The hybrid now chases you properly.
