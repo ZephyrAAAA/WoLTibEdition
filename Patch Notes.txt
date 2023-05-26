@@ -52,7 +52,7 @@ Marauder weapon has tooltip now
 *Gave silos something to differentiate them.
 *Raven repair drone can now be autocast
 *Fixed the char armoury
-*Protoss no longer get so much damage resist on shields.
+Protoss no longer get so much damage resist on shields.
 
 Liberation Day:
 Removed bonus marines for killing holoboards
@@ -140,9 +140,6 @@ Mom attacking is now announced.
 Whispers of Doom:
 Karass now has a damage type
 Zeratul now has the proper damage type icon
-
-Ghost of a Chance:
-*Ultra now always continues on
 
 A Sinister Turn:
 *Mentioned Zeratul's recall on killing a preserver.
