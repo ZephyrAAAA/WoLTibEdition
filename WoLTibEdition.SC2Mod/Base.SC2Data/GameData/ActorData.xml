@@ -565,7 +565,14 @@
         <WireframeVariations Number="4">
             <Image value="Assets\Textures\Wireframe-terran-biodome04.dds"/>
         </WireframeVariations>
+        <On Terms="ActorCreation" Send="Create MineralSiloHat"/>
     </CActorUnit>
+    <CActorModel id="MineralSiloHat" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <HostSiteOps Ops="AttachHeadTop SOpMoveDownBy1"/>
+        <Model value="SensorTower"/>
+        <Scale value="1.200000"/>
+    </CActorModel>
     <CActorUnit id="MineralSpike" parent="GenericUnitStandard" unitName="MineralSpike">
         <Aliases value="_UnitLarge"/>
         <HostSiteOps Ops="SOpBankerUnitBuilding"/>
