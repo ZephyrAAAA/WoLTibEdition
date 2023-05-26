@@ -11151,6 +11151,47 @@ void gf_CharRoomUIDisplayUI (int lp_uI) {
     auto1AA3799C_val = lp_uI;
     if (auto1AA3799C_val == ge_CharRoomUI_CharRoomUIArmory) {
         libCamp_gf_DisplayTechConsole(gt_CharRoomUILeaveUI);
+        UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypePurchasePanel, false);
+        if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 4)) {
+            PurchaseCategorySetState(libCamp_gv_tS_TechCategory_UI[(libCamp_ge_StoryTechCategory_StoryTechCategoryDominion)], c_purchaseCategoryStateEnabled);
+            if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostOcularImplants] == libCamp_ge_StoryTechStates_TechPurchased)))) {
+                libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostOcularImplants] = libCamp_ge_StoryTechStates_TechAvailable;
+                PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostOcularImplants], c_purchaseItemStateEnabled);
+            }
+
+            if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostPermaCloak] == libCamp_ge_StoryTechStates_TechPurchased)))) {
+                libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechGhostPermaCloak] = libCamp_ge_StoryTechStates_TechAvailable;
+                PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechGhostPermaCloak], c_purchaseItemStateEnabled);
+            }
+
+            PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], "Assets\\Textures\\blank.dds");
+            PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], "Predator");
+            PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], c_purchaseGroupStateEnabled);
+        }
+        else {
+            PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionGhost], c_purchaseGroupStateHidden);
+        }
+        if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 7)) {
+            if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectrePermaCloak] == libCamp_ge_StoryTechStates_TechPurchased)))) {
+                libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectrePermaCloak] = libCamp_ge_StoryTechStates_TechAvailable;
+                PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechSpectrePermaCloak], c_purchaseItemStateEnabled);
+            }
+
+            if ((!((libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectreUltrasonicPulse] == libCamp_ge_StoryTechStates_TechPurchased)))) {
+                libCamp_gv_tSX_Tech_Status[libCamp_ge_StoryTech_StoryTechSpectreUltrasonicPulse] = libCamp_ge_StoryTechStates_TechAvailable;
+                PurchaseItemSetState(libCamp_gv_tS_Tech_UI[libCamp_ge_StoryTech_StoryTechSpectreUltrasonicPulse], c_purchaseItemStateEnabled);
+            }
+
+            PurchaseGroupSetIconFilePath(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], "Assets\\Textures\\blank.dds");
+            PurchaseGroupSetUnitLink(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], "Hercules");
+            PurchaseGroupSetSlot(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], 2);
+            PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], c_purchaseGroupStateEnabled);
+        }
+        else {
+            PurchaseGroupSetState(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionSpectre], c_purchaseGroupStateHidden);
+        }
+        PurchaseGroupSetSlot(libCamp_gv_tS_TechGroup_UI[libCamp_ge_StoryTechGroup_StoryTechGroupDominionThor], 3);
+        UISetFrameVisible(PlayerGroupAll(), c_syncFrameTypePurchasePanel, true);
     }
     else if (auto1AA3799C_val == ge_CharRoomUI_CharRoomUIMissionArchives) {
         libCamp_gf_DisplayBattleReport(gt_BridgeMissionArchivesSceneFinish, gt_CharRoomUILeaveUI);
