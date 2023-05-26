@@ -959,11 +959,11 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Period value="1"/>
         <AttackType value="Magic"/>
         <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <Tip value="Weapon/Tip/Cannon"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad" parent="PunisherGrenades">
         <Name value="Weapon/Name/MarauderSquad"/>
         <EditorCategories value=""/>
-        <Tip value="Weapon/Tip/Cannon"/>
         <DisplayName value="Weapon/Name/MarauderSquad"/>
         <Marker Link="Weapon/MarauderSquad"/>
         <Cost>

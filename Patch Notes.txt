@@ -48,6 +48,7 @@ Added squad icon for Reapers
 Added squad icon for Firebats
 Corrected a typo in the Orbital Command armoury upgrade.
 Updated Contextual loading screen hints
+Marauder weapon has tooltip now
 *Gave silos something to differentiate them.
 *Raven repair drone can now be autocast
 *Fixed the char armoury
@@ -116,9 +117,6 @@ Infinite creep is now mentioned in the Virophage Tip, and in a chat message
 Safe Haven:
 The protoss have been instructed on proper colony ship-killing procedures
 *Fixed massive spamming of single unit types
-
-Breakout:
-*Raynor's units have proper weapon tooltips now
 
 Engine:
 Fixed Johnny.
