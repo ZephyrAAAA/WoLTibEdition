@@ -52,7 +52,7 @@ Marauder weapon has tooltip now
 Made squad members no longer have a healthbar
 *Gave silos something to differentiate them.
 *Raven repair drone can now be autocast
-*Fixed the char armoury
+Fixed the char armoury
 Protoss no longer get so much damage resist on shields.
 
 Liberation Day:
@@ -145,7 +145,7 @@ Zeratul now has the proper damage type icon
 A Sinister Turn:
 Mentioned Zeratul's recall on killing a preserver.
 Added a visual for recall
-*Added a button to toggle no-slap mode
+Added a button to toggle no-slap mode
 removed detection cones during end cinematic
 mention maar teleport and potentially plasma blast
 
@@ -175,7 +175,7 @@ Omegalisks are now sent in the ground version
 More Broodlords
 Increased muta count by 50%ish
 Doubled corruptors
-Implosion can target Massive again
-Implosion now does 100+50%hp damage
+Implosion can now target massive units
+Implosion does 100+50% hp damage, rather than instant kill
 Removed 2 starting SCVs
 2 of your fields no longer start full

@@ -138,10 +138,22 @@
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="5" Effect="BansheeAirstrikeDamage"/>
     </CEffectEnumArea>
+    <CEffectCreatePersistent id="ImplosionCreatePersistent">
+        <FinalEffect value="ImplosionDamageSet"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="ImplosionDamageSet">
+        <EditorCategories value=""/>
+        <EffectArray value="ImplosionKillUnit"/>
+        <EffectArray value="ImplosionFlatDamage"/>
+    </CEffectSet>
+    <CEffectDamage id="ImplosionFlatDamage">
+        <EditorCategories value="Race:Zerg"/>
+        <Amount value="100"/>
+    </CEffectDamage>
     <CEffectDamage id="ImplosionKillUnit">
         <Flags index="Kill" value="0"/>
-        <Amount value="100"/>
         <VitalFractionMax index="Life" value="0.5"/>
+        <VitalFractionMax index="Shields" value="0.5"/>
     </CEffectDamage>
     <CEffectRemoveBehavior id="MercCompPlace">
         <EditorCategories value=""/>
