@@ -48,9 +48,7 @@ Added squad icon for Reapers
 Added squad icon for Firebats
 Corrected a typo in the Orbital Command armoury upgrade.
 Updated Contextual loading screen hints
-*Refineries can no longer accept deposits when depowered.
 *Gave silos something to differentiate them.
-*Made squad members no longer have a healthbar
 *Raven repair drone can now be autocast
 *Fixed the char armoury
 *Protoss no longer get so much damage resist on shields.
