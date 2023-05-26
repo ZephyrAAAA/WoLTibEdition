@@ -117,7 +117,6 @@ Infinite creep is now mentioned in the Virophage Tip, and in a chat message
 
 Safe Haven:
 The protoss have been instructed on proper colony ship-killing procedures
-*Fixed massive spamming of single unit types
 
 Engine:
 Fixed Johnny.
@@ -161,8 +160,7 @@ fixed raynor not having an armor type
 
 Gates:
 Warfield dying is no longer a loss condition.
-*Warfield's forces can now shoot
-*Added a thing to the Mission Summary that says whether you kept the reactor alive.
+Added a thing to the Mission Summary that says whether you kept the reactor alive.
 
 Belly:
 Added stim to the unified command card
