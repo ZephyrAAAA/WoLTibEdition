@@ -55,6 +55,8 @@ Raven repair drone can now be autocast
 Fixed the char armoury
 Protoss no longer get so much damage resist on shields.
 Nerfed Topbar P5 upgrade to 20% cost and 33% cooldown.
+Raven repair drones are now actually killable
+Raven repair drones now display their duration
 
 Liberation Day:
 Removed bonus marines for killing holoboards
