@@ -49,6 +49,7 @@ Added squad icon for Firebats
 Corrected a typo in the Orbital Command armoury upgrade.
 Updated Contextual loading screen hints
 Marauder weapon has tooltip now
+Made squad members no longer have a healthbar
 *Gave silos something to differentiate them.
 *Raven repair drone can now be autocast
 *Fixed the char armoury
