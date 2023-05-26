@@ -409,13 +409,13 @@
         <EffectArray index="19" removed="1"/>
         <EffectArray index="20" removed="1"/>
         <EffectArray index="21" removed="1"/>
-        <EffectArrayTemplate Operation="Multiply" Reference="Abil,^ParamId^,Cost[0].Resource[Minerals]" Value="2"/>
-        <EffectArrayTemplate Operation="Divide" Reference="Abil,^ParamId^,Cost[0].Resource[Minerals]" Value="3"/>
-        <EffectArrayTemplate Operation="Multiply" Reference="Abil,^ParamId^,InfoArray[Build1].Resource[Minerals]" Value="2"/>
-        <EffectArrayTemplate Operation="Divide" Reference="Abil,^ParamId^,InfoArray[Build1].Resource[Minerals]" Value="3"/>
-        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Cooldown.TimeUse" Value="0.5"/>
-        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Charge.TimeUse" Value="0.5"/>
-        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Charge.TimeStart" Value="0.5"/>
+        <EffectArrayTemplate Operation="Multiply" Reference="Abil,^ParamId^,Cost[0].Resource[Minerals]" Value="4"/>
+        <EffectArrayTemplate Operation="Divide" Reference="Abil,^ParamId^,Cost[0].Resource[Minerals]" Value="5"/>
+        <EffectArrayTemplate Operation="Multiply" Reference="Abil,^ParamId^,InfoArray[Build1].Resource[Minerals]" Value="4"/>
+        <EffectArrayTemplate Operation="Divide" Reference="Abil,^ParamId^,InfoArray[Build1].Resource[Minerals]" Value="5"/>
+        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Cooldown.TimeUse" Value="0.33"/>
+        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Charge.TimeUse" Value="0.33"/>
+        <EffectArrayTemplate Operation="SubtractBaseMultiply" Reference="Abil,^ParamId^,Cost[0].Charge.TimeStart" Value="0.33"/>
     </CUpgrade>
     <CUpgrade id="PermanentCloakGhost">
         <EffectArray index="0" Operation="Add" Reference="Effect,RetributionFieldDamage,AreaArray.Radius" Value="0.25"/>
@@ -2218,38 +2218,10 @@
         <EffectArray Reference="Weapon,ShrikeTurret,Range" Value="1"/>
     </CUpgrade>
     <CUpgrade id="ProtossShieldsLevel1">
-        <EffectArray index="1" Value="1"/>
-        <EffectArray index="3" Value="1"/>
         <EffectArray index="5" Value="1"/>
-        <EffectArray index="7" Value="1"/>
         <EffectArray index="9" Value="1"/>
-        <EffectArray index="11" Value="1"/>
-        <EffectArray index="13" Value="1"/>
-        <EffectArray index="15" Value="1"/>
-        <EffectArray index="17" Value="1"/>
-        <EffectArray index="19" Value="1"/>
-        <EffectArray index="21" Value="1"/>
-        <EffectArray index="23" Value="1"/>
-        <EffectArray index="25" Value="1"/>
-        <EffectArray index="27" Value="1"/>
-        <EffectArray index="29" Value="1"/>
-        <EffectArray index="31" Value="1"/>
         <EffectArray index="32" Value="1"/>
-        <EffectArray index="35" Value="1"/>
-        <EffectArray index="37" Value="1"/>
-        <EffectArray index="39" Value="1"/>
-        <EffectArray index="41" Value="1"/>
-        <EffectArray index="43" Value="1"/>
-        <EffectArray index="45" Value="1"/>
-        <EffectArray index="47" Value="1"/>
         <EffectArray index="48" Value="1"/>
-        <EffectArray index="51" Value="1"/>
-        <EffectArray index="53" Value="1"/>
-        <EffectArray index="55" Value="1"/>
-        <EffectArray index="57" Value="1"/>
-        <EffectArray index="59" Value="1"/>
-        <EffectArray index="61" Value="1"/>
-        <EffectArray index="63" Value="1"/>
         <EffectArray index="64" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmor" Value="1"/>
         <EffectArray index="65" Operation="Add" Reference="Unit,TalDarimMothership,ShieldArmorLevel" Value="1"/>
         <EffectArray index="66" Operation="Add" Reference="Unit,Purifier,ShieldArmor" Value="1"/>
