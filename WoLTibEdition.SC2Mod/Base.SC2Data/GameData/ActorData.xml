@@ -1714,6 +1714,15 @@
     <CActorUnit id="WreckingCrewFighter">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
+    <CActorModel id="ZeratulRecall" parent="ModelAddition">
+        <EditorCategories value=""/>
+        <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Death Death Death ContentPlayOnce 2.500000 AsTimeScale"/>
+        <On Terms="Effect.DeathRecallS.Start; At Effect" Send="Create"/>
+        <On Terms="ActorCreation" Send="TimerSet 1.000000 RecallTimer"/>
+        <On Terms="TimerExpired; TimerName RecallTimer" Send="Destroy"/>
+        <HostSiteOps Ops="SOpCasterUnit" HoldPosition="1" HoldRotation="1"/>
+        <Model value="ZeratulDeath"/>
+    </CActorModel>
     <CActorSplat id="ZergHypervirusCursorSplat" parent="TerranCursorSplat" abil="ZergHypervirus">
         <EditorCategories value=""/>
     </CActorSplat>

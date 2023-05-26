@@ -274,6 +274,7 @@ Actor/Name/WarHoundAttackMissile=War Hound Attack Missile
 Actor/Name/WarHoundImpactHoldingSite=War Hound Impact Holding Site
 Actor/Name/WarPigSquad=War Pig Squad
 Actor/Name/WarpConduit=Warp Conduit
+Actor/Name/ZeratulRecall=Zeratul Recall
 Actor/Name/ZergHypervirusCursorSplat=Zerg Hypervirus Cursor Splat
 Behavior/EditorPrefix/AstralProjection=Zeratul -
 Behavior/EditorPrefix/BuildRadiusLarge=C&C -

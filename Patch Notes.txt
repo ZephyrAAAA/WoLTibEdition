@@ -143,11 +143,11 @@ Karass now has a damage type
 Zeratul now has the proper damage type icon
 
 A Sinister Turn:
-*Mentioned Zeratul's recall on killing a preserver.
-*Added a visual for recall
+Mentioned Zeratul's recall on killing a preserver.
+Added a visual for recall
 *Added a button to toggle no-slap mode
-*removed detection cones during end cinematic?
-*mention maar teleport and potentially plasma blast
+removed detection cones during end cinematic
+mention maar teleport and potentially plasma blast
 
 Media Blitz:
 Made the bases only rebuild from convoys
