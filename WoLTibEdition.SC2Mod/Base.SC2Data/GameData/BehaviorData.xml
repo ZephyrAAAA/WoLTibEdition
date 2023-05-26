@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CBehaviorBuff id="ImplosionTempBuff">
+        <Duration value="3.125"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="MercCompBuilt">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>

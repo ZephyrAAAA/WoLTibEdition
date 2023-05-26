@@ -54,6 +54,7 @@ Made squad members no longer have a healthbar
 *Raven repair drone can now be autocast
 *Fixed the char armoury
 Protoss no longer get so much damage resist on shields.
+Implosion can now target massive units but does 100+50% hp damage, rather than instant kill
 
 Liberation Day:
 Removed bonus marines for killing holoboards
