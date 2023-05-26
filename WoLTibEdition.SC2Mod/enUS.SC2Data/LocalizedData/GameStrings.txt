@@ -55,6 +55,7 @@ Abil/Name/MarineSquad=Marine Squad
 Abil/Name/MedicSquad=Medic Squad
 Abil/Name/MedicSquadAcquire=Medic Squad Acquire
 Abil/Name/NeutralCapturable=Neutral Capturable
+Abil/Name/NoSlapToggle=No Slap Toggle
 Abil/Name/NovaHeal=Heal
 Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)

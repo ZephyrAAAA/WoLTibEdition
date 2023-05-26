@@ -30,6 +30,7 @@ Abil/EditorPrefix/LongRangeMassRecall=Artanis -
 Abil/EditorPrefix/MedicSquadAcquire=Medic -
 Abil/EditorPrefix/MercCompoundResearch2=Merc Compound -
 Abil/EditorPrefix/NeutralCapturable=C&C -
+Abil/EditorPrefix/NoSlapToggle=Zeratul -
 Abil/EditorPrefix/NovaHeal=Nova -
 Abil/EditorPrefix/OrbitalCommandLand2=Surveillance Station -
 Abil/EditorPrefix/PowerStructure=Zeratul -

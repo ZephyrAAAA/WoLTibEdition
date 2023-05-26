@@ -500,6 +500,15 @@
         <TargetFilters value="-;Player,Ally,Buried,Dead,Hidden"/>
         <LoadValidatorArray value="IsMedicSquad"/>
     </CAbilTransport>
+    <CAbilBehavior id="NoSlapToggle">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="HoldFire"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="SpectreWeaponsFree"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="ToggledOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="ZeratulHoldFire"/>
+    </CAbilBehavior>
     <CAbilEffectInstant id="NovaHeal">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Cost>
