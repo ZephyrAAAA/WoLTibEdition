@@ -2,6 +2,12 @@
 <Catalog>
     <CBehaviorBuff id="ImplosionTempBuff">
         <Duration value="3.125"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="0"/>
+            <ModifyFlags index="SuppressMoving" value="0"/>
+            <ModifyFlags index="SuppressTurning" value="0"/>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="MercCompBuilt">
         <InfoFlags index="Hidden" value="1"/>
