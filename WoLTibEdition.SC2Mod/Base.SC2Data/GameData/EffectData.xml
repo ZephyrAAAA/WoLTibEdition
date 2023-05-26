@@ -138,6 +138,11 @@
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="5" Effect="BansheeAirstrikeDamage"/>
     </CEffectEnumArea>
+    <CEffectDamage id="ImplosionKillUnit">
+        <Flags index="Kill" value="0"/>
+        <Amount value="100"/>
+        <VitalFractionMax index="Life" value="0.5"/>
+    </CEffectDamage>
     <CEffectRemoveBehavior id="MercCompPlace">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>

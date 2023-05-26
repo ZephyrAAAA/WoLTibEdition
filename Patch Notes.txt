@@ -162,6 +162,7 @@ fixed raynor not having an armor type
 Gates:
 Warfield dying is no longer a loss condition.
 *Warfield's forces can now shoot
+*Added a thing to the Mission Summary that says whether you kept the reactor alive.
 
 Belly:
 Added stim to the unified command card
@@ -174,7 +175,7 @@ Omegalisks are now sent in the ground version
 More Broodlords
 Increased muta count by 50%ish
 Doubled corruptors
-*Implosion can target Massive again
-*Implosion now does 100+50%hp damage
+Implosion can target Massive again
+Implosion now does 100+50%hp damage
 Removed 2 starting SCVs
 2 of your fields no longer start full
