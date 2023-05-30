@@ -1,10 +1,10 @@
 *Structures now say their armour type
 *Probes have a weapon and armour type now
-*APC now has armour type
-*All instances of "armour" are now correctly spelled
+APC now has armour type
+All instances of "armour" are now correctly spelled
 *Spec Ops and Shadow Ops are now consistent
-*Civilians now have an armour type
-*mohican atv now has an armour type
+Civilians now have an armour type
+mohican atv now has an armour type
 *Squad size buttons are now correct in icon and tooltip
 *Refinery Rally tip now uses the correct icon
 *Extra Supplies now refers to the power plant correctly
@@ -24,32 +24,35 @@
 *Fixed marauder armour name
 *Fixed refunding for cancelled things not working without a refinery
 *Gas pickups are not called gas pickups
+*Merc compound now has passives that say it unlocks merc topbars
+*Merc compound is no longer unlocked until you have at least 1 merc purchased
 
 Liberation Day:
-*Squad tip is now a concept, rather than a unit.
+Squad tip is now a normal tip, rather than a new unit tip.
 
 Outlaws:
-*Power Plant help hover tip is now correct
-*Resource caches tip is edited to remove vespene
-*Supply Depot tip is now Power Plant
-
-Zero Hour:
-*Removed merc compound
+Power Plant help hover tip is now correct
+Resource caches tip is edited to remove vespene
+Supply Depot tip is now Power Plant
 
 Whispers of Doom:
 *Karass no longer goes backwards
 
 Trains:
-*Added a starting merc compound
+Added a starting merc compound
+Added a missile turret to deal with cloak
+
+Engine of Destruction:
+Added a missile turret to deal with cloak
 
 Media Blitz:
-*Added a starting merc compound
+Added a starting merc compound
 
 Supernova:
-*Added a starting merc compound
+Added a starting merc compound
 
 Gates:
-*Added a starting merc compound
+Added a starting merc compound
 
 All-In:
-*Added a starting merc compound
+Added a starting merc compound
