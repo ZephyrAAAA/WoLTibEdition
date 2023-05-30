@@ -1,182 +1,40 @@
-Raynor's gun that is clearly not the same as the marine's is now named differently.
-The autoref now has double the range (4->8)
-You no longer get a message about unlocking the Shadow Ops on the 4th mission you do.
-Added a "Damage Types" section to the gameplay mechanics help section
-Added a "Neutral Structures" section to the gameplay mechanics help section
-Edited the minerals help menu entry
-Added a laser drill upgrade to increase its power.
-Deploying the drill is now 10k
-Initial deploymnent of the drill is weaker, has an upgrade to make it stronger
-Fixed Devastation Turret tooltip
-Fixed Ghost tooltip
-Fixed Spectre tooltip
-Fixed all the building tooltips
-Fixed the Predator Reinforced Barrier lore text.
-Fixed Goliath upgrade buttons
-Fixed diamondback upgrade buttons, shaped hull typo
-Fixed the commando explosive charge tooltip
-Sentry weapon now has tooltip
-Scout weapon now has tooltip
-Autoturret weapon now has tooltip
-Spine Colony weapon now has tooltip
-Spider Mines weapon now has tooltip
-Fixed Zeratul's void prison sometimes granting immortality to banelings. Instead prisoned banelings don't deal damage when they die.
-Replaced the blue mineral icon with a green mineral icon
-Replaced the supply depot icon with a power icon
-Changed the tooltip text of the power icon
-Added a description for each squad
-Renamed building structures buttons
-Renamed the Supply Depot to Power Plant
-Corrected the button text of the spectre and ghost
-Corrected the button text of the viking
-Corrected the button text of the medivac
-Corrected the button text of the raven and science vessel
-Added description to Low Power behaviour 
-Added description to Depowered behaviour
-Included a repair breakdown on the factory and starport repair button
-Deploy button for CCs and Cranes is now on the main menu
-Thor barrage button no longer says it stuns
-Fixed devastation turret having AOE by default.
-Made Abberations Light Vehicle armour.
-Nerfed the bonus speed zerg units get from creep
-Our Ultracap and Vanadium upgrades now use an appropriate icon, instead of all being the same.
-Re-added the Merc Compound, moved merc topbar unlocks to the merc compound.
-Fixed tooltip text of titanium housing.
-Fixed Hellstorm button on Devastation turrets.
-Devastation turret now gets a passive for Concussive.
-Added squad icon for Reapers
-Added squad icon for Firebats
-Corrected a typo in the Orbital Command armoury upgrade.
-Updated Contextual loading screen hints
-Marauder weapon has tooltip now
-Made squad members no longer have a healthbar
-Gave silos something to differentiate them.
-Raven repair drone can now be autocast
-Fixed the char armoury
-Protoss no longer get so much damage resist on shields.
-Nerfed Topbar P5 upgrade to 20% cost and 33% cooldown.
-Raven repair drones are now actually killable
-Raven repair drones now display their duration
+*Structures now say their armour type
+*Probes have a weapon and armour type now
+*APC now has armour type
+*All instances of "armour" are now correctly spelled
+*Spec Ops and Shadow Ops are now consistent
+*Civilians now have an armour type
+*mohican atv now has an armour type
+*Squad size buttons are now correct in icon and tooltip
+*Refinery Rally tip now uses the correct icon
+*Extra Supplies now refers to the power plant correctly
+*Fortified bunker death animation
+*Resume queue and place bunker are no longer the same hotkey
+*Silo death animation now leaves
+*Spike death animation now leaves
+*Fixed ghost build radius
+*Bunkers now get fortified look is built after researching the upgrade
+*Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
+*Power plants can no longer be depowered
+*Light Air armour is now Light Aircraft armour.
+*Heavy Air armour is now Heavy Aircraft armour.
+*Bunker unit tip is now correct
+*Renamed Concussive Grenades to Cannon Grenades
+*Build and place devastation turret now has the correct name
+*Fixed marauder armour name
+*Fixed refunding for cancelled things not working without a refinery
+*Gas pickups are not called gas pickups
 
 Liberation Day:
-Removed bonus marines for killing holoboards
-Weakened the final area
-Fixed health charge doing weird things
+*Squad tip is now a concept, rather than a unit.
 
 Outlaws:
-Added some sort of record of important text that appears, so you can still read it if you miss it.
+*Power Plant help hover tip is now correct
+*Resource caches tip is edited to remove vespene
+*Supply Depot tip is now Power Plant
 
 Zero Hour:
-Fixed the build a crane popup
-Fixed second bonus being murdered immediately
-Removed corruptors
-
-Smash and Grab:
-Took into account archon thiccness
-You now start with a merc compound if you have mercs.
-You no longer start with a shadow ops
-
-Evacuation:
-First attack wave is later and weaker
-Rear nydus no longer happens before matt mentions nyduses
-Added devastation turrets to the colony fence
-You now start with a merc compound if you have mercs.
-You no longer start with a shadow ops
-Added 2 autoturrets to the rear
-
-Redstone:
-Edited the rich mineral field tip
-You now start with a merc compound
-You no longer start with a shadow ops
-
-Outbreak:
-Reduced abberation count
-Abberations no longer show up so soon.
-The field in your base now starts full.
-Doubled the regen of the field in your base.
-The infested are no longer american.
-
-Trains:
-Fixed Matt's subtitles about kill teams returning to match the line he actually says
-Fixed bunkers not being populated.
-
-Bel'shir:
-Fixed dead SCVs not counting
-Weakened the initial sealing escorts
-
-Cutthroat:
-Mira has had her tech lab rights revoked.
-dominion timer is now brought up
-fixed mira's base being rescued incorrectly making some units sometimes not have full hp
-reduced ravens
-mira has more stuff
-
-Morbius:
-Fixed free vision of the first data core
-Fixed Units Saved count.
-
-Haven's Fall:
-Infinite creep is now mentioned in the Virophage Tip, and in a chat message
-
-Safe Haven:
-The protoss have been instructed on proper colony ship-killing procedures
-
-Engine:
-Fixed Johnny.
-Removed all the medivacs from the first base
-Wraiths now come in cloaked
-
-Supernova:
-Fixed cloak bonus upgrade text.
-
-Maw:
-Killing the protoss structures is now complete when they have 10 remaining, instead of 0.
-Weakened mommaship waves
-Weakened attack waves.
-Increased how much destroying a base weakens attack waves
-Slowed down the deployment of new Bully Groups.
-The mothership no longer attacks immediately after spawning, instead waiting 2 minutes.
-Increased the time between momma attacks
-The AI no longer replaces production or tech structures. They will still rebuild Nexi, pylons, and cannons, if they have probes.
-Mom attacking is now announced.
+*Removed merc compound
 
 Whispers of Doom:
-Karass now has a damage type
-Zeratul now has the proper damage type icon
-
-A Sinister Turn:
-Mentioned Zeratul's recall on killing a preserver.
-Added a visual for recall
-Added a button to toggle no-slap mode
-removed detection cones during end cinematic
-mention maar teleport and potentially plasma blast
-
-Media Blitz:
-Made the bases only rebuild from convoys
-Fixed the timing of the convoy tip
-The convoys now start with a weaker escort.
-
-Piercing:
-The hybrid now chases you properly.
-The brutalisk no longer consults his Prima Strategy Guide.
-fixed raynor not having an armor type
-
-Gates:
-Warfield dying is no longer a loss condition.
-Added a thing to the Mission Summary that says whether you kept the reactor alive.
-
-Belly:
-Added stim to the unified command card
-Chaser force no longer spawns while in a boss fight
-Fixed War Pigs not having full hp
-fixed squads being unable to leave
-
-All-In:
-Omegalisks are now sent in the ground version
-More Broodlords
-Increased muta count by 50%ish
-Doubled corruptors
-Implosion can now target massive units
-Implosion does 100+50% hp damage, rather than instant kill
-Removed 2 starting SCVs
-2 of your fields no longer start full
+*Karass no longer goes backwards
