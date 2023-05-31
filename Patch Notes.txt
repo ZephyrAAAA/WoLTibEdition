@@ -1,31 +1,34 @@
-*Structures now say their armour type
-*Probes have a weapon and armour type now
 APC now has armour type
 All instances of "armour" are now correctly spelled
-*Spec Ops and Shadow Ops are now consistent
 Civilians now have an armour type
 mohican atv now has an armour type
+Refinery Rally tip now uses the correct icon
+*Structures now say their armour type
+*Probes have a weapon and armour type now
+*Spec Ops and Shadow Ops are now consistent
 *Squad size buttons are now correct in icon and tooltip
-*Refinery Rally tip now uses the correct icon
 *Extra Supplies now refers to the power plant correctly
-*Fortified bunker death animation
+*Fortified bunker death animation?
 *Resume queue and place bunker are no longer the same hotkey
 *Silo death animation now leaves
 *Spike death animation now leaves
 *Fixed ghost build radius
-*Bunkers now get fortified look is built after researching the upgrade
+*Bunkers now get fortified look if built after researching the upgrade
 *Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
 *Power plants can no longer be depowered
-*Light Air armour is now Light Aircraft armour.
-*Heavy Air armour is now Heavy Aircraft armour.
+Light Air armour is now Light Aircraft armour.
+Heavy Air armour is now Heavy Aircraft armour.
 *Bunker unit tip is now correct
 *Renamed Concussive Grenades to Cannon Grenades
 *Build and place devastation turret now has the correct name
-*Fixed marauder armour name
+Fixed marauder armour name
 *Fixed refunding for cancelled things not working without a refinery
-*Gas pickups are not called gas pickups
+Gas pickups are not called gas pickups
 *Merc compound now has passives that say it unlocks merc topbars
 *Merc compound is no longer unlocked until you have at least 1 merc purchased
+Firebats, Devil Dogs, and Perditions now have a Blue Flame passive, like hellions.
+Changed the description of the blue flame passive to match the upgrade effect.
+*Vulture now has a passive for EMP grenades
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -38,9 +41,17 @@ Supply Depot tip is now Power Plant
 Whispers of Doom:
 *Karass no longer goes backwards
 
+Outbreak:
+*Bonus markers now follow the infestors
+
 Trains:
 Added a starting merc compound
 Added a missile turret to deal with cloak
+Trains now drop 2 gas pallets each
+Increased number of mineral pallets dropped by early trains on hard/brutal, and by all trains on easy/normal.
+
+Cutthroat:
+Vulture EMP unlock tip mentions it also affects structures
 
 Engine of Destruction:
 Added a missile turret to deal with cloak

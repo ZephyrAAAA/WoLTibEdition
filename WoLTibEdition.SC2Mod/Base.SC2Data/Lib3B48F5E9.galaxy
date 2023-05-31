@@ -47,9 +47,9 @@ int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_initialUpgradeLevel;
 int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_maxUpgradeLevel;
 bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airAtAll;
 bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airFirst;
-bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armourWithAttack;
+bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armorWithAttack;
 
-void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, fixed lp_upgradeTimeScalar, fixed lp_upgradeTime, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airAtAll, bool lp_airFirst, bool lp_armourWithAttack) {
+void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_enemyPlayers, fixed lp_upgradeInitialTimeDelay, fixed lp_upgradeTimeScalar, fixed lp_upgradeTime, int lp_initialUpgrades, int lp_initialUpgradeLevel, int lp_maxUpgradeLevel, bool lp_airAtAll, bool lp_airFirst, bool lp_armorWithAttack) {
     auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_playerGroupRace = lp_playerGroupRace;
     auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_enemyPlayers = lp_enemyPlayers;
     auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_upgradeInitialTimeDelay = lp_upgradeInitialTimeDelay;
@@ -60,7 +60,7 @@ void lib3B48F5E9_gf_CNCUpgradesFunction (int lp_playerGroupRace, playergroup lp_
     auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_maxUpgradeLevel = lp_maxUpgradeLevel;
     auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airAtAll = lp_airAtAll;
     auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airFirst = lp_airFirst;
-    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armourWithAttack = lp_armourWithAttack;
+    auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armorWithAttack = lp_armorWithAttack;
 
     if (auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger == null) {
         auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger = TriggerCreate("auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc");
@@ -80,7 +80,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     int lp_maxUpgradeLevel = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_maxUpgradeLevel;
     bool lp_airAtAll = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airAtAll;
     bool lp_airFirst = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_airFirst;
-    bool lp_armourWithAttack = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armourWithAttack;
+    bool lp_armorWithAttack = auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_armorWithAttack;
 
     int init_i;
     int init_j;
@@ -90,7 +90,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     int lv_maxUpgradeLevel;
     int lv_currentUpgrades;
     string[4][4] lv_attackUpgrades;
-    string[4][4] lv_armourUpgrades;
+    string[4][4] lv_armorUpgrades;
     string[4] lv_specialUpgrade;
     string[7] lv_assortedUpgrades;
     string lv_assortedUpgrades2;
@@ -147,7 +147,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
     }
     for (init_i = 0; init_i <= 3; init_i += 1) {
         for (init_j = 0; init_j <= 3; init_j += 1) {
-            lv_armourUpgrades[init_i][init_j] = "";
+            lv_armorUpgrades[init_i][init_j] = "";
         }
     }
     for (init_i = 0; init_i <= 3; init_i += 1) {
@@ -198,12 +198,12 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         lv_attackUpgrades[0][1] = "TerranVehicleWeaponsLevel1";
         lv_attackUpgrades[1][1] = "TerranVehicleWeaponsLevel2";
         lv_attackUpgrades[2][1] = "TerranInfantryWeaponsLevel3";
-        lv_armourUpgrades[0][0] = "TerranInfantryArmorsLevel1";
-        lv_armourUpgrades[1][0] = "TerranInfantryArmorsLevel2";
-        lv_armourUpgrades[2][0] = "TerranInfantryArmorsLevel3";
-        lv_armourUpgrades[0][1] = "TerranVehicleArmorsLevel1";
-        lv_armourUpgrades[1][1] = "TerranVehicleArmorsLevel2";
-        lv_armourUpgrades[2][1] = "TerranVehicleArmorsLevel3";
+        lv_armorUpgrades[0][0] = "TerranInfantryArmorsLevel1";
+        lv_armorUpgrades[1][0] = "TerranInfantryArmorsLevel2";
+        lv_armorUpgrades[2][0] = "TerranInfantryArmorsLevel3";
+        lv_armorUpgrades[0][1] = "TerranVehicleArmorsLevel1";
+        lv_armorUpgrades[1][1] = "TerranVehicleArmorsLevel2";
+        lv_armorUpgrades[2][1] = "TerranVehicleArmorsLevel3";
         lv_specialUpgrade[0] = "TerranShipWeaponsLevel1";
         lv_specialUpgrade[1] = "TerranShipWeaponsLevel2";
         lv_specialUpgrade[2] = "TerranShipWeaponsLevel3";
@@ -216,8 +216,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             auto46D14E10_var = PlayerGroupNextPlayer(auto46D14E10_g, auto46D14E10_var);
             if (auto46D14E10_var < 0) { break; }
             TechTreeUpgradeAddLevel(auto46D14E10_var, "BansheeCloak", 1);
-            TechTreeUpgradeAddLevel(auto46D14E10_var, "HunterSeeker", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "WraithCloak", 1);
+            TechTreeUpgradeAddLevel(auto46D14E10_var, "HunterSeeker", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "YamatoCannon", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "SiegeTech", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "ReaperSpeed", 1);
@@ -310,12 +310,12 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         lv_attackUpgrades[0][1] = "ZergFlyerWeaponsLevel1";
         lv_attackUpgrades[1][1] = "ZergFlyerWeaponsLevel2";
         lv_attackUpgrades[2][1] = "ZergFlyerWeaponsLevel3";
-        lv_armourUpgrades[0][0] = "ZergGroundArmorsLevel1";
-        lv_armourUpgrades[1][0] = "ZergGroundArmorsLevel2";
-        lv_armourUpgrades[2][0] = "ZergGroundArmorsLevel3";
-        lv_armourUpgrades[0][1] = "ZergFlyerArmorsLevel1";
-        lv_armourUpgrades[1][1] = "ZergFlyerArmorsLevel2";
-        lv_armourUpgrades[2][1] = "ZergFlyerArmorsLevel3";
+        lv_armorUpgrades[0][0] = "ZergGroundArmorsLevel1";
+        lv_armorUpgrades[1][0] = "ZergGroundArmorsLevel2";
+        lv_armorUpgrades[2][0] = "ZergGroundArmorsLevel3";
+        lv_armorUpgrades[0][1] = "ZergFlyerArmorsLevel1";
+        lv_armorUpgrades[1][1] = "ZergFlyerArmorsLevel2";
+        lv_armorUpgrades[2][1] = "ZergFlyerArmorsLevel3";
         lv_specialUpgrade[0] = "ZergMissileWeaponsLevel1";
         lv_specialUpgrade[1] = "ZergMissileWeaponsLevel2";
         lv_specialUpgrade[2] = "ZergMissileWeaponsLevel3";
@@ -345,12 +345,12 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         lv_attackUpgrades[0][1] = "ProtossAirWeaponsLevel1";
         lv_attackUpgrades[1][1] = "ProtossAirWeaponsLevel2";
         lv_attackUpgrades[2][1] = "ProtossAirWeaponsLevel3";
-        lv_armourUpgrades[0][0] = "ProtossGroundArmorsLevel1";
-        lv_armourUpgrades[1][0] = "ProtossGroundArmorsLevel2";
-        lv_armourUpgrades[2][0] = "ProtossGroundArmorsLevel3";
-        lv_armourUpgrades[0][1] = "ProtossAirArmorsLevel1";
-        lv_armourUpgrades[1][1] = "ProtossAirArmorsLevel2";
-        lv_armourUpgrades[2][1] = "ProtossAirArmorsLevel3";
+        lv_armorUpgrades[0][0] = "ProtossGroundArmorsLevel1";
+        lv_armorUpgrades[1][0] = "ProtossGroundArmorsLevel2";
+        lv_armorUpgrades[2][0] = "ProtossGroundArmorsLevel3";
+        lv_armorUpgrades[0][1] = "ProtossAirArmorsLevel1";
+        lv_armorUpgrades[1][1] = "ProtossAirArmorsLevel2";
+        lv_armorUpgrades[2][1] = "ProtossAirArmorsLevel3";
         lv_specialUpgrade[0] = "ProtossShieldsLevel1";
         lv_specialUpgrade[1] = "ProtossShieldsLevel2";
         lv_specialUpgrade[2] = "ProtossShieldsLevel3";
@@ -400,8 +400,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         if (autoC11D4559_val == 1) {
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][0], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[0][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[0][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[0], 1);
         }
         else if (autoC11D4559_val == 2) {
@@ -409,10 +409,10 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[0][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][1], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][0], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][1], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][0], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[0][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[1][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[1][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[1], 1);
         }
@@ -423,12 +423,12 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[1][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[2][0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_attackUpgrades[2][1], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][0], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[0][1], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][0], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[1][1], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[2][0], 1);
-            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armourUpgrades[2][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[0][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[0][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[1][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[1][1], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[2][0], 1);
+            TechTreeUpgradeAddLevel(autoA7838E67_var, lv_armorUpgrades[2][1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[0], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[1], 1);
             TechTreeUpgradeAddLevel(autoA7838E67_var, lv_specialUpgrade[2], 1);
@@ -484,7 +484,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             }
 
             if ((lp_airAtAll == false)) {
-                if ((lp_armourWithAttack == true)) {
+                if ((lp_armorWithAttack == true)) {
                     auto0013A39A_g = lp_enemyPlayers;
                     auto0013A39A_var = -1;
                     while (true) {
@@ -492,7 +492,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         if (auto0013A39A_var < 0) { break; }
                         TechTreeUpgradeAddLevel(auto0013A39A_var, lv_assortedUpgrades[lv_currentUpgrades], 1);
                         TechTreeUpgradeAddLevel(auto0013A39A_var, lv_attackUpgrades[lv_currentUpgradeLevel][0], 1);
-                        TechTreeUpgradeAddLevel(auto0013A39A_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                        TechTreeUpgradeAddLevel(auto0013A39A_var, lv_armorUpgrades[lv_currentUpgradeLevel][0], 1);
                     }
                     lv_currentUpgrades += 1;
                 }
@@ -512,12 +512,12 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                     while (true) {
                         auto3951E84F_var = PlayerGroupNextPlayer(auto3951E84F_g, auto3951E84F_var);
                         if (auto3951E84F_var < 0) { break; }
-                        TechTreeUpgradeAddLevel(auto3951E84F_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                        TechTreeUpgradeAddLevel(auto3951E84F_var, lv_armorUpgrades[lv_currentUpgradeLevel][0], 1);
                     }
                 }
             }
             else {
-                if ((lp_armourWithAttack == true)) {
+                if ((lp_armorWithAttack == true)) {
                     auto5CFBA425_g = lp_enemyPlayers;
                     auto5CFBA425_var = -1;
                     while (true) {
@@ -538,10 +538,10 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         auto6F24484E_var = PlayerGroupNextPlayer(auto6F24484E_g, auto6F24484E_var);
                         if (auto6F24484E_var < 0) { break; }
                         if ((lp_airFirst == false)) {
-                            TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                            TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armorUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                         else {
-                            TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                            TechTreeUpgradeAddLevel(auto6F24484E_var, lv_armorUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                     }
                 }
@@ -567,15 +567,15 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         autoA0AC99DB_var = PlayerGroupNextPlayer(autoA0AC99DB_g, autoA0AC99DB_var);
                         if (autoA0AC99DB_var < 0) { break; }
                         if ((lp_airFirst == false)) {
-                            TechTreeUpgradeAddLevel(autoA0AC99DB_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                            TechTreeUpgradeAddLevel(autoA0AC99DB_var, lv_armorUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                         else {
-                            TechTreeUpgradeAddLevel(autoA0AC99DB_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                            TechTreeUpgradeAddLevel(autoA0AC99DB_var, lv_armorUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                     }
                 }
                 Wait(lv_upgradeDelayTimer, c_timeAI);
-                if ((lp_armourWithAttack == true)) {
+                if ((lp_armorWithAttack == true)) {
                     autoD4E41929_g = lp_enemyPlayers;
                     autoD4E41929_var = -1;
                     while (true) {
@@ -596,10 +596,10 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         auto8D1DCEC3_var = PlayerGroupNextPlayer(auto8D1DCEC3_g, auto8D1DCEC3_var);
                         if (auto8D1DCEC3_var < 0) { break; }
                         if ((lp_airFirst == false)) {
-                            TechTreeUpgradeAddLevel(auto8D1DCEC3_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                            TechTreeUpgradeAddLevel(auto8D1DCEC3_var, lv_armorUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                         else {
-                            TechTreeUpgradeAddLevel(auto8D1DCEC3_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                            TechTreeUpgradeAddLevel(auto8D1DCEC3_var, lv_armorUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                     }
                 }
@@ -625,10 +625,10 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
                         auto4992AF7F_var = PlayerGroupNextPlayer(auto4992AF7F_g, auto4992AF7F_var);
                         if (auto4992AF7F_var < 0) { break; }
                         if ((lp_airFirst == false)) {
-                            TechTreeUpgradeAddLevel(auto4992AF7F_var, lv_armourUpgrades[lv_currentUpgradeLevel][1], 1);
+                            TechTreeUpgradeAddLevel(auto4992AF7F_var, lv_armorUpgrades[lv_currentUpgradeLevel][1], 1);
                         }
                         else {
-                            TechTreeUpgradeAddLevel(auto4992AF7F_var, lv_armourUpgrades[lv_currentUpgradeLevel][0], 1);
+                            TechTreeUpgradeAddLevel(auto4992AF7F_var, lv_armorUpgrades[lv_currentUpgradeLevel][0], 1);
                         }
                     }
                 }

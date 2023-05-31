@@ -2715,7 +2715,8 @@
         <AbilArray index="3" Link="DevilDogSquad"/>
         <WeaponArray Link="DevilDogSquad"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,0" Row="1" Column="0"/>
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="1"/>
         </CardLayouts>
         <SelectAlias value="FirebatSquad"/>
     </CUnit>
@@ -3079,6 +3080,10 @@
         <LifeMax value="130"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" AbilCmd="255,255"/>
+            <LayoutButtons index="6" AbilCmd="255,255"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="AirTransport">
         <DeathRevealRadius value="3"/>
@@ -3742,7 +3747,8 @@
         <AbilArray index="3" Link="FirebatSquad"/>
         <WeaponArray Link="FirebatSquad"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="FirebatSquad,0" Row="1" Column="0"/>
+            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="FirebatSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="1"/>
         </CardLayouts>
         <ArmorType value="Normal"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
@@ -4517,6 +4523,9 @@
         <BehaviorArray Link="PowerCheck"/>
         <BehaviorArray Link="NeedsBuildRadius"/>
         <CostResource index="Minerals" value="375"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="0"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="PerditionTurretACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
