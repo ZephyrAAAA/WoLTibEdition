@@ -3,6 +3,15 @@ All instances of "armour" are now correctly spelled
 Civilians now have an armour type
 mohican atv now has an armour type
 Refinery Rally tip now uses the correct icon
+Firebats, Devil Dogs, and Perditions now have a Blue Flame passive, like hellions.
+Changed the description of the blue flame passive to match the upgrade effect.
+Light Air armour is now Light Aircraft armour.
+Heavy Air armour is now Heavy Aircraft armour.
+Fixed marauder armour name
+Gas pickups are not called gas pickups
+*Lab research text for autoref is now correct
+*Neutral Structures are now called Capturable Structures
+*Capturable Structures are no longer automatically attacked by your units if they're hostile
 *Structures now say their armour type
 *Probes have a weapon and armour type now
 *Spec Ops and Shadow Ops are now consistent
@@ -16,19 +25,14 @@ Refinery Rally tip now uses the correct icon
 *Bunkers now get fortified look if built after researching the upgrade
 *Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
 *Power plants can no longer be depowered
-Light Air armour is now Light Aircraft armour.
-Heavy Air armour is now Heavy Aircraft armour.
 *Bunker unit tip is now correct
 *Renamed Concussive Grenades to Cannon Grenades
 *Build and place devastation turret now has the correct name
-Fixed marauder armour name
 *Fixed refunding for cancelled things not working without a refinery
-Gas pickups are not called gas pickups
 *Merc compound now has passives that say it unlocks merc topbars
 *Merc compound is no longer unlocked until you have at least 1 merc purchased
-Firebats, Devil Dogs, and Perditions now have a Blue Flame passive, like hellions.
-Changed the description of the blue flame passive to match the upgrade effect.
 *Vulture now has a passive for EMP grenades
+*Clarified the medic passive to say you can even capture hostile Capturable Structures
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -49,6 +53,7 @@ Added a starting merc compound
 Added a missile turret to deal with cloak
 Trains now drop 2 gas pallets each
 Increased number of mineral pallets dropped by early trains on hard/brutal, and by all trains on easy/normal.
+*Added more money on Easy/Normal
 
 Cutthroat:
 Vulture EMP unlock tip mentions it also affects structures
