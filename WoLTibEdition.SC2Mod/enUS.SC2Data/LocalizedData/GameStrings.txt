@@ -135,7 +135,7 @@ Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supp
 Button/Name/AresClassWeaponsSystem=Neosteel Plating
 Button/Name/AstralProjection=Astral Projection
 Button/Name/BioSpeed=Bio Speed
-Button/Name/BuildDevastatorTurret=Build Devastator Turret
+Button/Name/BuildDevastatorTurret=Build Devastation Turret
 Button/Name/BuildingRepair=Building Repair
 Button/Name/CallDarkTemplar10=Call Dark Templar
 Button/Name/CallDarkTemplar11=Call Dark Templar
@@ -237,7 +237,8 @@ Button/Name/InfantryMercenaries9=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/LongRangeMassRecall=Long-Range Mass Recall
-Button/Name/MedicCapturePassive=Neutral Capture
+Button/Name/MaelstromRounds=Smart Servos
+Button/Name/MedicCapturePassive=Capture Ability
 Button/Name/MedivacLoadNearby=Load Nearby
 Button/Name/NeutralStructurePassive=Neutral Structure Passive
 Button/Name/NovaHeal=Heal
@@ -350,6 +351,7 @@ Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
 Button/Name/Veterancy=Veterancy
 Button/Name/VoidSentryShieldRepair=Shield Recharge
+Button/Name/VultureEMPPassive=EMP Grenades
 Button/Name/ZergHypervirus10=Zerg Hypervirus
 Button/Name/ZergHypervirus11=Zerg Hypervirus
 Button/Name/ZergHypervirus12=Zerg Hypervirus
@@ -367,7 +369,7 @@ Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost
 Button/Tooltip/AresClassWeaponsSystem=Increases HP by 50.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
-Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
+Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Shadow Ops
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
 Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
@@ -379,7 +381,7 @@ Button/Tooltip/BuildTechLabFactory=Enables additional units. Researches upgrades
 Button/Tooltip/BuildTechLabStarport=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
 Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
-Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/Bunker2=Defensive structure. Able to protect 1 squad. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CallDarkTemplar10=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
 Button/Tooltip/CallDarkTemplar11=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
@@ -504,9 +506,10 @@ Button/Tooltip/InfernalPreIgniter=Damage is increased by 50%.
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
 Button/Tooltip/JackhammerConcussionGrenade=Attack temporarily slows all units in target area.<n/><n/><c val="#ColorAttackInfo">Massive units are immune.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
+Button/Tooltip/MaelstromRounds=Transforms 2x as fast, and can be loaded into transports while sieged.
 Button/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
 Button/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
-Button/Tooltip/MedicCapturePassive=Medics can capture neutral structures, and are consumed by the action.
+Button/Tooltip/MedicCapturePassive=Medics can capture <c val="FFFF00">Capturable Structures</c>, and are consumed by the action.
 Button/Tooltip/MedicSquad=A squad of 3 Medics. Heals nearby infantry.
 Button/Tooltip/Medivac=Air transport. Heals nearby and loaded biological units.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
@@ -617,7 +620,7 @@ Button/Tooltip/Stim=Marine takes 10 damage. Fires 50% faster for 15 seconds.
 Button/Tooltip/Stone=Expands Build Radius.<n/>Obsessed with trucks.
 Button/Tooltip/SupplyDepot=Provides power.<n/>Power allows buildings to work correctly.<n/>Power Plants can be lowered to allow units to walk over them. <n/><n/><c val="ffff8a">Enables:</c><n/>- Barracks
 Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
-Button/Tooltip/SupplyDrop=Drops additional supplies, permanently increasing the power output of the target Supply Depot by <d ref="Behavior,SupplyDrop,Modification.Food"/>.
+Button/Tooltip/SupplyDrop=Drops additional supplies, permanently increasing the power output of the target Power Plant by <d ref="Behavior,SupplyDrop,Modification.Food"/>.
 Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
@@ -671,6 +674,7 @@ Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 Button/Tooltip/VikingFighter=Durable support flyer. Loaded with rapid fire AOE air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
+Button/Tooltip/VultureEMPPassive=Attacks disable mechanical units and structures for 1s.
 Button/Tooltip/WarPigSquad=A squad of 6 War Pigs. Good against infantry.
 Button/Tooltip/YamatoGun=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoCPU,PeriodCount*Effect,YamatoU,Amount"/> damage.
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
@@ -712,7 +716,7 @@ ConversationState/LabResearch/ResearchP2_1/Info/Tooltip=<s val="TooltipTitle_Pro
 ConversationState/LabResearch/ResearchP2_2=Expanded Hold
 ConversationState/LabResearch/ResearchP2_2/Info/Description=<s val="ResearchDescSummary_Protoss">- SCVs can now carry 2800 minerals, a 100% increase.<n/>- Drop off time remains the same.</s><n/><n/><s val="ResearchDescription_Protoss">Research of  Protoss filtering techniques allows our SCVs to pre-refine the minerals they gather, so they can carry less dead weight.</s>
 ConversationState/LabResearch/ResearchP2_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Expanded Hold</s><n/><s val="TooltipDescription_Protoss">Doubles SCV capacity.</s>
-ConversationState/LabResearch/ResearchP3_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Refineries auto-harvest up to 4 range.</n>- Refineries now cost 2000.</n>- Refineries no longer come with an SCV.</n>- SCVs can still drop off at refineries.</s><n/><n/><s val="ResearchDescription_Protoss">We have adapted Protoss warp technology to transport minerals straight from the fields to the Refinery, eliminating the need for SCVs to harvest and return.<n/><n/>Why the Protoss have never thought to transport minerals in this fashion is a mystery. Perhaps they lack Terran creativity and pragmatism, or possibly their primitive superstitions forbid the practice.</s>
+ConversationState/LabResearch/ResearchP3_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Refineries auto-harvest up to 8 range.</n>- Refineries now cost 2000.</n>- Refineries no longer come with an SCV.</n>- SCVs can still drop off at refineries.</s><n/><n/><s val="ResearchDescription_Protoss">We have adapted Protoss warp technology to transport minerals straight from the fields to the Refinery, eliminating the need for SCVs to harvest and return.<n/><n/>Why the Protoss have never thought to transport minerals in this fashion is a mystery. Perhaps they lack Terran creativity and pragmatism, or possibly their primitive superstitions forbid the practice.</s>
 ConversationState/LabResearch/ResearchP3_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Automated Refinery</s><n/><s val="TooltipDescription_Protoss">Refineries harvest within a set range, are cheaper, and don't come with an SCV.</s>
 ConversationState/LabResearch/ResearchP3_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Structures take 20% less time to build.<n/>- Structures also cost 20% less to make.<n/></s><n/><s val="ResearchDescription_Protoss">Expanded power production in our building construction facilities allows them to greatly speed up their production cycles.</s><n/>
 ConversationState/LabResearch/ResearchP3_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Command Center Reactor</s><n/><s val="TooltipDescription_Protoss">Buildings are constructed faster and cheaper.</s>

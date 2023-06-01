@@ -9,14 +9,19 @@ Light Air armour is now Light Aircraft armour.
 Heavy Air armour is now Heavy Aircraft armour.
 Fixed marauder armour name
 Gas pickups are not called gas pickups
-*Lab research text for autoref is now correct
-*Neutral Structures are now called Capturable Structures
-*Capturable Structures are no longer automatically attacked by your units if they're hostile
+Lab research text for autoref is now correct
+Neutral Structures are now called Capturable Structures
+Extra Supplies now refers to the power plant correctly
+Bunker unit tip is now correct
+Build and place devastation turret now has the correct name
+Probes have a weapon and armour type now
+Spec Ops and Shadow Ops are now consistent
+Siege tank passives are now correct
+Capturable Structures are no longer automatically attacked by your units if they're hostile
+Vulture now has a passive for EMP grenades
+Clarified the medic passive to say you can even capture hostile Capturable Structures
 *Structures now say their armour type
-*Probes have a weapon and armour type now
-*Spec Ops and Shadow Ops are now consistent
 *Squad size buttons are now correct in icon and tooltip
-*Extra Supplies now refers to the power plant correctly
 *Fortified bunker death animation?
 *Resume queue and place bunker are no longer the same hotkey
 *Silo death animation now leaves
@@ -25,14 +30,10 @@ Gas pickups are not called gas pickups
 *Bunkers now get fortified look if built after researching the upgrade
 *Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
 *Power plants can no longer be depowered
-*Bunker unit tip is now correct
 *Renamed Concussive Grenades to Cannon Grenades
-*Build and place devastation turret now has the correct name
 *Fixed refunding for cancelled things not working without a refinery
 *Merc compound now has passives that say it unlocks merc topbars
 *Merc compound is no longer unlocked until you have at least 1 merc purchased
-*Vulture now has a passive for EMP grenades
-*Clarified the medic passive to say you can even capture hostile Capturable Structures
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -53,10 +54,13 @@ Added a starting merc compound
 Added a missile turret to deal with cloak
 Trains now drop 2 gas pallets each
 Increased number of mineral pallets dropped by early trains on hard/brutal, and by all trains on easy/normal.
-*Added more money on Easy/Normal
+Added more money on Easy/Normal
 
 Cutthroat:
 Vulture EMP unlock tip mentions it also affects structures
+Dominion tips are more clear about what exactly the timer does
+Orlan's CCs no longer have a unit help tip to destroy them to reduce his income, since they don't.
+Orlan's Mineral Spikes now have a help tip to capture them to reduce his income.
 
 Engine of Destruction:
 Added a missile turret to deal with cloak

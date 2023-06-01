@@ -158,6 +158,9 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
+    <CButton id="MaelstromRounds">
+        <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
+    </CButton>
     <CButton id="Marauder">
         <Icon value="Assets\Textures\btn-squad-terran-marauder.dds"/>
     </CButton>
@@ -281,6 +284,10 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     <CButton id="Veterancy">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+    </CButton>
+    <CButton id="VultureEMPPassive">
+        <Icon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
     </CButton>
     <CButton id="ZergHypervirus3">
         <Icon value="Assets\Textures\btn-ability-zerg-neuralparasite-color.dds"/>
