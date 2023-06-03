@@ -35,7 +35,7 @@ Marauder sqauds are now 900 each
 *Bunkers now get fortified look if built after researching the upgrade
 *Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
 *Renamed Concussive Grenades to Cannon Grenades
-*Fixed refunding for cancelled things not working without a refinery
+Fixed refunding for cancelled upgrades not working sometimes
 *Merc compound is no longer unlocked until you have at least 1 merc purchased
 
 Liberation Day:

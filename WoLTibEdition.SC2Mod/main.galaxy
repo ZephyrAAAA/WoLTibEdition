@@ -660,7 +660,7 @@ bool Cancel_Func (bool testConds, bool runActions) {
 		UnitBehaviorRemove(EventUnit(), "QueuePaused", 1);
 	}
 	if (UnitHasBehavior(EventUnit(), "QueuePaused")) {
-	UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
+		UnitSetProgressStage(EventUnit(), 1, c_unitProgressStagePause);
 	}
 	UnitBehaviorAdd(EventUnit(), "Cancel", EventUnit(), 1);
 	return true;
@@ -670,6 +670,7 @@ void Cancel_Init () {
 	cancel = TriggerCreate("Cancel_Func");
 	TriggerAddEventUnitTrainProgress(cancel, null, c_unitProgressStageCancel);
 	TriggerAddEventUnitSpecializeProgress(cancel, null, c_unitProgressStageCancel);
+	TriggerAddEventUnitResearchProgress(cancel, null, c_unitProgressStageCancel);
 }
 
 bool UnloadSquads_Func (bool testConds, bool runActions) {

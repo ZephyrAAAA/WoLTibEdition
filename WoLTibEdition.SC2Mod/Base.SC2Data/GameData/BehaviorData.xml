@@ -77,7 +77,7 @@
     <CBehaviorBuff id="Cancel">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="1"/>
+        <Duration value="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="CloakDistortionField">
         <DamageResponse ModifyFraction="0.6">
