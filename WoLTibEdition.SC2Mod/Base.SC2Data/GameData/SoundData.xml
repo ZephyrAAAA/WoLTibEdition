@@ -25,6 +25,15 @@
         <Pitch value="-4.000000,-4.000000"/>
         <Volume value="-2.000000,-2.000000"/>
     </CSound>
+    <CSound id="BoldMove" parent="Campaign" Portrait="ToshPortrait" Subtitle="BoldMove" Speaker="CharTosh" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\BoldMove.ogg"/>
+            <FacialAnim value="TTosh02Tosh00002"/>
+            <PortraitModel value="ToshPortrait"/>
+            <Speaker value="ConversationState/Characters/CharTosh"/>
+            <Subtitle value="BoldMove"/>
+        </AssetArray>
+    </CSound>
     <CSound id="VultureBikes" parent="Campaign" Portrait="TychusPortrait" Subtitle="Vulture Bikes" Speaker="CharTychus" Line="">
         <AssetArray index="0">
             <File value="Assets\sfx\Vulture Bikes.ogg"/>

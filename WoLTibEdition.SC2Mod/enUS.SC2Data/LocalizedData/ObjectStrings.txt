@@ -1152,6 +1152,7 @@ Skin/EditorSuffix/InfantryMercenaries3=(3)
 Skin/EditorSuffix/InfantryMercenaries4=(4)
 Sound/EditorPrefix/ExplosiveCharge=Commando -
 Sound/Name/Alert_TerranBuildComplete=Alert_TerranBuildComplete
+Sound/Name/BoldMove=BoldMove
 Sound/Name/Eat=Eat
 Sound/Name/ExplosiveCharge=Explosive Charge
 Sound/Name/FenixDragoonAirBombMissileExplode=FenixDragoonAirBombMissileExplode
