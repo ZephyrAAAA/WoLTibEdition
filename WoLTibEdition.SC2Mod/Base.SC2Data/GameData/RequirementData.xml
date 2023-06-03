@@ -71,6 +71,9 @@
         <NodeArray index="Use" Link="CountUnitAlias_FusionCoreCompleteOnly3089280483TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="IsPlayer"/>
+    <CRequirement id="JumboBunkerNotResearched">
+        <NodeArray index="Use" Link="NotCountUpgradeTerranBuildingArmorCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="LearnBattlecruiserTitanEngines">
         <EditorCategories value="Race:Terran,TechType:Upgrade"/>
         <NodeArray index="Show" Link="NotCountUpgradeTitanEnginesQueuedOrBetter"/>
@@ -185,6 +188,9 @@
     </CRequirement>
     <CRequirement id="DoesnothaveLaserDrill">
         <NodeArray index="Use" Link="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="UseFortifiedBunker">
+        <NodeArray index="Show" Link="CountUpgradeTerranBuildingArmorCompleteOnly"/>
     </CRequirement>
     <CRequirement id="UseReaperScannerPack">
         <NodeArray index="Show" Link="CountUpgradeReaperScannerPackCompleteOnly"/>

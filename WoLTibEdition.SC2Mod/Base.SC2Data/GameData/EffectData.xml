@@ -149,11 +149,16 @@
     <CEffectDamage id="ImplosionFlatDamage">
         <EditorCategories value="Race:Zerg"/>
         <Amount value="100"/>
+        <Flags index="NoBehaviorResponse" value="1"/>
+        <Flags index="NoVitalAbsorbShields" value="1"/>
+        <Flags index="NoVitalAbsorbEnergy" value="1"/>
     </CEffectDamage>
     <CEffectDamage id="ImplosionKillUnit">
         <Flags index="Kill" value="0"/>
+        <Flags index="NoBehaviorResponse" value="1"/>
+        <Flags index="NoVitalAbsorbShields" value="1"/>
+        <Flags index="NoVitalAbsorbEnergy" value="1"/>
         <VitalFractionMax index="Life" value="0.5"/>
-        <VitalFractionMax index="Shields" value="0.5"/>
     </CEffectDamage>
     <CEffectRemoveBehavior id="MercCompPlace">
         <EditorCategories value=""/>

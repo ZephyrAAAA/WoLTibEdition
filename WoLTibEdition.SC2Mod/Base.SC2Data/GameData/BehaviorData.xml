@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
     <CBehaviorBuff id="ImplosionTempBuff">
-        <Duration value="3.125"/>
+        <Duration value="3.25"/>
         <Modification>
             <ModifyFlags index="DisableAbils" value="0"/>
             <ModifyFlags index="SuppressMoving" value="0"/>

@@ -60,6 +60,7 @@ Abil/Name/NovaHeal=Heal
 Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
+Abil/Name/PauseResumeQueueShared=PauseResumeQueueShared
 Abil/Name/PowerStructure=Power Structure
 Abil/Name/PsiDisruptor=Psi Disruptor
 Abil/Name/RavenScramblerMissile=Scrambler Missile
@@ -544,8 +545,6 @@ Button/Tooltip/NukeCalldown6=Calls down a Nuclear Strike at a target location. N
 Button/Tooltip/NukeCalldown7=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
 Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
 Button/Tooltip/NukeCalldown9=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
-Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
-Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
 Button/Tooltip/PalletGas=Stockpile of refined resources.
 Button/Tooltip/PauseQueue=Pauses the queue of this structure, and allows queued items to be safely cancelled.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
@@ -1694,6 +1693,7 @@ PredatorShield=Impact Barrier
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
+RequirementNode/Tooltip/CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat=Barracks
 RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
 RequirementNode/Tooltip/CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat=Engineering Bay
 RequirementNode/Tooltip/CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat=Factory
@@ -1781,8 +1781,6 @@ Unit/Name/MineralSilo=Mineral Silo
 Unit/Name/MineralSpike=Mineral Spike
 Unit/Name/MissileTurret2=Missile Turret
 Unit/Name/NaturalGas=Resources
-Unit/Name/OrbitalCommand2=Orbital Command
-Unit/Name/OrbitalCommandFlying2=Orbital Command
 Unit/Name/PalletGas=Resource Pallet
 Unit/Name/PlanetaryFortress2=Planetary Fortress
 Unit/Name/RailgunWeapon=Railgun Weapon
@@ -1809,6 +1807,7 @@ Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Aircraft</c> armor
 Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
+Unit/Tip/Structure=<c val="FFBF00">Structure</c> Armor
 Upgrade/Name/330mmBarrageCannons=Thor Speed
 Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
 Upgrade/Name/AresClassWeaponsSystemViking=Improved Mechanics

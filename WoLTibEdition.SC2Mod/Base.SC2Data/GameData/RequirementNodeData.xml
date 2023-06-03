@@ -71,6 +71,9 @@
     <CRequirementCountUnit id="CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat">
         <Count Link="Alias_Armory" State="InProgressOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat">
+        <Tooltip value="RequirementNode/Tooltip/CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat"/>
+    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat">
         <Count Link="Alias_Barracks" State="InProgressOrBetter"/>
     </CRequirementCountUnit>
@@ -173,6 +176,11 @@
     <CRequirementCountUpgrade id="CountUpgradeTakeTheDrillQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="TakeTheDrill" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeTerranBuildingArmorCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="TerranBuildingArmor" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
@@ -347,6 +355,10 @@
     <CRequirementNot id="NotCountUpgradeTakeTheDrillQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeTakeTheDrillQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotCountUpgradeTerranBuildingArmorCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeTerranBuildingArmorCompleteOnly"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
         <OperandArray index="0" value="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter"/>
     </CRequirementNot>
@@ -376,13 +388,11 @@
         <OperandArray value="CountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeHireHelsAngelsPHCompleteOnlyCountUpgradeHireDuskWingPHCompleteOnlyCountUpgradeHireDukesRevengeCompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeHireHelsAngelsPHCompleteOnly"/>
         <OperandArray value="CountUpgradeHireDuskWingPHCompleteOnly"/>
         <OperandArray value="CountUpgradeHireDukesRevengeCompleteOnly"/>
     </CRequirementOr>
     <CRequirementOr id="OrCountUpgradeHireSpartanCompanyPHCompleteOnlyCountUpgradeHireSiegeBreakersPHCompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUpgradeHireSpartanCompanyPHCompleteOnly"/>
         <OperandArray value="CountUpgradeHireSiegeBreakersPHCompleteOnly"/>
     </CRequirementOr>

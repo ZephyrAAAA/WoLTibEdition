@@ -715,25 +715,25 @@
     <CActorUnit id="BunkerSQ" parent="Bunker" unitName="BunkerSQ">
         <Aliases index="2" removed="1"/>
         <Aliases index="3" removed="1"/>
-        <On index="0" Terms="UnitBirth.BunkerSQ" Send="Create SoundEmitter Bunker2_Ambience"/>
+        <On index="0" Terms="UnitBirth.BunkerSQ"/>
         <On index="1" Terms="UnitBirth.BunkerSQ"/>
         <On index="2" Terms="UnitRevive.BunkerSQ"/>
         <On index="3" Terms="UnitRevive.BunkerSQ"/>
-        <On index="4" Terms="UnitConstruction.BunkerSQ.Start"/>
-        <On index="5" Terms="UnitConstruction.BunkerSQ.Finish"/>
-        <On index="69" Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
-        <On index="70" Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
-        <On index="71" removed="1"/>
-        <On index="72" removed="1"/>
-        <On index="73" removed="1"/>
-        <On index="74" removed="1"/>
-        <On index="75" removed="1"/>
-        <On index="76" removed="1"/>
-        <On index="77" removed="1"/>
-        <On index="78" removed="1"/>
-        <On index="79" removed="1"/>
-        <On index="80" removed="1"/>
-        <On index="81" removed="1"/>
+        <On index="4" Terms="UnitConstruction.BunkerSQ"/>
+        <On index="5" Terms="UnitConstruction.BunkerSQ"/>
+        <On index="69" Terms="UnitDeath.BunkerSQ" Target="_BuildingTerrainFlatten" Send="Destroy"/>
+        <On index="70" Terms="UnitDeathCustomize; CreepEngulfs" Send="CreepEngulfmentStopTransition"/>
+        <On index="71" Terms="ActorCreation; CreepIntersects" Target="" Send="CreepEngulfmentStartTransition"/>
+        <On index="72" Terms="Upgrade.NeosteelFrame.Add; ValidateUnit HasCargo" Target="" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On index="73" Terms="UnitBirth.BunkerSQ; ValidateUnit NeosteelFramePurchased" Send="ModelSwap BunkerUpgrade"/>
+        <On index="74" Terms="Upgrade.NeosteelFrame.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On index="75" Terms="UnitBirth.BunkerSQ" Send="StatusSet BunkerBuilt 1"/>
+        <On index="76" Terms="UnitBirth.BunkerSQ" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
+        <On index="77" Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit HasCargo" Target="" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On index="78" Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
+        <On index="79" Terms="UnitBirth.BunkerSQ" Send="StatusSet BunkerBuilt 1"/>
+        <On index="80" Terms="UnitBirth.BunkerSQ" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
+        <On index="81" Terms="UnitBirth.BunkerSQ" Target="ShrikeTurret" Send="Signal TurretShow"/>
         <On index="82" removed="1"/>
         <On index="83" removed="1"/>
         <On index="84" removed="1"/>
@@ -784,6 +784,7 @@
         <Wireframe>
             <Image index="0" removed="1"/>
         </Wireframe>
+        <DeathArray index="Normal" ModelLink="Invisible"/>
     </CActorUnit>
     <CActorUnit id="AirTransport" parent="GenericUnitStandard" unitName="AirTransport">
         <Model value="Invisible"/>

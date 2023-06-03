@@ -2,11 +2,13 @@
 <Catalog>
     <CUnit default="1" id="AccelerationZoneBase">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit default="1" id="AccelerationZoneFlyingBase">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -27,6 +29,7 @@
     </CUnit>
     <CUnit default="1" id="CoopGlobalCaster">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -49,11 +52,13 @@
     </CUnit>
     <CUnit default="1" id="InhibitorZoneBase">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit default="1" id="InhibitorZoneFlyingBase">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -92,6 +97,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -236,6 +242,7 @@
     </CUnit>
     <CUnit id="AbandonedBuilding">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -246,31 +253,37 @@
     </CUnit>
     <CUnit id="AccelerationZoneFlyingLarge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AccelerationZoneFlyingMedium">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AccelerationZoneFlyingSmall">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AccelerationZoneLarge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AccelerationZoneMedium">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AccelerationZoneSmall">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -400,6 +413,7 @@
     </CUnit>
     <CUnit id="DestructibleSandbags">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="60"/>
         <LifeMax value="60"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -423,6 +437,7 @@
     </CUnit>
     <CUnit id="Archive">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -430,6 +445,7 @@
     </CUnit>
     <CUnit id="ArchiveSealed">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -449,6 +465,7 @@
     <CUnit id="Armory">
         <TechAliasArray value="Alias_Armory"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -523,6 +540,7 @@
         <SelectAlias value="Armory"/>
         <TechAliasArray value="Alias_Armory"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/Armory"/>
     </CUnit>
     <CUnit id="Artanis">
@@ -568,12 +586,14 @@
     </CUnit>
     <CUnit id="Assimilator">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AssimilatorRich">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -592,18 +612,21 @@
     </CUnit>
     <CUnit id="AutoTurret">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AutomatedRefinery">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="AvernusGateControl">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="Ball">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -635,6 +658,7 @@
     </CUnit>
     <CUnit id="BanelingNest">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -654,6 +678,7 @@
     </CUnit>
     <CUnit id="Barracks">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -683,6 +708,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -804,22 +830,26 @@
         <TechAliasArray value="Alias_Barracks"/>
         <GlossaryAlias value="Barracks"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <SelectAlias value="Barracks2"/>
     </CUnit>
     <CUnit id="BarracksFlying">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="BarracksReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="BarracksTechLab">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -837,6 +867,7 @@
     </CUnit>
     <CUnit id="BarracksTechReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -876,24 +907,28 @@
     </CUnit>
     <CUnit id="BioDomeCommand">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="BioDomeCommandFlying">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="Biodome">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="BiodomeHalfBuilt">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -922,12 +957,14 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="BraxisAlphaDestructible2x2">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="BreachingCharge">
@@ -987,6 +1024,7 @@
     </CUnit>
     <CUnit id="Bunker">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <AbilArray Link="Bunker"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1072,6 +1110,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="400"/>
         <LifeMax value="400"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -1265,6 +1304,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CastanarUltraliskShackledUnit">
@@ -1273,6 +1313,7 @@
     </CUnit>
     <CUnit id="CellBlockB">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1285,24 +1326,28 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CharDestructibleRockCoverULDR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CharDestructibleRockCoverURDL">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CharDestructibleRockCoverV">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="CheckStation">
@@ -1335,6 +1380,7 @@
     </CUnit>
     <CUnit id="CivilianShipWrecked">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1361,6 +1407,7 @@
         <Attributes index="Armored" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="150"/>
         <LifeMax value="150"/>
         <LifeArmorName value="Unit/LifeArmorName/HardenedMaterial"/>
@@ -1378,12 +1425,14 @@
     </CUnit>
     <CUnit id="ColonistBiodome">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ColonistBiodomeHalfBuilt">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1393,6 +1442,7 @@
     </CUnit>
     <CUnit id="ColonistHut">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1449,6 +1499,7 @@
     </CUnit>
     <CUnit id="CommandCenter">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1491,7 +1542,7 @@
         <RepairTime value="100"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray Link="PauseResumeQueueShared"/>
         <AbilArray Link="CCMCVQueue"/>
         <AbilArray Link="CommandCenter2LiftOff"/>
         <AbilArray Link="UpgradeToPlanetaryFortress2"/>
@@ -1508,10 +1559,10 @@
         <EffectArray index="Birth" value="CCBirthSet"/>
         <CardLayouts>
             <LayoutButtons Face="UpgradeToPlanetaryFortress" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueueShared,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="CommandCenter2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueueShared,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelUpgradeMorph" Type="AbilCmd" AbilCmd="UpgradeToPlanetaryFortress2,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
@@ -1605,6 +1656,7 @@
         <TechTreeProducedUnitArray value="PlanetaryFortress"/>
         <TechTreeProducedUnitArray value="OrbitalCommand"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/CommandCenter"/>
     </CUnit>
     <CUnit id="CommandCenter2Flying">
@@ -1663,9 +1715,11 @@
         <TechAliasArray value="Alias_CommandCenter"/>
         <GlossaryAlias value="CommandCenter"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="CommandCenterFlying">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1721,6 +1775,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
         <StationaryTurningRate value="719.4726"/>
@@ -1735,7 +1790,7 @@
         <AbilArray Link="CCMCVQueue"/>
         <AbilArray Link="CCBuild"/>
         <AbilArray Link="CCPlaceBuilding"/>
-        <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray Link="PauseResumeQueueShared"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
@@ -1744,9 +1799,9 @@
         <BehaviorArray Link="NeedsBuildRadius"/>
         <BehaviorArray Link="DisablePower"/>
         <CardLayouts>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueueShared,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueueShared,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" AbilCmd="CommandCenterTrain,Train1" Row="1" Column="3"/>
@@ -1832,6 +1887,7 @@
     </CUnit>
     <CUnit id="CreepTumor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="0"/>
@@ -1839,6 +1895,7 @@
     </CUnit>
     <CUnit id="CreepTumorBurrowed">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="0"/>
@@ -1846,6 +1903,7 @@
     </CUnit>
     <CUnit id="CreepTumorQueen">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="0"/>
@@ -1861,6 +1919,7 @@
     </CUnit>
     <CUnit id="CyberneticsCore">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1887,6 +1946,7 @@
     </CUnit>
     <CUnit id="DarkShrine">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1897,6 +1957,7 @@
     </CUnit>
     <CUnit id="DataCore">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1926,24 +1987,28 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleDebris6x6">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleDebrisRampDiagonalHugeBLUR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleDebrisRampDiagonalHugeULBR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleGarage">
@@ -1982,60 +2047,70 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRampDiagonalHugeULBR">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRampHorizontalHuge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRampVerticalHuge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x4Horizontal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x4Vertical">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x6Horizontal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock2x6Vertical">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock4x4">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleRock6x6">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="DestructibleSearchlight">
@@ -2203,6 +2278,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="300"/>
         <LifeMax value="300"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -2322,6 +2398,7 @@
         <BehaviorArray Link="PowerCheck"/>
         <Sight value="9"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
@@ -2384,6 +2461,7 @@
     </CUnit>
     <CUnit id="ElevatorBlocker">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -2395,6 +2473,7 @@
     <CUnit id="EngineeringBay">
         <TechAliasArray value="Alias_EngineeringBay"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2472,10 +2551,12 @@
         <SelectAlias value="EngineeringBay"/>
         <TechAliasArray value="Alias_EngineeringBay"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/EngineeringBay"/>
     </CUnit>
     <CUnit id="EvolutionChamber">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2486,6 +2567,7 @@
     </CUnit>
     <CUnit id="Extractor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2493,12 +2575,14 @@
     </CUnit>
     <CUnit id="ExtractorRich">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="Factory">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2528,6 +2612,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1250"/>
         <LifeMax value="1250"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -2655,21 +2740,25 @@
         <TechAliasArray value="Alias_Factory"/>
         <GlossaryAlias value="Factory"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="FactoryFlying">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="FactoryReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="FactoryTechLab">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2685,6 +2774,7 @@
     </CUnit>
     <CUnit id="FactoryTechReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2725,6 +2815,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="FlamingBettyACGluescreenDummy">
@@ -2737,6 +2828,7 @@
     </CUnit>
     <CUnit id="FleetBeacon">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2747,6 +2839,7 @@
     </CUnit>
     <CUnit id="ForceField">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Collide index="Burrow3" value="1"/>
@@ -2755,6 +2848,7 @@
     </CUnit>
     <CUnit id="Forge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2769,6 +2863,7 @@
     <CUnit id="FusionCore">
         <TechAliasArray value="Alias_FusionCore"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2838,10 +2933,12 @@
         <TechTreeUnlockedUnitArray value="Hercules"/>
         <TechAliasArray value="Alias_FusionCore"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/FusionCore"/>
     </CUnit>
     <CUnit id="FusionReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
         <LifeArmor value="0"/>
@@ -2852,6 +2949,7 @@
     </CUnit>
     <CUnit id="Gateway">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2892,6 +2990,7 @@
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2968,6 +3067,7 @@
         <TechTreeUnlockedUnitArray value="Ghost"/>
         <TechTreeUnlockedUnitArray value="Spectre"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/GhostAcademy"/>
     </CUnit>
     <CUnit id="GhostMengskACGluescreenDummy">
@@ -2993,6 +3093,7 @@
     </CUnit>
     <CUnit id="GreaterSpire">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3055,6 +3156,7 @@
     </CUnit>
     <CUnit id="Hatchery">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3207,23 +3309,27 @@
     </CUnit>
     <CUnit id="Hive">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="HiveMindEmulator">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="HomeLarge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="HomeSmall">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3238,6 +3344,7 @@
     </CUnit>
     <CUnit id="Hut">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3284,6 +3391,7 @@
     </CUnit>
     <CUnit id="HydraliskDen">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3330,30 +3438,35 @@
     </CUnit>
     <CUnit id="InfestableBiodome">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestableColonistBiodome">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestableColonistHut">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestableHut">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestationPit">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3385,24 +3498,28 @@
     </CUnit>
     <CUnit id="InfestedArmory">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedBarracks">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedBunker">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedCC">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3426,46 +3543,54 @@
     </CUnit>
     <CUnit id="InfestedColonistShip">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedEngBay">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedFactory">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedMercHaven">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedMissileTurret">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedRefinery">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedStarport">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InfestedSupply">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3533,31 +3658,37 @@
     </CUnit>
     <CUnit id="InhibitorZoneFlyingLarge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InhibitorZoneFlyingMedium">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InhibitorZoneFlyingSmall">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InhibitorZoneLarge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InhibitorZoneMedium">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="InhibitorZoneSmall">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -3576,6 +3707,7 @@
     </CUnit>
     <CUnit id="JoriumStockpile">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3588,6 +3720,7 @@
         <EnergyStart value="2000"/>
         <EnergyMax value="2000"/>
         <EnergyRegenRate value="10"/>
+        <FlagArray index="AIForceTactical" value="1"/>
     </CUnit>
     <CUnit id="Kerrigan">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3623,6 +3756,7 @@
     </CUnit>
     <CUnit id="Lair">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3650,6 +3784,7 @@
     </CUnit>
     <CUnit id="LogisticsHeadquarters">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3679,12 +3814,14 @@
     </CUnit>
     <CUnit id="LurkerDen">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="LurkerDenMP">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3725,17 +3862,20 @@
     </CUnit>
     <CUnit id="MainCellBlock">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MarSaraBridgeBLUR">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MarSaraBridgeBRUL">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -3903,6 +4043,7 @@
     </CUnit>
     <CUnit id="MengskHologramBillboard">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3911,14 +4052,17 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="MengskStatueAlone">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="MercCompound">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3947,6 +4091,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1000"/>
         <LifeMax value="1000"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -3987,6 +4132,7 @@
     </CUnit>
     <CUnit id="MercenaryFortress">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeStart value="2000"/>
@@ -4019,6 +4165,7 @@
     </CUnit>
     <CUnit id="MissileTurret">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -4109,6 +4256,7 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <Food value="-7"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="MissileTurretACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4127,11 +4275,13 @@
     </CUnit>
     <CUnit id="MonlythArtifactForceField">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="MonlythForceFieldStatue">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="Monolith">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4190,6 +4340,7 @@
     </CUnit>
     <CUnit id="Nexus">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4224,24 +4375,28 @@
     </CUnit>
     <CUnit id="NukePack">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="NukeSiloNova">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="NydusCanal">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="NydusNetwork">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4256,6 +4411,7 @@
     </CUnit>
     <CUnit id="Obelisk">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4315,93 +4471,10 @@
     </CUnit>
     <CUnit id="OrbitalCommand">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-    </CUnit>
-    <CUnit id="OrbitalCommand2">
-        <Description value="Button/Tooltip/OrbitalCommand2Unit"/>
-        <DeathRevealRadius value="3"/>
-        <Facing value="315"/>
-        <Race value="Terr"/>
-        <Mob value="Multiplayer"/>
-        <FlagArray index="Turnable" value="0"/>
-        <FlagArray index="PreventReveal" value="1"/>
-        <FlagArray index="PreventDefeat" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="TownAlert" value="1"/>
-        <FlagArray index="NoPortraitTalk" value="1"/>
-        <FlagArray index="TownCamera" value="1"/>
-        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <ResourceDropOff index="Minerals" value="1"/>
-        <ResourceDropOff index="Vespene" value="1"/>
-        <ResourceDropOff index="Terrazine" value="1"/>
-        <ResourceDropOff index="Custom" value="1"/>
-        <FogVisibility value="Snapshot"/>
-        <PlaneArray index="Ground" value="1"/>
-        <Collide index="Burrow" value="1"/>
-        <Collide index="Ground" value="1"/>
-        <Collide index="Structure" value="1"/>
-        <Collide index="RoachBurrow" value="1"/>
-        <Collide index="ForceField" value="1"/>
-        <Collide index="Small" value="1"/>
-        <Attributes index="Armored" value="1"/>
-        <Attributes index="Mechanical" value="1"/>
-        <Attributes index="Structure" value="1"/>
-        <LifeStart value="1500"/>
-        <LifeMax value="1500"/>
-        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
-        <EnergyStart value="50"/>
-        <EnergyMax value="200"/>
-        <EnergyRegenRate value="0.5625"/>
-        <StationaryTurningRate value="719.4726"/>
-        <TurningRate value="719.4726"/>
-        <Sight value="11"/>
-        <Food value="10"/>
-        <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="550"/>
-        <RepairTime value="135"/>
-        <AttackTargetPriority value="11"/>
-        <KillXP value="80"/>
-        <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="CalldownMULE"/>
-        <AbilArray Link="SupplyDrop"/>
-        <AbilArray Link="que5CancelToSelection"/>
-        <AbilArray Link="RallyCommand"/>
-        <AbilArray Link="CommandCenterTrain"/>
-        <AbilArray Link="ScannerSweep"/>
-        <AbilArray Link="OrbitalLiftOff2"/>
-        <BehaviorArray Link="TerranBuildingBurnDown"/>
-        <BehaviorArray Link="CommandCenterQueue"/>
-        <BehaviorArray Link="FireSuppressionSystem"/>
-        <BehaviorArray Link="PowerCheck"/>
-        <CardLayouts>
-            <LayoutButtons Face="SCV" Type="AbilCmd" AbilCmd="CommandCenterTrain,Train1" Row="0" Column="0"/>
-            <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="OrbitalLiftOff2,0" Row="2" Column="3"/>
-            <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5CancelToSelection,CancelLast" Row="2" Column="4"/>
-            <LayoutButtons Face="Scan" Type="AbilCmd" AbilCmd="ScannerSweep,Execute" Row="2" Column="2"/>
-            <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
-            <LayoutButtons Face="CalldownMULE" Type="AbilCmd" AbilCmd="CalldownMULE,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="SupplyDrop" Type="AbilCmd" AbilCmd="SupplyDrop,Execute" Row="2" Column="1"/>
-        </CardLayouts>
-        <Radius value="2.5"/>
-        <SeparationRadius value="2.5"/>
-        <Footprint value="Footprint5x5Contour"/>
-        <PlacementFootprint value="Footprint5x5DropOff"/>
-        <ScoreMake value="550"/>
-        <ScoreKill value="550"/>
-        <ScoreResult value="BuildOrder"/>
-        <SubgroupPriority value="4"/>
-        <MinimapRadius value="2.5"/>
-        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
-        <TacticalAI value="OrbitalCommand"/>
-        <TacticalAIThink value="AIThinkOrbitalCommand"/>
-        <TechAliasArray value="Alias_CommandCenter"/>
-        <GlossaryPriority value="30"/>
-        <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="OrbitalCommandACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4409,74 +4482,10 @@
     </CUnit>
     <CUnit id="OrbitalCommandFlying">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
-    </CUnit>
-    <CUnit id="OrbitalCommandFlying2">
-        <DeathRevealRadius value="3"/>
-        <Facing value="315"/>
-        <Race value="Terr"/>
-        <Mob value="Multiplayer"/>
-        <FlagArray index="PreventReveal" value="1"/>
-        <FlagArray index="PreventDefeat" value="1"/>
-        <FlagArray index="PreventDestroy" value="1"/>
-        <FlagArray index="UseLineOfSight" value="1"/>
-        <FlagArray index="TownAlert" value="1"/>
-        <FlagArray index="NoPortraitTalk" value="1"/>
-        <FlagArray index="ArmorDisabledWhileConstructing" value="1"/>
-        <PlaneArray index="Air" value="1"/>
-        <Collide index="Flying" value="1"/>
-        <Attributes index="Armored" value="1"/>
-        <Attributes index="Mechanical" value="1"/>
-        <Attributes index="Structure" value="1"/>
-        <LifeStart value="1500"/>
-        <LifeMax value="1500"/>
-        <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
-        <EnergyStart value="50"/>
-        <EnergyMax value="200"/>
-        <EnergyRegenRate value="0.5625"/>
-        <Mover value="Fly"/>
-        <Speed value="0.9375"/>
-        <Acceleration value="1.3125"/>
-        <Sight value="11"/>
-        <Height value="3.75"/>
-        <VisionHeight value="4"/>
-        <Food value="10"/>
-        <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="550"/>
-        <RepairTime value="135"/>
-        <AttackTargetPriority value="11"/>
-        <DamageDealtXP value="1"/>
-        <DamageTakenXP value="1"/>
-        <KillXP value="80"/>
-        <AbilArray Link="move"/>
-        <AbilArray Link="stop"/>
-        <AbilArray Link="OrbitalCommandLand2"/>
-        <BehaviorArray Link="TerranBuildingBurnDown"/>
-        <BehaviorArray Link="CommandCenterQueue"/>
-        <BehaviorArray Link="FireSuppressionSystem"/>
-        <BehaviorArray Link="PowerCheck"/>
-        <CardLayouts>
-            <LayoutButtons Face="Land" Type="AbilCmd" AbilCmd="OrbitalCommandLand2,0" Row="2" Column="3"/>
-            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
-            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
-            <LayoutButtons Face="CommandCenterLoad" Type="AbilCmd" AbilCmd="CommandCenterTransport,LoadAll" Row="2" Column="0"/>
-            <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="CommandCenterTransport,UnloadAll" Row="2" Column="1"/>
-            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
-            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
-        </CardLayouts>
-        <Radius value="2.5"/>
-        <SeparationRadius value="2.5"/>
-        <ScoreKill value="550"/>
-        <SubgroupPriority value="4"/>
-        <MinimapRadius value="2.5"/>
-        <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
-        <LeaderAlias value="OrbitalCommand"/>
-        <HotkeyAlias value="OrbitalCommand"/>
-        <TechAliasArray value="Alias_CommandCenter"/>
-        <GlossaryAlias value="OrbitalCommand"/>
-        <ArmorType value="Hero"/>
     </CUnit>
     <CUnit id="Overlord">
         <ArmorType value="None"/>
@@ -4521,6 +4530,7 @@
     </CUnit>
     <CUnit id="PerditionTurret">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4538,6 +4548,7 @@
     </CUnit>
     <CUnit id="PerditionTurretUnderground">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4568,6 +4579,7 @@
     </CUnit>
     <CUnit id="PhotonCannon">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4586,6 +4598,7 @@
     </CUnit>
     <CUnit id="PlanetaryFortress">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="1"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4632,6 +4645,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="2000"/>
         <LifeMax value="2000"/>
         <LifeArmor value="1"/>
@@ -4651,7 +4665,7 @@
         <AbilArray Link="CCPlaceBuilding"/>
         <AbilArray Link="TrainStone"/>
         <AbilArray Link="RallyCommand"/>
-        <AbilArray Link="PauseResumeQueue"/>
+        <AbilArray Link="PauseResumeQueueShared"/>
         <AbilArray Link="BunkerTransport"/>
         <AbilArray Link="AttackRedirect"/>
         <AbilArray Link="Bunker"/>
@@ -4669,7 +4683,7 @@
             <LayoutButtons Face="StopPlanetaryFortress" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="2"/>
             <LayoutButtons Face="AttackRedirect" Type="AbilCmd" AbilCmd="AttackRedirect,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="AttackBuildingPFort" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
+            <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueueShared,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="CCMCVQueue,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons>
@@ -4690,7 +4704,7 @@
                 <Column value="1"/>
             </LayoutButtons>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="RallyCommand,Rally1" Row="1" Column="4"/>
-            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
+            <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueueShared,Off" Row="2" Column="3"/>
             <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="1" Column="0"/>
             <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="1" Column="1"/>
             <LayoutButtons Face="Refinery" Type="AbilCmd" AbilCmd="CCPlaceBuilding,Build2" Row="0" Column="0"/>
@@ -4872,11 +4886,13 @@
     </CUnit>
     <CUnit id="PsiDisruptor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="PsiIndoctrinator">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4907,9 +4923,11 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="Pylon">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5039,6 +5057,7 @@
     </CUnit>
     <CUnit id="Reactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5072,6 +5091,7 @@
     <CUnit id="Refinery">
         <TechAliasArray value="Alias_Refinery"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5150,6 +5170,7 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <TechAliasArray value="Alias_Refinery"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/Refinery"/>
     </CUnit>
     <CUnit id="RefineryBounce">
@@ -5191,12 +5212,14 @@
     </CUnit>
     <CUnit id="RefineryRich">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="RenegadeMissileTurret">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -5224,12 +5247,14 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <BehaviorArray Link="RipField"/>
     </CUnit>
     <CUnit id="RipFieldGeneratorSmall">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <BehaviorArray Link="RipField"/>
     </CUnit>
     <CUnit id="Roach">
@@ -5256,18 +5281,21 @@
     </CUnit>
     <CUnit id="RoachWarren">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="RoboticsBay">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="RoboticsFacility">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5277,6 +5305,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="SCV">
@@ -5445,6 +5474,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="ScienceVessel">
@@ -5507,6 +5537,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="Selendis">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5521,6 +5552,7 @@
     </CUnit>
     <CUnit id="SensorTower">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -5584,6 +5616,7 @@
         <GlossaryPriority value="12"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="Sentry">
         <ArmorType value="Medium"/>
@@ -5616,12 +5649,14 @@
     </CUnit>
     <CUnit id="SentryGun">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SentryGunUnderground">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5636,6 +5671,7 @@
     </CUnit>
     <CUnit id="ShieldBattery">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5650,11 +5686,13 @@
     </CUnit>
     <CUnit id="ShortBridgeHorizontal">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ShortBridgeVertical">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -5716,21 +5754,25 @@
     </CUnit>
     <CUnit id="SpacePlatformCliffDoor0">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SpacePlatformCliffDoor1">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SpacePlatformCliffDoorOpen0">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SpacePlatformCliffDoorOpen1">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
@@ -5753,6 +5795,7 @@
     </CUnit>
     <CUnit id="SpawningPool">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5820,6 +5863,7 @@
     </CUnit>
     <CUnit id="SpineCrawler">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5830,6 +5874,7 @@
     </CUnit>
     <CUnit id="SpineCrawlerUprooted">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5840,6 +5885,7 @@
     </CUnit>
     <CUnit id="Spire">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5850,12 +5896,14 @@
     </CUnit>
     <CUnit id="SporeCannon">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SporeCrawler">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5866,6 +5914,7 @@
     </CUnit>
     <CUnit id="SporeCrawlerUprooted">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5887,12 +5936,14 @@
     </CUnit>
     <CUnit id="Stargate">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="Starport">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5922,6 +5973,7 @@
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeStart value="1300"/>
         <LifeMax value="1300"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
@@ -6050,21 +6102,25 @@
         <TechAliasArray value="Alias_Starport"/>
         <GlossaryAlias value="Starport"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="StarportFlying">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="StarportReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="StarportTechLab">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6083,6 +6139,7 @@
     </CUnit>
     <CUnit id="StarportTechReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6202,6 +6259,7 @@
     </CUnit>
     <CUnit id="SuperWarpGate">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6212,6 +6270,7 @@
     </CUnit>
     <CUnit id="SupplyDepot">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6282,6 +6341,7 @@
         <HotkeyAlias value="SupplyDepot"/>
         <SelectAlias value="SupplyDepot"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/SupplyDepot"/>
     </CUnit>
     <CUnit id="SupplyDepot2Lowered">
@@ -6340,15 +6400,18 @@
         <SelectAlias value="SupplyDepot"/>
         <TechAliasArray value="Alias_SupplyDepot"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="SupplyDepotDrop">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="SupplyDepotLowered">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6380,6 +6443,7 @@
     </CUnit>
     <CUnit id="TRaynor01SignsDestructible1">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="TalDarimMothership">
@@ -6407,11 +6471,13 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="TalDarimPrisonCrystal">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="TankerTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6445,6 +6511,7 @@
     </CUnit>
     <CUnit id="TechLab">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6452,6 +6519,7 @@
     </CUnit>
     <CUnit id="TechReactor">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6470,6 +6538,7 @@
     </CUnit>
     <CUnit id="TemplarArchive">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6498,6 +6567,7 @@
     </CUnit>
     <CUnit id="TerrazineTank">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6508,6 +6578,7 @@
     </CUnit>
     <CUnit id="TestShop">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6778,6 +6849,7 @@
     </CUnit>
     <CUnit id="TwilightCouncil">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6865,6 +6937,7 @@
     </CUnit>
     <CUnit id="UltraliskCavern">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6943,6 +7016,7 @@
     </CUnit>
     <CUnit id="Virophage">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Footprint value="Virophage"/>
@@ -7046,6 +7120,7 @@
     </CUnit>
     <CUnit id="WarpGate">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7091,6 +7166,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="XelNagaPrisonConsole">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7100,26 +7176,32 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="XelNagaPrisonNorth">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="XelNagaPrisonNorthHeight2">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="XelNagaShrine">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
     </CUnit>
     <CUnit id="XelNagaShrineXil">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="XelNagaTemple">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="XelNagaTempleDoor">
@@ -7146,12 +7228,14 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="XelNagaWorldshipVault">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmor value="0"/>
     </CUnit>
     <CUnit id="Zealot">
@@ -7257,31 +7341,37 @@
     </CUnit>
     <CUnit id="ZhakulDasLibraryUnit">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZhakulDasLibraryUnitBurrowed">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZhakulDasLightBridge">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZhakulDasLightBridgeOff">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZhakulDasLightBridgeOffTopRight">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
     <CUnit id="ZhakulDasLightBridgeTopRight">
         <ArmorType value="Hero"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
