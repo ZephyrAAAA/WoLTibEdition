@@ -25,6 +25,15 @@
         <Pitch value="-4.000000,-4.000000"/>
         <Volume value="-2.000000,-2.000000"/>
     </CSound>
+    <CSound id="VultureBikes" parent="Campaign" Portrait="TychusPortrait" Subtitle="Vulture Bikes" Speaker="CharTychus" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Vulture Bikes.ogg"/>
+            <FacialAnim value="InfestedMarines"/>
+            <PortraitModel value="TychusPortrait"/>
+            <Speaker value="ConversationState/Characters/CharTychus"/>
+            <Subtitle value="VultureBikesVultureBikes"/>
+        </AssetArray>
+    </CSound>
     <CSound id="MengskCommander_NuclearAnnihilationUsed" parent="ACVO_Pings">
         <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed00.ogg" FacialGroup=""/>
         <AssetArray File="LocalizedData\Sounds\VO\Mengsk\MengskCommander_NuclearAnnihilationUsed01.ogg" FacialGroup=""/>
@@ -205,6 +214,15 @@
     <CSound id="Stone_Yes" parent="Alert">
         <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2270.ogg" FacialGroup=""/>
         <AssetArray File="LocalizedData\Sounds\VO\acObj_Stone_2279.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="InfestedMarines" parent="Campaign" Portrait="TychusPortrait" Subtitle="Infested Marines" Speaker="CharTychus" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Infested Marines.ogg"/>
+            <FacialAnim value="InfestedMarines"/>
+            <PortraitModel value="TychusPortrait"/>
+            <Speaker value="ConversationState/Characters/CharTychus"/>
+            <Subtitle value="InfestedMarines"/>
+        </AssetArray>
     </CSound>
     <CSound id="THorner01HornerKillTeams" parent="Campaign" Portrait="HornerPortrait" Subtitle="THorner01" Speaker="CharHorner" Line="KillTeams">
         <AssetArray index="0">
