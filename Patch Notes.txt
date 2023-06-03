@@ -31,10 +31,8 @@ Fortified bunker death animation is correct
 *Resume queue and place bunker are no longer the same hotkey
 *Spike death animation now leaves
 *Laser Drill death animation now leaves
-*Fixed ghost build radius?
 Bunkers now get fortified look if built after researching the upgrade
 Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
-*Renamed Concussive Grenades to Cannon Grenades
 Fixed refunding for cancelled upgrades not working sometimes
 Merc compound is no longer unlocked until you have at least 1 merc purchased
 
