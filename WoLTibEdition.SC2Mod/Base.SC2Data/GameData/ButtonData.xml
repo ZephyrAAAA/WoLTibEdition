@@ -109,6 +109,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
         <Icon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
     </CButton>
+    <CButton id="FirebatSquad">
+        <Icon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
+        <AlertIcon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Firebat"/>
+    </CButton>
     <CButton id="ForgottenParaphernalia">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
@@ -171,11 +177,29 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     <CButton id="Marauder">
         <Icon value="Assets\Textures\btn-squad-terran-marauder.dds"/>
     </CButton>
+    <CButton id="MarauderSquad">
+        <Icon value="Assets\Textures\btn-squad-terran-marauder.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marauder.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Marauder"/>
+    </CButton>
     <CButton id="Marine">
         <Icon value="Assets\Textures\btn-squad-terran-marine.dds"/>
     </CButton>
+    <CButton id="MarineSquad">
+        <Icon value="Assets\Textures\btn-squad-terran-marine.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marine.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Marine"/>
+    </CButton>
     <CButton id="Medic">
         <Icon value="Assets\Textures\btn-squad-terran-medic.dds"/>
+    </CButton>
+    <CButton id="MedicSquad">
+        <Icon value="Assets\Textures\btn-squad-terran-medic.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-medic.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Medic"/>
     </CButton>
     <CButton id="MedicCapturePassive">
         <Icon value="Assets\Textures\captureability.dds"/>
@@ -202,6 +226,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     <CButton id="Reaper">
         <AlertIcon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
         <Icon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
+    </CButton>
+    <CButton id="ReaperSquad">
+        <Icon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
+        <AlertIcon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Reaper"/>
     </CButton>
     <CButton id="ResearchScannerPacks">
         <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>

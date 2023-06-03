@@ -26,7 +26,7 @@ Reaper scanner upgrade no longer lies about what it costs.
 Reaper scanner upgrade is now 500.
 Marauder sqauds are now 900 each
 *Structures now say their armour type
-*Squad size buttons are now correct in icon and tooltip
+/Squad size buttons are now correct in icon and tooltip
 *Fortified bunker death animation?
 *Resume queue and place bunker are no longer the same hotkey
 *Spike death animation now leaves

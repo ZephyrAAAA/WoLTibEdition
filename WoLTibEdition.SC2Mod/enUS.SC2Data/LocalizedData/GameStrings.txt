@@ -193,6 +193,7 @@ Button/Name/DevastationAOE=Devastation AOE
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
 Button/Name/FenixDragoonAirBomb=Solarite Flare
+Button/Name/FirebatSquad=Firebat Squad
 Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
@@ -239,7 +240,10 @@ Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/LongRangeMassRecall=Long-Range Mass Recall
 Button/Name/MaelstromRounds=Smart Servos
+Button/Name/MarauderSquad=Marauder Squad
+Button/Name/MarineSquad=Marine Squad
 Button/Name/MedicCapturePassive=Capture Ability
+Button/Name/MedicSquad=Medic Squad
 Button/Name/MedivacLoadNearby=Load Nearby
 Button/Name/NeutralStructurePassive=Neutral Structure Passive
 Button/Name/NovaHeal=Heal
@@ -272,6 +276,7 @@ Button/Name/PsiDisruptor9=Psi Disruptor
 Button/Name/RallySCV=Set Worker Rally Point
 Button/Name/RavenRepairDrone=Repair Drone
 Button/Name/RavenScramblerMissile=Interference Matrix
+Button/Name/ReaperSquad=Reaper Squad
 Button/Name/RepairOrder=Repair
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
@@ -454,7 +459,7 @@ Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enab
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
 Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
-Button/Tooltip/FirebatSquad=A squad of 4 Firebats. Good against structures and infantry.
+Button/Tooltip/FirebatSquad=This is how many individual firebats you have.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionReactor=This Fusion Reactor provides a tremendous amount of power for base operations.
@@ -511,10 +516,10 @@ Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,Irra
 Button/Tooltip/JackhammerConcussionGrenade=Attack temporarily slows all units in target area.<n/><n/><c val="#ColorAttackInfo">Massive units are immune.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MaelstromRounds=Transforms 2x as fast, and can be loaded into transports while sieged.
-Button/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
-Button/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
+Button/Tooltip/MarauderSquad=This is how many individual marauders you have.
+Button/Tooltip/MarineSquad=This is how many individual marines you have.
 Button/Tooltip/MedicCapturePassive=Medics can capture <c val="FFFF00">Capturable Structures</c>, and are consumed by the action.
-Button/Tooltip/MedicSquad=A squad of 3 Medics. Heals nearby infantry.
+Button/Tooltip/MedicSquad=This is how many individual medics you have.
 Button/Tooltip/Medivac=Air transport. Heals nearby and loaded biological units.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MercCompound=Trains Mercenary units.
@@ -567,7 +572,7 @@ Button/Tooltip/Raven=Aerial support unit. Can use Seeker Missile, Point Defense 
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing <d ref="Effect,RaynorSnipeDamage,Amount"/> Rocket damage.
-Button/Tooltip/ReaperSquad=A squad of 4 Reapers. Good against infantry and structures, bad against anything else.
+Button/Tooltip/ReaperSquad=This is how many individual reapers you have.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
 Button/Tooltip/ReinforcedSuperstructure=Increases Turret life by 75.
