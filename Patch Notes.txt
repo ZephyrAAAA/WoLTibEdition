@@ -4,6 +4,7 @@ Civilians now have an armour type
 mohican atv now has an armour type
 Refinery Rally tip now uses the correct icon
 Firebats, Devil Dogs, and Perditions now have a Blue Flame passive, like hellions.
+Reapers and Firebat train button now have the correct icon.
 Changed the description of the blue flame passive to match the upgrade effect.
 Light Air armour is now Light Aircraft armour.
 Heavy Air armour is now Heavy Aircraft armour.
@@ -20,19 +21,21 @@ Siege tank passives are now correct
 Capturable Structures are no longer automatically attacked by your units if they're hostile
 Vulture now has a passive for EMP grenades
 Clarified the medic passive to say you can even capture hostile Capturable Structures
+Merc compound now has passives that say it unlocks merc topbars
+Reaper scanner upgrade no longer lies about what it costs.
+Reaper scanner upgrade is now 500.
+Marauder sqauds are now 900 each
 *Structures now say their armour type
 *Squad size buttons are now correct in icon and tooltip
 *Fortified bunker death animation?
 *Resume queue and place bunker are no longer the same hotkey
-*Silo death animation now leaves
 *Spike death animation now leaves
-*Fixed ghost build radius
+*Laser Drill death animation now leaves
+*Fixed ghost build radius?
 *Bunkers now get fortified look if built after researching the upgrade
 *Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
-*Power plants can no longer be depowered
 *Renamed Concussive Grenades to Cannon Grenades
 *Fixed refunding for cancelled things not working without a refinery
-*Merc compound now has passives that say it unlocks merc topbars
 *Merc compound is no longer unlocked until you have at least 1 merc purchased
 
 Liberation Day:
@@ -43,11 +46,12 @@ Power Plant help hover tip is now correct
 Resource caches tip is edited to remove vespene
 Supply Depot tip is now Power Plant
 
+Zero Hour:
+Increased main field regen by 33%
+The first ultra now comes earlier, to give more time to prepare
+
 Whispers of Doom:
 *Karass no longer goes backwards
-
-Outbreak:
-*Bonus markers now follow the infestors
 
 Trains:
 Added a starting merc compound
@@ -71,8 +75,13 @@ Added a starting merc compound
 Supernova:
 Added a starting merc compound
 
+Maw:
+Starting protoss no longer have upgrades
+Starting protoss group is now a void ray, 2 archons, and a stalker.
+
 Gates:
 Added a starting merc compound
 
 All-In:
 Added a starting merc compound
+*Implosion now ignores shields

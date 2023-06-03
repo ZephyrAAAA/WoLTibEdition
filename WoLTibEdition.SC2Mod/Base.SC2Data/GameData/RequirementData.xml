@@ -163,6 +163,12 @@
         <EditorCategories value="Race:Neutral"/>
         <NodeArray index="Show" Link="NotCountUpgradeLowPowerCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="ShowVehicleMercPassive">
+        <NodeArray index="Show" Link="OrCountUpgradeHireSpartanCompanyPHCompleteOnlyCountUpgradeHireSiegeBreakersPHCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ShowStarshipMercPassive">
+        <NodeArray index="Show" Link="OrCountUpgradeHireHelsAngelsPHCompleteOnlyCountUpgradeHireDuskWingPHCompleteOnlyCountUpgradeHireDukesRevengeCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="StaticDefBarracks">
         <NodeArray index="Use" Link="CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat"/>
     </CRequirement>

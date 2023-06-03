@@ -39,7 +39,6 @@
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorMercCompBuiltCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="MercCompBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementCountBehavior id="CountBehaviorPerditionTurretBuiltCompleteOnlyAtUnit">
@@ -252,7 +251,6 @@
         <Count Link="FusionCoreBuilt" State="CompleteOnlyAtUnit"/>
     </CRequirementCountBehavior>
     <CRequirementEq id="EqCountBehaviorMercCompBuiltCompleteOnlyAtUnit1">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountBehaviorMercCompBuiltCompleteOnlyAtUnit"/>
         <OperandArray index="1" value="1"/>
     </CRequirementEq>
@@ -376,5 +374,16 @@
     <CRequirementOr id="OrCountBehaviorSupplyDropCompleteOnlyAtUnitCountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit">
         <OperandArray value="CountBehaviorSupplyDropCompleteOnlyAtUnit"/>
         <OperandArray value="CountBehaviorSupplyDropEnRouteCompleteOnlyAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountUpgradeHireHelsAngelsPHCompleteOnlyCountUpgradeHireDuskWingPHCompleteOnlyCountUpgradeHireDukesRevengeCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeHireHelsAngelsPHCompleteOnly"/>
+        <OperandArray value="CountUpgradeHireDuskWingPHCompleteOnly"/>
+        <OperandArray value="CountUpgradeHireDukesRevengeCompleteOnly"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountUpgradeHireSpartanCompanyPHCompleteOnlyCountUpgradeHireSiegeBreakersPHCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeHireSpartanCompanyPHCompleteOnly"/>
+        <OperandArray value="CountUpgradeHireSiegeBreakersPHCompleteOnly"/>
     </CRequirementOr>
 </Catalog>

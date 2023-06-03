@@ -3966,6 +3966,9 @@
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
+            <LayoutButtons Face="InfantryMercenariesPassive" Type="Passive" Requirements="MercPHTrainMarine" Row="0" Column="0"/>
+            <LayoutButtons Face="VehicleMercenariesPassive" Type="Passive" Requirements="ShowVehicleMercPassive" Row="0" Column="1"/>
+            <LayoutButtons Face="StarshipMercenariesPassive" Type="Passive" Requirements="ShowStarshipMercPassive" Row="0" Column="2"/>
         </CardLayouts>
         <Radius value="1.5"/>
         <SeparationRadius value="1.5"/>

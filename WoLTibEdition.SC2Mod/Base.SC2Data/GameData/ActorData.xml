@@ -870,7 +870,7 @@
         <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
         <On Terms="UnitBirth.Bunker2" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
         <On Terms="UnitBirth.Bunker2" Target="ShrikeTurret" Send="Signal TurretShow"/>
-        <On Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
+        <On Terms="Upgrade.TerranBuildingArmor; ValidateUnit HasCargo" Send="AnimGroupApply Stand,Work Stand,Work,Start Stand,Work,End"/>
         <On Terms="Upgrade.TerranBuildingArmor.Add; ValidateUnit NotDeadOrConstruction" Send="ModelSwap BunkerUpgrade"/>
         <On Terms="UnitBirth.Bunker2" Send="StatusSet BunkerBuilt 1"/>
         <On Terms="Behavior.ShrikeTurret.On" Send="StatusSet ShrikeTurret 1"/>
@@ -881,6 +881,8 @@
         <On Terms="UnitDeathCustomize; IsStatus ShrikeTurret 1" Target="ShrikeTurretPlaceholder" Send="Signal TurretDeath"/>
         <On Terms="UnitBirth.Bunker2" Target="ShrikeTurretPlaceholder" Send="Destroy"/>
         <On Terms="UnitBirth.Bunker2" Target="ShrikeTurret" Send="Signal TurretShow"/>
+        <On Terms="UnitBirth.Bunker2" Send="StatusSet BunkerBuilt 1"/>
+        <On Terms="UnitBirth.Bunker2; ValidateUnit NeosteelFramePurchased" Send="ModelSwap BunkerUpgrade"/>
         <Model value="Bunker"/>
         <CreepHeightClass value="Small"/>
         <BuildModel value="Bunker"/>

@@ -1550,8 +1550,8 @@
             <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
             <Unit value="Ghost"/>
         </InfoArray>
-        <InfoArray index="Train4" Time="8">
-            <Resource index="Vespene" value="800"/>
+        <InfoArray index="Train4" Time="9">
+            <Resource index="Vespene" value="900"/>
             <Button DefaultButtonFace="Marauder" State="Restricted"/>
             <Unit value="MarauderSquad"/>
         </InfoArray>
@@ -2129,8 +2129,8 @@
                 <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
-        <InfoArray index="Research7" Time="30" Upgrade="ReaperScannerPack">
-            <Resource index="Vespene" value="1000"/>
+        <InfoArray index="Research7" Time="15" Upgrade="ReaperScannerPack">
+            <Resource index="Vespene" value="500"/>
             <Button DefaultButtonFace="ResearchScannerPacks" State="Restricted" Requirements="LearnReaperScannerPack">
                 <Flags index="UseDefaultButton" value="1"/>
                 <Flags index="CreateDefaultButton" value="1"/>

@@ -107,6 +107,7 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     </CButton>
     <CButton id="Firebat">
         <AlertIcon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
+        <Icon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
     </CButton>
     <CButton id="ForgottenParaphernalia">
         <Icon value="Assets\Textures\btn-upgrade-protoss-groundweaponslevel3.dds"/>
@@ -158,6 +159,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
+    <CButton id="InfantryMercenariesPassive">
+        <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        <HotkeyAlias value="InfantryMercenaries3"/>
+        <DefaultButtonLayout Column="3"/>
+    </CButton>
     <CButton id="MaelstromRounds">
         <Icon value="Assets\Textures\btn-upgrade-terran-transformationservos.dds"/>
     </CButton>
@@ -194,6 +201,7 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     </CButton>
     <CButton id="Reaper">
         <AlertIcon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
+        <Icon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
     </CButton>
     <CButton id="ResearchScannerPacks">
         <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
@@ -209,6 +217,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <Icon value="Assets\Textures\btn-ability-protoss-thermallance.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-thermallance.dds"/>
         <EditorCategories value="Race:Protoss"/>
+    </CButton>
+    <CButton id="StarshipMercenariesPassive">
+        <Icon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-vikingmercenary-fighter.dds"/>
+        <HotkeyAlias value="StarshipMercenaries3"/>
+        <DefaultButtonLayout Column="3"/>
     </CButton>
     <CButton id="TakeParts">
         <Icon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
@@ -281,6 +295,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="TakeTheDrill"/>
     </CButton>
     <CButton id="TerranVehicleWeaponsUltraCapacitorsLevel2"/>
+    <CButton id="VehicleMercenariesPassive">
+        <Icon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-siegetankmercenary-tank.dds"/>
+        <HotkeyAlias value="VehicleMercenaries10"/>
+        <DefaultButtonLayout Row="2"/>
+    </CButton>
     <CButton id="Veterancy">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
