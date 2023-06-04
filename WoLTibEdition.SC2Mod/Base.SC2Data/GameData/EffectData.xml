@@ -1880,7 +1880,7 @@
     </CEffectCreateHealer>
     <CEffectDamage id="P38ScytheGuassPistol">
         <AttributeBonus index="Light" value="0"/>
-        <Amount value="12"/>
+        <Amount value="15"/>
     </CEffectDamage>
     <CEffectCreateHealer id="BuildingRepair">
         <ValidatorArray value="noMarkers"/>

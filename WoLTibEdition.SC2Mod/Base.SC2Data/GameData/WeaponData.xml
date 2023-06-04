@@ -901,10 +901,12 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="P38ScytheGuassPistol">
         <AttackType value="Chaos"/>
         <Icon value="Assets\Textures\btn-ability-terran-snipe-color.dds"/>
-        <Period value="1"/>
-        <Backswing value="0.6"/>
+        <Period value="0.5"/>
+        <Backswing value="0.3"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
+        <MinScanRange value="7"/>
+        <Range value="6"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -1077,6 +1079,9 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <RandomDelayMax value="-0.95"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
+        <MinScanRange value="5.5"/>
+        <Range value="4.5"/>
+        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquadCharge" parent="D8Charge">
         <Name value="Weapon/Name/ReaperSquadCharge"/>

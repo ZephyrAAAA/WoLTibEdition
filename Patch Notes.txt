@@ -26,15 +26,20 @@ Reaper scanner upgrade no longer lies about what it costs.
 Reaper scanner upgrade is now 500.
 Marauder sqauds are now 900 each
 Structures now say their armour type
-/Squad size buttons are now correct in icon and tooltip
-Fortified bunker death animation is correct
-*Resume queue and place bunker are no longer the same hotkey
-*Spike death animation now leaves
-*Laser Drill death animation now leaves
 Bunkers now get fortified look if built after researching the upgrade
 Cancel button on CC/Cranes no longer block affecting cranes if both are selected.
 Fixed refunding for cancelled upgrades not working sometimes
 Merc compound is no longer unlocked until you have at least 1 merc purchased
+Fortified bunker death animation is correct
+/Squad size buttons are now correct in icon and tooltip
+*Resume queue and place bunker are no longer the same hotkey
+*Spike death animation now leaves
+*Laser Drill death animation now leaves
+Reapers now shoot twice as fast and hit 25% harder
+Reaper Uranium rounds upgrade now gives +5 damage
+Reapers now have 6 base range
+*Reapers now have a toggle for their anti-structure attack, that is default off
+*On Redstone, the Reaper scanner pack upgrade is now pointed out
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
