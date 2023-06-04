@@ -2420,9 +2420,9 @@
             <Button DefaultButtonFace="VikingFighter" State="Restricted"/>
             <Unit value="VikingFighter"/>
         </InfoArray>
-        <InfoArray index="Train6" Time="20">
-            <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="BuildHercules" State="Restricted" Requirements="SupplyDepot2Lower"/>
+        <InfoArray index="Train6" Time="30">
+            <Resource index="Vespene" value="3000"/>
+            <Button DefaultButtonFace="BuildHercules" State="Restricted"/>
             <Unit value="Hercules"/>
         </InfoArray>
         <InfoArray index="Train7" Time="25">
