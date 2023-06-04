@@ -1733,8 +1733,8 @@ UI/AchievementDisable=Achievements have been disabled due to <c val="00FF00">Tib
 UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armor </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armor has a tooltip stating what armor type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armor types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
 UI/HelpGameMechanic_DamageTypes_Name=Damage Types
 UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Veins are green crystals which yield 14 minerals per harvest, and do 10 harvests/s.</li><li>Once a Mineral Vein is depleted, it can no longer be harvested from, and will eventually be replaced by a nearby Node.</li></ul>
-UI/HelpGameMechanic_NeutralStructures_Description=Some maps have <c val="FFFF00">Neutral Structures </c>that can be captured to provide a bonus. These bonuses can be immediate, or over time while you own it.
-UI/HelpGameMechanic_NeutralStructures_Name=Neutral Structures
+UI/HelpGameMechanic_NeutralStructures_Description=Some maps have <c val="FFFF00">Capturable Structures </c>that can be captured to provide a bonus. These bonuses can be immediate, or over time while you own it.
+UI/HelpGameMechanic_NeutralStructures_Name=Capturable Structures
 UI/HelpGameMechanic_Power=Power
 UI/HelpGameMechanic_Power_Description=Buildings require Power to function. Low power causes Production buildings to work slower, while Tech and Defensive structures are disabled entirely.
 UI/HelpGameMechanic_RichMinerals_Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
