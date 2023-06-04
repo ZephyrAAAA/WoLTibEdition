@@ -33,7 +33,7 @@ Merc compound is no longer unlocked until you have at least 1 merc purchased
 Fortified bunker death animation is correct
 /Squad size buttons are now correct in icon and tooltip
 *Resume queue and place bunker are no longer the same hotkey
-*Spike death animation now leaves
+*Spike death animation now leaves, You can use action in triggers "Remove Death Models in Region"
 *Laser Drill death animation now leaves
 Reapers now shoot twice as fast and hit 25% harder
 Reaper Uranium rounds upgrade now gives +5 damage
@@ -45,6 +45,7 @@ Immortal unit tip is now correct
 Science vessel has extra thrust
 Science vessel unit tip is now correct
 Irradiate no longer lies about only spreading to enemy units
+*Dominion mercs are now called the royal guard name, in addition to being skinned
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -58,7 +59,7 @@ Zero Hour:
 Increased main field regen by 33%
 The first ultra now comes earlier, to give more time to prepare
 
-Whispers of the Past:
+Whispers of the Future:
 Karass no longer goes backwards
 Karass should be more responsive with his abilities
 
