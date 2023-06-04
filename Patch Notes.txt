@@ -8,7 +8,7 @@ Reapers and Firebat train button now have the correct icon.
 Changed the description of the blue flame passive to match the upgrade effect.
 Light Air armour is now Light Aircraft armour.
 Heavy Air armour is now Heavy Aircraft armour.
-Fixed marauder armour name
+*Fixed marauder armour name and tooltip
 Gas pickups are not called gas pickups
 Lab research text for autoref is now correct
 Neutral Structures are now called Capturable Structures
@@ -41,6 +41,12 @@ Reapers now have 6 base range
 *Reapers now have a toggle for their anti-structure attack, that is default off
 *On Redstone, the Reaper scanner pack upgrade is now pointed out
 Hercules is more expensive
+*Immortal no longer has hardened shield passive
+*Immortal unit tip is now correct
+*Science vessel has extra thrust
+*Science vessel unit tip is now correct
+*Raven unit tip is now correct
+*Irradiate no longer lies about only spreading to enemy units
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -54,9 +60,12 @@ Zero Hour:
 Increased main field regen by 33%
 The first ultra now comes earlier, to give more time to prepare
 
-Whispers of Doom:
+Whispers of the Past:
 Karass no longer goes backwards
 Karass should be more responsive with his abilities
+
+Echoes of Doom:
+*Reinforcements are more consistent in how strict they are about killing the base guarding them
 
 Trains:
 Added a starting merc compound
@@ -73,9 +82,13 @@ Orlan's Mineral Spikes now have a help tip to capture them to reduce his income.
 
 Engine of Destruction:
 Added a missile turret to deal with cloak
+*Loki is now easier
 
 Media Blitz:
 Added a starting merc compound
+
+The Dig:
+*That one mineral spike now has something to say you need your base before you can capture it
 
 Supernova:
 Added a starting merc compound
@@ -83,6 +96,12 @@ Added a starting merc compound
 Maw:
 Starting protoss no longer have upgrades
 Starting protoss group is now a void ray, 2 archons, and a stalker.
+
+Breakout:
+*Tosh can now talk and walk at the same time
+
+Ghost of a Chance:
+*Nuclear Launch Detected alert is no longer fucked up
 
 Gates:
 Added a starting merc compound
