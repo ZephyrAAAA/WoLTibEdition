@@ -5494,6 +5494,8 @@
         <ArmorType value="None"/>
         <LifeArmorTip value="Unit/Tip/Air"/>
         <Food value="0"/>
+        <Description value="Button/Tooltip/BuildScienceVessel"/>
+        <Speed value="2.75"/>
     </CUnit>
     <CUnit id="ScienceVesselACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

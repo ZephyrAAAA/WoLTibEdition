@@ -41,12 +41,10 @@ Reapers now have 6 base range
 *Reapers now have a toggle for their anti-structure attack, that is default off
 *On Redstone, the Reaper scanner pack upgrade is now pointed out
 Hercules is more expensive
-*Immortal no longer has hardened shield passive
-*Immortal unit tip is now correct
-*Science vessel has extra thrust
-*Science vessel unit tip is now correct
-*Raven unit tip is now correct
-*Irradiate no longer lies about only spreading to enemy units
+Immortal unit tip is now correct
+Science vessel has extra thrust
+Science vessel unit tip is now correct
+Irradiate no longer lies about only spreading to enemy units
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
