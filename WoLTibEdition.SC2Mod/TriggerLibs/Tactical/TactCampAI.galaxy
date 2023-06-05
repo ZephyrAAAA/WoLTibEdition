@@ -978,7 +978,7 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 	}
 	
 	if (UnitAbilityCheck(aiUnit, "UnburrowAtPoint", true)){
-		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("1"));
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("1"));
 		ord = AICreateOrder(player, "UnburrowAtPoint", 0);
 		//mark = "Abil/UnburrowAtPoint/AI";
 		loc = AIBestTargetPoint(
@@ -998,8 +998,13 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 			return;
 		}
 	}
-	if (UnitAbilityCheck(aiUnit, "FungalGrowthBrutalisk", true)) {
-		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("2"));
+	if (UnitAbilityExists(aiUnit, "BurrowBrutalisk") && UnitGetChargeUsed(aiUnit, "Brutalisk") == 2) {
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("3"));
+		ord = AICreateOrder(player, "BurrowBrutalisk", 0);
+		AICast(aiUnit, ord, c_noMarker, c_castHold);
+	}
+	else if (UnitAbilityCheck(aiUnit, "FungalGrowthBrutalisk", true)) {
+		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("2"));
 		ord = AICreateOrder(player, "FungalGrowthBrutalisk", 0);
 		//mark = "Abil/FungalGrowthBrutalisk/AI";
 		loc = AIBestTargetPoint(
@@ -1018,11 +1023,6 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 			// UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("returning: air bomb"));
 			return;
 		}
-	}
-	else if (UnitAbilityExists(aiUnit, "BurrowBrutalisk") && UnitGetChargeUsed(aiUnit, "Brutalisk") == 2) {
-		UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("3"));
-		ord = AICreateOrder(player, "BurrowBrutalisk", 0);
-		AICast(aiUnit, ord, c_noMarker, c_castHold);
 	}
 }
 
