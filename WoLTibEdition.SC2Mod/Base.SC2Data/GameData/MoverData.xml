@@ -88,6 +88,21 @@
     <CMoverMissile id="HybridCPlasmaWeapon">
         <MotionPhases index="0" MaxSpeed="15" ThrowBandYaw="-360,-360,-360,-360" ThrowBandPitch="-360,-360,-360,-360"/>
     </CMoverMissile>
+    <CMoverMissile id="LokiHurricaneMissile">
+        <MotionPhases index="0">
+            <Acceleration value="6"/>
+            <Speed value="0.6015"/>
+            <MaxSpeed value="4.7968"/>
+            <ThrowBandYaw value="74.9597,-74.9597,64.995,-64.995"/>
+        </MotionPhases>
+        <MotionPhases index="1">
+            <Acceleration value="1.75"/>
+            <AccelerationRange value="4.25"/>
+            <MaxSpeed value="9.6015"/>
+            <ThrowBandYaw value="-360,-360,-360,-360"/>
+            <ThrowBandPitch value="-360,-360,-360,-360"/>
+        </MotionPhases>
+    </CMoverMissile>
     <CMoverMissile id="PunisherGrenadesWeapon">
         <MotionPhases index="0">
             <MaxSpeed value="30"/>
