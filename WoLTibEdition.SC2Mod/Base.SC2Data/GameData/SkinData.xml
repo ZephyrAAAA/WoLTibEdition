@@ -15,6 +15,16 @@
         <ReplacementArray Catalog="Model" From="WreckingCrewMorph" To="VikingMengskMorph"/>
         <ReplacementArray Catalog="Model" From="DukesRevenge" To="BattlecruiserMengsk"/>
         <ReplacementArray Catalog="Model" From="DukesRevengeDeath" To="BattlecruiserMengskDeath"/>
+        <EffectArray Operation="Set" Reference="Unit,DevilDog,Name" Value="Unit/Name/DevilDog"/>
+        <EffectArray Operation="Set" Reference="Unit,DukesRevenge,Name" Value="Unit/Name/DukesRevenge"/>
+        <EffectArray Operation="Set" Reference="Unit,DuskWing,Name" Value="Unit/Name/DuskWing"/>
+        <EffectArray Operation="Set" Reference="Unit,HammerSecurity,Name" Value="Unit/Name/HammerSecurity"/>
+        <EffectArray Operation="Set" Reference="Unit,HelsAngelAssault,Name" Value="Unit/Name/HelsAngelAssault"/>
+        <EffectArray Operation="Set" Reference="Unit,HelsAngelFighter,Name" Value="Unit/Name/HelsAngelFighter"/>
+        <EffectArray Operation="Set" Reference="Unit,SiegeBreaker,Name" Value="Unit/Name/SiegeBreaker"/>
+        <EffectArray Operation="Set" Reference="Unit,SiegeBreakerSieged,Name" Value="Unit/Name/SiegeBreakerSieged"/>
+        <EffectArray Operation="Set" Reference="Unit,SpartanCompany,Name" Value="Unit/Name/SpartanCompany"/>
+        <EffectArray Operation="Set" Reference="Unit,WarPig,Name" Value="Unit/Name/WarPig"/>
     </CSkin>
     <!--
 Find: ^'([a-zA-Z]+)(..?)
@@ -456,76 +466,76 @@ Replace: \t<CSkin id="\13">\r\n\t\t<ReplacementArray Catalog="Button" From="\1\2
     <CSkin id="CallInGoldenArmada14">
         <ReplacementArray Catalog="Button" From="CallInGoldenArmada3" To="CallInGoldenArmada14"/>
     </CSkin>
-	<CSkin id="ChronoDevice3">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice3"/>
-	</CSkin>
-	<CSkin id="ChronoDevice4">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice4"/>
-	</CSkin>
-	<CSkin id="ChronoDevice5">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice5"/>
-	</CSkin>
-	<CSkin id="ChronoDevice6">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice6"/>
-	</CSkin>
-	<CSkin id="ChronoDevice7">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice7"/>
-	</CSkin>
-	<CSkin id="ChronoDevice8">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice8"/>
-	</CSkin>
-	<CSkin id="ChronoDevice9">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice9"/>
-	</CSkin>
-	<CSkin id="ChronoDevice10">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice10"/>
-	</CSkin>
-	<CSkin id="ChronoDevice11">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice11"/>
-	</CSkin>
-	<CSkin id="ChronoDevice12">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice12"/>
-	</CSkin>
-	<CSkin id="ChronoDevice13">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice13"/>
-	</CSkin>
-	<CSkin id="ChronoDevice14">
-		<ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice14"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar3">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar3"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar4">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar4"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar5">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar5"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar6">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar6"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar7">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar7"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar8">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar8"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar9">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar9"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar10">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar10"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar11">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar11"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar12">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar12"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar13">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar13"/>
-	</CSkin>
-	<CSkin id="CallDarkTemplar14">
-		<ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar14"/>
-	</CSkin>
+    <CSkin id="ChronoDevice3">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice3"/>
+    </CSkin>
+    <CSkin id="ChronoDevice4">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice4"/>
+    </CSkin>
+    <CSkin id="ChronoDevice5">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice5"/>
+    </CSkin>
+    <CSkin id="ChronoDevice6">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice6"/>
+    </CSkin>
+    <CSkin id="ChronoDevice7">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice7"/>
+    </CSkin>
+    <CSkin id="ChronoDevice8">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice8"/>
+    </CSkin>
+    <CSkin id="ChronoDevice9">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice9"/>
+    </CSkin>
+    <CSkin id="ChronoDevice10">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice10"/>
+    </CSkin>
+    <CSkin id="ChronoDevice11">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice11"/>
+    </CSkin>
+    <CSkin id="ChronoDevice12">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice12"/>
+    </CSkin>
+    <CSkin id="ChronoDevice13">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice13"/>
+    </CSkin>
+    <CSkin id="ChronoDevice14">
+        <ReplacementArray Catalog="Button" From="ChronoDevice3" To="ChronoDevice14"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar3">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar3"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar4">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar4"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar5">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar5"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar6">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar6"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar7">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar7"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar8">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar8"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar9">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar9"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar10">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar10"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar11">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar11"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar12">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar12"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar13">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar13"/>
+    </CSkin>
+    <CSkin id="CallDarkTemplar14">
+        <ReplacementArray Catalog="Button" From="CallDarkTemplar3" To="CallDarkTemplar14"/>
+    </CSkin>
 </Catalog>
