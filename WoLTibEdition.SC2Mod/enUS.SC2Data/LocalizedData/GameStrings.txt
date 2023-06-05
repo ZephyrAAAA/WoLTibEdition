@@ -778,10 +778,12 @@ ConversationState/StoryTips/Raynor03_Bunker=<c val="FF8000">Bunker</c>
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
 ConversationState/StoryTips/Raynor03_EngineeringBay=<c val="FF8000">Engineering Bay</c>
 ConversationState/StoryTips/Raynor03_EngineeringBay/Info/Description=Upgrade structure -- You can increase your base defense's range and armor by purchasing upgrades at the <c val="FFFF00">Engineering Bay</c>. An Engineering Bay also allows you to construct <c val="FFFF00">Missile Turrets</c>.
+ConversationState/StoryTips/Tosh01_Reapers=<c val="FF8000">Reaper</c>
+ConversationState/StoryTips/Tosh01_Reapers/Info/Description=Light harassment infantry -- <c val="FFFF00">Reapers </c>are fast-moving raiders that can jump up and down cliffs. Reapers are armed with pistols and equipped with D-8 Charges, explosive devices that do extra damage against structures. Can attack ground units only.<n/><n/>Reapers have an upgrade to give them Detection and more sight range, available from the Shadow Ops.
 ConversationState/StoryTips/Tosh01_RichMinerals=<c val="FF8040">Rich Minerals</c>
 ConversationState/StoryTips/Tosh01_RichMinerals/Info/Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
 ConversationState/StoryTips/Tychus05_RipFields=<c val="FF8000">Rip-Fields</c>
-ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field,</c> units will be slowed by 50%. Protoss units have <c val="FFFF00">Shields</c> and are not affected.
+ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, unshielded units will be slowed by 50%.
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
 ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
 ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods
