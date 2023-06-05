@@ -458,7 +458,7 @@ Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage 
 Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, Vehicles, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armory<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/>- Power Plant Upgrade <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
 Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
-Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/FeedbackGhost=Deals 400 shield damage. Drains all energy from the target, then deals 2 damage per point of energy.
 Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
 Button/Tooltip/FirebatSquad=This is how many individual firebats you have.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
@@ -1803,6 +1803,7 @@ Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
 Unit/Name/WarPigSquad=War Pig Squad
 Unit/Name/WarpConduit=Warp Conduit
+Unit/ShieldArmorName/TerranPlasmaShields=Terran Plasma Shields
 Unit/Tip/Air=<c val="FFBF00">Light Aircraft</c> Armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
 Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Aircraft</c> armor
@@ -1878,6 +1879,7 @@ Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
 Weapon/Tip/ExplosiveCharges=Can only be used against structures.
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
+Weapon/Tip/HybridF=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
 Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry<n/>Good against light aircraft<n/>Moderate against light vehicles<n/>Bad against heavy vehicles, heavy aircraft and structures

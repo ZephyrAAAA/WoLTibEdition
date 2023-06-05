@@ -922,6 +922,40 @@ void lib3B48F5E9_gt_SquadShields_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Drill and Spike debris
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_DrillandSpikedebris_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    point lv_point;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Conditions
+    if (testConds) {
+        if (!(((UnitGetType(EventUnit()) == "DrakkenLaserDrill") || (UnitGetType(EventUnit()) == "MineralSpike")))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_point = UnitGetPosition(EventUnit());
+    Wait(10.0, c_timeGame);
+    libNtve_gf_RemoveDeathModelsinRegionImmediately(RegionCircle(lv_point, 10.0));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_DrillandSpikedebris_Init () {
+    lib3B48F5E9_gt_DrillandSpikedebris = TriggerCreate("lib3B48F5E9_gt_DrillandSpikedebris_Func");
+    TriggerAddEventUnitDied(lib3B48F5E9_gt_DrillandSpikedebris, null);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Full Power Drill
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_FullPowerDrill_Func (bool testConds, bool runActions) {
@@ -1381,6 +1415,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_TerranUpgradeSwap_Init();
     lib3B48F5E9_gt_SquadHealth_Init();
     lib3B48F5E9_gt_SquadShields_Init();
+    lib3B48F5E9_gt_DrillandSpikedebris_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
     lib3B48F5E9_gt_GrantDTTopbar_Init();

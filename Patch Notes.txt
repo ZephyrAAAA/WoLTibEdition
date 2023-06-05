@@ -8,7 +8,7 @@ Reapers and Firebat train button now have the correct icon.
 Changed the description of the blue flame passive to match the upgrade effect.
 Light Air armour is now Light Aircraft armour.
 Heavy Air armour is now Heavy Aircraft armour.
-*Fixed marauder armour name and tooltip
+Fixed marauder armour name and tooltip
 Gas pickups are not called gas pickups
 Lab research text for autoref is now correct
 Neutral Structures are now called Capturable Structures
@@ -33,8 +33,8 @@ Merc compound is no longer unlocked until you have at least 1 merc purchased
 Fortified bunker death animation is correct
 /Squad size buttons are now correct in icon and tooltip
 *Resume queue and place bunker are no longer the same hotkey
-*Spike death animation now leaves, You can use action in triggers "Remove Death Models in Region"
-*Laser Drill death animation now leaves
+Spike death animation now leaves
+Laser Drill death animation now leaves
 Reapers now shoot twice as fast and hit 25% harder
 Reaper Uranium rounds upgrade now gives +5 damage
 Reapers now have 6 base range
@@ -48,9 +48,9 @@ Irradiate no longer lies about only spreading to enemy units
 *Dominion mercs are now called the royal guard name, in addition to being skinned
 *Doodads can no longer be irradiated
 *Enemy banshees and wraiths are more consistent about cloaking.
-*Ghost and Spectre passives are now correct
-*Shields now have a name
-*Feedback now says it can hit shields
+Ghost and Spectre passives are now correct
+Shields now have a name
+Feedback now says it can hit shields
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -94,7 +94,7 @@ Added a starting merc compound
 
 Piercing the Shroud:
 *Reinforcement numbers are now accurate
-*Hybrid has a damage type
+Hybrid has a damage type
 
 The Dig:
 *That one mineral spike now has something to say you need your base before you can capture it

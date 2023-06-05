@@ -671,6 +671,7 @@
         <BehaviorArray index="0" Link="Biosteel"/>
         <BehaviorArray index="1" removed="1"/>
         <Food value="0"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="BansheeACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -892,6 +893,7 @@
             <LayoutButtons index="7" removed="1"/>
         </CardLayouts>
         <TacticalAI value="BattlecruiserDefensiveMatrix"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="BattlecruiserACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2344,6 +2346,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="0"/>
         <AlliedPushPriority value="-1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="DevourerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2434,6 +2437,7 @@
         <TacticalAI value="BattlecruiserDefensiveMatrix"/>
         <SubgroupPriority value="16"/>
         <HotkeyAlias value="Battlecruiser"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="DumpTruck">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2447,6 +2451,7 @@
         <Food value="0"/>
         <BehaviorArray index="0" Link="Biosteel"/>
         <SubgroupPriority value="11"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Egg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2792,6 +2797,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="FirebatACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2809,6 +2815,7 @@
             <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="1"/>
         </CardLayouts>
         <SelectAlias value="FirebatSquad"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="FlamingBetty">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2975,8 +2982,8 @@
         <CardLayouts index="0">
             <LayoutButtons index="8" Face="WeaponsFree" AbilCmd="GhostWeaponsFree,Execute" Row="1"/>
             <LayoutButtons index="9" Face="OcularImplants" Type="Passive" AbilCmd="255,255" Row="1" Column="0"/>
-            <LayoutButtons index="10" Face="CriusSuit" Type="Passive" AbilCmd="255,255" Row="1" Column="1"/>
-            <LayoutButtons index="11" Face="Veterancy" Type="Passive" AbilCmd="" Row="1" Column="4"/>
+            <LayoutButtons index="10" Face="Veterancy" Type="Passive" AbilCmd="" Row="1" Column="4"/>
+            <LayoutButtons index="11" removed="1"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
             <LayoutButtons index="14" removed="1"/>
@@ -2987,6 +2994,7 @@
         <Food value="0"/>
         <WeaponArray Link="ExplosiveCharges"/>
         <StationaryTurningRate value="2879.8242"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -3086,6 +3094,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="GoliathACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3153,6 +3162,7 @@
         <WeaponArray Link="HailstormLauncherMerc"/>
         <AbilArray index="3" removed="1"/>
         <AlliedPushPriority value="-1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Hatchery">
         <ArmorType value="Hero"/>
@@ -3186,6 +3196,7 @@
             <LayoutButtons index="5" AbilCmd="255,255"/>
             <LayoutButtons index="6" AbilCmd="255,255"/>
         </CardLayouts>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="AirTransport">
         <DeathRevealRadius value="3"/>
@@ -3248,6 +3259,7 @@
         <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
         <WeaponArray Link="WreckingCrewFighterGround"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="HelsAngelFighter">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3256,6 +3268,7 @@
         <Food value="0"/>
         <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Hercules">
         <AbilArray Link="AirTransportMag"/>
@@ -3263,6 +3276,7 @@
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="HerculesACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3892,6 +3906,7 @@
         </CardLayouts>
         <ArmorType value="Normal"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Marauder">
         <ArmorType value="Normal"/>
@@ -3902,6 +3917,8 @@
         <BehaviorArray Link="HailstormLaunchers"/>
         <WeaponArray Link="HailstormLauncher"/>
         <AlliedPushPriority value="-1"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="MarauderACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3929,6 +3946,7 @@
         <BehaviorArray index="0" Link="HailstormLaunchers"/>
         <BehaviorArray Link="SquadMainUnit"/>
         <SelectAlias value="MarauderSquad"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Marine">
         <Food value="0"/>
@@ -3937,6 +3955,7 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <AlliedPushPriority value="-1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="MarineACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3996,6 +4015,7 @@
         <AbilArray index="1" Link="move"/>
         <AbilArray index="2" Link="attack"/>
         <AlliedPushPriority value="-1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="MedicSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -4012,6 +4032,7 @@
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="MedicCapturePassive" Type="Passive" Row="1" Column="1"/>
         </CardLayouts>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Medivac">
         <ArmorType value="None"/>
@@ -4036,6 +4057,7 @@
             <LayoutButtons index="10" Face="StimRedirect" Type="AbilCmd" AbilCmd="StimpackRedirect,Execute" Row="2" Column="1"/>
             <LayoutButtons index="11" removed="1"/>
         </CardLayouts>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="MedivacMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4368,6 +4390,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Veterancy" Type="Passive" Row="1" Column="4"/>
         </CardLayouts>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Nuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4439,6 +4462,7 @@
         <WeaponArray index="1" Link="OdinAntiAir"/>
         <Attributes index="Heroic" value="1"/>
         <AlliedPushPriority value="2"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="OdinBuild">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4808,6 +4832,7 @@
             <Name value="Name/PredatorShield"/>
             <Tooltip value="Tip/PredatorShield"/>
         </EquipmentArray>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="PreserverA">
         <LifeArmor value="0"/>
@@ -5012,6 +5037,7 @@
             <LayoutButtons index="7" Row="1" Column="0"/>
             <LayoutButtons Face="RavenRepairDrone" Type="AbilCmd" AbilCmd="RepairDrone,Execute" Row="2" Column="3"/>
         </CardLayouts>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="RavenScramblerMissile" parent="MISSILE_INVULNERABLE">
         <Race value="Terr"/>
@@ -5029,6 +5055,7 @@
         <BehaviorArray Link="CommandoSniperResist"/>
         <ArmorType value="Normal"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Raynor01">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5038,6 +5065,7 @@
         <LifeMax value="250"/>
         <LifeArmor value="1"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="RaynorCommando">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5054,6 +5082,7 @@
             <LayoutButtons Face="DutchPlaceTurret" Type="AbilCmd" AbilCmd="DutchPlaceTurret,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="3"/>
         </CardLayouts>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Reactor">
         <ArmorType value="Hero"/>
@@ -5079,6 +5108,7 @@
         <LifeMax value="60"/>
         <AlliedPushPriority value="-1"/>
         <CargoSize value="1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="ReaperPlacement">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5391,6 +5421,7 @@
             <ChanceArray index="Idle" value="33"/>
             <ChanceArray index="Turn" value="33"/>
         </Fidget>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SILiberatorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5495,6 +5526,7 @@
         <LifeArmorTip value="Unit/Tip/Air"/>
         <Food value="0"/>
         <Description value="Button/Tooltip/BuildScienceVessel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Speed value="2.75"/>
     </CUnit>
     <CUnit id="ScienceVesselACGluescreenDummy">
@@ -5706,6 +5738,7 @@
         <LifeArmorTip value="Unit/Tip/Heavy"/>
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SiegeBreakerSieged">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5716,6 +5749,7 @@
         <Food value="0"/>
         <CargoSize value="4"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SiegeTank">
         <ArmorType value="Large"/>
@@ -5726,6 +5760,7 @@
         <BehaviorArray index="1" removed="1"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SiegeTankACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5745,6 +5780,7 @@
         <CargoSize value="4"/>
         <BehaviorArray index="0" Link="Biosteel"/>
         <BehaviorArray index="1" removed="1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SiegeTankSkinPreview">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5794,6 +5830,7 @@
         <LifeArmorTip value="Unit/Tip/Light"/>
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SpawningPool">
         <ArmorType value="Hero"/>
@@ -5833,9 +5870,9 @@
             <LayoutButtons index="5" Face="Cancel" AbilCmd="SpectreNuke,Cancel" Column="4"/>
             <LayoutButtons index="6" Face="SpectreHoldFire" AbilCmd="SpectreHoldFire,Execute" Row="1" Column="2"/>
             <LayoutButtons index="7" Face="SpectreWeaponsFree" AbilCmd="SpectreWeaponsFree,Execute" Row="1" Column="3"/>
-            <LayoutButtons index="8" Face="NyxClassCloakingModule" Type="Passive" AbilCmd="255,255" Column="1"/>
-            <LayoutButtons index="9" Face="UltrasonicPulse" AbilCmd="UltrasonicPulse,Execute" Row="2" Column="0"/>
-            <LayoutButtons index="10" Face="Veterancy" AbilCmd="" Requirements="" Column="4"/>
+            <LayoutButtons index="8" Face="UltrasonicPulse" AbilCmd="UltrasonicPulse,Execute" Row="2" Column="0"/>
+            <LayoutButtons index="9" Face="Veterancy" Type="Passive" AbilCmd="" Column="4"/>
+            <LayoutButtons index="10" removed="1"/>
             <LayoutButtons index="11" removed="1"/>
             <LayoutButtons index="12" removed="1"/>
             <LayoutButtons index="13" removed="1"/>
@@ -5847,6 +5884,7 @@
         <WeaponArray Link="ExplosiveCharges"/>
         <StationaryTurningRate value="2879.8242"/>
         <SubgroupPriority value="18"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6157,6 +6195,7 @@
         <LifeStart value="200"/>
         <LifeMax value="200"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Stone">
         <DeathRevealRadius value="3"/>
@@ -6208,6 +6247,7 @@
         <EditorCategories value="ObjectFamily:Campaign,ObjectType:Unit"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <Subtitle value="StoneSubtitle"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="StoneZealot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6426,6 +6466,7 @@
         <LifeMax value="250"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <WeaponArray index="1" removed="1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="SwarmHostACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6611,6 +6652,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <WeaponArray Turret="Hellion"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="ThorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6671,6 +6713,7 @@
         <LifeMax value="200"/>
         <BehaviorArray index="0" Link="HailstormLaunchers"/>
         <BehaviorArray Link="SquadMainUnit"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -6688,6 +6731,7 @@
         <SubgroupPriorityDelta value="8"/>
         <LifeStart value="270"/>
         <LifeMax value="270"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -6706,6 +6750,7 @@
         <LifeStart value="240"/>
         <LifeMax value="240"/>
         <Mover value="Colossus"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>
@@ -6999,6 +7044,7 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <WeaponArray Link="LanzerTorpedoesGround"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="VikingFighter">
         <ArmorType value="Medium"/>
@@ -7007,6 +7053,7 @@
         <BehaviorArray index="0" Link="Biosteel"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="VikingMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7049,6 +7096,7 @@
         <ArmorType value="Medium"/>
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="VultureACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7065,6 +7113,7 @@
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <Food value="0"/>
         <AlliedPushPriority value="-1"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="WarPigSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -7083,6 +7132,7 @@
         <SelectAlias value="MarineSquad"/>
         <LifeStart value="450"/>
         <LifeMax value="450"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7155,6 +7205,7 @@
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
         <WeaponArray index="1" Turret="Goliath"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="WraithACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
