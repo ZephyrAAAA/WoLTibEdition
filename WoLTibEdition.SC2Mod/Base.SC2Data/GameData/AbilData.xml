@@ -1173,7 +1173,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="InfantryMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="2000"/>
+            <Resource index="Minerals" value="2500"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
@@ -2532,7 +2532,7 @@
         <DataCollection value="InfantryMercenaries"/>
         <Effect index="0" value="StarshipMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="6000"/>
+            <Resource index="Minerals" value="7500"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
@@ -2549,7 +2549,7 @@
         <DataCollection value="InfantryMercenaries"/>
         <Effect index="0" value="VehicleMercSet"/>
         <Cost>
-            <Resource index="Minerals" value="4500"/>
+            <Resource index="Minerals" value="5600"/>
             <Cooldown Location="Global" TimeUse="300"/>
         </Cost>
         <Range value="500"/>
