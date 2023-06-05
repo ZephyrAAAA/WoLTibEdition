@@ -114,8 +114,11 @@ Maw:
 Starting protoss no longer have upgrades
 Starting protoss group is now a void ray, 2 archons, and a stalker.
 Rip-field tip no longer implies protoss are just completely immune
-*Fixed the mothership sometimes not recalling
-*Added more autosaves
+Fixed the mothership sometimes not recalling
+Fixed the mothership doing aggressive wormhole first
+Added an autosave after each momma wave
+Fixed mom's harass warping
+The protoss rebuilding buildings now directly counts
 
 Ghost of a Chance:
 *Nuclear Launch Detected alert is no longer fucked up
