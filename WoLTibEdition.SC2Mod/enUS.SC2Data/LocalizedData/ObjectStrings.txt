@@ -1300,6 +1300,7 @@ Validator/Name/LT3Markers=LT 3 Markers
 Validator/Name/MaarAllowedToTeleport=Maar Allowed To Teleport
 Validator/Name/NoNearbyInfestedTumors=No Nearby Infested Tumors
 Validator/Name/NoNearbyRepairDrones=No Nearby Repair Drones
+Validator/Name/NotBurningFromWallOfFire=Not Burning From Wall Of Fire
 Validator/Name/NotChannelingCausticSpray=Not Channeling Caustic Spray
 Validator/Name/NotDefensiveMatrixd=Not Defensive Matrixd
 Validator/Name/NotHaveAutoHarvester=Not Have AutoHarvester
