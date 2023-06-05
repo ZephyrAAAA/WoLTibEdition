@@ -102,6 +102,7 @@ Abil/Name/WarPigSquad=War Pig Squad
 Abil/Name/ZeratulSeek=Zeratul Seek
 Abil/Name/ZergHypervirus=Zerg Hypervirus
 Abil/Name/que1Passive=Queue (1) Passive
+Alert/Text/CalldownLaunch=<c val="ffff00">Calldown detected.</c>
 Alert/Text/MULEExpired=Structure complete.
 Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/DamageMarker=Damage Marker

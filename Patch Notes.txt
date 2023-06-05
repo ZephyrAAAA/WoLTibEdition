@@ -51,6 +51,7 @@ Squad size buttons are now correct in icon and tooltip
 *Reapers now have a toggle for their anti-structure attack, that is default off
 Doodads can no longer be irradiated
 Enemy banshees and wraiths are more consistent about cloaking.
+Nuclear Launch Detected alert is no longer fucked up
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -103,7 +104,7 @@ Hybrid has a damage type
 Brutalisk murderous now
 
 The Dig:
-*That one mineral spike now has something to say you need your base before you can capture it
+That one mineral spike now has something to say you need your base before you can capture it
 Laser Drill no longer has a weird double upgrade
 
 Supernova:
@@ -119,9 +120,6 @@ Fixed the mothership doing aggressive wormhole first
 Added an autosave after each momma wave
 Fixed mom's harass warping
 The protoss rebuilding buildings now directly counts
-
-Ghost of a Chance:
-*Nuclear Launch Detected alert is no longer fucked up
 
 Gates:
 Added a starting merc compound
