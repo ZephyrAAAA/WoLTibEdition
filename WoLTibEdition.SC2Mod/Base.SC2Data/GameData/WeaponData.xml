@@ -1079,13 +1079,10 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         </Cost>
         <Backswing value="0"/>
         <Effect value="SquadAttack"/>
-        <RandomDelayMin value="-0.95"/>
-        <RandomDelayMax value="-0.95"/>
+        <RandomDelayMin value="-0.45"/>
+        <RandomDelayMax value="-0.45"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-        <MinScanRange value="5.5"/>
-        <Range value="4.5"/>
-        <Period value="1"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquadCharge" parent="D8Charge">
         <Name value="Weapon/Name/ReaperSquadCharge"/>
