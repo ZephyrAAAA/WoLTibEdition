@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CTacticalSet id="Wraith">
+        <Array value="WraithCloaked"/>
+        <Array value="WraithDeCloaked"/>
+    </CTacticalSet>
+    <CTacticalOrder id="WraithCloaked">
+        <Abil value="WraithCloak"/>
+        <AbilCmdIndex value="1"/>
+        <Validator value="TacticalBansheeCloakOff"/>
+    </CTacticalOrder>
+    <CTacticalOrder id="WraithDeCloaked">
+        <Abil value="WraithCloak"/>
+        <Validator value="TacticalBansheeCloakOn"/>
+    </CTacticalOrder>
     <!--Infestor no longer has InfestorDisease ability-->
     <CTacticalSet id="Infestor">
         <Array value="InfestorFungal"/>
