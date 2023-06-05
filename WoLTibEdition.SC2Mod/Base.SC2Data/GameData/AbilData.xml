@@ -1102,7 +1102,7 @@
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="ThorTheftSwitch"/>
         <Range value="0.1"/>
-        <CmdButtonArray index="Execute" DefaultButtonFace="TakeParts">
+        <CmdButtonArray index="Execute" DefaultButtonFace="TakeParts" Requirements="UseImmortailityProtocol">
             <Flags index="UseDefaultButton" value="1"/>
             <Flags index="CreateDefaultButton" value="1"/>
         </CmdButtonArray>
