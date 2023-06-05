@@ -1,6 +1,7 @@
 ﻿Button/Hotkey/AstralProjection=C
 Button/Hotkey/BioSpeed=B
 Button/Hotkey/BuildDevastatorTurret=D
+Button/Hotkey/Bunker=B
 Button/Hotkey/Carrier=A
 Button/Hotkey/ChronoDevice3=
 Button/Hotkey/DeathRecall=R

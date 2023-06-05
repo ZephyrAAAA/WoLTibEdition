@@ -47,7 +47,7 @@ Shields now have a name
 Feedback now says it can hit shields
 Merc calldowns are more expensive now
 Squad size buttons are now correct in icon and tooltip
-*Resume queue and place bunker are no longer the same hotkey
+Resume queue and place bunker are no longer the same hotkey, bunker is now B
 *Reapers now have a toggle for their anti-structure attack, that is default off
 Doodads can no longer be irradiated
 Enemy banshees and wraiths are more consistent about cloaking.
