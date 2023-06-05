@@ -46,6 +46,11 @@ Science vessel has extra thrust
 Science vessel unit tip is now correct
 Irradiate no longer lies about only spreading to enemy units
 *Dominion mercs are now called the royal guard name, in addition to being skinned
+*Doodads can no longer be irradiated
+*Enemy banshees and wraiths are more consistent about cloaking.
+*Ghost and Spectre passives are now correct
+*Shields now have a name
+*Feedback now says it can hit shields
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -85,6 +90,11 @@ Added a missile turret to deal with cloak
 
 Media Blitz:
 Added a starting merc compound
+*You no longer start with part theft
+
+Piercing the Shroud:
+*Reinforcement numbers are now accurate
+*Hybrid has a damage type
 
 The Dig:
 *That one mineral spike now has something to say you need your base before you can capture it
@@ -96,9 +106,6 @@ Added a starting merc compound
 Maw:
 Starting protoss no longer have upgrades
 Starting protoss group is now a void ray, 2 archons, and a stalker.
-
-Breakout:
-*Tosh can now talk and walk at the same time
 
 Ghost of a Chance:
 *Nuclear Launch Detected alert is no longer fucked up
