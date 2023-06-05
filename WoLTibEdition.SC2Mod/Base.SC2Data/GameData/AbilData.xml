@@ -455,6 +455,8 @@
                 <TimeUse value="20"/>
             </Charge>
         </Cost>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="NoDeceleration" value="1"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="LokiYamato">
         <Cost index="0">

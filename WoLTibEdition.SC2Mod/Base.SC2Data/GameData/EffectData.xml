@@ -1264,6 +1264,7 @@
     </CEffectDamage>
     <CEffectCreatePersistent id="LokiHurricaneMissileDamageDelayPersistent">
         <Flags index="Channeled" value="0"/>
+        <ExpireDelay value="2.5"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="LokiHurricaneMissileDamagePersistent">
         <Flags index="Channeled" value="0"/>
