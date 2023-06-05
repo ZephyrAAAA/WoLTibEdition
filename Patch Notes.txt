@@ -46,11 +46,11 @@ Ghost and Spectre passives are now correct
 Shields now have a name
 Feedback now says it can hit shields
 Merc calldowns are more expensive now
-*Doodads can no longer be irradiated
-*Enemy banshees and wraiths are more consistent about cloaking.
 Squad size buttons are now correct in icon and tooltip
 *Resume queue and place bunker are no longer the same hotkey
 *Reapers now have a toggle for their anti-structure attack, that is default off
+*Doodads can no longer be irradiated
+*Enemy banshees and wraiths are more consistent about cloaking.
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
