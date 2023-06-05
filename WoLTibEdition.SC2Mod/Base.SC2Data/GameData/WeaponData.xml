@@ -909,8 +909,9 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Backswing value="0.3"/>
         <Options index="OnlyFireWhileInAttackOrder" value="0"/>
         <Options index="OnlyFireAtAttackOrderTarget" value="0"/>
-        <MinScanRange value="7"/>
+        <MinScanRange value="5"/>
         <Range value="6"/>
+        <Tip value="Weapon/Tip/Sniper"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -1071,7 +1072,6 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="ReaperSquad" parent="P38ScytheGuassPistol">
         <Name value="Weapon/Name/ReaperSquad"/>
-        <Tip value="Weapon/Tip/Sniper"/>
         <DisplayName value="Weapon/Name/ReaperSquad"/>
         <Marker Link="Weapon/ReaperSquad"/>
         <Cost>
