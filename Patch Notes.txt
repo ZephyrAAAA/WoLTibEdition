@@ -107,6 +107,7 @@ The Dig:
 
 Supernova:
 Added a starting merc compound
+Autorepair will no longer repair buildings in the firewall
 
 Maw:
 Starting protoss no longer have upgrades

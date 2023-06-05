@@ -127,6 +127,9 @@
         <AreaArray Radius="9" Validator="IsRepairDrone"/>
         <Compare value="LE"/>
     </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="NotBurningFromWallOfFire">
+        <Behavior value="WallOfFireBurn"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="NotChannelingCausticSpray">
         <ResultFailed value="CantQueueThatOrder"/>
         <WhichUnit Value="Caster"/>

@@ -1414,6 +1414,7 @@
         <UseMarkerArray index="Channel" value="0"/>
         <CmdButtonArray index="Execute" DefaultButtonFace="BuildingRepair"/>
         <AutoCastValidatorArray value="BuildingNotBeingRepaired"/>
+        <AutoCastValidatorArray value="NotBurningFromWallOfFire"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="CCSell">
         <EditorCategories value="AbilityorEffectType:Units"/>
