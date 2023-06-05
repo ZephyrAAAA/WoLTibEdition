@@ -211,6 +211,15 @@
         <Find value="1"/>
         <Value value="AdvancedHealingAIPurchased"/>
     </CValidatorPlayerRequirement>
+    <CValidatorUnitBehaviorStackAlias id="ReaperCanShootStructures">
+        <WhichUnit Value="Source"/>
+        <Find value="0"/>
+        <StackAlias value="ReaperShootStructure"/>
+    </CValidatorUnitBehaviorStackAlias>
+    <CValidatorCombine id="ReaperCanShootStructuresOrNotStructure">
+        <CombineArray value="ReaperCanShootStructures"/>
+        <CombineArray value="NotStructureTarget"/>
+    </CValidatorCombine>
     <CValidatorCombine id="RipField">
         <CombineArray value="IsProtoss"/>
         <CombineArray value="ShieldGZero"/>

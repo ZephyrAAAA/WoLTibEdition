@@ -6746,6 +6746,7 @@
         <AbilArray index="3" Link="ReaperSquad"/>
         <AbilArray index="4" Link="BioMode"/>
         <AbilArray Link="que1Passive"/>
+        <AbilArray Link="ReaperShootStructure"/>
         <WeaponArray Link="ReaperSquad"/>
         <WeaponArray Link="ReaperSquadCharge"/>
         <CardLayouts index="0">
@@ -6753,6 +6754,8 @@
             <LayoutButtons Face="BioSpeed" Type="AbilCmd" AbilCmd="BioMode,On" Row="1" Column="1"/>
             <LayoutButtons Face="CombatDrugs" Type="Passive" Requirements="UseG4ClusterBombs" Row="2" Column="2"/>
             <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="2"/>
+            <LayoutButtons Face="ReaperBombBuildings" Type="AbilCmd" AbilCmd="ReaperShootStructure,On" Row="1" Column="3"/>
+            <LayoutButtons Face="ReaperNotBombBuildings" Type="AbilCmd" AbilCmd="ReaperShootStructure,Off" Row="1" Column="4"/>
         </CardLayouts>
         <LifeStart value="240"/>
         <LifeMax value="240"/>

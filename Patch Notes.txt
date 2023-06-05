@@ -33,8 +33,7 @@ Merc compound is no longer unlocked until you have at least 1 merc purchased
 Fortified bunker death animation is correct
 Spike death animation now leaves
 Laser Drill death animation now leaves
-Reapers now shoot twice as fast and hit 25% harder
-Reaper Uranium rounds upgrade now gives +5 damage
+Reapers now shoot twice as fast
 Reapers now have 6 base range
 Hercules is more expensive
 Immortal unit tip is now correct
@@ -48,7 +47,7 @@ Feedback now says it can hit shields
 Merc calldowns are more expensive now
 Squad size buttons are now correct in icon and tooltip
 Resume queue and place bunker are no longer the same hotkey, bunker is now B
-*Reapers now have a toggle for their anti-structure attack, that is default off
+Reapers now have a toggle for their anti-structure attack, that is default off
 Doodads can no longer be irradiated
 Enemy banshees and wraiths are more consistent about cloaking.
 Nuclear Launch Detected alert is no longer fucked up

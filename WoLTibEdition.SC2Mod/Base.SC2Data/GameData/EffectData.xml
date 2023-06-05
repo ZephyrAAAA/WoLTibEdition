@@ -1849,6 +1849,25 @@
         <AreaArray index="0" Radius="5"/>
         <SearchFilters value="-;Player,Destructible,Stasis,Dead,Invulnerable"/>
     </CEffectEnumArea>
+    <CEffectApplyBehavior id="ReaperSquadShootStructure">
+        <EditorCategories value=""/>
+        <Behavior value="ReaperShootStructure"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ReaperSquadNoShootStructure">
+        <ValidatorArray index="0" value="ReaperSquadShootStructureTargetFilters"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="ReaperShootStructure"/>
+    </CEffectRemoveBehavior>
+    <CEffectEnumMagazine id="ReaperSquadShootStructureIterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectExternal value="ReaperSquadShootStructure"/>
+    </CEffectEnumMagazine>
+    <CEffectEnumMagazine id="ReaperSquadNoShootStructureIterate">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <EffectExternal value="ReaperSquadNoShootStructure"/>
+    </CEffectEnumMagazine>
     <CEffectSet id="RemoveBuiltBehaviors3">
         <EditorCategories value=""/>
         <EffectArray value="PerditionTurretPlace"/>
@@ -1881,7 +1900,7 @@
     </CEffectCreateHealer>
     <CEffectDamage id="P38ScytheGuassPistol">
         <AttributeBonus index="Light" value="0"/>
-        <Amount value="15"/>
+        <Amount value="12"/>
     </CEffectDamage>
     <CEffectCreateHealer id="BuildingRepair">
         <ValidatorArray value="noMarkers"/>
@@ -1894,6 +1913,7 @@
     </CEffectCreateHealer>
     <CEffectCreatePersistent id="P38ScytheGuassPistolBurst">
         <PeriodicPeriodArray index="1" value="0"/>
+        <ValidatorArray value="ReaperCanShootStructuresOrNotStructure"/>
     </CEffectCreatePersistent>
     <CEffectDamage id="ParasiteSporeDamage">
         <AttributeBonus index="Massive" value="0"/>
@@ -2209,6 +2229,17 @@
         <AttributeBonus index="Armored" value="0"/>
         <Amount value="500"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="ReaperSquadAttack">
+        <ValidatorArray value="ReaperCanShootStructuresOrNotStructure"/>
+        <EditorCategories value=""/>
+        <WhichLocation Value="CasterUnit"/>
+        <Flags index="Channeled" value="1"/>
+        <InitialEffect value="SquadMainAttack"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="SquadAttackIterate"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.25"/>
+    </CEffectCreatePersistent>
     <CEffectApplyBehavior id="SquadBunkerUnload">
         <EditorCategories value=""/>
     </CEffectApplyBehavior>

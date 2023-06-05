@@ -234,6 +234,14 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <RandomDelayMin value="0"/>
         <RandomDelayMax value="0"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="D8Charge">
+        <Options index="Disabled" value="1"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <Range value="1"/>
+        <AttackType value="Pierce"/>
+        <AllowedMovement value="Moving"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HybridF">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <AttackType value="Pierce"/>
@@ -278,13 +286,6 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <AttackType value="Siege"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <Tip value="Weapon/Tip/Rocket"/>
-    </CWeaponLegacy>
-    <CWeaponLegacy id="D8Charge">
-        <AttackType value="Pierce"/>
-        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
-        <Options index="Melee" value="1"/>
-        <Range value="1"/>
-        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="DRBattlecruiserA">
         <RandomDelayMin value="-0.125"/>
@@ -912,6 +913,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <MinScanRange value="5"/>
         <Range value="6"/>
         <Tip value="Weapon/Tip/Sniper"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ParasiteSpore">
         <AttackType value="Siege"/>
@@ -1078,7 +1080,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
             <Cooldown Link="Weapon/ReaperSquad"/>
         </Cost>
         <Backswing value="0"/>
-        <Effect value="SquadAttack"/>
+        <Effect value="ReaperSquadAttack"/>
         <RandomDelayMin value="-0.45"/>
         <RandomDelayMax value="-0.45"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
@@ -1087,7 +1089,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="ReaperSquadCharge" parent="D8Charge">
         <Name value="Weapon/Name/ReaperSquadCharge"/>
         <DisplayName value="Weapon/Name/ReaperSquadCharge"/>
-        <MinScanRange value="5.5"/>
+        <MinScanRange value="6"/>
         <Range value="1.5"/>
         <Marker Link="Weapon/ReaperSquadCharge"/>
         <Cost>
@@ -1100,7 +1102,10 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <RandomDelayMax value="-1.75"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-        <Options index="Melee" value="0"/>
+        <Options index="Disabled" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <AttackType value="Pierce"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>

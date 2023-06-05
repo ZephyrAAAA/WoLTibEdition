@@ -638,6 +638,14 @@
             <Flags index="ToSelection" value="1"/>
         </CmdButtonArray>
     </CAbilEffectTarget>
+    <CAbilBehavior id="ReaperShootStructure">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="Decal_Spray_0059_01"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="Decal_Spray_0058_01"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <BehaviorArray value="ReaperSquadShootStructure"/>
+    </CAbilBehavior>
     <CAbilEffectInstant id="RepairDrone">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Effect index="0" value="RepairDroneReleaseCreateUnit"/>

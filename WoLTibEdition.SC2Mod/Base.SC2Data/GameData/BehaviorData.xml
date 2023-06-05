@@ -333,6 +333,26 @@
         <DisableValidatorArray value="HaveReaperScannerPack"/>
         <Modification SightBonus="2" Detect="5" DetectFilters="-;Missile"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="ReaperShootStructure">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="D8Charge"/>
+            <WeaponEnableArray value="ReaperSquadCharge"/>
+        </Modification>
+        <StackAlias value="ReaperShootStructure"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ReaperSquadShootStructure">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="ReaperSquadShootStructureIterate"/>
+        <FinalEffect value="ReaperSquadNoShootStructureIterate"/>
+        <Modification>
+            <WeaponEnableArray value="D8Charge"/>
+            <WeaponEnableArray value="ReaperSquadCharge"/>
+        </Modification>
+        <StackAlias value="ReaperShootStructure"/>
+    </CBehaviorBuff>
     <CBehaviorBuff id="RipField">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="AbilityorEffectType:Units"/>
@@ -782,7 +802,7 @@
     <CBehaviorBuff id="SquadAttack">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <Duration value="0.3"/>
-        <Modification RangedWeaponRange="2">
+        <Modification MoveSpeedMultiplier="5" AccelerationMultiplier="5" RangedWeaponRange="2">
             <AbilClassEnableArray index="CAbilAttack" value="1"/>
         </Modification>
         <FinalEffect value="SquadStop"/>

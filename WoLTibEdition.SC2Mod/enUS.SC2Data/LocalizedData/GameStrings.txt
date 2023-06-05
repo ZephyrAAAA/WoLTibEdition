@@ -64,6 +64,7 @@ Abil/Name/PauseResumeQueueShared=PauseResumeQueueShared
 Abil/Name/PowerStructure=Power Structure
 Abil/Name/PsiDisruptor=Psi Disruptor
 Abil/Name/RavenScramblerMissile=Scrambler Missile
+Abil/Name/ReaperShootStructure=Reaper Shoot Structure
 Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
@@ -281,6 +282,8 @@ Button/Name/PsiDisruptor9=Psi Disruptor
 Button/Name/RallySCV=Set Worker Rally Point
 Button/Name/RavenRepairDrone=Repair Drone
 Button/Name/RavenScramblerMissile=Interference Matrix
+Button/Name/ReaperBombBuildings=Reaper Bomb Buildings
+Button/Name/ReaperNotBombBuildings=Reaper Not Bomb Buildings
 Button/Name/ReaperSquad=Reaper Squad
 Button/Name/RepairOrder=Repair
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
@@ -577,6 +580,8 @@ Button/Tooltip/Raven=Aerial support unit. Can use Seeker Missile, Point Defense 
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing <d ref="Effect,RaynorSnipeDamage,Amount"/> Rocket damage.
+Button/Tooltip/ReaperBombBuildings=Orders the reaper squad to use its explosive charges against structures.
+Button/Tooltip/ReaperNotBombBuildings=Orders the reaper squad to use its pistols against structures.
 Button/Tooltip/ReaperSquad=This is how many individual reapers you have.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
@@ -1166,6 +1171,11 @@ Effect/Name/RallyIterate=Rally Iterate
 Effect/Name/RavenScramblerDummy=RavenScramblerDummy
 Effect/Name/RavenScramblerSwitchInitial=RavenScramblerSwitchInitial
 Effect/Name/RaynorSnipeOrderWrapper=Raynor Snipe (Order Wrapper)
+Effect/Name/ReaperSquadAttack=Reaper Squad Attack
+Effect/Name/ReaperSquadNoShootStructure=Reaper Squad No Shoot Structure
+Effect/Name/ReaperSquadNoShootStructureIterate=Reaper Squad No Shoot Structure Iterate
+Effect/Name/ReaperSquadShootStructure=Reaper Squad Shoot Structure
+Effect/Name/ReaperSquadShootStructureIterate=Reaper Squad Shoot Structure Iterate
 Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
 Effect/Name/RemoveBuiltBehaviors3=Remove Built Behaviors 3

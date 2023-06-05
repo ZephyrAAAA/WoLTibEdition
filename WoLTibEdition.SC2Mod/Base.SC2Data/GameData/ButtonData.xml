@@ -245,6 +245,14 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
         <Icon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
     </CButton>
+    <CButton id="ReaperBombBuildings">
+        <Icon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-kd8chargeex3.dds"/>
+    </CButton>
+    <CButton id="ReaperNotBombBuildings">
+        <Icon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-infantryweaponslevel0.dds"/>
+    </CButton>
     <CButton id="ReaperSquad">
         <Icon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
         <AlertIcon value="Assets\Textures\btn-squad-terran-reaper.dds"/>
