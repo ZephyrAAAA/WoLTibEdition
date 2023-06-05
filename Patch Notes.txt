@@ -31,26 +31,26 @@ Cancel button on CC/Cranes no longer block affecting cranes if both are selected
 Fixed refunding for cancelled upgrades not working sometimes
 Merc compound is no longer unlocked until you have at least 1 merc purchased
 Fortified bunker death animation is correct
-/Squad size buttons are now correct in icon and tooltip
-*Resume queue and place bunker are no longer the same hotkey
 Spike death animation now leaves
 Laser Drill death animation now leaves
 Reapers now shoot twice as fast and hit 25% harder
 Reaper Uranium rounds upgrade now gives +5 damage
 Reapers now have 6 base range
-*Reapers now have a toggle for their anti-structure attack, that is default off
 Hercules is more expensive
 Immortal unit tip is now correct
 Science vessel has extra thrust
 Science vessel unit tip is now correct
 Irradiate no longer lies about only spreading to enemy units
 Dominion mercs are now called the royal guard name, in addition to being skinned
-*Doodads can no longer be irradiated
-*Enemy banshees and wraiths are more consistent about cloaking.
 Ghost and Spectre passives are now correct
 Shields now have a name
 Feedback now says it can hit shields
 Merc calldowns are more expensive now
+*Doodads can no longer be irradiated
+*Enemy banshees and wraiths are more consistent about cloaking.
+Squad size buttons are now correct in icon and tooltip
+*Resume queue and place bunker are no longer the same hotkey
+*Reapers now have a toggle for their anti-structure attack, that is default off
 
 Liberation Day:
 Squad tip is now a normal tip, rather than a new unit tip.
@@ -104,7 +104,7 @@ Brutalisk murderous now
 
 The Dig:
 *That one mineral spike now has something to say you need your base before you can capture it
-*Laser Drill no longer has a weird double upgrade?
+Laser Drill no longer has a weird double upgrade
 
 Supernova:
 Added a starting merc compound
@@ -115,6 +115,7 @@ Starting protoss no longer have upgrades
 Starting protoss group is now a void ray, 2 archons, and a stalker.
 Rip-field tip no longer implies protoss are just completely immune
 *Fixed the mothership sometimes not recalling
+*Added more autosaves
 
 Ghost of a Chance:
 *Nuclear Launch Detected alert is no longer fucked up

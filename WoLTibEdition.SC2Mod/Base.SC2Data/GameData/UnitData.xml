@@ -2811,11 +2811,12 @@
         <AbilArray index="3" Link="DevilDogSquad"/>
         <WeaponArray Link="DevilDogSquad"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="DevilDogSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="FirebatSquad2" Type="AbilCmd" AbilCmd="DevilDogSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="1"/>
         </CardLayouts>
         <SelectAlias value="FirebatSquad"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/DevilDogSquad"/>
     </CUnit>
     <CUnit id="FlamingBetty">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3907,6 +3908,7 @@
         <ArmorType value="Normal"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/FirebatSquad"/>
     </CUnit>
     <CUnit id="Marauder">
         <ArmorType value="Normal"/>
@@ -3941,12 +3943,13 @@
         <WeaponArray Link="HammerSecuritiesSquad"/>
         <WeaponArray Link="HammerSecuritiesSquad@2"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,0" Row="1" Column="0"/>
+            <LayoutButtons Face="MarauderSquad2" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,Ammo1" Row="1" Column="0"/>
         </CardLayouts>
         <BehaviorArray index="0" Link="HailstormLaunchers"/>
         <BehaviorArray Link="SquadMainUnit"/>
         <SelectAlias value="MarauderSquad"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/HammerSecuritiesSquad"/>
     </CUnit>
     <CUnit id="Marine">
         <Food value="0"/>
@@ -4033,6 +4036,7 @@
             <LayoutButtons Face="MedicCapturePassive" Type="Passive" Row="1" Column="1"/>
         </CardLayouts>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/MedicSquad"/>
     </CUnit>
     <CUnit id="Medivac">
         <ArmorType value="None"/>
@@ -6714,6 +6718,7 @@
         <BehaviorArray index="0" Link="HailstormLaunchers"/>
         <BehaviorArray Link="SquadMainUnit"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/MarauderSquad"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -6732,6 +6737,7 @@
         <LifeStart value="270"/>
         <LifeMax value="270"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/MarineSquad"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -6751,6 +6757,7 @@
         <LifeMax value="240"/>
         <Mover value="Colossus"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/ReaperSquad"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>
@@ -7125,7 +7132,7 @@
         <AbilArray Link="que1Passive"/>
         <WeaponArray Link="WarPigSquad"/>
         <CardLayouts index="0">
-            <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="WarPigSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="MarineSquad2" Type="AbilCmd" AbilCmd="WarPigSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
@@ -7133,6 +7140,7 @@
         <LifeStart value="450"/>
         <LifeMax value="450"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <Description value="Unit/Tooltip/WarPigSquad"/>
     </CUnit>
     <CUnit id="Warbot">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

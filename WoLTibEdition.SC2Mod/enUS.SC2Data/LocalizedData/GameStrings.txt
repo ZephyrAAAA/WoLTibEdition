@@ -195,6 +195,7 @@ Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
 Button/Name/FenixDragoonAirBomb=Solarite Flare
 Button/Name/FirebatSquad=Firebat Squad
+Button/Name/FirebatSquad2=Devil Dog Squad
 Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
@@ -242,7 +243,9 @@ Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/LongRangeMassRecall=Long-Range Mass Recall
 Button/Name/MaelstromRounds=Smart Servos
 Button/Name/MarauderSquad=Marauder Squad
+Button/Name/MarauderSquad2=Hammer Security Squad
 Button/Name/MarineSquad=Marine Squad
+Button/Name/MarineSquad2=War Pig Squad
 Button/Name/MedicCapturePassive=Capture Ability
 Button/Name/MedicSquad=Medic Squad
 Button/Name/MedivacLoadNearby=Load Nearby
@@ -452,7 +455,6 @@ Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
 Button/Tooltip/Depower=Switches power state of the selected building.
 Button/Tooltip/DevastationAOE=Attack does AOE in a small area.
 Button/Tooltip/DevastationTurret=Primary anti-armor defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><c val="FFE303">Detector</c>
-Button/Tooltip/DevilDogSquad=A squad of 4 Devil Dogs. Good against structures and infantry.
 Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage. 
 Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
 Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, Vehicles, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armory<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/>- Power Plant Upgrade <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
@@ -461,6 +463,7 @@ Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Deals 400 shield damage. Drains all energy from the target, then deals 2 damage per point of energy.
 Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
 Button/Tooltip/FirebatSquad=This is how many individual firebats you have.
+Button/Tooltip/FirebatSquad2=This is how many individual firebats you have.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionReactor=This Fusion Reactor provides a tremendous amount of power for base operations.
@@ -469,7 +472,6 @@ Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><
 Button/Tooltip/GhostAcademySpectre=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Spectres (Requires Armory)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GravityRift=Creates a gravity Vortex that slows units in the target area, and damages them for <d ref="Effect,GravityRiftDamage,Amount * Effect,GravityRiftCP,PeriodCount"/>. Lasts for <d ref="Effect,GravityRiftCP,PeriodCount * Effect,GravityRiftCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
-Button/Tooltip/HammerSecuritiesSquad=A squad of 2 Hammer Securities. Good against vehicles and buildings. Good against air with an upgrade.
 Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
 Button/Tooltip/HiveMindEmulator10=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -519,7 +521,9 @@ Button/Tooltip/JackhammerConcussionGrenade=Attack temporarily slows all units in
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
 Button/Tooltip/MaelstromRounds=Transforms 2x as fast, and can be loaded into transports while sieged.
 Button/Tooltip/MarauderSquad=This is how many individual marauders you have.
+Button/Tooltip/MarauderSquad2=This is how many individual marauders you have.
 Button/Tooltip/MarineSquad=This is how many individual marines you have.
+Button/Tooltip/MarineSquad2=This is how many individual marines you have.
 Button/Tooltip/MedicCapturePassive=Medics can capture <c val="FFFF00">Capturable Structures</c>, and are consumed by the action.
 Button/Tooltip/MedicSquad=This is how many individual medics you have.
 Button/Tooltip/Medivac=Air transport. Heals nearby and loaded biological units.
@@ -686,7 +690,6 @@ Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability
 Button/Tooltip/VikingFighter=Durable support flyer. Loaded with rapid fire AOE air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
 Button/Tooltip/VultureEMPPassive=Attacks disable mechanical units and structures for 1s.
-Button/Tooltip/WarPigSquad=A squad of 6 War Pigs. Good against infantry.
 Button/Tooltip/YamatoGun=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoCPU,PeriodCount*Effect,YamatoU,Amount"/> damage.
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -1822,6 +1825,14 @@ Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Aircraft</c> armor
 Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
 Unit/Tip/Structure=<c val="FFBF00">Structure</c> Armor
+Unit/Tooltip/DevilDogSquad=A squad of 4 Devil Dogs. Good against structures and infantry.
+Unit/Tooltip/FirebatSquad=A squad of 4 Firebats. Good against structures and infantry.
+Unit/Tooltip/HammerSecuritiesSquad=A squad of 2 Hammer Securities. Good against vehicles and buildings. Good against air with an upgrade.
+Unit/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
+Unit/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
+Unit/Tooltip/MedicSquad=A squad of 3 Medics. Heals nearby infantry.
+Unit/Tooltip/ReaperSquad=A squad of 4 Reapers. Good against infantry and structures, bad against anything else.
+Unit/Tooltip/WarPigSquad=A squad of 6 War Pigs. Good against infantry.
 Upgrade/Name/330mmBarrageCannons=Thor Speed
 Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
 Upgrade/Name/AresClassWeaponsSystemViking=Improved Mechanics
