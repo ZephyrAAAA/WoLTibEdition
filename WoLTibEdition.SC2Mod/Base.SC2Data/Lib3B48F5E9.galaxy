@@ -930,6 +930,7 @@ bool lib3B48F5E9_gt_DrillandSpikedebris_Func (bool testConds, bool runActions) {
 
     // Automatic Variable Declarations
     // Variable Initialization
+    lv_point = UnitGetPosition(EventUnit());
 
     // Conditions
     if (testConds) {
@@ -943,9 +944,8 @@ bool lib3B48F5E9_gt_DrillandSpikedebris_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    lv_point = UnitGetPosition(EventUnit());
     Wait(10.0, c_timeGame);
-    libNtve_gf_RemoveDeathModelsinRegionImmediately(RegionCircle(lv_point, 10.0));
+    libNtve_gf_RemoveDeathModelsinRegionImmediately(RegionCircle(lv_point, 2.0));
     return true;
 }
 
