@@ -16,15 +16,15 @@
         <ReplacementArray Catalog="Model" From="DukesRevenge" To="BattlecruiserMengsk"/>
         <ReplacementArray Catalog="Model" From="DukesRevengeDeath" To="BattlecruiserMengskDeath"/>
         <EffectArray Operation="Set" Reference="Unit,DevilDog,Name" Value="Unit/Name/DevilDog"/>
-        <EffectArray Operation="Set" Reference="Unit,DukesRevenge,Name" Value="Unit/Name/DukesRevenge"/>
-        <EffectArray Operation="Set" Reference="Unit,DuskWing,Name" Value="Unit/Name/DuskWing"/>
-        <EffectArray Operation="Set" Reference="Unit,HammerSecurity,Name" Value="Unit/Name/HammerSecurity"/>
-        <EffectArray Operation="Set" Reference="Unit,HelsAngelAssault,Name" Value="Unit/Name/HelsAngelAssault"/>
-        <EffectArray Operation="Set" Reference="Unit,HelsAngelFighter,Name" Value="Unit/Name/HelsAngelFighter"/>
-        <EffectArray Operation="Set" Reference="Unit,SiegeBreaker,Name" Value="Unit/Name/SiegeBreaker"/>
-        <EffectArray Operation="Set" Reference="Unit,SiegeBreakerSieged,Name" Value="Unit/Name/SiegeBreakerSieged"/>
-        <EffectArray Operation="Set" Reference="Unit,SpartanCompany,Name" Value="Unit/Name/SpartanCompany"/>
-        <EffectArray Operation="Set" Reference="Unit,WarPig,Name" Value="Unit/Name/WarPig"/>
+        <EffectArray Operation="Set" Reference="Unit,DukesRevenge,Name" Value="Unit/Name/PrideOfAugustgrad"/>
+        <EffectArray Operation="Set" Reference="Unit,DuskWing,Name" Value="Unit/Name/NightWolf"/>
+        <EffectArray Operation="Set" Reference="Unit,HammerSecurity,Name" Value="Unit/Name/AegisGuard"/>
+        <EffectArray Operation="Set" Reference="Unit,HelsAngelAssault,Name" Value="Unit/Name/SkyFuryAssault"/>
+        <EffectArray Operation="Set" Reference="Unit,HelsAngelFighter,Name" Value="Unit/Name/SkyFuryFighter"/>
+        <EffectArray Operation="Set" Reference="Unit,SiegeBreaker,Name" Value="Unit/Name/ShockDivision"/>
+        <EffectArray Operation="Set" Reference="Unit,SiegeBreakerSieged,Name" Value="Unit/Name/ShockDivisionSieged"/>
+        <EffectArray Operation="Set" Reference="Unit,SpartanCompany,Name" Value="Unit/Name/BulwarkCompany"/>
+        <EffectArray Operation="Set" Reference="Unit,WarPig,Name" Value="Unit/Name/SonofKorhal"/>
     </CSkin>
     <!--
 Find: ^'([a-zA-Z]+)(..?)

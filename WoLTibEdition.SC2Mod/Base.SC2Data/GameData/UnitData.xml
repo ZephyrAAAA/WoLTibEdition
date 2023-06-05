@@ -2452,6 +2452,7 @@
         <BehaviorArray index="0" Link="Biosteel"/>
         <SubgroupPriority value="11"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <AbilArray index="3" Link="BansheeCloak"/>
     </CUnit>
     <CUnit id="Egg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
