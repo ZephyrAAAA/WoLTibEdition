@@ -1157,7 +1157,7 @@
     </CEffectSet>
     <CEffectEnumArea id="IrradiateSearchArea">
         <ResponseFlags index="Flee" value="0"/>
-        <SearchFilters value="-;Structure,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Structure,Destructible,Dead,Hidden,Invulnerable"/>
         <AreaArray index="0" Effect="IrradiateBranchDelay"/>
     </CEffectEnumArea>
     <CEffectDamage id="JavelinMissileLaunchersDamage">
