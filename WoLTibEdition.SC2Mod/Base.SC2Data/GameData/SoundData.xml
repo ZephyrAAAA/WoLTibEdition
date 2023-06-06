@@ -309,6 +309,90 @@
         <Pitch value="1.000000,3.000000"/>
         <Spread value="30.000000"/>
     </CSound>
+    <CSound id="zMission_Char02_GeneralWarfield_042" Portrait="WarfieldPortrait" Subtitle="zMission_Char02" Speaker="GeneralWarfield" Actor="" Line="00042">
+        <AssetArray>
+            <File value="LocalizedData\Sounds\VO\zMission_Char02_GeneralWarfield_042.ogg"/>
+            <FacialAnim value="zMission_Char02_GeneralWarfield_042"/>
+            <FacialGroup value="zMission_Char02_GeneralWarfield_042"/>
+            <FacialFile value="LocalizedData\Sounds\VO\zMission_Char02_GeneralWarfield_042.fxe"/>
+            <PortraitModel value="WarfieldPortrait"/>
+            <Speaker value="Character/Name/GeneralWarfield"/>
+            <Subtitle value="Conversation/zMission_Char02/Line00042"/>
+        </AssetArray>
+        <Flags index="AutoUnload" value="1"/>
+        <Flags index="Stream" value="1"/>
+        <Flags index="Wait" value="1"/>
+        <Category value="Mission"/>
+        <PanLevel value="0.750000"/>
+        <ReverbBalance Room="-1000"/>
+        <ReverbRolloffBlend value="Linear"/>
+        <ReverbRolloffPoints Direct="1.000000" Room="0.250000"/>
+        <ReverbRolloffPoints Distance="15.000000" Direct="1.000000" Room="0.250000"/>
+        <SpeakerMix index="FrontLeft" value="0.700000"/>
+        <SpeakerMix index="FrontRight" value="0.700000"/>
+        <SpeakerMix index="BackLeft" value="0.000000"/>
+        <SpeakerMix index="BackRight" value="0.000000"/>
+        <SpeakerMix index="SideLeft" value="0.000000"/>
+        <SpeakerMix index="SideRight" value="0.000000"/>
+        <SustainFade index="1" Time="250" Volume="-96.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="zMission_Char02_GeneralWarfield_156" Portrait="WarfieldPortrait" Subtitle="zMission_Char02" Speaker="GeneralWarfield" Actor="" Line="00156">
+        <AssetArray>
+            <File value="LocalizedData\Sounds\VO\zMission_Char02_GeneralWarfield_156.ogg"/>
+            <FacialAnim value="zMission_Char02_GeneralWarfield_156"/>
+            <FacialGroup value="zMission_Char02_GeneralWarfield_156"/>
+            <FacialFile value="LocalizedData\Sounds\VO\zMission_Char02_GeneralWarfield_156.fxe"/>
+            <PortraitModel value="WarfieldPortrait"/>
+            <Speaker value="Character/Name/GeneralWarfield"/>
+            <Subtitle value="Conversation/zMission_Char02/Line00156"/>
+        </AssetArray>
+        <Flags index="AutoUnload" value="1"/>
+        <Flags index="Stream" value="1"/>
+        <Flags index="Wait" value="1"/>
+        <Category value="Mission"/>
+        <PanLevel value="0.750000"/>
+        <ReverbBalance Room="-1000"/>
+        <ReverbRolloffBlend value="Linear"/>
+        <ReverbRolloffPoints Direct="1.000000" Room="0.250000"/>
+        <ReverbRolloffPoints Distance="15.000000" Direct="1.000000" Room="0.250000"/>
+        <SpeakerMix index="FrontLeft" value="0.700000"/>
+        <SpeakerMix index="FrontRight" value="0.700000"/>
+        <SpeakerMix index="BackLeft" value="0.000000"/>
+        <SpeakerMix index="BackRight" value="0.000000"/>
+        <SpeakerMix index="SideLeft" value="0.000000"/>
+        <SpeakerMix index="SideRight" value="0.000000"/>
+        <SustainFade index="1" Time="250" Volume="-96.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="zMission_Char03_GeneralWarfield_048" Portrait="WarfieldPortrait" Subtitle="zMission_Char03" Speaker="GeneralWarfield" Actor="" Line="00048">
+        <AssetArray>
+            <File value="LocalizedData\Sounds\VO\zMission_Char03_GeneralWarfield_048.ogg"/>
+            <FacialAnim value="zMission_Char03_GeneralWarfield_048"/>
+            <FacialGroup value="zMission_Char03_GeneralWarfield_048"/>
+            <FacialFile value="LocalizedData\Sounds\VO\zMission_Char03_GeneralWarfield_048.fxe"/>
+            <PortraitModel value="WarfieldPortrait"/>
+            <Speaker value="Character/Name/GeneralWarfield"/>
+            <Subtitle value="Conversation/zMission_Char03/Line00048"/>
+        </AssetArray>
+        <Flags index="AutoUnload" value="1"/>
+        <Flags index="Stream" value="1"/>
+        <Flags index="Wait" value="1"/>
+        <Category value="Mission"/>
+        <PanLevel value="0.750000"/>
+        <ReverbBalance Room="-1000"/>
+        <ReverbRolloffBlend value="Linear"/>
+        <ReverbRolloffPoints Direct="1.000000" Room="0.250000"/>
+        <ReverbRolloffPoints Distance="15.000000" Direct="1.000000" Room="0.250000"/>
+        <SpeakerMix index="FrontLeft" value="0.700000"/>
+        <SpeakerMix index="FrontRight" value="0.700000"/>
+        <SpeakerMix index="BackLeft" value="0.000000"/>
+        <SpeakerMix index="BackRight" value="0.000000"/>
+        <SpeakerMix index="SideLeft" value="0.000000"/>
+        <SpeakerMix index="SideRight" value="0.000000"/>
+        <SustainFade index="1" Time="250" Volume="-96.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
     <CSound id="zMission_Lab02_Raynor_078" Portrait="RaynorMarinePortrait" Subtitle="zMission_Lab02" Speaker="Raynor" Actor="" Line="00078">
         <AssetArray>
             <File value="LocalizedData\Sounds\VO\zMission_Lab02_Raynor_078.ogg"/>
@@ -320,42 +404,18 @@
             <Subtitle value="Conversation/zMission_Lab02/Line00078"/>
         </AssetArray>
         <Flags index="AutoUnload" value="1"/>
-        <Flags index="Download" value="1"/>
         <Flags index="Stream" value="1"/>
         <Flags index="Wait" value="1"/>
         <Flags index="Obsolete" value="1"/>
-        <Flags index="VariationFallback" value="1"/>
-        <Flags index="AllowDuckingInPlayDelay" value="1"/>
         <Category value="Mission"/>
-        <ConeAngle value="360.000000,360.000000"/>
-        <ConeVolume value="1.000000,1.000000"/>
-        <DopplerLevel value="1.000000"/>
-        <DupeDestroyCount value="16"/>
-        <DupeDestroyCountPerPlayer value="65535"/>
-        <DupeFadeBlend value="Unknown"/>
-        <DupeHistoryCount value="16"/>
-        <DupeMuteCount value="10"/>
-        <DupeMuteCountPerPlayer value="65535"/>
-        <DupeRepeatCount value="65535"/>
-        <DupeThresholdFadeTime value="500"/>
-        <FogFadeBlend value="Unknown"/>
-        <LowPassGain value="1.000000"/>
-        <MuteFadeBlend value="Unknown"/>
-        <OverlapPitchDelta value="0.022000"/>
-        <OverlapTimeDelta value="250"/>
         <PanLevel value="0.750000"/>
-        <ResourcePriority value="32"/>
         <ReverbBalance Room="-1000"/>
         <ReverbRolloffPoints Direct="1.000000" Room="0.250000"/>
         <ReverbRolloffPoints Distance="15.000000" Direct="1.000000" Room="0.250000"/>
-        <Select value="Shuffle"/>
         <SpeakerMix index="FrontLeft" value="0.700000"/>
         <SpeakerMix index="FrontRight" value="0.700000"/>
-        <SpeakerMix index="Center" value="1.000000"/>
         <SustainFade/>
         <SustainFade Time="250" Volume="-96.000000"/>
         <Volume value="2.000000,2.000000"/>
-        <VolumeRolloffBlend value="Unknown"/>
-        <VolumeRolloffFadeBlend value="Unknown"/>
     </CSound>
 </Catalog>

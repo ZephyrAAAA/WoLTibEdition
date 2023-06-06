@@ -1,4 +1,5 @@
 ﻿BoldMove=Booooooooold Mooooooooove Mistah Raynah, collecting terrazine from two places at once!
+Character/Name/GeneralWarfield=General Warfield
 Conversation//Line=
 Conversation//Line00037Mod=While we're at it, extra SCVs will help us harvest minerals faster. Train 'em up at the Factory
 Conversation//LineRoastBruta=Roast em good cowboy. Extra crispy!
@@ -6,6 +7,10 @@ Conversation/Eat/Line=I can't wait to dig into that! I'm going to eat it.
 Conversation/THorner01/LineKillTeams=Sir, it won't be long before the Dominion kill teams return, Sir
 Conversation/TTosh02MattMobilizing/LineHornerMobilizing=The Protoss are mobilizing sir.
 Conversation/UnleashThePredators/Line=Unleash the predators!
+Conversation/zMission_Char02/Line00042=I claimed this planet in the name of the terran dominion, I'm not gonna lose it.
+Conversation/zMission_Char02/Line00156=We may not be perfect, but we're humanity's last, best hope against threats like you.
+Conversation/zMission_Char03/Line00048=Time for the nuclear option, kill them all!
+Conversation/zMission_Lab02/Line00078='Course!
 InfestedMarines=Damn Jimmy, are those Infested Marines?
 InfestedMarinesInfestedMarines2InfestedMarinesVultureBikes=Damn Jimmy, are those Infested Marines?
 VultureBikesVultureBikes=Vulture Bikes? Aw hell Jimmy I don't care for that notion one bit!
