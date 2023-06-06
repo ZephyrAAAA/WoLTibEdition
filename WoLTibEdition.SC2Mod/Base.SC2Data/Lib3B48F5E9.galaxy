@@ -934,7 +934,7 @@ bool lib3B48F5E9_gt_DrillandSpikedebris_Func (bool testConds, bool runActions) {
 
     // Conditions
     if (testConds) {
-        if (!(((UnitGetType(EventUnit()) == "DrakkenLaserDrill") || (UnitGetType(EventUnit()) == "MineralSpike")))) {
+        if (!(((UnitGetType(EventUnit()) == "DrakkenLaserDrill") || (UnitGetType(EventUnit()) == "MineralSpike") || (UnitGetType(EventUnit()) == "FusionReactor")))) {
             return false;
         }
     }

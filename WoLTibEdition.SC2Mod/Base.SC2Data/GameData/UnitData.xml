@@ -2955,6 +2955,8 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <Food value="250"/>
         <TechTreeUnlockedUnitArray index="0" removed="1"/>
+        <CostResource index="Minerals" value="2000"/>
+        <CostResource index="Vespene" value="0"/>
     </CUnit>
     <CUnit id="Gateway">
         <ArmorType value="Hero"/>

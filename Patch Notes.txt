@@ -8,7 +8,7 @@
 *Laser drill no longer has Take The Drill upgrade outside of The Dig
 *Drill now says it does full damage to everything
 *Laser Drill no longer costs gas
-*Fusion reactor debris goes away now
+Fusion reactor debris goes away now
 *Fusion Reactor has armor now
 *Psi Disruptor no longer affects Heroic
 *Hunter Killers have armor and damage types
@@ -33,7 +33,7 @@ No more starting merc compound
 
 Maw:
 Autosaves after mom waves only happen once per wave now
-*Edited the prisoners tip
+Edited the prisoners tip
 Fixed issues with momma wave tactics
 
 Gates:

@@ -1226,7 +1226,6 @@ Unit/EditorSuffix/BrutaliskBurrowed=(Burrowed)
 Unit/EditorSuffix/BunkerSQ=- Squads
 Unit/EditorSuffix/CommandCenter2Flying=(Flying)
 Unit/EditorSuffix/Factory2Flying=(Flying)
-Unit/EditorSuffix/FusionReactor=(Castanar)
 Unit/EditorSuffix/MineralSilo=(Neutral Capturable)
 Unit/EditorSuffix/MineralSpike=(Neutral Capturable)
 Unit/EditorSuffix/NeutralCapturable=(Neutral Capturable)
