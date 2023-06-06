@@ -16,19 +16,28 @@
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets
+First Ultra should be way more consistent
+*Now has a tip about Capturable Structures
+*Now has a tip about the crane
+Fixed timing on directive text about medic
 
 Redstone:
 Loading Screen tip is now about the reaper and its upgrade
 Restart Screen tip no longer mentions vespene
 
 Safe Haven:
-*No more starting merc compound
+No more starting merc compound
 
 Haven's Fall:
-*No more starting merc compound
+No more starting merc compound
+
+Maw:
+Autosaves after mom waves only happen once per wave now
+*Edited the prisoners tip
+Fixed issues with momma wave tactics
 
 Gates:
-*Improved droppod positioning so don't get attacked by random stuff
+*Improved droppod positioning so they don't get attacked by random stuff
 *CC is now rescued with the other units
 *Tip for fusion reactor
 *Tip for spore cannons
