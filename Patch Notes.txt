@@ -1,0 +1,41 @@
+*Build/Place bunk hotkey no longer intereferes with Build
+*Abberation has an armor type now.
+*Scourge have an attack and armor type
+*Leviathan has attack and armor types
+*Drone has armor and damage types
+*Infested terrans have armor types
+*Tychus shields have name
+*Laser drill no longer has Take The Drill upgrade outside of The Dig
+*Drill now says it does full damage to everything
+*Laser Drill no longer costs gas
+*Fusion reactor debris goes away now
+*Fusion Reactor has armor now
+*Psi Disruptor no longer affects Heroic
+*Hunter Killers have armor and damage types
+*Chrono Rift now says how long it lasts
+
+Safe Haven:
+*No more starting merc compound
+
+Haven's Fall:
+*No more starting merc compound
+
+Gates:
+*Improved droppod positioning so don't get attacked by random stuff
+*CC is now rescued with the other units
+*Tip for fusion reactor
+*Tip for spore cannons
+*Spore cannon objective can no longer complete after it has failed
+
+Belly:
+*Tip for chaser force
+*Timer no longer counts down during defense sections?
+*Cutscenes no longer restore health of sqauds, just the members
+*Betty can't be placed on eggs
+
+Shatter:
+*Ground base no longer has a bunch of roach bullies after exploding
+*No more SC2 resources
+
+All-In:
+*Kerrigan armor says no
