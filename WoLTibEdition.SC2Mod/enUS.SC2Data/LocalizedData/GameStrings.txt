@@ -1698,6 +1698,7 @@ Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
 Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
+Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>
@@ -1925,7 +1926,7 @@ Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against v
 Weapon/Tip/ExplosiveCharges=Can only be used against structures.
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
 Weapon/Tip/HybridF=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
-Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
+Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/><n/>Excellent against everything.<n/><n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
 Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry<n/>Good against light aircraft<n/>Moderate against light vehicles<n/>Bad against heavy vehicles, heavy aircraft and structures
 Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles<n/>Moderate against infantry, structures

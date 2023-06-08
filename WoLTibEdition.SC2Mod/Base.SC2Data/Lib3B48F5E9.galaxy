@@ -982,6 +982,27 @@ void lib3B48F5E9_gt_FullPowerDrill_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Show Me the Money
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    PlayerModifyPropertyInt(1, c_playerPropMinerals, c_playerPropOperAdd, 20000);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, StringExternal("Param/Value/lib_3B48F5E9_DBFC5D87"));
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_ShowMetheMoney_Init () {
+    lib3B48F5E9_gt_ShowMetheMoney = TriggerCreate("lib3B48F5E9_gt_ShowMetheMoney_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_ShowMetheMoney, c_playerAny, "showmethemoney", true);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Grant Laser Drill Topbar
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_GrantLaserDrillTopbar_Func (bool testConds, bool runActions) {
@@ -1423,6 +1444,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_SquadShields_Init();
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
+    lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
     lib3B48F5E9_gt_GrantDTTopbar_Init();
     lib3B48F5E9_gt_UnlimitedTopbarcharges_Init();

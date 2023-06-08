@@ -6939,6 +6939,7 @@
         <LifeMax value="500"/>
         <LifeArmor value="1"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="TychusCommando">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6949,6 +6950,7 @@
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <WeaponArray index="0" Link="TossGrenade"/>
         <WeaponArray Link="TychusCommandoChaingun"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
     <CUnit id="TychusEjectMissile">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

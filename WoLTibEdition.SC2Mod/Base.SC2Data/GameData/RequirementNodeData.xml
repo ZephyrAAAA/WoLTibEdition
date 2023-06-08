@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CRequirementAllowAbil id="AllowAbilDeployLaserDrill0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Link value="DeployLaserDrill"/>
+    </CRequirementAllowAbil>
     <CRequirementAnd id="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
@@ -28,6 +32,11 @@
     <CRequirementAnd id="AndNotCountUpgradeImprovedPlasmaShieldsQueuedOrBetterCountUpgradeTechReactorCompleteOnly">
         <OperandArray value="NotCountUpgradeImprovedPlasmaShieldsQueuedOrBetter"/>
         <OperandArray value="CountUpgradeTechReactorCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndNotCountUpgradeTakeTheDrillQueuedOrBetterNotAllowAbilDeployLaserDrill0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="NotCountUpgradeTakeTheDrillQueuedOrBetter"/>
+        <OperandArray value="NotAllowAbilDeployLaserDrill0"/>
     </CRequirementAnd>
     <CRequirementCountBehavior id="CountBehaviorCraneBuiltCompleteOnlyAtUnit">
         <Flags index="TechTreeCheat" value="0"/>
@@ -179,7 +188,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranBuildingArmorCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="TerranBuildingArmor" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">
@@ -319,6 +327,10 @@
     <CRequirementNot id="Not1584299796CountUnitAlias_GhostQueuedOrBetter">
         <OperandArray index="0" value="CountUnitAlias_GhostQueuedOrBetter"/>
     </CRequirementNot>
+    <CRequirementNot id="NotAllowAbilDeployLaserDrill0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="AllowAbilDeployLaserDrill0"/>
+    </CRequirementNot>
     <CRequirementNot id="NotCountUnitCraneCompleteOnlyAtUnit">
         <OperandArray index="0" value="CountUnitCraneCompleteOnlyAtUnit"/>
     </CRequirementNot>
@@ -356,7 +368,6 @@
         <OperandArray index="0" value="CountUpgradeTakeTheDrillQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranBuildingArmorCompleteOnly">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeTerranBuildingArmorCompleteOnly"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeTerranInfantryUltraCapacitorsQueuedOrBetter">

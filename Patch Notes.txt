@@ -5,9 +5,9 @@ Scourge have an attack and armor type
 Leviathan has attack and armor types
 *Drone has armor and damage types
 Infested terrans have armor types
-*Tychus shields have name
-*Laser drill no longer has Take The Drill upgrade outside of The Dig
-*Drill now says it does full damage to everything
+Tychus shields have name
+Laser drill no longer has Take The Drill upgrade outside of The Dig
+Drill now says it does full damage to everything
 Laser Drill no longer costs gas
 Fusion reactor debris goes away now
 Fusion Reactor has armor now
@@ -17,6 +17,7 @@ Hunter killers are now heroic
 *Chrono Rift now says how long it lasts
 Juggernaut Plating now mentions %s
 Kerrigan armor says no
+Added a money cheat, showmethemoney, cause the base SC2 one doesn't give a lot.
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets
@@ -34,6 +35,9 @@ No more starting merc compound
 
 Haven's Fall:
 No more starting merc compound
+
+The Dig:
+*Added a bonus objective to take the drill
 
 Maw:
 Autosaves after mom waves only happen once per wave now

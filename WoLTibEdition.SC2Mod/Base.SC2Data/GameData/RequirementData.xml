@@ -61,7 +61,7 @@
         <NodeArray index="Use" Link="CountUpgradeImprovedPlasmaShieldsCompleteOnly"/>
     </CRequirement>
     <CRequirement id="HasNotTakenDrill">
-        <NodeArray index="Show" Link="NotCountUpgradeTakeTheDrillQueuedOrBetter"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeTakeTheDrillQueuedOrBetterNotAllowAbilDeployLaserDrill0"/>
     </CRequirement>
     <CRequirement id="HasNotTakenDrill2">
         <NodeArray index="Show" Link="NotCountUpgradeDrillFullPower2QueuedOrBetter"/>
