@@ -160,6 +160,18 @@
         <Flags index="NoVitalAbsorbEnergy" value="1"/>
         <VitalFractionMax index="Life" value="0.5"/>
     </CEffectDamage>
+    <CEffectCreatePersistent id="LeviathanGroundAttackTargetPersistentA">
+        <ValidatorArray value="TentacleANotBusy"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LeviathanGroundAttackTargetPersistentB">
+        <ValidatorArray value="TentacleBNotBusy"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LeviathanGroundAttackTargetPersistentC">
+        <ValidatorArray value="TentacleCNotBusy"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="LeviathanGroundAttackTargetPersistentD">
+        <ValidatorArray value="TentacleDNotBusy"/>
+    </CEffectCreatePersistent>
     <CEffectRemoveBehavior id="MercCompPlace">
         <EditorCategories value=""/>
         <WhichUnit Value="Caster"/>
