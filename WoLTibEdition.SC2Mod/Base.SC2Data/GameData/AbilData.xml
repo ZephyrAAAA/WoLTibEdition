@@ -1093,9 +1093,8 @@
         <DataCollection value="TakeTheDrill"/>
         <InfoArray index="Research1" Time="300" Upgrade="DrillFullPower2">
             <Resource index="Vespene" value="10000"/>
-            <Button DefaultButtonFace="TakeTheDrill" Requirements="HasNotTakenDrill2">
+            <Button DefaultButtonFace="TakeTheDrill2" Requirements="HasNotTakenDrill2">
                 <Flags index="UseDefaultButton" value="1"/>
-                <Flags index="CreateDefaultButton" value="1"/>
             </Button>
         </InfoArray>
     </CAbilResearch>
