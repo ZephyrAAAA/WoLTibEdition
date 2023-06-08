@@ -3754,6 +3754,7 @@
         <BehaviorArray index="2" Link="Detector10"/>
         <BehaviorArray index="3" Link="CommandoSniperResist"/>
         <BehaviorArray index="4" removed="1"/>
+        <LifeArmorTip value="Unit/Tip/KerriganArmor"/>
     </CUnit>
     <CUnit id="KerriganCharBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3763,6 +3764,7 @@
         <BehaviorArray index="1" Link="TValerian03QueenOfBladesDontDie"/>
         <BehaviorArray index="2" Link="Detector10"/>
         <BehaviorArray index="3" Link="CommandoSniperResist"/>
+        <LifeArmorTip value="Unit/Tip/KerriganArmor"/>
     </CUnit>
     <CUnit id="KerriganEgg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

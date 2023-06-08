@@ -36,6 +36,12 @@ void lib3B48F5E9_InitCustomScript () {
 }
 
 // Functions
+void lib3B48F5E9_gf_ChatTip (string lp_tipText) {
+    // Automatic Variable Declarations
+    // Implementation
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, (StringExternal("Param/Value/lib_3B48F5E9_69230868") + StringToText(lp_tipText)));
+}
+
 trigger auto_lib3B48F5E9_gf_CNCUpgradesFunction_Trigger = null;
 int auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_playerGroupRace;
 playergroup auto_lib3B48F5E9_gf_CNCUpgradesFunction_lp_enemyPlayers;

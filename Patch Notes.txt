@@ -14,12 +14,14 @@ Fusion reactor debris goes away now
 *Psi Disruptor no longer affects Heroic
 *Hunter Killers have armor and damage types
 *Chrono Rift now says how long it lasts
+Juggernaut Plating now mentions %s
+Kerrigan armor says no
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets
 First Ultra should be way more consistent
-*Now has a tip about Capturable Structures
-*Now has a tip about the crane
+Now has a tip about Capturable Structures
+Now has a tip about the crane
 Fixed timing on directive text about medic
 
 Redstone:
@@ -42,7 +44,7 @@ Gates:
 *CC is now rescued with the other units
 *Tip for fusion reactor
 *Tip for spore cannons
-*Spore cannon objective can no longer complete after it has failed
+Spore cannon objective can no longer complete after it has failed
 
 Belly:
 *Tip for chaser force
@@ -51,8 +53,9 @@ Belly:
 *Betty can't be placed on eggs
 
 Shatter:
-*Ground base no longer has a bunch of roach bullies after exploding
-*No more SC2 resources
+Ground base no longer has a bunch of roach bullies after exploding
+No more SC2 resources
+Halved the Leviathan HP
 
 All-In:
-*Kerrigan armor says no
+The leviathan now has the same HP as it would in Shatter.
