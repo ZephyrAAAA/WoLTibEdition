@@ -18,6 +18,8 @@ Hunter killers are now heroic
 Juggernaut Plating now mentions %s
 Kerrigan armor says no
 Added a money cheat, showmethemoney, cause the base SC2 one doesn't give a lot.
+Edited the Factory tip so it doesn't say it needs a Barracks
+Edited the Starport tip so it doesn't say it needs a Factory
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets
@@ -37,7 +39,7 @@ Haven's Fall:
 No more starting merc compound
 
 The Dig:
-*Added a bonus objective to take the drill
+Added a bonus objective to take the drill 
 
 Maw:
 Autosaves after mom waves only happen once per wave now
