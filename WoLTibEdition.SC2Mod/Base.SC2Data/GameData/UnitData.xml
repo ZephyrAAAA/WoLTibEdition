@@ -3356,10 +3356,12 @@
     <CUnit id="HunterKiller">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Heroic" value="1"/>
     </CUnit>
     <CUnit id="HunterKillerBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <Attributes index="Heroic" value="1"/>
     </CUnit>
     <CUnit id="Hut">
         <ArmorType value="Hero"/>
