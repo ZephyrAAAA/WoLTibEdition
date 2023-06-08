@@ -2391,10 +2391,12 @@
         <AbilArray index="1" Link="attack"/>
         <AbilArray Link="BuildinProgressNonCancellable"/>
         <AbilArray Link="TakeTheDrill2"/>
+        <AbilArray Link="que5Passive"/>
         <CardLayouts index="0">
             <LayoutButtons index="0" Face="Attack" AbilCmd="attack,Execute"/>
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="TakeTheDrill2" Type="AbilCmd" AbilCmd="TakeTheDrill2,Research1" Row="2" Column="0"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5Passive,CancelLast" Row="2" Column="4"/>
         </CardLayouts>
         <Food value="-200"/>
         <CostResource index="Minerals" value="2500"/>
