@@ -2397,7 +2397,8 @@
             <LayoutButtons Face="TakeTheDrill2" Type="AbilCmd" AbilCmd="TakeTheDrill2,Research1" Row="2" Column="0"/>
         </CardLayouts>
         <Food value="-200"/>
-        <CostResource index="Minerals" value="5000"/>
+        <CostResource index="Minerals" value="2500"/>
+        <CostResource index="Vespene" value="0"/>
         <BehaviorArray Link="PowerCheck"/>
         <Sight value="9"/>
         <ArmorType value="Hero"/>
