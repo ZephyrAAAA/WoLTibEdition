@@ -263,6 +263,12 @@
         <On Terms="ActorCreation" Send="SetScale 3.000000"/>
         <Model value="TerranSmallTriggeredExplosion"/>
     </CActorModel>
+    <!--                                                                                         -->
+    <!-- FacilityPowerCore ...................................................................... -->
+    <!--                                                                                         -->
+    <CActorUnit id="FacilityPowerCore">
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-terran-buildingarmor.dds"/>
+    </CActorUnit>
     <CActorModel id="FeedbackImpact2" parent="ModelAnimationStyleOneShot">
         <On Terms="Effect.FeedbackGhost.Start; At Target" Send="Create"/>
         <Host Subject="_Selectable"/>

@@ -1,7 +1,7 @@
 Fixed merc compound also costing 1000 minerals to start
 *Build/Place bunk hotkey no longer intereferes with Build
 Abberation has an armor type now.
-*Scourge have an attack and armor type
+Scourge have an attack and armor type
 *Leviathan has attack and armor types
 *Drone has armor and damage types
 *Infested terrans have armor types
@@ -10,7 +10,7 @@ Abberation has an armor type now.
 *Drill now says it does full damage to everything
 *Laser Drill no longer costs gas
 Fusion reactor debris goes away now
-*Fusion Reactor has armor now
+Fusion Reactor has armor now
 *Psi Disruptor no longer affects Heroic
 *Hunter Killers have armor and damage types
 *Chrono Rift now says how long it lasts

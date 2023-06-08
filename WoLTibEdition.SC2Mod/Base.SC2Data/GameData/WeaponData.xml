@@ -263,6 +263,16 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="ScourgeSwarm">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Suicide">
+        <Tip value="Weapon/Tip/Rocket"/>
+        <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
+        <AttackType value="Siege"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="TossGrenade">
         <EditorCategories value="Race:Terran"/>
         <Tip value="Weapon/Tip/Rocket"/>
@@ -1102,10 +1112,6 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <RandomDelayMax value="-1.75"/>
         <LegacyOptions index="UseRangeToCenter" value="1"/>
         <LegacyOptions index="CanRetargetWhileChanneling" value="1"/>
-        <Options index="Disabled" value="1"/>
-        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
-        <AttackType value="Pierce"/>
-        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
