@@ -3506,6 +3506,7 @@
         <Attributes index="Armored" value="1"/>
         <Attributes index="Massive" value="1"/>
         <InnerRadius value="0.75"/>
+        <LifeArmorTip value="Unit/Tip/Light"/>
     </CUnit>
     <CUnit id="InfestedAbominationBurrowed">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
