@@ -265,6 +265,8 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     </CWeaponLegacy>
     <CWeaponLegacy id="ScourgeSwarm">
         <Tip value="Weapon/Tip/Rocket"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <AttackType value="Siege"/>
     </CWeaponLegacy>
@@ -272,6 +274,62 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Tip value="Weapon/Tip/Rocket"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tentacles">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Options index="ContinuousScan" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <AttackType value="Pierce"/>
+        <DamagePoint value="0"/>
+        <Backswing value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tentacles1" parent="Tentacles">
+        <Name value="Weapon/Name/Tentacles1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <DisplayAttackCount value="0"/>
+        <DisplayName value="Weapon/Name/Tentacles1"/>
+        <Range value="12.5"/>
+        <Arc value="360"/>
+        <Period value="0.25"/>
+        <Effect value="LeviathanGroundAttackTargetPersistentA"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tentacles2" parent="Tentacles">
+        <Name value="Weapon/Name/Tentacles2"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <DisplayAttackCount value="0"/>
+        <DisplayName value="Weapon/Name/Tentacles2"/>
+        <Range value="12.5"/>
+        <Arc value="360"/>
+        <Period value="0.25"/>
+        <DamagePoint value="0.125"/>
+        <Effect value="LeviathanGroundAttackTargetPersistentB"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tentacles3" parent="Tentacles">
+        <Name value="Weapon/Name/Tentacles3"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <DisplayAttackCount value="0"/>
+        <DisplayName value="Weapon/Name/Tentacles3"/>
+        <Range value="12.5"/>
+        <Arc value="360"/>
+        <Period value="0.25"/>
+        <DamagePoint value="0.25"/>
+        <Effect value="LeviathanGroundAttackTargetPersistentC"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Tentacles4" parent="Tentacles">
+        <Name value="Weapon/Name/Tentacles4"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="CanInitiateAttackOrder" value="0"/>
+        <DisplayAttackCount value="0"/>
+        <DisplayName value="Weapon/Name/Tentacles4"/>
+        <Range value="12.5"/>
+        <Arc value="360"/>
+        <Period value="0.25"/>
+        <DamagePoint value="0.375"/>
+        <Effect value="LeviathanGroundAttackTargetPersistentD"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="TossGrenade">
         <EditorCategories value="Race:Terran"/>

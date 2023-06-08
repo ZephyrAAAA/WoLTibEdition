@@ -3792,6 +3792,14 @@
         <ArmorType value="Fort"/>
         <LifeArmor value="0"/>
         <LifeArmorTip value="Unit/Tip/HeavyAir"/>
+        <LifeStart value="30000"/>
+        <LifeMax value="30000"/>
+        <BehaviorArray index="0" Link="Detector11"/>
+        <BehaviorArray index="1" removed="1"/>
+        <WeaponArray Link="Tentacles1"/>
+        <WeaponArray Link="Tentacles2"/>
+        <WeaponArray Link="Tentacles3"/>
+        <WeaponArray Link="Tentacles4"/>
     </CUnit>
     <CUnit id="LeviathanACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
