@@ -683,6 +683,8 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
     </CUnit>
     <CUnit id="Barracks2">
         <DeathRevealRadius value="3"/>
@@ -710,8 +712,8 @@
         <Attributes index="Structure" value="1"/>
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
-        <LifeStart value="1000"/>
-        <LifeMax value="1000"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
@@ -793,9 +795,11 @@
         <Attributes index="Armored" value="1"/>
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
-        <LifeStart value="1000"/>
-        <LifeMax value="1000"/>
+        <ArmorType value="Hero"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
+        <LifeArmorTip value="Unit/Tip/Structure"/>
         <Mover value="Fly"/>
         <Speed value="0.9375"/>
         <Acceleration value="1.3125"/>
@@ -828,11 +832,9 @@
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <LeaderAlias value="Barracks"/>
         <HotkeyAlias value="Barracks"/>
+        <SelectAlias value="Barracks2"/>
         <TechAliasArray value="Alias_Barracks"/>
         <GlossaryAlias value="Barracks"/>
-        <ArmorType value="Hero"/>
-        <LifeArmorTip value="Unit/Tip/Structure"/>
-        <SelectAlias value="Barracks2"/>
     </CUnit>
     <CUnit id="BarracksFlying">
         <ArmorType value="Hero"/>
@@ -840,6 +842,8 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
     </CUnit>
     <CUnit id="BarracksReactor">
         <ArmorType value="Hero"/>
@@ -3533,6 +3537,8 @@
         <LifeArmor value="0"/>
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <LifeStart value="600"/>
+        <LifeMax value="600"/>
     </CUnit>
     <CUnit id="InfestedBunker">
         <ArmorType value="Hero"/>

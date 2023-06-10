@@ -20,6 +20,7 @@ Kerrigan armor says no
 Added a money cheat, showmethemoney, cause the base SC2 one doesn't give a lot.
 Edited the Factory tip so it doesn't say it needs a Barracks
 Edited the Starport tip so it doesn't say it needs a Factory
+Barracks now has 600 health, so it's less repair efficient.
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets
@@ -31,6 +32,9 @@ Fixed timing on directive text about medic
 Redstone:
 Loading Screen tip is now about the reaper and its upgrade
 Restart Screen tip no longer mentions vespene
+
+Evacuation:
+The turrets at the front and back fence are now transferred to the player along with the rest of the base
 
 Safe Haven:
 No more starting merc compound

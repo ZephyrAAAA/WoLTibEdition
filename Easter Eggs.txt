@@ -8,17 +8,17 @@ Liberation Day:
 
 Outlaws:
 *The cranes lifts up tychus carrying an artifact, and he says that he'll let you catch up
-*Added a custom loss message for selling your CC
+Added a custom loss message for selling your CC if you don't have a barracks and refinery. Not locked behind the meme setting
 
 Zero Hour:
 *Tychus is standing on the artifact truck
 *Instead of hyperion, tauren marine saves you, nukes the zerg
 
 Evacuation:
-*The APC is super speedy until the colony fence, then goes back to normal
+The APC is super speedy until the colony fence, then goes back to normal
 
 Outbreak:
-*Zephyr- Tychus observes those are infested marines
+Zephyr- Tychus observes those are infested marines
 -audio line added to dep, audio file good
 
 Safe Haven:
@@ -32,7 +32,7 @@ Smash and Grab:
 *Tychus is the artifact, and complains about his rescue taking too long
 
 The Dig:
-*Added a custom loss message for selling the drill.
+Added a custom loss message for selling the drill. Not locked behind the meme setting
 *Tychus is the artifact, goes back into the temple to use the facilities
 
 The Moebius Factor:
@@ -48,6 +48,7 @@ The Great Train Robbery:
 Cutthroat:
 Zephyr- Tychus complains about vulture bikes
 -audio line added to dep, audio file good
+*Raynor says they can use them to lay mines around base, tychus begrudingly agrees
 
 Engine of Destruction:
 
@@ -94,4 +95,4 @@ Shatter the Sky:
 
 All-In:
 *The artifact is now a tychus mecha
-*Added a custom loss message for selling the artifact
+Added a custom loss message for selling the artifact. Not locked behind the meme setting
