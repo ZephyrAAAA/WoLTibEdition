@@ -242,6 +242,15 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <AttackType value="Pierce"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="HunterKiller">
+        <Tip value="Weapon/Tip/Rifle"/>
+        <Icon value="Assets\Textures\talent-tychus-level12-ultimategear1.dds"/>
+        <AttackType value="Normal"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HunterKillerMelee">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <AttackType value="Pierce"/>
+    </CWeaponLegacy>
     <CWeaponLegacy id="HybridF">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <AttackType value="Pierce"/>
