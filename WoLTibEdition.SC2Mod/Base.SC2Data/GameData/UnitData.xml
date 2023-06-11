@@ -1151,7 +1151,7 @@
             <LayoutButtons Face="SetBunkerRallyPoint" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="BunkerLoad" Type="AbilCmd" AbilCmd="BunkerTransport,Load" Row="2" Column="1"/>
             <LayoutButtons Face="BunkerUnloadAll" Type="AbilCmd" AbilCmd="BunkerTransport,UnloadAll" Row="2" Column="2"/>
-            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageBunker,On" Row="2" Column="3"/>
+            <LayoutButtons Face="Salvage" Type="AbilCmd" AbilCmd="SalvageShared,On" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="SalvageShared,Off" Row="2" Column="4"/>
@@ -1196,6 +1196,7 @@
         <GlossaryWeakArray value="Colossus"/>
         <GlossaryWeakArray value="SiegeTank"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <HotkeyAlias value="Bunker"/>
     </CUnit>
     <CUnit id="BunkerACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1717,7 +1718,7 @@
         <MinimapRadius value="2.5"/>
         <EditorCategories value="ObjectType:Structure,ObjectFamily:Melee"/>
         <LeaderAlias value="CommandCenter"/>
-        <HotkeyAlias value="CommandCenter"/>
+        <HotkeyAlias value="CommandCenter2"/>
         <TechAliasArray value="Alias_CommandCenter"/>
         <GlossaryAlias value="CommandCenter"/>
         <ArmorType value="Hero"/>
@@ -2917,8 +2918,6 @@
         <RepairTime value="65"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
-        <AbilArray Link="que5"/>
-        <AbilArray Link="FusionCore2Research"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
@@ -2926,11 +2925,8 @@
         <BehaviorArray Link="NeedsBuildRadius"/>
         <BehaviorArray Link="DisablePower"/>
         <CardLayouts>
-            <LayoutButtons Face="ResearchBattlecruiserSpecializations" Type="AbilCmd" AbilCmd="FusionCore2Research,0" Row="0" Column="0"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="ResearchBattlecruiserEnergyUpgrade" Type="AbilCmd" AbilCmd="FusionCore2Research,1" Row="0" Column="1"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
         </CardLayouts>
         <Radius value="1.5"/>
@@ -2951,6 +2947,7 @@
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/FusionCore"/>
+        <HotkeyAlias value="FusionCore"/>
     </CUnit>
     <CUnit id="FusionReactor">
         <ArmorType value="Hero"/>
@@ -3061,13 +3058,11 @@
         <BehaviorArray Link="NeedsBuildRadius"/>
         <BehaviorArray Link="DisablePower"/>
         <CardLayouts>
-            <LayoutButtons Face="ResearchPersonalCloaking" Type="AbilCmd" AbilCmd="GhostAcademy2Research,Research1" Row="0" Column="0"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="4"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
-            <LayoutButtons Face="ResearchGhostEnergyUpgrade" Type="AbilCmd" AbilCmd="GhostAcademy2Research,Research2" Row="0" Column="1"/>
             <LayoutButtons Face="SelectBuilder" Type="SelectBuilder" Row="1" Column="3"/>
         </CardLayouts>
         <Radius value="1.5"/>
@@ -3088,6 +3083,7 @@
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/GhostAcademy"/>
+        <HotkeyAlias value="GhostAcademy"/>
     </CUnit>
     <CUnit id="GhostMengskACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -3256,7 +3252,6 @@
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Campaign"/>
         <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="200"/>
-        <HotkeyCategory value="Unit/Category/TerranStory"/>
     </CUnit>
     <CUnit id="HelperEmitterSelectionArrow">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4184,6 +4179,7 @@
         <GlossaryPriority value="31"/>
         <HotkeyCategory value="Unit/Category/TerranStory"/>
         <TechTreeUnlockedUnitArray value=""/>
+        <HotkeyAlias value="MercCompound"/>
     </CUnit>
     <CUnit id="MercenaryFortress">
         <ArmorType value="Hero"/>
@@ -4312,6 +4308,7 @@
         <Food value="-7"/>
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
+        <HotkeyAlias value="MissileTurret"/>
     </CUnit>
     <CUnit id="MissileTurretACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4834,6 +4831,7 @@
         <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="240"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
+        <HotkeyAlias value="PlanetaryFortress"/>
     </CUnit>
     <CUnit id="PlatformConnector">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5235,6 +5233,7 @@
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
         <Description value="Button/Tooltip/Refinery"/>
+        <HotkeyAlias value="Refinery"/>
     </CUnit>
     <CUnit id="RefineryBounce">
         <Facing value="315"/>
@@ -5455,6 +5454,7 @@
             <ChanceArray index="Turn" value="33"/>
         </Fidget>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <HotkeyAlias value="SCV"/>
     </CUnit>
     <CUnit id="SILiberatorACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -5684,6 +5684,7 @@
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
+        <HotkeyAlias value="SensorTower"/>
     </CUnit>
     <CUnit id="Sentry">
         <ArmorType value="Medium"/>
