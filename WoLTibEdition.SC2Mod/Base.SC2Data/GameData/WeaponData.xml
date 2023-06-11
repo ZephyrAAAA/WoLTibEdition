@@ -248,6 +248,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <AttackType value="Normal"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="HunterKillerMelee">
+        <Tip value="Weapon/Tip/Grenade"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <AttackType value="Pierce"/>
     </CWeaponLegacy>
@@ -278,6 +279,11 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Options index="LinkedCooldown" value="0"/>
         <Icon value="Assets\Textures\btn-ability-hornerhan-viking-missileupgrade.dds"/>
         <AttackType value="Siege"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Spines">
+        <Tip value="Weapon/Tip/Grenade"/>
+        <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <AttackType value="Pierce"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="Suicide">
         <Tip value="Weapon/Tip/Rocket"/>
@@ -832,6 +838,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="HydraliskMelee">
         <AttackType value="Pierce"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ImpalerTentacle">
         <AttackType value="Pierce"/>
@@ -1183,6 +1190,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="RoachMelee">
         <AttackType value="Pierce"/>
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="ScoutAir">
         <AttackType value="Siege"/>

@@ -2413,9 +2413,11 @@
     </CUnit>
     <CUnit id="Drone">
         <ArmorType value="Small"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="DroneBurrowed">
         <ArmorType value="Small"/>
+        <LifeArmorTip value="Unit/Tip/Infantry"/>
     </CUnit>
     <CUnit id="DukesRevenge">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
