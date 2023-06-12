@@ -57,9 +57,11 @@ Fixed timing issues with momma wave tactics
 The mothership gets less extra health and shields every wave.
 Bonus health and shield per wave for momma is now scaled to difficulty.
 Mothership now starts with less health and shields
-Adjusted the location of and removed a bunch of detection so that each DT group could take out a Rip Field
+Adjusted the location of and removed a bunch of detection so that each DT group can try take out a Rip Field
 Nyon now announces every mothership attack wave
 Made momma more cautious about where she harasses
+Momma now only harasses a mineral line if you have at least 2
+The protoss now start with less stuff, and deploy new stuff slower.
 
 Gates:
 Improved droppod positioning so they don't get attacked by random stuff
