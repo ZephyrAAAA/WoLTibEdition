@@ -794,6 +794,9 @@ ConversationState/StoryTips/Tosh01_Reapers=<c val="FF8000">Reaper</c>
 ConversationState/StoryTips/Tosh01_Reapers/Info/Description=Light harassment infantry -- <c val="FFFF00">Reapers </c>are fast-moving raiders that can jump up and down cliffs. Reapers are armed with pistols and equipped with D-8 Charges, explosive devices that do extra damage against structures. Can attack ground units only.<n/><n/>Reapers have an upgrade to give them Detection and more sight range, available from the Shadow Ops.
 ConversationState/StoryTips/Tosh01_RichMinerals=<c val="FF8040">Rich Minerals</c>
 ConversationState/StoryTips/Tosh01_RichMinerals/Info/Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
+ConversationState/StoryTips/Tychus05_BattleCruisers=<c val="FF8000">Battlecruiser</c>
+ConversationState/StoryTips/Tychus05_BattleCruisers/Info/Description=Heavy assault ship -- <c val="FFFF00">Battlecruisers </c>are Minotaur-class ships built from the <c val="FFFF00">Starport</c>.  They can attack ground and air units simultaneously with their weapon batteries and do massive damage in a single hit with the <c val="FFFF00">Yamato Cannon.</c>
+ConversationState/StoryTips/Tychus05_Prisoners=<c val="FF8000">Prisoners</c>
 ConversationState/StoryTips/Tychus05_Prisoners/Info/Description=The <c val="FFFF00">Dark Templar</c> you've released have <c val="FFFF00">Shields</c> that allow them to move inside a <c val="FFFF00">Rip-Field</c> without being slowed. They are <c val="FFFF00">Permanently Cloaked</c> and excellent at taking out ground forces as long as they are not <c val="FFFF00">Detected.</c> 
 ConversationState/StoryTips/Tychus05_RipFields=<c val="FF8000">Rip-Fields</c>
 ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, unshielded units will be slowed by 50%.

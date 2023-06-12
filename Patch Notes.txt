@@ -22,6 +22,9 @@ Edited the Factory tip so it doesn't say it needs a Barracks
 Edited the Starport tip so it doesn't say it needs a Factory
 Barracks now has 600 health, so it's less repair efficient.
 Hotkey menu cleaned up.
+*Repair drones now heal shields or health at a time, not both at once.
+*Warp Prisms now have an armor type.
+*Ravens don't cancel their follow command when they summon a repair drone
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets
@@ -49,7 +52,14 @@ Added a bonus objective to take the drill
 Maw:
 Autosaves after mom waves only happen once per wave now
 Edited the prisoners tip
-Fixed issues with momma wave tactics
+Edited the BC tip to mention it can attack air and ground targets at the same time.
+Fixed timing issues with momma wave tactics
+The mothership gets less extra health and shields every wave.
+Bonus health and shield per wave for momma is now scaled to difficulty.
+Mothership now starts with less health and shields
+Adjusted the location of and removed a bunch of detection so that each DT group could take out a Rip Field
+Nyon now announces every mothership attack wave
+Made momma more cautious about where she harasses
 
 Gates:
 Improved droppod positioning so they don't get attacked by random stuff
