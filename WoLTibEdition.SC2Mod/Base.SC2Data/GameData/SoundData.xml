@@ -34,6 +34,33 @@
             <Subtitle value="BoldMove"/>
         </AssetArray>
     </CSound>
+    <CSound id="TaurenMarineArrive" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_Arrive" Speaker="TaurenMarine" Line="Arrive">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\TerranVO\CampaignUnits\TaurenSpaceMarine\TaurenSpaceMarine_Ready00.ogg"/>
+            <FacialAnim value="THorner01Horner00001"/>
+            <PortraitModel value="TaurenMarinePortrait"/>
+            <Speaker value="ConversationState/Characters/TaurenMarine"/>
+            <Subtitle value="Conversation/TaurenMarine/Arrive"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="TaurenSpaceMarine_End1" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_End1" Speaker="TaurenMarine" Line="End1">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\TerranVO\CampaignUnits\TaurenSpaceMarine\TaurenSpaceMarine_Attack02.ogg"/>
+            <FacialAnim value="THorner01Horner00001"/>
+            <PortraitModel value="TaurenMarinePortrait"/>
+            <Speaker value="ConversationState/Characters/TaurenMarine"/>
+            <Subtitle value="Conversation/TaurenMarine/End1"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="TaurenSpaceMarine_End12" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_End2" Speaker="TaurenMarine" Line="End2">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\TerranVO\CampaignUnits\TaurenSpaceMarine\TaurenSpaceMarine_Attack04.ogg"/>
+            <FacialAnim value="THorner01Horner00001"/>
+            <PortraitModel value="TaurenMarinePortrait"/>
+            <Speaker value="ConversationState/Characters/TaurenMarine"/>
+            <Subtitle value="Conversation/TaurenMarine/End2"/>
+        </AssetArray>
+    </CSound>
     <CSound id="VultureBikes" parent="Campaign" Portrait="TychusPortrait" Subtitle="Vulture Bikes" Speaker="CharTychus" Line="">
         <AssetArray index="0">
             <File value="Assets\sfx\Vulture Bikes.ogg"/>
