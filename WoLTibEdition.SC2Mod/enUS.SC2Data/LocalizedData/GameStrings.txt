@@ -780,6 +780,11 @@ ConversationState/LabResearch/ResearchZ5_2/Info/Tooltip=<s val="TooltipTitle_Zer
 ConversationState/Maps/TRaynor03/Info/Loading Screen Help=Marines are good against zerglings and hydralisks, while Devastation Turrets are good against roaches and ultras.
 ConversationState/Maps/TTosh01/Info/Loading Screen Help=Reapers have a utility upgrade to increase their vision range, and give them detection. Use this to ambush burrow ambushes.
 ConversationState/Maps/TTosh01/Info/Loading Screen Restart=Ambushing enemy groups, and firing from highground, is a great way to keep your losses and costs low.
+ConversationState/Maps/TZeratul01/Info/Loading Screen Help=Zeratul has a terrible memory, so he talks to himself to help him remember things.
+ConversationState/Maps/TZeratul01/Info/Loading Screen Restart=Zeratul must have forgotten something.
+ConversationState/Maps/TZeratul02/Info/Loading Screen Help=Ma'ar can teleport to Zeratul is he knows exactly where Zeratul is.
+ConversationState/Maps/TZeratul02/Info/Loading Screen Restart=You only need to free the preservers. Find a way to slip in undetected.
+ConversationState/Maps/TZeratul04/Info/Loading Screen Restart=Watch for enemies clustering on the minimap to get an idea of which side they will attack next.
 ConversationState/StoryTips/Raynor02_ResourceCaches/Info/Description=Occasionally you will come across caches of resource pallets, or raw resources. These can be picked up and added to your resources by approaching them with any ground unit.
 ConversationState/StoryTips/Raynor02_SCV=<c val="FF8000">SCV</c>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
