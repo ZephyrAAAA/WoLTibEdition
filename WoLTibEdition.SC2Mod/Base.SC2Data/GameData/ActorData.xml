@@ -858,6 +858,7 @@
         <On index="66" removed="1"/>
         <On index="67" removed="1"/>
         <On index="68" removed="1"/>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
     </CActorUnit>
     <CActorUnit id="Bunker2" parent="TerranBuildingEx" unitName="Bunker2">
         <Aliases value="_UnitHuge"/>
