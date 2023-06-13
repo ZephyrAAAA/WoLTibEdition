@@ -9,7 +9,7 @@ Zephyr- Instead of the marine saying the logistics center is a restricted area, 
 *and says shit in response
 
 Outlaws:
-*The cranes lifts up tychus carrying an artifact, and he says that he'll let you catch up
+*The crane lifts up tychus carrying an artifact, and he says that he'll let you catch up
 Added a custom loss message for selling your CC if you don't have a barracks and refinery. Not locked behind the meme setting
 
 Zero Hour:
@@ -49,10 +49,9 @@ Maw of the Void:
 The Great Train Robbery:
 
 Cutthroat:
-Zephyr- Tychus complains about vulture bikes
--audio line added to dep, audio file good
-Zephyr- *Raynor says they can use them to lay mines around base,
-*tychus begrudingly agrees
+Tychus complains about vulture bikes
+Raynor says they can use them to lay mines around base,
+tychus begrudingly agrees
 
 Engine of Destruction:
 
