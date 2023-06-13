@@ -34,6 +34,24 @@
             <Subtitle value="BoldMove"/>
         </AssetArray>
     </CSound>
+    <CSound id="Mines" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="Mines" Speaker="CharRaynor" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Mines.ogg"/>
+            <FacialAnim value="THorner02Raynor00024"/>
+            <PortraitModel value="RaynorCommanderPortrait"/>
+            <Speaker value="ConversationState/Characters/CharRaynor"/>
+            <Subtitle value="Conversation/THorner02/Mines"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="PardonMe" parent="Campaign" Portrait="TychusPortrait" Subtitle="PardonMe" Speaker="CharTychus" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\PardonMe.ogg"/>
+            <FacialAnim value="THorner03Tychus00056"/>
+            <PortraitModel value="TychusPortrait"/>
+            <Speaker value="ConversationState/Characters/CharTychus"/>
+            <Subtitle value="Conversation/PardonMe"/>
+        </AssetArray>
+    </CSound>
     <CSound id="TaurenMarineArrive" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_Arrive" Speaker="TaurenMarine" Line="Arrive">
         <AssetArray index="0">
             <File value="LocalizedData\Sounds\TerranVO\CampaignUnits\TaurenSpaceMarine\TaurenSpaceMarine_Ready00.ogg"/>
