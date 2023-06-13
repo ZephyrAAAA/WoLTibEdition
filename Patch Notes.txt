@@ -24,7 +24,7 @@ Barracks now has 600 health, so it's less repair efficient.
 Hotkey menu cleaned up.
 *Repair drones now heal shields or health at one time, not both at once.
 *Warp Prisms now have an armor type.
-*Ravens don't cancel their follow command when they summon a repair drone
+Ravens don't cancel their follow command when they summon a repair drone
 
 Zero Hour:
 Loading Screen tip now mentions devastation turrets

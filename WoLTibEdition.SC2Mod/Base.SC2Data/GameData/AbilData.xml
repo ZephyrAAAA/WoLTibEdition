@@ -652,6 +652,7 @@
         <Flags index="AllowMovement" value="1"/>
         <Flags index="AutoCast" value="1"/>
         <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
         <Cost>
             <Vital index="Energy" value="50"/>
         </Cost>
