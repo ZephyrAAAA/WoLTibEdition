@@ -7229,10 +7229,14 @@
     <CUnit id="WarpPrism">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="None"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
     </CUnit>
     <CUnit id="WarpPrismPhasing">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
+        <ArmorType value="None"/>
+        <LifeArmorTip value="Unit/Tip/Air"/>
     </CUnit>
     <CUnit id="WarpPrismSkinPreview">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
