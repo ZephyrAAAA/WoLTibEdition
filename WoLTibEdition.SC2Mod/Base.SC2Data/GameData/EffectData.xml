@@ -1908,7 +1908,6 @@
         <DrainVital value="Energy"/>
         <RechargeVitalFraction value="0.0195"/>
         <RechargeVitalRate value="10"/>
-        <InitialEffect value="ShieldRestoreSecondary"/>
     </CEffectCreateHealer>
     <CEffectDamage id="P38ScytheGuassPistol">
         <AttributeBonus index="Light" value="0"/>
