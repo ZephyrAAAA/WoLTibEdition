@@ -2463,6 +2463,12 @@
         <SubgroupPriority value="11"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <AbilArray index="3" Link="BansheeCloak"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="5" AbilCmd="BansheeCloak,On"/>
+            <LayoutButtons index="6" AbilCmd="BansheeCloak,Off"/>
+            <LayoutButtons index="7" AbilCmd="255,255"/>
+            <LayoutButtons index="8" AbilCmd="255,255"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="Egg">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
