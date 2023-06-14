@@ -7,6 +7,8 @@ Mom no longer has a cloak field
 The taldarim deploy less carriers.
 There's now a chat tip every time mom gains an ability.
 Mothership now has an obsserver in her attack waves.
+*Interference Matrix no longer blocks mom's recall to the artifact.
+*The AI now stop queuing up bully groups to deploy if you have a large enough force in their deploy radius.
 
 Piercing:
 Hybrid should no longer go backwards for realzies this time
