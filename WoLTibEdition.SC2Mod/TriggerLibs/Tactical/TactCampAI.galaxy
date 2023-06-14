@@ -998,7 +998,7 @@ void AIThinkBrutalisk (int player, unit aiUnit, unitgroup scanGroup) {
 			return;
 		}
 	}
-	if (UnitAbilityExists(aiUnit, "BurrowBrutalisk") && UnitGetChargeUsed(aiUnit, "Brutalisk") == 2) {
+	if (UnitAbilityExists(aiUnit, "BurrowBrutalisk") && UnitGetChargeUsed(aiUnit, "Brutalisk") == 4) {
 		//UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("3"));
 		ord = AICreateOrder(player, "BurrowBrutalisk", 0);
 		AICast(aiUnit, ord, c_noMarker, c_castHold);
