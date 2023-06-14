@@ -899,6 +899,7 @@ bool INI_Func (bool testConds, bool runActions) {
 	//PlayerSetState(1, c_playerStateFormationMove, true);
 	//BankLoad("TCampaign", 1);
 	//ConversationDataLoadStateValues("CCEditionPermanence", BankLastCreated(), "CCEditionPermanence");
+	PlayerOptionOverride(1, "simplecommandcard", "0");
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
 	return true;
 }
