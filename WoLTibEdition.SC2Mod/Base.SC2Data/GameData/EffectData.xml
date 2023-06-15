@@ -1230,7 +1230,7 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="LanzerTorpedoesDamage">
         <AttributeBonus index="Armored" value="0"/>
-        <Amount value="5"/>
+        <Amount value="6"/>
         <AreaArray index="0" Radius="0.225" Validator=""/>
         <AreaArray index="1" Radius="0.45" Validator=""/>
         <AreaArray index="2" Radius="0.9" Validator=""/>
