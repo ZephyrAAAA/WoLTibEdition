@@ -808,7 +808,7 @@ Hive Mind Emulator: Mind controls all zerg units in a 4 radius for 60s for 8000 
 Psi Disruptor: Confuses all zerg units in a 9 radius for 120s for 8000 minerals. Unlocked by selecting the Lab Research. Available from the Fusion Core.
 
 
-CHEAT CODES:
+CHEAT CODES and EASTER EGGS:
 ##YOU HAVE BEEN WARNED
 
 
@@ -826,6 +826,10 @@ CHEAT CODES:
 
 
 
+
+
+Cheat Codes:
+
 showmethemoney - Grants 20k minerals.
 
 THEPOWEROFTHESUN - Makes the drill full power.
@@ -835,3 +839,28 @@ callinthebigguns - Grants you a charge of Deploy Laser Drill
 shadowfurries - Grants you a charge of Deploy Dark Templar
 
 exterminatus - Removes the charge limit on any applicable topbar abilities.
+
+
+Easter Eggs not locked behind the meme setting:
+
+Edited the cheat message to mention tiberium
+Ghosts and Spectres are called "Lmao Unit" in the Haven Mission Select
+
+Outlaws:
+Added a custom loss message for selling your CC if you don't have a barracks and refinery. Not locked behind the meme setting
+
+Evacuation:
+Added Jeff the zergling. You can rescue him if you get too close. Not locked behind the meme setting
+
+The Dig:
+Added a custom loss message for selling the drill. Not locked behind the meme setting
+
+Whispers of Doom:
+Joke about zeratul in loading screen tip
+
+All-In:
+Added a custom loss message for selling the artifact. Not locked behind the meme setting
+
+
+Memes locked behing the meme setting:
+
