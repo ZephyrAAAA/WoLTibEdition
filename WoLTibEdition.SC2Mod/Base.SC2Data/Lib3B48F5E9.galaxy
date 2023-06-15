@@ -962,26 +962,6 @@ void lib3B48F5E9_gt_DrillandSpikedebris_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Full Power Drill
-//--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_FullPowerDrill_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    lib3B48F5E9_gf_CNCUpgradeText("DrillFullPower", "THE POWER OF THE SUN", "(The laser drill does the full 330 DPS for this mission)");
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_FullPowerDrill_Init () {
-    lib3B48F5E9_gt_FullPowerDrill = TriggerCreate("lib3B48F5E9_gt_FullPowerDrill_Func");
-    TriggerAddEventChatMessage(lib3B48F5E9_gt_FullPowerDrill, c_playerAny, "THEPOWEROFTHESUN", true);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Show Me the Money
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
@@ -1000,6 +980,26 @@ bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_ShowMetheMoney_Init () {
     lib3B48F5E9_gt_ShowMetheMoney = TriggerCreate("lib3B48F5E9_gt_ShowMetheMoney_Func");
     TriggerAddEventChatMessage(lib3B48F5E9_gt_ShowMetheMoney, c_playerAny, "showmethemoney", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Full Power Drill
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_FullPowerDrill_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lib3B48F5E9_gf_CNCUpgradeText("DrillFullPower", "THE POWER OF THE SUN", "(The laser drill does the full 330 DPS for this mission)");
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_FullPowerDrill_Init () {
+    lib3B48F5E9_gt_FullPowerDrill = TriggerCreate("lib3B48F5E9_gt_FullPowerDrill_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_FullPowerDrill, c_playerAny, "THEPOWEROFTHESUN", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1443,8 +1443,8 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_SquadHealth_Init();
     lib3B48F5E9_gt_SquadShields_Init();
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
-    lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
+    lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
     lib3B48F5E9_gt_GrantDTTopbar_Init();
     lib3B48F5E9_gt_UnlimitedTopbarcharges_Init();
