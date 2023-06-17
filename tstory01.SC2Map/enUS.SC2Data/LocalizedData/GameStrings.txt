@@ -55,13 +55,16 @@ Abil/Name/MarineSquad=Marine Squad
 Abil/Name/MedicSquad=Medic Squad
 Abil/Name/MedicSquadAcquire=Medic Squad Acquire
 Abil/Name/NeutralCapturable=Neutral Capturable
+Abil/Name/NoSlapToggle=No Slap Toggle
 Abil/Name/NovaHeal=Heal
 Abil/Name/OrbitalCommandLand2=Land (Orbital Command)
 Abil/Name/OrbitalLiftOff2=Lift Off (Orbital Command)
 Abil/Name/PauseResumeQueue=PauseResumeQueue
+Abil/Name/PauseResumeQueueShared=PauseResumeQueueShared
 Abil/Name/PowerStructure=Power Structure
 Abil/Name/PsiDisruptor=Psi Disruptor
 Abil/Name/RavenScramblerMissile=Scrambler Missile
+Abil/Name/ReaperShootStructure=Reaper Shoot Structure
 Abil/Name/ReaperSquad=Reaper Squad
 Abil/Name/Refinery=Refinery
 Abil/Name/RefineryBounce=Refinery Bounce
@@ -100,6 +103,7 @@ Abil/Name/WarPigSquad=War Pig Squad
 Abil/Name/ZeratulSeek=Zeratul Seek
 Abil/Name/ZergHypervirus=Zerg Hypervirus
 Abil/Name/que1Passive=Queue (1) Passive
+Alert/Text/CalldownLaunch=<c val="ffff00">Calldown detected.</c>
 Alert/Text/MULEExpired=Structure complete.
 Behavior/Name/BuildingRepair=Building Repair
 Behavior/Name/DamageMarker=Damage Marker
@@ -134,7 +138,7 @@ Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supp
 Button/Name/AresClassWeaponsSystem=Neosteel Plating
 Button/Name/AstralProjection=Astral Projection
 Button/Name/BioSpeed=Bio Speed
-Button/Name/BuildDevastatorTurret=Build Devastator Turret
+Button/Name/BuildDevastatorTurret=Build Devastation Turret
 Button/Name/BuildingRepair=Building Repair
 Button/Name/CallDarkTemplar10=Call Dark Templar
 Button/Name/CallDarkTemplar11=Call Dark Templar
@@ -188,9 +192,12 @@ Button/Name/DeployLaserDrill7=Deploy Laser Drill
 Button/Name/DeployLaserDrill8=Deploy Laser Drill
 Button/Name/DeployLaserDrill9=Deploy Laser Drill
 Button/Name/Depower=Depower
+Button/Name/DevastationAOE=Devastation AOE
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
 Button/Name/FenixDragoonAirBomb=Solarite Flare
+Button/Name/FirebatSquad=Firebat Squad
+Button/Name/FirebatSquad2=Devil Dog Squad
 Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
 Button/Name/GravityRift=Gravity Rift
 Button/Name/HailstormLaunchers=Hailstorm Launchers
@@ -232,10 +239,17 @@ Button/Name/InfantryMercenaries6=Infantry Mercenaries
 Button/Name/InfantryMercenaries7=Infantry Mercenaries
 Button/Name/InfantryMercenaries8=Infantry Mercenaries
 Button/Name/InfantryMercenaries9=Infantry Mercenaries
+Button/Name/InfantryMercenariesPassive=Infantry Mercenaries
 Button/Name/InfantryUltraCapacitors=Infantry Ultra Capacitors
 Button/Name/InfantryVanadiumPlating=Infantry Vanadium Plating
 Button/Name/LongRangeMassRecall=Long-Range Mass Recall
-Button/Name/MedicCapturePassive=Neutral Capture
+Button/Name/MaelstromRounds=Smart Servos
+Button/Name/MarauderSquad=Marauder Squad
+Button/Name/MarauderSquad2=Hammer Security Squad
+Button/Name/MarineSquad=Marine Squad
+Button/Name/MarineSquad2=War Pig Squad
+Button/Name/MedicCapturePassive=Capture Ability
+Button/Name/MedicSquad=Medic Squad
 Button/Name/MedivacLoadNearby=Load Nearby
 Button/Name/NeutralStructurePassive=Neutral Structure Passive
 Button/Name/NovaHeal=Heal
@@ -268,6 +282,9 @@ Button/Name/PsiDisruptor9=Psi Disruptor
 Button/Name/RallySCV=Set Worker Rally Point
 Button/Name/RavenRepairDrone=Repair Drone
 Button/Name/RavenScramblerMissile=Interference Matrix
+Button/Name/ReaperBombBuildings=Reaper Bomb Buildings
+Button/Name/ReaperNotBombBuildings=Reaper Not Bomb Buildings
+Button/Name/ReaperSquad=Reaper Squad
 Button/Name/RepairOrder=Repair
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
@@ -305,6 +322,7 @@ Button/Name/StarshipMercenaries6=Starship Mercenaries
 Button/Name/StarshipMercenaries7=Starship Mercenaries
 Button/Name/StarshipMercenaries8=Starship Mercenaries
 Button/Name/StarshipMercenaries9=Starship Mercenaries
+Button/Name/StarshipMercenariesPassive=Starship Mercenaries
 Button/Name/StarshipUltraCapacitors=Starship Ultra Capacitors
 Button/Name/StarshipVanadiumPlating=Starship Vanadium Plating
 Button/Name/Stone=Train Stone
@@ -344,10 +362,12 @@ Button/Name/VehicleMercenaries6=Vehicle Mercenaries
 Button/Name/VehicleMercenaries7=Vehicle Mercenaries
 Button/Name/VehicleMercenaries8=Vehicle Mercenaries
 Button/Name/VehicleMercenaries9=Vehicle Mercenaries
+Button/Name/VehicleMercenariesPassive=Vehicle Mercenaries
 Button/Name/VehicleUltraCapacitors=Vehicle Ultra Capacitors
 Button/Name/VehicleVanadiumPlating=Vehicle Vanadium Plating
 Button/Name/Veterancy=Veterancy
 Button/Name/VoidSentryShieldRepair=Shield Recharge
+Button/Name/VultureEMPPassive=EMP Grenades
 Button/Name/ZergHypervirus10=Zerg Hypervirus
 Button/Name/ZergHypervirus11=Zerg Hypervirus
 Button/Name/ZergHypervirus12=Zerg Hypervirus
@@ -365,7 +385,7 @@ Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost
 Button/Tooltip/AresClassWeaponsSystem=Increases HP by 50.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
-Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Spec Ops
+Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Shadow Ops
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
 Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
 Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
@@ -377,7 +397,7 @@ Button/Tooltip/BuildTechLabFactory=Enables additional units. Researches upgrades
 Button/Tooltip/BuildTechLabStarport=Enables additional units. Researches upgrades.
 Button/Tooltip/BuildingRepair=Restores life to landed structures at the cost of resources.
 Button/Tooltip/Bunker=Defensive structure. Able to protect 1 infantry squad. Units inside the Bunker have +1 range to their attacks.
-Button/Tooltip/Bunker2=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
+Button/Tooltip/Bunker2=Defensive structure. Able to protect 1 squad. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/BunkerSQ=Defensive structure. Able to protect up to <d ref="Abil,BunkerTransport,TotalCargoSpace"/> infantry unit slots. Units inside the Bunker have +1 range to their attacks. Bunkers can be salvaged.
 Button/Tooltip/CallDarkTemplar10=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
 Button/Tooltip/CallDarkTemplar11=Spawns <d ref="Effect,SpawnDarkTemplar,SpawnCount"/> dark templar at the target location.
@@ -403,18 +423,18 @@ Button/Tooltip/CallInGoldenArmada6=Calls in a portion of the golden armada to st
 Button/Tooltip/CallInGoldenArmada7=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada8=Calls in a portion of the golden armada to strafe across target area.
 Button/Tooltip/CallInGoldenArmada9=Calls in a portion of the golden armada to strafe across target area.
-Button/Tooltip/ChronoDevice10=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice11=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice12=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice13=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice14=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice3=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice4=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice5=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice6=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice7=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice8=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
-Button/Tooltip/ChronoDevice9=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.
+Button/Tooltip/ChronoDevice10=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice11=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice12=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice13=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice14=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice3=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice4=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice5=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice6=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice7=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice8=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
+Button/Tooltip/ChronoDevice9=Prototype device that alters time. Anything trapped inside of the area will suffer penalties to its movement speed and attack speed.<n/><n/>Lasts for 16 seconds.
 Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
 Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- Supply Depot<n/>- Refinery<n/>- Crane<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Repair<n/>- Depower<n/>- Sell Structure
@@ -437,25 +457,25 @@ Button/Tooltip/DeployLaserDrill7=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill8=Deploys the laser drill.
 Button/Tooltip/DeployLaserDrill9=Deploys the laser drill.
 Button/Tooltip/Depower=Switches power state of the selected building.
-Button/Tooltip/DevastationTurret=Primary anti-armour defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><c val="FFE303">Detector</c>
-Button/Tooltip/DevilDogSquad=A squad of 4 Devil Dogs. Good against structures and infantry.
+Button/Tooltip/DevastationAOE=Attack does AOE in a small area.
+Button/Tooltip/DevastationTurret=Primary anti-armor defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/DisplacementField=Wraiths resist 40% of incoming damage. 
 Button/Tooltip/EMPSpectre=Creates an electromagnetic pulse that does 100 damage to shields and drains all energy from units in the targeted area. Cloaked units hit by EMP are revealed for a short time. Deals 1 damage for each energy drained.
-Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, Vehicles, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armoury<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/>- Power Plant Upgrade <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
+Button/Tooltip/EngineeringBay=Contains upgrades for Terran Structures, Vehicles, and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Firebat<n/>- Goliath<n/>- Diamondback<n/>- Predator<n/>- Armory<n/>- Starport<n/>- Missile Turret<n/>- Perdition Turret (With Lab Research)<n/>- Planetary Fortress (With Lab Research)<n/>- Sensor Tower <n/><n/>- Power Plant Upgrade <n/><n/><c val="ffff8a">Support Powers:</c><n/>- Orbital Scan (With Orbital Command)
 Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- SCVs
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
-Button/Tooltip/FeedbackGhost=Drains all energy from the target. Deals 2 damage per point of energy.
+Button/Tooltip/FeedbackGhost=Deals 400 shield damage. Drains all energy from the target, then deals 2 damage per point of energy.
 Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
-Button/Tooltip/FirebatSquad=A squad of 4 Firebats. Good against structures and infantry.
+Button/Tooltip/FirebatSquad=This is how many individual firebats you have.
+Button/Tooltip/FirebatSquad2=This is how many individual firebats you have.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
 Button/Tooltip/FusionCore=Contains support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Battlecruisers<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Yamato Strike<n/>- Deploy Laser Drill (From The Dig)<n/>- Purification Fleet (From Haven's Fall)<n/>- Infested Virus (From Safe Haven)<n/>- Hive Mind Emulator (With Lab Research)<n/>- Psi Disruptor (With Lab Research)<n/>- Chrono Field (From Piercing The Shroud)<n/>- Deploy Dark Templar (From Maw of the Void)
 Button/Tooltip/FusionReactor=This Fusion Reactor provides a tremendous amount of power for base operations.
 Button/Tooltip/Ghost=Commando unit. Can use Snipe and Feedback. Armed with a rapid fire anti-infantry weapon, and high-powered anti-structure explosives.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
-Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Ghosts (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)
-Button/Tooltip/GhostAcademySpectre=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Spectres (Requires Armoury)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
+Button/Tooltip/GhostAcademy=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Ghosts (Requires Armory)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)
+Button/Tooltip/GhostAcademySpectre=Contains infantry upgrades, and support powers.<n/><n/><c val="ffff8a">Enables:</c><n/>- Medics<n/>- Spectres (Requires Armory)<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Tactical Missile (With Orbital Command)<n/>- Mercenary Calldowns
 Button/Tooltip/GravityRift=Creates a gravity Vortex that slows units in the target area, and damages them for <d ref="Effect,GravityRiftDamage,Amount * Effect,GravityRiftCP,PeriodCount"/>. Lasts for <d ref="Effect,GravityRiftCP,PeriodCount * Effect,GravityRiftCP,PeriodicPeriodArray[0]"/> seconds.
 Button/Tooltip/HailstormLaunchers=Gives marauders an anti-air rocket attack
-Button/Tooltip/HammerSecuritiesSquad=A squad of 2 Hammer Securities. Good against vehicles and buildings. Good against air with an upgrade.
 Button/Tooltip/Heal=Heals a friendly biological target.<n/><n/><c val="f078ff">Heals <d ref="Effect,MedivacHeal,RechargeVitalRate"/> life per <d ref="Effect,MedivacHeal,RechargeVitalRate*Effect,MedivacHeal,DrainVitalCostFactor"/> energy.</c><n/><n/><c val="f078ff">
 Button/Tooltip/HideInTheShadows=Makes Zeratul Immune to detection for <d ref="Behavior,HideInTheShadows,Duration"/> seconds.
 Button/Tooltip/HiveMindEmulator10=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -483,6 +503,7 @@ Button/Tooltip/HyperionYamato6=Blasts a target with a devastating plasma cannon,
 Button/Tooltip/HyperionYamato7=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
 Button/Tooltip/HyperionYamato8=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
 Button/Tooltip/HyperionYamato9=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
+Button/Tooltip/Immortal=Assault strider. Has strong shields.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/InfantryMercenaries10=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries11=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries12=Calls down all purchased infantry mercenaries at the target location
@@ -495,22 +516,30 @@ Button/Tooltip/InfantryMercenaries6=Calls down all purchased infantry mercenarie
 Button/Tooltip/InfantryMercenaries7=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries8=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries9=Calls down all purchased infantry mercenaries at the target location
+Button/Tooltip/InfantryMercenariesPassive=Unlocks the <c val="FFFF00">Infantry Mercenaries</c> topbar power.
 Button/Tooltip/InfantryUltraCapacitors=Increases attack speed of infantry by 20%
 Button/Tooltip/InfantryVanadiumPlating=Gives Infantry 20% resistance to damage
+Button/Tooltip/InfernalPreIgniter=Damage is increased by 50%.
 Button/Tooltip/Irradiate=Irradiates a single target, causing <d ref="Effect,IrradiatePeriodicDamage,Amount*(Behavior,Irradiate,Duration/Behavior,Irradiate,Period)+Effect,IrradiateInitialDamageApply,Amount"/> damage over time to target over <d ref="Behavior,Irradiate,Duration"/> seconds. Irradiate does not damage mechanical units, but they can carry the irradiate.<n/><n/><c val="#ColorAttackInfo">Irradiate branches to nearby units, friendly or not.</c>
+Button/Tooltip/JackhammerConcussionGrenade=Attack temporarily slows all units in target area.<n/><n/><c val="#ColorAttackInfo">Massive units are immune.</c>
 Button/Tooltip/LongRangeMassRecall=Channels the mothership's energy to recall protoss through the warp conduit.
-Button/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
-Button/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
-Button/Tooltip/MedicCapturePassive=Medics can capture neutral structures, and are consumed by the action.
-Button/Tooltip/MedicSquad=A squad of 3 Medics. Heals nearby infantry.
+Button/Tooltip/MaelstromRounds=Transforms 2x as fast, and can be loaded into transports while sieged.
+Button/Tooltip/MarauderSquad=This is how many individual marauders you have.
+Button/Tooltip/MarauderSquad2=This is how many individual marauders you have.
+Button/Tooltip/MarineSquad=This is how many individual marines you have.
+Button/Tooltip/MarineSquad2=This is how many individual marines you have.
+Button/Tooltip/MedicCapturePassive=Medics can capture <c val="FFFF00">Capturable Structures</c>, and are consumed by the action.
+Button/Tooltip/MedicSquad=This is how many individual medics you have.
 Button/Tooltip/Medivac=Air transport. Heals nearby and loaded biological units.
 Button/Tooltip/MedivacLoadNearby=Loads nearby units into the Medivac's hold.
 Button/Tooltip/MercCompound=Trains Mercenary units.
+Button/Tooltip/MercCompound2=Trains Mercenary units.
 Button/Tooltip/MineralSilo=Provides build radius while controlled.<n/><n/>Grants a large one-time mineral payout on capture.
 Button/Tooltip/MineralSpike=Provides a steady income while controlled.<n/><n/>Grants a small one-time mineral payout on capture.
 Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NanoRepair=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals <d ref="Effect,NanoRepair,RechargeVitalRate"/> life per second for <d ref="Effect,NanoRepair,RechargeVitalRate*Effect,NanoRepair,DrainVitalCostFactor"/> energy.</c><n/><c val="#ColorAttackInfo">Up to 3 Science Vessels can heal the same target</c>
+Button/Tooltip/NaturalGas=Resource deposit.
 Button/Tooltip/NovaHeal=Heals Nova.<n/><n/><c val="f078ff">Fully heals after a 5 second channel time.</c>
 Button/Tooltip/NovaSnipe=Fires a psi-charged bullet, dealing <d ref="Effect,NovaSnipe,Amount"/> damage.
 Button/Tooltip/NukeCalldown10=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
@@ -525,8 +554,7 @@ Button/Tooltip/NukeCalldown6=Calls down a Nuclear Strike at a target location. N
 Button/Tooltip/NukeCalldown7=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
 Button/Tooltip/NukeCalldown8=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
 Button/Tooltip/NukeCalldown9=Calls down a Nuclear Strike at a target location. Nukes take <d time="20"/> to land, but they deal up to <d ref="Effect,NukeDamage,Amount*Effect,NukeDetonate,PeriodCount"/> (+<d ref="Effect,NukeDamage,AttributeBonus[Structure]*Effect,NukeDetonate,PeriodCount"/> vs. structures) damage to enemies in a large radius.
-Button/Tooltip/OrbitalCommand2Unit=Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.
-Button/Tooltip/OrbitalCommandFlying2=Primary structure. Must land to receive resources, produce units, or use abilities.
+Button/Tooltip/PalletGas=Stockpile of refined resources.
 Button/Tooltip/PauseQueue=Pauses the queue of this structure, and allows queued items to be safely cancelled.
 Button/Tooltip/PickupGas100Text=<s val="Kicker_Minerals">+2000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
 Button/Tooltip/PickupMinerals100Text=<s val="Kicker_Minerals">+1000 </s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="28" width="28"/>
@@ -552,9 +580,12 @@ Button/Tooltip/Raven=Aerial support unit. Can use Seeker Missile, Point Defense 
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
 Button/Tooltip/RaynorSnipe=After carefully aiming, Raynor fires a Penetrator Round that strikes enemies along its path, dealing <d ref="Effect,RaynorSnipeDamage,Amount"/> Rocket damage.
-Button/Tooltip/ReaperSquad=A squad of 4 Reapers. Good against infantry and structures, bad against anything else.
+Button/Tooltip/ReaperBombBuildings=Orders the reaper squad to use its explosive charges against structures.
+Button/Tooltip/ReaperNotBombBuildings=Orders the reaper squad to use its pistols against structures.
+Button/Tooltip/ReaperSquad=This is how many individual reapers you have.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ReinforcedSuperstructure=Increases Turret life by 75.
 Button/Tooltip/RepairOrder=Orders repair drones to repair the target. Repairs works at a rate of 10+2%hp/s.
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, <c val="FFFF8A">Marauder</c> rockets, and <c val="FFFF8A">Planetary Fortress</c> by +30%.
 Button/Tooltip/ResearchHiSecAutoTracking=Adds +1 range and +15% attack speed to <c val="ffff8a">Auto-Turrets</c>, <c val="ffff8a">Missile Turrets</c>, <c val="ffff8a">Devastation Turrets</c>, <c val="ffff8a">Planetary Fortresses</c>, and <c val="ffff8a">Point Defense Drones</c>.
@@ -602,13 +633,14 @@ Button/Tooltip/StarshipMercenaries6=Calls down all purchased starship mercenarie
 Button/Tooltip/StarshipMercenaries7=Calls down all purchased starship mercenaries at the target location
 Button/Tooltip/StarshipMercenaries8=Calls down all purchased starship mercenaries at the target location
 Button/Tooltip/StarshipMercenaries9=Calls down all purchased starship mercenaries at the target location
+Button/Tooltip/StarshipMercenariesPassive=Unlocks the <c val="FFFF00">Starship Mercenaries</c> topbar power.
 Button/Tooltip/StarshipUltraCapacitors=Increases attack speed of Starships by 20%
 Button/Tooltip/StarshipVanadiumPlating=Gives Starships 20% resistance to damage
 Button/Tooltip/Stim=Marine takes 10 damage. Fires 50% faster for 15 seconds.
 Button/Tooltip/Stone=Expands Build Radius.<n/>Obsessed with trucks.
 Button/Tooltip/SupplyDepot=Provides power.<n/>Power allows buildings to work correctly.<n/>Power Plants can be lowered to allow units to walk over them. <n/><n/><c val="ffff8a">Enables:</c><n/>- Barracks
 Button/Tooltip/SupplyDepot2Lowered=Provides supply.<n/>Supply allows you to create more units.<n/>Supply Depots can be lowered to allow units to walk over them.
-Button/Tooltip/SupplyDrop=Drops additional supplies, permanently increasing the power output of the target Supply Depot by <d ref="Behavior,SupplyDrop,Modification.Food"/>.
+Button/Tooltip/SupplyDrop=Drops additional supplies, permanently increasing the power output of the target Power Plant by <d ref="Behavior,SupplyDrop,Modification.Food"/>.
 Button/Tooltip/TacticalMissileStrike10=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike11=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
 Button/Tooltip/TacticalMissileStrike12=Fires a tactical missile at target location, dealing <d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,Amount"/> (+<d ref="Effect,NuclearAnnihilationMengskSmallNukeDamage,AttributeBonus[Structure]"/> vs. structures) damage in an area
@@ -657,12 +689,13 @@ Button/Tooltip/VehicleMercenaries6=Calls down all purchased vehicle mercenaries 
 Button/Tooltip/VehicleMercenaries7=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleMercenaries8=Calls down all purchased vehicle mercenaries at the target location
 Button/Tooltip/VehicleMercenaries9=Calls down all purchased vehicle mercenaries at the target location
+Button/Tooltip/VehicleMercenariesPassive=Unlocks the <c val="FFFF00">Vehicle Mercenaries</c> topbar power.
 Button/Tooltip/VehicleUltraCapacitors=Increases attack speed of Vehicles by 20%
 Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 Button/Tooltip/VikingFighter=Durable support flyer. Loaded with rapid fire AOE air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
-Button/Tooltip/WarPigSquad=A squad of 6 War Pigs. Good against infantry.
+Button/Tooltip/VultureEMPPassive=Attacks disable mechanical units and structures for 1s.
 Button/Tooltip/YamatoGun=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoCPU,PeriodCount*Effect,YamatoU,Amount"/> damage.
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
@@ -682,11 +715,11 @@ ConversationState/ABChoice/ABChoiceHanson03A/Info/Rewards=<s val="ABChoiceResear
 ConversationState/ABChoice/ABChoiceHanson03B/Info/Rewards=<s val="ABChoiceResearchPoints_Protoss">+3 Protoss research</s><n/><n/>Purification Fleet support power.
 ConversationState/ABChoice/ABChoiceTosh03A/Info/Tooltip=<s val="TooltipTitle_Tech">Spectre</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Ultrasonic Pulse and EMP abilities. Has Veterancy.</s>
 ConversationState/ABChoice/ABChoiceTosh03B/Info/Tooltip=<s val="TooltipTitle_Tech">Ghost</s><n/><s val="TooltipDescription_Tech">Lmao unit. Can use Snipe and Feedback abilities. Has Veterancy.</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsGhost1/Info/Tooltip=<s val="TooltipTitle_Tech">Snipe</s><n/><s val="TooltipDescription_Tech">Snipes a non-structure enemy unit, dealing 170 damage (Affected by armour).</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsGhost3/Info/Tooltip=<s val="TooltipTitle_Tech">Feedback</s><n/><s val="TooltipDescription_Tech">Depletes a target of energy, dealing 2 damage per energy. Deals 400 shield damage (Affected by armour).</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsGhost1/Info/Tooltip=<s val="TooltipTitle_Tech">Snipe</s><n/><s val="TooltipDescription_Tech">Snipes a non-structure enemy unit, dealing 170 damage (Affected by armor).</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsGhost3/Info/Tooltip=<s val="TooltipTitle_Tech">Feedback</s><n/><s val="TooltipDescription_Tech">Depletes a target of energy, dealing 2 damage per energy. Deals 400 shield damage (Affected by armor).</s>
 ConversationState/ABChoiceRewards/ABChoiceRewardsGhost4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre1/Info/Tooltip=<s val="TooltipTitle_Tech">Ultrasonic Pulse</s><n/><s val="TooltipDescription_Tech">Does 144 damage over 3s (Affected by armour).</s>
-ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre3/Info/Tooltip=<s val="TooltipTitle_Tech">EMP</s><n/><s val="TooltipDescription_Tech">Does 100 damage to shields (Affected by armour), and depletes the energy of all targets, dealing 1 damage per energy.</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre1/Info/Tooltip=<s val="TooltipTitle_Tech">Ultrasonic Pulse</s><n/><s val="TooltipDescription_Tech">Does 144 damage over 3s (Affected by armor).</s>
+ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre3/Info/Tooltip=<s val="TooltipTitle_Tech">EMP</s><n/><s val="TooltipDescription_Tech">Does 100 damage to shields (Affected by armor), and depletes the energy of all targets, dealing 1 damage per energy.</s>
 ConversationState/ABChoiceRewards/ABChoiceRewardsSpectre4/Info/Tooltip=<s val="TooltipTitle_Tech">Veterancy</s><n/><s val="TooltipDescription_Tech">Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 ConversationState/CCEditionPermanence/Chrono_Device=Chrono Device
 ConversationState/CCEditionPermanence/Dark_Templar=Dark Templar
@@ -703,28 +736,28 @@ ConversationState/LabResearch/ResearchP2_1/Info/Tooltip=<s val="TooltipTitle_Pro
 ConversationState/LabResearch/ResearchP2_2=Expanded Hold
 ConversationState/LabResearch/ResearchP2_2/Info/Description=<s val="ResearchDescSummary_Protoss">- SCVs can now carry 2800 minerals, a 100% increase.<n/>- Drop off time remains the same.</s><n/><n/><s val="ResearchDescription_Protoss">Research of  Protoss filtering techniques allows our SCVs to pre-refine the minerals they gather, so they can carry less dead weight.</s>
 ConversationState/LabResearch/ResearchP2_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Expanded Hold</s><n/><s val="TooltipDescription_Protoss">Doubles SCV capacity.</s>
-ConversationState/LabResearch/ResearchP3_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Refineries auto-harvest up to 4 range.</n>- Refineries now cost 2000.</n>- Refineries no longer come with an SCV.</n>- SCVs can still drop off at refineries.</s><n/><n/><s val="ResearchDescription_Protoss">We have adapted Protoss warp technology to transport minerals straight from the fields to the Refinery, eliminating the need for SCVs to harvest and return.<n/><n/>Why the Protoss have never thought to transport minerals in this fashion is a mystery. Perhaps they lack Terran creativity and pragmatism, or possibly their primitive superstitions forbid the practice.</s>
+ConversationState/LabResearch/ResearchP3_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Refineries auto-harvest up to 8 range.</n>- Refineries now cost 2000.</n>- Refineries no longer come with an SCV.</n>- SCVs can still drop off at refineries.</s><n/><n/><s val="ResearchDescription_Protoss">We have adapted Protoss warp technology to transport minerals straight from the fields to the Refinery, eliminating the need for SCVs to harvest and return.<n/><n/>Why the Protoss have never thought to transport minerals in this fashion is a mystery. Perhaps they lack Terran creativity and pragmatism, or possibly their primitive superstitions forbid the practice.</s>
 ConversationState/LabResearch/ResearchP3_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Automated Refinery</s><n/><s val="TooltipDescription_Protoss">Refineries harvest within a set range, are cheaper, and don't come with an SCV.</s>
 ConversationState/LabResearch/ResearchP3_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Structures take 20% less time to build.<n/>- Structures also cost 20% less to make.<n/></s><n/><s val="ResearchDescription_Protoss">Expanded power production in our building construction facilities allows them to greatly speed up their production cycles.</s><n/>
 ConversationState/LabResearch/ResearchP3_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Command Center Reactor</s><n/><s val="TooltipDescription_Protoss">Buildings are constructed faster and cheaper.</s>
 ConversationState/LabResearch/ResearchP4_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Detects cloaked and burrowed enemies.<n/>- Can deploy Seeker Missiles.<n/>- Can place Point Defense Drones to destroy enemy projectiles.<n/>- Can deploy Repair Drones to repair.<n/>- Can disable enemy units with Interference Matrix.<n/>- Built at the Starport.</s><n/><n/><s val="ResearchDescription_Protoss">The Raven is an unmanned surveillance drone that can detect cloaked and burrowed enemy units. The Raven can also serve as a combat engineer by placing Auto-Turrets and Point Defense Drones and firing Seeker Missiles in strategically vital locations.</s>
-ConversationState/LabResearch/ResearchP4_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Detects cloaked and burrowed enemies.<n/>- Can cast Gravity Rift, AOE slow and damage.<n/>- Can cast Defensive Matrix, a 200 point shield.<n/>- Repairs nearby mechanical units.<n/>- Can Irradiate enemy units, which will spread to nearby enemies to deal damage<n/>- Built at the Starport.</s><n/><n/><s val="ResearchDescription_Protoss">We have created a unique version of the Science Vessel that can perform hull repairs on friendly mechanical units. This version of the Science Vessel can also Irradiate individual targets and detect cloaked and burrowed enemy units.<n/></s>
+ConversationState/LabResearch/ResearchP4_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Detects cloaked and burrowed enemies.<n/>- Can cast Gravity Rift, AOE slow and damage.<n/>- Can cast Defensive Matrix, a 200 point shield.<n/>- Repairs nearby mechanical units.<n/>- Can Irradiate units, which will spread to nearby units. Only damages Biological units<n/>- Built at the Starport.</s><n/><n/><s val="ResearchDescription_Protoss">We have created a unique version of the Science Vessel that can perform hull repairs on friendly mechanical units. This version of the Science Vessel can also Irradiate individual targets and detect cloaked and burrowed enemy units.<n/></s>
 ConversationState/LabResearch/ResearchP5_1=Plasma Shields
 ConversationState/LabResearch/ResearchP5_1/Info/Confirmation=<s val="WarningText"><n/>Researching </s><s val="WarningHighlight">Plasma Shields</s><s val="WarningText"> will prevent you from researching </s><s val="WarningHighlight">Topbar Efficiency.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchP5_1/Info/Description=<s val="ResearchDescSummary_Protoss">- All units gain a shield equal to 20% of their HP.<n/>- Also unlocks a shield upgrade on the Armoury.<n/><n/><s val="ResearchDescription_Protoss">Studying Protoss plasma shields has finally given us a workable shield prototype that we can fit on all our units.
+ConversationState/LabResearch/ResearchP5_1/Info/Description=<s val="ResearchDescSummary_Protoss">- All units gain a shield equal to 20% of their HP.<n/>- Also unlocks a shield upgrade on the Armory.<n/><n/><s val="ResearchDescription_Protoss">Studying Protoss plasma shields has finally given us a workable shield prototype that we can fit on all our units.
 ConversationState/LabResearch/ResearchP5_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Plasma Shields</s><n/><s val="TooltipDescription_Protoss">All units gain a shield equal to 20% of their health.</s>
 ConversationState/LabResearch/ResearchP5_2=Topbar Efficiency
 ConversationState/LabResearch/ResearchP5_2/Info/Confirmation=<s val="WarningText"><n/>Researching </s><s val="WarningHighlight">Topbar Efficiency</s><s val="WarningText"> will prevent you from researching </s><s val="WarningHighlight">Plasma Shields.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchP5_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Reduces the cost of all topbar abilities by 33%.<n/>- Reduces the cooldown of all topbar abilities by 50%.</s><n/><n/><s val="ResearchDescription_Protoss">Improved orbital presence allows lower-cost delivery of a variety of payloads to the planet surface.</s>
-ConversationState/LabResearch/ResearchP5_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Topbar Efficiency</s><n/><s val="TooltipDescription_Protoss">Reduces the cost and cooldown of topbar abilities by 33% and 50% respectively.</s>
+ConversationState/LabResearch/ResearchP5_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Reduces the cost of all topbar abilities by 20%.<n/>- Reduces the cooldown of all topbar abilities by 33%.</s><n/><n/><s val="ResearchDescription_Protoss">Improved orbital presence allows lower-cost delivery of a variety of payloads to the planet surface.</s>
+ConversationState/LabResearch/ResearchP5_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Topbar Efficiency</s><n/><s val="TooltipDescription_Protoss">Reduces the cost and cooldown of topbar abilities by 20% and 33% respectively.</s>
 ConversationState/LabResearch/ResearchZ1_1=Hi-Sec Autotracking
-ConversationState/LabResearch/ResearchZ1_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Hi-Sec Autotracking</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Building Armour.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ1_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Hi-Sec Autotracking</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Building Armur.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
 ConversationState/LabResearch/ResearchZ1_1/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches the Hi-Sec Autotracking upgrade, granting +1 range and +15% attack speed to all automated defensive structures.<n/><n/></s><s val="ResearchDescription_Zerg">Through researching Spore Crawlers, we have discovered a more efficient (and thus cheaper) method of threat detection and tracking, allowing us to implement it as standard on all base defenses.</s>
 ConversationState/LabResearch/ResearchZ1_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Hi-Sec Autotracking</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Hi-Sec Autotracking upgrade.</s>
 ConversationState/LabResearch/ResearchZ1_2=Building Armor
-ConversationState/LabResearch/ResearchZ1_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Building Armour</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Hi-Sec Autotracking.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
-ConversationState/LabResearch/ResearchZ1_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches Building Armour, granting a 20% damage resistance to all structures.</s><n/><n/><s val="ResearchDescription_Zerg">This improved structure plating design, inspired by the Ultralisk exoskeleton, is cheaper to manufacture than traditional extra plating, allowing us to use it as standard outfit.</s>
-ConversationState/LabResearch/ResearchZ1_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Building Armour</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Building Armour upgrade.</s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Building Armor</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Hi-Sec Autotracking.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Permanently researches Building Armor, granting a 20% damage resistance to all structures.</s><n/><n/><s val="ResearchDescription_Zerg">This improved structure plating design, inspired by the Ultralisk exoskeleton, is cheaper to manufacture than traditional extra plating, allowing us to use it as standard outfit.</s>
+ConversationState/LabResearch/ResearchZ1_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Building Armor</s><n/><s val="TooltipDescription_Zerg">Permanently researches the Building Armor upgrade.</s>
 ConversationState/LabResearch/ResearchZ2_1/Info/Description=<s val="ResearchDescSummary_Zerg">- Command Center can upgrade to a Planetary Fortress.<n/>- Upgrade grants extra armor, extra life, the Twin Ibiks Cannon, and bunker space for a single squad.<n/>- A Planetary Fortress cannot lift off.</s><n/><n/><s val="ResearchDescription_Zerg">We can now outfit the Command Center with the Twin Ibiks Cannon and additional structure plating. Please note that this upgrade, nicknamed the Planetary Fortress, must be triggered after the Command Center has been built.<n/><n/>Also note that a Command Center that has been upgraded to a Planetary Fortress can no longer lift off because the added weight is far too much for the Command Center's Atlas boosters.</s>
 ConversationState/LabResearch/ResearchZ3_1=Commando Suit
 ConversationState/LabResearch/ResearchZ3_1/Info/Confirmation=<s val="WarningText"><n/>Researching the </s><s val="WarningHighlight">Commando Suit</s><s val="WarningText"> will prevent you from researching the </s><s val="WarningHighlight">Cellular Reactor.</s> <s val="WarningText">Once made, the choice will be irreversible.<n/><n/>Would you like to confirm this research decision?<n/><n/></s>
@@ -744,19 +777,35 @@ ConversationState/LabResearch/ResearchZ5_1/Info/Description=<s val="ResearchDesc
 ConversationState/LabResearch/ResearchZ5_1/Info/Tooltip=<s val="TooltipTitle_Zerg">Hive Mind Emulator</s><n/><s val="TooltipDescription_Zerg">Topbar Power. Mind Controls zerg units in a medium area.</s>
 ConversationState/LabResearch/ResearchZ5_2/Info/Description=<s val="ResearchDescSummary_Zerg">- Confuses zerg units in a 9 radius area for 120s.<n/>- Costs 8000<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. <n/>- Available from the Fusion Core.<n/>- Affected units will attack the nearest unit.<n/>- 7.5 minute cooldown.</s><n/><n/><s val="ResearchDescription_Zerg">Studies conducted by the United Earth Directorate have shown that concentrated doses of sigma radiation can confuse Zerg identification of friend and foe. <n/></s>
 ConversationState/LabResearch/ResearchZ5_2/Info/Tooltip=<s val="TooltipTitle_Zerg">Psi Disrupter</s><n/><s val="TooltipDescription_Zerg">Topbar Power. Confuses zerg units in a large area.</s>
+ConversationState/Maps/THorner02/Info/Loading Screen Help=The Dominion is on the way. It would be best to get this done quickly to avoid fighting them.
+ConversationState/Maps/TRaynor03/Info/Loading Screen Help=Marines are good against zerglings and hydralisks, while Devastation Turrets are good against roaches and ultras.
+ConversationState/Maps/TTosh01/Info/Loading Screen Help=Reapers have a utility upgrade to increase their vision range, and give them detection. Use this to ambush burrow ambushes.
+ConversationState/Maps/TTosh01/Info/Loading Screen Restart=Ambushing enemy groups, and firing from highground, is a great way to keep your losses and costs low.
+ConversationState/Maps/TZeratul01/Info/Loading Screen Help=Zeratul has a terrible memory, so he talks to himself to help him remember things.
+ConversationState/Maps/TZeratul01/Info/Loading Screen Restart=Zeratul must have forgotten something.
+ConversationState/Maps/TZeratul02/Info/Loading Screen Help=Ma'ar can teleport to Zeratul is he knows exactly where Zeratul is.
+ConversationState/Maps/TZeratul02/Info/Loading Screen Restart=You only need to free the preservers. Find a way to slip in undetected.
+ConversationState/Maps/TZeratul04/Info/Loading Screen Restart=Watch for enemies clustering on the minimap to get an idea of which side they will attack next.
+ConversationState/StoryTips/Raynor02_ResourceCaches/Info/Description=Occasionally you will come across caches of resource pallets, or raw resources. These can be picked up and added to your resources by approaching them with any ground unit.
 ConversationState/StoryTips/Raynor02_SCV=<c val="FF8000">SCV</c>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
-ConversationState/StoryTips/Raynor02_Supply=<c val="FF8000">Supply Depot</c>
-ConversationState/StoryTips/Raynor02_Supply/Info/Description=In order to keep your base fully powered, you must have the necessary power. To increase your power, order a <c val="FFFF00">Command Center</c> or <c val="FFFF00">Crane</c> to build a <c val="FFFF00">Supply Depot</c>.
+ConversationState/StoryTips/Raynor02_Supply=<c val="FF8000">Power Plant</c>
+ConversationState/StoryTips/Raynor02_Supply/Info/Description=In order to keep your base fully powered, you must have the necessary power. To increase your power, order a <c val="FFFF00">Command Center</c> or <c val="FFFF00">Crane</c> to build a <c val="FFFF00">Power Plant</c>.
 ConversationState/StoryTips/Raynor02_TechLab/Info/Description=You can construct a <c val="FFFF00">Tech Lab</c> add-on for your <c val="FFFF00">Barracks </c>to train advanced units such as Medics, and research upgrades. To start construction, select your Barracks and click the <c val="FFFF00">Build Tech Lab</c> button on the command card.
 ConversationState/StoryTips/Raynor03_Bunker=<c val="FF8000">Bunker</c>
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
 ConversationState/StoryTips/Raynor03_EngineeringBay=<c val="FF8000">Engineering Bay</c>
 ConversationState/StoryTips/Raynor03_EngineeringBay/Info/Description=Upgrade structure -- You can increase your base defense's range and armor by purchasing upgrades at the <c val="FFFF00">Engineering Bay</c>. An Engineering Bay also allows you to construct <c val="FFFF00">Missile Turrets</c>.
+ConversationState/StoryTips/Tosh01_Reapers=<c val="FF8000">Reaper</c>
+ConversationState/StoryTips/Tosh01_Reapers/Info/Description=Light harassment infantry -- <c val="FFFF00">Reapers </c>are fast-moving raiders that can jump up and down cliffs. Reapers are armed with pistols and equipped with D-8 Charges, explosive devices that do extra damage against structures. Can attack ground units only.<n/><n/>Reapers have an upgrade to give them Detection and more sight range, available from the Shadow Ops.
 ConversationState/StoryTips/Tosh01_RichMinerals=<c val="FF8040">Rich Minerals</c>
 ConversationState/StoryTips/Tosh01_RichMinerals/Info/Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
+ConversationState/StoryTips/Tychus05_BattleCruisers=<c val="FF8000">Battlecruiser</c>
+ConversationState/StoryTips/Tychus05_BattleCruisers/Info/Description=Heavy assault ship -- <c val="FFFF00">Battlecruisers </c>are Minotaur-class ships built from the <c val="FFFF00">Starport</c>.  They can attack ground and air units simultaneously with their weapon batteries and do massive damage in a single hit with the <c val="FFFF00">Yamato Cannon.</c>
+ConversationState/StoryTips/Tychus05_Prisoners=<c val="FF8000">Prisoners</c>
+ConversationState/StoryTips/Tychus05_Prisoners/Info/Description=The <c val="FFFF00">Dark Templar</c> you've released have <c val="FFFF00">Shields</c> that allow them to move inside a <c val="FFFF00">Rip-Field</c> without being slowed. They are <c val="FFFF00">Permanently Cloaked</c> and excellent at taking out ground forces as long as they are not <c val="FFFF00">Detected.</c> 
 ConversationState/StoryTips/Tychus05_RipFields=<c val="FF8000">Rip-Fields</c>
-ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field,</c> units will be slowed by 50%. Protoss units have <c val="FFFF00">Shields</c> and are not affected.
+ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, unshielded units will be slowed by 50%.
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
 ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
 ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods
@@ -810,12 +859,13 @@ ConversationState/Tech/Tech_Bunker_1=Shrike Turret
 ConversationState/Tech/Tech_Bunker_1/Info/Description=<s val="TechSummary">- Bunkers gain an automated Shrike Turret<n/><n/><s val="TechDescription">Placing an automated turret on top of bunkers allows them to provide more than just protection to the infantry inside, able to provide additional Rifle firepower.</s>
 ConversationState/Tech/Tech_Bunker_1/Info/Tooltip=<s val="TooltipTitle_Tech">Shrike Turret</s><n/><s val="TooltipDescription_Tech">Gives the bunker an automated turret.</s>
 ConversationState/Tech/Tech_Bunker_2/Info/Description=<s val="TechSummary">- Bunkered units gain +1 range.<n/>- Also affects the Shrike Turret.</s><n/><n/><s val="TechDescription">Wolfe Industries has developed a Bunker port that houses a magnetic rail. This device dramatically accelerates all projectiles coming out of the port, increasing the range of all weapons fired from the Bunker. The same technology can be applied to Shrike Turrets, if we have purchased them.</s>
-ConversationState/Tech/Tech_CommandCenter_2/Info/Description=<s val="TechSummary">- Unlocks the Scanner Sweep, Tactical Missile, and Nuclear Strike support powers.</s><n/><s val="TechSummary">- Scanner Sweep: Reveals an area in the fog of war for 500<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. Available from the Engineering Bay.<n/>- Tactial Missile: Strikes the target area with a tactical missile for 1500<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. Max of 3 charges. Available from the Shadow Ops.<n/>- Nuclear Strike: Strikes the target area with a nuclear missile for 3000<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. Available from the Armoury.<n/></s><n/><s val="TechDescription">ATVX now manufactures a satellite comlink that can reveal unexplored areas on the map. This comlink can also call down offensive abilities from ships in orbit.
+ConversationState/Tech/Tech_CommandCenter_2/Info/Description=<s val="TechSummary">- Unlocks the Scanner Sweep, Tactical Missile, and Nuclear Strike support powers.</s><n/><s val="TechSummary">- Scanner Sweep: Reveals an area in the fog of war for 500<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. Available from the Engineering Bay.<n/>- Tactical Missile: Strikes the target area with a tactical missile for 1500<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. Max of 3 charges. Available from the Shadow Ops.<n/>- Nuclear Strike: Strikes the target area with a nuclear missile for 3000<s val="Kicker_Minerals"></s><IMG path="Assets\Textures\icon-mineral-terran.dds" height="14" width="14"/>. Available from the Armory.<n/></s><n/><s val="TechDescription">ATVX now manufactures a satellite comlink that can reveal unexplored areas on the map. This comlink can also call down offensive abilities from ships in orbit.
 ConversationState/Tech/Tech_CommandCenter_2/Info/Tooltip=<s val="TooltipTitle_Tech">Orbital Command</s><n/><s val="TooltipDescription_Tech">Unlocks the Scanner Sweep, Tactical Missile, and Nuclear Strike support powers.
 ConversationState/Tech/Tech_Diamondback_1/Info/Description=<s val="TechSummary">- Diamondback attacks pierce to another target.</s><n/><n/><s val="TechDescription">The Tri-Lithium Power Cell has 40% more capacity and fits in the same slot as the outdated monolithium power cell. This increased power surge allows the Diamondback to fire faster projectiles, piercing the initial target.</s>
 ConversationState/Tech/Tech_Diamondback_1/Info/Tooltip=<s val="TooltipTitle_Tech">Tri-Lithium Power Cell</s><n/><s val="TooltipDescription_Tech">Diamondback attacks pierce to another target.</s>
 ConversationState/Tech/Tech_Diamondback_2/Info/Description=<s val="TechSummary">- Diamondbacks gain +50 life.<n/>- Diamondbacks takes 25% less Cannon damage.</s><n/><n/><s val="TechDescription">Bellerephon now offers a Diamondback with a hull made from a single piece of shaped titanium. This newer model can absorb more punishment than the traditional Diamondback because the hull has no joints or rivets that can buckle.</s>
 ConversationState/Tech/Tech_Diamondback_2/Info/Tooltip=<s val="TooltipTitle_Tech">Shaped Hull</s><n/><s val="TooltipDescription_Tech">Diamondbacks gain +50 lifeand resistance to Cannon damage.</s>
+ConversationState/Tech/Tech_Firebat_2/Info/Description=<s val="TechSummary">- Firebats gain +<d ref="Upgrade,FirebatJuggernautPlating,EffectArray[0].Value"/> armor.</s><n/><s val="TechSummary">- This results in 33.3% damage resist base, and 42.8% with Infantry Vanadium Plating.</s><n/><n/><s val="TechDescription">Juggernaut Plating strengthens the Firebat's natural weak spots and thickens the helmet and chest pieces. This upgrade allows Firebats to shrug off the attacks of other infantry units and soak up incredible amounts of damage from small-arms fire.</s>
 ConversationState/Tech/Tech_Ghost_1=Reinforced Barrier
 ConversationState/Tech/Tech_Ghost_1/Info/Description=<s val="TechSummary">- Predator energy barrier absorbs twice as much damage</s><n/><n/><s val="TechDescription">Umojan shield projectors and shielding algorithms allow the shield to operate far more efficiently.
 ConversationState/Tech/Tech_Ghost_1/Info/Tooltip=<s val="TooltipTitle_Tech">Reinforced Barrier</s><n/><s val="TooltipDescription_Tech">Doubles Barrier effectiveness.</s>
@@ -911,6 +961,8 @@ DataCollection/Name/InfantryMercenaries=Infantry Mercenaries
 DataCollection/Name/MarauderSquad=Marauder Squad
 DataCollection/Name/MarineSquad=Marine Squad
 DataCollection/Name/MedicSquad=Medic Squad
+DataCollection/Name/MercCompound=Merc Compound
+DataCollection/Name/MercCompound2=Merc Compound Copy
 DataCollection/Name/MineralField=Mineral Field
 DataCollection/Name/MissileTurret=Missile Turret
 DataCollection/Name/MissileTurret2=Missile Turret Copy
@@ -1067,6 +1119,8 @@ Effect/Name/HailstormLauncherLMMerc=Hailstorm Launcher
 Effect/Name/HailstormLauncherU=Hailstorm Launcher
 Effect/Name/HailstormLauncherUMerc=Hailstorm Launcher
 Effect/Name/HideInTheShadows=Hide In The Shadows
+Effect/Name/ImplosionDamageSet=Implosion
+Effect/Name/ImplosionFlatDamage=Implosion
 Effect/Name/InfantryMercSet=Infantry Merc Set
 Effect/Name/InfiniteCreep=InfiniteCreep
 Effect/Name/InfiniteCreepCP=InfiniteCreepCP
@@ -1100,6 +1154,8 @@ Effect/Name/MedivacHealLoopMagazine=Heal Loop
 Effect/Name/MedivacHealLoopSet=Heal Loop
 Effect/Name/MedivacHealLoopTransport=Heal Loop
 Effect/Name/MedivacLoadSet=Load
+Effect/Name/MercCompBuilt=MercCompBuilt
+Effect/Name/MercCompPlace=MercCompPlace
 Effect/Name/MercSquadDropDelay=Merc Squad Drop Delay
 Effect/Name/MineralSiloInitial=Mineral Silo Initial
 Effect/Name/MineralSpikeInitial=Mineral Spike Initial
@@ -1129,8 +1185,14 @@ Effect/Name/RallyIterate=Rally Iterate
 Effect/Name/RavenScramblerDummy=RavenScramblerDummy
 Effect/Name/RavenScramblerSwitchInitial=RavenScramblerSwitchInitial
 Effect/Name/RaynorSnipeOrderWrapper=Raynor Snipe (Order Wrapper)
+Effect/Name/ReaperSquadAttack=Reaper Squad Attack
+Effect/Name/ReaperSquadNoShootStructure=Reaper Squad No Shoot Structure
+Effect/Name/ReaperSquadNoShootStructureIterate=Reaper Squad No Shoot Structure Iterate
+Effect/Name/ReaperSquadShootStructure=Reaper Squad Shoot Structure
+Effect/Name/ReaperSquadShootStructureIterate=Reaper Squad Shoot Structure Iterate
 Effect/Name/RefineryBounce=Refinery Bounce
 Effect/Name/RemoveBuiltBehaviors=Remove Built Behaviors
+Effect/Name/RemoveBuiltBehaviors3=Remove Built Behaviors 3
 Effect/Name/RemovePrecursorMercIterate=Remove Precursor Merc Iterate
 Effect/Name/RepairDroneReleaseCreateUnit=Repair Drone Release
 Effect/Name/RepairDroneTimedLife=Repair Drone
@@ -1636,6 +1698,8 @@ Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
 Param/Value/lib_3B48F5E9_27992306=<c val="FF00FF">Topbar Granted: </c>
 Param/Value/lib_3B48F5E9_2865F866=Laser Drill
 Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
+Param/Value/lib_3B48F5E9_5D355B93=<c val="00FF40">TIP</c> - A  Dominion force is on the way. When they find Raynor here, they'll bombard the area, then repeatedly deploy forces to kill him.
+Param/Value/lib_3B48F5E9_69230868=<c val="00FF40">TIP</c> - 
 Param/Value/lib_3B48F5E9_6C689267=CNC Edition has <c val="FF0000">new </c>or <c val="FF8040">edited </c>tips in this mission
 Param/Value/lib_3B48F5E9_7101F21A=The Predator has been unlocked.
 Param/Value/lib_3B48F5E9_76BEF993=<c val="FF00FF">Topbar Granted: </c>
@@ -1643,6 +1707,7 @@ Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
 Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
+Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>
@@ -1662,6 +1727,7 @@ PredatorShield=Impact Barrier
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryCompleteOnly609241497TechTreeCheat=Armory
 RequirementNode/Tooltip/CountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat=Armory
+RequirementNode/Tooltip/CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat=Barracks
 RequirementNode/Tooltip/CountUnitAlias_BarracksInProgressOrBetter789532539TechTreeCheat=Barracks
 RequirementNode/Tooltip/CountUnitAlias_EngineeringBayInProgressOrBetter700323805TechTreeCheat=Engineering Bay
 RequirementNode/Tooltip/CountUnitAlias_FactoryInProgressOrBetter96167438TechTreeCheat=Factory
@@ -1696,9 +1762,12 @@ Skin/Name/PsiDisruptor8=PsiDisruptor8
 Skin/Name/PsiDisruptor9=PsiDisruptor9
 StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
-UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armour </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armour has a tooltip stating what armour type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armour types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
+UI/AchievementDisable=Achievements have been disabled due to <c val="00FF00">Tiberium</c> usage. To enable achievements again, start a new game or load a saved game.
+UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armor </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armor has a tooltip stating what armor type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armor types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
 UI/HelpGameMechanic_DamageTypes_Name=Damage Types
 UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Veins are green crystals which yield 14 minerals per harvest, and do 10 harvests/s.</li><li>Once a Mineral Vein is depleted, it can no longer be harvested from, and will eventually be replaced by a nearby Node.</li></ul>
+UI/HelpGameMechanic_NeutralStructures_Description=Some maps have <c val="FFFF00">Capturable Structures </c>that can be captured to provide a bonus. These bonuses can be immediate, or over time while you own it.
+UI/HelpGameMechanic_NeutralStructures_Name=Capturable Structures
 UI/HelpGameMechanic_Power=Power
 UI/HelpGameMechanic_Power_Description=Buildings require Power to function. Low power causes Production buildings to work slower, while Tech and Defensive structures are disabled entirely.
 UI/HelpGameMechanic_RichMinerals_Description=<c val="FFFF00">Rich Mineral Fields</c> are harvested at twice the rate normal mineral fields are. Rich Mineral Fields are yellow.
@@ -1711,15 +1780,18 @@ UI/ResourceName3=Custom
 UI/ResourceSupplyToolTip_Terr=Buildings use power to function. Build Power Plants to get more power.
 Unit/InfoText/PalletGas=Use any ground unit to collect 2000 minerals.
 Unit/InfoText/PalletMinerals=Use any ground unit to collect 1000 minerals.
+Unit/LifeArmorName/None=Terran Infantry Armor
 Unit/LifeArmorName/TerranBuildingPlating=Terran Building Plating
 Unit/LifeArmorName/TerranInfantryArmor=Terran Infantry Armor
 Unit/LifeArmorName/TerranShipPlating=Terran Ship Plating
 Unit/LifeArmorName/TerranVehiclePlating=Terran Vehicle Plating
 Unit/LifeArmorName/ZergBrutaliskBurrowedArmor=Zerg Chitinous Plating
+Unit/Name/AegisGuard=Aegis Guard
 Unit/Name/AirTransport=Air Transport
 Unit/Name/Armory2=Armory
 Unit/Name/Barracks2=Barracks
 Unit/Name/BrutaliskBurrowed=Brutalisk
+Unit/Name/BulwarkCompany=Bulwark Company
 Unit/Name/Bunker2=Bunker
 Unit/Name/BunkerSQ=Bunker
 Unit/Name/CCRepairDrone=Repair Drone
@@ -1740,12 +1812,15 @@ Unit/Name/HammerSecuritiesSquad=Hammer Securities Squad
 Unit/Name/MarauderSquad=Marauder Squad
 Unit/Name/MarineSquad=Marine Squad
 Unit/Name/MedicSquad=Medic Squad
+Unit/Name/MercCompound2=Merc Compound
 Unit/Name/MineralSilo=Mineral Silo
 Unit/Name/MineralSpike=Mineral Spike
 Unit/Name/MissileTurret2=Missile Turret
-Unit/Name/OrbitalCommand2=Orbital Command
-Unit/Name/OrbitalCommandFlying2=Orbital Command
+Unit/Name/NaturalGas=Resources
+Unit/Name/NightWolf=Night Wolf
+Unit/Name/PalletGas=Resource Pallet
 Unit/Name/PlanetaryFortress2=Planetary Fortress
+Unit/Name/PrideOfAugustgrad=Pride Of Augustgrad
 Unit/Name/RailgunWeapon=Railgun Weapon
 Unit/Name/ReaperSquad=Reaper Squad
 Unit/Name/Refinery2=Refinery
@@ -1753,6 +1828,11 @@ Unit/Name/RefineryBounce=Refinery Bounce
 Unit/Name/SCV2=SCV
 Unit/Name/SOAMothershipLineAttackWeapon=SOA Mothership Line Attack Weapon
 Unit/Name/SensorTower2=Sensor Tower
+Unit/Name/ShockDivision=Shock Division
+Unit/Name/ShockDivisionSieged=Shock Division
+Unit/Name/SkyFuryAssault=Sky Fury
+Unit/Name/SkyFuryFighter=Sky Fury
+Unit/Name/SonofKorhal=Son of Korhal
 Unit/Name/Starport2=Starport
 Unit/Name/Stone=Stone
 Unit/Name/SupplyDepot2=Power Plant
@@ -1765,11 +1845,22 @@ Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
 Unit/Name/WarPigSquad=War Pig Squad
 Unit/Name/WarpConduit=Warp Conduit
-Unit/Tip/Air=<c val="FFBF00">Light Air</c> Armor
+Unit/ShieldArmorName/TerranPlasmaShields=Terran Plasma Shields
+Unit/Tip/Air=<c val="FFBF00">Light Aircraft</c> Armor
 Unit/Tip/Heavy=<c val="FFBF00">Heavy Vehicle</c> armor
-Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Air</c> armor
+Unit/Tip/HeavyAir=<c val="FFBF00">Heavy Aircraft</c> armor
 Unit/Tip/Infantry=<c val="FFBF00">Infantry</c> Armor
+Unit/Tip/KerriganArmor=Kerrigan has no armor type, and takes full damage from all weapon types.
 Unit/Tip/Light=<c val="FFBF00">Light Vehicle</c> armor
+Unit/Tip/Structure=<c val="FFBF00">Structure</c> Armor
+Unit/Tooltip/DevilDogSquad=A squad of 4 Devil Dogs. Good against structures and infantry.
+Unit/Tooltip/FirebatSquad=A squad of 4 Firebats. Good against structures and infantry.
+Unit/Tooltip/HammerSecuritiesSquad=A squad of 2 Hammer Securities. Good against vehicles and buildings. Good against air with an upgrade.
+Unit/Tooltip/MarauderSquad=A squad of 2 Marauders. Good against vehicles and buildings. Good against air with an upgrade.
+Unit/Tooltip/MarineSquad=A squad of 6 Marines. Good against infantry.
+Unit/Tooltip/MedicSquad=A squad of 3 Medics. Heals nearby infantry.
+Unit/Tooltip/ReaperSquad=A squad of 4 Reapers. Good against infantry and structures, bad against anything else.
+Unit/Tooltip/WarPigSquad=A squad of 6 War Pigs. Good against infantry.
 Upgrade/Name/330mmBarrageCannons=Thor Speed
 Upgrade/Name/AresClassWeaponsSystem=Neosteel Plating
 Upgrade/Name/AresClassWeaponsSystemViking=Improved Mechanics
@@ -1831,6 +1922,10 @@ Weapon/Name/PredatorShields=Predator Shields
 Weapon/Name/RaynorGaussRifle=Gauss Cannon
 Weapon/Name/ReaperSquad=Reaper Squad
 Weapon/Name/ReaperSquadCharge=Reaper Squad Charge
+Weapon/Name/Tentacles1=Tentacles
+Weapon/Name/Tentacles2=Tentacles
+Weapon/Name/Tentacles3=Tentacles
+Weapon/Name/Tentacles4=Tentacles
 Weapon/Name/ThorDiamondback=Eviscerator Rail Gun
 Weapon/Name/ThorInfernalFlameThrower=Infernal Flamethrower
 Weapon/Name/TossGrenade=Toss Grenade
@@ -1839,7 +1934,8 @@ Weapon/Name/WreckingCrewFighterGround=Lanzer Torpedoes
 Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/>Excellent against vehicles<n/>Good against structures<n/>Bad against infantry
 Weapon/Tip/ExplosiveCharges=Can only be used against structures.
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
-Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
+Weapon/Tip/HybridF=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
+Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/><n/>Excellent against everything.<n/><n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
 Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/>Excellent against infantry<n/>Good against light aircraft<n/>Moderate against light vehicles<n/>Bad against heavy vehicles, heavy aircraft and structures
 Weapon/Tip/Rocket=Deals <c val="FFBF00">Rocket</c> damage<n/>Excellent against aircraft<n/>Good against vehicles<n/>Moderate against infantry, structures
