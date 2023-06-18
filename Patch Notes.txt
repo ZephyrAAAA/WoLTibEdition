@@ -7,6 +7,9 @@ Fixed a bug where sometimes a building would continue to repair when it was not 
 Nerfed building repair to 10+1%(ish), from 10+2%(ish)
 Dual Fusion now also affects the improved plasma shield restore rate from repair drones
 
+Outlaws:
+Fixed ultracaps being unable to be researched if you skip the tutorial
+
 Haven's Fall:
 Added a chat tip about the bonus
 
