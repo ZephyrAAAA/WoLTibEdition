@@ -261,6 +261,8 @@
         <EffectArray Operation="AddBaseMultiply" Reference="Effect,BuildingRepair,RechargeVitalRate" Value="0.500000"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Effect,MechanicalRepair,RechargeVitalFraction" Value="0.500000"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Effect,MechanicalRepair,RechargeVitalRate" Value="0.500000"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Effect,ShieldRestore,RechargeVitalFraction" Value="0.500000"/>
+        <EffectArray Operation="AddBaseMultiply" Reference="Effect,ShieldRestore,RechargeVitalRate" Value="0.500000"/>
         <EffectArray Operation="AddBaseMultiply" Reference="Effect,BuildingRepair,RechargeVitalFraction" Value="0.500000"/>
     </CUpgrade>
     <CUpgrade id="DynamicPowerRouting">
