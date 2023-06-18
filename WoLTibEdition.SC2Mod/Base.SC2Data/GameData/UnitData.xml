@@ -4052,7 +4052,8 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <LifeArmorTip value="Unit/Tip/Infantry"/>
         <AbilArray index="1" Link="move"/>
-        <AbilArray index="2" Link="attack"/>
+        <AbilArray index="2" Link="heal"/>
+        <AbilArray index="3" removed="1"/>
         <AlliedPushPriority value="-1"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
@@ -4066,8 +4067,7 @@
         <AbilArray index="2" Link="MedicSquad"/>
         <AbilArray index="3" Link="MedicSquadAcquire"/>
         <CardLayouts index="0">
-            <LayoutButtons index="4" Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="MedicSquad" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="MedicCapturePassive" Type="Passive" Row="1" Column="1"/>
