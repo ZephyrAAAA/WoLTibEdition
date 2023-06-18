@@ -52,6 +52,27 @@
             <Subtitle value="Conversation/PardonMe"/>
         </AssetArray>
     </CSound>
+    <CSound id="SOA_RepairBeamStart" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1a.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1b.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1c.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1d.wav" FacialGroup=""/>
+        <DupeMuteCount value="2"/>
+        <DupeThresholdPoints/>
+        <DupeThresholdPoints Count="3" Volume="-3.000000"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-22.000000,-20.000000"/>
+    </CSound>
+    <CSound id="RaynorSpeechlessMarine" parent="Campaign" Portrait="RaynorMarinePortrait" Subtitle="Speechless" Speaker="CharRaynor" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Blank.ogg"/>
+            <FacialAnim value=""/>
+            <PortraitModel value="RaynorMarinePortrait"/>
+            <Speaker value="ConversationState/Characters/CharRaynor"/>
+            <Subtitle value="Speechless"/>
+        </AssetArray>
+    </CSound>
     <CSound id="TaurenMarineArrive" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_Arrive" Speaker="TaurenMarine" Line="Arrive">
         <AssetArray index="0">
             <File value="LocalizedData\Sounds\TerranVO\CampaignUnits\TaurenSpaceMarine\TaurenSpaceMarine_Ready00.ogg"/>

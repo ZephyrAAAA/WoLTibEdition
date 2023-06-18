@@ -1707,6 +1707,8 @@ Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
 Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
+Param/Value/lib_3B48F5E9_CD061853=Memes have been <c val="00FF40">Enabled</c>
+Param/Value/lib_3B48F5E9_CE432AB3=Memes have been <c val="FF0000">Disabled</c>
 Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>

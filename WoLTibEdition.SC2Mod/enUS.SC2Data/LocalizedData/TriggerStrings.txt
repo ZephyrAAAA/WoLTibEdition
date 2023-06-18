@@ -33,6 +33,7 @@ ParamDef/Name/lib_3B48F5E9_F0FF9BED=Upgrade Initial Time Delay
 PresetValue/Name/lib_Camp_8CFF1B4F=Research - P5-1 Plasma Shields
 PresetValue/Name/lib_Camp_D86B2000=Research - P5-2 Topbar Efficiency
 Trigger/Name/lib_3B48F5E9_04DEC18E=Zerghyper Remove
+Trigger/Name/lib_3B48F5E9_08201D83=Memes
 Trigger/Name/lib_3B48F5E9_0EE6340D=Unhighlight Armory
 Trigger/Name/lib_3B48F5E9_0F938D8A=Armory/Hercules
 Trigger/Name/lib_3B48F5E9_19FBD8B9=Squad Shields
