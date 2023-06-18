@@ -64,6 +64,15 @@
         <Pitch value="-1.000000,1.000000"/>
         <Volume value="-22.000000,-20.000000"/>
     </CSound>
+    <CSound id="RaynorSpeechless" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="Speechless" Speaker="CharRaynor" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Blank.ogg"/>
+            <FacialAnim value=""/>
+            <PortraitModel value="RaynorCommanderPortrait"/>
+            <Speaker value="ConversationState/Characters/CharRaynor"/>
+            <Subtitle value="Speechless"/>
+        </AssetArray>
+    </CSound>
     <CSound id="TaurenMarineArrive" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_Arrive" Speaker="TaurenMarine" Line="Arrive">
         <AssetArray index="0">
             <File value="LocalizedData\Sounds\TerranVO\CampaignUnits\TaurenSpaceMarine\TaurenSpaceMarine_Ready00.ogg"/>
