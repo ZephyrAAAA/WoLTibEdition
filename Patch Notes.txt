@@ -1,5 +1,5 @@
-*Added a graphic for repair
-*Dominion Mercs now use the Royal Guard name as well as the skin
+Added a graphic for repair
+fixed a bug where sometimes a building would continue to repair when it was not being repaired
 
 Haven's Fall:
 Added a chat tip about the bonus

@@ -434,6 +434,18 @@
     <CModel id="SOAMothershipLineAttackWeapon" parent="MissileFX">
         <Model value="Assets\Effects\Protoss\Mothership_Taldarim_Thermal_Lance_Beam_Impact\Mothership_Taldarim_Thermal_Lance_Beam_Impact.m3"/>
     </CModel>
+    <CModel id="SOARepairBeam" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\SOA_Reconstruction_Beam\SOA_Reconstruction_Beam.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="SOARepairBeamGlaze" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Glaze\SOA_Reconstruction_Beam_Glaze\SOA_Reconstruction_Beam_Glaze.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="SOARepairBeamImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\SOA_Reconstruction_Beam_Impact\SOA_Reconstruction_Beam_Impact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
     <CModel id="Shield">
         <Model value="Assets\Models\Shield.m3"/>
         <Lighting value="Flamethrower"/>

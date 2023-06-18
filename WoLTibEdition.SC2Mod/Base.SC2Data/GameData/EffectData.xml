@@ -1916,6 +1916,7 @@
     <CEffectCreateHealer id="BuildingRepair">
         <ValidatorArray value="noMarkers"/>
         <ValidatorArray value="IsNotConstructing"/>
+        <ValidatorArray value="BuildingBeingRepaired"/>
         <Flags index="Channeled" value="0"/>
         <Flags index="ContinueWhenFull" value="1"/>
         <DrainResourceCostFactor index="Minerals" value="1"/>

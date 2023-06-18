@@ -1073,6 +1073,32 @@ void lib3B48F5E9_gt_UnlimitedTopbarcharges_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Memes
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_Memes_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lib3B48F5E9_gv_memes = !(lib3B48F5E9_gv_memes);
+    if ((lib3B48F5E9_gv_memes == true)) {
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_CD061853"));
+    }
+    else {
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_CE432AB3"));
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_Memes_Init () {
+    lib3B48F5E9_gt_Memes = TriggerCreate("lib3B48F5E9_gt_Memes_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_Memes, c_playerAny, "!memes", true);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Predator/Ghost Academy
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_PredatorGhostAcademy_Func (bool testConds, bool runActions) {
@@ -1448,6 +1474,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
     lib3B48F5E9_gt_GrantDTTopbar_Init();
     lib3B48F5E9_gt_UnlimitedTopbarcharges_Init();
+    lib3B48F5E9_gt_Memes_Init();
     lib3B48F5E9_gt_PredatorGhostAcademy_Init();
     lib3B48F5E9_gt_ArmoryHercules_Init();
     lib3B48F5E9_gt_FusionCore_Init();

@@ -3,6 +3,10 @@
     <CValidatorUnitCompareBehaviorCount id="BuildingNotBeingRepaired">
         <Behavior value="BuildingRepair"/>
     </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="BuildingBeingRepaired">
+        <Value value="1"/>
+        <Behavior value="BuildingRepair"/>
+    </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="BuildingNotDepowered">
         <Behavior value="Depowered"/>
     </CValidatorUnitCompareBehaviorCount>

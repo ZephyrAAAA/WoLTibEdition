@@ -25,6 +25,7 @@ trigger lib3B48F5E9_gt_FullPowerDrill;
 trigger lib3B48F5E9_gt_GrantLaserDrillTopbar;
 trigger lib3B48F5E9_gt_GrantDTTopbar;
 trigger lib3B48F5E9_gt_UnlimitedTopbarcharges;
+trigger lib3B48F5E9_gt_Memes;
 trigger lib3B48F5E9_gt_PredatorGhostAcademy;
 trigger lib3B48F5E9_gt_ArmoryHercules;
 trigger lib3B48F5E9_gt_FusionCore;
