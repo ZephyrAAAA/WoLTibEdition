@@ -1,5 +1,8 @@
 *Added a graphic for repair
-*Dominion Mercs now use the Royal Guard name as well as the skin
+*SCV gather command is now autocastable, default on. Turning it off makes them stop seeking out stuff to mine.
+*Single charge topbar abilities are no longer removed on being used.
+*Deploy DTs now has them "blink" in.
+*Marines can no longer die of stim overdose
 
 Haven's Fall:
 Added a chat tip about the bonus
@@ -10,5 +13,14 @@ Added a chat tip about the bonus
 Media Blitz:
 Added a chat tip about the convoys so you don't have to read the tip.
 
+Piercing the Shroud:
+*Added some light vehicles (Hellions, Goliaths, Vultures) in places.
+
 Supernova:
-Added some units to cover the back of the vault better.
+Added a couple scouts to cover the back of the vault better.
+
+Shatter:
+*Killing the Leviathan by blowing up a platform it's on now properly removes the minimap icon.
+
+All-In:
+*Kerrigan targets implosion by highest hp, preferring targets it will kill.
