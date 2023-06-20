@@ -1783,6 +1783,17 @@
     <CActorUnit id="WreckingCrewFighter">
         <AbilSoundArray AbilCmd="attack,Execute" Sound="Viking_Attack"/>
     </CActorUnit>
+    <CActorModel id="DTTopbarBlinkIn" parent="ModelAnimationStyleOneShotNoOrphan">
+        <On Terms="Effect.SpawnDarkTemplar.Start; At Source" Send="Create"/>
+        <Host Subject="_Selectable"/>
+        <HostSiteOps Ops="SOpTargetPoint"/>
+        <Model value="ZeratulBlinkIn"/>
+        <Scale value="2.000000"/>
+    </CActorModel>
+    <CActorSound id="DTTopbarBlinkSound" parent="SoundOneShot">
+        <On Terms="Effect.SpawnDarkTemplar.Start; At Effect" Send="Create"/>
+        <Sound value="Zeratul_Blink"/>
+    </CActorSound>
     <CActorModel id="ZeratulRecall" parent="ModelAddition">
         <EditorCategories value=""/>
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Death Death Death ContentPlayOnce 2.500000 AsTimeScale"/>
