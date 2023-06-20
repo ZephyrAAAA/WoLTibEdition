@@ -6,6 +6,7 @@ Added a graphic for repair
 Fixed a bug where sometimes a building would continue to repair when it was not being repaired
 Nerfed building repair to 10+1%(ish), from 10+2%(ish)
 Dual Fusion now also affects the improved plasma shield restore rate from repair drones
+Hyperion Yamato can now damage neutral units (such as coolant towers)
 
 Outlaws:
 Fixed ultracaps being unable to be researched if you skip the tutorial
@@ -24,9 +25,6 @@ Piercing the Shroud:
 
 Supernova:
 Added a couple scouts to cover the back of the vault better.
-
-Shatter:
-*Hyperion Yamato can now damage the coolant towers
 
 All-In:
 *Kerrigan targets implosion by highest hp, preferring targets it will kill.

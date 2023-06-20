@@ -3227,7 +3227,7 @@
         <Death value="Blast"/>
         <AreaArray Radius="3" Fraction="1"/>
         <ExcludeArray Value="Target"/>
-        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="SameCliff" value="0"/>
         <ArmorReduction value="1"/>
