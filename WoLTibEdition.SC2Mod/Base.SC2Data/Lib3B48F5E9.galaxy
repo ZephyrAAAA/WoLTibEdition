@@ -1392,6 +1392,10 @@ bool lib3B48F5E9_gt_DebugTopbar_Func (bool testConds, bool runActions) {
         libNtve_gf_CreateUnitsWithDefaultFacing(1, "Armory2", 0, 1, PlayerStartLocation(1));
     }
 
+    if ((TechTreeUnitAliasCount(1, "Alias_MercComp", c_techCountQueuedOrBetter) == 0)) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, "MercCompound2", 0, 1, PlayerStartLocation(1));
+    }
+
     RefreshTopbar();
     return true;
 }

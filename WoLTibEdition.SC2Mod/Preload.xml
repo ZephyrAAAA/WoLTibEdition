@@ -7,6 +7,7 @@
 <Unit id="GhostAcademy2"/>
 <Unit id="Armory2"/>
 <Unit id="FusionCore2"/>
+<Unit id="MercCompound2"/>
 <Upgrade id="DrillFullPower"/>
 <Upgrade id="TopbarUnlimited"/>
 </Preload>

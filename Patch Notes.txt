@@ -6,6 +6,7 @@ Fixed a bug where sometimes a building would continue to repair when it was not 
 Nerfed building repair to 10+1%(ish), from 10+2%(ish)
 Dual Fusion now also affects the improved plasma shield restore rate from repair drones
 Hyperion Yamato can now damage neutral units (such as coolant towers)
+Updated the "topbar" cheat command to now also create a merc compound
 
 Outlaws:
 Fixed ultracaps being unable to be researched if you skip the tutorial
