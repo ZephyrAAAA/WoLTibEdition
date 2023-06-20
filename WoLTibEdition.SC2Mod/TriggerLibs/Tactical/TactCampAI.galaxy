@@ -341,26 +341,34 @@ void AIThinkLoki (int player, unit aiUnit, unitgroup scanGroup) {
 //--------------------------------------------------------------------------------------------------
 bool QoBImplosion (int player, unit aiUnit, unitgroup scanGroup) {
 	order ord;
-	int scanCount;
-	unit unitToCheck;
+	fixed damage;
+	aifilter filterAI;
+	unitfilter filterUnit;
+	unitgroup targetGroup;
+	unitgroup psiGroup;
+	unitgroup nonpsiGroup;
 
 	ord = AICreateOrder(player, c_AB_QoBImplosion, 0);
 	if (!UnitOrderIsValid(aiUnit, ord)) {
 		return false;
 	}
+	damage = AIEffectInt(player, "ImplosionFlatDamage", c_fieldAmount) / AIEffectFixed(player, "ImplosionKillUnit", "VitalFractionMax[0]");
+	filterAI = AIFilter(player);
 
-	scanCount = UnitGroupCount(scanGroup, c_unitCountAll);
-	while (scanCount > 0) {
-		unitToCheck = UnitGroupUnit(scanGroup, scanCount);
-		scanCount = scanCount - 1;
+	AISetFilterAlliance(filterAI, c_playerGroupEnemy);
+	AISetFilterBits(filterAI, UnitFilterStr(AIAbilityStr(player, c_AB_Snipe, c_fieldTargetFiltersAB)));
+	AISetFilterRange(filterAI, aiUnit, AIAbilityFixed(player, "Implosion", c_fieldRange0) + 1);
+	AISetFilterLifeSortReference(filterAI, damage, damage*c_distanceFromDamage);
+	AISetFilterLife(filterAI, 50, c_noMax);
 	
-		OrderSetTargetUnit(ord, unitToCheck);
-		if (UnitOrderIsValid(aiUnit, ord)) {
-			AICast(aiUnit, ord, c_noMarker, c_castHold);
-			return true;	
-		}
+	targetGroup = AIGetFilterGroup(filterAI, scanGroup);
+	if (targetGroup == null) {
+		return false;
 	}
-	return false;
+
+	ord = AIUnitGroupGetValidOrder(targetGroup, ord, aiUnit, c_backwards);
+	AICast(aiUnit, ord, c_noMarker, c_castHold);
+	return true;
 }
 
 //--------------------------------------------------------------------------------------------------
