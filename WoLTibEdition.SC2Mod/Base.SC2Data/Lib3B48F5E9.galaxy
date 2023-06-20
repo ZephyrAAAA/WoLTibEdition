@@ -962,6 +962,26 @@ void lib3B48F5E9_gt_DrillandSpikedebris_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Meme setting load
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_Memesettingload_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lib3B48F5E9_gv_memes = (ConversationDataStateGetValue("CCEditionPermanence|Memes") == 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_Memesettingload_Init () {
+    lib3B48F5E9_gt_Memesettingload = TriggerCreate("lib3B48F5E9_gt_Memesettingload_Func");
+    TriggerAddEventMapInit(lib3B48F5E9_gt_Memesettingload);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Show Me the Money
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
@@ -1085,9 +1105,11 @@ bool lib3B48F5E9_gt_Memes_Func (bool testConds, bool runActions) {
     lib3B48F5E9_gv_memes = !(lib3B48F5E9_gv_memes);
     if ((lib3B48F5E9_gv_memes == true)) {
         UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_CD061853"));
+        ConversationDataStateSetValue("CCEditionPermanence|Memes", 1);
     }
     else {
         UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_CE432AB3"));
+        ConversationDataStateSetValue("CCEditionPermanence|Memes", 0);
     }
     return true;
 }
@@ -1412,6 +1434,7 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_SquadHealth_Init();
     lib3B48F5E9_gt_SquadShields_Init();
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
+    lib3B48F5E9_gt_Memesettingload_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
