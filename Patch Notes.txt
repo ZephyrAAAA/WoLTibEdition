@@ -1,7 +1,6 @@
 *SCV gather command is now autocastable, default on. Turning it off makes them stop seeking out stuff to mine.
-*Single charge topbar abilities are no longer removed on being used.
+Single charge topbar abilities are no longer removed on being used.
 *Deploy DTs now has them "blink" in.
-*Marines can no longer die of stim overdose
 Added a graphic for repair
 Fixed a bug where sometimes a building would continue to repair when it was not being repaired
 Nerfed building repair to 10+1%(ish), from 10+2%(ish)
