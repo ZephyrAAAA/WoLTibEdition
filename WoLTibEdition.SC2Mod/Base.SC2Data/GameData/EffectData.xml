@@ -1974,7 +1974,7 @@
         <EffectExternal value="RallyCopy"/>
     </CEffectEnumMagazine>
     <CEffectDamage id="RaynorGaussRifleDamage">
-        <Amount value="30"/>
+        <Amount value="40"/>
     </CEffectDamage>
     <CEffectSet id="BuildingRepairLoop">
         <EditorCategories value=""/>

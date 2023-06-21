@@ -8,6 +8,9 @@ Dual Fusion now also affects the improved plasma shield restore rate from repair
 Hyperion Yamato can now damage neutral units (such as coolant towers)
 Updated the "topbar" cheat command to now also create a merc compound
 
+Liberation Day:
+Increased Raynor's damage.
+
 Outlaws:
 Fixed ultracaps being unable to be researched if you skip the tutorial
 
@@ -26,6 +29,7 @@ Replaced some existing units with light vehicles
 Added a chat tip saying the mission is harder without a commando
 Added a chat tip if you have a commando that you can enter a chat command to go through without a commando
 Added a chat tip if you don't have a commando that you should probably go get a commando first
+Increased Raynor's damage.
 
 Supernova:
 Added a couple scouts to cover the back of the vault better.
