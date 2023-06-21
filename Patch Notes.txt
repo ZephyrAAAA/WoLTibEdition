@@ -21,7 +21,11 @@ Media Blitz:
 Added a chat tip about the convoys so you don't have to read the tip.
 
 Piercing the Shroud:
-*Added some light vehicles (Hellions, Goliaths, Vultures) in places.
+Added some light vehicles (Hellions, Goliaths, Vultures) in places.
+Replaced some existing units with light vehicles
+Added a chat tip saying the mission is harder without a commando
+Added a chat tip if you have a commando that you can enter a chat command to go through without a commando
+Added a chat tip if you don't have a commando that you should probably go get a commando first
 
 Supernova:
 Added a couple scouts to cover the back of the vault better.
