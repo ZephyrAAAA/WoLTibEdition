@@ -52,6 +52,15 @@
             <Subtitle value="Conversation/PardonMe"/>
         </AssetArray>
     </CSound>
+    <CSound id="ZeratulSpeechless" parent="Campaign" Portrait="ZeratulPortrait" Subtitle="Speechless" Speaker="CharZeratul" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Blank.ogg"/>
+            <FacialAnim value=""/>
+            <PortraitModel value="ZeratulPortrait"/>
+            <Speaker value="ConversationState/Characters/CharZeratul"/>
+            <Subtitle value="Speechless"/>
+        </AssetArray>
+    </CSound>
     <CSound id="SOA_RepairBeamStart" parent="Spell">
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="Assets\Sounds\Reaper_CombatDrugs1a.wav" FacialGroup=""/>
@@ -71,6 +80,15 @@
             <PortraitModel value="RaynorMarinePortrait"/>
             <Speaker value="ConversationState/Characters/CharRaynor"/>
             <Subtitle value="Speechless"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="AreThoseBikes" parent="Campaign" Portrait="TychusPortrait" Subtitle="AreThoseBikes" Speaker="CharTychus" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\AreThoseBikes.ogg"/>
+            <FacialAnim value="Default"/>
+            <PortraitModel value="TychusPortrait"/>
+            <Speaker value="ConversationState/Characters/CharTychus"/>
+            <Subtitle value="AreThoseBikes"/>
         </AssetArray>
     </CSound>
     <CSound id="TaurenMarineArrive" parent="Campaign" Portrait="TaurenMarinePortrait" Subtitle="TaurenSpaceMarine_Arrive" Speaker="TaurenMarine" Line="Arrive">

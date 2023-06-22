@@ -8,6 +8,12 @@ Dual Fusion now also affects the improved plasma shield restore rate from repair
 Hyperion Yamato can now damage neutral units (such as coolant towers)
 Updated the "topbar" cheat command to now also create a merc compound
 
+A Sinister Turn:
+Added free vision around the moved preservers
+The preservers after being freed now are at their new locations, rather than the original locations
+Intro dialogue starts faster
+Zeratul no longer talks about pylons
+
 Liberation Day:
 Increased Raynor's damage.
 
