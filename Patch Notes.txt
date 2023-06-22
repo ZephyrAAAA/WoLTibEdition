@@ -8,12 +8,6 @@ Dual Fusion now also affects the improved plasma shield restore rate from repair
 Hyperion Yamato can now damage neutral units (such as coolant towers)
 Updated the "topbar" cheat command to now also create a merc compound
 
-A Sinister Turn:
-Added free vision around the moved preservers
-The preservers after being freed now are at their new locations, rather than the original locations
-Intro dialogue starts faster
-Zeratul no longer talks about pylons
-
 Liberation Day:
 Increased Raynor's damage.
 
@@ -36,6 +30,15 @@ Added a chat tip saying the mission is harder without a commando
 Added a chat tip if you have a commando that you can enter a chat command to go through without a commando
 Added a chat tip if you don't have a commando that you should probably go get a commando first
 Increased Raynor's damage.
+
+A Sinister Turn:
+Added free vision around the moved preservers
+The preservers after being freed now are at their new locations, rather than the original locations
+Intro dialogue starts faster
+Zeratul no longer talks about pylons
+
+In Utter Darkness:
+Hero Arrivals now give you all of their units as unit charges, rather than only the air units
 
 Supernova:
 Added a couple scouts to cover the back of the vault better.

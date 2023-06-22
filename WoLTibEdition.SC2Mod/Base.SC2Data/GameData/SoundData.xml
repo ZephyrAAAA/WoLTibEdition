@@ -52,6 +52,15 @@
             <Subtitle value="Conversation/PardonMe"/>
         </AssetArray>
     </CSound>
+    <CSound id="DiscordAmogus" parent="Campaign" Portrait="ArtanisPortrait" Subtitle="DiscordAmogus" Speaker="CharArtanis" Line="">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\ProtossVO\CampaignUnits\Artanis\Artanis_Pissed00.ogg"/>
+            <FacialAnim value="TZeratul04Artanis00009"/>
+            <PortraitModel value="ArtanisPortrait"/>
+            <Speaker value="ConversationState/Characters/CharArtanis"/>
+            <Subtitle value="DiscordAmogus"/>
+        </AssetArray>
+    </CSound>
     <CSound id="ZeratulSpeechless" parent="Campaign" Portrait="ZeratulPortrait" Subtitle="Speechless" Speaker="CharZeratul" Line="">
         <AssetArray index="0">
             <File value="Assets\sfx\Blank.ogg"/>

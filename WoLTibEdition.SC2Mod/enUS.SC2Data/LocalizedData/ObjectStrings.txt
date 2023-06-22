@@ -1171,6 +1171,7 @@ Sound/EditorSuffix/RaynorSpeechlessMarine=(Marine)
 Sound/Name/Alert_TerranBuildComplete=Alert_TerranBuildComplete
 Sound/Name/AreThoseBikes=AreThoseBikes
 Sound/Name/BoldMove=BoldMove
+Sound/Name/DiscordAmogus=DiscordAmogus
 Sound/Name/Eat=Eat
 Sound/Name/ExplosiveCharge=Explosive Charge
 Sound/Name/FenixDragoonAirBombMissileExplode=FenixDragoonAirBombMissileExplode

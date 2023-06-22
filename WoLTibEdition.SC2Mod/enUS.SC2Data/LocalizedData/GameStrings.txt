@@ -1846,6 +1846,7 @@ Unit/Name/TibNodeMedium=Vespene Geyser
 Unit/Name/TibNodeSmall=Vespene Geyser
 Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
+Unit/Name/Vorazun=Vorazun
 Unit/Name/WarPigSquad=War Pig Squad
 Unit/Name/WarpConduit=Warp Conduit
 Unit/ShieldArmorName/TerranPlasmaShields=Terran Plasma Shields
