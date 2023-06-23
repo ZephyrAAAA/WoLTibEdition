@@ -138,6 +138,9 @@
         <SearchFilters value="Ground;Self,Player,Ally,Neutral,Missile,Stasis,Dead,Invulnerable"/>
         <AreaArray Radius="5" Effect="BansheeAirstrikeDamage"/>
     </CEffectEnumArea>
+    <CEffectDamage id="HybridFDamage">
+        <Amount value="60"/>
+    </CEffectDamage>
     <CEffectCreatePersistent id="ImplosionCreatePersistent">
         <FinalEffect value="ImplosionDamageSet"/>
     </CEffectCreatePersistent>

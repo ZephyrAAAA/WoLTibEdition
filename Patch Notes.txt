@@ -30,6 +30,17 @@ Added a chat tip saying the mission is harder without a commando
 Added a chat tip if you have a commando that you can enter a chat command to go through without a commando
 Added a chat tip if you don't have a commando that you should probably go get a commando first
 Increased Raynor's damage.
+Increased Hybrid damage from 20 to 60 (concussive still)
+You now get vehicle vanadium and ultra caps just like infantry ones
+
+A Sinister Turn:
+Added free vision around the moved preservers
+The preservers after being freed now are at their new locations, rather than the original locations
+Intro dialogue starts faster
+Zeratul no longer talks about pylons
+
+In Utter Darkness:
+Hero Arrivals now give you all of their units as unit charges, rather than only the air units
 
 Supernova:
 Added a couple scouts to cover the back of the vault better.
