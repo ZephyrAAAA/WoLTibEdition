@@ -3793,6 +3793,99 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
     </CUnit>
+    <CUnit id="KerriganEpilogue03">
+        <DeathTime value="-1"/>
+        <DeathRevealRadius value="3"/>
+        <Race value="Zerg"/>
+        <Mob value="Campaign"/>
+        <FlagArray index="UseLineOfSight" value="1"/>
+        <FlagArray index="ArmySelect" value="1"/>
+        <PlaneArray index="Ground" value="1"/>
+        <PlaneArray index="Air" value="1"/>
+        <PushPriority value="20"/>
+        <Collide index="Ground" value="1"/>
+        <Collide index="Colossus" value="1"/>
+        <Collide index="Structure" value="1"/>
+        <Collide index="Small" value="1"/>
+        <Attributes index="Biological" value="1"/>
+        <Attributes index="Psionic" value="1"/>
+        <Attributes index="Heroic" value="1"/>
+        <LifeStart value="1000"/>
+        <LifeMax value="1000"/>
+        <LifeArmor value="2"/>
+        <LifeArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
+        <LifeRegenRate value="2"/>
+        <LifeArmorName value="Unit/LifeArmorName/ZergGroundArmor"/>
+        <EnergyStart value="100"/>
+        <EnergyMax value="100"/>
+        <EnergyRegenRate value="10"/>
+        <ShieldArmorFormula PositiveArmorMultiplier="1" PositiveDamageRatio="0"/>
+        <ShieldArmorName value="Unit/ShieldArmorName/ZergWildMutation"/>
+        <Mover value="Colossus"/>
+        <Speed value="2.9492"/>
+        <SpeedMultiplierCreep value="1.3"/>
+        <Acceleration value="1000"/>
+        <LateralAcceleration value="46.0625"/>
+        <Sight value="13"/>
+        <CostCategory value="Army"/>
+        <RepairTime value="41.667"/>
+        <AttackTargetPriority value="20"/>
+        <DamageDealtXP value="1"/>
+        <DamageTakenXP value="1"/>
+        <KillXP value="30"/>
+        <AbilArray Link="attack"/>
+        <AbilArray Link="stop"/>
+        <AbilArray Link="move"/>
+        <AbilArray Link="KerriganEpilogue03QuantumRay"/>
+        <AbilArray Link="KerriganEpilogue03LineDashAttack"/>
+        <AbilArray Link="KerriganEpilogue03Heal"/>
+        <AbilArray Link="KerriganEpilogue03Extinction"/>
+        <AbilArray Link="KerriganEpilogue03StrikeAmon"/>
+        <AbilArray Link="KerriganEpilogue03StrikeGround"/>
+        <AbilArray Link="KerriganEpilogue03CreepTeleport"/>
+        <BehaviorArray Link="KerriganEpilogueDamageAura"/>
+        <WeaponArray Link="KerriganEpilogue03"/>
+        <CardLayouts>
+            <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Row="0" Column="0"/>
+            <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
+            <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="move,HoldPos" Row="0" Column="2"/>
+            <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="move,Patrol" Row="0" Column="3"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="K5ImprovedOverlords" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="K5AutoExtractor" Type="Passive" Requirements="HaveK5AutoExtractor" Row="1" Column="1"/>
+            <LayoutButtons Face="K5CreepBonuses" Type="Passive" Row="1" Column="2"/>
+            <LayoutButtons Face="KerriganEpilogue03QuantumRay" Type="AbilCmd" AbilCmd="KerriganEpilogue03QuantumRay,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="KerriganEpilogue03Heal" Type="AbilCmd" AbilCmd="KerriganEpilogue03Heal,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="KerriganEpilogue03Extinction" Type="AbilCmd" AbilCmd="KerriganEpilogue03Extinction,Execute" Row="2" Column="3"/>
+            <LayoutButtons Face="K5TwoDrones" Type="Passive" Requirements="HaveK5TwoDrones" Row="1" Column="3"/>
+            <LayoutButtons Face="KerriganEpilogueDamageAura" Type="Passive" Row="1" Column="4"/>
+            <LayoutButtons Face="KerriganEpilogue03CreepTeleport" Type="AbilCmd" AbilCmd="KerriganEpilogue03CreepTeleport,Execute" Row="2" Column="2"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="KerriganEpilogue03QuantumRay,Cancel" Row="2" Column="4"/>
+        </CardLayouts>
+        <CardLayouts/>
+        <Radius value="1"/>
+        <SeparationRadius value="0.375"/>
+        <InnerRadius value="0.5"/>
+        <ScoreMake value="500"/>
+        <ScoreKill value="1000"/>
+        <SubgroupPriority value="99"/>
+        <EditorCategories value="ObjectType:Hero,ObjectFamily:Campaign"/>
+        <HotkeyAlias value="KerriganVoid"/>
+        <TechAliasArray value="Alias_Kerrigan"/>
+        <GlossaryCategory value="Unit/Category/ZergCharacter"/>
+        <HotkeyCategory value="Unit/Category/ZergStory"/>
+        <KillDisplay value="Always"/>
+        <RankDisplay value="Never"/>
+        <Fidget>
+            <ChanceArray index="Anim" value="33"/>
+            <ChanceArray index="Idle" value="33"/>
+            <ChanceArray index="Turn" value="33"/>
+        </Fidget>
+        <ReviveInfoBase>
+            <Charge Link="Abil/KerriganRevive"/>
+            <Cooldown Link="Abil/KerriganRevive" Location="Player" TimeUse="0.1"/>
+        </ReviveInfoBase>
+    </CUnit>
     <CUnit id="KhaydarinMonolithACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

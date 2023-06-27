@@ -474,6 +474,80 @@
     <CActorUnit id="KelmorianMiner">
         <AbilSoundArray AbilCmd="attack,Execute" GroupSound="Marine_Attack"/>
     </CActorUnit>
+    <CActorMissile id="KerriganEpilogue03" parent="GenericUnitBase" unitName="KerriganEpilogue03">
+        <Aliases value="_MissileHybrids"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.KerriganEpilogue03.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.KerriganEpilogue03.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="Abil.KerriganEpilogue03QuantumRay.SourceChannelStart" Send="AnimBracketStart Work Stand,Work,Start Stand,Work Stand,Work,End"/>
+        <On Terms="Abil.KerriganEpilogue03QuantumRay.SourceChannelStop" Send="AnimBracketStop Work"/>
+        <On Terms="Effect.KerriganEpilogue03Extinction.Start; At Caster" Send="AnimBracketStart Work Stand,Work,A,Start Stand,Work,A Stand,Work,A,End"/>
+        <On Terms="Effect.KerriganEpilogue03Extinction.Stop" Send="AnimBracketStop Work"/>
+        <On Terms="Abil.KerriganEpilogue03Heal.SourceCastStart; !UnitWalking" Send="$Spell,B 0 -1.000000 -1.000000 1.000000 AsTimeScale"/>
+        <On Terms="Abil.KerriganEpilogue03Heal.SourceCastStart; UnitWalking" Send="AnimPlay Spell Cover 0 -1.000000 -1.000000 1.000000 AsTimeScale"/>
+        <On Terms="Abil.KerriganEpilogue03CreepTeleport.SourceCastStart" Send="$Spell,A 0 -1.000000 -1.000000 1.000000 AsTimeScale"/>
+        <On Terms="Abil.KerriganEpilogue03LeapAttack.SourceCastStart" Send="AnimPlay JumpStart Jump,Start 0 0.000000 0.000000 1.000000 AsDuration"/>
+        <On Terms="MotionPhaseStart; MotionPhase" Send="AnimPlay JumpStart Jump,Start 0 -1.000000 -1.000000 1.000000 AsDuration"/>
+        <On Terms="MotionPhaseStart; MotionPhase 1" Send="AnimPlay JumpEnd Jump,End"/>
+        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimBracketClear JumpEnd"/>
+        <On Terms="Behavior.KerriganEpilogue03Walk.On" Send="AnimGroupApply Slow"/>
+        <On Terms="Behavior.KerriganEpilogue03Walk.Off" Send="AnimGroupRemove Slow"/>
+        <On Terms="ActorCreation" Send="Create VoidHeroGlow"/>
+        <On Terms="UnitDeathCustomize; IsStatus InAir 1" Send="DeathCustomize Flying"/>
+        <On Terms="UnitRevive.KerriganEpilogue03" Send="$Birth,A"/>
+        <AnimBlendTime value="0.250000"/>
+        <EventDataSound Name="KerriganAttackLaunch" Actor="UnitSound" Sound="QueenOfBladesAttackLaunch"/>
+        <EventDataSound Name="KerriganAttackImpact" Actor="UnitSound" Sound="QueenOfBladesAttackImpact"/>
+        <EventDataSound Name="KerriganVoxDeathPart1" Actor="UnitSound" Sound="KerriganEpilogue03_VoxDeath_Part1"/>
+        <EventDataSound Name="KerriganVoxDeathPart2" Actor="UnitSound" Sound="KerriganEpilogue03_VoxDeath_Part2"/>
+        <EventDataSound Name="KerriganVoxDeathPart3" Actor="UnitSound" Sound="KerriganEpilogue03_VoxDeath_Part3"/>
+        <EventDataSound Name="KerriganDeathPreExplosionStart" Actor="UnitSound" Sound="KerriganEpilogue03_Death_Explosion"/>
+        <EventDataSound Name="KerriganDeathStart" Actor="UnitSound" Sound="KerriganEpilogue03_Death_Start"/>
+        <DeathCustoms ModelLink="ZergLargeUnitDeathLow" Name="Flying"/>
+        <PlacementModel value="KerriganGhost"/>
+        <PortraitModel value="KerriganEpilogue03Portrait"/>
+        <AbilSoundArray AbilCmd="KerriganEpilogue03QuantumRay,Execute" Sound="KerriganEpilogue_QuantumRayVO"/>
+        <AbilSoundArray AbilCmd="KerriganEpilogue03CreepTeleport,Execute" Sound="KerriganEpilogue_CreepTeleportVO"/>
+        <BarOffset value="80"/>
+        <BarWidth value="78"/>
+        <CustomUnitStatusFrame value="HotS_UnitStatus/KerriganHeroUnitStatusFrameTemplate"/>
+        <ErrorArray Error="CantLandLocationInvalid" Sound="UI_GenericError" GroupSound="UI_GenericError"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\Wireframe-Zerg-KerriganAscended.dds"/>
+        </GroupIcon>
+        <HeroIcon value="Assets\Textures\btn-unit-zerg-kerriganinfested.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <ShieldArmorIcon value="Assets\Textures\btn-upgrade-zerg-swarmfrenzy.dds"/>
+        <SoundArray index="Ready" value="KerriganEpilogue_Ready"/>
+        <SoundArray index="Help" value="KerriganEpilogue_Help"/>
+        <SoundArray index="What" value="KerriganEpilogue_What"/>
+        <SoundArray index="Yes" value="KerriganEpilogue_Yes"/>
+        <SoundArray index="Attack" value="KerriganEpilogue_Attack"/>
+        <SoundArray index="Pissed" value="KerriganEpilogue_Pissed"/>
+        <StatusBarOn index="Shields" value="1"/>
+        <StatusBarOn index="Life" value="1"/>
+        <StatusBarOn index="Energy" value="1"/>
+        <StatusBarOn index="Progress" value="1"/>
+        <StatusBarOn index="Duration" value="1"/>
+        <StatusColors index="Shields">
+            <ColorArray index="0" value="255,0,128,0"/>
+        </StatusColors>
+        <StatusColors index="Energy">
+            <ColorArray index="0" value="255,255,128,0"/>
+        </StatusColors>
+        <UnitFlags index="SuppressDefaultStatusBar" value="1"/>
+        <UnitIcon value="Assets\Textures\btn-unit-zerg-kerriganinfested.dds"/>
+        <UnitKillRank Text="UnitKillRank/KerriganEpilogue"/>
+        <VitalColors index="Shields">
+            <ColorArray value="255,0,128,0"/>
+        </VitalColors>
+        <VitalNames index="Shields" value="Vital/ZergShields"/>
+        <Wireframe>
+            <Image value="Assets\Textures\Wireframe-Zerg-KerriganAscended.dds"/>
+        </Wireframe>
+        <WireframeShieldColor value="255,0,128,0"/>
+    </CActorMissile>
     <!--                                                                                         -->
     <!-- Drakken Laser Drill.................................................................... -->
     <!--                                                                                         -->

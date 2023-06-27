@@ -431,6 +431,109 @@
         <ScaleMax value="2.000000,2.000000,2.000000"/>
         <ScaleMin value="2.000000,2.000000,2.000000"/>
     </CModel>
+    <CModel id="KerriganEpilogue03" parent="Unit" Race="Zerg">
+        <Model value="Assets\Units\Zerg\XelNaga_Kerrigan\XelNaga_Kerrigan.m3"/>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="KerriganEpilogue03_Birth_ImpactExplosion"/>
+            <Type value="Sound"/>
+            <Time value="1.850000"/>
+            <Payload value="KerriganEpilogue03_Birth_ImpactExplosion"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="KerriganEpilogue03_Birth_Incoming"/>
+            <Type value="Sound"/>
+            <Time value="0.450000"/>
+            <Payload value="KerriganEpilogue03_Birth_Incoming"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,00"/>
+            <Name value="KerriganEpilogue03_Vox_Birth"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="KerriganEpilogue03_Vox_Birth"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,A,00"/>
+            <Name value="KerriganEpilogue03_Birth_ImpactExplosion"/>
+            <Type value="Sound"/>
+            <Time value="1.520000"/>
+            <Payload value="KerriganEpilogue03_Birth_ImpactExplosion"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,A,00"/>
+            <Name value="KerriganEpilogue03_Birth_Incoming"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="KerriganEpilogue03_Birth_Incoming"/>
+        </Events>
+        <Events>
+            <Anim value="Birth,A,00"/>
+            <Name value="KerriganEpilogue03_Vox_Birth"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+            <Payload value="KerriganEpilogue03_Vox_Birth"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="KerriganDeathStart"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="KerriganVoxDeathPart1"/>
+            <Type value="Sound"/>
+            <Time value="0.010000"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="KerriganDeathPreExplosionStart"/>
+            <Type value="Sound"/>
+            <Time value="0.150000"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="KerriganVoxDeathPart2"/>
+            <Type value="Sound"/>
+            <Time value="0.730000"/>
+        </Events>
+        <Events>
+            <Anim value="Death,00"/>
+            <Name value="KerriganVoxDeathPart3"/>
+            <Type value="Sound"/>
+            <Time value="1.790000"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="KerriganAttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.250000"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,01"/>
+            <Name value="KerriganAttackImpact"/>
+            <Type value="Sound"/>
+            <Time value="0.250000"/>
+        </Events>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <TechPurchaseCamera value="Star2CameraMid05"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="KerriganEpilogue03Portrait" parent="FXAPortrait" Race="Zerg">
+        <Model value="Assets\Portraits\Zerg\XelNaga_Kerrigan_Portrait\XelNaga_Kerrigan_Portrait.m3"/>
+        <FacialController value="LocalizedData\Facial\XelNaga_Kerrigan.fxa"/>
+        <Image value="Assets\Textures\XelnagaKerriganportrait_static.dds"/>
+    </CModel>
+    <CModel id="KerriganEpilogue03Portrait3D" parent="FXAPortrait" Race="Zerg">
+        <Model value="Assets\Portraits\Zerg\XelNaga_Kerrigan_Portrait\XelNaga_Kerrigan_Portrait.m3"/>
+        <FacialController value="LocalizedData\Facial\XelNaga_Kerrigan.fxa"/>
+        <Flags index="ForcePortraitModel" value="1"/>
+        <Image value="Assets\Textures\XelnagaKerriganportrait_static.dds"/>
+    </CModel>
     <CModel id="SOAMothershipLineAttackMissileBeam" parent="PersistentSpellFX">
         <Model value="Assets\Effects\Protoss\Mothership_Taldarim_Thermal_Lance_Beam\Mothership_Taldarim_Thermal_Lance_Beam.m3"/>
         <EditorCategories value="Race:Protoss"/>
