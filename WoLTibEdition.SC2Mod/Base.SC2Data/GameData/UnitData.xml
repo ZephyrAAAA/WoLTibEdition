@@ -5323,14 +5323,12 @@
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
-        <BehaviorArray Link="RipField"/>
     </CUnit>
     <CUnit id="RipFieldGeneratorSmall">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ArmorType value="Hero"/>
         <LifeArmorTip value="Unit/Tip/Structure"/>
-        <BehaviorArray Link="RipField"/>
     </CUnit>
     <CUnit id="Roach">
         <ArmorType value="Medium"/>

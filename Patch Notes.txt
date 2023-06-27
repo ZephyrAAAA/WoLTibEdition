@@ -47,7 +47,7 @@ Added a couple scouts to cover the back of the vault better.
 
 Maw:
 Fixed the text on the Rip-Field tip so it doesn't imply your shields block the slow.
-*Converted the rip-field slow to triggers to improve performance.
+Converted the rip-field slow to triggers to improve performance.
 
 All-In:
 Kerrigan targets implosion by highest hp, preferring targets it will kill.

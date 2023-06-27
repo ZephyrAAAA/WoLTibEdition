@@ -361,7 +361,7 @@
     </CBehaviorBuff>
     <CBehaviorBuff id="RipFieldSlow">
         <EditorCategories value="AbilityorEffectType:Units"/>
-        <Duration value="0.375"/>
+        <Duration value="1.1"/>
         <Modification MoveSpeedMultiplier="0.5"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="SeekerMissile">
