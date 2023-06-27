@@ -806,7 +806,7 @@ ConversationState/StoryTips/Tychus05_BattleCruisers/Info/Description=Heavy assau
 ConversationState/StoryTips/Tychus05_Prisoners=<c val="FF8000">Prisoners</c>
 ConversationState/StoryTips/Tychus05_Prisoners/Info/Description=The <c val="FFFF00">Dark Templar</c> you've released have <c val="FFFF00">Shields</c> that allow them to move inside a <c val="FFFF00">Rip-Field</c> without being slowed. They are <c val="FFFF00">Permanently Cloaked</c> and excellent at taking out ground forces as long as they are not <c val="FFFF00">Detected.</c> 
 ConversationState/StoryTips/Tychus05_RipFields=<c val="FF8000">Rip-Fields</c>
-ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, unshielded units will be slowed by 50%.
+ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, Terran and unshielded Protoss units will be slowed by 50%.
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
 ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
 ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods
