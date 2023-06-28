@@ -1,4 +1,5 @@
 ﻿AreThoseBikes=Are those vulture bikes?
+AreThoseBikesAreThoseBikes2AreThoseBikesKerriganAreThoseBikesAreThoseBikes2AreThoseBikesKerrigan_AreThoseBikesAreThoseBikes2AreThoseBikesKerriganAreThoseBikesAreThoseBikes2AreThoseBikesKerrigan_Predictable=Are those vulture bikes?
 BoldMove=Booooooooold Mooooooooove Mistah Raynah, collecting terrazine from two places at once!
 Character/Name/DTLeader=Vorazun
 Character/Name/GeneralWarfield=General Warfield
@@ -23,5 +24,10 @@ ConversationState/Characters/TaurenMarine=Tauren Marine
 DiscordAmogus=You would spread discord among us?
 InfestedMarines=Damn Jimmy, are those Infested Marines?
 InfestedMarinesInfestedMarines2InfestedMarinesVultureBikes=Damn Jimmy, are those Infested Marines?
+Kerrigan_Careful=Careful what you ask for...
+Kerrigan_Cat=Cat got your tongue?
+Kerrigan_CatKerrigan_Cat2Kerrigan_CatKerrigan_Careful=Cat got your tongue?
+Kerrigan_Predictable=So predictable...
+Kerrigan_PredictableKerrigan_Predictable2Kerrigan_PredictableKerrigan_Cat=So predictable...
 Speechless=...
 VultureBikesVultureBikes=Vulture Bikes? Aw hell Jimmy I don't care for that notion one bit!

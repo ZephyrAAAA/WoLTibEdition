@@ -4,6 +4,24 @@
         <EditorCategories value="Race:Terran"/>
         <AssetArray File="LocalizedData\Sounds\TerranUnitVO\SCV\SCV_JobsFinished00.ogg" FacialGroup=""/>
     </CSound>
+    <CSound id="Kerrigan_Careful" parent="Campaign" Portrait="KerriganEpilogue03Portrait" Subtitle="Kerrigan_Careful" Speaker="CharKerrigan" Line="">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\ZergVO\CampaignUnits\Kerrigan\Kerrigan_What01.ogg"/>
+            <FacialAnim value="Kerrigan_What01"/>
+            <PortraitModel value="KerriganEpilogue03Portrait"/>
+            <Speaker value="ConversationState/Characters/CharKerrigan"/>
+            <Subtitle value="Kerrigan_Careful"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="Kerrigan_Predictable" parent="Campaign" Portrait="KerriganEpilogue03Portrait" Subtitle="Kerrigan_Predictable" Speaker="CharKerrigan" Line="">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\ZergVO\CampaignUnits\Kerrigan\Kerrigan_Yes04.ogg"/>
+            <FacialAnim value="Kerrigan_Yes04"/>
+            <PortraitModel value="KerriganEpilogue03Portrait"/>
+            <Speaker value="ConversationState/Characters/CharKerrigan"/>
+            <Subtitle value="Kerrigan_Predictable"/>
+        </AssetArray>
+    </CSound>
     <CSound id="Eat" parent="Campaign" Portrait="SMStetmann" Subtitle="Eat" Speaker="CharStetmann">
         <AssetArray index="0">
             <File value="Assets\sfx\Eat.ogg"/>
@@ -32,6 +50,15 @@
             <PortraitModel value="ToshPortrait"/>
             <Speaker value="ConversationState/Characters/CharTosh"/>
             <Subtitle value="BoldMove"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="Kerrigan_Cat" parent="Campaign" Portrait="KerriganEpilogue03Portrait" Subtitle="Kerrigan_Cat" Speaker="CharKerrigan" Line="">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\ZergVO\CampaignUnits\Kerrigan\Kerrigan_What02.ogg"/>
+            <FacialAnim value="Kerrigan_What02"/>
+            <PortraitModel value="KerriganEpilogue03Portrait"/>
+            <Speaker value="ConversationState/Characters/CharKerrigan"/>
+            <Subtitle value="Kerrigan_Cat"/>
         </AssetArray>
     </CSound>
     <CSound id="Mines" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="Mines" Speaker="CharRaynor" Line="">
