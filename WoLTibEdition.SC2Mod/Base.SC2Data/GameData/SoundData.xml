@@ -429,6 +429,15 @@
         <Pitch value="1.000000,3.000000"/>
         <Spread value="30.000000"/>
     </CSound>
+    <CSound id="ZeratulAbomination" parent="Campaign" Portrait="ZeratulPortrait" Subtitle="Abomination" Speaker="CharZeratul" Line="">
+        <AssetArray index="0">
+            <File value="Assets\sfx\Abomination.ogg"/>
+            <FacialAnim value=""/>
+            <PortraitModel value="ZeratulPortrait"/>
+            <Speaker value="ConversationState/Characters/CharZeratul"/>
+            <Subtitle value="Abomination"/>
+        </AssetArray>
+    </CSound>
     <CSound id="zMission_Char02_GeneralWarfield_042" Portrait="WarfieldPortrait" Subtitle="zMission_Char02" Speaker="GeneralWarfield" Actor="" Line="00042">
         <AssetArray>
             <File value="LocalizedData\Sounds\VO\zMission_Char02_GeneralWarfield_042.ogg"/>

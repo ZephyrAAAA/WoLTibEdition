@@ -1213,6 +1213,7 @@ Sound/Name/UnleashThePredators=UnleashThePredators
 Sound/Name/VoidMothership_ThermalLance_AttackLaunch=VoidMothership_ThermalLance_AttackLaunch
 Sound/Name/VoidMothership_ThermalLance_BeamDeath=VoidMothership_ThermalLance_BeamDeath
 Sound/Name/VultureBikes=Vulture Bikes???
+Sound/Name/ZeratulAbomination=Zeratul Abomination
 Sound/Name/ZeratulSpeechless=Zeratul Speechless
 Sound/Name/zMission_Char02_GeneralWarfield_042=zMission_Char02_GeneralWarfield_042
 Sound/Name/zMission_Char02_GeneralWarfield_156=zMission_Char02_GeneralWarfield_156
