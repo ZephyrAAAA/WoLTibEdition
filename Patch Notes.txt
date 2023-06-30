@@ -1,4 +1,3 @@
-*SCV gather command is now autocastable, default on. Turning it off makes them stop seeking out stuff to mine.
 Single charge topbar abilities are no longer removed on being used.
 Deploy DTs now has them "blink" in.
 Added a graphic for repair
