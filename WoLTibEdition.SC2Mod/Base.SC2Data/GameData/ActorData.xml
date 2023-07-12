@@ -3102,8 +3102,6 @@
         <Model value="VespeneGeyserSplat"/>
     </CActorSplat>
     <CActorUnit id="TibVein" parent="MineralBase" unitName="TibVein">
-        <On Terms="ActorCreation; Option Shader Ultra" Send="ModelSwap MineralFieldHigh"/>
-        <On Terms="ActorCreation; Option Shader Extreme" Send="ModelSwap MineralFieldHigh"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 0" Send="AnimGroupApply A"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 0" Send="AnimGroupRemove A"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 1" Send="AnimGroupApply B"/>
@@ -3112,13 +3110,9 @@
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 2" Send="AnimGroupRemove C"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 3" Send="AnimGroupApply D"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 3" Send="AnimGroupRemove D"/>
-        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 0" Send="Create TibVeinSplatSmall"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 0" Target="MineralFieldSplatSmall" Send="Destroy"/>
-        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 1" Send="Create TibVeinSplatSmall"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 1" Target="MineralFieldSplatSmall" Send="Destroy"/>
-        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 2" Send="Create TibVeinSplat"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 2" Target="MineralFieldSplat" Send="Destroy"/>
-        <On Terms="BehaviorLevel.TibVeinMinerals.Start; Level 3" Send="Create TibVeinSplat"/>
         <On Terms="BehaviorLevel.TibVeinMinerals.Stop; Level 3" Target="MineralFieldSplat" Send="Destroy"/>
         <On Terms="ActorCreation" Send="SetTintColor 0,255,0"/>
         <Model value="MineralField"/>
