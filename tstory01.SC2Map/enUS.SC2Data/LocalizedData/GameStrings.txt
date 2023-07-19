@@ -726,12 +726,13 @@ ConversationState/CCEditionPermanence/Dark_Templar=Dark Templar
 ConversationState/CCEditionPermanence/Fusion_Reactor=Fusion Reactor
 ConversationState/CCEditionPermanence/Improved_Yamato=Improved Yamato
 ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
+ConversationState/CCEditionPermanence/Memes=Memes
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss"> Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
 ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s><n/><n/>
 ConversationState/LabResearch/ResearchP1_2/Info/Tooltip=<s val="TooltipTitle_Protoss">Vanadium Plating</s><n/><s val="TooltipDescription_Protoss"> Permanently researches all Vanadium Plating upgrades.</s>
 ConversationState/LabResearch/ResearchP2_1=Orbital Supply Drop
-ConversationState/LabResearch/ResearchP2_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Gives 5 minerals every 0.5 seconds, totalling 600 per minute<n/>- Requires an active Command Center.<n/><n/></s><s val="ResearchDescription_Protoss"></s><s val="ResearchDescription_Protoss">Someone discovered a new use for drop pods.
+ConversationState/LabResearch/ResearchP2_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Passively gives 5 minerals every 0.5 seconds, totalling 600 per minute<n/>- Requires an active Command Center.<n/><n/></s><s val="ResearchDescription_Protoss"></s><s val="ResearchDescription_Protoss">Someone discovered a new use for drop pods.
 ConversationState/LabResearch/ResearchP2_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Orbital Supply Drop</s><n/><s val="TooltipDescription_Protoss">Gives 5 minerals every 0.5 seconds.</s>
 ConversationState/LabResearch/ResearchP2_2=Expanded Hold
 ConversationState/LabResearch/ResearchP2_2/Info/Description=<s val="ResearchDescSummary_Protoss">- SCVs can now carry 2800 minerals, a 100% increase.<n/>- Drop off time remains the same.</s><n/><n/><s val="ResearchDescription_Protoss">Research of  Protoss filtering techniques allows our SCVs to pre-refine the minerals they gather, so they can carry less dead weight.</s>
@@ -805,7 +806,7 @@ ConversationState/StoryTips/Tychus05_BattleCruisers/Info/Description=Heavy assau
 ConversationState/StoryTips/Tychus05_Prisoners=<c val="FF8000">Prisoners</c>
 ConversationState/StoryTips/Tychus05_Prisoners/Info/Description=The <c val="FFFF00">Dark Templar</c> you've released have <c val="FFFF00">Shields</c> that allow them to move inside a <c val="FFFF00">Rip-Field</c> without being slowed. They are <c val="FFFF00">Permanently Cloaked</c> and excellent at taking out ground forces as long as they are not <c val="FFFF00">Detected.</c> 
 ConversationState/StoryTips/Tychus05_RipFields=<c val="FF8000">Rip-Fields</c>
-ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, unshielded units will be slowed by 50%.
+ConversationState/StoryTips/Tychus05_RipFields/Info/Description=While inside a <c val="FFFF00">Rip-Field</c>, Terran and unshielded Protoss units will be slowed by 50%.
 ConversationState/Tech/Tech2_Banshee_1=Cross-Spectrum Dampeners
 ConversationState/Tech/Tech2_Banshee_2=Shockwave Missile Battery
 ConversationState/Tech/Tech2_Battlecruiser_1=Missile Pods
@@ -1002,7 +1003,7 @@ DataCollection/Name/VikingAssault=Viking
 DataCollection/Name/VikingFighter=Viking
 DataCollection/Name/WarPigSquad=War Pig Squad
 DataCollection/Name/ZergHypervirus=Zerg Hypervirus
-DocInfo/Author=Blizzard Entertainment
+DocInfo/Author=James Fire and Zephyr
 DocInfo/DescLong=
 DocInfo/DescShort=Storymode map
 DocInfo/Name=Wings of Liberty
@@ -1707,6 +1708,8 @@ Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
 Param/Value/lib_3B48F5E9_BF307B53=Race is not set for upgrades, report to James.
 Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
+Param/Value/lib_3B48F5E9_CD061853=Memes have been <c val="00FF40">Enabled</c>
+Param/Value/lib_3B48F5E9_CE432AB3=Memes have been <c val="FF0000">Disabled</c>
 Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
@@ -1763,6 +1766,8 @@ Skin/Name/PsiDisruptor9=PsiDisruptor9
 StoneSubtitle=Totally Not Jim Raynor's Son
 Tip/PredatorShield=Uses energy to absorb damage
 UI/AchievementDisable=Achievements have been disabled due to <c val="00FF00">Tiberium</c> usage. To enable achievements again, start a new game or load a saved game.
+UI/CreditText/GAMEDESIGN=<s val="CreditsSmallHeading">Special Thanks To</s></n>Orcawarrior2 for providing Advice, and opening GIMP so James didn't have to<n/>Mindhawk for providing Advanced Advice<n/>Katie (MrKisawesome) for putting up with James<n/>Zephyr for putting up with James<n/>James for putting up with Zephyr<n>James for putting up with James<n/><n/><n/><n/><s val="CreditsSmallHeading">Big Testers</s><n/>Katie (MrKisawesome)<n/>Fallaner<n/>Samissa<n/>Finlay
+UI/CreditText/OPENING=<s val="CreditsSmallHeading">STARCRAFT II</s></n>WINGS OF LIBERTY<n/><n/>CNC Edition, by James Fire and Zephyr
 UI/HelpGameMechanic_DamageTypes_Description=This mod uses a system of <c val="FFFF00">Armor </c>and <c val="FFFF00">Damage </c>types. Units take and deal damage based on what is hitting them. Armor has a tooltip stating what armor type it is. Weapons have a tooltip stating their damage type, and relative effectiveness against different armor types.<n/><n/>Excellent indicates they deal 100% damage.<n/>Good indicates they deal 75% damage<n/>Moderate indicates they deal 50% damage<n/>Bad indicates they deal 25% damage<n/>Abysmal indicates they deal 1% damage<n/>
 UI/HelpGameMechanic_DamageTypes_Name=Damage Types
 UI/HelpGameMechanic_Minerals_Description=<ul indent="2" text="•"><li>Mineral Veins are green crystals which yield 14 minerals per harvest, and do 10 harvests/s.</li><li>Once a Mineral Vein is depleted, it can no longer be harvested from, and will eventually be replaced by a nearby Node.</li></ul>
@@ -1809,6 +1814,7 @@ Unit/Name/FirebatSquad=Firebat Squad
 Unit/Name/FusionCore2=Fusion Core
 Unit/Name/GhostAcademy2=Shadow Ops
 Unit/Name/HammerSecuritiesSquad=Hammer Securities Squad
+Unit/Name/KerriganEpilogue03=Kerrigan
 Unit/Name/MarauderSquad=Marauder Squad
 Unit/Name/MarineSquad=Marine Squad
 Unit/Name/MedicSquad=Medic Squad
@@ -1843,6 +1849,7 @@ Unit/Name/TibNodeMedium=Vespene Geyser
 Unit/Name/TibNodeSmall=Vespene Geyser
 Unit/Name/TibVein=Mineral Field
 Unit/Name/Vehicle=Vehicle
+Unit/Name/Vorazun=Vorazun
 Unit/Name/WarPigSquad=War Pig Squad
 Unit/Name/WarpConduit=Warp Conduit
 Unit/ShieldArmorName/TerranPlasmaShields=Terran Plasma Shields

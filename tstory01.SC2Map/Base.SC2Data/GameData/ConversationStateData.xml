@@ -25,6 +25,7 @@
         <Indices Id="Dark_Templar" Name="ConversationState/CCEditionPermanence/Dark_Templar">
             <InfoAbilCmd Id="AC1" Abil="CallDarkTemplar"/>
         </Indices>
+        <Indices Id="Memes" Name="ConversationState/CCEditionPermanence/Memes"/>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>
