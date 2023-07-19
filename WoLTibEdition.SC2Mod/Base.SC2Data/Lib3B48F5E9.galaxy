@@ -978,7 +978,7 @@ bool lib3B48F5E9_gt_Memesettingload_Func (bool testConds, bool runActions) {
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_Memesettingload_Init () {
     lib3B48F5E9_gt_Memesettingload = TriggerCreate("lib3B48F5E9_gt_Memesettingload_Func");
-    TriggerAddEventMapInit(lib3B48F5E9_gt_Memesettingload);
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_Memesettingload, 0.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------

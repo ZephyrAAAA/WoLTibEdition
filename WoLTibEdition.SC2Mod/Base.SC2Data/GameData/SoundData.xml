@@ -64,7 +64,7 @@
     <CSound id="Mines" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="Mines" Speaker="CharRaynor" Line="">
         <AssetArray index="0">
             <File value="Assets\sfx\Mines.ogg"/>
-            <FacialAnim value="THorner02Raynor00024"/>
+            <FacialAnim value=""/>
             <PortraitModel value="RaynorCommanderPortrait"/>
             <Speaker value="ConversationState/Characters/CharRaynor"/>
             <Subtitle value="Conversation/THorner02/Mines"/>

@@ -4958,9 +4958,9 @@
         <LifeArmorTip value="Unit/Tip/Light"/>
         <BehaviorArray Link="Biosteel"/>
         <LifeArmor value="0"/>
-        <EnergyStart value="30"/>
-        <EnergyMax value="30"/>
-        <EnergyRegenRate value="0.5625"/>
+        <EnergyStart value="60"/>
+        <EnergyMax value="60"/>
+        <EnergyRegenRate value="1.125"/>
         <EnergyDamageRatio value="1"/>
         <Food value="0"/>
         <EquipmentArray>
