@@ -1,30 +1,37 @@
-*Weapon tooltips now have the damage descriptor colour-coded, and the % in parentheses.
+Weapon tooltips now have the damage descriptor colour-coded, and the % in parentheses.
+Fixed Sniper damage using Effective instead of Excellent.
+Hellstorm missile pods description now says Deastation Turrets get falloff splash
 *Fast siege upgrade passive is no longer greyed out while in tank mode
-*Added some passives for upgrades
+*Units now get passive buttons for Ultracaps and Vanadium.
+*Added some passives for armory upgrades
+HME and Psi Disruptor now say they're topbar abilities
+Corrected the Cellular text
+*Buff Predator
 
-Outlaws:
+Inlaws:
 *Tutorial is now done through transmissions, so there's a record of stuff. -Send Transmission (Simple)
 *Added some missing tutorial tips
 *Fixed an OOS bug with the Stone tutorial
 
-Evacuation:
-*Johnny now flips
+Hulk Smash Grab:
+You now start with a factory
+Increased the regen on your main field by 33%
 
-Whispers of Darkness:
-*Removed SC2 resources
+Evacuation:
+Johnny now flips
+
+Devil's Playground:
+Bob isn't lazy anymore
 
 A Sinister Doom:
-*Removed SC2 resources
+Removed SC2 resources
 
-Echoes of Turn:
-*Removed SC2 resources
-*Removed the resource pickups
+Echoes of a Turn:
+Removed SC2 resources
+Removed the resource pickups
 
 In Utter Future:
-*Removed SC2 resources
+Removed SC2 resources
 
-Media Blitz:
-*Dave the SCV has been put back into the correct mod.
-
-Breakout:
-*Raynor now gets your armory upgrades
+Breakin:
+Raynor now gets your armory upgrades
