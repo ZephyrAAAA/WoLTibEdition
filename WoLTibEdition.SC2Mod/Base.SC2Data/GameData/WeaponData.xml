@@ -255,6 +255,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="HybridF">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
         <AttackType value="Pierce"/>
+        <Tip value="Weapon/Tip/Grenade"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="OmegaliskHeadAttack">
         <Icon value="Assets\Textures\btn-upgrade-protoss-fenix-zealotsuit-weapon.dds"/>
