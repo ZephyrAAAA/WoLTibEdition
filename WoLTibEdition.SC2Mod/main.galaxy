@@ -880,17 +880,11 @@ bool INI_Func (bool testConds, bool runActions) {
 	topbarPanel = DialogControlLastCreated();
 	DialogControlSetVisible(topbarPanel, PlayerGroupAll(), true);
 	DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
-	DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), 1, 1);
-	DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, -100, -100);
 	DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
-	lv_lastFrame = DialogControlLastCreated();
 	DialogControlHookup(topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
 	lv_lastFrame = DialogControlLastCreated();
 	DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
 	lv_lastFrame = DialogControlLastCreated();
-	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
-	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
-	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
 	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
 	topbarCommandPanel = DialogControlLastCreated();
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
