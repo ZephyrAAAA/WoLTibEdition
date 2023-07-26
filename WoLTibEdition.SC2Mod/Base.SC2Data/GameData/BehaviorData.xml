@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CBehaviorBuff id="NeutralCapturable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value=""/>
+        <DisableValidatorArray value="PlayerIsNotPlayer"/>
+        <Modification>
+            <StateFlags index="Benign" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressThreat" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="ImplosionTempBuff">
         <Duration value="3.25"/>
         <Modification>

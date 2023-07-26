@@ -112,6 +112,7 @@
             <Cooldown Link="NeutralCapturable/Revive"/>
         </ReviveInfoBase>
         <EditorFlags index="NeutralDefault" value="1"/>
+        <BehaviorArray Link="NeutralCapturable"/>
     </CUnit>
     <CUnit default="1" id="PATHINGBLOCKER">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4478,7 +4479,6 @@
         <BehaviorArray Link="SiloInitial"/>
         <BehaviorArray Link="BuildRadiusSmall"/>
         <BehaviorArray Link="DisablePower"/>
-        <BehaviorArray Link="Harmless"/>
         <Footprint value="Footprint3x3ContourIgnoreCreep"/>
         <PlacementFootprint value="Footprint3x3ContourIgnoreCreep"/>
     </CUnit>
@@ -4487,7 +4487,6 @@
         <Description value="Button/Tooltip/MineralSpike"/>
         <BehaviorArray Link="SpikeInitial"/>
         <BehaviorArray Link="SpikePeriodic"/>
-        <BehaviorArray Link="Harmless"/>
         <Footprint value="Footprint2x2IgnoreCreepContour"/>
         <PlacementFootprint value="Footprint2x2IgnoreCreepContour"/>
     </CUnit>

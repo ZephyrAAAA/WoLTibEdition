@@ -2459,6 +2459,9 @@ Actor=CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnes
 id=ZergHypervirus
 asset=Assets\Textures\BTN-Ability-Zerg-NeuralParasite.dds
 Actor=CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,NeuralParasiteModel,TerrainMgr
+id=NeutralCapturable
+asset=Assets\Textures\btn-missing-kaeo.dds
+Actor=CommandUIHarnessAttackProtoss,CommandUIHarnessAttackTerran,CommandUIHarnessAttackZerg,CommandUIHarnessConfirmProtoss,CommandUIHarnessConfirmTerran,CommandUIHarnessConfirmZerg,CommandUIHarnessMoveProtoss,CommandUIHarnessMoveTerran,CommandUIHarnessMoveZerg,CommandUIHarnessRallyProtoss,CommandUIHarnessRallyTerran,CommandUIHarnessRallyZerg,TerrainMgr
 
 [Button]
 id=Marine
@@ -7935,6 +7938,7 @@ Actor=AirTargeter,BlipVisual,ConstructionRefundTextAlly,SalvagedTextAlly,Salvage
 Behavior=AutoTurretTimedLife
 default=NeutralCapturable
 Abil=NeutralCapturable
+Behavior=NeutralCapturable
 default=Vehicle
 Abil=attack,move,stop
 Button=Attack,Move,MoveHoldPosition,MovePatrol,Stop
@@ -7984,10 +7988,10 @@ Behavior=TibGrow,##id##Minerals
 parent=NeutralCapturable
 id=MineralSilo
 Actor=BlipVisual,ConstructionRefundTextAlly,##id##,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,UnitPointsTextAll
-Behavior=BuildRadiusSmall,DisablePower,Harmless,SiloInitial
+Behavior=BuildRadiusSmall,DisablePower,SiloInitial
 id=MineralSpike
 Actor=BlipVisual,ConstructionRefundTextAlly,##id##,SalvagedTextAlly,SalvagedTextEnemy,ShieldImpact,UnitPointsTextAll
-Behavior=Harmless,SpikeInitial,SpikePeriodic
+Behavior=SpikeInitial,SpikePeriodic
 
 [Upgrade]
 id=ChitinousPlating
