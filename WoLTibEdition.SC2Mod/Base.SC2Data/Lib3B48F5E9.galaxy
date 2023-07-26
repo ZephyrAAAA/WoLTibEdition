@@ -982,43 +982,6 @@ void lib3B48F5E9_gt_Memesettingload_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Untitled Trigger 001
-//--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_UntitledTrigger001_Func (bool testConds, bool runActions) {
-    // Variable Declarations
-    unit lv_topbarUnit;
-    int lv_topbarPanel;
-
-    // Automatic Variable Declarations
-    // Variable Initialization
-    lv_topbarPanel = c_invalidDialogControlId;
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    libNtve_gf_CreateUnitsWithDefaultFacing(1, "CCTopbar", 0, 1, PlayerStartLocation(1));
-    lv_topbarUnit = UnitLastCreated();
-    DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/FullscreenUpperContainer/CCGlobalCastingPanel");
-    DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypePanel, "CCTopbar/CCPanelTemplate");
-    lv_topbarPanel = DialogControlLastCreated();
-    DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupAll(), true);
-    DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
-    DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
-    DialogControlHookup(lv_topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
-    DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
-    libNtve_gf_SetDialogItemUnitGroup(DialogControlLastCreated(), libNtve_gf_ConvertUnitToUnitGroup(lv_topbarUnit), PlayerGroupAll());
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_UntitledTrigger001_Init () {
-    lib3B48F5E9_gt_UntitledTrigger001 = TriggerCreate("lib3B48F5E9_gt_UntitledTrigger001_Func");
-    TriggerAddEventMapInit(lib3B48F5E9_gt_UntitledTrigger001);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Show Me the Money
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
@@ -1472,7 +1435,6 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_SquadShields_Init();
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
     lib3B48F5E9_gt_Memesettingload_Init();
-    lib3B48F5E9_gt_UntitledTrigger001_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
