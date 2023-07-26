@@ -882,10 +882,8 @@ bool INI_Func (bool testConds, bool runActions) {
 	DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
 	DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
 	DialogControlHookup(topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
-	lv_lastFrame = DialogControlLastCreated();
-	DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
-	lv_lastFrame = DialogControlLastCreated();
-	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
+	DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
+	libNtve_gf_SetDialogItemUnitGroup(DialogControlLastCreated(), libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
 	topbarCommandPanel = DialogControlLastCreated();
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	rate = 117;
