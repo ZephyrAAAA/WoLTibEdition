@@ -5899,6 +5899,10 @@
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" AbilCmd="255,255" Requirements="UseMaelstromRounds"/>
+            <LayoutButtons index="7" AbilCmd="255,255"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="SiegeTankACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

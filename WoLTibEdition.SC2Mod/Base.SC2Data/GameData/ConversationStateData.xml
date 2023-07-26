@@ -58,6 +58,7 @@
         <Indices index="6" ImagePath="Assets\Textures\btn-ability-stetmann-stetelliteoverloadhealth.dds">
             <InfoUpgrade index="0" Upgrade="TitanSteel"/>
         </Indices>
+        <Indices index="12" ImagePath="Assets\Textures\btn-upgrade-terran-nova-bombingrun.dds" MoviePath=""/>
         <Indices index="18" ImagePath="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
     </CConversationState>
     <CConversationState id="LabResearchCompleted">

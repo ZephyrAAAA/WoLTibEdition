@@ -25,7 +25,9 @@
         <Indices Id="Dark_Templar" Name="ConversationState/CCEditionPermanence/Dark_Templar">
             <InfoAbilCmd Id="AC1" Abil="CallDarkTemplar"/>
         </Indices>
-        <Indices Id="Memes" Name="ConversationState/CCEditionPermanence/Memes"/>
+        <Indices Id="Memes" Name="ConversationState/CCEditionPermanence/Memes">
+            <InfoValue Id="Allowed"/>
+        </Indices>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>
@@ -56,6 +58,7 @@
         <Indices index="6" ImagePath="Assets\Textures\btn-ability-stetmann-stetelliteoverloadhealth.dds">
             <InfoUpgrade index="0" Upgrade="TitanSteel"/>
         </Indices>
+        <Indices index="12" ImagePath="Assets\Textures\btn-upgrade-terran-nova-bombingrun.dds" MoviePath=""/>
         <Indices index="18" ImagePath="Assets\Textures\btn-ability-protoss-invulnerabilityshield.dds"/>
     </CConversationState>
     <CConversationState id="LabResearchCompleted">
