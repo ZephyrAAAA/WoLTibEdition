@@ -344,6 +344,9 @@
         <Model value="Dragoon_Purifier_Coop_AirBomb_Impact"/>
         <AutoScaleFactor value="1.000000"/>
     </CActorModel>
+    <CActorAction id="FirebatAttack">
+        <ContainerModel value="FirebatAttackModel"/>
+    </CActorAction>
     <CActorModel id="FloatingTextMineralSilo" parent="FloatingTextActorDefault" effectPickup="PickupMinerals100" actorCreate="PickupMinerals100Text">
         <On index="0" Terms="Effect.MineralSiloInitial.Start" Send="Create"/>
         <On index="1" Terms="ActorCreation" Send="Create PickupSiloInitialText"/>

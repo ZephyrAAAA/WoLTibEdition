@@ -865,6 +865,8 @@ void TechUnlock_Init () {
 bool INI_Func (bool testConds, bool runActions) {
 	int lv_lastFrame;
 	int panel;
+	int lv_i;
+	unitgroup neutralStructures;
 	
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
 	topbarUnit = UnitLastCreated();
@@ -893,6 +895,11 @@ bool INI_Func (bool testConds, bool runActions) {
 	//ConversationDataLoadStateValues("CCEditionPermanence", BankLastCreated(), "CCEditionPermanence");
 	PlayerOptionOverride(1, "simplecommandcard", "0");
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
+	neutralStructures = UnitGroup("MineralSpike", 0, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
+	UnitGroupAddUnitGroup(neutralStructures, UnitGroup("MineralSpike", 0, RegionEntireMap(), UnitFilter(0,0,0,0), 0));
+	for (lv_i = 1; lv_i <= UnitGroupCount(neutralStructures, c_unitCountAlive); lv_i += 1) {
+		VisRevealArea(1, RegionCircle(UnitGetPosition(UnitGroupUnit(neutralStructures, lv_i)), 1), 0, false);
+	}
 	return true;
 }
 

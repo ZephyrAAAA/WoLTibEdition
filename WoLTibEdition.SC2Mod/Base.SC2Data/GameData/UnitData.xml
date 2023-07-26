@@ -7243,6 +7243,8 @@
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <LifeStart value="90"/>
+        <LifeMax value="90"/>
     </CUnit>
     <CUnit id="VultureACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>

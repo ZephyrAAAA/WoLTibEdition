@@ -1392,6 +1392,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Period value="2.5"/>
         <Effect value="FragmentationGrenadeCP"/>
         <DisplayAttackCount value="2"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VultureSpiderMines">
         <AttackType value="Siege"/>
