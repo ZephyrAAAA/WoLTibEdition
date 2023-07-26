@@ -2434,7 +2434,6 @@
         <NameOffset value="150"/>
         <SoundArray index="Ready" value="PlanetaryFortress_Ready"/>
         <SoundArray index="What" value="PlanetaryFortress_What"/>
-        <StatusHarvesterData Text="UI/HarvesterCountMinerals" SearchFilters="HarvestableResource;Player,Ally,Enemy" SearchRadius="8"/>
         <UnitFlags index="StandAnimBirthVariation" value="0"/>
         <UnitIcon value="Assets\Textures\btn-building-terran-PlanetaryFortress.dds"/>
         <Wireframe>
