@@ -7,10 +7,14 @@ Medivac rapid deployment button passive now mentions the bunker part.
 *Added some passives for armory upgrades
 HME and Psi Disruptor now say they're topbar abilities
 Corrected the Cellular text
-*Autoref now says it costs 1.5k like it should.
+Autoref now says it costs 1.5k like it should.
 Orbital Supply Drop now has no video, and a different icon
 Buffed vulture to 90 HP, and they can now push each other while firing
 Firebat now has blue-color flame when in bunker with blue flame
+Fixed the AI not shooting capturable structures
+Capturable structures can now be captured in fog of war
+Planetary Fortress no longer gets the old CC reactor
+Laser drill is now more responsive
 
 Inlaws:
 Tutorial is now done through transmissions, so there's a record of stuff. -Send Transmission (Simple)
