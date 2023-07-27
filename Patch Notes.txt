@@ -7,9 +7,10 @@ Medivac rapid deployment button passive now mentions the bunker part.
 *Added some passives for armory upgrades
 HME and Psi Disruptor now say they're topbar abilities
 Corrected the Cellular text
-*Buff Predator
-*Autoref now actually costs 2k like it should.
+*Autoref now says it costs 1.5k like it should.
 Orbital Supply Drop now has no video, and a different icon
+Buffed vulture to 90 HP, and they can now push each other while firing
+Firebat now has blue-color flame when in bunker with blue flame
 
 Inlaws:
 Tutorial is now done through transmissions, so there's a record of stuff. -Send Transmission (Simple)
@@ -47,4 +48,5 @@ The protoss no longer build phoenixes
 Each protoss base now has a limit on how many air units of each type it will deploy defensively, so they don't just infinitely get stronger.
 
 Gates:
-*You can no longer get more than 1 CC from drop pods
+You can no longer get more than 1 CC from drop pods
+Warfield now shoots back at the zerg
