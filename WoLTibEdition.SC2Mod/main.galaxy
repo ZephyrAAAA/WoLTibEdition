@@ -865,6 +865,8 @@ void TechUnlock_Init () {
 bool INI_Func (bool testConds, bool runActions) {
 	int lv_lastFrame;
 	int panel;
+	int lv_i;
+	unitgroup neutralStructures;
 	
 	UnitCreate(1, "CCTopbar", 0, 1, PlayerStartLocation(1), 0);
 	topbarUnit = UnitLastCreated();
@@ -880,18 +882,10 @@ bool INI_Func (bool testConds, bool runActions) {
 	topbarPanel = DialogControlLastCreated();
 	DialogControlSetVisible(topbarPanel, PlayerGroupAll(), true);
 	DialogControlCreateInPanel(DialogControlLastCreated(), c_triggerControlTypeTooltip);
-	DialogControlSetSize(DialogControlLastCreated(), PlayerGroupAll(), 1, 1);
-	DialogControlSetPosition(DialogControlLastCreated(), PlayerGroupAll(), c_anchorTopLeft, -100, -100);
 	DialogControlHookupStandard(c_triggerControlTypePanel, "UIContainer/ConsolePanel");
-	lv_lastFrame = DialogControlLastCreated();
 	DialogControlHookup(topbarPanel, c_triggerControlTypePanel, "CCButtonHolder");
-	lv_lastFrame = DialogControlLastCreated();
-	DialogControlCreateInPanelFromTemplate(lv_lastFrame, c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
-	lv_lastFrame = DialogControlLastCreated();
-	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton00");
-	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton01");
-	//DialogControlHookup(lv_lastFrame, c_triggerControlTypeButton, "CommandButton02");
-	libNtve_gf_SetDialogItemUnitGroup(lv_lastFrame, libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
+	DialogControlCreateInPanelFromTemplate(DialogControlLastCreated(), c_triggerControlTypeCommandPanel, "CCTopbar/CCCommandPanelTemplate");
+	libNtve_gf_SetDialogItemUnitGroup(DialogControlLastCreated(), libNtve_gf_ConvertUnitToUnitGroup(topbarUnit), PlayerGroupAll());
 	topbarCommandPanel = DialogControlLastCreated();
 	UISetResourceVisible(PlayerGroupAll(), c_resourceTypeVespene, false);
 	rate = 117;
@@ -901,6 +895,11 @@ bool INI_Func (bool testConds, bool runActions) {
 	//ConversationDataLoadStateValues("CCEditionPermanence", BankLastCreated(), "CCEditionPermanence");
 	PlayerOptionOverride(1, "simplecommandcard", "0");
 	PlayerModifyPropertyInt(1, c_playerPropSuppliesLimit, c_playerPropOperSetTo, 10000);
+	neutralStructures = UnitGroup("MineralSpike", 0, RegionEntireMap(), UnitFilter(0,0,0,0), 0);
+	UnitGroupAddUnitGroup(neutralStructures, UnitGroup("MineralSpike", 0, RegionEntireMap(), UnitFilter(0,0,0,0), 0));
+	for (lv_i = 1; lv_i <= UnitGroupCount(neutralStructures, c_unitCountAlive); lv_i += 1) {
+		VisRevealArea(1, RegionCircle(UnitGetPosition(UnitGroupUnit(neutralStructures, lv_i)), 1), 0, false);
+	}
 	return true;
 }
 

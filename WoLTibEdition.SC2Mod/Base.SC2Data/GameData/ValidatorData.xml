@@ -204,6 +204,11 @@
         <WhichPlayer Value="Source"/>
         <Value value="Neutral"/>
     </CValidatorPlayerCompareType>
+    <CValidatorPlayerCompareType id="PlayerIsNotPlayer">
+        <WhichPlayer Value="Source"/>
+        <Compare value="NE"/>
+        <Value value="User"/>
+    </CValidatorPlayerCompareType>
     <CValidatorUnitCompareBehaviorCount id="PsiStormTestBuffKarass">
         <Behavior value="KarassPsiStorm"/>
     </CValidatorUnitCompareBehaviorCount>

@@ -766,6 +766,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
     <CWeaponLegacy id="LaserDrillTripodLaserBeam">
         <TargetFilters value="Visible;Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="500"/>
+        <LegacyOptions index="Uninterruptible" value="0"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="MarauderSquad@2">
         <EditorCategories value="Race:Terran"/>
@@ -1391,6 +1392,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Period value="2.5"/>
         <Effect value="FragmentationGrenadeCP"/>
         <DisplayAttackCount value="2"/>
+        <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="VultureSpiderMines">
         <AttackType value="Siege"/>

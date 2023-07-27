@@ -112,6 +112,7 @@
             <Cooldown Link="NeutralCapturable/Revive"/>
         </ReviveInfoBase>
         <EditorFlags index="NeutralDefault" value="1"/>
+        <BehaviorArray Link="NeutralCapturable"/>
     </CUnit>
     <CUnit default="1" id="PATHINGBLOCKER">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -1539,7 +1540,6 @@
         <LifeStart value="1500"/>
         <LifeMax value="1500"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranBuildingPlating"/>
-        <EnergyStart value="50"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
         <Sight value="11"/>
@@ -4479,7 +4479,6 @@
         <BehaviorArray Link="SiloInitial"/>
         <BehaviorArray Link="BuildRadiusSmall"/>
         <BehaviorArray Link="DisablePower"/>
-        <BehaviorArray Link="Harmless"/>
         <Footprint value="Footprint3x3ContourIgnoreCreep"/>
         <PlacementFootprint value="Footprint3x3ContourIgnoreCreep"/>
     </CUnit>
@@ -4488,7 +4487,6 @@
         <Description value="Button/Tooltip/MineralSpike"/>
         <BehaviorArray Link="SpikeInitial"/>
         <BehaviorArray Link="SpikePeriodic"/>
-        <BehaviorArray Link="Harmless"/>
         <Footprint value="Footprint2x2IgnoreCreepContour"/>
         <PlacementFootprint value="Footprint2x2IgnoreCreepContour"/>
     </CUnit>
@@ -4832,7 +4830,6 @@
         <AbilArray Link="StopRedirect"/>
         <AbilArray Link="healRedirect"/>
         <BehaviorArray Link="TerranBuildingBurnDown"/>
-        <BehaviorArray Link="CommandCenterQueue"/>
         <BehaviorArray Link="FireSuppressionSystem"/>
         <BehaviorArray Link="PowerCheck"/>
         <BehaviorArray Link="BuildRadiusLarge"/>
@@ -4937,7 +4934,7 @@
         <GlossaryCategory value="Unit/Category/TerranUnits"/>
         <GlossaryPriority value="240"/>
         <HotkeyCategory value="Unit/Category/TerranUnits"/>
-        <HotkeyAlias value="PlanetaryFortress"/>
+        <HotkeyAlias value="CommandCenter2"/>
     </CUnit>
     <CUnit id="PlatformConnector">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7249,6 +7246,8 @@
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <LifeStart value="90"/>
+        <LifeMax value="90"/>
     </CUnit>
     <CUnit id="VultureACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
