@@ -673,6 +673,10 @@
         <BehaviorArray index="1" removed="1"/>
         <Food value="0"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" AbilCmd="255,255" Column="2"/>
+            <LayoutButtons index="8" AbilCmd="255,255"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="BansheeACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -2830,6 +2834,8 @@
         <CardLayouts index="0">
             <LayoutButtons Face="FirebatSquad2" Type="AbilCmd" AbilCmd="DevilDogSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="1"/>
+            <LayoutButtons Face="JuggernautPlating" Type="Passive" Requirements="UseJuggernautPlatingFirebat" Row="1" Column="2"/>
+            <LayoutButtons Face="IncineratorNozzles" Type="Passive" Requirements="UseIncineratorNozzles" Row="1" Column="3"/>
         </CardLayouts>
         <SelectAlias value="FirebatSquad"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
@@ -3210,6 +3216,7 @@
         <CardLayouts index="0">
             <LayoutButtons index="5" AbilCmd="255,255"/>
             <LayoutButtons index="6" AbilCmd="255,255"/>
+            <LayoutButtons Face="HydraulicStabilizer" Type="Passive" Requirements="UseHellionInfernalPreIgniter2" Row="2" Column="2"/>
         </CardLayouts>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
@@ -3291,6 +3298,11 @@
         <Food value="0"/>
         <BehaviorArray Link="Biosteel"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="7" Face="MiniatureDropPods" Requirements="UseSpectreNyxSuit"/>
+            <LayoutButtons Face="RapidDeployment" Type="Passive" Row="1" Column="0"/>
+            <LayoutButtons Face="BehemothEngines" Type="Passive" Requirements="UseUltrasonicPulse" Row="1" Column="1"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="HerculesACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -4033,6 +4045,8 @@
         <CardLayouts index="0">
             <LayoutButtons Face="FirebatSquad" Type="AbilCmd" AbilCmd="FirebatSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="InfernalPreIgniter" Type="Passive" Requirements="UseHellionInfernalPreIgniter" Row="1" Column="1"/>
+            <LayoutButtons Face="JuggernautPlating" Type="Passive" Requirements="UseJuggernautPlatingFirebat" Row="1" Column="2"/>
+            <LayoutButtons Face="IncineratorNozzles" Type="Passive" Requirements="UseIncineratorNozzles" Row="1" Column="3"/>
         </CardLayouts>
         <ArmorType value="Normal"/>
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
@@ -4073,6 +4087,8 @@
         <WeaponArray Link="HammerSecuritiesSquad@2"/>
         <CardLayouts index="0">
             <LayoutButtons Face="MarauderSquad2" Type="AbilCmd" AbilCmd="HammerSecuritiesSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="JackhammerConcussionGrenade" Type="Passive" Requirements="UseJackhammerConcussiveGrenade" Row="2" Column="0"/>
+            <LayoutButtons Face="AblativeScales" Type="Passive" Requirements="UseAblativeScales" Row="2" Column="1"/>
         </CardLayouts>
         <BehaviorArray index="0" Link="HailstormLaunchers"/>
         <BehaviorArray Link="SquadMainUnit"/>
@@ -4163,7 +4179,8 @@
             <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="MedicSquad" Type="AbilCmd" AbilCmd="MedicSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="MedicHeal" Type="AbilCmd" AbilCmd="MedicSquadAcquire,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="MedicCapturePassive" Type="Passive" Row="1" Column="1"/>
+            <LayoutButtons Face="StabilizerMedPacks" Type="Passive" Requirements="UseStabilizerMedpacks" Row="1" Column="1"/>
+            <LayoutButtons Face="MedicCapturePassive" Type="Passive" Row="2" Column="1"/>
         </CardLayouts>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Description value="Unit/Tooltip/MedicSquad"/>
@@ -4967,6 +4984,10 @@
             <Tooltip value="Tip/PredatorShield"/>
         </EquipmentArray>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <CardLayouts index="0">
+            <LayoutButtons Face="FieldProjectors" Type="Passive" Requirements="UseGhostCriusSuit" Row="2" Column="1"/>
+            <LayoutButtons Face="ReinforcedBarrier" Type="Passive" Requirements="UseGhostOcularImplants" Row="2" Column="2"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="PreserverA">
         <LifeArmor value="0"/>
@@ -6783,7 +6804,7 @@
             <LayoutButtons index="5" Face="330mmBarrageCannons" AbilCmd="330mmBarrageCannons,Execute"/>
             <LayoutButtons index="6" Face="Cancel" AbilCmd="250mmStrikeCannons,Cancel" Column="4"/>
             <LayoutButtons index="7" AbilCmd="330mmBarrageCannons,Cancel"/>
-            <LayoutButtons index="8" removed="1"/>
+            <LayoutButtons index="8" Face="ImprovedActuators" Type="Passive" AbilCmd="" Requirements="Use330mmBarrageCannons" Column="2"/>
             <LayoutButtons index="9" removed="1"/>
         </CardLayouts>
         <TacticalAIThink value=""/>
@@ -6849,6 +6870,8 @@
         <WeaponArray Link="MarauderSquad@2"/>
         <CardLayouts index="0">
             <LayoutButtons Face="MarauderSquad" Type="AbilCmd" AbilCmd="MarauderSquad,Ammo1" Row="1" Column="0"/>
+            <LayoutButtons Face="JackhammerConcussionGrenade" Type="Passive" Requirements="UseJackhammerConcussiveGrenade" Row="2" Column="0"/>
+            <LayoutButtons Face="AblativeScales" Type="Passive" Requirements="UseAblativeScales" Row="2" Column="1"/>
         </CardLayouts>
         <LifeStart value="200"/>
         <LifeMax value="200"/>
@@ -6869,6 +6892,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="Marine" Type="AbilCmd" AbilCmd="MarineSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="CombatShield" Type="Passive" Requirements="UseCombatShield" Row="1" Column="1"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
         <LifeStart value="270"/>
@@ -6892,6 +6916,7 @@
             <LayoutButtons Face="ReaperSpeed" Type="AbilCmd" AbilCmd="BioMode,Off" Row="1" Column="2"/>
             <LayoutButtons Face="ReaperBombBuildings" Type="AbilCmd" AbilCmd="ReaperShootStructure,On" Row="1" Column="3"/>
             <LayoutButtons Face="ReaperNotBombBuildings" Type="AbilCmd" AbilCmd="ReaperShootStructure,Off" Row="1" Column="4"/>
+            <LayoutButtons Face="U238Rounds" Type="Passive" Requirements="UseReaperU238Rounds" Row="2" Column="3"/>
         </CardLayouts>
         <LifeStart value="240"/>
         <LifeMax value="240"/>
@@ -7248,6 +7273,10 @@
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <LifeStart value="90"/>
         <LifeMax value="90"/>
+        <CardLayouts index="0">
+            <LayoutButtons index="6" AbilCmd="255,255"/>
+            <LayoutButtons Face="VultureEMPPassive" Type="Passive" Requirements="UseNanoConstructor" Row="2" Column="3"/>
+        </CardLayouts>
     </CUnit>
     <CUnit id="VultureACGluescreenDummy">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -7278,6 +7307,7 @@
         <CardLayouts index="0">
             <LayoutButtons Face="MarineSquad2" Type="AbilCmd" AbilCmd="WarPigSquad,Ammo1" Row="1" Column="0"/>
             <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="SquadStimpack,Execute" Row="2" Column="0"/>
+            <LayoutButtons Face="CombatShield" Type="Passive" Requirements="UseCombatShield" Row="1" Column="1"/>
         </CardLayouts>
         <SubgroupPriorityDelta value="8"/>
         <SelectAlias value="MarineSquad"/>

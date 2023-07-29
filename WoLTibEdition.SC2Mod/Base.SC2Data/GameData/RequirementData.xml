@@ -192,6 +192,10 @@
     <CRequirement id="UseFortifiedBunker">
         <NodeArray index="Show" Link="CountUpgradeTerranBuildingArmorCompleteOnly"/>
     </CRequirement>
+    <CRequirement id="UseHellionInfernalPreIgniter2">
+        <EditorCategories value="Race:Terran,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="CountUpgradeHydraulicStabilizersCompleteOnly"/>
+    </CRequirement>
     <CRequirement id="UseReaperScannerPack">
         <NodeArray index="Show" Link="CountUpgradeReaperScannerPackCompleteOnly"/>
     </CRequirement>

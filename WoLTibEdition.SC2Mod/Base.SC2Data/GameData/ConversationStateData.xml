@@ -325,7 +325,7 @@
         <Indices index="41" ImagePath="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds">
             <InfoValue index="0" Value="80000"/>
         </Indices>
-        <Indices index="42">
+        <Indices index="42" ImagePath="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds">
             <InfoValue index="0" Value="70000"/>
         </Indices>
     </CConversationState>

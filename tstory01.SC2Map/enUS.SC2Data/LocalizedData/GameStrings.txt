@@ -136,7 +136,9 @@ Behavior/Tooltip/PsiSight=Zeratul Gains +3 Sight range and ignores cliffs for si
 Behavior/Tooltip/SupplyDrop=This Supply Depot is providing an additional 10 supply.
 Behavior/Tooltip/SupplyDrop2=This Supply Depot is providing an additional 8 supply.
 Button/Name/AresClassWeaponsSystem=Neosteel Plating
+Button/Name/AresClassWeaponsSystemviking=Improved Mechanics
 Button/Name/AstralProjection=Astral Projection
+Button/Name/BehemothEngines=Behemoth Engines
 Button/Name/BioSpeed=Bio Speed
 Button/Name/BuildDevastatorTurret=Build Devastation Turret
 Button/Name/BuildingRepair=Building Repair
@@ -196,6 +198,7 @@ Button/Name/DevastationAOE=Devastation AOE
 Button/Name/EMPSpectre=EMP Round
 Button/Name/FeedbackGhost=Feedback
 Button/Name/FenixDragoonAirBomb=Solarite Flare
+Button/Name/FieldProjectors=Field Projectors
 Button/Name/FirebatSquad=Firebat Squad
 Button/Name/FirebatSquad2=Devil Dog Squad
 Button/Name/ForgottenParaphernalia=Forgotten Paraphernalia
@@ -214,6 +217,7 @@ Button/Name/HiveMindEmulator6=Hive Mind Emulator
 Button/Name/HiveMindEmulator7=Hive Mind Emulator
 Button/Name/HiveMindEmulator8=Hive Mind Emulator
 Button/Name/HiveMindEmulator9=Hive Mind Emulator
+Button/Name/HydraulicStabilizer=Hydraulic Stabilizer
 Button/Name/HyperflightRotors=Hyperflight Rotors
 Button/Name/HyperionYamato10=Hyperion Yamato
 Button/Name/HyperionYamato11=Hyperion Yamato
@@ -227,6 +231,7 @@ Button/Name/HyperionYamato6=Hyperion Yamato
 Button/Name/HyperionYamato7=Hyperion Yamato
 Button/Name/HyperionYamato8=Hyperion Yamato
 Button/Name/HyperionYamato9=Hyperion Yamato
+Button/Name/ImprovedActuators=Improved Actuators
 Button/Name/InfantryMercenaries10=Infantry Mercenaries
 Button/Name/InfantryMercenaries11=Infantry Mercenaries
 Button/Name/InfantryMercenaries12=Infantry Mercenaries
@@ -251,6 +256,7 @@ Button/Name/MarineSquad2=War Pig Squad
 Button/Name/MedicCapturePassive=Capture Ability
 Button/Name/MedicSquad=Medic Squad
 Button/Name/MedivacLoadNearby=Load Nearby
+Button/Name/MiniatureDropPods=Miniature Drop Pods
 Button/Name/NeutralStructurePassive=Neutral Structure Passive
 Button/Name/NovaHeal=Heal
 Button/Name/NukeCalldown10=Tac Nuke Strike
@@ -285,6 +291,7 @@ Button/Name/RavenScramblerMissile=Interference Matrix
 Button/Name/ReaperBombBuildings=Reaper Bomb Buildings
 Button/Name/ReaperNotBombBuildings=Reaper Not Bomb Buildings
 Button/Name/ReaperSquad=Reaper Squad
+Button/Name/ReinforcedBarrier=Reinforced Barrier
 Button/Name/RepairOrder=Repair
 Button/Name/ResearchEnhancedExplosives=Research Enhanced Explosives
 Button/Name/ResearchHighEnergyCapacitors=Research High-Energy Capacitors
@@ -295,6 +302,7 @@ Button/Name/ResearchThermiteFilaments=Research Thermite Filaments
 Button/Name/ResearchTitanEngines=Research Titan Engines
 Button/Name/ResetRally=Reset Rally
 Button/Name/ResumeQueue=Resume Queue
+Button/Name/RipwaveMissiles=Turreted Missile Pods
 Button/Name/SOAMothershipLineAttack=Thermal Lance
 Button/Name/ScannerSweepTopbar10=Scanner Sweep
 Button/Name/ScannerSweepTopbar11=Scanner Sweep
@@ -383,10 +391,12 @@ Button/Name/ZergHypervirus9=Zerg Hypervirus
 Button/Tooltip/330mmBarrageCannons=Deals <d ref="Effect,330mmBarrageCannonsPersistent,PeriodCount * Effect,330mmBarrageCannonsDamage,Amount"/> damage over <d ref="Effect,330mmBarrageCannonsPersistent,PeriodCount * Effect,330mmBarrageCannonsPersistent,PeriodicPeriodArray[0]"/> seconds in a larger area.
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/AresClassWeaponsSystem=Increases HP by 50.
+Button/Tooltip/AresClassWeaponsSystemviking=Vikings transform 4x faster, and fire 60% faster.
 Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
 Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Shadow Ops
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
+Button/Tooltip/BehemothEngines=Increases Hercules speed and acceleration by 33%.
 Button/Tooltip/BioSpeed=Caps the Reaper's speed at 2.25
 Button/Tooltip/BonesHeal=Heals a friendly biological target for <c val="FFE000"><d ref="Effect,BonesHeal,RechargeVitalRate"/></c> life per second.<n/><n/><c val="f078ff">Drains <d ref="Effect,BonesHeal,RechargeVitalRate*Effect,BonesHeal,DrainVitalCostFactor"/> energy per second.</c><n/>
 Button/Tooltip/BrutaliskBurrowed=Massive assault beast that dwarfs even the Ultralisk in size and strength. <n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
@@ -466,6 +476,7 @@ Button/Tooltip/Factory=Vehicle-production facility. <n/><n/><c val="ffff8a">Enab
 Button/Tooltip/Factory2Flying=Factory must land to start unit production.
 Button/Tooltip/FeedbackGhost=Deals 400 shield damage. Drains all energy from the target, then deals 2 damage per point of energy.
 Button/Tooltip/FenixDragoonAirBomb=Fires an air-bursting flare that deals <d ref="Effect,FenixDragoonAirBombAirDamage,Amount"/> damage to enemy air units.
+Button/Tooltip/FieldProjectors=Increases Retribution Field radius by 50%.
 Button/Tooltip/FirebatSquad=This is how many individual firebats you have.
 Button/Tooltip/FirebatSquad2=This is how many individual firebats you have.
 Button/Tooltip/ForgottenParaphernalia=Lost equipment greatly improves Zeratul's psi blade, and improves his vision, allowing him to see farther and around cliffs.
@@ -490,6 +501,7 @@ Button/Tooltip/HiveMindEmulator6=Converts targeted Zerg units to player control 
 Button/Tooltip/HiveMindEmulator7=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HiveMindEmulator8=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
 Button/Tooltip/HiveMindEmulator9=Converts targeted Zerg units to player control for <d ref="Behavior,MindControl,Duration"/> seconds.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>
+Button/Tooltip/HydraulicStabilizer=The Hellion can fire while moving.
 Button/Tooltip/HyperflightRotors=Increases <c val="ffff8a">Banshee</c> speed to 3.75 (same as Wraith)
 Button/Tooltip/HyperionYamato10=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
 Button/Tooltip/HyperionYamato11=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
@@ -504,6 +516,7 @@ Button/Tooltip/HyperionYamato7=Blasts a target with a devastating plasma cannon,
 Button/Tooltip/HyperionYamato8=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
 Button/Tooltip/HyperionYamato9=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoGunTopbarDamage,Amount*Effect,YamatoGunTopbarCPU,PeriodCount"/> damage.
 Button/Tooltip/Immortal=Assault strider. Has strong shields.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
+Button/Tooltip/ImprovedActuators=Thors move 20% faster
 Button/Tooltip/InfantryMercenaries10=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries11=Calls down all purchased infantry mercenaries at the target location
 Button/Tooltip/InfantryMercenaries12=Calls down all purchased infantry mercenaries at the target location
@@ -536,6 +549,7 @@ Button/Tooltip/MercCompound=Trains Mercenary units.
 Button/Tooltip/MercCompound2=Trains Mercenary units.
 Button/Tooltip/MineralSilo=Provides build radius while controlled.<n/><n/>Grants a large one-time mineral payout on capture.
 Button/Tooltip/MineralSpike=Provides a steady income while controlled.<n/><n/>Grants a small one-time mineral payout on capture.
+Button/Tooltip/MiniatureDropPods=Increases hercules pickup range, load/unload is instant, and reduces damage taken by emergency dropped units to 10%.
 Button/Tooltip/MissileTurret=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/MissileTurret2=Primary anti-air defensive structure. <n/><n/><c val="#ColorAttackInfo">Can attack air units.</c><n/><c val="FFE303">Detector</c>
 Button/Tooltip/NanoRepair=Heals a friendly mechanical unit.<n/><n/><c val="f078ff">Heals <d ref="Effect,NanoRepair,RechargeVitalRate"/> life per second for <d ref="Effect,NanoRepair,RechargeVitalRate*Effect,NanoRepair,DrainVitalCostFactor"/> energy.</c><n/><c val="#ColorAttackInfo">Up to 3 Science Vessels can heal the same target</c>
@@ -576,6 +590,7 @@ Button/Tooltip/PsiDisruptor7=Causes targeted Zerg units to attack the nearest un
 Button/Tooltip/PsiDisruptor8=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/PsiDisruptor9=Causes targeted Zerg units to attack the nearest unit for <d ref="Behavior,PsiDisruption,Duration"/> seconds.
 Button/Tooltip/RallySCV=Sends constructed worker units to the designated point. Workers rallied to Mineral Fields will begin gathering automatically.
+Button/Tooltip/RapidDeploymentTubes=Infantry can fire out of The Medivac, and it deploys loaded troops almost instantly.
 Button/Tooltip/Raven=Aerial support unit. Can use Seeker Missile, Point Defense Drone, Repair Drone, and Interference Matrix.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/RavenRepairDrone=Deploys a repair drone to repair nearby mechanical units for <d ref="Behavior,RepairDroneTimeout,Duration"/> seconds.
 Button/Tooltip/RavenScramblerMissile=Disables a target unit rendering it unable to attack or use abilities for <d ref="Behavior,RavenScramblerMissile,Duration"/> seconds. Reveals Cloaked units.<n/><n/><c val="#ColorAttackInfo">Can target mechanical and psionic units.</c>
@@ -585,6 +600,7 @@ Button/Tooltip/ReaperNotBombBuildings=Orders the reaper squad to use its pistols
 Button/Tooltip/ReaperSquad=This is how many individual reapers you have.
 Button/Tooltip/Refinery=Built to allow SCVs to drop off minerals. Standard Refineries come with an SCV. Automated Refineries gather minerals in 4 range. <n/><n/><c val="ffff8a">Enables:</c><n/>- Factory<n/>- Engineering Bay
 Button/Tooltip/RefineryBounce=Built over a Vespene Geyser to allow harvesting of vespene gas.
+Button/Tooltip/ReinforcedBarrier=Predator Barrier absorbs twice as much damage.
 Button/Tooltip/ReinforcedSuperstructure=Increases Turret life by 75.
 Button/Tooltip/RepairOrder=Orders repair drones to repair the target. Repairs works at a rate of 10+2%hp/s.
 Button/Tooltip/ResearchEnhancedExplosives=Increases the damage of <c val="ffff8a">Goliath</c>, <c val="FFFF8a">Wraith</c>, <c val="FFFF8A">Viking</c>, <c val="FFFF8A">Thor</c>, <c val="FFFF8A">Banshee</c>, <c val="FFFF8A">Marauder</c> rockets, and <c val="FFFF8A">Planetary Fortress</c> by +30%.
@@ -597,6 +613,7 @@ Button/Tooltip/ResearchThermiteFilaments=<c val="ffff8a">Firebats</c>, <c val="f
 Button/Tooltip/ResearchTitanEngines=Increases <c val="ffff8a">Battlecruiser</c> speed by 20%, to 2.25
 Button/Tooltip/ResetRally=Resets rally point, to use the default harvest behavior.
 Button/Tooltip/ResumeQueue=Resumes the queue of this structure.
+Button/Tooltip/RipwaveMissiles=Vikings can fire their missiles at ground targets while in Assault Mode.
 Button/Tooltip/SCV=Basic worker unit. Gathers resources.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SCV2=Basic worker unit. Can gather resources, build Terran structures, and repair.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/SOAMothershipLineAttack=Deals <d ref="Effect,SOAMothershipLineAttackDamage,Amount"/> damage to all enemies in a straight line up to 10 range away.
@@ -617,6 +634,7 @@ Button/Tooltip/SendWave=JIM WHERE ARE MY TROOPS??!?!?
 Button/Tooltip/SensorTower2=Provides a large build radius.<n/><n/>Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.
 Button/Tooltip/Sentry=Energy-manipulator unit. Can use Force Field, Guardian Shield, and Shield Restore.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/ShapedHull=Increases Diamondback life by 50. Reduces damage taken from Cannon-type by 25%.
+Button/Tooltip/SingularityAnchor=Wraith starts with 100 additional energy, and regen energy 50% faster.
 Button/Tooltip/Snipe=Snipes an enemy unit, dealing <d ref="Effect,SnipeDamage,Amount"/> damage.
 Button/Tooltip/Spectre=Commando unit. Can use Ultrasonic Pulse and EMP. Armed with a rapid fire anti-infantry weapon, and high-powered anti-structure explosives.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/Starport=Air-unit production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Command Center
@@ -695,7 +713,7 @@ Button/Tooltip/VehicleVanadiumPlating=Gives Vehicles 20% resistance to damage
 Button/Tooltip/Veterancy=Gains experience from dealing damage, including ability damage.<n/>Level 1 and 2 give 10% health and damage (including ability).<n/>Level 3 gives 30% hp, 50% fire rate, 5/s hp regen, and halves ability charge and use cooldowns.</s>
 Button/Tooltip/VikingFighter=Durable support flyer. Loaded with rapid fire AOE air missiles. Can switch into Assault Mode to attack ground units.<n/><n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/VoidSentryShieldRepair=Recharges the shields of a friendly Protoss unit. <n/><n/><c val="f078ff">Restores <d ref="Effect,VoidSentryShieldRepair,RechargeVitalRate*Effect,VoidSentryShieldRepair,DrainVitalCostFactor"/> shields per 1 energy.</c>
-Button/Tooltip/VultureEMPPassive=Attacks disable mechanical units and structures for 1s.
+Button/Tooltip/VultureEMPPassive=Attacks disable mechanical units and structures for 1s.<n/><n/>Halved against Heroic targets.
 Button/Tooltip/YamatoGun=Blasts a target with a devastating plasma cannon, causing <d ref="Effect,YamatoCPU,PeriodCount*Effect,YamatoU,Amount"/> damage.
 Button/Tooltip/ZeratulStun=Imprisons the enemy in psionic energy, stunning it and suppressing its ability to detect for <d ref="Behavior,ZeratulStun,Duration"/> seconds.<n/><n/><c val="ffff8a">Can imprison ground and air units.</c> Heroic units are only imprisoned for 4s.
 Button/Tooltip/ZergHypervirus10=Makes targeted units hostile to all players indefinitely, and causes them to seek out targets.<n/><n/><c val="#ColorAttackInfo">Heroic units are immune.</c>

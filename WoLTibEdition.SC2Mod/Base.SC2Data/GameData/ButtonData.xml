@@ -14,6 +14,20 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="Hallucination"/>
         <DefaultButtonLayout Row="1" Column="1"/>
     </CButton>
+    <CButton id="BehemothEngines">
+        <Icon value="Assets\Textures\btn-upgrade-terran-medivacemergencythrusters.dds"/>
+    </CButton>
+    <CButton id="HydraulicStabilizer">
+        <Icon value="Assets\Textures\btn-ability-terran-fireonthemove.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-fireonthemove.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <TintRacially value="1"/>
+        <HotkeyAlias value="FireOnTheMove"/>
+    </CButton>
+    <CButton id="MiniatureDropPods">
+        <Icon value="Assets\Textures\btn-techupgrade-terran-rapiddeployment.dds"/>
+        <HotkeyAlias value="BehemothEngines"/>
+    </CButton>
     <CButton id="BioSpeed">
         <Icon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
         <AlertIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
@@ -105,6 +119,13 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-upgrade-protoss-fenix-dragoonsolariteflare.dds"/>
         <EditorCategories value="Race:Protoss"/>
     </CButton>
+    <CButton id="FieldProjectors">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-alarak-empowermeslaves.dds"/>
+    </CButton>
+    <CButton id="ReinforcedBarrier">
+        <Icon value="Assets\Textures\btn-ability-protoss-shieldcapacitor.dds"/>
+        <HotkeyAlias value="FieldProjectors"/>
+    </CButton>
     <CButton id="Firebat">
         <AlertIcon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
         <Icon value="Assets\Textures\btn-squad-terran-firebat.dds"/>
@@ -170,6 +191,9 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <AlertIcon value="Assets\Textures\btn-research-zerg-hivemindemulator.dds"/>
         <EditorCategories value="Race:Terran"/>
         <DefaultButtonLayout Column="3"/>
+    </CButton>
+    <CButton id="ImprovedActuators">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-armory-smartservos.dds"/>
     </CButton>
     <CButton id="InfantryMercenariesPassive">
         <Icon value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
