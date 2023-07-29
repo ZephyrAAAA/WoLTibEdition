@@ -24,7 +24,6 @@ Fixed the AI not shooting capturable structures
 Capturable structures can now be captured in fog of war
 Planetary Fortress no longer gets the old CC reactor
 Laser drill is now more responsive
-*Units now get passive buttons for Ultracaps and Vanadium.
 
 Inlaws:
 Tutorial is now done through transmissions, so there's a record of stuff. -Send Transmission (Simple)
