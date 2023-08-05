@@ -1,66 +1,9 @@
-Weapon tooltips now have the damage descriptor colour-coded, and the % in parentheses.
-Fixed Sniper damage using Effective instead of Excellent.
-Hellstorm missile pods description now says Deastation Turrets get falloff splash
-Fast siege upgrade passive is no longer greyed out while in tank mode
-Medivac rapid deployment button passive now mentions the bunker part.
-Marines and Warpigs now get the combat shield passive.
-Marauders and Hammer Securities now get Concussive and Kinetic Foam passives.
-Medics now get Stabilizer passive.
-Firebats and Devil Dogs now get the Juggernaut Plating and Incinerator Gauntlets passive.
-Reapers now get the U-238 passive
-Wraith Tomahawk Power Cells now mention that they also increase energy regen
-Hellions now get a Fire On The Move passive.
-Viking passive buttons now have the correct text.
-Thors now have a passive for the speed.
-Predators now have passives for Field Projectors and Reinforced Barrier.
-Hercules now have passives for Miniature Drop Pods and Behemoth Engines.
-HME and Psi Disruptor now say they're topbar abilities
-Corrected the Cellular text
-Autoref now says it costs 1.5k like it should.
-Orbital Supply Drop now has no video, and a different icon
-Buffed vulture to 90 HP, and they can now push each other while firing
-Firebat now has blue-color flame when in bunker with blue flame
-Fixed the AI not shooting capturable structures
-Capturable structures can now be captured in fog of war
-Planetary Fortress no longer gets the old CC reactor
-Laser drill is now more responsive
+Fixed wrong spacing in weapon tooltips
 
-Inlaws:
-Tutorial is now done through transmissions, so there's a record of stuff. -Send Transmission (Simple)
-Fixed an OOS bug with the Stone tutorial
-
-Hulk Smash Grab:
-You now start with a factory
-Increased the regen on your main field by 33%
-
-Evacuation:
-Johnny now flips
-
-Devil's Playground:
-Bob isn't lazy anymore
-
-A Sinister Doom:
-Removed SC2 resources
-
-Echoes of a Turn:
-Removed SC2 resources
-Removed the resource pickups
-
-In Utter Future:
-Removed SC2 resources
-
-Breakin:
-Raynor now gets your armory upgrades
-
-The Dig:
-Jeff now joins you
-'Take the Drill' now checks off when you finish the upgrade
+DugDug:
+Fixed getting the Take The Drill upgrade not counting for the objective
 
 Maw:
-The protoss no longer build phoenixes
-The protoss now build defensive colossi
-Each protoss base now has a limit on how many air units of each type it will deploy defensively, so they don't just infinitely get stronger.
-
-Gates:
-You can no longer get more than 1 CC from drop pods
-Warfield now shoots back at the zerg
+Fixed rip fields applying to all units when they shouldn't
+Mothership cinematic will no longer trigger twice if you trigger it early by getting far enough
+Adjusted weighting of the protoss defensive deployments so they prefer anti-ground stuff more.
