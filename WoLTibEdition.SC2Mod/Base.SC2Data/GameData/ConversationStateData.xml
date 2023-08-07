@@ -26,7 +26,7 @@
             <InfoAbilCmd Id="AC1" Abil="CallDarkTemplar"/>
         </Indices>
         <Indices Id="Memes" Name="ConversationState/CCEditionPermanence/Memes">
-            <InfoValue Id="Allowed" Value="1"/>
+            <InfoValue Id="Allowed"/>
         </Indices>
         <InfoIds index="Text">
             <Id value=""/>

@@ -21,7 +21,6 @@ trigger lib3B48F5E9_gt_SquadHealth;
 trigger lib3B48F5E9_gt_SquadShields;
 trigger lib3B48F5E9_gt_DrillandSpikedebris;
 trigger lib3B48F5E9_gt_Memesettingload;
-trigger lib3B48F5E9_gt_Mission1memesfix;
 trigger lib3B48F5E9_gt_ShowMetheMoney;
 trigger lib3B48F5E9_gt_FullPowerDrill;
 trigger lib3B48F5E9_gt_GrantLaserDrillTopbar;
