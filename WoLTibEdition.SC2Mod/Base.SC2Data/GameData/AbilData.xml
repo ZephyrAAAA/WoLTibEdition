@@ -2050,7 +2050,7 @@
         <Flags index="BypassFoodRestriction" value="1"/>
         <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="WaitForFood" value="0"/>
-        <InfoArray index="Train1" Time="16">
+        <InfoArray index="Train1" Time="16" Effect="SCVHarvesterAWAY">
             <Resource index="Vespene" value="1600"/>
             <Button DefaultButtonFace="SCV"/>
             <Unit value="SCV2"/>

@@ -2395,9 +2395,11 @@
     </CEffectDamage>
     <CEffectIssueOrder id="SCVHarvesterAWAY">
         <EditorCategories value=""/>
-        <Abil value="SCVHarvest"/>
+        <Abil value="move"/>
         <Player Value="Caster"/>
-        <Target Value="CasterUnit"/>
+        <Target Value="CasterPoint"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <CmdFlags index="Preempt" value="1"/>
     </CEffectIssueOrder>
     <CEffectCreatePersistent id="MercSquadDropDelay">
         <EditorCategories value=""/>

@@ -23,7 +23,6 @@ void lib3B48F5E9_InitVariables () {
     lib3B48F5E9_InitVariables_completed = true;
 
     lib3B48F5E9_gv_fleetGroup = UnitGroupEmpty();
-    lib3B48F5E9_gv_memes = true;
 }
 
 // Custom Script
@@ -983,33 +982,6 @@ void lib3B48F5E9_gt_Memesettingload_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Mission 1 memes fix
-//--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_Mission1memesfix_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Conditions
-    if (testConds) {
-        if (!((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 0))) {
-            return false;
-        }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    lib3B48F5E9_gv_memes = true;
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_Mission1memesfix_Init () {
-    lib3B48F5E9_gt_Mission1memesfix = TriggerCreate("lib3B48F5E9_gt_Mission1memesfix_Func");
-    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_Mission1memesfix, 0.125, c_timeGame);
-}
-
-//--------------------------------------------------------------------------------------------------
 // Trigger: Show Me the Money
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
@@ -1459,7 +1431,6 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_SquadShields_Init();
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
     lib3B48F5E9_gt_Memesettingload_Init();
-    lib3B48F5E9_gt_Mission1memesfix_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
