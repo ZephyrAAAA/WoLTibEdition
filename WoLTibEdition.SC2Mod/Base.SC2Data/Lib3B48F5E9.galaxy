@@ -221,8 +221,6 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         while (true) {
             auto46D14E10_var = PlayerGroupNextPlayer(auto46D14E10_g, auto46D14E10_var);
             if (auto46D14E10_var < 0) { break; }
-            TechTreeUpgradeAddLevel(auto46D14E10_var, "BansheeCloak", 1);
-            TechTreeUpgradeAddLevel(auto46D14E10_var, "WraithCloak", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "HunterSeeker", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "YamatoCannon", 1);
             TechTreeUpgradeAddLevel(auto46D14E10_var, "SiegeTech", 1);
@@ -291,6 +289,9 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             }
 
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "BansheeCloak", 1);
+                TechTreeUpgradeAddLevel(auto57E77ED7_var, "WraithCloak", 1);
+                lib3B48F5E9_gf_ChatTip("Enemy Banshees and Wraiths can cloak. Reapers get detection with their upgrade.");
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ClusterWarheads", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "CrossSpectrumDampeners", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "AresClassWeaponsSystemViking", 1);
@@ -360,8 +361,8 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
         lv_specialUpgrade[0] = "ProtossShieldsLevel1";
         lv_specialUpgrade[1] = "ProtossShieldsLevel2";
         lv_specialUpgrade[2] = "ProtossShieldsLevel3";
-        lv_assortedUpgrades[0] = "HighTemplarKhaydarinAmulet";
-        lv_assortedUpgrades[1] = "ExtendedThermalLance";
+        lv_assortedUpgrades[0] = "ExtendedThermalLance";
+        lv_assortedUpgrades[1] = "HighTemplarKhaydarinAmulet";
         lv_assortedUpgrades[2] = "VoidRaySpeedUpgrade";
         lv_assortedUpgrades[3] = "CarrierLaunchSpeedUpgrade";
         auto5EC2CC13_g = lp_enemyPlayers;
