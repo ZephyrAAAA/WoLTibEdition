@@ -1,7 +1,7 @@
 Fixed SCVs not auto-harvesting when made
 *Pause production is now on top of Resume production, and the same hotkey, instead of being Esc like Cancel.
 Swapped the position of Extended Thermal Lance and Khaydarin Amulet in our upgrade function
-*Doubled tib node regen in general
+Doubled tib node regen in general
 *Crane now has stone button, greyed out saying it can only be built by a CC
 Enemy Banshee and wraith cloak are now unlocked after you've completed 9 missions
 Added a tip about enemy cloaking if they can saying reapers have detection
@@ -15,7 +15,7 @@ Increased regen on all expansion fields
 Moved the second expansion field to behind the third bonus
 
 Rumble in the Jungle:
-*Fixed protoss rebuilding stuff they shouldn't
+Adjusted where the protoss are allowed to deploy a bit
 
 Thomas the Tank Engine:
 Removed 8k of pickups
