@@ -31,7 +31,7 @@ Added a spike to the main
 Reduced regen on main field
 
 Safe Haven:
-*Mothership no longer warps in way too much
+Halved how much the mothership recalls
 Reduced mothership health by 25%
 
 Haven's Fall:
