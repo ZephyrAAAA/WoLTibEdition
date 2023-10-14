@@ -764,7 +764,7 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <DamagePoint value="0.0834"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="LaserDrillTripodLaserBeam">
-        <TargetFilters value="Visible;Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <Range value="500"/>
         <LegacyOptions index="Uninterruptible" value="0"/>
     </CWeaponLegacy>

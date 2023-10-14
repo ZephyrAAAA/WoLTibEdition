@@ -1092,7 +1092,7 @@
     <CAbilResearch id="TakeTheDrill2">
         <EditorCategories value="AbilityorEffectType:Units"/>
         <DataCollection value="TakeTheDrill"/>
-        <InfoArray index="Research1" Time="300" Upgrade="DrillFullPower2">
+        <InfoArray index="Research1" Time="240" Upgrade="DrillFullPower2">
             <Resource index="Vespene" value="10000"/>
             <Button DefaultButtonFace="TakeTheDrill2" Requirements="HasNotTakenDrill2">
                 <Flags index="UseDefaultButton" value="1"/>

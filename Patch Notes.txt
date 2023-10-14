@@ -6,6 +6,10 @@ Doubled tib node regen in general
 Enemy Banshee and wraith cloak are now unlocked after you've completed 9 missions
 Added a tip about enemy cloaking if they can saying reapers have detection
 Abberation now says its damage type
+Increased drill damage by 50%
+Drill can now hit heroic units
+Drill upgrade time reduced to 4 minutes
+*Scan can store up to 3 charges
 
 Eleven Hours:
 Fixed the double-message of capturable structures

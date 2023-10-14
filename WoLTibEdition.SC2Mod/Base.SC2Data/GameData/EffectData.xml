@@ -1264,7 +1264,7 @@
     </CEffectCreatePersistent>
     <CEffectDamage id="LaserDrillTripodDamage">
         <ArmorReduction value="1"/>
-        <Amount value="3"/>
+        <Amount value="4.5"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="LokiHurricaneMissile">
         <Flags index="Channeled" value="0"/>
