@@ -1,8 +1,9 @@
 Fixed SCVs not auto-harvesting when made
-*Pause production is now on top of Resume production, and the same hotkey, instead of being Esc like Cancel.
+Pause production is now on top of Resume production, and the same hotkey, instead of being Esc like Cancel.
+Pause/Resume production are no longer on top of any other buttons
 Swapped the position of Extended Thermal Lance and Khaydarin Amulet in our upgrade function
 Doubled tib node regen in general
-*Crane now has stone button, greyed out saying it can only be built by a CC
+Crane now has stone button, greyed out saying it can only be built by a CC
 Enemy Banshee and wraith cloak are now unlocked after you've completed 9 missions
 Added a tip about enemy cloaking if they can saying reapers have detection
 Abberation now says its damage type
@@ -10,6 +11,8 @@ Increased drill damage by 50%
 Drill can now hit heroic units
 Drill upgrade time reduced to 4 minutes
 *Scan can store up to 3 charges
+Armoury now says it contains *air* upgrades
+Ghosts and spectres now have a button detailing Commando Resist.
 
 Eleven Hours:
 Fixed the double-message of capturable structures
@@ -37,3 +40,6 @@ Reduced mothership health by 25%
 Haven's Fall:
 Abberations no longer have their health adjusted by difficulty
 *Fixed Matt turning down the music- Can't find
+
+Secret Hyrbid hug time:
+Raynor has a button mentioning he has commando resist

@@ -304,6 +304,12 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
         <HotkeyAlias value="StarshipMercenaries3"/>
         <DefaultButtonLayout Column="3"/>
     </CButton>
+    <CButton id="TrainStonePassive">
+        <Icon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        <AlertIcon value="Assets\Textures\wireframe-terran-cargotruck01.dds"/>
+        <EditorCategories value="Race:Terran"/>
+        <HotkeyAlias value="Stone"/>
+    </CButton>
     <CButton id="TakeParts">
         <Icon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
         <AlertIcon value="Assets\Textures\btn-techupgrade-terran-immortalityprotocol.dds"/>
@@ -384,6 +390,11 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     <CButton id="Veterancy">
         <Icon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
         <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-veterancy.dds"/>
+    </CButton>
+    <CButton id="CommandoResist">
+        <Icon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionarmorlevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-mengsk-engineeringbay-dominionarmorlevel3.dds"/>
+        <HotkeyAlias value="Veterancy"/>
     </CButton>
     <CButton id="VultureEMPPassive">
         <Icon value="Assets\Textures\btn-ability-terran-emp-color.dds"/>
@@ -878,8 +889,9 @@ Replace: \t<CButton id="\13">\r\n\t\t<Icon value="\2"/>\r\n\t\t<AlertIcon value=
     </CButton>
     <CButton id="PauseQueue">
         <Icon value="EditorData\Images\CutSceneEditor\Playhead\Control_Pause.tga"/>
-        <HotkeyAlias value="Cancel"/>
+        <HotkeyAlias value="ResumeQueue"/>
         <DefaultButtonLayout Row="2" Column="4"/>
+        <Hotkey value="Button/Hotkey/ResumeQueue"/>
     </CButton>
     <CButton id="ResumeQueue">
         <Icon value="Assets\Textures\sc2_ui_newplayerxp_playmovie.dds"/>
