@@ -1013,7 +1013,8 @@
         <Flags index="RequireTargetVision" value="0"/>
         <Cost>
             <Resource index="Minerals" value="500"/>
-            <Cooldown TimeUse="60"/>
+            <Charge CountMax="3" CountStart="1" CountUse="1"/>
+            <Cooldown TimeUse="90"/>
         </Cost>
         <Range value="500"/>
         <Arc value="360"/>
