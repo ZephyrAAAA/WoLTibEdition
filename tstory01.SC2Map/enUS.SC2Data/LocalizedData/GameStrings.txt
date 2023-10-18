@@ -180,6 +180,7 @@ Button/Name/ChronoDevice7=Chrono Device
 Button/Name/ChronoDevice8=Chrono Device
 Button/Name/ChronoDevice9=Chrono Device
 Button/Name/CombatDrugs=Combat Drugs
+Button/Name/CommandoResist=Commando Resist
 Button/Name/DeathRecall=Recall
 Button/Name/DeployLaserDrill10=Deploy Laser Drill
 Button/Name/DeployLaserDrill11=Deploy Laser Drill
@@ -358,6 +359,7 @@ Button/Name/TerranShipPlatingVanadiumPlatingLevel2=Starship Vanadium Plating
 Button/Name/TerranShipWeaponsUltraCapacitorsLevel2=Starship Ultra Capacitors
 Button/Name/TerranVehiclePlatingVanadiumPlatingLevel2=Vehicle Vanadium Plating
 Button/Name/TerranVehicleWeaponsUltraCapacitorsLevel2=Vehicle Ultra Capacitors
+Button/Name/TrainStonePassive=Train Stone Passive
 Button/Name/VehicleMercenaries10=Vehicle Mercenaries
 Button/Name/VehicleMercenaries11=Vehicle Mercenaries
 Button/Name/VehicleMercenaries12=Vehicle Mercenaries
@@ -392,7 +394,7 @@ Button/Tooltip/330mmBarrageCannons=Deals <d ref="Effect,330mmBarrageCannonsPersi
 Button/Tooltip/AirTransport=Massive transport ship that deploys its cargo almost instantly.
 Button/Tooltip/AresClassWeaponsSystem=Increases HP by 50.
 Button/Tooltip/AresClassWeaponsSystemviking=Vikings transform 4x faster, and fire 60% faster.
-Button/Tooltip/Armory=Contains upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
+Button/Tooltip/Armory=Contains air upgrades and support powers. <n/><n/><c val="ffff8a">Enables:</c><n/>- Ghost/Spectre (Requires Shadow Ops)<n/>- Siege Tank<n/>- Hercules<n/>- Raven<n/>- Science Vessel<n/>- Fusion Core<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Nuclear Strike (With Orbital Command)
 Button/Tooltip/AstralProjection=Creates a projection of Zeratul to distract opponents. Projection lasts <d ref="Behavior,AstralProjection,Duration"/> seconds.
 Button/Tooltip/Barracks=Infantry production facility. <n/><n/><c val="ffff8a">Enables:</c><n/>- Marines<n/>- Bunkers<n/>- Shadow Ops
 Button/Tooltip/Barracks2Flying=Barracks must land to start unit production.
@@ -449,6 +451,7 @@ Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
 Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- Supply Depot<n/>- Refinery<n/>- Crane<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Repair<n/>- Depower<n/>- Sell Structure
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
+Button/Tooltip/CommandoResist=Commandos (Ghosts, Spectres, Heroes, and Kerrigan) take less damage from other Commando's autoattack.
 Button/Tooltip/Consumption=Drains half the life from a friendly biological unit and gives Tosh 2 energy and 2 life for each point of life drained.
 Button/Tooltip/DarkTemplar=Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
@@ -691,6 +694,7 @@ Button/Tooltip/TibNodeMedium=Workers can harvest vespene gas from this Vespene G
 Button/Tooltip/TibNodeSmall=Workers can harvest vespene gas from this Vespene Geyser.
 Button/Tooltip/TibVein=Workers can harvest resources from this Mineral Field.
 Button/Tooltip/TossGrenadeTychus=Tosses a grenade that explodes for <d ref="Effect,BonesTossGrenadeDamage,Amount"/> Concussive damage in a small radius. <n/><n/><c val="ffff8a">Does not harm friendly units.</c>
+Button/Tooltip/TrainStonePassive=Can only be built from a Command Center
 Button/Tooltip/TriLithiumPowerCells=Diamondback attacks can pierce the target to hit units behind it.
 Button/Tooltip/U238Rounds=Increases Reaper range by 1. Adds an additional +3 damage.
 Button/Tooltip/UltrasonicPulse=Deals <d ref="Effect,TychusSpectreUltrasonicDamageLv1,Amount * Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount"/> damage over <d ref="Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodCount *Effect,TychusSpectreUltrasonicPulseCPLv1,PeriodicPeriodArray[0]"/> seconds to enemy units in the targeted area.
@@ -1960,6 +1964,7 @@ Weapon/Tip/Cannon=Deals <c val="FFBF00">Cannon</c> damage<n/><c val="00FF00">Exc
 Weapon/Tip/ExplosiveCharges=Can only be used against structures.
 Weapon/Tip/Grenade=Deals <c val="FFBF00">Concussive</c> damage<n/><c val="00FF00">Excellent (100%)</c> against structures<n/><c val="FFFF80">Good (75%) </c>against infantry and light aircraft<n/><c val="FF8040">Moderate (50%) </c>against light vehicles and heavy aircraft<n/><c val="FF0000">Bad (25%) </c>against heavy vehicles
 Weapon/Tip/HybridF=Deals <c val="FFBF00">Concussive</c> damage<n/>Excellent against structures<n/>Good against infantry and light aircraft<n/>Moderate against light vehicles and heavy aircraft<n/>Bad against heavy vehicles
+Weapon/Tip/InfestedAbomination=Deals <c val="FFBF00">Concussive</c> damage<n/><c val="00FF00">Excellent (100%)</c> against structures<n/><c val="FFFF80">Good (75%) </c>against infantry and light aircraft<n/><c val="FF8040">Moderate (50%) </c>against light vehicles and heavy aircraft<n/><c val="FF0000">Bad (25%) </c>against heavy vehicles
 Weapon/Tip/LaserDrillTripodLaserBeam=Deals <c val="FFBF00">Laser beam</c> damage<n/><n/><c val="00FF00">Excellent (100%)</c> against everything.<n/><n/>"You can't just shoot a hole into the surface of mars"<n/>THE POWER OF THE SUN AT YOUR FINGERTIPS
 Weapon/Tip/Ram=Only used against structures.
 Weapon/Tip/Rifle=Deals <c val="FFBF00">Rifle</c> damage<n/><c val="00FF00">Excellent (100%)</c> against infantry<n/><c val="FFFF80">Good (75%) </c>against light aircraft<n/><c val="FF8040">Moderate (50%) </c>against light vehicles<n/><c val="FF0000">Bad (25%) </c>against heavy vehicles, heavy aircraft and structures

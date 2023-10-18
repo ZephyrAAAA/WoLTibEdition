@@ -36,9 +36,11 @@ Reduced regen on main field
 Safe Haven:
 Halved how much the mothership recalls
 Reduced mothership health by 25%
+Reworded the bonus objective to be more clear, and changed how it works so it tracks evacuated colonists instead of how many are alive
 
 Haven's Outbreak:
-Abberations no longer have their health adjusted by difficulty
+Adjusted the health values for aberration scaling by difficulty
+Reworded the bonus objective to be more clear
 *Fixed Matt turning down the music- Can't find
 
 Secret Hyrbid hug time:
