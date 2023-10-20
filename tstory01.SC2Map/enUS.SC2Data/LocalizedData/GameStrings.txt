@@ -451,7 +451,7 @@ Button/Tooltip/CollapsibleRockTowerPurifier02=Destroy these rocks to block paths
 Button/Tooltip/CombatDrugs=Regenerates life quickly while out of combat.
 Button/Tooltip/CommandCenter=Primary structure. Used to construct buildings. Can use the Lift Off ability.<n/><n/><c val="ffff8a">Enables:</c><n/>- Supply Depot<n/>- Refinery<n/>- Crane<n/><n/><c val="ffff8a">Support Powers:</c><n/>- Repair<n/>- Depower<n/>- Sell Structure
 Button/Tooltip/CommandCenter2Flying=Primary structure. Used to train SCVs and receive gathered resources. Can upgrade into an Orbital Command or Planetary Fortress.
-Button/Tooltip/CommandoResist=Commandos (Ghosts, Spectres, Heroes, and Kerrigan) take less damage from other Commando's autoattack.
+Button/Tooltip/CommandoResist=Commandos (Ghosts, Spectres, Heroes, and Kerrigan) take 15% damage from Ghost and Spectre autoattacks.<n/><n/>Nova and Tosh count as a Ghost and Spectre respectively.
 Button/Tooltip/Consumption=Drains half the life from a friendly biological unit and gives Tosh 2 energy and 2 life for each point of life drained.
 Button/Tooltip/DarkTemplar=Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. <n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/DeathRecall=Recalls Zeratul to the Void Seeker.<n/><c val="FFBF00">Activates automatically on fatal damage.</c>
