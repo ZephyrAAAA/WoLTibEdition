@@ -57,3 +57,22 @@ Maw of the Void:
 Fixed Dave
 Fixed DTs being slowed by the rip field
 Fixed the objective not counting rebuilt structures immediately
+
+
+
+
+
+
+
+
+
+
+
+
+Maw of the Void:
+Initial attack wave delay is now based on difficulty.
+Removed 30s of the attack wave "variable" delay
+Attack wave constant delay is now based on difficulty
+Attack wave strength increase over time is now based on difficulty
+Attack wave starting strength is now based on difficulty
+Mothership can no longer have phoenixes
