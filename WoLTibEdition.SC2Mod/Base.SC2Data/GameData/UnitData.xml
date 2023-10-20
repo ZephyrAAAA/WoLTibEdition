@@ -4541,6 +4541,7 @@
         <TurningRate value="2879.8242"/>
         <CardLayouts index="0">
             <LayoutButtons Face="Veterancy" Type="Passive" Row="1" Column="4"/>
+            <LayoutButtons Face="CommandoResist" Type="Passive" Row="1" Column="3"/>
         </CardLayouts>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
     </CUnit>
@@ -7038,6 +7039,7 @@
             <LayoutButtons index="8" Face="Obliterate" AbilCmd="Obliterate,Execute" Row="1" Column="0"/>
             <LayoutButtons index="9" Face="Attack" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="Veterancy" Type="Passive" Row="1" Column="4"/>
+            <LayoutButtons Face="CommandoResist" Type="Passive" Row="1" Column="3"/>
         </CardLayouts>
         <WeaponArray Link="ExplosiveCharges"/>
         <TurningRate value="2879.8242"/>
