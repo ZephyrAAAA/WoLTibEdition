@@ -3,10 +3,17 @@
     <CRequirementAllowAbil id="AllowAbilDeployLaserDrill0">
         <Link value="DeployLaserDrill"/>
     </CRequirementAllowAbil>
-    <CRequirementAnd id="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter">
+    <CRequirementAnd id="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitGhostQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
         <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
-        <OperandArray value="Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>
+        <OperandArray value="Not1584299796CountUnitGhostQueuedOrBetter"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitSpectreQueuedOrBetter">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>
+        <OperandArray value="CountUnitAlias_ArmoryCompleteOnly609241497"/>
+        <OperandArray value="Not1584299796CountUnitSpectreQueuedOrBetter"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndCountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheatCountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
         <OperandArray value="CountUnitAlias_SupplyDepotInProgressOrBetter3975993912TechTreeCheat"/>
@@ -93,10 +100,6 @@
     <CRequirementCountUnit id="CountUnitAlias_FusionCoreCompleteOnly3089280483TechTreeCheat">
         <Count Link="Alias_FusionCore" State="CompleteOnly"/>
     </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitAlias_GhostQueuedOrBetter">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="Alias_Ghost" State="QueuedOrBetter"/>
-    </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitAlias_RefineryInProgressOrBetter2937904356TechTreeCheat">
         <Count Link="Alias_Refinery" State="InProgressOrBetter"/>
     </CRequirementCountUnit>
@@ -124,6 +127,16 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="DrakkenLaserDrill" State="QueuedOrBetter"/>
     </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitGhostQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Ghost" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSpectreQueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="Spectre" State="QueuedOrBetter"/>
+    </CRequirementCountUnit>
     <CRequirementCountUpgrade id="CountUpgradeDrillFullPower2QueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="DrillFullPower2" State="QueuedOrBetter"/>
@@ -150,7 +163,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeHydraulicStabilizersCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="HydraulicStabilizers" State="CompleteOnly"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeHyperflightRotorsQueuedOrBetter">
@@ -327,8 +339,11 @@
     <CRequirementNot id="Not1060723643CountUnitDrakkenLaserDrillQueuedOrBetter">
         <OperandArray index="0" value="CountUnitDrakkenLaserDrillQueuedOrBetter"/>
     </CRequirementNot>
-    <CRequirementNot id="Not1584299796CountUnitAlias_GhostQueuedOrBetter">
-        <OperandArray index="0" value="CountUnitAlias_GhostQueuedOrBetter"/>
+    <CRequirementNot id="Not1584299796CountUnitGhostQueuedOrBetter">
+        <OperandArray index="0" value="CountUnitGhostQueuedOrBetter"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not1584299796CountUnitSpectreQueuedOrBetter">
+        <OperandArray index="0" value="CountUnitSpectreQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotAllowAbilDeployLaserDrill0">
         <OperandArray index="0" value="AllowAbilDeployLaserDrill0"/>

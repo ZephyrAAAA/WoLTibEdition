@@ -1598,7 +1598,7 @@
         </InfoArray>
         <InfoArray index="Train7" Time="20">
             <Resource index="Vespene" value="2000"/>
-            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
+            <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOpsSpectre"/>
             <Unit value="Spectre"/>
         </InfoArray>
         <Flags index="BypassFoodRestriction" value="1"/>

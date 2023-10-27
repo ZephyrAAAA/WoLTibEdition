@@ -743,7 +743,6 @@
             <LayoutButtons Face="Marauder" Type="AbilCmd" AbilCmd="Barracks2Train,Train4" Row="0" Column="1"/>
             <LayoutButtons Face="Reaper" Type="AbilCmd" AbilCmd="Barracks2Train,Train2" Row="0" Column="2"/>
             <LayoutButtons Face="Ghost" Type="AbilCmd" AbilCmd="Barracks2Train,Train3" Row="0" Column="3"/>
-            <LayoutButtons Face="Spectre" Type="AbilCmd" AbilCmd="Barracks2Train,Train7" Row="0" Column="3"/>
             <LayoutButtons Face="Rally" Type="AbilCmd" AbilCmd="Rally,Rally1" Row="1" Column="4"/>
             <LayoutButtons Face="Lift" Type="AbilCmd" AbilCmd="Barracks2LiftOff,Execute" Row="2" Column="3"/>
             <LayoutButtons Face="Halt" Type="AbilCmd" AbilCmd="BuildInProgress,Halt" Row="2" Column="3"/>
@@ -755,6 +754,7 @@
             <LayoutButtons Face="Firebat" Type="AbilCmd" AbilCmd="Barracks2Train,Train6" Row="1" Column="1"/>
             <LayoutButtons Face="PauseQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,On" Row="2" Column="2"/>
             <LayoutButtons Face="ResumeQueue" Type="AbilCmd" AbilCmd="PauseResumeQueue,Off" Row="2" Column="2"/>
+            <LayoutButtons Face="Spectre" Type="AbilCmd" AbilCmd="Barracks2Train,Train7" Row="0" Column="4"/>
         </CardLayouts>
         <Radius value="1.75"/>
         <SeparationRadius value="1.75"/>

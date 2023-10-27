@@ -1011,6 +1011,41 @@ void lib3B48F5E9_gt_Mission1memesfix_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Set up Ghost/Spectre Cheat
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_SetupGhostSpectreCheat_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((ConversationDataStateGetValue("CCEditionPermanence|Ghost_Cheat") == 1)) {
+        TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 2), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 3), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 3), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 9), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), true);
+    }
+
+    if ((ConversationDataStateGetValue("CCEditionPermanence|Spectre_Cheat") == 1)) {
+        TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 6), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 3), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 3), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 9), true);
+        TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), true);
+    }
+
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_SetupGhostSpectreCheat_Init () {
+    lib3B48F5E9_gt_SetupGhostSpectreCheat = TriggerCreate("lib3B48F5E9_gt_SetupGhostSpectreCheat_Func");
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_SetupGhostSpectreCheat, 0.125, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: Show Me the Money
 //--------------------------------------------------------------------------------------------------
 bool lib3B48F5E9_gt_ShowMetheMoney_Func (bool testConds, bool runActions) {
@@ -1143,6 +1178,50 @@ bool lib3B48F5E9_gt_Memes_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_Memes_Init () {
     lib3B48F5E9_gt_Memes = TriggerCreate("lib3B48F5E9_gt_Memes_Func");
     TriggerAddEventChatMessage(lib3B48F5E9_gt_Memes, c_playerAny, "!memes", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Perma-Unlock Ghost
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_PermaUnlockGhost_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_75E6810B"));
+    ConversationDataStateSetValue("CCEditionPermanence|Ghost_Cheat", 1);
+    TriggerExecute(lib3B48F5E9_gt_SetupGhostSpectreCheat, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_PermaUnlockGhost_Init () {
+    lib3B48F5E9_gt_PermaUnlockGhost = TriggerCreate("lib3B48F5E9_gt_PermaUnlockGhost_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_PermaUnlockGhost, c_playerAny, "ghostreporting", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Perma-Unlock Spectre
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_PermaUnlockSpectre_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_97617AEB"));
+    ConversationDataStateSetValue("CCEditionPermanence|Spectre_Cheat", 1);
+    TriggerExecute(lib3B48F5E9_gt_SetupGhostSpectreCheat, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_PermaUnlockSpectre_Init () {
+    lib3B48F5E9_gt_PermaUnlockSpectre = TriggerCreate("lib3B48F5E9_gt_PermaUnlockSpectre_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_PermaUnlockSpectre, c_playerAny, "ihaveawakened", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1461,12 +1540,15 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
     lib3B48F5E9_gt_Memesettingload_Init();
     lib3B48F5E9_gt_Mission1memesfix_Init();
+    lib3B48F5E9_gt_SetupGhostSpectreCheat_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
     lib3B48F5E9_gt_GrantDTTopbar_Init();
     lib3B48F5E9_gt_UnlimitedTopbarcharges_Init();
     lib3B48F5E9_gt_Memes_Init();
+    lib3B48F5E9_gt_PermaUnlockGhost_Init();
+    lib3B48F5E9_gt_PermaUnlockSpectre_Init();
     lib3B48F5E9_gt_PredatorGhostAcademy_Init();
     lib3B48F5E9_gt_ArmoryHercules_Init();
     lib3B48F5E9_gt_FusionCore_Init();

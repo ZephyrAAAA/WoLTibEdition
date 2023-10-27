@@ -171,6 +171,7 @@ Outbreak:
 -Added the Refinery Waypoint Tooltip, since it is quite pertinent to this mission, even though it was already mentioned on Outlaws
 -Added a sensor tower on the south high ground, for build radius around the third entrance
 -Added a Silo to the expansion.
+-Added a Spike to the main.
 -Removed the sensor tower tip.
 -You no longer start with 2 barracks
 -Now sends a lot more infested.
@@ -254,6 +255,7 @@ Welcome to the Jungle:
 
 Breakout:
 -Tosh has 500 health
+-Tosh has Commando Resist
 -Tosh has an Anti-structure attack that deals 100% of the target's health.
 -Tosh hits for 1000 sniper damage at 0.4 speed
 -Gave Tosh Psionic Lash
@@ -270,6 +272,7 @@ Breakout:
 
 Ghost of a Chance:
 -Nova has 500 health
+-Nova has Commando Resist
 -Snipe can hit anything, does 170 damage, and is affected by armour.
 -Nova hits for 1000 sniper damage at 0.4 speed
 -Nova's max energy is now 150, and regenerates faster, at 2/s.
@@ -333,10 +336,9 @@ Great Train Robbery:
 -Removed 2 of the starting depots
 -Removed free vision from trains and kill teams.
 -Added sensor towers to cover the area around your plateau.
--Replaced 2 mineral pallets with vespene pallets.
+-Removed 2 vespene pallets.
 -The starting fields and expansion fields are empty
--Removed 1 mineral pallet
--Relocated a mineral pallet from the bottom right diamondback area
+-Removed 6 mineral pallets
 -Getting the second bonus now gives you Diamondback Shaped Hull, and a message saying so
 -Getting the third bonus now gives you Diamondback Piercing, and a message saying so
 -The dominion now rebuilds bunkers after each train
@@ -349,6 +351,7 @@ Great Train Robbery:
 -Randomized where the defiler bone samples are. Each track has 4 possible locations to have one.
 -You now start with a crane.
 -The expansion now has a Silo.
+-Added a Spike to: The hidden area to the Northeast, The East diamondback overlooking the enemy CC, The diamondback northeast of the expansion, the diamondback north of your main
 
 Cutthroat:
 -Can no longer be done right after The Great Train Robbery
@@ -415,6 +418,7 @@ Media Blitz:
 -There is now an autosave when you clear out each base.
 
 Piercing the Shroud:
+-Raynor has Commando Resist
 -Get Ultracaps and Vanadium for free.
 -Collecting the Chrono Rift device now unlocks a topbar power for future use on the fusion core
 -Collecting the plasma weapon improves damage of Yamato Strike
@@ -430,7 +434,7 @@ Smash and Grab:
 -Protoss send attack waves now, that scale with time and clearing.
 -Zerg attack waves tweaked, scale with time.
 -The CC is moved over a bit so that it gives better build radius coverage
--There are resource fields on either side of the bridge.
+-There are resource fields on the close side of the bridge, and behind the third bonus.
 -The protoss have an additional layer of cannons on the close side of the bridge.
 -You now start with a Merc Compound if you've purchased any mercs
 
@@ -607,9 +611,9 @@ Medivac- Heals units inside it at 8hp/3e/s, heals with beams for 8hp/3e/s. Mediv
 
 Kerrigan- Massive units are now immune to Implosion, Implosion is no longer locked to mechanical, does 100+50%hp damage, More Health, no armour type
 
-Ghost-Cloak is gone, Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Ghost-Cloak is gone, Snipe is swole, No EMP, Feedback (2/1), Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges, has Commando Resist
 
-Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Psi Storm, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges
+Spectre-Cloak is gone, Psi Lash is gone, Feedback EMP (1/1), Ultrasonic Pulse is now Psi Storm, Autoattack does 500 sniper at 0.4 speed, No nuke, Abilities Charge-based, Levels reduce ability cooldown/charges, has Commando Resist
 
 Science Vessel- Moves faster, now has the abilities Gravity Rift (Storm that also slows), Defensive Matrix, Nano-Repair (5hp/1e/s), and Irradiate (Buffed so it spreads to nearby units)
 
@@ -643,7 +647,7 @@ Abberation- Walks over other units, higher damage.
 
 Hunter killers- Now heroic
 
-Kerrigan- Implosion does 100+50% hp damage, rather than instant kill, ignores shields/defensive matrix
+Kerrigan- (Implosion does 100+50% hp damage, rather than instant kill, ignores shields/defensive matrix,) has Commando Resist
 
 
 ARMORY UPGRADE CHANGES:
@@ -845,7 +849,7 @@ Structure Power: Depowers/repowers target structure. Depowered structures don't 
 
 Structure Sell: Sells target structure for 50% of its build cost.
 
-Scanner Sweep: Scans an area for 500 minerals. It's scan. You know what it does. Unlocked by the Orbital Command Armoury Upgrade. Available from the Engineering Bay.
+Scanner Sweep: Scans an area for 500 minerals. It's scan. You know what it does. Can store 3 charges. Unlocked by the Orbital Command Armoury Upgrade. Available from the Engineering Bay.
 
 Tactical Missile: Launches a tactical missile at a location that does 200+100vs structure for 1500 minerals. Unlocked by the Orbital Command Armoury Upgrade. Available from the Shadow Ops.
 
@@ -905,6 +909,12 @@ callinthebigguns - Grants you a charge of Deploy Laser Drill
 shadowfurries - Grants you a charge of Deploy Dark Templar
 
 exterminatus - Removes the charge limit on any applicable topbar abilities.
+
+!memes - Enables or disables memes
+
+ghostreporting - Permanently unlocks the Ghost
+
+ihaveawakened - Permanently unlocks the Spectre
 
 
 Easter Eggs:

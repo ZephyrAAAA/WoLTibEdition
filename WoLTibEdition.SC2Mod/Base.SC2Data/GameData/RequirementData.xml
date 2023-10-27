@@ -66,6 +66,10 @@
     <CRequirement id="HasNotTakenDrill2">
         <NodeArray index="Show" Link="NotCountUpgradeDrillFullPower2QueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="HaveAttachedBarrTechLabAndShadowOpsSpectre">
+        <EditorCategories value="Race:Terran,TechType:Unit"/>
+        <NodeArray index="Use" Link="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitSpectreQueuedOrBetter"/>
+    </CRequirement>
     <CRequirement id="HaveFusionCore">
         <EditorCategories value="Race:Terran,TechType:Unit"/>
         <NodeArray index="Use" Link="CountUnitAlias_FusionCoreCompleteOnly3089280483TechTreeCheat"/>
@@ -94,7 +98,7 @@
         <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ArmoryInProgressOrBetter609241497TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="HaveAttachedBarrTechLabAndShadowOps">
-        <NodeArray index="Use" Link="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitAlias_GhostQueuedOrBetter"/>
+        <NodeArray index="Use" Link="AndCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheatCountUnitAlias_ArmoryCompleteOnly609241497Not1584299796CountUnitGhostQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="HaveAttachedBarrTechLabOrAttachedTechReactorAndShadowOps">
         <NodeArray index="Use" Link="AndCountUnitAlias_TechLabCompleteOnlyAtUnit2589852481TechTreeCheatCountUnitAlias_ShadowOpsCompleteOnly3736050006TechTreeCheat"/>

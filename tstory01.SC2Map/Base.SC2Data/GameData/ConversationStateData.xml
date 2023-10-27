@@ -28,6 +28,8 @@
         <Indices Id="Memes" Name="ConversationState/CCEditionPermanence/Memes">
             <InfoValue Id="Allowed"/>
         </Indices>
+        <Indices Id="Ghost_Cheat" Name="ConversationState/CCEditionPermanence/Ghost_Cheat"/>
+        <Indices Id="Spectre_Cheat" Name="ConversationState/CCEditionPermanence/Spectre_Cheat"/>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>
