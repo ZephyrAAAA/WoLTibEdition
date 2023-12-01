@@ -16,6 +16,7 @@ void lib3B48F5E9_gf_NewModTips ();
 
 // Trigger Declarations
 trigger lib3B48F5E9_gt_CommandoEXP;
+trigger lib3B48F5E9_gt_ReaperDetectionReminder;
 trigger lib3B48F5E9_gt_TerranUpgradeSwap;
 trigger lib3B48F5E9_gt_SquadHealth;
 trigger lib3B48F5E9_gt_SquadShields;

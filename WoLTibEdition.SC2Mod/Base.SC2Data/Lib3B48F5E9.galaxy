@@ -292,7 +292,7 @@ bool auto_lib3B48F5E9_gf_CNCUpgradesFunction_TriggerFunc (bool testConds, bool r
             if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) >= 9)) {
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "BansheeCloak", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "WraithCloak", 1);
-                lib3B48F5E9_gf_ChatTip("Enemy Banshees and Wraiths can cloak. Reapers get detection with their upgrade.");
+                TriggerExecute(lib3B48F5E9_gt_ReaperDetectionReminder, true, false);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "ClusterWarheads", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "CrossSpectrumDampeners", 1);
                 TechTreeUpgradeAddLevel(auto57E77ED7_var, "AresClassWeaponsSystemViking", 1);
@@ -775,6 +775,33 @@ bool lib3B48F5E9_gt_CommandoEXP_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_CommandoEXP_Init () {
     lib3B48F5E9_gt_CommandoEXP = TriggerCreate("lib3B48F5E9_gt_CommandoEXP_Func");
     TriggerAddEventUnitDamaged(lib3B48F5E9_gt_CommandoEXP, null, c_unitDamageTypeAny, c_unitDamageEither, null);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Reaper Detection Reminder
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_ReaperDetectionReminder_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Conditions
+    if (testConds) {
+        if (!((TriggerIsEnabled(TriggerGetCurrent()) == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TriggerEnable(TriggerGetCurrent(), false);
+    lib3B48F5E9_gf_ChatTip("Enemy Banshees and Wraiths can cloak. Reapers get detection with their upgrade.");
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_ReaperDetectionReminder_Init () {
+    lib3B48F5E9_gt_ReaperDetectionReminder = TriggerCreate("lib3B48F5E9_gt_ReaperDetectionReminder_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1534,6 +1561,7 @@ void lib3B48F5E9_gt_DebugTopbar_Init () {
 
 void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_CommandoEXP_Init();
+    lib3B48F5E9_gt_ReaperDetectionReminder_Init();
     lib3B48F5E9_gt_TerranUpgradeSwap_Init();
     lib3B48F5E9_gt_SquadHealth_Init();
     lib3B48F5E9_gt_SquadShields_Init();

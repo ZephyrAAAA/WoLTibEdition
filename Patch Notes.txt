@@ -2,22 +2,22 @@ Improved Mechanics armoury description now correctly says 3x
 *Ultralisk now gets 1 armour each from Level 1 and 2 carapace upgrades, instead of 2 from level 1.
 *Buffed Devastation Turret damage 35->40
 Removed an extra space in the Expanded Hold description
-*Fixed spamming a tip about reaper upgrade giving detection
+\Fixed spamming a tip about reaper upgrade giving detection
 *Concussive now mentions that it affects the devastation turret
 *Reworded the Commando Suit description to be more clear about what it affects.
 *Reworded Orbital Supply Drop to be more clear it's either active or it isn't, and doesn't stack.
+*Commandos now only attack buildings they have been explicitly ordered to
+*Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
 
 Smash:
 *Nerfed Stone Zealot HP (25%?)
+*Nerfed protoss and zerg attack waves
 
 Redstone:
 Fixed the reaper detection upgrade not being available
 
 Outbreak:
 *All SCVs now start the mission mining
-
-Whispers:
-*Your stalkers now have +1 armour like zeratul
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
