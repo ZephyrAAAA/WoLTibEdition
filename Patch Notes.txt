@@ -9,6 +9,9 @@ Removed an extra space in the Expanded Hold description
 *Commandos now only attack buildings they have been explicitly ordered to
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
 
+Outlaws:
+Our meme cutscene can no longer be skipped.
+
 Smash:
 *Nerfed Stone Zealot HP (25%?)
 *Nerfed protoss and zerg attack waves
