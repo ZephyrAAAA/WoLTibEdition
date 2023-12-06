@@ -14,8 +14,8 @@ Outlaws:
 Our meme cutscene can no longer be skipped.
 
 Smash:
-*Nerfed Stone Zealot HP (25%?)
-*Nerfed protoss and zerg attack waves
+Nerfed Stone Zealot HP to 1000 base, plus 1000 for each difficulty step. This is between a 25% and 33% hp nerf, depending on difficulty.
+Protoss and zerg attack waves are now more likely to come at the same time, meaning they will fight each other.
 
 Redstone:
 Fixed the reaper detection upgrade not being available
@@ -28,7 +28,8 @@ Replaced the fields on the bruta island with spikes
 
 Engine:
 *Removed topbar during the no-build segment
-*Replaced the field at the first base with 2 spikes and a silo
+Replaced the field at the first base with 2 spikes and a silo
+Replaced the field at the fourth base with 2 spikes and a silo
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
