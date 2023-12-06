@@ -955,8 +955,8 @@ ConversationState/Tech/Tech_Vulture_2/Info/Description=<s val="TechSummary">- Vu
 ConversationState/Tech/Tech_Vulture_2/Info/Tooltip=<s val="TooltipTitle_Tech">EMP Rounds</s><n/><s val="TooltipDescription_Tech">Vultures disable mechanical units and structures they hit for 1s.</s>
 ConversationState/Tech/Tech_Wraith_1/Info/Description=<s val="TechSummary">- Wraiths start with +100 energy.<n/>- Wraiths regenerate energy 50% faster,</s><n/><n/><s val="TechDescription">These improved power cells provide the Wraith with a larger up-front energy reserve, and better power management. This allows newly built Wraiths to instantly engage in missions with heavy cloaking requirements, rather than having to wait for the Reactor to build up a sufficient charge.</s>
 ConversationState/Tech/Tech_Wraith_1/Info/Tooltip=<s val="TooltipTitle_Tech">Tomahawk Power Cells</s><n/><s val="TooltipDescription_Tech">Wraiths start with +100 energy, and regen energy 50% faster.</s>
-ConversationState/Tech/Tech_Wraith_2/Info/Description=<s val="TechSummary">- Wraiths resist 40% of damage.</s><n/><n/><s val="TechDescription">ATVX has developed a Displacement Field that can radically alter the impact energy of incoming projectiles. Field tests have shown a roughly 40% reduction in impact energy imparted to the wraith.</s>
-ConversationState/Tech/Tech_Wraith_2/Info/Tooltip=<s val="TooltipTitle_Tech">Displacement Field</s><n/><s val="TooltipDescription_Tech">Wraiths resist 40% of incoming damage.</s>
+ConversationState/Tech/Tech_Wraith_2/Info/Description=<s val="TechSummary">- Wraiths resist 40% of damage while cloaked.</s><n/><n/><s val="TechDescription">ATVX has developed a Displacement Field that can radically alter the impact energy of incoming projectiles. Field tests have shown a roughly 40% reduction in impact energy imparted to the wraith.</s>
+ConversationState/Tech/Tech_Wraith_2/Info/Tooltip=<s val="TooltipTitle_Tech">Displacement Field</s><n/><s val="TooltipDescription_Tech">Wraiths resist 40% of incoming damage while cloaked.</s>
 DataCollection/Name/Armory=Armory
 DataCollection/Name/Armory2=Armory Copy
 DataCollection/Name/Barracks=Barracks
