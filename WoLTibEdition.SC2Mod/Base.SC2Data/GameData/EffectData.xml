@@ -2380,7 +2380,7 @@
     <CEffectDamage id="ConcussiveGrenadesU" parent="DU_WEAP">
         <EditorCategories value="Race:Terran"/>
         <Kind value="Ranged"/>
-        <Amount value="35"/>
+        <Amount value="40"/>
         <Death value="Blast"/>
         <AreaArray Radius="0.4687" Fraction="1" Validator="HasHellstormMissilePods"/>
         <AreaArray Radius="0.7812" Fraction="0.5" Validator="HasHellstormMissilePods"/>

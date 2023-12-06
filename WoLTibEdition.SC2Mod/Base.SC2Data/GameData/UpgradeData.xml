@@ -3003,9 +3003,9 @@
         <EffectArray index="10" Reference="Unit,RoachBurrowed,LifeArmorLevel"/>
         <EffectArray index="11" Reference="Unit,RoachBurrowed,LifeArmor"/>
         <EffectArray index="12" Reference="Unit,Ultralisk,LifeArmorLevel"/>
-        <EffectArray index="13" Reference="Unit,Ultralisk,LifeArmor" Value="2"/>
+        <EffectArray index="13" Reference="Unit,Ultralisk,LifeArmor"/>
         <EffectArray index="14" Reference="Unit,UltraliskBurrowed,LifeArmorLevel"/>
-        <EffectArray index="15" Reference="Unit,UltraliskBurrowed,LifeArmor" Value="2"/>
+        <EffectArray index="15" Reference="Unit,UltraliskBurrowed,LifeArmor"/>
         <EffectArray index="16" Reference="Unit,BanelingCocoon,LifeArmorLevel"/>
         <EffectArray index="17" Reference="Unit,BanelingCocoon,LifeArmor"/>
         <EffectArray index="18" Reference="Unit,InfestedAbomination,LifeArmor" Value="1.000000"/>
@@ -3123,10 +3123,10 @@
         <EffectArray index="35" Operation="Set" Reference="Unit,KerriganChar,SpeedMultiplierCreep" Value="1.8"/>
         <EffectArray index="36" Operation="Set" Reference="Unit,HybridDestroyer,SpeedMultiplierCreep" Value="1.8"/>
         <EffectArray index="37" Operation="Set" Reference="Unit,HybridReaver,SpeedMultiplierCreep" Value="1.8"/>
-        <EffectArray index="38" removed="1"/>
-        <EffectArray index="39" removed="1"/>
-        <EffectArray index="40" removed="1"/>
-        <EffectArray index="41" removed="1"/>
+        <EffectArray index="38" Reference="Unit,Ultralisk,LifeArmorLevel"/>
+        <EffectArray index="39" Reference="Unit,UltraliskBurrowed,LifeArmorLevel"/>
+        <EffectArray index="40" Operation="Add" Reference="Unit,Ultralisk,LifeArmor" Value="1"/>
+        <EffectArray index="41" Operation="Add" Reference="Unit,UltraliskBurrowed,LifeArmor" Value="1"/>
         <EffectArray index="42" removed="1"/>
         <EffectArray index="43" removed="1"/>
         <EffectArray index="44" removed="1"/>
