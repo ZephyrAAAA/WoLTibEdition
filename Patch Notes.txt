@@ -16,6 +16,7 @@ Our meme cutscene can no longer be skipped.
 Smash:
 Nerfed Stone Zealot HP to 1000 base, plus 1000 for each difficulty step. This is between a 25% and 33% hp nerf, depending on difficulty.
 Protoss and zerg attack waves are now more likely to come at the same time, meaning they will fight each other.
+The top protoss have a couple more high templar, to slow the zerg down a bit
 
 Redstone:
 Fixed the reaper detection upgrade not being available
