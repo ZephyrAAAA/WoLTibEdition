@@ -8,6 +8,7 @@ Removed an extra space in the Expanded Hold description
 *Reworded Orbital Supply Drop to be more clear it's either active or it isn't, and doesn't stack.
 *Commandos now only attack buildings they have been explicitly ordered to
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
+*U238 rounds now increases damage by
 
 Outlaws:
 Our meme cutscene can no longer be skipped.
@@ -21,6 +22,13 @@ Fixed the reaper detection upgrade not being available
 
 Outbreak:
 *All SCVs now start the mission mining
+
+Moebius Factor:
+Replaced the fields on the bruta island with spikes
+
+Engine:
+*Removed topbar during the no-build segment
+*Replaced the field at the first base with 2 spikes and a silo
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
