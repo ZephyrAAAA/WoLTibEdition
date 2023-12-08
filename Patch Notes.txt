@@ -9,6 +9,7 @@ Reworded Orbital Supply Drop to be more clear it's either active or it isn't, an
 *Commandos now only attack buildings they have been explicitly ordered to
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
 *U238 rounds now increases damage by
+*Restoration charges now restore shields too
 
 Outlaws:
 Our meme cutscene can no longer be skipped.
@@ -38,6 +39,11 @@ Moved the convoy tip to the start of the mission
 Added info about the Convoy Escort to the tip
 Starting money bank is now based on difficulty. 30k/30k/25k/20k
 Hacking a Tower will give a one-time boost of 20k/20k/15k/10k resources.
+Increased the convoy timers to 4/4/3/2.5 minuntes
+
+Piercing:
+*Fixed the unplayable typo
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
+*Momma now holds position over the vault while not attacking you
