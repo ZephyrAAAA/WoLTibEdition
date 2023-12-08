@@ -36,6 +36,8 @@ Media Blitz:
 Added 2 starting spikes, 3 on Casual and Normal
 Moved the convoy tip to the start of the mission
 Added info about the Convoy Escort to the tip
+Starting money bank is now based on difficulty. 30k/30k/25k/20k
+Hacking a Tower will give a one-time boost of 20k/20k/15k/10k resources.
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
