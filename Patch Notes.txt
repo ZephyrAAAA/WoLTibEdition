@@ -22,7 +22,7 @@ Redstone:
 Fixed the reaper detection upgrade not being available
 
 Outbreak:
-*All SCVs now start the mission mining
+All SCVs now start the mission mining
 
 Moebius Factor:
 Replaced the fields on the bruta island with spikes
@@ -31,6 +31,11 @@ Engine:
 *Removed topbar during the no-build segment
 Replaced the field at the first base with 2 spikes and a silo
 Replaced the field at the fourth base with 2 spikes and a silo
+
+Media Blitz:
+Added 2 starting spikes, 3 on Casual and Normal
+Moved the convoy tip to the start of the mission
+Added info about the Convoy Escort to the tip
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
