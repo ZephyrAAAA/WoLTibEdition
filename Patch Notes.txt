@@ -46,7 +46,13 @@ Piercing:
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
-*Momma now holds position over the vault while not attacking you
+*Momma is no longer revealed
 
 Gates:
 Fixed getting CCs in drop pods when you already have one
+
+Belly:
+*Fixed medic squad members being eaten by the zerg in transitions
+
+Shatter:
+*Leviathan is no longer revealed
