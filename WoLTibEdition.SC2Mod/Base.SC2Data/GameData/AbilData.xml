@@ -1566,43 +1566,35 @@
         <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
         <Range value="5"/>
         <InfoArray index="Train1" Time="4">
-            <Resource index="Vespene" value="400"/>
             <Button DefaultButtonFace="Marine" State="Restricted" Requirements="ReaperSquad"/>
             <Unit value="MarineSquad"/>
         </InfoArray>
         <InfoArray index="Train2" Time="8">
-            <Resource index="Vespene" value="800"/>
             <Button DefaultButtonFace="Reaper" State="Restricted" Requirements="HaveShadowOps"/>
             <Unit value="ReaperSquad"/>
         </InfoArray>
         <InfoArray index="Train3" Time="20">
-            <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="Ghost" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOps"/>
             <Unit value="Ghost"/>
         </InfoArray>
         <InfoArray index="Train4" Time="9">
-            <Resource index="Vespene" value="900"/>
             <Button DefaultButtonFace="Marauder" State="Restricted"/>
             <Unit value="MarauderSquad"/>
         </InfoArray>
         <InfoArray index="Train5" Time="6">
-            <Resource index="Vespene" value="600"/>
             <Display index="Custom" value="1"/>
             <Button DefaultButtonFace="Medic" State="Restricted" Requirements="HaveShadowOps"/>
             <Unit value="MedicSquad"/>
         </InfoArray>
         <InfoArray index="Train6" Time="12">
-            <Resource index="Vespene" value="1200"/>
             <Button DefaultButtonFace="FlameMech" State="Restricted" Requirements="HaveEngineeringBay"/>
             <Unit value="FirebatSquad"/>
         </InfoArray>
         <InfoArray index="Train7" Time="20">
-            <Resource index="Vespene" value="2000"/>
             <Button DefaultButtonFace="Spectre" State="Restricted" Requirements="HaveAttachedBarrTechLabAndShadowOpsSpectre"/>
             <Unit value="Spectre"/>
         </InfoArray>
         <Flags index="BypassFoodRestriction" value="1"/>
-        <Flags index="IgnoreUnitCost" value="1"/>
         <Flags index="WaitForFood" value="0"/>
     </CAbilTrain>
     <CAbilArmMagazine id="Bunker">
