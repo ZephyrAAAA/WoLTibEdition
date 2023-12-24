@@ -1,5 +1,6 @@
 include "TriggerLibs/NativeLib"
 
+trigger toggleCost;
 trigger gather;
 trigger passiveHarvest;
 trigger returning;
@@ -25,6 +26,7 @@ int topbarCastingPanel;
 int topbarPanel;
 int topbarCommandPanel;
 string[12] topbarAbils;
+bool instantCost;
 
 void OrderWorkerToGather (unit worker) { //reduced "order workers to gather" function
 	// Variable Declarations
@@ -259,6 +261,39 @@ void RefreshTopbar () {
 	RemoveTopbars();
 }
 
+bool ToggleCost_Func (bool testConds, bool runActions) {
+	string boolText;
+	int lv_i;
+	string lv_unit;
+	if (!runActions) {
+		return true;
+	}
+	instantCost = !instantCost;
+	if (instantCost) {
+		boolText = "Enabled";
+		for (lv_i = 1; lv_i <= CatalogEntryCount(c_gameCatalogUnit); lv_i += 1) {
+			lv_unit = CatalogEntryGet(c_gameCatalogUnit, lv_i);
+			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1, "0");
+		}
+	}
+	else {
+		boolText = "Disabled";
+		for (lv_i = 1; lv_i <= CatalogEntryCount(c_gameCatalogUnit); lv_i += 1) {
+			lv_unit = CatalogEntryGet(c_gameCatalogUnit, lv_i);
+			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1, "0");
+		}
+	}
+	UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Instant cost has been " + boolText));
+	return true;
+}
+
+void ToggleCost_Init () {
+	toggleCost = TriggerCreate("ToggleCost_Func");
+	TriggerAddEventChatMessage(toggleCost, c_playerAny, "-debug", true);
+}
+
 bool Gather_Func (bool testConds, bool runActions) {
 	unit gatherUnit;
 	unit refinery;
@@ -422,6 +457,9 @@ bool Building_Func (bool testConds, bool runActions) {
 			return false;
 		}
 		if (PlayerType(UnitGetOwner(EventUnit())) == c_playerTypeComputer) {
+			return false;
+		}
+		if (instantCost){
 			return false;
 		}
 	}
@@ -909,6 +947,7 @@ void INI_Init () {
 }
 
 void main() {
+	ToggleCost_Init();
 	Gather_Init();
 	Returning_Init();
 	Idle_Init();
