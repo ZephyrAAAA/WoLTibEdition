@@ -275,7 +275,6 @@ bool ToggleCost_Func (bool testConds, bool runActions) {
 			lv_unit = CatalogEntryGet(c_gameCatalogUnit, lv_i);
 			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1));
 			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1, "0");
-			UIDisplayMessage(PlayerGroupAll(), c_messageAreaDebug, StringToText("Instant cost has been " + boolText));
 		}
 	}
 	else {
