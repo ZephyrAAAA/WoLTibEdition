@@ -1,6 +1,5 @@
 include "TriggerLibs/NativeLib"
 
-trigger toggleCost;
 trigger gather;
 trigger passiveHarvest;
 trigger returning;
@@ -27,6 +26,7 @@ int topbarPanel;
 int topbarCommandPanel;
 string[12] topbarAbils;
 bool instantCost;
+bool instantCostUpgrade;
 
 void OrderWorkerToGather (unit worker) { //reduced "order workers to gather" function
 	// Variable Declarations
@@ -261,13 +261,10 @@ void RefreshTopbar () {
 	RemoveTopbars();
 }
 
-bool ToggleCost_Func (bool testConds, bool runActions) {
+void ToggleCost () {
 	string boolText;
 	int lv_i;
 	string lv_unit;
-	if (!runActions) {
-		return true;
-	}
 	instantCost = !instantCost;
 	if (instantCost) {
 		boolText = "Enabled";
@@ -275,6 +272,10 @@ bool ToggleCost_Func (bool testConds, bool runActions) {
 			lv_unit = CatalogEntryGet(c_gameCatalogUnit, lv_i);
 			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1));
 			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "CCBuild", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "CCBuild", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "CCBuild", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, "0");
 		}
 	}
 	else {
@@ -284,14 +285,65 @@ bool ToggleCost_Func (bool testConds, bool runActions) {
 			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[1]", 1, CatalogFieldValueGet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1));
 			CatalogFieldValueSet(c_gameCatalogUnit, lv_unit, "CostResource[0]", 1, "0");
 		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "CCBuild", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "CCBuild", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "CCBuild", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, "0");
+		}
 	}
-	UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Instant cost has been " + boolText));
-	return true;
+	// UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Instant cost has been " + boolText));
 }
 
-void ToggleCost_Init () {
-	toggleCost = TriggerCreate("ToggleCost_Func");
-	TriggerAddEventChatMessage(toggleCost, c_playerAny, "-debug", true);
+void ToggleCostUpgrade () {
+	string boolText;
+	int lv_i;
+	instantCostUpgrade = !instantCostUpgrade;
+	if (instantCostUpgrade) {
+		boolText = "Enabled";
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "EngineeringBay2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "EngineeringBay2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "EngineeringBay2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "Armory2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "Armory2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "Armory2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "GhostAcademy2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "GhostAcademy2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "GhostAcademy2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "TakeTheDrill", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill2", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "TakeTheDrill2", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill2", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, "0");
+		}
+	}
+	else {
+		boolText = "Disabled";
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "EngineeringBay2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "EngineeringBay2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "EngineeringBay2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "Armory2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "Armory2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "Armory2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "GhostAcademy2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "GhostAcademy2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "GhostAcademy2Research", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "TakeTheDrill", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, "0");
+		}
+		for (lv_i = 0; lv_i < 20; lv_i += 1) {
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill2", "InfoArray[" + IntToString(lv_i) + "].Resource[1]", 1, CatalogFieldValueGet(c_gameCatalogAbil, "TakeTheDrill2", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1));
+			CatalogFieldValueSet(c_gameCatalogAbil, "TakeTheDrill2", "InfoArray[" + IntToString(lv_i) + "].Resource[0]", 1, "0");
+		}
+	}
+	// UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText("Instant cost for upgrades has been " + boolText));
 }
 
 bool Gather_Func (bool testConds, bool runActions) {
@@ -609,6 +661,9 @@ bool Research_Func (bool testConds, bool runActions) {
 	
 	if (testConds) {
 		if (UnitQueueItemCount(EventUnit(), 1) == 0) {
+			return false;
+		}
+		if (instantCostUpgrade){
 			return false;
 		}
 	}
@@ -947,7 +1002,6 @@ void INI_Init () {
 }
 
 void main() {
-	ToggleCost_Init();
 	Gather_Init();
 	Returning_Init();
 	Idle_Init();
