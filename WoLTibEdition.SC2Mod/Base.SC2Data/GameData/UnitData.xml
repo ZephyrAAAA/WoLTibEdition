@@ -3018,6 +3018,8 @@
         <WeaponArray Link="ExplosiveCharges"/>
         <StationaryTurningRate value="2879.8242"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <CostResource index="Minerals" value="0"/>
+        <CostResource index="Vespene" value="2000"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <ArmorType value="Hero"/>
@@ -4053,6 +4055,7 @@
         <LifeArmorName value="Unit/LifeArmorName/TerranInfantryArmor"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Description value="Unit/Tooltip/FirebatSquad"/>
+        <CostResource index="Vespene" value="1200"/>
     </CUnit>
     <CUnit id="Marauder">
         <ArmorType value="Normal"/>
@@ -4185,6 +4188,7 @@
         </CardLayouts>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Description value="Unit/Tooltip/MedicSquad"/>
+        <CostResource index="Vespene" value="600"/>
     </CUnit>
     <CUnit id="Medivac">
         <ArmorType value="None"/>
@@ -6050,6 +6054,8 @@
         <StationaryTurningRate value="2879.8242"/>
         <SubgroupPriority value="18"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
+        <CostResource index="Minerals" value="0"/>
+        <CostResource index="Vespene" value="2000"/>
     </CUnit>
     <CUnit id="SpectreNuke">
         <LifeArmorFormula PositiveArmorMultiplier="0" PositiveDamageRatio="0.25"/>
@@ -6884,6 +6890,7 @@
         <BehaviorArray Link="SquadMainUnit"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Description value="Unit/Tooltip/MarauderSquad"/>
+        <CostResource index="Vespene" value="900"/>
     </CUnit>
     <CUnit id="MarineSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -6904,6 +6911,7 @@
         <LifeMax value="270"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Description value="Unit/Tooltip/MarineSquad"/>
+        <CostResource index="Vespene" value="400"/>
     </CUnit>
     <CUnit id="ReaperSquad" parent="BaseSquad">
         <Race value="Terr"/>
@@ -6928,6 +6936,7 @@
         <Mover value="Colossus"/>
         <ShieldArmorName value="Unit/ShieldArmorName/TerranPlasmaShields"/>
         <Description value="Unit/Tooltip/ReaperSquad"/>
+        <CostResource index="Vespene" value="800"/>
     </CUnit>
     <CUnit id="TibNodeMedium">
         <DeathRevealRadius value="3"/>
