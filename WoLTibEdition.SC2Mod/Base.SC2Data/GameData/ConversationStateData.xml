@@ -30,6 +30,8 @@
         </Indices>
         <Indices Id="Ghost_Cheat" Name="ConversationState/CCEditionPermanence/Ghost_Cheat"/>
         <Indices Id="Spectre_Cheat" Name="ConversationState/CCEditionPermanence/Spectre_Cheat"/>
+        <Indices Id="UnlockAllUnits" Name="ConversationState/CCEditionPermanence/UnlockAllUnits"/>
+        <Indices Id="UnlockAllTech" Name="ConversationState/CCEditionPermanence/UnlockAllTech"/>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>

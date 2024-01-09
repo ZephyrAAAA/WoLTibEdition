@@ -1038,9 +1038,9 @@ void lib3B48F5E9_gt_Mission1memesfix_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
-// Trigger: Set up Ghost/Spectre Cheat
+// Trigger: Set up Perma Cheats
 //--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_SetupGhostSpectreCheat_Func (bool testConds, bool runActions) {
+bool lib3B48F5E9_gt_SetupPermaCheats_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Actions
     if (!runActions) {
@@ -1063,13 +1063,73 @@ bool lib3B48F5E9_gt_SetupGhostSpectreCheat_Func (bool testConds, bool runActions
         TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), true);
     }
 
+    if ((ConversationDataStateGetValue("CCEditionPermanence|UnlockAllTech") == 1)) {
+        TriggerExecute(lib3B48F5E9_gt_UnlockAllArmouryUpgrades, true, false);
+    }
+
+    if ((ConversationDataStateGetValue("CCEditionPermanence|UnlockAllUnits") == 1)) {
+        TriggerExecute(lib3B48F5E9_gt_UnlockAllUnits, true, false);
+    }
+
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_SetupGhostSpectreCheat_Init () {
-    lib3B48F5E9_gt_SetupGhostSpectreCheat = TriggerCreate("lib3B48F5E9_gt_SetupGhostSpectreCheat_Func");
-    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_SetupGhostSpectreCheat, 0.125, c_timeGame);
+void lib3B48F5E9_gt_SetupPermaCheats_Init () {
+    lib3B48F5E9_gt_SetupPermaCheats = TriggerCreate("lib3B48F5E9_gt_SetupPermaCheats_Func");
+    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_SetupPermaCheats, 0.125, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlock All Units
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlockAllUnits_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 2), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 6), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 9), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), true);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlockAllUnits_Init () {
+    lib3B48F5E9_gt_UnlockAllUnits = TriggerCreate("lib3B48F5E9_gt_UnlockAllUnits_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlock All Armoury Upgrades
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TechTreeUpgradeAddLevel(1, "CrossSpectrumDampeners", 1);
+    TechTreeUpgradeAddLevel(1, "ClusterWarheads", 1);
+    TechTreeUpgradeAddLevel(1, "DefensiveMatrix", 1);
+    TechTreeUpgradeAddLevel(1, "HurricaneMissiles", 1);
+    TechTreeUpgradeAddLevel(1, "ShrikeTurret", 1);
+    TechTreeUpgradeAddLevel(1, "ProjectileAccelerators", 1);
+    TechTreeUpgradeAddLevel(1, "OrbitalRelay", 1);
+    TechTreeUpgradeAddLevel(1, "FireSuppressionSystems", 1);
+    TechTreeUpgradeAddLevel(1, "ShapedHull", 1);
+    TechTreeUpgradeAddLevel(1, "TriLithiumPowerCells", 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Init () {
+    lib3B48F5E9_gt_UnlockAllArmouryUpgrades = TriggerCreate("lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1219,7 +1279,7 @@ bool lib3B48F5E9_gt_PermaUnlockGhost_Func (bool testConds, bool runActions) {
 
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_75E6810B"));
     ConversationDataStateSetValue("CCEditionPermanence|Ghost_Cheat", 1);
-    TriggerExecute(lib3B48F5E9_gt_SetupGhostSpectreCheat, true, false);
+    TriggerExecute(lib3B48F5E9_gt_SetupPermaCheats, true, false);
     return true;
 }
 
@@ -1241,7 +1301,7 @@ bool lib3B48F5E9_gt_PermaUnlockSpectre_Func (bool testConds, bool runActions) {
 
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_97617AEB"));
     ConversationDataStateSetValue("CCEditionPermanence|Spectre_Cheat", 1);
-    TriggerExecute(lib3B48F5E9_gt_SetupGhostSpectreCheat, true, false);
+    TriggerExecute(lib3B48F5E9_gt_SetupPermaCheats, true, false);
     return true;
 }
 
@@ -1249,6 +1309,92 @@ bool lib3B48F5E9_gt_PermaUnlockSpectre_Func (bool testConds, bool runActions) {
 void lib3B48F5E9_gt_PermaUnlockSpectre_Init () {
     lib3B48F5E9_gt_PermaUnlockSpectre = TriggerCreate("lib3B48F5E9_gt_PermaUnlockSpectre_Func");
     TriggerAddEventChatMessage(lib3B48F5E9_gt_PermaUnlockSpectre, c_playerAny, "ihaveawakened", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlock Units For Mission
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlockUnitsForMission_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_5632AAF2"));
+    TriggerExecute(lib3B48F5E9_gt_UnlockAllUnits, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlockUnitsForMission_Init () {
+    lib3B48F5E9_gt_UnlockUnitsForMission = TriggerCreate("lib3B48F5E9_gt_UnlockUnitsForMission_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockUnitsForMission, c_playerAny, "ihaveawakened", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlock Units For Campaign
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlockUnitsForCampaign_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_9395D482"));
+    ConversationDataStateSetValue("CCEditionPermanence|UnlockAllUnits", 1);
+    TriggerExecute(lib3B48F5E9_gt_UnlockAllUnits, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlockUnitsForCampaign_Init () {
+    lib3B48F5E9_gt_UnlockUnitsForCampaign = TriggerCreate("lib3B48F5E9_gt_UnlockUnitsForCampaign_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockUnitsForCampaign, c_playerAny, "ihaveawakened", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlock Tech For Mission
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlockTechForMission_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_1499BCC5"));
+    TriggerExecute(lib3B48F5E9_gt_UnlockAllArmouryUpgrades, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlockTechForMission_Init () {
+    lib3B48F5E9_gt_UnlockTechForMission = TriggerCreate("lib3B48F5E9_gt_UnlockTechForMission_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockTechForMission, c_playerAny, "ihaveawakened", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Unlock Tech For Campaign
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_UnlockTechForCampaign_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_6F2B07A5"));
+    ConversationDataStateSetValue("CCEditionPermanence|UnlockAllTech", 1);
+    TriggerExecute(lib3B48F5E9_gt_UnlockAllArmouryUpgrades, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_UnlockTechForCampaign_Init () {
+    lib3B48F5E9_gt_UnlockTechForCampaign = TriggerCreate("lib3B48F5E9_gt_UnlockTechForCampaign_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockTechForCampaign, c_playerAny, "ihaveawakened", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1568,7 +1714,9 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_DrillandSpikedebris_Init();
     lib3B48F5E9_gt_Memesettingload_Init();
     lib3B48F5E9_gt_Mission1memesfix_Init();
-    lib3B48F5E9_gt_SetupGhostSpectreCheat_Init();
+    lib3B48F5E9_gt_SetupPermaCheats_Init();
+    lib3B48F5E9_gt_UnlockAllUnits_Init();
+    lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();
@@ -1577,6 +1725,10 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_Memes_Init();
     lib3B48F5E9_gt_PermaUnlockGhost_Init();
     lib3B48F5E9_gt_PermaUnlockSpectre_Init();
+    lib3B48F5E9_gt_UnlockUnitsForMission_Init();
+    lib3B48F5E9_gt_UnlockUnitsForCampaign_Init();
+    lib3B48F5E9_gt_UnlockTechForMission_Init();
+    lib3B48F5E9_gt_UnlockTechForCampaign_Init();
     lib3B48F5E9_gt_PredatorGhostAcademy_Init();
     lib3B48F5E9_gt_ArmoryHercules_Init();
     lib3B48F5E9_gt_FusionCore_Init();
