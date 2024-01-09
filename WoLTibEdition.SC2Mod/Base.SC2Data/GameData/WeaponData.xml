@@ -592,6 +592,8 @@ cannon:Assets\Textures\btn-upgrade-terran-nova-specialordance.dds
         <Effect value="ExplosiveChargesDelay"/>
         <DamagePoint value="0"/>
         <LegacyOptions index="KeepChanneling" value="1"/>
+        <AcquireFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <MinScanRange value="2"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="FerociousSpew">
         <AttackType value="Siege"/>

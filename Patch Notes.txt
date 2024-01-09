@@ -6,10 +6,19 @@ Fixed spamming a tip about reaper upgrade giving detection
 Concussive now mentions that it affects the devastation turret
 Reworded the Commando Suit description to be more clear about what it affects.
 Reworded Orbital Supply Drop to be more clear it's either active or it isn't, and doesn't stack.
-*Commandos now only attack buildings they have been explicitly ordered to
+Commandos now only attack buildings they have been explicitly ordered to
+U238 rounds now increases damage by 9 instead of 3
+Restoration charges now restore shields too
+Nerfed Hellion damage by 26% (15->11)
+*Choices in the research lab are no longer permanent.
+*Added the cheat code "SC2Econ". It changes Unit and Building over time costs to upfront costs for the whole campaign. It cannot be undone mid-mission, but can be undone outside of a mission.
+*Added the cheat code "SC2Upgrades". It changes Upgrade over time costs to upfront costs for the whole campaign. It cannot be undone mid-mission, but can be undone outside of a mission.
+*Added the cheat code "RecruitmentDrive". It unlocks all units and in-game upgrades for the current mission.
+*Added the cheat code "PowerOverwhelming". It unlocks all units and in-game upgrades for the whole campaign.
+*Added the cheat code "DeckedOut". It unlocks all Hyperion Armoury upgrades for the current mission.
+*Added the cheat code "SwannsGift". It unlocks all Hyperion Armoury upgrades for the whole campaign.
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
-*U238 rounds now increases damage by
-*Restoration charges now restore shields too
+*Fixed memes not being default on
 
 Outlaws:
 Our meme cutscene can no longer be skipped.
@@ -18,6 +27,7 @@ Smash:
 Nerfed Stone Zealot HP to 1000 base, plus 1000 for each difficulty step. This is between a 25% and 33% hp nerf, depending on difficulty.
 Protoss and zerg attack waves are now more likely to come at the same time, meaning they will fight each other.
 The top protoss have a couple more high templar, to slow the zerg down a bit
+*Attack waves against the player scale softer
 
 Redstone:
 Fixed the reaper detection upgrade not being available
@@ -47,6 +57,7 @@ Piercing:
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
 *Momma is no longer revealed
+*The first protoss base now waits until you've killed one of their buildings to build passive defenders
 
 Gates:
 Fixed getting CCs in drop pods when you already have one

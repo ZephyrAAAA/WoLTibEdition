@@ -1763,7 +1763,7 @@
     </CEffectSet>
     <CEffectDamage id="InfernalFlameThrower">
         <AttributeBonus index="Light" value="0"/>
-        <Amount value="15"/>
+        <Amount value="11"/>
     </CEffectDamage>
     <CEffectEnumMagazine id="MakePrecursorMercIterate">
         <EditorCategories value=""/>
