@@ -19,6 +19,7 @@ Added the cheat code "DeckedOut". It unlocks all Hyperion Armoury upgrades for t
 Added the cheat code "SwannsGift". It unlocks all Hyperion Armoury upgrades for the whole campaign.
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
 *Fixed memes not being default on
+Actually buffed the autoref range this time
 
 Outlaws:
 Our meme cutscene can no longer be skipped.
@@ -27,7 +28,7 @@ Smash:
 Nerfed Stone Zealot HP to 1000 base, plus 1000 for each difficulty step. This is between a 25% and 33% hp nerf, depending on difficulty.
 Protoss and zerg attack waves are now more likely to come at the same time, meaning they will fight each other.
 The top protoss have a couple more high templar, to slow the zerg down a bit
-*Attack waves against the player scale softer
+Attack waves against the player scale softer
 
 Redstone:
 Fixed the reaper detection upgrade not being available
@@ -52,11 +53,11 @@ Hacking a Tower will give a one-time boost of 20k/20k/15k/10k resources.
 Increased the convoy timers to 4/4/3/2.5 minuntes
 
 Piercing:
-*Fixed the unplayable typo
+Fixed the unplayable typo
 
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
-*Momma is no longer revealed
+Momma is no longer revealed
 *The first protoss base now waits until you've killed one of their buildings to build passive defenders
 
 Gates:
@@ -67,4 +68,4 @@ Belly:
 Fixed unending cutscene
 
 Shatter:
-*Leviathan is no longer revealed
+Leviathan is no longer revealed

@@ -44,7 +44,7 @@
         <Arc value="360"/>
         <AutoCastAcquireLevel value="Defensive"/>
         <AutoCastFilters value="HarvestableResource,Visible;Player,Ally,Enemy"/>
-        <AutoCastRange value="4"/>
+        <AutoCastRange value="8"/>
     </CAbilEffectTarget>
     <CAbilEffectTarget id="BonesTossGrenade">
         <PreEffectBehavior Behavior="TychusCommandoGrenading" Count="1" Duration="0.5">
