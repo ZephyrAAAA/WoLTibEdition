@@ -1027,7 +1027,7 @@ bool lib3B48F5E9_gt_Mission1memesfix_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    lib3B48F5E9_gv_memes = true;
+    TriggerExecute(lib3B48F5E9_gt_Memes, true, false);
     return true;
 }
 
