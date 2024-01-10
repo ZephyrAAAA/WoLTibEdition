@@ -38,6 +38,8 @@ trigger lib3B48F5E9_gt_UnlockUnitsForMission;
 trigger lib3B48F5E9_gt_UnlockUnitsForCampaign;
 trigger lib3B48F5E9_gt_UnlockTechForMission;
 trigger lib3B48F5E9_gt_UnlockTechForCampaign;
+trigger lib3B48F5E9_gt_SwapCostModel;
+trigger lib3B48F5E9_gt_SwapUpgradeCostModel;
 trigger lib3B48F5E9_gt_PredatorGhostAcademy;
 trigger lib3B48F5E9_gt_ArmoryHercules;
 trigger lib3B48F5E9_gt_FusionCore;

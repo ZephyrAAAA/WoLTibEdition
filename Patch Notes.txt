@@ -11,12 +11,12 @@ U238 rounds now increases damage by 9 instead of 3
 Restoration charges now restore shields too
 Nerfed Hellion damage by 26% (15->11)
 *Choices in the research lab are no longer permanent.
-*Added the cheat code "SC2Econ". It changes Unit and Building over time costs to upfront costs for the whole campaign. It cannot be undone mid-mission, but can be undone outside of a mission.
-*Added the cheat code "SC2Upgrades". It changes Upgrade over time costs to upfront costs for the whole campaign. It cannot be undone mid-mission, but can be undone outside of a mission.
-*Added the cheat code "RecruitmentDrive". It unlocks all units and in-game upgrades for the current mission.
-*Added the cheat code "PowerOverwhelming". It unlocks all units and in-game upgrades for the whole campaign.
-*Added the cheat code "DeckedOut". It unlocks all Hyperion Armoury upgrades for the current mission.
-*Added the cheat code "SwannsGift". It unlocks all Hyperion Armoury upgrades for the whole campaign.
+Added the cheat code "SC2Econ". It changes Unit and Building over time costs to upfront costs for the whole campaign.
+Added the cheat code "SC2Upgrades". It changes Upgrade over time costs to upfront costs for the whole campaign.
+Added the cheat code "RecruitmentDrive". It unlocks all units and in-game upgrades for the current mission.
+Added the cheat code "PowerOverwhelming". It unlocks all units and in-game upgrades for the whole campaign.
+Added the cheat code "DeckedOut". It unlocks all Hyperion Armoury upgrades for the current mission.
+Added the cheat code "SwannsGift". It unlocks all Hyperion Armoury upgrades for the whole campaign.
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
 *Fixed memes not being default on
 

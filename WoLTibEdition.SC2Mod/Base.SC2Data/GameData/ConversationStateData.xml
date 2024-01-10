@@ -32,6 +32,8 @@
         <Indices Id="Spectre_Cheat" Name="ConversationState/CCEditionPermanence/Spectre_Cheat"/>
         <Indices Id="UnlockAllUnits" Name="ConversationState/CCEditionPermanence/UnlockAllUnits"/>
         <Indices Id="UnlockAllTech" Name="ConversationState/CCEditionPermanence/UnlockAllTech"/>
+        <Indices Id="SC2Cost" Name="ConversationState/CCEditionPermanence/SC2Cost"/>
+        <Indices Id="SC2Upgrades" Name="ConversationState/CCEditionPermanence/SC2Upgrades"/>
         <InfoIds index="Text">
             <Id value=""/>
         </InfoIds>

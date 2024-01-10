@@ -750,6 +750,8 @@ ConversationState/CCEditionPermanence/Ghost_Cheat=Ghost Cheat
 ConversationState/CCEditionPermanence/Improved_Yamato=Improved Yamato
 ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
 ConversationState/CCEditionPermanence/Memes=Memes
+ConversationState/CCEditionPermanence/SC2Cost=SC2 Cost
+ConversationState/CCEditionPermanence/SC2Upgrades=SC2 Upgrades
 ConversationState/CCEditionPermanence/Spectre_Cheat=Spectre Cheat
 ConversationState/CCEditionPermanence/UnlockAllTech=Unlock All Tech
 ConversationState/CCEditionPermanence/UnlockAllUnits=Unlock All Units
@@ -1731,6 +1733,7 @@ Param/Value/lib_3B48F5E9_1499BCC5=All Armoury Upgrades have been unlocked for th
 Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
 Param/Value/lib_3B48F5E9_27992306=<c val="FF00FF">Topbar Granted: </c>
 Param/Value/lib_3B48F5E9_2865F866=Laser Drill
+Param/Value/lib_3B48F5E9_42EE8A29=Upgrade costs are now flat up-front, like SC2.
 Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
 Param/Value/lib_3B48F5E9_5632AAF2=Full in-game tech tree has been unlocked for this mission.
 Param/Value/lib_3B48F5E9_5D355B93=<c val="00FF40">TIP</c> - A  Dominion force is on the way. When they find Raynor here, they'll bombard the area, then repeatedly deploy forces to kill him.
@@ -1749,6 +1752,7 @@ Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
 Param/Value/lib_3B48F5E9_CD061853=Memes have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_CE432AB3=Memes have been <c val="FF0000">Disabled</c>
 Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
+Param/Value/lib_3B48F5E9_FCAA0D63=Unit and Building costs are now flat up-front, like SC2.
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>

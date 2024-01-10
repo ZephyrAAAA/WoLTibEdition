@@ -1071,6 +1071,14 @@ bool lib3B48F5E9_gt_SetupPermaCheats_Func (bool testConds, bool runActions) {
         TriggerExecute(lib3B48F5E9_gt_UnlockAllUnits, true, false);
     }
 
+    if ((ConversationDataStateGetValue("CCEditionPermanence|SC2Cost") == 1)) {
+        ToggleCost();
+    }
+
+    if ((ConversationDataStateGetValue("CCEditionPermanence|SC2Upgrades") == 1)) {
+        ToggleCostUpgrade();
+    }
+
     return true;
 }
 
@@ -1092,10 +1100,54 @@ bool lib3B48F5E9_gt_UnlockAllUnits_Func (bool testConds, bool runActions) {
 
     TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 2), true);
     TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 6), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 4), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Barracks2Train", 1), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 8), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 8), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 7), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 6), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 5), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 9), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 1), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 4), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Factory2Train", 8), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 10), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 10), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 1), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 5), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 6), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 8), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 2), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 4), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Starport2Train", 7), true);
+    TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 4), true);
+    TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 6), true);
+    TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 5), true);
+    TechTreeAbilityAllow(1, AbilityCommand("GhostAcademy2Research", 2), true);
     TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 3), true);
     TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 2), true);
+    TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 4), true);
+    TechTreeAbilityAllow(1, AbilityCommand("EngineeringBay2Research", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("EngineeringBayResearch", 1), true);
     TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 9), true);
     TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 9), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 5), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 6), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 1), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 0), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 3), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 4), true);
+    TechTreeAbilityAllow(1, AbilityCommand("Armory2Research", 2), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCBuild", 11), true);
+    TechTreeAbilityAllow(1, AbilityCommand("CCPlaceBuilding", 11), true);
     return true;
 }
 
@@ -1124,6 +1176,40 @@ bool lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Func (bool testConds, bool runActio
     TechTreeUpgradeAddLevel(1, "FireSuppressionSystems", 1);
     TechTreeUpgradeAddLevel(1, "ShapedHull", 1);
     TechTreeUpgradeAddLevel(1, "TriLithiumPowerCells", 1);
+    TechTreeUpgradeAddLevel(1, "BearclawNozzles", 1);
+    TechTreeUpgradeAddLevel(1, "FirebatJuggernautPlating", 1);
+    TechTreeUpgradeAddLevel(1, "MultilockTargetingSystems", 1);
+    TechTreeUpgradeAddLevel(1, "AresClassWeaponsSystem", 1);
+    TechTreeUpgradeAddLevel(1, "TwinLinkedFlameThrowers", 1);
+    TechTreeUpgradeAddLevel(1, "HydraulicStabilizers", 1);
+    TechTreeUpgradeAddLevel(1, "PermanentCloakSpectre", 1);
+    TechTreeUpgradeAddLevel(1, "UltrasonicPulse", 1);
+    TechTreeUpgradeAddLevel(1, "JackhammerConcussionGrenades", 1);
+    TechTreeUpgradeAddLevel(1, "MarauderLifeBoost", 1);
+    TechTreeUpgradeAddLevel(1, "CombatShield", 1);
+    TechTreeUpgradeAddLevel(1, "MarineStimpack", 1);
+    TechTreeUpgradeAddLevel(1, "AdvancedMedicTraining", 1);
+    TechTreeUpgradeAddLevel(1, "StabilizerMedPacks", 1);
+    TechTreeUpgradeAddLevel(1, "AdvancedHealingAI", 1);
+    TechTreeUpgradeAddLevel(1, "MedivacRapidDeployment", 1);
+    TechTreeUpgradeAddLevel(1, "HailstormMissilePods", 1);
+    TechTreeUpgradeAddLevel(1, "ReinforcedSuperstructure", 1);
+    TechTreeUpgradeAddLevel(1, "PermanentCloakGhost", 1);
+    TechTreeUpgradeAddLevel(1, "OcularImplants", 1);
+    TechTreeUpgradeAddLevel(1, "ReaperU238Rounds", 1);
+    TechTreeUpgradeAddLevel(1, "ClusterBomb", 1);
+    TechTreeUpgradeAddLevel(1, "AdvancedConstruction", 1);
+    TechTreeUpgradeAddLevel(1, "DualFusionWelders", 1);
+    TechTreeUpgradeAddLevel(1, "SiegeTankShapedBlast", 1);
+    TechTreeUpgradeAddLevel(1, "MaelstromRounds", 1);
+    TechTreeUpgradeAddLevel(1, "MechanicalRebirth", 1);
+    TechTreeUpgradeAddLevel(1, "330mmBarrageCannons", 1);
+    TechTreeUpgradeAddLevel(1, "AresClassWeaponsSystemViking", 1);
+    TechTreeUpgradeAddLevel(1, "HALORockets", 1);
+    TechTreeUpgradeAddLevel(1, "CerberusMines", 1);
+    TechTreeUpgradeAddLevel(1, "NanoConstructor", 1);
+    TechTreeUpgradeAddLevel(1, "CloakDistortionField", 1);
+    TechTreeUpgradeAddLevel(1, "DynamicPowerRouting", 1);
     return true;
 }
 
@@ -1329,7 +1415,7 @@ bool lib3B48F5E9_gt_UnlockUnitsForMission_Func (bool testConds, bool runActions)
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_UnlockUnitsForMission_Init () {
     lib3B48F5E9_gt_UnlockUnitsForMission = TriggerCreate("lib3B48F5E9_gt_UnlockUnitsForMission_Func");
-    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockUnitsForMission, c_playerAny, "ihaveawakened", true);
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockUnitsForMission, c_playerAny, "RecruitmentDrive", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1351,7 +1437,7 @@ bool lib3B48F5E9_gt_UnlockUnitsForCampaign_Func (bool testConds, bool runActions
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_UnlockUnitsForCampaign_Init () {
     lib3B48F5E9_gt_UnlockUnitsForCampaign = TriggerCreate("lib3B48F5E9_gt_UnlockUnitsForCampaign_Func");
-    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockUnitsForCampaign, c_playerAny, "ihaveawakened", true);
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockUnitsForCampaign, c_playerAny, "PowerOverwhelming", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1372,7 +1458,7 @@ bool lib3B48F5E9_gt_UnlockTechForMission_Func (bool testConds, bool runActions) 
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_UnlockTechForMission_Init () {
     lib3B48F5E9_gt_UnlockTechForMission = TriggerCreate("lib3B48F5E9_gt_UnlockTechForMission_Func");
-    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockTechForMission, c_playerAny, "ihaveawakened", true);
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockTechForMission, c_playerAny, "DeckedOut", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1394,7 +1480,51 @@ bool lib3B48F5E9_gt_UnlockTechForCampaign_Func (bool testConds, bool runActions)
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_UnlockTechForCampaign_Init () {
     lib3B48F5E9_gt_UnlockTechForCampaign = TriggerCreate("lib3B48F5E9_gt_UnlockTechForCampaign_Func");
-    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockTechForCampaign, c_playerAny, "ihaveawakened", true);
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_UnlockTechForCampaign, c_playerAny, "SwannsGift", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Swap Cost Model
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_SwapCostModel_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_FCAA0D63"));
+    ConversationDataStateSetValue("CCEditionPermanence|SC2Cost", 1);
+    TriggerExecute(lib3B48F5E9_gt_SetupPermaCheats, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_SwapCostModel_Init () {
+    lib3B48F5E9_gt_SwapCostModel = TriggerCreate("lib3B48F5E9_gt_SwapCostModel_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_SwapCostModel, c_playerAny, "SC2Econ", true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Swap Upgrade Cost Model
+//--------------------------------------------------------------------------------------------------
+bool lib3B48F5E9_gt_SwapUpgradeCostModel_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_42EE8A29"));
+    ConversationDataStateSetValue("CCEditionPermanence|SC2Upgrades", 1);
+    TriggerExecute(lib3B48F5E9_gt_SetupPermaCheats, true, false);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void lib3B48F5E9_gt_SwapUpgradeCostModel_Init () {
+    lib3B48F5E9_gt_SwapUpgradeCostModel = TriggerCreate("lib3B48F5E9_gt_SwapUpgradeCostModel_Func");
+    TriggerAddEventChatMessage(lib3B48F5E9_gt_SwapUpgradeCostModel, c_playerAny, "SC2Upgrades", true);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -1729,6 +1859,8 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_UnlockUnitsForCampaign_Init();
     lib3B48F5E9_gt_UnlockTechForMission_Init();
     lib3B48F5E9_gt_UnlockTechForCampaign_Init();
+    lib3B48F5E9_gt_SwapCostModel_Init();
+    lib3B48F5E9_gt_SwapUpgradeCostModel_Init();
     lib3B48F5E9_gt_PredatorGhostAcademy_Init();
     lib3B48F5E9_gt_ArmoryHercules_Init();
     lib3B48F5E9_gt_FusionCore_Init();
