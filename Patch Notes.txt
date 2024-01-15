@@ -67,7 +67,7 @@ Gates:
 Fixed getting CCs in drop pods when you already have one
 
 Belly:
-*Fixed medic squad members being eaten by the zerg in transitions
+Fixed medic squad members being eaten by the zerg in transitions
 Fixed unending cutscene
 The heroes now start in Control Group 1, since we have a Combined Command Card for them.
 
