@@ -25,7 +25,7 @@ Outlaws:
 Our meme cutscene can no longer be skipped.
 
 Smash:
-Nerfed Stone Zealot HP to 1000 base, plus 1000 for each difficulty step. This is between a 25% and 33% hp nerf, depending on difficulty.
+Nerfed Stone Zealot HP to 1000 base, plus 750 for each difficulty step. This is between a ~30% and ~40% hp nerf, depending on difficulty.
 Protoss and zerg attack waves are now more likely to come at the same time, meaning they will fight each other.
 The top protoss have a couple more high templar, to slow the zerg down a bit
 Attack waves against the player scale softer
@@ -35,6 +35,9 @@ Fixed the reaper detection upgrade not being available
 
 Outbreak:
 All SCVs now start the mission mining
+
+Safe Haven:
+*Fixed infinite zealots
 
 Moebius Factor:
 Replaced the fields on the bruta island with spikes
@@ -58,7 +61,7 @@ Fixed the unplayable typo
 Maw:
 Fixed momma not dying properly if she dies during a cinematic.
 Momma is no longer revealed
-*The first protoss base now waits until you've killed one of their buildings to build passive defenders
+The first protoss base now waits until you've killed one of their buildings to build passive defenders
 
 Gates:
 Fixed getting CCs in drop pods when you already have one
@@ -66,6 +69,7 @@ Fixed getting CCs in drop pods when you already have one
 Belly:
 *Fixed medic squad members being eaten by the zerg in transitions
 Fixed unending cutscene
+The heroes now start in Control Group 1, since we have a Combined Command Card for them.
 
 Shatter:
 Leviathan is no longer revealed
