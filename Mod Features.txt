@@ -381,7 +381,7 @@ Engine of Destruction:
 -You now start with 2 marauder sqauds, 1 marine squad, and a medic squad.
 -You start with 2 lees supply depots.
 -You start with an Engineering Bay
--Each base now has a field, encouraging setting up an expansion after clearing.
+-Each base now has a field or Capturable Structures, encouraging setting up an expansion after clearing.
 -Removed all the medivacs from the first base
 -Wraiths now come in cloaked
 -Attack wave against the Odin from the third base now sends hellions instead of most of the vultures.
@@ -405,6 +405,8 @@ Media Blitz:
 -Bases now have more units after the sneak attack
 -Sneak attack shorter
 -More resources, only capturable structures
+-Starting money bank based on difficulty. 30k/30k/25k/20k
+-Hacking a Tower will give a one-time boost of 20k/20k/15k/10k.
 -Anti-light base is now an infantry base
 -Vehicle base now has vultures and hellions.
 -Added a "convoy" system where the dominion will send convoys to rebuild tower bases while the tower is unclaimed. Bases will not be rebuilt otherwise
@@ -429,7 +431,7 @@ Piercing the Shroud:
 -Added a cheat to do the mission without a commando, and a tip if you don't have one saying it's hard
 
 Smash and Grab:
--Stone Zealots now do 20x2 damage to ground, and have 1500/2500/3750/5000 health on Casual/Normal/Hard/Brutal.
+-Stone Zealots now do 20x2 damage to ground, and have 1000/1750/2500/3250 health on Casual/Normal/Hard/Brutal.
 -Bonus 2 and 3 give Marauder Armoury upgrades, and messages saying this
 -Protoss send attack waves now, that scale with time and clearing.
 -Zerg attack waves tweaked, scale with time.
@@ -460,7 +462,7 @@ The Moebius Factor:
 -Stranded mercs are no longer just war pigs and spartans (Except for that one pair of hamsec)
 -Killing the brutalisk unlocks the first medivac upgrade.
 -Killing the second datacore unlocks the second medivac upgrade.
--Added a field to the brutalisk location
+-Added 2 Spikes to the brutalisk location
 -Your camera is no longer stolen on Hard and Brutal when Narud tells you about giving you his medivacs
 -Removed free vision of the datacores
 -Removed free vision from Kerrigan
@@ -491,7 +493,7 @@ Maw of the Void:
 -Added an objective for the protoss must have less than 10 structures on the map.
 -Rescuing DT groups 2 and 3 gives BC armoury upgrades.
 -The rescued DTs have max upgrades.
--There is now 3 strong bases you need to fight through.
+-There is now 3 strong bases you need to fight through. They build passive defenders over time. The first base does not until you have killed at least one of its buildings.
 -Area around mom is no longer always visible. Mom herself still is though.
 -Rip fields are now slow fields, still affect unshielded protoss, having shields does not block it.
 -No more free vision of the prisons
@@ -530,6 +532,7 @@ Belly of the Beast:
 -Raynor does 40 Rocket damage at 1.5 attack speed. Raynor's Snipe does Rocket Damage.
 -Swann does 40 Cannon damage at 1 attack speed.
 -The Heroes now have a combined Command Card
+-All heroes are now in Control Group 1, instead of being split up into 1, 2, 3, 4
 -Stettman no longer blocks medic healing
 -Tychus' and Raynor's abilities are no longer blocked by fog of war
 -Swann now gets betty's kills
@@ -720,6 +723,8 @@ Replenishable Magazine-> EMP- Disables mechanical units on attack
 
 
 RESEARCH LAB CHANGES:
+
+Can be swapped at any time.
 
 Orbital Strike- Now reduces topbar costs and cooldown
 
@@ -915,6 +920,18 @@ exterminatus - Removes the charge limit on any applicable topbar abilities.
 ghostreporting - Permanently unlocks the Ghost
 
 ihaveawakened - Permanently unlocks the Spectre
+
+SC2Econ - It changes Unit and Building over time costs to upfront costs for the whole campaign.
+
+SC2Upgrades - It changes Upgrade over time costs to upfront costs for the whole campaign.
+
+RecruitmentDrive - It unlocks all units and in-game upgrades for the current mission.
+
+PowerOverwhelming - It unlocks all units and in-game upgrades for the whole campaign.
+
+DeckedOut - It unlocks all Hyperion Armoury upgrades for the current mission.
+
+SwannsGift - It unlocks all Hyperion Armoury upgrades for the whole campaign.
 
 
 Easter Eggs:
