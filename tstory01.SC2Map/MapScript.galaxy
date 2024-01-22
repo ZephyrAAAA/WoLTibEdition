@@ -1372,6 +1372,9 @@ void gf_ArmoryTech_HotspotLeave ();
 void gf_ArmoryTechHideallbut (unit lp_displayUnit);
 void gf_ArmoryTechShowall ();
 void gf_CCEditionMissionFlowChanges ();
+int gf_TS_StoryResearchTheOtherOfTheSameTier (int lp_research);
+void gf_SetStoryResearchPurchased (int lp_researchID);
+void gf_TS_ResearchUIUpdateOverwrite ();
 void gf_MercDisplay (trigger lp_exitCallback);
 void gf_MercPreload ();
 void gf_LabResearchDisplay (trigger lp_exitCallback);
@@ -1772,6 +1775,7 @@ trigger gt_LabArtifactClickedCameraChangeNoWait;
 trigger gt_LabArtifactClickedPositionCharacters;
 trigger gt_LabArtifactHighlighted;
 trigger gt_LabArtifactUnhighlighted;
+trigger gt_TS_ResearchUIPurchaseOverwrite;
 trigger gt_LabConsoleClicked;
 trigger gt_LabConsoleLeave;
 trigger gt_LabCrystalClicked;
@@ -10406,12 +10410,90 @@ void gf_CCEditionMissionFlowChanges () {
     }
 }
 
+int gf_TS_StoryResearchTheOtherOfTheSameTier (int lp_research) {
+    // Variable Declarations
+    int lv_catIndex;
+    int lv_tierIndex;
+    int lv_slotIndex;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+
+    // Implementation
+    lv_catIndex = (libCamp_gf_StoryResearchCategory(lp_research));
+    lv_tierIndex = libCamp_gf_TS_StoryResearchTier(lp_research);
+    lv_slotIndex = libCamp_gf_TS_StoryResearchSlot(lp_research);
+    return libCamp_gv_tS_ResearchIDInUIStructure[lv_catIndex][lv_tierIndex][(3 - lv_slotIndex)];
+}
+
+void gf_SetStoryResearchPurchased (int lp_researchID) {
+    // Automatic Variable Declarations
+    // Implementation
+    libCamp_gv_tSX_ResearchState[(lp_researchID)] = libCamp_ge_StoryResearchState_ResearchStatePurchased;
+    libCamp_gv_tSX_ResearchState[(gf_TS_StoryResearchTheOtherOfTheSameTier(lp_researchID))] = libCamp_ge_StoryResearchState_ResearchStateAvailable;
+}
+
+void gf_TS_ResearchUIUpdateOverwrite () {
+    // Variable Declarations
+    int lv_indexResearch;
+    int lv_otherResearch;
+    text lv_tip;
+
+    // Automatic Variable Declarations
+    int auto3ABE1B50_i;
+    int auto0FCAF0CE_i;
+    int auto6B5FBF2A_val;
+
+    // Variable Initialization
+    lv_indexResearch = libCamp_ge_StoryResearchID_ResearchNone;
+    lv_otherResearch = libCamp_ge_StoryResearchID_ResearchNone;
+
+    // Implementation
+    libCamp_gf_TS_ResearchUICreate();
+    ResearchCategorySetCurrentLevel(libCamp_gv_tS_ResearchUICategories[(libCamp_ge_StoryResearchCategory_ResearchCategoryProtoss)], MinI(libCamp_gf_StoryResearchPointCap(libCamp_ge_StoryResearchCategory_ResearchCategoryProtoss), libCamp_gf_StoryResearchPoints(libCamp_ge_StoryResearchCategory_ResearchCategoryProtoss)));
+    ResearchCategorySetCurrentLevel(libCamp_gv_tS_ResearchUICategories[(libCamp_ge_StoryResearchCategory_ResearchCategoryZerg)], MinI(libCamp_gf_StoryResearchPointCap(libCamp_ge_StoryResearchCategory_ResearchCategoryZerg), libCamp_gf_StoryResearchPoints(libCamp_ge_StoryResearchCategory_ResearchCategoryZerg)));
+    auto3ABE1B50_i = libCamp_gv_TSC_RESEARCH_FIRST;
+    while (auto3ABE1B50_i <= libCamp_gv_TSC_RESEARCH_LAST) {
+        lv_indexResearch = libCamp_gv_tS_ResearchID[auto3ABE1B50_i];
+        ResearchItemSetTooltipText(libCamp_gv_tS_ResearchUIItem[(lv_indexResearch)], libCamp_gf_StoryResearchTooltip(lv_indexResearch));
+        ResearchItemSetState(libCamp_gf_TS_StoryResearchUIItem(lv_indexResearch), c_researchItemStateEnabled);
+        auto3ABE1B50_i = auto3ABE1B50_i + 1;
+    }
+    auto0FCAF0CE_i = libCamp_gv_TSC_RESEARCH_FIRST;
+    while (auto0FCAF0CE_i <= libCamp_gv_TSC_RESEARCH_LAST) {
+        lv_indexResearch = libCamp_gv_tS_ResearchID[auto0FCAF0CE_i];
+        if ((libCamp_gf_StoryResearchStateCheck(lv_indexResearch, libCamp_ge_StoryResearchState_ResearchStatePurchased) == true)) {
+            ResearchItemSetState(libCamp_gf_TS_StoryResearchUIItem(lv_indexResearch), c_researchItemStatePurchased);
+            lv_otherResearch = libCamp_gf_TS_StoryResearchTheOtherOfTheSameTier(lv_indexResearch);
+            ResearchItemSetState(libCamp_gf_TS_StoryResearchUIItem(lv_otherResearch), c_researchItemStateEnabled);
+            auto6B5FBF2A_val = libCamp_gf_StoryResearchCategory(lv_otherResearch);
+            if (auto6B5FBF2A_val == libCamp_ge_StoryResearchCategory_ResearchCategoryProtoss) {
+                lv_tip = (StringExternal("Param/Value/5B8074F7") + libCamp_gf_StoryResearchName(lv_otherResearch) + StringExternal("Param/Value/F6B91135"));
+                libCamp_gf_TS_ResearchUIClearProtossConfirmationText();
+            }
+            else if (auto6B5FBF2A_val == libCamp_ge_StoryResearchCategory_ResearchCategoryZerg) {
+                lv_tip = (StringExternal("Param/Value/28855947") + libCamp_gf_StoryResearchName(lv_otherResearch) + StringExternal("Param/Value/7F115A3F"));
+                libCamp_gf_TS_ResearchUIClearZergConfirmationText();
+            }
+            else {
+            }
+            ResearchItemSetTooltipText(libCamp_gv_tS_ResearchUIItem[(lv_otherResearch)], lv_tip);
+        }
+
+        auto0FCAF0CE_i = auto0FCAF0CE_i + 1;
+    }
+}
+
 void gf_MercDisplay (trigger lp_exitCallback) {
     // Automatic Variable Declarations
     // Implementation
     gf_PauseNewItemInfo(true);
     gf_GoToRoom(ge_RoomID_RoomMercenary, false);
     libCamp_gf_DisplayMercenaryPanel(lp_exitCallback);
+    if ((libCamp_gf_CountMissions(libCamp_ge_MissionStatus_Completed) == 1)) {
+        UIShowCustomDialog(PlayerGroupAll(), libNtve_ge_CustomDialogType_c_customDialogTypeMessage, ConversationDataStateText("LabResearchText|LabResearchText04", "Text"), (ConversationDataStateText("LabResearchText|LabResearchText05", "Text") + libCamp_gf_FormatCredits(libCamp_gf_StoryResearchCreditsPerPoint(), false) + ConversationDataStateText("LabResearchText|LabResearchText06", "Text") + StringExternal("Param/Value/B52868F1") + ConversationDataStateText("LabResearchText|LabResearchText07", "Text") + libCamp_gf_FormatCredits(gv_labResearch_ConvertProtoss, false) + ConversationDataStateText("LabResearchText|LabResearchText15", "Text")), true);
+    }
+
 }
 
 void gf_MercPreload () {
@@ -20461,11 +20543,11 @@ bool gt_Memes_Func (bool testConds, bool runActions) {
 
     gv_memes = !(gv_memes);
     if ((gv_memes == true)) {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/27ACCE5B"));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
         ConversationDataStateSetValue("CCEditionPermanence|Memes", 1);
     }
     else {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/2600EDA3"));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
         ConversationDataStateSetValue("CCEditionPermanence|Memes", 0);
     }
     return true;
@@ -24714,6 +24796,70 @@ void gt_LabArtifactUnhighlighted_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: TS_ResearchUI - Purchase - Overwrite
+//--------------------------------------------------------------------------------------------------
+bool gt_TS_ResearchUIPurchaseOverwrite_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_researchID;
+    int lv_purchasedCountZerg;
+    int lv_purchasedCountProt;
+    int lv_indexResearch;
+
+    // Automatic Variable Declarations
+    int auto28AB48F3_i;
+    int autoA9725CE1_val;
+
+    // Variable Initialization
+    lv_researchID = libCamp_ge_StoryResearchID_ResearchNone;
+    lv_indexResearch = libCamp_ge_StoryResearchID_ResearchNone;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_researchID = libCamp_gf_TS_ResearchUIResearchID(ResearchItemGetSelected(1));
+    if ((lv_researchID == libCamp_ge_StoryResearchID_ResearchNone)) {
+        return true;
+    }
+
+    ResearchItemPurchase(ResearchItemGetSelected(1));
+    gf_SetStoryResearchPurchased(lv_researchID);
+    gf_TS_ResearchUIUpdateOverwrite();
+    libCamp_gf_TS_AddRecentResearch(lv_researchID);
+    lv_purchasedCountZerg = 0;
+    lv_purchasedCountProt = 0;
+    auto28AB48F3_i = libCamp_gv_TSC_RESEARCH_FIRST;
+    while (auto28AB48F3_i <= libCamp_gv_TSC_RESEARCH_LAST) {
+        lv_indexResearch = libCamp_gv_tS_ResearchID[auto28AB48F3_i];
+        if ((libCamp_gf_StoryResearchStateCheck(lv_indexResearch, libCamp_ge_StoryResearchState_ResearchStatePurchased) == true)) {
+            autoA9725CE1_val = libCamp_gf_StoryResearchCategory(lv_indexResearch);
+            if (autoA9725CE1_val == libCamp_ge_StoryResearchCategory_ResearchCategoryZerg) {
+                lv_purchasedCountZerg += 1;
+                libCamp_gf_TS_ResearchUIClearZergConfirmationText();
+            }
+            else if (autoA9725CE1_val == libCamp_ge_StoryResearchCategory_ResearchCategoryProtoss) {
+                lv_purchasedCountProt += 1;
+                libCamp_gf_TS_ResearchUIClearProtossConfirmationText();
+            }
+            else {
+            }
+        }
+
+        auto28AB48F3_i = auto28AB48F3_i + 1;
+    }
+    AchievementTermQuantitySet(1, "TStory01_8", lv_purchasedCountProt);
+    AchievementTermQuantitySet(1, "TStory01_7", lv_purchasedCountZerg);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_TS_ResearchUIPurchaseOverwrite_Init () {
+    gt_TS_ResearchUIPurchaseOverwrite = TriggerCreate("gt_TS_ResearchUIPurchaseOverwrite_Func");
+    TriggerAddEventResearchPanelPurchase(gt_TS_ResearchUIPurchaseOverwrite, c_playerAny);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger: LabConsole Clicked
 //--------------------------------------------------------------------------------------------------
 bool gt_LabConsoleClicked_Func (bool testConds, bool runActions) {
@@ -24737,7 +24883,9 @@ bool gt_LabConsoleClicked_Func (bool testConds, bool runActions) {
     Wait(0.1, c_timeGame);
     gf_GoToRoom(ge_RoomID_RoomLabResearch, false);
     gf_PauseNewItemInfo(true);
+    TriggerEnable(libCamp_gt_TS_ResearchUIPurchase, false);
     gf_LabResearchDisplay(gt_LabConsoleLeave);
+    gf_TS_ResearchUIUpdateOverwrite();
     return true;
 }
 
@@ -38354,6 +38502,7 @@ bool gt_ScriptSceneLabIntro_Func (bool testConds, bool runActions) {
     gf_SetAllSoundChannelVolumesStoryMode(libNtve_ge_VolumeChannelMode_Game);
     gf_PauseFlashing(false);
     gf_PauseNewItemInfo(false);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, (StringExternal("Param/Value/054E7F71") + StringToText("Researches are able to be swapped at any time.")));
     gf_GoToRoom(ge_RoomID_RoomLab, false);
     gf_EnterRoom(ge_RoomID_RoomLab, false);
     Wait(0.5, c_timeReal);
@@ -38361,6 +38510,8 @@ bool gt_ScriptSceneLabIntro_Func (bool testConds, bool runActions) {
     gf_TurnClickablesOnOff(gv_clickables, true);
     gf_SetWorldMode(ge_WorldMode_WorldModeGlobal);
     gf_SetIdleState(ge_IdleState_Idle);
+    Wait(5.0, c_timeReal);
+    UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
     TriggerExecute(gt_TipLabResearch, true, false);
     return true;
 }
@@ -38499,7 +38650,9 @@ bool gt_ScriptSceneMercIntro_Func (bool testConds, bool runActions) {
     gf_PauseFlashing(false);
     gf_PauseNewItemInfo(false);
     UISetCursorVisible(PlayerGroupAll(), true);
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaDirective, (StringExternal("Param/Value/A935DD46") + StringToText("All Mercs being available is intended.")));
     gf_ScriptSceneMercIntroDisplayUI(false);
+    UIClearMessages(PlayerGroupAll(), c_messageAreaDirective);
     UISetCursorVisible(PlayerGroupAll(), false);
     gf_SetWorldMode(ge_WorldMode_WorldModeGlobal);
     gf_SetIdleState(ge_IdleState_Idle);
@@ -41627,10 +41780,6 @@ bool gt_TipMercenaries_Func (bool testConds, bool runActions) {
     }
 
     TriggerEnable(TriggerGetCurrent(), false);
-    if ((libCamp_gf_StoryState(libCamp_ge_StoryStateID_StoryStateCantinaIntroDone) > 0)) {
-        gf_AddTip("StoryTips|Mercenaries");
-    }
-
     return true;
 }
 
@@ -42248,6 +42397,7 @@ void InitTriggers () {
     gt_LabArtifactClickedPositionCharacters_Init();
     gt_LabArtifactHighlighted_Init();
     gt_LabArtifactUnhighlighted_Init();
+    gt_TS_ResearchUIPurchaseOverwrite_Init();
     gt_LabConsoleClicked_Init();
     gt_LabConsoleLeave_Init();
     gt_LabCrystalClicked_Init();

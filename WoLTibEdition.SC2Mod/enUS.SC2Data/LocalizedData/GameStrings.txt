@@ -750,11 +750,7 @@ ConversationState/CCEditionPermanence/Ghost_Cheat=Ghost Cheat
 ConversationState/CCEditionPermanence/Improved_Yamato=Improved Yamato
 ConversationState/CCEditionPermanence/Laser_Drill=Laser Drill
 ConversationState/CCEditionPermanence/Memes=Memes
-ConversationState/CCEditionPermanence/SC2Cost=SC2 Cost
-ConversationState/CCEditionPermanence/SC2Upgrades=SC2 Upgrades
 ConversationState/CCEditionPermanence/Spectre_Cheat=Spectre Cheat
-ConversationState/CCEditionPermanence/UnlockAllTech=Unlock All Tech
-ConversationState/CCEditionPermanence/UnlockAllUnits=Unlock All Units
 ConversationState/LabResearch/ResearchP1_1/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently unlocks all Ultra Capacitor upgrades, giving all units +20% attack speed permanently. </s><n/><n/><s val="ResearchDescription_Protoss">Studying Protoss technology has allowed a large reduction in cost of these self-replenishing capacitors, allowing us to outfit our forces with them as standard equipment, instead of having to spend resources upgrading them in the field.
 ConversationState/LabResearch/ResearchP1_1/Info/Tooltip=<s val="TooltipTitle_Protoss">Ultra-Capacitors</s><n/><s val="TooltipDescription_Protoss">Permanently researches all Ultra-Capacitor upgrades.</s>
 ConversationState/LabResearch/ResearchP1_2/Info/Description=<s val="ResearchDescSummary_Protoss">- Permanently researches all Vanadium Plating upgrades, giving all units 20% damage resist.<n/><n/><s val="ResearchDescription_Protoss">We have discovered a cheaper method of manufacturing vanadium, allowing us to implement it as standard on all units instead of having to spend resources upgrading them in the field.</s><n/><n/>
@@ -815,6 +811,7 @@ ConversationState/Maps/TZeratul01/Info/Loading Screen Restart=Zeratul must have 
 ConversationState/Maps/TZeratul02/Info/Loading Screen Help=Ma'ar can teleport to Zeratul is he knows exactly where Zeratul is.
 ConversationState/Maps/TZeratul02/Info/Loading Screen Restart=You only need to free the preservers. Find a way to slip in undetected.
 ConversationState/Maps/TZeratul04/Info/Loading Screen Restart=Watch for enemies clustering on the minimap to get an idea of which side they will attack next.
+ConversationState/StoryTips/Lab=<c val="FF8000">Lab</c>
 ConversationState/StoryTips/Raynor02_ResourceCaches/Info/Description=Occasionally you will come across caches of resource pallets, or raw resources. These can be picked up and added to your resources by approaching them with any ground unit.
 ConversationState/StoryTips/Raynor02_SCV=<c val="FF8000">SCV</c>
 ConversationState/StoryTips/Raynor02_SCV/Info/Description=Basic worker -- <c val="FFFF00">SCVs </c>collect resources. Train extra <c val="FFFF00">SCVs</c> at your <c val="FFFF00">Factory</c> to gather resources more quickly.
@@ -825,6 +822,8 @@ ConversationState/StoryTips/Raynor03_Bunker=<c val="FF8000">Bunker</c>
 ConversationState/StoryTips/Raynor03_Bunker/Info/Description=Defensive structure -- A <c val="FFFF00">Bunker </c>protects one full squad, regardless of how many members that squad has. Select a squad and right-click on the Bunker to load them into it. Units inside a Bunker have +1 range to their attacks.
 ConversationState/StoryTips/Raynor03_EngineeringBay=<c val="FF8000">Engineering Bay</c>
 ConversationState/StoryTips/Raynor03_EngineeringBay/Info/Description=Upgrade structure -- You can increase your base defense's range and armor by purchasing upgrades at the <c val="FFFF00">Engineering Bay</c>. An Engineering Bay also allows you to construct <c val="FFFF00">Missile Turrets</c>.
+ConversationState/StoryTips/Research=<c val="FF8000">Research</c>
+ConversationState/StoryTips/Research/Info/Description=You get Zerg and Protoss <c val="FFFF00">Research Points</c> by completing <c val="FFFF00">Bonus Objectives</c> in missions. <n/><n/>Check the <c val="FFFF00">Research Console</c> in the <c val="FFFF00">Laboratory</c> to choose how you'd like to apply your Research Points. <n/><n/>These can be swapped at any time.
 ConversationState/StoryTips/Tosh01_Reapers=<c val="FF8000">Reaper</c>
 ConversationState/StoryTips/Tosh01_Reapers/Info/Description=Light harassment infantry -- <c val="FFFF00">Reapers </c>are fast-moving raiders that can jump up and down cliffs. Reapers are armed with pistols and equipped with D-8 Charges, explosive devices that do extra damage against structures. Can attack ground units only.<n/><n/>Reapers have an upgrade to give them Detection and more sight range, available from the Shadow Ops.
 ConversationState/StoryTips/Tosh01_RichMinerals=<c val="FF8040">Rich Minerals</c>
@@ -1343,6 +1342,7 @@ Param/Value/014C5176=
 Param/Value/02875348=
 Param/Value/03979B30=Laboratory
 Param/Value/0474820C=Raynor Intro
+Param/Value/054E7F71=<c val="00FF40">TIP</c> - 
 Param/Value/05AF9F6B=Display Room Change Panel
 Param/Value/05E70AAE=Big Tuna
 Param/Value/06407F30=Free Bird
@@ -1404,9 +1404,9 @@ Param/Value/263B33AF=Sweet Home Alabama
 Param/Value/26456811=Adjutant
 Param/Value/2689EAD5=
 Param/Value/27ADA1D5=Horner
+Param/Value/28855947=<s val="TooltipTitle_Zerg">
 Param/Value/2B3DF9F6=The Blasters
 Param/Value/2B903D19=
-Param/Value/2BE4CCF0=</s><n/><s val="TooltipNotResearchable_Protoss">Can switch to this Research</s>
 Param/Value/2C09E45A=Rumble
 Param/Value/2D24B41D=Init Rewards ends
 Param/Value/2D6BB27A=Briefing Case Left
@@ -1473,11 +1473,11 @@ Param/Value/5305D4FB=Char Battlefield
 Param/Value/536AC473=Hotspot Leave
 Param/Value/53971E4F=Brian Bode
 Param/Value/53EC5C77=Kachinsky
-Param/Value/54381EAF=<s val="TooltipTitle_Zerg">
 Param/Value/554296D0=Hotspot Leave (With Camera)
 Param/Value/57ABBCC4=Bar Fight
 Param/Value/591D85FD=
 Param/Value/5B337E2E=Terran06
+Param/Value/5B8074F7=<s val="TooltipTitle_Protoss">
 Param/Value/5BA7AED9=Lab
 Param/Value/5C108F18=:
 Param/Value/5D607CC0=Free Bird
@@ -1531,6 +1531,7 @@ Param/Value/7C9331BF=:
 Param/Value/7D38540E=Simulate
 Param/Value/7E4838FF=Rumble
 Param/Value/7E5C57BE=)  Current room = 
+Param/Value/7F115A3F=</s><n/><s val="TooltipNotResearchable_Protoss">Can switch to this Research</s>
 Param/Value/7F3BD7D3=
 Param/Value/7F550214=REPLAY
 Param/Value/8066977A=Zeratul
@@ -1592,6 +1593,7 @@ Param/Value/A612CD29=Mercenary
 Param/Value/A67AD1DF=Char
 Param/Value/A67D1B1C=   Stared Before = 
 Param/Value/A770B1AA=Bridge
+Param/Value/A935DD46=<c val="00FF40">TIP</c> - 
 Param/Value/A97F1CC2=Mar Sara
 Param/Value/A9B0471B=Terran11
 Param/Value/A9E7CA0C=Cancel
@@ -1615,6 +1617,7 @@ Param/Value/B442BB75=Annabelle
 Param/Value/B463AF26=  Character: 
 Param/Value/B4779ADE=New Room: 
 Param/Value/B48BC2F4======  
+Param/Value/B52868F1=<n/>
 Param/Value/B52D277B=Init States Ends
 Param/Value/B588363E=Cooper
 Param/Value/B5946436=Mission Rewards:
@@ -1672,7 +1675,6 @@ Param/Value/D67E2367=%Author%
 Param/Value/D7841535=Rory Swann
 Param/Value/D7DC7C30=Waiting Finishes Session ID Local = 
 Param/Value/D822401B=New Armory Technology
-Param/Value/D8A4B4EF=<s val="TooltipTitle_Protoss">
 Param/Value/DADFB189=facing = 
 Param/Value/DAFC6ABC=Preload Room: 
 Param/Value/DC642613=American Trilogy
@@ -1680,7 +1682,6 @@ Param/Value/DC6A50B2=Corridor
 Param/Value/DCAFD624=Horner Bridge Intro
 Param/Value/DE8C56DB=Return Room = 
 Param/Value/DF2FFC7C=Mission Archieves
-Param/Value/DFCF7EC0=</s><n/><s val="TooltipNotResearchable_Protoss">Can switch to this Research</s>
 Param/Value/E07F138B=Start preloading locations
 Param/Value/E08A5DE1=Void
 Param/Value/E156CE66=
@@ -1713,6 +1714,7 @@ Param/Value/F2D8EFC3=Room: Lab
 Param/Value/F311546A=Archives
 Param/Value/F4DB8A5C=Close
 Param/Value/F6863E74=PH [TBD]
+Param/Value/F6B91135=</s><n/><s val="TooltipNotResearchable_Protoss">Can switch to this Research</s>
 Param/Value/F7062F37=Loading animation 
 Param/Value/F7D2EB63=
 Param/Value/F822AA75=Big Tuna
@@ -1729,21 +1731,16 @@ Param/Value/FDEB51AC=Cantina
 Param/Value/FEDA652A=Big Tuna
 Param/Value/FEDED7E3=Protoss Research Points = 
 Param/Value/FFFD0315=Bridge
-Param/Value/lib_3B48F5E9_1499BCC5=All Armoury Upgrades have been unlocked for this mission.
 Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
 Param/Value/lib_3B48F5E9_27992306=<c val="FF00FF">Topbar Granted: </c>
 Param/Value/lib_3B48F5E9_2865F866=Laser Drill
-Param/Value/lib_3B48F5E9_42EE8A29=Upgrade costs are now flat up-front, like SC2.
 Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
-Param/Value/lib_3B48F5E9_5632AAF2=Full in-game tech tree has been unlocked for this mission.
 Param/Value/lib_3B48F5E9_5D355B93=<c val="00FF40">TIP</c> - A  Dominion force is on the way. When they find Raynor here, they'll bombard the area, then repeatedly deploy forces to kill him.
 Param/Value/lib_3B48F5E9_69230868=<c val="00FF40">TIP</c> - 
 Param/Value/lib_3B48F5E9_6C689267=CNC Edition has <c val="FF0000">new </c>or <c val="FF8040">edited </c>tips in this mission
-Param/Value/lib_3B48F5E9_6F2B07A5=All Armoury Upgrades have been unlocked for the whole campaign.
 Param/Value/lib_3B48F5E9_7101F21A=The Predator has been unlocked.
 Param/Value/lib_3B48F5E9_75E6810B=Ghosts have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_76BEF993=<c val="FF00FF">Topbar Granted: </c>
-Param/Value/lib_3B48F5E9_9395D482=Full in-game tech tree has been unlocked for the whole campaign.
 Param/Value/lib_3B48F5E9_97617AEB=Spectres have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
@@ -1752,7 +1749,6 @@ Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
 Param/Value/lib_3B48F5E9_CD061853=Memes have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_CE432AB3=Memes have been <c val="FF0000">Disabled</c>
 Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
-Param/Value/lib_3B48F5E9_FCAA0D63=Unit and Building costs are now flat up-front, like SC2.
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>

@@ -17,9 +17,10 @@ Added the cheat code "PowerOverwhelming". It unlocks all units and in-game upgra
 Added the cheat code "DeckedOut". It unlocks all Hyperion Armoury upgrades for the current mission.
 Added the cheat code "SwannsGift". It unlocks all Hyperion Armoury upgrades for the whole campaign.
 Fixed memes not being default on
-Actually buffed the autoref range this time
+Actually buffed Anywathe autoref range this time
+Added a message about it being intended that all mercs are unlocked from the start
+Choices in the research lab are no longer permanent. This only works in *new* games
 *Added the "CommandoOnly" cheat code. It unlocks both commandos permanently, and replaces any forces on no-build missions with a commando. (Maybe)
-*Choices in the research lab are no longer permanent.
 
 Outlaws:
 Our meme cutscene can no longer be skipped.
@@ -46,7 +47,6 @@ Moebius Factor:
 Replaced the fields on the bruta island with spikes
 
 Engine:
-*Removed topbar during the no-build segment
 Replaced the field at the first base with 2 spikes and a silo
 Replaced the field at the fourth base with 2 spikes and a silo
 
