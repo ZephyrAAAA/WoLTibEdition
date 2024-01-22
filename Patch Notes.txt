@@ -37,7 +37,10 @@ Outbreak:
 All SCVs now start the mission mining
 
 Safe Haven:
-*Fixed infinite zealots
+Fixed infinite zealots, I guess?
+Fixed rebuild and counterattacks just not firing for the East and South bases.
+Counterattacks now scale softer
+Counterattacks now scale with difficulty. They are easier on lower difficulties.
 
 Moebius Factor:
 Replaced the fields on the bruta island with spikes
