@@ -2,4 +2,5 @@
 <Desc>
     <Include path="UI/Layout/CCTopbar.SC2Layout"/>
     <Include path="UI/Layout/InfoPaneHeroOverride.SC2Layout"/>
+    <Include path="UI/Layout/GraphFrame.SC2Layout"/>
 </Desc>

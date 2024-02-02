@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+  <!-- Graph Line Item Template -->
+  <Frame type="GraphLineItemFrame" name="GraphLineItemFrame">
+    <Frame type="Image" name="Image">
+      <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+      <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+      <Height val="5"/>
+      <Width val="2"/>
+      <Texture val="@UI/Battlenet_Glue_Ladder_Score_Graphs_Line_01"/>
+      <StateGroup name="LineColorState">
+        <!-- Data Set 1 -->
+        <State name="Item0">
+          <When type="Property" frame="$parent" ItemSetIndex="0"/>
+          <Action type="SetProperty" frame="$this" Color="{$parent/$parent/$parent/LegendContainer/LegendFrame/Item0/@ItemColor}"/>
+        </State>
+        <!-- Data Set 2 -->
+        <State name="Item1">
+          <When type="Property" frame="$parent" ItemSetIndex="1"/>
+          <Action type="SetProperty" frame="$this" Color="{$parent/$parent/$parent/LegendContainer/LegendFrame/Item1/@ItemColor}"/>
+        </State>
+        <!-- Data Set 3-->
+        <State name="Item2">
+          <When type="Property" frame="$parent" ItemSetIndex="2"/>
+          <Action type="SetProperty" frame="$this" Color="{$parent/$parent/$parent/LegendContainer/LegendFrame/Item2/@ItemColor}"/>
+        </State>
+      </StateGroup>
+    </Frame>
+  </Frame>
+  <!-- FPS Stat Label Template -->
+  <Frame type="Label" name="StatLabelTemplate">
+    <Style val="MonospaceTemplate"/>
+    <Text val="{$this/TFF/@Text}"/>
+    <Frame type="TextFormatFrame" name="TFF">
+      <Anchor relative="$parent"/>
+    </Frame>
+    <Frame type="Label" name="StatLabel">
+      <Anchor relative="$parent"/>
+      <Visible val="False"/>
+    </Frame>
+  </Frame>
+  <!-- Horizontal Graph Text Template (Y-Axis GameTime) -->
+  <Frame type="GraphTextTickFrame" name="HorizontalTickFrame">
+    <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+    <Width val="125"/>
+    <MinFractionDigits val="0"/>
+    <MaxFractionDigits val="0"/>
+    <ValueFormat val="%value%"/>
+    <FormatTime val="True"/>
+    <Unclipped val="True"/>
+    <Frame type="Image" name="TickImage">
+      <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+      <Anchor side="Bottom" relative="$parent/Label" pos="Min" offset="-5"/>
+      <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+      <Width val="2"/>
+      <Color val="128,128,128"/>
+    </Frame>
+    <Frame type="Label" name="Label">
+      <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Max" offset="-66"/>
+      <Style val="ScoreScreenGraphTickLabel"/>
+      <Color val="255,255,255"/>
+    </Frame>
+  </Frame>
+  <!-- Vertical Graph Text Template (X-Axis Amount) -->
+  <Frame type="GraphTextTickFrame" name="VerticalTickFrame">
+    <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+    <Height val="25"/>
+    <MinFractionDigits val="0"/>
+    <MaxFractionDigits val="0"/>
+    <AbsoluteValue val="True"/>
+    <Unclipped val="True"/>
+    <Frame type="Image" name="TickImage">
+      <Anchor side="Top" relative="$parent" pos="Mid" offset="-2"/>
+      <Anchor side="Bottom" relative="$parent" pos="Mid" offset="-2"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+      <Width val="10"/>
+      <Height val="2"/>
+      <Color val="128,128,128"/>
+    </Frame>
+    <Frame type="Label" name="Label">
+      <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Right" relative="$parent/TickImage" pos="Min" offset="-5"/>
+      <Style val="ScoreScreenGraphTickLabel"/>
+      <Color val="255,255,255"/>
+    </Frame>
+  </Frame>
+  <!-- Vertical Long Graph Text Template (X-Axis Amount) -->
+  <Frame type="GraphTextTickFrame" name="VerticalLongTickFrame">
+    <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+    <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+    <Height val="20"/>
+    <MinFractionDigits val="0"/>
+    <MaxFractionDigits val="0"/>
+    <Alpha val="50"/>
+    <Frame type="Image" name="TickImage">
+      <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+      <Height val="2"/>
+      <Color val="128,128,128"/>
+    </Frame>
+    <Frame type="Label" name="Label">
+      <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+      <Style val="ScoreScreenGraphTickLabel"/>
+      <Color val="255,255,255"/>
+    </Frame>
+    <!-- Hide First Tick -->
+    <StateGroup name="TickPosition">
+      <DefaultState val="Default"/>
+      <State name="First">
+        <When type="AnimationState" TickPosition="First"/>
+        <Action type="SetProperty" Frame="TickImage" Visible="False"/>
+        <Action type="SetProperty" Frame="Label" Visible="False"/>
+      </State>
+      <State name="Default">
+        <Action type="SetProperty" Frame="TickImage" Visible="True"/>
+        <Action type="SetProperty" Frame="Label" Visible="True"/>
+      </State>
+    </StateGroup>
+  </Frame>
+  <!-- Graph Legend Template -->
+  <Frame type="GraphLegendItemFrame" name="GraphLegendItemTemplate">
+    <Height val="25"/>
+    <CollapseLayout val="True"/>
+    <!-- Item Color/Image -->
+    <Frame type="Image" name="ColorImage">
+      <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Left" relative="$parent" pos="Min" offset="5"/>
+      <Width val="20"/>
+      <Height val="20"/>
+      <Color val="{$parent/@ItemColor}"/>
+    </Frame>
+    <!-- Item Name -->
+    <Frame type="Label" name="NameLabel">
+      <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+      <Anchor side="Left" relative="$parent/ColorImage" pos="Max" offset="5"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+      <Text val="{$parent/@ItemName}"/>
+    </Frame>
+  </Frame>
+  <!-- Graph Template -->
+  <Frame type="GraphFrame" name="GraphFrameTemplate">
+    <Insets top="15" left="0" bottom="-1" right="15"/>
+    <!-- Inner Background For Graph -->
+    <Frame type="Image" name="Background">
+      <Anchor relative="$parent/LineGraph"/>
+      <Color val="50,50,50"/>
+    </Frame>
+    <!-- Outside Border Image -->
+    <Frame type="Image" name="BackgroundImage">
+      <Anchor relative="$parent"/>
+      <Texture val="Assets\Textures\ui_ingame_leaderboard_frame.dds"/>
+      <TextureType val="Border"/>
+    </Frame>
+    <!-- Prints GameTime To X-Axis -->
+    <Frame type="GraphIntervalAxisFrame" name="GraphAxisX">
+      <Anchor side="Left" relative="$parent/GraphAxisY" pos="Max" offset="0"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+      <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+      <Height val="100"/>
+      <TickDesc val="GraphFrame/HorizontalTickFrame"/>
+      <Vertical val="False"/>
+      <TickInterval val="90"/>  <!-- every x sec print to x-axis -->   
+      <RenderPriority val="513"/>
+    </Frame>
+    <!-- Unit Amount Y Axis -->
+    <Frame type="GraphDistributedAxisFrame" name="GraphAxisY">
+      <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+      <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+      <Anchor side="Bottom" relative="$parent/GraphAxisX" pos="Min" offset="0"/>
+      <Width val="100"/>
+      <TickDesc val="GraphFrame/VerticalTickFrame"/>
+      <TickDistribution val="12"/>  <!-- Amount Spacing -->
+      <Vertical val="True"/>
+      <RenderPriority val="513"/>
+    </Frame>
+    <!-- Unit Amount Y Axis Long (Intermediate Amount)-->
+    <Frame type="GraphIntervalAxisFrame" name="GraphLongAxisY">
+      <Anchor side="Left" relative="$parent/LineGraph" pos="Min" offset="0"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+      <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+      <Anchor side="Bottom" relative="$parent/GraphAxisX" pos="Min" offset="0"/>
+      <TickDesc val="GraphFrame/VerticalLongTickFrame"/>
+      <TickInterval val="25"/> <!-- Amount Spacing -->   
+      <Vertical val="True"/>
+    </Frame>
+    <!-- Line Graph Frame -->
+    <Frame type="GraphLinePlotFrame" name="LineGraph">
+      <Anchor side="Top" relative="$parent" pos="Min" offset="2"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="-2"/>
+      <Anchor side="Left" relative="$parent/GraphAxisY" pos="Max" offset="0"/>
+      <Anchor side="Bottom" relative="$parent/GraphAxisX" pos="Min" offset="0"/>
+      <ItemDesc val="GraphFrame/GraphLineItemFrame"/>
+      <StartOffset val="-1"/>
+      <EndOffset val="1"/>
+      <RenderPriority val="513"/>
+    </Frame>
+    <!-- Y Label -->
+    <Frame type="Label" name="YAxisLabel">
+      <Anchor side="Bottom" relative="$parent" pos="Max" offset="-80"/>
+      <Anchor side="Left" relative="$parent" pos="Min" offset="25"/>
+      <Style val="ScoreScreenGraphAxisLabel"/>
+      <Color val="255,255,255"/>
+      <Text val="Framerate"/>
+      <RotationPosition val="MiddleLeft"/>
+      <Rotation val="-90"/>
+    </Frame>
+    <!-- X Label -->
+    <Frame type="Label" name="XAxisLabel">
+      <Anchor side="Bottom" relative="$parent" pos="Max" offset="-10"/>
+      <Anchor side="Right" relative="$parent" pos="Max" offset="-21"/>
+      <Style val="ScoreScreenGraphAxisLabel"/>
+      <Color val="255,255,255"/>
+      <Text val="@UI/ScoreScreenGraphs/ElapsedGameTime"/>
+    </Frame>
+    <!-- Current FPS -->
+    <Frame type="Label" name="FPSCur" template="GraphFrame/StatLabelTemplate">
+      <Anchor side="Bottom" relative="$parent" pos="Max" offset="-10"/>
+      <Anchor side="Left" relative="$parent" pos="Min" offset="10"/>
+      <Frame type="TextFormatFrame" name="TFF">
+        <FormatText val="@UI/FPS/Current"/>
+        <Replacement index="0" val="{$ancestor[@name=UIContainer]/FullscreenUpperContainer/TriggerContainer/SystemInfoOutput/SystemInfoPanel/FramerateFrame/FramerateLabel/@Text}"/>
+        <ReplacedName index="0" val="amount"/>
+      </Frame>
+    </Frame>
+    <!-- FPS High -->
+    <Frame type="Label" name="FPSHigh" template="GraphFrame/StatLabelTemplate">
+      <Anchor side="Bottom" relative="$parent/FpsCur" pos="Max" offset="0"/>
+      <Anchor side="Left" relative="$parent/FpsCur" pos="Max" offset="20"/>
+      <Frame type="TextFormatFrame" name="TFF">
+        <FormatText val="@UI/FPS/High"/>
+        <Replacement index="0" val="{$parent/StatLabel/@Text}"/>
+        <ReplacedName index="0" val="amount"/>
+      </Frame>
+    </Frame>
+    <!-- FPS Low -->
+    <Frame type="Label" name="FPSLow" template="GraphFrame/StatLabelTemplate">
+      <Anchor side="Bottom" relative="$parent/FpsHigh" pos="Max" offset="0"/>
+      <Anchor side="Left" relative="$parent/FpsHigh" pos="Max" offset="20"/>
+      <Frame type="TextFormatFrame" name="TFF">
+        <FormatText val="@UI/FPS/Low"/>
+        <Replacement index="0" val="{$parent/StatLabel/@Text}"/>
+        <ReplacedName index="0" val="amount"/>
+      </Frame>
+    </Frame>
+    <!-- FPS Avg -->
+    <Frame type="Label" name="FPSAvg" template="GraphFrame/StatLabelTemplate">
+      <Anchor side="Bottom" relative="$parent/FPSLow" pos="Max" offset="0"/>
+      <Anchor side="Left" relative="$parent/FPSLow" pos="Max" offset="20"/>
+      <Frame type="TextFormatFrame" name="TFF">
+        <FormatText val="@UI/FPS/Avg"/>
+        <Replacement index="0" val="{$parent/StatLabel/@Text}"/>
+        <ReplacedName index="0" val="amount"/>
+      </Frame>
+    </Frame>
+    <!-- FPS Cycles -->
+    <Frame type="Label" name="FPSCycles" template="GraphFrame/StatLabelTemplate">
+      <Anchor side="Bottom" relative="$parent/FPSAvg" pos="Max" offset="0"/>
+      <Anchor side="Left" relative="$parent/FPSAvg" pos="Max" offset="20"/>
+      <Frame type="TextFormatFrame" name="TFF">
+        <FormatText val="@UI/FPS/Cycles"/>
+        <Replacement index="0" val="{$parent/StatLabel/@Text}"/>
+        <ReplacedName index="0" val="amount"/>
+      </Frame>
+    </Frame>
+    <!-- Legend Container -->
+    <Frame type="Frame" name="LegendContainer">
+      <Anchor relative="$parent"/>
+      <RenderPriority val="517"/>
+      <Visible val="False"/>
+      <Frame type="GraphLegendFrame" name="LegendFrame">
+        <Anchor side="Top" relative="$parent" pos="Min" offset="5"/>
+        <Anchor side="Left" relative="$parent/$parent/GraphLongAxisY" pos="Min" offset="5"/>
+        <Anchor side="Bottom" relative="$this/Item2" pos="Max" offset="0"/>
+        <Width val="200"/>
+        <Frame type="Image" name="Background">
+          <Anchor relative="$parent"/>
+          <Visible val="False"/>
+        </Frame>
+        <!-- Init Triggers Set Legend Item Values (Name|Color) -->
+        <Frame type="GraphLegendItemFrame" name="Item0" template="GraphFrame/GraphLegendItemTemplate">
+          <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+          <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+          <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        </Frame>
+        <Frame type="GraphLegendItemFrame" name="Item1" template="GraphFrame/GraphLegendItemTemplate">
+          <Anchor side="Top" relative="$parent/Item0" pos="Max" offset="0"/>
+          <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+          <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        </Frame>
+        <Frame type="GraphLegendItemFrame" name="Item2" template="GraphFrame/GraphLegendItemTemplate">
+          <Anchor side="Top" relative="$parent/Item1" pos="Max" offset="0"/>
+          <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+          <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+        </Frame>
+      </Frame>
+    </Frame>
+  </Frame>
+
+  <Frame type="SystemInfoTooltip" name="SystemInfoTooltipTemplate" template="SystemInfoPanel/SystemInfoTooltipTemplate"/>
+
+  <Frame type="Frame" name="SystemInfoOutputTemplate" template="GraphFrame/SystemInfoTooltipTemplate">
+    <Anchor side="Top" relative="$GameUI" pos="Min" offset="-9999"/>
+    <Anchor side="Left" relative="$GameUI" pos="Min" offset="0"/>
+  </Frame>
+
+  <!-- GameUI -->
+  <Frame type="GameUI" name="GameUI" file="GameUI">
+
+    <Frame type="Frame" name="UIContainer">
+
+      <Frame type="Frame" name="FullscreenUpperContainer/TriggerContainer">
+
+        <Frame type="Frame" name="SystemInfoOutput" template="GraphFrame/SystemInfoOutputTemplate"/>
+
+        <Frame type="Frame" name="ConstraintFrame">
+          <Anchor side="Top" relative="$parent" pos="Mid" offset="-450"/>
+          <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+          <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+          <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+          <Width val="{$parent/@Width}"/>
+          <Height val="750"/>
+          <Visible val="{$GraphFrame/@Visible}"/>
+
+          <Frame type="Control" name="DraggableFrame">
+            <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Bottom" relative="$this/ScalingCorner" pos="Max" offset="0"/>
+            <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+            <Anchor side="Right" relative="$this/ScalingCorner" pos="Max" offset="0"/>
+            <Draggable val="true"/>
+            <DragConstraintFrame val="$parent"/>
+            <DragCursor val="GripClosed"/>
+            <DragHoverCursor val="GripOpen"/>
+
+            <Frame type="GraphFrame" name="GraphFrame" template="GraphFrame/GraphFrameTemplate">
+              <Anchor relative="$parent"/>
+              <Handle val="GraphFrame"/>
+            </Frame>
+
+            <Frame type="Frame" name="ScalingCornerConstraintFrame">
+              <Anchor side="Top" relative="$parent" pos="Min" offset="400"/>
+              <Anchor side="Bottom" relative="$parent/$parent" pos="Max" offset="0"/>
+              <Anchor side="Left" relative="$parent" pos="Min" offset="725"/>
+              <Anchor side="Right" relative="$parent/$parent" pos="Max" offset="0"/>
+            </Frame>
+
+            <Frame type="Control" name="ScalingCorner">
+              <Anchor side="Top" relative="$parent" pos="Min" offset="400"/>
+              <Anchor side="Left" relative="$parent" pos="Min" offset="725"/>
+              <Width val="20"/>
+              <Height val="20"/>
+              <Draggable val="True"/>
+              <DragConstraintFrame val="$parent/ScalingCornerConstraintFrame"/>
+              <DragCursor val="GripClosed"/>
+              <DragHoverCursor val="GripOpen"/>
+
+              <Frame type="Image" name="ScalingCornerBackgroundImage">
+                <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+                <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+                <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+                <Texture val="Assets/Textures/ui_battlenet_glues_collection_bundles_skin_cornerdiagonal.dds"/>
+                <RotationPosition val="MiddleCenter"/>
+                <Rotation val="90"/>
+                <Desaturated val="True"/>
+                <DesaturationColor val="95,95,95"/>
+                <AcceptsMouseTooltip val="True"/>
+                <TooltipAnchorPosition val="BottomLeft"/>
+                <Tooltip val="@UI/FPS/Drag"/>
+              </Frame>
+
+            </Frame>
+          </Frame>
+        </Frame>
+        <!-- Display Graph Toggle -->
+        <Frame type="Button" name="GraphButton" template="StandardSmallButtonTemplates/StandardSmallBaseButtonTemplate">
+          <Toggleable val="True"/>
+          <AcceptsMouse val="False"/>
+          <Shortcut val="Backspace"/>
+          <Alpha val="0"/>
+
+          <Frame type="Frame" name="AnchorFrame">
+            <Anchor side="Top" relative="$GraphFrame" pos="Min" offset="0"/>
+            <Anchor side="Left" relative="$GraphFrame" pos="Min" offset="0"/>
+            <Width val="1"/>
+            <Height val="1"/>
+          </Frame>
+
+          <Animation name="GraphToggle">
+            <Event event="Toggled" action="DirectionForward,Play"/>
+            <Event event="Normal" action="DirectionReverse,Play"/>
+            <Controller type="Visibility" frame="$GraphFrame" end="Pause">
+              <Key type="Bool" time="0" value="False"/>
+              <Key type="Bool" time="0" value="True"/>
+            </Controller>
+          </Animation>
+        </Frame>
+        <!-- Graph Hotkey Label -->
+        <Frame type="Label" name="Hotkey">
+          <Anchor side="Bottom" relative="$GraphFrame" pos="Max" offset="25"/>
+          <Anchor side="Left" relative="$GraphFrame" pos="Min" offset="10"/>
+          <Style val="MonospaceTemplate"/>
+          <Text val="Toggle On/Off (Backspace)"/>
+          <Visible val="{$GraphFrame/@Visible}"/>
+        </Frame>
+
+        <Frame type="EditBox" name="EB" template="StandardTemplates/StandardEditBoxTemplate">
+          <Anchor side="Top" relative="$parent" pos="Min" offset="-9999"/>
+          <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+          <Width val="250"/>
+          <Height val="60"/>
+          <Handle val="EB"/>
+          <AcceptsMouse val="False"/>
+          <!-- Frame cannot be hidden for AlternateTime & DelayInput to work -->
+          <UseAlternateTime val="True"/>
+          <InputDelayTimeout val="1"/> 
+
+          <StateGroup name="Tracker_State">
+            <DefaultState val="Disabled"/>
+            <State name="Enabled">
+              <When type="AnimationState" FPSTracker="Enabled"/>
+              <Action type="SetProperty" frame="$parent/GraphButton" Toggled="True"/>
+            </State>
+            <State name="Disabled">
+              <When type="AnimationState" FPSTracker="Disabled"/>
+              <Action type="SetProperty" frame="$parent/GraphButton" Toggled="False"/>
+            </State>
+          </StateGroup>
+
+          <StateGroup name="Game_State">
+            <State name="Paused_Enabled">
+              <When type="StateGroup" frame="$this" Tracker_State="Enabled"/>
+              <When type="Property" frame="$ancestor[@name=UIContainer]/FullscreenLowerContainer/PausePanel" Visible="True"/>
+              <Action type="SetProperty" frame="$this" Text=""/>
+            </State>
+            <State name="NotPaused_Enabled">
+              <When type="StateGroup" frame="$this" Tracker_State="Enabled"/>
+              <When type="Property" frame="$ancestor[@name=UIContainer]/FullscreenLowerContainer/PausePanel" Visible="False"/>
+              <Action type="SetProperty" frame="$this" Text="{$parent/SystemInfoOutput/SystemInfoPanel/FramerateFrame/FramerateLabel/@Text}"/>
+            </State>
+            <State name="Paused_Disabled">
+              <When type="StateGroup" frame="$this" Tracker_State="Disabled"/>
+              <When type="Property" frame="$ancestor[@name=UIContainer]/FullscreenLowerContainer/PausePanel" Visible="True"/>
+              <Action type="SetProperty" frame="$this" Text=""/>
+            </State>
+            <State name="NotPaused_Disabled">
+              <When type="StateGroup" frame="$this" Tracker_State="Disabled"/>
+              <When type="Property" frame="$ancestor[@name=UIContainer]/FullscreenLowerContainer/PausePanel" Visible="False"/>
+              <Action type="SetProperty" frame="$this" Text=""/>
+            </State>
+          </StateGroup>
+
+        </Frame>
+      </Frame>
+    </Frame>
+  </Frame>
+</Desc>
