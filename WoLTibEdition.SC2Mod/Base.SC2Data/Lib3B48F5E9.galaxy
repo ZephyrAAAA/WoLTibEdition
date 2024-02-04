@@ -24,13 +24,6 @@ void lib3B48F5E9_InitVariables () {
 
     lib3B48F5E9_gv_fleetGroup = UnitGroupEmpty();
     lib3B48F5E9_gv_memes = true;
-    lib3B48F5E9_gv_jokeTimer = TimerCreate();
-    lib3B48F5E9_gv_graph.lv_frame = c_invalidDialogControlId;
-    lib3B48F5E9_gv_graph.lv_editBox = c_invalidDialogControlId;
-    lib3B48F5E9_gv_graph.lv_fps_High = c_invalidDialogControlId;
-    lib3B48F5E9_gv_graph.lv_fps_Low = c_invalidDialogControlId;
-    lib3B48F5E9_gv_graph.lv_fps_avg = c_invalidDialogControlId;
-    lib3B48F5E9_gv_graph.lv_fps_cycles = c_invalidDialogControlId;
 }
 
 // Custom Script
@@ -718,34 +711,6 @@ void lib3B48F5E9_gf_Taldarimify (playergroup lp_players) {
     }
 }
 
-void lib3B48F5E9_gf_FPSTrackerOnOff (bool lp_state, playergroup lp_player) {
-    // Automatic Variable Declarations
-    // Implementation
-    if ((lp_state == true)) {
-        DialogControlSetAnimationState(lib3B48F5E9_gv_graph.lv_editBox, lp_player, "FPSTracker", "Enabled");
-    }
-    else {
-        DialogControlSetAnimationState(lib3B48F5E9_gv_graph.lv_editBox, lp_player, "FPSTracker", "Disabled");
-    }
-}
-
-void lib3B48F5E9_gf_GraphLineColor (color lp_color, int lp_line, playergroup lp_player) {
-    // Automatic Variable Declarations
-    // Implementation
-    DialogControlSetDataColor(lib3B48F5E9_gv_graph.lv_frame, lp_player, lp_color, lp_line);
-}
-
-fixed lib3B48F5E9_gf_GetRealElapsedTime () {
-    // Automatic Variable Declarations
-    // Implementation
-    if ((GameIsOnline() == true)) {
-        return (GameGetMissionTime() / GameGetSpeed());
-    }
-    else {
-        return GameGetMissionTime();
-    }
-}
-
 trigger auto_lib3B48F5E9_gf_NewModTips_Trigger = null;
 
 void lib3B48F5E9_gf_NewModTips () {
@@ -1251,134 +1216,6 @@ bool lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Func (bool testConds, bool runActio
 //--------------------------------------------------------------------------------------------------
 void lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Init () {
     lib3B48F5E9_gt_UnlockAllArmouryUpgrades = TriggerCreate("lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Func");
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Joke Check
-//--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_JokeCheck_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Conditions
-    if (testConds) {
-        if (!((lib3B48F5E9_gv_memes == true))) {
-            return false;
-        }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    while (true) {
-        TimerStart(lib3B48F5E9_gv_jokeTimer, 180.0, false, c_timeReal);
-        while (!((TimerGetDuration(lib3B48F5E9_gv_jokeTimer) <= 0.0) && (StringToInt(libNtve_gf_DialogItemEditValue(lib3B48F5E9_gv_graph.lv_editBox, EventPlayer())) < 15))) {
-            Wait(5.0, c_timeGame);
-        }
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_72DE95DF"));
-    }
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_JokeCheck_Init () {
-    lib3B48F5E9_gt_JokeCheck = TriggerCreate("lib3B48F5E9_gt_JokeCheck_Func");
-    TriggerAddEventTimeElapsed(lib3B48F5E9_gt_JokeCheck, 0.125, c_timeGame);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Graph Init
-//--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_GraphInit_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    DialogControlHookupStandard(c_triggerControlTypeGraphFrame, "$GraphFrame");
-    lib3B48F5E9_gv_graph.lv_frame = DialogControlLastCreated();
-    DialogControlHookupStandard(c_triggerControlTypeEditBox, "$EB");
-    lib3B48F5E9_gv_graph.lv_editBox = DialogControlLastCreated();
-    TriggerAddEventDialogControl(lib3B48F5E9_gt_GraphUpdate, c_playerAny, lib3B48F5E9_gv_graph.lv_editBox, c_triggerControlEventTypeTextChanged);
-    DialogControlHookupStandard(c_triggerControlTypeLabel, "$GraphFrame/FPSHigh/StatLabel");
-    lib3B48F5E9_gv_graph.lv_fps_High = DialogControlLastCreated();
-    DialogControlHookupStandard(c_triggerControlTypeLabel, "$GraphFrame/FPSLow/StatLabel");
-    lib3B48F5E9_gv_graph.lv_fps_Low = DialogControlLastCreated();
-    DialogControlHookupStandard(c_triggerControlTypeLabel, "$GraphFrame/FPSAvg/StatLabel");
-    lib3B48F5E9_gv_graph.lv_fps_avg = DialogControlLastCreated();
-    DialogControlHookupStandard(c_triggerControlTypeLabel, "$GraphFrame/FPSCycles/StatLabel");
-    lib3B48F5E9_gv_graph.lv_fps_cycles = DialogControlLastCreated();
-    DialogControlAddDataPoint(lib3B48F5E9_gv_graph.lv_frame, PlayerGroupAll(), lib3B48F5E9_gf_GetRealElapsedTime(), 0.0, 1);
-    lib3B48F5E9_gf_GraphLineColor(Color(0.00, 100.00, 50.20), 1, PlayerGroupAll());
-    lib3B48F5E9_gf_FPSTrackerOnOff(true, PlayerGroupAll());
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_GraphInit_Init () {
-    lib3B48F5E9_gt_GraphInit = TriggerCreate("lib3B48F5E9_gt_GraphInit_Func");
-    TriggerAddEventMapInit(lib3B48F5E9_gt_GraphInit);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Graph Update
-//--------------------------------------------------------------------------------------------------
-bool lib3B48F5E9_gt_GraphUpdate_Func (bool testConds, bool runActions) {
-    // Variable Declarations
-    fixed lv_timeStamp;
-    string lv_payload;
-    fixed lv_fps;
-    int lv_avg;
-
-    // Automatic Variable Declarations
-    // Variable Initialization
-    lv_timeStamp = lib3B48F5E9_gf_GetRealElapsedTime();
-    lv_payload = libNtve_gf_DialogItemEditValue(lib3B48F5E9_gv_graph.lv_editBox, EventPlayer());
-
-    // Conditions
-    if (testConds) {
-        if (!((lv_payload != ""))) {
-            return false;
-        }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    lib3B48F5E9_gv_graph.lv_interval[EventPlayer()] += 1;
-    if ((lib3B48F5E9_gv_graph.lv_interval[EventPlayer()] == 1)) {
-        return true;
-    }
-
-    lv_fps = StringToFixed(lv_payload);
-    lib3B48F5E9_gv_graph.lv_total[EventPlayer()] += FixedToInt(lv_fps);
-    lv_avg = (lib3B48F5E9_gv_graph.lv_total[EventPlayer()] / lib3B48F5E9_gv_graph.lv_interval[EventPlayer()]);
-    DialogControlAddDataPoint(lib3B48F5E9_gv_graph.lv_frame, PlayerGroupSingle(EventPlayer()), lv_timeStamp, lv_fps, 1);
-    if ((lv_fps > lib3B48F5E9_gv_graph.lv_high[EventPlayer()])) {
-        lib3B48F5E9_gv_graph.lv_high[EventPlayer()] = lv_fps;
-        libNtve_gf_SetDialogItemText(lib3B48F5E9_gv_graph.lv_fps_High, FixedToText(lib3B48F5E9_gv_graph.lv_high[EventPlayer()], 0), PlayerGroupSingle(EventPlayer()));
-    }
-
-    if ((lib3B48F5E9_gv_graph.lv_interval[EventPlayer()] == 2)) {
-        lib3B48F5E9_gv_graph.lv_low[EventPlayer()] = lv_fps;
-    }
-
-    if ((lv_fps < lib3B48F5E9_gv_graph.lv_low[EventPlayer()]) && (lib3B48F5E9_gv_graph.lv_interval[EventPlayer()] > 2)) {
-        lib3B48F5E9_gv_graph.lv_low[EventPlayer()] = lv_fps;
-        libNtve_gf_SetDialogItemText(lib3B48F5E9_gv_graph.lv_fps_Low, FixedToText(lib3B48F5E9_gv_graph.lv_low[EventPlayer()], 0), PlayerGroupSingle(EventPlayer()));
-    }
-
-    libNtve_gf_SetDialogItemText(lib3B48F5E9_gv_graph.lv_fps_avg, IntToText(lv_avg), PlayerGroupSingle(EventPlayer()));
-    libNtve_gf_SetDialogItemText(lib3B48F5E9_gv_graph.lv_fps_cycles, IntToText(lib3B48F5E9_gv_graph.lv_interval[EventPlayer()]), PlayerGroupSingle(EventPlayer()));
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void lib3B48F5E9_gt_GraphUpdate_Init () {
-    lib3B48F5E9_gt_GraphUpdate = TriggerCreate("lib3B48F5E9_gt_GraphUpdate_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -2010,9 +1847,6 @@ void lib3B48F5E9_InitTriggers () {
     lib3B48F5E9_gt_SetupPermaCheats_Init();
     lib3B48F5E9_gt_UnlockAllUnits_Init();
     lib3B48F5E9_gt_UnlockAllArmouryUpgrades_Init();
-    lib3B48F5E9_gt_JokeCheck_Init();
-    lib3B48F5E9_gt_GraphInit_Init();
-    lib3B48F5E9_gt_GraphUpdate_Init();
     lib3B48F5E9_gt_ShowMetheMoney_Init();
     lib3B48F5E9_gt_FullPowerDrill_Init();
     lib3B48F5E9_gt_GrantLaserDrillTopbar_Init();

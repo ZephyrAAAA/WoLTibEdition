@@ -13868,6 +13868,7 @@
             <Item Type="Category" Library="3B48F5E9" Id="3981BAE7"/>
         </Element>
         <Element Type="Variable" Id="62574BEB">
+            <Disabled/>
             <VariableType>
                 <Type Value="timer"/>
             </VariableType>
@@ -13880,6 +13881,7 @@
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000193"/>
         </Element>
         <Element Type="Trigger" Id="24F615A8">
+            <Disabled/>
             <Event Type="FunctionCall" Library="3B48F5E9" Id="3705C13A"/>
             <Condition Type="FunctionCall" Library="3B48F5E9" Id="62CBC866"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="103F5388"/>
@@ -14064,6 +14066,7 @@
             <ValueType Type="text"/>
         </Element>
         <Element Type="Structure" Id="7D1EEF0E">
+            <Disabled/>
             <Variable Type="Variable" Library="3B48F5E9" Id="06B7B557"/>
             <Variable Type="Variable" Library="3B48F5E9" Id="C153A6A6"/>
             <Variable Type="Variable" Library="3B48F5E9" Id="BF2AD7E2"/>
@@ -14174,12 +14177,14 @@
             <ValueType Type="int"/>
         </Element>
         <Element Type="Variable" Id="939DAEAF">
+            <Disabled/>
             <VariableType>
                 <Type Value="struct"/>
                 <TypeElement Type="Structure" Library="3B48F5E9" Id="7D1EEF0E"/>
             </VariableType>
         </Element>
         <Element Type="Trigger" Id="01316E3E">
+            <Disabled/>
             <Event Type="FunctionCall" Library="3B48F5E9" Id="22848B39"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="2E6A1E2C"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="3F177714"/>
@@ -14528,6 +14533,7 @@
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000192"/>
         </Element>
         <Element Type="Trigger" Id="C3738709">
+            <Disabled/>
             <Variable Type="Variable" Library="3B48F5E9" Id="21417388"/>
             <Variable Type="Variable" Library="3B48F5E9" Id="82EC7E4F"/>
             <Variable Type="Variable" Library="3B48F5E9" Id="51BFED5C"/>
@@ -15356,6 +15362,7 @@
         </Element>
         <Element Type="FunctionDef" Id="D14A9812">
             <Label Type="Label" Library="E14E5BC5" Id="815E370A"/>
+            <Disabled/>
             <FlagAction/>
             <Parameter Type="ParamDef" Library="3B48F5E9" Id="8E37FF3B"/>
             <Parameter Type="ParamDef" Library="3B48F5E9" Id="52A96A94"/>
@@ -15470,6 +15477,7 @@
         </Element>
         <Element Type="FunctionDef" Id="C4FDB459">
             <Label Type="Label" Library="E14E5BC5" Id="815E370A"/>
+            <Disabled/>
             <FlagAction/>
             <Parameter Type="ParamDef" Library="3B48F5E9" Id="1D101005"/>
             <Parameter Type="ParamDef" Library="3B48F5E9" Id="B893AB27"/>
@@ -15539,6 +15547,7 @@
         <Element Type="FunctionDef" Id="B7E12812">
             <Identifier>TriggerAddEventDialogControl</Identifier>
             <Label Type="Label" Library="Ntve" Id="00000038"/>
+            <Disabled/>
             <FlagAction/>
             <FlagNative/>
             <Parameter Type="ParamDef" Library="3B48F5E9" Id="E6B016C4"/>
@@ -15589,6 +15598,7 @@
         </Element>
         <Element Type="FunctionDef" Id="8CE18CAC">
             <Label Type="Label" Library="E14E5BC5" Id="815E370A"/>
+            <Disabled/>
             <FlagCall/>
             <ReturnType>
                 <Type Value="fixed"/>
