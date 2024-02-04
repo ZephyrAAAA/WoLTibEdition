@@ -1735,17 +1735,21 @@ Param/Value/FDEB51AC=Cantina
 Param/Value/FEDA652A=Big Tuna
 Param/Value/FEDED7E3=Protoss Research Points = 
 Param/Value/FFFD0315=Bridge
+Param/Value/lib_3B48F5E9_1499BCC5=All armoury upgrades unlocked for mission.
 Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
 Param/Value/lib_3B48F5E9_27992306=<c val="FF00FF">Topbar Granted: </c>
 Param/Value/lib_3B48F5E9_2865F866=Laser Drill
 Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
+Param/Value/lib_3B48F5E9_5632AAF2=All units unlocked for mission.
 Param/Value/lib_3B48F5E9_5D355B93=<c val="00FF40">TIP</c> - A  Dominion force is on the way. When they find Raynor here, they'll bombard the area, then repeatedly deploy forces to kill him.
 Param/Value/lib_3B48F5E9_69230868=<c val="00FF40">TIP</c> - 
 Param/Value/lib_3B48F5E9_6C689267=CNC Edition has <c val="FF0000">new </c>or <c val="FF8040">edited </c>tips in this mission
+Param/Value/lib_3B48F5E9_6F2B07A5=All armoury upgrades unlocked for campaign.
 Param/Value/lib_3B48F5E9_7101F21A=The Predator has been unlocked.
 Param/Value/lib_3B48F5E9_72DE95DF=FPS is below 15, Horner complains
 Param/Value/lib_3B48F5E9_75E6810B=Ghosts have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_76BEF993=<c val="FF00FF">Topbar Granted: </c>
+Param/Value/lib_3B48F5E9_9395D482=All units unlocked for campaign.
 Param/Value/lib_3B48F5E9_97617AEB=Spectres have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_AB0D213A=The Fusion Core has been unlocked.
 Param/Value/lib_3B48F5E9_B38D2BBD=<c val="FF00FF">Upgrade Granted: </c>Infantry Ultra-Capacitors (Infantry get +20% attack speed)
