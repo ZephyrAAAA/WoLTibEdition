@@ -11284,7 +11284,9 @@ void gf_CharRoomUIDisplayUI (int lp_uI) {
         libCamp_gf_DisplayMercenaryPanel(gt_CharRoomUILeaveUI);
     }
     else if (auto1AA3799C_val == ge_CharRoomUI_CharRoomUIResearch) {
+        TriggerEnable(libCamp_gt_TS_ResearchUIPurchase, false);
         libCamp_gf_DisplayResearchPanel(gt_CharRoomUILeaveUI);
+        gf_TS_ResearchUIUpdateOverwrite();
     }
     else {
     }
