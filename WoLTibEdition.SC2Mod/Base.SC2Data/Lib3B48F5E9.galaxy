@@ -1493,9 +1493,9 @@ bool lib3B48F5E9_gt_SwapCostModel_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_FCAA0D63"));
     ConversationDataStateSetValue("CCEditionPermanence|SC2Cost", 1);
-    TriggerExecute(lib3B48F5E9_gt_SetupPermaCheats, true, false);
+    ToggleCost();
     return true;
 }
 
@@ -1515,9 +1515,9 @@ bool lib3B48F5E9_gt_SwapUpgradeCostModel_Func (bool testConds, bool runActions) 
         return true;
     }
 
-    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringToText(""));
+    UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, StringExternal("Param/Value/lib_3B48F5E9_42EE8A29"));
     ConversationDataStateSetValue("CCEditionPermanence|SC2Upgrades", 1);
-    TriggerExecute(lib3B48F5E9_gt_SetupPermaCheats, true, false);
+    ToggleCostUpgrade();
     return true;
 }
 

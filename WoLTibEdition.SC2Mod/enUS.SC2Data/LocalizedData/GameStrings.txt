@@ -1739,6 +1739,7 @@ Param/Value/lib_3B48F5E9_1499BCC5=All armoury upgrades unlocked for mission.
 Param/Value/lib_3B48F5E9_252F3620=<c val="FF00FF">Upgrade Granted: </c>
 Param/Value/lib_3B48F5E9_27992306=<c val="FF00FF">Topbar Granted: </c>
 Param/Value/lib_3B48F5E9_2865F866=Laser Drill
+Param/Value/lib_3B48F5E9_42EE8A29=Upgrade costs are now Up-front
 Param/Value/lib_3B48F5E9_4E0AFB59=Dark Templar
 Param/Value/lib_3B48F5E9_5632AAF2=All units unlocked for mission.
 Param/Value/lib_3B48F5E9_5D355B93=<c val="00FF40">TIP</c> - A  Dominion force is on the way. When they find Raynor here, they'll bombard the area, then repeatedly deploy forces to kill him.
@@ -1758,6 +1759,7 @@ Param/Value/lib_3B48F5E9_C216B0DE=The Armory and Hercules have been unlocked.
 Param/Value/lib_3B48F5E9_CD061853=Memes have been <c val="00FF40">Enabled</c>
 Param/Value/lib_3B48F5E9_CE432AB3=Memes have been <c val="FF0000">Disabled</c>
 Param/Value/lib_3B48F5E9_DBFC5D87=20000 minerals granted
+Param/Value/lib_3B48F5E9_FCAA0D63=Unit and Building costs are now Up-front
 Param/Value/lib_Camp_28873B56=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">2 Elite Goliaths</s>
 Param/Value/lib_Camp_6254E3B0=<s val="MercCategory">Vitals:</s>  <s val="MercSummary">+33% Health, +66% Damage</s><n/><s val="MercCategory">Trained From:</s>  <s val="MercSummary">Vehicle Topbar</s>
 Param/Value/lib_Camp_6C11495B=<s val="MercCategory">Calldown Size:</s>  <s val="MercSummary">1 Elite Firebat Squad</s>

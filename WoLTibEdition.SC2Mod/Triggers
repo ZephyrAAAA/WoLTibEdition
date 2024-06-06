@@ -16652,7 +16652,7 @@
             <Event Type="FunctionCall" Library="3B48F5E9" Id="075410F5"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="9D46811F"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="0BC9EBBF"/>
-            <Action Type="FunctionCall" Library="3B48F5E9" Id="5ADD7E61"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="B3FC23E3"/>
         </Element>
         <Element Type="FunctionCall" Id="075410F5">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000121"/>
@@ -16709,30 +16709,14 @@
             <Value>&quot;CCEditionPermanence|SC2Cost&quot;</Value>
             <ValueType Type="convstateindex"/>
         </Element>
-        <Element Type="FunctionCall" Id="5ADD7E61">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="37BFEB10"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="DF86585B"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="8409D378"/>
-        </Element>
-        <Element Type="Param" Id="37BFEB10">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000183"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000065"/>
-        </Element>
-        <Element Type="Param" Id="DF86585B">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000184"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000068"/>
-        </Element>
-        <Element Type="Param" Id="8409D378">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
-            <ValueType Type="trigger"/>
-            <ValueElement Type="Trigger" Library="3B48F5E9" Id="23CA1D16"/>
+        <Element Type="FunctionCall" Id="B3FC23E3">
+            <FunctionDef Type="FunctionDef" Library="3B48F5E9" Id="C42796E2"/>
         </Element>
         <Element Type="Trigger" Id="83743073">
             <Event Type="FunctionCall" Library="3B48F5E9" Id="BD226C36"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="FF7D8B25"/>
             <Action Type="FunctionCall" Library="3B48F5E9" Id="78FA57CD"/>
-            <Action Type="FunctionCall" Library="3B48F5E9" Id="5670AFFA"/>
+            <Action Type="FunctionCall" Library="3B48F5E9" Id="79F5DA42"/>
         </Element>
         <Element Type="FunctionCall" Id="BD226C36">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000121"/>
@@ -16789,24 +16773,8 @@
             <Value>&quot;CCEditionPermanence|SC2Upgrades&quot;</Value>
             <ValueType Type="convstateindex"/>
         </Element>
-        <Element Type="FunctionCall" Id="5670AFFA">
-            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000116"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="26ADB1D8"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="6B557739"/>
-            <Parameter Type="Param" Library="3B48F5E9" Id="88ABE66E"/>
-        </Element>
-        <Element Type="Param" Id="26ADB1D8">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000183"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000065"/>
-        </Element>
-        <Element Type="Param" Id="6B557739">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000184"/>
-            <Preset Type="PresetValue" Library="Ntve" Id="00000068"/>
-        </Element>
-        <Element Type="Param" Id="88ABE66E">
-            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000182"/>
-            <ValueType Type="trigger"/>
-            <ValueElement Type="Trigger" Library="3B48F5E9" Id="23CA1D16"/>
+        <Element Type="FunctionCall" Id="79F5DA42">
+            <FunctionDef Type="FunctionDef" Library="3B48F5E9" Id="052EA4A7"/>
         </Element>
         <Element Type="Category" Id="47AD0A9F">
             <Item Type="FunctionDef" Library="3B48F5E9" Id="9B86B538"/>
